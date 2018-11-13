@@ -21,7 +21,7 @@ pattern = r"[{}]".format(remove)
 valid_authors = ['document.author.assignedEntity.representedOrganization.name']
 
 valid_titles = ['document.title.#text', 'document.title.content', 'document.title.content.#text',
-                'document.code.@displayName', 'document.title.content']
+                'document.code.@displayName', 'document.title.content', 'document.code.@displayName']
 
 valid_keys = ['text', 'paragraph', '#text', 'text.paragraph', 'name', '@displayName', 'originalText', '@value',
               '@referencedObject', 'value', 'content', 'section', 'renderMultiMedia', 'component', 'numerator',
@@ -31,15 +31,16 @@ valid_keys = ['text', 'paragraph', '#text', 'text.paragraph', 'name', '@displayN
               'excerpt.highlight.text.paragraph', 'caption', 'component.section.text.list.item',
               'component.section.text.paragraph.content', 'text.content', 'component.observationMedia.text',
               'text.#text', 'value', 'text.table.tbody.tr.td.paragraph.#text', '@value', 'ingredient',
-                'title.content.#text'
               ]
-secondary_keys = ['approval', 'author', 'code', '@code', 'observationMedia', 'sup', 'list', 'item', 'title', 'sub',
-                  'component.section.component', 'routeCode', 'title.#text', 'table', 'tbody', 'td', 'tr',
+title_keys = [ 'title.content.#text', 'title', 'title.#text', 'title.text', 'title.content', 'title.content.#text']
+secondary_keys = ['approval', 'author', 'code', '@code', 'observationMedia', 'list', 'item',
+                  'component.section.component', 'routeCode', 'table', 'tbody', 'td', 'tr',
                   'subject.manufacturedProduct.manufacturedMedicine.asEntityWithGeneric.genericMedicine.name',
                   'substanceAdministration', 'subject.manufacturedProduct.manufacturedProduct.formCode.@displayName',
                   'marketingAct', 'characteristic', '@displayName', 'substanceAdministration', 'approval',
                   'territorialAuthority', 'territory', 'code.@code', '@name', 'asContent']
-exclude_codes = ['@styleCode', '@ID', 'br', '@valign', '@align', '@xsi:type', '@colspan', '@nullFlavor', '@href']
+exclude_codes = ['@styleCode', '@ID', 'br', '@valign', '@align', '@xsi:type', '@colspan', '@nullFlavor', '@href', 'sup',
+                 'sub']
 
 
 def get_text(elem, txt=''):
@@ -48,12 +49,12 @@ def get_text(elem, txt=''):
     elif isinstance(elem, list):
         for e in elem:
             new_line = get_text(e)
-            if len(txt) == 0:
-                txt += '\n'
+            if len(txt) > 0 and len(new_line) > 0 and not new_line.endswith('.') and not new_line.endswith(','):
+                txt += ', '
             txt += new_line
     elif isinstance(elem, str):
-        if len(txt) == 0:
-            txt += '\n'
+        if len(txt) > 0 and len(elem) > 0:
+            txt += ' \n'
         txt += elem
     elif isinstance(elem, OrderedDict):
 
@@ -65,20 +66,29 @@ def get_text(elem, txt=''):
             for k in secondary_keys:
                 if k in elem:
                     matched_keys.append(k)
+        if len(matched_keys) == 0:
+            for k in title_keys:
+                if k in elem:
+                    matched_keys.append(k)
         if len(matched_keys) > 0:
             for lookup_key in matched_keys:
                 val = elem[lookup_key]
                 if not val:
                     continue
                 if isinstance(val, str):
-                    if len(txt) == 0:
-                        txt += '\n'
+                    if len(txt) > 0 and len(val) > 0:
+                        txt += ' \n'
                     txt += val
+                    if lookup_key in title_keys:
+                        txt += ': '
                     break
                 else:
-                    if len(txt) == 0:
-                        txt += '\n'
-                    txt += get_text(val)
+                    new_val = get_text(val)
+                    if len(txt) > 0 and len(new_val) > 0:
+                        txt += ' \n'
+                    txt += new_val
+                    if lookup_key in title_keys:
+                        txt += ': '
                     break
 
         e_count = 0
@@ -90,6 +100,8 @@ def get_text(elem, txt=''):
 
         if len(txt) == 0 and not excluded:
             print(elem)
+
+    txt = ' '.join(txt.split(' '))
     return txt.strip()
 
 
@@ -112,11 +124,12 @@ def flatten_dict(d, flatten_list=False):
     return OrderedDict(items())
 
 
-def load(path=''):
+def load(path='', report_type="FDA Drug Label", default_name='Human Prescription Drug Label'):
     rootdir = path + '/**/*'
     file_list = [f for f in iglob(rootdir, recursive=True) if os.path.isfile(f)]
     for f in file_list:
         if f.endswith('zip'):
+            print('unzipping')
             name = f.split('.')[-2].split('/')[-1]
             with zipfile.ZipFile(f, "r") as zip_ref:
                 zip_ref.extractall(path + '/' + name)
@@ -150,13 +163,18 @@ def load(path=''):
                         print('cant parse')
                         continue
 
-                name = 'Unknown'
+                name = default_name
                 for v in valid_titles:
                     if v in flattened_dict:
-                        name = get_text(flattened_dict[v])
-                        break
+                        txt = get_text(flattened_dict[v])
+                        if not txt.lower().startswith("these highlights"):
+                            name = txt
+                            name = ' '.join(name.split())
+                            break
 
-                name = ' '.join(name.split())
+                if name == default_name:
+                    print('no name')
+
                 effective_time = flattened_dict['document.effectiveTime.@value']
                 id = flattened_dict['document.id.@root']
                 author = 'Unknown'
@@ -173,7 +191,7 @@ def load(path=''):
                 obj['report_id'] = id
                 obj['author_attr'] = author
                 obj['subject'] = name
-                obj['report_type'] = "FDA Drug Label"
+                obj['report_type'] = report_type
                 obj['source'] = "FDA Drug Labels"
                 components = (flattened_dict['document.component.structuredBody.component'])
                 label_text = ''
@@ -228,8 +246,9 @@ def load(path=''):
                         else:
                             p_text = get_text(section)
 
-                        label_text += title + '\n'
-                        label_text += p_text + '\n\n'
+                        p_text = ' '.join(p_text.split())
+                        label_text += title + ' \n'
+                        label_text += p_text + ' \n\n'
                     elif 'code.@displayName' in section:
                         title = section['code.@displayName']
                         if not title.endswith(":"):
@@ -239,14 +258,16 @@ def load(path=''):
                             p_text = get_text(paragraph)
                         else:
                             p_text = get_text(section)
-
-                        label_text += title + '\n'
-                        label_text += p_text + '\n\n'
+                        p_text = ' '.join(p_text.split())
+                        label_text += title + ' \n'
+                        label_text += p_text + ' \n\n'
                     else:
                         # print('unknown')
                         # print(section.keys())
                         pass
+                # label_text = ' '.join(label_text.split())
                 obj['report_text'] = label_text
+                print('parsed %s' % obj['report_id'])
                 results.append(obj)
                 xml_data.close()
 
@@ -269,10 +290,11 @@ def load(path=''):
     if response.status_code != 200:
         print(response.reason)
     else:
-        uploaded += 100
+        uploaded += len(results)
         print('\n\n\nuploaded %d docs!\n\n\n' % uploaded)
     print('DONE!!!')
 
 
 if __name__ == "__main__":
-    load('/Downloads/drug_labels')
+    load('/Downloads/prescription', report_type='Human Prescription Labels',
+         default_name='Human Prescription Drug Label')
