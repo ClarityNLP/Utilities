@@ -4,6 +4,7 @@ from mwparserfromhell.nodes.external_link import ExternalLink
 from mwparserfromhell.nodes.wikilink import Wikilink
 from mwparserfromhell.nodes.comment import Comment
 from anytree import Node, RenderTree
+import json
 
 
 def title_text(parent):
@@ -11,7 +12,7 @@ def title_text(parent):
         return ''
     title = ''
     for t1 in parent.title.nodes:
-        title = pretty_text(t1) + ' '
+        title += (pretty_text(t1) + ' ')
     return title.strip()
 
 
@@ -20,7 +21,7 @@ def contents_text(parent):
         return ''
     title = ''
     for t1 in parent.contents.nodes:
-        title = pretty_text(t1) + ' '
+        title += (pretty_text(t1) + ' ')
     return title.strip()
 
 
@@ -52,7 +53,7 @@ if __name__ == "__main__":
     nodes = list()
     chemotherapy_nodes = list()
     is_chemotherapy = False
-    with open('./cancer_wiki/dlbcl.txt') as f:
+    with open('./cancer_wiki/colon_cancers.txt') as f:
         wikicode = parse(f.read())
         cur_level = 0
         cur_title = None
@@ -72,16 +73,21 @@ if __name__ == "__main__":
                 else:
                     parent_level = n.level - 1
                     if parent_level in last_nodes:
+                        parent = last_nodes[parent_level]
+
                         if is_chemotherapy:
-                            cur_node = Node(cur_title, parent=last_nodes[parent_level], drugs=list(), brands=list(),
-                                            instructions=list())
+                            grandparent = last_nodes[parent_level-1]
+                            g_grandparent = last_nodes[parent_level-2]
+                            if parent.name != 'Regimen':
+                                variant = parent.name
+                            else:
+                                variant = ''
+                            cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
+                                            regimen=grandparent.name, variant=variant, guideline=g_grandparent.name)
                         else:
-                            cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list(), brands=list())
+                            cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list())
                     else:
-                        if is_chemotherapy:
-                            cur_node = Node(cur_title, drugs=list(), instructions=list())
-                        else:
-                            cur_node = Node(cur_title, data=list())
+                        cur_node = Node(cur_title, data=list())
 
                 cur_level = n.level
                 last_nodes[cur_level] = cur_node
@@ -122,8 +128,25 @@ if __name__ == "__main__":
                         else:
                             cur_node.data.append('')
 
+    chemo_list = list()
     for cn in chemotherapy_nodes:
-        print('--------------------------')
-        print(RenderTree(cn))
+        # print('--------------------------')
+        # print(RenderTree(cn))
+        chemo_list.append({
+            'drugs': cn.drugs,
+            'brands': cn.brands,
+            'regimen': cn.regimen,
+            'variant': cn.variant,
+            'guideline': cn.guideline
+        })
+
+    json_string = json.dumps(chemo_list, indent=4)
+
+    print(json_string)
+
+
+    # for cn in nodes:
+    #     print('--------------------------')
+    #     print(RenderTree(cn))
 
     print('--------------------------')
