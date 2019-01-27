@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Melanoma, CVD, IL-2, IFN alfa-2b - sequential biochemotherapy (Metastatic or unresectable disease)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+    
+termset MedicationTerms0:[
+    "Keflex", "Cephalexin"
+];
+
+define Medications0:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms0],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms1:[
+    "Cipro", "Ciprofloxacin"
+];
+
+define Medications1:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms1],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms2:[
+    "Neupogen", "Filgrastim"
+];
+
+define Medications2:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms2],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms3:[
+    "Zofran", "Ondansetron"
+];
+
+define Medications3:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms3],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms4:[
+    "Ativan", "Lorazepam"
+];
+
+define Medications4:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms4],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms5:[
+    "Tylenol", "Acetaminophen"
+];
+
+define Medications5:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms5],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms6:[
+    "Zantac", "Ranitidine"
+];
+
+define Medications6:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms6],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms7:[
+    "Atarax", "Hydroxyzine"
+];
+
+define Medications7:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms7],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms8:[
+    "Benadryl", "Diphenhydramine"
+];
+
+define Medications8:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms8],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms9:[
+    "Demerol", "Meperidine"
+];
+
+define Medications9:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms9],
+    documentset:[Docs]
+   }); 
+        
+            
+
+// Results
+
+
+define final ReceivedAllTherapies:
+    where Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6 AND Medications7 AND Medications8 AND Medications9;
+        
+ 

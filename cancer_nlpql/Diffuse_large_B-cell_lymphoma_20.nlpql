@@ -1,0 +1,32 @@
+
+// Phenotype library name
+phenotype "Diffuse_large_B-cell_lymphoma, Bendamustine monotherapy (Relapsed or refractory, further lines of therapy)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms:[
+    "Bendamustine", "Bendamustine"
+];
+
+define final ReceivedMonotherapy:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms],
+    documentset:[Docs]
+   }); 
+
+                
+
+// Results
+
+ 

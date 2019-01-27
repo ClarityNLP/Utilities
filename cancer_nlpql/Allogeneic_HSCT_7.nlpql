@@ -1,0 +1,60 @@
+
+// Phenotype library name
+phenotype "Allogeneic_HSCT, BFR (Myeloablative regimens, all lines of therapy)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+    
+termset MedicationTerms0:[
+    "Bendamustine", "Bendamustine"
+];
+
+define Medications0:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms0],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms1:[
+    "Fludara", "Fludarabine"
+];
+
+define Medications1:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms1],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms2:[
+    "Rituxan", "Rituximab"
+];
+
+define Medications2:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms2],
+    documentset:[Docs]
+   }); 
+        
+            
+
+// Results
+
+
+define final ReceivedAllTherapies:
+    where Medications0 AND Medications1 AND Medications2;
+        
+ 

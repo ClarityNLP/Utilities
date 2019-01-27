@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Rectal_cancer, CapeOx, Cetuximab, RT (Neoadjuvant therapy)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+    
+termset MedicationTerms0:[
+    "Xeloda", "Capecitabine"
+];
+
+define Medications0:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms0],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms1:[
+    "Eloxatin", "Oxaliplatin"
+];
+
+define Medications1:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms1],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms2:[
+    "Erbitux", "Cetuximab"
+];
+
+define Medications2:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms2],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms3:[
+    "External_beam_radiotherapy", "External_beam_radiotherapy"
+];
+
+define Medications3:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms3],
+    documentset:[Docs]
+   }); 
+        
+            
+
+// Results
+
+
+define final ReceivedAllTherapies:
+    where Medications0 AND Medications1 AND Medications2 AND Medications3;
+        
+ 

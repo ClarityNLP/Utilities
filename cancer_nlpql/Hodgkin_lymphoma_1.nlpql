@@ -1,0 +1,60 @@
+
+// Phenotype library name
+phenotype "Hodgkin_lymphoma, AVD (Untreated, early-stage favorable (ESF))" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+    
+termset MedicationTerms0:[
+    "Adriamycin", "Doxorubicin"
+];
+
+define Medications0:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms0],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms1:[
+    "Velban", "Vinblastine"
+];
+
+define Medications1:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms1],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms2:[
+    "DTIC", "Dacarbazine"
+];
+
+define Medications2:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms2],
+    documentset:[Docs]
+   }); 
+        
+            
+
+// Results
+
+
+define final ReceivedAllTherapies:
+    where Medications0 AND Medications1 AND Medications2;
+        
+ 

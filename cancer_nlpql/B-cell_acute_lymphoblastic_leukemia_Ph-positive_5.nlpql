@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "B-cell_acute_lymphoblastic_leukemia_Ph-positive, Hyper-CVAD & Ponatinib (Upfront induction therapy)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+    
+termset MedicationTerms0:[
+    "Mesnex", "Mesna"
+];
+
+define Medications0:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms0],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms1:[
+    "Cipro", "Ciprofloxacin"
+];
+
+define Medications1:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms1],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms2:[
+    "Levaquin", "Levofloxacin"
+];
+
+define Medications2:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms2],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms3:[
+    "Bactrim DS", "Trimethoprim/Sulfamethoxazole"
+];
+
+define Medications3:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms3],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms4:[
+    "Diflucan", "Fluconazole"
+];
+
+define Medications4:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms4],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms5:[
+    "Zovirax", "Acyclovir"
+];
+
+define Medications5:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms5],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms6:[
+    "Valtrex", "Valacyclovir"
+];
+
+define Medications6:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms6],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms7:[
+    "Neupogen", "Filgrastim"
+];
+
+define Medications7:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms7],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms8:[
+    "Zyloprim", "Allopurinol"
+];
+
+define Medications8:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms8],
+    documentset:[Docs]
+   }); 
+        
+            
+    
+termset MedicationTerms9:[
+    "Elitek", "Rasburicase"
+];
+
+define Medications9:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms9],
+    documentset:[Docs]
+   }); 
+        
+            
+
+// Results
+
+
+define final ReceivedAllTherapies:
+    where Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6 AND Medications7 AND Medications8 AND Medications9;
+        
+ 

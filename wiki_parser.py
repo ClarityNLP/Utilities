@@ -10,6 +10,27 @@ import json
 treatment_names = ['Chemoradiotherapy', 'Supportive medications', 'Chemotherapy', 'Immunosuppressive therapy',
                    'CNS prophylaxis', 'Chemotherapy, part 1', 'Chemotherapy, part 2', 'Primary therapy',
                    'Immunotherapy', 'Anticoagulation']
+nlpql_template = '''
+// Phenotype library name
+phenotype "{}" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+{}
+
+// Results
+{}
+ 
+'''
 
 
 def title_text(parent):
@@ -50,8 +71,83 @@ def pretty_text(thing):
     return txt.strip()
 
 
+def generate_medications(brands, drugs):
+    define_str = ''
+    keys = []
+
+    if len(brands) > 1:
+        n = 0
+        for b in brands:
+            terms = '"{}", "{}"'.format(b, drugs[n])
+            nlpql = '''
+    
+termset MedicationTerms%d:[
+    %s
+];
+
+define Medications%d:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms%d],
+    documentset:[Docs]
+   }); 
+        
+            ''' % (n, terms, n, n)
+            keys.append('Medications{}'.format(n))
+            n += 1
+            define_str += nlpql
+
+        return define_str, keys
+    else:
+        terms = '"{}", "{}"'.format(brands[0], drugs[0])
+        nlpql = '''
+
+termset MedicationTerms:[
+    %s
+];
+
+define final ReceivedMonotherapy:
+  Clarity.ProviderAssertion({
+    termset:[MedicationTerms],
+    documentset:[Docs]
+   }); 
+
+                ''' % terms
+        return nlpql, []
+
+
+def generate_results(keys):
+    clause = " AND ".join(keys)
+    return '''
+
+define final ReceivedAllTherapies:
+    where %s;
+        ''' % clause
+
+
 def generate_nlpql(cancer, treatments):
-    print('nlpql for ', cancer)
+    # 'drugs': cn.drugs,
+    # 'brands': cn.brands,
+    # 'regimen': cn.regimen,
+    # 'regimen_type': cn.regimen_type,
+    # 'cancer_type': oncology_class
+    i = 0
+    for k in treatments.keys():
+        obj = treatments[k]
+        regimen = k
+        regimen_type = obj['regimen_type']
+        if regimen_type == '':
+            nlpql_name = '{}, {}'.format(cancer, regimen)
+        else:
+            nlpql_name = '{}, {} ({})'.format(cancer, regimen, regimen_type)
+        define_str, keys = generate_medications(obj['brands'], obj['drugs'])
+        if len(obj['brands']) > 1:
+            result_str = generate_results(keys)
+        else:
+            result_str = ''
+        print('nlpql for ', nlpql_name)
+        with open('./cancer_nlpql/{}_{}.nlpql'.format(cancer, i), 'w') as file:
+            file.write(nlpql_template.format(nlpql_name, define_str, result_str))
+            i += 1
 
 
 if __name__ == "__main__":
