@@ -1,0 +1,73 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:MartinSchoen.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Marteens|Martin Schoen, MD, MPH]]<br>St. Louis, MO</big>
+|-
+|}
+<big>'''Note: these are biomarker-specific regimens for patients with IDH-mutated AML, please see the [[Acute myeloid leukemia|main AML page]] for other regimens.'''</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=IDH1 relapsed or refractory, salvage therapy=
+==Ivosidenib monotherapy {{#subobject:214f83|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e548f6|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/10.1056/NEJMoa1716984 DiNardo et al. 2018 (AG120-C-001)]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+====Chemotherapy====
+*[[Ivosidenib (Tibsovo)]] 500 mg PO once per day
+
+'''Continued indefinitely'''
+===References===
+# '''AG120-C-001:''' DiNardo CD, Stein EM, de Botton S, Roboz GJ, Altman JK, Mims AS, Swords R, Collins RH, Mannis GN, Pollyea DA, Donnellan W, Fathi AT, Pigneux A, Erba HP, Prince GT, Stein AS, Uy GL, Foran JM, Traer E, Stuart RK, Arellano ML, Slack JL,  Sekeres MA, Willekens C, Choe S, Wang H, Zhang V, Yen KE, Kapsalis SM, Yang H, Dai D, Fan B, Goldwasser M, Liu H, Agresta S, Wu B, Attar EC, Tallman MS, Stone RM, Kantarjian HM. Durable remissions with ivosidenib in IDH1-mutated relapsed or refractory AML. N Engl J Med. 2018 Jun 21;378(25):2386-2398. Epub 2018 Jun 2. [https://www.nejm.org/doi/10.1056/NEJMoa1716984 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29860938 PubMed]
+
+=IDH2 Relapsed or refractory, salvage therapy=
+==Enasidenib monotherapy {{#subobject:226cb2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c110c9|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5572791/ Stein et al. 2017 (AG-221-C-001)]
+| style="background-color:#91cf61" |Phase I/II
+| style="background-color:#8c96c6" |ORR: 40%
+|-
+|}
+''This is the dose used in the phase II expansion cohort; enrolled patients were required to have IDH2-mutated advanced myeloid malignancies.''
+====Chemotherapy====
+*[[Enasidenib (Idhifa)]] 100 mg PO once per day
+
+'''28-day cycles'''
+
+===References===
+# '''AG-221-C-001:''' Stein EM, DiNardo CD, Pollyea DA, Fathi AT, Roboz GJ, Altman JK, Stone RM, DeAngelo DJ, Levine RL, Flinn IW, Kantarjian HM, Collins R, Patel MR, Frankel AE, Stein A, Sekeres MA, Swords RT, Medeiros BC, Willekens C, Vyas P, Tosolini A, Xu Q, Knight RD, Yen KE, Agresta S, de Botton S, Tallman MS. Enasidenib in mutant IDH2 relapsed or refractory acute myeloid leukemia. Blood. 2017 Aug 10;130(6):722-731. Epub 2017 Jun 6. [http://www.bloodjournal.org/content/130/6/722.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5572791/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28588020 PubMed]
+
+[[Category:Acute myeloid leukemia regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Acute leukemias]]

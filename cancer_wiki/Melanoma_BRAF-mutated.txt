@@ -1,0 +1,373 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+<big>'''Note: these are biomarker-specific regimens, please see the [[Melanoma|main melanoma page]] for other regimens.'''</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Adjuvant therapy=
+==Dabrafenib & Trametinib {{#subobject:2c672b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d808ec|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1708539 Long et al. 2017 (COMBI-AD)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: per the authors, "the between-group difference (P=0.0006) did not reach the prespecified threshold of P=0.000019 to claim statistical significance in the first interim analysis of overall survival."
+====Preceding treatment====
+*[[Surgery#Complete_regional_lymphadenectomy|Completion lymphadenectomy]], within 12 weeks
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Up to 12-month course'''
+
+===References===
+# '''COMBI-AD:''' Long GV, Hauschild A, Santinami M, Atkinson V, Mandalà M, Chiarion-Sileni V, Larkin J, Nyakas M, Dutriaux C, Haydon A, Robert C, Mortier L, Schachter J, Schadendorf D, Lesimple T, Plummer R, Ji R, Zhang P, Mookerjee B, Legos J, Kefford R, Dummer R, Kirkwood JM. Adjuvant dabrafenib plus trametinib in stage III BRAF-mutated melanoma. N Engl J Med. 2017 Nov 9;377(19):1813-1823. Epub 2017 Sep 10. [https://www.nejm.org/doi/full/10.1056/NEJMoa1708539 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28891408 PubMed]
+## '''Update:''' Hauschild A, Dummer R, Schadendorf D, Santinami M, Atkinson V, Mandalà M, Chiarion-Sileni V, Larkin J, Nyakas M, Dutriaux C, Haydon A, Robert C, Mortier L, Schachter J, Lesimple T, Plummer R, Dasgupta K, Haas T, Shilkrut M, Gasal E, Kefford R, Kirkwood JM, Long GV. Longer Follow-Up Confirms Relapse-Free Survival Benefit With Adjuvant Dabrafenib Plus Trametinib in Patients With Resected BRAF V600-Mutant Stage III Melanoma. J Clin Oncol. 2018 Oct 22:JCO1801219. [Epub ahead of print] [http://ascopubs.org/doi/full/10.1200/JCO.18.01219 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6286159/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/30343620 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1708539 Long et al. 2017 (COMBI-AD)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dabrafenib_.26_Trametinib|Dabrafenib & Trametinib]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30106-2/fulltext Maio et al. 2018 (BRIM8)]
+|style="background-color:#1a9851"|Phase III (C)
+|Vemurafenib
+| style="background-color:#fee08b" |Might have inferior DFS
+|-
+|}
+''Note: per Long et al. 2017, "the between-group difference (P=0.0006) did not reach the prespecified threshold of P=0.000019 to claim statistical significance in the first interim analysis of overall survival. No further antineoplastic treatment."
+====Preceding treatment====
+*COMBI-AD: [[Surgery#Complete_regional_lymphadenectomy|Completion lymphadenectomy]], within 12 weeks
+*BRIM8: not specified in abstract
+
+===References===
+# '''COMBI-AD:''' Long GV, Hauschild A, Santinami M, Atkinson V, Mandalà M, Chiarion-Sileni V, Larkin J, Nyakas M, Dutriaux C, Haydon A, Robert C, Mortier L, Schachter J, Schadendorf D, Lesimple T, Plummer R, Ji R, Zhang P, Mookerjee B, Legos J, Kefford R, Dummer R, Kirkwood JM. Adjuvant dabrafenib plus trametinib in stage III BRAF-mutated melanoma. N Engl J Med. 2017 Nov 9;377(19):1813-1823. Epub 2017 Sep 10. [https://www.nejm.org/doi/full/10.1056/NEJMoa1708539 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28891408 PubMed]
+## '''Update:''' Hauschild A, Dummer R, Schadendorf D, Santinami M, Atkinson V, Mandalà M, Chiarion-Sileni V, Larkin J, Nyakas M, Dutriaux C, Haydon A, Robert C, Mortier L, Schachter J, Lesimple T, Plummer R, Dasgupta K, Haas T, Shilkrut M, Gasal E, Kefford R, Kirkwood JM, Long GV. Longer Follow-Up Confirms Relapse-Free Survival Benefit With Adjuvant Dabrafenib Plus Trametinib in Patients With Resected BRAF V600-Mutant Stage III Melanoma. J Clin Oncol. 2018 Oct 22:JCO1801219. [Epub ahead of print] [http://ascopubs.org/doi/full/10.1200/JCO.18.01219 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6286159/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/30343620 PubMed]
+# '''BRIM8:''' Maio M, Lewis K, Demidov L, Mandalà M, Bondarenko I, Ascierto PA, Herbert C, Mackiewicz A, Rutkowski P, Guminski A, Goodman GR, Simmons B, Ye C, Yan Y, Schadendorf D; BRIM8 Investigators. Adjuvant vemurafenib in resected, BRAF(V600) mutation-positive melanoma (BRIM8): a randomised, double-blind, placebo-controlled, multicentre, phase 3 trial. Lancet Oncol. 2018 Apr;19(4):510-520. Epub 2018 Feb 21. Erratum in: Lancet Oncol. 2018 Apr;19(4):e184. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30106-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29477665 PubMed]
+
+=Advanced or metastatic disease, BRAF inhibitor-naive=
+==Binimetinib & Encorafenib {{#subobject:aa3a2b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8d6382|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30142-6/fulltext Dummer et al. 2018 (COLUMBUS)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Encorafenib
+|style="background-color:#d3d3d3"|Not reported
+|-
+|2. [[#Vemurafenib_monotherapy|Vemurafenib]]
+|style="background-color:#1a9850"|Superior OS (*)
+|-
+|}
+''Note: reported efficacy is based on the 2018 update.''
+====Chemotherapy====
+*[[Binimetinib (Mektovi)]] 45 mg PO twice per day
+*[[Encorafenib (Braftovi)]] 450 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''COLUMBUS:''' Dummer R, Ascierto PA, Gogas HJ, Arance A, Mandala M, Liszkay G, Garbe C, Schadendorf D, Krajsova I, Gutzmer R, Chiarion-Sileni V, Dutriaux C, de Groot JWB, Yamazaki N, Loquai C, Moutouh-de Parseval LA, Pickard MD, Sandor V, Robert C, Flaherty KT. Encorafenib plus binimetinib versus vemurafenib or encorafenib in patients with BRAF-mutant melanoma (COLUMBUS): a multicentre, open-label, randomised phase 3 trial. Lancet Oncol. 2018 May;19(5):603-615. Epub 2018 Mar 21. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30142-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29573941 PubMed]
+## '''Update:''' Dummer R, Ascierto PA, Gogas HJ, Arance A, Mandala M, Liszkay G, Garbe C, Schadendorf D, Krajsova I, Gutzmer R, Chiarion Sileni V, Dutriaux C, de Groot JWB, Yamazaki N, Loquai C, Moutouh-de Parseval LA, Pickard MD, Sandor V, Robert C, Flaherty KT. Overall survival in patients with BRAF-mutant melanoma receiving encorafenib plus binimetinib versus vemurafenib or encorafenib (COLUMBUS): a multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2018 Sep 12. [Epub ahead of print] [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30497-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30219628 PubMed]
+
+==Cobimetinib & Vemurafenib {{#subobject:PYR3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:PYV3|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1408868 Larkin et al. 2014 (coBRIM)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Vemurafenib_monotherapy|Vemurafenib]]
+|style="background-color:#1a9850"|Superior OS (*)
+|-
+|}
+''Efficacy reported for coBRIM is based on the interim update.''
+====Chemotherapy====
+*[[Cobimetinib (Cotellic)]] 60 mg PO once per day on days 1 to 21
+*[[Vemurafenib (Zelboraf)]] 960 mg PO twice per day on days 1 to 28
+
+'''28-day cycles'''
+
+===References===
+# '''coBRIM:''' Larkin J, Ascierto PA, Dréno B, Atkinson V, Liszkay G, Maio M, Mandalà M, Demidov L, Stroyakovskiy D, Thomas L, de la Cruz-Merino L, Dutriaux C, Garbe C, Sovak MA, Chang I, Choong N, Hack SP, McArthur GA, Ribas A. Combined vemurafenib and cobimetinib in BRAF-mutated melanoma. N Engl J Med. 2014 Nov 13;371(20):1867-76. Epub 2014 Sep 29.[https://www.nejm.org/doi/full/10.1056/NEJMoa1408868 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25265494 PubMed]
+## '''Update:''' Ascierto PA, McArthur GA, Dréno B, Atkinson V, Liszkay G, Di Giacomo AM, Mandalà M, Demidov L, Stroyakovskiy D, Thomas L, de la Cruz-Merino L, Dutriaux C, Garbe C, Yan Y, Wongchenko M, Chang I, Hsu JJ, Koralek DO, Rooney I, Ribas A, Larkin J. Cobimetinib combined with vemurafenib in advanced BRAF(V600)-mutant melanoma (coBRIM): updated efficacy results from a randomised, double-blind, phase 3 trial. Lancet Oncol. 2016 Sep;17(9):1248-60. Epub 2016 Jul 30. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30122-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27480103 PubMed]
+
+==Dabrafenib monotherapy {{#subobject:8f3562|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fa5aa0|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)60868-X/fulltext Hauschild et al. 2012 (BREAK-3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Melanoma#Dacarbazine_monotherapy|Dacarbazine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549295/ Flaherty et al. 2012]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Dabrafenib_.26_Trametinib_2|Dabrafenib & Trametinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1406037 Long et al. 2014 (COMBI-d)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Dabrafenib_.26_Trametinib_2|Dabrafenib & Trametinib]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+
+'''Given until progression of disease'''
+
+===References===
+# '''BREAK-3:''' Hauschild A, Grob JJ, Demidov LV, Jouary T, Gutzmer R, Millward M, Rutkowski P, Blank CU, Miller WH Jr, Kaempgen E, Martín-Algarra S, Karaszewska B, Mauch C, Chiarion-Sileni V, Martin AM, Swann S, Haney P, Mirakhur B, Guckert ME, Goodman V, Chapman PB. Dabrafenib in BRAF-mutated metastatic melanoma: a multicentre, open-label, phase 3 randomised controlled trial. Lancet. 2012 Jul 28;380(9839):358-65. Epub 2012 Jun 25. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)60868-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22735384 PubMed]
+# Flaherty KT, Infante JR, Daud A, Gonzalez R, Kefford RF, Sosman J, Hamid O, Schuchter L, Cebon J, Ibrahim N, Kudchadkar R, Burris HA 3rd, Falchook G, Algazi A, Lewis K, Long GV, Puzanov I, Lebowitz P, Singh A, Little S, Sun P, Allred A, Ouellet D, Kim KB, Patel K, Weber J. Combined BRAF and MEK inhibition in melanoma with BRAF V600 mutations. N Engl J Med. 2012 Nov;367(18):1694-703. Epub 2012 Sep 29. [https://www.nejm.org/doi/full/10.1056/NEJMoa1210093 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549295/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23020132 PubMed]
+## '''Update:''' Long GV, Weber JS, Infante JR, Kim KB, Daud A, Gonzalez R, Sosman JA, Hamid O, Schuchter L, Cebon J, Kefford RF, Lawrence D, Kudchadkar R, Burris HA 3rd, Falchook GS, Algazi A, Lewis K, Puzanov I, Ibrahim N, Sun P, Cunningham E, Kline AS, Del Buono H, McDowell DO, Patel K, Flaherty KT. Overall survival and durable responses in patients with BRAF V600-mutant metastatic melanoma receiving dabrafenib combined with trametinib. J Clin Oncol. 2016 Mar 10;34(8):871-8. Epub 2016 Jan 25. [http://ascopubs.org/doi/full/10.1200/JCO.2015.62.9345 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26811525 PubMed]
+# '''COMBI-d:''' Long GV, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Grob JJ, Chiarion Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JB, Hansson J, Utikal J, Ferraresi V, Kovalenko N, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, DeMarini DJ, Irani JG, Casey M, Ouellet D, Martin AM, Le N, Patel K, Flaherty K. Combined BRAF and MEK inhibition versus BRAF inhibition alone in melanoma. N Engl J Med. 2014 Nov 13;371(20):1877-88. Epub 2014 Sep 29. [https://www.nejm.org/doi/full/10.1056/NEJMoa1406037 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25265492 PubMed]
+## '''Update:''' Long GV, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Grob JJ, Chiarion-Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JB, Hansson J, Utikal J, Ferraresi V, Kovalenko N, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, DeMarini DJ, Irani JG, Swann S, Legos JJ, Jin F, Mookerjee B, Flaherty K. Dabrafenib and trametinib versus dabrafenib and placebo for Val600 BRAF-mutant melanoma: a multicentre, double-blind, phase 3 randomised controlled trial. Lancet. 2015 Aug 1;386(9992):444-51. Epub 2015 May 31. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60898-4/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26037941 PubMed]
+## '''Update:''' Long GV, Flaherty KT, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Chiarion-Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JBAG, Hansson J, Utikal J, Ferraresi V, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, Davies MA, Lane SR, Legos JJ, Mookerjee B, Grob JJ. Dabrafenib plus trametinib versus dabrafenib monotherapy in patients with metastatic BRAF V600E/K-mutant melanoma: long-term survival and safety analysis of a phase 3 study. Ann Oncol. 2017 Jul 1;28(7):1631-1639. [https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdx176 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28475671 PubMed]
+
+==Dabrafenib & Trametinib {{#subobject:7d3694|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:23212f|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549295/ Flaherty et al. 2012]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Dabrafenib_monotherapy|Dabrafenib]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1406037 Long et al. 2014 (COMBI-d)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Dabrafenib_monotherapy|Dabrafenib]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1412690 Robert et al. 2014 (COMBI-v)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Vemurafenib_monotherapy|Vemurafenib]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continued until progression'''
+
+===References===
+# Flaherty KT, Infante JR, Daud A, Gonzalez R, Kefford RF, Sosman J, Hamid O, Schuchter L, Cebon J, Ibrahim N, Kudchadkar R, Burris HA 3rd, Falchook G, Algazi A, Lewis K, Long GV, Puzanov I, Lebowitz P, Singh A, Little S, Sun P, Allred A, Ouellet D, Kim KB, Patel K, Weber J. Combined BRAF and MEK inhibition in melanoma with BRAF V600 mutations. N Engl J Med. 2012 Nov;367(18):1694-703. Epub 2012 Sep 29. [https://www.nejm.org/doi/full/10.1056/NEJMoa1210093 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549295/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23020132 PubMed]
+## '''Update:''' Long GV, Weber JS, Infante JR, Kim KB, Daud A, Gonzalez R, Sosman JA, Hamid O, Schuchter L, Cebon J, Kefford RF, Lawrence D, Kudchadkar R, Burris HA 3rd, Falchook GS, Algazi A, Lewis K, Puzanov I, Ibrahim N, Sun P, Cunningham E, Kline AS, Del Buono H, McDowell DO, Patel K, Flaherty KT. Overall survival and durable responses in patients with BRAF V600-mutant metastatic melanoma receiving dabrafenib combined with trametinib. J Clin Oncol. 2016 Mar 10;34(8):871-8. Epub 2016 Jan 25. [http://ascopubs.org/doi/full/10.1200/JCO.2015.62.9345 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26811525 PubMed]
+# '''COMBI-d:''' Long GV, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Grob JJ, Chiarion Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JB, Hansson J, Utikal J, Ferraresi V, Kovalenko N, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, DeMarini DJ, Irani JG, Casey M, Ouellet D, Martin AM, Le N, Patel K, Flaherty K. Combined BRAF and MEK inhibition versus BRAF inhibition alone in melanoma. N Engl J Med. 2014 Nov 13;371(20):1877-88. Epub 2014 Sep 29. [https://www.nejm.org/doi/full/10.1056/NEJMoa1406037 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25265492 PubMed]
+## '''Update:''' Long GV, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Grob JJ, Chiarion-Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JB, Hansson J, Utikal J, Ferraresi V, Kovalenko N, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, DeMarini DJ, Irani JG, Swann S, Legos JJ, Jin F, Mookerjee B, Flaherty K. Dabrafenib and trametinib versus dabrafenib and placebo for Val600 BRAF-mutant melanoma: a multicentre, double-blind, phase 3 randomised controlled trial. Lancet. 2015 Aug 1;386(9992):444-51. Epub 2015 May 31. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)60898-4/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26037941 PubMed]
+## '''Update:''' Long GV, Flaherty KT, Stroyakovskiy D, Gogas H, Levchenko E, de Braud F, Larkin J, Garbe C, Jouary T, Hauschild A, Chiarion-Sileni V, Lebbe C, Mandalà M, Millward M, Arance A, Bondarenko I, Haanen JBAG, Hansson J, Utikal J, Ferraresi V, Mohr P, Probachai V, Schadendorf D, Nathan P, Robert C, Ribas A, Davies MA, Lane SR, Legos JJ, Mookerjee B, Grob JJ. Dabrafenib plus trametinib versus dabrafenib monotherapy in patients with metastatic BRAF V600E/K-mutant melanoma: long-term survival and safety analysis of a phase 3 study. Ann Oncol. 2017 Jul 1;28(7):1631-1639. [https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdx176 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28475671 PubMed]
+# '''COMBI-v:''' Robert C, Karaszewska B, Schachter J, Rutkowski P, Mackiewicz A, Stroiakovski D, Lichinitser M, Dummer R, Grange F, Mortier L, Chiarion-Sileni V, Drucis K, Krajsova I, Hauschild A, Lorigan P, Wolter P, Long GV, Flaherty K, Nathan P, Ribas A, Martin AM, Sun P, Crist W, Legos J, Rubin SD, Little SM, Schadendorf D. Improved overall survival in melanoma with combined dabrafenib and trametinib. N Engl J Med. 2015 Jan 1;372(1):30-9. Epub 2014 Nov 16. [https://www.nejm.org/doi/full/10.1056/NEJMoa1412690 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25399551 PubMed]
+
+==Trametinib monotherapy {{#subobject:9e1876|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:abc29f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1203421 Flaherty et al. 2012 (METRIC)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Melanoma#Dacarbazine_monotherapy|Dacarbazine]]<br> [[Melanoma#Paclitaxel_monotherapy|Paclitaxel]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70269-3/fulltext Falchook et al. 2012 (MEK111054)]
+|style="background-color:#91cf61"|Phase 1, >20 pts in this dosing cohort
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878037/ Kim et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#404040; color:white"|ORR: 25%
+|-
+|}
+====Chemotherapy====
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+===References===
+# '''METRIC:''' Flaherty KT, Robert C, Hersey P, Nathan P, Garbe C, Milhem M, Demidov LV, Hassel JC, Rutkowski P, Mohr P, Dummer R, Trefzer U, Larkin JM, Utikal J, Dreno B, Nyakas M, Middleton MR, Becker JC, Casey M, Sherman LJ, Wu FS, Ouellet D, Martin AM, Patel K, Schadendorf D; METRIC Study Group. Improved survival with MEK inhibition in BRAF-mutated melanoma. N Engl J Med. 2012 Jul 12;367(2):107-14. Epub 2012 Jun 4. [https://www.nejm.org/doi/full/10.1056/NEJMoa1203421 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22663011 PubMed]
+# '''Phase 1:''' Falchook GS, Lewis KD, Infante JR, Gordon MS, Vogelzang NJ, DeMarini DJ, Sun P, Moy C, Szabo SA, Roadcap LT, Peddareddigari VG, Lebowitz PF, Le NT, Burris HA 3rd, Messersmith WA, O'Dwyer PJ, Kim KB, Flaherty K, Bendell JC, Gonzalez R, Kurzrock R, Fecher LA. Activity of the oral MEK inhibitor trametinib in patients with advanced melanoma: a phase 1 dose-escalation trial. Lancet Oncol. 2012 Aug;13(8):782-9. Epub 2012 Jul 16. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70269-3/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4109286/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22805292 PubMed]
+# Kim KB, Kefford R, Pavlick AC, Infante JR, Ribas A, Sosman JA, Fecher LA, Millward M, McArthur GA, Hwu P, Gonzalez R, Ott PA, Long GV, Gardner OS, Ouellet D, Xu Y, DeMarini DJ, Le NT, Patel K, Lewis KD. Phase II study of the MEK1/MEK2 inhibitor trametinib in patients with metastatic BRAF-mutant cutaneous melanoma previously treated with or without a BRAF inhibitor. J Clin Oncol. 2013 Feb 1;31(4):482-9. Epub 2012 Dec 17. [http://jco.ascopubs.org/content/31/4/482.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878037/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23248257 PubMed]
+
+==Vemurafenib monotherapy {{#subobject:7652e9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c639c3|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724529/ Flaherty et al. 2010]
+|style="background-color:#91cf61"|Phase I/II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549296/ Chapman et al. 2011 (BRIM-3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Melanoma#Dacarbazine_monotherapy|Dacarbazine]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724515/ Sosman et al. 2012 (BRIM2)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+| style="background-color:#9ebcda" |ORR: 53% (95% CI: 44-62)
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1408868 Larkin et al. 2014 (coBRIM)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cobimetinib_.26_Vemurafenib|Cobimetinib & Vemurafenib]]
+|style="background-color:#d73027"|Inferior OS (*)
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1412690 Robert et al. 2014 (COMBI-v)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dabrafenib_.26_Trametinib_2|Dabrafenib & Trametinib]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|rowspan = 2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30142-6/fulltext Dummer et al. 2018 (COLUMBUS)]
+|rowspan = 2 style="background-color:#1a9851"|Phase III (C)
+|1. [[#Binimetinib_.26_Encorafenib|Binimetinib & Encorafenib]]
+|style="background-color:#d73027"|Inferior OS (*)
+|-
+|2. Encorafenib
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+''Note: Reported efficacy for coBRIM is based on the 2016 update. Reported efficacy for COLUMBUS is based on the 2018 update.''
+====Chemotherapy====
+*[[Vemurafenib (Zelboraf)]] 960 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Flaherty KT, Puzanov I, Kim KB, Ribas A, McArthur GA, Sosman JA, O'Dwyer PJ, Lee RJ, Grippo JF, Nolop K, Chapman PB. Inhibition of mutated, activated BRAF in metastatic melanoma. N Engl J Med. 2010 Aug 26;363(9):809-19. [https://www.nejm.org/doi/10.1056/NEJMoa1002011 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724529/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20818844 PubMed]
+# '''BRIM-3:''' Chapman PB, Hauschild A, Robert C, Haanen JB, Ascierto P, Larkin J, Dummer R, Garbe C, Testori A, Maio M, Hogg D, Lorigan P, Lebbe C, Jouary T, Schadendorf D, Ribas A, O'Day SJ, Sosman JA, Kirkwood JM, Eggermont AM, Dreno B, Nolop K, Li J, Nelson B, Hou J, Lee RJ, Flaherty KT, McArthur GA; BRIM-3 Study Group. Improved survival with vemurafenib in melanoma with BRAF V600E mutation. N Engl J Med. 2011 Jun 30;364(26):2507-16. Epub 2011 Jun 5. [https://www.nejm.org/doi/full/10.1056/NEJMoa1103782 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3549296/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21639808 PubMed]
+## '''Update:''' McArthur GA, Chapman PB, Robert C, Larkin J, Haanen JB, Dummer R, Ribas A, Hogg D, Hamid O, Ascierto PA, Garbe C, Testori A, Maio M, Lorigan P, Lebbé C, Jouary T, Schadendorf D, O'Day SJ, Kirkwood JM, Eggermont AM, Dréno B, Sosman JA, Flaherty KT, Yin M, Caro I, Cheng S, Trunzer K, Hauschild A. Safety and efficacy of vemurafenib in BRAF(V600E) and BRAF(V600K) mutation-positive melanoma (BRIM-3): extended follow-up of a phase 3, randomised, open-label study. Lancet Oncol. 2014 Mar;15(3):323-32. Epub 2014 Feb 7. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382632/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24508103 PubMed]
+# '''BRIM2:''' Sosman JA, Kim KB, Schuchter L, Gonzalez R, Pavlick AC, Weber JS, McArthur GA, Hutson TE, Moschos SJ, Flaherty KT, Hersey P, Kefford R, Lawrence D, Puzanov I, Lewis KD, Amaravadi RK, Chmielowski B, Lawrence HJ, Shyr Y, Ye F, Li J, Nolop KB, Lee RJ, Joe AK, Ribas A. Survival in BRAF V600-mutant advanced melanoma treated with vemurafenib. N Engl J Med. 2012 Feb 23;366(8):707-14. [https://www.nejm.org/doi/full/10.1056/NEJMoa1112302 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724515/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22356324 PubMed]
+# '''coBRIM:''' Larkin J, Ascierto PA, Dréno B, Atkinson V, Liszkay G, Maio M, Mandalà M, Demidov L, Stroyakovskiy D, Thomas L, de la Cruz-Merino L, Dutriaux C, Garbe C, Sovak MA, Chang I, Choong N, Hack SP, McArthur GA, Ribas A. Combined vemurafenib and cobimetinib in BRAF-mutated melanoma. N Engl J Med. 2014 Nov 13;371(20):1867-76. Epub 2014 Sep 29.[https://www.nejm.org/doi/full/10.1056/NEJMoa1408868 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25265494 PubMed]
+## '''Update:''' Ascierto PA, McArthur GA, Dréno B, Atkinson V, Liszkay G, Di Giacomo AM, Mandalà M, Demidov L, Stroyakovskiy D, Thomas L, de la Cruz-Merino L, Dutriaux C, Garbe C, Yan Y, Wongchenko M, Chang I, Hsu JJ, Koralek DO, Rooney I, Ribas A, Larkin J. Cobimetinib combined with vemurafenib in advanced BRAF(V600)-mutant melanoma (coBRIM): updated efficacy results from a randomised, double-blind, phase 3 trial. Lancet Oncol. 2016 Sep;17(9):1248-60. Epub 2016 Jul 30. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30122-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27480103 PubMed]
+# '''COMBI-v:''' Robert C, Karaszewska B, Schachter J, Rutkowski P, Mackiewicz A, Stroiakovski D, Lichinitser M, Dummer R, Grange F, Mortier L, Chiarion-Sileni V, Drucis K, Krajsova I, Hauschild A, Lorigan P, Wolter P, Long GV, Flaherty K, Nathan P, Ribas A, Martin AM, Sun P, Crist W, Legos J, Rubin SD, Little SM, Schadendorf D. Improved overall survival in melanoma with combined dabrafenib and trametinib. N Engl J Med. 2015 Jan 1;372(1):30-9. Epub 2014 Nov 16. [https://www.nejm.org/doi/full/10.1056/NEJMoa1412690 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25399551 PubMed]
+# '''COLUMBUS:''' Dummer R, Ascierto PA, Gogas HJ, Arance A, Mandala M, Liszkay G, Garbe C, Schadendorf D, Krajsova I, Gutzmer R, Chiarion-Sileni V, Dutriaux C, de Groot JWB, Yamazaki N, Loquai C, Moutouh-de Parseval LA, Pickard MD, Sandor V, Robert C, Flaherty KT. Encorafenib plus binimetinib versus vemurafenib or encorafenib in patients with BRAF-mutant melanoma (COLUMBUS): a multicentre, open-label, randomised phase 3 trial. Lancet Oncol. 2018 May;19(5):603-615. Epub 2018 Mar 21. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30142-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29573941 PubMed]
+## '''Update:''' Dummer R, Ascierto PA, Gogas HJ, Arance A, Mandala M, Liszkay G, Garbe C, Schadendorf D, Krajsova I, Gutzmer R, Chiarion Sileni V, Dutriaux C, de Groot JWB, Yamazaki N, Loquai C, Moutouh-de Parseval LA, Pickard MD, Sandor V, Robert C, Flaherty KT. Overall survival in patients with BRAF-mutant melanoma receiving encorafenib plus binimetinib versus vemurafenib or encorafenib (COLUMBUS): a multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2018 Sep 12. [Epub ahead of print] [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30497-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30219628 PubMed]
+
+=Advanced or metastatic disease, BRAF inhibitor-exposed=
+==Trametinib monotherapy {{#subobject:a1060c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:75aeb1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878037/ Kim et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:black; color:white"|ORR: 0%
+|-
+|}
+====Chemotherapy====
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+===References===
+# Kim KB, Kefford R, Pavlick AC, Infante JR, Ribas A, Sosman JA, Fecher LA, Millward M, McArthur GA, Hwu P, Gonzalez R, Ott PA, Long GV, Gardner OS, Ouellet D, Xu Y, DeMarini DJ, Le NT, Patel K, Lewis KD. Phase II study of the MEK1/MEK2 inhibitor trametinib in patients with metastatic BRAF-mutant cutaneous melanoma previously treated with or without a BRAF inhibitor. J Clin Oncol. 2013 Feb 1;31(4):482-9. Epub 2012 Dec 17. [http://jco.ascopubs.org/content/31/4/482.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878037/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23248257 PubMed]
+
+[[Category:Melanoma regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Skin cancers]]

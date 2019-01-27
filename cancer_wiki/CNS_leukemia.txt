@@ -1,0 +1,514 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:SeemaNagpal.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Seemanagpal|Seema Nagpal, MD]]<br>Palo Alto, CA</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+''Note: these regimens are primarily culled from literature that describes them as part of a comprehensive treatment regimen. If that is the case, the original regimens can be found on the following pages:''
+*[[Acute promyelocytic leukemia]]
+*[[Adult T-cell leukemia-lymphoma]]
+*[[B-cell acute lymphoblastic leukemia]]
+*[[T-cell acute lymphoblastic leukemia]]
+
+=CNS prophylaxis=
+
+==IT Cytarabine & Methotrexate {{#subobject:c47af4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 16 doses {{#subobject:8be879|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.21776/full Thomas et al. 2006]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2
+*[[Cytarabine (Cytosar)]] 100 mg IT once on day 7
+
+'''Given each cycle for a total of 16 intrathecal treatments'''
+
+===Variant #2, 6 to 8 doses {{#subobject:f842e7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/17/8/2461.long Thomas et al. 1999]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://bloodjournal.hematologylibrary.org/content/103/12/4396.long Thomas et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ Ravandi et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Total number of doses depends on risk for CNS relapse based on serum lactate dehydrogenase (LDH) greater than 1400 IU/L and/or proliferative index percentage of S + G2M greater than or equal to 14%.''
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2
+*[[Cytarabine (Cytosar)]] 100 mg IT once on day 7 or 8
+
+'''Given each cycle (approximately every 3 weeks) for a total of 6 or 8 intrathecal treatments'''
+
+===References===
+# Thomas DA, Cortes J, O'Brien S, Pierce S, Faderl S, Albitar M, Hagemeister FB, Cabanillas FF, Murphy S, Keating MJ, Kantarjian H. Hyper-CVAD program in Burkitt's-type adult acute lymphoblastic leukemia. J Clin Oncol. 1999 Aug;17(8):2461-70. [http://jco.ascopubs.org/content/17/8/2461.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10561310 PubMed]
+# Thomas DA, Faderl S, Cortes J, O'Brien S, Giles FJ, Kornblau SM, Garcia-Manero G, Keating MJ, Andreeff M, Jeha S, Beran M, Verstovsek S, Pierce S, Letvak L, Salvado A, Champlin R, Talpaz M, Kantarjian H. Treatment of Philadelphia chromosome-positive acute lymphocytic leukemia with hyper-CVAD and imatinib mesylate. Blood. 2004 Jun 15;103(12):4396-407. Epub 2003 Oct 9. [http://bloodjournal.hematologylibrary.org/content/103/12/4396.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14551133 PubMed]
+## '''Update:''' Daver N, Thomas D, Ravandi F, Cortes J, Garris R, Jabbour E, Garcia-Manero G, Borthakur G, Kadia T, Rytting M, Konopleva M, Kantarjian H, O' Brien S. Final report of a phase II study of imatinib mesylate with hyper-CVAD for the frontline treatment of adult patients with Philadelphia chromosome positive (Ph+) acute lymphoblastic leukemia. Haematologica. 2015 May;100(5):653-61. Epub 2015 Feb 14. [http://www.haematologica.org/content/100/5/653 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420214/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25682595 PubMed]
+# Thomas DA, Faderl S, O'Brien S, Bueso-Ramos C, Cortes J, Garcia-Manero G, Giles FJ, Verstovsek S, Wierda WG, Pierce SA, Shan J, Brandt M, Hagemeister FB, Keating MJ, Cabanillas F, Kantarjian H. Chemoimmunotherapy with hyper-CVAD plus rituximab for the treatment of adult Burkitt and Burkitt-type lymphoma or acute lymphoblastic leukemia. Cancer. 2006 Apr 1;106(7):1569-80. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.21776/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16502413 PubMed]
+## '''Update:''' Fayad L, Thomas D, Romaguera J. Update of the MD Anderson Cancer Center experience with hyper-CVAD and rituximab for the treatment of mantle cell and Burkitt-type lymphomas. Clin Lymphoma Myeloma. 2007 Dec;8 Suppl 2:S57-62. [https://www.ncbi.nlm.nih.gov/pubmed/18284717 PubMed]
+# Ravandi F, O'Brien S, Thomas D, Faderl S, Jones D, Garris R, Dara S, Jorgensen J, Kebriaei P, Champlin R, Borthakur G, Burger J, Ferrajoli A, Garcia-Manero G, Wierda W, Cortes J, Kantarjian H. First report of phase 2 study of dasatinib with hyper-CVAD for the frontline treatment of patients with Philadelphia chromosome-positive (Ph+) acute lymphoblastic leukemia. Blood. 2010 Sep 23;116(12):2070-7. Epub 2010 May 13. [http://bloodjournal.hematologylibrary.org/content/116/12/2070.long link to original article] '''contains verified protocol'''--parts of the protocol were not explicitly listed in this reference, which instead referred to [[#Hyper-CVAD_.26_Imatinib_.28Gleevec.29_.28induction_.26_maintenance.29|Thomas et al. 2004]] and [[#Hyper-CVAD_.28induction.29|Kantarjian et al. 2004]] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20466853 PubMed]
+## '''Update:''' Ravandi F, O'Brien SM, Cortes JE, Thomas DM, Garris R, Faderl S, Burger JA, Rytting ME, Ferrajoli A, Wierda WG, Verstovsek S, Champlin R, Kebriaei P, McCue DA, Huang X, Jabbour E, Garcia-Manero G, Estrov Z, Kantarjian HM. Long-term follow-up of a phase 2 study of chemotherapy plus dasatinib for the initial treatment of patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Cancer. 2015 Dec 1;121(23):4158-64. Epub 2015 Aug 26. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29646/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4666803/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26308885 PubMed]
+
+==IT Cytarabine, Methotrexate, Methylprednisolone {{#subobject:eb3e09|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:daa284|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 Huguet et al. 2009 (GRAALL-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Intrathecal treatments are given on days 1 & 8 of induction, day 29 of each series of consolidation blocks, and day 1 of late intensification -- 6 doses total.''
+====CNS chemotherapy====
+*[[Cytarabine (Cytosar)]] 40 mg IT mixed with methotrexate and methylprednisolone 
+*[[Methotrexate (MTX)]] 15 mg IT mixed with cytarabine and methylprednisolone 
+*[[Methylprednisolone (Solumedrol)]] 40 mg IT mixed with cytarabine and methotrexate
+
+'''6 doses'''
+
+===References===
+# '''GRAALL-2003:''' Huguet F, Leguay T, Raffoux E, Thomas X, Beldjord K, Delabesse E, Chevallier P, Buzyn A, Delannoy A, Chalandon Y, Vernant JP, Lafage-Pochitaloff M, Chassevent A, Lhéritier V, Macintyre E, Béné MC, Ifrah N, Dombret H. Pediatric-inspired therapy in adults with Philadelphia chromosome-negative acute lymphoblastic leukemia: the GRAALL-2003 study. J Clin Oncol. 2009 Feb 20;27(6):911-8. Epub 2009 Jan 5. Erratum in: J Clin Oncol. 2009 May 20;27(15):2574. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19124805 PubMed]
+
+==IT Cytarabine, Methotrexate, Prednisone {{#subobject:d81b63|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:6f33ca|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/25/34/5458.long Tsukasaki et al. 2007 (JCOG 9801)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5024033/ Ishida et al. 2015]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''Treatments were given after cycles 1, 3, and 5 after platelets greater than 70 × 10<sup>9</sup>/L and within 2 days before the next cycle.''
+====CNS chemotherapy====
+*[[Cytarabine (Cytosar)]] 40 mg IT mixed with methotrexate and prednisone 
+*[[Methotrexate (MTX)]] 15 mg IT mixed with cytarabine and prednisone
+*[[Prednisone (Sterapred)]] 10 mg IT mixed with cytarabine and methotrexate
+
+'''3 doses''' 
+
+===References===
+<!-- Presented in part at the 47th Annual Meeting of the American Society of Hematology, December 10-13, 2005, Atlanta, GA. -->
+# Tsukasaki K, Utsunomiya A, Fukuda H, Shibata T, Fukushima T, Takatsuka Y, Ikeda S, Masuda M, Nagoshi H, Ueda R, Tamura K, Sano M, Momita S, Yamaguchi K, Kawano F, Hanada S, Tobinai K, Shimoyama M, Hotta T, Tomonaga M; Japan Clinical Oncology Group Study JCOG9801. VCAP-AMP-VECP compared with biweekly CHOP for adult T-cell leukemia-lymphoma: Japan Clinical Oncology Group Study JCOG9801. J Clin Oncol. 2007 Dec 1;25(34):5458-64. Epub 2007 Oct 29. [http://jco.ascopubs.org/content/25/34/5458.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17968021 PubMed]
+# Ishida T, Jo T, Takemoto S, Suzushima H, Uozumi K, Yamamoto K, Uike N, Saburi Y, Nosaka K, Utsunomiya A, Tobinai K, Fujiwara H, Ishitsuka K, Yoshida S, Taira N, Moriuchi Y, Imada K, Miyamoto T, Akinaga S, Tomonaga M, Ueda R. Dose-intensified chemotherapy alone or in combination with mogamulizumab in newly diagnosed aggressive adult T-cell leukaemia-lymphoma: a randomized phase II study. Br J Haematol. 2015 Jun;169(5):672-82. Epub 2015 Mar 2. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13338/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5024033/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25733162 PubMed]
+
+==IT Cytarabine & WBRT {{#subobject:d62e53|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cytarabine & WBRT: Cytarabine & '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:b3f29d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Note: while this is not chemoradiation in the traditional sense, the delivery of chemotherapy and radiation overlap so may have synergistic effects.''
+====Chemoradiotherapy====
+*[[Cytarabine (Cytosar)]] as follows:
+**Consolidation & Maintenance: 50 mg IT once per week for 4 weeks, then once per quarter for 4 doses (8 doses, total)
+*[[External_beam_radiotherapy|Whole-brain irradiation]] to 2400 cGy, given during consolidation
+
+===References===
+# Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://bloodjournal.hematologylibrary.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://bloodjournal.hematologylibrary.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://bloodjournal.hematologylibrary.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://bloodjournal.hematologylibrary.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+
+==IT Methotrexate monotherapy {{#subobject:98fb82|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:0f3d6e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] as follows:
+**Phase 1: 12 mg IT once on day 15
+**Phase 2: 12 mg IT once per day on days 1, 8, 15, 22
+
+===References===
+# Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://bloodjournal.hematologylibrary.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://bloodjournal.hematologylibrary.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://bloodjournal.hematologylibrary.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://bloodjournal.hematologylibrary.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+
+==IT Methotrexate & Hydrocortisone {{#subobject:d0d04e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:edc35f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/50/3/471.long Sullivan et al. 1977]
+| style="background-color:#1a9851" |Phase III (C)
+|IT MTX, Ara-C, HC
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://www.bloodjournal.org/content/126/6/746.long Kim et al. 2015]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Treatment can be started during or after induction.''
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] 15 mg IT (schedule not specified), admixed with hydrocortisone
+*[[Hydrocortisone (Cortef)]] 50 mg IT (schedule not specified), admixed with methotrexate
+
+'''Up to 10 doses'''
+
+===References===
+# Sullivan MP, Moon TE, Trueworthy R, Vietti TJ, Humphrey GB, Komp D. Combination intrathecal therapy for meningeal leukemia: two versus three drugs. Blood. 1977 Sep;50(3):471-9. [http://www.bloodjournal.org/content/50/3/471.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/577889 PubMed]
+# Kim DY, Joo YD, Lim SN, Kim SD, Lee JH, Lee JH, Kim DH, Kim K, Jung CW, Kim I, Yoon SS, Park S, Ahn JS, Yang DH, Lee JJ, Lee HS, Kim YS, Mun YC, Kim H, Park JH, Moon JH, Sohn SK, Lee SM, Lee WS, Kim KH, Won JH, Hyun MS, Park J, Lee JH, Shin HJ, Chung JS, Lee H, Eom HS, Lee GW, Cho YU, Jang S, Park CJ, Chi HS, Lee KH; Adult Acute Lymphoblastic Leukemia Working Party of the Korean Society of Hematology. Nilotinib combined with multiagent chemotherapy for newly diagnosed Philadelphia-positive acute lymphoblastic leukemia. Blood. 2015 Aug 6;126(6):746-56. Epub 2015 Jun 11. [http://www.bloodjournal.org/content/126/6/746.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26065651 PubMed]
+
+==IT Methotrexate & Methylprednisolone {{#subobject:6a4bad|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:358389|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/116/17/3171.long Lo-Coco et al. 2010 (GIMEMA AIDA-2000)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''It is not explicitly stated but presumably these are admixed and given together.''
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] 12 mg IT once prior to each consolidation cycle
+*[[Methylprednisolone (Solumedrol)]] 40 mg IT once prior to each consolidation cycle
+
+'''Total of 3 doses'''
+
+===References===
+# '''GIMEMA AIDA-2000:''' Lo-Coco F, Avvisati G, Vignetti M, Breccia M, Gallo E, Rambaldi A, Paoloni F, Fioritoni G, Ferrara F, Specchia G, Cimino G, Diverio D, Borlenghi E, Martinelli G, Di Raimondo F, Di Bona E, Fazi P, Peta A, Bosi A, Carella AM, Fabbiano F, Pogliani EM, Petti MC, Amadori S, Mandelli F; Italian GIMEMA Cooperative Group. Front-line treatment of acute promyelocytic leukemia with AIDA induction followed by risk-adapted consolidation for adults younger than 61 years: results of the AIDA-2000 trial of the GIMEMA Group. Blood. 2010 Oct 8;116(17):3171-9. Epub 2010 Jul 19. [http://www.bloodjournal.org/content/116/17/3171.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20644121 PubMed]
+
+==IT Methotrexate & WBRT {{#subobject:4b9a67|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+IT Methotrexate & WBRT: '''<u>I</u>'''ntra'''<u>T</u>'''hecal Methotrexate & '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:b1f086|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/69/4/1242.full.pdf+html Linker et al. 1987]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1998.16.3.920 Nachman et al. 1998]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#IT_Methotrexate_monotherapy|Intensified IT MTX]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Treatment is started within 1 week of achieving complete remission. Details are from Linker et al. 1987''
+====Chemoradiotherapy====
+*[[Methotrexate (MTX)]] 12 mg IT once per week x 6 doses concurrent with radiation
+*[[External_beam_radiotherapy|Whole-brain irradiation]], 18 Gy total given in 10 fractions over 12 to 14 days
+
+===References===
+# Linker CA, Levitt LJ, O'Donnell M, Ries CA, Link MP, Forman SJ, Farbstein MJ. Improved results of treatment of adult acute lymphoblastic leukemia. Blood. 1987 Apr;69(4):1242-8. [http://bloodjournal.hematologylibrary.org/content/69/4/1242.full.pdf+html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/3470055 PubMed]
+## '''Update:''' Linker CA, Levitt LJ, O'Donnell M, Forman SJ, Ries CA. Treatment of adult acute lymphoblastic leukemia with intensive cyclical chemotherapy: a follow-up report. Blood. 1991 Dec 1;78(11):2814-22. [http://bloodjournal.hematologylibrary.org/content/78/11/2814.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1835410 PubMed]
+# Nachman J, Sather HN, Cherlow JM, Sensel MG, Gaynon PS, Lukens JN, Wolff L, Trigg ME. Response of children with high-risk acute lymphoblastic leukemia treated with and without cranial irradiation: a report from the Children's Cancer Group. J Clin Oncol. 1998 Mar;16(3):920-30. [http://ascopubs.org/doi/abs/10.1200/JCO.1998.16.3.920 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9508174 PubMed]
+
+==Mercaptopurine & WBRT {{#subobject:fab960|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Mercaptopurine & WBRT: Mercaptopurine & '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:846b99|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 Huguet et al. 2009 (GRAALL-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Chemoradiation is given before maintenance therapy.''
+====Chemoradiotherapy====
+*[[Mercaptopurine (Purinethol)]] 60 mg/m<sup>2</sup>/day PO during irradiation
+*[[External_beam_radiotherapy|Whole-brain irradiation]] to 18 Gy (details not provided)
+
+'''One course'''
+
+===References===
+# '''GRAALL-2003:''' Huguet F, Leguay T, Raffoux E, Thomas X, Beldjord K, Delabesse E, Chevallier P, Buzyn A, Delannoy A, Chalandon Y, Vernant JP, Lafage-Pochitaloff M, Chassevent A, Lhéritier V, Macintyre E, Béné MC, Ifrah N, Dombret H. Pediatric-inspired therapy in adults with Philadelphia chromosome-negative acute lymphoblastic leukemia: the GRAALL-2003 study. J Clin Oncol. 2009 Feb 20;27(6):911-8. Epub 2009 Jan 5. Erratum in: J Clin Oncol. 2009 May 20;27(15):2574. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19124805 PubMed]
+
+==WBRT {{#subobject:4c3d39|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+WBRT: '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:bcb463|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.sciencedirect.com/science/article/pii/S0140673681918493 Nesbit et al. 1981]
+| style="background-color:#1a9851" |Phase III (C)
+|Lower-dose WBRT
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198303033080902 Freeman et al. 1983 (CALGB 7611)]
+| style="background-color:#1a9851" |Phase III (C)
+|Intermediate-dose MTX
+| style="background-color:#ffffbf" |Mixed results
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754320/ Pui et al. 2009 (Total Therapy XV)]
+| style="background-color:#1a9851" |Phase III (C)
+|Observation
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: in Total Therapy XV, this is the control arm of a de-escalation study.''
+====Radiotherapy====
+*[[External_beam_radiotherapy|Whole-brain irradiation]]
+
+'''One course'''
+
+===References===
+# Nesbit ME Jr, Sather HN, Robison LL, Ortega J, Littman PS, D'Angio GJ, Hammond GD. Presymptomatic central nervous system therapy in previously untreated childhood acute lymphoblastic leukaemia: comparison of 1800 rad and 2400 rad: a report for Children's Cancer Study Group. Lancet. 1981 Feb 28;1(8218):461-6. [https://www.sciencedirect.com/science/article/pii/S0140673681918493 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/6110090 PubMed]
+# '''CALGB 7611:''' Freeman AI, Weinberg V, Brecher ML, Jones B, Glicksman AS, Sinks LF, Weil M, Pleuss H, Hananian J, Burgert EO Jr, Gilchrist GS, Necheles T, Harris M, Kung F, Patterson RB, Maurer H, Leventhal B, Chevalier L, Forman E, Holland JF. Comparison of intermediate-dose methotrexate with cranial irradiation for the post-induction treatment of acute lymphocytic leukemia in children. N Engl J Med. 1983 Mar 3;308(9):477-84. [https://www.nejm.org/doi/full/10.1056/NEJM198303033080902 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/6571946 PubMed]
+## '''Update:''' Freeman AI, Boyett JM, Glicksman AS, Brecher ML, Leventhal BG, Sinks LF, Holland JF. Intermediate-dose methotrexate versus cranial irradiation in childhood acute lymphoblastic leukemia: a ten-year follow-up. Med Pediatr Oncol. 1997 Feb;28(2):98-107. [https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1096-911X(199702)28:2%3C98::AID-MPO3%3E3.0.CO;2-N link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/8986145 PubMed]
+# '''Total Therapy XV:''' Pui CH, Campana D, Pei D, Bowman WP, Sandlund JT, Kaste SC, Ribeiro RC, Rubnitz JE, Raimondi SC, Onciu M, Coustan-Smith E, Kun LE, Jeha S, Cheng C, Howard SC, Simmons V, Bayles A, Metzger ML, Boyett JM, Leung W, Handgretinger R, Downing JR, Evans WE, Relling MV. Treating childhood acute lymphoblastic leukemia without cranial irradiation. N Engl J Med. 2009 Jun 25;360(26):2730-41. [https://www.nejm.org/doi/full/10.1056/NEJMoa0900386 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754320/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19553647 PubMed]
+
+=CNS treatment=
+
+==IT Cytarabine & Methotrexate {{#subobject:7536ce|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c0aa53|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/17/8/2461.long Thomas et al. 1999]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: while there is measurable CNS disease, both drugs are given every week, alternating, usually separated by at least 48 hours (e.g., on Mondays & Thursdays).''
+====CNS chemotherapy====
+*[[Methotrexate (MTX)]] as follows:
+**Measurable CNS disease: 12 mg (6 mg if given via Ommaya reservoir) IT once per week
+**First 4 weeks after cell count & cytology are negative: 12 mg (6 mg if given via Ommaya reservoir) IT once per week on weeks 1 & 3
+**Remainder of induction: 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2 of each cycle
+*[[Cytarabine (Cytosar)]] as follows:
+**Measurable CNS disease: 100 mg IT once per week
+**First 4 weeks after cell count & cytology are negative: 100 mg IT once per week on weeks 2 & 4
+**Remainder of induction: 100 mg IT once on day 7 or 8 of each cycle
+
+===References===
+# Thomas DA, Cortes J, O'Brien S, Pierce S, Faderl S, Albitar M, Hagemeister FB, Cabanillas FF, Murphy S, Keating MJ, Kantarjian H. Hyper-CVAD program in Burkitt's-type adult acute lymphoblastic leukemia. J Clin Oncol. 1999 Aug;17(8):2461-70. [http://jco.ascopubs.org/content/17/8/2461.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10561310 PubMed]
+
+==IT Cytarabine, Methotrexate, Methylprednisolone {{#subobject:833d98|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:0ded48|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 Huguet et al. 2009 (GRAALL-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Intrathecal treatments are given as follows: eight between days −7 and 21 of induction, four during the first two consolidation blocks, and one at day 29 of consolidation blocks 3 and 6 -- 14 total doses.''
+====CNS chemotherapy====
+*[[Cytarabine (Cytosar)]] 40 mg IT mixed with methotrexate and methylprednisolone 
+*[[Methotrexate (MTX)]] 15 mg IT mixed with cytarabine and methylprednisolone 
+*[[Methylprednisolone (Solumedrol)]] 40 mg IT mixed with cytarabine and methotrexate
+
+'''14 doses'''
+
+===References===
+# '''GRAALL-2003:''' Huguet F, Leguay T, Raffoux E, Thomas X, Beldjord K, Delabesse E, Chevallier P, Buzyn A, Delannoy A, Chalandon Y, Vernant JP, Lafage-Pochitaloff M, Chassevent A, Lhéritier V, Macintyre E, Béné MC, Ifrah N, Dombret H. Pediatric-inspired therapy in adults with Philadelphia chromosome-negative acute lymphoblastic leukemia: the GRAALL-2003 study. J Clin Oncol. 2009 Feb 20;27(6):911-8. Epub 2009 Jan 5. Erratum in: J Clin Oncol. 2009 May 20;27(15):2574. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19124805 PubMed]
+
+==IT Cytarabine, Methotrexate, WBRT {{#subobject:2457a6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cytarabine, Methotrexate, WBRT: Cytarabine, Methotrexate, '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:b3fdae|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/103/12/4396.long Thomas et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ Ravandi et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: while there is measurable CNS disease, both drugs are given every week, alternating, usually separated by at least 48 hours (e.g., on Mondays & Thursdays).''
+====Chemoradiotherapy====
+*[[Methotrexate (MTX)]] as follows:
+**Measurable CNS disease: 12 mg (6 mg if given via Ommaya reservoir) IT once per week
+**First 4 weeks after cell count & cytology are negative: 12 mg (6 mg if given via Ommaya reservoir) IT once per week on weeks 1 & 3
+**Remainder of induction: 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2 of each cycle
+*[[Cytarabine (Cytosar)]] as follows:
+**Measurable CNS disease: 100 mg IT once per week
+**First 4 weeks after cell count & cytology are negative: 100 mg IT once per week on weeks 2 & 4
+**Remainder of induction: 100 mg IT once on day 7 or 8 of each cycle
+*Therapeutic [[External_beam_radiotherapy|whole-brain irradiation]] is given to patients with CNS disease at presentation
+
+===References===
+# Thomas DA, Faderl S, Cortes J, O'Brien S, Giles FJ, Kornblau SM, Garcia-Manero G, Keating MJ, Andreeff M, Jeha S, Beran M, Verstovsek S, Pierce S, Letvak L, Salvado A, Champlin R, Talpaz M, Kantarjian H. Treatment of Philadelphia chromosome-positive acute lymphocytic leukemia with hyper-CVAD and imatinib mesylate. Blood. 2004 Jun 15;103(12):4396-407. Epub 2003 Oct 9. [http://bloodjournal.hematologylibrary.org/content/103/12/4396.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14551133 PubMed]
+## '''Update:''' Daver N, Thomas D, Ravandi F, Cortes J, Garris R, Jabbour E, Garcia-Manero G, Borthakur G, Kadia T, Rytting M, Konopleva M, Kantarjian H, O' Brien S. Final report of a phase II study of imatinib mesylate with hyper-CVAD for the frontline treatment of adult patients with Philadelphia chromosome positive (Ph+) acute lymphoblastic leukemia. Haematologica. 2015 May;100(5):653-61. Epub 2015 Feb 14. [http://www.haematologica.org/content/100/5/653 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420214/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25682595 PubMed]
+# Ravandi F, O'Brien S, Thomas D, Faderl S, Jones D, Garris R, Dara S, Jorgensen J, Kebriaei P, Champlin R, Borthakur G, Burger J, Ferrajoli A, Garcia-Manero G, Wierda W, Cortes J, Kantarjian H. First report of phase 2 study of dasatinib with hyper-CVAD for the frontline treatment of patients with Philadelphia chromosome-positive (Ph+) acute lymphoblastic leukemia. Blood. 2010 Sep 23;116(12):2070-7. Epub 2010 May 13. [http://bloodjournal.hematologylibrary.org/content/116/12/2070.long link to original article] '''contains verified protocol'''--parts of the protocol were not explicitly listed in this reference, which instead referred to [[#Hyper-CVAD_.26_Imatinib_.28Gleevec.29_.28induction_.26_maintenance.29|Thomas et al. 2004]] and [[#Hyper-CVAD_.28induction.29|Kantarjian et al. 2004]] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20466853 PubMed]
+## '''Update:''' Ravandi F, O'Brien SM, Cortes JE, Thomas DM, Garris R, Faderl S, Burger JA, Rytting ME, Ferrajoli A, Wierda WG, Verstovsek S, Champlin R, Kebriaei P, McCue DA, Huang X, Jabbour E, Garcia-Manero G, Estrov Z, Kantarjian HM. Long-term follow-up of a phase 2 study of chemotherapy plus dasatinib for the initial treatment of patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Cancer. 2015 Dec 1;121(23):4158-64. Epub 2015 Aug 26. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29646/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4666803/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26308885 PubMed]
+
+==IT Methotrexate monotherapy {{#subobject:d4a3c5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:183c87|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM196107272650404 Shanbrom et al. 1961]
+| style="background-color:#ffffbe" |Pilot
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 Huguet et al. 2009 (GRAALL-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Methotrexate (MTX)]] as follows:
+**Prephase: 15 mg IT once at some point between days -7 and -4
+
+===References===
+# Shanbrom E, Miller S, Fairbanks VF. Intrathecal administration of amethopterin in leukemic encephalopathy of young adults. N Engl J Med. 1961 Jul 27;265:169-71. [https://www.nejm.org/doi/full/10.1056/NEJM196107272650404 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/13750662 PubMed]
+# '''GRAALL-2003:''' Huguet F, Leguay T, Raffoux E, Thomas X, Beldjord K, Delabesse E, Chevallier P, Buzyn A, Delannoy A, Chalandon Y, Vernant JP, Lafage-Pochitaloff M, Chassevent A, Lhéritier V, Macintyre E, Béné MC, Ifrah N, Dombret H. Pediatric-inspired therapy in adults with Philadelphia chromosome-negative acute lymphoblastic leukemia: the GRAALL-2003 study. J Clin Oncol. 2009 Feb 20;27(6):911-8. Epub 2009 Jan 5. Erratum in: J Clin Oncol. 2009 May 20;27(15):2574. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19124805 PubMed]
+
+==IT Methotrexate & WBRT {{#subobject:d129ea|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+IT Methotrexate & WBRT: '''<u>I</u>'''ntra'''<u>T</u>'''hecal Methotrexate & '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:f7b824|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/69/4/1242.full.pdf+html Linker et al. 1987]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Treatment starts while patient is receiving induction therapy.''
+====Chemoradiotherapy====
+*[[Methotrexate (MTX)]] as follows:
+**Induction: 12 mg IT once per week x 10 doses 
+**Remainder of first year of therapy: 12 mg IT once per month
+*[[External_beam_radiotherapy|Whole-brain irradiation]], 28 Gy total given (no details provided)
+
+===References===
+# Linker CA, Levitt LJ, O'Donnell M, Ries CA, Link MP, Forman SJ, Farbstein MJ. Improved results of treatment of adult acute lymphoblastic leukemia. Blood. 1987 Apr;69(4):1242-8. [http://bloodjournal.hematologylibrary.org/content/69/4/1242.full.pdf+html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/3470055 PubMed]
+## '''Update:''' Linker CA, Levitt LJ, O'Donnell M, Forman SJ, Ries CA. Treatment of adult acute lymphoblastic leukemia with intensive cyclical chemotherapy: a follow-up report. Blood. 1991 Dec 1;78(11):2814-22. [http://bloodjournal.hematologylibrary.org/content/78/11/2814.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1835410 PubMed]
+
+==Mercaptopurine & WBRT {{#subobject:d6ba9e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Mercaptopurine & WBRT: Mercaptopurine & '''<u>W</u>'''hole '''<u>B</u>'''rain '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:cd21c7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 Huguet et al. 2009 (GRAALL-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Treatment administered before HSCT or maintanence initiation.''
+====Chemoradiotherapy====
+*[[Mercaptopurine (Purinethol)]] 60 mg/m<sup>2</sup>/day PO during irradiation
+*[[External_beam_radiotherapy|Whole-brain irradiation]] as follows:
+**15 Gy before HCT (details not provided), or
+**24 Gy before maintenance therapy initiation (details not provided)
+
+'''One course'''
+
+===References===
+# '''GRAALL-2003:''' Huguet F, Leguay T, Raffoux E, Thomas X, Beldjord K, Delabesse E, Chevallier P, Buzyn A, Delannoy A, Chalandon Y, Vernant JP, Lafage-Pochitaloff M, Chassevent A, Lhéritier V, Macintyre E, Béné MC, Ifrah N, Dombret H. Pediatric-inspired therapy in adults with Philadelphia chromosome-negative acute lymphoblastic leukemia: the GRAALL-2003 study. J Clin Oncol. 2009 Feb 20;27(6):911-8. Epub 2009 Jan 5. Erratum in: J Clin Oncol. 2009 May 20;27(15):2574. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2015.61.5385 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19124805 PubMed]
+
+[[Category:CNS leukemia regimens]]
+[[Category:Disease-specific pages]]
+[[Category:CNS cancers]]

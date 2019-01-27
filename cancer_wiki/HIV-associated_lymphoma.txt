@@ -1,0 +1,1050 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Jcvillasboas.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Jcvillasboas|J.C. Villasboas Bisneto, MD]]<br>Rochester, MN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+''The most common HIV-associated lymphomas are of [[Diffuse_large_B-cell_lymphoma|DLBCL]] or [[Burkitt lymphoma]] histology; plasmablastic lymphoma and primary effusion lymphomas are also frequently seen in advanced-stage HIV/AIDS. In patients with a normal CD4+ T-cell count and well-controlled HIV, the lymphoma is typically treated as per the histologic subtype. For others, regimens specific to HIV-associated lymphoma have been developed and are included here.''
+=Upfront therapy=
+
+==CHOP {{#subobject:6bef2f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+<br>CHOP-21: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone every '''<u>21</u>''' days
+<br>ACOP
+<br>CAVP
+<br>COPA
+<br>VACP
+<br>VCAP
+===Regimen {{#subobject:f5ab10|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ Kaplan et al. 2005 (AMC010)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#R-CHOP|R-CHOP]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*Combination antiretrovirals were required
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] 5 mcg/kg SC once per day from days 4 to 13 or until ANC greater than 10k/uL.
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Cotrimoxazole]] (dose/route/schedule not specified)
+**[[Dapsone (Aczone)]] (dose/route/schedule not specified)
+**[[Pentamidine (Nebupent)]] (dose/schedule not specified)
+
+'''21-day cycle for 3 cycles for early disease, or minimum of 6 cycles or 2 past CR for advanced disease'''
+
+====Subsequent treatment====
+*Patients with stage I, IE, or nonbulky stage II disease: [[#Radiation_therapy|IFRT]], beginning 3 weeks after the third cycle of chemotherapy
+
+===References===
+# '''AMC010:''' Kaplan LD, Lee JY, Ambinder RF, Sparano JA, Cesarman E, Chadburn A, Levine AM, Scadden DT. Rituximab does not improve clinical outcome in a randomized phase 3 trial of CHOP with or without rituximab in patients with HIV-associated non-Hodgkin lymphoma: AIDS-Malignancies Consortium Trial 010. Blood. 2005 Sep 1;106(5):1538-43. Epub 2005 May 24. [http://bloodjournal.hematologylibrary.org/content/106/5/1538.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15914552 PubMed]
+
+==CODOX-M {{#subobject:55e8f4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CODOX-M: '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin, '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate
+===Regimen {{#subobject:637c6c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/14/3/925.long Magrath et al. 1996 (77-04)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.11628/abstract Wang et al. 2003]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''Note: the original protocol of Magrath et al. 1996 did not comment on HIV status. Wang et al. 2003 retrospectively identified 8 HIV+ Burkitt lymphoma patients who had undergone treatment with CODOX-M/IVAC.''
+
+*Patients are stratified into high and low risk:
+**Low risk patients must fulfill all of the following criteria:
+***Serum LDH within the institution's normal range (for the NCI, this was less than 350 IU/L)
+***Single extraabdominal mass or completely resected abdominal disease
+**Any patients which do not meet low risk criteria are classified as high risk 
+
+''This regimen is for low risk patients.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once on day 1, then 200 mg/m<sup>2</sup> IV once per day on days 2 to 5
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] 1200 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 240 mg/m<sup>2</sup>/hour IV continuous infusion over 23 hours (total dose per cycle: 6720 mg/m<sup>2</sup>)
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 70 mg IT once on day 1
+**Patients younger than 3 years old received "appropriately reduced doses"
+*[[Methotrexate (MTX)]] 12 mg IT once on day 3
+**Patients younger than 3 years old received "appropriately reduced doses"
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 192 mg/m<sup>2</sup> IV once on day 11, starting 36 hours after the start of the day 10 [[Methotrexate (MTX)]], then 12 mg/m<sup>2</sup> IV every 6 hours thereafter until serum methotrexate level is less than 50 nmol/L
+
+'''3 cycles; each cycle starts on the same day that the patient's ANC is greater than 1000/uL''' 
+
+===References===
+# Magrath I, Adde M, Shad A, Venzon D, Seibel N, Gootenberg J, Neely J, Arndt C, Nieder M, Jaffe E, Wittes RA, Horak ID. Adults and children with small non-cleaved-cell lymphoma have a similar excellent outcome when treated with the same chemotherapy regimen. J Clin Oncol. 1996 Mar;14(3):925-34. [http://jco.ascopubs.org/content/14/3/925.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8622041 PubMed]
+# '''Retrospective:''' Wang ES, Straus DJ, Teruya-Feldstein J, Qin J, Portlock C, Moskowitz C, Goy A, Hedrick E, Zelenetz AD, Noy A. Intensive chemotherapy with cyclophosphamide, doxorubicin, high-dose methotrexate/ifosfamide, etoposide, and high-dose cytarabine (CODOX-M/IVAC) for human immunodeficiency virus-associated Burkitt lymphoma. Cancer. 2003 Sep 15;98(6):1196-205. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.11628/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12973843 PubMed]
+
+==CODOX-M/IVAC {{#subobject:4b6b9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CODOX-M/IVAC: '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin, '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate alternating with '''<u>I</u>'''fosfamide, '''<u>V</u>'''epesid (etoposide), '''<u>A</u>'''ra-'''<u>C</u>''' (cytarabine)
+
+===Regimen {{#subobject:4140f7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/14/3/925.long Magrath et al. 1996 (77-04)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.11628/abstract Wang et al. 2003]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''Note: the original protocol of Magrath et al. 1996 did not comment on HIV status. Wang et al. 2003 retrospectively identified 8 HIV+ Burkitt lymphoma patients who had undergone treatment with CODOX-M/IVAC.''
+
+*Patients are stratified into high and low risk:
+**Low risk patients must fulfill all of the following criteria:
+***Serum LDH within the institution's normal range (for the NCI, this was less than 350 IU/L)
+***Single extraabdominal mass or completely resected abdominal disease
+**Any patients which do not meet low risk criteria are classified as high risk 
+
+''This regimen is for high-risk patients.''
+====Chemotherapy, Part A: CODOX-M====
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once on day 1, then 200 mg/m<sup>2</sup> IV once per day on days 2 to 5
+*[[Vincristine (Oncovin)]] as follows:
+**Cycle 1: 1.5 mg/m<sup>2</sup> IV once per day on days 1 & 8 
+**Cycle 3: 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] 1200 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 240 mg/m<sup>2</sup>/hour IV continuous infusion over 23 hours (total dose per cycle: 6720 mg/m<sup>2</sup>)
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 70 mg IT once per day on days 1 & 3
+**Patients younger than 3 years old received "appropriately reduced doses"
+*[[Methotrexate (MTX)]] 12 mg IT once on day 15
+**Patients younger than 3 years old received "appropriately reduced doses"
+
+Patients with CNS disease at presentation received the following extra doses of intrathecal chemotherapy during cycle 1:
+*[[Cytarabine (Cytosar)]] 70 mg IT once on day 5 (in addition to doses above)
+*[[Methotrexate (MTX)]] 12 mg IT once on day 17 (in addition to dose above)
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 192 mg/m<sup>2</sup> IV once on day 11, starting 36 hours after the start of the day 10 [[Methotrexate (MTX)]], then 12 mg/m<sup>2</sup> IV every 6 hours thereafter until serum methotrexate level is less than 50 nmol/L
+*[[Sargramostim (Leukine)|GM-CSF]] 7.5 mcg/kg SC once per day, starting on day 13 and continuing until ANC greater than 1000/uL
+
+====Chemotherapy, Part B: IVAC====
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 60 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV every 12 hours on days 1 & 2 (total of 4 doses per cycle)
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg IT once on day 5
+
+Patients with CNS disease at presentation received the following extra doses of intrathecal chemotherapy during cycle 2:
+*[[Cytarabine (Cytosar)]] 70 mg IT once per day on days 7 & 9
+*[[Methotrexate (MTX)]] 12 mg IT once on day 17 (in addition to dose above)
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 360 mg/m<sup>2</sup> IV every 3 hours on days 1 to 5, given at same time as [[Ifosfamide (Ifex)]]
+*[[Sargramostim (Leukine)|GM-CSF]] 7.5 mcg/kg SC once per day, starting on day 7 and continuing until ANC greater than 1000/uL
+
+'''4 cycles (see note)'''
+
+''Note: CODOX-M and IVAC are given in an alternating fashion for a total of 4 cycles (A, B, A, B). Each cycle starts on the same day that the patient's ANC is greater than 1000/uL.''
+
+===References===
+# Magrath I, Adde M, Shad A, Venzon D, Seibel N, Gootenberg J, Neely J, Arndt C, Nieder M, Jaffe E, Wittes RA, Horak ID. Adults and children with small non-cleaved-cell lymphoma have a similar excellent outcome when treated with the same chemotherapy regimen. J Clin Oncol. 1996 Mar;14(3):925-34. [http://jco.ascopubs.org/content/14/3/925.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8622041 PubMed]
+# '''Retrospective:''' Wang ES, Straus DJ, Teruya-Feldstein J, Qin J, Portlock C, Moskowitz C, Goy A, Hedrick E, Zelenetz AD, Noy A. Intensive chemotherapy with cyclophosphamide, doxorubicin, high-dose methotrexate/ifosfamide, etoposide, and high-dose cytarabine (CODOX-M/IVAC) for human immunodeficiency virus-associated Burkitt lymphoma. Cancer. 2003 Sep 15;98(6):1196-205. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.11628/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12973843 PubMed]
+
+==dmCODOX-M - Modified Magrath {{#subobject:0a0210|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+dmCODOX-M: '''<u>d</u>'''ose-'''<u>m</u>'''odified '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin, '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate
+===Regimen {{#subobject:a4c94b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2532802/ Mead et al. 2008 (MRC/NCRI LY10)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+*Patients are stratified into high and low risk:
+**Low risk patients must fulfill at least 3 of the following criteria:
+***Normal LDH 
+***[[Performance_status#ECOG_performance_status_.28WHO.2FZubrod_score.29 | WHO performance status]] of 0 or 1
+***Ann Arbor stage I or II
+***0 or 1 extranodal sites of disease
+**Any patients which do not meet low risk criteria are classified as high risk 
+''This regimen is for low risk patients.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once on day 1, then 200 mg/m<sup>2</sup> IV once per day on days 2 to 5
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] as follows:
+**Patients 65 years old or younger: 300 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 2700 mg/m<sup>2</sup> IV continuous infusion over 23 hours (total dose per cycle: 3000 mg/m<sup>2</sup>)
+**Patients older than 65 years old: 100 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 900 mg/m<sup>2</sup> IV continuous infusion over 23 hours (total dose per cycle: 1000 mg/m<sup>2</sup>)
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 70 mg IT once per day on days 1 & 3
+*[[Methotrexate (MTX)]] 12 mg IT once on day 15
+
+Patients with CNS disease at presentation received the following extra doses of intrathecal chemotherapy:
+*[[Cytarabine (Cytosar)]] 70 mg IT once on day 5 (in addition to doses above)
+*[[Methotrexate (MTX)]] 12 mg IT once on day 17 (in addition to dose above)
+*[[Folinic acid (Leucovorin)]] 15 mg PO once on day 18, 24 hours after intrathecal [[Methotrexate (MTX)]]
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 15 mg/m<sup>2</sup> IV every 3 hours x 5 doses on day 11, starting 36 hours after start of the day 10 [[Methotrexate (MTX)]], then 15 mg/m<sup>2</sup> IV every 6 hours until methotrexate level is less than 50 nmol/L
+*[[Folinic acid (Leucovorin)]] 15 mg PO once on day 16, 24 hours after intrathecal [[Methotrexate (MTX)]]
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 13 and continuing until ANC greater than 1000/uL
+*[[Allopurinol (Zyloprim)]] PO and/or [[Rasburicase (Elitek)]] prior to starting chemotherapy
+
+'''3 cycles (see note)'''
+
+''Note: Each cycle starts on the same day that the patient's ANC is greater than 1000/uL and unsupported (that is, without transfusion) platelet count greater than 75 x 10<sup>9</sup>/L.''
+
+===References===
+# Mead GM, Barrans SL, Qian W, Walewski J, Radford JA, Wolf M, Clawson SM, Stenning SP, Yule CL, Jack AS; UK National Cancer Research Institute Lymphoma Clinical Studies Group; Australasian Leukaemia and Lymphoma Group. A prospective clinicopathologic study of dose-modified CODOX-M/IVAC in patients with sporadic Burkitt lymphoma defined using cytogenetic and immunophenotypic criteria (MRC/NCRI LY10 trial). Blood. 2008 Sep 15;112(6):2248-60. Epub 2008 Jul 8. [http://bloodjournal.hematologylibrary.org/content/112/6/2248.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2532802/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18612102 PubMed]
+
+==dmCODOX-M/IVAC - Modified Magrath {{#subobject:de3784|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+dmCODOX-M/IVAC: '''<u>d</u>'''ose-'''<u>m</u>'''odified '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin, '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate alternating with '''<u>I</u>'''fosfamide, '''<u>V</u>'''epesid (etoposide), '''<u>A</u>'''ra-'''<u>C</u>''' (cytarabine)
+
+===Regimen {{#subobject:17f796|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2532802/ Mead et al. 2008 (MRC/NCRI LY10)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+*Patients are stratified into high and low risk:
+**Low risk patients must fulfill at least 3 of the following criteria:
+***Normal LDH 
+***[[Performance_status#ECOG_performance_status_.28WHO.2FZubrod_score.29 | WHO performance status]] of 0 or 1
+***Ann Arbor stage I or II
+***0 or 1 extranodal sites of disease
+**Any patients which do not meet low risk criteria are classified as high risk 
+''This regimen is for high-risk patients.''
+====Chemotherapy, Part A: dmCODOX-M====
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once on day 1, then 200 mg/m<sup>2</sup> IV once per day on days 2 to 5
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] as follows:
+**Patients 65 years old or younger: 300 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 2700 mg/m<sup>2</sup> IV continuous infusion over 23 hours (total dose per cycle: 3000 mg/m<sup>2</sup>)
+**Patients older than 65 years old: 100 mg/m<sup>2</sup> IV over 60 minutes once on day 10, then 900 mg/m<sup>2</sup> IV continuous infusion over 23 hours (total dose per cycle: 1000 mg/m<sup>2</sup>)
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 70 mg IT once per day on days 1 & 3
+*[[Methotrexate (MTX)]] 12 mg IT once on day 15
+
+Patients with CNS disease at presentation received the following extra doses of intrathecal chemotherapy:
+*[[Cytarabine (Cytosar)]] 70 mg IT once on day 5 (in addition to doses above)
+*[[Methotrexate (MTX)]] 12 mg IT once on day 17 (in addition to dose above)
+*[[Folinic acid (Leucovorin)]] 15 mg PO once on day 18, 24 hours after intrathecal [[Methotrexate (MTX)]]
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 15 mg/m<sup>2</sup> IV every 3 hours x 5 doses on day 11, starting 36 hours after start of the day 10 [[Methotrexate (MTX)]], then 15 mg/m<sup>2</sup> IV every 6 hours until methotrexate level is less than 50 nmol/L
+*[[Folinic acid (Leucovorin)]] 15 mg PO once on day 16, 24 hours after intrathecal [[Methotrexate (MTX)]]
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 13 and continuing until ANC greater than 1000/uL
+*[[Allopurinol (Zyloprim)]] PO and/or [[Rasburicase (Elitek)]] prior to starting chemotherapy
+
+====Chemotherapy, Part B: IVAC====
+*[[Ifosfamide (Ifex)]] as follows:
+**Patients 65 years old or younger: 1500 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5
+**Patients older than 65 years old: 1000 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 60 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5
+*[[Cytarabine (Cytosar)]] as follows:
+**Patients 65 years old or younger: 2000 mg/m<sup>2</sup> IV over 3 hours every 12 hours on days 1 & 2 (total of 4 doses per cycle)
+**Patients older than 65 years old: 1000 mg/m<sup>2</sup> IV over 3 hours every 12 hours on days 1 & 2 (total of 4 doses per cycle)
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg IT once on day 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] as follows:
+**Patients 65 years old or younger: 300 mg/m<sup>2</sup> (mixed with [[Ifosfamide (Ifex)]]) IV over 60 minutes once per day on days 1 to 5, then 300 mg/m<sup>2</sup> IV every four hours x 2 doses on days 1 to 5
+**Patients older than 65 years old: 200 mg/m<sup>2</sup> (mixed with [[Ifosfamide (Ifex)]]) IV over 60 minutes once per day on days 1 to 5, then 200 mg/m<sup>2</sup> IV every four hours x 2 doses on days 1 to 5
+*[[Folinic acid (Leucovorin)]] 15 mg PO once on day 6, 24 hours after intrathecal [[Methotrexate (MTX)]]
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 7 and continuing until ANC greater than 1000/uL
+
+'''4 cycles (see note)'''
+
+''Note: dmCODOX-M and IVAC are given in an alternating fashion for a total of 4 cycles (A, B, A, B). Each cycle starts on the same day that the patient's ANC is greater than 1000/uL and unsupported (that is, without transfusion) platelet count greater than 75 x 10<sup>9</sup>/L.''
+===References===
+# Mead GM, Barrans SL, Qian W, Walewski J, Radford JA, Wolf M, Clawson SM, Stenning SP, Yule CL, Jack AS; UK National Cancer Research Institute Lymphoma Clinical Studies Group; Australasian Leukaemia and Lymphoma Group. A prospective clinicopathologic study of dose-modified CODOX-M/IVAC in patients with sporadic Burkitt lymphoma defined using cytogenetic and immunophenotypic criteria (MRC/NCRI LY10 trial). Blood. 2008 Sep 15;112(6):2248-60. Epub 2008 Jul 8. [http://bloodjournal.hematologylibrary.org/content/112/6/2248.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2532802/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18612102 PubMed]
+
+==EPOCH, dose-escalated {{#subobject:ded061|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+EPOCH: '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin)
+
+===Regimen {{#subobject:e70b4b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/101/12/4653.long Little et al. 2003]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''Note: the paper refers to this regimen as dose-adjusted EPOCH but to avoid confusion with the other version of dose-adjusted EPOCH, we refer to it as dose-escalated EPOCH, here.''
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>) 
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m<sup>2</sup>) 
+*[[Cyclophosphamide (Cytoxan)]] as follows:
+**CD4+ count less than 100/uL: 187 mg/m<sup>2</sup> IV over 15 minutes once on day 5
+**CD4+ count greater than 100/uL: 375 mg/m<sup>2</sup> IV over 15 minutes once on day 5
+**In each subsequent cycle, increase dose by 187 mg/m<sup>2</sup> if the neutrophil nadir is greater than 500/uL and platelet nadir is greater than 25 x 10<sup>9</sup>/L. Decrease dose by 187 mg/m<sup>2</sup> if the neutrophil nadir is less than 500/uL or platelet nadir is less than 25 x 10<sup>9</sup>/L.
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>) 
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 6 and continuing until ANC greater than 5000/uL past nadir
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# Little RF, Pittaluga S, Grant N, Steinberg SM, Kavlick MF, Mitsuya H, Franchini G, Gutierrez M, Raffeld M, Jaffe ES, Shearer G, Yarchoan R, Wilson WH. Highly effective treatment of acquired immunodeficiency syndrome-related lymphoma with dose-adjusted EPOCH: impact of antiretroviral therapy suspension and tumor biology. Blood. 2003 Jun 15;101(12):4653-9. Epub 2003 Feb 27. [http://www.bloodjournal.org/content/101/12/4653.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12609827 PubMed]
+
+==GMALL-R {{#subobject:b6032d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GMALL-R: '''<u>G</u>'''erman '''<u>M</u>'''ulticenter Study Group for the Treatment of Adult '''<u>A</u>'''cute '''<u>L</u>'''ymphoblastic '''<u>L</u>'''eukemia, '''<u>R</u>'''ituximab
+
+===Regimen {{#subobject:2c9694|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.27918/full Ribera et al. 2013 (Burkimab)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+
+''Numbering of days is based on prephase->A->B->C; however, certain patient populations received different ordering of regimen, see below.''
+
+====Prephase====
+*[[Cyclophosphamide (Cytoxan)]] 200 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+====Chemotherapy, Cycle A====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV over 4 hours once on day 7
+*[[Vincristine (Oncovin)]] 2 mg IV bolus once on day 8
+*[[Methotrexate (MTX)]] 1500 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 8
+**Older than 55 years: reduce dose by 50%
+*[[Ifosfamide (Ifex)]] 800 mg/m<sup>2</sup> IV over 60 minutes once per day on days 8 to 12
+*[[Dexamethasone (Decadron)]] 10 mg/m<sup>2</sup> IV bolus once per day on days 8 to 12
+*[[Teniposide (Vumon)]] 100 mg/m<sup>2</sup> IV over 60 minutes once per day on days 11 & 12
+*[[Cytarabine (Cytosar)]] 150 mg/m<sup>2</sup> IV over 60 minutes twice per day on days 11 & 12
+**Older than 55 years: reduce dose by 50%
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] (dose/route/schedule not specified), starting 12 hours after [[Methotrexate (MTX)]] infusion
+
+====Chemotherapy, Cycle B====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV over 4 hours once on day 28
+*[[Vincristine (Oncovin)]] 2 mg IV bolus once on day 29
+*[[Methotrexate (MTX)]] 1500 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 29
+**Older than 55 years: reduce dose by 50%
+*[[Cyclophosphamide (Cytoxan)]] 200 mg/m<sup>2</sup> IV over 60 minutes once per day on days 29 to 33
+*[[Dexamethasone (Decadron)]] 10 mg/m<sup>2</sup> IV bolus once per day on days 29 to 33
+*[[Doxorubicin (Adriamycin)]] 25 mg/m<sup>2</sup> IV over 15 minutes once per day on days 32 & 33
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] (dose/route/schedule not specified), starting 12 hours after [[Methotrexate (MTX)]] infusion
+
+====Chemotherapy, Cycle C====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV over 4 hours once on day 49
+*[[Vindesine (Eldisine)]] 3 mg/m<sup>2</sup> (maximum dose of 5 mg) IV bolus once on day 50
+*[[Methotrexate (MTX)]] 1500 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 50
+**Older than 55 years: reduce dose by 50%
+*[[Dexamethasone (Decadron)]] 10 mg/m<sup>2</sup> IV bolus once per day on days 50 to 54
+*[[Etoposide (Vepesid)]] 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 53 & 54
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV over 3 hours twice per day on day 54
+**Older than 55 years: reduce dose by 50%
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] (dose/route/schedule not specified), starting 12 hours after [[Methotrexate (MTX)]] infusion
+
+'''Give regimen as follows:'''
+*'''Advanced stage and younger than 55 years: A->B->C x 2 courses (6 total cycles)'''
+*'''Older than 55 years: Alternate A & B x 3 courses (6 total cycles)'''
+*'''Localized stage: 4 total cycles (unclear from protocol if this means A alternating with B or A->B->C->A)'''
+
+====CNS Prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg IT once per day on days 1, 8, 12, 29, 33
+*[[Cytarabine (Cytosar)]] 40 mg IT once per day on days 1, 8, 12, 29, 33
+*[[Dexamethasone (Decadron)]] 20 mg IT once per day on days 1, 8, 12, 29, 33 
+
+'''8 doses total'''
+
+===References===
+# Ribera JM, García O, Grande C, Esteve J, Oriol A, Bergua J, González-Campos J, Vall-Llovera F, Tormo M, Hernández-Rivas JM, García D, Brunet S, Alonso N, Barba P, Miralles P, Llorente A, Montesinos P, Moreno MJ, Hernández-Rivas JÁ, Bernal T. Dose-intensive chemotherapy including rituximab in Burkitt's leukemia or lymphoma regardless of human immunodeficiency virus infection status: final results of a phase 2 study (Burkimab). Cancer. 2013 May 1;119(9):1660-8. Epub 2013 Jan 29. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.27918/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23361927 PubMed]
+
+==LMB86 {{#subobject:9df8f5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+To be completed
+
+===References===
+# Galicier L, Fieschi C, Borie R, Meignin V, Daniel MT, Gérard L, Oksenhendler E. Intensive chemotherapy regimen (LMB86) for St Jude stage IV AIDS-related Burkitt lymphoma/leukemia: a prospective study. Blood. 2007 Oct 15;110(8):2846-54. Epub 2007 Jul 3. [http://www.bloodjournal.org/content/110/8/2846.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17609431 PubMed]
+
+==m-BACOD {{#subobject:f471bb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+m-BACOD: '''<u>m</u>'''ethotrexate (moderate dose), '''<u>B</u>'''leomycin, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin (Vincristine), '''<u>D</u>'''examethasone
+===Variant #1, "low-dose" #1 {{#subobject:d60b9a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199706053362304 Kaplan et al. 1997]
+|style="background-color:#1a9851"|Phase III (E)
+|Standard-dose m-BACOD
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is of historical interest, only.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 200 mg/m<sup>2</sup> IV once on day 15
+*[[Bleomycin (Blenoxane)]] 4 units/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 25 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+*[[Dexamethasone (Decadron)]] 3 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*GM-CSF 5 mcg/kg SC once per day on days 4 to 13 (as needed)
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 50 mg IT once per day on days 1, 8, 15, 22 of cycle 1, only
+
+'''21-day cycle for 2 cycles past complete remission (minimum of 4 cycles)'''
+
+===Variant #2, "low-dose" #2 {{#subobject:d20b9a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://jamanetwork.com/journals/jama/article-abstract/386383 Levine et al. 1991]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''Note: this is of historical interest, only; the MTX dose is slightly higher than above.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 500 mg/m<sup>2</sup> IV once on day 15
+*[[Bleomycin (Blenoxane)]] 4 units/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 25 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+*[[Dexamethasone (Decadron)]] 3 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]]
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 50 mg IT once per day on days 1, 8, 21, 28
+
+'''4 to 6 cycles'''
+
+===Variant #3, "standard-dose" {{#subobject:8d9222|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199706053362304 Kaplan et al. 1997]
+|style="background-color:#1a9851"|Phase III (C)
+|Low-dose m-BACOD
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is of historical interest, only.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 200 mg/m<sup>2</sup> IV once on day 15
+*[[Bleomycin (Blenoxane)]] 4 units/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 45 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+*[[Dexamethasone (Decadron)]] 6 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*GM-CSF 5 mcg/kg SC once per day on days 4 to 13
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 50 mg IT once per day on days 1, 8, 15, 22 of cycle 1, only
+
+'''21-day cycle for 2 cycles past complete remission (minimum of 4 cycles)'''
+
+===References===
+# Levine AM, Wernz JC, Kaplan L, Rodman N, Cohen P, Metroka C, Bennett JM, Rarick MU, Walsh C, Kahn J, Miles S, Ehmann WC, Feinberg J, Nathwani B, Gill PS, Mitsuyasu R. Low-dose chemotherapy with central nervous system prophylaxis and zidovudine maintenance in AIDS-related lymphoma: a prospective multi-institutional trial. JAMA. 1991 Jul 3;266(1):84-8. [https://jamanetwork.com/journals/jama/article-abstract/386383 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1710673 PubMed]
+# Kaplan LD, Straus DJ, Testa MA, Von Roenn J, Dezube BJ, Cooley TP, Herndier B, Northfelt DW, Huang J, Tulpule A, Levine AM; National Institute of Allergy and Infectious Diseases AIDS Clinical Trials Group. Low-dose compared with standard-dose m-BACOD chemotherapy for non-Hodgkin's lymphoma associated with human immunodeficiency virus infection. N Engl J Med. 1997 Jun 5;336(23):1641-8. [https://www.nejm.org/doi/full/10.1056/NEJM199706053362304 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9171066 PubMed]
+
+==R-CDOP {{#subobject:ec091e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CDOP: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>D</u>'''oxil (Pegylated liposomal doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+<br>DR-COP: '''<u>D</u>'''oxil (pegylated liposomal doxorubicin), '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin, '''<u>P</u>'''rednisone
+
+===Regimen {{#subobject:de2769|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530691/ Levine et al. 2012 (AMC047)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1 
+*[[Pegylated liposomal doxorubicin (Doxil)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+*"CNS prophylaxis was mandated in patients with involvement of bone marrow, testis, sinuses, or epidural regions and with stage IV and/or at least two extranodal sites, with specific regimen left to physician discretion."
+*Highly Active Antiretroviral Therapy (HAART) required; specific regimen left to physician discretion. Use of zidovudine was not allowed.
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] OR [[Pegfilgrastim (Neulasta)]] OR [[Sargramostim (Leukine)]] starting on day 3, to continue until beyond nadir of blood counts
+*Erythropoietin (e.g. [[Epoetin alfa (Procrit)]] or [[Darbepoetin alfa (Aranesp)]]) at physician discretion
+*[[:Category:PCP_prophylaxis|PCP prophylaxis]] required
+*Oral [[:Category:Fluoroquinolone|fluoroquinolone]] if CD4 cell count less than or equal to 100 and ANC less than 500/uL at entry or during treatment
+
+'''21- to 28-day cycle for up to 6 cycles'''
+
+===References===
+# '''AMC047:''' Levine AM, Noy A, Lee JY, Tam W, Ramos JC, Henry DH, Parekh S, Reid EG, Mitsuyasu R, Cooley T, Dezube BJ, Ratner L, Cesarman E, Tulpule A. Pegylated liposomal doxorubicin, rituximab, cyclophosphamide, vincristine, and prednisone in AIDS-related lymphoma: AIDS Malignancy Consortium study 047. J Clin Oncol. 2013 Jan 1;31(1):58-64. Epub 2012 Nov 19. [http://jco.ascopubs.org/content/31/1/58.full link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530691/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23169503 PubMed]
+
+==R-CHOP {{#subobject:973922|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CHOP: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin, '''<u>O</u>'''ncovin, '''<u>P</u>'''rednisone
+===Variant #1, 3 cycles {{#subobject:bbe63d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ Kaplan et al. 2005 (AMC010)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Intended for patients with stage I, IE, or nonbulky stage II disease.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day -2
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*Combination antiretrovirals were required
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] 5 mcg/kg SC once per day from days 4 to 13 or until ANC greater than 10k/uL.
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Cotrimoxazole]] (dose/schedule not specified)
+**[[Dapsone (Aczone)]] (dose/schedule not specified)
+**[[Pentamidine (Nebupent)]] (dose/schedule not specified)
+
+'''21-day cycle for 3 cycles for early disease, or minimum of 6 cycles or 2 past CR for advanced disease'''
+====Subsequent treatment====
+*[[#Radiation_therapy|IFRT]] x 40 Gy
+
+===Variant #2, prednisone 100 mg {{#subobject:b2deae|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ Kaplan et al. 2005 (AMC010)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Intended for patients with advanced disease.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day -2
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*Combination antiretrovirals were required
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] 5 mcg/kg SC once per day from days 4 to 13 or until ANC greater than 10k/uL.
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Cotrimoxazole]] (dose/schedule not specified)
+**[[Dapsone (Aczone)]] (dose/schedule not specified)
+**[[Pentamidine (Nebupent)]] (dose/schedule not specified)
+
+'''21-day cycle for a minimum of 6 cycles or 2 past CR'''
+
+''Partial or complete responders received [[#Rituximab_monotherapy|rituximab maintenane]].''
+
+===Variant #3, prednisone 40 mg/m<sup>2</sup> {{#subobject:c5fd4a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2007.06943.x/full Ribera et al. 2007x]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 40 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====CNS prophylaxis====
+''To be given with each cycle; day of administration not reported.''
+*[[Methotrexate (MTX)]] 12 mg IT
+*[[Cytarabine (Cytosar)]] 40 mg IT
+*[[Hydrocortisone (Cortef)]] 20 mg IT 
+
+====Supportive medications====
+*Combination antiretrovirals were required: one or two protease inhibitors and two nucleoside reverse transcriptase inhibitors
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Cotrimoxazole]] 160/800 mg PO TIW
+**[[Pentamidine (Nebupent)]] 300 mg inhaled (schedule not specified)
+
+'''21-day cycle for 6 cycles'''
+
+''Patients with bulky disease or a residual mass received involved field radiotherapy (details not provided).''
+
+===Variant #4 {{#subobject:29848b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/24/25/4123.long Boué et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] as follows:
+**Cycle 1: 375 mg/m<sup>2</sup> IV once on day -1
+**Cycles 2 to 6: 375 mg/m<sup>2</sup> IV once on day 1 (if tolerated)
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 40 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====CNS prophylaxis==== 
+''Decision was left to individual centers.''
+
+====Supportive medications====
+*Antiretrovirals were recommended
+*PCP prophylaxis was recommended with [[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Cotrimoxazole]] (dose/schedule not specified)
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# Kaplan LD, Lee JY, Ambinder RF, Sparano JA, Cesarman E, Chadburn A, Levine AM, Scadden DT. Rituximab does not improve clinical outcome in a randomized phase 3 trial of CHOP with or without rituximab in patients with HIV-associated non-Hodgkin lymphoma: AIDS-Malignancies Consortium Trial 010. Blood. 2005 Sep 1;106(5):1538-43. Epub 2005 May 24. [http://bloodjournal.hematologylibrary.org/content/106/5/1538.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15914552 PubMed]
+# Boué F, Gabarre J, Gisselbrecht C, Reynes J, Cheret A, Bonnet F, Billaud E, Raphael M, Lancar R, Costagliola D. Phase II trial of CHOP plus rituximab in patients with HIV-associated non-Hodgkin's lymphoma. J Clin Oncol. 2006 Sep 1;24(25):4123-8. Epub 2006 Aug 8. [http://jco.ascopubs.org/content/24/25/4123.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16896005 PubMed] 
+# Ribera JM, Oriol A, Morgades M, González-Barca E, Miralles P, López-Guillermo A, Gardella S, López A, Abella E, García M; PETHEMA/GELTAMO/GELCAB/GESIDA Groups. Safety and efficacy of cyclophosphamide, adriamycin, vincristine, prednisone and rituximab in patients with human immunodeficiency virus-associated diffuse large B-cell lymphoma: results of a phase II trial. Br J Haematol. 2008 Feb;140(4):411-9. Epub 2007 Dec 19. [https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2007.06943.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18162120 PubMed]
+
+==R-CODOX-M {{#subobject:2c9b53|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CODOX-M: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin (Vincristine), '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate 
+===Regimen {{#subobject:b34341|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4497960/ Noy et al. 2015 (AMC 048)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Intended for '''low-risk''' HIV-associated Burkitt lymphoma, and the first published prospective regimen to explicitly use rituximab. This is sometimes called modified Magrath but is in fact a second modification to the modified Magrath described by [https://www.tandfonline.com/doi/full/10.1080/1042819031000141301 LaCasce et al. 2004].''
+
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] 3000 mg/m<sup>2</sup> IV once on day 15
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 50 mg IT once on day 1
+*[[Methotrexate (MTX)]] 12 mg IT once on day 1
+*[[Hydrocortisone (Cortef)]] 50 mg IT once on day 1
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] as follows:
+** 200 mg/m<sup>2</sup> IV once 24 hours after [[Methotrexate (MTX)]], then
+** 25 mg/m<sup>2</sup> IV every 6 hours until methotrexate level is less than 50 nmol/L
+*[[Pegfilgrastim (Neulasta)]] 6 mg SC once on day 3
+*[[Filgrastim (Neupogen)]] (dose not specified) SC once per day, starting once methotrexate level is less than 50 nmol/L (approximately day 18) and continuing until ANC greater than 1000/uL
+
+'''21- to 28-day cycle for 3 cycles'''
+
+===References===
+# Lacasce A, Howard O, Lib S, Fisher D, Weng A, Neuberg D, Shipp M. Modified Magrath regimens for adults with Burkitt and Burkitt-like lymphomas: preserved efficacy with decreased toxicity. Leuk Lymphoma. 2004 Apr;45(4):761-7. [https://www.tandfonline.com/doi/full/10.1080/1042819031000141301 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15160953 PubMed]
+# '''Retrospective:''' Barnes JA, Lacasce AS, Feng Y, Toomey CE, Neuberg D, Michaelson JS, Hochberg EP, Abramson JS. Evaluation of the addition of rituximab to CODOX-M/IVAC for Burkitt's lymphoma: a retrospective analysis. Ann Oncol. 2011 Aug;22(8):1859-64. Epub 2011 Feb 21. [http://annonc.oxfordjournals.org/content/22/8/1859.long link to original article] '''contains partial protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21339382 PubMed] content property of [http://hemonc.org HemOnc.org]
+# '''Retrospective:''' Kassam S, Bower M, Lee SM, de Vos J, Fields P, Gandhi S, Nelson M, Montoto S, Tenant-Flowers M, Burns F, Marcus R, Edwards SG, Cwynarski K. A retrospective, multi-center analysis of treatment intensification for HIV-positive patients with high-risk diffuse large B-cell lymphoma. Leuk Lymphoma. 2013 Sep;54(9):1921-7. Epub 2013 Jan 4. [https://www.tandfonline.com/doi/full/10.3109/10428194.2012.754024 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23206228 PubMed]
+# Noy A, Lee JY, Cesarman E, Ambinder R, Baiocchi R, Reid E, Ratner L, Wagner-Johnston N, Kaplan L. AMC 048: modified CODOX-M/IVAC-rituximab is safe and effective for HIV-associated Burkitt lymphoma. Blood. 2015 Jul 9;126(2):160-6. Epub 2015 May 8. [http://www.bloodjournal.org/content/126/2/160 link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4497960/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25957391 PubMed]
+
+==R-CODOX-M/R-IVAC {{#subobject:9268b2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CODOX-M/R-IVAC: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>O</u>'''ncovin (Vincristine), '''<u>DOX</u>'''orubicin, '''<u>M</u>'''ethotrexate alternating with '''<u>R</u>'''ituximab, '''<u>I</u>'''fosfamide, '''<u>V</u>'''epesid (Etoposide), '''<u>A</u>'''ra-'''<u>C</u>''' (Cytarabine)
+
+===Regimen {{#subobject:7a0131|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.tandfonline.com/doi/full/10.1080/1042819031000141301 LaCasce et al. 2004]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4497960/ Noy et al. 2015 (AMC 048)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Intended for '''high-risk''' HIV-associated Burkitt lymphoma, and the first published prospective regimen to explicitly use rituximab. This is sometimes called modified Magrath but is in fact a second modification to the modified Magrath described in LaCasce et al. 2004. Note that the preferred sequence is A, B, A, B but the authors note that for patients with anasarca or other concerns for retaining MTX, the sequence can be B, A, B, A. Also note that the paper does not specify whether hydrocortisone is used with the day 3 IT chemo; the authors have clarified (December 31, 2017) that this is left to institutional policy.''
+
+====Chemotherapy, Part A: R-CODOX-M====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 800 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] 3000 mg/m<sup>2</sup> IV once on day 15
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 50 mg IT once per day on days 1 & 3
+*[[Methotrexate (MTX)]] 12 mg IT once on day 1
+*[[Hydrocortisone (Cortef)]] 50 mg IT once on day 1
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] as follows:
+** 200 mg/m<sup>2</sup> IV once 24 hours after [[Methotrexate (MTX)]], then
+** 25 mg/m<sup>2</sup> IV every 6 hours until methotrexate level is less than 50 nmol/L
+*[[Pegfilgrastim (Neulasta)]] 6 mg SC once on day 3
+*[[Filgrastim (Neupogen)]] (dose not specified) SC once per day, starting once methotrexate level is less than 50 nmol/L (approximately day 18) and continuing until ANC greater than 1000/uL
+
+====Chemotherapy, Part B: R-IVAC====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup>/day IV continuous infusion over 120 hours, started on day 1 (total dose per cycle: 7500 mg/m<sup>2</sup>)
+*[[Etoposide (Vepesid)]] 60 mg/m<sup>2</sup>/day IV continuous infusion over 120 hours, started on day 1 (total dose per cycle: 300 mg/m<sup>2</sup>)
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV every 12 hours on days 1 & 2 (total of 4 doses per cycle)
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg IT once on day 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 1500 mg/m<sup>2</sup>/day IV continuous infusion over 120 hours, started on day 1 (total dose per cycle: 7500 mg/m<sup>2</sup>)
+*[[Pegfilgrastim (Neulasta)]] 6 mg SC once on day 6
+
+'''4 alternating cycles'''
+
+===References===
+# Lacasce A, Howard O, Lib S, Fisher D, Weng A, Neuberg D, Shipp M. Modified Magrath regimens for adults with Burkitt and Burkitt-like lymphomas: preserved efficacy with decreased toxicity. Leuk Lymphoma. 2004 Apr;45(4):761-7. [https://www.tandfonline.com/doi/full/10.1080/1042819031000141301 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15160953 PubMed]
+# '''Retrospective:''' Barnes JA, Lacasce AS, Feng Y, Toomey CE, Neuberg D, Michaelson JS, Hochberg EP, Abramson JS. Evaluation of the addition of rituximab to CODOX-M/IVAC for Burkitt's lymphoma: a retrospective analysis. Ann Oncol. 2011 Aug;22(8):1859-64. Epub 2011 Feb 21. [http://annonc.oxfordjournals.org/content/22/8/1859.long link to original article] '''contains partial protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21339382 PubMed] content property of [http://hemonc.org HemOnc.org]
+# '''Retrospective:''' Kassam S, Bower M, Lee SM, de Vos J, Fields P, Gandhi S, Nelson M, Montoto S, Tenant-Flowers M, Burns F, Marcus R, Edwards SG, Cwynarski K. A retrospective, multi-center analysis of treatment intensification for HIV-positive patients with high-risk diffuse large B-cell lymphoma. Leuk Lymphoma. 2013 Sep;54(9):1921-7. Epub 2013 Jan 4. [https://www.tandfonline.com/doi/full/10.3109/10428194.2012.754024 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23206228 PubMed]
+# Noy A, Lee JY, Cesarman E, Ambinder R, Baiocchi R, Reid E, Ratner L, Wagner-Johnston N, Kaplan L. AMC 048: modified CODOX-M/IVAC-rituximab is safe and effective for HIV-associated Burkitt lymphoma. Blood. 2015 Jul 9;126(2):160-6. Epub 2015 May 8. [http://www.bloodjournal.org/content/126/2/160 link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4497960/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25957391 PubMed]
+
+==R-EPOCH, dose-escalated {{#subobject:3c32e1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-EPOCH: '''<u>R</u>'''ituximab, '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin)
+===Regimen {{#subobject:e2d121|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858478/ Sparano et al. 2010 (AMC034)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|EPOCH, then R
+|style="background-color:#ffffbf"|Not reported (*)
+|-
+|}
+''Note: while this was a randomized trial, the primary efficacy endpoint was a historical control; see article for details.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once (day not specified), '''given first'''
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>) 
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m<sup>2</sup>) 
+*[[Cyclophosphamide (Cytoxan)]] as follows:
+**CD4+ count less than 100/uL: 187 mg/m<sup>2</sup> IV over 15 minutes once on day 5
+**CD4+ count greater than 100/uL: 375 mg/m<sup>2</sup> IV over 15 minutes once on day 5
+**In each subsequent cycle, increase dose by 187 mg/m<sup>2</sup> if the neutrophil nadir is greater than 500/uL and platelet nadir is greater than 25 x 10<sup>9</sup>/L. Decrease dose by 187 mg/m<sup>2</sup> if the neutrophil nadir is less than 500/uL or platelet nadir is less than 25 x 10<sup>9</sup>/L.
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*EITHER [[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 hours after EPOCH is completed and continuing until "neutrophil recovery"—no absolute count specified
+*OR [[Pegfilgrastim (Neulasta)]] 6 mg SC once 24 hours after EPOCH is completed
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] 160/800 mg PO TIW (e.g. Monday, Wednesday, Friday) 
+*[[Fluconazole (Diflucan)]] 100 mg PO once per day
+*[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day, starting on day 8 and to continue to at least day 15 or postnadir ANC of at least 1000
+**Other fluoroquinolone can be used at discretion of physician
+
+'''21-day cycle for 6 to 8 cycles'''
+
+===References===
+# Sparano JA, Lee JY, Kaplan LD, Levine AM, Ramos JC, Ambinder RF, Wachsman W, Aboulafia D, Noy A, Henry DH, Von Roenn J, Dezube BJ, Remick SC, Shah MH, Leichman L, Ratner L, Cesarman E, Chadburn A, Mitsuyasu R; AIDS Malignancy Consortium. Rituximab plus concurrent infusional EPOCH chemotherapy is highly effective in HIV-associated B-cell non-Hodgkin lymphoma. Blood. 2010 Apr 15;115(15):3008-16. Epub 2009 Dec 18. [http://bloodjournal.hematologylibrary.org/content/115/15/3008.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858478/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20023215 PubMed]
+
+==SC-EPOCH-RR {{#subobject:8d6ea0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+SC-EPOCH-RR: '''<u>S</u>'''hort '''<u>C</u>'''ourse '''<u>R</u>'''ituximab, '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin, with dose-dense '''<u>R</u>'''ituximab
+
+===Regimen {{#subobject:ae5234|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858473/ Dunleavy et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901044/ Dunleavy et al. 2013]
+|style="background-color:#ffffbe"|Phase II, <20 pts in this arm
+|-
+|}
+
+''Dunleavy et al. 2010 reports on HIV+ DLBCL patients, whereas Dunleavy et al. 2013 reports on HIV+ Burkitt lymphoma patients. The regimen is the same.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV over 3 hours once per day on days 1 & 5
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>) 
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m<sup>2</sup>) 
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 2 hours once on day 5
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>)
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg IT once per day on days 1 & 5 of cycles 3 to 5 (6 total doses)
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 300 mcg SC once per day, starting on day 6, continue until ANC greater than 5k/uL above nadir
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] 160/800 mg PO TIW (e.g. Monday, Wednesday, Friday) 
+*[[Omeprazole (Prilosec)]] 20 mg PO once per day (or equivalent) 
+*[[Docusate (Colace)]] and [[Sennosides (Senna)]] 2 tablets PO twice per day as necessary for constipation 
+*[[Lactulose]] 20 gms PO Q6H as necessary for constipation. 
+
+'''21-day cycles for one cycle beyond CR, minimum 3 and maximum of 6 cycles'''
+
+====Dose modifications====
+*[[Cyclophosphamide (Cytoxan)]]:
+**In the subsequent cycle, decrease dose by 187 mg/m<sup>2</sup> if ANC was less than 500/uL for 2 to 4 days or platelets were less than 25 x 10<sup>9</sup>/L for 2 to 4 days.
+**In the subsequent cycle, decrease dose by 375 mg/m<sup>2</sup> if ANC was less than 500/uL for 5 or more days or platelets were less than 25 x 10<sup>9</sup>/L for 5 or more days.
+**If dose-reduced in prior cycle, increase dose by 187 mg/m2, up to maximum of 750 mg/m2, if ANC was greater than 500/uL and platelets were greater than 25 x 10<sup>9</sup>/L for the entire cycle.
+
+===References===
+# Dunleavy K, Little RF, Pittaluga S, Grant N, Wayne AS, Carrasquillo JA, Steinberg SM, Yarchoan R, Jaffe ES, Wilson WH. The role of tumor histogenesis, FDG-PET, and short-course EPOCH with dose-dense rituximab (SC-EPOCH-RR) in HIV-associated diffuse large B-cell lymphoma. Blood. 2010 Apr 15;115(15):3017-24. Epub 2010 Feb 3. [http://bloodjournal.hematologylibrary.org/content/115/15/3017.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2858473/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20130244 PubMed]
+# Dunleavy K, Pittaluga S, Shovlin M, Steinberg SM, Cole D, Grant C, Widemann B, Staudt LM, Jaffe ES, Little RF, Wilson WH. Low-intensity therapy in adults with Burkitt's lymphoma. N Engl J Med. 2013 Nov 14;369(20):1915-25. [https://www.nejm.org/doi/full/10.1056/NEJMoa1308392 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901044/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24224624 PubMed]
+
+==Stanford V {{#subobject:c00372|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:19ebaa|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/100/6/1984.long Spina et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this regimen was for HIV-associated Hodgkin lymphoma, unfavorable stage I or advanced stage.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 25 mg/m<sup>2</sup> IV once per week on weeks 1, 3, 5, 7, 9, 11
+*[[Vinblastine (Velban)]] 6 mg/m<sup>2</sup> IV once per week on weeks 1, 3, 5, 7, 9, 11
+*[[Mechlorethamine (Mustargen)]] 6 mg/m<sup>2</sup> IV once per week on weeks 1, 5, 9
+*[[Etoposide (Vepesid)]] 60 mg/m<sup>2</sup> IV once per day for two successive days on weeks 3, 7, 11
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per week on weeks 2, 4, 6, 8, 10, 12
+*[[Bleomycin (Blenoxane)]] 5 units/m<sup>2</sup> IV once per week on weeks 2, 4, 6, 8, 10, 12
+*[[Prednisone (Sterapred)]] as follows:
+**Weeks 1 to 10: 40 mg/m<sup>2</sup> PO every other day
+**Weeks 11 & 12: taper by 10 mg/m<sup>2</sup> every other day until off
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day on days 3 to 7, 9 to 13, 17 to 21, 23 to 26
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO once per day throughout the course of treatment
+*[[Fluconazole (Diflucan)]] 100 mg PO once per day throughout the course of treatment
+
+'''12-week course'''
+====Subsequent treatment====
+*PR: [[#Radiation_therapy|IFRT]] x 36 Gy
+*CR with initial bulky disease (5 cm or larger): [[#Radiation_therapy|IFRT]] x 36 Gy
+
+===References===
+# Spina M, Gabarre J, Rossi G, Fasan M, Schiantarelli C, Nigra E, Mena M, Antinori A, Ammassari A, Talamini R, Vaccher E, di Gennaro G, Tirelli U. Stanford V regimen and concomitant HAART in 59 patients with Hodgkin disease and HIV infection. Blood. 2002 Sep 15;100(6):1984-8. [http://www.bloodjournal.org/content/100/6/1984.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12200356 PubMed]
+
+=Consolidation and/or maintenance after upfront therapy=
+==Radiation therapy {{#subobject:3e41de|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+IFRT: '''<u>I</u>'''nvolved '''<u>F</u>'''ield '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, 36 Gy of IFRT {{#subobject:7f22e5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/100/6/1984.long Spina et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Stanford_V|Stanford V]] x 12 wk
+====Radiotherapy====
+*[[External beam radiotherapy]] 36 Gy in 2.00 Gy fractions, 5 days per week
+
+'''4-week course'''
+
+===Variant #2, 40 Gy of IFRT {{#subobject:029c6c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ Kaplan et al. 2005 (AMC010)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Intended for patients with stage I, IE, or nonbulky stage II disease.''
+====Preceding treatment====
+*[[#R-CHOP|R-CHOP]] x 3
+====Radiotherapy====
+*[[External beam radiotherapy]] to a total dose of at least 40 Gy
+
+'''One course'''
+====Subsequent treatment====
+*PR/CR: [[#Rituximab_monotherapy|Rituximab maintenance]]
+
+===References===
+# Spina M, Gabarre J, Rossi G, Fasan M, Schiantarelli C, Nigra E, Mena M, Antinori A, Ammassari A, Talamini R, Vaccher E, di Gennaro G, Tirelli U. Stanford V regimen and concomitant HAART in 59 patients with Hodgkin disease and HIV infection. Blood. 2002 Sep 15;100(6):1984-8. [http://www.bloodjournal.org/content/100/6/1984.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12200356 PubMed]
+# '''AMC010:''' Kaplan LD, Lee JY, Ambinder RF, Sparano JA, Cesarman E, Chadburn A, Levine AM, Scadden DT. Rituximab does not improve clinical outcome in a randomized phase 3 trial of CHOP with or without rituximab in patients with HIV-associated non-Hodgkin lymphoma: AIDS-Malignancies Consortium Trial 010. Blood. 2005 Sep 1;106(5):1538-43. Epub 2005 May 24. [http://bloodjournal.hematologylibrary.org/content/106/5/1538.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15914552 PubMed]
+
+==Rituximab monotherapy {{#subobject:d2786f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e49f13|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ Kaplan et al. 2005 (AMC010)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*Early disease: [[#Radiation_therapy|IFRT]]
+*Advanced disease: [[#R-CHOP|R-CHOP]]
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+
+'''Monthly cycle for 3 cycles'''
+
+===References===
+# Kaplan LD, Lee JY, Ambinder RF, Sparano JA, Cesarman E, Chadburn A, Levine AM, Scadden DT. Rituximab does not improve clinical outcome in a randomized phase 3 trial of CHOP with or without rituximab in patients with HIV-associated non-Hodgkin lymphoma: AIDS-Malignancies Consortium Trial 010. Blood. 2005 Sep 1;106(5):1538-43. Epub 2005 May 24. [http://bloodjournal.hematologylibrary.org/content/106/5/1538.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895225/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15914552 PubMed]
+
+=Consolidation after salvage therapy=
+
+==BEAM, then auto HSCT {{#subobject:f357b4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BEAM: '''<u>B</u>'''iCNU (Carmustine), '''<u>E</u>'''toposide, '''<u>A</u>'''ra-C (Cytarabine), '''<u>M</u>'''elphalan
+===Regimen {{#subobject:9a79af|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/21/23/4423.long Re et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5000843/ Alvarnas et al. 2016 (BMT CTN 0803/AMC 071)]
+|style="background-color:#91cf61"|Phase II
+|1-year OS: 87% (95% CI, 72-94.5)
+|-
+|}
+''Note: days of chemotherapy are slightly different in Re et al. 2003; see paper for details.''
+====Chemotherapy====
+*[[Carmustine (BiCNU)]] 300 mg/m<sup>2</sup> IV once on day -6
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV every 12 hours on days -5 to -2 (8 total doses)
+*[[Cytarabine (Cytosar)]] 100 mg/m<sup>2</sup> IV every 12 hours on days -5 to -2 (8 total doses)
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV once on day -1
+
+'''Hematopoietic stem cells are reinfused on day 0'''
+
+===References===
+# Re A, Cattaneo C, Michieli M, Casari S, Spina M, Rupolo M, Allione B, Nosari A, Schiantarelli C, Vigano M, Izzi I, Ferremi P, Lanfranchi A, Mazzuccato M, Carosi G, Tirelli U, Rossi G. High-dose therapy and autologous peripheral-blood stem-cell transplantation as salvage treatment for HIV-associated lymphoma in patients receiving highly active antiretroviral therapy. J Clin Oncol. 2003 Dec 1;21(23):4423-7. Epub 2003 Oct 27. Erratum in: J Clin Oncol. 2004 Jan 15;22(2):386. Mazzuccato Maurizio [corrected to Mazzuccato Mauro]. [http://jco.ascopubs.org/content/21/23/4423.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14581441 PubMed]
+# Alvarnas JC, Le Rademacher J, Wang Y, Little RF, Akpek G, Ayala E, Devine S, Baiocchi R, Lozanski G, Kaplan L, Noy A, Popat U, Hsu J, Morris LE Jr, Thompson J, Horowitz MM, Mendizabal A, Levine A, Krishnan A, Forman SJ, Navarro WH, Ambinder R. Autologous hematopoietic cell transplantation for HIV-related lymphoma: results of the BMT CTN 0803/AMC 071 trial. Blood. 2016 Aug 25;128(8):1050-8. Epub 2016 Jun 13. [http://www.bloodjournal.org/content/128/8/1050.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5000843/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27297790 PubMed]
+
+[[Category:HIV-associated lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Aggressive lymphomas]]

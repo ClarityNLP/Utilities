@@ -1,0 +1,61 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+'''Note: this is a new type of page for HemOnc.org, as most other regimen pages are tissue-specific. We will collect published information from basket trials on these pages, as well as regimens that are FDA approved.'''
+=All lines of therapy=
+==Dabrafenib & Trametinib {{#subobject:b078c2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e03f2c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791845/ Subbiah et al. 2017 (BRF117019)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: only partial results have been published to date.''
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''BRF117019:''' Subbiah V, Kreitman RJ, Wainberg ZA, Cho JY, Schellens JHM, Soria JC, Wen PY, Zielinski C, Cabanillas ME, Urbanowitz G, Mookerjee B, Wang D, Rangwala F, Keam B. Dabrafenib and trametinib treatment in patients with locally advanced or metastatic BRAF V600-mutant anaplastic thyroid cancer. J Clin Oncol. 2018 Jan 1;36(1):7-13. Epub 2017 Oct 26. [http://ascopubs.org/doi/full/10.1200/JCO.2017.73.6785 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791845/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29072975 PubMed]
+
+==Vemurafenib monotherapy {{#subobject:e0d17a|Regimen=1}}==
+===Regimen {{#subobject:392a4b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4971773/ Hyman et al. 2015 (VE-BASKET)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.75.3780 Hainsworth et al. 2018 (MyPathway)]
+|style="background-color:#91cf61"|Phase IIa
+|-
+|}
+====Eligibility criteria====
+*VE-BASKET: BRAF p.V600 mutations
+*MyPathway: BRAF p.V600E mutation without coexisting KRAS mutations, or other BRAF mutations
+====Chemotherapy====
+*[[Vemurafenib (Zelboraf)]] 960 mg PO twice per day 
+
+'''Continued indefinitely'''
+
+===References===
+# '''VE-BASKET:''' Hyman DM, Puzanov I, Subbiah V, Faris JE, Chau I, Blay JY, Wolf J, Raje NS, Diamond EL, Hollebecque A, Gervais R, Elez-Fernandez ME, Italiano A, Hofheinz RD, Hidalgo M, Chan E, Schuler M, Lasserre SF, Makrutzki M, Sirzen F, Veronese ML, Tabernero J, Baselga J. Vemurafenib in multiple nonmelanoma cancers with BRAF V600 mutations. N Engl J Med. 2015 Aug 20;373(8):726-736. [https://www.nejm.org/doi/full/10.1056/NEJMoa1502309 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4971773/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26287849 PubMed]
+# '''MyPathway:''' Hainsworth JD, Meric-Bernstam F, Swanton C, Hurwitz H, Spigel DR, Sweeney C, Burris H, Bose R, Yoo B, Stein A, Beattie M, Kurzrock R. Targeted therapy for advanced solid tumors on the basis of molecular profiles: results from MyPathway, an open-label, phase IIa multiple basket study. J Clin Oncol. 2018 Feb 20;36(6):536-542. Epub 2018 Jan 10. [http://ascopubs.org/doi/full/10.1200/JCO.2017.75.3780 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29320312 PubMed]
+
+[[Category:BRAF regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Site-agnostic regimens]]

@@ -1,0 +1,101 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''--> 
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Ronaldgo.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Ronaldgo|Ronald S. Go, MD]]<br>Rochester, MN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+*'''2014:''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4110656/ Consensus guidelines for the diagnosis and clinical management of Erdheim-Chester disease] [https://www.ncbi.nlm.nih.gov/pubmed/24850756 PubMed]
+
+=All lines of therapy=
+
+==Sirolimus & Prednisone {{#subobject:a5e5cc|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:#fbca7f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/126/10/1163.long Gianfreda et al. 2015]
+|style="background-color:#ffffbe"|Pilot, <20 pts in this arm
+|-
+|}
+====Immunosuppressive therapy====
+*[[Sirolimus (Rapamune)]] 2 mg PO once per day, titrated to achieve a blood level of 8 to 12 ng/mL
+*[[Prednisone (Sterapred)]] as follows:
+**Month 1: 0.75 mg/kg/day PO
+**Month 2: 0.5 mg/k/day PO
+**Months 3 & 4: 0.25 mg/kg/day PO
+**Months 5 & 6: 0.125 mg/kg/day PO
+**Month 7 onwards: tapered to a dose of 2.5 to 5 mg PO once per day
+
+'''Given for up to 2 years for responders and stable disease, with optional extension beyond 2 years'''
+
+===References===
+# Gianfreda D, Nicastro M, Galetti M, Alberici F, Corradi D, Becchi G, Baldari G, De Filippo M, Ferretti S, Moroni G, Foti R, Di Gangi M, Jeannin G, Saffroy R, Emile JF, Buzio C, Vaglio A. Sirolimus plus prednisone for Erdheim-Chester disease: an open-label trial. Blood. 2015 Sep 3;126(10):1163-71. Epub 2015 Jun 3. [http://www.bloodjournal.org/content/126/10/1163.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26041743 PubMed]
+
+==Vemurafenib monotherapy {{#subobject:c184a8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 480 mg twice per day {{#subobject:#5a234d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/33/5/411.full Haroche et al. 2014]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+''Patients enrolled all had BRAF V600E mutation. This is the dose after de-escalation after the first four patients had excess adverse events.''
+====Chemotherapy====
+*[[Vemurafenib (Zelboraf)]] 480 mg PO twice per day
+
+'''Given until progression of disease or unacceptable toxicity'''
+
+===Variant #2, 960 mg twice per day {{#subobject:#84a4d6|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4971773/ Hyman et al. 2015 (VE-BASKET)]
+|style="background-color:#ffffbe"|Phase II, <20 pts in this arm
+|-
+|[https://jamanetwork.com/journals/jamaoncology/fullarticle/2664827 Diamond et al. 2017 (VE-BASKET)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''This was a basket study that was expanded in the ECD population, as described by Diamond et al. 2017; all patients had BRAF p.V600 mutations. This is the FDA-recommended dose.''
+====Chemotherapy====
+*[[Vemurafenib (Zelboraf)]] 960 mg PO twice per day
+
+'''Duration of treatment not specified'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Haroche J, Cohen-Aubart F, Emile JF, Maksud P, Drier A, Tolédano D, Barete S, Charlotte F, Cluzel P, Donadieu J, Benameur N, Grenier PA, Besnard S, Ory JP, Lifermann F, Idbaih A, Granel B, Graffin B, Hervier B, Arnaud L, Amoura Z. Reproducible and sustained efficacy of targeted therapy with vemurafenib in patients with BRAFV600E-mutated Erdheim-Chester disease. J Clin Oncol. 2015 Feb 10;33(5):411-8. Epub 2014 Nov 24. [http://jco.ascopubs.org/content/33/5/411.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25422482 PubMed]
+# '''VE-BASKET:''' Hyman DM, Puzanov I, Subbiah V, Faris JE, Chau I, Blay JY, Wolf J, Raje NS, Diamond EL, Hollebecque A, Gervais R, Elez-Fernandez ME, Italiano A, Hofheinz RD, Hidalgo M, Chan E, Schuler M, Lasserre SF, Makrutzki M, Sirzen F, Veronese ML, Tabernero J, Baselga J. Vemurafenib in multiple nonmelanoma cancers with BRAF V600 mutations. N Engl J Med. 2015 Aug 20;373(8):726-736. [https://www.nejm.org/doi/full/10.1056/NEJMoa1502309 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4971773/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26287849 PubMed]
+## '''Histology-specific update:''' Diamond EL, Subbiah V, Lockhart AC, Blay JY, Puzanov I, Chau I, Raje NS, Wolf J, Erinjeri JP, Torrisi J, Lacouture M, Elez E, Martínez-Valle F, Durham B, Arcila ME, Ulaner G, Abdel-Wahab O, Pitcher B, Makrutzki M, Riehl T, Baselga J, Hyman DM. Vemurafenib for BRAF V600-mutant Erdheim-Chester disease and Langerhans cell histiocytosis: analysis of data from the histology-independent, phase 2, open-label VE-BASKET Study. JAMA Oncol. 2018 Mar 1;4(3):384-388. Epub 2017 Nov 29. [https://jamanetwork.com/journals/jamaoncology/fullarticle/2664827 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29188284 PubMed]
+
+[[Category:Erdheim-Chester disease regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Histiocytoses]]

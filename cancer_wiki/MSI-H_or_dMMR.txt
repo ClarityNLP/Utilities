@@ -1,0 +1,81 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+'''Note: this is a new type of page for HemOnc.org, as all other regimen pages (except for [[Unknown primary|cancer of unknown primary]]) are tissue-specific. The initial drug with tissue-agnostic approval is for patients with unresectable or metastatic, microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) solid tumors that have progressed following prior treatment and who have no satisfactory alternative treatment options.'''
+=All lines of therapy=
+==Pembrolizumab monotherapy {{#subobject:e0d17a|Regimen=1}}==
+===Variant #1, q2wk dosing {{#subobject:87f9c7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ Le et al. 2017 (KEYNOTE-016)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this was an expansion to a CRC-specific trial.''
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 10 mg/kg IV once on day 1
+
+'''14-day cycles'''
+
+===Variant #2, q3wk, adult dosing {{#subobject:7b36e9|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/jco.2016.34.4_suppl.tps787 Le et al. 2016 (KEYNOTE-164)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.5514 Schellens et al. 2017 (KEYNOTE-158)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this is the FDA-approved adult pembrolizumab dose and schedule based on a pooled analysis of 5 non-randomized trials, of which two were prospective: KEYNOTE-158 and KEYNOTE-164.''
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 200 mg IV over 30 minutes once on day 1
+
+'''21-day cycle for up to 2 years'''
+
+===Variant #3, q3wk, pediatric dosing {{#subobject:392a4b|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/jco.2016.34.4_suppl.tps787 Le et al. 2016 (KEYNOTE-164)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.5514 Schellens et al. 2017 (KEYNOTE-158)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this is the FDA-approved pediatric pembrolizumab dose and schedule based on a pooled analysis of 5 non-randomized trials, of which two were prospective: KEYNOTE-158 and KEYNOTE-164.''
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 2 mg/kg (maximum dose of 200 mg) IV over 30 minutes once on day 1 
+
+'''21-day cycle for up to 2 years'''
+
+===References===
+# '''Abstract:''' Dung T. Le, Takayuki Yoshino, Dirk Jäger, Thierry Andre, Johanna C. Bendell, Ruixue Wang... SoonMo Peter Kang, Minori Koshiji, Luis A. Diaz. KEYNOTE-164: Phase II study of pembrolizumab (MK-3475) for patients with previously treated, microsatellite instability-high advanced colorectal carcinoma. J Clin Oncol [http://ascopubs.org/doi/full/10.1200/jco.2016.34.4_suppl.tps787 abstract TPS787] and [http://ascopubs.org/doi/full/10.1200/JCO.2016.34.15_suppl.TPS3631 abstract TPS3631];  [https://clinicaltrials.gov/show/NCT02460198 NCT02460198 at ClinicalTrials.gov]
+# '''Abstract:''' Jan H.M. Schellens, Aurelien Marabelle, Susan Zeigenfuss, Jie Ding, Scott Knowles Pruitt, and Hyun Cheol Chung. Pembrolizumab for previously treated advanced cervical squamous cell cancer: Preliminary results from the phase 2 KEYNOTE-158 study. Journal of Clinical Oncology 35, no. 15_suppl (May 20 2017) 5514-5514. [http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.5514 link to abstract]
+# '''KEYNOTE-016:''' Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, Lu S, Kemberling H, Wilt C, Luber BS, Wong F, Azad NS, Rucki AA, Laheru D, Donehower R, Zaheer A, Fisher GA, Crocenzi TS, Lee JJ, Greten TF, Duffy AG, Ciombor KK, Eyring AD, Lam BH, Joe A, Kang SP, Holdhoff M, Danilova L, Cope L, Meyer C, Zhou S, Goldberg RM, Armstrong DK, Bever KM, Fader AN, Taube J, Housseau F, Spetzler D, Xiao N, Pardoll DM, Papadopoulos N, Kinzler KW, Eshleman JR, Vogelstein B, Anders RA, Diaz LA Jr. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science. 2017 Jul 28;357(6349):409-413. Epub 2017 Jun 8. [http://science.sciencemag.org/content/357/6349/409.long link to original article]  [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ link to PMC article] '''contains verified protocol in supplement''' [https://www.ncbi.nlm.nih.gov/pubmed/28596308 PubMed]
+
+[[Category:MSI-H or dMMR regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Site-agnostic regimens]]

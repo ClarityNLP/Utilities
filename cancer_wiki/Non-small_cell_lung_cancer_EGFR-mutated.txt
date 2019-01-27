@@ -1,0 +1,571 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+Note: these are biomarker-specific regimens, please see the '''[[Non-small cell lung cancer|main NSCLC page]]''' for other regimens.
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+==IASLC==
+*'''2016:''' [http://www.jto.org/article/S1556-0864(16)30458-0/fulltext The International Association for the Study of Lung Cancer consensus statement on optimizing management of EGFR mutation–positive non–small cell lung cancer: Status in 2016] [https://www.ncbi.nlm.nih.gov/pubmed/27229180 PubMed]
+
+=Adjuvant therapy=
+==Gefitinib monotherapy {{#subobject:4383b8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fc00be|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30729-5/fulltext Zhong et al. 2017 (ADJUVANT/CTONG1104)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Cisplatin_.26_Vinorelbine|Cisplatin & Vinorelbine]]
+|style="background-color:#1a9850"|Superior DFS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Lung_cancer_surgery|Surgery]]
+
+====Chemotherapy====
+*[[Gefitinib (Iressa)]] 250 mg PO once per day
+
+'''24-month course'''
+
+===References===
+# Zhong WZ, Wang Q, Mao WM, Xu ST, Wu L, Shen Y, Liu YY, Chen C, Cheng Y, Xu L, Wang J, Fei K, Li XF, Li J, Huang C, Liu ZD, Xu S, Chen KN, Xu SD, Liu LX, Yu P, Wang BH, Ma HT, Yan HH, Yang XN, Zhou Q, Wu YL; ADJUVANT investigators. Gefitinib versus vinorelbine plus cisplatin as adjuvant treatment for stage II-IIIA (N1-N2) EGFR-mutant NSCLC (ADJUVANT/CTONG1104): a randomised, open-label, phase 3 study. Lancet Oncol. 2018 Jan;19(1):139-148. Epub 2017 Nov 21. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30729-5/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29174310 PubMed]
+
+=Advanced or metastatic disease, EGFR inhibitor-naive=
+
+==Afatinib monotherapy {{#subobject:1bf6db|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 30 mg/day {{#subobject:f69d3b|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''This is the FDA-recommended dose for patients with "severe renal impairment".''
+====Chemotherapy====
+*[[Afatinib (Gilotrif)]] 30 mg PO once per day
+
+'''Given indefinitely'''
+
+===Variant #2, 40 mg/day {{#subobject:130d4a|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70086-4/fulltext Yang et al. 2012 (LUX-Lung 2)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+| style="background-color:#9ebcda" |ORR: 61%
+|-
+|[http://jco.ascopubs.org/content/31/27/3327.long Sequist et al. 2013 (LUX-Lung 3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Cisplatin_.26_Pemetrexed_3|Cisplatin & Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70604-1/fulltext Wu et al. 2014 (LUX-Lung 6)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small cell lung cancer#Cisplatin_.26_Gemcitabine_4|Cisplatin & Gemcitabine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30033-X/fulltext Park et al. 2016 (LUX-Lung 7)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Gefitinib_monotherapy_2|Gefitinib]]
+|style="background-color:#91cf60"|Seems to have superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Afatinib (Gilotrif)]] 40 mg PO once per day, given 1 hour before eating food (LUX-Lung 2: "no food intake immediately before or after afatinib")
+**In '''LUX-Lung 3''', patients could be increased to 50 mg PO once per day if they did not experience any grade 2 or higher rash, diarrhea, mucositis, or other drug-related adverse event.
+
+'''Given indefinitely'''
+
+===References===
+# '''LUX-Lung 2:''' Yang JC, Shih JY, Su WC, Hsia TC, Tsai CM, Ou SH, Yu CJ, Chang GC, Ho CL, Sequist LV, Dudek AZ, Shahidi M, Cong XJ, Lorence RM, Yang PC, Miller VA. Afatinib for patients with lung adenocarcinoma and epidermal growth factor receptor mutations (LUX-Lung 2): a phase 2 trial. Lancet Oncol. 2012 May;13(5):539-48. Epub 2012 Mar 26. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70086-4/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22452895 PubMed]
+# '''LUX-Lung 3:''' Sequist LV, Yang JC, Yamamoto N, O'Byrne K, Hirsh V, Mok T, Geater SL, Orlov S, Tsai CM, Boyer M, Su WC, Bennouna J, Kato T, Gorbunova V, Lee KH, Shah R, Massey D, Zazulina V, Shahidi M, Schuler M. Phase III study of afatinib or cisplatin plus pemetrexed in patients with metastatic lung adenocarcinoma with EGFR mutations. J Clin Oncol. 2013 Sep 20;31(27):3327-34. Epub 2013 Jul 1. [http://jco.ascopubs.org/content/31/27/3327.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23816960 PubMed]
+## '''Subgroup analysis:''' Yang JC, Hirsh V, Schuler M, Yamamoto N, O'Byrne KJ, Mok TS, Zazulina V, Shahidi M, Lungershausen J, Massey D, Palmer M, Sequist LV. Symptom Control and Quality of Life in LUX-Lung 3: A Phase III Study of Afatinib or Cisplatin/Pemetrexed in Patients With Advanced Lung Adenocarcinoma With EGFR Mutations. J Clin Oncol. 2013 Sep 20;31(27):3342-50. Epub 2013 Jul 1. [http://jco.ascopubs.org/content/31/27/3342.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23816967 PubMed]
+## '''Update:''' Yang JC, Wu YL, Schuler M, Sebastian M, Popat S, Yamamoto N, Zhou C, Hu CP, O'Byrne K, Feng J, Lu S, Huang Y, Geater SL, Lee KY, Tsai CM, Gorbunova V, Hirsh V, Bennouna J, Orlov S, Mok T, Boyer M, Su WC, Lee KH, Kato T, Massey D, Shahidi M, Zazulina V, Sequist LV. Afatinib versus cisplatin-based chemotherapy for EGFR mutation-positive lung adenocarcinoma (LUX-Lung 3 and LUX-Lung 6): analysis of overall survival data from two randomised, phase 3 trials. Lancet Oncol. 2015 Feb;16(2):141-51. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71173-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25589191 PubMed]
+## '''Subgroup analysis:''' Schuler M, Wu YL, Hirsh V, O'Byrne K, Yamamoto N, Mok T, Popat S, Sequist LV, Massey D, Zazulina V, Yang JC. First-line afatinib versus chemotherapy in patients with non-small cell lung cancer and common epidermal growth factor receptor gene mutations and brain metastases. J Thorac Oncol. 2016 Mar;11(3):380-90. [http://www.jto.org/article/S1556-0864(15)00220-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26823294 PubMed]
+# '''LUX-Lung 6:''' Wu YL, Zhou C, Hu CP, Feng J, Lu S, Huang Y, Li W, Hou M, Shi JH, Lee KY, Xu CR, Massey D, Kim M, Shi Y, Geater SL. Afatinib versus cisplatin plus gemcitabine for first-line treatment of Asian patients with advanced non-small-cell lung cancer harbouring EGFR mutations (LUX-Lung 6): an open-label, randomised phase 3 trial. Lancet Oncol. 2014 Feb;15(2):213-22. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70604-1/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24439929 PubMed]
+## '''Update:''' Yang JC, Wu YL, Schuler M, Sebastian M, Popat S, Yamamoto N, Zhou C, Hu CP, O'Byrne K, Feng J, Lu S, Huang Y, Geater SL, Lee KY, Tsai CM, Gorbunova V, Hirsh V, Bennouna J, Orlov S, Mok T, Boyer M, Su WC, Lee KH, Kato T, Massey D, Shahidi M, Zazulina V, Sequist LV. Afatinib versus cisplatin-based chemotherapy for EGFR mutation-positive lung adenocarcinoma (LUX-Lung 3 and LUX-Lung 6): analysis of overall survival data from two randomised, phase 3 trials. Lancet Oncol. 2015 Feb;16(2):141-51. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71173-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25589191 PubMed]
+## '''Subgroup analysis:''' Schuler M, Wu YL, Hirsh V, O'Byrne K, Yamamoto N, Mok T, Popat S, Sequist LV, Massey D, Zazulina V, Yang JC. First-line afatinib versus chemotherapy in patients with non-small cell lung cancer and common epidermal growth factor receptor gene mutations and brain metastases. J Thorac Oncol. 2016 Mar;11(3):380-90. [http://www.jto.org/article/S1556-0864(15)00220-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26823294 PubMed]
+# '''LUX-Lung 7:''' Park K, Tan EH, O'Byrne K, Zhang L, Boyer M, Mok T, Hirsh V, Yang JC, Lee KH, Lu S, Shi Y, Kim SW, Laskin J, Kim DW, Arvis CD, Kölbeck K, Laurie SA, Tsai CM, Shahidi M, Kim M, Massey D, Zazulina V, Paz-Ares L. Afatinib versus gefitinib as first-line treatment of patients with EGFR mutation-positive non-small-cell lung cancer (LUX-Lung 7): a phase 2B, open-label, randomised controlled trial. Lancet Oncol. 2016 May;17(5):577-89. Epub 2016 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30033-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27083334 PubMed]
+
+==Carboplatin & Gemcitabine/Erlotinib {{#subobject:3465c3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:821638|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70254-7/fulltext Wu et al. 2013 (FASTACT-2)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Carboplatin_.26_Gemcitabine|Carboplatin & Gemcitabine]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: this cohort was enriched for EGFR mutations and only those patients with an activating EGFR gene mutation were noted to have a treatment benefit in favor of the experimental arm.'' 
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV once on day 1
+*[[Gemcitabine (Gemzar)]] 1250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Erlotinib (Tarceva)]] 150 mg PO once per day on days 15 to 28
+
+'''28-day cycle for 4 cycles'''
+===References===
+# '''FASTACT-2:''' Wu YL, Lee JS, Thongprasert S, Yu CJ, Zhang L, Ladrera G, Srimuninnimit V, Sriuranpong V, Sandoval-Tan J, Zhu Y, Liao M, Zhou C, Pan H, Lee V, Chen YM, Sun Y, Margono B, Fuerte F, Chang GC, Seetalarom K, Wang J, Cheng A, Syahruddin E, Qian X, Ho J, Kurnianda J, Liu HE, Jin K, Truman M, Bara I, Mok T. Intercalated combination of chemotherapy and erlotinib for patients with advanced stage non-small-cell lung cancer (FASTACT-2): a randomised, double-blind trial. Lancet Oncol. 2013 Jul;14(8):777-86. Epub 2013 Jun 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70254-7/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23782814 PubMed]
+
+==Cisplatin & Gemcitabine/Erlotinib {{#subobject:26da43|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d88ccb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70254-7/fulltext Wu et al. 2013 (FASTACT-2)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Cisplatin_.26_Gemcitabine_2|Cisplatin & Gemcitabine]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: this cohort was enriched for EGFR mutations and only those patients with an activating EGFR gene mutation were noted to have a treatment benefit in favor of the experimental arm.'' 
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+*[[Gemcitabine (Gemzar)]] 1250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Erlotinib (Tarceva)]] 150 mg PO once per day on days 15 to 28
+
+'''28-day cycle for 4 cycles'''
+===References===
+# '''FASTACT-2:''' Wu YL, Lee JS, Thongprasert S, Yu CJ, Zhang L, Ladrera G, Srimuninnimit V, Sriuranpong V, Sandoval-Tan J, Zhu Y, Liao M, Zhou C, Pan H, Lee V, Chen YM, Sun Y, Margono B, Fuerte F, Chang GC, Seetalarom K, Wang J, Cheng A, Syahruddin E, Qian X, Ho J, Kurnianda J, Liu HE, Jin K, Truman M, Bara I, Mok T. Intercalated combination of chemotherapy and erlotinib for patients with advanced stage non-small-cell lung cancer (FASTACT-2): a randomised, double-blind trial. Lancet Oncol. 2013 Jul;14(8):777-86. Epub 2013 Jun 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70254-7/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23782814 PubMed]
+
+==Dacomitinib monotherapy {{#subobject:c0a00a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4fcaa3|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321098/ Ramalingam et al. 2012 (A7471028)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Erlotinib_monotherapy|Erlotinib]]
+| style="background-color:#91cf60" |Seems to have superior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70452-8/abstract Ramalingam et al. 2014 (ARCHER 1009)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Erlotinib_monotherapy|Erlotinib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30608-3/fulltext Wu et al. 2017 (ARCHER 1050)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Gefitinib_monotherapy_2|Gefitinib]]
+| style="background-color:#91cf60" |Seems to have superior OS (*)
+|-
+|}
+''Note: Efficacy for ARCHER 1050 is based on the 2018 update.''
+====Chemotherapy====
+*[[Dacomitinib (Vizimpro)]] 45 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+<!-- Presented in part at the 46th Annual Meeting of the American Society of Clinical Oncology, June 4-8, 2010, Chicago, IL; the 35th Congress of the European Society for Medical Oncology, October 8-12, 2010, Milan, Italy; and the 14th World Conference on Lung Cancer, July 3-7, 2011, Amsterdam, the Netherlands. -->
+# '''A7471028:''' Ramalingam SS, Blackhall F, Krzakowski M, Barrios CH, Park K, Bover I, Seog Heo D, Rosell R, Talbot DC, Frank R, Letrent SP, Ruiz-Garcia A, Taylor I, Liang JQ, Campbell AK, O'Connell J, Boyer M. Randomized phase II study of dacomitinib (PF-00299804), an irreversible pan-human epidermal growth factor receptor inhibitor, versus erlotinib in patients with advanced non-small-cell lung cancer. J Clin Oncol. 2012 Sep 20;30(27):3337-44. Epub 2012 Jul 2. [http://ascopubs.org/doi/full/10.1200/JCO.2011.40.9433 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22753918 PubMed]
+# '''ARCHER 1009:''' Ramalingam SS, Jänne PA, Mok T, O'Byrne K, Boyer MJ, Von Pawel J, Pluzanski A, Shtivelband M, Docampo LI, Bennouna J, Zhang H, Liang JQ, Doherty JP, Taylor I, Mather CB, Goldberg Z, O'Connell J, Paz-Ares L. Dacomitinib versus erlotinib in patients with advanced-stage, previously treated non-small-cell lung cancer (ARCHER 1009): a randomised, double-blind, phase 3 trial. Lancet Oncol. 2014 Nov;15(12):1369-78. Epub 2014 Oct 15.[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70452-8/abstract link to original article]  [https://www.ncbi.nlm.nih.gov/pubmed/25439691 PubMed]
+# '''ARCHER 1050:''' Wu YL, Cheng Y, Zhou X, Lee KH, Nakagawa K, Niho S, Tsuji F, Linke R, Rosell R, Corral J, Migliorino MR, Pluzanski A, Sbar EI, Wang T, White JL, Nadanaciva S, Sandin R, Mok TS. Dacomitinib versus gefitinib as first-line treatment for patients with EGFR-mutation-positive non-small-cell lung cancer (ARCHER 1050): a randomised, open-label, phase 3 trial. Lancet Oncol. 2017 Nov;18(11):1454-1466. Epub 2017 Sep 25. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30608-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28958502 PubMed]
+## '''Update:''' Mok TS, Cheng Y, Zhou X, Lee KH, Nakagawa K, Niho S, Lee M, Linke R, Rosell R, Corral J, Migliorino MR, Pluzanski A, Sbar EI, Wang T, White JL, Wu YL. Improvement in overall survival in a randomized study that compared dacomitinib with gefitinib in patients with advanced non-small-cell lung cancer and EGFR-activating mutations. J Clin Oncol. 2018 Aug 1;36(22):2244-2250. Epub 2018 Jun 4. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.7994 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29864379 PubMed]
+
+==Erlotinib monotherapy {{#subobject:c3c726|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:d27efc|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70184-X/fulltext Zhou et al. 2011 (OPTIMAL)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Carboplatin_.26_Gemcitabine|Carboplatin & Gemcitabine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70393-X/fulltext Rossell et al. 2012 (EURTAC)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small cell lung cancer#Carboplatin_.26_Docetaxel|Carboplatin & Docetaxel]]<br> 2. [[Non-small cell lung cancer#Carboplatin_.26_Gemcitabine|Carboplatin & Gemcitabine]]<br> 3. [[Non-small cell lung cancer#Cisplatin_.26_Docetaxel_2|Cisplatin & Docetaxel]]<br> 4. [[Non-small cell lung cancer#Cisplatin_.26_Gemcitabine_2|Cisplatin & Gemcitabine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321098/ Ramalingam et al. 2012 (A7471028)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Dacomitinib_monotherapy|Dacomitinib]]
+| style="background-color:#fc8d59" |Seems to have inferior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70381-X/fulltext Seto et al. 2014 (JO25567)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Erlotinib_.26_Bevacizumab|Erlotinib & Bevacizumab]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70452-8/abstract Ramalingam et al. 2014 (ARCHER 1009)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dacomitinib_monotherapy|Dacomitinib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdv270 Wu et al. 2015 (ENSURE)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small cell lung cancer#Cisplatin_.26_Gemcitabine_2|Cisplatin & Gemcitabine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5344291/ Yang et al. 2017 (CTONG 0901)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Gefitinib_monotherapy_2|Gefitinib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 Soria et al. 2017 (FLAURA)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Osimertinib_monotherapy|Osimertinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+''Note: these are all trials restricted to patients with EGFR-mutated lung cancer. Some trials of erlotinib in unselected populations nevertheless had high rates of EGFR-mutated lung cancers, due to the nature of the populations studied. See the [[Non-small cell lung cancer|main NSCLC page]] for these trials.''
+====Chemotherapy====
+*[[Erlotinib (Tarceva)]] 150 mg PO once per day
+
+'''Continued indefinitely'''
+
+===Variant #2, low-dose {{#subobject:e26eec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893286/ Yeo et al. 2010]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Erlotinib (Tarceva)]] 25 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''Retrospective:''' Yeo WL, Riely GJ, Yeap BY, Lau MW, Warner JL, Bodio K, Huberman MS, Kris MG, Tenen DG, Pao W, Kobayashi S, Costa DB. Erlotinib at a dose of 25 mg daily for non-small cell lung cancers with EGFR mutations. J Thorac Oncol. 2010 Jul;5(7):1048-53. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893286/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20512075 PubMed]
+# '''OPTIMAL:''' Zhou C, Wu YL, Chen G, Feng J, Liu XQ, Wang C, Zhang S, Wang J, Zhou S, Ren S, Lu S, Zhang L, Hu C, Hu C, Luo Y, Chen L, Ye M, Huang J, Zhi X, Zhang Y, Xiu Q, Ma J, Zhang L, You C. Erlotinib versus chemotherapy as first-line treatment for patients with advanced EGFR mutation-positive non-small-cell lung cancer (OPTIMAL, CTONG-0802): a multicentre, open-label, randomised, phase 3 study. Lancet Oncol. 2011 Aug;12(8):735-42. Epub 2011 Jul 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70184-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21783417 PubMed]
+## '''Update:''' Zhou C, Wu YL, Chen G, Feng J, Liu XQ, Wang C, Zhang S, Wang J, Zhou S, Ren S, Lu S, Zhang L, Hu C, Hu C, Luo Y, Chen L, Ye M, Huang J, Zhi X, Zhang Y, Xiu Q, Ma J, Zhang L, You C. Final overall survival results from a randomised, phase III study of erlotinib versus chemotherapy as first-line treatment of EGFR mutation-positive advanced non-small-cell lung cancer (OPTIMAL, CTONG-0802). Ann Oncol. 2015 Sep;26(9):1877-83. Epub 2015 Jul 3. [https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdv276 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26141208 PubMed]
+# '''EURTAC:''' Rosell R, Carcereny E, Gervais R, Vergnenegre A, Massuti B, Felip E, Palmero R, Garcia-Gomez R, Pallares C, Sanchez JM, Porta R, Cobo M, Garrido P, Longo F, Moran T, Insa A, De Marinis F, Corre R, Bover I, Illiano A, Dansin E, de Castro J, Milella M, Reguart N, Altavilla G, Jimenez U, Provencio M, Moreno MA, Terrasa J, Muñoz-Langa J, Valdivia J, Isla D, Domine M, Molinier O, Mazieres J, Baize N, Garcia-Campelo R, Robinet G, Rodriguez-Abreu D, Lopez-Vivanco G, Gebbia V, Ferrera-Delgado L, Bombaron P, Bernabe R, Bearz A, Artal A, Cortesi E, Rolfo C, Sanchez-Ronco M, Drozdowskyj A, Queralt C, de Aguirre I, Ramirez JL, Sanchez JJ, Molina MA, Taron M, Paz-Ares L; Spanish Lung Cancer Group in collaboration with Groupe Français de Pneumo-Cancérologie and Associazione Italiana Oncologia Toracica. Erlotinib versus standard chemotherapy as first-line treatment for European patients with advanced EGFR mutation-positive non-small-cell lung cancer (EURTAC): a multicentre, open-label, randomised phase 3 trial. Lancet Oncol. 2012 Mar;13(3):239-46. Epub 2012 Jan 26. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70393-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22285168 PubMed]
+<!-- Presented in part at the 46th Annual Meeting of the American Society of Clinical Oncology, June 4-8, 2010, Chicago, IL; the 35th Congress of the European Society for Medical Oncology, October 8-12, 2010, Milan, Italy; and the 14th World Conference on Lung Cancer, July 3-7, 2011, Amsterdam, the Netherlands. -->
+# '''A7471028:''' Ramalingam SS, Blackhall F, Krzakowski M, Barrios CH, Park K, Bover I, Seog Heo D, Rosell R, Talbot DC, Frank R, Letrent SP, Ruiz-Garcia A, Taylor I, Liang JQ, Campbell AK, O'Connell J, Boyer M. Randomized phase II study of dacomitinib (PF-00299804), an irreversible pan-human epidermal growth factor receptor inhibitor, versus erlotinib in patients with advanced non-small-cell lung cancer. J Clin Oncol. 2012 Sep 20;30(27):3337-44. Epub 2012 Jul 2. [http://ascopubs.org/doi/full/10.1200/JCO.2011.40.9433 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321098/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22753918 PubMed]
+# '''JO25567:''' Seto T, Kato T, Nishio M, Goto K, Atagi S, Hosomi Y, Yamamoto N, Hida T, Maemondo M, Nakagawa K, Nagase S, Okamoto I, Yamanaka T, Tajima K, Harada R, Fukuoka M, Yamamoto N. Erlotinib alone or with bevacizumab as first-line therapy in patients with advanced non-squamous non-small-cell lung cancer harbouring EGFR mutations (JO25567): an open-label, randomised, multicentre, phase 2 study. Lancet Oncol. 2014 Oct;15(11):1236-44. Epub 2014 Aug 27. Erratum in: Lancet Oncol. 2014 Oct;15(11):e475. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70381-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25175099 PubMed]
+# '''ARCHER 1009:''' Ramalingam SS, Jänne PA, Mok T, O'Byrne K, Boyer MJ, Von Pawel J, Pluzanski A, Shtivelband M, Docampo LI, Bennouna J, Zhang H, Liang JQ, Doherty JP, Taylor I, Mather CB, Goldberg Z, O'Connell J, Paz-Ares L. Dacomitinib versus erlotinib in patients with advanced-stage, previously treated non-small-cell lung cancer (ARCHER 1009): a randomised, double-blind, phase 3 trial. Lancet Oncol. 2014 Nov;15(12):1369-78. Epub 2014 Oct 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70452-8/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25439691 PubMed]
+# '''ENSURE:''' Wu YL, Zhou C, Liam CK, Wu G, Liu X, Zhong Z, Lu S, Cheng Y, Han B, Chen L, Huang C, Qin S, Zhu Y, Pan H, Liang H, Li E, Jiang G, How SH, Fernando MC, Zhang Y, Xia F, Zuo Y. First-line erlotinib versus gemcitabine/cisplatin in patients with advanced EGFR mutation-positive non-small-cell lung cancer: analyses from the phase III, randomized, open-label, ENSURE study. Ann Oncol. 2015 Sep;26(9):1883-9. Epub 2015 Jun 23. [https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdv270 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26105600 PubMed]
+# '''CTONG 0901:''' Yang JJ, Zhou Q, Yan HH, Zhang XC, Chen HJ, Tu HY, Wang Z, Xu CR, Su J, Wang BC, Jiang BY, Bai XY, Zhong WZ, Yang XN, Wu YL. A phase III randomised controlled trial of erlotinib vs gefitinib in advanced non-small cell lung cancer with EGFR mutations. Br J Cancer. 2017 Feb 28;116(5):568-574. Epub 2017 Jan 19. [https://www.nature.com/bjc/journal/v116/n5/full/bjc2016456a.html link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5344291/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28103612 PubMed]
+# '''FLAURA:''' Soria JC, Ohe Y, Vansteenkiste J, Reungwetwattana T, Chewaskulyong B, Lee KH, Dechaphunkul A, Imamura F, Nogami N, Kurata T, Okamoto I, Zhou C, Cho BC, Cheng Y, Cho EK, Voon PJ, Planchard D, Su WC, Gray JE, Lee SM, Hodge R, Marotti M, Rukazenkov Y, Ramalingam SS; FLAURA Investigators. Osimertinib in untreated EGFR-mutated advanced non-small-cell lung cancer. N Engl J Med. 2018 Jan 11;378(2):113-125. Epub 2017 Nov 18. [https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29151359 PubMed]
+## '''Subgroup analysis:''' Reungwetwattana T, Nakagawa K, Cho BC, Cobo M, Cho EK, Bertolini A, Bohnet S, Zhou C, Lee KH, Nogami N, Okamoto I, Leighl N, Hodge R, McKeown A, Brown AP, Rukazenkov Y, Ramalingam SS, Vansteenkiste J. CNS response to osimertinib versus standard epidermal growth factor receptor tyrosine kinase inhibitors in patients with untreated EGFR-mutated advanced non-small-cell lung cancer. J Clin Oncol. 2018 Nov 20;36(33):3290-7. Epub 2018 Aug 28. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.3118 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30153097 PubMed]
+
+==Erlotinib & Bevacizumab {{#subobject:6725f4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:8ab85e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70381-X/fulltext Seto et al. 2014 (JO25567)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Erlotinib_monotherapy|Erlotinib]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Erlotinib (Tarceva)]] 150 mg PO once per day
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# '''JO25567:''' Seto T, Kato T, Nishio M, Goto K, Atagi S, Hosomi Y, Yamamoto N, Hida T, Maemondo M, Nakagawa K, Nagase S, Okamoto I, Yamanaka T, Tajima K, Harada R, Fukuoka M, Yamamoto N. Erlotinib alone or with bevacizumab as first-line therapy in patients with advanced non-squamous non-small-cell lung cancer harbouring EGFR mutations (JO25567): an open-label, randomised, multicentre, phase 2 study. Lancet Oncol. 2014 Oct;15(11):1236-44. Epub 2014 Aug 27. Erratum in: Lancet Oncol. 2014 Oct;15(11):e475. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70381-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25175099 PubMed]
+
+==Gefitinib monotherapy {{#subobject:fb3998|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:604e4f|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70364-X/fulltext Mitsudomi et al. 2009 (WJTOG3405)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small cell lung cancer#Cisplatin_.26_Docetaxel_2|Cisplatin & Docetaxel]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa0909530 Maemondo et al. 2010 (NEJ002)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small cell lung cancer#Carboplatin_.26_Paclitaxel_3|Carboplatin & Paclitaxel]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3887309/ Douillard et al. 2014 (IFUM)]
+|style="background-color:#91cf61"|Phase IV
+|style="background-color:#d3d3d3"|
+|style="background-color:#b3b3b3"|ORR: 70% (95% CI: 60.5–78)
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30033-X/fulltext Park et al. 2016 (LUX-Lung 7)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Afatinib_monotherapy|Afatinib]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|[http://jco.ascopubs.org/content/34/27/3248.full Urata et al. 2016 (WJOG 5108L)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Erlotinib_monotherapy|Erlotinib]]
+|style="background-color:#ffffbf"|Inconclusive whether non-inferior
+|-
+|[http://jco.ascopubs.org/content/34/27/3258.full Cheng et al. 2016]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Gefitinib_.26_Pemetrexed|P+G]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5344291/ Yang et al. 2017 (CTONG 0901)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Erlotinib_monotherapy|Erlotinib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30608-3/fulltext Wu et al. 2017 (ARCHER 1050)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dacomitinib_monotherapy|Dacomitinib]]
+|style="background-color:#fc8d59"|Seems to have inferior OS (*)
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 Soria et al. 2017 (FLAURA)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Osimertinib_monotherapy|Osimertinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+''Note: these are all trials restricted to EGFR-mutated lung cancer, with the exception of '''WJOG 5108L''', which nevertheless had 72% EGFR-mutated patients. Efficacy for ARCHER 1050 is based on the 2018 update.''
+====Chemotherapy====
+*[[Gefitinib (Iressa)]] 250 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''WJTOG3405:''' Mitsudomi T, Morita S, Yatabe Y, Negoro S, Okamoto I, Tsurutani J, Seto T, Satouchi M, Tada H, Hirashima T, Asami K, Katakami N, Takada M, Yoshioka H, Shibata K, Kudoh S, Shimizu E, Saito H, Toyooka S, Nakagawa K, Fukuoka M; West Japan Oncology Group. Gefitinib versus cisplatin plus docetaxel in patients with non-small-cell lung cancer harbouring mutations of the epidermal growth factor receptor (WJTOG3405): an open label, randomised phase 3 trial. Lancet Oncol. 2010 Feb;11(2):121-8. Epub 2009 Dec 18. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70364-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20022809 PubMed]
+# '''NEJ002:''' Maemondo M, Inoue A, Kobayashi K, Sugawara S, Oizumi S, Isobe H, Gemma A, Harada M, Yoshizawa H, Kinoshita I, Fujita Y, Okinaga S, Hirano H, Yoshimori K, Harada T, Ogura T, Ando M, Miyazawa H, Tanaka T, Saijo Y, Hagiwara K, Morita S, Nukiwa T; North-East Japan Study Group. Gefitinib or chemotherapy for non-small-cell lung cancer with mutated EGFR. N Engl J Med. 2010 Jun 24;362(25):2380-8. [https://www.nejm.org/doi/full/10.1056/NEJMoa0909530 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20573926 PubMed]
+## '''Update:''' Inoue A, Kobayashi K, Maemondo M, Sugawara S, Oizumi S, Isobe H, Gemma A, Harada M, Yoshizawa H, Kinoshita I, Fujita Y, Okinaga S, Hirano H, Yoshimori K, Harada T, Saijo Y, Hagiwara K, Morita S, Nukiwa T; North-East Japan Study Group. Updated overall survival results from a randomized phase III trial comparing gefitinib with carboplatin-paclitaxel for chemo-naïve non-small cell lung cancer with sensitive EGFR gene mutations (NEJ002). Ann Oncol. 2013 Jan;24(1):54-9. Epub 2012 Sep 11. [https://academic.oup.com/annonc/article/24/1/54/1745637 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22967997 PubMed]
+# '''IFUM:''' Douillard JY, Ostoros G, Cobo M, Ciuleanu T, McCormack R, Webster A, Milenkova T. First-line gefitinib in Caucasian EGFR mutation-positive NSCLC patients: a phase-IV, open-label, single-arm study. Br J Cancer. 2014 Jan 7;110(1):55-62. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3887309/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24263064 PubMed]
+# '''LUX-Lung 7:''' Park K, Tan EH, O'Byrne K, Zhang L, Boyer M, Mok T, Hirsh V, Yang JC, Lee KH, Lu S, Shi Y, Kim SW, Laskin J, Kim DW, Arvis CD, Kölbeck K, Laurie SA, Tsai CM, Shahidi M, Kim M, Massey D, Zazulina V, Paz-Ares L. Afatinib versus gefitinib as first-line treatment of patients with EGFR mutation-positive non-small-cell lung cancer (LUX-Lung 7): a phase 2B, open-label, randomised controlled trial. Lancet Oncol. 2016 May;17(5):577-89. Epub 2016 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30033-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27083334 PubMed]
+# '''WJOG 5108L:''' Urata Y, Katakami N, Morita S, Kaji R, Yoshioka H, Seto T, Satouchi M, Iwamoto Y, Kanehara M, Fujimoto D, Ikeda N, Murakami H, Daga H, Oguri T, Goto I, Imamura F, Sugawara S, Saka H, Nogami N, Negoro S, Nakagawa K, Nakanishi Y. Randomized phase III study comparing gefitinib with erlotinib in patients with previously treated advanced lung adenocarcinoma: WJOG 5108L. J Clin Oncol. 2016 Sep 20;34(27):3248-57. Epub 2016 Mar 28. [http://jco.ascopubs.org/content/34/27/3248.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27022112 PubMed]
+# Cheng Y, Murakami H, Yang PC, He J, Nakagawa K, Kang JH, Kim JH, Wang X, Enatsu S, Puri T, Orlando M, Yang JC. Randomized phase II trial of gefitinib with and without pemetrexed as first-line therapy in patients with advanced nonsquamous non-small-cell lung cancer with activating epidermal growth factor receptor mutations. J Clin Oncol. 2016 Sep 20;34(27):3258-66. Epub 2016 Aug 9. [http://jco.ascopubs.org/content/34/27/3258.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27507876 PubMed]
+# '''CTONG 0901:''' Yang JJ, Zhou Q, Yan HH, Zhang XC, Chen HJ, Tu HY, Wang Z, Xu CR, Su J, Wang BC, Jiang BY, Bai XY, Zhong WZ, Yang XN, Wu YL. A phase III randomised controlled trial of erlotinib vs gefitinib in advanced non-small cell lung cancer with EGFR mutations. Br J Cancer. 2017 Feb 28;116(5):568-574. Epub 2017 Jan 19. [https://www.nature.com/bjc/journal/v116/n5/full/bjc2016456a.html link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5344291/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28103612 PubMed]
+# '''ARCHER 1050:''' Wu YL, Cheng Y, Zhou X, Lee KH, Nakagawa K, Niho S, Tsuji F, Linke R, Rosell R, Corral J, Migliorino MR, Pluzanski A, Sbar EI, Wang T, White JL, Nadanaciva S, Sandin R, Mok TS. Dacomitinib versus gefitinib as first-line treatment for patients with EGFR-mutation-positive non-small-cell lung cancer (ARCHER 1050): a randomised, open-label, phase 3 trial. Lancet Oncol. 2017 Nov;18(11):1454-1466. Epub 2017 Sep 25. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30608-3/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28958502 PubMed]
+## '''Update:''' Mok TS, Cheng Y, Zhou X, Lee KH, Nakagawa K, Niho S, Lee M, Linke R, Rosell R, Corral J, Migliorino MR, Pluzanski A, Sbar EI, Wang T, White JL, Wu YL. Improvement in overall survival in a randomized study that compared dacomitinib with gefitinib in patients with advanced non-small-cell lung cancer and EGFR-activating mutations. J Clin Oncol. 2018 Aug 1;36(22):2244-2250. Epub 2018 Jun 4. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.7994 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29864379 PubMed]
+# '''FLAURA:''' Soria JC, Ohe Y, Vansteenkiste J, Reungwetwattana T, Chewaskulyong B, Lee KH, Dechaphunkul A, Imamura F, Nogami N, Kurata T, Okamoto I, Zhou C, Cho BC, Cheng Y, Cho EK, Voon PJ, Planchard D, Su WC, Gray JE, Lee SM, Hodge R, Marotti M, Rukazenkov Y, Ramalingam SS; FLAURA Investigators. Osimertinib in untreated EGFR-mutated advanced non-small-cell lung cancer. N Engl J Med. 2018 Jan 11;378(2):113-125. Epub 2017 Nov 18. [https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29151359 PubMed]
+## '''Subgroup analysis:''' Reungwetwattana T, Nakagawa K, Cho BC, Cobo M, Cho EK, Bertolini A, Bohnet S, Zhou C, Lee KH, Nogami N, Okamoto I, Leighl N, Hodge R, McKeown A, Brown AP, Rukazenkov Y, Ramalingam SS, Vansteenkiste J. CNS response to osimertinib versus standard epidermal growth factor receptor tyrosine kinase inhibitors in patients with untreated EGFR-mutated advanced non-small-cell lung cancer. J Clin Oncol. 2018 Nov 20;36(33):3290-7. Epub 2018 Aug 28. PubMed
+
+==Gefitinib & Pemetrexed {{#subobject:bbe840|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+P+G: '''<u>P</u>'''emetrexed and '''<u>G</u>'''efitinib
+===Regimen {{#subobject:5281f8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/34/27/3258.full Cheng et al. 2016]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Gefitinib_monotherapy_2|Gefitinib]]
+|style="background-color:#91cf60"|Seems to have superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Gefitinib (Iressa)]] 250 mg PO once per day
+*[[Pemetrexed (Alimta)]] 500 mg IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# Cheng Y, Murakami H, Yang PC, He J, Nakagawa K, Kang JH, Kim JH, Wang X, Enatsu S, Puri T, Orlando M, Yang JC. Randomized phase II trial of gefitinib with and without pemetrexed as first-line therapy in patients with advanced nonsquamous non-small-cell lung cancer with activating epidermal growth factor receptor mutations. J Clin Oncol. 2016 Sep 20;34(27):3258-66. Epub 2016 Aug 9. [http://jco.ascopubs.org/content/34/27/3258.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27507876 PubMed]
+
+==Icotinib monotherapy {{#subobject:9720a1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d7253b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/28/10/2443/4091563 Shi et al. 2017 (CONVINCE)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Cisplatin_.26_Pemetrexed_2|Cisplatin & Pemetrexed]] x 4, then [[Non-small_cell_lung_cancer#Pemetrexed_monotherapy_2|Pemetrexed maintenance]]
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+''Note: this drug is only approved in China; eligible patients had stage IIIB/IV lung adenocarcinoma and exon 19/21 EGFR mutations.''
+====Chemotherapy====
+*[[Icotinib (Conmana)]] 125 mg PO TID
+
+'''Continued indefinitely'''
+
+===References===
+# '''CONVINCE:''' Shi YK, Wang L, Han BH, Li W, Yu P, Liu YP, Ding CM, Song X, Ma ZY, Ren XL, Feng JF, Zhang HL, Chen GY, Han XH, Wu N, Yao C, Song Y, Zhang SC, Song W, Liu XQ, Zhao SJ, Lin YC, Ye XQ, Li K, Shu YQ, Ding LM, Tan FL, Sun Y. First-line icotinib versus cisplatin/pemetrexed plus pemetrexed maintenance therapy for patients with advanced EGFR mutation-positive lung adenocarcinoma (CONVINCE): a phase 3, open-label, randomized study. Ann Oncol. 2017 Oct 1;28(10):2443-2450. [https://academic.oup.com/annonc/article/28/10/2443/4091563 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28945850 PubMed]
+
+==Osimertinib monotherapy {{#subobject:e73636|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b7880f|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 Soria et al. 2017 (FLAURA)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[#Erlotinib_monotherapy|Erlotinib]]<br> 2. [[#Gefitinib_monotherapy|Gefitinib]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''Patients were required to have EGFR exon 19 deletion or p.L858R mutation.''
+====Chemotherapy====
+*[[Osimertinib (Tagrisso)]] 80 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''FLAURA:''' Soria JC, Ohe Y, Vansteenkiste J, Reungwetwattana T, Chewaskulyong B, Lee KH, Dechaphunkul A, Imamura F, Nogami N, Kurata T, Okamoto I, Zhou C, Cho BC, Cheng Y, Cho EK, Voon PJ, Planchard D, Su WC, Gray JE, Lee SM, Hodge R, Marotti M, Rukazenkov Y, Ramalingam SS; FLAURA Investigators. Osimertinib in untreated EGFR-mutated advanced non-small-cell lung cancer. N Engl J Med. 2018 Jan 11;378(2):113-125. Epub 2017 Nov 18. [https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29151359 PubMed]
+## '''Subgroup analysis:''' Reungwetwattana T, Nakagawa K, Cho BC, Cobo M, Cho EK, Bertolini A, Bohnet S, Zhou C, Lee KH, Nogami N, Okamoto I, Leighl N, Hodge R, McKeown A, Brown AP, Rukazenkov Y, Ramalingam SS, Vansteenkiste J. CNS response to osimertinib versus standard epidermal growth factor receptor tyrosine kinase inhibitors in patients with untreated EGFR-mutated advanced non-small-cell lung cancer. J Clin Oncol. 2018 Nov 20;36(33):3290-7. Epub 2018 Aug 28. PubMed
+
+=Advanced or metastatic disease, EGFR inhibitor-exposed=
+==Afatinib monotherapy {{#subobject:1a2d3b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f109f9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/27/3335.long Katakami et al. 2013 (LUX-Lung 4)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#6e016b; color:white |ORR: 8% (95% CI: 3-18)
+|-
+|}
+''In '''LUX-Lung 4''', 72.6% of patients were EGFR mutation positive. This was third or fourth line therapy for participants, who had progressed while receiving erlotinib and/or gefitinib and had received one or two previous lines of chemotherapy, including at least one platinum-based regimen.'' 
+====Chemotherapy====
+*[[Afatinib (Gilotrif)]] 50 mg PO once per day, given 1 hour before eating food
+
+'''Given indefinitely'''
+
+===References===
+# '''LUX-Lung 4:''' Katakami N, Atagi S, Goto K, Hida T, Horai T, Inoue A, Ichinose Y, Koboyashi K, Takeda K, Kiura K, Nishio K, Seki Y, Ebisawa R, Shahidi M, Yamamoto N. LUX-Lung 4: a phase II trial of afatinib in patients with advanced non-small-cell lung cancer who progressed during prior treatment with erlotinib, gefitinib, or both. J Clin Oncol. 2013 Sep 20;31(27):3335-41. Epub 2013 Jul 1. [http://jco.ascopubs.org/content/31/27/3335.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23816963 PubMed]
+
+=Advanced or metastatic disease, EGFR p.T790M mutation=
+==Osimertinib monotherapy {{#subobject:PYR2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:PYV2|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1411817 Jänne et al. 2015 (AURA)]
+| style="background-color:#91cf61" |Phase 1, >20 pts in this dosing cohort
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1612674 Mok et al. 2016 (AURA3)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small cell lung cancer#Carboplatin_.26_Pemetrexed_2|Carboplatin & Pemetrexed]]<br> 2. [[Non-small cell lung cancer#Cisplatin_.26_Pemetrexed_3|Cisplatin & Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''Patients enrolled in '''AURA3''' had locally advanced or metastatic NSCLC with progression after first-line EGFR TKI therapy, and were required to have presence of an EGFR p.T790M mutation.''
+====Chemotherapy====
+*[[Osimertinib (Tagrisso)]] 80 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''Phase 1:''' Jänne PA, Yang JC, Kim DW, Planchard D, Ohe Y, Ramalingam SS, Ahn MJ, Kim SW, Su WC, Horn L, Haggstrom D, Felip E, Kim JH, Frewer P, Cantarini M, Brown KH, Dickinson PA, Ghiorghiu S, Ranson M. AZD9291 in EGFR inhibitor-resistant non-small-cell lung cancer. N Engl J Med. 2015 Apr 30;372(18):1689-99. [https://www.nejm.org/doi/full/10.1056/NEJMoa1411817 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25923549 PubMed]
+# '''AURA3:''' Mok TS, Wu YL, Ahn MJ, Garassino MC, Kim HR, Ramalingam SS, Shepherd FA, He Y, Akamatsu H, Theelen WS, Lee CK, Sebastian M, Templeton A, Mann H, Marotti M, Ghiorghiu S, Papadimitrakopoulou VA; AURA3 Investigators. Osimertinib or platinum-pemetrexed in EGFR T790M-positive lung cancer. N Engl J Med. 2017 Feb 16;376(7):629-640. Epub 2016 Dec 6. [https://www.nejm.org/doi/full/10.1056/NEJMoa1612674 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27959700 PubMed]
+## '''Subgroup analysis:''' Wu YL, Ahn MJ, Garassino MC, Han JY, Katakami N, Kim HR, Hodge R, Kaur P, Brown AP, Ghiorghiu D, Papadimitrakopoulou VA, Mok TSK. CNS efficacy of osimertinib in patients with T790M-positive advanced non-small-cell lung cancer: data from a randomized phase III trial (AURA3). J Clin Oncol. 2018 Sep 10;36(26):2702-2709. Epub 2018 Jul 30. [http://ascopubs.org/doi/full/10.1200/JCO.2018.77.9363 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30059262 PubMed]
+
+[[Category:Non-small cell lung cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Thoracic cancers]]

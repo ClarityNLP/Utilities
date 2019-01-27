@@ -1,0 +1,104 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+=="How I Treat"==
+*'''2011:''' Lamy T, Loughran TP Jr. How I treat LGL leukemia. Blood. 2011 Mar 10;117(10):2764-74. [http://bloodjournal.hematologylibrary.org/content/117/10/2764.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3062292/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21190991 PubMed]
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas] - contains information about T-cell Large Granular Lymphocytic Leukemia
+
+=Initial therapy=
+
+==Cyclophosphamide monotherapy {{#subobject:464f08|Regimen=1}}== 
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:78c71b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2930955/ Bareau et al. 2010]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''These are retrospective series, of which Bareau et al. 2010 is representative. The most common dose reported is 100 mg PO once per day; some authors mentions co-administration of steroids but details are not supplied.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 50 to 100 mg PO once per day
+
+'''Lamy et al. 2011 recommends that patients who are responding are continued on treatment for 6 to 12 months; patients who do not respond within 4 months of therapy are discontinued'''
+
+===References===
+# '''Retrospective:''' Go RS, Li CY, Tefferi A, Phyliky RL. Acquired pure red cell aplasia associated with lymphoproliferative disease of granular T lymphocytes. Blood. 2001 Jul 15;98(2):483-5. [http://bloodjournal.hematologylibrary.org/content/98/2/483.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed?term=11435321 PubMed]
+# '''Retrospective:''' Bareau B, Rey J, Hamidou M, Donadieu J, Morcet J, Reman O, Schleinitz N, Tournilhac O, Roussel M, Fest T, Lamy T. Analysis of a French cohort of patients with large granular lymphocyte leukemia: a report on 229 cases. Haematologica. 2010 Sep;95(9):1534-41. [http://www.haematologica.org/content/95/9/1534.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2930955/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20378561 PubMed] content property of [http://hemonc.org HemOnc.org]
+# '''Retrospective:''' Moignet A, Hasanali Z, Zambello R, Pavan L, Bareau B, Tournilhac O, Roussel M, Fest T, Awwad A, Baab K, Semenzato G, Houot R, Loughran TP Jr, Lamy T. Cyclophosphamide as a first-line therapy in LGL leukemia. Leukemia. 2014 May;28(5):1134-6. Epub 2013 Nov 27. [https://www.nature.com/leu/journal/v28/n5/full/leu2013359a.html link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4017255/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24280867 PubMed]
+
+==Methotrexate & Prednisone {{#subobject:9c0e17|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:3bbb5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377298/ Loughran et al. 2014 (ECOG E5998)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 10 mg/m<sup>2</sup>/day PO in divided doses once per week 
+**Details not described in ECOG E5998; Lamy et al. 2011 divides the 10 mg/m<sup>2</sup> methotrexate dose into 5 mg/m<sup>2</sup> in the morning and 5 mg/m<sup>2</sup> in the evening
+*[[Prednisone (Sterapred)]] 1 mg/kg PO once per day for 30 days, then tapered off over 24 days (details not described)
+
+'''28-day cycles'''
+
+====Subsequent treatment====
+*Patients with PR: continue up to one year
+*Patients with CR: continue for one month past documented CR
+*Non-responders were transitioned to [[#Cyclophosphamide_.26_Prednisone|cyclophosphamide & prednisone]]
+
+===References===
+# '''ECOG E5998:''' Loughran TP Jr, Zickl L, Olson TL, Wang V, Zhang D, Rajala HL, Hasanali Z, Bennett JM, Lazarus HM, Litzow MR, Evens AM, Mustjoki S, Tallman MS. Immunosuppressive therapy of LGL leukemia: prospective multicenter phase II study by the Eastern Cooperative Oncology Group (E5998). Leukemia. 2015 Apr;29(4):886-94. Epub 2014 Sep 13. [https://www.nature.com/leu/journal/vaop/naam/pdf/leu2014298a.pdf link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377298/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25306898 PubMed]
+
+=Relapsed or refractory=
+
+==Cyclophosphamide & Prednisone {{#subobject:3cfd6b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c27546|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377298/ Loughran et al. 2014 (ECOG E5998)]
+|style="background-color:#91cf61"|Phase II
+|ORR: 64% (95% CI, 35-87)
+|-
+|}
+''Note: Patients with PR continue up to one year; patients with CR continue for one month past documented CR.''
+====Preceding treatment====
+*[[#Methotrexate_.26_Prednisone|Methotrexate & prednisone]], with treatment failure
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 100 mg PO once per day
+*[[Prednisone (Sterapred)]] 1 mg/kg PO once per day for 30 days, then tapered off over 24 days (details not described)
+
+'''28-day cycles (see note)'''
+
+===References===
+# '''ECOG E5998:''' Loughran TP Jr, Zickl L, Olson TL, Wang V, Zhang D, Rajala HL, Hasanali Z, Bennett JM, Lazarus HM, Litzow MR, Evens AM, Mustjoki S, Tallman MS. Immunosuppressive therapy of LGL leukemia: prospective multicenter phase II study by the Eastern Cooperative Oncology Group (E5998). Leukemia. 2015 Apr;29(4):886-94. Epub 2014 Sep 13. [https://www.nature.com/leu/journal/vaop/naam/pdf/leu2014298a.pdf link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377298/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25306898 PubMed]
+
+[[Category:Large granular lymphocytic leukemia regimens]]
+[[Category:Disease-specific pages]]
+[[Category:T-cell lymphomas]]

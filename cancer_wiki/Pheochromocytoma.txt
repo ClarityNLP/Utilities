@@ -1,0 +1,96 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0|[[File:Jeenavarghese.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Jvarghese|Jeena M. Varghese, MBBS]]<br>Houston, TX</big><br>[https://www.linkedin.com/in/jeena-varghese-b2b45b9b/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/neuroendocrine.pdf NCCN Guidelines - Neuroendocrine Tumors]
+
+=All lines of therapy=
+
+==Cyclophosphamide, Dacarbazine, Vincristine {{#subobject:6ff914|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CVD: '''<u>C</u>'''yclophosphamide, '''<u>V</u>'''incristine, '''<u>D</u>'''acarbazine
+
+===Regimen {{#subobject:5998d1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annals.org/article.aspx?articleid=702515 Averbuch et al. 1988]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Dacarbazine (DTIC)]] 600 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# Averbuch SD, Steakley CS, Young RC, Gelmann EP, Goldstein DS, Stull R, Keiser HR. Malignant pheochromocytoma: effective treatment with a combination of cyclophosphamide, vincristine, and dacarbazine. Ann Intern Med. 1988 Aug 15;109(4):267-73. [http://annals.org/article.aspx?articleid=702515 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/3395037 PubMed]
+
+==<sup>131</sup>I-Metaiodobenzylguanidine (<sup>131</sup>I-MIBG) {{#subobject:57992a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Also known as m-[131I]iodobenzylguanidine ([131I]MIBG).
+
+===Variant #1 {{#subobject:f474b2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.11518/full Rose et al. 2003]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+''Patients underwent stem cell harvest prior to treatment in case autologous stem cell infusion was needed.''
+====Radiotherapy====
+*<sup>131</sup>I-Metaiodobenzylguanidine (<sup>131</sup>I-MIBG) 12 to 18 mCi/kg (maximum single dose of 850 mCi) IV over 2 hours once on day 1
+
+====Supportive medications====
+*Intravenous fluids started 12 hours before 131I-MIBG administration.
+*Potassium iodide (KI) 6 mg/kg PO once at least 2 hours prior to 131I-MIBG, then potassium iodide (KI) 0.88 mg/kg PO Q4H x 7 days, then potassium iodide (KI) 1 mg/kg PO (frequency not specified) "for 45 days after the infusion."
+*Potassium perchlorate 8 mg/kg once at least 2 hours prior to 131I-MIBG, then potassium perchlorate 2 mg/kg PO Q6H x 5 days.
+
+'''"Repeat 131I-MIBG treatments were administered on a case-by-case basis in an effort to improve the overall response"'''
+
+===Variant #2 {{#subobject:53e027|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jcem.endojournals.org/content/72/2/455.long Krempf et al. 1991]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+====Radiotherapy====
+*m-[131I]iodobenzylguanidine ([131I]MIBG) 740 megabequerel/mg every 3 months
+
+===References===
+# Krempf M, Lumbroso J, Mornex R, Brendel AJ, Wemeau JL, Delisle MJ, Aubert B, Carpentier P, Fleury-Goyon MC, Gibold C, Guyot M, Lahneche B, Marchandise X, Schlumberger M, Charbonnel B, Chatal JF. Use of m-[131I]iodobenzylguanidine in the treatment of malignant pheochromocytoma. J Clin Endocrinol Metab. 1991 Feb;72(2):455-61. [http://jcem.endojournals.org/content/72/2/455.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1991814 PubMed]
+# Rose B, Matthay KK, Price D, Huberty J, Klencke B, Norton JA, Fitzgerald PA. High-dose 131I-metaiodobenzylguanidine therapy for 12 patients with malignant pheochromocytoma. Cancer. 2003 Jul 15;98(2):239-48. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.11518/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12872341 PubMed]
+
+[[Category:Pheochromocytoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Endocrine cancers]]

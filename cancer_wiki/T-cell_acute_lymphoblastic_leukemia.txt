@@ -1,0 +1,567 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+''Note that many of the regimens used to treat this disease are generic to [[B-cell acute lymphoblastic leukemia]]; this page contains regimens that are specific to T-cell acute lymphoblastic leukemia (a.k.a. T-cell lymphoblastic lymphoma when primarily nodal-based).
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas]
+
+=Pre-phase=
+==Prednisone monotherapy {{#subobject:30c275|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:af8a3d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/34/6/572.full Lepretre et al. 2015 (GRAALL-LYSA LL03)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day PO on days -7 to -1
+
+====CNS treatment====
+*[[Methotrexate (MTX)]] 15 mg IT once at some point between days -7 and -4
+
+'''7-day course'''
+====Subsequent treatment====
+*[[#Cyclophosphamide.2C_Daunorubicin.2C_L-Asparaginase.2C_Vincristine.2C_Prednisone|Cyclophosphamide, daunorubicin, L-asparaginase, vincristine, prednisone reinforced induction]]
+
+===References===
+<!-- Presented at the 56th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 6-9, 2014. -->
+# Lepretre S, Touzart A, Vermeulin T, Picquenot JM, Tanguy-Schmidt A, Salles G, Lamy T, Béné MC, Raffoux E, Huguet F, Chevallier P, Bologna S, Bouabdallah R, Benichou J, Brière J, Moreau A, Tallon-Simon V, Seris S, Graux C, Asnafi V, Ifrah N, Macintyre E, Dombret H. Pediatric-Like Acute Lymphoblastic Leukemia Therapy in Adults With Lymphoblastic Lymphoma: The GRAALL-LYSA LL03 Study. J Clin Oncol. 2016 Feb 20;34(6):572-80. Epub 2015 Dec 7. [http://jco.ascopubs.org/content/34/6/572.full link to original article] [http://jco.ascopubs.org/content/suppl/2015/12/07/JCO.2015.61.5385.DC1/DS_2015.615385.pdf link to data supplement] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26644537 PubMed]
+
+=Upfront induction therapy=
+
+==Daunorubicin, L-Asparaginase, Vincristine, Prednisone {{#subobject:3c9897|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen (BFM 76/79 Phase I) {{#subobject:3fe1a2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(88)92596-2/fulltext Gaynon et al. 1988 (CCG-106)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Control regimen
+| style="background-color:#91cf60" |Seems to have superior EFS
+|-
+|2. New York regimen
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1002/%28SICI%291097-0142%2819980201%2982%3A3%3C600%3A%3AAID-CNCR24%3E3.0.CO%3B2-4 Steinherz et al. 1998]
+|style="background-color:#1a9851"|Phase III (C)
+|1. LSA2-L2 & WBRT<br> 2. LSA-L2<br> 3. New York regimen
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Daunorubicin (Cerubidine)]] 25 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IM TIW on weeks 1 to 3 (9 doses total)
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day PO on days 1 to 28, then tapered over 2 weeks
+
+====CNS therapy====
+*[[Methotrexate (MTX)]] IT once per day on days 1, 15, 29 (dose not specified)
+
+'''6-week course'''
+====Subsequent treatment====
+*BFM 76/79 Phase II
+
+===References===
+# '''CCG-106:''' Gaynon PS, Steinherz PG, Bleyer WA, Ablin AR, Albo VC, Finklestein JZ, Grossman NJ, Littman PS, Novak LT, Pyesmany AF, Sather HN, Hammond GD. Intensive therapy for children with acute lymphoblastic leukaemia and unfavourable presenting features: early conclusions of study CCG-106 by the Childrens Cancer Study Group. Lancet. 1988 Oct 22;2(8617):921-4. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(88)92596-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/2902379 PubMed]
+# Steinherz PG, Gaynon PS, Breneman JC, Cherlow JM, Grossman NJ, Kersey JH, Johnstone HS, Sather HN, Trigg ME, Uckun FM, Bleyer WA. Treatment of patients with acute lymphoblastic leukemia with bulky extramedullary disease and T-cell phenotype or other poor prognostic features: randomized controlled trial from the Children's Cancer Group. Cancer. 1998 Feb 1;82(3):600-12. [https://onlinelibrary.wiley.com/doi/full/10.1002/%28SICI%291097-0142%2819980201%2982%3A3%3C600%3A%3AAID-CNCR24%3E3.0.CO%3B2-4 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9452280 PubMed]
+
+==Daunorubicin, Pegaspargase, Vincristine, Dexamethasone {{#subobject:516f7b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen, modified ABFM {{#subobject:88f520|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|See note (COG AALL1231)
+|style="background-color:#1a9851"|Phase III (C)
+|Daunorubicin, L-Asparaginase, Vincristine, Dexamethasone, Bortezomib
+|TBD
+|-
+|}
+''Note: this regimen is available as a COG protocol but no manuscript has been published yet, to our knowledge. Per the protocol, it is intended only for patients greater than 1 and less than 31 years of age. It is based on the UKALL 2003 backbone, although there are some differences.''
+====Chemotherapy====
+*[[Daunorubicin (Cerubidine)]] 25 mg/m<sup>2</sup> IV push over 1 to 15 minutes once per day on days 1, 8, 15, 22
+*[[Pegaspargase (Oncaspar)]] 2500 units/m<sup>2</sup> IV over 1 to 2 hours once per day on days 4 & 18
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1, 8, 15, 22
+*[[Dexamethasone (Decadron)]] 3 mg/m<sup>2</sup> PO or IV twice per day on days 1 to 28
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] as follows:
+**Ages 1 to 1.99: 30 mg IT once on day 1
+**Ages 2 to 2.99: 50 mg IT once on day 1
+**Age 3 and older: 70 mg IT once on day 1
+*[[Methotrexate (MTX)]] as follows:
+**Ages 1 to 1.99: 8 mg IT once per day on days 8 & 29
+**Ages 2 to 2.99: 10 mg IT once per day on days 8 & 29
+**Ages 3 to 8.99: 12 mg IT once per day on days 8 & 29
+**Age 9 and older: 15 mg IT once per day on days 8 & 29
+
+'''4-week course'''
+====Subsequent treatment====
+*[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, cytarabine, mercaptopurine, pegaspargase, vincristine consolidation]]
+
+===References===
+# '''UKALL 2003:''' Vora A, Goulden N, Wade R, Mitchell C, Hancock J, Hough R, Rowntree C, Richards S. Treatment reduction for children and young adults with low-risk acute lymphoblastic leukaemia defined by minimal residual disease (UKALL 2003): a randomised controlled trial. Lancet Oncol. 2013 Mar;14(3):199-209. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70600-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23395119 PubMed]
+# COG AALL1231: TBD, see note
+
+==Daunorubicin, Pegaspargase, Vincristine, Prednisone {{#subobject:a39331|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1511c2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ Winter et al. 2015 (COG AALL0434)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Chemotherapy====
+*[[Daunorubicin (Cerubidine)]] 25 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Pegaspargase (Oncaspar)]] 2500 units/m<sup>2</sup> IV once on day 4, 5, OR 6 (1 dose)
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1, 8, 15, 22
+*[[Prednisone (Sterapred)]] 30 mg/m<sup>2</sup> PO twice per day on days 1 to 28
+
+'''4-week course'''
+====Subsequent treatment====
+*[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Nelarabine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Nelarabine, Pegaspargase, Vincristine]] versus [[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Pegaspargase, Vincristine]]
+===References===
+# '''COG AALL0434:''' Winter SS, Dunsmore KP, Devidas M, Eisenberg N, Asselin BL, Wood BL, Leonard Rn MS, Murphy J, Gastier-Foster JM, Carroll AJ, Heerema NA, Loh ML, Raetz EA, Winick NJ, Carroll WL, Hunger SP. Safe integration of nelarabine into intensive chemotherapy in newly diagnosed T-cell acute lymphoblastic leukemia: Children's Oncology Group Study AALL0434. Pediatr Blood Cancer. 2015 Jul;62(7):1176-83. Epub 2015 Mar 8. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.25470/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25755211 PubMed]
+
+==Cyclophosphamide, Daunorubicin, L-Asparaginase, Vincristine, Prednisone {{#subobject:b90dc3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen, "Pediatric-like GRAALL reinforced induction" {{#subobject:56ea06|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/34/6/572.full Lepretre et al. 2015 (GRAALL-LYSA LL03)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: This regimen was meant for patients less than 60 years old (up to age 59). Regimen is as per the [[Acute_lymphocytic_leukemia#Pediatric-like_GRAALL_induction|GRAALL-2003 Study]] with some minor differences. High-risk patients with an HLA sibling-matched donor or a fully matched (10/10) unrelated donor who achieved CR1 were offered allogeneic stem cell transplant.''
+====Preceding treatment====
+*[[#Prednisone_monotherapy|Prednisone pre-phase]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 3 hours once on day 1, then 500 mg/m<sup>2</sup> IV every 12 hours on days 15 & 16
+*[[Daunorubicin (Cerubidine)]] 50 mg/m<sup>2</sup> IV once per day on days 1 to 3, then 30 mg/m<sup>2</sup> IV once per day on days 15 & 16
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup>/day (route not specified) on days 8, 10, 12, 20, 22, 24, 26, 28
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 1, 8, 15, 22
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day PO on days 1 to 14
+
+====Supportive medications====
+*[[Lenograstim (Granocyte)]] 150 mcg/m<sup>2</sup> SC once per day from day 17 until myeloid recovery
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg IT once per day on days 1 & 8
+*[[Cytarabine (Cytosar)]] 40 mg IT once per day on days 1 & 8
+*[[Methylprednisolone (Solumedrol)|Methylprednisolone (Depo-Medrol)]] 40 mg IT once per day on days 1 & 8
+
+'''One course'''
+====Subsequent treatment====
+*See paper for details beyond induction
+
+===References===
+<!-- Presented at the 56th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 6-9, 2014. -->
+# Lepretre S, Touzart A, Vermeulin T, Picquenot JM, Tanguy-Schmidt A, Salles G, Lamy T, Béné MC, Raffoux E, Huguet F, Chevallier P, Bologna S, Bouabdallah R, Benichou J, Brière J, Moreau A, Tallon-Simon V, Seris S, Graux C, Asnafi V, Ifrah N, Macintyre E, Dombret H. Pediatric-Like Acute Lymphoblastic Leukemia Therapy in Adults With Lymphoblastic Lymphoma: The GRAALL-LYSA LL03 Study. J Clin Oncol. 2016 Feb 20;34(6):572-80. Epub 2015 Dec 7. [http://jco.ascopubs.org/content/34/6/572.full link to original article] [http://jco.ascopubs.org/content/suppl/2015/12/07/JCO.2015.61.5385.DC1/DS_2015.615385.pdf link to data supplement] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26644537 PubMed]
+
+=Consolidation after upfront therapy=
+
+==Cyclophosphamide, Cytarabine, Mercaptopurine, Nelarabine, Pegaspargase, Vincristine {{#subobject:ae17db|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9d711b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ Winter et al. 2015 (COG AALL0434)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Pegaspargase, Vincristine]]
+|style="background-color:#d3d3d3"|Not reported
+|style="background-color:#ffffbf"|Similar toxicity
+|-
+|}
+''Note: although the induction doses of vincristine are capped at 2 mg, capping is not mentioned in the subsequent phases of treatment.''
+====Preceding treatment====
+*[[#Daunorubicin.2C_Pegaspargase.2C_Vincristine.2C_Prednisone|Daunorubicin, Pegaspargase, Vincristine, Prednisone induction]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 1000 mg/m<sup>2</sup> IV once per day on days 8 & 50
+*[[Cytarabine (Cytosar)]] 75 mg/m<sup>2</sup> IV or SC once per day on days 8 to 11, 15 to 18, 50 to 53, 57 to 60
+*[[Mercaptopurine (Purinethol)]] 60 mg/m<sup>2</sup> PO once per day on days 8 to 21, 50 to 63
+*[[Nelarabine (Arranon)]] 650 mg/m<sup>2</sup> IV once per day on days 1 to 5, 43 to 47
+*[[Pegaspargase (Oncaspar)]] 2500 units/m<sup>2</sup> IM once per day on days 22 & 64
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 22, 64, 71
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] (dose not specified) IT on days 15, 22, 57, 64
+*[[External_beam_radiotherapy|Whole-brain irradiation]] in some arms (see paper for details)
+
+'''One course'''
+====Subsequent treatment====
+*Interim maintenance; see paper for details
+
+===References===
+# Winter SS, Dunsmore KP, Devidas M, Eisenberg N, Asselin BL, Wood BL, Leonard Rn MS, Murphy J, Gastier-Foster JM, Carroll AJ, Heerema NA, Loh ML, Raetz EA, Winick NJ, Carroll WL, Hunger SP. Safe integration of nelarabine into intensive chemotherapy in newly diagnosed T-cell acute lymphoblastic leukemia: Children's Oncology Group Study AALL0434. Pediatr Blood Cancer. 2015 Jul;62(7):1176-83. Epub 2015 Mar 8. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.25470/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25755211 PubMed]
+
+==Cyclophosphamide, Cytarabine, Mercaptopurine, Pegaspargase, Vincristine {{#subobject:9e619a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:9d3523|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ Winter et al. 2015 (COG AALL0434)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Nelarabine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Nelarabine, Pegaspargase, Vincristine]]
+|style="background-color:#d3d3d3"|Not reported
+|style="background-color:#ffffbf"|Similar toxicity
+|-
+|}
+''Note: although the induction doses of vincristine are capped at 2 mg, capping is not mentioned in the subsequent phases of treatment.''
+====Preceding treatment====
+*[[#Daunorubicin.2C_Pegaspargase.2C_Vincristine.2C_Prednisone|Daunorubicin, Pegaspargase, Vincristine, Prednisone induction]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 1000 mg/m<sup>2</sup> IV once per day on days 8 & 50
+*[[Cytarabine (Cytosar)]] 75 mg/m<sup>2</sup> IV or SC once per day on days 8 to 11, 15 to 18, 50 to 53, 57 to 60
+*[[Mercaptopurine (Purinethol)]] 60 mg/m<sup>2</sup> PO once per day on days 8 to 21, 50 to 63
+*[[Pegaspargase (Oncaspar)]] 2500 units/m<sup>2</sup> IM once per day on days 22 & 64
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 22, 64, 71
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] (dose not specified) IT on days 15, 22, 57, 64
+*[[External_beam_radiotherapy|Whole-brain irradiation]] in some arms (see paper for details)
+
+'''One course'''
+====Subsequent treatment====
+*Interim maintenance; see paper for details
+
+===Variant #2 {{#subobject:61171f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|See note (COG AALL1231)
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Note: this regimen is available as a COG protocol but no manuscript has been published yet, to our knowledge. Per the protocol, it is intended only for patients greater than 1 and less than 31 years of age.''
+====Preceding treatment====
+*[[#Daunorubicin.2C_Pegaspargase.2C_Vincristine.2C_Dexamethasone|Daunorubicin, pegaspargase, vincristine, dexamethasone induction]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 1000 mg/m<sup>2</sup> IV over 30 to 60 minutes once per day on days 1 & 29
+*[[Cytarabine (Cytosar)]] 75 mg/m<sup>2</sup> IV or SC once per day on days 1 to 4, 8 to 11, 29 to 32, 36 to 39
+*[[Mercaptopurine (Purinethol)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 14, 29 to 42
+**Dose may be modified based on TPMT status
+*[[Pegaspargase (Oncaspar)]] 2500 units/m<sup>2</sup> IV over 1 to 2 hours once per day on days 15 & 43
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 15, 22, 43, 50
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] "is not required for this dose of cyclophosphamide, but may be administered at institutional discretion."
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] as follows, for CNS3:
+**Ages 1 to 1.99: 8 mg IT once per day on days 1 & 8
+**Ages 2 to 2.99: 10 mg IT once per day on days 1 & 8
+**Ages 3 to 8.99: 12 mg IT once per day on days 1 & 8
+**Age 9 and older: 15 mg IT once per day on days 1 & 8
+
+'''One course'''
+
+''See protocol for details of treatment beyond consolidation, which is guided by MRD status obtained at the end of induction.''
+
+===References===
+# Winter SS, Dunsmore KP, Devidas M, Eisenberg N, Asselin BL, Wood BL, Leonard Rn MS, Murphy J, Gastier-Foster JM, Carroll AJ, Heerema NA, Loh ML, Raetz EA, Winick NJ, Carroll WL, Hunger SP. Safe integration of nelarabine into intensive chemotherapy in newly diagnosed T-cell acute lymphoblastic leukemia: Children's Oncology Group Study AALL0434. Pediatr Blood Cancer. 2015 Jul;62(7):1176-83. Epub 2015 Mar 8. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.25470/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25755211 PubMed]
+# COG AALL1231: TBD, see note
+
+==Doxorubicin, L-asparaginase, Mercaptopurine, Methotrexate, Vincristine, Prednisone {{#subobject:03fb9e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9fedf6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292437/ Asselin et al. 2011 (POG 9404)]
+| style="background-color:#1a9851" |Phase III (E)
+|Doxorubicin, L-asparaginase, Mercaptopurine, Vincristine, Prednisone
+| style="background-color:#91cf60" |Seems to have superior EFS
+|-
+|}
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]]
+*[[Asparaginase (Elspar)]]
+*[[Mercaptopurine (Purinethol)]]
+*[[Methotrexate (MTX)]]
+*[[Vincristine (Oncovin)]]
+*[[Prednisone (Sterapred)]]
+===References===
+# '''POG 9404:''' Asselin BL, Devidas M, Wang C, Pullen J, Borowitz MJ, Hutchison R, Lipshultz SE, Camitta BM. Effectiveness of high-dose methotrexate in T-cell lymphoblastic leukemia and advanced-stage lymphoblastic lymphoma: a randomized study by the Children's Oncology Group (POG 9404). Blood. 2011 Jul 28;118(4):874-83. Epub 2011 Apr 7. [http://www.bloodjournal.org/content/118/4/874.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292437/ link to PMC article]  [https://www.ncbi.nlm.nih.gov/pubmed/21474675 PubMed]
+
+==Etoposide & TBI, then allo HSCT {{#subobject:b389e1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:45f841|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/33/11/1265.long Peters et al. 2015 (ALL-SCT-BFM 2003)]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+{{#lst:Allogeneic HSCT|45f841}}
+===Variant #2 {{#subobject:e4216b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+{{#lst:Allogeneic HSCT|e4216b}}
+===References===
+# '''ALL-BFM 90:''' Schrappe M, Reiter A, Ludwig WD, Harbott J, Zimmermann M, Hiddemann W, Niemeyer C, Henze G, Feldges A, Zintl F, Kornhuber B, Ritter J, Welte K, Gadner H, Riehm H; German-Austrian-Swiss ALL-BFM Study Group. Improved outcome in childhood acute lymphoblastic leukemia despite reduced use of anthracyclines and cranial radiotherapy: results of trial ALL-BFM 90. Blood. 2000 Jun 1;95(11):3310-22. [http://www.bloodjournal.org/content/95/11/3310.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10828010 PubMed]
+## '''Subgroup analysis:''' Schrauder A, Reiter A, Gadner H, Niethammer D, Klingebiel T, Kremens B, Peters C, Ebell W, Zimmermann M, Niggli F, Ludwig WD, Riehm H, Welte K, Schrappe M. Superiority of allogeneic hematopoietic stem-cell transplantation compared with chemotherapy alone in high-risk childhood T-cell acute lymphoblastic leukemia: results from ALL-BFM 90 and 95. J Clin Oncol. 2006 Dec 20;24(36):5742-9. [http://ascopubs.org/doi/full/10.1200/JCO.2006.06.2679 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17179108 PubMed]
+# '''MRC UKALL XII/ECOG E2993:''' Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://bloodjournal.hematologylibrary.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://bloodjournal.hematologylibrary.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://bloodjournal.hematologylibrary.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://bloodjournal.hematologylibrary.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+# '''ALL-BFM 95:''' Möricke A, Reiter A, Zimmermann M, Gadner H, Stanulla M, Dördelmann M, Löning L, Beier R, Ludwig WD, Ratei R, Harbott J, Boos J, Mann G, Niggli F, Feldges A, Henze G, Welte K, Beck JD, Klingebiel T, Niemeyer C, Zintl F, Bode U, Urban C, Wehinger H, Niethammer D, Riehm H, Schrappe M; German-Austrian-Swiss ALL-BFM Study Group. Risk-adjusted therapy of acute lymphoblastic leukemia can decrease treatment burden and improve survival: treatment results of 2169 unselected pediatric and adolescent patients enrolled in the trial ALL-BFM 95. Blood. 2008 May 1;111(9):4477-89. Epub 2008 Feb 19. Erratum in: Blood. 2009 Apr 30;113(18):4478. Dosage error in article text. [http://www.bloodjournal.org/content/111/9/4477.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18285545 PubMed]
+## '''Subgroup analysis:''' Schrauder A, Reiter A, Gadner H, Niethammer D, Klingebiel T, Kremens B, Peters C, Ebell W, Zimmermann M, Niggli F, Ludwig WD, Riehm H, Welte K, Schrappe M. Superiority of allogeneic hematopoietic stem-cell transplantation compared with chemotherapy alone in high-risk childhood T-cell acute lymphoblastic leukemia: results from ALL-BFM 90 and 95. J Clin Oncol. 2006 Dec 20;24(36):5742-9. [http://ascopubs.org/doi/full/10.1200/JCO.2006.06.2679 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17179108 PubMed]
+# '''ALL-SCT-BFM-2003:''' Peters C, Schrappe M, von Stackelberg A, Schrauder A, Bader P, Ebell W, Lang P, Sykora KW, Schrum J, Kremens B, Ehlert K, Albert MH, Meisel R, Matthes-Martin S, Gungor T, Holter W, Strahm B, Gruhn B, Schulz A, Woessmann W, Poetschger U, Zimmermann M, Klingebiel T. Stem-cell transplantation in children with acute lymphoblastic leukemia: a prospective international multicenter trial comparing sibling donors with matched unrelated donors-the ALL-SCT-BFM-2003 trial. J Clin Oncol. 2015 Apr 10;33(11):1265-74. Epub 2015 Mar 9. [http://jco.ascopubs.org/content/33/11/1265.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25753432 PubMed]
+
+==L-asparaginase monotherapy {{#subobject:d2a331|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:65da55|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nature.com/articles/2401310 Amylon et al. 1999 (POG 8704)]
+| style="background-color:#1a9851" |Phase III (E)
+|No L-asp
+| style="background-color:#1a9850" |Superior CRR
+|-
+|}
+====Chemotherapy====
+*[[Asparaginase (Elspar)]] 25,000 units/m<sup>2</sup> IM once per week
+
+'''20-week course'''
+===References===
+# '''POG 8704:''' Amylon MD, Shuster J, Pullen J, Berard C, Link MP, Wharam M, Katz J, Yu A, Laver J, Ravindranath Y, Kurtzberg J, Desai S, Camitta B, Murphy SB. Intensive high-dose asparaginase consolidation improves survival for pediatric patients with T cell acute lymphoblastic leukemia and advanced stage lymphoblastic lymphoma: a Pediatric Oncology Group study. Leukemia. 1999 Mar;13(3):335-42. [https://www.nature.com/articles/2401310 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10086723 PubMed]
+
+=Interim maintenance=
+==Mercaptopurine, Methotrexate, Vincristine {{#subobject:ac9042|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BFM HDMTX: '''<u>B</u>'''erlin '''<u>F</u>'''rankfurt '''<u>M</u>'''uenster '''<u>H</u>'''igh-'''<u>D</u>'''ose '''<u>MTX</u>''' (Methotrexate) regimen
+===Regimen {{#subobject:25de9f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ Winter et al. 2015 (COG AALL0434)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Methotrexate.2C_Pegaspargase.2C_Vincristine|COG C-MTX]]
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|}
+''Details to be completed; reported efficacy is based on the 2018 update.''
+====Preceding treatment====
+*[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Pegaspargase, Vincristine]] versus [[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Nelarabine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Nelarabine, Pegaspargase, Vincristine]] induction
+====Chemotherapy====
+*[[Mercaptopurine (Purinethol)]]
+*[[Methotrexate (MTX)]]
+*[[Vincristine (Oncovin)]]
+
+'''8-week course'''
+====Subsequent treatment====
+*Delayed intensification
+===References===
+# '''COG AALL0434:''' Winter SS, Dunsmore KP, Devidas M, Eisenberg N, Asselin BL, Wood BL, Leonard Rn MS, Murphy J, Gastier-Foster JM, Carroll AJ, Heerema NA, Loh ML, Raetz EA, Winick NJ, Carroll WL, Hunger SP. Safe integration of nelarabine into intensive chemotherapy in newly diagnosed T-cell acute lymphoblastic leukemia: Children's Oncology Group Study AALL0434. Pediatr Blood Cancer. 2015 Jul;62(7):1176-83. Epub 2015 Mar 8. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.25470/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25755211 PubMed]
+## '''Update:''' Winter SS, Dunsmore KP, Devidas M, Wood BL, Esiashvili N, Chen Z, Eisenberg N, Briegel N, Hayashi RJ, Gastier-Foster JM, Carroll AJ, Heerema NA, Asselin BL, Gaynon PS, Borowitz MJ, Loh ML, Rabin KR, Raetz EA, Zweidler-Mckay PA, Winick NJ, Carroll WL, Hunger SP. Improved survival for children and young adults with T-lineage acute lymphoblastic leukemia: results from the Children's Oncology Group AALL0434 methotrexate randomization. J Clin Oncol. 2018 Oct 10;36(29):2926-2934. Epub 2018 Aug 23. [http://ascopubs.org/doi/full/10.1200/JCO.2018.77.7250 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30138085 PubMed]
+
+==Methotrexate, Pegaspargase, Vincristine {{#subobject:dd9475|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+COG C-MTX: '''<u>C</u>'''hildren's '''<u>O</u>'''ncology '''<u>G</u>'''roup '''<u>C</u>'''apizzi-style '''<u>MTX</u>''' (Methotrexate) regimen
+===Regimen {{#subobject:1a0b22|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ Winter et al. 2015 (COG AALL0434)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Mercaptopurine.2C_Methotrexate.2C_Vincristine|BFM HDMTX]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Details to be completed; reported efficacy is based on the 2018 update.''
+====Preceding treatment====
+*[[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Pegaspargase, Vincristine]] versus [[#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine.2C_Nelarabine.2C_Pegaspargase.2C_Vincristine|Cyclophosphamide, Cytarabine, Mercaptopurine, Nelarabine, Pegaspargase, Vincristine]] induction
+====Chemotherapy====
+*[[Methotrexate (MTX)]]
+*[[Pegaspargase (Oncaspar)]]
+*[[Vincristine (Oncovin)]]
+
+'''8-week course'''
+====Subsequent treatment====
+*Delayed intensification
+===References===
+# '''COG AALL0434:''' Winter SS, Dunsmore KP, Devidas M, Eisenberg N, Asselin BL, Wood BL, Leonard Rn MS, Murphy J, Gastier-Foster JM, Carroll AJ, Heerema NA, Loh ML, Raetz EA, Winick NJ, Carroll WL, Hunger SP. Safe integration of nelarabine into intensive chemotherapy in newly diagnosed T-cell acute lymphoblastic leukemia: Children's Oncology Group Study AALL0434. Pediatr Blood Cancer. 2015 Jul;62(7):1176-83. Epub 2015 Mar 8. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.25470/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433576/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25755211 PubMed]
+## '''Update:''' Winter SS, Dunsmore KP, Devidas M, Wood BL, Esiashvili N, Chen Z, Eisenberg N, Briegel N, Hayashi RJ, Gastier-Foster JM, Carroll AJ, Heerema NA, Asselin BL, Gaynon PS, Borowitz MJ, Loh ML, Rabin KR, Raetz EA, Zweidler-Mckay PA, Winick NJ, Carroll WL, Hunger SP. Improved survival for children and young adults with T-lineage acute lymphoblastic leukemia: results from the Children's Oncology Group AALL0434 methotrexate randomization. J Clin Oncol. 2018 Oct 10;36(29):2926-2934. Epub 2018 Aug 23. [http://ascopubs.org/doi/full/10.1200/JCO.2018.77.7250 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30138085 PubMed]
+
+=Consolidation after salvage therapy=
+
+==Allogeneic hematopoietic stem cell transplant==
+To be completed
+
+=Relapsed or refractory=
+==Mitoxantrone, Pegaspargase, Vincristine, Dexamethasone {{#subobject:910a79|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e3cbe4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)62002-8/fulltext Parker et al. 2010 (CCLG ALL R3)]
+|style="background-color:#91cf61"|Phase III, <20 pts in this subgroup (E)
+|Idarubicin, Pegaspargase, Vincristine, Dexamethasone
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: per the protocol, this regimen is intended only for patients 18 and younger. This is the same regimen used in relapsed B-ALL, but this subgroup did not have a statistically significant difference between the regimens.''
+====Chemotherapy====
+*[[Mitoxantrone (Novantrone)]] 10 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Pegaspargase (Oncaspar)]] 1000 units/m<sup>2</sup> IM once per day on days 3 & 18
+**Allergic patients: [[Asparaginase Erwinia chrysanthemi (Erwinaze)]] 20,000 units IM once per day on days 3, 5, 7, 9, 11, 13, 18, 20, 22, 24, 26, 28
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 3, 10, 17, 24
+*[[Dexamethasone (Decadron)]] 20 mg/m<sup>2</sup> PO once per day on days 1 to 5, 15 to 19
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] as follows:
+**Age less than 2: 8 mg IT once per day on days 1 & 8
+**Age 2: 10 mg IT once per day on days 1 & 8
+**Age older than 2: 12 mg IT once per day on days 1 & 8
+
+'''4-week course'''
+====Subsequent treatment====
+*See paper for details of treatment beyond induction
+
+===References===
+# '''CCLG ALL R3:''' Parker C, Waters R, Leighton C, Hancock J, Sutton R, Moorman AV, Ancliff P, Morgan M, Masurekar A, Goulden N, Green N, Révész T, Darbyshire P, Love S, Saha V. Effect of mitoxantrone on outcome of children with first relapse of acute lymphoblastic leukaemia (ALL R3): an open-label randomised trial. Lancet. 2010 Dec 11;376(9757):2009-17. Epub 2010 Dec 3. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)62002-8/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3010035/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21131038 PubMed]
+
+==Nelarabine monotherapy {{#subobject:bb7a38|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 5-day dosing {{#subobject:44a025|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.14874/full Zwaan et al. 2017]
+|style="background-color:#91cf61"|Phase IV
+|style="background-color:#666666; color:white"|ORR: 39%
+|-
+|}
+====Chemotherapy====
+*[[Nelarabine (Arranon)]] 650 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5
+
+'''21-day cycles'''
+
+===Variant #2, intermittent dosing {{#subobject:b5ce00|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1941786/ DeAngelo et al. 2007 (CALGB 19801)] 
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#666666; color:white"|ORR: 41% (95% CI, 15-43)
+|-
+|}
+''See paper for details about the schedule.''
+====Chemotherapy====
+*[[Nelarabine (Arranon)]] 1500 mg/m<sup>2</sup> IV over 2 hours once per day on days 1, 3, 5
+
+'''21-day cycle for 3 to 4 cycles (or delayed for count recovery)'''
+
+===References===
+# '''CALGB 19801:''' DeAngelo DJ, Yu D, Johnson JL, Coutre SE, Stone RM, Stopeck AT, Gockerman JP, Mitchell BS, Appelbaum FR, Larson RA. Nelarabine induces complete remissions in adults with relapsed or refractory T-lineage acute lymphoblastic leukemia or lymphoblastic lymphoma: Cancer and Leukemia Group B study 19801. Blood. 2007 Jun 15;109(12):5136-42. Epub 2007 Mar 7. [http://www.bloodjournal.org/content/109/12/5136.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1941786/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/17344466 PubMed]
+# Zwaan CM, Kowalczyk J, Schmitt C, Bielorai B, Russo MW, Woessner M, Ranganathan S, Leverger G. Safety and efficacy of nelarabine in children and young adults with relapsed or refractory T-lineage acute lymphoblastic leukaemia or T-lineage lymphoblastic lymphoma: results of a phase 4 study. Br J Haematol. 2017 Oct;179(2):284-293. Epub 2017 Aug 2. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.14874/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28771663 PubMed]
+
+[[Category:T-cell acute lymphoblastic leukemia regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Acute leukemias]]
+[[Category:Pediatric cancers]]

@@ -1,0 +1,116 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:100%;"
+!colspan="4" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editors'''
+|-
+|style="background-color:#F0F0F0; width:15%"|[[File:SeemaNagpal.jpg|frameless|upright=0.3|center]]
+|style="width:35%" |<big>[[User:Seemanagpal|Seema Nagpal, MD]]<br>Palo Alto, CA</big>
+|style="background-color:#F0F0F0; width:15%"|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|style="width:35%" |<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+<big>'''Note: these are CNS-specific regimens, please see the [[Melanoma|main melanoma page]] for other regimens.'''</big>
+{{TOC limit|limit=3}}
+=Guidelines=
+==EANO/ESMO==
+*'''2017:''' Le Rhun et al. [https://www.esmo.org/Guidelines/Neuro-Oncology/EANO-ESMO-Leptomeningeal-Metastasis-Clinical-Practice-Guidelines EANO–ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up of patients with leptomeningeal metastasis from solid tumours]
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf NCCN Guidelines - Central Nervous System Cancers]
+
+=All lines of therapy=
+==Dabrafenib monotherapy {{#subobject:8f3562|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fa5aa0|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70431-X/fulltext Long et al. 2012 (BREAK-MB)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c6bb1" |ORR: 31-39%
+|-
+|}
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+
+'''Given until progression of disease'''
+
+===References===
+# '''BREAK-MB:''' Long GV, Trefzer U, Davies MA, Kefford RF, Ascierto PA, Chapman PB, Puzanov I, Hauschild A, Robert C, Algazi A, Mortier L, Tawbi H, Wilhelm T, Zimmer L, Switzky J, Swann S, Martin AM, Guckert M, Goodman V, Streit M, Kirkwood JM, Schadendorf D. Dabrafenib in patients with Val600Glu or Val600Lys BRAF-mutant melanoma metastatic to the brain (BREAK-MB): a multicentre, open-label, phase 2 trial. Lancet Oncol. 2012 Nov;13(11):1087-95. Epub 2012 Oct 8. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70431-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23051966 PubMed]
+
+==Dabrafenib & Trametinib {{#subobject:7d3694|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:23212f|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30429-1/fulltext Davies et al. 2017 (COMBI-MB)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#9ebcda" |ORR: 44-59%
+|-
+|}
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continued until progression'''
+
+===References===
+# '''COMBI-MB:''' Davies MA, Saiag P, Robert C, Grob JJ, Flaherty KT, Arance A, Chiarion-Sileni V, Thomas L, Lesimple T, Mortier L, Moschos SJ, Hogg D, Márquez-Rodas I, Del Vecchio M, Lebbé C, Meyer N, Zhang Y, Huang Y, Mookerjee B, Long GV. Dabrafenib plus trametinib in patients with BRAF(V600)-mutant melanoma brain metastases (COMBI-MB): a multicentre, multicohort, open-label, phase 2 trial. Lancet Oncol. 2017 Jul;18(7):863-873. Epub 2017 Jun 4. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30429-1/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28592387 PubMed]
+
+==Ipilimumab & Nivolumab {{#subobject:28103f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:6cf5ae|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|Comparator
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30139-6/fulltext Long et al. 2018 (ANZMTG 01.14)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|Nivolumab
+|-
+|}
+====Immunotherapy, part 1====
+*[[Ipilimumab (Yervoy)]] 3 mg/kg IV once on day 1
+*[[Nivolumab (Opdivo)]] 1 mg/kg IV once on day 1
+
+'''21-day cycle for 4 cycles, followed by:'''
+
+====Immunotherapy, part 2====
+*[[Nivolumab (Opdivo)]] 3 mg/kg IV over 60 minutes once on day 1
+
+'''14-day cycles'''
+
+===References===
+# '''ANZMTG 01.14:''' Long GV, Atkinson V, Lo S, Sandhu S, Guminski AD, Brown MP, Wilmott JS, Edwards J, Gonzalez M, Scolyer RA, Menzies AM, McArthur GA. Combination nivolumab and ipilimumab or nivolumab alone in melanoma brain metastases: a multicentre randomised phase 2 study. Lancet Oncol. 2018 Mar 27. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30139-6/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29602646 PubMed]
+
+[[Category:CNS melanoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:CNS cancers]]

@@ -1,0 +1,64 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Section editor'''
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:nkv.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Neetavenepalli|Neeta K. Venepalli, MD, MBA]]<br>Chicago, IL</big>
+| style="background-color:#F0F0F0; width:15%" |[[File:Ivy_Abraham.JPG|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Ivyabraham|Ivy Abraham, MD]]<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+'''Liver cancer''' or hepatobiliary cancer comprises cancers that arise within the liver and its hepatocytes (hepatocellular carcinoma) and the biliary tract cancers, which include bile duct cancer/cholangiocarcinoma and gallbladder cancer.
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2016:''' [http://annonc.oxfordjournals.org/content/27/suppl_5/v28.full.pdf+html Biliary cancer: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up.] [https://www.ncbi.nlm.nih.gov/pubmed/27664259 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/hepatobiliary.pdf NCCN Guidelines - Hepatobiliary Cancers]
+
+=Adjuvant therapy=
+
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1002/cncr.10831 Takada et al. 2002]
+|style="background-color:#1a9851"|Phase III (C)
+|5-FU & Mitomycin
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://jamanetwork.com/journals/jama/fullarticle/1216477 Neoptolemos et al. 2012 (ESPAC-3)]
+|style="background-color:#1a9851"|Phase III (C)
+|1. 5-FU & Leucovorin<br> 2. Gemcitabine
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''No adjuvant therapy.''
+====Preceding treatment====
+*[[Surgery#Hepatobiliary_cancer|Surgery]]
+
+===References===
+# Takada T, Amano H, Yasuda H, Nimura Y, Matsushiro T, Kato H, Nagakawa T, Nakayama T; Study Group of Surgical Adjuvant Therapy for Carcinomas of the Pancreas and Biliary Tract. Is postoperative adjuvant chemotherapy useful for gallbladder carcinoma? A phase III multicenter prospective randomized controlled trial in patients with resected pancreaticobiliary carcinoma. Cancer. 2002 Oct 15;95(8):1685-95. [https://onlinelibrary.wiley.com/doi/full/10.1002/cncr.10831 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/12365016 PubMed]
+# '''ESPAC-3:''' Neoptolemos JP, Moore MJ, Cox TF, Valle JW, Palmer DH, McDonald AC, Carter R, Tebbutt NC, Dervenis C, Smith D, Glimelius B, Charnley RM, Lacaine F, Scarfe AG, Middleton MR, Anthoney A, Ghaneh P, Halloran CM, Lerch MM, Oláh A, Rawcliffe CL, Verbeke CS, Campbell F, Büchler MW; European Study Group for Pancreatic Cancer. Effect of adjuvant chemotherapy with fluorouracil plus folinic acid or gemcitabine vs observation on survival in patients with resected periampullary adenocarcinoma: the ESPAC-3 periampullary cancer randomized trial. JAMA. 2012 Jul 11;308(2):147-56. Erratum in: JAMA. 2012 Nov 14;308(18):1861. [http://jamanetwork.com/journals/jama/fullarticle/1216477 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22782416 PubMed]
+
+[[Category:Periampullary adenocarcinoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gastrointestinal cancers]]

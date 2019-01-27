@@ -1,0 +1,1220 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#4a1486"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Arichall_400x400.jpg|frameless|upright=0.3|center]]
+|<big>[[User:AricHallMD|Aric C. Hall, MD]]<br>Madison, WI</big><br>Twitter: [https://twitter.com/AricHall1 AricHall1]
+|-
+|}
+Unlike the other chemotherapy regimen pages, this one is not disease-specific. Rather, this is a gathering point for all allogeneic hematopoietic stem cell transplant (HSCT) conditioning regimens. Unless otherwise specified, the day before HSCT is day -1, the day of HSCT is day 0, and the day after HSCT is day +1.
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Myeloablative regimens, all lines of therapy=
+==BuCyTBI {{#subobject:44b691|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BuCyTBI: '''<u>Bu</u>'''sulfan, '''<u>Cy</u>'''clophosphamide, '''<u>T</u>'''otal '''<u>B</u>'''ody '''<u>I</u>'''rradiation
+===Regimen {{#subobject:ab84cb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM197902153000702 Fefer et al. 1979]
+| style="background-color:#ffffbe" |Pilot, <20 pts
+|-
+|}
+<section begin=ab84cb />
+====Chemoradiotherapy====
+*[[Busulfan (Myleran)]]
+*[[Cyclophosphamide (Cytoxan)]]
+*[[External beam radiotherapy|TBI]]
+<section end=ab84cb />
+===References===
+# Fefer A, Cheever MA, Thomas ED, Boyd C, Ramberg R, Glucksberg H, Buckner CD, Storb R. Disappearance of Ph1-positive cells in four patients with chronic granulocytic leukemia after chemotherapy, irradiation and marrow transplantation from an identical twin. N Engl J Med. 1979 Feb 15;300(7):333-7. [https://www.nejm.org/doi/full/10.1056/NEJM197902153000702 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/366408 PubMed]
+
+==Busulfan & Cyclophosphamide {{#subobject:83e07a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BuCy: '''<u>Bu</u>'''sulfan & '''<u>Cy</u>'''clophosphamide
+===Variant #1, 9.6/120 {{#subobject:5a23a8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.bbmt.org/article/S1083-8791(02)50049-5/fulltext Andersson et al. 2002]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=5a23a8 />
+''Note: abstract is limited in detail including which days the treatments are given.''
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 0.6 mg/kg IV every 6 hours for 16 doses (total dose: 9.6 mg/kg)
+*[[Cyclophosphamide (Cytoxan)]] 60 mg/kg IV once per day for 2 days (total dose: 120 mg/kg)
+<section end=5a23a8 />
+===Variant #2, 12.8/120 {{#subobject:eeaff3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/6/701.full Lee et al. 2013]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Busulfan_.26_Fludarabine|Busulfan & Fludarabine]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00200-4/abstract Rambaldi et al. 2015]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Busulfan_.26_Fludarabine|Busulfan & Fludarabine]]
+| style="background-color:#fc8d59" |Seems to have inferior 1-year non-relapse mortality
+|-
+|}
+<section begin=eeaff3 />
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 3.2 mg/kg IV once per day on days -7 to -4 (total dose: 12.8 mg/kg)
+*[[Cyclophosphamide (Cytoxan)]] 60 mg/kg IV once per day on days -3 and -2 (total dose: 120 mg/kg)
+
+====Supportive medications====
+*[[Cyclosporine non-modified (Sandimmune)|Cyclosporine]] 
+*[[Methotrexate (MTX)]] "according to the discretion of the attending physician"
+*[[Filgrastim (Neupogen)]] 450 mcg SC once per day, starting on day +5 and continued until ANC greater than 3000/uL
+
+'''Stem cells transfused on day 0'''
+<section end=eeaff3 />
+===Variant #3, 16/200 {{#subobject:334af6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198312013092202 Santos et al. 1983]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+<section begin=334af6 />
+''Note: the day of allogeneic stem cell transplant is not specified in the protocol.''
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 1 mg/kg IV every 6 hours on days 1 to 4 (total dose: 16 mg/kg)
+*[[Cyclophosphamide (Cytoxan)]] 50 mg/kg IV once per day on days 5 to 8 (total dose: 200 mg/kg)
+<section end=334af6 />
+===References===
+# Santos GW, Tutschka PJ, Brookmeyer R, Saral R, Beschorner WE, Bias WB, Braine HG, Burns WH, Elfenbein GJ, Kaizer H, et al. Marrow transplantation for acute nonlymphocytic leukemia after treatment with busulfan and cyclophosphamide. N Engl J Med. 1983 Dec 1;309(22):1347-53. [https://www.nejm.org/doi/full/10.1056/NEJM198312013092202 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/6355849 PubMed]
+# Andersson BS, Kashyap A, Gian V, Wingard JR, Fernandez H, Cagnoni PJ, Jones RB, Tarantolo S, Hu WW, Blume KG, Forman SJ, Champlin RE. Conditioning therapy with intravenous busulfan and cyclophosphamide (IV BuCy2) for hematologic malignancies prior to allogeneic stem cell transplantation: a phase II study. Biol Blood Marrow Transplant. 2002;8(3):145-54. [https://www.bbmt.org/article/S1083-8791(02)50049-5/fulltext link to original article] '''contains partial protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11939604 PubMed]
+# Lee JH, Joo YD, Kim H, Ryoo HM, Kim MK, Lee GW, Lee JH, Lee WS, Park JH, Bae SH, Hyun MS, Kim DY, Kim SD, Min YJ, Lee KH. Randomized trial of myeloablative conditioning regimens: busulfan plus cyclophosphamide versus busulfan plus fludarabine. J Clin Oncol. 2013 Feb 20;31(6):701-9. Epub 2012 Nov 5. [http://jco.ascopubs.org/content/31/6/701.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23129746 PubMed]
+# Rambaldi A, Grassi A, Masciulli A, Boschini C, Micò MC, Busca A, Bruno B, Cavattoni I, Santarone S, Raimondi R, Montanari M, Milone G, Chiusolo P, Pastore D, Guidi S, Patriarca F, Risitano AM, Saporiti G, Pini M, Terruzzi E, Arcese W, Marotta G, Carella AM, Nagler A, Russo D, Corradini P, Alessandrino EP, Torelli GF, Scimè R, Mordini N, Oldani E, Marfisi RM, Bacigalupo A, Bosi A. Busulfan plus cyclophosphamide versus busulfan plus fludarabine as a preparative regimen for allogeneic haemopoietic stem-cell transplantation in patients with acute myeloid leukaemia: an open-label, multicentre, randomised, phase 3 trial. Lancet Oncol. 2015 Nov;16(15):1525-36. Epub 2015 Sep 28. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00200-4/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26429297 PubMed]
+
+==Busulfan & Fludarabine {{#subobject:576283|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BuFlu: '''<u>Bu</u>'''sulfan & '''<u>Flu</u>'''darabine
+<br>Flu/Bu: '''<u>Flu</u>'''darabine & '''<u>Bu</u>'''sulfan
+
+===Variant #1 {{#subobject:d415a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00200-4/abstract Rambaldi et al. 2015]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Busulfan_.26_Cyclophosphamide|Busulfan & Cyclophosphamide]]
+| style="background-color:#fc8d59" |Seems to improve 1 & 2 year NRM, similar OS
+|-
+|}
+'''Diseases Studied: [[Acute myeloid leukemia]]'''
+
+'''Graft types studied''': Bone Marrow, Mobilized Peripheral Blood Stem Cells
+<section begin=d415a />
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 0.8 mg/kg IV four times per day for 2 hour infusions on days -6 to -3
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -3
+
+====GVHD prophylaxis and key supportive medications====
+*[[Cyclosporine non-modified (Sandimmune)|Cyclosporine]]
+*[[Methotrexate (MTX)]]  
+*''For unrelated donors:'' [[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 0.5 mg/kg IV on day –3 and 2 mg/kg IV on day –2 and, if the donor was identical, 2.5 mg/kg on day –1 (If donor mismatched total ATG dose could be increased to 7.5 mg/kg) 
+
+'''Stem cells transfused on day 0'''
+<section end=d415a />
+===Variant #2 {{#subobject:d415b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230823/ Andersson et al. 2008]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#fc8d59" |Suggested improved outcomes, but shorter follow up
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4209101/ Kanakry et al. 2014]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://www.bloodjournal.org/content/127/11/1502.long Mielcarek et al. 2016]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|}
+
+'''Diseases Studied: [[Acute myeloid leukemia]], [[Myelodysplastic syndrome]], [[Acute lymphocytic leukemia]], [[Chronic myelogenous leukemia]], [[Non-Hodgkin lymphoma]]'''
+
+'''Graft types studied''': Matched Related / Unrelated Donor Bone Marrow, Mobilized Peripheral Blood Stem Cells
+<section begin=d415b />
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 130 mg/kg IV over 3 hours once per day on days -6 to -3 ''(busulfan dosing targeted for optimal pharmacokinetics but different parameters each institution, please consult the original publication for optimal levels)''
+*[[Fludarabine (Fludara)]] 40 mg/m<sup>2</sup> IV over 60 minutes once per day on days -6 to -3, '''given first'''
+
+====GVHD prophylaxis and key supportive medications====
+<nowiki>#</nowiki>1 Tacrolimus & methotrexate based (Andersson et al.)
+*[[Tacrolimus (Prograf)]]
+*[[Methotrexate (MTX)]]  
+*''For unrelated or mismatched donors'' [[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 0.5 mg/kg IV once on day –3, then 1.5 mg/kg IV once on day –2, then 2.0 mg/kg IV once on day –1 
+*All patients received [[Filgrastim (Neupogen)]] SC once per day from day +7 until achieving an absolute neutrophil count (ANC) ≥1.5 × 10<sup>9</sup>/L for three days 
+*[[Phenytoin (Dilantin)]] prophylaxis used during and for one day after IV busulfan 
+<nowiki>#</nowiki>2 Post-Transplant Cy based (Kanakry et al. and Mielcarek et al.)
+*[[Cyclophosphamide (Cytoxan)]] 50 mg/kg IV once per day on days +3 and +4 (used alone in Kanakry et al. when all patients received bone marrow grafts)
+**Given with [[Mesna (Mesnex)]]
+*± [[Cyclosporine modified (Neoral)]] intravenous loading dose of CSP was given on day 5, followed by subsequent twice daily dosing adjusted to maintain whole blood trough at 120-360 ng/mL.  In abscence of GVHD Cyclosporine was tapered from day +56 through day +126 (used in Mielcarek et al. with PBSCT grafts)
+
+'''Stem cells transfused on day 0'''
+<section end=d415b />
+===Variant #3 {{#subobject:d415c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/6/701.full Lee et al. 2013]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Busulfan_.26_Cyclophosphamide|Busulfan & Cyclophosphamide]]
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|}
+'''Diseases Studied: [[Acute myeloid leukemia]], [[Myelodysplastic syndrome]], [[Acute lymphocytic leukemia]], [[Chronic myelogenous leukemia]], [[Myelofibrosis]]'''
+
+'''Graft types studied''': Matched Related / Unrelated Donor Bone Marrow, Mobilized Peripheral Blood Stem Cells
+<section begin=d415c />
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 3.2 mg/kg IV once per day on days -7 to -4 ''followed by''
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -2
+
+====GVHD prophylaxis and key supportive medications====
+*"[[Cyclosporine non-modified (Sandimmune)|Cyclosporine]]
+*[[Methotrexate (MTX)]] "according to the discretion of the attending physician"
+*[[Filgrastim (Neupogen)]] 450 mcg SC once per day, starting on day +5 and continued until ANC greater than 3000/uL
+
+'''Stem cells transfused on day 0'''
+<section end=d415c />
+===Variant #4 {{#subobject:6eb66d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bbmt.org/article/S1083-8791%2802%2950007-0/abstract Russell et al. 2002]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+'''Diseases Studied: [[Acute myeloid leukemia]], [[Myelodysplastic syndrome]], [[Chronic myelogenous leukemia]], [[Chronic lymphocytic leukemia (CLL/SLL)]], [[Non-Hodgkin lymphoma]], [[Hypereosinophilic syndrome]]'''
+
+'''Graft types studied''': Matched Related / Unrelated Donor Bone Marrow or Mobilized Peripheral Blood Stem Cells
+<section begin=6eb66d />
+====Chemotherapy====
+*[[Busulfan (Myleran)]] 3.2 mg/kg (ideal body weight) IV over 3 hours once per day on days -5 to -2
+*[[Fludarabine (Fludara)]] 50 mg/m<sup>2</sup> IV once per day on days -6 to -2
+
+====GVHD prophylaxis and key supportive medications====
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 0.5 mg/kg IV once on day -2, then 2 mg/kg/day IV once per day on days -1 & 0 (total dose of 4.5 mg/kg)
+*[[Cyclosporine modified (Neoral)]] or [[Cyclosporine non-modified (Sandimmune)]] IV or PO twice per day, with doses adjusted to maintain cyclosporine levels of 150 to 400 umol/L
+*[[Methotrexate (MTX)]] 15 mg/m<sup>2</sup> (route not specified) once on day 1, then 10 mg/m<sup>2</sup> (route not specified) once per day on days 3, 6, 11
+**[[Folinic acid (Leucovorin)]] 5 mg started 24 hours after each dose of [[Methotrexate (MTX)]] and continued Q6H until 12 hours before the next dose of [[Methotrexate (MTX)]]
+*[[Phenytoin (Dilantin)]] "loading" PO/IV, dosed to maintain therapeutic levels of 40 to 80 umol/L on days -5 to -2
+
+'''Stem cells transfused on day 0'''
+<section end=6eb66d />
+
+===References===
+# Andersson BS, de Lima M, Thall PF, Wang X, Couriel D, Korbling M, Roberson S, Giralt S, Pierre B, Russell JA, Shpall EJ, Jones RB, Champlin RE. Once daily IV busulfan and fludarabine (IV Bu-Flu) compares favorably with IV busulfan and cyclophosphamide (IV BuCy2) as pretransplant conditioning therapy in AML/MDS. Biol Blood Marrow Transplant. 2008;14(6):672-84. [http://www.bbmt.org/article/S1083-8791(08)00118-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230823/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18489993 Pubmed]
+# Lee JH, Joo YD, Kim H, Ryoo HM, Kim MK, Lee GW, Lee JH, Lee WS, Park JH, Bae SH, Hyun MS, Kim DY, Kim SD, Min YJ, Lee KH. Randomized trial of myeloablative conditioning regimens: busulfan plus cyclophosphamide versus busulfan plus fludarabine. J Clin Oncol. 2013 Feb 20;31(6):701-9. Epub 2012 Nov 5. [http://jco.ascopubs.org/content/31/6/701.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23129746 PubMed]
+# Kanakry CG, O'Donnell PV, Furlong T, de Lima MJ, Wei W, Medeot M, Mielcarek M, Champlin RE, Jones RJ, Thall PF, Andersson BS, Luznik L. Multi-institutional study of post-transplantation cyclophosphamide as single-agent graft-versus-host disease prophylaxis after allogeneic bone marrow transplantation using myeloablative busulfan and fludarabine conditioning. J Clin Oncol. 2014; 32(31):3497-505. Epub 2014 Sep 29. [http://ascopubs.org/doi/full/10.1200/JCO.2013.54.0625 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4209101/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25267759 Pubmed]
+# Mielcarek M, Furlong T, O'Donnell PV, Storer BE, McCune JS, Storb R, Carpenter PA, Flowers ME, Appelbaum FR, Martin PJ. Posttransplantation cyclophosphamide for prevention of graft-versus-host disease after HLA-matched mobilized blood cell transplantation. Blood. 2016;127(11):1502-8. [http://www.bloodjournal.org/content/127/11/1502.long?sso-checked=true link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26764356 Pubmed]
+# Rambaldi A, Grassi A, Masciulli A, Boschini C, Micò MC, Busca A, Bruno B, Cavattoni I, Santarone S, Raimondi R, Montanari M, Milone G, Chiusolo P, Pastore D, Guidi S, Patriarca F, Risitano AM, Saporiti G, Pini M, Terruzzi E, Arcese W, Marotta G, Carella AM, Nagler A, Russo D, Corradini P, Alessandrino EP, Torelli GF, Scimè R, Mordini N, Oldani E, Marfisi RM, Bacigalupo A, Bosi A. Busulfan plus cyclophosphamide versus busulfan plus fludarabine as a preparative regimen for allogeneic haemopoietic stem-cell transplantation in patients with acute myeloid leukaemia: an open-label, multicentre, randomised, phase 3 trial. Lancet Oncol. 2015 Nov;16(15):1525-36. Epub 2015 Sep 28. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00200-4/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26429297 PubMed]
+# Russell JA, Tran HT, Quinlan D, Chaudhry A, Duggan P, Brown C, Stewart D, Ruether JD, Morris D, Glick S, Gyonyor E, Andersson BS. Once-daily intravenous busulfan given with fludarabine as conditioning for allogeneic stem cell transplantation: study of pharmacokinetics and early clinical outcomes. Biol Blood Marrow Transplant. 2002;8(9):468-76. [http://www.bbmt.org/article/S1083-8791%2802%2950007-0/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12374451 PubMed]
+
+==Cyclophosphamide & TBI {{#subobject:a9f7e8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cy/TBI: '''<u>Cy</u>'''clophosphamide & '''<u>T</u>'''otal '''<u>B</u>'''ody '''<u>I</u>'''rradiation
+===Regimen {{#subobject:6ca28d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Non-relapse mortality]]
+|-
+|[https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/581686 Rudolph et al. 1973]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://www.bloodjournal.org/content/54/2/468.long Thomas et al. 1979]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198005083021901 Blume et al. 1980]
+| style="background-color:#ffffbe" |Non-randomized, <20 pts
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198110083051502 Johnson et al. 1981]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198201143060202 Fefer et al. 1982]
+| style="background-color:#ffffbe" |Non-randomized, <20 pts
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198601233140403 Goldman et al. 1986]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198708203170801 Kersey et al. 1987]
+|style="background-color:#1a9851"|Quasi-randomized
+|Auto HSCT
+| style="background-color:#1a9850" |Superior RFS
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198712243172602 Brochstein et al. 1987]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.12.2580 Sebban et al. 1994 (LALA 87)]
+|style="background-color:#1a9851"|Phase III (E)
+|Chemotherapy or Auto HSCT
+|style="background-color:#ffffbf"|Seems not superior
+|style="background-color:#d3d3d3"|
+|-
+|[http://jco.ascopubs.org/content/22/20/4075.long Thomas et al. 2004 (LALA-94)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199501263320403 Zittoun et al. 1995]
+|style="background-color:#1a9851"|Phase III (E)
+|Intensive chemotherapy
+| style="background-color:#1a9850" |Superior DFS
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nejm.org/doi/10.1056/NEJM199804023381405 Hansen et al. 1998]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70349-2/fulltext Bornhäuser et al. 2012]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Fludarabine_.26_TBI|Fludarabine & TBI]]
+|style="background-color:#ffffbf"|Seems not superior
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+<section begin=6ca28d />
+''Details in the manuscripts are limited.''
+====Chemoradiotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 60 mg/kg IV once per day on two consecutive days
+*[[External_beam_radiotherapy|Total body irradiation]], 10 to 12 Gy total
+
+'''Stem cells transfused on day 0'''
+<section end=6ca28d />
+
+===References===
+# Rudolph RH, Fefer A, Thomas ED, Buckner CD, Clift RA, Storb R. Isogeneic marrow grafts for hematologic malignancy in man. Arch Intern Med. 1973 Aug;132(2):279-85. [https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/581686 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/4268940 PubMed]
+## '''Update:''' Fefer A, Einstein AB, Thomas ED, Buckner CD, Clift RA, Glucksberg H, Neiman PE, Storb R. Bone-marrow transplantation for hematologic neoplasia in 16 patients with identical twins. N Engl J Med. 1974 Jun 20;290(25):1389-93. [https://www.nejm.org/doi/full/10.1056/NEJM197406202902501 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/4597885 PubMed]
+# Thomas ED, Sanders JE, Flournoy N, Johnson FL, Buckner CD, Clift RA, Fefer A, Goodell BW, Storb R, Weiden PL. Marrow transplantation for patients with acute lymphoblastic leukemia in remission. Blood. 1979 Aug;54(2):468-76. [http://www.bloodjournal.org/content/54/2/468.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/378292 PubMed]
+# Blume KG, Beutler E, Bross KJ, Chillar RK, Ellington OB, Fahey JL, Farbstein MJ, Forman SJ, Schmidt GM, Scott EP, Spruce WE, Turner MA, Wolf JL. Bone-marrow ablation and allogeneic marrow transplantation in acute leukemia. N Engl J Med. 1980 May 8;302(19):1041-6. [https://www.nejm.org/doi/full/10.1056/NEJM198005083021901 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/6245359 PubMed]
+# Johnson FL, Thomas ED, Clark BS, Chard RL, Hartmann JR, Storb R. A comparison of marrow transplantation with chemotherapy for children with acute lymphoblastic leukemia in second or subsequent remission. N Engl J Med. 1981 Oct 8;305(15):846-51. [https://www.nejm.org/doi/full/10.1056/NEJM198110083051502 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7024804 PubMed]
+# Fefer A, Cheever MA, Greenberg PD, Appelbaum FR, Boyd CN, Buckner CD, Kaplan HG, Ramberg R, Sanders JE, Storb R, Thomas ED. Treatment of chronic granulocytic leukemia with chemoradiotherapy and transplantation of marrow from identical twins. N Engl J Med. 1982 Jan 14;306(2):63-8. [https://www.nejm.org/doi/full/10.1056/NEJM198201143060202 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7031474 PubMed]
+# Goldman JM, Apperley JF, Jones L, Marcus R, Goolden AW, Batchelor R, Hale G, Waldmann H, Reid CD, Hows J, Gordon-Smith E, Catovsky D, Galton DAG. Bone marrow transplantation for patients with chronic myeloid leukemia. N Engl J Med. 1986 Jan 23;314(4):202-7. [https://www.ncbi.nlm.nih.gov/pubmed/3510388 PubMed]
+# Kersey JH, Weisdorf D, Nesbit ME, LeBien TW, Woods WG, McGlave PB, Kim T, Vallera DA, Goldman AI, Bostrom B, Hurd D, Ramsay NKC. Comparison of autologous and allogeneic bone marrow transplantation for treatment of high-risk refractory acute lymphoblastic leukemia. N Engl J Med. 1987 Aug 20;317(8):461-7. [https://www.nejm.org/doi/full/10.1056/NEJM198708203170801 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3302708 PubMed]
+# Brochstein JA, Kernan NA, Groshen S, Cirrincione C, Shank B, Emanuel D, Laver J, O'Reilly RJ. Allogeneic bone marrow transplantation after hyperfractionated total-body irradiation and cyclophosphamide in children with acute leukemia. N Engl J Med. 1987 Dec 24;317(26):1618-24. [https://www.nejm.org/doi/full/10.1056/NEJM198712243172602 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3317056 PubMed]
+# '''LALA 87:''' Sebban C, Lepage E, Vernant JP, Gluckman E, Attal M, Reiffers J, Sutton L, Racadot E, Michallet M, Maraninchi D, Dreyfus F, Fiere D; French Group of Therapy of Adult Acute Lymphoblastic Leukemia. Allogeneic bone marrow transplantation in adult acute lymphoblastic leukemia in first complete remission: a comparative study. J Clin Oncol. 1994 Dec;12(12):2580-7. [http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.12.2580 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7989932 PubMed]
+## '''Update:''' Thiebaut A, Vernant JP, Degos L, Huguet FR, Reiffers J, Sebban C, Lepage E, Thomas X, Fière D. Adult acute lymphocytic leukemia study testing chemotherapy and autologous and allogeneic transplantation: a follow-up report of the French protocol LALA 87. Hematol Oncol Clin North Am. 2000 Dec;14(6):1353-66. [https://www.sciencedirect.com/science/article/pii/S0889858805701908 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/11147227 PubMed]
+# Zittoun RA, Mandelli F, Willemze R, de Witte T, Labar B, Resegotti L, Leoni F, Damasio E, Visani G, Papa G, Caronia F, Hayat M, Stryckmans P, Rotoli B, Leoni P, Peetermans ME, Dardenne M, Vegna ML, Petti MC, Solbu G, Suciu S; European Organization for Research and Treatment of Cancer (EORTC) and the Gruppo Italiano Malattie Ematologiche Maligne dell'Adulto (GIMEMA) Leukemia Cooperative Groups. Autologous or allogeneic bone marrow transplantation compared with intensive chemotherapy in acute myelogenous leukemia. N Engl J Med. 1995 Jan 26;332(4):217-23. [https://www.nejm.org/doi/full/10.1056/NEJM199501263320403 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/7808487 PubMed]
+# Hansen JA, Gooley TA, Martin PJ, Appelbaum F, Chauncey TR, Clift RA, Petersdorf EW, Radich J, Sanders JE, Storb RF, Sullivan KM, Anasetti C. Bone marrow transplants from unrelated donors for patients with chronic myeloid leukemia. N Engl J Med. 1998 Apr 2;338(14):962-8. [https://www.nejm.org/doi/10.1056/NEJM199804023381405 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9521984 PubMed]
+# '''LALA-94:''' Thomas X, Boiron JM, Huguet F, Dombret H, Bradstock K, Vey N, Kovacsovics T, Delannoy A, Fegueux N, Fenaux P, Stamatoullas A, Vernant JP, Tournilhac O, Buzyn A, Reman O, Charrin C, Boucheix C, Gabert J, Lhéritier V, Fiere D. Outcome of treatment in adults with acute lymphoblastic leukemia: analysis of the LALA-94 trial. J Clin Oncol. 2004 Oct 15;22(20):4075-86. Epub 2004 Sep 7. [http://jco.ascopubs.org/content/22/20/4075.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15353542 PubMed]
+## '''Update:''' Vey N, Thomas X, Picard C, Kovascovicz T, Charin C, Cayuela JM, Dombret H, Dastugue N, Huguet F, Bastard C, Stamatoulas A, Giollant M, Tournilhac O, Macintyre E, Buzyn A, Bories D, Kuentz M, Dreyfus F, Delannoy A, Raynaud S, Gratecos N, Bordessoule D, de Botton S, Preudhomme C, Reman O, Troussard X, Pigneux A, Bilhou C, Vernant JP, Boucheix C, Gabert J; GET-LALA Group the Swiss Group for Clinical Cancer Research (SAKK). Allogeneic stem cell transplantation improves the outcome of adults with t(1;19)/E2A-PBX1 and t(4;11)/MLL-AF4 positive B-cell acute lymphoblastic leukemia: results of the prospective multicenter LALA-94 study. Leukemia. 2006 Dec;20(12):2155-61. Epub 2006 Oct 12. [https://www.nature.com/leu/journal/v20/n12/full/2404420a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17039234 PubMed]
+# Bornhäuser M, Kienast J, Trenschel R, Burchert A, Hegenbart U, Stadler M, Baurmann H, Schäfer-Eckart K, Holler E, Kröger N, Schmid C, Einsele H, Kiehl MG, Hiddemann W, Schwerdtfeger R, Buchholz S, Dreger P, Neubauer A, Berdel WE, Ehninger G, Beelen DW, Schetelig J, Stelljes M. Reduced-intensity conditioning versus standard conditioning before allogeneic haemopoietic cell transplantation in patients with acute myeloid leukaemia in first complete remission: a prospective, open-label randomised phase 3 trial. Lancet Oncol. 2012 Oct;13(10):1035-44. Epub 2012 Sep 7. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70349-2/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22959335 PubMed]
+# '''Retrospective:''' Copelan EA, Hamilton BK, Avalos B, Ahn KW, Bolwell BJ, Zhu X, Aljurf M, van Besien K, Bredeson C, Cahn JY, Costa LJ, de Lima M, Gale RP, Hale GA, Halter J, Hamadani M, Inamoto Y, Kamble RT, Litzow MR, Loren AW, Marks DI, Olavarria E, Roy V, Sabloff M, Savani BN, Seftel M, Schouten HC, Ustun C, Waller EK, Weisdorf DJ, Wirk B, Horowitz MM, Arora M, Szer J, Cortes J, Kalaycio ME, Maziarz RT, Saber W. Better leukemia-free and overall survival in AML in first remission following cyclophosphamide in combination with busulfan compared with TBI. Blood. 2013 Dec 5;122(24):3863-70. Epub 2013 Sep 24. [http://www.bloodjournal.org/content/122/24/3863.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3854108/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24065243 PubMed]
+
+==Etoposide & TBI {{#subobject:b389e1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:45f841|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS014067360566998X/fulltext Balduzzi et al. 2005]
+| style="background-color:#1a9851" |Quasi-randomized
+|Chemotherapy
+| style="background-color:#91cf60" |Seems to have superior DFS
+|-
+|[http://jco.ascopubs.org/content/33/11/1265.long Peters et al. 2015 (ALL-SCT-BFM 2003)]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''This regimen was evaluated in the treatment of high-risk pediatric acute lymphoblastic leukemia in CR1.''
+<section begin=45f841 />
+====Chemoradiotherapy====
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 200 cGy twice per day in 6 fractions on days -6 to -4 with lung shielding at 10 Gy (total dose: 1200 cGy)
+*[[Etoposide (Vepesid)]] 60 mg/kg (maximum dose: 3600 mg) IV once on day -3
+
+'''Stem cells transfused on day 0'''
+<section end=45f841 />
+===Variant #2 {{#subobject:e4216b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+''Note: this is the same preparative regimen used for autologous transplant for certain patients; see reference for details. This regimen was evaluated in the treatment of acute lymphoblastic leukemia in CR1.''
+<section begin=e4216b />
+====Chemoradiotherapy====
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 220 cGy twice per day in 6 fractions on days –6 to –4 (total dose: 1320 cGy)
+*[[Etoposide (Vepesid)]] 60 mg/kg IV once on day -3
+
+'''Stem cells transfused on day 0'''
+<section end=e4216b />
+
+===References===
+# Balduzzi A, Valsecchi MG, Uderzo C, De Lorenzo P, Klingebiel T, Peters C, Stary J, Felice MS, Magyarosy E, Conter V, Reiter A, Messina C, Gadner H, Schrappe M. Chemotherapy versus allogeneic transplantation for very-high-risk childhood acute lymphoblastic leukaemia in first complete remission: comparison by genetic randomisation in an international prospective study. Lancet. 2005 Aug 20-26;366(9486):635-42. [https://www.thelancet.com/journals/lancet/article/PIIS014067360566998X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16112299 PubMed]
+# '''MRC UKALL XII/ECOG E2993:''' Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://bloodjournal.hematologylibrary.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://bloodjournal.hematologylibrary.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://bloodjournal.hematologylibrary.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://bloodjournal.hematologylibrary.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+# '''ALL-SCT-BFM-2003:''' Peters C, Schrappe M, von Stackelberg A, Schrauder A, Bader P, Ebell W, Lang P, Sykora KW, Schrum J, Kremens B, Ehlert K, Albert MH, Meisel R, Matthes-Martin S, Gungor T, Holter W, Strahm B, Gruhn B, Schulz A, Woessmann W, Poetschger U, Zimmermann M, Klingebiel T. Stem-cell transplantation in children with acute lymphoblastic leukemia: a prospective international multicenter trial comparing sibling donors with matched unrelated donors-the ALL-SCT-BFM-2003 trial. J Clin Oncol. 2015 Apr 10;33(11):1265-74. Epub 2015 Mar 9. [http://jco.ascopubs.org/content/33/11/1265.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25753432 PubMed]
+
+==Fludarabine, Busulfan, Cyclophosphamide {{#subobject:84acb0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FluBuCy: '''<u>Flu</u>'''darabine, '''<u>Bu</u>'''sulfan, '''<u>Cy</u>'''clophosphamide
+===Regimen {{#subobject:bfe434|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext Glass et al. 2014 (DSHNHL R3)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''This is described by the authors as a lymphoma-directed myeloablative conditioning regimen''
+<section begin=bfe434 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 25 mg/m<sup>2</sup>/day IV on days -8 to -4
+*[[Busulfan (Myleran)]] 4 mg/kg/day PO on days -6 to -4
+**Alternate: 3.2 mg/kg/day IV on days -6 to -4
+*[[Cyclophosphamide (Cytoxan)]] 60 mg/kg/day IV on days -3 and -2
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]] 8 to 12 ug/L (route/frequency not specified) starting on day -1, tapered from day +100 in absence of GVHD
+*[[Mycophenolate mofetil (CellCept)]] 1000 mg (route not specified) twice per day from day +1 to +28
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 2 mg/kg IV from day -3 to -1 (''unclear if this is a total dose or a daily dose'')
+**Option also to use [[Antithymocyte globulin, rabbit ATG (Grafalon)|ATG-Fresenius S]] at a higher dose of 10 mg/kg
+
+'''Stem cells transfused on day 0'''
+<section end=bfe434 />
+===References===
+<!-- # Glass B, rabbits Kamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N. High-dose chemotherapy Followed by allogeneic stem cell transplantation in relapsed and refractory high-risk aggressive non-Hodgkin's lymphoma: Results of a prospective study of the German high-grade non-Hodgkin's lymphoma study group. J Clin Oncol 30, 2012 (suppl; abstr 8004) -->
+# '''DSHNHL R3:''' Glass B, Hasenkamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M, Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N; on behalf of the German High-Grade Lymphoma Study Group. Rituximab after lymphoma-directed conditioning and allogeneic stem-cell transplantation for relapsed and refractory aggressive non-Hodgkin lymphoma (DSHNHL R3): an open-label, randomised, phase 2 trial. Lancet Oncol. 2014 Jun;15(7):757-66. Epub 2014 May 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext link to original article] [http://www.dshnhl.org/app/download/9495510598/Studienprotokoll+DSHNHL+alloFBC+final+vollst.pdf link to original protocol (in German)] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24827808 PubMed]
+
+==BEAM {{#subobject:bda306|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BEAM: '''<u>B</u>'''iCNU (Carmustine), '''<u>E</u>'''toposide, '''<u>A</u>'''ra-C (Cytarabine), '''<u>M</u>'''elphalan
+
+===Regimen {{#subobject:a8d4a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/10/5/527.long Przepiorka et al. 1999]
+| style="background-color:#91cf61" |Phase II
+|-
+|[https://www.tandfonline.com/doi/full/10.3109/10428194.2013.838233 Sobol et al. 2013]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=a8d4a />
+====Chemotherapy====
+*[[Carmustine (BiCNU)]] 300 mg/m<sup>2</sup> IV once on day -6
+*[[Etoposide (Vepesid)]] 200 mg/m<sup>2</sup> IV twice per day on days -5 to -2
+*[[Cytarabine (Cytosar)]] 200 mg/m<sup>2</sup> IV twice per day on days -5 to -2
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV once on day -1
+
+====GVHD prophylaxis and key supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day +7 and continued until engraftment
+*[[Tacrolimus (Prograf)]]
+*[[Methotrexate (MTX)]]
+*"Prophylactic antibiotics"
+
+'''Stem cells transfused on day 0'''
+<section end=a8d4a />
+===References===
+# Przepiorka D, van Besien K, Khouri I, Hagemeister F, Samuels B, Folloder J, Ueno NT, Molldrem J, Mehra R, Körbling M, Giralt S, Gajewski J, Donato M, Cleary K, Claxton D, Braunschweig I, Andersson B, Anderlini P, Champlin R. Carmustine, etoposide, cytarabine and melphalan as a preparative regimen for allogeneic transplantation for high-risk malignant lymphoma. Ann Oncol. 1999 May;10(5):527-32. [http://annonc.oxfordjournals.org/content/10/5/527.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10416001 PubMed]
+# Sobol U, Rodriguez T, Smith S, Go A, Vimr R, Parthasarathy M, Guo R, Stiff P. Seven-year follow-up of allogeneic transplant using BCNU, etoposide, cytarabine and melphalan chemotherapy in patients with Hodgkin lymphoma after autograft failure: importance of minimal residual disease. Leuk Lymphoma. 2014 Jun;55(6):1281-7. Epub 2013 Oct 3. [https://www.tandfonline.com/doi/full/10.3109/10428194.2013.838233 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23987822 PubMed]
+
+==BFR {{#subobject:c2659b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BFR: '''<u>B</u>'''endamustine, '''<u>F</u>'''ludarabine, '''<u>R</u>'''ituximab
+
+===Regimen {{#subobject:41fd04|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4260365/ Khouri et al. 2014]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=41fd04 />
+====Chemotherapy====
+*[[Bendamustine]] 130 mg/m<sup>2</sup> IV once per day on days -5 to -3
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV over 30 minutes once per day on days -5 to -3
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days -13, -6, +1, +8
+
+====GVHD prophylaxis====
+*See article for GVHD prophylaxis information
+
+'''Stem cells transfused on day 0'''
+<section end=41fd04 />
+===References===
+# Khouri IF, Wei W, Korbling M, Turturro F, Ahmed S, Alousi A, Anderlini P, Ciurea S, Jabbour E, Oran B, Popat UR, Rondon G, Bassett RL Jr, Gulbis A. BFR (bendamustine, fludarabine, and rituximab) allogeneic conditioning for chronic lymphocytic leukemia/lymphoma: reduced myelosuppression and GVHD. Blood. 2014 Oct 2;124(14):2306-12. Epub 2014 Aug 21. [http://www.bloodjournal.org/content/124/14/2306.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4260365/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25145344 PubMed]
+
+=Reduced-intensity conditioning (RIC), all lines of therapy=
+
+==Busulfan & Fludarabine {{#subobject:3fe0f0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BuFlu: '''<u>Bu</u>'''sulfan & '''<u>Flu</u>'''darabine
+<br>Flu/Bu: '''<u>Flu</u>'''darabine & '''<u>Bu</u>'''sulfan
+===Regimen {{#subobject:a7e574|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4658453/ Devine et al. 2015 (CALGB 100103)]
+| style="background-color:#ffffbe" |Phase II, <20 pts in subgroup
+|-
+|}
+''This regimen is meant for related donors; only 8 patients received this regimen before the addition of ATG (rabbit) after 2006.''
+<section begin=a7e574 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV over 30 minutes once per day on days -7 to -3
+*[[Busulfan (Myleran)]] 0.8 mg/kg IV over 2 hours every 6 hours on days -4 & -3 (8 total doses)
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]] with doses adjusted to maintain levels of 5 to 10 ng/mL, tapered on day +90 to off by day +180 (if no GVHD)
+*[[Methotrexate (MTX)]] 5 mg/m<sup>2</sup> IV once per day on days +1, +3, +6, +11
+
+'''Stem cells transfused on day 0'''
+<section end=a7e574 />
+===References===
+<!-- Presented in part as an oral presentation at the 54th American Society of Hematology Annual Meeting and Exposition, Atlanta, GA, December 8-11, 2012. -->
+# Devine SM, Owzar K, Blum W, Mulkey F, Stone RM, Hsu JW, Champlin RE, Chen YB, Vij R, Slack J, Soiffer RJ, Larson RA, Shea TC, Hars V, Sibley AB, Giralt S, Carter S, Horowitz MM, Linker C, Alyea EP. Phase II study of allogeneic transplantation for older patients with acute myeloid leukemia in first complete remission using a reduced-intensity conditioning regimen: results from Cancer and Leukemia Group B 100103 (Alliance for Clinical Trials in Oncology)/Blood and Marrow Transplant Clinical Trial Network 0502. J Clin Oncol. 2015 Dec 10;33(35):4167-75. Epub 2015 Nov 2. [http://jco.ascopubs.org/content/33/35/4167.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4658453/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26527780 PubMed]
+
+==Clofarabine & Melphalan {{#subobject:08947a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:a408ed|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v30/n2/full/leu2015226a.html Middeke et al. 2015 (BRIDGE)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Limited details are available in the abstract. Treatment is meant to be given during aplasia.''
+====Preceding treatment====
+*[[Acute_myeloid_leukemia#Clofarabine_.26_Cytarabine|Clofarabine & Cytarabine salvage]]
+<section begin=a408ed />
+====Chemotherapy====
+*[[Clofarabine (Clolar)]] 4 x 30 mg/m<sup>2</sup> IV
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV
+
+'''Stem cells transfused on day 0'''
+<section end=a408ed />
+===References===
+# '''BRIDGE:''' Middeke JM, Herbst R, Parmentier S, Bug G, Hänel M, Stuhler G, Schäfer-Eckart K, Rösler W, Klein S, Bethge W, Bitz U, Büttner B, Knoth H, Alakel N, Schaich M, Morgner A, Kramer M, Sockel K, von Bonin M, Stölzel F, Platzbecker U, Röllig C, Thiede C, Ehninger G, Bornhäuser M, Schetelig J. Clofarabine salvage therapy before allogeneic hematopoietic stem cell transplantation in patients with relapsed or refractory AML: results of the BRIDGE trial. Leukemia. 2016 Feb;30(2):261-7. Epub 2015 Aug 18. [https://www.nature.com/leu/journal/v30/n2/full/leu2015226a.html link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26283567 PubMed]
+
+==Cyclophosphamide, Fludarabine, Thiotepa {{#subobject:ee93e3|Regimen=1}}==
+
+===Regimen {{#subobject:81245f|Variant=1}}===
+
+Details to be completed.
+<section begin=81245f />
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]]
+*[[Fludarabine (Fludara)]]
+*[[Thiotepa (Thioplex)]]
+
+<section end=81245f />
+===References===
+# Corradini P, Tarella C, Olivieri A, Gianni AM, Voena C, Zallio F, Ladetto M, Falda M, Lucesole M, Dodero A, Ciceri F, Benedetti F, Rambaldi A, Sajeva MR, Tresoldi M, Pileri A, Bordignon C, Bregni M. Reduced-intensity conditioning followed by allografting of hematopoietic cells can produce clinical and molecular remissions in patients with poor-risk hematologic malignancies. Blood. 2002 Jan 1;99(1):75-82. [http://www.bloodjournal.org/content/99/1/75.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11756155 PubMed]
+
+==FC {{#subobject:1a1ed9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FC: '''<u>F</u>'''ludarabine & '''<u>C</u>'''yclophosphamide
+===Variant #1, BSA-based Cy {{#subobject:886e40|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/116/14/2438 Dreger et al. 2010 (GCLLSG CLL3X)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''This regimen is intended for related donors.''
+<section begin=886e40 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -2
+*[[Cyclophosphamide (Cytoxan)]] 500 mg/m<sup>2</sup> IV once per day on days -6 to -2
+
+'''Stem cells transfused on day 0'''
+<section end=886e40 />
+===Variant #2, weight-based Cy {{#subobject:9ce8f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/10.1056/NEJM200009143431101 Childs et al. 2000]
+| style="background-color:#ffffbe" |Non-randomized, <20 pts
+|-
+|}
+<section begin=9ce8f1 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 25 mg/m<sup>2</sup> IV once per day on days -5 to -1
+*[[Cyclophosphamide (Cytoxan)]] 60 mg/kg IV once per day on days -7 & -6
+
+'''Stem cells transfused on day 0'''
+<section end=9ce8f1 />
+===References===
+# Childs R, Chernoff A, Contentin N, Bahceci E, Schrump D, Leitman S, Read EJ, Tisdale J, Dunbar C, Linehan WM, Young NS, Barrett AJ. Regression of metastatic renal-cell carcinoma after nonmyeloablative allogeneic peripheral-blood stem-cell transplantation. N Engl J Med. 2000 Sep 14;343(11):750-8. [https://www.nejm.org/doi/10.1056/NEJM200009143431101 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10984562 PubMed]
+<!-- Presented in part in abstract form at the 50th annual meeting of the American Society of Hematology, San Francisco, CA, December 6-9, 2008. -->
+# '''GCLLSG CLL3X:''' Dreger P, Döhner H, Ritgen M, Böttcher S, Busch R, Dietrich S, Bunjes D, Cohen S, Schubert J, Hegenbart U, Beelen D, Zeis M, Stadler M, Hasenkamp J, Uharek L, Scheid C, Humpe A, Zenz T, Winkler D, Hallek M, Kneba M, Schmitz N, Stilgenbauer S; German CLL Study Group. Allogeneic stem cell transplantation provides durable disease control in poor-risk chronic lymphocytic leukemia: long-term clinical and MRD results of the German CLL Study Group CLL3X trial. Blood. 2010 Oct 7;116(14):2438-47. Epub 2010 Jul 1. [http://www.bloodjournal.org/content/116/14/2438 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20595516 PubMed]
+## '''Update:''' Dreger P, Schnaiter A, Zenz T, Böttcher S, Rossi M, Paschka P, Bühler A, Dietrich S, Busch R, Ritgen M, Bunjes D, Zeis M, Stadler M, Uharek L, Scheid C, Hegenbart U, Hallek M, Kneba M, Schmitz N, Döhner H, Stilgenbauer S. TP53, SF3B1, and NOTCH1 mutations and outcome of allotransplantation for chronic lymphocytic leukemia: six-year follow-up of the GCLLSG CLL3X trial. Blood. 2013 Apr 18;121(16):3284-8. Epub 2013 Feb 22. [http://www.bloodjournal.org/content/121/16/3284.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23435461 PubMed]
+## '''Update:''' Krämer I, Stilgenbauer S, Dietrich S, Böttcher S, Zeis M, Stadler M, Bittenbring J, Uharek L, Scheid C, Hegenbart U, Ho A, Hallek M, Kneba M, Schmitz N, Döhner H, Dreger P. Allogeneic hematopoietic cell transplantation for high-risk CLL: 10-year follow-up of the GCLLSG CLL3X trial. Blood. 2017 Sep 21;130(12):1477-1480. Epub 2017 Jul 17. [http://www.bloodjournal.org/content/130/12/1477.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28716861 PubMed]
+
+==FCR {{#subobject:18605a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FCR: '''<u>F</u>'''ludarabine, '''<u>C</u>'''yclophosphamide, '''<u>R</u>'''ituximab
+
+===Regimen {{#subobject:4f0684|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/98/13/3595.long Khouri et al. 2001]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=4f0684 />
+''Details are best described in Khouri et al. 2008.''
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -5 to -3
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once per day on days -5 to -3
+*[[Rituximab (Rituxan)]] as follows:
+**375 mg/m<sup>2</sup> IV once on day -13
+**1000 mg/m<sup>2</sup> IV once per day on days -6, +1, +8
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]] adjusted to level of 5 to 10 ng/mL for 6 months in patients in remission
+*[[Methotrexate (MTX)]] as follows:
+**Related donors: 5 mg/m<sup>2</sup> IV once per day on days +1, +3, +6
+**Unrelated donors: 5 mg/m<sup>2</sup> IV once per day on days +1, +3, +6, +11
+*[[Antithymocyte globulin, horse ATG (Atgam)]] as follows:
+**Matched unrelated donor: 15 mg/kg IV once per day on days -5 to -3
+
+'''Stem cells transfused on day 0'''
+<section end=4f0684 />
+===References===
+# Khouri IF, Saliba RM, Giralt SA, Lee MS, Okoroji GJ, Hagemeister FB, Korbling M, Younes A, Ippoliti C, Gajewski JL, McLaughlin P, Anderlini P, Donato ML, Cabanillas FF, Champlin RE. Nonablative allogeneic hematopoietic transplantation as adoptive immunotherapy for indolent lymphoma: low incidence of toxicity, acute graft-versus-host disease, and treatment-related mortality. Blood. 2001 Dec 15;98(13):3595-9. [http://www.bloodjournal.org/content/98/13/3595.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11739162 PubMed]
+## '''Update:''' Khouri IF, McLaughlin P, Saliba RM, Hosing C, Korbling M, Lee MS, Medeiros LJ, Fayad L, Samaniego F, Alousi A, Anderlini P, Couriel D, de Lima M, Giralt S, Neelapu SS, Ueno NT, Samuels BI, Hagemeister F, Kwak LW, Champlin RE. Eight-year experience with allogeneic stem cell transplantation for relapsed follicular lymphoma after nonmyeloablative conditioning with fludarabine, cyclophosphamide, and rituximab. Blood. 2008 Jun 15;111(12):5530-6. Epub 2008 Apr 14. Erratum in: Blood. 2009 Feb 12;113(7):1613. [http://www.bloodjournal.org/content/111/12/5530.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4624452/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18411419 PubMed]
+## '''Update:''' Khouri IF, Saliba RM, Erwin WD, Samuels BI, Korbling M, Medeiros LJ, Valverde R, Alousi AM, Anderlini P, Bashir Q, Ciurea S, Gulbis AM, de Lima M, Hosing C, Kebriaei P, Popat UR, Fowler N, Neelapu SS, Samaniego F, Champlin RE, Macapinlac HA. Nonmyeloablative allogeneic transplantation with or without 90yttrium ibritumomab tiuxetan is potentially curative for relapsed follicular lymphoma: 12-year results. Blood. 2012 Jun 28;119(26):6373-8. Epub 2012 May 14. [http://www.bloodjournal.org/content/119/26/6373.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347306/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22586182 PubMed]
+
+==Fludarabine & TBI {{#subobject:53c6af|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:be3609|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!Study
+![[Levels_of_Evidence#Evidence|Evidence]]
+!Comparator
+![[Levels_of_Evidence#Efficacy|Efficacy]]
+![[Levels_of_Evidence#Efficacy|Non-relapse mortality]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70349-2/fulltext Bornhäuser et al. 2012]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cyclophosphamide_.26_TBI|Cyclophosphamide & TBI]]
+|style="background-color:#ffffbf"|Seems not superior
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+<section begin=be3609 />
+''Details in the abstract are limited.''
+====Chemoradiotherapy====
+*[[Fludarabine (Fludara)]] 150 mg/m<sup>2</sup>
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 2.00 Gy fractions x 4 doses (8 Gy total)
+<section end=be3609 />
+===Variant #2, low-dose TBI{{#subobject:7fa6ce|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/102/6/2021.full Maris et al. 2003]
+| style="background-color:#91cf61" |Phase II
+|-
+|[http://jco.ascopubs.org/content/23/16/3819.long Sorror et al. 2005]
+| style="background-color:#91cf61" |Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2903320/ Gyukocza et al. 2010]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|[http://ascopubs.org/doi/full/10.1200/jco.2010.32.7312 Björkstrand et al. 2011 (EBMT-NMAM2000)]
+| style="background-color:#1a9851" |Non-randomized portion of RCT
+|-
+|}
+<section begin=7fa6ce />
+''Details are best described in Maris et al. 2003.''
+====Chemoradiotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -4 to -2
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 2 Gy at a rate of 0.07 Gy/min on day 0
+
+====GVHD prophylaxis====
+*[[:Category:Cyclosporines|Cyclosporine A]] (type not specified) 6.25 mg/kg PO twice per day starting 4 to 6 hours after transplant, tapered at day 100 over 80 days (if no GVHD)
+*[[Mycophenolate mofetil (CellCept)]] 15 mg/kg PO twice per day starting 4 to 6 hours after transplant, tapered at day 40 over 56 days (if no GVHD)
+<section end=7fa6ce />
+===References===
+# Maris MB, Niederwieser D, Sandmaier BM, Storer B, Stuart M, Maloney D, Petersdorf E, McSweeney P, Pulsipher M, Woolfrey A, Chauncey T, Agura E, Heimfeld S, Slattery J, Hegenbart U, Anasetti C, Blume K, Storb R. HLA-matched unrelated donor hematopoietic cell transplantation after nonmyeloablative conditioning for patients with hematologic malignancies. Blood. 2003 Sep 15;102(6):2021-30. Epub 2003 Jun 5. [http://www.bloodjournal.org/content/102/6/2021.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12791654 PubMed]
+<!-- Presented in part at the Tandem Bone Marrow Transplantation meeting, February 13-17, 2004, Orlando, FL (for part of the patient population). -->
+# Sorror ML, Maris MB, Sandmaier BM, Storer BE, Stuart MJ, Hegenbart U, Agura E, Chauncey TR, Leis J, Pulsipher M, McSweeney P, Radich JP, Bredeson C, Bruno B, Langston A, Loken MR, Al-Ali H, Blume KG, Storb R, Maloney DG. Hematopoietic cell transplantation after nonmyeloablative conditioning for advanced chronic lymphocytic leukemia. J Clin Oncol. 2005 Jun 1;23(16):3819-29. Epub 2005 Apr 4. [http://jco.ascopubs.org/content/23/16/3819.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15809448 PubMed]
+## '''Update:''' Sorror ML, Storer BE, Sandmaier BM, Maris M, Shizuru J, Maziarz R, Agura E, Chauncey TR, Pulsipher MA, McSweeney PA, Wade JC, Bruno B, Langston A, Radich J, Niederwieser D, Blume KG, Storb R, Maloney DG. Five-year follow-up of patients with advanced chronic lymphocytic leukemia treated with allogeneic hematopoietic cell transplantation after nonmyeloablative conditioning. J Clin Oncol. 2008 Oct 20;26(30):4912-20. Epub 2008 Sep 15. [http://jco.ascopubs.org/content/26/30/4912.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2652085/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18794548 PubMed]
+<!-- no pre-pub disclosed -->
+# Gyurkocza B, Storb R, Storer BE, Chauncey TR, Lange T, Shizuru JA, Langston AA, Pulsipher MA, Bredeson CN, Maziarz RT, Bruno B, Petersen FB, Maris MB, Agura E, Yeager A, Bethge W, Sahebi F, Appelbaum FR, Maloney DG, Sandmaier BM. Nonmyeloablative allogeneic hematopoietic cell transplantation in patients with acute myeloid leukemia. J Clin Oncol. 2010 Jun 10;28(17):2859-67. Epub 2010 May 3. [http://jco.ascopubs.org/content/28/17/2859.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2903320/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20439626 PubMed]
+# '''EBMT-NMAM2000:''' Björkstrand B, Iacobelli S, Hegenbart U, Gruber A, Greinix H, Volin L, Narni F, Musto P, Beksac M, Bosi A, Milone G, Corradini P, Goldschmidt H, de Witte T, Morris C, Niederwieser D, Gahrton G. Tandem autologous/reduced-intensity conditioning allogeneic stem-cell transplantation versus autologous transplantation in myeloma: long-term follow-up. J Clin Oncol. 2011 Aug 1;29(22):3016-22. Epub 2011 Jul 5. Erratum in: J Clin Oncol. 2011 Sep 20;29(27):3721. [http://ascopubs.org/doi/full/10.1200/jco.2010.32.7312 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21730266 PubMed]
+## '''Update:''' Gahrton G, Iacobelli S, Björkstrand B, Hegenbart U, Gruber A, Greinix H, Volin L, Narni F, Carella AM, Beksac M, Bosi A, Milone G, Corradini P, Schönland S, Friberg K, van Biezen A, Goldschmidt H, de Witte T, Morris C, Niederwieser D, Garderet L, Kröger N; EBMT Chronic Malignancies Working Party Plasma Cell Disorders Subcommittee. Autologous/reduced-intensity allogeneic stem cell transplantation vs autologous transplantation in multiple myeloma: long-term results of the EBMT-NMAM2000 study. Blood. 2013 Jun 20;121(25):5055-63. Epub 2013 Mar 12. [http://www.bloodjournal.org/content/121/25/5055.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23482933 PubMed]
+# Bornhäuser M, Kienast J, Trenschel R, Burchert A, Hegenbart U, Stadler M, Baurmann H, Schäfer-Eckart K, Holler E, Kröger N, Schmid C, Einsele H, Kiehl MG, Hiddemann W, Schwerdtfeger R, Buchholz S, Dreger P, Neubauer A, Berdel WE, Ehninger G, Beelen DW, Schetelig J, Stelljes M. Reduced-intensity conditioning versus standard conditioning before allogeneic haemopoietic cell transplantation in patients with acute myeloid leukaemia in first complete remission: a prospective, open-label randomised phase 3 trial. Lancet Oncol. 2012 Oct;13(10):1035-44. Epub 2012 Sep 7. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70349-2/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22959335 PubMed]
+
+==Fludarabine, Busulfan, ATG {{#subobject:ed545b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1 {{#subobject:dd1486|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4658453/ Devine et al. 2015 (CALGB 100103)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''This regimen is meant for all types of donors.''
+<section begin=dd1486 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV over 30 minutes once per day on days -7 to -3
+*[[Busulfan (Myleran)]] 0.8 mg/kg IV over 2 hours every 6 hours on days -4 & -3 (8 total doses)
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)|ATG (Rabbit)]] 2.5 mg/kg IV over 6 hours once per day on days -4 to -2
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]] with doses adjusted to maintain levels of 5 to 10 ng/mL, tapered on day +90 to off by day +180 (if no GVHD)
+*[[Methotrexate (MTX)]] 5 mg/m<sup>2</sup> IV once per day on days +1, +3, +6, +11
+
+'''Stem cells transfused on day 0'''
+<section end=dd1486 />
+===Variant #2 {{#subobject:335733|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.29087/full Mohti et al. 2014]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=335733 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup>/day (route not specified) on days -6 to -2 (5 consecutive days)
+*[[Busulfan (Myleran)]] 130 mg/m<sup>2</sup> IV over 3 hours once per day on days -5 to -3 (3 consecutive days)
+====GVHD prophylaxis and key supportive medications====
+*[[:Category:Antithymocyte globulin|Antithymocyte globulin (ATG)]] (subtype not specified) 2.5 mg/kg/day IV on days -2 & -1
+*As per [https://www.ncbi.nlm.nih.gov/pubmed/12931226 Mohty et al. 2003]
+
+'''Stem cells transfused on day 0'''
+<section end=335733 />
+===Variant #3 {{#subobject:e2d51e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/107/9/3474 Garban et al. 2006 (IFM99-03)]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''This regimen was meant for patients who had an HLA-identical sibling donor, and was evaluated in multiple myeloma patients.''
+<section begin=e2d51e />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 25 mg/m<sup>2</sup>/day (route not specified) for 5 days (days not specified)
+*[[Busulfan (Myleran)]] 2 mg/kg<sup>2</sup> PO once per day for 2 days (days not specified)
+
+====GVHD prophylaxis====
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)|ATG, rabbit (Imtix)]] 2.5 mg/kg IV over 12 hours once per day on days -5 to -1 (5 doses)
+*[[:Category:Cyclosporines|Cyclosporine A]] (type not specified) with starting dose on day -1 of 3 mg/kg/day, doses adjusted to "serum levels", tapered on day +60 to off by day +100 (if no GVHD)
+*[[Methotrexate (MTX)]] 10 mg/m<sup>2</sup> (route not specified) once per day on days +1, +3, +6
+<section end=e2d51e />
+===Variant #4 {{#subobject:e2c4bf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/91/3/756.full Slavin et al. 1998]
+| style="background-color:#91cf61" |Phase II
+|-
+|[http://jco.ascopubs.org/content/21/14/2747.long Schetelig et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+<section begin=e2c4bf />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -10 to -5 (6 consecutive days)
+*[[Busulfan (Myleran)]] 4 mg/kg/day PO on days -6 to -5 (2 consecutive days)
+*[[Antithymocyte globulin, rabbit ATG (Grafalon)|ATG-Fresenius]] 10 mg/kg/day IV once per day on days -4 to -1 (4 consecutive days)
+
+'''Stem cells transfused on day 0'''
+<section end=e2c4bf />
+===References===
+# Slavin S, Nagler A, Naparstek E, Kapelushnik Y, Aker M, Cividalli G, Varadi G, Kirschbaum M, Ackerstein A, Samuel S, Amar A, Brautbar C, Ben-Tal O, Eldor A, Or R. Nonmyeloablative stem cell transplantation and cell therapy as an alternative to conventional bone marrow transplantation with lethal cytoreduction for the treatment of malignant and nonmalignant hematologic diseases. Blood. 1998 Feb 1;91(3):756-63. [http://www.bloodjournal.org/content/91/3/756.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9446633 PubMed]
+# Schetelig J, Thiede C, Bornhauser M, Schwerdtfeger R, Kiehl M, Beyer J, Sayer HG, Kroger N, Hensel M, Scheffold C, Held TK, Hoffken K, Ho AD, Kienast J, Neubauer A, Zander AR, Fauser AA, Ehninger G, Siegert W; Cooperative German Transplant Study Group. Evidence of a graft-versus-leukemia effect in chronic lymphocytic leukemia after reduced-intensity conditioning and allogeneic stem-cell transplantation: the Cooperative German Transplant Study Group. J Clin Oncol. 2003 Jul 15;21(14):2747-53. [http://jco.ascopubs.org/content/21/14/2747.long link to original article] '''contains reference to protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12860954 PubMed]
+# '''IFM99-03:''' Garban F, Attal M, Michallet M, Hulin C, Bourhis JH, Yakoub-Agha I, Lamy T, Marit G, Maloisel F, Berthou C, Dib M, Caillot D, Deprijck B, Ketterer N, Harousseau JL, Sotto JJ, Moreau P. Prospective comparison of autologous stem cell transplantation followed by dose-reduced allograft (IFM99-03 trial) with tandem autologous stem cell transplantation (IFM99-04 trial) in high-risk de novo multiple myeloma. Blood. 2006 May 1;107(9):3474-80. Epub 2006 Jan 5. [http://www.bloodjournal.org/content/107/9/3474 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16397129 PubMed]
+## '''Update:''' Moreau P, Garban F, Attal M, Michallet M, Marit G, Hulin C, Benboubker L, Doyen C, Mohty M, Yakoub-Agha I, Leyvraz S, Casassus P, Avet-Loiseau H, Garderet L, Mathiot C, Harousseau JL; IFM Group. Long-term follow-up results of IFM99-03 and IFM99-04 trials comparing nonmyeloablative allotransplantation with autologous transplantation in high-risk de novo multiple myeloma. Blood. 2008 Nov 1;112(9):3914-5. [http://www.bloodjournal.org/content/112/9/3914.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18948589 PubMed]
+# Mohty M, Malard F, Blaise D, Milpied N, Furst S, Tabrizi R, Guillaume T, Vigouroux S, El-Cheikh J, Delaunay J, Le Gouill S, Moreau P, Labopin M, Chevallier P. Reduced-toxicity conditioning with fludarabine, once-daily intravenous busulfan, and antithymocyte globulins prior to allogeneic stem cell transplantation: results of a multicenter prospective phase 2 trial. Cancer. 2015 Feb 15;121(4):562-9. Epub 2014 Oct 3. Erratum in: Cancer. 2015 Mar 1;121(5):800. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29087/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25283774 PubMed]
+<!-- Presented in part as an oral presentation at the 54th American Society of Hematology Annual Meeting and Exposition, Atlanta, GA, December 8-11, 2012. -->
+# '''CALGB 100103:''' Devine SM, Owzar K, Blum W, Mulkey F, Stone RM, Hsu JW, Champlin RE, Chen YB, Vij R, Slack J, Soiffer RJ, Larson RA, Shea TC, Hars V, Sibley AB, Giralt S, Carter S, Horowitz MM, Linker C, Alyea EP. Phase II study of allogeneic transplantation for older patients with acute myeloid leukemia in first complete remission using a reduced-intensity conditioning regimen: results from Cancer and Leukemia Group B 100103 (Alliance for Clinical Trials in Oncology)/Blood and Marrow Transplant Clinical Trial Network 0502. J Clin Oncol. 2015 Dec 10;33(35):4167-75. Epub 2015 Nov 2. [http://jco.ascopubs.org/content/33/35/4167.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4658453/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26527780 PubMed]
+
+==Fludarabine, Busulfan, ATG, Ibritumomab tiuxetan {{#subobject:68bee2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:822e5a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/26/1/193.full Bouabdallah et al. 2015]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=822e5a />
+====Chemoradioimmunotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -2
+*[[Busulfan (Myleran)]] 3.2 mg/kg/day (route not specified) on days -5 & -4
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 2.5 mg/kg IV once on day -1
+*[[Rituximab (Rituxan)]] 250 mg/m<sup>2</sup> IV once per day on days -21 & -14
+*[[Ibritumomab tiuxetan (Zevalin)]] 0.4 mCi/kg (maximum dose of 32 mCi) IV once on day -14
+
+====GVHD prophylaxis====
+*[[:Category:Cyclosporines|Cyclosporine A]] (type and dose not specified) until day +90 and tapered off by day +180 based on chimerism and GVHD
+*[[Methotrexate (MTX)]] as follows (for unrelated donors with HLA mismatch):
+**15 mg/m<sup>2</sup> (route not specified) once on day +1
+**10 mg/m<sup>2</sup> (route not specified) once per day on days +3 & +6
+
+'''Stem cells transfused on day 0'''
+<section end=822e5a />
+===References===
+# Bouabdallah K, Furst S, Asselineau J, Chevalier P, Tournilhac O, Ceballos P, Vigouroux S, Tabrizi R, Doussau A, Bouabdallah R, Mohty M, Le Gouill S, Blaise D, Milpied N. 90Y-ibritumomab tiuxetan, fludarabine, busulfan and antithymocyte globulin reduced-intensity allogeneic transplant conditioning for patients with advanced and high-risk B-cell lymphomas. Ann Oncol. 2015 Jan;26(1):193-8. Epub 2014 Oct 30. [http://annonc.oxfordjournals.org/content/26/1/193.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25361987 PubMed]
+
+==Fludarabine, Cyclophosphamide, ATG {{#subobject:f2ce14|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:3e71d0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/116/14/2438 Dreger et al. 2010 (GCLLSG CLL3X)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''This regimen is intended for unrelated donors.''
+<section begin=3e71d0 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -2 (5 consecutive days)
+*[[Cyclophosphamide (Cytoxan)]] 500 mg/m<sup>2</sup> IV once per day on days -6 to -2 (5 consecutive days)
+*[[Antithymocyte globulin, rabbit ATG (Grafalon)|ATG-Fresenius]] 10 mg/kg/day IV on days -4 to -1 (4 consecutive days)
+
+'''Stem cells transfused on day 0'''
+<section end=3e71d0 />
+===References===
+<!-- Presented in part in abstract form at the 50th annual meeting of the American Society of Hematology, San Francisco, CA, December 6-9, 2008. -->
+# '''GCLLSG CLL3X:''' Dreger P, Döhner H, Ritgen M, Böttcher S, Busch R, Dietrich S, Bunjes D, Cohen S, Schubert J, Hegenbart U, Beelen D, Zeis M, Stadler M, Hasenkamp J, Uharek L, Scheid C, Humpe A, Zenz T, Winkler D, Hallek M, Kneba M, Schmitz N, Stilgenbauer S; German CLL Study Group. Allogeneic stem cell transplantation provides durable disease control in poor-risk chronic lymphocytic leukemia: long-term clinical and MRD results of the German CLL Study Group CLL3X trial. Blood. 2010 Oct 7;116(14):2438-47. Epub 2010 Jul 1. [http://www.bloodjournal.org/content/116/14/2438 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20595516 PubMed]
+## '''Update:''' Dreger P, Schnaiter A, Zenz T, Böttcher S, Rossi M, Paschka P, Bühler A, Dietrich S, Busch R, Ritgen M, Bunjes D, Zeis M, Stadler M, Uharek L, Scheid C, Hegenbart U, Hallek M, Kneba M, Schmitz N, Döhner H, Stilgenbauer S. TP53, SF3B1, and NOTCH1 mutations and outcome of allotransplantation for chronic lymphocytic leukemia: six-year follow-up of the GCLLSG CLL3X trial. Blood. 2013 Apr 18;121(16):3284-8. Epub 2013 Feb 22. [http://www.bloodjournal.org/content/121/16/3284.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23435461 PubMed]
+## '''Update:''' Krämer I, Stilgenbauer S, Dietrich S, Böttcher S, Zeis M, Stadler M, Bittenbring J, Uharek L, Scheid C, Hegenbart U, Ho A, Hallek M, Kneba M, Schmitz N, Döhner H, Dreger P. Allogeneic hematopoietic cell transplantation for high-risk CLL: 10-year follow-up of the GCLLSG CLL3X trial. Blood. 2017 Sep 21;130(12):1477-1480. Epub 2017 Jul 17. [http://www.bloodjournal.org/content/130/12/1477.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28716861 PubMed]
+
+==Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant {{#subobject:3a1faf|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+dUCB: '''<u>d</u>'''ouble '''<u>U</u>'''mbilical '''<u>C</u>'''ord '''<u>B</u>'''lood
+
+===Variant #1, dUCB transplantation {{#subobject:f5d1b1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3138683/ Brunstein et al. 2011]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=f5d1b1 />
+====Chemoradiotherapy====
+*[[Fludarabine (Fludara)]] 40 mg/m<sup>2</sup> IV once per day on days -6 to -2 (5 consecutive days)
+*[[Cyclophosphamide (Cytoxan)]] 50 mg/kg IV once on day -6
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 2 Gy once on day -1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] (dose/route/schedule not specified) and "vigorous IV hydration for uroprotection."
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day +1, continued until ANC greater than or equal to 2000/uL for 3 consecutive days
+
+====GVHD Prophylaxis====
+*[[Mycophenolate mofetil (CellCept)]] 1000 mg (route not specified) Q8H for patients greater than 50 kg, starting on day -3 "and continuing until day +30 or 7 days after engraftment, whichever was later"
+**Patients less than 50 kg received 15 mg/kg (route not specified) Q8H, starting on day -3 "and continuing until day +30 or 7 days after engraftment, whichever was later"
+*[[:Category:Cyclosporines|Cyclosporine A]] ([[Cyclosporine modified (Neoral)|Neoral]] vs. [[Cyclosporine non-modified (Sandimmune)|Sandimmune]] not specified, route not specified) with a goal trough of 200 to 400 ng/mL (starting date not specified) until day +100. Patients without GVHD had their dose tapered by 10% each week starting on day +101, with discontinuation of cyclosporine A around day +180 to +200. 
+*[[Tacrolimus (Prograf)]] (route not specified) with a goal trough level of 5 to 10 ng/mL could be substituted for cyclosporine.
+
+'''Stem cells transfused on day 0'''
+<section end=f5d1b1 />
+===Variant #2, Haploidentical {{#subobject:61264d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3138683/ Brunstein et al. 2011]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=61264d />
+====Chemoradiotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -6 to -2 (5 consecutive days)
+*[[Cyclophosphamide (Cytoxan)]] 14.5 mg/kg IV once per day on days -6 and -5 (2 consecutive days)
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 2 Gy once on day -1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] (dose/route/schedule not specified) and "vigorous IV hydration for uroprotection."
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day +5, continued until ANC greater than or equal to 1000/uL for 3 consecutive days
+
+====GVHD Prophylaxis====
+*[[Cyclophosphamide (Cytoxan)]] 50 mg/kg IBW IV over 1 to 2 hours once per day on days +3 (60 to 72 hours after marrow infusion) and +4
+*[[Mycophenolate mofetil (CellCept)]] 15 mg/kg (maximum daily dose of 3000 mg; route not specified) Q8H, starting on day +5, continued until day +35 or longer at physician discretion if active GVHD was present
+*[[Tacrolimus (Prograf)]] (route not specified) with a goal trough level of 5 to 10 ng/mL, starting on day +5, continued until day +180
+
+'''Stem cells transfused on day 0'''
+<section end=61264d />
+===References===
+# Brunstein CG, Fuchs EJ, Carter SL, Karanes C, Costa LJ, Wu J, Devine SM, Wingard JR, Aljitawi OS, Cutler CS, Jagasia MH, Ballen KK, Eapen M, O'Donnell PV; Blood and Marrow Transplant Clinical Trials Network. Alternative donor transplantation after reduced intensity conditioning: results of parallel phase 2 trials using partially HLA-mismatched related bone marrow or unrelated double umbilical cord blood grafts. Blood. 2011 Jul 14;118(2):282-8. [http://www.bloodjournal.org/content/118/2/282.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3138683/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21527516 PubMed]
+
+==Fludarabine & Melphalan {{#subobject:1e26e2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Flu-Mel: '''<u>Flu</u>'''darabine & '''<u>Mel</u>'''phalan
+===Variant #1, 132/140 {{#subobject:efd75c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4238917/ Anderlini et al. 2008]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=efd75c />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 33 mg/m<sup>2</sup> IV once per day on days -5 to -2
+*[[Melphalan (Alkeran)]] 70 mg/m<sup>2</sup> IV once per day on days -3 & -2
+*Recipients of stem cells from matched unrelated donors also received:
+**[[:Category:Antithymocyte globulin|ATG]] (type not specified) 2 mg/kg IV once per day on days -4 to -2
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]] IV starting on day -2, dosed to achieve serum levels 4 to 12 ng/mL and switched to PO as soon as possible. Continued for at least 6 months and then "tapered off" (instructions not given).
+*[[Methotrexate (MTX)]] 5 mg/m<sup>2</sup> IV once per day on days +1, +3, +6 (extra dose on day +11 for MUD recipients)
+<section end=efd75c />
+===Variant #2, 150/140 {{#subobject:3239ec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bbmt.org/article/S1083-8791(05)00673-7/fulltext Alvarez et al. 2006]
+| style="background-color:#91cf61" |Prospective
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3269494/ Sureda et al. 2011 (HDR-ALLO)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+<section begin=3239ec />
+''Note: Alvarez et al. 2006 began CsA on day -1 and did not give day +11 MTX.''
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -8 to -4
+*[[Melphalan (Alkeran)]] 70 mg/m<sup>2</sup> IV once per day on days -3 & -2
+*Recipients of stem cells from matched unrelated donors also received:
+**Alvarez et al. 2006: [[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 2.5 mg/kg IV once per day on days -4 to -2
+**HDR-ALLO: [[:Category:Antithymocyte globulin|ATG]] (type not specified) 45 mg/kg IV once per day on days -4 to -2
+
+====GVHD prophylaxis====
+*[[:Category:Cyclosporines|Cyclosporine A]] (not specified whether modified or non-modified) starting on day -2 at 1.5 mg/kg IV twice per day
+**''If no acute GVHD of grade 2 or more, cyclosporine A is tapered down by 10% per week starting on day +90 with planned discontinuation by day +150 (Alvarez et al. 2006) or +180 (HDR-ALLO).''
+*[[Methotrexate (MTX)]] 10 mg/m<sup>2</sup> IV once per day on days +1, +3, +6 and +11
+
+'''Stem cells transfused on day 0'''
+<section end=3239ec />
+===References===
+# Alvarez I, Sureda A, Caballero MD, Urbano-Ispizua A, Ribera JM, Canales M, García-Conde J, Sanz G, Arranz R, Bernal MT, de la Serna J, Díez JL, Moraleda JM, Rubió-Félix D, Xicoy B, Martínez C, Mateos MV, Sierra J. Nonmyeloablative stem cell transplantation is an effective therapy for refractory or relapsed Hodgkin lymphoma: results of a Spanish prospective cooperative protocol. Biol Blood Marrow Transplant. 2006 Feb;12(2):172-83. [http://www.bbmt.org/article/S1083-8791(05)00673-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16443515 PubMed]
+# Anderlini P, Saliba R, Acholonu S, Giralt SA, Andersson B, Ueno NT, Hosing C, Khouri IF, Couriel D, de Lima M, Qazilbash MH, Pro B, Romaguera J, Fayad L, Hagemeister F, Younes A, Munsell MF, Champlin RE. Fludarabine-melphalan as a preparative regimen for reduced-intensity conditioning allogeneic stem cell transplantation in relapsed and refractory Hodgkin's lymphoma: the updated MD Anderson Cancer Center experience. Haematologica. 2008 Feb;93(2):257-64. Epub 2008 Jan 26. [http://www.haematologica.org/content/93/2/257.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4238917/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18223284 PubMed] 
+# '''HDR-ALLO:''' Sureda A, Canals C, Arranz R, Caballero D, Ribera JM, Brune M, Passweg J, Martino R, Valcárcel D, Besalduch J, Duarte R, León A, Pascual MJ, García-Noblejas A, López Corral L, Xicoy B, Sierra J, Schmitz N. Allogeneic stem cell transplantation after reduced intensity conditioning in patients with relapsed or refractory Hodgkin's lymphoma: results of the HDR-ALLO study - a prospective clinical trial by the Grupo Español de Linfomas/Trasplante de Médula Osea (GEL/TAMO) and the Lymphoma Working Party of the European Group for Blood and Marrow Transplantation. Haematologica. 2012 Feb;97(2):310-7. Epub 2011 Oct 11. [http://www.haematologica.org/content/97/2/310.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3269494/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21993674 PubMed]
+
+==Fludarabine, Melphalan, Alemtuzumab {{#subobject:99386e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:149798|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140673605666597/fulltext Peggs et al. 2005]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+<section begin=149798 />
+====Chemotherapy====
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -7 to -3
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV once on day -2
+*[[Alemtuzumab (Campath)]]
+
+'''Stem cells transfused on day 0'''
+<section end=149798 />
+===References===
+# Peggs KS, Hunter A, Chopra R, Parker A, Mahendra P, Milligan D, Craddock C, Pettengell R, Dogan A, Thomson KJ, Morris EC, Hale G, Waldmann H, Goldstone AH, Linch DC, Mackinnon S. Clinical evidence of a graft-versus-Hodgkin's-lymphoma effect after reduced-intensity allogeneic transplantation. Lancet. 2005 Jun 4-10;365(9475):1934-41. [https://www.thelancet.com/journals/lancet/article/PIIS0140673605666597/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15936420 PubMed]
+
+==Low-dose TBI {{#subobject:529ee7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TBI: '''<u>T</u>'''otal '''<u>B</u>'''ody '''<u>I</u>'''rradiation
+===Regimen {{#subobject:174a8e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2903320/ Gyukocza et al. 2010]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+<section begin=174a8e />
+====Radiotherapy====
+*[[External_beam_radiotherapy|Total body irradiation]] (TBI) 2 Gy at a rate of 0.07 to 0.20 Gy/min on day 0
+
+====GVHD prophylaxis====
+*One of the following (further details not specified):
+**[[Cyclosporine non-modified (Sandimmune) | Cyclosporine]]
+**[[Tacrolimus (Prograf)]]
+*[[Mycophenolate mofetil (CellCept)]]
+
+'''Stem cells transfused on day 0'''
+<section end=174a8e />
+
+===References===
+<!-- no pre-pub disclosed -->
+# Gyurkocza B, Storb R, Storer BE, Chauncey TR, Lange T, Shizuru JA, Langston AA, Pulsipher MA, Bredeson CN, Maziarz RT, Bruno B, Petersen FB, Maris MB, Agura E, Yeager A, Bethge W, Sahebi F, Appelbaum FR, Maloney DG, Sandmaier BM. Nonmyeloablative allogeneic hematopoietic cell transplantation in patients with acute myeloid leukemia. J Clin Oncol. 2010 Jun 10;28(17):2859-67. Epub 2010 May 3. [http://jco.ascopubs.org/content/28/17/2859.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2903320/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20439626 PubMed]
+
+==TLI & ATG {{#subobject:49eb63|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TLI & ATG: '''<u>T</u>'''otal '''<u>L</u>'''ymphocyte '''<u>I</u>'''rradiation & '''<u>A</u>'''nti-'''<u>T</u>'''hymocyte '''<u>G</u>'''lobulin
+===Regimen {{#subobject:dad2af|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa050642 Lowsky et al. 2005]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2721787/ Kohrt et al. 2009]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''Note: the schedule for TLI in Kohrt et al. 2009 is slightly different, although the manuscript states that the protocol from Lowsky et al. 2006 was followed. See paper for details.''
+<section begin=dad2af />
+====Chemoradiotherapy====
+*TLI: 800 cGy given once per day on days -11 to -1 (10 fractions)
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] 1.5 mg/kg IV once per day on days -11 to -7
+
+'''Stem cells transfused on day 0'''
+<section end=dad2af />
+===References===
+# Lowsky R, Takahashi T, Liu YP, Dejbakhsh-Jones S, Grumet FC, Shizuru JA, Laport GG, Stockerl-Goldstein KE, Johnston LJ, Hoppe RT, Bloch DA, Blume KG, Negrin RS, Strober S. Protective conditioning for acute graft-versus-host disease. N Engl J Med. 2005 Sep 29;353(13):1321-31. Erratum in: N Engl J Med. 2006 Feb 23;354(8):884. [https://www.nejm.org/doi/full/10.1056/NEJMoa050642 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16192477 PubMed]
+# Kohrt HE, Turnbull BB, Heydari K, Shizuru JA, Laport GG, Miklos DB, Johnston LJ, Arai S, Weng WK, Hoppe RT, Lavori PW, Blume KG, Negrin RS, Strober S, Lowsky R. TLI and ATG conditioning with low risk of graft-versus-host disease retains antitumor reactions after allogeneic hematopoietic cell transplantation from related and unrelated donors. Blood. 2009 Jul 30;114(5):1099-109. [http://www.bloodjournal.org/content/114/5/1099.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2721787/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19423725 PubMed]
+
+==(90)YFC {{#subobject:ed22a7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+(90)YFC: Ibritumomab tiuxetan, '''<u>F</u>'''ludarabine, '''<u>C</u>'''yclophosphamide
+
+===Regimen {{#subobject:efc342|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347306/ Khouri et al. 2012]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+<section begin=efc342 />
+====Chemoradioimmunotherapy====
+*[[Rituximab (Rituxan)]] 250 mg/m<sup>2</sup> IV once per day on days -14 & -7
+*[[Ibritumomab tiuxetan (Zevalin)|Ibritumomab tiuxetan & Indium-111 5 mCi]] IV once on day -14 for dosimetry
+*[[Ibritumomab tiuxetan (Zevalin)|Ibritumomab tiuxetan & Yttrium-90 (Zevalin)]] 0.4 mCi/kg (15 MBq/kg) (maximum dose of 32 mCi/1.2 GBq) IV once on day -7
+*[[Fludarabine (Fludara)]] 30 mg/m<sup>2</sup> IV once per day on days -5 to -3
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once per day on days -5 to -3
+
+====GVHD prophylaxis====
+*[[Tacrolimus (Prograf)]]
+*[[Methotrexate (MTX)]]
+*[[Antithymocyte globulin, rabbit ATG (Thymoglobulin)]] as follows:
+**Matched unrelated or mismatched donors: 1 mg/kg IV once per day on days -2 & -1
+
+'''Stem cells transfused on day 0'''
+<section end=efc342 />
+===References===
+# Khouri IF, Saliba RM, Erwin WD, Samuels BI, Korbling M, Medeiros LJ, Valverde R, Alousi AM, Anderlini P, Bashir Q, Ciurea S, Gulbis AM, de Lima M, Hosing C, Kebriaei P, Popat UR, Fowler N, Neelapu SS, Samaniego F, Champlin RE, Macapinlac HA. Nonmyeloablative allogeneic transplantation with or without 90yttrium ibritumomab tiuxetan is potentially curative for relapsed follicular lymphoma: 12-year results. Blood. 2012 Jun 28;119(26):6373-8. Epub 2012 May 14. [http://www.bloodjournal.org/content/119/26/6373.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347306/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22586182 PubMed]
+
+=Hepatic veno-occlusive disease (VOD), all lines of therapy=
+''Also known as sinusoidal obstructive syndrome (SOS)''
+
+==Defibrotide monotherapy {{#subobject:pyr1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, treatment {{#subobject:pyv1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4817309/ Richardson et al. 2016]
+| style="background-color:#1a9851" |Phase III (E)
+|"32 historical controls"
+| style="background-color:#91cf60" |Seems to have superior survival at day +100
+|-
+|}
+====Supportive medications====
+*[[Defibrotide (Defitelio)]] 6.25 mg/kg IV over 2 hours once every 6 hours 
+
+'''Given for at least 21 days''' 
+
+''If after 21 days signs and symptoms of VOD have not resolved, give until VOD is resolved, up to a maximum of 60 days.''
+
+===Variant #2, prophylaxis {{#subobject:0e9fee|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pubmed/22364685 Corbacioglu et al. 2012]
+| style="background-color:#1a9851" |Phase III (E)
+|Observation
+| style="background-color:#91cf60" |Seems to have lower incidence of VOD
+|-
+|}
+====Supportive medications====
+*[[Defibrotide (Defitelio)]] 6.25 mg/kg IV over 2 hours once every 6 hours 
+
+'''Begins on first day of preparative regimen, continues for at least 14 days or until day +30''' 
+
+===References===
+# Corbacioglu S, Cesaro S, Faraci M, Valteau-Couanet D, Gruhn B, Rovelli A, Boelens JJ, Hewitt A, Schrum J, Schulz AS, Müller I, Stein J, Wynn R, Greil J, Sykora KW, Matthes-Martin S, Führer M, O'Meara A, Toporski J, Sedlacek P, Schlegel PG, Ehlert K, Fasth A, Winiarski J, Arvidson J, Mauz-Körholz C, Ozsahin H, Schrauder A, Bader P, Massaro J, D'Agostino R, Hoyle M, Iacobelli M, Debatin KM, Peters C, Dini G. Defibrotide for prophylaxis of hepatic veno-occlusive disease in paediatric haemopoietic stem-cell transplantation: an open-label, phase 3, randomised controlled trial. Lancet. 2012 Apr 7;379(9823):1301-9. Epub 2012 Feb 23. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22364685 PubMed]
+# Richardson PG, Riches ML, Kernan NA, Brochstein JA, Mineishi S, Termuhlen AM, Arai S, Grupp SA, Guinan EC, Martin PL, Steinbach G, Krishnan A, Nemecek ER, Giralt S, Rodriguez T, Duerst R, Doyle J, Antin JH, Smith A, Lehmann L, Champlin R, Gillio A, Bajwa R, D'Agostino RB Sr, Massaro J, Warren D, Miloslavsky M, Hume RL, Iacobelli M, Nejadnik B, Hannah AL, Soiffer RJ. Phase 3 trial of defibrotide for the treatment of severe veno-occlusive disease and multi-organ failure. Blood. 2016 Jan 29. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4817309/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26825712 PubMed]
+
+[[Category:Allogeneic HSCT regimens]]
+[[Category:Site-agnostic regimens]]

@@ -1,0 +1,123 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+Note: these are biomarker-specific regimens, please see the '''[[Non-small cell lung cancer|main NSCLC page]]''' for other regimens.
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Advanced or metastatic disease, ROS1 inhibitor-naive=
+
+==Ceritinib monotherapy {{#subobject:fe3892|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:47c6e4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2016.71.3701 Lim et al. 2017]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#bfd3e6" |ORR: 67% (95% CI, 48-81)
+|-
+|}
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 750 mg PO once per day on an empty stomach
+
+'''28-day cycles'''
+
+===References===
+# Lim SM, Kim HR, Lee JS, Lee KH, Lee YG, Min YJ, Cho EK, Lee SS, Kim BS, Choi MY, Shim HS, Chung JH, La Choi Y, Lee MJ, Kim M, Kim JH, Ali SM, Ahn MJ, Cho BC. Open-label, multicenter, phase II study of ceritinib in patients with non-small-cell lung cancer harboring ROS1 rearrangement. J Clin Oncol. 2017 Aug 10;35(23):2613-2618. Epub 2017 May 18. [http://ascopubs.org/doi/full/10.1200/JCO.2016.71.3701 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28520527 PubMed]
+
+==Crizotinib monotherapy {{#subobject:be5391|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, standard-dose {{#subobject:e9c195|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4264527/ Shaw et al. 2014 (PROFILE 1001)]
+| style="background-color:#91cf61" |Non-randomized
+|style="background-color:#bfd3e6"|ORR: 72% (95% CI, 58-84)
+|-
+|}
+''Note: this was an expansion cohort of a phase I study.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 250 mg PO twice per day
+
+'''28-day cycles''' 
+
+===Variant #2, 200 mg twice per day {{#subobject:c56a8e|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''Note: this is the FDA-recommended dosing for "moderate" hepatic impairment.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 200 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #3, 250 mg/day {{#subobject:d7fdf0|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''Note: this is the FDA-recommended dosing for "severe" hepatic or renal impairment.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 250 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''PROFILE 1001:''' Shaw AT, Ou SH, Bang YJ, Camidge DR, Solomon BJ, Salgia R, Riely GJ, Varella-Garcia M, Shapiro GI, Costa DB, Doebele RC, Le LP, Zheng Z, Tan W, Stephenson P, Shreeve SM, Tye LM, Christensen JG, Wilner KD, Clark JW, Iafrate AJ. Crizotinib in ROS1-rearranged non-small-cell lung cancer. N Engl J Med. 2014 Nov 20;371(21):1963-71. Epub 2014 Sep 27. [https://www.nejm.org/doi/full/10.1056/NEJMoa1406766 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4264527/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25264305 PubMed]
+
+=Advanced or metastatic disease, ROS1 inhibitor-exposed=
+==Lorlatinib monotherapy {{#subobject:ea894c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9134b2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30680-0/fulltext Shaw et al. 2017 (B7461001)]
+| style="background-color:#ffffbe" |Phase I, <20 pts in this subgroup
+|-
+|}
+====Chemotherapy====
+*[[Lorlatinib (Lorbrena)]] 100 mg PO once per day
+
+'''Continued indefinitely'''
+===References===
+# '''Phase 1:''' Shaw AT, Felip E, Bauer TM, Besse B, Navarro A, Postel-Vinay S, Gainor JF, Johnson M, Dietrich J, James LP, Clancy JS, Chen J, Martini JF, Abbattista A, Solomon BJ. Lorlatinib in non-small-cell lung cancer with ALK or ROS1 rearrangement: an international, multicentre, open-label, single-arm first-in-man phase 1 trial. Lancet Oncol. 2017 Dec;18(12):1590-1599. Epub 2017 Oct 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30680-0/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29074098 PubMed]
+
+=Additional resources=
+*[https://ros1cancer.com/ The ROS1ders]
+
+=Investigational agents=
+''Drugs with some degree of promising activity in clinical trials.''
+*[[Entrectinib (RXDX-101)]]
+
+[[Category:Non-small cell lung cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Thoracic cancers]]

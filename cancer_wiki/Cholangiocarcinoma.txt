@@ -1,0 +1,540 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:C Schwartz.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>Candice Schwartz, MD<br>University of Illinois at Chicago<br>Chicago, IL</big>
+| style="background-color:#F0F0F0; width:15%" |[[File:nkv.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Neetavenepalli|Neeta K. Venepalli, MD, MBA]]<br>University of Illinois at Chicago<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+'''Liver cancer''' or hepatobiliary cancer comprises cancers that arise within the liver and its hepatocytes (hepatocellular carcinoma) and the biliary tract cancers, which include bile duct cancer/cholangiocarcinoma and gallbladder cancer.
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+* '''2016:''' Valle et al. [https://www.esmo.org/Guidelines/Gastrointestinal-Cancers/Biliary-Cancer Biliary cancer: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up] 
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/hepatobiliary.pdf NCCN Guidelines - Hepatobiliary Cancers]
+
+=Adjuvant therapy=
+==Capecitabine & Gemcitabine {{#subobject:17f9f2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GemCap: '''<u>Gem</u>'''citabine & '''<u>Cap</u>'''ecitabine
+===Regimen {{#subobject:e6a3e3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534524/ Ben-Josef et al. 2015 (SWOG S0809)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgical resection]]
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 750 mg/m<sup>2</sup>/day PO twice per day on days 1 to 14
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*Capecitabine & RT
+
+===References===
+# '''SWOG S0809:''' Ben-Josef E, Guthrie KA, El-Khoueiry AB, Corless CL, Zalupski MM, Lowy AM, Thomas CR Jr, Alberts SR, Dawson LA, Micetich KC, Thomas MB, Siegel AB, Blanke CD. SWOG S0809: A Phase II Intergroup Trial of Adjuvant Capecitabine and Gemcitabine Followed by Radiotherapy and Concurrent Capecitabine in Extrahepatic Cholangiocarcinoma and Gallbladder Carcinoma. J Clin Oncol. 2015 Aug 20;33(24):2617-22. Epub 2015 May 11. [http://ascopubs.org/doi/full/10.1200/JCO.2014.60.2219 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534524/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25964250 PubMed]
+
+==Gemcitabine, then Fluorouracil & RT, then Gemcitabine {{#subobject:f8c8d9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:3fef3f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jama.ama-assn.org/content/299/9/1019.long Regine et al. 2008 (RTOG 9704)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Fluorouracil_.26_RT|Fluorouracil & RT]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|}
+''Note: this study was in pancreatic cancer but in practice it is extrapolated to cholangiocarcinoma. Reported efficacy is based on the 2011 update.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgical resection]]
+====Chemotherapy, part 1====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1, 8, 15
+
+'''21-day course, followed in 1 to 2 weeks by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 250 mg/m<sup>2</sup>/day IV continuous infusion throughout radiation therapy
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 28 fractions given 5 days per week, for a total dose of 50.4 Gy. The last 5.4 Gy of the 50.4 Gy is limited to the tumor bed.
+
+'''6-week course, followed in 3 to 5 weeks by:'''
+
+====Chemotherapy, part 2====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1, 8, 15
+
+'''28-day cycle for 3 cycles'''
+
+===References===
+# '''RTOG 9704:''' Regine WF, Winter KA, Abrams RA, Safran H, Hoffman JP, Konski A, Benson AB, Macdonald JS, Kudrimoti MR, Fromm ML, Haddock MG, Schaefer P, Willett CG, Rich TA. Fluorouracil vs gemcitabine chemotherapy before and after fluorouracil-based chemoradiation following resection of pancreatic adenocarcinoma: a randomized controlled trial. JAMA. 2008 Mar 5;299(9):1019-26. [http://jama.ama-assn.org/content/299/9/1019.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18319412 PubMed]
+## '''Update:''' Regine WF, Winter KA, Abrams R, Safran H, Hoffman JP, Konski A, Benson AB, Macdonald JS, Rich TA, Willett CG. Fluorouracil-based chemoradiation with either gemcitabine or fluorouracil chemotherapy after resection of pancreatic adenocarcinoma: 5-year analysis of the US Intergroup/RTOG 9704 phase III trial. Ann Surg Oncol. 2011 May;18(5):1319-26. Epub 2011 Mar 10. [https://link.springer.com/article/10.1245%2Fs10434-011-1630-6 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3548408/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21499862 PubMed]
+
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1002/bjs.10776 Ebata et al. 2018 (BCAT)]
+| style="background-color:#1a9851" |Phase III (C)
+|Gemcitabine
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''No antineoplastic treatment after surgery.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgical resection]] with macroscopically curative resection
+
+===References===
+# '''BCAT:''' Ebata T, Hirano S, Konishi M, Uesaka K, Tsuchiya Y, Ohtsuka M, Kaneoka Y, Yamamoto M, Ambo Y, Shimizu Y, Ozawa F, Fukutomi A, Ando M, Nimura Y, Nagino M; Bile Duct Cancer Adjuvant Trial (BCAT) Study Group. Randomized clinical trial of adjuvant gemcitabine chemotherapy versus observation in resected bile duct cancer. Br J Surg. 2018 Feb;105(3):192-202. [https://onlinelibrary.wiley.com/doi/full/10.1002/bjs.10776 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29405274 PubMed]
+
+=Metastatic disease, all lines of therapy=
+
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://annonc.oxfordjournals.org/content/7/6/593.long Glimelius et al. 1996]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. [[#FELV|FELV]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|2. [[#Fluorouracil_.26_Folinic_acid|Fluorouracil & Folinic acid]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+
+''No antineoplastic treatment. Included for reference purposes only.''
+
+===References===
+# Glimelius B, Hoffman K, Sjödén PO, Jacobsson G, Sellström H, Enander LK, Linné T, Svensson C. Chemotherapy improves survival and quality of life in advanced pancreatic and biliary cancer. Ann Oncol. 1996 Aug;7(6):593-600. [http://annonc.oxfordjournals.org/content/7/6/593.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8879373 PubMed] content property of [http://hemonc.org HemOnc.org]
+
+==Capecitabine monotherapy {{#subobject:c7cfeb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b34ea|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.20368/full Patt et al. 2004]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+
+'''21-day cycles'''
+
+===References===
+# '''Retrospective:''' Patt YZ, Hassan MM, Aguayo A, Nooka AK, Lozano RD, Curley SA, Vauthey JN, Ellis LM, Schnirer II, Wolff RA, Charnsangavej C, Brown TD. Oral capecitabine for the treatment of hepatocellular carcinoma, cholangiocarcinoma, and gallbladder carcinoma. Cancer. 2004 Aug 1;101(3):578-86. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.20368/full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15274071 PubMed]
+
+==Capecitabine & Mitomycin {{#subobject:6a9270|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:a46bbd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/15/3/478.long Kornek et al. 2004]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Gemcitabine_.26_Mitomycin|Gemcitabine & Mitomycin]]
+|style="background-color:#d9ef8b"|Might have superior ORR
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Mitomycin (Mutamycin)]] 8 mg/m<sup>2</sup> IV bolus once on day 1
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] and [[:Category:Serotonin_5-HT3_antagonists|5-HT3 antagonists]] on the day of IV chemotherapy
+
+'''28-day cycles'''
+
+===References===
+# Kornek GV, Schuell B, Laengle F, Gruenberger T, Penz M, Karall K, Depisch D, Lang F, Scheithauer W. Mitomycin C in combination with capecitabine or biweekly high-dose gemcitabine in patients with advanced biliary tract cancer: a randomised phase II trial. Ann Oncol. 2004 Mar;15(3):478-83. [http://annonc.oxfordjournals.org/content/15/3/478.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14998852 PubMed]
+
+==Cisplatin & Gemcitabine {{#subobject:af0357|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:cb3c9d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa0908721 Valle et al. 2010 (ABC-02)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Gemcitabine_monotherapy|Gemcitabine]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 25 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 & 8, '''given first'''
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 8, '''given second'''
+
+====Supportive medications====
+*Cisplatin is mixed in a solution of 1 liter of normal saline with 20 mmol potassium chloride, 8 mmol magnesium sulfate
+*After cisplatin, 500 mL normal saline given over 30 minutes
+
+'''21-day cycle for 4 to 8 cycles depending on response'''
+
+===References===
+# '''ABC-02:''' Valle J, Wasan H, Palmer DH, Cunningham D, Anthoney A, Maraveyas A, Madhusudan S, Iveson T, Hughes S, Pereira SP, Roughton M, Bridgewater J; ABC-02 Trial Investigators. Cisplatin plus gemcitabine versus gemcitabine for biliary tract cancer. N Engl J Med. 2010 Apr 8;362(14):1273-81. [https://www.nejm.org/doi/full/10.1056/NEJMoa0908721 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20375404 PubMed]
+
+==ECF {{#subobject:57bd6d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+ECF: '''<u>E</u>'''pirubicin, '''<u>C</u>'''isplatin, '''<u>F</u>'''luorouracil
+
+===Regimen {{#subobject:f87869|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2362051/ Rao et al. 2005]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#FELV|FELV]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Epirubicin (Ellence)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Cisplatin (Platinol)]] 60 mg/m<sup>2</sup> IV once on day 1
+*[[Fluorouracil (5-FU)]] 200 mg/m<sup>2</sup>/day IV continuous infusion over 21 days, started on day 1 (total dose per cycle: 4200 mg/m<sup>2</sup>)
+
+'''21-day cycles'''
+
+===References===
+# Rao S, Cunningham D, Hawkins RE, Hill ME, Smith D, Daniel F, Ross PJ, Oates J, Norman AR. Phase III study of 5FU, etoposide and leucovorin (FELV) compared to epirubicin, cisplatin and 5FU (ECF) in previously untreated patients with advanced biliary cancer. Br J Cancer. 2005 May 9;92(9):1650-4. [https://www.nature.com/bjc/journal/v92/n9/full/6602576a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2362051/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15856037 PubMed]
+
+==Erlotinib & Bevacizumab {{#subobject:CMR1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:CMV1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2917213/ Lubner et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Erlotinib (Tarceva)]] 150 mg PO once per day
+*[[Bevacizumab (Avastin)]] 5 mg/kg IV once per day on days 1 & 15
+
+'''28-day cycles'''
+
+===References===
+# Lubner SJ, Mahoney MR, Kolesar JL, Loconte NK, Kim GP, Pitot HC, Philip PA, Picus J, Yong WP, Horvath L, Van Hazel G, Erlichman CE, Holen KD. Report of a multicenter phase II trial testing a combination of biweekly bevacizumab and daily erlotinib in patients with unresectable biliary cancer: a phase II Consortium study. J Clin Oncol. 2010 Jul 20;28(21):3491-7. Epub 2010 Jun 7. [http://jco.ascopubs.org/content/28/21/3491.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2917213/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20530271 PubMed]
+
+==FELV {{#subobject:3658a8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FELV: '''<u>F</u>'''luorouracil , '''<u>E</u>'''toposide, '''<u>L</u>'''euco'''<u>V</u>'''orin (Folinic acid)
+===Variant #1, 500/120/60 {{#subobject:beef1c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/7/6/593.long Glimelius et al. 1996]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Best_supportive_care|Best supportive care]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 3, '''given first'''
+*[[Etoposide (Vepesid)]] 120 mg/m<sup>2</sup> IV over 40 minutes once per day on days 1 to 3, '''given second'''
+*[[Folinic acid (Leucovorin)]] 60 mg/m<sup>2</sup> IV bolus once per day on days 1 to 3, '''given third'''
+
+'''21-day cycles'''
+===Variant #2, 600/120/60 {{#subobject:8e152d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2362051/ Rao et al. 2005]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#ECF|ECF]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 600 mg/m<sup>2</sup> IV bolus once per day on days 1 to 3, '''given first'''
+*[[Etoposide (Vepesid)]] 120 mg/m<sup>2</sup> IV over 40 minutes once per day on days 1 to 3, '''given second'''
+*[[Folinic acid (Leucovorin)]] 60 mg/m<sup>2</sup> IV bolus once per day on days 1 to 3, '''given third'''
+
+'''21-day cycles'''
+
+===References===
+# Glimelius B, Hoffman K, Sjödén PO, Jacobsson G, Sellström H, Enander LK, Linné T, Svensson C. Chemotherapy improves survival and quality of life in advanced pancreatic and biliary cancer. Ann Oncol. 1996 Aug;7(6):593-600. [http://annonc.oxfordjournals.org/content/7/6/593.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8879373 PubMed] content property of [http://hemonc.org HemOnc.org]
+# Rao S, Cunningham D, Hawkins RE, Hill ME, Smith D, Daniel F, Ross PJ, Oates J, Norman AR. Phase III study of 5FU, etoposide and leucovorin (FELV) compared to epirubicin, cisplatin and 5FU (ECF) in previously untreated patients with advanced biliary cancer. Br J Cancer. 2005 May 9;92(9):1650-4. [https://www.nature.com/bjc/journal/v92/n9/full/6602576a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2362051/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/15856037 PubMed]
+
+==Fluorouracil & Folinic acid {{#subobject:7bfb92|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FUFA: 5-'''<u>FU</u>''' (Fluorouracil) & '''<u>F</u>'''olinic '''<u>A</u>'''cid
+===Regimen {{#subobject:38dd78|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/7/6/593.long Glimelius et al. 1996]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Best_supportive_care|Best supportive care]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 & 2, '''given first'''
+*[[Folinic acid (Leucovorin)]] 60 mg/m<sup>2</sup> IV bolus once per day on days 1 & 2, '''given second, 40 minutes after Fluorouracil (5-FU)'''
+
+'''14-day cycles'''
+
+===References===
+# Glimelius B, Hoffman K, Sjödén PO, Jacobsson G, Sellström H, Enander LK, Linné T, Svensson C. Chemotherapy improves survival and quality of life in advanced pancreatic and biliary cancer. Ann Oncol. 1996 Aug;7(6):593-600. [http://annonc.oxfordjournals.org/content/7/6/593.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8879373 PubMed]
+
+==Fluorouracil, Folinic acid, Gemcitabine {{#subobject:eb427f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:85fb7b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/20/4089.2.long Gebbia et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 600 mg/m<sup>2</sup> IV continuous infusion over 22 hours (total dose per cycle: 1000 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 100 mg/m<sup>2</sup> IV over 2 hours once on day 1
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycles'''
+
+===References===
+# Gebbia V, Giuliani F, Maiello E, Colucci G, Verderame F, Borsellino N, Mauceri G, Caruso M, Tirrito ML, Valdesi M. Treatment of inoperable and/or metastatic biliary tree carcinomas with single-agent gemcitabine or in combination with levofolinic acid and infusional fluorouracil: results of a multicenter phase II study. J Clin Oncol. 2001 Oct 15;19(20):4089-91. [http://jco.ascopubs.org/content/19/20/4089.2.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11600613 PubMed]
+
+==Gemcitabine monotherapy {{#subobject:1129f1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:b0f450|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa0908721 Valle et al. 2010 (ABC-02)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_.26_Gemcitabine|Cisplatin & Gemcitabine]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1, 8, 15
+
+'''28-day cycle for 3 to 6 cycles depending on response'''
+
+===Variant #2 {{#subobject:fcd6f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/20/4089.2.long Gebbia et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1, 8, 15
+
+'''30-day cycles'''
+
+===References===
+# Gebbia V, Giuliani F, Maiello E, Colucci G, Verderame F, Borsellino N, Mauceri G, Caruso M, Tirrito ML, Valdesi M. Treatment of inoperable and/or metastatic biliary tree carcinomas with single-agent gemcitabine or in combination with levofolinic acid and infusional fluorouracil: results of a multicenter phase II study. J Clin Oncol. 2001 Oct 15;19(20):4089-91. [http://jco.ascopubs.org/content/19/20/4089.2.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11600613 PubMed]
+# '''ABC-02:''' Valle J, Wasan H, Palmer DH, Cunningham D, Anthoney A, Maraveyas A, Madhusudan S, Iveson T, Hughes S, Pereira SP, Roughton M, Bridgewater J; ABC-02 Trial Investigators. Cisplatin plus gemcitabine versus gemcitabine for biliary tract cancer. N Engl J Med. 2010 Apr 8;362(14):1273-81. [https://www.nejm.org/doi/full/10.1056/NEJMoa0908721 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20375404 PubMed]
+
+==Gemcitabine & Mitomycin {{#subobject:5dad3c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:42a188|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/15/3/478.long Kornek et al. 2004]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Capecitabine_.26_Mitomycin|Capecitabine & Mitomycin]]
+|style="background-color:#fee08b"|Might have inferior ORR
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 2000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 15
+*[[Mitomycin (Mutamycin)]] 8 mg/m<sup>2</sup> IV bolus once on day 1
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] and [[:Category:Serotonin_5-HT3_antagonists|5-HT3 antagonists]] on the day of IV chemotherapy
+
+'''28-day cycles'''
+
+===References===
+# Kornek GV, Schuell B, Laengle F, Gruenberger T, Penz M, Karall K, Depisch D, Lang F, Scheithauer W. Mitomycin C in combination with capecitabine or biweekly high-dose gemcitabine in patients with advanced biliary tract cancer: a randomised phase II trial. Ann Oncol. 2004 Mar;15(3):478-83. [http://annonc.oxfordjournals.org/content/15/3/478.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14998852 PubMed]
+
+==Gemcitabine & nab-Paclitaxel {{#subobject:fbd698|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+NG: '''<u>N</u>'''ab-Paclitaxel & '''<u>G</u>'''emcitabine
+===Regimen {{#subobject:ecc1c9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://jamanetwork.com/journals/jamaoncology/article-abstract/2698042 Sahai et al. 2018]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Note: this regimen was intended for ECOG PS 0 to 2, and Child-Pugh score less than 8.''
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+*[[Paclitaxel, nanoparticle albumin-bound (Abraxane)]] 125 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+
+===References===
+# Sahai V, Catalano PJ, Zalupski MM, Lubner SJ, Menge MR, Nimeiri HS, Munshi HG, Benson AB 3rd, O'Dwyer PJ. Nab-Paclitaxel and Gemcitabine as First-line Treatment of Advanced or Metastatic Cholangiocarcinoma: A Phase 2 Clinical Trial. JAMA Oncol. 2018 Dec 1;4(12):1707-1712. [https://jamanetwork.com/journals/jamaoncology/article-abstract/2698042 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30178032 PubMed]
+
+==GemOx {{#subobject:a99e6e|Regimen=1}}==
+{{#subobject:508f1b|Variant=1}}
+{{#subobject:a8fecb|Variant=1}}
+{{:Gemcitabine & Oxaliplatin for biliary tract cancer}}
+
+==GEMOX-B {{#subobject:119bb0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GEMOX-B: '''<u>GEM</u>'''citabine, '''<u>OX</u>'''aliplatin, '''<u>B</u>'''evacizumab
+===Regimen {{#subobject:3748a1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2809%2970333-X/fulltext Zhu et al. 2009]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 100 minutes once per day on days 1 & 15, '''given second'''
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 & 15, '''given third'''
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once per day on days 1 & 15, '''given first'''
+
+'''28-day cycles'''
+
+===References===
+# Zhu AX, Meyerhardt JA, Blaszkowsky LS, Kambadakone AR, Muzikansky A, Zheng H, Clark JW, Abrams TA, Chan JA, Enzinger PC, Bhargava P, Kwak EL, Allen JN, Jain SR, Stuart K, Horgan K, Sheehan S, Fuchs CS, Ryan DP, Sahani DV. Efficacy and safety of gemcitabine, oxaliplatin, and bevacizumab in advanced biliary-tract cancers and correlation of changes in 18-fluorodeoxyglucose PET with clinical outcome: a phase 2 study. Lancet Oncol. 2010 Jan;11(1):48-54. Epub 2009 Nov 20. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2809%2970333-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19932054 PubMed]
+
+==Pembrolizumab monotherapy {{#subobject:e0d17a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:87f9c7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ Le et al. 2017 (KEYNOTE-016)]
+| style="background-color:#ffffbe" |Phase II, <20 pts of this subtype
+|-
+|}
+''Note: KEYNOTE-016 was an expansion to a CRC-specific trial.''
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 10 mg/kg IV once on day 1
+
+'''14-day cycle for up to 2 years'''
+
+===References===
+# '''KEYNOTE-016:''' Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, Lu S, Kemberling H, Wilt C, Luber BS, Wong F, Azad NS, Rucki AA, Laheru D, Donehower R, Zaheer A, Fisher GA, Crocenzi TS, Lee JJ, Greten TF, Duffy AG, Ciombor KK, Eyring AD, Lam BH, Joe A, Kang SP, Holdhoff M, Danilova L, Cope L, Meyer C, Zhou S, Goldberg RM, Armstrong DK, Bever KM, Fader AN, Taube J, Housseau F, Spetzler D, Xiao N, Pardoll DM, Papadopoulos N, Kinzler KW, Eshleman JR, Vogelstein B, Anders RA, Diaz LA Jr. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science. 2017 Jul 28;357(6349):409-413. Epub 2017 Jun 8. [http://science.sciencemag.org/content/357/6349/409.long link to original article]  [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ link to PMC article] '''contains verified protocol in supplement''' [https://www.ncbi.nlm.nih.gov/pubmed/28596308 PubMed]
+
+[[Category:Cholangiocarcinoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gastrointestinal cancers]]

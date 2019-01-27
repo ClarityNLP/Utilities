@@ -1,0 +1,710 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.asco.org/ ASCO]==
+*'''2018:''' Kindler et al. [http://ascopubs.org/doi/full/10.1200/JCO.2017.76.6394 Treatment of malignant pleural mesothelioma: American Society of Clinical Oncology Clinical Practice Guideline] [https://www.ncbi.nlm.nih.gov/pubmed/29346042 PubMed]
+
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' Baas et al. [https://www.esmo.org/Guidelines/Lung-and-Chest-Tumours/Malignant-Pleural-Mesothelioma Malignant pleural mesothelioma: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up.] [https://www.ncbi.nlm.nih.gov/pubmed/26223247 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/mpm.pdf NCCN Guidelines - Malignant Pleural Mesothelioma]
+
+=Advanced or metastatic disease, first-line therapy=
+
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2431123/ Muers et al. 2008 (MS01)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. MVP
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. [[#Vinorelbine_monotherapy|Vinorelbine]]
+|style="background-color:#fee08b"|Might have inferior OS
+|-
+|}
+
+''No antineoplastic treatment; used as a comparator arm and here for reference purposes only.''
+
+===References===
+# '''MS01:''' Muers MF, Stephens RJ, Fisher P, Darlison L, Higgs CM, Lowry E, Nicholson AG, O'Brien M, Peake M, Rudd R, Snee M, Steele J, Girling DJ, Nankivell M, Pugh C, Parmar MK; MS01 Trial Management Group. Active symptom control with or without chemotherapy in the treatment of patients with malignant pleural mesothelioma (MS01): a multicentre randomised trial. Lancet. 2008 May 17;371(9625):1685-94. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(08)60727-8/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2431123/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18486741 PubMed]
+
+==Carboplatin & Pemetrexed {{#subobject:2feba8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, limited duration {{#subobject:929f90|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/19/2/370.long Castagneto et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV over 30 minutes once on day 1, '''given second, 30 minutes after pemetrexed'''
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV over 10 minutes once on day 1, '''given first'''
+
+====Supportive medications====
+*(varies depending on reference):
+*Folic acid 350 to 600 mcg PO once per day, starting at least 1 week before [[Pemetrexed (Alimta)]], to continue throughout therapy
+*[[Cyanocobalamin (Vitamin B12)]] 1000 mcg IM once at least 1 week before [[Pemetrexed (Alimta)]], then 1000 mcg IM once every 9 weeks
+*[[Dexamethasone (Decadron)]] 4 mg PO twice per day the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+**Alternatively, [[Dexamethasone (Decadron)]] may be given 8 mg IM the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+*No NSAIDs (nonsteroidal anti-inflammatory drugs) for 2 days (5 days for NSAIDs with longer half-lives) before or after [[Pemetrexed (Alimta)]] 
+
+'''21-day cycle for up to 9 cycles'''
+
+===Variant #2, indefinite {{#subobject:395626|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/24/9/1443.long Ceresoli et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV over 30 minutes once on day 1, '''given second, 30 minutes after pemetrexed'''
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV over 10 minutes once on day 1, '''given first'''
+
+====Supportive medications====
+*(varies depending on reference):
+*Folic acid 350 to 600 mcg PO once per day, starting at least 1 week before [[Pemetrexed (Alimta)]], to continue throughout therapy
+*[[Cyanocobalamin (Vitamin B12)]] 1000 mcg IM once at least 1 week before [[Pemetrexed (Alimta)]], then 1000 mcg IM once every 9 weeks
+*[[Dexamethasone (Decadron)]] 4 mg PO twice per day the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+**Alternatively, [[Dexamethasone (Decadron)]] may be given 8 mg IM the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+*No NSAIDs (nonsteroidal anti-inflammatory drugs) for 2 days (5 days for NSAIDs with longer half-lives) before or after [[Pemetrexed (Alimta)]] 
+
+'''21-day cycles'''
+
+===References===
+# Ceresoli GL, Zucali PA, Favaretto AG, Grossi F, Bidoli P, Del Conte G, Ceribelli A, Bearz A, Morenghi E, Cavina R, Marangolo M, Parra HJ, Santoro A. Phase II study of pemetrexed plus carboplatin in malignant pleural mesothelioma. J Clin Oncol. 2006 Mar 20;24(9):1443-8. [http://jco.ascopubs.org/content/24/9/1443.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16549838 PubMed]
+# Castagneto B, Botta M, Aitini E, Spigno F, Degiovanni D, Alabiso O, Serra M, Muzio A, Carbone R, Buosi R, Galbusera V, Piccolini E, Giaretto L, Rebella L, Mencoboni M. Phase II study of pemetrexed in combination with carboplatin in patients with malignant pleural mesothelioma (MPM). Ann Oncol. 2008 Feb;19(2):370-3. Epub 2007 Dec 20. [http://annonc.oxfordjournals.org/content/19/2/370.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18156144 PubMed]
+
+==Cisplatin monotherapy {{#subobject:82fdeb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 75 mg/m<sup>2</sup> {{#subobject:7f0357|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/21/14/2636.long Vogelzang et al. 2003 (JMCH)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin_.26_Pemetrexed|Cisplatin & Pemetrexed]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV over 2 hours once on day 1
+
+'''21-day cycles'''
+
+===Variant #2, 80 mg/m<sup>2</sup> {{#subobject:7f0357|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.20005.14.589 van Meerbeeck et al. 2005 (EORTC 08983/NCIC CTG BR.17)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin_.26_Raltitrexed|Cisplatin & Raltitrexed]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 80 mg/m<sup>2</sup> IV over 1 to 2 hours once on day 1
+
+'''21-day cycles'''
+
+===References===
+# '''JMCH:''' Vogelzang NJ, Rusthoven JJ, Symanowski J, Denham C, Kaukel E, Ruffie P, Gatzemeier U, Boyer M, Emri S, Manegold C, Niyikiza C, Paoletti P. Phase III study of pemetrexed in combination with cisplatin versus cisplatin alone in patients with malignant pleural mesothelioma. J Clin Oncol. 2003 Jul 15;21(14):2636-44. [http://jco.ascopubs.org/content/21/14/2636.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12860938 PubMed]
+## '''Update:''' Manegold C, Symanowski J, Gatzemeier U, Reck M, von Pawel J, Kortsik C, Nackaerts K, Lianes P, Vogelzang NJ. Second-line (post-study) chemotherapy received by patients treated in the phase III trial of pemetrexed plus cisplatin versus cisplatin alone in malignant pleural mesothelioma. Ann Oncol. 2005 Jun;16(6):923-7. Epub 2005 Apr 11. [http://annonc.oxfordjournals.org/content/16/6/923.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15824080 PubMed]
+# '''EORTC 08983/NCIC CTG BR.17:''' van Meerbeeck JP, Gaafar R, Manegold C, Van Klaveren RJ, Van Marck EA, Vincent M, Legrand C, Bottomley A, Debruyne C, Giaccone G; European Organisation for Research and Treatment of Cancer Lung Cancer Group; National Cancer Institute of Canada. Randomized phase III study of cisplatin with or without raltitrexed in patients with malignant pleural mesothelioma: an intergroup study of the European Organisation for Research and Treatment of Cancer Lung Cancer Group and the National Cancer Institute of Canada. J Clin Oncol. 2005 Oct 1;23(28):6881-9. [http://ascopubs.org/doi/full/10.1200/JCO.20005.14.589 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16192580 PubMed]
+
+==Cisplatin & Gemcitabine {{#subobject:9e4c22|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 100/1000 {{#subobject:15fbf7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2376155/ Nowak et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 100 mg/m<sup>2</sup> IV over 60 minutes once on day 1, '''given first'''
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1, 8, 15, '''given second'''
+
+====Supportive medications====
+*Minimum of 3 liters of IV hydration for [[Cisplatin (Platinol)]], with magnesium supplementation
+*[[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonists]] & [[Dexamethasone (Decadron)]] IV once per day on days 1, 8, 15 before chemotherapy
+*[[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonists]], [[Dexamethasone (Decadron)]], and/or [[:Category:Phenothiazines|phenothiazines]] for antiemesis PO or by rectal suppository for 3 to 5 days after [[Cisplatin (Platinol)]]
+
+'''28-day cycle for up to 6 cycles'''
+
+===Variant #2, 80/1250 {{#subobject:4dfb66|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2375227/ van Haarst et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 80 mg/m<sup>2</sup> IV over 3 hours once on day 1, '''given second'''
+*[[Gemcitabine (Gemzar)]] 1250 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 8, '''given first'''
+
+====Supportive medications====
+*Minimum of 2 liters of IV hydration for [[Cisplatin (Platinol)]]
+*[[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonists]] before [[Cisplatin (Platinol)]]
+*[[:Category:Steroids|corticosteroids]] before [[Cisplatin (Platinol)]]
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# van Haarst JM, Baas P, Manegold Ch, Schouwink JH, Burgers JA, de Bruin HG, Mooi WJ, van Klaveren RJ, de Jonge MJ, van Meerbeeck JP. Multicentre phase II study of gemcitabine and cisplatin in malignant pleural mesothelioma. Br J Cancer. 2002 Feb 1;86(3):342-5. [https://www.nature.com/bjc/journal/v86/n3/full/6600118a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2375227/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/11875695 PubMed] content property of [http://hemonc.org HemOnc.org] 
+# Nowak AK, Byrne MJ, Williamson R, Ryan G, Segal A, Fielding D, Mitchell P, Musk AW, Robinson BW. A multicentre phase II study of cisplatin and gemcitabine for malignant mesothelioma. Br J Cancer. 2002 Aug 27;87(5):491-6. [https://www.nature.com/bjc/journal/v87/n5/full/6600505a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2376155/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/12189542 PubMed]
+
+==Cisplatin & Pemetrexed {{#subobject:c2805d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:3b6a3e|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/21/14/2636.long Vogelzang et al. 2003 (JMCH)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_monotherapy|Cisplatin]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)01238-6/abstract Zalcman et al. 2016 (MAPS)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin.2C_Pemetrexed.2C_Bevacizumab|PCB]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.72.9012 Grosso et al. 2017 (LUME-Meso)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|Cisplatin, Nintedanib, Pemetrexed
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+''Note: JMCH did not specify the total number of cycles and some patients did receive more than 6 cycles.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given second, 30 minutes after pemetrexed'''
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV over 10 minutes once on day 1, '''given first'''
+
+====Supportive medications====
+*Folic acid 350 to 1000 mcg PO once per day, starting 1 to 3 weeks before [[Pemetrexed (Alimta)]], to continue throughout therapy
+*[[Cyanocobalamin (Vitamin B12)]] 1000 mcg IM once 1 to 3 weeks before [[Pemetrexed (Alimta)]], then 1000 mcg IM once every 9 weeks
+*[[Dexamethasone (Decadron)]] (dose not specified by reference) the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+
+'''21-day cycle for up to 6 cycles (see note)'''
+
+===References===
+# '''JMCH:''' Vogelzang NJ, Rusthoven JJ, Symanowski J, Denham C, Kaukel E, Ruffie P, Gatzemeier U, Boyer M, Emri S, Manegold C, Niyikiza C, Paoletti P. Phase III study of pemetrexed in combination with cisplatin versus cisplatin alone in patients with malignant pleural mesothelioma. J Clin Oncol. 2003 Jul 15;21(14):2636-44. [http://jco.ascopubs.org/content/21/14/2636.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12860938 PubMed]
+## '''Update:''' Manegold C, Symanowski J, Gatzemeier U, Reck M, von Pawel J, Kortsik C, Nackaerts K, Lianes P, Vogelzang NJ. Second-line (post-study) chemotherapy received by patients treated in the phase III trial of pemetrexed plus cisplatin versus cisplatin alone in malignant pleural mesothelioma. Ann Oncol. 2005 Jun;16(6):923-7. Epub 2005 Apr 11. [http://annonc.oxfordjournals.org/content/16/6/923.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15824080 PubMed]
+<!-- # '''Abstract:''' Gerard Zalcman, Julien Mazières, Jacques Margery, Laurent Greillier, Clarisse Audigier-Valette, Denis Moro-Sibilot, Oliver Molinier, Romain Corre, Isabelle Monnet, Valérie Gounant, Henri Janicot, Radj Gervais, Chrystele Locher, Bernard Milleron, Quan Tran, Marie Paule Lebitasy, Franck Morin, Christian Creveuil, Jean-Jacques Parienti, Arnaud Scherpereel, French Cooperative Thoracic Intergroup (IFCT). Bevacizumab 15mg/kg plus cisplatin-pemetrexed (CP) triplet versus CP doublet in Malignant Pleural Mesothelioma (MPM): Results of the IFCT-GFPC-0701 MAPS randomized phase 3 trial. J Clin Oncol 33, 2015 (suppl; abstr 7500) [http://meetinglibrary.asco.org/content/150191-156 link to abstract] -->
+# '''MAPS:''' Zalcman G, Mazieres J, Margery J, Greillier L, Audigier-Valette C, Moro-Sibilot D, Molinier O, Corre R, Monnet I, Gounant V, Rivière F, Janicot H, Gervais R, Locher C, Milleron B, Tran Q, Lebitasy MP, Morin F, Creveuil C, Parienti JJ, Scherpereel A; French Cooperative Thoracic Intergroup (IFCT). Bevacizumab for newly diagnosed pleural mesothelioma in the Mesothelioma Avastin Cisplatin Pemetrexed Study (MAPS): a randomised, controlled, open-label, phase 3 trial. Lancet. 2016 Apr 2;387(10026):1405-14. Epub 2015 Dec 21. Erratum in: Lancet. 2016 Apr 2;387(10026):e24. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)01238-6/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26719230 PubMed]
+# '''LUME-Meso:''' Grosso F, Steele N, Novello S, Nowak AK, Popat S, Greillier L, John T, Leighl NB, Reck M, Taylor P, Planchard D, Sørensen JB, Socinski MA, von Wangenheim U, Loembé AB, Barrueco J, Morsli N, Scagliotti G. Nintedanib plus pemetrexed/cisplatin in patients with malignant pleural mesothelioma: Phase II results from the randomized, placebo-controlled LUME-Meso trial. J Clin Oncol. 2017 Nov 1;35(31):3591-3600. Epub 2017 Sep 11. [http://ascopubs.org/doi/full/10.1200/JCO.2017.72.9012 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28892431 PubMed]
+
+==Cisplatin & Raltitrexed {{#subobject:9603d4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2e4b60|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.20005.14.589 van Meerbeeck et al. 2005 (EORTC 08983/NCIC CTG BR.17)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_monotherapy|Cisplatin]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 80 mg/m<sup>2</sup> IV over 1 to 2 hours once on day 1, '''given second'''
+*[[Raltitrexed (Tomudex)]] 3 mg/m<sup>2</sup> IV over 15 minutes once on day 1, '''given first'''
+
+'''21-day cycles'''
+
+===References===
+# '''EORTC 08983/NCIC CTG BR.17:''' van Meerbeeck JP, Gaafar R, Manegold C, Van Klaveren RJ, Van Marck EA, Vincent M, Legrand C, Bottomley A, Debruyne C, Giaccone G; European Organisation for Research and Treatment of Cancer Lung Cancer Group; National Cancer Institute of Canada. Randomized phase III study of cisplatin with or without raltitrexed in patients with malignant pleural mesothelioma: an intergroup study of the European Organisation for Research and Treatment of Cancer Lung Cancer Group and the National Cancer Institute of Canada. J Clin Oncol. 2005 Oct 1;23(28):6881-9. [http://ascopubs.org/doi/full/10.1200/JCO.20005.14.589 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16192580 PubMed]
+
+==Cisplatin, Pemetrexed, Bevacizumab {{#subobject:f3f261|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PCB: '''<u>P</u>'''emetrexed, '''<u>C</u>'''isplatin, '''<u>B</u>'''evacizumab
+===Regimen {{#subobject:c82d07|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)01238-6/abstract Zalcman et al. 2016 (MAPS)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_.26_Pemetrexed|PC]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV once on day 1
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once on day 1
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+<!-- # '''Abstract:''' Gerard Zalcman, Julien Mazières, Jacques Margery, Laurent Greillier, Clarisse Audigier-Valette, Denis Moro-Sibilot, Oliver Molinier, Romain Corre, Isabelle Monnet, Valérie Gounant, Henri Janicot, Radj Gervais, Chrystele Locher, Bernard Milleron, Quan Tran, Marie Paule Lebitasy, Franck Morin, Christian Creveuil, Jean-Jacques Parienti, Arnaud Scherpereel, French Cooperative Thoracic Intergroup (IFCT). Bevacizumab 15mg/kg plus cisplatin-pemetrexed (CP) triplet versus CP doublet in Malignant Pleural Mesothelioma (MPM): Results of the IFCT-GFPC-0701 MAPS randomized phase 3 trial. J Clin Oncol 33, 2015 (suppl; abstr 7500) [http://meetinglibrary.asco.org/content/150191-156 link to abstract] -->
+# '''MAPS:''' Zalcman G, Mazieres J, Margery J, Greillier L, Audigier-Valette C, Moro-Sibilot D, Molinier O, Corre R, Monnet I, Gounant V, Rivière F, Janicot H, Gervais R, Locher C, Milleron B, Tran Q, Lebitasy MP, Morin F, Creveuil C, Parienti JJ, Scherpereel A; French Cooperative Thoracic Intergroup (IFCT). Bevacizumab for newly diagnosed pleural mesothelioma in the Mesothelioma Avastin Cisplatin Pemetrexed Study (MAPS): a randomised, controlled, open-label, phase 3 trial. Lancet. 2016 Apr 2;387(10026):1405-14. Epub 2015 Dec 21. Erratum in: Lancet. 2016 Apr 2;387(10026):e24. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)01238-6/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26719230 PubMed]
+
+==Pemetrexed monotherapy {{#subobject:d9af60|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4599ac|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://journals.lww.com/jto/Fulltext/2008/07000/Single_Agent_Pemetrexed_for_Chemonaive_and.12.aspx Taylor et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV over 10 minutes once on day 1
+
+====Supportive medications====
+*Folic acid 350 to 600 mcg PO once per day, starting 1 to 2 weeks before pemetrexed, to continue throughout therapy and at least 3 weeks after the last dose of [[Pemetrexed (Alimta)]]
+*[[Cyanocobalamin (Vitamin B12)]] 1000 mcg IM once 1 to 2 weeks before [[Pemetrexed (Alimta)]], then 1000 mcg IM once every 9 weeks
+*[[Dexamethasone (Decadron)]] 4 mg PO twice per day the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+
+'''21-day cycles'''
+
+===References===
+# Taylor P, Castagneto B, Dark G, Marangolo M, Scagliotti GV, van Klaveren RJ, Labianca R, Serke M, Schuette W, van Meerbeeck JP, Heigener D, Liu Y, Adachi S, Blatter J, von Pawel J. Single-agent pemetrexed for chemonaïve and pretreated patients with malignant pleural mesothelioma: results of an International Expanded Access Program. J Thorac Oncol. 2008 Jul;3(7):764-71. [http://journals.lww.com/jto/Fulltext/2008/07000/Single_Agent_Pemetrexed_for_Chemonaive_and.12.aspx link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18594323 PubMed]
+
+==Vinorelbine monotherapy {{#subobject:9ec507|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:181640|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2431123/ Muers et al. 2008 (MS01)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. [[#Best_supportive_care|Best supportive care]]
+|style="background-color:#d9ef8b"|Might have superior OS
+|-
+|2. MVP
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: Some guidelines list the dosage as 25 to 30 mg/m<sup>2</sup>. No primary reference could be found for the 25 mg/m<sup>2</sup> dosage.''
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 30 mg/m<sup>2</sup> IV once per week x 12 weeks, with a 2-week treatment-free gap between the 6th and 7th doses
+
+'''12-week course'''
+
+===References===
+# '''MS01:''' Muers MF, Stephens RJ, Fisher P, Darlison L, Higgs CM, Lowry E, Nicholson AG, O'Brien M, Peake M, Rudd R, Snee M, Steele J, Girling DJ, Nankivell M, Pugh C, Parmar MK; MS01 Trial Management Group. Active symptom control with or without chemotherapy in the treatment of patients with malignant pleural mesothelioma (MS01): a multicentre randomised trial. Lancet. 2008 May 17;371(9625):1685-94. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(08)60727-8/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2431123/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18486741 PubMed]
+
+=Maintenance after first line therapy=
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70125-6/fulltext Buikhuisen et al. 2013 (NVALT 5)]
+|style="background-color:#1a9851"|Phase III (C)
+|Thalidomide
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''No antineoplastic treatment after first-line therapy.''
+====Preceding treatment====
+*Pemetrexed-containing chemotherapy x 4
+===References===
+# '''NVALT 5:''' Buikhuisen WA, Burgers JA, Vincent AD, Korse CM, van Klaveren RJ, Schramel FM, Pavlakis N, Nowak AK, Custers FL, Schouwink JH, Gans SJ, Groen HJ, Strankinga WF, Baas P. Thalidomide versus active supportive care for maintenance in patients with malignant mesothelioma after first-line chemotherapy (NVALT 5): an open-label, multicentre, randomised phase 3 study. Lancet Oncol. 2013 May;14(6):543-51. Epub 2013 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70125-6/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23583604 PubMed]
+
+=Advanced or metastatic disease, subsequent lines of therapy=
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/10/1698.long Jassem et al. 2008]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Pemetrexed_monotherapy_2|Pemetrexed]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30446-1/fulltext Maio et al. 2017 (DETERMINE)]
+|style="background-color:#1a9851"|Randomized Phase IIb (C)
+|Tremelimumab
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''No antineoplastic treatment; used as a comparator arm and here for reference purposes only.''
+
+===References===
+# Jassem J, Ramlau R, Santoro A, Schuette W, Chemaissani A, Hong S, Blatter J, Adachi S, Hanauske A, Manegold C. Phase III trial of pemetrexed plus best supportive care compared with best supportive care in previously treated patients with advanced malignant pleural mesothelioma. J Clin Oncol. 2008 Apr 1;26(10):1698-704. [http://jco.ascopubs.org/content/26/10/1698.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18375898 PubMed]
+# '''DETERMINE:''' Maio M, Scherpereel A, Calabrò L, Aerts J, Cedres Perez S, Bearz A, Nackaerts K, Fennell DA, Kowalski D, Tsao AS, Taylor P, Grosso F, Antonia SJ, Nowak AK, Taboada M, Puglisi M, Stockman PK, Kindler HL. Tremelimumab as second-line or third-line treatment in relapsed malignant mesothelioma (DETERMINE): a multicentre, international, randomised, double-blind, placebo-controlled phase 2b trial. Lancet Oncol. 2017 Sep;18(9):1261-1273. Epub 2017 Jul 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30446-1/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28729154 PubMed]
+
+==Doxorubicin monotherapy {{#subobject:8a4535|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 60 mg/m<sup>2</sup> {{#subobject:6d0b67|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Doxorubicin & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is the lower bound of dosing used in NGR015. To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 6 cycles'''
+
+===Variant #2, 75 mg/m<sup>2</sup> {{#subobject:dc69eb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Doxorubicin & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is the upper bound of dosing used in NGR015. To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 6 cycles'''
+===References===
+# '''NGR015:''' Gregorc V, Gaafar RM, Favaretto A, Grossi F, Jassem J, Polychronis A, Bidoli P, Tiseo M, Shah R, Taylor P, Novello S, Muzio A, Bearz A, Greillier L, Fontana F, Salini G, Lambiase A, O'Brien M. NGR-hTNF in combination with best investigator choice in previously treated malignant pleural mesothelioma (NGR015): a randomised, double-blind, placebo-controlled phase 3 trial. Lancet Oncol. 2018 Jun;19(6):799-811. Epub 2018 May 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29753703 PubMed]
+
+==Gemcitabine monotherapy {{#subobject:483ae6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 1000 mg/m<sup>2</sup, 2 out of 3 weeks {{#subobject:51c0ef|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Gemcitabine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is the lower bound of dosing used in NGR015. To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for up to 6 cycles'''
+
+===Variant #2, 1000 mg/m<sup>2</sup, 3 out of 4 weeks {{#subobject:12e25a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4343315/ Zauderer et al. 2014]
+|style="background-color:#ffffbe"|Retrospective, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+
+===Variant #3, 1250 mg/m<sup>2</sup, 2 out of 3 weeks {{#subobject:f0f7e5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Gemcitabine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is the upper bound of dosing used in NGR015. To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# '''Retrospective:''' Zauderer MG, Kass SL, Woo K, Sima CS, Ginsberg MS, Krug LM. Vinorelbine and gemcitabine as second- or third-line therapy for malignant pleural mesothelioma. Lung Cancer. 2014 Jun;84(3):271-4. Epub 2014 Mar 14. [http://www.lungcancerjournal.info/article/S0169-5002(14)00127-5/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4343315/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24690410 PubMed]
+# '''NGR015:''' Gregorc V, Gaafar RM, Favaretto A, Grossi F, Jassem J, Polychronis A, Bidoli P, Tiseo M, Shah R, Taylor P, Novello S, Muzio A, Bearz A, Greillier L, Fontana F, Salini G, Lambiase A, O'Brien M. NGR-hTNF in combination with best investigator choice in previously treated malignant pleural mesothelioma (NGR015): a randomised, double-blind, placebo-controlled phase 3 trial. Lancet Oncol. 2018 Jun;19(6):799-811. Epub 2018 May 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29753703 PubMed]
+
+==Gemcitabine & Vinorelbine {{#subobject:022111|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b8c734|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4343315/ Zauderer et al. 2014]
+|style="background-color:#ffffbe"|Retrospective, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Vinorelbine (Navelbine)]] 25 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycles'''
+
+===References===
+# '''Retrospective:''' Zauderer MG, Kass SL, Woo K, Sima CS, Ginsberg MS, Krug LM. Vinorelbine and gemcitabine as second- or third-line therapy for malignant pleural mesothelioma. Lung Cancer. 2014 Jun;84(3):271-4. Epub 2014 Mar 14. '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4343315/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24690410 PubMed]
+
+==Pemetrexed monotherapy {{#subobject:7b23e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:dfdd1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/10/1698.long Jassem et al. 2008]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Best_supportive_care_2|Best supportive care]]
+|style="background-color:#91cf60"|Seems to have superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Pemetrexed (Alimta)]] 500 mg/m<sup>2</sup> IV over 10 minutes once on day 1
+
+====Supportive medications====
+*Folic acid 350 to 1000 mcg PO once per day, starting 1 to 2 weeks before [[Pemetrexed (Alimta)]], to continue throughout therapy and at least 3 weeks after the last dose of pemetrexed
+*[[Cyanocobalamin (Vitamin B12)]] 1000 mcg IM once 1 to 2 weeks before [[Pemetrexed (Alimta)]], then 1000 mcg IM once every 9 weeks
+*[[Dexamethasone (Decadron)]] 4 mg PO twice per day the day before, the day of, and day after [[Pemetrexed (Alimta)]]
+
+'''21-day cycle for 8 or more cycles'''
+
+===References===
+# Jassem J, Ramlau R, Santoro A, Schuette W, Chemaissani A, Hong S, Blatter J, Adachi S, Hanauske A, Manegold C. Phase III trial of pemetrexed plus best supportive care compared with best supportive care in previously treated patients with advanced malignant pleural mesothelioma. J Clin Oncol. 2008 Apr 1;26(10):1698-704. [http://jco.ascopubs.org/content/26/10/1698.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18375898 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)70056-2/fulltext Krug et al. 2015 (VANTAGE-014)]
+|style="background-color:#1a9851"|Phase III (C)
+|Vorinostat
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''No active antineoplastic treatment.''
+
+===References===
+# '''VANTAGE-014:''' Krug LM, Kindler HL, Calvert H, Manegold C, Tsao AS, Fennell D, Öhman R, Plummer R, Eberhardt WE, Fukuoka K, Gaafar RM, Lafitte JJ, Hillerdal G, Chu Q, Buikhuisen WA, Lubiniecki GM, Sun X, Smith M, Baas P. Vorinostat in patients with advanced malignant pleural mesothelioma who have progressed on previous chemotherapy (VANTAGE-014): a phase 3, double-blind, randomised, placebo-controlled trial. Lancet Oncol. 2015 Apr;16(4):447-56. Epub 2015 Mar 20. Erratum in: Lancet Oncol. 2015 May;16(5):e199. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)70056-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25800891 PubMed]
+
+==Vinorelbine monotherapy {{#subobject:4e5cff|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 25 mg/m<sup>2</sup> IV, 2 weeks out of 3 {{#subobject:a8fdec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Vinorelbine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 25 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for up to 6 cycles'''
+
+===Variant #2, 25 mg/m<sup>2</sup> IV, weekly {{#subobject:df1e61|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Vinorelbine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 25 mg/m<sup>2</sup> IV once per week
+
+'''12-week course'''
+
+===Variant #3, 30 mg/m<sup>2</sup> {{#subobject:0a18c8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.lungcancerjournal.info/article/S0169-5002%2808%2900194-3/abstract Stebbing et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 30 mg/m<sup>2</sup> (maximum of 60 mg per dose) IV over 5 minutes once per day on days 1, 8, 15, 22, 29, 36 
+
+'''42-day cycles'''
+
+===Variant #4, 60 mg/m<sup>2</sup> PO, 2 weeks out of 3 {{#subobject:4bcb98|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Vinorelbine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 60 mg/m<sup>2</sup> PO once per day on days 1 & 8
+
+'''21-day cycle for up to 6 cycles'''
+
+===Variant #5, 60 mg/m<sup>2</sup> PO, weekly {{#subobject:c46485|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext Gregorc et al. 2018 (NGR015)]
+| style="background-color:#1a9851" |Phase III (C)
+|Vinorelbine & NGR-hTNF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Vinorelbine (Navelbine)]] 60 mg/m<sup>2</sup> PO once per week
+
+'''12-week course'''
+
+===References===
+# Stebbing J, Powles T, McPherson K, Shamash J, Wells P, Sheaff MT, Slater S, Rudd RM, Fennell D, Steele JP. The efficacy and safety of weekly vinorelbine in relapsed malignant pleural mesothelioma. Lung Cancer. 2009 Jan;63(1):94-7. Epub 2008 May 16. [http://www.lungcancerjournal.info/article/S0169-5002%2808%2900194-3/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18486273 PubMed]
+# '''NGR015:''' Gregorc V, Gaafar RM, Favaretto A, Grossi F, Jassem J, Polychronis A, Bidoli P, Tiseo M, Shah R, Taylor P, Novello S, Muzio A, Bearz A, Greillier L, Fontana F, Salini G, Lambiase A, O'Brien M. NGR-hTNF in combination with best investigator choice in previously treated malignant pleural mesothelioma (NGR015): a randomised, double-blind, placebo-controlled phase 3 trial. Lancet Oncol. 2018 Jun;19(6):799-811. Epub 2018 May 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30193-1/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29753703 PubMed]
+
+[[Category:Mesothelioma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Thoracic cancers]]

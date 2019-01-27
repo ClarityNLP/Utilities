@@ -1,0 +1,76 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+!colspan="4" align="center" style="color:white; font-size:125%; background-color:#31a354"|'''Section editors'''
+|-
+|style="background-color:#F0F0F0; width:15%"|[[File:Shruti.jpg|frameless|upright=0.3|center]]
+|style="width:35%"|<big>[[User:Shrutichaturvedi|Shruti Chaturvedi, MBBS, MSCI]]<br>Baltimore, MD</big><br>[https://www.linkedin.com/in/shruti-chaturvedi-bb83b126/ LinkedIn]
+|style="background-color:#F0F0F0; width:15%"|[[File:Tillman_Benjamin-2.jpg|frameless|upright=0.3|center]]
+|style="width:35%"|<big>[[User:Benjamintillman|Benjamin Tillman, MD]]<br>Nashville, TN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+''This is an umbrella category that includes Felty's syndrome (autoimmune neutropenia), [[#Autoimmune_thrombocytopenic_purpura_(ITP)|autoimmune thrombocytopenia (ITP)]], [[autoimmune hemolytic anemia (AIHA)]], and Evan's syndrome (AIHA & ITP). Please see the respective page(s) for disease-specific therapies. This page includes regimens that were used more broadly.''
+
+=Relapsed or refractory=
+
+==Alemtuzumab monotherapy {{#subobject:34416b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:#30ab57|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1046/j.1365-2141.2001.03039.x/full Willis et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#b5b5b5"|ORR: 71%
+|-
+|}
+====Immunosuppressive therapy====
+*[[Alemtuzumab (Campath)]] as follows:
+**Test dose: 1 mg IV over 60 minutes once
+**Days 1 to 10: 10 mg IV over 4 hours once per day
+
+'''10-day course'''
+
+===References===
+# Willis F, Marsh JC, Bevan DH, Killick SB, Lucas G, Griffiths R, Ouwehand W, Hale G, Waldmann H, Gordon-Smith EC. The effect of treatment with Campath-1H in patients with autoimmune cytopenias. Br J Haematol. 2001 Sep;114(4):891-8. [https://onlinelibrary.wiley.com/doi/10.1046/j.1365-2141.2001.03039.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11564082 PubMed]
+
+==Sirolimus monotherapy {{#subobject:35516b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:#41ab57|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4705607/ Bride et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Immunosuppressive therapy====
+*[[Sirolimus (Rapamune)]] 2  to 2.5 mg/m2/day PO
+**See manuscript for recommended dose adjustments
+
+'''6-month course, extended for those with a favorable response'''
+
+===References===
+# Bride KL, Vincent T, Smith-Whitley K, Lambert MP, Bleesing JJ, Seif AE, Manno CS, Casper J, Grupp SA, Teachey DT. Sirolimus is effective in relapsed/refractory autoimmune cytopenias: results of a prospective multi-institutional trial. Blood. 2016 Jan 7;127(1):17-28. Epub 2015 Oct 26. [http://www.bloodjournal.org/content/127/1/17.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4705607/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26504182 PubMed]
+
+[[Category:Autoimmune cytopenias regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Autoimmune hematologic conditions]]
+[[Category:Hemolytic disorders]]
+[[Category:Cytopenias]]

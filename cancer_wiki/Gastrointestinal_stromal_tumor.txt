@@ -1,0 +1,469 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0; width:30%"|[[File:jim_chen.jpeg|frameless|upright=0.3|center]]
+|style="width:70%"|<big>[[User:Jimchen|James L. Chen, MD, MS]]<br>Columbus, OH</big><br>[https://www.linkedin.com/in/jameschen777/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2014:''' [http://annonc.oxfordjournals.org/content/25/suppl_3/iii21.full.pdf+html Gastrointestinal stromal tumours: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up] [https://www.ncbi.nlm.nih.gov/pubmed/25210085 PubMed]
+
+==ESMO/EURACAN==
+*'''2018:''' Casali et al. [https://www.esmo.org/Guidelines/Sarcoma-and-GIST/Gastrointestinal-Stromal-Tumours Gastrointestinal stromal tumours: ESMO–EURACAN Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/sarcoma.pdf NCCN Guidelines - Soft Tissue Sarcoma]
+
+=Neoadjuvant therapy=
+==Imatinib monotherapy {{#subobject:abb5dd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:3b663c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2606912/ Eisenberg et al. 2009 (RTOG 0132)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day
+
+'''Continued for 8 to 12 weeks, stopped on the day prior to surgery'''
+====Subsequent treatment====
+*[[Surgery#Surgical_resection|Surgery]], then [[#Imatinib_monotherapy_2|imatinib]] x 2 y, resumed as soon as possible postoperatively
+
+===References===
+# '''RTOG 0132:''' Eisenberg BL, Harris J, Blanke CD, Demetri GD, Heinrich MC, Watson JC, Hoffman JP, Okuno S, Kane JM, von Mehren M. Phase II trial of neoadjuvant/adjuvant imatinib mesylate (IM) for advanced primary and metastatic/recurrent operable gastrointestinal stromal tumor (GIST): early results of RTOG 0132/ACRIN 6665. J Surg Oncol. 2009 Jan 1;99(1):42-7. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2606912/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18942073 PubMed]
+## '''Update:''' Wang D, Zhang Q, Blanke CD, Demetri GD, Heinrich MC, Watson JC, Hoffman JP, Okuno S, Kane JM, von Mehren M, Eisenberg BL. Phase II trial of neoadjuvant/adjuvant imatinib mesylate for advanced primary and metastatic/recurrent operable gastrointestinal stromal tumors: long-term follow-up results of Radiation Therapy Oncology Group 0132. Ann Surg Oncol. 2012 Apr;19(4):1074-80. Epub 2011 Dec 28. Erratum in: Ann Surg Oncol. 2012 Jul;19(7):2420. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3800166/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22203182 PubMed]
+
+=Adjuvant therapy=
+==Imatinib monotherapy {{#subobject:32bd51|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 12 months of treatment {{#subobject:90c752|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915459/ Dematteo et al. 2009 (ACOSOG Z9001)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior RFS
+|-
+|[http://jama.jamanetwork.com/article.aspx?articleid=1105116 Joensuu et al. 2012 (SSG XVIII/AIO)]
+|style="background-color:#1a9851"|Phase III (C)
+|Imatinib x 36 mos
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Treatment is started within 12 weeks after surgery. While this is the FDA-recommended dose, it is noted that the optimal treatment duration is unknown.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgery]]
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 400 mg PO once per day
+
+'''12-month course'''
+
+===Variant #2, 2 years of treatment {{#subobject:3c163c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2606912/ Eisenberg et al. 2009 (RTOG 0132)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Imatinib_monotherapy|Neoadjuvant imatinib]], then [[Surgery#Surgical_resection|Surgery]]
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day
+
+'''2-year course'''
+
+===Variant #3, 3 years of treatment {{#subobject:238c82|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jama.jamanetwork.com/article.aspx?articleid=1105116 Joensuu et al. 2012 (SSG XVIII/AIO)]
+|style="background-color:#1a9851"|Phase III (E)
+|Imatinib x 12 mos
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Treatment is to be started within 12 weeks after surgery. While this is the FDA-recommended dose, it is noted that the optimal treatment duration is unknown.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgery]]
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 400 mg PO once per day
+
+'''36-month course'''
+
+===References===
+# '''RTOG 0132:''' Eisenberg BL, Harris J, Blanke CD, Demetri GD, Heinrich MC, Watson JC, Hoffman JP, Okuno S, Kane JM, von Mehren M. Phase II trial of neoadjuvant/adjuvant imatinib mesylate (IM) for advanced primary and metastatic/recurrent operable gastrointestinal stromal tumor (GIST): early results of RTOG 0132/ACRIN 6665. J Surg Oncol. 2009 Jan 1;99(1):42-7. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2606912/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18942073 PubMed]
+## '''Update:''' Wang D, Zhang Q, Blanke CD, Demetri GD, Heinrich MC, Watson JC, Hoffman JP, Okuno S, Kane JM, von Mehren M, Eisenberg BL. Phase II trial of neoadjuvant/adjuvant imatinib mesylate for advanced primary and metastatic/recurrent operable gastrointestinal stromal tumors: long-term follow-up results of Radiation Therapy Oncology Group 0132. Ann Surg Oncol. 2012 Apr;19(4):1074-80. Epub 2011 Dec 28. Erratum in: Ann Surg Oncol. 2012 Jul;19(7):2420. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3800166/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22203182 PubMed]
+# '''ACOSOG Z9001:''' Dematteo RP, Ballman KV, Antonescu CR, Maki RG, Pisters PW, Demetri GD, Blackstein ME, Blanke CD, von Mehren M, Brennan MF, Patel S, McCarter MD, Polikoff JA, Tan BR, Owzar K; American College of Surgeons Oncology Group (ACOSOG) Intergroup Adjuvant GIST Study Team. Adjuvant imatinib mesylate after resection of localised, primary gastrointestinal stromal tumour: a randomised, double-blind, placebo-controlled trial. Lancet. 2009 Mar 28;373(9669):1097-104. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915459/ link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915459/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19303137 PubMed]
+# '''SSG XVIII/AIO:''' Joensuu H, Eriksson M, Sundby Hall K, Hartmann JT, Pink D, Schütte J, Ramadori G, Hohenberger P, Duyster J, Al-Batran SE, Schlemmer M, Bauer S, Wardelmann E, Sarlomo-Rikala M, Nilsson B, Sihto H, Monge OR, Bono P, Kallio R, Vehtari A, Leinonen M, Alvegård T, Reichardt P. One vs three years of adjuvant imatinib for operable gastrointestinal stromal tumor: a randomized trial. JAMA. 2012 Mar 28;307(12):1265-72. [http://jama.jamanetwork.com/article.aspx?articleid=1105116 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22453568 PubMed]
+## '''Update:''' Joensuu H, Eriksson M, Sundby Hall K, Reichardt A, Hartmann JT, Pink D, Ramadori G, Hohenberger P, Al-Batran SE, Schlemmer M, Bauer S, Wardelmann E, Nilsson B, Sihto H, Bono P, Kallio R, Junnila J, Alvegård T, Reichardt P. Adjuvant imatinib for high-risk GI stromal tumor: analysis of a randomized trial. J Clin Oncol. 2016 Jan 20;34(3):244-50. Epub 2015 Nov 2. [http://ascopubs.org/doi/full/10.1200/JCO.2015.62.9170 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26527782 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915459/ Dematteo et al. 2009 (ACOSOG Z9001)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Imatinib_monotherapy_2|Imatinib x 12 mos]]
+|style="background-color:#d73027"|Inferior RFS
+|-
+|}
+''No active antineoplastic treatment. Used as a comparator arm and here for reference purposes only.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgery]]
+
+===References===
+# '''ACOSOG Z9001:''' Dematteo RP, Ballman KV, Antonescu CR, Maki RG, Pisters PW, Demetri GD, Blackstein ME, Blanke CD, von Mehren M, Brennan MF, Patel S, McCarter MD, Polikoff JA, Tan BR, Owzar K; American College of Surgeons Oncology Group (ACOSOG) Intergroup Adjuvant GIST Study Team. Adjuvant imatinib mesylate after resection of localised, primary gastrointestinal stromal tumour: a randomised, double-blind, placebo-controlled trial. Lancet. 2009 Mar 28;373(9669):1097-104. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915459/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19303137 PubMed]
+
+=Metastatic or unresectable disease=
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/23/7/1680/202540 Reichardt et al. 2012 (ENEST g3)]
+|style="background-color:#1a9851"|Phase III (C)
+|Nilotinib
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)00075-9/fulltext Mir et al. 2016 (PAZOGIST)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Pazopanib_monotherapy|Pazopanib]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|}
+''No active treatment. Used as a comparator arm and here for reference purposes only.''
+
+===References===
+# '''ENEST g3:''' Reichardt P, Blay JY, Gelderblom H, Schlemmer M, Demetri GD, Bui-Nguyen B, McArthur GA, Yazji S, Hsu Y, Galetic I, Rutkowski P. Phase III study of nilotinib versus best supportive care with or without a TKI in patients with gastrointestinal stromal tumors resistant to or intolerant of imatinib and sunitinib. Ann Oncol. 2012 Jul;23(7):1680-7. Epub 2012 Feb 21. [https://academic.oup.com/annonc/article/23/7/1680/202540 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22357255 PubMed]
+# '''PAZOGIST:''' Mir O, Cropet C, Toulmonde M, Cesne AL, Molimard M, Bompas E, Cassier P, Ray-Coquard I, Rios M, Adenis A, Italiano A, Bouché O, Chauzit E, Duffaud F, Bertucci F, Isambert N, Gautier J, Blay JY, Pérol D; PAZOGIST study group of the French Sarcoma Groupe-Groupe d'Etude des Tumeurs Osseuses (GSF-GETO). Pazopanib plus best supportive care versus best supportive care alone in advanced gastrointestinal stromal tumours resistant to imatinib and sunitinib (PAZOGIST): a randomised, multicentre, open-label phase 2 trial. Lancet Oncol. 2016 May;17(5):632-41. Epub 2016 Apr 5. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)00075-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27068858 PubMed]
+
+==Imatinib monotherapy {{#subobject:16a4ba|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, standard-dose (400 mg/day) {{#subobject:58de4b|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa020461 Demetri et al. 2002]
+|style="background-color:#1a9851"|Phase III (C)
+|Higher-dose imatinib (600 mg/day)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(04)17098-0/fulltext Verweij et al. 2004 (EORTC 62005)]
+|style="background-color:#1a9851"|Phase III (C)
+|High-dose imatinib
+|style="background-color:#ffffbf"|Seems not superior (*)
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2006.09.0183 Blay et al. 2007 (BFR14)]
+|style="background-color:#1a9851"|Phase III (C)
+|Imatinib x 1 or 3 y (*)
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347867/ Kang et al. 2013 (RIGHT)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo_2|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4521211/ Blay et al. 2015 (ENESTg1)]
+|style="background-color:#1a9851"|Phase III (C)
+|Nilotinib
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4679092/ Blanke et al. 2015 (SWOG S0502)]
+|style="background-color:#1a9851"|Phase III (C)
+|Bevacizumab & Imatinib
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+''Note: Efficacy reported for EORTC 62005 is based on the 2017 update. BFR14 had two separate comparisons, to one year and to three years of imatinib versus continuous (this arm); the efficacy outcome was the same in both reports.''
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 400 mg PO once per day, taken with food
+
+'''Continued indefinitely'''
+
+===Variant #2, higher-dose (600 mg/day) {{#subobject:304d2f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa020461 Demetri et al. 2002]
+|style="background-color:#1a9851"|Phase III (E)
+|Standard-dose imatinib (400 mg/day)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day, taken with food
+
+'''Continued indefinitely'''
+
+===Variant #3, high-dose (800 mg/day) {{#subobject:4e83a6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.sciencedirect.com/science/article/pii/S0140673601065357 Van Oosterom et al. 2001]
+| style="background-color:#ffffbe" |Phase 1, <20 pts in this cohort
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ejcancer.com/article/S0959-8049%2802%2900836-5/abstract Verweij et al. 2003]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(04)17098-0/fulltext Verweij et al. 2004 (EORTC 62005)]
+|style="background-color:#1a9851"|Phase III (E)
+|Standard-dose imatinib
+|style="background-color:#ffffbf"|Seems not superior (*)
+|-
+|[http://jco.ascopubs.org/content/26/4/626.long Blanke et al. 2008 (SWOG S0033)]
+|style="background-color:#1a9851"|Phase III (E)
+|Standard-dose imatinib with pre-planned dose-escalation at progression
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4521211/ Blay et al. 2015 (ENESTg1)]
+|style="background-color:#1a9851"|Phase III (C)
+|Nilotinib
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4679092/ Blanke et al. 2015 (SWOG S0502)]
+|style="background-color:#1a9851"|Phase III (C)
+|Bevacizumab & Imatinib
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+''Note: this was the MTD in Van Oosterom et al. 2001. In some studies, high-dose imatinib was offered to patients with KIT exon 9 mutations in ENESTg1 and SWOG S0502; all other patients received standard-dose imatinib. Efficacy reported for EORTC 62005 is based on the 2017 update.''
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 400 mg PO twice a day, taken after a meal
+
+'''Continued indefinitely'''
+
+===Variant #4, standard-dose with pre-planned dose-escalation at progression {{#subobject:854522|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/4/626.long Blanke et al. 2008 (SWOG S0033)]
+|style="background-color:#1a9851"|Phase III (C)
+|High-dose imatinib (800 mg/day)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Standard dose therapy====
+*[[Imatinib (Gleevec)]] 400 mg PO once per day
+
+'''Continued indefinitely'''
+
+''Patients who progressed could receive high-dose therapy, as follows:''
+
+====High-dose therapy====
+*[[Imatinib (Gleevec)]] 400 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''Phase 1:''' van Oosterom AT, Judson I, Verweij J, Stroobants S, Donato di Paola E, Dimitrijevic S, Martens M, Webb A, Sciot R, Van Glabbeke M, Silberman S, Nielsen OS; European Organisation for Research and Treatment of Cancer Soft Tissue and Bone Sarcoma Group. Safety and efficacy of imatinib (STI571) in metastatic gastrointestinal stromal tumours: a phase I study. Lancet. 2001 Oct 27;358(9291):1421-3. [https://www.sciencedirect.com/science/article/pii/S0140673601065357 link to SD article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11705489 PubMed]
+# Demetri GD, von Mehren M, Blanke CD, Van den Abbeele AD, Eisenberg B, Roberts PJ, Heinrich MC, Tuveson DA, Singer S, Janicek M, Fletcher JA, Silverman SG, Silberman SL, Capdeville R, Kiese B, Peng B, Dimitrijevic S, Druker BJ, Corless C, Fletcher CD, Joensuu H. Efficacy and safety of imatinib mesylate in advanced gastrointestinal stromal tumors. N Engl J Med. 2002 Aug 15;347(7):472-80. [https://www.nejm.org/doi/full/10.1056/NEJMoa020461 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12181401 PubMed]
+# Verweij J, van Oosterom A, Blay JY, Judson I, Rodenhuis S, van der Graaf W, Radford J, Le Cesne A, Hogendoorn PC, di Paola ED, Brown M, Nielsen OS. Imatinib mesylate (STI-571 Glivec, Gleevec) is an active agent for gastrointestinal stromal tumours, but does not yield responses in other soft-tissue sarcomas that are unselected for a molecular target: results from an EORTC Soft Tissue and Bone Sarcoma Group phase II study. Eur J Cancer. 2003 Sep;39(14):2006-11. [https://www.ejcancer.com/article/S0959-8049%2802%2900836-5/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12957454 PubMed]
+# '''EORTC 62005:''' Verweij J, Casali PG, Zalcberg J, LeCesne A, Reichardt P, Blay JY, Issels R, van Oosterom A, Hogendoorn PC, Van Glabbeke M, Bertulli R, Judson I. Progression-free survival in gastrointestinal stromal tumours with high-dose imatinib: randomised trial. Lancet. 2004 Sep 25-Oct 1;364(9440):1127-34. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(04)17098-0/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15451219 PubMed]
+## '''Update:''' Zalcberg JR, Verweij J, Casali PG, Le Cesne A, Reichardt P, Blay JY, Schlemmer M, Van Glabbeke M, Brown M, Judson IR; EORTC Soft Tissue and Bone Sarcoma Group; Italian Sarcoma Group; Australasian Gastrointestinal Trials Group. Outcome of patients with advanced gastro-intestinal stromal tumours crossing over to a daily imatinib dose of 800 mg after progression on 400 mg. Eur J Cancer. 2005 Aug;41(12):1751-7. [https://www.ejcancer.com/article/S0959-8049(05)00440-5/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16098458 PubMed]
+## '''Update:''' Casali PG, Zalcberg J, Le Cesne A, Reichardt P, Blay JY, Lindner LH, Judson IR, Schöffski P, Leyvraz S, Italiano A, Grünwald V, Pousa AL, Kotasek D, Sleijfer S, Kerst JM, Rutkowski P, Fumagalli E, Hogendoorn P, Litière S, Marreaud S, van der Graaf W, Gronchi A, Verweij J; European Organisation for Research and Treatment of Cancer Soft Tissue and Bone Sarcoma Group and Italian Sarcoma Group and Australasian Gastrointestinal Trials Group. Ten-year progression-free and overall survival in patients with unresectable or metastatic GI stromal tumors: long-term analysis of the European Organisation for Research and Treatment of Cancer, Italian Sarcoma Group, and Australasian Gastrointestinal Trials Group intergroup phase III randomized trial on imatinib at two dose levels. J Clin Oncol. 2017 May 20;35(15):1713-1720. Epub 2017 Mar 31. [http://ascopubs.org/doi/full/10.1200/JCO.2016.71.0228 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28362562 PubMed]
+# '''BFR14:''' Blay JY, Le Cesne A, Ray-Coquard I, Bui B, Duffaud F, Delbaldo C, Adenis A, Viens P, Rios M, Bompas E, Cupissol D, Guillemet C, Kerbrat P, Fayette J, Chabaud S, Berthaud P, Perol D. Prospective multicentric randomized phase III study of imatinib in patients with advanced gastrointestinal stromal tumors comparing interruption versus continuation of treatment beyond 1 year: the French Sarcoma Group. J Clin Oncol. 2007 Mar 20;25(9):1107-13. [http://ascopubs.org/doi/full/10.1200/JCO.2006.09.0183 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17369574 PubMed]
+## '''Update:''' Le Cesne A, Ray-Coquard I, Bui BN, Adenis A, Rios M, Bertucci F, Duffaud F, Chevreau C, Cupissol D, Cioffi A, Emile JF, Chabaud S, Pérol D, Blay JY; French Sarcoma Group. Discontinuation of imatinib in patients with advanced gastrointestinal stromal tumours after 3 years of treatment: an open-label multicentre randomised phase 3 trial. Lancet Oncol. 2010 Oct;11(10):942-9. Epub 2010 Sep 21. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(10)70222-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20864406 PubMed]
+# '''SWOG S0033:''' Blanke CD, Rankin C, Demetri GD, Ryan CW, von Mehren M, Benjamin RS, Raymond AK, Bramwell VH, Baker LH, Maki RG, Tanaka M, Hecht JR, Heinrich MC, Fletcher CD, Crowley JJ, Borden EC. Phase III randomized, intergroup trial assessing imatinib mesylate at two dose levels in patients with unresectable or metastatic gastrointestinal stromal tumors expressing the kit receptor tyrosine kinase: S0033. J Clin Oncol. 2008 Feb 1;26(4):626-32. [http://jco.ascopubs.org/content/26/4/626.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18235122 PubMed]
+# '''Meta-analysis:''' Gastrointestinal Stromal Tumor Meta-Analysis Group (MetaGIST). Comparison of two doses of imatinib for the treatment of unresectable or metastatic gastrointestinal stromal tumors: a meta-analysis of 1,640 patients. J Clin Oncol. 2010 Mar 1;28(7):1247-53. Epub 2010 Feb 1. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834472/ link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834472/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20124181 PubMed]
+# '''RIGHT:''' Kang YK, Ryu MH, Yoo C, Ryoo BY, Kim HJ, Lee JJ, Nam BH, Ramaiya N, Jagannathan J, Demetri GD. Resumption of imatinib to control metastatic or unresectable gastrointestinal stromal tumours after failure of imatinib and sunitinib (RIGHT): a randomised, placebo-controlled, phase 3 trial. Lancet Oncol. 2013 Nov;14(12):1175-82. Epub 2013 Oct 18. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70453-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347867/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24140183 PubMed]
+# '''ENESTg1:''' Blay JY, Shen L, Kang YK, Rutkowski P, Qin S, Nosov D, Wan D, Trent J, Srimuninnimit V, Pápai Z, Le Cesne A, Novick S, Taningco L, Mo S, Green S, Reichardt P, Demetri GD. Nilotinib versus imatinib as first-line therapy for patients with unresectable or metastatic gastrointestinal stromal tumours (ENESTg1): a randomised phase 3 trial. Lancet Oncol. 2015 May;16(5):550-60. Epub 2015 Apr 14. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)70105-1/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4521211/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25882987 PubMed]
+# '''SWOG S0502:''' Blanke CD, Rankin C, Corless C, Eary JF, Mulder K, Okuno SH, George S, Heinrich M. S0502: A SWOG phase III randomized study of imatinib, with or without bevacizumab, in patients with untreated metastatic or unresectable gastrointestinal stromal tumors. Oncologist. 2015 Dec;20(12):1353-4. Epub 2015 Nov 17. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4679092/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26576593 PubMed]
+
+==Pazopanib monotherapy {{#subobject:cfbaff|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:1debcd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)00075-9/fulltext Mir et al. 2016 (PAZOGIST)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Best_supportive_care|Best supportive care]]
+|style="background-color:#91cf60"|Seems to have superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Pazopanib (Votrient)]] 800 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Mir O, Cropet C, Toulmonde M, Cesne AL, Molimard M, Bompas E, Cassier P, Ray-Coquard I, Rios M, Adenis A, Italiano A, Bouché O, Chauzit E, Duffaud F, Bertucci F, Isambert N, Gautier J, Blay JY, Pérol D; PAZOGIST study group of the French Sarcoma Groupe-Groupe d'Etude des Tumeurs Osseuses (GSF-GETO). Pazopanib plus best supportive care versus best supportive care alone in advanced gastrointestinal stromal tumours resistant to imatinib and sunitinib (PAZOGIST): a randomised, multicentre, open-label phase 2 trial. Lancet Oncol. 2016 May;17(5):632-41. Epub 2016 Apr 5. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)00075-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27068858 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(06)69446-4/abstract Demetri et al. 2006 (A6181004)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Sunitinib_monotherapy|Sunitinib]]
+|style="background-color:#d73027"|Inferior TTP
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3819942/ Demetri et al. 2012 (GRID)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Regorafenib_monotherapy|Regorafenib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347867/ Kang et al. 2013 (RIGHT)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Imatinib_monotherapy_3|Imatinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+''No active antineoplastic treatment. Used as a comparator arm and here for reference purposes only.''
+
+===References===
+# '''A6181004:''' Demetri GD, van Oosterom AT, Garrett CR, Blackstein ME, Shah MH, Verweij J, McArthur G, Judson IR, Heinrich MC, Morgan JA, Desai J, Fletcher CD, George S, Bello CL, Huang X, Baum CM, Casali PG. Efficacy and safety of sunitinib in patients with advanced gastrointestinal stromal tumour after failure of imatinib: a randomised controlled trial. Lancet. 2006 Oct 14;368(9544):1329-38. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(06)69446-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17046465 PubMed]
+# '''GRID:''' Demetri GD, Reichardt P, Kang YK, Blay JY, Rutkowski P, Gelderblom H, Hohenberger P, Leahy M, von Mehren M, Joensuu H, Badalamenti G, Blackstein M, Le Cesne A, Schöffski P, Maki RG, Bauer S, Nguyen BB, Xu J, Nishida T, Chung J, Kappeler C, Kuss I, Laurent D, Casali PG; GRID study investigators. Efficacy and safety of regorafenib for advanced gastrointestinal stromal tumours after failure of imatinib and sunitinib (GRID): an international, multicentre, randomised, placebo-controlled, phase 3 trial. Lancet. 2013 Jan 26;381(9863):295-302. Epub 2012 Nov 22. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3819942/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23177515 PubMed]
+# '''RIGHT:''' Kang YK, Ryu MH, Yoo C, Ryoo BY, Kim HJ, Lee JJ, Nam BH, Ramaiya N, Jagannathan J, Demetri GD. Resumption of imatinib to control metastatic or unresectable gastrointestinal stromal tumours after failure of imatinib and sunitinib (RIGHT): a randomised, placebo-controlled, phase 3 trial. Lancet Oncol. 2013 Nov;14(12):1175-82. Epub 2013 Oct 18. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70453-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4347867/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24140183 PubMed]
+
+==Regorafenib monotherapy {{#subobject:bd09ce|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:6dcadc|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3819942/ Demetri et al. 2012 (GRID)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo_2|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''Patients in this study already had treatment failure with imatinib and sunitinib.''
+====Chemotherapy====
+*[[Regorafenib (Stivarga)]] 160 mg PO once per day on days 1 to 21
+
+'''28-day cycles'''
+
+===References===
+# '''GRID:''' Demetri GD, Reichardt P, Kang YK, Blay JY, Rutkowski P, Gelderblom H, Hohenberger P, Leahy M, von Mehren M, Joensuu H, Badalamenti G, Blackstein M, Le Cesne A, Schöffski P, Maki RG, Bauer S, Nguyen BB, Xu J, Nishida T, Chung J, Kappeler C, Kuss I, Laurent D, Casali PG; GRID study investigators. Efficacy and safety of regorafenib for advanced gastrointestinal stromal tumours after failure of imatinib and sunitinib (GRID): an international, multicentre, randomised, placebo-controlled, phase 3 trial. Lancet. 2013 Jan 26;381(9863):295-302. Epub 2012 Nov 22. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3819942/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23177515 PubMed]
+
+==Sunitinib monotherapy {{#subobject:ec3261|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:38e8e3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(06)69446-4/abstract Demetri et al. 2006 (A6181004)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo_2|Placebo]]
+|style="background-color:#1a9850"|Superior TTP
+|-
+|}
+''Patients in A6181004 had treatment failure with imatinib.''
+====Chemotherapy====
+*[[Sunitinib (Sutent)]] 50 mg PO once per day on days 1 to 28
+**Dose may be decreased to 37.5 mg or 25 mg depending on tolerability 
+
+'''42-day cycles'''
+
+===References===
+# '''A6181004:''' Demetri GD, van Oosterom AT, Garrett CR, Blackstein ME, Shah MH, Verweij J, McArthur G, Judson IR, Heinrich MC, Morgan JA, Desai J, Fletcher CD, George S, Bello CL, Huang X, Baum CM, Casali PG. Efficacy and safety of sunitinib in patients with advanced gastrointestinal stromal tumour after failure of imatinib: a randomised controlled trial. Lancet. 2006 Oct 14;368(9544):1329-38. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(06)69446-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17046465 PubMed]
+
+[[Category:Gastrointestinal stromal tumor regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Soft tissue sarcomas]]
+[[Category:Gastrointestinal cancers]]

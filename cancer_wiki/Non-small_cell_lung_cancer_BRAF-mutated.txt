@@ -1,0 +1,79 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+Note: these are biomarker-specific regimens, please see the '''[[Non-small cell lung cancer|main NSCLC page]]''' for other regimens.
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Advanced or metastatic disease, first-line=
+
+==Dabrafenib & Trametinib {{#subobject:d08f40|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:70eb20|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30679-4/fulltext Planchard et al. 2017 (BRF113928-untreated)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''BRF113928:''' Planchard D, Smit EF, Groen HJM, Mazieres J, Besse B, Helland Å, Giannone V, D'Amelio AM Jr, Zhang P, Mookerjee B, Johnson BE. Dabrafenib plus trametinib in patients with previously untreated BRAF(V600E)-mutant metastatic non-small-cell lung cancer: an open-label, phase 2 trial. Lancet Oncol. 2017 Oct;18(10):1307-1316. Epub 2017 Sep 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30679-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28919011 PubMed]
+
+=Advanced or metastatic disease, previously treated, BRAF inhibitor-naive=
+
+==Dabrafenib & Trametinib {{#subobject:05e601|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c14c97|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4993103/ Planchard et al. 2016 (BRF113928-treated)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''All enrolled patients had BRAF p.V600E mutations and had progressed on 1 to 3 prior regimens.''
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''BRF113928:''' Planchard D, Besse B, Groen HJ, Souquet PJ, Quoix E, Baik CS, Barlesi F, Kim TM, Mazieres J, Novello S, Rigas JR, Upalawanna A, D'Amelio AM Jr, Zhang P, Mookerjee B, Johnson BE. Dabrafenib plus trametinib in patients with previously treated BRAF(V600E)-mutant metastatic non-small cell lung cancer: an open-label, multicentre phase 2 trial. Lancet Oncol. 2016 Jul;17(7):984-93. Epub 2016 Jun 6. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4993103/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27283860 PubMed]
+
+[[Category:Non-small cell lung cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Thoracic cancers]]

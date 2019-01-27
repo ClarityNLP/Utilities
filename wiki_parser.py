@@ -4,7 +4,12 @@ from mwparserfromhell.nodes.external_link import ExternalLink
 from mwparserfromhell.nodes.wikilink import Wikilink
 from mwparserfromhell.nodes.comment import Comment
 from anytree import Node, RenderTree
+from pathlib import Path
 import json
+
+treatment_names = ['Chemoradiotherapy', 'Supportive medications', 'Chemotherapy', 'Immunosuppressive therapy',
+                   'CNS prophylaxis', 'Chemotherapy, part 1', 'Chemotherapy, part 2', 'Primary therapy',
+                   'Immunotherapy', 'Anticoagulation']
 
 
 def title_text(parent):
@@ -45,108 +50,130 @@ def pretty_text(thing):
     return txt.strip()
 
 
+def generate_nlpql(cancer, treatments):
+    print('nlpql for ', cancer)
+
+
 if __name__ == "__main__":
-    """
-    Wiki source here: https://hemonc.org/wiki/Main_Page
-    """
-    last_nodes = dict()
-    nodes = list()
-    chemotherapy_nodes = list()
-    is_chemotherapy = False
-    with open('./cancer_wiki/colon_cancers.txt') as f:
-        wikicode = parse(f.read())
-        cur_level = 0
-        cur_title = None
-        cur_node = None
-        for n in wikicode.nodes:
-            if isinstance(n, Heading):
-                cur_title = title_text(n)
+    path_list = Path('./cancer_wiki').glob('**/*.txt')
+    for p in path_list:
+        # because path is object not string
+        path_str = str(p)
+        """
+        Wiki source here: https://hemonc.org/wiki/Main_Page
+        """
+        last_nodes = dict()
+        nodes = list()
+        treatment_nodes = list()
+        is_treatment = False
 
-                is_chemotherapy = (cur_title == 'Chemotherapy')
+        with open('./' + path_str) as f:
+            wikicode = parse(f.read())
+            oncology_class = f.name.split('/')[-1].split('.')[0]
+            # print(oncology_class)
+            cur_level = 0
+            cur_title = None
+            cur_node = None
+            for n in wikicode.nodes:
+                if isinstance(n, Heading):
+                    cur_title = title_text(n)
+                    is_treatment = cur_title in treatment_names and n.level >= 3
 
-                if cur_level == 0:
-                    if is_chemotherapy:
-                        cur_node = Node(cur_title, drugs=list(), brands=list(), instructions=list())
-                    else:
-                        cur_node = Node(cur_title, data=list())
-
-                else:
-                    parent_level = n.level - 1
-                    if parent_level in last_nodes:
-                        parent = last_nodes[parent_level]
-
-                        if is_chemotherapy:
-                            grandparent = last_nodes[parent_level-1]
-                            g_grandparent = last_nodes[parent_level-2]
-                            if parent.name != 'Regimen':
-                                variant = parent.name
-                            else:
-                                variant = ''
-                            cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
-                                            regimen=grandparent.name, variant=variant, guideline=g_grandparent.name)
+                    if cur_level == 0:
+                        if is_treatment:
+                            cur_node = Node(cur_title, drugs=list(), brands=list(), instructions=list(),
+                                            regimen='', variant='', regimen_type='')
                         else:
-                            cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list())
+                            cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), instructions=list(),
+                                            regimen='', variant='', regimen_type='')
+
                     else:
-                        cur_node = Node(cur_title, data=list())
+                        parent_level = n.level - 1
+                        if parent_level in last_nodes:
+                            parent = last_nodes[parent_level]
 
-                cur_level = n.level
-                last_nodes[cur_level] = cur_node
-                nodes.append(cur_node)
-
-                if is_chemotherapy:
-                    chemotherapy_nodes.append(cur_node)
-
-                # print(cur_title, cur_level)
-            else:
-                if cur_level > 0:
-                    text = pretty_text(n)
-                    if len(text) > 0:
-                        if is_chemotherapy:
-                            if isinstance(n, Wikilink):
-                                spl = text.split('(')
-                                drug = spl[0].strip()
-                                cur_node.drugs.append(drug)
-                                if len(spl) == 1:
-                                    cur_node.brands.append(drug)
+                            if is_treatment:
+                                if parent_level - 1 >= 0:
+                                    grandparent = last_nodes[parent_level-1].name
                                 else:
-                                    cur_node.brands.append(spl[1].split(')')[0].strip())
+                                    grandparent = ''
+                                if parent_level - 2 >= 0:
+                                    g_grandparent = last_nodes[parent_level-2].name
+                                else:
+                                    g_grandparent = ''
+                                if parent.name != 'Regimen':
+                                    variant = parent.name
+                                else:
+                                    variant = ''
+                                cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
+                                                regimen=grandparent, variant=variant, regimen_type=g_grandparent)
                             else:
-                                # cur_node.instructions.append(text)
+                                cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list(),
+                                                drugs=list(), brands=list(), regimen='', variant='', regimen_type='')
+                        else:
+                            cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), regimen='', variant='',
+                                            regimen_type='')
+
+                    cur_level = n.level
+                    last_nodes[cur_level] = cur_node
+                    nodes.append(cur_node)
+
+                    if is_treatment:
+                        treatment_nodes.append(cur_node)
+
+                    # print(cur_title, cur_level)
+                else:
+                    if cur_level > 0:
+                        text = pretty_text(n)
+                        if len(text) > 0:
+                            if is_treatment:
+                                if isinstance(n, Wikilink):
+                                    spl = text.split('(')
+                                    drug = spl[0].strip()
+                                    cur_node.drugs.append(drug)
+                                    if len(spl) == 1:
+                                        cur_node.brands.append(drug)
+                                    else:
+                                        cur_node.brands.append(spl[1].split(')')[0].strip())
+                                else:
+                                    # cur_node.instructions.append(text)
+                                    pass
+                            else:
+                                if len(cur_node.data) > 0:
+                                    cur_node.data[-1] = (cur_node.data[-1] + ' ' + text).strip()
+                                else:
+                                    cur_node.data.append(text)
+                        else:
+                            if is_treatment:
                                 pass
-                        else:
-                            if len(cur_node.data) > 0:
-                                cur_node.data[-1] = (cur_node.data[-1] + ' ' + text).strip()
+                            elif len(cur_node.data) > 0:
+                                # don't just keep adding empty ones
+                                if cur_node.data[-1] != '':
+                                    cur_node.data.append('')
                             else:
-                                cur_node.data.append(text)
-                    else:
-                        if is_chemotherapy:
-                            pass
-                        elif len(cur_node.data) > 0:
-                            # don't just keep adding empty ones
-                            if cur_node.data[-1] != '':
                                 cur_node.data.append('')
-                        else:
-                            cur_node.data.append('')
 
-    chemo_list = list()
-    for cn in chemotherapy_nodes:
-        # print('--------------------------')
-        # print(RenderTree(cn))
-        chemo_list.append({
-            'drugs': cn.drugs,
-            'brands': cn.brands,
-            'regimen': cn.regimen,
-            'variant': cn.variant,
-            'guideline': cn.guideline
-        })
+        treatment_map = dict()
+        for cn in treatment_nodes:
+            # print('--------------------------')
+            # print(RenderTree(cn))
+            try:
+                if cn.regimen not in treatment_map:
+                    if len(cn.drugs) == 0:
+                        continue
+                    treatment_map[cn.regimen] = {
+                        'drugs': cn.drugs,
+                        'brands': cn.brands,
+                        'regimen': cn.regimen,
+                        'regimen_type': cn.regimen_type,
+                        'cancer_type': oncology_class
+                    }
+            except Exception as e:
+                print(e)
 
-    json_string = json.dumps(chemo_list, indent=4)
-
-    print(json_string)
-
-
-    # for cn in nodes:
-    #     print('--------------------------')
-    #     print(RenderTree(cn))
-
-    print('--------------------------')
+        if len(treatment_map.items()) > 0:
+            generate_nlpql(oncology_class, treatment_map)
+        else:
+            print('no treatment for ', oncology_class)
+        # json_string = json.dumps(treatment_map, indent=4)
+        # print(json_string)

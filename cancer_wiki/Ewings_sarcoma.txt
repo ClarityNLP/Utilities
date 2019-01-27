@@ -1,0 +1,1222 @@
+ {| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:jim_chen.jpeg|frameless|upright=0.3|center]]
+|<big>[[User:Jimchen|James L. Chen, MD, MS]]<br>Columbus, OH</big><br>[https://www.linkedin.com/in/jameschen777/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2014:''' [http://annonc.oxfordjournals.org/content/25/suppl_3/iii113.full.pdf+html Bone sarcomas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up] [https://www.ncbi.nlm.nih.gov/pubmed/25210081 PubMed]
+==ESMO/PaedCan/EURACAN==
+*'''2018:''' Casali et al. [https://www.esmo.org/Guidelines/Sarcoma-and-GIST/Bone-Sarcomas Bone sarcomas: ESMO–PaedCan–EURACAN Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/bone.pdf NCCN Guidelines - Bone Cancer]
+
+=Neoadjuvant therapy=
+
+==EVAIA {{#subobject:4d4fee|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+EVAIA: '''<u>E</u>'''toposide, '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>I</u>'''fosfamide, D'''<u>A</u>'''ctinomycin
+===Regimen {{#subobject:11e269|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/27/4385.long Paulussen et al. 2008 (EICESS-92)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VAIA_.28VAI.29|VAIA]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''This regimen is intended for high-risk patients.''
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 2 & 4
+*[[Ifosfamide (Ifex)]] 2000 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Note: primary reference does not comment about the use of mesna
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 1, 3, 5
+
+'''21-day cycle for 4 cycles, then proceed to local therapy:'''
+
+====Local therapy====
+*Surgical removal of tumors is done when possible.
+*For patients not undergoing surgery, with incomplete surgical resection, or poor histologic response, 54.4 Gy of radiation is administered
+*For patients with a good histologic response, 44.8 Gy of radiation is administered
+*Additional details about particular clinical scenarios can be found in the original reference
+====Subsequent treatment====
+*[[#EVAIA_2|Adjuvant EVAIA]]
+
+===References===
+# '''EICESS-92:''' Paulussen M, Craft AW, Lewis I, Hackshaw A, Douglas C, Dunst J, Schuck A, Winkelmann W, Köhler G, Poremba C, Zoubek A, Ladenstein R, van den Berg H, Hunold A, Cassoni A, Spooner D, Grimer R, Whelan J, McTiernan A, Jürgens H; European Intergroup Cooperative Ewing's Sarcoma Study-92. Results of the EICESS-92 Study: two randomized trials of Ewing's sarcoma treatment--cyclophosphamide compared with ifosfamide in standard-risk patients and assessment of benefit of etoposide added to standard treatment in high-risk patients. J Clin Oncol. 2008 Sep 20;26(27):4385-93. [http://jco.ascopubs.org/content/26/27/4385.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18802150 PubMed]
+
+==VACA {{#subobject:4a10e9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VACA: '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, D'''<u>A</u>'''ctinomycin
+===Variant #1 {{#subobject:72ab30|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa020890 Grier et al. 2003]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#VACA.2FIE|VACA/IE]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+''Note: The survival disadvantage in Grier et al. 2003 was only noted for patients with non-metastatic disease at diagnosis.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 75 mg/m<sup>2</sup> IV bolus once on day 1
+**Stop once cumulative dose received by the patient exceeds 375 mg/m<sup>2</sup>
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 1.25 mg/m<sup>2</sup> IV once on day 1, once cumulative doxorubicin dose received by the patient exceeds 375 mg/m<sup>2</sup>
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] after [[Cyclophosphamide (Cytoxan)]] for prevention of hemorrhagic cystitis; primary reference did not list dosage/schedule
+
+'''21-day cycle for 17 cycles'''
+
+''Local therapy is planned to take place on week 12, as follows:''
+====Local therapy====
+*[[Surgery#Surgical_resection|Surgery]] can be performed for resectable tumors. No radiation therapy is given for completely resected primary tumors with negative margins.
+**For residual tumor after surgery, 4500 cGy radiation is administered to the original tumor volume plus a 1 cm margin 
+*If only radiation therapy is used, 4500 cGy of radiation is administered to the tumor volume plus a 3 cm margin, followed by 1080 cGy to only the preradiation tumor volume, for a total dose of 5580 cGy
+
+===Variant #2 {{#subobject:c30ab5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/6/1818.long Paulussen et al. 2001 (CESS 86)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''This regimen is intended for standard risk patients.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 1, 2, 43, 44
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1, then 400 mg/m<sup>2</sup> IV once per day on days 22, 23, 24, then 1200 mg/m<sup>2</sup> IV once on day 43
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 22, 23, 24
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] "as appropriate"
+
+'''9-week "block", then proceed to local therapy:'''
+
+====Local therapy====
+*Complete surgical removal of tumors is done when possible.
+*Patients not undergoing surgery receive 60 Gy radiation to the tumor bulk, with the tumor-bearing compartment receiving at least 44.8 Gy
+*Patients with incomplete surgical resection or poor histologic response received 44.8 Gy of radiation 
+====Subsequent treatment====
+*[[#VACA_2|Adjuvant VACA]]
+
+===References===
+# '''CESS 86:''' Paulussen M, Ahrens S, Dunst J, Winkelmann W, Exner GU, Kotz R, Amann G, Dockhorn-Dworniczak B, Harms D, Müller-Weihrich S, Welte K, Kornhuber B, Janka-Schaub G, Göbel U, Treuner J, Voûte PA, Zoubek A, Gadner H, Jürgens H. Localized Ewing tumor of bone: final results of the cooperative Ewing's Sarcoma Study CESS 86. J Clin Oncol. 2001 Mar 15;19(6):1818-29. [http://jco.ascopubs.org/content/19/6/1818.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11251014 PubMed]
+# Grier HE, Krailo MD, Tarbell NJ, Link MP, Fryer CJ, Pritchard DJ, Gebhardt MC, Dickman PS, Perlman EJ, Meyers PA, Donaldson SS, Moore S, Rausen AR, Vietti TJ, Miser JS. Addition of ifosfamide and etoposide to standard chemotherapy for Ewing's sarcoma and primitive neuroectodermal tumor of bone. N Engl J Med. 2003 Feb 20;348(8):694-701. [https://www.nejm.org/doi/full/10.1056/NEJMoa020890 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12594313 PubMed]
+
+==VACA/IE {{#subobject:ed89d8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VACA/IE: '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, D'''<u>A</u>'''ctinomycin alternating with '''<u>I</u>'''fosfamide, '''<u>E</u>'''toposide
+===Regimen {{#subobject:2f582d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa020890 Grier et al. 2003]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VACA|VACA]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+''Note: The survival advantage in Grier et al. 2003 was only noted for patients with non-metastatic disease at diagnosis.''
+====Chemotherapy, VACA portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 75 mg/m<sup>2</sup> IV bolus once on day 1
+**Stop once cumulative dose received by the patient exceeds 375 mg/m<sup>2</sup>
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 1.25 mg/m<sup>2</sup> IV once on day 1, once cumulative doxorubicin dose received by the patient exceeds 375 mg/m<sup>2</sup>
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] after [[Cyclophosphamide (Cytoxan)]] for prevention of hemorrhagic cystitis; primary reference did not list dosage/schedule
+
+'''21-day cycle, alternating with IE, for 17 total cycles of chemotherapy'''
+
+====Chemotherapy, IE portion====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Ifosfamide (Ifex)]]; primary reference did not list dosage/schedule
+
+'''21-day cycle, alternating with VACA, for 17 total cycles of chemotherapy'''
+
+''Local therapy is planned to take place on week 12, as follows:''
+====Local therapy====
+*[[Surgery#Surgical_resection|Surgery]] can be performed for resectable tumors. No radiation therapy is given for completely resected primary tumors with negative margins.
+**For residual tumor after surgery, 4500 cGy radiation is administered to the original tumor volume plus a 1 cm margin 
+*If only radiation therapy is used, 4500 cGy of radiation is administered to the tumor volume plus a 3 cm margin, followed by 1080 cGy to only the preradiation tumor volume, for a total dose of 5580 cGy
+
+===References===
+# Grier HE, Krailo MD, Tarbell NJ, Link MP, Fryer CJ, Pritchard DJ, Gebhardt MC, Dickman PS, Perlman EJ, Meyers PA, Donaldson SS, Moore S, Rausen AR, Vietti TJ, Miser JS. Addition of ifosfamide and etoposide to standard chemotherapy for Ewing's sarcoma and primitive neuroectodermal tumor of bone. N Engl J Med. 2003 Feb 20;348(8):694-701. [https://www.nejm.org/doi/full/10.1056/NEJMoa020890 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12594313 PubMed]
+
+==VAIA {{#subobject:84f65e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAIA: '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>I</u>'''fosfamide, '''<u>A</u>'''ctinomycin-D (Dactinomycin)
+===Variant #1 {{#subobject:195911|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/27/4385.long Paulussen et al. 2008 (EICESS-92)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#EVAIA|EVAIA (high-risk)]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: high-risk patients were randomized to this regimen versus EVAIA. Standard-risk patients were not randomized at this point of the protocol.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 2 & 4
+*[[Ifosfamide (Ifex)]] 2000 mg/m<sup>2</sup> IV once per day on days 1 to 3; primary reference does not comment about the use of Mesna (Mesnex)
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 1, 3, 5
+
+'''21-day cycle for 4 cycles, then proceed to local therapy:'''
+
+====Local therapy====
+*Surgical removal of tumors is done when possible.
+*For patients not undergoing surgery, with incomplete surgical resection, or poor histologic response, 54.4 Gy of radiation is administered
+*For patients with a good histologic response, 44.8 Gy of radiation is administered
+*Additional details about particular clinical scenarios can be found in the original reference
+====Subsequent treatment====
+*High-risk patients: [[#VAIA_2|Adjuvant VAIA]]
+*Standard-risk patients: Adjuvant [[#VAIA_2|VAIA]] versus [[#VACA_2|VACA]]
+
+===Variant #2 {{#subobject:fc21ca|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/6/1818.long Paulussen et al. 2001 (CESS 86)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''This regimen is intended for high risk patients.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 1, 2, 43, 44
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1, 2, 22, 23, 43, 44
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 22, 23, 24
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] "as appropriate"
+
+'''9-week "block", then proceed to local therapy:'''
+
+====Local therapy====
+*Complete surgical removal of tumors is done when possible.
+*Patients not undergoing surgery receive 60 Gy radiation to the tumor bulk, with the tumor-bearing compartment receiving at least 44.8 Gy
+*Patients with incomplete surgical resection or poor histologic response received 44.8 Gy of radiation 
+====Subsequent treatment====
+*[[#VAIA_2|Adjuvant VAIA]]
+
+===References===
+# '''CESS 86:''' Paulussen M, Ahrens S, Dunst J, Winkelmann W, Exner GU, Kotz R, Amann G, Dockhorn-Dworniczak B, Harms D, Müller-Weihrich S, Welte K, Kornhuber B, Janka-Schaub G, Göbel U, Treuner J, Voûte PA, Zoubek A, Gadner H, Jürgens H. Localized Ewing tumor of bone: final results of the cooperative Ewing's Sarcoma Study CESS 86. J Clin Oncol. 2001 Mar 15;19(6):1818-29. [http://jco.ascopubs.org/content/19/6/1818.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11251014 PubMed]
+# '''EICESS-92:''' Paulussen M, Craft AW, Lewis I, Hackshaw A, Douglas C, Dunst J, Schuck A, Winkelmann W, Köhler G, Poremba C, Zoubek A, Ladenstein R, van den Berg H, Hunold A, Cassoni A, Spooner D, Grimer R, Whelan J, McTiernan A, Jürgens H; European Intergroup Cooperative Ewing's Sarcoma Study-92. Results of the EICESS-92 Study: two randomized trials of Ewing's sarcoma treatment--cyclophosphamide compared with ifosfamide in standard-risk patients and assessment of benefit of etoposide added to standard treatment in high-risk patients. J Clin Oncol. 2008 Sep 20;26(27):4385-93. [http://jco.ascopubs.org/content/26/27/4385.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18802150 PubMed]
+
+==VDC/IE {{#subobject:5bcde5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VDC/IE: '''<u>V</u>'''incristine, '''<u>D</u>'''oxorubicin, '''<u>C</u>'''yclophosphamide, alternating with '''<u>I</u>'''fosfamide, '''<u>E</u>'''toposide
+===Variant #1, q2wk {{#subobject:47963f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3494838/ Womer et al. 2012 (AEWS0031)]
+|style="background-color:#1a9851"|Phase III (E)
+|Standard VDC/IE
+| style="background-color:#91cf60" |Seems to have superior EFS
+|-
+|}
+====Chemotherapy, VDC portion====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Cyclophosphamide (Cytoxan)]]; primary reference did not list dosage/schedule
+*[[Filgrastim (Neupogen)]]
+
+'''14-day cycle, alternating with IE, for 6 total cycles of chemotherapy'''
+
+====Chemotherapy, IE portion====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Ifosfamide (Ifex)]]; primary reference did not list dosage/schedule
+*[[Filgrastim (Neupogen)]]
+
+'''14-day cycle, alternating with VDC, for 6 total cycles of chemotherapy'''
+
+====Subsequent treatment====
+*Local therapy, then adjuvant VDC/IE
+
+===Variant #2, q3wk {{#subobject:6c6df0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3494838/ Womer et al. 2012 (AEWS0031)]
+|style="background-color:#1a9851"|Phase III (C)
+|Dose-intense VDC/IE
+| style="background-color:#fc8d59" |Seems to have inferior EFS
+|-
+|}
+====Chemotherapy, VDC portion====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Cyclophosphamide (Cytoxan)]]; primary reference did not list dosage/schedule
+*[[Filgrastim (Neupogen)]]
+
+'''21-day cycle, alternating with IE, for 4 total cycles of chemotherapy'''
+
+====Chemotherapy, IE portion====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Ifosfamide (Ifex)]]; primary reference did not list dosage/schedule
+*[[Filgrastim (Neupogen)]]
+
+'''21-day cycle, alternating with VDC, for 4 total cycles of chemotherapy'''
+
+====Subsequent treatment====
+*Local therapy, then adjuvant VDC/IE
+
+===References===
+# '''AEWS0031:''' Womer RB, West DC, Krailo MD, Dickman PS, Pawel BR, Grier HE, Marcus K, Sailer S, Healey JH, Dormans JP, Weiss AR. Randomized controlled trial of interval-compressed chemotherapy for the treatment of localized Ewing sarcoma: a report from the Children's Oncology Group. J Clin Oncol. 2012 Nov 20;30(33):4148-54. Epub 2012 Oct 22. Erratum in: J Clin Oncol. 2015 Mar 1;33(7):814. Dosage error in article text. [http://ascopubs.org/doi/full/10.1200/JCO.2011.41.5703 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3494838/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23091096 PubMed]
+
+==VIDE {{#subobject:be5278|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VIDE: '''<u>V</u>'''incristine, '''<u>I</u>'''fosfamide, '''<u>D</u>'''oxorubicin, '''<u>E</u>'''toposide 
+===Variant #1 {{#subobject:6b3582|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/pbc.20820/abstract Juergens et al. 2006 (EURO-E.W.I.N.G. 99)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV push once on day 1
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV over 1 to 3 hours once per day on days 1 to 3
+*[[Doxorubicin (Adriamycin)]] 20 mg/m<sup>2</sup> IV over 4 hours once per day on days 1 to 3
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 3
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 1000 mg/m<sup>2</sup> IV push 1 hour prior to [[Ifosfamide (Ifex)]] on day 1, then 3000 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours
+*2 to 3 liters/m<sup>2</sup> hydration per day
+*Recommended, but not required: [[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day for 10 days, starting 24 hours after completion of chemotherapy
+
+'''21-day cycle for 6 initial cycles'''
+====Subsequent treatment====
+*Further therapy is dictated by patient characteristics & response; details can be found in the primary reference
+
+===Variant #2 {{#subobject:bd4d04|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/21/15/2974.long Strauss et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Doxorubicin (Adriamycin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 3000 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1 (total dose per cycle: 9000 mg/m<sup>2</sup>)
+
+'''21-day cycle for up to 6 initial cycles'''
+====Subsequent treatment====
+*Patients with resectable localized disease: complete surgical removal of tumors when possible, then [[#VAI|adjuvant VAI]]
+*Patients with unresectable localized disease: [[#VAI|VAI & RT consolidation]]
+
+===References===
+# Strauss SJ, McTiernan A, Driver D, Hall-Craggs M, Sandison A, Cassoni AM, Kilby A, Michelagnoli M, Pringle J, Cobb J, Briggs T, Cannon S, Witt J, Whelan JS. Single center experience of a new intensive induction therapy for Ewing's family of tumors: feasibility, toxicity, and stem cell mobilization properties. J Clin Oncol. 2003 Aug 1;21(15):2974-81. [http://jco.ascopubs.org/content/21/15/2974.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12885818 PubMed]
+# '''EURO-E.W.I.N.G. 99:''' Juergens C, Weston C, Lewis I, Whelan J, Paulussen M, Oberlin O, Michon J, Zoubek A, Juergens H, Craft A. Safety assessment of intensive induction with vincristine, ifosfamide, doxorubicin, and etoposide (VIDE) in the treatment of Ewing tumors in the EURO-EWING 99 clinical trial. Pediatr Blood Cancer. 2006 Jul;47(1):22-9. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.20820/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16572419 PubMed]
+# '''Euro-EWING99-R1:''' Le Deley MC, Paulussen M, Lewis I, Brennan B, Ranft A, Whelan J, Le Teuff G, Michon J, Ladenstein R, Marec-Bérard P, van den Berg H, Hjorth L, Wheatley K, Judson I, Juergens H, Craft A, Oberlin O, Dirksen U. Cyclophosphamide compared with ifosfamide in consolidation treatment of standard-risk Ewing sarcoma: results of the randomized noninferiority Euro-EWING99-R1 trial. J Clin Oncol. 2014 Aug 10;32(23):2440-8. Epub 2014 Jun 30. [http://ascopubs.org/doi/full/10.1200/JCO.2013.54.4833 link to original article] '''does not contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24982464 PubMed]
+
+=Adjuvant therapy=
+
+==Busulfan & Melphalan, then auto HSCT {{#subobject:484436|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BuMel: '''<u>Bu</u>'''sulfan & '''<u>Mel</u>'''phalan
+===Regimen {{#subobject:75d2e0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nature.com/bmt/journal/v20/n10/pdf/1700992a.pdf Atra et al. 1997]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6209090/ Whelan et al. 2018 (R2Loc)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[Ewing%27s_sarcoma#VAI|VAI]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+====Preceding treatment====
+*[[#VIDE|VIDE]] x6, then [[Surgery#Surgical_resection|surgery]], then [[#VAI|VAI]] x 1
+{{#lst:Autologous HSCT|75d2e0}}
+===References===
+# '''R2Loc:''' Whelan J, Le Deley MC, Dirksen U, Le Teuff G, Brennan B, Gaspar N, Hawkins DS, Amler S, Bauer S, Bielack S, Blay JY, Burdach S, Castex MP, Dilloo D, Eggert A, Gelderblom H, Gentet JC, Hartmann W, Hassenpflug WA, Hjorth L, Jimenez M, Klingebiel T, Kontny U, Kruseova J, Ladenstein R, Laurence V, Lervat C, Marec-Berard P, Marreaud S, Michon J, Morland B, Paulussen M, Ranft A, Reichardt P, van den Berg H, Wheatley K, Judson I, Lewis I, Craft A, Juergens H, Oberlin O; Euro-EWING-99 and EWING-2008 Investigators. High-dose chemotherapy and blood autologous stem-cell rescue compared with standard chemotherapy in localized high-risk Ewing sarcoma: results of Euro-EWING99 and Ewing-2008. J Clin Oncol. 2018 Nov 1;36(31):3110-9. Epub 2018 Sep 6. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.2516 link to original article] '''contains verified protocol in supplement''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6209090/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/30188789 PubMed]
+
+==EVAIA {{#subobject:a56448|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+EVAIA: '''<u>E</u>'''toposide, '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>I</u>'''fosfamide, D'''<u>A</u>'''ctinomycin
+===Regimen {{#subobject:342685|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/26/27/4385.long Paulussen et al. 2008 (EICESS-92)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''This regimen is intended for high-risk patients.''
+====Preceding treatment====
+*[[#EVAIA|Neoadjuvant EVAIA and local therapy]]
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 2 & 4
+*[[Ifosfamide (Ifex)]] 2000 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Note: primary reference does not comment about the use of Mesna (Mesnex)
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 1, 3, 5
+
+'''21-day cycle for 10 cycles'''
+
+===References===
+# '''EICESS-92:''' Paulussen M, Craft AW, Lewis I, Hackshaw A, Douglas C, Dunst J, Schuck A, Winkelmann W, Köhler G, Poremba C, Zoubek A, Ladenstein R, van den Berg H, Hunold A, Cassoni A, Spooner D, Grimer R, Whelan J, McTiernan A, Jürgens H; European Intergroup Cooperative Ewing's Sarcoma Study-92. Results of the EICESS-92 Study: two randomized trials of Ewing's sarcoma treatment--cyclophosphamide compared with ifosfamide in standard-risk patients and assessment of benefit of etoposide added to standard treatment in high-risk patients. J Clin Oncol. 2008 Sep 20;26(27):4385-93. [http://jco.ascopubs.org/content/26/27/4385.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18802150 PubMed]
+
+==VACA {{#subobject:f92366|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VACA: '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, D'''<u>A</u>'''ctinomycin
+===Variant #1 {{#subobject:835ca4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/27/4385.long Paulussen et al. 2008 (EICESS-92)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VAIA_2|VAIA]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this regimen was intended for standard-risk patients.''
+====Preceding treatment====
+*[[#VAIA|neoadjuvant VAIA and local therapy]]
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 2 & 4
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 1, 3, 5
+
+'''21-day cycle for 10 cycles'''
+
+===Variant #2 {{#subobject:26bab6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/6/1818.long Paulussen et al. 2001 (CESS 86)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''This regimen is intended for standard risk patients.''
+====Preceding treatment====
+*[[#VACA|Neoadjuvant VACA and local therapy]]
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 1, 2, 43, 44
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1, then 400 mg/m<sup>2</sup> IV once per day on days 22, 23, 24, then 1200 mg/m<sup>2</sup> IV once on day 43
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 22, 23, 24
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] "as appropriate"
+
+'''9-week "block" for 3 blocks'''
+
+===References===
+# '''CESS 86:''' Paulussen M, Ahrens S, Dunst J, Winkelmann W, Exner GU, Kotz R, Amann G, Dockhorn-Dworniczak B, Harms D, Müller-Weihrich S, Welte K, Kornhuber B, Janka-Schaub G, Göbel U, Treuner J, Voûte PA, Zoubek A, Gadner H, Jürgens H. Localized Ewing tumor of bone: final results of the cooperative Ewing's Sarcoma Study CESS 86. J Clin Oncol. 2001 Mar 15;19(6):1818-29. [http://jco.ascopubs.org/content/19/6/1818.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11251014 PubMed]
+# '''EICESS-92:''' Paulussen M, Craft AW, Lewis I, Hackshaw A, Douglas C, Dunst J, Schuck A, Winkelmann W, Köhler G, Poremba C, Zoubek A, Ladenstein R, van den Berg H, Hunold A, Cassoni A, Spooner D, Grimer R, Whelan J, McTiernan A, Jürgens H; European Intergroup Cooperative Ewing's Sarcoma Study-92. Results of the EICESS-92 Study: two randomized trials of Ewing's sarcoma treatment--cyclophosphamide compared with ifosfamide in standard-risk patients and assessment of benefit of etoposide added to standard treatment in high-risk patients. J Clin Oncol. 2008 Sep 20;26(27):4385-93. [http://jco.ascopubs.org/content/26/27/4385.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18802150 PubMed]
+
+==VAI {{#subobject:560a3d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAI: '''<u>V</u>'''incristine, D'''<u>A</u>'''ctinomycin, '''<u>I</u>'''fosfamide
+<br>IVA: '''<u>I</u>'''fosfamide, '''<u>V</u>'''incristine, D'''<u>A</u>'''ctinomycin
+===Variant #1, capped dactinomycin {{#subobject:9b2e40|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2013.54.4833 Le Deley et al. 2014 (Euro-EWING99-R1)]
+| style="background-color:#1a9851" |Phase III (C)
+|VAC
+| style="background-color:#ffffbf" |Inconclusive whether non-inferior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Preceding treatment====
+*[[#VIDE|Neoadjuvant VIDE]] x 6, then complete surgical excision if feasible; radiotherapy if surgery incomplete or infeasible
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 0.75 mg/m<sup>2</sup> (maximum dose of 1.5 mg/d) IV once per day on days 1 & 2
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 & 2
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] is not described
+
+'''21-day cycle for 8 cycles'''
+
+===Variant #2, uncapped dactinomycin {{#subobject:ddb896|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/21/15/2974.long Strauss et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#VIDE|Neoadjuvant VIDE]] and local therapy if it was possible
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 0.75 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*If appropriate, concurrent radiation therapy given sometime during the first 3 cycles
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 3000 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 6000 mg/m<sup>2</sup>)
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Strauss SJ, McTiernan A, Driver D, Hall-Craggs M, Sandison A, Cassoni AM, Kilby A, Michelagnoli M, Pringle J, Cobb J, Briggs T, Cannon S, Witt J, Whelan JS. Single center experience of a new intensive induction therapy for Ewing's family of tumors: feasibility, toxicity, and stem cell mobilization properties. J Clin Oncol. 2003 Aug 1;21(15):2974-81. [http://jco.ascopubs.org/content/21/15/2974.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12885818 PubMed]
+# '''Euro-EWING99-R1:''' Le Deley MC, Paulussen M, Lewis I, Brennan B, Ranft A, Whelan J, Le Teuff G, Michon J, Ladenstein R, Marec-Bérard P, van den Berg H, Hjorth L, Wheatley K, Judson I, Juergens H, Craft A, Oberlin O, Dirksen U. Cyclophosphamide compared with ifosfamide in consolidation treatment of standard-risk Ewing sarcoma: results of the randomized noninferiority Euro-EWING99-R1 trial. J Clin Oncol. 2014 Aug 10;32(23):2440-8. Epub 2014 Jun 30. [http://ascopubs.org/doi/full/10.1200/JCO.2013.54.4833 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24982464 PubMed]
+
+==VAIA {{#subobject:05e476|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAIA: '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>I</u>'''fosfamide, '''<u>A</u>'''ctinomycin-D (Dactinomycin)
+===Variant #1 {{#subobject:f72b80|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/27/4385.long Paulussen et al. 2008 (EICESS-92)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#VACA_2|VACA (standard-risk)]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: standard-risk patients were randomized to this regimen versus VACA. High-risk patients were not randomized at this point of the protocol.'' 
+====Preceding treatment====
+*[[#VAIA|Neoadjuvant VAIA and local therapy]]
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 2 & 4
+*[[Ifosfamide (Ifex)]] 2000 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Note: primary reference does not comment about the use of mesna
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 1, 3, 5
+
+'''21-day cycle for 10 cycles'''
+
+===Variant #2 {{#subobject:7bd984|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/6/1818.long Paulussen et al. 2001 (CESS 86)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''This regimen is intended for high risk patients.''
+====Preceding treatment====
+*[[#VAIA|neoadjuvant VAIA and local therapy]]
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Doxorubicin (Adriamycin)]] 30 mg/m<sup>2</sup> IV once per day on days 1, 2, 43, 44
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1, 2, 22, 23, 43, 44
+*[[Dactinomycin (Cosmegen)]] 0.5 mg/m<sup>2</sup> IV once per day on days 22, 23, 24
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] "as appropriate"
+
+'''9-week "block" for 3 blocks'''
+
+===References===
+# '''CESS 86:''' Paulussen M, Ahrens S, Dunst J, Winkelmann W, Exner GU, Kotz R, Amann G, Dockhorn-Dworniczak B, Harms D, Müller-Weihrich S, Welte K, Kornhuber B, Janka-Schaub G, Göbel U, Treuner J, Voûte PA, Zoubek A, Gadner H, Jürgens H. Localized Ewing tumor of bone: final results of the cooperative Ewing's Sarcoma Study CESS 86. J Clin Oncol. 2001 Mar 15;19(6):1818-29. [http://jco.ascopubs.org/content/19/6/1818.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11251014 PubMed]
+# '''EICESS-92:''' Paulussen M, Craft AW, Lewis I, Hackshaw A, Douglas C, Dunst J, Schuck A, Winkelmann W, Köhler G, Poremba C, Zoubek A, Ladenstein R, van den Berg H, Hunold A, Cassoni A, Spooner D, Grimer R, Whelan J, McTiernan A, Jürgens H; European Intergroup Cooperative Ewing's Sarcoma Study-92. Results of the EICESS-92 Study: two randomized trials of Ewing's sarcoma treatment--cyclophosphamide compared with ifosfamide in standard-risk patients and assessment of benefit of etoposide added to standard treatment in high-risk patients. J Clin Oncol. 2008 Sep 20;26(27):4385-93. [http://jco.ascopubs.org/content/26/27/4385.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18802150 PubMed]
+
+=Relapsed or refractory or metastatic=
+
+==Busulfan & Melphalan, then auto HSCT {{#subobject:484436|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, PO busulfan, mel 140 mg/m<sup>2</sup> {{#subobject:75d2e0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/bmt/journal/v20/n10/pdf/1700992a.pdf Atra et al. 1997]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+{{#lst:Autologous HSCT|75d2e0}}
+===Variant #2, PO busulfan, mel 160 mg/m<sup>2</sup> {{#subobject:75d2e1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/bmt/journal/v20/n10/pdf/1700992a.pdf Atra et al. 1997]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+{{#lst:Autologous HSCT|75d2e1}}
+===Variant #3, IV busulfan {{#subobject:a61951|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/21/15/2974.long Strauss et al. 2003]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Note that melphalan is reported as given on day 2 (not day -2) in the original reference but this is surely an error.''
+====Preceding treatment====
+*[[#VAI_2|VAI]] x 1 or more cycles
+{{#lst:Autologous HSCT|a61951}}
+===References===
+# Atra A, Whelan JS, Calvagna V, Shankar AG, Ashley S, Shepherd V, Souhami RL, Pinkerton CR. High-dose busulphan/melphalan with autologous stem cell rescue in Ewing's sarcoma. Bone Marrow Transplant. 1997 Nov;20(10):843-6. [https://www.nature.com/bmt/journal/v20/n10/pdf/1700992a.pdf link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9404924 PubMed]
+# Strauss SJ, McTiernan A, Driver D, Hall-Craggs M, Sandison A, Cassoni AM, Kilby A, Michelagnoli M, Pringle J, Cobb J, Briggs T, Cannon S, Witt J, Whelan JS. Single center experience of a new intensive induction therapy for Ewing's family of tumors: feasibility, toxicity, and stem cell mobilization properties. J Clin Oncol. 2003 Aug 1;21(15):2974-81. [http://jco.ascopubs.org/content/21/15/2974.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12885818 PubMed]
+
+==Cyclophosphamide & Topotecan {{#subobject:2535b6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, standard-dose {{#subobject:f13281|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/15/3463.long Saylors et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 250 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5, given first
+*[[Topotecan (Hycamtin)]] 0.75 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5, given second
+
+====Supportive medications====
+*500 mL/m/2 fluids IV or PO 2 to 4 hours before chemotherapy
+*Antiemetics as premedication before chemotherapy
+*3 liters/m<sup>2</sup> IV or PO over 24 hours after chemotherapy
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 6, to continue until ANC is at least 1500/uL above nadir
+
+'''21-day cycle for 12 to 14 cycles'''
+
+===Variant #2, standard-dose with local therapy {{#subobject:c531e2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/pbc.20719/abstract Hunold et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 250 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+*[[Topotecan (Hycamtin)]] 0.75 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]], antiemetics, fluids, and [[Filgrastim (Neupogen)]] "according to institutional standards"
+
+'''21-day cycle for 12 to 14 cycles'''
+
+====Local therapy====
+*Surgical removal of tumors is done when possible.
+*[[External beam radiotherapy]] for all other lesions.
+
+===Variant #3, high-dose {{#subobject:230266|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/1096-911X%2820001101%2935:5%3C468::AID-MPO5%3E3.0.CO;2-P/abstract Kushner et al. 2000]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 2100 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1, '''given second''' (total dose per cycle: 4200 mg/m<sup>2</sup>)
+**Children 10 years or younger received 70 mg/kg/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 140 mg/kg)
+*[[Topotecan (Hycamtin)]] 2 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1, '''given third''' (total dose per cycle: 6 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2100 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1, '''given first''' (total dose per cycle: 6300 mg/m<sup>2</sup>)
+**Children 10 years or younger received 70 mg/kg/day IV continuous infusion over 72 hours, started on day 1 (total dose per cycle: 210 mg/kg)
+***If body surface area less than 1 m<sup>2</sup>, mesna is given in 500 mL NS over 24 hours
+***If body surface area is at least 1 m<sup>2</sup>, mesna is given in 1000 mL NS over 24 hours
+*On day 1, prior to chemotherapy, 20 mL/kg normal saline IV bolus over 30 minutes, then D5 1/2 NS with 15 mEq KCl per 500 mL at 200 mL/m<sup>2</sup>/H until urine specific gravity less than 1.010, then start mesna & cyclophosphamide
+*Additional hydration fluid on days 1 & 2 so that, when added to volumes of cyclophosphamide, mesna, and topotecan, total volume of fluids is 3000 mL/m<sup>2</sup>/24 hours
+*Additional hydration fluid on day 3 at 150 mL/m<sup>2</sup>/hour for 6 to 12 hours after completion of cyclophosphamide infusion
+*Cyclophosphamide is given in D5NS with 10 mEq potassium chloride (KCl) and 5 mg [[Furosemide (Lasix)]] per 500 mL fluid. 500 mL total volume is used for patients with body surface area less than 1 m<sup>2</sup>; 1000 mL total volume is used for patients with BSA of at least 1 m<sup>2</sup>
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting one day after completion of chemotherapy, to continue until ANC is at least 1000/uL
+
+'''Subsequent cycles to start when ANC greater than 1000/uL and platelets greater than 75 x 10<sup>9</sup>/L'''
+
+===References===
+# Kushner BH, Kramer K, Meyers PA, Wollner N, Cheung NK. Pilot study of topotecan and high-dose cyclophosphamide for resistant pediatric solid tumors. Med Pediatr Oncol. 2000 Nov;35(5):468-74. [https://onlinelibrary.wiley.com/doi/10.1002/1096-911X%2820001101%2935:5%3C468::AID-MPO5%3E3.0.CO;2-P/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11070479 PubMed]
+# Saylors RL 3rd, Stine KC, Sullivan J, Kepner JL, Wall DA, Bernstein ML, Harris MB, Hayashi R, Vietti TJ; Pediatric Oncology Group. Cyclophosphamide plus topotecan in children with recurrent or refractory solid tumors: a Pediatric Oncology Group phase II study. J Clin Oncol. 2001 Aug 1;19(15):3463-9. [http://jco.ascopubs.org/content/19/15/3463.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11481351 PubMed]
+# Hunold A, Weddeling N, Paulussen M, Ranft A, Liebscher C, Jürgens H. Topotecan and cyclophosphamide in patients with refractory or relapsed Ewing tumors. Pediatr Blood Cancer. 2006 Nov;47(6):795-800. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.20719/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16411206 PubMed]
+
+==Docetaxel & Gemcitabine {{#subobject:f4062c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:a99189|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.23586/full Navid et al. 2008]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available. Only 2 of the 22 patients in this retrospective review had Ewing sarcoma.''
+====Chemotherapy====
+*[[Docetaxel (Taxotere)]] 75 to 100 mg/m<sup>2</sup> IV over 60 minutes once on day 8, '''given second'''
+*[[Gemcitabine (Gemzar)]] 675 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1 & 8, '''given first on day 8'''
+
+====Supportive medications====
+*[[Ondansetron (Zofran)]] prior to chemotherapy on days 1 & 8
+*[[Dexamethasone (Decadron)]] starting either the day before or the day of [[Docetaxel (Taxotere)]], and continued for 2 days after [[Docetaxel (Taxotere)]]
+*H1 or H2 blockers such as [[Diphenhydramine (Benadryl)]] and [[Ranitidine (Zantac)]] prior to chemotherapy on days 1 & 8 per physician discretion
+*Some patients received [[Filgrastim (Neupogen)]] starting on day 9
+
+'''21-day cycles'''
+
+===References===
+# '''Retrospective:''' Navid F, Willert JR, McCarville MB, Furman W, Watkins A, Roberts W, Daw NC. Combination of gemcitabine and docetaxel in the treatment of children and young adults with refractory bone sarcoma. Cancer. 2008 Jul 15;113(2):419-25. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.23586/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18484657 PubMed]
+
+==ICE {{#subobject:456f0a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+ICE: '''<u>I</u>'''fosfamide, '''<u>C</u>'''arboplatin, '''<u>E</u>'''toposide
+===Regimen {{#subobject:d99fb7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/pbc.20227/abstract Van Winkle et al. 2005]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available. The reference did not mention [[Mesna (Mesnex)]] being used.''
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Carboplatin (Paraplatin)]] 400 mg/m<sup>2</sup> IV "for 2 days"
+**Note: the reference did not explicitly say which 2 days carboplatin should be given on
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*Depending on the study the patients were enrolled on, they received one of the following:
+**CCG-0894: [[Filgrastim (Neupogen)]] 5 or 10 mcg/kg SC once per day, starting 24 hours after completing ICE, and to continue until day 18 if ANC is at least 1000/uL, or until ANC is at least 1000/uL post nadir, whichever comes later
+**CCG-0924: PIXY 321 at doses of 500/750/1000 mcg/m<sup>2</sup> SC once per day or 500 mcg/m<sup>2</sup> SC twice per day, starting on day 5 and to continue until day 18 unless ANC reached 20,000/uL or platelet count is at least 900 x 10<sup>9</sup>/L for 2 days between days 13 to 18, or until ANC is at least 1000/uL and platelet count is at least 100 x 10<sup>9</sup>/L, whichever comes later
+**CCG-0931: [[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day and IL-6 at 2.5, 3.75, or 5.0 mcg/kg SC twice per day, starting 24 hours after completing ICE. Filgrastim is continued until ANC is at least 1000/uL, and IL-6 is continued until platelets are at least 100 x 10<sup>9</sup>/L for 2 consecutive days or until day 35, whichever comes sooner.
+
+'''21-day cycles''', with next cycle starting as soon as ANC is at least 1000/uL and platelet count is at least 100 x 10<sup>9</sup>/L
+====Subsequent treatment====
+*Resection of disease was allowed after 4 cycles based on patient's response to ICE
+
+===References===
+# Van Winkle P, Angiolillo A, Krailo M, Cheung YK, Anderson B, Davenport V, Reaman G, Cairo MS. Ifosfamide, carboplatin, and etoposide (ICE) reinduction chemotherapy in a large cohort of children and adolescents with recurrent/refractory sarcoma: the Children's Cancer Group (CCG) experience. Pediatr Blood Cancer. 2005 Apr;44(4):338-47. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.20227/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15503297 PubMed]
+
+==IE {{#subobject:ba75ef|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+IE: '''<u>I</u>'''fosfamide, '''<u>E</u>'''toposide
+===Regimen {{#subobject:4cd5c8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/5/8/1191.abstract Miser et al. 1987]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available.''
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5, '''given second, with loading dose of [[Mesna (Mesnex)]]'''
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5, '''given first'''
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] given with [[Ifosfamide (Ifex)]] as follows:
+**360 mg/m<sup>2</sup> IV loading dose over 1 hour, then
+**120 mg/m<sup>2</sup>/hour IV over 3 hours, then
+**360 mg/m<sup>2</sup> IV over 15 minutes every 3 hours for 6 doses, '''given at hours 5, 8, 11, 14, 17, 20'''
+***Doses after hour 5 can be given PO or IV
+
+'''21-day cycle for 12 cycles'''
+
+''For patients responding to therapy after 4 cycles, local therapy with surgery or radiation is used to try to achieve a complete remission. Radiation therapy consisted of 1.8 Gy fractions given for a total dose of 50 to 55 Gy.''
+
+===References===
+# Miser JS, Kinsella TJ, Triche TJ, Tsokos M, Jarosinski P, Forquer R, Wesley R, Magrath I. Ifosfamide with mesna uroprotection and etoposide: an effective regimen in the treatment of recurrent sarcomas and other tumors of children and young adults. J Clin Oncol. 1987 Aug;5(8):1191-8. [http://jco.ascopubs.org/content/5/8/1191.abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/3114435 PubMed]
+
+==Irinotecan & Temozolomide {{#subobject:2e2a5c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:c62d11|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://clincancerres.aacrjournals.org/content/10/3/840.long Wagner et al. 2004]
+|style="background-color:#ffffbe"|Phase I, <20 pts
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available. Note that irinotecan 15 mg/m<sup>2</sup> was also studied, but this dose was not recommended due to dose-limiting toxicities of diarrhea and infection.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 10 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5, 8 to 12, '''given second on days 1 to 5, 1 hour after temozolomide'''
+*[[Temozolomide (Temodar)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 5, '''given first'''
+
+====Supportive medications====
+*[[Loperamide (Imodium)]] prn diarrhea
+
+'''28-day cycles'''
+
+===Variant #2 {{#subobject:620185|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/pbc.22206/abstract Casey et al. 2009]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''Some guidelines state that [[Vincristine (Oncovin)]] can be added to this regimen. No primary reference for this is available.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 20 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 5, 8 to 12, '''given second on days 1 to 5, 1 hour after temozolomide'''
+*[[Temozolomide (Temodar)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 5, '''given first'''
+
+====Supportive medications====
+*[[Cefixime (Suprax)]] prophylaxis starting 1 to 2 days prior to [[Irinotecan (Camptosar)]], continuing until the completion of each cycle
+*Activated charcoal, with 5x the dose in mg of the irinotecan dose, maximum of 260 mg PO three times per day during [[Irinotecan (Camptosar)]] therapy
+*[[Loperamide (Imodium)]] prn diarrhea
+*Patient "advised to maintain hydration"
+
+'''21-day cycles'''
+
+===References===
+# '''Phase I:''' Wagner LM, Crews KR, Iacono LC, Houghton PJ, Fuller CE, McCarville MB, Goldsby RE, Albritton K, Stewart CF, Santana VM. Phase I trial of temozolomide and protracted irinotecan in pediatric patients with refractory solid tumors. Clin Cancer Res. 2004 Feb 1;10(3):840-8. [http://clincancerres.aacrjournals.org/content/10/3/840.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14871959 PubMed]
+# '''Retrospective:''' Wagner LM, McAllister N, Goldsby RE, Rausen AR, McNall-Knapp RY, McCarville MB, Albritton K. Temozolomide and intravenous irinotecan for treatment of advanced Ewing sarcoma. Pediatr Blood Cancer. 2007 Feb;48(2):132-9. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.20697/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16317751 PubMed]
+# '''Retrospective:''' Casey DA, Wexler LH, Merchant MS, Chou AJ, Merola PR, Price AP, Meyers PA. Irinotecan and temozolomide for Ewing sarcoma: the Memorial Sloan-Kettering experience. Pediatr Blood Cancer. 2009 Dec;53(6):1029-34. [https://onlinelibrary.wiley.com/doi/10.1002/pbc.22206/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19637327 PubMed]
+
+==TC, then IE, VDoxoC, VEC {{#subobject:c31c79|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TC, then IE, VDoxoC, VEC: '''<u>T</u>'''opotecan, '''<u>C</u>'''yclophosphamide followed by '''<u>I</u>'''fosfamide, '''<u>E</u>'''toposide, then '''<u>V</u>'''incristine, '''<u>Doxo</u>'''rubicin, '''<u>C</u>'''yclophosphamide, then '''<u>V</u>'''incristine, '''<u>E</u>'''toposide, '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:87b074|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/24/1/152.long Bernstein et al. 2006 (POG 9457)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This is a complex regimen, and it is suggested to refer to the primary reference and figure 1 for the protocol schema. One arm of patients in this trial received [[Amifostine (Ethyol)]], but its usage is not described below since it did not result in improved outcomes. Treatment starts with an optional topotecan window for stable patients without significantly impaired function or life-threatening disease:''
+
+====Chemotherapy, topotecan window====
+*[[Topotecan (Hycamtin)]] 2.4 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 6, to continue until ANC is at least 5000/uL above nadir
+
+'''5-day course, followed by upfront window, starting at week 0:'''
+
+====Chemotherapy, upfront window====
+*[[Topotecan (Hycamtin)]] 0.75 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+*[[Cyclophosphamide (Cytoxan)]] 250 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5, '''given first'''
+
+====Supportive medications====
+*Prehydration with 500 mL/m<sup>2</sup> D5 1/4 NS
+*1500 mL/m<sup>2</sup> IV or PO hydration continuous for 24 hours after chemotherapy
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 6, to continue until ANC is at least 5000/uL above nadir
+
+'''21-day cycle for up to 2 cycles'''
+
+''Patients with progression after the first cycle moved immediately to induction therapy; others proceeded to induction after the second cycle, starting at week 6 with IE:''
+
+====Chemotherapy, IE portion====
+*[[Ifosfamide (Ifex)]] as follows:
+**First cycle: 3600 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 5, '''given second, after etoposide'''
+***Administered in 200 mL/m<sup>2</sup> D5 1/2 NS
+**Second and third cycle: 2800 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 5, '''given second, after etoposide'''
+***Administered in 200 mL/m<sup>2</sup> D5 1/2 NS
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV over 45 minutes once per day on days 1 to 5, '''given first, before ifosfamide'''
+**Administered in 250 mL/m<sup>2</sup> of D5 1/2 NS
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 4000 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*"Vigorous hydration" 
+*Antiemetics
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for a total of 3 cycles, alternating with VDoxoC'''
+
+====Chemotherapy, VDoxoC portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV bolus once per day on days 1, 8, 15, '''given first'''
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1, '''given third''' (total dose per cycle: 75 mg/m<sup>2</sup>)
+**Administered in 2400 mL/m<sup>2</sup>/day (4800 mL/m<sup>2</sup> total volume) of D5 1/2 NS
+*[[Cyclophosphamide (Cytoxan)]] 2100 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 2, '''given second'''
+**Administered in 200 mL/m<sup>2</sup> D5 1/2 NS
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2400 mg/m<sup>2</sup> total dose IV; exact schedule not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 4, 24 hours after chemotherapy is complete
+
+'''21-day cycle for a total of 2 cycles, alternating with IE'''
+
+''Local therapy for primary disease along with ongoing chemotherapy starts at week 21:''
+
+====Local therapy, primary, VDoxoC portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 75 mg/m<sup>2</sup>)
+*[[Cyclophosphamide (Cytoxan)]] 1500 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]], dosage & schedule not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for 1 cycle, followed by local control'''
+
+====Local therapy (after week 21)====
+*Choice of modality between surgical and radiation therapy options is at the discretion of the provider
+*Patients treated with radiation along received 45 Gy in 1.8 Gy fractions to the initial tumor volume; additional treatment up to a total of 55.8 Gy was administered to original bony tumors and the postinduction chemotherapy soft tissue volumes plus a 2 cm margin
+*See primary reference for details about radiation therapy in a variety of clinical scenarios
+
+====Local therapy, primary, VEC portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Cyclophosphamide (Cytoxan)]] 1500 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*Use of [[Mesna (Mesnex)]] not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for 2 cycles, followed by:'''
+
+====Chemotherapy continuation, IE portion====
+*[[Ifosfamide (Ifex)]] 2100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]], dosage & schedule not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for a total of 2 cycles, alternating with VDoxoC'''
+
+====Chemotherapy continuation, VDoxoC portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1, 8, 15
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 75 mg/m<sup>2</sup>)
+*[[Cyclophosphamide (Cytoxan)]] 1500 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] dosage & schedule not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for 1 cycle, in between IE'''
+
+''Local therapy for metastatic disease along with ongoing chemotherapy starts at week 39:''
+
+====Local therapy, metastases, VDoxoC potion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+**Note: the day 8 dose is not described in the text but is described in figure 1 
+*[[Doxorubicin (Adriamycin)]] 37.5 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 75 mg/m<sup>2</sup>)
+*[[Cyclophosphamide (Cytoxan)]] 1500 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] dosage & schedule not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for 1 cycle, followed by local control of metastatic disease:'''
+
+====Local therapy of metastatic disease (after week 39)====
+*Choice of modality between surgical and radiation therapy options is at the discretion of the provider
+*[[External beam radiotherapy]] could be used to treat up to three sites of metastatic disease
+*See primary reference for details about radiation therapy in a variety of clinical scenarios
+
+====Local therapy, metastases, VEC portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 1 & 8
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Cyclophosphamide (Cytoxan)]] 1500 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive medications====
+*Use of [[Mesna (Mesnex)]] not specified by reference
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting 24 to 48 hours after completion of chemotherapy
+
+'''21-day cycle for 2 cycles'''
+
+===References===
+# '''POG 9457:''' Bernstein ML, Devidas M, Lafreniere D, Souid AK, Meyers PA, Gebhardt M, Stine K, Nicholas R, Perlman EJ, Dubowy R, Wainer IW, Dickman PS, Link MP, Goorin A, Grier HE; Pediatric Oncology Group; Children's Cancer Group Phase II Study 9457; Children's Oncology Group. Intensive therapy with growth factor support for patients with Ewing tumor metastatic at diagnosis: Pediatric Oncology Group/Children's Cancer Group Phase II Study 9457--a report from the Children's Oncology Group. J Clin Oncol. 2006 Jan 1;24(1):152-9. [http://jco.ascopubs.org/content/24/1/152.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16382125 PubMed]
+
+==VAdCA {{#subobject:dd0198|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAdCA: '''<u>V</u>'''incristine, '''<u>Ad</u>'''riamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, D'''<u>A</u>'''ctinomycin
+
+===Regimen {{#subobject:cb5fae|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/22/14/2873.long Miser et al. 2004]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#VAdCA.2FIE|VAdCA/IE]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is essentially a sub-group analysis of the protocol published in Grier et al. 2003, but some key details differ, so we report it separately.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> IV once on day 1
+**Note: Miser et al. 2004 does not say the dose is capped at a maximum dose of 2 mg, but Grier et al. 2003 uses a capped dose and is from the same trial
+*[[Doxorubicin (Adriamycin)]] 75 mg/m<sup>2</sup> IV once on day 1
+**Stop once cumulative dose received by the patient exceeds 375 mg/m<sup>2</sup> (after 5 courses)
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 1.25 mg/m<sup>2</sup> IV once on day 1, once cumulative doxorubicin dose received by the patient exceeds 375 mg/m<sup>2</sup>
+
+'''21-day cycle for 17 cycles'''
+
+''Local therapy is planned to take place on week 9, as follows:''
+====Local therapy====
+*Surgical removal of tumors is done when possible.
+*[[External beam radiotherapy]] to all metastatic sites of disease in addition to any radiation planned for primary tumor.
+*If only radiation therapy is used, 4500 cGy of radiation is administered to the tumor volume plus a 3 cm margin, followed by 1080 cGy to only the preradiation tumor volume, for a total dose of 5580 cGy
+*Residual tumor after surgery and lung metastases are treated with "dose-volume guidelines for gross residual disease"
+
+===References===
+# Miser JS, Krailo MD, Tarbell NJ, Link MP, Fryer CJ, Pritchard DJ, Gebhardt MC, Dickman PS, Perlman EJ, Meyers PA, Donaldson SS, Moore S, Rausen AR, Vietti TJ, Grier HE. Treatment of metastatic Ewing's sarcoma or primitive neuroectodermal tumor of bone: evaluation of combination ifosfamide and etoposide--a Children's Cancer Group and Pediatric Oncology Group study. J Clin Oncol. 2004 Jul 15;22(14):2873-6. [http://jco.ascopubs.org/content/22/14/2873.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15254055 PubMed]
+
+==VAdCA/IE {{#subobject:a6863c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAdCA/IE: '''<u>V</u>'''incristine, '''<u>Ad</u>'''riamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, D'''<u>A</u>'''ctinomycin alternating with '''<u>I</u>'''fosfamide, '''<u>E</u>'''toposide
+
+===Regimen {{#subobject:a2770e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/22/14/2873.long Miser et al. 2004]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VAdCA|VAdCA]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is essentially a sub-group analysis of the protocol published in Grier et al. 2003, but some key details differ, so we report it separately.''
+====Chemotherapy, VAdCA portion====
+*[[Vincristine (Oncovin)]] 2 mg/m<sup>2</sup> IV once on day 1
+**Note: Miser et al. 2004 does not say the dose is capped at a maximum dose of 2 mg, but Grier et al. 2003 uses a capped dose and is from the same trial
+*[[Doxorubicin (Adriamycin)]] 75 mg/m<sup>2</sup> IV once on day 1
+**Stop once cumulative dose received by the patient exceeds 375 mg/m<sup>2</sup> (after 5 courses)
+*[[Cyclophosphamide (Cytoxan)]] 1200 mg/m<sup>2</sup> IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 1.25 mg/m<sup>2</sup> IV once on day 1, once cumulative doxorubicin dose received by the patient exceeds 375 mg/m<sup>2</sup>
+
+'''21-day cycle, alternating with IE, for 17 total cycles'''
+
+====Chemotherapy, IE portion====
+*[[Ifosfamide (Ifex)]] 1800 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] with [[Ifosfamide (Ifex)]]; primary reference did not list dosage/schedule
+
+'''21-day cycle, alternating with VAC, for 17 total cycles'''
+
+''Local therapy is planned to take place on week 9, as follows:''
+====Local therapy====
+*Surgical removal of tumors is done when possible.
+*[[External beam radiotherapy]] to all metastatic sites of disease in addition to any radiation planned for primary tumor.
+*If only radiation therapy is used, 4500 cGy of radiation is administered to the tumor volume plus a 3 cm margin, followed by 1080 cGy to only the preradiation tumor volume, for a total dose of 5580 cGy
+*Residual tumor after surgery and lung metastases are treated with "dose-volume guidelines for gross residual disease"
+
+===References===
+# Miser JS, Krailo MD, Tarbell NJ, Link MP, Fryer CJ, Pritchard DJ, Gebhardt MC, Dickman PS, Perlman EJ, Meyers PA, Donaldson SS, Moore S, Rausen AR, Vietti TJ, Grier HE. Treatment of metastatic Ewing's sarcoma or primitive neuroectodermal tumor of bone: evaluation of combination ifosfamide and etoposide--a Children's Cancer Group and Pediatric Oncology Group study. J Clin Oncol. 2004 Jul 15;22(14):2873-6. [http://jco.ascopubs.org/content/22/14/2873.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15254055 PubMed]
+
+==VAI {{#subobject:547404|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VAI: '''<u>V</u>'''incristine, D'''<u>A</u>'''ctinomycin, '''<u>I</u>'''fosfamide
+===Regimen {{#subobject:020e4c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/21/15/2974.long Strauss et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This protocol was intended for patients with metastatic disease. The reference does not clearly describe how many cycles of VAI might be used.''
+====Preceding treatment====
+*[[#VIDE_2|VIDE]] for up to 6 cycles
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Dactinomycin (Cosmegen)]] 0.75 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 & 2
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 3000 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 6000 mg/m<sup>2</sup>)
+
+'''21-day cycle for one or more cycles'''
+====Subsequent treatment====
+*[[#Busulfan_.26_Melphalan.2C_then_auto_HSCT|Busulfan & Melphalan, then auto HSCT]]
+
+===References===
+# Strauss SJ, McTiernan A, Driver D, Hall-Craggs M, Sandison A, Cassoni AM, Kilby A, Michelagnoli M, Pringle J, Cobb J, Briggs T, Cannon S, Witt J, Whelan JS. Single center experience of a new intensive induction therapy for Ewing's family of tumors: feasibility, toxicity, and stem cell mobilization properties. J Clin Oncol. 2003 Aug 1;21(15):2974-81. [http://jco.ascopubs.org/content/21/15/2974.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12885818 PubMed]
+
+==VIDE {{#subobject:737059|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VIDE: '''<u>V</u>'''incristine, '''<u>I</u>'''fosfamide, '''<u>D</u>'''oxorubicin, '''<u>E</u>'''toposide
+===Regimen {{#subobject:2601fd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/21/15/2974.long Strauss et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|ORR: 88%
+|-
+|}
+''This protocol was intended for patients with metastatic disease.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Ifosfamide (Ifex)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Doxorubicin (Adriamycin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV once per day on days 1 to 3
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 3000 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1 (total dose per cycle: 9000 mg/m<sup>2</sup>)
+
+'''21-day cycle for up to 6 initial cycles'''
+====Subsequent treatment====
+*Adjuvant VAI, then HD with auto HSCT
+
+===References===
+# Strauss SJ, McTiernan A, Driver D, Hall-Craggs M, Sandison A, Cassoni AM, Kilby A, Michelagnoli M, Pringle J, Cobb J, Briggs T, Cannon S, Witt J, Whelan JS. Single center experience of a new intensive induction therapy for Ewing's family of tumors: feasibility, toxicity, and stem cell mobilization properties. J Clin Oncol. 2003 Aug 1;21(15):2974-81. [http://jco.ascopubs.org/content/21/15/2974.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12885818 PubMed]
+
+[[Category:Ewing's sarcoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Pediatric cancers]]
+[[Category:Bone sarcomas]]

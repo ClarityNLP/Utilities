@@ -1,0 +1,95 @@
+{| class="wikitable" style="text-align:center; width:100%;" {|
+! colspan="4" style="color:white; font-size:125%; background-color:#31a354" align="center" |'''Section editors'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:Shruti.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Shrutichaturvedi|Shruti Chaturvedi, MBBS, MSCI]]<br>Baltimore, MD</big><br>[https://www.linkedin.com/in/shruti-chaturvedi-bb83b126/ LinkedIn]
+| style="background-color:#F0F0F0; width:15%" |[[File:Tillman_Benjamin-2.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Benjamintillman|Benjamin Tillman, MD]]<br>Nashville, TN</big>
+|-
+|} 
+{| style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+To be completed. Due to the paucity of trials in this particular condition, many seek guidance from the [[venous thromboembolism (VTE)]] literature.
+
+=All lines of therapy=
+==Warfarin monotherapy {{#subobject:acc688|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:3eda79|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 25%" |Study
+! style="width: 25%" |[[Levels_of_Evidence#Evidence|Evidence]]
+! style="width: 25%" |Comparator
+! style="width: 25%" |[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa035241 Crowther et al. 2003]
+| style="background-color:#1a9851" |Phase III (C)
+|High-intensity Warfarin (INR 3.1 to 4.0)
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1111/j.1538-7836.2005.01340.x Finazzi et al. 2005 (WAPS)]
+| style="background-color:#1a9851" |Phase III (C)
+|High-intensity Warfarin (INR 3.0 to 4.5)
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5010562/ Cohen et al. 2016 (RAPS)]
+| style="background-color:#1a9851" |Phase II/III (C)
+|[[#Rivaroxaban_monotherapy|Rivaroxaban]]
+| style="background-color:#ffffbf" |Inconclusive whether non-inferior
+|-
+|[http://www.bloodjournal.org/content/early/2018/07/12/blood-2018-04-848333.long Pengo et al. 2018 (TRAPS)] 
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Rivaroxaban_monotherapy|Rivaroxaban]]
+| style="background-color:#1a9850" |Fewer events
+|}
+''Note: TRAPS was closed prematurely due to excess events in the rivaroxaban arm.''
+====Anticoagulation====
+*[[Warfarin (Coumadin)]] PO titrated to goal INR 2.0 to 3.0
+**Note: some trials specify a goal INR 2.5 without a range given
+
+'''Continued indefinitely'''
+===References===
+# Crowther MA, Ginsberg JS, Julian J, Denburg J, Hirsh J, Douketis J, Laskin C, Fortin P, Anderson D, Kearon C, Clarke A, Geerts W, Forgie M, Green D, Costantini L, Yacura W, Wilson S, Gent M, Kovacs MJ. A comparison of two intensities of warfarin for the prevention of recurrent thrombosis in patients with the antiphospholipid antibody syndrome. N Engl J Med. 2003 Sep 18;349(12):1133-8. Erratum in: N Engl J Med. 2004 Jul 8;351(2):200. N Engl J Med. 2003 Dec 25;349(26):2577. [https://www.nejm.org/doi/full/10.1056/NEJMoa035241 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/13679527 PubMed]
+# '''WAPS:''' Finazzi G, Marchioli R, Brancaccio V, Schinco P, Wisloff F, Musial J, Baudo F, Berrettini M, Testa S, D'Angelo A, Tognoni G, Barbui T. A randomized clinical trial of high-intensity warfarin vs conventional antithrombotic therapy for the prevention of recurrent thrombosis in patients with the antiphospholipid syndrome (WAPS). J Thromb Haemost. 2005 May;3(5):848-53. [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1538-7836.2005.01340.x link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15869575 PubMed]
+# '''RAPS:''' Cohen H, Hunt BJ, Efthymiou M, Arachchillage DR, Mackie IJ, Clawson S, Sylvestre Y, Machin SJ, Bertolaccini ML, Ruiz-Castellano M, Muirhead N, Doré CJ, Khamashta M, Isenberg DA; RAPS trial investigators. Rivaroxaban versus warfarin to treat patients with thrombotic antiphospholipid syndrome, with or without systemic lupus erythematosus (RAPS): a randomised, controlled, open-label, phase 2/3, non-inferiority trial. Lancet Haematol. 2016 Sep;3(9):e426-36. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(16)30079-5/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5010562/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27570089 PubMed]
+# '''TRAPS:''' Pengo V, Denas G, Zoppellaro G, Jose SP, Hoxha A, Ruffatti A, Andreoli L, Tincani A, Cenci C, Prisco D, Fierro T, Gresele P, Cafolla A, De Micheli V, Ghirarduzzi A, Tosetto A, Falanga A, Martinelli I, Testa S, Barcellona D, Gerosa M, Banzato A. Rivaroxaban vs warfarin in high-risk patients with antiphospholipid syndrome. Blood. 2018 Sep 27;132(13):1365-1371. Epub 2018 Jul 12.  [http://www.bloodjournal.org/content/early/2018/07/12/blood-2018-04-848333.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30002145 PubMed]
+
+== Rivaroxaban monotherapy ==
+
+=== Regimen ===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 25%" |Study
+! style="width: 25%" |[[Levels_of_Evidence#Evidence|Evidence]]
+! style="width: 25%" |Comparator
+! style="width: 25%" |[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5010562/ Cohen et al. 2016 (RAPS)]
+| style="background-color:#1a9851" |Phase II/III (E)
+|[[#Warfarin_monotherapy|Warfarin]]
+| style="background-color:#ffffbf" |Inconclusive whether non-inferior
+|-
+|[http://www.bloodjournal.org/content/early/2018/07/12/blood-2018-04-848333.long Pengo et al. 2018 (TRAPS)] 
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Warfarin_monotherapy|Warfarin]]
+| style="background-color:#d73027" |Higher rate of events
+|}
+''Note: TRAPS was closed prematurely due to excess events in the rivaroxaban arm. Although we include here for historical context, this regimen should not be used outside of the context of a clinical trial.''
+==== Anticoagulation ====
+* [[Rivaroxaban (Xarelto)]] PO 20 mg PO once per day
+'''Continued indefinitely'''
+
+===References===
+# '''RAPS:''' Cohen H, Hunt BJ, Efthymiou M, Arachchillage DR, Mackie IJ, Clawson S, Sylvestre Y, Machin SJ, Bertolaccini ML, Ruiz-Castellano M, Muirhead N, Doré CJ, Khamashta M, Isenberg DA; RAPS trial investigators. Rivaroxaban versus warfarin to treat patients with thrombotic antiphospholipid syndrome, with or without systemic lupus erythematosus (RAPS): a randomised, controlled, open-label, phase 2/3, non-inferiority trial. Lancet Haematol. 2016 Sep;3(9):e426-36. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(16)30079-5/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5010562/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27570089 PubMed]
+# '''TRAPS:''' Pengo V, Denas G, Zoppellaro G, Jose SP, Hoxha A, Ruffatti A, Andreoli L, Tincani A, Cenci C, Prisco D, Fierro T, Gresele P, Cafolla A, De Micheli V, Ghirarduzzi A, Tosetto A, Falanga A, Martinelli I, Testa S, Barcellona D, Gerosa M, Banzato A. Rivaroxaban vs warfarin in high-risk patients with antiphospholipid syndrome. Blood. 2018 Sep 27;132(13):1365-1371. Epub 2018 Jul 12. [http://www.bloodjournal.org/content/early/2018/07/12/blood-2018-04-848333.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30002145 PubMed]
+
+[[Category:Antiphospholipid antibody syndrome regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Autoimmune hematologic conditions]]
+[[Category:Thrombotic disorders]]

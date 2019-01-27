@@ -1,0 +1,392 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+Note: these are biomarker-specific regimens, please see the '''[[Non-small cell lung cancer|main NSCLC page]]''' for other regimens.
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Advanced or metastatic disease, ALK inhibitor-naive=
+
+==Alectinib monotherapy {{#subobject:b1194c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 300 mg twice per day {{#subobject:9cef11|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70142-6/fulltext Seto et al. 2013 (AF-001JP)]
+|style="background-color:#91cf61"|Phase I/II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext Hida et al. 2017 (J-ALEX)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Crizotinib_monotherapy|Crizotinib]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''This is the PMDA-approved dose in Japan.'' 
+====Chemotherapy====
+*[[Alectinib (Alecensa)]] 300 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 600 mg twice per day {{#subobject:92a408|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 Peters et al. 2017 (ALEX)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Crizotinib_monotherapy|Crizotinib]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Alectinib (Alecensa)]] 600 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''AF-001JP:''' Seto T, Kiura K, Nishio M, Nakagawa K, Maemondo M, Inoue A, Hida T, Yamamoto N, Yoshioka H, Harada M, Ohe Y, Nogami N, Takeuchi K, Shimada T, Tanaka T, Tamura T. CH5424802 (RO5424802) for patients with ALK-rearranged advanced non-small-cell lung cancer (AF-001JP study): a single-arm, open-label, phase 1-2 study. Lancet Oncol. 2013 Jun;14(7):590-8. Epub 2013 Apr 30. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70142-6/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23639470 PubMed]
+## '''Update:''' Tamura T, Kiura K, Seto T, Nakagawa K, Maemondo M, Inoue A, Hida T, Yoshioka H, Harada M, Ohe Y, Nogami N, Murakami H, Kuriki H, Shimada T, Tanaka T, Takeuchi K, Nishio M. Three-year follow-up of an alectinib phase I/II study in ALK-positive non-small-cell lung cancer: AF-001JP. J Clin Oncol. 2017 May 10;35(14):1515-1521. Epub 2017 Mar 15. [http://ascopubs.org/doi/full/10.1200/JCO.2016.70.5749 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5455704/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28296581 PubMed]
+# '''J-ALEX:''' Hida T, Nokihara H, Kondo M, Kim YH, Azuma K, Seto T, Takiguchi Y, Nishio M, Yoshioka H, Imamura F, Hotta K, Watanabe S, Goto K, Satouchi M, Kozuki T, Shukuya T, Nakagawa K, Mitsudomi T, Yamamoto N, Asakawa T, Asabe R, Tanaka T, Tamura T. Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial. Lancet. 2017 Jul 1;390(10089):29-39. Epub 2017 May 10. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext link to original article]'''contains protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/28501140 PubMed]
+## '''Subgroup analysis:''' Nishio M, Nakagawa K, Mitsudomi T, Yamamoto N, Tanaka T, Kuriki H, Zeaiter A, Tamura T. Analysis of central nervous system efficacy in the J-ALEX study of alectinib versus crizotinib in ALK-positive non-small-cell lung cancer. Lung Cancer. 2018 Jul;121:37-40. Epub 2018 Apr 17. [https://www.sciencedirect.com/science/article/pii/S016950021830343X link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/29858024 PubMed]
+# '''ALEX:''' Peters S, Camidge DR, Shaw AT, Gadgeel S, Ahn JS, Kim DW, Ou SI, Pérol M, Dziadziuszko R, Rosell R, Zeaiter A, Mitry E, Golding S, Balas B, Noe J, Morcos PN, Mok T; ALEX Trial Investigators. Alectinib versus crizotinib in untreated ALK-positive non-small-cell lung cancer. N Engl J Med. 2017 Aug 31;377(9):829-838. Epub 2017 Jun 6. [https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28586279 PubMed]
+## '''Subgroup analysis:''' Gadgeel S, Peters S, Mok T, Shaw AT, Kim DW, Ou SI, Pérol M, Wrona A, Novello S, Rosell R, Zeaiter A, Liu T, Nüesch E, Balas B, Camidge DR. Alectinib versus crizotinib in treatment-naive anaplastic lymphoma kinase-positive (ALK+) non-small-cell lung cancer: CNS efficacy results from the ALEX study. Ann Oncol. 2018 Nov 1;29(11):2214-2222. [https://academic.oup.com/annonc/article/29/11/2214/5095692 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30215676 PubMed]
+
+==Brigatinib monotherapy {{#subobject:93d753|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1d93bc|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1810171 Camidge et al. 2018 (ALTA-1L)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Crizotinib_monotherapy|Crizotinib]]
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Brigatinib (Alunbrig)]] as follows:
+**Lead-in: 90 mg PO once per day for 7 days
+**Subsequently: 180 mg PO once per day
+
+'''Continued indefinitely'''
+===References===
+# '''ALTA-1L:''' Camidge DR, Kim HR, Ahn MJ, Yang JC, Han JY, Lee JS, Hochmair MJ, Li JY, Chang GC, Lee KH, Gridelli C, Delmonte A, Garcia Campelo R, Kim DW, Bearz A, Griesinger F, Morabito A, Felip E, Califano R, Ghosh S, Spira A, Gettinger SN, Tiseo M, Gupta N, Haney J, Kerstein D, Popat S. Brigatinib versus crizotinib in ALK-positive non-small-cell lung cancer. N Engl J Med. 2018 Nov 22;379(21):2027-2039. Epub 2018 Sep 25. [https://www.nejm.org/doi/full/10.1056/NEJMoa1810171 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30280657 PubMed]
+
+==Ceritinib monotherapy {{#subobject:fe3892|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 450 mg/day with food {{#subobject:381ec5|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|Comparator
+|-
+|[https://www.jto.org/article/S1556-0864(17)30578-6/fulltext Cho et al. 2017 (ASCEND-8)]
+|style="background-color:#1a9851"|Randomized phase I
+|Ceritinib 750 mg/d
+|-
+|}
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 450 mg PO once per day with food
+
+'''Continued indefinitely'''
+
+===Variant #2, 750 mg/day fasting {{#subobject:47c6e4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ Shaw et al. 2014 (ASCEND-1)]
+| style="background-color:#91cf61" |Phase I, >20 pts in this dosing cohort
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30123-X/fulltext Soria et al. 2017 (ASCEND-4)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small_cell_lung_cancer#Carboplatin_.26_Pemetrexed|Carboplatin & Pemetrexed]]<br> 2. [[Non-small_cell_lung_cancer#Cisplatin_.26_Pemetrexed_2|Cisplatin & Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.jto.org/article/S1556-0864(17)30578-6/fulltext Cho et al. 2017 (ASCEND-8)]
+|style="background-color:#1a9851"|Randomized phase I
+|Ceritinib 450 mg/d
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 750 mg PO once per day on an empty stomach
+
+'''21-day cycles'''
+
+===References===
+# '''Phase I:''' Shaw AT, Kim DW, Mehra R, Tan DS, Felip E, Chow LQ, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Lau YY, Goldwasser M, Boral AL, Engelman JA. Ceritinib in ALK-rearranged non-small-cell lung cancer. N Engl J Med. 2014 Mar 27;370(13):1189-97. [https://www.nejm.org/doi/full/10.1056/NEJMoa1311107 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24670165 PubMed]
+## '''Update:''' Kim DW, Mehra R, Tan DSW, Felip E, Chow LQM, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Sutradhar S, Li S, Szczudlo T, Yovine A, Shaw AT. Activity and safety of ceritinib in patients with ALK-rearranged non-small-cell lung cancer (ASCEND-1): updated results from the multicentre, open-label, phase 1 trial. Lancet Oncol. 2016 Apr;17(4):452-463. Epub 2016 Mar 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00614-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5063047/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26973324 PubMed]
+# '''ASCEND-4:''' Soria JC, Tan DS, Chiari R, Wu YL, Paz-Ares L, Wolf J, Geater SL, Orlov S, Cortinovis D, Yu CJ, Hochmair M, Cortot AB, Tsai CM, Moro-Sibilot D, Campelo RG, McCulloch T, Sen P, Dugan M, Pantano S, Branle F, Massacesi C, de Castro G Jr. First-line ceritinib versus platinum-based chemotherapy in advanced ALK-rearranged non-small-cell lung cancer (ASCEND-4): a randomised, open-label, phase 3 study. Lancet. 2017 Mar 4;389(10072):917-929. Epub 2017 Jan 24. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30123-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28126333 PubMed]
+# '''ASCEND-8:''' Cho BC, Kim DW, Bearz A, Laurie SA, McKeage M, Borra G, Park K, Kim SW, Ghosn M, Ardizzoni A, Maiello E, Greystoke A, Yu R, Osborne K, Gu W, Scott JW, Passos VQ, Lau YY, Wrona A. ASCEND-8: a randomized phase 1 study of ceritinib, 450 mg or 600 mg, taken with a low-fat meal versus 750 mg in fasted state in patients with anaplastic lymphoma kinase (ALK)-rearranged metastatic non-small cell lung cancer (NSCLC). J Thorac Oncol. 2017 Sep;12(9):1357-1367. Epub 2017 Jul 17. [https://www.jto.org/article/S1556-0864(17)30578-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28729021 PubMed]
+
+==Crizotinib monotherapy {{#subobject:be5391|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 250 mg/day {{#subobject:d7fdf0|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''Note: this is the FDA-recommended dosing for "severe" hepatic or renal impairment.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 250 mg PO once per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 400 mg/day {{#subobject:c56a8e|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''Note: this is the FDA-recommended dosing for "moderate" hepatic impairment.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 200 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #3, 500 mg/day {{#subobject:e9c195|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3014291/ Kwak et al. 2010]
+|style="background-color:#91cf61"|Phase I/II
+|style="background-color:#d3d3d3"|
+|style="background-color:#919191"|ORR: 57%
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJMoa1214886 Shaw et al. 2013 (PROFILE 1007)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small_cell_lung_cancer#Pemetrexed_monotherapy_3|Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|2. [[Non-small_cell_lung_cancer#Docetaxel_monotherapy_2|Docetaxel]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1408440 Solomon et al. 2014 (PROFILE 1014)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small_cell_lung_cancer#Carboplatin_.26_Pemetrexed|Carboplatin & Pemetrexed]]<br> 2. [[Non-small_cell_lung_cancer#Cisplatin_.26_Pemetrexed_2|Cisplatin & Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext Hida et al. 2017 (J-ALEX)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Alectinib_monotherapy|Alectinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 Peters et al. 2017 (ALEX)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Alectinib_monotherapy|Alectinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1810171 Camidge et al. 2018 (ALTA-1L)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Brigatinib_monotherapy|Brigatinib]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+''Note: PROFILE 1007 used 21-day cycles, and crizotinib was similarly given 250 mg PO twice per day on all days.''
+====Chemotherapy====
+*[[Crizotinib (Xalkori)]] 250 mg PO twice per day
+
+'''28-day cycles''' 
+
+===References===
+# Kwak EL, Bang YJ, Camidge DR, Shaw AT, Solomon B, Maki RG, Ou SH, Dezube BJ, Jänne PA, Costa DB, Varella-Garcia M, Kim WH, Lynch TJ, Fidias P, Stubbs H, Engelman JA, Sequist LV, Tan W, Gandhi L, Mino-Kenudson M, Wei GC, Shreeve SM, Ratain MJ, Settleman J, Christensen JG, Haber DA, Wilner K, Salgia R, Shapiro GI, Clark JW, Iafrate AJ. Anaplastic lymphoma kinase inhibition in non-small-cell lung cancer. N Engl J Med. 2010 Oct 28;363(18):1693-703. [https://www.nejm.org/doi/full/10.1056/NEJMoa1006448 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3014291/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20979469 PubMed]
+## '''Update:''' Camidge DR, Bang YJ, Kwak EL, Iafrate AJ, Varella-Garcia M, Fox SB, Riely GJ, Solomon B, Ou SH, Kim DW, Salgia R, Fidias P, Engelman JA, Gandhi L, Jänne PA, Costa DB, Shapiro GI, Lorusso P, Ruffner K, Stephenson P, Tang Y, Wilner K, Clark JW, Shaw AT. Activity and safety of crizotinib in patients with ALK-positive non-small-cell lung cancer: updated results from a phase 1 study. Lancet Oncol. 2012 Oct;13(10):1011-9. Epub 2012 Sep 4. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70344-3/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3936578/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22954507 PubMed]
+# '''Retrospective:''' Shaw AT, Yeap BY, Solomon BJ, Riely GJ, Gainor J, Engelman JA, Shapiro GI, Costa DB, Ou SH, Butaney M, Salgia R, Maki RG, Varella-Garcia M, Doebele RC, Bang YJ, Kulig K, Selaru P, Tang Y, Wilner KD, Kwak EL, Clark JW, Iafrate AJ, Camidge DR. Effect of crizotinib on overall survival in patients with advanced non-small-cell lung cancer harbouring ALK gene rearrangement: a retrospective analysis. Lancet Oncol. 2011 Oct;12(11):1004-12. Epub 2011 Sep 18. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328296/ link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328296/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21933749 PubMed]
+# '''PROFILE 1007:''' Shaw AT, Kim DW, Nakagawa K, Seto T, Crinó L, Ahn MJ, De Pas T, Besse B, Solomon BJ, Blackhall F, Wu YL, Thomas M, O'Byrne KJ, Moro-Sibilot D, Camidge DR, Mok T, Hirsh V, Riely GJ, Iyer S, Tassell V, Polli A, Wilner KD, Jänne PA. Crizotinib versus chemotherapy in advanced ALK-positive lung cancer. N Engl J Med. 2013 Jun 20;368(25):2385-94. Epub 2013 Jun 1. [https://www.nejm.org/doi/full/10.1056/NEJMoa1214886 link to original article] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1214886/suppl_file/nejmoa1214886_appendix.pdf link to supplementary appendix] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23724913 PubMed]
+## '''Pooled subgroup analysis:''' Nishio M, Kim DW, Wu YL, Nakagawa K, Solomon BJ, Shaw AT, Hashigaki S, Ohki E, Usari T, Paolini J, Polli A, Wilner KD, Mok T. Crizotinib versus chemotherapy in Asian patients with ALK-positive advanced non-small cell lung cancer. Cancer Res Treat. 2018 Jul;50(3):691-700. Epub 2017 Jul 6. [https://www.e-crt.org/journal/view.php?doi=10.4143/crt.2017.280 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6056984/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28701030 PubMed]
+# '''PROFILE 1014:''' Solomon BJ, Mok T, Kim DW, Wu YL, Nakagawa K, Mekhail T, Felip E, Cappuzzo F, Paolini J, Usari T, Iyer S, Reisman A, Wilner KD, Tursi J, Blackhall F; PROFILE 1014 Investigators. First-line crizotinib versus chemotherapy in ALK-positive lung cancer. N Engl J Med. 2014 Dec 4;371(23):2167-77. Erratum in: N Engl J Med. 2015 Oct 15;373(16):1582. [https://www.nejm.org/doi/full/10.1056/NEJMoa1408440 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25470694 PubMed]
+## '''Supgroup analysis:''' Solomon BJ, Cappuzzo F, Felip E, Blackhall FH, Costa DB, Kim DW, Nakagawa K, Wu YL, Mekhail T, Paolini J, Tursi J, Usari T, Wilner KD, Selaru P, Mok TS. Intracranial efficacy of crizotinib versus chemotherapy in patients with advanced ALK-positive non-small-cell lung cancer: results from PROFILE 1014. J Clin Oncol. 2016 Aug 20;34(24):2858-65. Epub 2016 Mar 28. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.5888 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27022118 PubMed]
+## '''Pooled subgroup analysis:''' Nishio M, Kim DW, Wu YL, Nakagawa K, Solomon BJ, Shaw AT, Hashigaki S, Ohki E, Usari T, Paolini J, Polli A, Wilner KD, Mok T. Crizotinib versus chemotherapy in Asian patients with ALK-positive advanced non-small cell lung cancer. Cancer Res Treat. 2018 Jul;50(3):691-700. Epub 2017 Jul 6. [https://www.e-crt.org/journal/view.php?doi=10.4143/crt.2017.280 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6056984/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28701030 PubMed]
+## '''Update:''' Solomon BJ, Kim DW, Wu YL, Nakagawa K, Mekhail T, Felip E, Cappuzzo F, Paolini J, Usari T, Tang Y, Wilner KD, Blackhall F, Mok TS. Final overall survival analysis from a study comparing first-line crizotinib versus chemotherapy in ALK-mutation-positive non-small-cell lung cancer. J Clin Oncol. 2018 Aug 1;36(22):2251-2258. Epub 2018 May 16. [http://ascopubs.org/doi/full/10.1200/JCO.2017.77.4794 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29768118 PubMed]
+# '''J-ALEX:''' Hida T, Nokihara H, Kondo M, Kim YH, Azuma K, Seto T, Takiguchi Y, Nishio M, Yoshioka H, Imamura F, Hotta K, Watanabe S, Goto K, Satouchi M, Kozuki T, Shukuya T, Nakagawa K, Mitsudomi T, Yamamoto N, Asakawa T, Asabe R, Tanaka T, Tamura T. Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial. Lancet. 2017 Jul 1;390(10089):29-39. Epub 2017 May 10. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext link to original article]'''contains protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/28501140 PubMed]
+## '''Subgroup analysis:''' Nishio M, Nakagawa K, Mitsudomi T, Yamamoto N, Tanaka T, Kuriki H, Zeaiter A, Tamura T. Analysis of central nervous system efficacy in the J-ALEX study of alectinib versus crizotinib in ALK-positive non-small-cell lung cancer. Lung Cancer. 2018 Jul;121:37-40. Epub 2018 Apr 17. [https://www.sciencedirect.com/science/article/pii/S016950021830343X link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/29858024 PubMed]
+# '''ALEX:''' Peters S, Camidge DR, Shaw AT, Gadgeel S, Ahn JS, Kim DW, Ou SI, Pérol M, Dziadziuszko R, Rosell R, Zeaiter A, Mitry E, Golding S, Balas B, Noe J, Morcos PN, Mok T; ALEX Trial Investigators. Alectinib versus crizotinib in untreated ALK-positive non-small-cell lung cancer. N Engl J Med. 2017 Aug 31;377(9):829-838. Epub 2017 Jun 6. [https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28586279 PubMed]
+## '''Subgroup analysis:''' Gadgeel S, Peters S, Mok T, Shaw AT, Kim DW, Ou SI, Pérol M, Wrona A, Novello S, Rosell R, Zeaiter A, Liu T, Nüesch E, Balas B, Camidge DR. Alectinib versus crizotinib in treatment-naive anaplastic lymphoma kinase-positive (ALK+) non-small-cell lung cancer: CNS efficacy results from the ALEX study. Ann Oncol. 2018 Nov 1;29(11):2214-2222. [https://academic.oup.com/annonc/article/29/11/2214/5095692 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30215676 PubMed]
+# '''ALTA-1L:''' Camidge DR, Kim HR, Ahn MJ, Yang JC, Han JY, Lee JS, Hochmair MJ, Li JY, Chang GC, Lee KH, Gridelli C, Delmonte A, Garcia Campelo R, Kim DW, Bearz A, Griesinger F, Morabito A, Felip E, Califano R, Ghosh S, Spira A, Gettinger SN, Tiseo M, Gupta N, Haney J, Kerstein D, Popat S. Brigatinib versus crizotinib in ALK-positive non-small-cell lung cancer. N Engl J Med. 2018 Nov 22;379(21):2027-2039. Epub 2018 Sep 25. [https://www.nejm.org/doi/full/10.1056/NEJMoa1810171 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30280657 PubMed]
+
+=Advanced or metastatic disease, ALK inhibitor-exposed=
+
+==Alectinib monotherapy {{#subobject:fd419f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c16da9|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+||[http://ascopubs.org/doi/full/10.1200/JCO.2015.63.9443 Ou et al. 2015 (NP28673)]
+|style="background-color:#91cf61"|Phase II
+|
+| style="background-color:#8c96c6" |ORR: 50% (95% CI, 41-59)
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4752892/ Shaw et al. 2015 (NP28761)]
+|style="background-color:#91cf61"|Phase II
+|
+| style="background-color:#8c96c6" |ORR: 48% (95% CI, 36–60)
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005013/ Novello et al. 2018 (ALUR)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[Non-small_cell_lung_cancer#Docetaxel_monotherapy_2|Docetaxel]]<br> [[Non-small_cell_lung_cancer#Pemetrexed_monotherapy_3|Pemetrexed]]
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Alectinib (Alecensa)]] 600 mg PO twice per day, to be taken within 30 minutes of eating
+
+'''Continued indefinitely'''
+
+===References===
+# '''NP28673:''' Ou SI, Ahn JS, De Petris L, Govindan R, Yang JC, Hughes B, Lena H, Moro-Sibilot D, Bearz A, Ramirez SV, Mekhail T, Spira A, Bordogna W, Balas B, Morcos PN, Monnet A, Zeaiter A, Kim DW. Alectinib in crizotinib-refractory ALK-rearranged non-small-cell lung cancer: A phase II global study. J Clin Oncol. 2015 Nov 23. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.9443 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26598747 PubMed]
+<!-- # '''Abstract:''' Leena Gandhi, Alice Shaw, Shirish M. Gadgeel, Gregory Riely, Jeremy Cetnar, Howard Jack West, D. Ross Camidge, Mark A. Socinski, Alberto Chiappori, Tarek Mekhail, Bo H. Chao, Hossein Borghaei, Kathryn A. Gold, Ali Hassan Zeaiter, Walter Bordogna, Bogdana Balas, Oscar Puig, Volkmar Henschel, Sai-Hong Ignatius Ou, NP28761 Study Investigators. A phase II, open-label, multicenter study of the ALK inhibitor alectinib in an ALK+ non-small-cell lung cancer (NSCLC) U.S./Canadian population who had progressed on crizotinib (NP28761). 2015 ASCO Annual Meeting abstract 8019. [http://meetinglibrary.asco.org/content/151415-156 link to abstract] -->
+# '''NP28761:''' Shaw AT, Gandhi L, Gadgeel S, Riely GJ, Cetnar J, West H, Camidge DR, Socinski MA, Chiappori A, Mekhail T, Chao BH, Borghaei H, Gold KA, Zeaiter A, Bordogna W, Balas B, Puig O, Henschel V, Ou SI; study investigators. Alectinib in ALK-positive, crizotinib-resistant, non-small-cell lung cancer: a single-group, multicentre, phase 2 trial. Lancet Oncol. 2016 Feb;17(2):234-242. Epub 2015 Dec 19. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00488-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4752892/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26708155 PubMed]
+# '''ALUR:''' Novello S, Mazières J, Oh IJ, de Castro J, Migliorino MR, Helland Å, Dziadziuszko R, Griesinger F, Kotb A, Zeaiter A, Cardona A, Balas B, Johannsdottir HK, Das-Gupta A, Wolf J. Alectinib versus chemotherapy in crizotinib-pretreated anaplastic lymphoma kinase (ALK)-positive non-small-cell lung cancer: results from the phase III ALUR study. Ann Oncol. 2018 Jun 1;29(6):1409-1416. [https://academic.oup.com/annonc/article/29/6/1409/4970555 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005013/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29668860 PubMed]
+
+==Brigatinib monotherapy {{#subobject:dc24d8|Regimen=1}}==
+{{#subobject:a9648f|Variant=1}}
+{{:Brigatinib (Alunbrig) for advanced or metastatic ALK-positive non-small cell lung cancer}}
+
+==Ceritinib monotherapy {{#subobject:d35518|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 450 mg/day with food {{#subobject:2ff82e|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|Comparator
+|-
+|[https://www.jto.org/article/S1556-0864(17)30578-6/fulltext Cho et al. 2017 (ASCEND-8)]
+|style="background-color:#1a9851"|Randomized phase I
+|Ceritinib 750 mg/d
+|-
+|}
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 450 mg PO once per day with food
+
+'''Continued indefinitely'''
+
+===Variant #2, 750 mg/day fasting {{#subobject:a93389|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ Shaw et al. 2014 (ASCEND-1)]
+| style="background-color:#91cf61" |Phase I, >20 pts in this dosing cohort
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30339-X/fulltext Shaw et al. 2017 (ASCEND-5)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small_cell_lung_cancer#Docetaxel_monotherapy_2|Docetaxel]]<br> 2. [[Non-small_cell_lung_cancer#Pemetrexed_monotherapy_3|Pemetrexed]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.jto.org/article/S1556-0864(17)30578-6/fulltext Cho et al. 2017 (ASCEND-8)]
+|style="background-color:#1a9851"|Randomized phase I
+|Ceritinib 450 mg/d
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 750 mg PO once per day on an empty stomach
+
+'''21-day cycles'''
+
+===References===
+# '''Phase I:''' Shaw AT, Kim DW, Mehra R, Tan DS, Felip E, Chow LQ, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Lau YY, Goldwasser M, Boral AL, Engelman JA. Ceritinib in ALK-rearranged non-small-cell lung cancer. N Engl J Med. 2014 Mar 27;370(13):1189-97. [https://www.nejm.org/doi/full/10.1056/NEJMoa1311107 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24670165 PubMed]
+## '''Update:''' Kim DW, Mehra R, Tan DSW, Felip E, Chow LQM, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Sutradhar S, Li S, Szczudlo T, Yovine A, Shaw AT. Activity and safety of ceritinib in patients with ALK-rearranged non-small-cell lung cancer (ASCEND-1): updated results from the multicentre, open-label, phase 1 trial. Lancet Oncol. 2016 Apr;17(4):452-463. Epub 2016 Mar 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00614-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5063047/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26973324 PubMed]
+# '''ASCEND-5:''' Shaw AT, Kim TM, Crinò L, Gridelli C, Kiura K, Liu G, Novello S, Bearz A, Gautschi O, Mok T, Nishio M, Scagliotti G, Spigel DR, Deudon S, Zheng C, Pantano S, Urban P, Massacesi C, Viraswami-Appanna K, Felip E. Ceritinib versus chemotherapy in patients with ALK-rearranged non-small-cell lung cancer previously given chemotherapy and crizotinib (ASCEND-5): a randomised, controlled, open-label, phase 3 trial. Lancet Oncol. 2017 Jul;18(7):874-886. Epub 2017 Jun 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30339-X/fulltext link to original article]'''contains protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/28602779 PubMed]
+# '''ASCEND-8:''' Cho BC, Kim DW, Bearz A, Laurie SA, McKeage M, Borra G, Park K, Kim SW, Ghosn M, Ardizzoni A, Maiello E, Greystoke A, Yu R, Osborne K, Gu W, Scott JW, Passos VQ, Lau YY, Wrona A. ASCEND-8: a randomized phase 1 study of ceritinib, 450 mg or 600 mg, taken with a low-fat meal versus 750 mg in fasted state in patients with anaplastic lymphoma kinase (ALK)-rearranged metastatic non-small cell lung cancer (NSCLC). J Thorac Oncol. 2017 Sep;12(9):1357-1367. Epub 2017 Jul 17. [https://www.jto.org/article/S1556-0864(17)30578-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28729021 PubMed]
+
+==Lorlatinib monotherapy {{#subobject:ea894c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9134b2|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30680-0/fulltext Shaw et al. 2017 (B7461001)]
+| style="background-color:#91cf61" |Phase I, >20 pts in this subgroup
+|-
+|}
+====Chemotherapy====
+*[[Lorlatinib (Lorbrena)]] 100 mg PO once per day
+
+'''Continued indefinitely'''
+===References===
+# '''Phase 1:''' Shaw AT, Felip E, Bauer TM, Besse B, Navarro A, Postel-Vinay S, Gainor JF, Johnson M, Dietrich J, James LP, Clancy JS, Chen J, Martini JF, Abbattista A, Solomon BJ. Lorlatinib in non-small-cell lung cancer with ALK or ROS1 rearrangement: an international, multicentre, open-label, single-arm first-in-man phase 1 trial. Lancet Oncol. 2017 Dec;18(12):1590-1599. Epub 2017 Oct 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30680-0/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29074098 PubMed]
+
+[[Category:Non-small cell lung cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Thoracic cancers]]

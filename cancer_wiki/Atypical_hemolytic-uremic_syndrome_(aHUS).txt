@@ -1,0 +1,59 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+Is there a regimen missing from this list?  Would you like to share a different dosage/schedule or an additional reference for a regimen?  Have you noticed an error?  Do you have an idea that will help the site grow to better meet your needs and the needs of many others?  You are [[How_to_contribute|invited to contribute to the site]].
+{| class="wikitable" style="text-align:center; width:100%;"
+!colspan="4" align="center" style="color:white; font-size:125%; background-color:#31a354"|'''Section editors'''
+|-
+|style="background-color:#F0F0F0; width:15%"|[[File:Shruti.jpg|frameless|upright=0.3|center]]
+|style="width:35%"|<big>[[User:Shrutichaturvedi|Shruti Chaturvedi, MBBS, MSCI]]<br>Baltimore, MD</big><br>[https://www.linkedin.com/in/shruti-chaturvedi-bb83b126/ LinkedIn]
+|style="background-color:#F0F0F0; width:15%"|[[File:Tillman_Benjamin-2.jpg|frameless|upright=0.3|center]]
+|style="width:35%"|<big>[[User:Benjamintillman|Benjamin Tillman, MD]]<br>Nashville, TN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=All lines of therapy=
+
+==Eculizumab monotherapy {{#subobject:24195b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:8ceb84|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1208981 Legendre et al. 2013 (C08-002)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1208981 Legendre et al. 2013 (C08-003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4449039/ Cofiell et al. 2015]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''Eligible patients enrolled in Cofiell et al. 2015 had platelet counts less than 150 × 10<sup>9</sup>/L, hemoglobin levels less than or equal to the lower limit of normal, LDH levels greater than or equal to 1.5x upper limit of normal, serum creatinine levels greater than or equal to the upper limit of normal, ADAMTS13 activity greater than or equal to 5%, and no positive Shiga toxin-producing ''Escherichia coli'' test.''
+====Therapy====
+*[[Eculizumab (Soliris)]] 900 mg IV once per week for 4 weeks, then 1200 mg IV once on week 5, then 1200 mg IV every 2 weeks
+
+====Supportive medications====
+* Patients were vaccinated against ''Neisseria meningitidis'' or received "appropriate antibiotics" if vaccination occurred within 14 days of the first dose
+
+'''Indefinite course'''
+
+===References===
+# '''C08-002/C08-003:''' Legendre CM, Licht C, Muus P, Greenbaum LA, Babu S, Bedrosian C, Bingham C, Cohen DJ, Delmas Y, Douglas K, Eitner F, Feldkamp T, Fouque D, Furman RR, Gaber O, Herthelius M, Hourmant M, Karpman D, Lebranchu Y, Mariat C, Menne J, Moulin B, Nürnberger J, Ogawa M, Remuzzi G, Richard T, Sberro-Soussan R, Severino B, Sheerin NS, Trivelli A, Zimmerhackl LB, Goodship T, Loirat C. Terminal complement inhibitor eculizumab in atypical hemolytic-uremic syndrome. N Engl J Med. 2013 Jun 6;368(23):2169-81. [https://www.nejm.org/doi/full/10.1056/NEJMoa1208981 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23738544 PubMed]
+# Cofiell R, Kukreja A, Bedard K, Yan Y, Mickle AP, Ogawa M, Bedrosian CL, Faas SJ. Eculizumab reduces complement activation, inflammation, endothelial damage, thrombosis, and renal injury markers in aHUS. Blood. 2015 May 21;125(21):3253-62. Epub 2015 Apr 1. [http://www.bloodjournal.org/content/125/21/3253.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4449039/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25833956 PubMed]
+
+[[Category:Atypical hemolytic-uremic syndrome (aHUS) regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Complementopathies]]
+[[Category:Hemolytic disorders]]

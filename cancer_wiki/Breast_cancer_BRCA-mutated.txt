@@ -1,0 +1,111 @@
+{{#lst:Section editor transclusions|breast}}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+<big>'''Note: this page has regimens which are specific to breast cancer that is BRCA-mutated. Please see the [[Breast cancer|main breast cancer]] page for other chemotherapy regimens.'''</big>
+{{TOC limit|limit=3}}
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2011:''' [http://annonc.oxfordjournals.org/content/22/suppl_6/vi31.full.pdf+html BRCA in breast cancer: ESMO Clinical Practice Guidelines] [https://www.ncbi.nlm.nih.gov/pubmed/21908500 PubMed]
+
+=Advanced or metastatic disease, all lines of therapy=
+==Olaparib monotherapy {{#subobject:a019cd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 100 mg twice per day {{#subobject:31ed8c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)60892-6/fulltext Tutt et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Olaparib (Lynparza)]] 100 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 300 mg twice per day {{#subobject:3b0774|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1706450 Robson et al. 2017 (OlympiAD)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Breast_cancer#Capecitabine_monotherapy_2|Capecitabine]]<br> 2. [[Breast_cancer#Eribulin_monotherapy|Eribulin]]<br> 3. [[Breast_cancer#Vinorelbine_monotherapy_2|Vinorelbine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''Patients had confirmed deleterious or suspected deleterious germline BRCA mutation. This is the FDA-approved dose.''
+====Chemotherapy====
+*[[Olaparib (Lynparza)]] 300 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #3, 400 mg twice per day {{#subobject:31cf8c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)60892-6/fulltext Tutt et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://jco.ascopubs.org/content/33/3/244.long Kaufman et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Patients in '''Kaufman et al. 2014''' had germline BRCA1/2 mutations and had progressed after at least three lines of treatment for metastatic disease.''
+====Chemotherapy====
+*[[Olaparib (Lynparza)]] 400 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Tutt A, Robson M, Garber JE, Domchek SM, Audeh MW, Weitzel JN, Friedlander M, Arun B, Loman N, Schmutzler RK, Wardley A, Mitchell G, Earl H, Wickens M, Carmichael J. Oral poly(ADP-ribose) polymerase inhibitor olaparib in patients with BRCA1 or BRCA2 mutations and advanced breast cancer: a proof-of-concept trial. Lancet. 2010 Jul 24;376(9737):235-44. Epub 2010 Jul 6. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)60892-6/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20609467 PubMed]
+<!-- Presented at the 49th Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, May 31-June 4, 2013. -->
+# Kaufman B, Shapira-Frommer R, Schmutzler RK, Audeh MW, Friedlander M, Balmaña J, Mitchell G, Fried G, Stemmer SM, Hubert A, Rosengarten O, Steiner M, Loman N, Bowen K, Fielding A, Domchek SM. Olaparib monotherapy in patients with advanced cancer and a germline BRCA1/2 mutation. J Clin Oncol. 2015 Jan 20;33(3):244-50. Epub 2014 Nov 3. [http://jco.ascopubs.org/content/33/3/244.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25366685 PubMed]
+# '''OlympiAD:''' Robson M, Im SA, Senkus E, Xu B, Domchek SM, Masuda N, Delaloge S, Li W, Tung N, Armstrong A, Wu W, Goessl C, Runswick S, Conte P. Olaparib for metastatic breast cancer in patients with a germline BRCA mutation. N Engl J Med. 2017 Aug 10;377(6):523-533. Epub 2017 Jun 4. [https://www.nejm.org/doi/full/10.1056/NEJMoa1706450 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28578601 PubMed]
+
+==Talazoparib monotherapy {{#subobject:bb55eb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:06a5b4|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1802905 Litton et al. 2018 (EMBRACA)]
+| style="background-color:#1a9851" |Phase III (E)
+|Physician's choice of:<br> 1. Capecitabine<br> 2. Eribulin<br> 3. Gemcitabine<br> 4. Vinorelbine
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Talazoparib (Talzenna)]] 1 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''EMBRACA:''' Litton JK, Rugo HS, Ettl J, Hurvitz SA, Gonçalves A, Lee KH, Fehrenbacher L, Yerushalmi R, Mina LA, Martin M, Roché H, Im YH, Quek RGW, Markova D, Tudor IC, Hannah AL, Eiermann W, Blum JL. Talazoparib in patients with advanced breast cancer and a germline BRCA mutation. N Engl J Med. 2018 Aug 23;379(8):753-763. Epub 2018 Aug 15. [https://www.nejm.org/doi/full/10.1056/NEJMoa1802905 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30110579 PubMed]
+
+=Additional resources=
+*[[Breast cancer BRCA1/BRCA2 genetic testing]]
+
+[[Category:Breast cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Breast cancers]]

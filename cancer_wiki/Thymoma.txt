@@ -1,0 +1,451 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:TravisOsterman.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Travisosterman|Travis Osterman, DO, MS]]<br>Nashville, TN</big><br>Twitter: [https://twitter.com/TravisOsterman TravisOsterman]<br>[https://www.linkedin.com/in/travis-osterman-1850b236/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' Girard et al. [https://www.esmo.org/Guidelines/Lung-and-Chest-Tumours/Thymic-Epithelial-Tumours Thymic epithelial tumours: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/thymic.pdf NCCN Guidelines - Thymomas and Thymic Carcinomas]
+
+=Neoadjuvant therapy for borderline resectable disease=
+==PAC {{#subobject:96fd1b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PAC: '''<u>P</u>'''latinol (Cisplatin), '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide<br>
+CAP: '''<u>C</u>'''yclophosphamide, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:dcf948|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract Kim et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: while this regimen is conventionally referred to as PAC or CAP, it also includes a high-dose prednisone component with likely antineoplastic properties.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 30 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Doxorubicin (Adriamycin)]] 20 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1 (total dose per cycle: 60 mg/m<sup>2</sup>)
+*[[Cyclophosphamide (Cytoxan)]] 500 mg/m<sup>2</sup> IV by slow injection or infusion once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Metoclopramide (Reglan)]] 1 mg/kg IV prior to chemotherapy
+*[[Diphenhydramine (Benadryl)]] 25 mg IV prior to chemotherapy
+
+'''21- to 28-day cycle for 3 cycles'''
+====Subsequent treatment====
+*[[Surgery#Thymectomy|Surgical resection]] is performed if CT scan 3 to 4 weeks after the third cycle of chemotherapy shows disease amenable to resection, and is followed by [[#Radiation_therapy|RT]], then [[#PAC_2|PAC]] consolidation
+
+===References===
+# Kim ES, Putnam JB, Komaki R, Walsh GL, Ro JY, Shin HJ, Truong M, Moon H, Swisher SG, Fossella FV, Khuri FR, Hong WK, Shin DM. Phase II study of a multidisciplinary approach with induction chemotherapy, followed by surgical resection, radiation therapy, and consolidation chemotherapy for unresectable malignant thymomas: final report. Lung Cancer. 2004 Jun;44(3):369-79. [http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15140551 PubMed]
+
+=Adjuvant therapy=
+==PAC {{#subobject:76239f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PAC: '''<u>P</u>'''latinol (Cisplatin), '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide<br>
+CAP: '''<u>C</u>'''yclophosphamide, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:adbf18|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract Kim et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: while this regimen is conventionally referred to as PAC or CAP, it also includes a high-dose prednisone component with likely antineoplastic properties. Also note that these doses are 80% of the induction doses, except for the prednisone.''
+====Preceding treatment====
+*[[#Radiation_therapy|RT]]
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 24 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Doxorubicin (Adriamycin)]] 16 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1 (total dose per cycle: 48 mg/m<sup>2</sup>)
+*[[Cyclophosphamide (Cytoxan)]] 400 mg/m<sup>2</sup> IV by slow injection or infusion once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+'''21- to 28-day cycle for 3 cycles'''
+
+===References===
+# Kim ES, Putnam JB, Komaki R, Walsh GL, Ro JY, Shin HJ, Truong M, Moon H, Swisher SG, Fossella FV, Khuri FR, Hong WK, Shin DM. Phase II study of a multidisciplinary approach with induction chemotherapy, followed by surgical resection, radiation therapy, and consolidation chemotherapy for unresectable malignant thymomas: final report. Lung Cancer. 2004 Jun;44(3):369-79. [http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15140551 PubMed]
+
+==Radiation therapy {{#subobject:afc56b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:07cb87|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract Kim et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#PAC|PAC induction]], then [[Surgery#Thymectomy|surgery]] (in some cases)
+
+====Radiotherapy====
+*If tumor is completely resected and has at least 80% necrosis: 50 Gy [[External beam radiotherapy]] is administered 3 to 6 weeks after surgery
+*If tumor is incompletely resected or has less than 80% necrosis: 60 Gy [[External beam radiotherapy]] is administered
+
+'''One course'''
+====Subsequent treatment====
+*[[#PAC_2|PAC]] x 3
+
+===References===
+# Kim ES, Putnam JB, Komaki R, Walsh GL, Ro JY, Shin HJ, Truong M, Moon H, Swisher SG, Fossella FV, Khuri FR, Hong WK, Shin DM. Phase II study of a multidisciplinary approach with induction chemotherapy, followed by surgical resection, radiation therapy, and consolidation chemotherapy for unresectable malignant thymomas: final report. Lung Cancer. 2004 Jun;44(3):369-79. [http://www.lungcancerjournal.info/article/S0169-5002%2803%2900626-3/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15140551 PubMed]
+
+=Advanced or metastatic disease, first-line therapy=
+==ADOC {{#subobject:a329b4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+ADOC: '''<u>A</u>'''driamycin (Doxorubicin), cis-'''<u>D</u>'''iamminedichloroplatinum (Cisplatin), '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:ee5c1b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/1097-0142%2819910701%2968:1%3C30::AID-CNCR2820680106%3E3.0.CO;2-4/abstract Fornasiero et al. 1991]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''Note: The body of Fornasiero et al. 1991 specifies that cycles are given every 3 weeks. However, the abstract says that cycles are given "at monthly intervals," and some guidelines list the regimen as being given every 4 weeks.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 0.6 mg/m<sup>2</sup> IV once on day 3
+*[[Cyclophosphamide (Cytoxan)]] 700 mg/m<sup>2</sup> IV once on day 4
+
+'''21- to 28-day cycles'''
+
+===References===
+# '''Retrospective:''' Fornasiero A, Daniele O, Ghiotto C, Piazza M, Fiore-Donati L, Calabró F, Rea F, Fiorentino MV. Chemotherapy for invasive thymoma. A 13-year experience. Cancer. 1991 Jul 1;68(1):30-3. [https://onlinelibrary.wiley.com/doi/10.1002/1097-0142%2819910701%2968:1%3C30::AID-CNCR2820680106%3E3.0.CO;2-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2049749 PubMed]
+
+==Carboplatin & Paclitaxel {{#subobject:410ff6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:34b20a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3107762/ Lemma et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 6 IV over 30 minutes once on day 1, '''given second'''
+*[[Paclitaxel (Taxol)]] 225 mg/m<sup>2</sup> IV over 3 hours once on day 1, '''given first'''
+
+====Supportive medications====
+*[[Cimetidine (Tagamet)]] 300 mg IV 60 minutes prior to [[Paclitaxel (Taxol)]] 
+*[[Diphenhydramine (Benadryl)]] 25 mg IV 60 minutes prior to [[Paclitaxel (Taxol)]] 
+*[[Dexamethasone (Decadron)]] 20 mg IV 60 minutes prior to [[Paclitaxel (Taxol)]] 
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# Lemma GL, Lee JW, Aisner SC, Langer CJ, Tester WJ, Johnson DH, Loehrer PJ Sr. Phase II study of carboplatin and paclitaxel in advanced thymoma and thymic carcinoma. J Clin Oncol. 2011 May 20;29(15):2060-5. Epub 2011 Apr 18. [http://jco.ascopubs.org/content/29/15/2060.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3107762/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21502559 PubMed]
+
+==Cisplatin & Etoposide {{#subobject:2355da|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PE: '''<u>P</u>'''latinol (Cisplatin), '''<u>E</u>'''toposide
+===Regimen {{#subobject:906dfc|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/14/3/814.long Giaccone et al. 1996]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 60 mg/m<sup>2</sup> IV over 60 minutes once on day 1
+*[[Etoposide (Vepesid)]] 120 mg/m<sup>2</sup> IV over at least 30 minutes once per day on days 1 to 3
+
+====Supportive medications====
+*"A program of forced hydration"
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Giaccone G, Ardizzoni A, Kirkpatrick A, Clerico M, Sahmoud T, van Zandwijk N. Cisplatin and etoposide combination chemotherapy for locally advanced or metastatic thymoma: a phase II study of the European Organization for Research and Treatment of Cancer Lung Cancer Cooperative Group. J Clin Oncol. 1996 Mar;14(3):814-20. [http://jco.ascopubs.org/content/14/3/814.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8622029 PubMed]
+
+==PAC {{#subobject:ce7f87|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PAC: '''<u>P</u>'''latinol (Cisplatin), '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide<br>
+CAP: '''<u>C</u>'''yclophosphamide, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:f15804|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annals.org/article.aspx?articleid=704151 Loehrer et al. 1990]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV over at least 1 hour once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV by slow injection once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 500 mg/m<sup>2</sup> IV by slow injection or infusion once on day 1
+
+====Supportive medications====
+*1 liter normal saline over 2 hours at least 2 hours before and after [[Cisplatin (Platinol)]] therapy
+*Corticosteroids use for antiemesis was specifically discouraged unless the indication was for myasthenia gravis
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Loehrer PJ Sr, Perez CA, Roth LM, Greco A, Livingston RB, Einhorn LH. Chemotherapy for advanced thymoma: preliminary results of an intergroup study. Ann Intern Med. 1990 Oct 1;113(7):520-4. [http://annals.org/article.aspx?articleid=704151 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2203292 PubMed]
+## '''Update:''' Loehrer PJ Sr, Kim K, Aisner SC, Livingston R, Einhorn LH, Johnson D, Blum R; The Eastern Cooperative Oncology Group and Southwest Oncology Group and Southeastern Cancer Study Group. Cisplatin plus doxorubicin plus cyclophosphamide in metastatic or recurrent thymoma: final results of an intergroup trial. J Clin Oncol. 1994 Jun;12(6):1164-8. [http://jco.ascopubs.org/content/12/6/1164.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8201378 PubMed]
+
+==VIP {{#subobject:e1d675|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VIP: '''<u>V</u>'''epesid (Etoposide), '''<u>I</u>'''fosfamide, '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:2235f2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/1097-0142%2820010601%2991:11%3C2010::AID-CNCR1226%3E3.0.CO;2-2/full Loehrer et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 75 mg/m<sup>2</sup> IV once per day on days 1 to 4
+*[[Ifosfamide (Ifex)]] 1200 mg/m<sup>2</sup> IV once per day on days 1 to 4
+*[[Cisplatin (Platinol)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 4
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 240 mg/m<sup>2</sup> IV push before, 4 hours after, and 8 hours after [[Ifosfamide (Ifex)]] once per day on days 1 to 4
+*1 liter normal saline prior to [[Cisplatin (Platinol)]]
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day on days 5 to 15, until WBC count at least 10 x 10<sup>9</sup>/L above nadir
+
+'''21-day cycle for 4 cycles'''
+
+===References===
+# Loehrer PJ Sr, Jiroutek M, Aisner S, Aisner J, Green M, Thomas CR Jr, Livingston R, Johnson DH. Combined etoposide, ifosfamide, and cisplatin in the treatment of patients with advanced thymoma and thymic carcinoma: an intergroup trial. Cancer. 2001 Jun 1;91(11):2010-5. [https://onlinelibrary.wiley.com/doi/10.1002/1097-0142%2820010601%2991:11%3C2010::AID-CNCR1226%3E3.0.CO;2-2/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11391579 PubMed]
+
+=Advanced or metastatic disease, subsequent lines of therapy=
+==Capecitabine & Gemcitabine {{#subobject:cabb5e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CAP-GEM: '''<u>CAP</u>'''ecitabine & '''<u>GEM</u>'''citabine
+===Regimen {{#subobject:335173|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdp483 Palmieri et al. 2009]
+|style="background-color:#91cf61"|Phase II
+|ORR: 40%
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 650 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycles'''
+
+===References===
+# Palmieri G, Merola G, Federico P, Petillo L, Marino M, Lalle M, Milella M, Ceribelli A, Montella L, Merola C, Del Prete S, Bergaglio M, De Placido S, Di Lorenzo G. Preliminary results of phase II study of capecitabine and gemcitabine (CAP-GEM) in patients with metastatic pretreated thymic epithelial tumors (TETs). Ann Oncol. 2010 Jun;21(6):1168-72. Epub 2009 Oct 30. [https://academic.oup.com/annonc/article-lookup/doi/10.1093/annonc/mdp483 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19880439 PubMed]
+## '''Update:''' Palmieri G, Buonerba C, Ottaviano M, Federico P, Calabrese F, Von Arx C, De Maio AP, Marino M, Lalle M, Montella L, Merola C, Milella M, Bergaglio M, Di Lorenzo G, Damiano V. Capecitabine plus gemcitabine in thymic epithelial tumors: final analysis of a Phase II trial. Future Oncol. 2014 Nov;10(14):2141-7. [http://www.futuremedicine.com/doi/full/10.2217/fon.14.144 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25471029 PubMed]
+
+==Everolimus monotherapy {{#subobject:e7a59f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:82c282|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.74.4078 Zucali et al. 2017]
+|style="background-color:#91cf61"|Phase II
+|DCR: 88%
+|-
+|}
+====Chemotherapy====
+*[[Everolimus (Afinitor)]] 10 mg PO once per day
+
+'''Continued until progression or intolerance'''
+
+===References===
+<!--
+# '''Abstract:''' Paolo A. Zucali, Tommaso Martino De Pas, Giovannella Palmieri, Adolfo G. Favaretto, Antonio Chella, Marcello Tiseo, Michele Caruso, Matteo Perrino... Fabio De Vincenzo, Matteo Simonelli, Francesca Toffalorio, Piera Federico, Giulia Pasello, Marco Ali, Laura Giordano, Monica Bertossi, Armando Santoro. Phase II study of everolimus in patients with thymoma and thymic carcinoma previously treated with cisplatin-based chemotherapy. Journal of Clinical Oncology 32, no. 15_suppl (May 2014) 7527-7527. [http://ascopubs.org/doi/full/10.1200/jco.2014.32.15_suppl.7527 link to abstract] -->
+# Zucali PA, De Pas T, Palmieri G, Favaretto A, Chella A, Tiseo M, Caruso M, Simonelli M, Perrino M, De Vincenzo F, Toffalorio F, Damiano V, Pasello G, Garbella E, Ali M, Conforti F, Ottaviano M, Cioffi A, De Placido S, Giordano L, Bertossi M, Destro A, Di Tommaso L, Santoro A. Phase II study of everolimus in patients with thymoma and thymic carcinoma previously treated with cisplatin-based chemotherapy. J Clin Oncol. 2018 Feb 1;36(4):342-349. Epub 2017 Dec 14.[http://ascopubs.org/doi/full/10.1200/JCO.2017.74.4078 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29240542 PubMed]
+
+==Ifosfamide monotherapy {{#subobject:69edc9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, intermittent dosing {{#subobject:d0877e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/17/9/2737.long Highley et al. 1999]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 400 mg IV bolus, '''given before ifosfamide''', then 1000 mg/m<sup>2</sup> in 1 liter NS IV over 7.5 hours after ifosfamide once per day on days 1 to 5
+
+'''21-day cycles'''
+
+===Variant #2, continuous dosing {{#subobject:1d5654|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/17/9/2737.long Highley et al. 1999]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup>/day IV continuous infusion over 5 days, started on day 1, '''given second''' (total dose per cycle: 6000 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2000 mg IV bolus once on day 1, '''given first''', then 1500 mg/m<sup>2</sup>/day in 3 liters of D5NS IV continuous infusion over 7 days
+
+'''21-day cycles'''
+
+===References===
+# Highley MS, Underhill CR, Parnis FX, Karapetis C, Rankin E, Dussek J, Bryant B, Rowland C, Hodson N, Hughes J, Harper PG. Treatment of invasive thymoma with single-agent ifosfamide. J Clin Oncol. 1999 Sep;17(9):2737-44. [http://jco.ascopubs.org/content/17/9/2737.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10561348 PubMed] content property of [http://hemonc.org HemOnc.org]
+
+==Octreotide monotherapy {{#subobject:109390|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, brief course {{#subobject:d7858d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/22/2/293.long Loehrer et al. 2004]
+|style="background-color:#91cf61"|Phase II
+
+|-
+|}
+====Hormonotherapy====
+*[[Octreotide (Sandostatin)]] 0.5 mg SC TID
+
+'''1-month cycle for 2 cycles'''
+====Subsequent treatment====
+*If stable disease, patients would transition to [[#Octreotide_.26_Prednisone|octreotide & prednisone]]
+
+===Variant #2, extended course {{#subobject:2fffe4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/22/2/293.long Loehrer et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Hormonotherapy====
+*[[Octreotide (Sandostatin)]] 0.5 mg SC TID
+
+'''1-month cycle for up to 12 cycles'''
+
+===References===
+# Loehrer PJ Sr, Wang W, Johnson DH, Aisner SC, Ettinger DS; Eastern Cooperative Oncology Group Phase II Trial. Octreotide alone or with prednisone in patients with advanced thymoma and thymic carcinoma: an Eastern Cooperative Oncology Group Phase II Trial. J Clin Oncol. 2004 Jan 15;22(2):293-9. [http://jco.ascopubs.org/content/22/2/293.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14722038 PubMed]
+
+==Octreotide & Prednisone {{#subobject:5a36da|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:860b16|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/22/2/293.long Loehrer et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Octreotide_monotherapy|Octreotide]] x 2 mo
+====Hormonotherapy====
+*[[Octreotide (Sandostatin)]] 0.5 mg SC TID
+*[[Prednisone (Sterapred)]] 0.6 mg/kg PO once per day
+
+'''1-month cycle for up to 10 cycles'''
+
+===References===
+# Loehrer PJ Sr, Wang W, Johnson DH, Aisner SC, Ettinger DS; Eastern Cooperative Oncology Group Phase II Trial. Octreotide alone or with prednisone in patients with advanced thymoma and thymic carcinoma: an Eastern Cooperative Oncology Group Phase II Trial. J Clin Oncol. 2004 Jan 15;22(2):293-9. [http://jco.ascopubs.org/content/22/2/293.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14722038 PubMed]
+
+==Sunitinib monotherapy {{#subobject:b3730c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1d254c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4401497/ Thomas et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Sunitinib (Sutent)]] 50 mg PO once per day on days 1 to 28
+
+'''42-day cycles'''
+
+===References===
+# Thomas A, Rajan A, Berman A, Tomita Y, Brzezniak C, Lee MJ, Lee S, Ling A, Spittler AJ, Carter CA, Guha U, Wang Y, Szabo E, Meltzer P, Steinberg SM, Trepel JB, Loehrer PJ, Giaccone G. Sunitinib in patients with chemotherapy-refractory thymoma and thymic carcinoma: an open-label phase 2 trial. Lancet Oncol. 2015 Feb;16(2):177-86. Epub 2015 Jan 13. Erratum in: Lancet Oncol. 2015 Mar;16(3):e105. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4401497/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25592632 PubMed]
+
+=Investigational agents=
+''Drugs with preliminary evidence of efficacy in this disease subtype.''
+*[[Cixutumumab (IMC-A12)]]
+
+[[Category:Thymoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Thoracic cancers]]

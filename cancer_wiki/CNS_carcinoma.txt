@@ -1,0 +1,328 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:SeemaNagpal.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Seemanagpal|Seema Nagpal, MD]]<br>Palo Alto, CA</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+==[http://www.asco.org/ ASCO]==
+*'''2018:''' Ramakrishna et al. [http://ascopubs.org/doi/full/10.1200/JCO.2018.79.2713 Recommendations on disease management for patients with advanced human epidermal growth factor receptor 2-positive breast cancer and brain metastases: American Society of Clinical Oncology clinical practice guideline update] [https://www.ncbi.nlm.nih.gov/pubmed/29939840 PubMed]
+===Older===
+*'''2014:''' Ramakrishna et al. [http://ascopubs.org/doi/full/10.1200/JCO.2013.54.0955 Recommendations on disease management for patients with advanced human epidermal growth factor receptor 2-positive breast cancer and brain metastases: American Society of Clinical Oncology clinical practice guideline] [https://www.ncbi.nlm.nih.gov/pubmed/24799487 PubMed]
+
+==EANO/ESMO==
+*'''2017:''' Le Rhun et al. [https://www.esmo.org/Guidelines/Neuro-Oncology/EANO-ESMO-Leptomeningeal-Metastasis-Clinical-Practice-Guidelines EANO–ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up of patients with leptomeningeal metastasis from solid tumours]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf NCCN Guidelines - Central Nervous System Cancers]
+
+=Breast cancer, HER2-positive, all lines of therapy=
+==Capecitabine & Lapatinib {{#subobject:800fde|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:653bef|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2014.57.1794 Pivot et al. 2015 (CEREBEL)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Capecitabine_.26_Trastuzumab|Capecitabine & Trastuzumab]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: the primary endpoint of CEREBEL was incidence of CNS as site of first relapse; this was very low in both arms, with no statistically significant difference.''
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Lapatinib (Tykerb)]] 1250 mg PO once per day
+
+'''21-day cycles'''
+
+===References===
+# '''CEREBEL:''' Pivot X, Manikhas A, Żurawski B, Chmielowska E, Karaszewska B, Allerton R, Chan S, Fabi A, Bidoli P, Gori S, Ciruelos E, Dank M, Hornyak L, Margolin S, Nusch A, Parikh R, Nagi F, DeSilvio M, Santillana S, Swaby RF, Semiglazov V. CEREBEL (EGF111438): A phase III, randomized, open-label study of lapatinib plus capecitabine versus trastuzumab plus capecitabine in patients with human epidermal growth factor receptor 2-positive metastatic breast cancer. J Clin Oncol. 2015 May 10;33(14):1564-73. Epub 2015 Jan 20. [http://ascopubs.org/doi/full/10.1200/JCO.2014.57.1794 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25605838 PubMed]
+
+==Capecitabine & Trastuzumab {{#subobject:677608|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+XH: '''<u>X</u>'''eloda (Capecitabine) & '''<u>H</u>'''erceptin
+===Regimen {{#subobject:e14cab|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2014.57.1794 Pivot et al. 2015 (CEREBEL)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine_.26_Lapatinib|Capecitabine & Lapatanib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: the primary endpoint of CEREBEL was incidence of CNS as site of first relapse; this was very low in both arms, with no statistically significant difference.''
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1250 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Trastuzumab (Herceptin)]] as follows:
+**Cycle 1: 8 mg/kg IV once on day 1
+**Cycle 2 onwards: 6 mg/kg IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# '''CEREBEL:''' Pivot X, Manikhas A, Żurawski B, Chmielowska E, Karaszewska B, Allerton R, Chan S, Fabi A, Bidoli P, Gori S, Ciruelos E, Dank M, Hornyak L, Margolin S, Nusch A, Parikh R, Nagi F, DeSilvio M, Santillana S, Swaby RF, Semiglazov V. CEREBEL (EGF111438): A phase III, randomized, open-label study of lapatinib plus capecitabine versus trastuzumab plus capecitabine in patients with human epidermal growth factor receptor 2-positive metastatic breast cancer. J Clin Oncol. 2015 May 10;33(14):1564-73. Epub 2015 Jan 20. [http://ascopubs.org/doi/full/10.1200/JCO.2014.57.1794 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25605838 PubMed]
+
+=Non-small cell lung cancer, all lines of therapy=
+==Dexamethasone monotherapy {{#subobject:adb3fe|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:6a5b0e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082599/ Mulvenna et al. 2016 (QUARTZ)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Dexamethasone_.26_WBRT|Dexamethasone & WBRT]]
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#ffffbf" |Inconclusive whether non-inferior
+|-
+|}
+====Therapy====
+*[[Dexamethasone (Decadron)]]
+
+===References===
+# '''QUARTZ:''' Mulvenna P, Nankivell M, Barton R, Faivre-Finn C, Wilson P, McColl E, Moore B, Brisbane I, Ardron D, Holt T, Morgan S, Lee C, Waite K, Bayman N, Pugh C, Sydes B, Stephens R, Parmar MK, Langley RE. Dexamethasone and supportive care with or without whole brain radiotherapy in treating patients with non-small cell lung cancer with brain metastases unsuitable for resection or stereotactic radiotherapy (QUARTZ): results from a phase 3, non-inferiority, randomised trial. Lancet. 2016 Oct 22;388(10055):2004-2014. Epub 2016 Sep 4. [https://www.sciencedirect.com/science/article/pii/S014067361630825X link to SD article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082599/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27604504 PubMed]
+
+==Dexamethasone & WBRT {{#subobject:04a6d4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:da6414|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082599/ Mulvenna et al. 2016 (QUARTZ)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dexamethasone_monotherapy|Dexamethasone]]
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#ffffbf" |Inconclusive whether non-inferior
+|-
+|}
+====Therapy====
+*[[Dexamethasone (Decadron)]]
+*[[External beam radiotherapy|WBRT]], 20 Gy in 5 fractions
+
+===References===
+# '''QUARTZ:''' Mulvenna P, Nankivell M, Barton R, Faivre-Finn C, Wilson P, McColl E, Moore B, Brisbane I, Ardron D, Holt T, Morgan S, Lee C, Waite K, Bayman N, Pugh C, Sydes B, Stephens R, Parmar MK, Langley RE. Dexamethasone and supportive care with or without whole brain radiotherapy in treating patients with non-small cell lung cancer with brain metastases unsuitable for resection or stereotactic radiotherapy (QUARTZ): results from a phase 3, non-inferiority, randomised trial. Lancet. 2016 Oct 22;388(10055):2004-2014. Epub 2016 Sep 4. [https://www.sciencedirect.com/science/article/pii/S014067361630825X link to SD article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082599/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27604504 PubMed]
+
+=Non-small cell lung cancer, ALK-mutated, all lines of therapy=
+==Alectinib monotherapy {{#subobject:b1194c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 300 mg twice per day {{#subobject:9cef11|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext Hida et al. 2017 (J-ALEX)]
+|style="background-color:#1a9851"|Phase III (E)
+|Crizotinib
+|style="background-color:#1a9850"|Superior TTP (*)
+|-
+|}
+''This is the PMDA-approved dose in Japan. CNS efficacy is based on the 2018 update.'' 
+====Chemotherapy====
+*[[Alectinib (Alecensa)]] 300 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 600 mg twice per day {{#subobject:92a408|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 Peters et al. 2017 (ALEX)]
+|style="background-color:#1a9851"|Phase III (E)
+|Crizotinib
+|style="background-color:#1a9850"|Superior TTP (*)
+|-
+|}
+''CNS efficacy is based on the 2018 update.'' 
+====Chemotherapy====
+*[[Alectinib (Alecensa)]] 600 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''J-ALEX:''' Hida T, Nokihara H, Kondo M, Kim YH, Azuma K, Seto T, Takiguchi Y, Nishio M, Yoshioka H, Imamura F, Hotta K, Watanabe S, Goto K, Satouchi M, Kozuki T, Shukuya T, Nakagawa K, Mitsudomi T, Yamamoto N, Asakawa T, Asabe R, Tanaka T, Tamura T. Alectinib versus crizotinib in patients with ALK-positive non-small-cell lung cancer (J-ALEX): an open-label, randomised phase 3 trial. Lancet. 2017 Jul 1;390(10089):29-39. Epub 2017 May 10. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)30565-2/fulltext link to original article]'''contains protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/28501140 PubMed]
+## '''Subgroup analysis:''' Nishio M, Nakagawa K, Mitsudomi T, Yamamoto N, Tanaka T, Kuriki H, Zeaiter A, Tamura T. Analysis of central nervous system efficacy in the J-ALEX study of alectinib versus crizotinib in ALK-positive non-small-cell lung cancer. Lung Cancer. 2018 Jul;121:37-40. Epub 2018 Apr 17. [https://www.sciencedirect.com/science/article/pii/S016950021830343X link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/29858024 PubMed]
+# '''ALEX:''' Peters S, Camidge DR, Shaw AT, Gadgeel S, Ahn JS, Kim DW, Ou SI, Pérol M, Dziadziuszko R, Rosell R, Zeaiter A, Mitry E, Golding S, Balas B, Noe J, Morcos PN, Mok T; ALEX Trial Investigators. Alectinib versus crizotinib in untreated ALK-positive non-small-cell lung cancer. N Engl J Med. 2017 Aug 31;377(9):829-838. Epub 2017 Jun 6. [https://www.nejm.org/doi/full/10.1056/NEJMoa1704795 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28586279 PubMed]
+## '''Subgroup analysis:''' Gadgeel S, Peters S, Mok T, Shaw AT, Kim DW, Ou SI, Pérol M, Wrona A, Novello S, Rosell R, Zeaiter A, Liu T, Nüesch E, Balas B, Camidge DR. Alectinib versus crizotinib in treatment-naive anaplastic lymphoma kinase-positive (ALK+) non-small-cell lung cancer: CNS efficacy results from the ALEX study. Ann Oncol. 2018 Nov 1;29(11):2214-2222. [https://academic.oup.com/annonc/article/29/11/2214/5095692 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30215676 PubMed]
+
+==Ceritinib monotherapy {{#subobject:d35518|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:a93389|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ Shaw et al. 2014 (ASCEND-1)]
+| style="background-color:#91cf61" |Phase I, >20 pts in this dosing cohort
+|-
+|}
+''Note: CNS efficacy is based on the 2016 update.''
+====Chemotherapy====
+*[[Ceritinib (Zykadia)]] 750 mg PO once per day on an empty stomach
+
+'''21-day cycles'''
+
+===References===
+# '''Phase I:''' Shaw AT, Kim DW, Mehra R, Tan DS, Felip E, Chow LQ, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Lau YY, Goldwasser M, Boral AL, Engelman JA. Ceritinib in ALK-rearranged non-small-cell lung cancer. N Engl J Med. 2014 Mar 27;370(13):1189-97. [https://www.nejm.org/doi/full/10.1056/NEJMoa1311107 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4079055/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24670165 PubMed]
+## '''Update:''' Kim DW, Mehra R, Tan DSW, Felip E, Chow LQM, Camidge DR, Vansteenkiste J, Sharma S, De Pas T, Riely GJ, Solomon BJ, Wolf J, Thomas M, Schuler M, Liu G, Santoro A, Sutradhar S, Li S, Szczudlo T, Yovine A, Shaw AT. Activity and safety of ceritinib in patients with ALK-rearranged non-small-cell lung cancer (ASCEND-1): updated results from the multicentre, open-label, phase 1 trial. Lancet Oncol. 2016 Apr;17(4):452-463. Epub 2016 Mar 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00614-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5063047/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26973324 PubMed]
+
+=Non-small cell lung cancer, EGFR-mutated, all lines of therapy=
+==Afatinib monotherapy {{#subobject:1bf6db|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:130d4a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/27/3327.long Sequist et al. 2013 (LUX-Lung 3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small_cell_lung_cancer#Cisplatin_.26_Pemetrexed_2|Cisplatin & Pemetrexed]]
+| style="background-color:#91cf60" |Seems to have superior PFS (*)
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70604-1/fulltext Wu et al. 2014 (LUX-Lung 6)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Non-small cell lung cancer#Cisplatin_.26_Gemcitabine_2|Cisplatin & Gemcitabine]]
+| style="background-color:#91cf60" |Seems to have superior PFS (*)
+|-
+|}
+''Note: CNS-specific efficacy is based on the 2016 subgroup analysis.''
+====Chemotherapy====
+*[[Afatinib (Gilotrif)]] 40 mg PO once per day, given 1 hour before eating food (LUX-Lung 2: "no food intake immediately before or after afatinib")
+**In '''LUX-Lung 3''', patients could be increased to 50 mg PO once per day if they did not experience any grade 2 or higher rash, diarrhea, mucositis, or other drug-related adverse event.
+
+'''Continued indefinitely'''
+
+===References===
+# '''LUX-Lung 3:''' Sequist LV, Yang JC, Yamamoto N, O'Byrne K, Hirsh V, Mok T, Geater SL, Orlov S, Tsai CM, Boyer M, Su WC, Bennouna J, Kato T, Gorbunova V, Lee KH, Shah R, Massey D, Zazulina V, Shahidi M, Schuler M. Phase III study of afatinib or cisplatin plus pemetrexed in patients with metastatic lung adenocarcinoma with EGFR mutations. J Clin Oncol. 2013 Sep 20;31(27):3327-34. Epub 2013 Jul 1. [http://jco.ascopubs.org/content/31/27/3327.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23816960 PubMed]
+## '''Subgroup analysis:''' Yang JC, Hirsh V, Schuler M, Yamamoto N, O'Byrne KJ, Mok TS, Zazulina V, Shahidi M, Lungershausen J, Massey D, Palmer M, Sequist LV. Symptom control and quality of life in LUX-Lung 3: a phase III study of afatinib or cisplatin/pemetrexed in patients with advanced lung adenocarcinoma with EGFR mutations. J Clin Oncol. 2013 Sep 20;31(27):3342-50. Epub 2013 Jul 1. [http://jco.ascopubs.org/content/31/27/3342.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23816967 PubMed]
+## '''Pooled update:''' Yang JC, Wu YL, Schuler M, Sebastian M, Popat S, Yamamoto N, Zhou C, Hu CP, O'Byrne K, Feng J, Lu S, Huang Y, Geater SL, Lee KY, Tsai CM, Gorbunova V, Hirsh V, Bennouna J, Orlov S, Mok T, Boyer M, Su WC, Lee KH, Kato T, Massey D, Shahidi M, Zazulina V, Sequist LV. Afatinib versus cisplatin-based chemotherapy for EGFR mutation-positive lung adenocarcinoma (LUX-Lung 3 and LUX-Lung 6): analysis of overall survival data from two randomised, phase 3 trials. Lancet Oncol. 2015 Feb;16(2):141-51. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71173-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25589191 PubMed]
+## '''Subgroup analysis:''' Schuler M, Wu YL, Hirsh V, O'Byrne K, Yamamoto N, Mok T, Popat S, Sequist LV, Massey D, Zazulina V, Yang JC. First-line afatinib versus chemotherapy in patients with non-small cell lung cancer and common epidermal growth factor receptor gene mutations and brain metastases. J Thorac Oncol. 2016 Mar;11(3):380-90. [http://www.jto.org/article/S1556-0864(15)00220-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26823294 PubMed]
+# '''LUX-Lung 6:''' Wu YL, Zhou C, Hu CP, Feng J, Lu S, Huang Y, Li W, Hou M, Shi JH, Lee KY, Xu CR, Massey D, Kim M, Shi Y, Geater SL. Afatinib versus cisplatin plus gemcitabine for first-line treatment of Asian patients with advanced non-small-cell lung cancer harbouring EGFR mutations (LUX-Lung 6): an open-label, randomised phase 3 trial. Lancet Oncol. 2014 Feb;15(2):213-22. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70604-1/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24439929 PubMed]
+## '''Pooled update:''' Yang JC, Wu YL, Schuler M, Sebastian M, Popat S, Yamamoto N, Zhou C, Hu CP, O'Byrne K, Feng J, Lu S, Huang Y, Geater SL, Lee KY, Tsai CM, Gorbunova V, Hirsh V, Bennouna J, Orlov S, Mok T, Boyer M, Su WC, Lee KH, Kato T, Massey D, Shahidi M, Zazulina V, Sequist LV. Afatinib versus cisplatin-based chemotherapy for EGFR mutation-positive lung adenocarcinoma (LUX-Lung 3 and LUX-Lung 6): analysis of overall survival data from two randomised, phase 3 trials. Lancet Oncol. 2015 Feb;16(2):141-51. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71173-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25589191 PubMed]
+## '''Subgroup analysis:''' Schuler M, Wu YL, Hirsh V, O'Byrne K, Yamamoto N, Mok T, Popat S, Sequist LV, Massey D, Zazulina V, Yang JC. First-line afatinib versus chemotherapy in patients with non-small cell lung cancer and common epidermal growth factor receptor gene mutations and brain metastases. J Thorac Oncol. 2016 Mar;11(3):380-90. [http://www.jto.org/article/S1556-0864(15)00220-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26823294 PubMed]
+
+==Icotinib monotherapy {{#subobject:9720a1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d7253b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(17)30262-X/fulltext Yang et al. 2017 (BRAIN)]
+|style="background-color:#1a9851"|Phase III (E)
+|WB-XRT
+| style="background-color:#91cf60" |Seems to have superior intracranial PFS
+|-
+|}
+''Note: this drug is only approved in China.''
+====Chemotherapy====
+*[[Icotinib (Conmana)]] 125 mg PO TID
+
+'''Continued indefinitely'''
+
+===References===
+# '''BRAIN:''' Yang JJ, Zhou C, Huang Y, Feng J, Lu S, Song Y, Huang C, Wu G, Zhang L, Cheng Y, Hu C, Chen G, Zhang L, Liu X, Yan HH, Tan FL, Zhong W, Wu YL. Icotinib versus whole-brain irradiation in patients with EGFR-mutant non-small-cell lung cancer and multiple brain metastases (BRAIN): a multicentre, phase 3, open-label, parallel, randomised controlled trial. Lancet Respir Med. 2017 Sep;5(9):707-716. Epub 2017 Jul 19. [https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(17)30262-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28734822 PubMed]
+
+==Osimertinib monotherapy {{#subobject:PYR2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:PYV2|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1612674 Mok et al. 2016 (AURA3)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small cell lung cancer#Carboplatin_.26_Pemetrexed_2|Carboplatin & Pemetrexed]]<br> 2. [[Non-small cell lung cancer#Cisplatin_.26_Pemetrexed_3|Cisplatin & Pemetrexed]]
+| style="background-color:#91cf60" |Seems to have superior ORR (*)
+|-
+|[https://academic.oup.com/annonc/article-abstract/29/3/687/4774219 Goss et al. 2018 (AURA extension; AURA2)]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 Soria et al. 2017 (FLAURA)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Non-small cell lung cancer#Erlotinib_monotherapy|Erlotinib]]<br> 2. [[Non-small cell lung cancer#Gefitinib_monotherapy|Gefitinib]]
+| style="background-color:#91cf60" |Seems to have superior PFS (*)
+|-
+|}
+''Patients enrolled in AURA3 had locally advanced or metastatic NSCLC with progression after first-line EGFR TKI therapy, and were required to have presence of an EGFR p.T790M mutation. Efficacy reported for AURA3 is based on the 2018 subgroup analysis. Efficacy reported for FLAURA is based on the 2018 subgroup analysis.''
+====Chemotherapy====
+*[[Osimertinib (Tagrisso)]] 80 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''AURA3:''' Mok TS, Wu YL, Ahn MJ, Garassino MC, Kim HR, Ramalingam SS, Shepherd FA, He Y, Akamatsu H, Theelen WS, Lee CK, Sebastian M, Templeton A, Mann H, Marotti M, Ghiorghiu S, Papadimitrakopoulou VA; AURA3 Investigators. Osimertinib or platinum-pemetrexed in EGFR T790M-positive lung cancer. N Engl J Med. 2017 Feb 16;376(7):629-640. Epub 2016 Dec 6. [https://www.nejm.org/doi/full/10.1056/NEJMoa1612674 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27959700 PubMed]
+## '''Subgroup analysis:''' Wu YL, Ahn MJ, Garassino MC, Han JY, Katakami N, Kim HR, Hodge R, Kaur P, Brown AP, Ghiorghiu D, Papadimitrakopoulou VA, Mok TSK. CNS efficacy of osimertinib in patients with T790M-positive advanced non-small-cell lung cancer: data from a randomized phase III trial (AURA3). J Clin Oncol. 2018 Sep 10;36(26):2702-2709. Epub 2018 Jul 30. [http://ascopubs.org/doi/full/10.1200/JCO.2018.77.9363 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30059262 PubMed]
+# '''Pooled analysis:''' Goss G, Tsai CM, Shepherd FA, Ahn MJ, Bazhenova L, Crinò L, de Marinis F, Felip E, Morabito A, Hodge R, Cantarini M, Johnson M, Mitsudomi T, Jänne PA, Yang JC. CNS response to osimertinib in patients with T790M-positive advanced NSCLC: pooled data from two phase II trials. Ann Oncol. 2018 Mar 1;29(3):687-693. [https://academic.oup.com/annonc/article-abstract/29/3/687/4774219 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29293889 PubMed]
+# '''FLAURA:''' Soria JC, Ohe Y, Vansteenkiste J, Reungwetwattana T, Chewaskulyong B, Lee KH, Dechaphunkul A, Imamura F, Nogami N, Kurata T, Okamoto I, Zhou C, Cho BC, Cheng Y, Cho EK, Voon PJ, Planchard D, Su WC, Gray JE, Lee SM, Hodge R, Marotti M, Rukazenkov Y, Ramalingam SS; FLAURA Investigators. Osimertinib in untreated EGFR-mutated advanced non-small-cell lung cancer. N Engl J Med. 2018 Jan 11;378(2):113-125. Epub 2017 Nov 18. [https://www.nejm.org/doi/full/10.1056/NEJMoa1713137 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29151359 PubMed]
+## '''Subgroup analysis:''' Reungwetwattana T, Nakagawa K, Cho BC, Cobo M, Cho EK, Bertolini A, Bohnet S, Zhou C, Lee KH, Nogami N, Okamoto I, Leighl N, Hodge R, McKeown A, Brown AP, Rukazenkov Y, Ramalingam SS, Vansteenkiste J. CNS response to osimertinib versus standard epidermal growth factor receptor tyrosine kinase inhibitors in patients with untreated EGFR-mutated advanced non-small-cell lung cancer. J Clin Oncol. 2018 Nov 20;36(33):3290-7. Epub 2018 Aug 28. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.3118 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30153097 PubMed]
+
+[[Category:CNS carcinoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:CNS cancers]]

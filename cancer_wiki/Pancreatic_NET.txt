@@ -1,0 +1,538 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:Chowdhery.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Rozinachowdhery|Rozina Chowdhery, MD]]<br>University of Illinois at Chicago<br>Chicago, IL</big>
+|style="background-color:#F0F0F0; width: 15%"|[[File:Jeenavarghese.jpg|frameless|upright=0.3|center]]
+|style="width:35%" |<big>[[User:Jvarghese|Jeena M. Varghese, MBBS]]<br>MD Anderson Cancer Center<br>Houston, TX</big><br>[https://www.linkedin.com/in/jeena-varghese-b2b45b9b/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+<big>Note: for more general neuroendocrine regimens, please visit the '''[[neuroendocrine tumors]]''' page.</big>
+{{TOC limit|limit=3}}
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2012:''' Öberg et al. [https://www.esmo.org/Guidelines/Endocrine-and-Neuroendocrine-Cancers/Neuroendocrine-Gastroenteropancreatic-Tumours Neuroendocrine gastro-entero-pancreatic tumors: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/neuroendocrine.pdf NCCN Guidelines - Neuroendocrine Tumors]
+
+=All lines of therapy=
+==Capecitabine & Temozolomide {{#subobject:738284|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:fc2dd9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4665634/ Strosberg et al. 2011]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 750 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Temozolomide (Temodar)]] 200 mg/m<sup>2</sup> PO once per day at bedtime on days 10 to 14
+
+====Supportive medications====
+*[[Ondansetron (Zofran)]] 8 mg (route not specified) prior to each dose of [[Temozolomide (Temodar)]]
+
+'''28-day cycles'''
+
+===References===
+# '''Retrospective:''' Strosberg JR, Fine RL, Choi J, Nasir A, Coppola D, Chen DT, Helm J, Kvols L. First-line chemotherapy with capecitabine and temozolomide in patients with metastatic pancreatic endocrine carcinomas. Cancer. 2011 Jan 15;117(2):268-75. Epub 2010 Sep 7. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.25425/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4665634/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20824724 PubMed]
+
+==Doxorubicin & Streptozocin {{#subobject:5c625d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:a9c7ed|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJM199202203260804 Moertel et al. 1992]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Chlorozotocin
+|style="background-color:#1a9850"|Superior OS
+|-
+|2. [[#Fluorouracil_.26_Streptozocin_.26|5-FU & Streptozocin]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once per day on days 1 & 22
+*[[Streptozocin (Zanosar)]] 500 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+'''42-day cycles'''
+
+===References===
+# Moertel CG, Lefkopoulo M, Lipsitz S, Hahn RG, Klaassen D. Streptozocin-doxorubicin, streptozocin-fluorouracil or chlorozotocin in the treatment of advanced islet-cell carcinoma. N Engl J Med. 1992 Feb 20;326(8):519-23. [https://www.nejm.org/doi/full/10.1056/NEJM199202203260804 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1310159 PubMed]
+
+==Everolimus monotherapy {{#subobject:78dff1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:5ea369|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4295034/ Yao et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4208619/ Yao et al. 2011 (RADIANT-3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Everolimus (Afinitor)]] 10 mg PO once per day
+
+'''Given until progression of disease, unacceptable toxicity, drug interruption of 3 weeks or longer, or withdrawal of consent'''
+
+===References===
+# Yao JC, Lombard-Bohas C, Baudin E, Kvols LK, Rougier P, Ruszniewski P, Hoosen S, St Peter J, Haas T, Lebwohl D, Van Cutsem E, Kulke MH, Hobday TJ, O'Dorisio TM, Shah MH, Cadiot G, Luppi G, Posey JA, Wiedenmann B. Daily oral everolimus activity in patients with metastatic pancreatic neuroendocrine tumors after failure of cytotoxic chemotherapy: a phase II trial. J Clin Oncol. 2010 Jan 1;28(1):69-76. Epub 2009 Nov 23. [http://jco.ascopubs.org/content/28/1/69.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4295034/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19933912 PubMed]
+# '''RADIANT-3:''' Yao JC, Shah MH, Ito T, Bohas CL, Wolin EM, Van Cutsem E, Hobday TJ, Okusaka T, Capdevila J, de Vries EG, Tomassetti P, Pavel ME, Hoosen S, Haas T, Lincy J, Lebwohl D, Öberg K; RAD001 in Advanced Neuroendocrine Tumors Third Trial (RADIANT-3) Study Group. Everolimus for advanced pancreatic neuroendocrine tumors. N Engl J Med. 2011 Feb 10;364(6):514-23. [https://www.nejm.org/doi/full/10.1056/NEJMoa1009290 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4208619/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21306238 PubMed]
+# '''Review:''' Yao JC, Phan AT, Jehl V, Shah G, Meric-Bernstam F. Everolimus in advanced pancreatic neuroendocrine tumors: the clinical experience. Cancer Res. 2013 Mar 1;73(5):1449-53. Epub 2013 Feb 22. [http://cancerres.aacrjournals.org/content/73/5/1449.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23436795 PubMed]
+
+==Everolimus & Octreotide {{#subobject:d6b3eb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:b0f62f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4295034/ Yao et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+
+''Patients in Yao et al. 2010 who received this regimen had already been receiving octreotide LAR for at least 3 months before participating in the study.''
+====Endocrine & Chemotherapy====
+*[[Everolimus (Afinitor)]] 10 mg PO once per day
+*[[Octreotide LAR (Sandostatin LAR)]] up to 30 mg (whatever their prestudy dose was) IM once on day 1
+
+'''28-day cycles'''
+
+===Variant #2 {{#subobject:f82bb5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2653122/ Yao et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: Everolimus "dose of 10 mg was associated with superior PFS...however, the study was not prospectively powered for these comparisons. These analyses should be considered exploratory."''
+====Endocrine & Chemotherapy====
+*[[Everolimus (Afinitor)]] 5 or 10 mg PO once per day on days 1 to 28
+*[[Octreotide LAR (Sandostatin LAR)]] 30 mg IM once on day 1
+
+'''28-day cycle for up to 12 cycles or until progression of disease, though treatment could be continued beyond this period if thought by the treating physician to be beneficial'''
+
+===References===
+# Yao JC, Phan AT, Chang DZ, Wolff RA, Hess K, Gupta S, Jacobs C, Mares JE, Landgraf AN, Rashid A, Meric-Bernstam F. Efficacy of RAD001 (everolimus) and octreotide LAR in advanced low- to intermediate-grade neuroendocrine tumors: results of a phase II study. J Clin Oncol. 2008 Sep 10;26(26):4311-8. [http://jco.ascopubs.org/content/26/26/4311.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2653122/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18779618 PubMed]
+# Yao JC, Lombard-Bohas C, Baudin E, Kvols LK, Rougier P, Ruszniewski P, Hoosen S, St Peter J, Haas T, Lebwohl D, Van Cutsem E, Kulke MH, Hobday TJ, O'Dorisio TM, Shah MH, Cadiot G, Luppi G, Posey JA, Wiedenmann B. Daily oral everolimus activity in patients with metastatic pancreatic neuroendocrine tumors after failure of cytotoxic chemotherapy: a phase II trial. J Clin Oncol. 2010 Jan 1;28(1):69-76. Epub 2009 Nov 23. [http://jco.ascopubs.org/content/28/1/69.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4295034/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19933912 PubMed]
+
+==FAS {{#subobject:66b05e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FAS: '''<u>F</u>'''luorouracil, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>S</u>'''treptozocin
+
+===Regimen {{#subobject:de76a2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/22/23/4762.long Kouvaraki et al. 2004]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV bolus once on day 1
+*[[Streptozocin (Zanosar)]] 400 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycles, given until progression of disease, unacceptable toxicity, or patient intolerance'''
+
+===References===
+# '''Retrospective:''' Kouvaraki MA, Ajani JA, Hoff P, Wolff R, Evans DB, Lozano R, Yao JC. Fluorouracil, doxorubicin, and streptozocin in the treatment of patients with locally advanced and metastatic pancreatic endocrine carcinomas. J Clin Oncol. 2004 Dec 1;22(23):4762-71. [http://jco.ascopubs.org/content/22/23/4762.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15570077 PubMed]
+
+==Fluorouracil & Streptozocin {{#subobject:6f7b84|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e45011|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198011203032101 Moertel et al. 1980]
+|style="background-color:#1a9851"|Phase III (E)
+|Fluorouracil
+| style="background-color:#d9ef8b" |Might have superior OS
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJM199202203260804 Moertel et al. 1992]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. Chlorozotocin
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. [[#Doxorubicin_.26_Streptozocin|Doxorubicin & Streptozocin]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+''Note: treatment details are from Moertel et al. 1992.''
+====Chemotherapy====
+*[[Streptozocin (Zanosar)]] 500 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''42-day cycles'''
+
+===References===
+# Moertel CG, Hanley JA, Johnson LA. Streptozocin alone compared with streptozocin plus fluorouracil in the treatment of advanced islet-cell carcinoma. N Engl J Med. 1980 Nov 20;303(21):1189-94. [https://www.nejm.org/doi/full/10.1056/NEJM198011203032101 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/6252466 PubMed]
+# Moertel CG, Lefkopoulo M, Lipsitz S, Hahn RG, Klaassen D. Streptozocin-doxorubicin, streptozocin-fluorouracil or chlorozotocin in the treatment of advanced islet-cell carcinoma. N Engl J Med. 1992 Feb 20;326(8):519-23. [https://www.nejm.org/doi/full/10.1056/NEJM199202203260804 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/1310159 PubMed]
+
+==Lanreotide Depot/Autogel monotherapy {{#subobject:8bca3a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:a9ee08|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1316158 Caplin et al. 2014 (CLARINET)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Hormonotherapy====
+*[[Lanreotide (Somatuline) | Lanreotide (Somatuline) Depot/Autogel]] 120 mg SC once on day 1
+
+'''28-day cycle for 96 weeks (CLARINET), until progression of disease, or unacceptable toxicity'''
+
+''Patients in NET729 (unpublished) could be treated for up to 8 years.''
+
+===References===
+# '''CLARINET:''' Caplin ME, Pavel M, Ćwikła JB, Phan AT, Raderer M, Sedláčková E, Cadiot G, Wolin EM, Capdevila J, Wall L, Rindi G, Langley A, Martinez S, Blumberg J, Ruszniewski P; CLARINET Investigators. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med. 2014 Jul 17;371(3):224-33. [https://www.nejm.org/doi/full/10.1056/NEJMoa1316158 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25014687 PubMed]
+# [http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/022074s011lbl.pdf Lanreotide (Somatuline) package insert]
+# NIHR (National Institute for Health Research) Horizon Scanning Centre, School of Health & Population Sciences, University of Birmingham. [http://www.hsc.nihr.ac.uk/files/.../2695.647d3d17.Lanreotide_Nov14.pdf Lanreotide for unresectable, locally advanced or metastatic gastroenteropancreatic neuroendocrine tumours – first line]
+# ClinicalTrials.gov: [https://clinicaltrials.gov/ct2/show/NCT00842348 Study of Lanreotide Autogel 120mg in Patients With Non-functioning Entero- Pancreatic Endocrine Tumour (NET729)]
+
+==Lanreotide & Interferon alfa-2b {{#subobject:9c5a59|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:652f4d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://link.springer.com/article/10.1385%2FMO%3A19%3A1%3A35 Fjällskog et al. 2002]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+''Fjällskog et al. 2002 contained case reports of several patients treated with lanreotide & interferon alfa. Each patient received individualized therapy rather than a standard regimen.''
+====Endocrine & Immunotherapy====
+*[[Lanreotide (Somatuline)]] 3 mg SC twice per day
+*[[Interferon alfa-2b (Intron-A)]] 3 to 5 million units SC given once per day, 3 to 7 days per week (total of 9 to 25 million units per week)
+
+===References===
+# Fjällskog ML, Sundin A, Westlin JE, Oberg K, Janson ET, Eriksson B. Treatment of malignant endocrine pancreatic tumors with a combination of alpha-interferon and somatostatin analogs. Med Oncol. 2002;19(1):35-42. [http://link.springer.com/article/10.1385%2FMO%3A19%3A1%3A35 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/12025889 PubMed]
+
+==Octreotide monotherapy {{#subobject:665a8b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:cd8cf6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/15/6/966.long Oberg et al. 2004]
+|style="background-color:#ffffbe"|Consensus guideline
+|-
+|}
+====Hormonotherapy====
+*[[Octreotide (Sandostatin)]] 0.1 to 0.5 mg SC given 2 to 4 times per day, with dose increased by doubling the dose every 3 to 4 days as needed to control symptoms
+**"A reasonable starting dose is" 0.15 mg SC TID
+
+'''Treatment continued indefinitely unless patients have unmanageable side-effects or insufficient control of symptoms'''
+
+===References===
+# '''Review:''' Brentjens R, Saltz L. Islet cell tumors of the pancreas: the medical oncologist's perspective. Surg Clin North Am. 2001 Jun;81(3):527-42. [http://www.sciencedirect.com/science/article/pii/S0039610905701419 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/11459269 PubMed]
+# '''Review:''' Oberg K, Kvols L, Caplin M, Delle Fave G, de Herder W, Rindi G, Ruszniewski P, Woltering EA, Wiedenmann B. Consensus report on the use of somatostatin analogs for the management of neuroendocrine tumors of the gastroenteropancreatic system. Ann Oncol. 2004 Jun;15(6):966-73. [http://annonc.oxfordjournals.org/content/15/6/966.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15151956 PubMed]
+
+==Octreotide LAR monotherapy {{#subobject:e356ea|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1 {{#subobject:200e99|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/15/6/966.long Oberg et al. 2004]
+|style="background-color:#ffffbe"|Consensus guideline
+|-
+|}
+====Hormonotherapy====
+*[[Octreotide LAR (Sandostatin LAR)]] 20 to 30 mg IM once on day 1, with potentially higher doses if needed for symptom control
+**"As a general rule, if the total [octreotide] IR dose is 200 to 600 mcg/day, LAR 20 mg should be tried, and if total IR dose is 750 to 1500 mcg/day, LAR 30 mg should be tried."
+*[[Octreotide (Sandostatin)]] (dose not specified) SC as needed for additional symptom control
+
+'''28-day cycles; treatment continued indefinitely unless patients have unmanageable side-effects or insufficient control of symptoms'''
+
+===Variant #2 {{#subobject:f0bc1b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/27/28/4656.long Rinke et al. 2009 (PROMID)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior TTP
+|-
+|}
+====Hormonotherapy====
+*[[Octreotide LAR (Sandostatin LAR)]] 30 mg IM once on day 1, with potentially higher doses if needed for symptom control
+
+'''28-day cycles'''
+
+===References===
+# '''Review:''' Oberg K, Kvols L, Caplin M, Delle Fave G, de Herder W, Rindi G, Ruszniewski P, Woltering EA, Wiedenmann B. Consensus report on the use of somatostatin analogs for the management of neuroendocrine tumors of the gastroenteropancreatic system. Ann Oncol. 2004 Jun;15(6):966-73. [http://annonc.oxfordjournals.org/content/15/6/966.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15151956 PubMed]
+# '''PROMID:''' Rinke A, Müller HH, Schade-Brittinger C, Klose KJ, Barth P, Wied M, Mayer C, Aminossadati B, Pape UF, Bläker M, Harder J, Arnold C, Gress T, Arnold R; PROMID Study Group. Placebo-controlled, double-blind, prospective, randomized study on the effect of octreotide LAR in the control of tumor growth in patients with metastatic neuroendocrine midgut tumors: a report from the PROMID Study Group. J Clin Oncol. 2009 Oct 1;27(28):4656-63. Epub 2009 Aug 24. [http://jco.ascopubs.org/content/27/28/4656.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19704057 PubMed]
+
+==Octreotide & Interferon alfa {{#subobject:1cf4c5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:cbf5c4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://link.springer.com/article/10.1385%2FMO%3A19%3A1%3A35 Fjällskog et al. 2002]
+|style="background-color:#ffffbe"|Pilot, <20 pts
+|-
+|}
+''Fjällskog et al. 2002 contained case reports of several patients treated with octreotide & interferon alfa. Each patient received individualized therapy rather than a standard regimen.''
+====Endocrine & Immunotherapy====
+*[[Octreotide (Sandostatin)]] 0.05 to 0.5 mg SC given 2 to 3 times per day
+*[[Interferon alfa-2b (Intron-A)]] 3 to 5 million units SC given once per day, 3 to 7 days per week (total of 9 to 25 million units per week)
+
+===References===
+# Janson ET, Oberg K. Long-term management of the carcinoid syndrome. Treatment with octreotide alone and in combination with alpha-interferon. Acta Oncol. 1993;32(2):225-9. [https://www.tandfonline.com/doi/full/10.3109/02841869309083916 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7686765 PubMed]
+# Fjällskog ML, Sundin A, Westlin JE, Oberg K, Janson ET, Eriksson B. Treatment of malignant endocrine pancreatic tumors with a combination of alpha-interferon and somatostatin analogs. Med Oncol. 2002;19(1):35-42. [http://link.springer.com/article/10.1385%2FMO%3A19%3A1%3A35 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/12025889 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[http://jco.ascopubs.org/content/27/28/4656.long Rinke et al. 2009 (PROMID)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Octreotide_LAR_monotherapy|Octreotide LAR]]
+|style="background-color:#d73027"|Inferior TTP
+|style="background-color:#d3d3d3"|
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJMoa1003825 Raymond et al. 2011 (A6181111)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|rowspan=2|[[#Sunitinib_monotherapy|Sunitinib]]
+|rowspan=2 style="background-color:#d73027"|Inferior PFS
+|style="background-color:#1a9850"|Less diarrhea
+|-
+|style="background-color:#91cf60"|Seems to have better insomnia
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4208619/ Yao et al. 2011 (RADIANT-3)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Everolimus_monotherapy|Everolimus]]
+|style="background-color:#d73027"|Inferior PFS
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1316158 Caplin et al. 2014 (CLARINET)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Lanreotide_Depot.2FAutogel_monotherapy|Lanreotide]]
+|style="background-color:#d73027"|Inferior PFS
+|style="background-color:#d3d3d3"|
+|-
+|}
+''No active antineoplastic treatment. Used as a comparator arm and here for reference purposes only. Note: while the initial A6181111 publication seemed to have a significant survival disadvantage for this arm (p=0.02), this finding was no longer significant at the final update (p=0.094). The primary endpoint (PFS) remains significant.''
+
+===References===
+# '''PROMID:''' Rinke A, Müller HH, Schade-Brittinger C, Klose KJ, Barth P, Wied M, Mayer C, Aminossadati B, Pape UF, Bläker M, Harder J, Arnold C, Gress T, Arnold R; PROMID Study Group. Placebo-controlled, double-blind, prospective, randomized study on the effect of octreotide LAR in the control of tumor growth in patients with metastatic neuroendocrine midgut tumors: a report from the PROMID Study Group. J Clin Oncol. 2009 Oct 1;27(28):4656-63. Epub 2009 Aug 24. [http://jco.ascopubs.org/content/27/28/4656.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19704057 PubMed]
+# '''A6181111:''' Raymond E, Dahan L, Raoul JL, Bang YJ, Borbath I, Lombard-Bohas C, Valle J, Metrakos P, Smith D, Vinik A, Chen JS, Hörsch D, Hammel P, Wiedenmann B, Van Cutsem E, Patyna S, Lu DR, Blanckmeister C, Chao R, Ruszniewski P. Sunitinib malate for the treatment of pancreatic neuroendocrine tumors. N Engl J Med. 2011 Feb 10;364(6):501-13. Erratum in: N Engl J Med. 2011 Mar 17;364(11):1082. [https://www.nejm.org/doi/full/10.1056/NEJMoa1003825 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21306237 PubMed]
+## '''HRQoL analysis:''' Vinik A, Bottomley A, Korytowsky B, Bang YJ, Raoul JL, Valle JW, Metrakos P, Hörsch D, Mundayat R, Reisman A, Wang Z, Chao RC, Raymond E. Patient-reported outcomes and quality of life with sunitinib versus placebo for pancreatic neuroendocrine tumors: results from an international phase III trial. Target Oncol. 2016 Dec;11(6):815-824. [https://link.springer.com/article/10.1007%2Fs11523-016-0462-5 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27924459 PubMed]
+## '''Update:''' Faivre S, Niccoli P, Castellano D, Valle JW, Hammel P, Raoul JL, Vinik A, Van Cutsem E, Bang YJ, Lee SH, Borbath I, Lombard-Bohas C, Metrakos P, Smith D, Chen JS, Ruszniewski P, Seitz JF, Patyna S, Lu DR, Ishak KJ, Raymond E. Sunitinib in pancreatic neuroendocrine tumors: updated progression-free survival and final overall survival from a phase III randomized study. Ann Oncol. 2017 Feb 1;28(2):339-343. [https://academic.oup.com/annonc/article/28/2/339/2676883 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27836885 PubMed]
+# '''RADIANT-3:''' Yao JC, Shah MH, Ito T, Bohas CL, Wolin EM, Van Cutsem E, Hobday TJ, Okusaka T, Capdevila J, de Vries EG, Tomassetti P, Pavel ME, Hoosen S, Haas T, Lincy J, Lebwohl D, Öberg K; RAD001 in Advanced Neuroendocrine Tumors Third Trial (RADIANT-3) Study Group. Everolimus for advanced pancreatic neuroendocrine tumors. N Engl J Med. 2011 Feb 10;364(6):514-23. [https://www.nejm.org/doi/full/10.1056/NEJMoa1009290 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4208619/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21306238 PubMed]
+# '''CLARINET:''' Caplin ME, Pavel M, Ćwikła JB, Phan AT, Raderer M, Sedláčková E, Cadiot G, Wolin EM, Capdevila J, Wall L, Rindi G, Langley A, Martinez S, Blumberg J, Ruszniewski P; CLARINET Investigators. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med. 2014 Jul 17;371(3):224-33. [https://www.nejm.org/doi/full/10.1056/NEJMoa1316158 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25014687 PubMed]
+
+==Sunitinib monotherapy {{#subobject:ee13d2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:80d0ef|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJMoa1003825 Raymond et al. 2011 (A6181111)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|rowspan=2|[[#Placebo|Placebo]]
+|rowspan=2 style="background-color:#1a9850"|Superior PFS
+|style="background-color:#d73027"|More diarrhea
+|-
+|style="background-color:#fc8d59"|Seems to have worse insomnia
+|-
+|}
+''Note: while the initial publication seemed to have a significant survival advantage for this arm (p=0.02), this finding was no longer significant at the final update (p=0.094). The primary endpoint (PFS) remains significant.''
+====Chemotherapy====
+*[[Sunitinib (Sutent)]] 37.5 mg PO once per day
+
+'''Given indefinitely'''
+
+===References===
+# '''A6181111:''' Raymond E, Dahan L, Raoul JL, Bang YJ, Borbath I, Lombard-Bohas C, Valle J, Metrakos P, Smith D, Vinik A, Chen JS, Hörsch D, Hammel P, Wiedenmann B, Van Cutsem E, Patyna S, Lu DR, Blanckmeister C, Chao R, Ruszniewski P. Sunitinib malate for the treatment of pancreatic neuroendocrine tumors. N Engl J Med. 2011 Feb 10;364(6):501-13. Erratum in: N Engl J Med. 2011 Mar 17;364(11):1082. [https://www.nejm.org/doi/full/10.1056/NEJMoa1003825 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21306237 PubMed]
+## '''HRQoL analysis:''' Vinik A, Bottomley A, Korytowsky B, Bang YJ, Raoul JL, Valle JW, Metrakos P, Hörsch D, Mundayat R, Reisman A, Wang Z, Chao RC, Raymond E. Patient-reported outcomes and quality of life with sunitinib versus placebo for pancreatic neuroendocrine tumors: results from an international phase III trial. Target Oncol. 2016 Dec;11(6):815-824. [https://link.springer.com/article/10.1007%2Fs11523-016-0462-5 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27924459 PubMed]
+## '''Update:''' Faivre S, Niccoli P, Castellano D, Valle JW, Hammel P, Raoul JL, Vinik A, Van Cutsem E, Bang YJ, Lee SH, Borbath I, Lombard-Bohas C, Metrakos P, Smith D, Chen JS, Ruszniewski P, Seitz JF, Patyna S, Lu DR, Ishak KJ, Raymond E. Sunitinib in pancreatic neuroendocrine tumors: updated progression-free survival and final overall survival from a phase III randomized study. Ann Oncol. 2017 Feb 1;28(2):339-343. [https://academic.oup.com/annonc/article/28/2/339/2676883 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27836885 PubMed]
+
+==Temozolomide monotherapy {{#subobject:69ae1c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:6aac4c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://clincancerres.aacrjournals.org/content/13/10/2986.long Ekeblad et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] as follows:
+**Cycle 1: 100 or 150 mg/m<sup>2</sup> PO once per day on days 1 to 5
+**Cycle 2 onwards: increased as tolerated up to 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Tropisetron (Navoban)]] (dose/route/schedule not specified) routinely used as an antiemetic
+
+'''28-day cycles'''
+
+===References===
+# Ekeblad S, Sundin A, Janson ET, Welin S, Granberg D, Kindmark H, Dunder K, Kozlovacki G, Orlefors H, Sigurd M, Oberg K, Eriksson B, Skogseid B. Temozolomide as monotherapy is effective in treatment of advanced malignant neuroendocrine tumors. Clin Cancer Res. 2007 May 15;13(10):2986-91. [http://clincancerres.aacrjournals.org/content/13/10/2986.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17505000 PubMed]
+
+==Temozolomide & Bevacizumab {{#subobject:ce7fe6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:be3718|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4874232/ Chan et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 150 mg/m<sup>2</sup> PO once per day on days 1 to 7, 15 to 21
+*[[Bevacizumab (Avastin)]] 5 mg/kg IV once per day on days 1 & 15
+
+====Supportive medications====
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] 160/800 mg PO once every Monday, Wednesday, and Friday; allergic patients received alternate Pneumocystis carinii (PCP) prophylaxis
+*[[Acyclovir (Zovirax)]] 400 mg PO three times per day as prophylaxis against varicella zoster
+
+'''28-day cycles'''
+
+===References===
+# Chan JA, Stuart K, Earle CC, Clark JW, Bhargava P, Miksad R, Blaszkowsky L, Enzinger PC, Meyerhardt JA, Zheng H, Fuchs CS, Kulke MH. Prospective study of bevacizumab plus temozolomide in patients with advanced neuroendocrine tumors. J Clin Oncol. 2012 Aug 20;30(24):2963-8. Epub 2012 Jul 9. [http://jco.ascopubs.org/content/30/24/2963.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4874232/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22778320 PubMed]
+
+==Temozolomide & Thalidomide {{#subobject:16afb7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:ceca5a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/24/3/401.long Kulke et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 150 mg/m<sup>2</sup> PO once per day on days 1 to 7, 15 to 21
+*[[Thalidomide (Thalomid)]] 200 mg PO once per day
+
+'''28-day cycles'''
+
+===References===
+# Kulke MH, Stuart K, Enzinger PC, Ryan DP, Clark JW, Muzikansky A, Vincitore M, Michelini A, Fuchs CS. Phase II study of temozolomide and thalidomide in patients with metastatic neuroendocrine tumors. J Clin Oncol. 2006 Jan 20;24(3):401-6. [http://jco.ascopubs.org/content/24/3/401.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16421420 PubMed]
+
+[[Category:Pancreatic NET regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Endocrine cancers]]
+[[Category:Gastrointestinal cancers]]

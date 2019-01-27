@@ -1,0 +1,24 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' [http://annonc.oxfordjournals.org/content/26/suppl_5/v133.full.pdf+html Cancers of unknown primary site: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up] [https://www.ncbi.nlm.nih.gov/pubmed/26314775 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/occult.pdf NCCN Guidelines - Occult Primary (Cancer of Unknown Primary (CUP)]
+
+=All lines of therapy=
+*Poorly differentiated or small cell tumors can be treated with [[small cell lung cancer]] regimens.
+*Moderate to well-differentiated neuroendocrine tumors can be treated with regimens for [[neuroendocrine tumors]].
+
+[[Category:NET of unknown primary regimens]]
+[[Category:Site-agnostic regimens]]

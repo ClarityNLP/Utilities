@@ -1,0 +1,189 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list?  Would you like to share a different dosage/schedule or an additional reference for a regimen?  Have you noticed an error?  Do you have an idea that will help the site grow to better meet your needs and the needs of many others?  You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#4a1486"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Liang.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Wayneliang|Wayne H. Liang, MD, MS]]<br>Birmingham, AL</big><br>[https://www.linkedin.com/in/wayneliang/ LinkedIn]<br>Twitter: [https://twitter.com/WayneLiangMD WayneLiangMD]
+|-
+|}
+''Neuroblastoma is a rare cancer but is the most common malignancy of infancy.''
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Low-risk=
+
+=Intermediate-risk, all lines of therapy=
+==COG A3961 regimen {{#subobject:fd2c99|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:c71517|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2993160/ Baker et al. 2010 (COG A3961)]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''To be completed.''
+====Chemotherapy====
+*See paper for details
+===References===
+# '''COG A3961:''' Baker DL, Schmidt ML, Cohn SL, Maris JM, London WB, Buxton A, Stram D, Castleberry RP, Shimada H, Sandler A, Shamberger RC, Look AT, Reynolds CP, Seeger RC, Matthay KK; Children’s Oncology Group. Outcome after reduced chemotherapy for intermediate-risk neuroblastoma. N Engl J Med. 2010 Sep 30;363(14):1313-23. [https://www.nejm.org/doi/full/10.1056/NEJMoa1001527 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2993160/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20879880 PubMed]
+
+=High-risk, consolidation=
+
+==Dinutuximab, GM-CSF, IL-2, Isotretinoin {{#subobject:231faf|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:abc626|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3086629/ Yu et al. 2010 (COG ANBL0032)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Isotretinoin_monotherapy|Isotretinoin]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: in distinction from most chemotherapy regimens, the first day of a cycle is day 0 and the last day of a 28-day cycle is day 27.''
+====Immunotherapy====
+*[[Dinutuximab (Unituxin)]] as follows:
+**Cycles 1, 3, 5: 25 mg/m<sup>2</sup> IV once per day on days 3 to 6
+**Cycles 2 & 4: 25 mg/m<sup>2</sup> IV once per day on days 7 to 10
+*[[Sargramostim (Leukine)]] as follows:
+**Cycles 1, 3, 5: 250 mcg/m<sup>2</sup> SC once per day on days 0 to 13
+*[[Aldesleukin (Proleukin)]] as follows:
+**Cycles 2 & 4: 3.0 x 10<sup>6</sup> IU/m<sup>2</sup>/day IV continuous infusion on days 0 to 3, then 4.5 x 10<sup>6</sup> IU/m<sup>2</sup>/day IV continuous infusion on days 7 to 10
+*[[Isotretinoin (Accutane)]] 160 mg/m<sup>2</sup>/day PO on days 14 to 27
+
+'''28-day cycle for 6 cycles'''
+
+===References===
+# '''COG ANBL0032:''' Yu AL, Gilman AL, Ozkaynak MF, London WB, Kreissman SG, Chen HX, Smith M, Anderson B, Villablanca JG, Matthay KK, Shimada H, Grupp SA, Seeger R, Reynolds CP, Buxton A, Reisfeld RA, Gillies SD, Cohn SL, Maris JM, Sondel PM; Children's Oncology Group. Anti-GD2 antibody with GM-CSF, interleukin-2, and isotretinoin for neuroblastoma. N Engl J Med. 2010 Sep 30;363(14):1324-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa0911123 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3086629/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20879881 PubMed]
+
+==Isotretinoin monotherapy {{#subobject:d9be60|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:54059a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199910143411601 Matthay et al. 1999]
+|style="background-color:#1a9851"|Phase III (E)
+|No further therapy
+| style="background-color:#91cf60" |Seems to have superior EFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3086629/ Yu et al. 2010 (COG ANBL0032)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dinutuximab.2C_GM-CSF.2C_IL-2.2C_Isotretinoin|Dinutuximab, GM-CSF, IL-2, Isotretinoin]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+====Preceding treatment====
+*Matthay et al. 1999: HDT with purged auto HSCT versus cisplatin, doxorubicin, etoposide consolidation
+====Chemotherapy====
+*[[Isotretinoin (Accutane)]] 80 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+
+'''28-day cycle for 6 cycles'''
+
+===References===
+# Matthay KK, Villablanca JG, Seeger RC, Stram DO, Harris RE, Ramsay NK, Swift P, Shimada H, Black CT, Brodeur GM, Gerbing RB, Reynolds CP; Children's Cancer Group. Treatment of high-risk neuroblastoma with intensive chemotherapy, radiotherapy, autologous bone marrow transplantation, and 13-cis-retinoic acid. N Engl J Med. 1999 Oct 14;341(16):1165-73. [https://www.nejm.org/doi/full/10.1056/NEJM199910143411601 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10519894 PubMed]
+# '''COG ANBL0032:''' Yu AL, Gilman AL, Ozkaynak MF, London WB, Kreissman SG, Chen HX, Smith M, Anderson B, Villablanca JG, Matthay KK, Shimada H, Grupp SA, Seeger R, Reynolds CP, Buxton A, Reisfeld RA, Gillies SD, Cohn SL, Maris JM, Sondel PM; Children's Oncology Group. Anti-GD2 antibody with GM-CSF, interleukin-2, and isotretinoin for neuroblastoma. N Engl J Med. 2010 Sep 30;363(14):1324-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa0911123 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3086629/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20879881 PubMed]
+
+=Relapsed or refractory=
+==Cyclophosphamide monotherapy {{#subobject:ea894c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9134b2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM196406182702503 Thurman et al. 1964]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''Of historic interest.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]]
+===References===
+# Thurman WG, Fernbach DJ, Sullivan MP. Cyclophosphamide therapy in childhood neuroblastoma. N Engl J Med. 1964 Jun 18;270:1336-40. [https://www.nejm.org/doi/full/10.1056/NEJM196406182702503 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14140265 PubMed]
+
+==Cyclophosphamide & Vincristine {{#subobject:f725b0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fecc86|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://jamanetwork.com/journals/jama/article-abstract/343795 Evans et al. 1969]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+''Of historic interest.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]]
+*[[Vincristine (Oncovin)]]
+===References===
+# Evans AE, Heyn RM, Newton WA Jr, Leikin SL. Vincristine sulfate and cyclophosphamide for children with metastatic neuroblastoma. JAMA. 1969 Feb 17;207(7):1325-7. [https://jamanetwork.com/journals/jama/article-abstract/343795 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/5818324 PubMed]
+
+==Irinotecan, Temozolomide, Dinutuximab {{#subobject:00704b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:431f39|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5527694/ Mody et al. 2017 (COG ANBL1221)]
+|style="background-color:#91cf61"|Randomized Phase II, <20 pts (E)
+|Irinotecan, Temozolomide, Temsirolimus
+|style="background-color:#1a9850"|Superior ORR
+|-
+|}
+''Note: this dinutuximab dose is based on a mid-protocol revision.''
+====Chemoimmunotherapy====
+*[[Irinotecan (Camptosar)]] 50 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1 to 5
+*[[Temozolomide (Temodar)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[Dinutuximab (Unituxin)]] 17.5 mg/m<sup>2</sup> IV over 10 hours once per day on days 2 to 5
+**Infusion time could be extended to 20 hours "if patients experienced pain, fever, tachycardia, tachypnea, or hypotension unresponsive to supportive measures."
+
+====Supportive medications====
+*[[Sargramostim (Leukine)]] 250 mcg/m<sup>2</sup> SC once per day on days 6 to 12
+
+'''21-day cycle for up to 17 cycles'''
+
+===References===
+# '''COG ANBL1221:''' Mody R, Naranjo A, Van Ryn C, Yu AL, London WB, Shulkin BL, Parisi MT, Servaes SE, Diccianni MB, Sondel PM, Bender JG, Maris JM, Park JR, Bagatell R. Irinotecan-temozolomide with temsirolimus or dinutuximab in children with refractory or relapsed neuroblastoma (COG ANBL1221): an open-label, randomised, phase 2 trial. Lancet Oncol. 2017 Jul;18(7):946-957. Epub 2017 May 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30355-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5527694/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28549783 PubMed]
+
+[[Category:Neuroblastoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Pediatric cancers]]

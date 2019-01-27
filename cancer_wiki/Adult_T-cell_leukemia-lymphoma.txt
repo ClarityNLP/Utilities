@@ -1,0 +1,222 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas]
+
+=Untreated=
+
+==CHOP-14 {{#subobject:3e53d9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP-14: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone every '''<u>14</u>''' days
+<br>CHOP-DI: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone, '''<u>D</u>'''ose-'''<u>I</u>'''ntense
+<br>I-CHOP: '''<u>I</u>'''ntensive '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:ad2f7b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://academic.oup.com/annonc/article/13/9/1347/174860 Itoh et al. 2002 (JCOG 9505)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|dose-escalated CHOP
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#1a9850" |Less toxic
+|-
+|[http://jco.ascopubs.org/content/25/34/5458.long Tsukasaki et al. 2007 (JCOG 9801)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#mLSG15|mLSG15]]
+|style="background-color:#fc8d59"|Seems to have inferior CR rate
+| style="background-color:#1a9850" |Less toxic
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (max dose 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] given once ANC decreased to less than 1000/uL and continued once per day until count increased to greater than 5000/uL
+
+'''14-day cycle for 8 cycles'''
+
+====Intrathecal component====
+''Intrathecal triple-therapy was given during recovery phase of cycles 1, 3, and 5 after platelet count was greater than 70 × 10<sup>9</sup>/L.''
+*[[Cytarabine (Cytosar)]] 40 mg IT 
+*[[Methotrexate (MTX)]] 15 mg IT
+*[[Prednisone (Sterapred)]] 10 mg IT
+
+'''3 doses, total'''
+
+===References===
+# '''JCOG 9505:''' Itoh K, Ohtsu T, Fukuda H, Sasaki Y, Ogura M, Morishima Y, Chou T, Aikawa K, Uike N, Mizorogi F, Ohno T, Ikeda S, Sai T, Taniwaki M, Kawano F, Niimi M, Hotta T, Shimoyama M, Tobinai K; Members of the lymphoma study group of the Japan Clinical Oncology Group (JCOG). Randomized phase II study of biweekly CHOP and dose-escalated CHOP with prophylactic use of lenograstim (glycosylated G-CSF) in aggressive non-Hodgkin's lymphoma: Japan Clinical Oncology Group Study 9505. Ann Oncol. 2002 Sep;13(9):1347-55. [https://academic.oup.com/annonc/article/13/9/1347/174860 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/12196359 PubMed]
+<!-- Presented in part at the 47th Annual Meeting of the American Society of Hematology, December 10-13, 2005, Atlanta, GA. -->
+# '''JCOG 9801:''' Tsukasaki K, Utsunomiya A, Fukuda H, Shibata T, Fukushima T, Takatsuka Y, Ikeda S, Masuda M, Nagoshi H, Ueda R, Tamura K, Sano M, Momita S, Yamaguchi K, Kawano F, Hanada S, Tobinai K, Shimoyama M, Hotta T, Tomonaga M; Japan Clinical Oncology Group Study JCOG9801. VCAP-AMP-VECP compared with biweekly CHOP for adult T-cell leukemia-lymphoma: Japan Clinical Oncology Group Study JCOG9801. J Clin Oncol. 2007 Dec 1;25(34):5458-64. Epub 2007 Oct 29. [http://jco.ascopubs.org/content/25/34/5458.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17968021 PubMed]
+
+==Interferon alfa-2b & Zidovudine {{#subobject:cd558b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b1307e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/10.1056/NEJM199506293322603 Gill et al. 1995]
+| style="background-color:#ffffbe" |Non-randomized, <20 pts
+|-
+|}
+''Of historic interest.''
+====Immunotherapy====
+*[[Interferon alfa-2b (Intron-A)]]
+*[[Zidovudine (Retrovir)]]
+===References===
+# Gill PS, Harrington W Jr, Kaplan MH, Ribeiro RC, Bennett JM, Liebman HA, Bernstein-Singer M, Espina BM, Cabral L, Allen S, Kornblau S, Pike MC, Levine AM. Treatment of adult T-cell leukemia-lymphoma with a combination of interferon alfa and zidovudine. N Engl J Med. 1995 Jun 29;332(26):1744-8. [https://www.nejm.org/doi/10.1056/NEJM199506293322603 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7760890 PubMed]
+
+==LSG15 {{#subobject:96c8e2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:2fae5f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1046/j.1365-2141.2001.02737.x/full Yamada et al. 2001 (JCOG 9303)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Ranimustine is not available in the United States and is approved only in Japan. This regimen was notable for excess CNS relapses and was subsequently replaced by [[#mLSG15|mLSG15]].''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1 mg/m<sup>2</sup> (maximum dose = 2 mg) IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 350 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1, then 30 mg/m<sup>2</sup> IV once on day 8
+*[[Prednisone (Sterapred)]] 40 mg/m<sup>2</sup> PO once per day on days 1, 8, 15 to 17
+*[[Ranimustine (Cymerin)]] 60 mg/m<sup>2</sup> IV once on day 8
+*[[Vindesine (Eldisine)]] 2.4 mg/m<sup>2</sup> IV once on day 15
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 15 to 17
+*[[Carboplatin (Paraplatin)]] 250 mg/m<sup>2</sup> IV once on day 15
+
+'''28-day cycle for 7 cycles'''
+
+===References===
+# Yamada Y, Tomonaga M, Fukuda H, Hanada S, Utsunomiya A, Tara M, Sano M, Ikeda S, Takatsuki K, Kozuru M, Araki K, Kawano F, Niimi M, Tobinai K, Hotta T, Shimoyama M. A new G-CSF-supported combination chemotherapy, LSG15, for adult T-cell leukaemia-lymphoma: Japan Clinical Oncology Group Study 9303. Br J Haematol. 2001 May;113(2):375-82. [https://onlinelibrary.wiley.com/doi/10.1046/j.1365-2141.2001.02737.x/full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11380402 PubMed]
+
+==mLSG15 {{#subobject:832886|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:1dc050|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/34/5458.long Tsukasaki et al. 2007 (JCOG 9801)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP-14|CHOP-14]]
+|style="background-color:#91cf60"|Seems to have superior CR rate
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5024033/ Ishida et al. 2015]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|mLSG15 & Mogamulizumab
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Ranimustine is not available in the United States and is approved only in Japan.''
+====Chemotherapy====
+*[[Vincristine (Oncovin)]] 1 mg/m<sup>2</sup> (maximum dose = 2 mg) IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 350 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 40 mg/m<sup>2</sup> IV once on day 1, then 30 mg/m<sup>2</sup> IV once on day 8
+*[[Prednisone (Sterapred)]] 40 mg/m<sup>2</sup> PO once per day on days 1, 8, 15 to 17
+*[[Ranimustine (Cymerin)]] 60 mg/m<sup>2</sup> IV once on day 8
+*[[Vindesine (Eldisine)]] 2.4 mg/m<sup>2</sup> IV once on day 15
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 15 to 17
+*[[Carboplatin (Paraplatin)]] 250 mg/m<sup>2</sup> IV once on day 15
+
+'''28-day cycle for 6 cycles'''
+
+====CNS prophylaxis====
+*[[Cytarabine (Cytosar)]] 40 mg IT, admixed with MTX & prednisone
+*[[Methotrexate (MTX)]] 15 mg IT, admixed with Ara-C & prednisone
+*[[Prednisone (Sterapred)]] 10 mg IT, admixed with Ara-C & MTX
+
+'''Given after cycles 1, 3, and 5 after platelets greater than 70 × 10<sup>9</sup>/L and within 2 days before the next cycle'''
+
+===References===
+<!-- Presented in part at the 47th Annual Meeting of the American Society of Hematology, December 10-13, 2005, Atlanta, GA. -->
+# Tsukasaki K, Utsunomiya A, Fukuda H, Shibata T, Fukushima T, Takatsuka Y, Ikeda S, Masuda M, Nagoshi H, Ueda R, Tamura K, Sano M, Momita S, Yamaguchi K, Kawano F, Hanada S, Tobinai K, Shimoyama M, Hotta T, Tomonaga M; Japan Clinical Oncology Group Study JCOG9801. VCAP-AMP-VECP compared with biweekly CHOP for adult T-cell leukemia-lymphoma: Japan Clinical Oncology Group Study JCOG9801. J Clin Oncol. 2007 Dec 1;25(34):5458-64. Epub 2007 Oct 29. [http://jco.ascopubs.org/content/25/34/5458.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17968021 PubMed]
+# Ishida T, Jo T, Takemoto S, Suzushima H, Uozumi K, Yamamoto K, Uike N, Saburi Y, Nosaka K, Utsunomiya A, Tobinai K, Fujiwara H, Ishitsuka K, Yoshida S, Taira N, Moriuchi Y, Imada K, Miyamoto T, Akinaga S, Tomonaga M, Ueda R. Dose-intensified chemotherapy alone or in combination with mogamulizumab in newly diagnosed aggressive adult T-cell leukaemia-lymphoma: a randomized phase II study. Br J Haematol. 2015 Jun;169(5):672-82. Epub 2015 Mar 2. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13338/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5024033/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25733162 PubMed]
+
+=Relapsed or refractory=
+
+==Alemtuzumab monotherapy {{#subobject:efc45a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:32e392|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5215752/ Sharma et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Alemtuzumab (Campath)]] 30 mg IV TIW (three times per week)
+
+'''Up to 12-week course'''
+
+===References===
+<!-- Presented in abstract form at the 50th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 6–9, 2008. -->
+# Sharma K, Janik JE, O'Mahony D, Stewart D, Pittaluga S, Stetler-Stevenson M, Jaffe ES, Raffeld M, Fleisher TA, Lee CC, Steinberg SM, Waldmann TA, Morris JC. Phase II Study of Alemtuzumab (CAMPATH-1) in Patients with HTLV-1-Associated Adult T-cell Leukemia/lymphoma. Clin Cancer Res. 2017 Jan 1;23(1):35-42. Epub 2016 Aug 2. [http://clincancerres.aacrjournals.org/content/23/1/35.long link to original article] '''contain protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5215752/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27486175 PubMed]
+
+==Lenalidomide monotherapy {{#subobject:b2b90e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:662944|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!Study
+![[Levels_of_Evidence#Evidence|Evidence]]
+|'''ORR'''
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2016.67.7732 Ishida et al. 2016 (ATLL-002)]
+|style="background-color:#91cf61"|Phase II
+|42% (95% CI 23-63)
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day
+
+'''Continued until progression'''
+
+===References===
+# '''ATLL-002:''' Ishida T, Fujiwara H, Nosaka K, Taira N, Abe Y, Imaizumi Y, Moriuchi Y, Jo T, Ishizawa K, Tobinai K, Tsukasaki K, Ito S, Yoshimitsu M, Otsuka M, Ogura M, Midorikawa S, Ruiz W, Ohtsu T. Multicenter Phase II Study of Lenalidomide in Relapsed or Recurrent Adult T-Cell Leukemia/Lymphoma: ATLL-002. J Clin Oncol. 2016 Dec;34(34):4086-4093.  [http://ascopubs.org/doi/full/10.1200/JCO.2016.67.7732 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27621400 PubMed]
+
+[[Category:Adult T-cell leukemia-lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Acute leukemias]]
+[[Category:T-cell lymphomas]]

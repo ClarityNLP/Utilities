@@ -1,0 +1,905 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+<big>Note: some subtypes of PTCL have been moved to dedicated pages:
+* [[Anaplastic large cell lymphoma]]
+* [[Extranodal NK/T-cell lymphoma, nasal type]]
+* [[NK/T-cell lymphoma]]
+</big>
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' d'Amore et al. [https://www.esmo.org/Guidelines/Haematological-Malignancies/Peripheral-T-Cell-Lymphomas Peripheral T-cell lymphomas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+===Older===
+*'''2013:''' Dreyling et al. [http://annonc.oxfordjournals.org/content/24/4/857.full.pdf+html ESMO Consensus conferences: guidelines on malignant lymphoma. part 2: marginal zone lymphoma, mantle cell lymphoma, peripheral T-cell lymphoma.] [https://www.ncbi.nlm.nih.gov/pubmed/23425945 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas]
+
+=Untreated, randomized data=
+
+==BV-CHP {{#subobject:6964de|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BV-CHP: '''<u>B</u>'''rentuximab '''<u>V</u>'''edotin, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>P</u>'''rednisone
+<br>A+CHP: '''<u>A</u>'''dcetris (Brentuximab vedotin), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:985a91|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)32984-2/fulltext Horwitz et al. 2018 (ECHELON-2)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg IV once on day 1, '''given last'''
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+'''21-day cycle for 6 to 8 cycles'''
+
+===References===
+# '''ECHELON-2:''' Horwitz S, O'Connor OA, Pro B, Illidge T, Fanale M, Advani R, Bartlett NL, Christensen JH, Morschhauser F, Domingo-Domenech E, Rossi G, Kim WS, Feldman T, Lennard A, Belada D, Illés Á, Tobinai K, Tsukasaki K, Yeh SP, Shustov A, Hüttmann A, Savage KJ, Yuen S, Iyer S, Zinzani PL, Hua Z, Little M, Rao S, Woolery J, Manley T, Trümper L; ECHELON-2 Study Group. Brentuximab vedotin with chemotherapy for CD30-positive peripheral T-cell lymphoma (ECHELON-2): a global, double-blind, randomised, phase 3 trial. Lancet. 2018 Dec 3. [Epub ahead of print] [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)32984-2/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30522922 PubMed]
+
+==CHOP {{#subobject:38ee4a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+===Variant #1, 6 cycles {{#subobject:d9adc8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.14763/full Li et al. 2017]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#GDPT|GDPT]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''21-day cycle for 6 cycles'''
+
+===Variant #2, 8 cycles {{#subobject:f500e0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2010.08329.x/full Simon et al. 2010 (GOELAMS LTP95)]
+|style="background-color:#1a9851"|Phase III (C)
+|VIP-rABVD
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose per cycle: 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''21-day cycle for 8 cycles'''
+====Subsequent treatment====
+*Patients with initial bulky disease (diameter at least 5 cm): [[#Radiation_therapy|IFRT]] x 40 Gy
+
+===References===
+# Reimer P, Schertlin T, Rüdiger T, Geissinger E, Roth S, Kunzmann V, Weissinger F, Nerl C, Schmitz N, Müller-Hermelink HK, Wilhelm M. Myeloablative radiochemotherapy followed by autologous peripheral blood stem cell transplantation as first-line therapy in peripheral T-cell lymphomas: first results of a prospective multicenter study. Hematol J. 2004;5(4):304-11. '''does not contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15297846 PubMed] 
+## '''Update:''' Reimer P, Rüdiger T, Geissinger E, Weissinger F, Nerl C, Schmitz N, Engert A, Einsele H, Müller-Hermelink HK, Wilhelm M. Autologous stem-cell transplantation as first-line therapy in peripheral T-cell lymphomas: results of a prospective multicenter study. J Clin Oncol. 2009 Jan 1;27(1):106-13. Epub 2008 Nov 24. [http://jco.ascopubs.org/content/27/1/106.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19029417 PubMed] 
+# '''GOELAMS-LTP95:''' Simon A, Peoch M, Casassus P, Deconinck E, Colombat P, Desablens B, Tournilhac O, Eghbali H, Foussard C, Jaubert J, Vilque JP, Rossi JF, Lucas V, Delwail V, Thyss A, Maloisel F, Milpied N, le Gouill S, Lamy T, Gressin R. Upfront VIP-reinforced-ABVD (VIP-rABVD) is not superior to CHOP/21 in newly diagnosed peripheral T cell lymphoma: results of the randomized phase III trial GOELAMS-LTP95. Br J Haematol. 2010 Oct;151(2):159-66. Epub 2010 Aug 25. [https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2010.08329.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20738307 PubMed]
+# '''Meta-analysis:''' Abouyabis AN, Shenoy PJ, Sinha R, Flowers CR, Lechowicz MJ. A systematic review and meta-analysis of front-line anthracycline-based chemotherapy regimens for peripheral T-cell lymphoma. ISRN Hematol. 2011;2011:623924. Epub 2011 Jun 16. [https://www.hindawi.com/journals/isrn/2011/623924/ link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3197255/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22084700 PubMed]
+# Li L, Duan W, Zhang L, Li X, Fu X, Wang X, Wu J, Sun Z, Zhang X, Chang Y, Nan F, Yan J, Li Z, Young KH, Zhang M. The efficacy and safety of gemcitabine, cisplatin, prednisone, thalidomide versus CHOP in patients with newly diagnosed peripheral T-cell lymphoma with analysis of biomarkers. Br J Haematol. 2017 Sep;178(5):772-780. Epub 2017 Jun 9. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.14763/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28597542 PubMed]
+
+==CMED {{#subobject:1239e2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CMED: '''<u>C</u>'''yclophosphamide, '''<u>M</u>'''ethotrexate, '''<u>E</u>'''toposide, '''<u>D</u>'''examethasone
+===Regimen {{#subobject:c4a84c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://link.springer.com/article/10.1007%2Fs12032-008-9046-2 Avilés et al. 2008]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 2000 mg/m<sup>2</sup> IV once on day 1
+*[[Methotrexate (MTX)]] 300 mg/m<sup>2</sup> IV once on day 1
+*[[Etoposide (Vepesid)]] 400 mg/m<sup>2</sup> IV once per day on days 1 & 2
+*[[Dexamethasone (Decadron)]] 20 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 15 mg IV every 6 hours for 12 doses, '''started 24 hours after MTX'''
+
+'''14-day cycle for 6 cycles'''
+
+===References===
+# Avilés A, Castañeda C, Neri N, Cleto S, Talavera A, González M, Huerta-Guzmán J, Nambo MJ. Results of a phase III clinical trial: CHOP versus CMED in peripheral T-cell lymphoma unspecified. Med Oncol. 2008;25(3):360-4. Epub 2008 Feb 5. [https://link.springer.com/article/10.1007%2Fs12032-008-9046-2 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18247163 PubMed]
+
+==GDPT {{#subobject:e63a7d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GDPT: '''<u>G</u>'''emcitabine, '''<u>D</u>'''DP (Cisplatin), '''<u>P</u>'''rednisone, '''<u>T</u>'''halidomide
+===Regimen {{#subobject:5cd5b6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.14763/full Li et al. 2017]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 800 mg/m<sup>2</sup> IV over 30 minutes once on days 1 & 8
+*[[Cisplatin (Platinol)]] 25 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day, increased by 50 mg per day until target dose of 200 mg PO once per day
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# Li L, Duan W, Zhang L, Li X, Fu X, Wang X, Wu J, Sun Z, Zhang X, Chang Y, Nan F, Yan J, Li Z, Young KH, Zhang M. The efficacy and safety of gemcitabine, cisplatin, prednisone, thalidomide versus CHOP in patients with newly diagnosed peripheral T-cell lymphoma with analysis of biomarkers. Br J Haematol. 2017 Sep;178(5):772-780. Epub 2017 Jun 9. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.14763/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28597542 PubMed]
+
+=Untreated, non-randomized or retrospective data=
+
+==CHOEP-14 {{#subobject:e84b92|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOEP-14: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone every '''<u>14</u>''' days
+
+===Regimen {{#subobject:b15c3a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/30/25/3093.long d'Amore et al. 2012 (NLG-T-01)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Etoposide (Vepesid)]] as follows:
+**Up to age 60: 100 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Older than 60: omitted
+*[[Prednisone (Sterapred)]] 50 mg PO twice per day on days 1 to 5
+
+'''14-day cycle for 6 cycles'''
+====Subsequent treatment====
+*If patients in PR or CR after three cycles, stem cells are mobilized off of cycles 5 and 6, followed by BEAC or [[#BEAM.2C_then_auto_HSCT|BEAM]], then auto HSCT
+
+===References===
+<!-- Presented orally in part at the 48th Annual Meeting of the American Society of Hematology, Orlando, FL, December 9-12, 2006; 14th Annual Meeting of the European Hematology Association, Berlin, Germany, June 4-7, 2009; 11th International Conference on Malignant Lymphoma, Lugano, Switzerland, June 15-18, 2011; and American Society of Hematology Annual Meeting, San Diego, CA, December 10-13, 2011. -->
+# '''NLG-T-01:''' d'Amore F, Relander T, Lauritzsen GF, Jantunen E, Hagberg H, Anderson H, Holte H, Österborg A, Merup M, Brown P, Kuittinen O, Erlanson M, Østenstad B, Fagerli UM, Gadeberg OV, Sundström C, Delabie J, Ralfkiaer E, Vornanen M, Toldbod HE. Up-front autologous stem-cell transplantation in peripheral T-cell lymphoma: NLG-T-01. J Clin Oncol. 2012 Sep 1;30(25):3093-9. Epub 2012 Jul 30. [http://jco.ascopubs.org/content/30/25/3093.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22851556 PubMed]
+
+==CHOP & Everolimus {{#subobject:a3439a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP & Everolimus: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone, Everolimus
+===Regimen {{#subobject:ccbdcf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/27/4/712.long Kim et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#e5e5e5"|ORR: 90%
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+*[[Everolimus (Afinitor)]] 5 mg PO once per day on days 1 to 14
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# Kim SJ, Shin DY, Kim JS, Yoon DH, Lee WS, Lee H, Do YR, Kang HJ, Eom HS, Ko YH, Lee SH, Yoo HY, Hong M, Suh C, Kim WS. A phase II study of everolimus (RAD001), an mTOR inhibitor plus CHOP for newly diagnosed peripheral T-cell lymphomas. Ann Oncol. 2016 Apr;27(4):712-8. [http://annonc.oxfordjournals.org/content/27/4/712.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26861608 PubMed]
+
+==CHOP-AL {{#subobject:75a3d2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP-AL: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone, '''<u>AL</u>'''emtuzumab
+<br>CHOP-C: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone, '''<u>C</u>'''ampath (Alemtuzumab)
+
+===Variant #1, 2 cycles {{#subobject:ab9c64|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html Corradini et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''These are the details for "Clin A" which was the regimen used for patients younger than 60. Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+*[[Alemtuzumab (Campath)]] as follows:
+** 3 mg IV once on day -2 before cycle 1
+** 10 mg IV once on day -1 before cycle 1
+** 20 mg IV once on day 0 before cycle 1
+** 30 mg IV once on day 0 before cycle 2 (= day 21 of cycle 1)
+
+'''21-day cycle for 2 cycles'''
+
+====Subsequent treatment====
+*[[#HyperCHidam|HyperCHidam]] x 2
+
+===Variant #2, 8 cycles {{#subobject:c8d06d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/110/7/2316.long Gallamini et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: the paper reports using the CHOP dosing as specified by [https://www.nejm.org/doi/full/10.1056/NEJM199304083281404 Fisher et al. 1993]; however, note that the cycle length here is 28 days.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+*[[Alemtuzumab (Campath)]] as follows:
+**Cycle 1: 3 mg IV once on day -2, then 10 mg IV once on day -1, then 20 mg IV once on day 0, then 30 mg IV once on day 1
+**Cycles 2 to 8: 30 mg IV once on day 1
+====Supportive medications====
+*[[Chlorpheniramine (Chlor-Trimeton)]] 10 mg IV once 60 minutes prior to [[Alemtuzumab (Campath)]]
+*[[Acetaminophen (Tylenol)]] 500 mg PO once 30 minutes prior to [[Alemtuzumab (Campath)]]
+*[[Alizapride (Litican)]] 100 mg IV once 30 minutes prior to [[Alemtuzumab (Campath)]]
+
+'''28-day cycle for 8 cycles'''
+===References===
+# Gallamini A, Zaja F, Patti C, Billio A, Specchia MR, Tucci A, Levis A, Manna A, Secondo V, Rigacci L, Pinto A, Iannitto E, Zoli V, Torchio P, Pileri S, Tarella C. Alemtuzumab (Campath-1H) and CHOP chemotherapy as first-line treatment of peripheral T-cell lymphoma: results of a GITIL (Gruppo Italiano Terapie Innovative nei Linfomi) prospective multicenter trial. Blood. 2007 Oct 1;110(7):2316-23. Epub 2007 Jun 20. [http://www.bloodjournal.org/content/110/7/2316.long link to original article] '''contains partial protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17581918 PubMed]
+# Corradini P, Vitolo U, Rambaldi A, Miceli R, Patriarca F, Gallamini A, Olivieri A, Benedetti F, Todeschini G, Rossi G, Salvi F, Bruno B, Baldini L, Ferreri A, Patti C, Tarella C, Pileri S, Dodero A. Intensified chemo-immunotherapy with or without stem cell transplantation in newly diagnosed patients with peripheral T-cell lymphoma. Leukemia. 2014 Sep;28(9):1885-91. Epub 2014 Feb 20. [https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24662801 PubMed]
+
+==DA-EPOCH {{#subobject:9b4e41|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DA-EPOCH: '''<u>D</u>'''ose '''<u>A</u>'''djusted '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin)
+===Regimen {{#subobject:263b57|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.haematologica.org/content/102/12/2097 Maeda et al. 2017 (West-JHOG PTCL0707)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#c7c7c7"|ORR: 78% (95% CI 62-89)
+|-
+|}
+''Note: the authors state that they followed the Wilson et al. 2002 protocol, but there are some differences, in particular 1) it isn't clear whether prednisone is given once or twice per day; and 2) dose adjustments below level 1 are different based on age.''
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>)
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day PO on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m<sup>2</sup>) 
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 2 hours once on day 5
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] starting on day 6 and continuing until ANC greater than 5000/uL past nadir
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (dose not specified) 
+*[[Fluconazole (Diflucan)]] (dose not specified)
+
+'''21-day cycle for 6 to 8 cycles'''
+
+====Dose-adjustments====
+*Start cycle 1 as described above.
+*Obtain CBCs twice per week for nadir measurements.
+*If nadir ANC greater than 500/uL, increase etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*If nadir ANC less than 500/uL on 1 or 2 measurements, use same doses as last cycle.
+*If nadir ANC less than 500/uL on at least 3 measurements, decrease etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*And/or if nadir platelet count less than 25 x 10<sup>9</sup>/L on at least 1 measurement, decrease etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*'''Patients younger than 70:''' Dose adjustments below the cycle 1 starting dose only apply to cyclophosphamide. That is, the lowest etoposide and doxorubicin would be dosed is at the original cycle 1 dose.
+*'''Patients 70 and older:''' Dose adjustments below the cycle 1 starting dose apply to all drugs
+*(Presumed, based on Wilson et al. 2002): Can start new cycle every 21 days if ANC greater than 1000/uL and platelets greater than 100 x 10<sup>9</sup>/L. If counts are below those levels, check daily CBC and continue growth factor support until counts are adequate and next cycle can start.
+
+===References===
+# Maeda Y, Nishimori H, Yoshida I, Hiramatsu Y, Uno M, Masaki Y, Sunami K, Masunari T, Nawa Y, Yamane H, Gomyo H, Takahashi T, Yano T, Matsuo K, Ohshima K, Nakamura S, Yoshino T, Tanimoto M. Dose-adjusted EPOCH chemotherapy for untreated peripheral T-cell lymphomas: a multicenter phase II trial of West-JHOG PTCL0707. Haematologica. 2017 Dec;102(12):2097-2103. Epub 2017 Sep 29. [http://www.haematologica.org/content/102/12/2097 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28971899 PubMed]
+
+==DD-CHOP {{#subobject:b07d3a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DD-CHOP: '''<u>D</u>'''enileukin, '''<u>D</u>'''iftitox, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:897f8d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.tandfonline.com/doi/full/10.3109/10428194.2012.742521 Foss et al. 2013 (CONCEPT)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#a6a6a6"|ORR: 65%
+|-
+|}
+====Chemotherapy====
+*[[Denileukin diftitox (Ontak)]] 18 mcg/kg IV over 60 minutes once per day on days 1 & 2
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 3
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 3
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 3
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 3 to 7
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] 4 to 8 mg IV or PO prior to [[Denileukin diftitox (Ontak)]]
+*[[Acetaminophen (Tylenol)]] 650 mg PO prior to [[Denileukin diftitox (Ontak)]]
+*[[Diphenhydramine (Benadryl)]] 25 mg IV prior to [[Denileukin diftitox (Ontak)]]
+*Normal saline 250 to 500 cc before and after each [[Denileukin diftitox (Ontak)]] infusion
+*Antiemetics "per institutional standard"
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] support beginning on day 4
+
+'''21-day cycle for 6 to 8 cycles'''
+
+===References===
+# Foss FM, Sjak-Shie N, Goy A, Jacobsen E, Advani R, Smith MR, Komrokji R, Pendergrass K, Bolejack V. A multicenter phase II trial to determine the safety and efficacy of combination therapy with denileukin diftitox and cyclophosphamide, doxorubicin, vincristine and prednisone in untreated peripheral T-cell lymphoma: the CONCEPT study. Leuk Lymphoma. 2013 Jul;54(7):1373-9. Epub 2013 Jan 29. [https://www.tandfonline.com/doi/full/10.3109/10428194.2012.742521 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23278639 PubMed]
+
+==HyperCHidam {{#subobject:2cecf3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+HyperCHidam: '''<u>Hyper</u>'''fractionated '''<u>C</u>'''yclophosphamide, '''<u>Hi</u>'''igh-'''<u>d</u>'''ose '''<u>a</u>'''ra-c (Cytarabine) & '''<u>m</u>'''ethotrexate
+
+===Regimen {{#subobject:46bec8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html Corradini et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''These are the details for "Clin A" which was the regimen used for patients younger than 60. Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[#CHOP-AL|CHOP-AL]] x 2
+
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 1600 mg/m<sup>2</sup> IV continuous infusion (duration not specified), started on day 1
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV every 12 hours for 3 days (start day not specified)
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV every 12 hours for 3 days (start day not specified)
+
+====Supportive medications====
+*[[:Category:Granulocyte_colony-stimulating_factors|Granulocyte-colony stimulating factor]] 5 mcg/kg once per day was given from day +5 (stop date not specified)
+
+'''Duration not specified for 2 cycles'''
+====Subsequent treatment====
+*Responders (PR/CR): [[#Allogeneic_hematopoietic_stem_cell_transplant|allogeneic HSCT]]
+
+===References===
+# Corradini P, Vitolo U, Rambaldi A, Miceli R, Patriarca F, Gallamini A, Olivieri A, Benedetti F, Todeschini G, Rossi G, Salvi F, Bruno B, Baldini L, Ferreri A, Patti C, Tarella C, Pileri S, Dodero A. Intensified chemo-immunotherapy with or without stem cell transplantation in newly diagnosed patients with peripheral T-cell lymphoma. Leukemia. 2014 Sep;28(9):1885-91. Epub 2014 Feb 20. [https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24662801 PubMed]
+
+=Consolidation and/or maintenance after upfront therapy=
+
+==BEAM, then auto HSCT {{#subobject:1e26e2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BEAM: '''<u>B</u>'''iCNU (Carmustine), '''<u>E</u>'''toposide, '''<u>A</u>'''ra-C (Cytarabine), '''<u>M</u>'''elphalan
+===Regimen {{#subobject:16f7a3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/30/25/3093.long d'Amore et al. 2012 (NLG-T-01)]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+{{#lst:Autologous HSCT|16f7a3}}
+===References===
+<!-- Presented orally in part at the 48th Annual Meeting of the American Society of Hematology, Orlando, FL, December 9-12, 2006; 14th Annual Meeting of the European Hematology Association, Berlin, Germany, June 4-7, 2009; 11th International Conference on Malignant Lymphoma, Lugano, Switzerland, June 15-18, 2011; and American Society of Hematology Annual Meeting, San Diego, CA, December 10-13, 2011. -->
+# '''NLG-T-01:''' d'Amore F, Relander T, Lauritzsen GF, Jantunen E, Hagberg H, Anderson H, Holte H, Österborg A, Merup M, Brown P, Kuittinen O, Erlanson M, Østenstad B, Fagerli UM, Gadeberg OV, Sundström C, Delabie J, Ralfkiaer E, Vornanen M, Toldbod HE. Up-front autologous stem-cell transplantation in peripheral T-cell lymphoma: NLG-T-01. J Clin Oncol. 2012 Sep 1;30(25):3093-9. Epub 2012 Jul 30. [http://jco.ascopubs.org/content/30/25/3093.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22851556 PubMed]
+
+==Cyclophosphamide & TBI, then auto HSCT {{#subobject:0a4915|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cy/TBI: '''<u>Cy</u>'''clophosphamide & '''<u>T</u>'''otal '''<u>B</u>'''ody '''<u>I</u>'''rradiation
+===Regimen {{#subobject:a2b2d3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pubmed/15297846 Reimer et al. 2004]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+{{#lst:Autologous HSCT|a2b2d3}}
+===References===
+# Reimer P, Schertlin T, Rüdiger T, Geissinger E, Roth S, Kunzmann V, Weissinger F, Nerl C, Schmitz N, Müller-Hermelink HK, Wilhelm M. Myeloablative radiochemotherapy followed by autologous peripheral blood stem cell transplantation as first-line therapy in peripheral T-cell lymphomas: first results of a prospective multicenter study. Hematol J. 2004;5(4):304-11. [https://www.ncbi.nlm.nih.gov/pubmed/15297846 PubMed] 
+## '''Update:''' Reimer P, Rüdiger T, Geissinger E, Weissinger F, Nerl C, Schmitz N, Engert A, Einsele H, Müller-Hermelink HK, Wilhelm M. Autologous stem-cell transplantation as first-line therapy in peripheral T-cell lymphomas: results of a prospective multicenter study. J Clin Oncol. 2009 Jan 1;27(1):106-13. Epub 2008 Nov 24. [http://jco.ascopubs.org/content/27/1/106.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19029417 PubMed]
+
+==Radiation therapy {{#subobject:784759|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:ac7acb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2010.08329.x/full Simon et al. 2010 (GOELAMS LTP95)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[#CHOP|CHOP]] x 8 versus vVIP-rABVD
+====Radiotherapy====
+*[[External beam radiotherapy]] 40 Gy at 1.80 Gy/day to the involved field
+
+===References===
+# '''GOELAMS-LTP95:''' Simon A, Peoch M, Casassus P, Deconinck E, Colombat P, Desablens B, Tournilhac O, Eghbali H, Foussard C, Jaubert J, Vilque JP, Rossi JF, Lucas V, Delwail V, Thyss A, Maloisel F, Milpied N, le Gouill S, Lamy T, Gressin R. Upfront VIP-reinforced-ABVD (VIP-rABVD) is not superior to CHOP/21 in newly diagnosed peripheral T cell lymphoma: results of the randomized phase III trial GOELAMS-LTP95. Br J Haematol. 2010 Oct;151(2):159-66. Epub 2010 Aug 25. [https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2010.08329.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20738307 PubMed]
+
+==TFC, then allo HSCT {{#subobject:ee93e3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TFC: '''<u>T</u>'''hiotepa, '''<u>F</u>'''ludarabine, '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:81245f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/99/1/75.long Corradini et al. 2002]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|[https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html Corradini et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+Details to be completed.
+====Preceding treatment====
+*Corradini et al. 2014: [[#CHOP-AL|CHOP-AL]] x 2, then [[#HyperCHidam|HyperCHidam]] x 2
+
+====Chemotherapy====
+*[[Thiotepa (Thioplex)]]
+*[[Fludarabine (Fludara)]]
+*[[Cyclophosphamide (Cytoxan)]]
+
+===References===
+# Corradini P, Tarella C, Olivieri A, Gianni AM, Voena C, Zallio F, Ladetto M, Falda M, Lucesole M, Dodero A, Ciceri F, Benedetti F, Rambaldi A, Sajeva MR, Tresoldi M, Pileri A, Bordignon C, Bregni M. Reduced-intensity conditioning followed by allografting of hematopoietic cells can produce clinical and molecular remissions in patients with poor-risk hematologic malignancies. Blood. 2002 Jan 1;99(1):75-82. [http://www.bloodjournal.org/content/99/1/75.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11756155 PubMed]
+# Corradini P, Vitolo U, Rambaldi A, Miceli R, Patriarca F, Gallamini A, Olivieri A, Benedetti F, Todeschini G, Rossi G, Salvi F, Bruno B, Baldini L, Ferreri A, Patti C, Tarella C, Pileri S, Dodero A. Intensified chemo-immunotherapy with or without stem cell transplantation in newly diagnosed patients with peripheral T-cell lymphoma. Leukemia. 2014 Sep;28(9):1885-91. Epub 2014 Feb 20. [https://www.nature.com/leu/journal/v28/n9/full/leu201479a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24662801 PubMed]
+
+=Relapsed or refractory, randomized data=
+
+==DHAP {{#subobject:f4e87b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DHAP: '''<u>D</u>'''examethasone, '''<u>H</u>'''igh-dose '''<u>A</u>'''ra-C (Cytarabine), '''<u>P</u>'''latinol (Cisplatin)
+
+===Regimen {{#subobject:f5009d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/32/31/3490.full Crump et al. 2014 (NCIC-CTG LY.12)]
+|style="background-color:#91cf61"|Phase III, <20 in this arm (C)
+|[[#GDP|GDP]]
+|style="background-color:#eeee01"|Seems non-inferior
+|-
+|}
+====Chemotherapy====
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV over 3 hours every 12 hours on day 2 (total of 2 doses)
+*[[Cisplatin (Platinol)]] 100 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+
+'''21-day cycle for up to 3 cycles'''
+
+===References===
+<!-- Presented in part at the Annual Meeting of the American Society of Hematology, Atlanta, GA, December 7-10, 2013, and the International Conference on Malignant Lymphoma, Lugano, Switzerland, June 19-22, 2013. -->
+# Crump M, Kuruvilla J, Couban S, MacDonald DA, Kukreti V, Kouroukis CT, Rubinger M, Buckstein R, Imrie KR, Federico M, Di Renzo N, Howson-Jan K, Baetz T, Kaizer L, Voralia M, Olney HJ, Turner AR, Sussman J, Hay AE, Djurfeldt MS, Meyer RM, Chen BE, Shepherd LE. Randomized comparison of gemcitabine, dexamethasone, and cisplatin versus dexamethasone, cytarabine, and cisplatin chemotherapy before autologous stem-cell transplantation for relapsed and refractory aggressive lymphomas: NCIC-CTG LY.12. J Clin Oncol. 2014 Nov 1;32(31):3490-6. Epub 2014 Sep 29. [http://jco.ascopubs.org/content/32/31/3490.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25267740 PubMed]
+
+==GDP {{#subobject:7ceb1c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GDP: '''<u>G</u>'''emcitabine, '''<u>D</u>'''examethasone, '''<u>P</u>'''latinol (Cisplatin)
+
+===Regimen {{#subobject:67023b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/32/31/3490.full Crump et al. 2014 (NCIC-CTG LY.12)]
+|style="background-color:#91cf61"|Phase III, <20 in this arm (E)
+|[[#DHAP|DHAP]]
+|style="background-color:#eeee01"|Seems non-inferior
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 3 cycles'''
+
+===References===
+<!-- Presented in part at the Annual Meeting of the American Society of Hematology, Atlanta, GA, December 7-10, 2013, and the International Conference on Malignant Lymphoma, Lugano, Switzerland, June 19-22, 2013. -->
+# Crump M, Kuruvilla J, Couban S, MacDonald DA, Kukreti V, Kouroukis CT, Rubinger M, Buckstein R, Imrie KR, Federico M, Di Renzo N, Howson-Jan K, Baetz T, Kaizer L, Voralia M, Olney HJ, Turner AR, Sussman J, Hay AE, Djurfeldt MS, Meyer RM, Chen BE, Shepherd LE. Randomized comparison of gemcitabine, dexamethasone, and cisplatin versus dexamethasone, cytarabine, and cisplatin chemotherapy before autologous stem-cell transplantation for relapsed and refractory aggressive lymphomas: NCIC-CTG LY.12. J Clin Oncol. 2014 Nov 1;32(31):3490-6. Epub 2014 Sep 29. [http://jco.ascopubs.org/content/32/31/3490.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25267740 PubMed]
+
+=Relapsed or refractory, non-randomized or retrospective data=
+==Belinostat monotherapy {{#subobject:2a8653|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:682543|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13222/full Foss et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#404040; color:white"|ORR: 25%
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5087312/ O'Connor et al. 2015 (BELIEF)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#404040; color:white"|ORR: 26%
+|-
+|}
+====Chemotherapy====
+*[[Belinostat (Beleodaq)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+
+'''21-day cycles'''
+
+===References===
+<!-- # '''Abstract:''' Pohlman, Brad, Advani, Ranjana, Duvic, Madeleine, Hymes, Kenneth B., Intragumtornchai, Tanin, Lekhakula, Arnuparp, Shpilberg, Ofer, Lerner, Adam, Ben-Yehuda, Dina, beylot-Barry, Marie, Hillen, Uwe, Fagerberg, Jan, Foss, Francine M. Final Results of a Phase II Trial of Belinostat (PXD101) in Patients with Recurrent or Refractory Peripheral or Cutaneous T-Cell Lymphoma. ASH Annual Meeting Abstracts 2009 114: 920. [http://abstracts.hematologylibrary.org/cgi/content/abstract/114/22/920 link to abstract] -->
+# Foss F, Advani R, Duvic M, Hymes KB, Intragumtornchai T, Lekhakula A, Shpilberg O, Lerner A, Belt RJ, Jacobsen ED, Laurent G, Ben-Yehuda D, Beylot-Barry M, Hillen U, Knoblauch P, Bhat G, Chawla S, Allen LF, Pohlman B. A phase II trial of belinostat (PXD101) in patients with relapsed or refractory peripheral or cutaneous T-cell lymphoma. Br J Haematol. 2015 Mar;168(6):811-9. Epub 2014 Nov 17. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13222/full link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25404094 PubMed]
+<!-- # '''Abstract:''' Owen A. O'Connor, Tamás Masszi, Kerry J. Savage, Lauren C. Pinter-Brown, Francine M. Foss, Leslie Popplewell, Amanda F. Cashen, Jeanette Doorduijn, Shanta Chawla, Poul Knoblauch, Pier Luigi Zinzani, Peter Brown, Georg Hess, Achiel Van Hoof, Steven M. Horwitz, Andrei R. Shustov. Belinostat, a novel pan-histone deacetylase inhibitor (HDACi), in relapsed or refractory peripheral T-cell lymphoma (R/R PTCL): Results from the BELIEF trial. J Clin Oncol 31, 2013 (suppl; abstr 8507) [http://meetinglibrary.asco.org/content/111439-132 link to abstract] -->
+# '''BELIEF:''' O'Connor OA, Horwitz S, Masszi T, Van Hoof A, Brown P, Doorduijn J, Hess G, Jurczak W, Knoblauch P, Chawla S, Bhat G, Choi MR, Walewski J, Savage K, Foss F, Allen LF, Shustov A. Belinostat in patients with relapsed or refractory peripheral T-cell lymphoma: results of the pivotal phase II BELIEF (CLN-19) study. J Clin Oncol. 2015 Aug 10;33(23):2492-9. Epub 2015 Jun 22. [http://jco.ascopubs.org/content/33/23/2492.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5087312/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26101246 PubMed]
+
+==Bendamustine monotherapy {{#subobject:47c984|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:1e407d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/1/104.long Demaj et al. 2013 (BENTLY)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#7f7f7f; color:white"|ORR: 50%
+|-
+|}
+====Chemotherapy====
+*[[Bendamustine]] 120 mg/m<sup>2</sup> IV once per day on days 1 & 2
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+<!-- Presented in part at the 11th International Conference on Malignant Lymphoma, Lugano, Switzerland, June 15-18, 2011; at the T-Cell Lymphoma Forum, San Francisco, CA, January 26-28, 2012; and at the 48th Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, June 1-6, 2012. -->
+# '''BENTLY:''' Damaj G, Gressin R, Bouabdallah K, Cartron G, Choufi B, Gyan E, Banos A, Jaccard A, Park S, Tournilhac O, Schiano-de Collela JM, Voillat L, Joly B, Le Gouill S, Saad A, Cony-Makhoul P, Vilque JP, Sanhes L, Schmidt-Tanguy A, Bubenheim M, Houot R, Diouf M, Marolleau JP, Béné MC, Martin A, Lamy T. Results from a prospective, open-label, phase II trial of bendamustine in refractory or relapsed T-cell lymphomas: the BENTLY trial. J Clin Oncol. 2013 Jan 1;31(1):104-10. Epub 2012 Oct 29. [http://jco.ascopubs.org/content/31/1/104.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23109692 PubMed]
+
+==Bortezomib & Panobinostat {{#subobject:bd8c5d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:cec60c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(15)00097-6/fulltext Tan et al. 2015 (SGH651)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#666666; color:white"|ORR: 43% (95% CI, 23-63)
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Panobinostat (Farydak)]] 20 mg PO TIW during weeks 1 & 2
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Tan D, Phipps C, Hwang WY, Tan SY, Yeap CH, Chan YH, Tay K, Lim ST, Lee YS, Kumar SG, Ng SC, Fadilah S, Kim WS, Goh YT; SGH651 Investigators. Panobinostat in combination with bortezomib in patients with relapsed or refractory peripheral T-cell lymphoma: an open-label, multicentre phase 2 trial. Lancet Haematol. 2015 Aug;2(8):e326-33. Epub 2015 Jul 7. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(15)00097-6/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26688485 PubMed]
+
+==Brentuximab vedotin monotherapy {{#subobject:b71ea8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:e3235|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4425442/ Horwitz et al. 2014 (SGN35-012)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c96c6" |ORR: 41%
+|-
+|}
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg IV on day 1
+
+'''21-day cycle until progression or unacceptable toxicity'''
+
+===References===
+<!-- Presented in part at the 13th International Conference on Malignant Lymphoma, Lugano, Switzerland, June 2013. -->
+# '''SGN35-012:''' Horwitz SM, Advani RH, Bartlett NL, Jacobsen ED, Sharman JP, O'Connor OA, Siddiqi T, Kennedy DA, Oki Y. Objective responses in relapsed T-cell lymphomas with single-agent brentuximab vedotin. Blood. 2014 May 15;123(20):3095-100. Epub 2014 Mar 20. [https://www.ejcancer.com/article/S0959-8049%2813%2900363-8/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4425442/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24652992 PubMed]
+
+==Chidamide monotherapy {{#subobject:5a869f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:3a6a27|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/26/8/1766.long Shi et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|ORR: 28%
+|-
+|}
+====Chemotherapy====
+*[[Chidamide (Epidaza)]] 30 mg PO twice per week
+
+'''Continued indefinitely'''
+
+===References===
+# Shi Y, Dong M, Hong X, Zhang W, Feng J, Zhu J, Yu L, Ke X, Huang H, Shen Z, Fan Y, Li W, Zhao X, Qi J, Huang H, Zhou D, Ning Z, Lu X. Results from a multicenter, open-label, pivotal phase II study of chidamide in relapsed or refractory peripheral T-cell lymphoma. Ann Oncol. 2015 Aug;26(8):1766-71. Epub 2015 Jun 23. [http://annonc.oxfordjournals.org/content/26/8/1766.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26105599 PubMed]
+
+==Forodesine monotherapy {{#subobject:2310b4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d759e9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://link.springer.com/article/10.1007/s00277-018-3418-2 Maruyama et al. 2018]
+|style="background-color:#91cf61"|Phase I/II
+|ORR: 22%
+|-
+|}
+====Chemotherapy====
+*[[Forodesine (Fodosine)]] 300 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Maruyama D, Tsukasaki K, Uchida T, Maeda Y, Shibayama H, Nagai H, Kurosawa M, Suehiro Y, Hatake K, Ando K, Yoshida I, Hidaka M, Murayama T, Okitsu Y, Tsukamoto N, Taniwaki M, Suzumiya J, Tamura K, Yamauchi T, Ueda R, Tobinai K. Multicenter phase 1/2 study of forodesine in patients with relapsed peripheral T cell lymphoma. Ann Hematol. 2018 Jul 5. [Epub ahead of print] Erratum in: Ann Hematol. 2018 Jul 27. [https://link.springer.com/article/10.1007/s00277-018-3418-2 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29974231 PubMed]
+
+==Lenalidomide monotherapy {{#subobject:372121|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, limited duration {{#subobject:b6993e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(13)00363-8/fulltext Morschhauser et al. 2013 (EXPECT)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#666666; color:white"|ORR: 41%
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycle for up to 2 years'''
+
+===Variant #2, indefinite {{#subobject:868aa6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.25377/full Dueck et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#4d4d4d; color:white"|ORR: 30%
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycles'''
+
+===References===
+# Dueck G, Chua N, Prasad A, Finch D, Stewart D, White D, van der Jagt R, Johnston J, Belch A, Reiman T. Interim report of a phase 2 clinical trial of lenalidomide for T-cell non-Hodgkin lymphoma. Cancer. 2010 Oct 1;116(19):4541-8. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.25377/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20572046 PubMed]
+## '''Update:''' Toumishey E, Prasad A, Dueck G, Chua N, Finch D, Johnston J, van der Jagt R, Stewart D, White D, Belch A, Reiman T. Final report of a phase 2 clinical trial of lenalidomide monotherapy for patients with T-cell lymphoma. Cancer. 2015 Mar 1;121(5):716-23. Epub 2014 Oct 29. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29103/full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25355245 PubMed]
+# '''EXPECT:''' Morschhauser F, Fitoussi O, Haioun C, Thieblemont C, Quach H, Delarue R, Glaisner S, Gabarre J, Bosly A, Lister J, Li J, Coiffier B. A phase 2, multicentre, single-arm, open-label study to evaluate the safety and efficacy of single-agent lenalidomide (Revlimid®) in subjects with relapsed or refractory peripheral T-cell non-Hodgkin lymphoma: The EXPECT trial. Eur J Cancer. 2013 Sep;49(13):2869-76. Epub 2013 May 31. [https://www.ejcancer.com/article/S0959-8049(13)00363-8/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23731832 PubMed]
+
+==Mogamulizumab monotherapy {{#subobject:8d8ae3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2848bf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/32/11/1157.long Ogura et al. 2014 (KW-0761-004)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Mogamulizumab (Poteligeo)]] 1 mg/kg IV once per week
+
+'''8-week course'''
+
+===References===
+# '''KW-0761-004:''' Ogura M, Ishida T, Hatake K, Taniwaki M, Ando K, Tobinai K, Fujimoto K, Yamamoto K, Miyamoto T, Uike N, Tanimoto M, Tsukasaki K, Ishizawa K, Suzumiya J, Inagaki H, Tamura K, Akinaga S, Tomonaga M, Ueda R. Multicenter phase II study of mogamulizumab (KW-0761), a defucosylated anti-cc chemokine receptor 4 antibody, in patients with relapsed peripheral T-cell lymphoma and cutaneous T-cell lymphoma. J Clin Oncol. 2014 Apr 10;32(11):1157-63. Epub 2014 Mar 10. [http://jco.ascopubs.org/content/32/11/1157.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24616310 PubMed]
+
+==Pralatrexate monotherapy {{#subobject:c2c35b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Example orders===
+*[[Example orders for Pralatrexate (Folotyn) in peripheral T-cell lymphoma]]
+
+===Regimen {{#subobject:9606fa|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083873/ O'Connor et al. 2011 (PROPEL)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#4d4d4d; color:white"|ORR: 29%
+|-
+|}
+====Chemotherapy====
+*[[Pralatrexate (Folotyn)]] 30 mg/m<sup>2</sup> IV push over 3 to 5 minutes once per day on days 1, 8, 15, 22, 29, 36
+
+====Supportive medications====
+*[[Cyanocobalamin (Vitamin B12)]] 1 mg IM once every 8 to 10 weeks
+*[[Folic acid (Folate)]] 1 to 1.25 mg PO once per day
+**"Elevated methylmalonic acid (greater than 200 nmol/L) and/or homocysteine (greater than 10 µmol/L) at screening required initiation of [[Folic acid (Folate)]] and [[Cyanocobalamin (Vitamin B12)]] at least 10 days before the first dose of [[Pralatrexate (Folotyn)]]."
+
+'''7-week cycles'''
+
+===References===
+<!-- Presented in part at the 52nd Annual Meeting of the American Society of Hematology, Orlando, FL, December 4-7, 2010; at the 5th Biennial Workshop on the Clinical Translation of Epigenetics in Cancer Therapy, San Diego, CA, January 14-16, 2011; at the T-Cell Lymphoma Forum, San Francisco, CA, January 27-29, 2011; and at the 47th Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, June 3-7, 2011. -->
+# '''PROPEL:''' O'Connor OA, Pro B, Pinter-Brown L, Bartlett N, Popplewell L, Coiffier B, Lechowicz MJ, Savage KJ, Shustov AR, Gisselbrecht C, Jacobsen E, Zinzani PL, Furman R, Goy A, Haioun C, Crump M, Zain JM, Hsi E, Boyd A, Horwitz S. Pralatrexate in patients with relapsed or refractory peripheral T-cell lymphoma: results from the pivotal PROPEL study. J Clin Oncol. 2011 Mar 20;29(9):1182-9. [http://jco.ascopubs.org/content/29/9/1182.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3083873/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21245435 PubMed]
+
+==Romidepsin monotherapy {{#subobject:510429|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:fd7901|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!Study
+![[Levels_of_Evidence#Evidence|Evidence]]
+![[Levels_of_Evidence#Efficacy|Efficacy]]
+|Pt Population
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3112033/ Piekarz et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#666666; color:white"|ORR: 38% (95% CI 24-53)
+|Median of 3 prior treatments (range 1-11)
+|-
+|[http://jco.ascopubs.org/content/30/6/631.full Coiffier et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#4d4d4d; color:white"|ORR: Investigator assessment: 29% <br>Central review: 25%
+|Median of 2 prior treatments (range 1-8)
+|-
+|}
+====Chemotherapy====
+*[[Romidepsin (Istodax)]] 14 mg/m<sup>2</sup> IV over 4 hours once per day on days 1, 8, 15
+
+'''28-day cycle for up to 6 cycles, with optional extension of treatment for patients with stable disease or response'''
+
+===References===
+# Piekarz RL, Frye R, Prince HM, Kirschbaum MH, Zain J, Allen SL, Jaffe ES, Ling A, Turner M, Peer CJ, Figg WD, Steinberg SM, Smith S, Joske D, Lewis I, Hutchins L, Craig M, Fojo AT, Wright JJ, Bates SE. Phase 2 trial of romidepsin in patients with peripheral T-cell lymphoma. Blood. 2011 Jun 2;117(22):5827-34. Epub 2011 Feb 25. [http://www.bloodjournal.org/content/117/22/5827 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3112033/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21355097 PubMed]
+<!-- Presented in part at the 52nd Annual Meeting of the American Society of Hematology, Orlando, FL, December 4-7, 2010; at the 5th Biennial Workshop on the Clinical Translation of Epigenetics in Cancer Therapy, San Diego, CA, January 14-16, 2011; at the T-Cell Lymphoma Forum, San Francisco, CA, January 27-29, 2011; and at the 47th Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, June 3-7, 2011. -->
+# Coiffier B, Pro B, Prince HM, Foss F, Sokol L, Greenwood M, Caballero D, Borchmann P, Morschhauser F, Wilhelm M, Pinter-Brown L, Padmanabhan S, Shustov A, Nichols J, Carroll S, Balser J, Balser B, Horwitz S. Results from a pivotal, open-label, phase II study of romidepsin in relapsed or refractory peripheral T-cell lymphoma after prior systemic therapy. J Clin Oncol. 2012 Feb 20;30(6):631-6. Epub 2012 Jan 23. [http://jco.ascopubs.org/content/30/6/631.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22271479 PubMed]
+## '''Update:''' Coiffier B, Pro B, Prince HM, Foss F, Sokol L, Greenwood M, Caballero D, Morschhauser F, Wilhelm M, Pinter-Brown L, Padmanabhan Iyer S, Shustov A, Nielsen T, Nichols J, Wolfson J, Balser B, Horwitz S. Romidepsin for the treatment of relapsed/refractory peripheral T-cell lymphoma: pivotal study update demonstrates durable responses. J Hematol Oncol. 2014 Jan 23;7(1):11. [http://www.jhoonline.org/content/7/1/11 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016573/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24456586 PubMed]
+## '''Update:''' Foss F, Horwitz S, Pro B, Prince HM, Sokol L, Balser B, Wolfson J, Coiffier B. Romidepsin for the treatment of relapsed/refractory peripheral T cell lymphoma: prolonged stable disease provides clinical benefits for patients in the pivotal trial. J Hematol Oncol. 2016 Mar 10;9:22. [http://jhoonline.biomedcentral.com/articles/10.1186/s13045-016-0243-8 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4785666/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26965915 PubMed]
+
+=Consolidation after salvage therapy=
+==FluBuCy, then allo HSCT {{#subobject:84acb0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FluBuCy: '''<u>Flu</u>'''darabine, '''<u>Bu</u>'''sulfan, '''<u>Cy</u>'''clophosphamide
+===Regimen {{#subobject:bfe434|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext Glass et al. 2014 (DSHNHL R3)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+{{#lst:Allogeneic HSCT|bfe434}}
+===References===
+<!-- # Glass B, rabbits Kamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N. High-dose chemotherapy Followed by allogeneic stem cell transplantation in relapsed and refractory high-risk aggressive non-Hodgkin's lymphoma: Results of a prospective study of the German high-grade non-Hodgkin's lymphoma study group. J Clin Oncol 30, 2012 (suppl; abstr 8004) -->
+# '''DSHNHL R3:''' Glass B, Hasenkamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M, Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N; on behalf of the German High-Grade Lymphoma Study Group. Rituximab after lymphoma-directed conditioning and allogeneic stem-cell transplantation for relapsed and refractory aggressive non-Hodgkin lymphoma (DSHNHL R3): an open-label, randomised, phase 2 trial. Lancet Oncol. 2014 Jun;15(7):757-66. Epub 2014 May 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext link to original article] [http://www.dshnhl.org/app/download/9495510598/Studienprotokoll+DSHNHL+alloFBC+final+vollst.pdf link to original protocol (in German)] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24827808 PubMed]
+
+=Investigational agents=
+''These are drugs under study or approved outside of the United States, with at least some promising results for this disease.''
+
+*[[Alisertib (MLN8237)]]
+*[[Chidamide (Epidaza)]]
+
+[[Category:Peripheral T-cell lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:T-cell lymphomas]]

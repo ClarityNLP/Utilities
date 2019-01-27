@@ -1,0 +1,790 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:nkv.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Neetavenepalli|Neeta K. Venepalli, MD, MBA]]<br>Chicago, IL</big>
+|-
+|}
+<big>Note: the page has adjuvant and perioperative regimens specific to KRAS wild-type colon cancer as well as systemic regimens for the more general category of KRAS wild-type colorectal cancer. 
+*See the [[Colon_cancer|'''main colon cancer page''']] for general regimens.</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2016:''' [http://annonc.oxfordjournals.org/content/27/8/1386.full.pdf+html ESMO consensus guidelines for the management of patients with metastatic colorectal cancer.] [https://www.ncbi.nlm.nih.gov/pubmed/27380959 PubMed]
+*'''2013:''' [http://annonc.oxfordjournals.org/content/24/suppl_6/vi64.full.pdf+html Early Colon Cancer: ESMO Clinical Practice Guidelines] [https://www.ncbi.nlm.nih.gov/pubmed/24078664 PubMed]
+*'''2013:''' [http://annonc.oxfordjournals.org/content/24/suppl_6/vi73.full.pdf+html Familial risk-colorectal cancer: ESMO Clinical Practice Guidelines.] [https://www.ncbi.nlm.nih.gov/pubmed/23813931 PubMed]
+
+==[http://www.jsccr.jp/en/index.html Japanese Society for Cancer of the Colon and Rectum]==
+*'''2016:''' [https://link.springer.com/article/10.1007%2Fs10147-017-1101-6 Japanese Society for Cancer of the Colon and Rectum (JSCCR) guidelines 2016 for the treatment of colorectal cancer] [https://www.ncbi.nlm.nih.gov/pubmed/28349281 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/colon.pdf NCCN Guidelines - Colon Cancer]
+
+=Adjuvant therapy=
+==mFOLFOX6 & Cetuximab {{#subobject:e4c5e0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mFOLFOX6 & Cetuximab: '''<u>m</u>'''odified '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, Cetuximab
+===Regimen {{#subobject:7abe3e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jama.jamanetwork.com/article.aspx?articleid=1148329 Alberts et al. 2012 (N0147)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#mFOLFOX6_2|mFOLFOX6]]
+|style="background-color:#fee08b"|Might have inferior DFS
+|-
+|}
+''Some guidelines do not recommend using cetuximab as adjuvant therapy outside of a clinical trial.''
+====Preceding treatment====
+*[[Surgery#Colon_cancer_surgery|Surgery]], within 10 weeks
+
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 to 48 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV over 2 hours once on day 1
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV over 2 hours once on day 1
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once on day 8
+**Cycles 2 to 12: 250 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 & 8
+
+'''14-day cycle for 12 cycles'''
+
+===References===
+# '''N0147:''' Alberts SR, Sargent DJ, Nair S, Mahoney MR, Mooney M, Thibodeau SN, Smyrk TC, Sinicrope FA, Chan E, Gill S, Kahlenberg MS, Shields AF, Quesenberry JT, Webb TA, Farr GH Jr, Pockaj BA, Grothey A, Goldberg RM. Effect of oxaliplatin, fluorouracil, and leucovorin with or without cetuximab on survival among patients with resected stage III colon cancer: a randomized trial. JAMA. 2012 Apr 4;307(13):1383-93. [http://jama.jamanetwork.com/article.aspx?articleid=1148329 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3442260/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22474202 PubMed]
+
+=Perioperative therapy for oligometastatic disease=
+==FOLFIRI & Cetuximab {{#subobject:a051ec|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFIRI & Cetuximab: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>IRI</u>'''notecan, Cetuximab
+===Variant #1, weekly cetuximab {{#subobject:8f47f9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 Ye et al. 2013]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFIRI|FOLFIRI]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: this trial was only open to KRAS wild-type patients with synchronous liver-confined unresectable metastases.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] as follows, '''given first''':
+**Cycle 1: 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once on day 8
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''14-day cycles until lesions deemed resectable or up to 12 cycles'''
+
+===Variant #2, bi-weekly cetuximab {{#subobject:49d215|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 Ye et al. 2013]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFIRI|FOLFIRI]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: this trial was only open to KRAS wild-type patients with synchronous liver-confined unresectable metastases.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV once on day 1, '''given first'''
+
+'''14-day cycles until lesions deemed resectable or up to 12 cycles'''
+
+===References===
+# Ye LC, Liu TS, Ren L, Wei Y, Zhu DX, Zai SY, Ye QH, Yu Y, Xu B, Qin XY, Xu J. Randomized controlled trial of cetuximab plus chemotherapy for patients with KRAS wild-type unresectable colorectal liver-limited metastases. J Clin Oncol. 2013 Jun 1;31(16):1931-8. Epub 2013 Apr 8. [http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23569301 PubMed]
+
+==mFOLFOX6 & Cetuximab {{#subobject:8fcd39|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mFOLFOX6 & Cetuximab: '''<u>m</u>'''odified '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, Cetuximab
+===Variant #1, weekly cetuximab {{#subobject:dcf5ee|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 Ye et al. 2013]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#mFOLFOX6|mFOLFOX6]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: this trial was only open to KRAS wild-type patients with synchronous liver-confined unresectable metastases.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] as follows, '''given first''':
+**Cycle 1: 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once on day 8
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''14-day cycles until lesions deemed resectable or up to 12 cycles'''
+
+===Variant #2, bi-weekly cetuximab {{#subobject:e190fa|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 Ye et al. 2013]
+|style="background-color:#1a9851"|Phase III (E)
+|mFOLFOX6
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: this trial was only open to KRAS wild-type patients with synchronous liver-confined unresectable metastases.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV once on day 1, '''given first'''
+
+'''14-day cycles until lesions deemed resectable or up to 12 cycles'''
+
+===References===
+# Ye LC, Liu TS, Ren L, Wei Y, Zhu DX, Zai SY, Ye QH, Yu Y, Xu B, Qin XY, Xu J. Randomized controlled trial of cetuximab plus chemotherapy for patients with KRAS wild-type unresectable colorectal liver-limited metastases. J Clin Oncol. 2013 Jun 1;31(16):1931-8. Epub 2013 Apr 8. [http://ascopubs.org/doi/full/10.1200/JCO.2012.44.8308 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23569301 PubMed]
+
+=Advanced or metastatic disease, first-line=
+==CapeOx & Panitumumab {{#subobject:22cf7b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CapeOx & Panitumumab: '''<u>Cape</u>'''citabine, '''<u>Ox</u>'''aliplatin, Panitumumab
+===Regimen {{#subobject:944ac6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://link.springer.com/article/10.1007%2Fs12032-018-1160-1 Papaxoinis et al. 2018]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Oxaliplatin (Eloxatin)]] 130 mg/m<sup>2</sup> IV once on day 1
+*[[Panitumumab (Vectibix)]] 9 mg/kg IV once on day 1
+
+'''21-day cycles'''
+===References===
+# Papaxoinis G, Kotoula V, Giannoulatou E, Koliou GA, Karavasilis V, Lakis S, Koureas A, Bobos M, Chalaralambous E, Daskalaki E, Chatzopoulos K, Tsironis G, Pazarli E, Chrisafi S, Samantas E, Kaklamanos IG, Varthalitis I, Konstantara A, Syrigos KN, Pentheroudakis G, Pectasides D, Fountzilas G. Phase II study of panitumumab combined with capecitabine and oxaliplatin as first-line treatment in metastatic colorectal cancer patients: clinical results including extended tumor genotyping. Med Oncol. 2018 May 31;35(7):101. [https://link.springer.com/article/10.1007%2Fs12032-018-1160-1 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29855806 PubMed]
+
+==FOLFIRI & Cetuximab {{#subobject:11cf7b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFIRI & Cetuximab: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>IRI</u>'''notecan, Cetuximab
+===Regimen {{#subobject:921ac6|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa0805019 Van Cutsem et al. 2009 (CRYSTAL)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFIRI_2|FOLFIRI]]
+|style="background-color:#1a9850"|Superior OS (*)
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70330-4/fulltext Heinemann et al. 2014 (FIRE-3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFIRI_.26_Bevacizumab|FOLFIRI & Bevacizumab]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Reported efficacy for CRYSTAL is based on the 2012 pooled update and is only for KRAS wild-type tumors.''
+====Chemotherapy====
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given second, 1 hour after completion of cetuximab, with irinotecan'''
+**Alternatively, [[Levoleucovorin (Fusilev)]] 200 mg/m<sup>2</sup> IV over 2 hours once on day 1 
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours, '''given third''' (total dose per cycle: 2800 mg/m<sup>2</sup>) 
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV over 30 to 90 minutes once on day 1, '''given second, 1 hour after completion of cetuximab, with leucovorin'''
+*[[Cetuximab (Erbitux)]] as follows, '''given first and completed at least 1 hour before FOLFIRI begins''':
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once on day 8 
+**Cycle 2 onwards: 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 & 8
+
+'''14-day cycles'''
+
+===References===
+# '''CRYSTAL:''' Van Cutsem E, Köhne CH, Hitre E, Zaluski J, Chang Chien CR, Makhson A, D'Haens G, Pintér T, Lim R, Bodoky G, Roh JK, Folprecht G, Ruff P, Stroh C, Tejpar S, Schlichting M, Nippgen J, Rougier P. Cetuximab and chemotherapy as initial treatment for metastatic colorectal cancer. N Engl J Med. 2009 Apr 2;360(14):1408-17. [https://www.nejm.org/doi/full/10.1056/NEJMoa0805019 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19339720 PubMed]
+<!-- ## '''Update: Abstract:''' E. Van Cutsem, I. Lang, G. Folprecht, M. Nowacki, C. Barone, I. Shchepotin, J. Maurel, D. Cunningham, I. Celik, C. Kohne. Cetuximab plus FOLFIRI: Final data from the CRYSTAL study on the association of KRAS and BRAF biomarker status with treatment outcome. 2010 ASCO Annual Meeting abstract 3570. [http://www.asco.org/ascov2/Meetings/Abstracts?&vmview=abst_detail_view&confID=74&abstractID=54429 link to abstract] -->
+## '''Update:''' Van Cutsem E, Köhne CH, Láng I, Folprecht G, Nowacki MP, Cascinu S, Shchepotin I, Maurel J, Cunningham D, Tejpar S, Schlichting M, Zubel A, Celik I, Rougier P, Ciardiello F. Cetuximab plus irinotecan, fluorouracil, and leucovorin as first-line treatment for metastatic colorectal cancer: updated analysis of overall survival according to tumor KRAS and BRAF mutation status. J Clin Oncol. 2011 May 20;29(15):2011-9. Epub 2011 Apr 18. [http://jco.ascopubs.org/content/29/15/2011.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21502544 PubMed]
+## '''Pooled update:''' Bokemeyer C, Van Cutsem E, Rougier P, Ciardiello F, Heeger S, Schlichting M, Celik I, Köhne CH. Addition of cetuximab to chemotherapy as first-line treatment for KRAS wild-type metastatic colorectal cancer: Pooled analysis of the CRYSTAL and OPUS randomised clinical trials. Eur J Cancer. 2012 Jul;48(10):1466-75. Epub 2012 Mar 23. [https://www.ejcancer.com/article/S0959-8049(12)00209-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22446022 PubMed]
+## '''Biomarker analysis:''' Van Cutsem E, Lenz HJ, Köhne CH, Heinemann V, Tejpar S, Melezínek I, Beier F, Stroh C, Rougier P, van Krieken JH, Ciardiello F. Fluorouracil, leucovorin, and irinotecan plus cetuximab treatment and RAS mutations in colorectal cancer. J Clin Oncol. 2015 Mar 1;33(7):692-700. Epub 2015 Jan 20. [http://ascopubs.org/doi/full/10.1200/JCO.2014.59.4812 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25605843 PubMed]
+# '''FIRE-3:''' Heinemann V, von Weikersthal LF, Decker T, Kiani A, Vehling-Kaiser U, Al-Batran SE, Heintges T, Lerchenmüller C, Kahl C, Seipelt G, Kullmann F, Stauch M, Scheithauer W, Hielscher J, Scholz M, Müller S, Link H, Niederle N, Rost A, Höffkes HG, Moehler M, Lindig RU, Modest DP, Rossius L, Kirchner T, Jung A, Stintzing S. FOLFIRI plus cetuximab versus FOLFIRI plus bevacizumab as first-line treatment for patients with metastatic colorectal cancer (FIRE-3): a randomised, open-label, phase 3 trial. Lancet Oncol. 2014 Sep;15(10):1065-75. Epub 2014 Jul 31. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70330-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25088940 PubMed]
+
+==FOLFOX4 & Cetuximab {{#subobject:5e5bf3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFOX4 & Cetuximab: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, Cetuximab
+
+===Regimen {{#subobject:9ec84d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2008.20.8397 Bokemeyer et al. 2008 (OPUS)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[Colon_cancer#FOLFOX4_3|FOLFOX4]]
+|style="background-color:#1a9850"|Superior OS (*)
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2018.78.3183 Qin et al. 2018 (TAILOR-CRC)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFOX4_3|FOLFOX4]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Reported efficacy for OPUS is based on the 2012 pooled update and is only for KRAS wild-type tumors. TAILOR required RAS wild-type (not just KRAS). Note that there is another trial named TAILOR in non-small cell lung cancer, so this one has been dubbed TAILOR-CRC.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once per day on days 1 & 2, then 600 mg/m<sup>2</sup> IV continuous infusion over 22 hours after each bolus, '''given third''' (total dose per cycle: 2000 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 200 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 & 2, '''given second, with oxaliplatin on day 1'''
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given second'''
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1 day 1: 400 mg/m<sup>2</sup> IV over 2 hours once, '''given first'''
+**Thereafter: 250 mg/m<sup>2</sup> IV over 60 minutes once per week, '''given first'''
+
+'''14-day cycles'''
+
+===References===
+# '''OPUS:''' Bokemeyer C, Bondarenko I, Makhson A, Hartmann JT, Aparicio J, de Braud F, Donea S, Ludwig H, Schuch G, Stroh C, Loos AH, Zubel A, Koralewski P. Fluorouracil, leucovorin, and oxaliplatin with and without cetuximab in the first-line treatment of metastatic colorectal cancer. J Clin Oncol. 2009 Feb 10;27(5):663-71. Epub 2008 Dec 29. [http://ascopubs.org/doi/full/10.1200/JCO.2008.20.8397 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19114683 PubMed]
+## '''Update:''' Bokemeyer C, Bondarenko I, Hartmann JT, de Braud F, Schuch G, Zubel A, Celik I, Schlichting M, Koralewski P. Efficacy according to biomarker status of cetuximab plus FOLFOX-4 as first-line treatment for metastatic colorectal cancer: the OPUS study. Ann Oncol. 2011 Jul;22(7):1535-46. Epub 2011 Jan 12. [https://academic.oup.com/annonc/article/22/7/1535/187254 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21228335 PubMed]
+## '''Pooled Update:''' Bokemeyer C, Van Cutsem E, Rougier P, Ciardiello F, Heeger S, Schlichting M, Celik I, Köhne CH. Addition of cetuximab to chemotherapy as first-line treatment for KRAS wild-type metastatic colorectal cancer: Pooled analysis of the CRYSTAL and OPUS randomised clinical trials. Eur J Cancer. 2012 Jul;48(10):1466-75. Epub 2012 Mar 23. [https://www.ejcancer.com/article/S0959-8049(12)00209-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22446022 PubMed]
+# '''TAILOR-CRC:''' Qin S, Li J, Wang L, Xu J, Cheng Y, Bai Y, Li W, Xu N, Lin LZ, Wu Q, Li Y, Yang J, Pan H, Ouyang X, Qiu W, Wu K, Xiong J, Dai G, Liang H, Hu C, Zhang J, Tao M, Yao Q, Wang J, Chen J, Eggleton SP, Liu T. Efficacy and tolerability of first-line cetuximab plus leucovorin, fluorouracil, and oxaliplatin (FOLFOX-4) versus FOLFOX-4 in patients with RAS wild-type metastatic colorectal cancer: the open-label, randomized, phase III TAILOR trial. J Clin Oncol. 2018 Oct 20;36(30):3031-9. Epub 2018 Sep 10. [http://ascopubs.org/doi/full/10.1200/JCO.2018.78.3183 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30199311 PubMed]
+
+==FOLFOX4 & Panitumumab {{#subobject:486271|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFOX4 & Panitumumab: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, Panitumumab
+===Regimen {{#subobject:d862a3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/31/4697.long Douillard et al. 2010 (PRIME)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFOX4_3|FOLFOX4]]
+| style="background-color:#91cf60" |Seems to have superior OS (*)
+|-
+|}
+''Note: in KRAS wild-type patients, this regimen seems to have superior OS, based on the 2014 update.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once per day on days 1 & 2, then 600 mg/m<sup>2</sup> IV continuous infusion over 22 hours after each bolus (total dose per cycle: 2000 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 200 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 & 2
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV over 2 hours once on day 1
+*[[Panitumumab (Vectibix)]] 6 mg/kg IV once on day 1, '''given first'''
+**Infusion times are 1 hour for cycle 1, then if tolerated, 30 minutes for cycle 2 and later
+
+'''14-day cycles'''
+===References===
+<!-- Presented in part at the 43rd Annual Meeting of the American Society of Clinical Oncology, June 1-5, 2007, Chicago, IL; the 2008 Gastrointestinal Cancers Symposium, January 25-27, 2008, Orlando, FL; the joint 15th Congress of the European Cancer Organisation and 34th Congress of the European Society for Medical Oncology, September 20-24, 2009, Berlin, Germany; the 6th Annual Meeting of the International Society of Gastrointestinal Oncology, October 1-3, 2009, Philadelphia, PA; the 2009 National Cancer Research Institute Cancer Conference, October 4-7, 2009, Birmingham, United Kingdom; and the 2010 Gastrointestinal Cancers Symposium, January 22-24, 2010, Orlando, FL. -->
+# '''PRIME:''' Douillard JY, Siena S, Cassidy J, Tabernero J, Burkes R, Barugel M, Humblet Y, Bodoky G, Cunningham D, Jassem J, Rivera F, Kocákova I, Ruff P, Błasińska-Morawiec M, Šmakal M, Canon JL, Rother M, Oliner KS, Wolf M, Gansert J. Randomized, phase III trial of panitumumab with infusional fluorouracil, leucovorin, and oxaliplatin (FOLFOX4) versus FOLFOX4 alone as first-line treatment in patients with previously untreated metastatic colorectal cancer: the PRIME study. J Clin Oncol. 2010 Nov 1;28(31):4697-705. Epub 2010 Oct 4. [http://jco.ascopubs.org/content/28/31/4697.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20921465 PubMed]
+## '''Biomarker analysis:''' Douillard JY, Oliner KS, Siena S, Tabernero J, Burkes R, Barugel M, Humblet Y, Bodoky G, Cunningham D, Jassem J, Rivera F, Kocákova I, Ruff P, Błasińska-Morawiec M, Šmakal M, Canon JL, Rother M, Williams R, Rong A, Wiezorek J, Sidhu R, Patterson SD. Panitumumab-FOLFOX4 treatment and RAS mutations in colorectal cancer. N Engl J Med. 2013 Sep 12;369(11):1023-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa1305275 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24024839 PubMed]
+## '''Update:''' Douillard JY, Siena S, Cassidy J, Tabernero J, Burkes R, Barugel M, Humblet Y, Bodoky G, Cunningham D, Jassem J, Rivera F, Kocákova I, Ruff P, Błasińska-Morawiec M, Smakal M, Canon JL, Rother M, Oliner KS, Tian Y, Xu F, Sidhu R. Final results from PRIME: randomized phase III study of panitumumab with FOLFOX4 for first-line treatment of metastatic colorectal cancer. Ann Oncol. 2014 Jul;25(7):1346-55. Epub 2014 Apr 8. [https://academic.oup.com/annonc/article/25/7/1346/2801199 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24718886 PubMed]
+
+==mFOLFOX6 & Cetuximab {{#subobject:12d786|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mFOLFOX6 & Cetuximab: '''<u>m</u>'''odified '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, Cetuximab
+===Regimen {{#subobject:8baf2c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5545896/ Venook et al. 2017 (CALGB 80405)]
+| style="background-color:#1a9851" |Phase III (C)
+|mFOLFOX6 & Bevacizumab
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.ejcancer.com/article/S0959-8049(18)30938-9/fulltext Aranda et al. 2018 (MACRO2 TTD)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] as follows, '''given first''':
+**Cycle 1: 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once on day 8
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''14-day cycles (see below)'''
+====Subsequent treatment====
+*MACRO TTD, after 8 cycles: continued mFOLFOX6 & Cetuximab until progression versus [[#Cetuximab_monotherapy|cetuximab maintenance]]
+
+===References===
+# '''CALGB 80405:''' Venook AP, Niedzwiecki D, Lenz HJ, Innocenti F, Fruth B, Meyerhardt JA, Schrag D, Greene C, O'Neil BH, Atkins JN, Berry S, Polite BN, O'Reilly EM, Goldberg RM, Hochster HS, Schilsky RL, Bertagnolli MM, El-Khoueiry AB, Watson P, Benson AB 3rd, Mulkerin DL, Mayer RJ, Blanke C. Effect of First-Line Chemotherapy Combined With Cetuximab or Bevacizumab on Overall Survival in Patients With KRAS Wild-Type Advanced or Metastatic Colorectal Cancer: A Randomized Clinical Trial. JAMA. 2017 Jun 20;317(23):2392-2401. [https://jamanetwork.com/journals/jama/fullarticle/2632502 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5545896/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28632865 PubMed]
+# '''MACRO2 TTD:''' Aranda E, García-Alfonso P, Benavides M, Sánchez Ruiz A, Guillén-Ponce C, Safont MJ, Alcaide J, Gómez A, López R, Manzano JL, Méndez Ureña M, Sastre J, Rivera F, Grávalos C, García T, Martín-Valadés JI, Falcó E, Navalón M, González Flores E, Ma García Tapiador A, Ma López Muñoz A, Barrajón E, Reboredo M, García Teijido P, Viudez A, Cárdenas N, Díaz-Rubio E; Spanish Cooperative Group for the Treatment of Digestive Tumours (TTD). First-line mFOLFOX plus cetuximab followed by mFOLFOX plus cetuximab or single-agent cetuximab as maintenance therapy in patients with metastatic colorectal cancer: phase II randomised MACRO2 TTD study. Eur J Cancer. 2018 Sep;101:263-272. Epub 2018 Jul 24. [https://www.ejcancer.com/article/S0959-8049(18)30938-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30054049 PubMed]
+
+==mFOLFOXIRI & Cetuximab {{#subobject:9bf7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mFOLFOXIRI & Cetuximab: '''<u>m</u>'''odified '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin, '''<u>IRI</u>'''notecan, Cetuximab
+===Regimen {{#subobject:19365|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5885260/ Cremolini et al. 2018 (MACBETH)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+''Note: 5-FU instructions are from ClinicalTrials.gov and are unusual in that no bolus is given.''
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 1200 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1, '''given fourth''' (total dose per cycle: 2400 mg/m<sup>2</sup>)
+*[[Levoleucovorin (Fusilev)]] 200 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given third, with oxaliplatin'''
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given third, with leucovorin'''
+*[[Irinotecan (Camptosar)]] 130 mg/m<sup>2</sup> IV over 60 minutes once on day 1, '''given second'''
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV over 60 minutes once on day 1, '''given first'''
+
+'''14-day cycle for 8 cycles'''
+====Subsequent treatment====
+*If deemed resectable: [[Surgery#Colon_cancer_surgery|Surgery]]
+*If deemed unresectable: [[#Cetuximab_monotherapy|Cetuximab]] versus Bevacizumab maintenance
+
+===References===
+# '''MACBETH:''' Cremolini C, Antoniotti C, Lonardi S, Aprile G, Bergamo F, Masi G, Grande R, Tonini G, Mescoli C, Cardellino GG, Coltelli L, Salvatore L, Corsi DC, Lupi C, Gemma D, Ronzoni M, Dell'Aquila E, Marmorino F, Di Fabio F, Mancini ML, Marcucci L, Fontanini G, Zagonel V, Boni L, Falcone A. Activity and safety of cetuximab plus modified FOLFOXIRI followed by maintenance with cetuximab or bevacizumab for RAS and BRAF wild-type metastatic colorectal cancer: a randomized phase 2 clinical trial. JAMA Oncol. 2018 Apr 1;4(4):529-536. [https://jamanetwork.com/journals/jamaoncology/article-abstract/2672387 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5885260/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29450468 PubMed]
+
+=Maintenance after first-line therapy=
+==Cetuximab monotherapy {{#subobject:afad4f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 250 mg/m<sup>2</sup> weekly {{#subobject:a72650|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(18)30938-9/fulltext Aranda et al. 2018 (MACRO TTD)]
+| style="background-color:#1a9851" |Randomized Phase II (E)
+|[[#mFOLFOX6_.26_Cetuximab_3|mFOLFOX6 & Cetuximab]]
+| style="background-color:#eeee01" |Non-inferior PFS
+|-
+|}
+''Note: regimen details were not available in the abstract.''
+====Preceding treatment====
+*[[#mFOLFOX6_.26_Cetuximab_3|mFOLFOX6 & Cetuximab]] x 8
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 250 mg/m<sup>2</sup> IV once on day 1
+
+'''7-day cycles'''
+
+===Variant #2, 500 mg/m<sup>2</sup> q2wk {{#subobject:3d7e64|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5885260/ Cremolini et al. 2018 (MACBETH)]
+| style="background-color:#91cf61" |Randomized Phase II (*)
+|-
+|}
+''Note: this was a non-comparative study.''
+====Preceding treatment====
+*[[#mFOLFOXIRI_.26_Cetuximab|mFOLFOXIRI & Cetuximab]] x 8
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV once on day 1
+
+'''14-day cycles'''
+===References===
+# '''MACBETH:''' Cremolini C, Antoniotti C, Lonardi S, Aprile G, Bergamo F, Masi G, Grande R, Tonini G, Mescoli C, Cardellino GG, Coltelli L, Salvatore L, Corsi DC, Lupi C, Gemma D, Ronzoni M, Dell'Aquila E, Marmorino F, Di Fabio F, Mancini ML, Marcucci L, Fontanini G, Zagonel V, Boni L, Falcone A. Activity and safety of cetuximab plus modified FOLFOXIRI followed by maintenance with cetuximab or bevacizumab for RAS and BRAF wild-type metastatic colorectal cancer: a randomized phase 2 clinical trial. JAMA Oncol. 2018 Apr 1;4(4):529-536. [https://jamanetwork.com/journals/jamaoncology/article-abstract/2672387 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5885260/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29450468 PubMed]
+# '''MACRO TTD:''' Aranda E, García-Alfonso P, Benavides M, Sánchez Ruiz A, Guillén-Ponce C, Safont MJ, Alcaide J, Gómez A, López R, Manzano JL, Méndez Ureña M, Sastre J, Rivera F, Grávalos C, García T, Martín-Valadés JI, Falcó E, Navalón M, González Flores E, Ma García Tapiador A, Ma López Muñoz A, Barrajón E, Reboredo M, García Teijido P, Viudez A, Cárdenas N, Díaz-Rubio E; Spanish Cooperative Group for the Treatment of Digestive Tumours (TTD). First-line mFOLFOX plus cetuximab followed by mFOLFOX plus cetuximab or single-agent cetuximab as maintenance therapy in patients with metastatic colorectal cancer: phase II randomised MACRO2 TTD study. Eur J Cancer. 2018 Sep;101:263-272. Epub 2018 Jul 24. [https://www.ejcancer.com/article/S0959-8049(18)30938-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30054049 PubMed]
+
+=Advanced or metastatic disease, second-line=
+==FOLFIRI & Panitumumab {{#subobject:8c0093|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFIRI & Panitumumab: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>IRI</u>'''notecan, Panitumumab
+
+===Regimen {{#subobject:ebf6e5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/31/4706.long Peeters et al. 2010 (20050181)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#FOLFIRI_3|FOLFIRI]]
+| style="background-color:#91cf60" |Seems to have superior PFS (*)
+|-
+|}
+''Note: reported efficacy is for wild-type KRAS, only, and is based on the 2014 update.''
+====Chemotherapy====
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given second, with irinotecan'''
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 to 48 hours, '''given third''' (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV over 30 to 90 minutes once on day 1, '''given second, with leucovorin'''
+*[[Panitumumab (Vectibix)]] 6 mg/kg IV over 60 minutes once on day 1, '''given first'''
+
+'''14-day cycles'''
+
+===References===
+# '''20050181:''' Peeters M, Price TJ, Cervantes A, Sobrero AF, Ducreux M, Hotko Y, André T, Chan E, Lordick F, Punt CJ, Strickland AH, Wilson G, Ciuleanu TE, Roman L, Van Cutsem E, Tzekova V, Collins S, Oliner KS, Rong A, Gansert J. Randomized phase III study of panitumumab with fluorouracil, leucovorin, and irinotecan (FOLFIRI) compared with FOLFIRI alone as second-line treatment in patients with metastatic colorectal cancer. J Clin Oncol. 2010 Nov 1;28(31):4706-13. Epub 2010 Oct 4. [http://jco.ascopubs.org/content/28/31/4706.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20921462 PubMed]
+## '''Update:''' Peeters M, Price TJ, Cervantes A, Sobrero AF, Ducreux M, Hotko Y, André T, Chan E, Lordick F, Punt CJ, Strickland AH, Wilson G, Ciuleanu TE, Roman L, Van Cutsem E, Tian Y, Sidhu R. Final results from a randomized phase 3 study of FOLFIRI {+/-} panitumumab for second-line treatment of metastatic colorectal cancer. Ann Oncol. 2014 Jan;25(1):107-16. Erratum in: Ann Oncol. 2014 Mar;25(3):757. [https://academic.oup.com/annonc/article/25/1/107/166332 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24356622 PubMed]
+
+==Irinotecan & Cetuximab {{#subobject:c912ee|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b7315f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/26/14/2311.long Sobrero et al. 2008 (EPIC)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#Irinotecan_monotherapy_2|Irinotecan]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 350 mg/m<sup>2</sup> IV over 90 minutes once on day 1
+**If aged 70 years old or more, [[Performance status|ECOG performance status]] 2 or more, or prior pelvic radiation: 300 mg/m<sup>2</sup> IV over 90 minutes once on day 1
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 8 & 15
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1, 8, 15
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to at least the first infusion of [[Cetuximab (Erbitux)]]
+
+'''21-day cycles'''
+
+===References===
+<!-- Presented in part at the 41st Annual Meeting of the American Society of Clinical Oncology, Orlando, FL, June 2005; the 42nd Annual Meeting of the American Society of Clinical Oncology, Atlanta, GA, June 2006; safety and efficacy results from this study were presented at the Annual Meeting of the American Association for Cancer Research, April 14-18, 2007, Los Angeles, CA; and the quality of life results from this study were presented at the 43rd Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, June 2007. -->
+# '''EPIC:''' Sobrero AF, Maurel J, Fehrenbacher L, Scheithauer W, Abubakr YA, Lutz MP, Vega-Villegas ME, Eng C, Steinhauer EU, Prausova J, Lenz HJ, Borg C, Middleton G, Kröning H, Luppi G, Kisker O, Zubel A, Langer C, Kopit J, Burris HA 3rd. EPIC: phase III trial of cetuximab plus irinotecan after fluoropyrimidine and oxaliplatin failure in patients with metastatic colorectal cancer. J Clin Oncol. 2008 May 10;26(14):2311-9. Epub 2008 Apr 7. [http://jco.ascopubs.org/content/26/14/2311.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18390971 PubMed]
+
+=Advanced or metastatic disease, subsequent lines of therapy=
+==Cetuximab monotherapy {{#subobject:a41ec2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Example orders===
+*[[Example orders for Cetuximab (Erbitux) in colon cancer]]
+
+===Variant #1, weekly {{#subobject:e4f241|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa033025 Cunningham et al. 2004 (BOND)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cetuximab_.26_Irinotecan|Cetuximab & Irinotecan]]
+|style="background-color:#d73027"|Inferior TTP
+|-
+|[http://jco.ascopubs.org/content/24/30/4914.long Lenz et al. 2006 (SALVAGE)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa071834 Jonker et al. 2007 (NCIC CTG CO.17)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#Best_supportive_care|Best supportive care]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.46.0543 Siu et al. 2013 (NCIC CTG/AGITG CO.20)]
+|style="background-color:#1a9851"|Phase III (C)
+|Brivanib & Cetuximab
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70118-4/fulltext Price et al. 2014 (ASPECCT)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Panitumumab_monotherapy|Panitumumab]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|}
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 400 mg/m<sup>2</sup> IV over 2 hours once on day 1 of cycle 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once per week
+
+====Supportive medications====
+*Varies depending on reference
+*[[:Category:Antihistamines|Antihistamine]] (such as [[Diphenhydramine (Benadryl)]] 50 mg IV) prior to at least the first infusion of [[Cetuximab (Erbitux)]]
+
+'''Given indefinitely'''
+
+===Variant #2, bi-weekly {{#subobject:315dde|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://academic.oup.com/annonc/article/21/7/1537/164079 Tabernero et al. 2009]
+| style="background-color:#ffffbe" |Phase I
+|-
+|}
+''Note: no primary reference could be found for this exact dosing in monotherapy; in the phase I trial it is described as "the most convenient and feasible dose".''
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV over 2 hours once on day 1
+**If tolerated, subsequent doses can be given over 1 hour
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to [[Cetuximab (Erbitux)]]
+
+'''14-day cycles'''
+
+===References===
+# '''BOND:''' Cunningham D, Humblet Y, Siena S, Khayat D, Bleiberg H, Santoro A, Bets D, Mueser M, Harstrick A, Verslype C, Chau I, Van Cutsem E. Cetuximab monotherapy and cetuximab plus irinotecan in irinotecan-refractory metastatic colorectal cancer. N Engl J Med. 2004 Jul 22;351(4):337-45. [https://www.nejm.org/doi/full/10.1056/NEJMoa033025 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15269313 PubMed]
+# '''SALVAGE:''' Lenz HJ, Van Cutsem E, Khambata-Ford S, Mayer RJ, Gold P, Stella P, Mirtsching B, Cohn AL, Pippas AW, Azarnia N, Tsuchihashi Z, Mauro DJ, Rowinsky EK. Multicenter phase II and translational study of cetuximab in metastatic colorectal carcinoma refractory to irinotecan, oxaliplatin, and fluoropyrimidines. J Clin Oncol. 2006 Oct 20;24(30):4914-21. [http://jco.ascopubs.org/content/24/30/4914.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17050875 PubMed]
+<!-- # Bristol-Myers Squibb and ImClone. A Phase III Randomized Study of Cetuximab (Erbitux, C225) and Best Supportive Care Versus Best Supportive Care in Patients with Pretreated Metastatic Epidermal Growth Factor Receptor (EGFR)-Positive Colorectal Carcinoma. Final Clinical Study Report for CA225025. 2007 Mar 5. [http://ctr.bms.com/pdf//CA225025.pdf link to original report] '''contains verified protocol''' -->
+# '''NCIC CTG CO.17:''' Jonker DJ, O'Callaghan CJ, Karapetis CS, Zalcberg JR, Tu D, Au HJ, Berry SR, Krahn M, Price T, Simes RJ, Tebbutt NC, van Hazel G, Wierzbicki R, Langer C, Moore MJ. Cetuximab for the treatment of colorectal cancer. N Engl J Med. 2007 Nov 15;357(20):2040-8. [https://www.nejm.org/doi/full/10.1056/NEJMoa071834 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18003960 PubMed]
+## '''Subgroup analysis:''' Karapetis CS, Khambata-Ford S, Jonker DJ, O'Callaghan CJ, Tu D, Tebbutt NC, Simes RJ, Chalchal H, Shapiro JD, Robitaille S, Price TJ, Shepherd L, Au HJ, Langer C, Moore MJ, Zalcberg JR. K-ras mutations and benefit from cetuximab in advanced colorectal cancer. N Engl J Med. 2008 Oct 23;359(17):1757-65. [https://www.nejm.org/doi/10.1056/NEJMoa0804385 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18946061 PubMed]
+## '''Subgroup analysis:''' Asmis TR, Powell E, Karapetis CS, Jonker DJ, Tu D, Jeffery M, Pavlakis N, Gibbs P, Zhu L, Dueck DA, Whittom R, Langer C, O'Callaghan CJ. Comorbidity, age and overall survival in cetuximab-treated patients with advanced colorectal cancer (ACRC)--results from NCIC CTG CO.17: a phase III trial of cetuximab versus best supportive care. Ann Oncol. 2011 Jan;22(1):118-26. Epub 2010 Jul 5. [http://annonc.oxfordjournals.org/content/22/1/118.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20603436 PubMed]
+# '''Phase I:''' Tabernero J, Ciardiello F, Rivera F, Rodriguez-Braun E, Ramos FJ, Martinelli E, Vega-Villegas ME, Roselló S, Liebscher S, Kisker O, Macarulla T, Baselga J, Cervantes A. Cetuximab administered once every second week to patients with metastatic colorectal cancer: a two-part pharmacokinetic/pharmacodynamic phase I dose-escalation study. Ann Oncol. 2010 Jul;21(7):1537-45. Epub 2009 Nov 25. [https://academic.oup.com/annonc/article/21/7/1537/164079 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19940007 PubMed]
+# '''NCIC CTG/AGITG CO.20:''' Siu LL, Shapiro JD, Jonker DJ, Karapetis CS, Zalcberg JR, Simes J, Couture F, Moore MJ, Price TJ, Siddiqui J, Nott LM, Charpentier D, Liauw W, Sawyer MB, Jefford M, Magoski NM, Haydon A, Walters I, Ringash J, Tu D, O'Callaghan CJ. Phase III randomized, placebo-controlled study of cetuximab plus brivanib alaninate versus cetuximab plus placebo in patients with metastatic, chemotherapy-refractory, wild-type K-RAS colorectal carcinoma: the NCIC Clinical Trials Group and AGITG CO.20 Trial. J Clin Oncol. 2013 Jul 1;31(19):2477-84. Epub 2013 May 20. [http://ascopubs.org/doi/full/10.1200/JCO.2012.46.0543 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23690424 PubMed]
+# '''ASPECCT:''' Price TJ, Peeters M, Kim TW, Li J, Cascinu S, Ruff P, Suresh AS, Thomas A, Tjulandin S, Zhang K, Murugappan S, Sidhu R. Panitumumab versus cetuximab in patients with chemotherapy-refractory wild-type KRAS exon 2 metastatic colorectal cancer (ASPECCT): a randomised, multicentre, open-label, non-inferiority phase 3 study. Lancet Oncol. 2014 May;15(6):569-79. Epub 2014 Apr 14. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70118-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24739896 PubMed]
+## '''Update:''' Price T, Kim TW, Li J, Cascinu S, Ruff P, Suresh AS, Thomas A, Tjulandin S, Guan X, Peeters M. Final results and outcomes by prior bevacizumab exposure, skin toxicity, and hypomagnesaemia from ASPECCT: randomized phase 3 non-inferiority study of panitumumab versus cetuximab in chemorefractory wild-type KRAS exon 2 metastatic colorectal cancer. Eur J Cancer. 2016 Nov;68:51-59. Epub 2016 Oct 5. [https://www.sciencedirect.com/science/article/pii/S0959804916323838 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/27716478 PubMed]
+
+==Irinotecan & Cetuximab {{#subobject:5d7e80|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 125/250, irinotecan 2 weeks on, 1 week off {{#subobject:e734bb|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+''Note: In contrast to BOND, some guidelines list irinotecan as being given on days 1 & 8 of a 21-day cycle. No primary reference could be found for this. Note also that the FDA-recommended dosing is for the cetuximab component; no comment is made about irinotecan dosing.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 125 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1 & 8
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 8 & 15
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1, 8, 15
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to at least the first infusion of [[Cetuximab (Erbitux)]]
+
+'''21-day cycles'''
+
+===Variant #2, 125/250, irinotecan 4 weeks on, 2 weeks off {{#subobject:a4d073|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa033025 Cunningham et al. 2004 (BOND)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cetuximab_monotherapy_2|Cetuximab]]
+|style="background-color:#1a9850"|Superior TTP
+|-
+|}
+''Note that the FDA-recommended dosing is for the cetuximab component; no comment is made about irinotecan dosing.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 125 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1, 8, 15, 22
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 8, 15, 22, 29, 36
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1, 8, 15, 22, 29, 36
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to at least the first infusion of [[Cetuximab (Erbitux)]]
+
+'''42-day cycles'''
+
+===Variant #3, 150/500, bi-weekly {{#subobject:c0c538|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6113428/ Osumi et al. 2018]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 150 mg/m<sup>2</sup> IV once on day 1
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV over 2 hours once on day 1
+**Subsequent doses are given over 60 minutes
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to [[Cetuximab (Erbitux)]]
+
+'''14-day cycles'''
+
+===Variant #4, 180/250, bi-weekly, with response adaptation {{#subobject:7c9e16|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2011.40.9243 van Cutsem et al. 2012 (EVEREST)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 15
+*[[Cetuximab (Erbitux)]] 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once per day on days 8 & 15
+
+'''One 21-day cycle'''
+====Subsequent treatment====
+*Grade 0 or 1 skin reaction: Continue standard dose versus escalate dose of cetuximab to 500 mg/m<sup>2</sup>
+*Grade 2 or worse skin reaction: Continue standard dose
+
+===Variant #5, 180/500, bi-weekly {{#subobject:3062ba|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527794/ Martín-Martorell et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 180 mg/m<sup>2</sup> IV over 30 minutes once on day 1
+*[[Cetuximab (Erbitux)]] 500 mg/m<sup>2</sup> IV over 2 hours once on day 1
+**If tolerated, subsequent doses can be given over 1 hour
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to [[Cetuximab (Erbitux)]]
+*[[Dexamethasone (Decadron)]] & [[Ondansetron (Zofran)]] prior to [[Irinotecan (Camptosar)]]
+
+'''14-day cycles'''
+
+===Variant #6, 350/250, q3wk irinotecan {{#subobject:ada904|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa033025 Cunningham et al. 2004 (BOND)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cetuximab_monotherapy_2|Cetuximab]]
+|style="background-color:#1a9850"|Superior TTP
+|-
+|}
+''Note that the FDA-recommended dosing is for the cetuximab component; no comment is made about irinotecan dosing.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 350 mg/m<sup>2</sup> IV over 90 minutes once on day 1
+**If aged 70 years old or more, [[Performance status|ECOG performance status]] 2 or more, or prior pelvic radiation: 300 mg/m<sup>2</sup> IV over 90 minutes once on day 1
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV over 2 hours once on day 1, then 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 8 & 15
+**Subsequent cycles: 250 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1, 8, 15
+
+====Supportive medications====
+*[[:Category:Antihistamines|Antihistamine]] prior to at least the first infusion of [[Cetuximab (Erbitux)]]
+
+'''21-day cycles'''
+
+===References===
+# '''BOND:''' Cunningham D, Humblet Y, Siena S, Khayat D, Bleiberg H, Santoro A, Bets D, Mueser M, Harstrick A, Verslype C, Chau I, Van Cutsem E. Cetuximab monotherapy and cetuximab plus irinotecan in irinotecan-refractory metastatic colorectal cancer. N Engl J Med. 2004 Jul 22;351(4):337-45. [https://www.nejm.org/doi/full/10.1056/NEJMoa033025 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15269313 PubMed]
+# Martín-Martorell P, Roselló S, Rodríguez-Braun E, Chirivella I, Bosch A, Cervantes A. Biweekly cetuximab and irinotecan in advanced colorectal cancer patients progressing after at least one previous line of chemotherapy: results of a phase II single institution trial. Br J Cancer. 2008 Aug 5;99(3):455-8. [https://www.nature.com/bjc/journal/v99/n3/full/6604530a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527794/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/18665167 PubMed]
+# '''EVEREST:''' Van Cutsem E, Tejpar S, Vanbeckevoort D, Peeters M, Humblet Y, Gelderblom H, Vermorken JB, Viret F, Glimelius B, Gallerani E, Hendlisz A, Cats A, Moehler M, Sagaert X, Vlassak S, Schlichting M, Ciardiello F. Intrapatient cetuximab dose escalation in metastatic colorectal cancer according to the grade of early skin reactions: the randomized EVEREST study. J Clin Oncol. 2012 Aug 10;30(23):2861-8. Epub 2012 Jul 2. [http://ascopubs.org/doi/full/10.1200/JCO.2011.40.9243 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22753904 PubMed]
+# Osumi H, Shinozaki E, Mashima T, Wakatsuki T, Suenaga M, Ichimura T, Ogura M, Ota Y, Nakayama I, Takahari D, Chin K, Miki Y, Yamaguchi K. Phase II trial of biweekly cetuximab and irinotecan as third-line therapy for pretreated KRAS exon 2 wild-type colorectal cancer. Cancer Sci. 2018 Aug;109(8):2567-2575. Epub 2018 Jul 13. [https://onlinelibrary.wiley.com/doi/full/10.1111/cas.13698 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6113428/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29908105 PubMed]
+
+==Panitumumab monotherapy {{#subobject:5a3eb5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Example orders===
+*[[Example orders for Panitumumab (Vectibix) in colon cancer]]
+
+===Regimen {{#subobject:fa978e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/13/1658.long Van Cutsem et al. 2007]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#Best_supportive_care|Best supportive care]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70118-4/fulltext Price et al. 2014 (ASPECCT)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cetuximab_monotherapy_2|Cetuximab]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104888/ Kim et al. 2016 (20100007)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Colon_cancer#Best_supportive_care|Best supportive care]]
+| style="background-color:#91cf60" |Seems to have superior OS (*)
+|-
+|}
+''Note: reported efficacy for 20100007 is based on the 2018 update.''
+====Chemotherapy====
+*[[Panitumumab (Vectibix)]] 6 mg/kg IV over 60 minutes once on day 1
+
+'''14-day cycles'''
+
+===References===
+<!-- Presented at the 97th Annual Meeting of the American Association for Cancer Research, April 1-5, 2006, Washington, DC; 2nd Annual Conference of the Hematology/Oncology Pharmacy Association, June 15-18, 2006, Orlando, FL; 8th Annual Conference of the World Congress on Gastrointestinal Cancer, June 28-July 1, 2006, Barcelona, Spain; and at the 31st European Society of Medical Oncology Congress, September 29-October 3, 2006, Istanbul, Turkey. -->
+# Van Cutsem E, Peeters M, Siena S, Humblet Y, Hendlisz A, Neyns B, Canon JL, Van Laethem JL, Maurel J, Richardson G, Wolf M, Amado RG. Open-label phase III trial of panitumumab plus best supportive care compared with best supportive care alone in patients with chemotherapy-refractory metastatic colorectal cancer. J Clin Oncol. 2007 May 1;25(13):1658-64. [http://jco.ascopubs.org/content/25/13/1658.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17470858 PubMed]
+# '''ASPECCT:''' Price TJ, Peeters M, Kim TW, Li J, Cascinu S, Ruff P, Suresh AS, Thomas A, Tjulandin S, Zhang K, Murugappan S, Sidhu R. Panitumumab versus cetuximab in patients with chemotherapy-refractory wild-type KRAS exon 2 metastatic colorectal cancer (ASPECCT): a randomised, multicentre, open-label, non-inferiority phase 3 study. Lancet Oncol. 2014 May;15(6):569-79. Epub 2014 Apr 14. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70118-4/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24739896 PubMed]
+## '''Update:''' Price T, Kim TW, Li J, Cascinu S, Ruff P, Suresh AS, Thomas A, Tjulandin S, Guan X, Peeters M. Final results and outcomes by prior bevacizumab exposure, skin toxicity, and hypomagnesaemia from ASPECCT: randomized phase 3 non-inferiority study of panitumumab versus cetuximab in chemorefractory wild-type KRAS exon 2 metastatic colorectal cancer. Eur J Cancer. 2016 Nov;68:51-59. Epub 2016 Oct 5. [https://www.sciencedirect.com/science/article/pii/S0959804916323838 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/27716478 PubMed]
+# '''20100007:''' Kim TW, Elme A, Kusic Z, Park JO, Udrea AA, Kim SY, Ahn JB, Valencia RV, Krishnan S, Bilic A, Manojlovic N, Dong J, Guan X, Lofton-Day C, Jung AS, Vrdoljak E. A phase 3 trial evaluating panitumumab plus best supportive care vs best supportive care in chemorefractory wild-type KRAS or RAS metastatic colorectal cancer. Br J Cancer. 2016 Nov 8;115(10):1206-1214. Epub 2016 Oct 13. [https://www.nature.com/bjc/journal/v115/n10/full/bjc2016309a.html link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104888/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27736842 PubMed]
+## '''Update:''' Kim TW, Elme A, Park JO, Udrea AA, Kim SY, Ahn JB, Valencia RV, Krishnan S, Manojlovic N, Guan X, Lofton-Day C, Jung AS, Vrdoljak E. Final Analysis of Outcomes and RAS/BRAF Status in a Randomized Phase 3 Study of Panitumumab and Best Supportive Care in Chemorefractory Wild Type KRAS Metastatic Colorectal Cancer. Clin Colorectal Cancer. 2018 Sep;17(3):206-214. Epub 2018 Mar 21. [https://www.clinical-colorectal-cancer.com/article/S1533-0028(17)30529-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29703606 PubMed]
+
+[[Category:Colon cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Gastrointestinal cancers]]

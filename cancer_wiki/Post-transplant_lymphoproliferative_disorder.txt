@@ -1,0 +1,256 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+''Post-transplant lymphoproliferative disorder (PTLD) of the monomorphic variety is typically treated as per the histologic subtype, which is usually [[Diffuse large B-cell lymphoma|diffuse large B-cell lymphoma (DLBCL)]]. However, some regimens specific to PTLD have been developed, primarily due to concern of excess infectious toxicities in the setting of immunosuppression, and are included here.''
+=All lines of therapy=
+
+==ACVBP, dose-adjusted {{#subobject:bb17b2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+ACVBP: '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide, '''<u>V</u>'''indesine, '''<u>B</u>'''leomycin, '''<u>P</u>'''rednisone
+===Regimen {{#subobject:1cd335|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2006.06228.x/abstract Fohrer et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Of historical interest, only.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]]
+*[[Cyclophosphamide (Cytoxan)]]
+*[[Vindesine (Eldisine)]]
+*[[Bleomycin (Blenoxane)]]
+*[[Prednisone (Sterapred)]] 
+
+===References===
+# Fohrer C, Caillard S, Koumarianou A, Ellero B, Woehl-Jaeglé ML, Meyer C, Epailly E, Chenard MP, Lioure B, Natarajan-Ame S, Maloisel F, Lutun P, Kessler R, Moulin B, Bergerat JP, Wolf P, Herbrecht R. Long-term survival in post-transplant lymphoproliferative disorders with a dose-adjusted ACVBP regimen. Br J Haematol. 2006 Sep;134(6):602-12. Epub 2006 Aug 2. [https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2141.2006.06228.x/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16889621 PubMed]
+
+==Rituximab monotherapy {{#subobject:514479|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:513282|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext Trappe et al. 2011 (PTLD-1)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This regimen is intended for B-cell PTLD. Note that this is a modification of the original PTLD-1 trial schema.''
+====Chemotherapy, part one====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''4-week course'''
+
+''Patients underwent interim staging by CT between days 40 and 50; those achieving CR proceeded to part two; all others proceeded to [[#R-CHOP|R-CHOP]].''
+
+====Chemotherapy, part two====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+
+===Variant #2 {{#subobject:513282|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1600-6143.2005.01098.x/abstract;jsessionid=4E716335857389072519829FA0027067.f04t04 Oertel et al. 2005]
+|style="background-color:#ffffbe"|Phase II, <20 pts
+|-
+|[http://www.bloodjournal.org/content/107/8/3053.long Choquet et al. 2005]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://www.haematologica.org/content/92/11/1489.long González-Barca et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This regimen is intended for B-cell PTLD.''
+====Chemotherapy, part one====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''4-week course'''
+
+===Variant #3 {{#subobject:7e1805|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.haematologica.org/content/92/11/1489.long González-Barca et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This regimen is intended for patients not achieving CR after the first 4 doses of rituximab.''
+====Chemotherapy, part one====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''4-week course'''
+
+''Patients underwent interim staging 4 to 8 weeks later; those achieving CR received no further treatment, while those achieving PR received:''
+
+====Chemotherapy, part two====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''4-week course'''
+
+===Variant #4 {{#subobject:9f729f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.21391/abstract Blaes et al. 2005]
+|style="background-color:#ffffbe"|Phase II, <20 pts
+|-
+|}
+====Chemotherapy, part one====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''6-month cycle for up to 2 years'''
+
+===References===
+# Blaes AH, Peterson BA, Bartlett N, Dunn DL, Morrison VA. Rituximab therapy is effective for posttransplant lymphoproliferative disorders after solid organ transplantation: results of a phase II trial. Cancer. 2005 Oct 15;104(8):1661-7. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.21391/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16149091 PubMed]
+# Oertel SH, Verschuuren E, Reinke P, Zeidler K, Papp-Váry M, Babel N, Trappe RU, Jonas S, Hummel M, Anagnostopoulos I, Dörken B, Riess HB. Effect of anti-CD 20 antibody rituximab in patients with post-transplant lymphoproliferative disorder (PTLD). Am J Transplant. 2005 Dec;5(12):2901-6. [https://onlinelibrary.wiley.com/doi/10.1111/j.1600-6143.2005.01098.x/abstract;jsessionid=4E716335857389072519829FA0027067.f04t04 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16303003 PubMed]
+## '''Update:''' Choquet S, Oertel S, LeBlond V, Riess H, Varoqueaux N, Dörken B, Trappe RU. Rituximab in the management of post-transplantation lymphoproliferative disorder after solid organ transplantation: proceed with caution. Ann Hematol. 2007 Aug;86(8):599-607. Epub 2007 May 24. [https://link.springer.com/article/10.1007%2Fs00277-007-0298-2 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17522862 PubMed]
+# Choquet S, Leblond V, Herbrecht R, Socié G, Stoppa AM, Vandenberghe P, Fischer A, Morschhauser F, Salles G, Feremans W, Vilmer E, Peraldi MN, Lang P, Lebranchu Y, Oksenhendler E, Garnier JL, Lamy T, Jaccard A, Ferrant A, Offner F, Hermine O, Moreau A, Fafi-Kremer S, Morand P, Chatenoud L, Berriot-Varoqueaux N, Bergougnoux L, Milpied N. Efficacy and safety of rituximab in B-cell post-transplantation lymphoproliferative disorders: results of a prospective multicenter phase 2 study. Blood. 2006 Apr 15;107(8):3053-7. Epub 2005 Oct 27. [http://www.bloodjournal.org/content/107/8/3053.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16254143 PubMed]
+## '''Update:''' Choquet S, Oertel S, LeBlond V, Riess H, Varoqueaux N, Dörken B, Trappe RU. Rituximab in the management of post-transplantation lymphoproliferative disorder after solid organ transplantation: proceed with caution. Ann Hematol. 2007 Aug;86(8):599-607. Epub 2007 May 24. [https://link.springer.com/article/10.1007%2Fs00277-007-0298-2 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17522862 PubMed]
+# González-Barca E, Domingo-Domenech E, Capote FJ, Gómez-Codina J, Salar A, Bailen A, Ribera JM, López A, Briones J, Muñoz A, Encuentra M, de Sevilla AF; GEL/TAMO (Grupo Español de Linfomas).; GELCAB (Grupo para el Estudio de los Linfomas Catalano-Balear).; GOTEL (Grupo Oncológico para el Tratamiento y Estudio de los Linfomas). Prospective phase II trial of extended treatment with rituximab in patients with B-cell post-transplant lymphoproliferative disease. Haematologica. 2007 Nov;92(11):1489-94. [http://www.haematologica.org/content/92/11/1489.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18024397 PubMed]
+# '''PTLD-1:''' Trappe RU, Oertel S, Leblond V, Mollee P, Sender M, Reinke P, Neuhaus R, Lehmkuhl H, Horst HA, Salles G, Morschhauser F, Jaccard A, Lamy T, Leithäuser M, Zimmermann H, Anagnostopoulos I, Raphael M, Riess H, Choquet S; German PTLD Study Group.; European PTLD Network. Sequential treatment with rituximab followed by CHOP chemotherapy in adult B-cell post-transplant lymphoproliferative disorder (PTLD): the prospective international multicentre phase 2 PTLD-1 trial. Lancet Oncol. 2012 Feb;13(2):196-206. Epub 2011 Dec 13. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22173060 PubMed]
+## '''Update:''' Trappe RU, Dierickx D, Zimmermann H, Morschhauser F, Mollee P, Zaucha JM, Dreyling MH, Dührsen U, Reinke P, Verhoef G, Subklewe M, Hüttmann A, Tousseyn T, Salles G, Kliem V, Hauser IA, Tarella C, Van Den Neste E, Gheysens O, Anagnostopoulos I, Leblond V, Riess H, Choquet S. Response to rituximab induction is a predictive marker in B-cell post-transplant lymphoproliferative disorder and allows successful stratification into rituximab or R-CHOP consolidation in an international, prospective, multicenter phase II trial. J Clin Oncol. 2017 Feb 10;35(5):536-43. Epub 2016 Dec 19 [http://ascopubs.org/doi/full/10.1200/JCO.2016.69.3564 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27992268 PubMed]
+
+==R-CHOP {{#subobject:32c6a1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CHOP: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:84bd21|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext Trappe et al. 2011 (PTLD-1)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This regimen is intended for B-cell PTLD, and is for patients not achieving CR after [[#Rituximab_monotherapy|rituximab]] x 4. Note that this is a modification of the original PTLD-1 trial schema.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 50 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] was required
+*[[:Category:PCP prophylaxis|PJP prophylaxis]] was recommended
+
+'''21-day cycle for 4 cycles'''
+
+===References===
+# '''PTLD-1:''' Trappe RU, Oertel S, Leblond V, Mollee P, Sender M, Reinke P, Neuhaus R, Lehmkuhl H, Horst HA, Salles G, Morschhauser F, Jaccard A, Lamy T, Leithäuser M, Zimmermann H, Anagnostopoulos I, Raphael M, Riess H, Choquet S; German PTLD Study Group.; European PTLD Network. Sequential treatment with rituximab followed by CHOP chemotherapy in adult B-cell post-transplant lymphoproliferative disorder (PTLD): the prospective international multicentre phase 2 PTLD-1 trial. Lancet Oncol. 2012 Feb;13(2):196-206. Epub 2011 Dec 13. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22173060 PubMed]
+## '''Update:''' Trappe RU, Dierickx D, Zimmermann H, Morschhauser F, Mollee P, Zaucha JM, Dreyling MH, Dührsen U, Reinke P, Verhoef G, Subklewe M, Hüttmann A, Tousseyn T, Salles G, Kliem V, Hauser IA, Tarella C, Van Den Neste E, Gheysens O, Anagnostopoulos I, Leblond V, Riess H, Choquet S. Response to rituximab induction is a predictive marker in B-cell post-transplant lymphoproliferative disorder and allows successful stratification into rituximab or R-CHOP consolidation in an international, prospective, multicenter phase II trial. J Clin Oncol. 2017 Feb 10;35(5):536-43. Epub 2016 Dec 19 [http://ascopubs.org/doi/full/10.1200/JCO.2016.69.3564 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27992268 PubMed]
+
+==R, then CHOP {{#subobject:f84777|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R, then CHOP: '''<u>R</u>'''ituximab followed by '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:a97899|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext Trappe et al. 2011 (PTLD-1)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy, rituximab portion====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''4-week course, followed in 4 weeks by:'''
+
+====Chemotherapy, CHOP portion====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+*[[Prednisone (Sterapred)]] 50 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] was required
+*[[:Category:PCP prophylaxis|PJP prophylaxis]] was recommended
+
+'''21-day cycle for 4 cycles'''
+
+===References===
+# '''PTLD-1:''' Trappe RU, Oertel S, Leblond V, Mollee P, Sender M, Reinke P, Neuhaus R, Lehmkuhl H, Horst HA, Salles G, Morschhauser F, Jaccard A, Lamy T, Leithäuser M, Zimmermann H, Anagnostopoulos I, Raphael M, Riess H, Choquet S; German PTLD Study Group.; European PTLD Network. Sequential treatment with rituximab followed by CHOP chemotherapy in adult B-cell post-transplant lymphoproliferative disorder (PTLD): the prospective international multicentre phase 2 PTLD-1 trial. Lancet Oncol. 2012 Feb;13(2):196-206. Epub 2011 Dec 13. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(11)70300-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22173060 PubMed]
+
+==R-CP {{#subobject:2de85f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+R-CP: '''<u>R</u>'''ituximab, '''<u>C</u>'''yclophosphamide, '''<u>P</u>'''rednisone or Prednisolone
+===Regimen {{#subobject:affa46|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484187/ Gross et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This regimen was intended for patients less than 30 years of age.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] as follows:
+**Cycles 1 & 2: 375 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+*ONE of the following steroids:
+**[[Prednisone (Sterapred)]] 1 mg/kg PO twice per day on days 1 to 5
+**[[Methylprednisolone (Solumedrol)]] 0.8 mg/kg IV every 12 hours on days 1 to 5
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# Gross TG, Orjuela MA, Perkins SL, Park JR, Lynch JC, Cairo MS, Smith LM, Hayashi RJ. Low-dose chemotherapy and rituximab for posttransplant lymphoproliferative disease (PTLD): a Children's Oncology Group Report. Am J Transplant. 2012 Nov;12(11):3069-75. [https://onlinelibrary.wiley.com/doi/10.1111/j.1600-6143.2012.04206.x/abstract link to original article] '''contains verified protcol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484187/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22883417 PubMed]
+
+==Reduction of immunosuppression (RIS) {{#subobject:1d45b7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:7b1583|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2987704/ Starzl et al. 1984]
+|style="background-color:#ffffbe"|Case series
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3079420/ Reshef et al. 2011]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+''No antineoplastic therapy, treatment consists of reduction or discontinuation (a.k.a., "withdrawal") of immunosuppressive medications.''
+
+===References===
+# '''Case series:''' Starzl TE, Nalesnik MA, Porter KA, Ho M, Iwatsuki S, Griffith BP, Rosenthal JT, Hakala TR, Shaw BW Jr, Hardesty RL, Jaffe R, Bahnson HT. Reversibility of lymphomas and lymphoproliferative lesions developing under cyclosporin-steroid therapy. Lancet. 1984 Mar 17;1(8377):583-7. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(84)90994-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2987704/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/6142304 PubMed]
+# '''Retrospective:''' Reshef R, Vardhanabhuti S, Luskin MR, Heitjan DF, Hadjiliadis D, Goral S, Krok KL, Goldberg LR, Porter DL, Stadtmauer EA, Tsai DE. Reduction of immunosuppression as initial therapy for posttransplantation lymphoproliferative disorder(★). Am J Transplant. 2011 Feb;11(2):336-47. Epub 2011 Jan 10. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1600-6143.2010.03387.x link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3079420/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21219573 PubMed]
+
+[[Category:Post-transplant lymphoproliferative disorder regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Lymphoproliferative disorders]]

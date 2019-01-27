@@ -1,0 +1,56 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+Is there a regimen missing from this list?  Would you like to share a different dosage/schedule or an additional reference for a regimen?  Have you noticed an error?  Do you have an idea that will help the site grow to better meet your needs and the needs of many others?  You are [[How_to_contribute|invited to contribute to the site]].
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Headshot Cowan.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Andrewc072|Andrew J. Cowan, MD]]<br>Seattle, WA</big><br>[https://www.linkedin.com/in/andrew-cowan-63b3a130/ LinkedIn]
+|-
+|}
+'''POEMS:''' '''<u>P</u>'''eripheral neuropathy, '''<u>O</u>'''rganomegaly, '''<u>E</u>'''ndocrinopathy, '''<u>M</u>'''onoclonal plasma cell disorder, and '''<u>S</u>'''kin changes
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==EMN==
+*'''2018:''' Gavriatopoulou et al. [https://www.nature.com/articles/s41375-018-0209-7 European myeloma network recommendations on diagnosis and management of patients with rare plasma cell dyscrasias] [https://www.ncbi.nlm.nih.gov/pubmed/30038381 PubMed]
+
+=All lines of therapy=
+
+==RD {{#subobject:dc6eae|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RD: '''<u>R</u>'''evlimid (Lenalidomide) & '''<u>D</u>'''examethasone
+===Regimen {{#subobject:be34d7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.14966/full Nozza et al. 2017]
+|style="background-color:#ffffbe"|Phase II, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per week
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day
+**[[:Category:Low_molecular_weight_heparins|LMWH]] in "intolerant" patients
+*[[Trimethoprim/Sulfamethoxazole_(Bactrim_DS)|Cotrimoxazole]] 800 mg PO twice per day two days per week
+
+'''Monthly cycles, continued until progression or excess toxicity'''
+
+===References===
+# Nozza A, Terenghi F, Gallia F, Adami F, Briani C, Merlini G, Giordano L, Santoro A, Nobile-Orazio E. Lenalidomide and dexamethasone in patients with POEMS syndrome: results of a prospective, open-label trial. Br J Haematol. 2017 Dec;179(5):748-755. Epub 2017 Oct 19. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.14966/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29048107 PubMed]
+
+[[Category:POEMS regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Plasma cell dyscrasias]]

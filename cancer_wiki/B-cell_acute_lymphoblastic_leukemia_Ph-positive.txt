@@ -1,0 +1,930 @@
+<big>'''Note: these are regimens specific to Ph+ B-cell ALL; please see the [[B-cell acute lymphoblastic leukemia|main B-cell ALL page]] for other regimens, including portions of a course of therapy that are not biomarker-specific (such as pre-phase prednisone and post-induction transplant).'''
+</big>
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Upfront induction therapy=
+==Dasatinib & Prednisone {{#subobject:41bc84|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:5e3bf1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/118/25/6521 Foà et al. 2011 (GIMEMA LAL1205)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[B-cell acute lymphoblastic leukemia#Prednisone_monotherapy|Pre-phase prednisone]]
+====Chemotherapy====
+*[[Dasatinib (Sprycel)]] 70 mg PO twice per day on days 1 to 84
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day (maximum dose of 120 mg/day) PO on days 1 to 24, then tapered and stopped at day 32
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] (dose not specified) IT once per day on days 22 & 43
+
+'''One course'''
+
+''Post-induction treatment is not specified.''
+
+===References===
+# Foà R, Vitale A, Vignetti M, Meloni G, Guarini A, De Propris MS, Elia L, Paoloni F, Fazi P, Cimino G, Nobile F, Ferrara F, Castagnola C, Sica S, Leoni P, Zuffa E, Fozza C, Luppi M, Candoni A, Iacobucci I, Soverini S, Mandelli F, Martinelli G, Baccarani M; GIMEMA Acute Leukemia Working Party. Dasatinib as first-line treatment for adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Blood. 2011 Dec 15;118(25):6521-8. Epub 2011 Sep 19. [http://www.bloodjournal.org/content/118/25/6521 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21931113 PubMed]
+
+==Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib {{#subobject:d36b57|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1 {{#subobject:f3e30f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''To our knowledge, this is the largest induction trial in adult ALL, N=1,646. CR rate was 91%. There are many local variants of this protocol, which begins with "Phase I." Note that, for simplicity, the flow from this phase to others does not include the imatinib; please check the original reference for further details on imatinib dosing.''
+====Chemotherapy====
+*[[Daunorubicin (Cerubidine)]] 65 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Asparaginase (Elspar)]] 10,000 units IV or IM once per day on days 17 to 28
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 28
+*[[Imatinib (Gleevec)]] 400 mg PO once per day, increased to 600 mg PO once per day "wherever possible"
+**Note: Two variants have been tested: from 2003 to 2005, imatinib was added after induction; from 2005 onward, imatinib was added during induction. Various durations are proposed, see Fielding et al. 2013 for more details.
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg IT once on day 15
+
+'''4-week course'''
+====Subsequent treatment====
+*[[B-cell acute lymphoblastic leukemia#Cyclophosphamide.2C_Cytarabine.2C_Mercaptopurine|Cyclophosphamide, cytarabine, mercaptopurine induction ("Phase 2")]]
+
+===References===
+# Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://www.bloodjournal.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://www.bloodjournal.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://www.bloodjournal.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://www.bloodjournal.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+
+==Daunorubicin, Vincristine, Prednisolone, Nilotinib {{#subobject:2b1389|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e721b6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/126/6/746.long Kim et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Daunorubicin (Cerubidine)]] 90 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1 (total dose: 270 mg/m<sup>2</sup>)
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 1 & 8
+*[[Prednisolone (Millipred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 14
+**Alternate: 48 mg/m<sup>2</sup> IV once per day on days 1 to 14
+*[[Nilotinib (Tasigna)]] 400 mg PO twice per day starting on day 8
+
+====CNS Prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg mixed with [[Hydrocortisone (Cortef)]] 50 mg IT 
+
+'''Up to 10 doses given during or after induction'''
+====Subsequent treatment====
+*[[#Nilotinib-based_consolidation|Nilotinib-based consolidation]] or [[B-cell_acute_lymphoblastic_leukemia#Allogeneic_hematopoietic_stem_cell_transplant|allogeneic HSCT]]. Transplant regimen left to the discretion of the investigator
+
+===References===
+# Kim DY, Joo YD, Lim SN, Kim SD, Lee JH, Lee JH, Kim DH, Kim K, Jung CW, Kim I, Yoon SS, Park S, Ahn JS, Yang DH, Lee JJ, Lee HS, Kim YS, Mun YC, Kim H, Park JH, Moon JH, Sohn SK, Lee SM, Lee WS, Kim KH, Won JH, Hyun MS, Park J, Lee JH, Shin HJ, Chung JS, Lee H, Eom HS, Lee GW, Cho YU, Jang S, Park CJ, Chi HS, Lee KH; Adult Acute Lymphoblastic Leukemia Working Party of the Korean Society of Hematology. Nilotinib combined with multiagent chemotherapy for newly diagnosed Philadelphia-positive acute lymphoblastic leukemia. Blood. 2015 Aug 6;126(6):746-56. Epub 2015 Jun 11. [http://www.bloodjournal.org/content/126/6/746.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26065651 PubMed]
+
+==Hyper-CVAD & Dasatinib {{#subobject:7722d2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Hyper-CVAD & Dasatinib: Hyperfractionated '''<u>C</u>'''yclophosphamide, '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>D</u>'''examethasone & Dasatinib
+
+===Regimen {{#subobject:b88b6e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ Ravandi et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321539/ Sasaki et al. 2016]
+|style="background-color:#1a9851"|Propensity score analysis
+|[[#Hyper-CVAD_.26_Ponatinib|Hyper-CVAD & Ponatinib]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5642915/ Ravandi et al. 2016 (SWOG S0805)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|}
+''Note #1: the dosing of dasatinib changed three times for this protocol. The initial protocol was 50 mg PO twice per day, which was then changed to 100 mg PO once per day after these were shown to be equivalent in a separate trial. Starting with patient #43, the protocol was further amended to 100 mg of dasatinib once per day in the first 14 days of the first cycle only, followed by 70 mg once per day continuously from the second cycle through completion of induction. These details are described in the references.''
+<br>''Note #2: Sasaki et al. 2016 is a post-hoc analysis, not a randomized trial.''
+====Chemotherapy, Part A (cycles 1, 3, 5, 7)====
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 1 to 3 (6 total doses)
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 4 & 11
+*[[Doxorubicin (Adriamycin)]] as follows:
+**Normal EF: 50 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 4
+**EF less than 50%: 25 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 4 (total dose per cycle: 50 mg/m<sup>2</sup>)
+*[[Dexamethasone (Decadron)]] 40 mg PO or IV once per day on days 1 to 4, 11 to 14
+*[[Dasatinib (Sprycel)]] as follows:
+**Cycle 1: 100 mg PO once per day on days 1 to 14
+**Cycles 3, 5, 7: 70 mg PO once per day
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 600 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1, '''given 1 hour before [[Cyclophosphamide (Cytoxan)]] and completed 12 hours after the last dose of [[Cyclophosphamide (Cytoxan)]]'''
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*Cycle 1 also involved:
+**Hydration options included D5 water or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 50 to 100 mL/H
+**[[Allopurinol (Zyloprim)]] to decrease likelihood of tumor lysis syndrome; [[Rasburicase (Elitek)]] could be used instead for patients with high white blood cell counts at initial presentation
+**Oral sodium bicarbonate (no dosage or frequency listed) on days 1 to 3 
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other Hyper-CVAD regimens have used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+====Chemotherapy, Part B (cycles 2, 4, 6, 8)====
+*[[Methotrexate (MTX)]] 1000 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+*[[Cytarabine (Cytosar)]] as follows:
+**For patients younger than 60 years old: 3000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+**For patients at least 60 years old: 1000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+*[[Dasatinib (Sprycel)]] 70 mg PO once per day
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 50 mg IV once 12 hours after [[Methotrexate (MTX)]] is complete, then 15 mg IV Q6H x 8 doses until serum methotrexate level less than 100 nmol/L
+**Leucovorin rescue with [[Folinic acid (Leucovorin)]] 50 mg IV Q6H if serum methotrexate levels were greater than 20,000 nmol/L at 0 hours after completion of [[Methotrexate (MTX)]]; greater than 1000 nmol/L at 24 hours; greater than 100 nmol/L at 48 hours
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*D5W or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 100 to 125 mL/H
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*[[Acetazolamide (Diamox)]] (no dosage/schedule listed) used if urine pH less than 7 to promote excretion
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other [[#Hyper-CVAD_.28induction.29|Hyper-CVAD regimens]] used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2
+*[[Cytarabine (Cytosar)]] 100 mg IT once on day 7
+
+'''Given each cycle for a total of 6 or 8 intrathecal treatments (i.e., 3 each of methotrexate and cytarabine or 4 each of methotrexate and cytarabine), depending on risk for CNS relapse based serum lactate dehydrogenase (LDH) greater than 1400 IU/L and/or proliferative index percentage of S + G2M of at least 14%'''
+
+====For known CNS disease====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT alternating with [[Cytarabine (Cytosar)]] 100 mg IT, with both given every week until cell count in CSF normalizes and cytology is negative for malignancy
+*Then [[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT given weeks 1 & 3 and [[Cytarabine (Cytosar)]] 100 mg IT, given weeks 2 & 4
+*Once those 4 weeks are complete, then intrathecal treatment is given similar to the prophylactic schedule, with each drug given once during every remaining cycle of induction therapy:
+**[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT once on day 2
+**[[Cytarabine (Cytosar)]] 100 mg IT once on day 7
+*Therapeutic external radiation is given to patients with CNS disease at presentation
+====Subsequent treatment====
+*Patients achieving a CR who had an available matched sibling or 10/10 matched unrelated donor proceeded to [[B-cell_acute_lymphoblastic_leukemia#Allogeneic_hematopoietic_stem_cell_transplant|allogeneic HSCT]]; all others proceeded to [[#Dasatinib.2C_Vincristine.2C_Prednisone|maintenance dasatinib, vincristine, and prednisone]]
+
+===References===
+# Ravandi F, O'Brien S, Thomas D, Faderl S, Jones D, Garris R, Dara S, Jorgensen J, Kebriaei P, Champlin R, Borthakur G, Burger J, Ferrajoli A, Garcia-Manero G, Wierda W, Cortes J, Kantarjian H. First report of phase 2 study of dasatinib with hyper-CVAD for the frontline treatment of patients with Philadelphia chromosome-positive (Ph+) acute lymphoblastic leukemia. Blood. 2010 Sep 23;116(12):2070-7. Epub 2010 May 13. [http://www.bloodjournal.org/content/116/12/2070.long link to original article] '''contains verified protocol'''--parts of the protocol were not explicitly listed in this reference, which instead referred to [[#Hyper-CVAD_.26_Imatinib_.28Gleevec.29_.28induction_.26_maintenance.29|Thomas et al. 2004]] and [[#Hyper-CVAD_.28induction.29|Kantarjian et al. 2004]] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20466853 PubMed]
+## '''Update:''' Ravandi F, O'Brien SM, Cortes JE, Thomas DM, Garris R, Faderl S, Burger JA, Rytting ME, Ferrajoli A, Wierda WG, Verstovsek S, Champlin R, Kebriaei P, McCue DA, Huang X, Jabbour E, Garcia-Manero G, Estrov Z, Kantarjian HM. Long-term follow-up of a phase 2 study of chemotherapy plus dasatinib for the initial treatment of patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Cancer. 2015 Dec 1;121(23):4158-64. Epub 2015 Aug 26. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29646/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4666803/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26308885 PubMed]
+# '''Retrospective:''' Sasaki K, Jabbour EJ, Ravandi F, Short NJ, Thomas DA, Garcia-Manero G, Daver NG, Kadia TM, Konopleva MY, Jain N, Issa GC, Jeanis V, Moore HG, Garris RS, Pemmaraju N, Cortes JE, O'Brien SM, Kantarjian HM. Hyper-CVAD plus ponatinib versus hyper-CVAD plus dasatinib as frontline therapy for patients with Philadelphia chromosome-positive acute lymphoblastic leukemia: A propensity score analysis. Cancer. 2016 Dec 1;122(23):3650-3656. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.30231/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321539/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27479888 PubMed]
+# '''SWOG S0805:''' Ravandi F, Othus M, O’Brien SM, Forman SJ, Ha CS, Wong JY, Tallman MS, Paietta E, Racevskis J, Uy GL, Horowitz M, Takebe N, Little R, Borate U, Kebriaei P, Kingsbury L, Kantarjian HM, Radich JP, Erba HP, Appelbaum FR. US intergroup study of chemotherapy plus dasatinib and allogeneic stem cell transplant in Philadelphia chromosome positive ALL. Blood Adv. 2016;1(3):250-259. [http://www.bloodadvances.org/content/1/3/250 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5642915/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29046900 PubMed]
+
+==Hyper-CVAD & Imatinib {{#subobject:50d757|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Hyper-CVAD & Imatinib: '''<u>Hyper</u>'''fractionated '''<u>C</u>'''yclophosphamide, '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>D</u>'''examethasone & Imatinib
+
+===Regimen {{#subobject:38ce3d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/103/12/4396.long Thomas et al. 2003]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://www.bloodjournal.org/content/125/24/3711.long Chalandon et al. 2015 (GRAAPH-2005)]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Imatinib.2C_Vincristine.2C_Dexamethasone|Imatinib, Vincristine, Dexamethasone]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy, Part A (cycles 1, 3, 5, 7)====
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 1 to 3 (6 total doses)
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 4 & 11
+*[[Doxorubicin (Adriamycin)]] as follows:
+**Normal EF: 50 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 4
+**EF less than 50%: 25 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 4 (total dose per cycle: 50 mg/m<sup>2</sup>)
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 1 to 4, 11 to 14
+*[[Imatinib (Gleevec)]] 400 mg PO once per day on days 1 to 14
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 600 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1, '''given 1 hour before [[Cyclophosphamide (Cytoxan)]] and completed 12 hours after the last dose of [[Cyclophosphamide (Cytoxan)]]'''
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*Cycle 1 also involved:
+**Hydration options included D5 water or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 50 to 100 mL/H
+**[[Allopurinol (Zyloprim)]] to decrease likelihood of tumor lysis syndrome; [[Rasburicase (Elitek)]] could be used instead for patients with high white blood cell counts at initial presentation
+**Oral sodium bicarbonate (no dosage or frequency listed) on days 1 to 3 
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other [[#Hyper-CVAD_.28induction.29|Hyper-CVAD regimens]] used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+====Chemotherapy, Part B (cycles 2, 4, 6, 8)====
+*[[Methotrexate (MTX)]] 1000 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+*[[Cytarabine (Cytosar)]] as follows:
+**For patients younger than 60 years old: 3000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+**For patients at least 60 years old: 1000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+*[[Imatinib (Gleevec)]] 400 mg PO once per day on days 1 to 14
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 50 mg IV once 12 hours after [[Methotrexate (MTX)]] is complete, then 15 mg IV Q6H x 8 doses until serum methotrexate level less than 100 nmol/L
+**Leucovorin rescue with [[Folinic acid (Leucovorin)]] 50 mg IV Q6H if serum methotrexate levels were greater than 20,000 nmol/L at 0 hours after completion of [[Methotrexate (MTX)]]; greater than 1000 nmol/L at 24 hours; greater than 100 nmol/L at 48 hours
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*D5W or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 100 to 125 mL/H
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*[[Acetazolamide (Diamox)]] (no dosage/schedule listed) used if urine pH less than 7 to promote excretion
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other [[#Hyper-CVAD_.28induction.29|Hyper-CVAD regimens]] used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT on day 2
+*[[Cytarabine (Cytosar)]] 100 mg IT on day 7 '''OR''' 8
+
+'''Given each cycle for a total of 6 or 8 intrathecal treatments (i.e. 3 each of methotrexate and cytarabine or 4 each of methotrexate and cytarabine), depending on risk for CNS relapse based serum lactate dehydrogenase (LDH) greater than 1400 IU/L and/or proliferative index percentage of S + G2M of at least 14%'''
+
+====For known CNS disease====
+*[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT alternating with [[Cytarabine (Cytosar)]] 100 mg IT, with both given every week until cell count in CSF normalizes and cytology is negative for malignancy
+*Then [[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT given weeks 1 & 3 and [[Cytarabine (Cytosar)]] 100 mg IT, given weeks 2 & 4
+*Once those 4 weeks are complete, then intrathecal treatment is given similar to the prophylactic schedule, with each drug given once during every remaining cycle of induction therapy:
+**[[Methotrexate (MTX)]] 12 mg (6 mg if given via Ommaya reservoir) IT on day 2
+**[[Cytarabine (Cytosar)]] 100 mg IT on day 7 '''OR''' 8
+*Therapeutic external radiation is given to patients with CNS disease at presentation
+
+====Maintenance therapy after completing 8 cycles of the intensive Part A and Part B chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day on days 1 to 28
+*[[Vincristine (Oncovin)]] 2 mg IV once on day 1
+*[[Prednisone (Sterapred)]] 200 mg PO once per day on days 1 to 5
+
+'''28-day cycle for 5 cycles; then, in month 6, Hyper-CVAD Part A x 1 cycle as described above; then resume maintenance therapy, 28-day cycle for 6 cycles; then, in month 13, Hyper-CVAD Part A x 1 cycle as described above'''
+
+===References===
+# Thomas DA, Faderl S, Cortes J, O'Brien S, Giles FJ, Kornblau SM, Garcia-Manero G, Keating MJ, Andreeff M, Jeha S, Beran M, Verstovsek S, Pierce S, Letvak L, Salvado A, Champlin R, Talpaz M, Kantarjian H. Treatment of Philadelphia chromosome-positive acute lymphocytic leukemia with hyper-CVAD and imatinib mesylate. Blood. 2004 Jun 15;103(12):4396-407. Epub 2003 Oct 9. [http://www.bloodjournal.org/content/103/12/4396.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14551133 PubMed]
+## '''Update:''' Daver N, Thomas D, Ravandi F, Cortes J, Garris R, Jabbour E, Garcia-Manero G, Borthakur G, Kadia T, Rytting M, Konopleva M, Kantarjian H, O' Brien S. Final report of a phase II study of imatinib mesylate with hyper-CVAD for the frontline treatment of adult patients with Philadelphia chromosome positive (Ph+) acute lymphoblastic leukemia. Haematologica. 2015 May;100(5):653-61. Epub 2015 Feb 14. [http://www.haematologica.org/content/100/5/653 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420214/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25682595 PubMed]
+# '''GRAAPH-2005:''' Chalandon Y, Thomas X, Hayette S, Cayuela JM, Abbal C, Huguet F, Raffoux E, Leguay T, Rousselot P, Lepretre S, Escoffre-Barbe M, Maury S, Berthon C, Tavernier E, Lambert JF, Lafage-Pochitaloff M, Lhéritier V, Chevret S, Ifrah N, Dombret H; Group for Research on Adult Acute Lymphoblastic Leukemia (GRAALL). Randomized study of reduced-intensity chemotherapy combined with imatinib in adults with Ph-positive acute lymphoblastic leukemia. Blood. 2015 Jun 11;125(24):3711-9. Epub 2015 Apr 15. Erratum in: Blood. 2015 Sep 3;126(10):1261. [http://www.bloodjournal.org/content/125/24/3711.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25878120 PubMed]
+
+==Hyper-CVAD & Ponatinib {{#subobject:98f919|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Hyper-CVAD & Ponatinib: '''<u>Hyper</u>'''fractionated '''<u>C</u>'''yclophosphamide, '''<u>V</u>'''incristine, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>D</u>'''examethasone & Ponatinib
+
+===Regimen {{#subobject:3c0426|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4816046/ Jabbour et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321539/ Sasaki et al. 2016]
+|style="background-color:#1a9851"|Propensity score analysis
+|[[#Hyper-CVAD_.26_Dasatinib|Hyper-CVAD & Dasatinib]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: Sasaki et al. 2016 is a post-hoc analysis, not a randomized trial. Jabbour et al. 2015 refers to Thomas et al. 2004 (Hyper-CVAD & Imatinib) for regimen details; these are replicated here.''
+====Chemotherapy, Part A (cycles 1, 3, 5, 7)====
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 1 to 3 (6 total doses)
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 4 & 11
+*[[Doxorubicin (Adriamycin)]] as follows:
+**Normal EF: 50 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 4
+**EF less than 50%: 25 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 4 (total dose per cycle: 50 mg/m<sup>2</sup>)
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 1 to 4, 11 to 14
+*[[Ponatinib (Iclusig)]] as follows:
+**Cycle 1: 45 mg PO once per day on days 1 to 14
+**Cycles 3, 5, 7: 45 mg PO once per day
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 600 mg/m<sup>2</sup>/day IV continuous infusion over 72 hours, started on day 1, '''given 1 hour before [[Cyclophosphamide (Cytoxan)]] and completed 12 hours after the last dose of [[Cyclophosphamide (Cytoxan)]]'''
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*Cycle 1 also involved:
+**Hydration options included D5 water or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 50 to 100 mL/H
+**[[Allopurinol (Zyloprim)]] to decrease likelihood of tumor lysis syndrome; [[Rasburicase (Elitek)]] could be used instead for patients with high white blood cell counts at initial presentation
+**Oral sodium bicarbonate (no dosage or frequency listed) on days 1 to 3 
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other [[#Hyper-CVAD_.28induction.29|Hyper-CVAD regimens]] used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+====Chemotherapy, Part B (cycles 2, 4, 6, 8)====
+*[[Methotrexate (MTX)]] 1000 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+*[[Cytarabine (Cytosar)]] as follows:
+**For patients younger than 60 years old: 3000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+**For patients at least 60 years old: 1000 mg/m<sup>2</sup> IV over 2 hours every 12 hours on days 2 & 3 (4 total doses)
+*[[Ponatinib (Iclusig)]] 45 mg PO once per day
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 50 mg IV once 12 hours after [[Methotrexate (MTX)]] is complete, then 15 mg IV Q6H x 8 doses until serum methotrexate level less than 100 nmol/L
+**Leucovorin rescue with [[Folinic acid (Leucovorin)]] 50 mg IV Q6H if serum methotrexate levels were greater than 20,000 nmol/L at 0 hours after completion of [[Methotrexate (MTX)]]; greater than 1000 nmol/L at 24 hours; greater than 100 nmol/L at 48 hours
+*ONE of the following antibiotics:
+**[[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+**[[Levofloxacin (Levaquin)]] 500 mg PO once per day
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (160/800 mg) PO twice per day 
+*[[Fluconazole (Diflucan)]] 200 mg PO once per day
+*ONE of the following antivirals:
+**[[Acyclovir (Zovirax)]] 200 mg PO twice per day
+**[[Valacyclovir (Valtrex)]] 500 mg PO once per day
+*D5W or 1/2 NS with 75 to 100 mEq sodium acetate per liter at 100 to 125 mL/H
+*[[Filgrastim (Neupogen)]] 10 mcg/kg SC once per day, starting 24 hours after completion of intensive courses of chemotherapy (day 5 for part A, day 4 for part B), given until ANC greater than 1000/uL
+*[[Acetazolamide (Diamox)]] (no dosage/schedule listed) used if urine pH less than 7 to promote excretion
+
+'''Next cycle to start after count recovery. No definite criteria listed by the reference, but other [[#Hyper-CVAD_.28induction.29|Hyper-CVAD regimens]] used ANC greater than 1000/uL at least 24 hours off of G-CSF and platelet count greater than 60 x 10<sup>9</sup>/L'''
+
+===References===
+# Jabbour E, Kantarjian H, Ravandi F, Thomas D, Huang X, Faderl S, Pemmaraju N, Daver N, Garcia-Manero G, Sasaki K, Cortes J, Garris R, Yin CC, Khoury JD, Jorgensen J, Estrov Z, Bohannan Z, Konopleva M, Kadia T, Jain N, DiNardo C, Wierda W, Jeanis V, O'Brien S. Combination of hyper-CVAD with ponatinib as first-line therapy for patients with Philadelphia chromosome-positive acute lymphoblastic leukaemia: a single-centre, phase 2 study. Lancet Oncol. 2015 Nov;16(15):1547-55. Epub 2015 Sep 30. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00207-7/abstract link to original article] '''contains partial protocol details''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4816046/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26432046 PubMed]
+## '''Retrospective:''' Sasaki K, Jabbour EJ, Ravandi F, Short NJ, Thomas DA, Garcia-Manero G, Daver NG, Kadia TM, Konopleva MY, Jain N, Issa GC, Jeanis V, Moore HG, Garris RS, Pemmaraju N, Cortes JE, O'Brien SM, Kantarjian HM. Hyper-CVAD plus ponatinib versus hyper-CVAD plus dasatinib as frontline therapy for patients with Philadelphia chromosome-positive acute lymphoblastic leukemia: A propensity score analysis. Cancer. 2016 Dec 1;122(23):3650-3656. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.30231/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5321539/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27479888 PubMed]
+
+==Imatinib & Prednisone {{#subobject:4f7d91|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:589c26|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ Chiaretti et al. 2016 (GIMEMA LAL 0904)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[B-cell acute lymphoblastic leukemia#Prednisone_monotherapy|Pre-phase prednisone]]
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day for 50 days
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup>/day PO on days 1 to 24, then tapered and stopped at day 32
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg IT once per day on days 21 & 35
+
+'''One course'''
+====Subsequent treatment====
+*[[#HAM_.26_Imatinib|HAM & imatinib consolidation]]
+
+===References===
+# '''GIMEMA LAL 0904:''' Chiaretti S, Vitale A, Vignetti M, Piciocchi A, Fazi P, Elia L, Falini B, Ronco F, Ferrara F, De Fabritiis P, Luppi M, La Nasa G, Tedeschi A, Califano C, Fanin R, Dore F, Mandelli F, Meloni G, Foà R. A sequential approach with imatinib, chemotherapy and transplant for adult Ph+ acute lymphoblastic leukemia: final results of the GIMEMA LAL 0904 study. Haematologica. 2016 Dec;101(12):1544-1552. [http://www.haematologica.org/content/101/12/1544.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27515250 PubMed]
+
+==Imatinib, Vincristine, Dexamethasone {{#subobject:7daa66|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:afaf32|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/125/24/3711.long Chalandon et al. 2015 (GRAAPH-2005)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Hyper-CVAD_.26_Imatinib|Hyper-CVAD & Imatinib]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[B-cell acute lymphoblastic leukemia#Prednisone_monotherapy|Pre-phase prednisone]]
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 400 mg PO twice per day on days 1 to 28
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 1, 8, 15, 22
+*[[Dexamethasone (Decadron)]] 40 mg/day PO on days 1, 2, 8, 9, 15, 16, 22, 23
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg IV or SC once per day from day 15 until ANC recovery
+
+'''One course'''
+====Subsequent treatment====
+*[[#HAM_.26_Imatinib|HAM & imatinib consolidation]]
+
+===References===
+# '''GRAAPH-2005:''' Chalandon Y, Thomas X, Hayette S, Cayuela JM, Abbal C, Huguet F, Raffoux E, Leguay T, Rousselot P, Lepretre S, Escoffre-Barbe M, Maury S, Berthon C, Tavernier E, Lambert JF, Lafage-Pochitaloff M, Lhéritier V, Chevret S, Ifrah N, Dombret H; Group for Research on Adult Acute Lymphoblastic Leukemia (GRAALL). Randomized study of reduced-intensity chemotherapy combined with imatinib in adults with Ph-positive acute lymphoblastic leukemia. Blood. 2015 Jun 11;125(24):3711-9. Epub 2015 Apr 15. Erratum in: Blood. 2015 Sep 3;126(10):1261. [http://www.bloodjournal.org/content/125/24/3711.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25878120 PubMed]
+
+=Consolidation after upfront therapy (including post-remission therapy)=
+''Note that many of these regimens are complex and as such will be referred to by their study name, not by the individual drug names. This is also a phase of treatment often referred to as post-remission or postinduction therapy.''
+
+==Cyclophosphamide & TBI, then allo HSCT {{#subobject:a9f7e8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cy/TBI: '''<u>Cy</u>'''clophosphamide & '''<u>T</u>'''otal '''<u>B</u>'''ody '''<u>I</u>'''rradiation
+===Regimen {{#subobject:6ca28d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/54/2/468.long Thomas et al. 1979]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.12.2580 Sebban et al. 1994 (LALA 87)]
+|style="background-color:#1a9851"|Phase III (E)
+|Chemotherapy or Auto HSCT
+| style="background-color:#91cf60" |Seems to have superior OS (*)
+|-
+|[http://jco.ascopubs.org/content/22/20/4075.long Thomas et al. 2004 (LALA-94)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Note: while LALA 87 was a negative trial, the subgroup of high-risk ALL, including Ph+ ALL, appeared to have a superior outcome in the allo HSCT arm.''
+{{#lst:Allogeneic HSCT|6ca28d}}
+===References===
+# Thomas ED, Sanders JE, Flournoy N, Johnson FL, Buckner CD, Clift RA, Fefer A, Goodell BW, Storb R, Weiden PL. Marrow transplantation for patients with acute lymphoblastic leukemia in remission. Blood. 1979 Aug;54(2):468-76. [http://www.bloodjournal.org/content/54/2/468.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/378292 PubMed]
+# '''LALA 87:''' Sebban C, Lepage E, Vernant JP, Gluckman E, Attal M, Reiffers J, Sutton L, Racadot E, Michallet M, Maraninchi D, Dreyfus F, Fiere D; French Group of Therapy of Adult Acute Lymphoblastic Leukemia. Allogeneic bone marrow transplantation in adult acute lymphoblastic leukemia in first complete remission: a comparative study. J Clin Oncol. 1994 Dec;12(12):2580-7. [http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.12.2580 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7989932 PubMed]
+## '''Update:''' Thiebaut A, Vernant JP, Degos L, Huguet FR, Reiffers J, Sebban C, Lepage E, Thomas X, Fière D. Adult acute lymphocytic leukemia study testing chemotherapy and autologous and allogeneic transplantation: a follow-up report of the French protocol LALA 87. Hematol Oncol Clin North Am. 2000 Dec;14(6):1353-66. [https://www.sciencedirect.com/science/article/pii/S0889858805701908 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/11147227 PubMed]
+# '''LALA-94:''' Thomas X, Boiron JM, Huguet F, Dombret H, Bradstock K, Vey N, Kovacsovics T, Delannoy A, Fegueux N, Fenaux P, Stamatoullas A, Vernant JP, Tournilhac O, Buzyn A, Reman O, Charrin C, Boucheix C, Gabert J, Lhéritier V, Fiere D. Outcome of treatment in adults with acute lymphoblastic leukemia: analysis of the LALA-94 trial. J Clin Oncol. 2004 Oct 15;22(20):4075-86. Epub 2004 Sep 7. [http://jco.ascopubs.org/content/22/20/4075.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15353542 PubMed]
+## '''Update:''' Vey N, Thomas X, Picard C, Kovascovicz T, Charin C, Cayuela JM, Dombret H, Dastugue N, Huguet F, Bastard C, Stamatoulas A, Giollant M, Tournilhac O, Macintyre E, Buzyn A, Bories D, Kuentz M, Dreyfus F, Delannoy A, Raynaud S, Gratecos N, Bordessoule D, de Botton S, Preudhomme C, Reman O, Troussard X, Pigneux A, Bilhou C, Vernant JP, Boucheix C, Gabert J; GET-LALA Group the Swiss Group for Clinical Cancer Research (SAKK). Allogeneic stem cell transplantation improves the outcome of adults with t(1;19)/E2A-PBX1 and t(4;11)/MLL-AF4 positive B-cell acute lymphoblastic leukemia: results of the prospective multicenter LALA-94 study. Leukemia. 2006 Dec;20(12):2155-61. Epub 2006 Oct 12. [https://www.nature.com/leu/journal/v20/n12/full/2404420a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17039234 PubMed]
+
+==Etoposide & TBI, then allo HSCT {{#subobject:b389e1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:45f841|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/33/11/1265.long Peters et al. 2015 (ALL-SCT-BFM 2003)]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+{{#lst:Allogeneic HSCT|45f841}}
+===Variant #2 {{#subobject:e4216b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/106/12/3760.long Rowe et al. 2005 (MRC UKALL XII/ECOG E2993)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+{{#lst:Allogeneic HSCT|e4216b}}
+
+===References===
+# '''MRC UKALL XII/ECOG E2993:''' Rowe JM, Buck G, Burnett AK, Chopra R, Wiernik PH, Richards SM, Lazarus HM, Franklin IM, Litzow MR, Ciobanu N, Prentice HG, Durrant J, Tallman MS, Goldstone AH; ECOG; MRC/NCRI Adult Leukemia Working Party. Induction therapy for adults with acute lymphoblastic leukemia: results of more than 1500 patients from the international ALL trial: MRC UKALL XII/ECOG E2993. Blood. 2005 Dec 1;106(12):3760-7. Epub 2005 Aug 16. [http://bloodjournal.hematologylibrary.org/content/106/12/3760.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105981 PubMed]
+## '''Update:''' Goldstone AH, Richards SM, Lazarus HM, Tallman MS, Buck G, Fielding AK, Burnett AK, Chopra R, Wiernik PH, Foroni L, Paietta E, Litzow MR, Marks DI, Durrant J, McMillan A, Franklin IM, Luger S, Ciobanu N, Rowe JM. In adults with standard-risk acute lymphoblastic leukemia, the greatest benefit is achieved from a matched sibling allogeneic transplantation in first complete remission, and an autologous transplantation is less effective than conventional consolidation/maintenance chemotherapy in all patients: final results of the International ALL Trial (MRC UKALL XII/ECOG E2993). Blood. 2008 Feb 15;111(4):1827-33. Epub 2007 Nov 29. [http://bloodjournal.hematologylibrary.org/content/111/4/1827.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18048644 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Richards SM, Buck G, Moorman AV, Durrant IJ, Marks DI, McMillan AK, Litzow MR, Lazarus HM, Foroni L, Dewald G, Franklin IM, Luger SM, Paietta E, Wiernik PH, Tallman MS, Goldstone AH. Prospective outcome data on 267 unselected adult patients with Philadelphia chromosome-positive acute lymphoblastic leukemia confirms superiority of allogeneic transplantation over chemotherapy in the pre-imatinib era: results from the International ALL Trial MRC UKALLXII/ECOG2993. Blood. 2009 May 7;113(19):4489-96. Epub 2009 Feb 24. [http://bloodjournal.hematologylibrary.org/content/113/19/4489.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4188540/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19244158 PubMed] 
+## '''Update:''' Fielding AK, Rowe JM, Buck G, Foroni L, Gerrard G, Litzow MR, Lazarus H, Luger SM, Marks DI, McMillan AK, Moorman AV, Patel B, Paietta E, Tallman MS, Goldstone AH. UKALLXII/ECOG2993: addition of imatinib to a standard treatment regimen enhances long-term outcomes in Philadelphia positive acute lymphoblastic leukemia. Blood. 2014 Feb 6;123(6):843-50. Epub 2013 Nov 25. [http://bloodjournal.hematologylibrary.org/content/123/6/843.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916877/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24277073 PubMed]
+# '''ALL-SCT-BFM-2003:''' Peters C, Schrappe M, von Stackelberg A, Schrauder A, Bader P, Ebell W, Lang P, Sykora KW, Schrum J, Kremens B, Ehlert K, Albert MH, Meisel R, Matthes-Martin S, Gungor T, Holter W, Strahm B, Gruhn B, Schulz A, Woessmann W, Poetschger U, Zimmermann M, Klingebiel T. Stem-cell transplantation in children with acute lymphoblastic leukemia: a prospective international multicenter trial comparing sibling donors with matched unrelated donors-the ALL-SCT-BFM-2003 trial. J Clin Oncol. 2015 Apr 10;33(11):1265-74. Epub 2015 Mar 9. [http://jco.ascopubs.org/content/33/11/1265.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25753432 PubMed]
+
+==HAM & Imatinib {{#subobject:81dbe6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+HAM & Imatinib: '''<u>H</u>'''igh-dose '''<u>A</u>'''ra-C (Cytarabine) & '''<u>M</u>'''itoxantrone & Imatinib
+===Regimen {{#subobject:739821|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/4/1408.long de Labarthe et al. 2006 (GRAAPH-2003)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ Chiaretti et al. 2016 (GIMEMA LAL 0904)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Imatinib_.26_Prednisone|Imatinib & Prednisone induction]]
+====Chemotherapy====
+*[[Cytarabine (Cytosar)]] 3000 mg/m<sup>2</sup> IV every 12 hours on days 1 to 4 (8 doses)
+*[[Mitoxantrone (Novantrone)]] 10 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Imatinib (Gleevec)]] 600 mg PO once per day
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg IT repeated for a total of 14 doses (including all phases of treatment)
+
+'''One course; total duration of imatinib is not specified'''
+====Subsequent treatment====
+*GIMEMA LAL 0904, patients who did not achieve CR with induction: [[#Cytarabine.2C_Idarubicin.2C_Imatinib|Cytarabine, idarubicin, imatinib late intensification]]
+*GIMEMA LAL 0904, patients who achieve CR after consolidation: allogeneic hematopoietic stem cell transplant, or autologous HSCT if no donor available (details not provided)
+
+===References===
+# '''GRAAPH-2003:''' de Labarthe A, Rousselot P, Huguet-Rigal F, Delabesse E, Witz F, Maury S, Réa D, Cayuela JM, Vekemans MC, Reman O, Buzyn A, Pigneux A, Escoffre M, Chalandon Y, MacIntyre E, Lhéritier V, Vernant JP, Thomas X, Ifrah N, Dombret H; Group for Research on Adult Acute Lymphoblastic Leukemia (GRAALL). Imatinib combined with induction or consolidation chemotherapy in patients with de novo Philadelphia chromosome-positive acute lymphoblastic leukemia: results of the GRAAPH-2003 study. Blood. 2007 Feb 15;109(4):1408-13. Epub 2006 Oct 24. [http://www.bloodjournal.org/content/109/4/1408.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17062730 PubMed]
+## '''Update:''' Tanguy-Schmidt A, Rousselot P, Chalandon Y, Cayuela JM, Hayette S, Vekemans MC, Escoffre M, Huguet F, Réa D, Delannoy A, Cahn JY, Vernant JP, Ifrah N, Dombret H, Thomas X. Long-term follow-up of the imatinib GRAAPH-2003 study in newly diagnosed patients with de novo Philadelphia chromosome-positive acute lymphoblastic leukemia: a GRAALL study. Biol Blood Marrow Transplant. 2013 Jan;19(1):150-5. Epub 2012 Sep 6. [https://www.bbmt.org/article/S1083-8791(12)00355-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22960387 PubMed]
+# '''GIMEMA LAL 0904:''' Chiaretti S, Vitale A, Vignetti M, Piciocchi A, Fazi P, Elia L, Falini B, Ronco F, Ferrara F, De Fabritiis P, Luppi M, La Nasa G, Tedeschi A, Califano C, Fanin R, Dore F, Mandelli F, Meloni G, Foà R. A sequential approach with imatinib, chemotherapy and transplant for adult Ph+ acute lymphoblastic leukemia: final results of the GIMEMA LAL 0904 study. Haematologica. 2016 Dec;101(12):1544-1552. [http://www.haematologica.org/content/101/12/1544.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27515250 PubMed]
+
+==Imatinib-based consolidation {{#subobject:1a7885|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:81b016|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3431502/ Biondi et al. 2012 (EsPhALL)]
+|style="background-color:#1a9851"|Phase III (E)
+|No imatinib in consolidation
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this regimen did not meet the primary efficacy endpoint in the ITT population, but there was a possible signal in the as-treated population. See paper for details. To be completed (?)''
+====Preceding treatment====
+* Berlin–Frankfurt–Munster high-risk backbone
+
+===References===
+# '''EsPhALL:''' Biondi A, Schrappe M, De Lorenzo P, Castor A, Lucchini G, Gandemer V, Pieters R, Stary J, Escherich G, Campbell M, Li CK, Vora A, Aricò M, Röttgers S, Saha V, Valsecchi MG. Imatinib after induction for treatment of children and adolescents with Philadelphia-chromosome-positive acute lymphoblastic leukaemia (EsPhALL): a randomised, open-label, intergroup study. Lancet Oncol. 2012 Sep;13(9):936-45. Epub 2012 Aug 14. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70377-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3431502/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22898679 PubMed]
+
+==Nilotinib-based consolidation {{#subobject:2b1576|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:e153b6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/126/6/746.long Kim et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Duration of each cycle of consolidation is not specified but is presumably based on toxicities and count recovery. Nilotinib is taken continuously during consolidation.''
+====Preceding treatment====
+*[[#Daunorubicin.2C_Vincristine.2C_Prednisolone.2C_Nilotinib|Daunorubicin, Vincristine, Prednisolone, Nilotinib induction]]
+====Chemotherapy, Consolidation A (Cycle 1)====
+*[[Daunorubicin (Cerubidine)]] 45 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose: 90 mg/m<sup>2</sup>)
+*[[Vincristine (Oncovin)]] 2 mg IV once per day on days 1 & 8
+*[[Prednisolone (Millipred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 14
+*[[Nilotinib (Tasigna)]] 400 mg PO twice per day
+
+====Chemotherapy, Consolidation B (Cycles 2 & 4)====
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 4
+*[[Etoposide (Vepesid)]] 150 mg/m<sup>2</sup> IV over 3 hours once per day on days 1 to 4
+*[[Nilotinib (Tasigna)]] 400 mg PO twice per day
+
+====Chemotherapy, Consolidation C (Cycles 3 & 5)====
+*[[Methotrexate (MTX)]] 220 mg/m<sup>2</sup> IV bolus once per day on days 1 & 15, then 60 mg/m<sup>2</sup>/hr IV continuous infusion over 36 hours (total dose per cycle: 2380 mg/m<sup>2</sup>)
+*[[Nilotinib (Tasigna)]] 400 mg PO twice per day
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 50 mg/m<sup>2</sup> IV every 6 hours x 3 doses, then PO (dose not specified) until serum methotrexate level less than 0.05
+====Subsequent treatment====
+*[[#Nilotinib_monotherapy|Nilotinib maintenance]]
+
+===References===
+# Kim DY, Joo YD, Lim SN, Kim SD, Lee JH, Lee JH, Kim DH, Kim K, Jung CW, Kim I, Yoon SS, Park S, Ahn JS, Yang DH, Lee JJ, Lee HS, Kim YS, Mun YC, Kim H, Park JH, Moon JH, Sohn SK, Lee SM, Lee WS, Kim KH, Won JH, Hyun MS, Park J, Lee JH, Shin HJ, Chung JS, Lee H, Eom HS, Lee GW, Cho YU, Jang S, Park CJ, Chi HS, Lee KH; Adult Acute Lymphoblastic Leukemia Working Party of the Korean Society of Hematology. Nilotinib combined with multiagent chemotherapy for newly diagnosed Philadelphia-positive acute lymphoblastic leukemia. Blood. 2015 Aug 6;126(6):746-56. Epub 2015 Jun 11. [http://www.bloodjournal.org/content/126/6/746.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26065651 PubMed]
+
+=Late intensification=
+
+==Cytarabine, Idarubicin, Imatinib {{#subobject:7c1f36|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8578fe|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ Chiaretti et al. 2016 (GIMEMA LAL 0904)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This is for patients who did not achieve CHR with induction.''
+====Preceding treatment====
+*[[#HAM_.26_Imatinib|HAM & Imatinib consolidation]]
+====Chemotherapy====
+*[[Cytarabine (Cytosar)]] 3000 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Idarubicin (Idamycin)]] 40 mg/m<sup>2</sup> IV once on day 3
+*[[Imatinib (Gleevec)]] 600 mg PO once per day
+
+====CNS prophylaxis====
+*[[Methotrexate (MTX)]] 15 mg IT repeated for a total of 14 doses (including all phases of treatment)
+
+'''One course; total duration of imatinib is not specified'''
+
+''Patients who achieve CR proceed to allogeneic hematopoietic stem cell transplant, or autologous HSCT if no donor available. Details not provided.''
+
+===References===
+# '''GIMEMA LAL 0904:''' Chiaretti S, Vitale A, Vignetti M, Piciocchi A, Fazi P, Elia L, Falini B, Ronco F, Ferrara F, De Fabritiis P, Luppi M, La Nasa G, Tedeschi A, Califano C, Fanin R, Dore F, Mandelli F, Meloni G, Foà R. A sequential approach with imatinib, chemotherapy and transplant for adult Ph+ acute lymphoblastic leukemia: final results of the GIMEMA LAL 0904 study. Haematologica. 2016 Dec;101(12):1544-1552. [http://www.haematologica.org/content/101/12/1544.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5479612/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27515250 PubMed]
+
+=Maintenance after upfront therapy=
+==Dasatinib monotherapy {{#subobject:0327e6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2c1a45|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ Ravandi et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://www.bloodadvances.org/content/1/3/250 Ravandi et al. 2016 (SWOG S0805)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Dasatinib.2C_Vincristine.2C_Prednisone|Dasatinib, Vincristine, Prednisone]] x 2y
+====Chemotherapy====
+*[[Dasatinib (Sprycel)]] 100 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Ravandi F, O'Brien S, Thomas D, Faderl S, Jones D, Garris R, Dara S, Jorgensen J, Kebriaei P, Champlin R, Borthakur G, Burger J, Ferrajoli A, Garcia-Manero G, Wierda W, Cortes J, Kantarjian H. First report of phase 2 study of dasatinib with hyper-CVAD for the frontline treatment of patients with Philadelphia chromosome-positive (Ph+) acute lymphoblastic leukemia. Blood. 2010 Sep 23;116(12):2070-7. Epub 2010 May 13. [http://www.bloodjournal.org/content/116/12/2070.long link to original article] '''contains verified protocol'''--parts of the protocol were not explicitly listed in this reference, which instead referred to [[#Hyper-CVAD_.26_Imatinib_.28Gleevec.29_.28induction_.26_maintenance.29|Thomas et al. 2004]] and [[#Hyper-CVAD_.28induction.29|Kantarjian et al. 2004]] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20466853 PubMed]
+## '''Update:''' Ravandi F, O'Brien SM, Cortes JE, Thomas DM, Garris R, Faderl S, Burger JA, Rytting ME, Ferrajoli A, Wierda WG, Verstovsek S, Champlin R, Kebriaei P, McCue DA, Huang X, Jabbour E, Garcia-Manero G, Estrov Z, Kantarjian HM. Long-term follow-up of a phase 2 study of chemotherapy plus dasatinib for the initial treatment of patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Cancer. 2015 Dec 1;121(23):4158-64. Epub 2015 Aug 26. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29646/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4666803/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26308885 PubMed]
+# '''SWOG S0805:''' Ravandi F, Othus M, O’Brien SM, Forman SJ, Ha CS, Wong JY, Tallman MS, Paietta E, Racevskis J, Uy GL, Horowitz M, Takebe N, Little R, Borate U, Kebriaei P, Kingsbury L, Kantarjian HM, Radich JP, Erba HP, Appelbaum FR. US intergroup study of chemotherapy plus dasatinib and allogeneic stem cell transplant in Philadelphia chromosome positive ALL. Blood Adv. 2016;1(3):250-259. [http://www.bloodadvances.org/content/1/3/250 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5642915/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29046900 PubMed]
+
+==Dasatinib, Vincristine, Prednisone {{#subobject:71a41c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2efb7e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ Ravandi et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://www.bloodadvances.org/content/1/3/250 Ravandi et al. 2016 (SWOG S0805)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This is only offered to patients who achieved a CR. Maintenance therapy could be interrupted by provider's choice--typically only given to people with at least minimal residual disease (MRD) or more--in month 6 and 13 to give Hyper-CVAD Part A x 1 cycle.''
+====Preceding treatment====
+*[[#Hyper-CVAD_.26_Dasatinib|HyperCVAD & Dasatinib]] x 8
+====Chemotherapy====
+*[[Dasatinib (Sprycel)]] 100 mg PO once per day
+*[[Vincristine (Oncovin)]] 2 mg IV once on day 1
+*[[Prednisone (Sterapred)]] 200 mg PO once per day on days 1 to 5
+
+'''28-day cycles for 2 years'''
+====Subsequent treatment====
+*[[#Dasatinib_monotherapy|Dasatinib maintenance]]
+===References===
+# Ravandi F, O'Brien S, Thomas D, Faderl S, Jones D, Garris R, Dara S, Jorgensen J, Kebriaei P, Champlin R, Borthakur G, Burger J, Ferrajoli A, Garcia-Manero G, Wierda W, Cortes J, Kantarjian H. First report of phase 2 study of dasatinib with hyper-CVAD for the frontline treatment of patients with Philadelphia chromosome-positive (Ph+) acute lymphoblastic leukemia. Blood. 2010 Sep 23;116(12):2070-7. Epub 2010 May 13. [http://www.bloodjournal.org/content/116/12/2070.long link to original article] '''contains verified protocol'''--parts of the protocol were not explicitly listed in this reference, which instead referred to [[#Hyper-CVAD_.26_Imatinib_.28Gleevec.29_.28induction_.26_maintenance.29|Thomas et al. 2004]] and [[#Hyper-CVAD_.28induction.29|Kantarjian et al. 2004]] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081177/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20466853 PubMed]
+## '''Update:''' Ravandi F, O'Brien SM, Cortes JE, Thomas DM, Garris R, Faderl S, Burger JA, Rytting ME, Ferrajoli A, Wierda WG, Verstovsek S, Champlin R, Kebriaei P, McCue DA, Huang X, Jabbour E, Garcia-Manero G, Estrov Z, Kantarjian HM. Long-term follow-up of a phase 2 study of chemotherapy plus dasatinib for the initial treatment of patients with Philadelphia chromosome-positive acute lymphoblastic leukemia. Cancer. 2015 Dec 1;121(23):4158-64. Epub 2015 Aug 26. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.29646/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4666803/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26308885 PubMed]
+# '''SWOG S0805:''' Ravandi F, Othus M, O’Brien SM, Forman SJ, Ha CS, Wong JY, Tallman MS, Paietta E, Racevskis J, Uy GL, Horowitz M, Takebe N, Little R, Borate U, Kebriaei P, Kingsbury L, Kantarjian HM, Radich JP, Erba HP, Appelbaum FR. US intergroup study of chemotherapy plus dasatinib and allogeneic stem cell transplant in Philadelphia chromosome positive ALL. Blood Adv. 2016;1(3):250-259. [http://www.bloodadvances.org/content/1/3/250 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5642915/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29046900 PubMed]
+
+==Nilotinib monotherapy {{#subobject:2a3276|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:f976b6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/126/6/746.long Kim et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Nilotinib-based_consolidation|Nilotinib-based consolidation]]
+====Chemotherapy====
+*[[Nilotinib (Tasigna)]] 400 mg PO twice per day
+
+'''2-year course'''
+
+===References===
+# Kim DY, Joo YD, Lim SN, Kim SD, Lee JH, Lee JH, Kim DH, Kim K, Jung CW, Kim I, Yoon SS, Park S, Ahn JS, Yang DH, Lee JJ, Lee HS, Kim YS, Mun YC, Kim H, Park JH, Moon JH, Sohn SK, Lee SM, Lee WS, Kim KH, Won JH, Hyun MS, Park J, Lee JH, Shin HJ, Chung JS, Lee H, Eom HS, Lee GW, Cho YU, Jang S, Park CJ, Chi HS, Lee KH; Adult Acute Lymphoblastic Leukemia Working Party of the Korean Society of Hematology. Nilotinib combined with multiagent chemotherapy for newly diagnosed Philadelphia-positive acute lymphoblastic leukemia. Blood. 2015 Aug 6;126(6):746-56. Epub 2015 Jun 11. [http://www.bloodjournal.org/content/126/6/746.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26065651 PubMed]
+
+=Relapsed or refractory=
+
+==Bosutinib monotherapy {{#subobject:d66493|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:866932|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4467890/ Kantarjian et al. 2013]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+
+''Note: the dosing described is that reported for the phase 2 portion of the phase 1/2 study.''
+====Chemotherapy====
+*[[Bosutinib (Bosulif)]] 500 mg PO once per day, take with food
+**If no grade 3 or higher drug-related toxicity occurs, dose can be escalated to 600 mg PO once per day if response is suboptimal. Suboptimal response defined as no complete hematologic response (CHR) by week 8 or complete cytogenetic response (CCyR) by week 12.
+
+'''Continued indefinitely'''
+
+===References===
+# Kantarjian HM, Cortes JE, Kim DW, Khoury HJ, Brümmendorf TH, Porkka K, Martinelli G, Durrant S, Leip E, Kelly V, Turnbull K, Besson N, Gambacorti-Passerini C. Bosutinib safety and management of toxicity in leukemia patients with resistance or intolerance to imatinib and other tyrosine kinase inhibitors. Blood. 2014 Feb 27;123(9):1309-18. Epub 2013 Dec 17. [http://www.bloodjournal.org/content/123/9/1309.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4467890/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24345751 PubMed]
+
+==Dasatinib monotherapy {{#subobject:e00998|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1, 70 mg twice per day {{#subobject:dd936a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/110/7/2309.long Ottmann et al. 2007 (START-L)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4916944/ Kantarjian et al. 2009 (CA180-035)]
+|style="background-color:#1a9851"|Phase III (C)
+|Dasatinib 140 mg once per day
+|style="background-color:#ffffbf"|Seems not superior (*)
+|-
+|}
+''Note: reported efficacy for CA180-035 is based on the 2010 subgroup analysis.''
+====Chemotherapy====
+*[[Dasatinib (Sprycel)]] 70 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 140 mg/day {{#subobject:25da21|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4916944/ Kantarjian et al. 2009 (CA180-035)]
+|style="background-color:#1a9851"|Phase III (E)
+|Dasatinib 70 mg twice per day
+|style="background-color:#ffffbf"|Seems not superior (*)
+|-
+|}
+''Note: reported efficacy for CA180-035 is based on the 2010 subgroup analysis.''
+====Chemotherapy====
+*[[Dasatinib (Sprycel)]] 140 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''START-L:''' Ottmann O, Dombret H, Martinelli G, Simonsson B, Guilhot F, Larson RA, Rege-Cambrin G, Radich J, Hochhaus A, Apanovitch AM, Gollerkeri A, Coutre S. Dasatinib induces rapid hematologic and cytogenetic responses in adult patients with Philadelphia chromosome positive acute lymphoblastic leukemia with resistance or intolerance to imatinib: interim results of a phase 2 study. Blood. 2007 Oct 1;110(7):2309-15. Epub 2007 May 11. [http://www.bloodjournal.org/content/110/7/2309.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17496201 PubMed] 
+<!-- Presented at ASH 2008 abstract 2926; 12th Congress of EHA 2007 abstract 859 -->
+# '''CA180-035:''' Kantarjian H, Cortes J, Kim DW, Dorlhiac-Llacer P, Pasquini R, DiPersio J, Müller MC, Radich JP, Khoury HJ, Khoroshko N, Bradley-Garelik MB, Zhu C, Tallman MS. Phase 3 study of dasatinib 140 mg once daily versus 70 mg twice daily in patients with chronic myeloid leukemia in accelerated phase resistant or intolerant to imatinib: 15-month median follow-up. Blood. 2009 Jun 18;113(25):6322-9. Epub 2009 Apr 15. [http://www.bloodjournal.org/content/113/25/6322.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4916944/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19369231 PubMed]
+## '''Subgroup analysis:''' Lilly MB, Ottmann OG, Shah NP, Larson RA, Reiffers JJ, Ehninger G, Müller MC, Charbonnier A, Bullorsky E, Dombret H, Brigid Bradley-Garelik M, Zhu C, Martinelli G. Dasatinib 140 mg once daily versus 70 mg twice daily in patients with Ph-positive acute lymphoblastic leukemia who failed imatinib: results from a phase 3 study. Am J Hematol. 2010 Mar;85(3):164-70. [https://onlinelibrary.wiley.com/doi/10.1002/ajh.21615/pdf link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20131302 PubMed]
+## '''Subgroup analysis:''' Saglio G, Hochhaus A, Goh YT, Masszi T, Pasquini R, Maloisel F, Erben P, Cortes J, Paquette R, Bradley-Garelik MB, Zhu C, Dombret H. Dasatinib in imatinib-resistant or imatinib-intolerant chronic myeloid leukemia in blast phase after 2 years of follow-up in a phase 3 study: efficacy and tolerability of 140 milligrams once daily and 70 milligrams twice daily. Cancer. 2010 Aug 15;116(16):3852-61. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.25123/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4993589/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20564086 PubMed]
+
+==Imatinib monotherapy {{#subobject:101df3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4bd0da|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/100/6/1965.long Ottmann et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Imatinib (Gleevec)]] 600 mg PO once per day
+
+'''Continued indefinitely'''
+===References===
+# Ottmann OG, Druker BJ, Sawyers CL, Goldman JM, Reiffers J, Silver RT, Tura S, Fischer T, Deininger MW, Schiffer CA, Baccarani M, Gratwohl A, Hochhaus A, Hoelzer D, Fernandes-Reese S, Gathmann I, Capdeville R, O'Brien SG. A phase 2 study of imatinib in patients with relapsed or refractory Philadelphia chromosome-positive acute lymphoid leukemias. Blood. 2002 Sep 15;100(6):1965-71. [http://www.bloodjournal.org/content/100/6/1965.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12200353 PubMed]
+
+==Nilotinib monotherapy {{#subobject:fcb640|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:a80f54|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa055104 Kantarjian et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Nilotinib (Tasigna)]] 300 to 400 mg PO twice per day
+
+'''Continued indefinitely'''
+===References===
+# Kantarjian H, Giles F, Wunderle L, Bhalla K, O'Brien S, Wassmann B, Tanaka C, Manley P, Rae P, Mietlowski W, Bochinski K, Hochhaus A, Griffin JD, Hoelzer D, Albitar M, Dugan M, Cortes J, Alland L, Ottmann OG. Nilotinib in imatinib-resistant CML and Philadelphia chromosome-positive ALL. N Engl J Med. 2006 Jun 15;354(24):2542-51. [https://www.nejm.org/doi/full/10.1056/NEJMoa055104 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16775235 PubMed]
+
+==Ponatinib monotherapy {{#subobject:1ce5ae|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:3d67eb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3886799/ Cortes et al. 2013 (PACE)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Ponatinib (Iclusig)]] 45 mg PO once per day; may be taken either with or without food
+
+'''Continued indefinitely'''
+
+===References===
+<!--
+# Cortes JE, Kantarjian H, Shah NP, Bixby D, Mauro MJ, Flinn I, O'Hare T, Hu S, Narasimhan NI, Rivera VM, Clackson T, Turner CD, Haluska FG, Druker BJ, Deininger MW, Talpaz M. Ponatinib in refractory Philadelphia chromosome-positive leukemias. N Engl J Med. 2012 Nov 29;367(22):2075-88. [https://www.nejm.org/doi/full/10.1056/NEJMoa1205127 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3777383/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23190221 PubMed] -->
+# '''PACE:''' Cortes JE, Kim DW, Pinilla-Ibarz J, le Coutre P, Paquette R, Chuah C, Nicolini FE, Apperley JF, Khoury HJ, Talpaz M, DiPersio J, DeAngelo DJ, Abruzzese E, Rea D, Baccarani M, Müller MC, Gambacorti-Passerini C, Wong S, Lustgarten S, Rivera VM, Clackson T, Turner CD, Haluska FG, Guilhot F, Deininger MW, Hochhaus A, Hughes T, Goldman JM, Shah NP, Kantarjian H; the PACE Investigators. A phase 2 trial of ponatinib in Philadelphia chromosome-positive leukemias. N Engl J Med. 2013 Nov 7;369(19):1783-96. Epub 2013 Nov 1. [https://www.nejm.org/doi/full/10.1056/NEJMoa1306494 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3886799/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24180494 PubMed]
+## '''Update: Abstract:''' Dong-Wook Kim, Javier Pinilla-Ibarz, Philipp D le Coutre, Ronald Paquette, Charles Chuah, Franck E. Nicolini, Jane F Apperley, H. Jean Khoury, Moshe Talpaz, John F. DiPersio, Daniel J DeAngelo, Elisabetta Abruzzese, Delphine Rea, Michele Baccarani, Martin C. Müller, Carlo Gambacorti-Passerini, Stephanie Lustgarten, Victor M. Rivera, Tim Clackson, Christopher D Turner, Frank G Haluska, François Guilhot, Michael W. Deininger, Andreas Hochhaus, Timothy P. Hughes, John M Goldman, Neil P. Shah, Hagop M. Kantarjian. Ponatinib In Patients (pts) With Chronic Myeloid Leukemia (CML) and Philadelphia Chromosome-Positive Acute Lymphoblastic Leukemia (Ph+ ALL) Resistant Or Intolerant To Dasatinib Or Nilotinib, Or With The T315I BCR-ABL Mutation: 2-Year Follow-Up Of The PACE Trial. Blood Nov 2013,122(21)650 [http://www.bloodjournal.org/content/122/21/650 link to original abstract]
+
+[[Category:B-cell acute lymphoblastic leukemia regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Acute leukemias]]

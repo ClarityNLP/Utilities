@@ -1,0 +1,412 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:SeemaNagpal.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Seemanagpal|Seema Nagpal, MD]]<br>Palo Alto, CA</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==EANO==
+*[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30194-8/fulltext European Association for Neuro-Oncology (EANO) guideline on the diagnosis and treatment of adult astrocytic and oligodendroglial gliomas (2017)] [https://www.ncbi.nlm.nih.gov/pubmed/28483413 PubMed]
+*[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30345-5/fulltext European Association for Neuro-Oncology (EANO) guidelines for palliative care in adults with glioma (2017)] [https://www.ncbi.nlm.nih.gov/pubmed/28593859 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf NCCN Guidelines - Central Nervous System Cancers]
+
+=Adjuvant therapy=
+
+==Carboplatin & Vincristine {{#subobject:056d2c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CV: '''<u>C</u>'''arboplatin & '''<u>V</u>'''incristine
+<br>VC: '''<u>V</u>'''incristine & '''<u>C</u>'''arboplatin
+===Variant #1, 175/1.5 (capped vincristine) {{#subobject:caa541|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1993.11.5.850 Packer et al. 1993]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3413276/ Ater et al. 2012 (COG A9952)]
+| style="background-color:#1a9851" |Phase III (C)
+|TPCV
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note that the cycle begins on day 0.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Biopsy or incomplete resection]]
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 175 mg/m<sup>2</sup> IV once per day on days 0, 7, 14, 21, 42, 49, 56, 63 (8 doses)
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 0, 7, 14, 21, 28, 35, 42, 49, 56, 63 (10 doses)
+
+'''10-week course'''
+====Subsequent treatment====
+*CV maintenance
+
+===Variant #2, 550/1.5 (uncapped vincristine) {{#subobject:31a2e6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5517338/ Gnekow et al. 2017 (SIOP-LCG 2004)]
+| style="background-color:#1a9851" |Phase III (C)
+|VCE
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Biopsy or incomplete resection]]
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 550 mg/m<sup>2</sup> IV over 60 minutes once on day 1
+*[[Vincristine (Oncovin)]] as follows:
+**Cycles 1 to 4: 1.5 mg/m<sup>2</sup> IV once per week (10 total doses)
+**Cycles 5 to 7: 1.5 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles, then 28-day cycle for 3 cycles'''
+====Subsequent treatment====
+*VC consolidation
+
+===References===
+# Packer RJ, Lange B, Ater J, Nicholson HS, Allen J, Walker R, Prados M, Jakacki R, Reaman G, Needles MN, Phillips PC, Ryan J, Boyett JM, Geyer R, Finlay J. Carboplatin and vincristine for recurrent and newly diagnosed low-grade gliomas of childhood. J Clin Oncol. 1993 May;11(5):850-6. [http://ascopubs.org/doi/abs/10.1200/JCO.1993.11.5.850 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8487049 PubMed]
+# '''COG A9952:''' Ater JL, Zhou T, Holmes E, Mazewski CM, Booth TN, Freyer DR, Lazarus KH, Packer RJ, Prados M, Sposto R, Vezina G, Wisoff JH, Pollack IF. Randomized study of two chemotherapy regimens for treatment of low-grade glioma in young children: a report from the Children's Oncology Group. J Clin Oncol. 2012 Jul 20;30(21):2641-7. Epub 2012 Jun 4. [http://ascopubs.org/doi/full/10.1200/JCO.2011.36.6054 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3413276/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22665535 PubMed]
+# '''SIOP-LGG 2004:''' Gnekow AK, Walker DA, Kandels D, Picton S, Giorgio Perilongo, Grill J, Stokland T, Sandstrom PE, Warmuth-Metz M, Pietsch T, Giangaspero F, Schmidt R, Faldum A, Kilmartin D, De Paoli A, De Salvo GL; of the Low Grade Glioma Consortium and the participating centers. A European randomised controlled trial of the addition of etoposide to standard vincristine and carboplatin induction as part of an 18-month treatment programme for childhood (≤16 years) low grade glioma - a final report. Eur J Cancer. 2017 Aug;81:206-225. Epub 2017 Jun 22. Erratum in: Eur J Cancer. 2017 Dec 13;:. [https://www.ejcancer.com/article/S0959-8049(17)30921-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5517338/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28649001 PubMed]
+
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ Shaw et al. 2012 (RTOG 9802)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#PCV|PCV]]
+|style="background-color:#d73027"|Inferior OS (*)
+|-
+|}
+''Efficacy is based on the 2016 update.''
+====Preceding treatment====
+*[[#Radiation_therapy|RT]] x 54 Gy
+
+===References===
+# '''RTOG 9802:''' Shaw EG, Wang M, Coons SW, Brachman DG, Buckner JC, Stelzer KJ, Barger GR, Brown PD, Gilbert MR, Mehta MP. Randomized trial of radiation therapy plus procarbazine, lomustine, and vincristine chemotherapy for supratentorial adult low-grade glioma: initial results of RTOG 9802. J Clin Oncol. 2012 Sep 1;30(25):3065-70. [http://ascopubs.org/doi/full/10.1200/JCO.2011.35.8598 link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22851558 PubMed]
+## '''Update:''' Buckner JC, Shaw EG, Pugh SL, Chakravarti A, Gilbert MR, Barger GR, Coons S, Ricci P, Bullard D, Brown PD, Stelzer K, Brachman D, Suh JH, Schultz CJ, Bahary JP, Fisher BJ, Kim H, Murtha AD, Bell EH, Won M, Mehta MP, Curran WJ Jr. Radiation plus procarbazine, CCNU, and vincristine in low-grade glioma. N Engl J Med. 2016 Apr 7;374(14):1344-55. [https://www.nejm.org/doi/full/10.1056/NEJMoa1500925 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5170873/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27050206 PubMed]
+
+==PCV {{#subobject:768bb0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PCV: '''<u>P</u>'''rocarbazine, '''<u>C</u>'''CNU (Lomustine), '''<u>V</u>'''incristine
+===Regimen {{#subobject:2fd5ca|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ Shaw et al. 2012 (RTOG 9802)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Observation|Observation]]
+|style="background-color:#1a9850"|Superior OS (*)
+|-
+|}
+''Efficacy is based on the 2016 update.''
+====Preceding treatment====
+*[[#Radiation_therapy|RT]] x 54 Gy
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 60 mg/m<sup>2</sup> PO once per day on days 8 to 21
+*[[Lomustine (Ceenu)]] 110 mg/m<sup>2</sup> PO once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 8 & 29
+
+'''8-week cycle for 6 cycles'''
+
+===References===
+# '''RTOG 9802:''' Shaw EG, Wang M, Coons SW, Brachman DG, Buckner JC, Stelzer KJ, Barger GR, Brown PD, Gilbert MR, Mehta MP. Randomized trial of radiation therapy plus procarbazine, lomustine, and vincristine chemotherapy for supratentorial adult low-grade glioma: initial results of RTOG 9802. J Clin Oncol. 2012 Sep 1;30(25):3065-70. [http://ascopubs.org/doi/full/10.1200/JCO.2011.35.8598 link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22851558 PubMed]
+## '''Update:''' Buckner JC, Shaw EG, Pugh SL, Chakravarti A, Gilbert MR, Barger GR, Coons S, Ricci P, Bullard D, Brown PD, Stelzer K, Brachman D, Suh JH, Schultz CJ, Bahary JP, Fisher BJ, Kim H, Murtha AD, Bell EH, Won M, Mehta MP, Curran WJ Jr. Radiation plus procarbazine, CCNU, and vincristine in low-grade glioma. N Engl J Med. 2016 Apr 7;374(14):1344-55. [https://www.nejm.org/doi/full/10.1056/NEJMoa1500925 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5170873/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27050206 PubMed]
+
+==Radiation therapy {{#subobject:ae4089|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:42de5e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ Shaw et al. 2012 (RTOG 9802)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30313-8/fulltext Baumert et al. 2016 (EORTC 22033-26033)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Temozolomide_monotherapy_5|Temozolomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Details here are from RTOG 9802.''
+====Radiotherapy====
+*[[External beam radiotherapy]] with 1.8 Gy fractions given in 30 fractions over 6 weeks, for a total dose of 54 Gy
+
+'''One course'''
+====Subsequent treatment====
+*RTOG 9802: [[#Observation|Observation]] versus [[#PCV|PCV]] x 6
+===References===
+# '''RTOG 9802:''' Shaw EG, Wang M, Coons SW, Brachman DG, Buckner JC, Stelzer KJ, Barger GR, Brown PD, Gilbert MR, Mehta MP. Randomized trial of radiation therapy plus procarbazine, lomustine, and vincristine chemotherapy for supratentorial adult low-grade glioma: initial results of RTOG 9802. J Clin Oncol. 2012 Sep 1;30(25):3065-70. [http://ascopubs.org/doi/full/10.1200/JCO.2011.35.8598 link to original article]  '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3732006/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22851558 PubMed]
+## '''Update:''' Buckner JC, Shaw EG, Pugh SL, Chakravarti A, Gilbert MR, Barger GR, Coons S, Ricci P, Bullard D, Brown PD, Stelzer K, Brachman D, Suh JH, Schultz CJ, Bahary JP, Fisher BJ, Kim H, Murtha AD, Bell EH, Won M, Mehta MP, Curran WJ Jr. Radiation plus procarbazine, CCNU, and vincristine in low-grade glioma. N Engl J Med. 2016 Apr 7;374(14):1344-55. [https://www.nejm.org/doi/full/10.1056/NEJMoa1500925 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5170873/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27050206 PubMed]
+# '''EORTC 22033-26033:''' Baumert BG, Hegi ME, van den Bent MJ, von Deimling A, Gorlia T, Hoang-Xuan K, Brandes AA, Kantor G, Taphoorn MJ, Hassel MB, Hartmann C, Ryan G, Capper D, Kros JM, Kurscheid S, Wick W, Enting R, Reni M, Thiessen B, Dhermain F, Bromberg JE, Feuvret L, Reijneveld JC, Chinot O, Gijtenbeek JM, Rossiter JP, Dif N, Balana C, Bravo-Marques J, Clement PM, Marosi C, Tzuk-Shina T, Nordal RA, Rees J, Lacombe D, Mason WP, Stupp R. Temozolomide chemotherapy versus radiotherapy in high-risk low-grade glioma (EORTC 22033-26033): a randomised, open-label, phase 3 intergroup study. Lancet Oncol. 2016 Nov;17(11):1521-1532. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30313-8/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5124485/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27686946 PubMed]
+
+==Temozolomide monotherapy {{#subobject:31d3b0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2344c2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30313-8/fulltext Baumert et al. 2016 (EORTC 22033-26033)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Radiation_therapy_4|Radiotherapy]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 75 mg/m<sup>2</sup> PO once per day on days 1 to 21
+
+'''28-day cycle for up to 12 cycles'''
+
+===References===
+# Baumert BG, Hegi ME, van den Bent MJ, von Deimling A, Gorlia T, Hoang-Xuan K, Brandes AA, Kantor G, Taphoorn MJ, Hassel MB, Hartmann C, Ryan G, Capper D, Kros JM, Kurscheid S, Wick W, Enting R, Reni M, Thiessen B, Dhermain F, Bromberg JE, Feuvret L, Reijneveld JC, Chinot O, Gijtenbeek JM, Rossiter JP, Dif N, Balana C, Bravo-Marques J, Clement PM, Marosi C, Tzuk-Shina T, Nordal RA, Rees J, Lacombe D, Mason WP, Stupp R. Temozolomide chemotherapy versus radiotherapy in high-risk low-grade glioma (EORTC 22033-26033): a randomised, open-label, phase 3 intergroup study. Lancet Oncol. 2016 Nov;17(11):1521-1532. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30313-8/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5124485/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27686946 PubMed]
+
+=Recurrent or progressive, non-curative therapy=
+==Carboplatin monotherapy {{#subobject:e18c52|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:24c607|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://thejns.org/doi/pdf/10.3171/foc.1998.4.4.6 Moghrabi et al. 1998]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 560 mg/m<sup>2</sup> IV over 60 minutes once on day 1
+**Mixed in D5 1/2 NS
+
+====Supportive medications====
+*Hydration for 1 hour before chemotherapy, and for 1 hour after chemotherapy; total volume including carboplatin is 900 mL/m<sup>2</sup>
+
+'''28-day cycle for up to 12 cycles beyond the maximum response, given until progression of disease, or unacceptable toxicity'''
+
+===References===
+# Moghrabi A, Friedman HS, Ashley DM, Bottom KS, Kerby T, Stewart E, Bruggers C, Provenzale JM, Champagne M, Hershon L, Watral M, Ryan J, Rasheed K, Lovell S, Korones D, Fuchs H, George T, McLendon RE, Friedman AH, Buckley E, Longee DC. Phase II study of carboplatin (CBDCA) in progressive low-grade gliomas. Neurosurg Focus. 1998 Apr 15;4(4):e3. [http://thejns.org/doi/pdf/10.3171/foc.1998.4.4.6 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17168503 PubMed]
+
+==Carboplatin & Teniposide {{#subobject:b10263|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:531596|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://annonc.oxfordjournals.org/content/14/12/1727.long Brandes et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 350 mg/m<sup>2</sup> IV once on day 1
+*[[Teniposide (Vumon)]] 50 mg/m<sup>2</sup> IV once per day on days 1 to 3
+
+====Supportive medications====
+*Prophylactic [[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonists]] routinely used
+*Lowest dose of [[:Category:Steroids|corticosteroids]] necessary to maintain neurologic stability
+*Antiepileptic medications for all patients
+
+'''28-day cycle for up to 10 cycles'''
+
+===References===
+# Brandes AA, Basso U, Vastola F, Tosoni A, Pasetto LM, Jirillo A, Lonardi S, Paris MK, Koussis H, Monfardini S, Ermani M. Carboplatin and teniposide as third-line chemotherapy in patients with recurrent oligodendroglioma or oligoastrocytoma: a phase II study. Ann Oncol. 2003 Dec;14(12):1727-31. [http://annonc.oxfordjournals.org/content/14/12/1727.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14630676 PubMed]
+
+==Cisplatin & Etoposide {{#subobject:3a5f3f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:55de5f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.springerlink.com/content/c34647v88t66m727/ Massimino et al. 2010]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+''Note: In children less than 1 year old or less than 10 kg, "doses were adjusted to their weight"--reference does not say exactly how doses are adjusted.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 25 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 3, '''given first'''
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 3, '''given second'''
+
+====Supportive medications====
+*Hydration for 2 hours before chemotherapy, and for 2 hours after chemotherapy
+
+'''28-day cycle for 4 cycles, then 35-day cycle for 3 cycles, then 42-day cycle for 3 cycles'''
+
+===References===
+# Massimino M, Spreafico F, Riva D, Biassoni V, Poggi G, Solero C, Gandola L, Genitori L, Modena P, Simonetti F, Potepan P, Casanova M, Meazza C, Clerici CA, Catania S, Sardi I, Giangaspero F. A lower-dose, lower-toxicity cisplatin-etoposide regimen for childhood progressive low-grade glioma. J Neurooncol. 2010 Oct;100(1):65-71. Epub 2010 Feb 12. [http://www.springerlink.com/content/c34647v88t66m727/ link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20151174 PubMed]
+
+==PCV {{#subobject:7e7af0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PCV: '''<u>P</u>'''rocarbazine, '''<u>C</u>'''CNU (Lomustine), '''<u>V</u>'''incristine
+
+===Regimen {{#subobject:6c3103|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.20611/full Brandes et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 60 mg/m<sup>2</sup> PO once per day on days 8 to 21
+*[[Lomustine (Ceenu)]] 110 mg/m<sup>2</sup> PO once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 8 & 29
+
+====Supportive medications====
+*Routine use of prophylactic [[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonists]]
+*[[:Category:Steroids|Steroids]] given at the lowest dose required by patient's neurologic status
+
+'''42-day cycle for up to 6 cycles'''
+
+===References===
+# Brandes AA, Tosoni A, Vastola F, Pasetto LM, Coria B, Danieli D, Iuzzolino P, Gardiman M, Talacchi A, Ermani M. Efficacy and feasibility of standard procarbazine, lomustine, and vincristine chemotherapy in anaplastic oligodendroglioma and oligoastrocytoma recurrent after radiotherapy: a phase II study. Cancer. 2004 Nov 1;101(9):2079-85. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.20611/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15372474 PubMed]
+# '''Retrospective:''' Triebels VH, Taphoorn MJ, Brandes AA, Menten J, Frenay M, Tosoni A, Kros JM, Stege EB, Enting RH, Allgeier A, van Heuvel I, van den Bent MJ. Salvage PCV chemotherapy for temozolomide-resistant oligodendrogliomas. Neurology. 2004 Sep 14;63(5):904-6. [http://www.neurology.org/content/63/5/904.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15365146 PubMed]
+
+==Temozolomide monotherapy {{#subobject:7b66b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, low dose {{#subobject:863ec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.springerlink.com/content/2015983316050j22/ Pouratian et al. 2006]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 75 mg/m<sup>2</sup> PO once per day on days 1 to 21
+
+====Supportive medications====
+*PCP prophylaxis with [[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Trimethoprim/Sulfamethoxazole (Bactrim)]]
+*[[:Category:Emesis_prevention|Antiemetics]] and stool softeners used as needed
+
+'''28-day cycle for 12 to 15 cycles'''
+
+===Variant #2, low dose, longer cycles {{#subobject:50fd6b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://clincancerres.aacrjournals.org/content/15/1/330.long Kesari et al. 2009]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 75 mg/m<sup>2</sup> PO once per day on days 1 to 49
+
+====Supportive medications====
+*PCP prophylaxis with [[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Trimethoprim/Sulfamethoxazole (Bactrim)]]
+
+'''77-day cycle for up to 6 cycles, progression of disease, or unacceptable toxicity'''
+
+===Variant #3, traditional initial dosing, then continuous therapy {{#subobject:3871fe|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.23813/full Perry et al. 2008 (RESCUE)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''At first recurrence/progression:''
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 150 to 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''28-day cycles'''
+
+''Patients with progressive disease are changed to:''
+*[[Temozolomide (Temodar)]] 50 mg/m<sup>2</sup> PO once per day, taken continuously without treatment break
+
+'''Given until progression of disease or unacceptable toxicity'''
+
+===Variant #4, traditional dosing {{#subobject:4fe632|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/9/2449.long Chinot et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.22961/full Nicholson et al. 2007]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+**In Nicholson et al. 2007, patients who previously received craniospinal irradiation (CSI) instead received 180 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''28-day cycle for up to 24 months (in Chinot et al. 2001) or 11 cycles (in Nicholson et al. 2007)'''
+
+===References===
+# Chinot OL, Honore S, Dufour H, Barrie M, Figarella-Branger D, Muracciole X, Braguer D, Martin PM, Grisoli F. Safety and efficacy of temozolomide in patients with recurrent anaplastic oligodendrogliomas after standard radiotherapy and chemotherapy. J Clin Oncol. 2001 May 1;19(9):2449-55. [http://jco.ascopubs.org/content/19/9/2449.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11331324 PubMed]
+# '''Retrospective:''' Pouratian N, Gasco J, Sherman JH, Shaffrey ME, Schiff D. Toxicity and efficacy of protracted low dose temozolomide for the treatment of low grade gliomas. J Neurooncol. 2007 May;82(3):281-8. Epub 2006 Nov 3. [http://www.springerlink.com/content/2015983316050j22/ link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17082887 PubMed]
+# Nicholson HS, Kretschmar CS, Krailo M, Bernstein M, Kadota R, Fort D, Friedman H, Harris MB, Tedeschi-Blok N, Mazewski C, Sato J, Reaman GH. Phase 2 study of temozolomide in children and adolescents with recurrent central nervous system tumors: a report from the Children's Oncology Group. Cancer. 2007 Oct 1;110(7):1542-50. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.22961/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17705175 PubMed]
+# '''RESCUE:''' Perry JR, Rizek P, Cashman R, Morrison M, Morrison T. Temozolomide rechallenge in recurrent malignant glioma by using a continuous temozolomide schedule: the "rescue" approach. Cancer. 2008 Oct 15;113(8):2152-7. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.23813/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18756530 PubMed]
+## '''Update:''' Perry JR, Bélanger K, Mason WP, Fulton D, Kavan P, Easaw J, Shields C, Kirby S, Macdonald DR, Eisenstat DD, Thiessen B, Forsyth P, Pouliot JF. Phase II trial of continuous dose-intense temozolomide in recurrent malignant glioma: RESCUE study. J Clin Oncol. 2010 Apr 20;28(12):2051-7. Epub 2010 Mar 22. [http://jco.ascopubs.org/content/28/12/2051.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20308655 PubMed]
+# Kesari S, Schiff D, Drappatz J, LaFrankie D, Doherty L, Macklin EA, Muzikansky A, Santagata S, Ligon KL, Norden AD, Ciampa A, Bradshaw J, Levy B, Radakovic G, Ramakrishna N, Black PM, Wen PY. Phase II study of protracted daily temozolomide for low-grade gliomas in adults. Clin Cancer Res. 2009 Jan 1;15(1):330-7. [http://clincancerres.aacrjournals.org/content/15/1/330.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19118062 PubMed]
+
+[[Category:Low-grade glioma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:CNS cancers]]

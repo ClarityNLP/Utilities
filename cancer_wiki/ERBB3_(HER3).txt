@@ -1,0 +1,39 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+'''Note: this is a new type of page for HemOnc.org, as most other regimen pages are tissue-specific. We will collect published information from basket trials on these pages, as well as regimens that are FDA approved.'''
+=All lines of therapy=
+==Neratinib monotherapy {{#subobject:3c1a9c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d9f619|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5808581/ Hyman et al. 2018 (SUMMIT<sub>HER</sub>)]
+|style="background-color:#ffffbe"|Non-randomized basket trial, <20 pts in this subgroup
+|-
+|}
+''Note: the cycle length is not described in the manuscript; the authors have clarified that the cycles are 28 days in length. This trial should not be confused with the one by the same name in multiple myeloma.''
+====Eligibility criteria====
+*HER2 or HER3 mutations
+====Chemotherapy====
+*[[Neratinib (Nerlynx)]] 240 mg PO once per day
+====Supportive medications====
+*[[Loperamide (Imodium)]] (dose not specified) mandatory during cycle 1
+
+'''28-day cycles'''
+
+===References===
+# '''SUMMIT:''' Hyman DM, Piha-Paul SA, Won H, Rodon J, Saura C, Shapiro GI, Juric D, Quinn DI, Moreno V, Doger B, Mayer IA, Boni V, Calvo E, Loi S, Lockhart AC, Erinjeri JP, Scaltriti M, Ulaner GA, Patel J, Tang J, Beer H, Selcuklu SD, Hanrahan AJ, Bouvier N, Melcer M, Murali R, Schram AM, Smyth LM, Jhaveri K, Li BT, Drilon A, Harding JJ, Iyer G, Taylor BS, Berger MF, Cutler RE Jr, Xu F, Butturini A, Eli LD, Mann G, Farrell C, Lalani AS, Bryce RP, Arteaga CL, Meric-Bernstam F, Baselga J, Solit DB. HER kinase inhibition in patients with HER2- and HER3-mutant cancers. Nature. 2018 Feb 8;554(7691):189-194. Epub 2018 Jan 31. [https://www.nature.com/articles/nature25475 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5808581/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29420467 PubMed]
+
+[[Category:ERBB3 (HER3) regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Site-agnostic regimens]]

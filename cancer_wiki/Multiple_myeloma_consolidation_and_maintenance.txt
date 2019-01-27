@@ -1,0 +1,2116 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Headshot Cowan.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Andrewc072|Andrew J. Cowan, MD]]<br>Seattle Cancer Care Alliance<br>Seattle, WA</big><br>[https://www.linkedin.com/in/andrew-cowan-63b3a130/ LinkedIn]
+|-
+|}
+''Are you looking for a regimen but can't find it here? It is possible that we've moved it to the [[Multiple_myeloma_-_historical|historical regimens page]]. If you still can't find it, please let us know so we can add it!''.
+<br><big>'''Note: due to its size/complexity, the multiple myeloma page has been split into three sub-pages:'''
+*[[Multiple_myeloma,_induction|Induction (transplant eligible and ineligible)]]
+*First-line consolidation and maintenance [''this page'']
+*[[Multiple_myeloma,_relapsed/refractory|Relapsed/refractory, including subsequent consolidation and maintenance]]
+</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+{{#lst:Multiple myeloma|guidelines}}
+<section begin=1st-consol />
+=Consolidation after first-line therapy=
+''Note that there is no crisp distinction between consolidation and maintenance. Generally regimens that are intended for a long or indefinite duration would be considered maintenance, whereas regimens with a short intended course would be considered consolidation.''
+
+==Bortezomib monotherapy {{#subobject:dd778e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1 {{#subobject:66855e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674665/ Mellqvist et al. 2013 (NMSG 15/05)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#d9ef8b"|Might have superior PFS
+|-
+|}
+''This trial only included bortezomib-naive patients; induction regimen was not specified but the majority received Cy-Dex.'' 
+====Preceding treatment====
+*All patients underwent autologous hematopoietic cell transplant at least 3 months prior to starting consolidation.
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] as follows:
+**Cycles 1 & 2: 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11 of a 21-day cycle
+**Cycles 3 to 6: 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15 of a 28-day cycle
+
+====Supportive medications====
+*[[:Category:Bisphosphonates|Bisphosphonates]] were administered "according to national guidelines."
+
+'''22-week course'''
+
+===Variant #2, 4 out of 5 weeks for 6 months {{#subobject:9a4ece|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/33/33/3921.long Niesvizky et al. 2015 (UPFRONT)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#Bortezomib_.26_Dexamethasone|VD]] x 8 versus [[Multiple_myeloma,_induction#VMP|VMP]] x 8 versus [[Multiple_myeloma,_induction#VTD|VTD]] x 8
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.6 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+'''35-day cycle for 5 cycles'''
+
+===Variant #3, 4 out of 6 weeks for 6 months {{#subobject:e72a4c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/119/19/4375.long Kumar et al. 2012 (EVOLUTION)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VDC|VDC]] versus [[Multiple_myeloma,_induction#VDC|VDC-mod]] versus [[Multiple_myeloma,_induction#RVD|VDR]] versus [[Multiple_myeloma,_induction#RVDC|VDCR]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+====Supportive medications====
+*[[Aspirin]] 325 mg PO once per day 
+**[[Warfarin (Coumadin)]] or [[Enoxaparin (Lovenox)]] could be used based on physician discretion
+*[[:Category:PCP_prophylaxis|PCP prophylaxis]] recommended
+*[[Acyclovir (Zovirax)]] prophylaxis for Herpes zoster recommended
+*[[:Category:Bisphosphonates|Bisphosphonates]] could be used "as necessary"
+
+'''42-day cycle for 4 cycles'''
+
+===References===
+<!-- Presented in abstract form at the 51st American Society of Hematology (ASH) annual meeting, New Orleans, LA, December 7, 2009; the 52nd ASH annual meeting, Orlando, FL, December 6, 2010; and the 13th International Myeloma Workshop, Paris, France, May 5, 2011.-->
+# '''EVOLUTION:''' Kumar S, Flinn I, Richardson PG, Hari P, Callander N, Noga SJ, Stewart AK, Turturro F, Rifkin R, Wolf J, Estevam J, Mulligan G, Shi H, Webb IJ, Rajkumar SV. Randomized, multicenter, phase 2 study (EVOLUTION) of combinations of bortezomib, dexamethasone, cyclophosphamide, and lenalidomide in previously untreated multiple myeloma. Blood. 2012 May 10;119(19):4375-82. Epub 2012 Mar 15. [http://www.bloodjournal.org/content/119/19/4375.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22422823 PubMed]
+# '''NMSG 15/05:''' Mellqvist UH, Gimsing P, Hjertner O, Lenhoff S, Laane E, Remes K, Steingrimsdottir H, Abildgaard N, Ahlberg L, Blimark C, Dahl IM, Forsberg K, Gedde-Dahl T, Gregersen H, Gruber A, Guldbrandsen N, Haukås E, Carlson K, Kvam AK, Nahi H, Lindås R, Andersen NF, Turesson I, Waage A, Westin J; Nordic Myeloma Study Group. Bortezomib consolidation after autologous stem cell transplantation in multiple myeloma: a Nordic Myeloma Study Group randomized phase 3 trial. Blood. 2013 Jun 6;121(23):4647-54. Epub 2013 Apr 24. [http://www.bloodjournal.org/content/121/23/4647.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674665/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23616624 PubMed]
+<!-- Presented at the 53rd American Society of Hematology (ASH) Annual Meeting and Exposition, San Diego, CA, December 10-13, 2011; and the 55th ASH Annual Meeting and Exposition, New Orleans, LA, December 7-10, 2013. -->
+# '''UPFRONT:''' Niesvizky R, Flinn IW, Rifkin R, Gabrail N, Charu V, Clowney B, Essell J, Gaffar Y, Warr T, Neuwirth R, Zhu Y, Elliott J, Esseltine DL, Niculescu L, Reeves J. Community-based phase IIIB trial of three UPFRONT bortezomib-based myeloma regimens. J Clin Oncol. 2015 Nov 20;33(33):3921-9. Epub 2015 Jun 8. [http://jco.ascopubs.org/content/33/33/3921.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26056177 PubMed]
+
+==Bortezomib & Melphalan, then auto HSCT {{#subobject:9c28bc|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Bor-HDM: '''<u>Bor</u>'''tezomib, '''<u>H</u>'''igh '''<u>D</u>'''ose '''<u>M</u>'''elphalan
+===Regimen {{#subobject:0bfd33|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/115/1/32.long Roussel et al. 2009]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+{{#lst:Autologous HSCT|0bfd33}}
+===References===
+# Roussel M, Moreau P, Huynh A, Mary JY, Danho C, Caillot D, Hulin C, Fruchart C, Marit G, Pégourié B, Lenain P, Araujo C, Kolb B, Randriamalala E, Royer B, Stoppa AM, Dib M, Dorvaux V, Garderet L, Mathiot C, Avet-Loiseau H, Harousseau JL, Attal M; Intergroupe Francophone du Myélome (IFM). Bortezomib and high-dose melphalan as conditioning regimen before autologous stem cell transplantation in patients with de novo multiple myeloma: a phase 2 study of the Intergroupe Francophone du Myelome (IFM). Blood. 2010 Jan 7;115(1):32-7. Epub 2009 Nov 2. [http://www.bloodjournal.org/content/115/1/32.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19884643 PubMed]
+
+==DCEP {{#subobject:431b08|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DCEP: '''<u>D</u>'''examethasone, '''<u>C</u>'''yclophosphamide, '''<u>E</u>'''toposide, '''<u>P</u>'''latinol (Cisplatin)
+
+===Regimen {{#subobject:bbd0bf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/30/4621.long Harousseau et al. 2010 (IFM 2005-01)]
+|style="background-color:#1a9851"|Phase III (E)
+|No DCEP
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#Bortezomib_.26_Dexamethasone|VD]] x 4 versus [[Multiple_myeloma_-_historical#VAD|VAD]] x 4
+====Chemotherapy====
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+*[[Cyclophosphamide (Cytoxan)]] 400 mg/m<sup>2</sup>/day IV continuous infusion over 4 days, started on day 1 (total dose per cycle: 1600 mg/m<sup>2</sup>) 
+*[[Etoposide (Vepesid)]] 40 mg/m<sup>2</sup>/day IV continuous infusion over 4 days, started on day 1 (total dose per cycle: 160 mg/m<sup>2</sup>)
+*[[Cisplatin (Platinol)]] 15 mg/m<sup>2</sup>/day IV continuous infusion over 4 days, started on day 1 (total dose per cycle: 60 mg/m<sup>2</sup>) 
+
+'''28-day cycle for 2 cycles'''
+
+====Subsequent treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic cell transplant]]
+
+===References===
+<!-- Presented at the 48th Annual Meeting of the American Society of Hematology (ASH), December 9-12, 2006, Orlando, FL; the 49th Annual Meeting of the ASH, December 8-11, 2007, Atlanta, GA; the 44th Annual Meeting of the American Society of Clinical Oncology (ASCO), May 30-June 3, 2008, Chicago, IL; and the 2008 Annual Meeting of the American Society of Hematology ASH/ASCO Joint Symposium, December 7, 2008, San Francisco, CA. -->
+# '''IFM 2005-01:''' Harousseau JL, Attal M, Avet-Loiseau H, Marit G, Caillot D, Mohty M, Lenain P, Hulin C, Facon T, Casassus P, Michallet M, Maisonneuve H, Benboubker L, Maloisel F, Petillon MO, Webb I, Mathiot C, Moreau P. Bortezomib plus dexamethasone is superior to vincristine plus doxorubicin plus dexamethasone as induction treatment prior to autologous stem-cell transplantation in newly diagnosed multiple myeloma: results of the IFM 2005-01 phase III trial. J Clin Oncol. 2010 Oct 20;28(30):4621-9. Epub 2010 Sep 7. [http://jco.ascopubs.org/content/28/30/4621.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20823406 PubMed]
+
+==KTd {{#subobject:bc0c24|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+KTd: '''<u>K</u>'''yprolis (Carfilzomib), '''<u>T</u>'''halidomide, '''<u>d</u>'''examethasone
+
+===Regimen {{#subobject:bc14c4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300390/ Sonneveld et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|high-dose melphalan with stem cell rescue]].''
+====Chemotherapy====
+*[[Carfilzomib (Kyprolis)]] as follows:
+**''Cohort 1:'' 27 mg/m<sup>2</sup> IV once per day on days 1, 2, 8, 9, 15, 16
+**''Cohort 2:'' 36 mg/m<sup>2</sup> IV once per day on days 1, 2, 8, 9, 15, 16
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day
+*[[Dexamethasone (Decadron)]] 20 mg PO once per week on days 1, 8, 15, 22
+
+'''28-day cycle for 4 cycles'''
+
+===References===
+<!-- # '''Abstract:''' Pieter Sonneveld, Emilie Asselberg-Hacker, Sonja Zweegman, Bronno van der Holt, Marie Jose Kersten, Edo Vellenga, Marinus van Marwijk Kooy, Okke de Weerdt, Sarah Lonergan, Antonio Palumbo, Henk Lokhorst. Dose Escalation Phase 2 Trial Of Carfilzomib Combined With Thalidomide and Low-Dose Dexamethason In Newly Diagnosed, Transplant Eligible Patients With Multiple Myeloma. A Trial Of The European Myeloma Network. Blood Nov 2013,122(21)688 [http://www.bloodjournal.org/content/122/21/688 link to abstract] -->
+# Sonneveld P, Asselbergs E, Zweegman S, van der Holt B, Kersten MJ, Vellenga E, van Marwijk-Kooy M, Broyl A, de Weerdt O, Lonergan S, Palumbo A, Lokhorst H. Phase 2 study of carfilzomib, thalidomide and dexamethasone as induction/consolidation therapy for newly diagnosed multiple myeloma. Blood. 2015 Jan 15;125(3):449-56. Epub 2014 Nov 14. [http://www.bloodjournal.org/content/125/3/449 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300390/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25398935 PubMed]
+
+==Lenalidomide & Prednisone {{#subobject:ceb412|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:7d2a7c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/28/5/800.long Palumbo et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Tandem_melphalan.2C_then_auto_HSCT|Tandem MEL-100, then auto HSCT]]
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Prednisone (Sterapred)]] 50 mg PO once every other day
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day during [[Lenalidomide (Revlimid)]] treatment
+
+'''28-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_monotherapy|Lenalidomide maintenance]]
+
+===References===
+# Palumbo A, Gay F, Falco P, Crippa C, Montefusco V, Patriarca F, Rossini F, Caltagirone S, Benevolo G, Pescosta N, Guglielmelli T, Bringhen S, Offidani M, Giuliani N, Petrucci MT, Musto P, Liberati AM, Rossi G, Corradini P, Boccadoro M. Bortezomib as induction before autologous transplantation, followed by lenalidomide as consolidation-maintenance in untreated multiple myeloma patients. J Clin Oncol. 2010 Feb 10;28(5):800-7. Epub 2010 Jan 4. Erratum in: J Clin Oncol. 2010 May 1;28(13):2314. [http://jco.ascopubs.org/content/28/5/800.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20048187 PubMed]
+## '''Update:''' Gay F, Magarotto V, Crippa C, Pescosta N, Guglielmelli T, Cavallo F, Pezzatti S, Ferrari S, Liberati AM, Oliva S, Patriarca F, Offidani M, Omedé P, Montefusco V, Petrucci MT, Giuliani N, Passera R, Pietrantuono G, Boccadoro M, Corradini P, Palumbo A. Bortezomib induction, reduced-intensity transplantation, and lenalidomide consolidation-maintenance for myeloma: updated results. Blood. 2013 Aug 22;122(8):1376-83. Epub 2013 Jun 17. [http://www.bloodjournal.org/content/122/8/1376.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23775712 PubMed]
+
+==Melphalan, then auto HSCT {{#subobject:263542|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Synopsis===
+To be completed. This section will give an overview of this commonly used regimen.
+===Variant #1, 140 mg/m<sup>2</sup> {{#subobject:255748|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/67/5/1298 Barlogie et al. 1986]
+| style="background-color:#ffffbe" |Non-randomized, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 70 mg/m<sup>2</sup> IV once per day on days -2 & -1
+
+'''Stem cells re-infused on day 0'''
+===Variant #2, 200 mg/m<sup>2</sup> {{#subobject:3d1bf6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/99/3/731.long Moreau et al. 2002 (IFM 9502)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Melphalan_.2B_TBI.2C_then_auto_HSCT|Melphalan & TBI, then auto HSCT]]
+|style="background-color:#d9ef8b"|Might have superior OS
+|-
+|[http://www.bloodjournal.org/content/106/12/3755 Bladé et al. 2005]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VBMCP.2FVBAD|VBMCP/VBAD]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://jco.ascopubs.org/content/25/17/2434.full Cavo et al. 2007 (Bologna 96)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[Multiple_myeloma_-_historical#Melphalan.2C_then_auto HSCT.2C_then_Melphalan_.26_Busulfan.2C_then_auto HSCT|Melphalan, then auto HSCT, then Melphalan & Busulfan, then auto HSCT]]
+|style="background-color:#d73027"|Inferior EFS
+|-
+|[http://www.bloodjournal.org/content/115/6/1113 Lokhorst et al. 2009 (HOVON-50)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3639680/ Morgan et al. 2010 (MRC Myeloma IX)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://ascopubs.org/doi/full/10.1200/jco.2010.32.7312 Björkstrand et al. 2011 (EBMT-NMAM2000)]
+|style="background-color:#1a9851"|Phase III (C)
+|MEL200, then auto HSCT, then RIC allo HSCT
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|[http://www.bloodjournal.org/content/118/22/5752.full Moreau et al. 2011 (IFM 2007-02)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://www.bloodjournal.org/content/120/8/1589.long Rosiñol et al. 2012 (GEM05/MENOS65)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (HOVON-65)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943328/ Lok et al. 2014]
+|style="background-color:#91cf61"|Non-randomized
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://jco.ascopubs.org/content/32/25/2712.full Roussel et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300390/ Sonneveld et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nature.com/leu/journal/v29/n8/full/leu201580a.html Mai et al. 2015 (GMMG-MM5)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13994/abstract Mai et al. 2016 (GMMG-HD2)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Tandem_melphalan.2C_then_auto_HSCT|Tandem melphalan, then auto HSCT]]
+|style="background-color:#eeee01"|Non-inferior EFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 Attal et al. 2017 (IFM 2009)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#RVD|RVD consolidation]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Preceding treatment====
+''Treatment preceded by varying induction regimens:''
+{| class="wikitable sortable" style="text-align: center"
+!'''Trial'''
+!'''Induction regimen'''
+!'''# of cycles'''
+|-
+|'''IFM 9502
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|3
+|-
+|'''Bladé et al. 2005
+|[[Multiple_myeloma_-_historical#VBMCP.2FVBAD|VBMCP/VBAD]]
+|4
+|-
+|'''Bologna 96
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|4
+|-
+|rowspan=2|'''HOVON-50
+|[[Multiple_myeloma,_induction#TAD|TAD]]
+|3
+|-
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|3
+|-
+|rowspan=2|'''IFM2007-02
+|[[Multiple_myeloma,_induction#VTD|vtD]]
+|4
+|-
+|[[Multiple_myeloma,_induction#Bortezomib_.26_Dexamethasone|VD]]
+|4
+|-
+|rowspan=2|'''MRC Myeloma IX
+|[[Multiple_myeloma,_induction#CTD|CTD]]
+|4 to 6
+|-
+|[[Multiple_myeloma,_induction#CVAD|CVAD]]
+|4 to 6
+|-
+|rowspan=3|'''GEM05/MENOS65
+|[[Multiple_myeloma,_induction#Thal-Dex|TD]]
+|6
+|-
+|VBMCP/VBAD/B
+|6
+|-
+|[[Multiple_myeloma,_induction#VTD|VTD]]
+|6
+|-
+|rowspan=2|'''HOVON-65
+|[[Multiple_myeloma,_induction#PAD|PAD]]
+|3
+|-
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|3
+|-
+|'''Lok et al. 2014
+|[[Multiple_myeloma,_induction#VTD|vtD]]
+|4
+|-
+|'''Roussel et al. 2014
+|[[Multiple_myeloma,_induction#RVD|RVD]]
+|3
+|-
+|'''Sonneveld et al. 2014
+|[[Multiple_myeloma,_induction#KTd|KTd]]
+|4
+|-
+|rowspan=2|'''GMMG-MM5
+|[[Multiple_myeloma,_induction#VDC|VCD]]
+|3
+|-
+|[[Multiple_myeloma,_induction#PAD|PAd]]
+|3
+|-
+|'''IFM 2009
+|[[Multiple_myeloma,_induction#RVD|RVD]]
+|3
+|-
+|}
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once on day -2
+
+'''Stem cells re-infused on day 0'''
+====Subsequent treatment====
+''Treatment followed by varying consolidation and/or maintenance regimens:
+{| class="wikitable sortable" style="text-align: center"
+!'''Trial'''
+!'''Subsequent treatment'''
+!'''Type of regimen'''
+!'''Duration'''
+|-
+|'''IFM 9502
+|[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa]]
+|Maintenance
+|1 year
+|-
+|'''Bladé et al. 2005
+|[[Multiple_myeloma_-_historical#Interferon_alfa_.26_Dexamethasone|IFN & Dexamethasone]]
+|Maintenance
+|Indefinite
+|-
+|'''Bologna 96
+|[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa]]
+|Maintenance
+|Indefinite
+|-
+|rowspan=2|'''HOVON-50
+|[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa]] (if induced with VAD)
+|Maintenance
+|Indefinite
+|-
+|[[#Thalidomide_monotherapy|Thalidomide]] (if induced with TAD)
+|Maintenance
+|Indefinite
+|-
+|'''IFM2007-02
+|Unspecified
+|Unspecified
+|Unspecified
+|-
+|rowspan=2|'''MRC Myeloma IX
+|[[#Thalidomide_monotherapy|Thalidomide]]
+|Maintenance
+|Indefinite
+|-
+|[[Multiple_myeloma_-_historical#Observation|No further treatment]]
+|N/A
+|N/A
+|-
+|rowspan=3|'''GEM05/MENOS65
+|[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa-2b]]
+|Maintenance
+|3 years
+|-
+|[[#Thalidomide_monotherapy|Thalidomide]] 
+|Maintenance
+|3 years
+|-
+|[[#VT|TV]]
+|Maintenance
+|3 years
+|-
+|rowspan=2|'''HOVON-65
+|[[#Bortezomib_monotherapy_2|Bortezomib]] (if induced with PAD)
+|Maintenance
+|2 years
+|-
+|[[#Thalidomide_monotherapy|Thalidomide]] (if induced with VAD)
+|Maintenance
+|2 years
+|-
+|'''Lok et al. 2014
+|[[#VTD|vtD]]
+|Consolidation
+|2 cycles
+|-
+|'''Roussel et al. 2014
+|[[#RVD|RVD]]
+|Consolidation
+|2 cycles
+|-
+|'''Sonneveld et al. 2014
+|[[#KTd|KTd]]
+|Consolidation
+|4 cycles
+|-
+|rowspan=2|'''GMMG-MM5
+|MEL200, then auto HSCT (if at least nCR not achieved)
+|Consolidation
+|1 cycle
+|-
+|Lenalidomide
+|Consolidation
+|Not specified in abstract
+|-
+|'''IFM 2009
+|[[#RVD|RVD]]
+|Consolidation
+|2 cycles
+|-
+|}
+
+===References===
+# Barlogie B, Hall R, Zander A, Dicke K, Alexanian R. High-dose melphalan with autologous bone marrow transplantation for multiple myeloma. Blood. 1986 May;67(5):1298-301. [http://www.bloodjournal.org/content/67/5/1298 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/3516252 PubMed]
+# '''IFM 9502:''' Moreau P, Facon T, Attal M, Hulin C, Michallet M, Maloisel F, Sotto JJ, Guilhot F, Marit G, Doyen C, Jaubert J, Fuzibet JG, François S, Benboubker L, Monconduit M, Voillat L, Macro M, Berthou C, Dorvaux V, Pignon B, Rio B, Matthes T, Casassus P, Caillot D, Najman N, Grosbois B, Bataille R, Harousseau JL; Intergroupe Francophone du Myélome. Comparison of 200 mg/m(2) melphalan and 8 Gy total body irradiation plus 140 mg/m(2) melphalan as conditioning regimens for peripheral blood stem cell transplantation in patients with newly diagnosed multiple myeloma: final analysis of the Intergroupe Francophone du Myélome 9502 randomized trial. Blood. 2002 Feb 1;99(3):731-5. [http://www.bloodjournal.org/content/99/3/731.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11806971 PubMed]
+# Bladé J, Rosiñol L, Sureda A, Ribera JM, Díaz-Mediavilla J, García-Laraña J, Mateos MV, Palomera L, Fernández-Calvo J, Martí JM, Giraldo P, Carbonell F, Callís M, Trujillo J, Gardella S, Moro MJ, Barez A, Soler A, Font L, Fontanillas M, San Miguel J; Programa para el Estudio de la Terapéutica en Hemopatía Maligna (PETHEMA). High-dose therapy intensification compared with continued standard chemotherapy in multiple myeloma patients responding to the initial chemotherapy: long-term results from a prospective randomized trial from the Spanish cooperative group PETHEMA. Blood. 2005 Dec 1;106(12):3755-9. Epub 2005 Aug 16. [http://www.bloodjournal.org/content/106/12/3755 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16105975 PubMed]
+# '''Bologna 96:''' Cavo M, Tosi P, Zamagni E, Cellini C, Tacchetti P, Patriarca F, Di Raimondo F, Volpe E, Ronconi S, Cangini D, Narni F, Carubelli A, Masini L, Catalano L, Fiacchini M, de Vivo A, Gozzetti A, Lazzaro A, Tura S, Baccarani M. Prospective, randomized study of single compared with double autologous stem-cell transplantation for multiple myeloma: Bologna 96 clinical study. J Clin Oncol. 2007 Jun 10;25(17):2434-41. Epub 2007 May 7. [http://jco.ascopubs.org/content/25/17/2434.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17485707 PubMed]
+<!-- Presented in part at the 50th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 7, 2008. -->
+# '''HOVON-50:''' Lokhorst HM, van der Holt B, Zweegman S, Vellenga E, Croockewit S, van Oers MH, von dem Borne P, Wijermans P, Schaafsma R, de Weerdt O, Wittebol S, Delforge M, Berenschot H, Bos GM, Jie KS, Sinnige H, van Marwijk-Kooy M, Joosten P, Minnema MC, van Ammerlaan R, Sonneveld P; Dutch-Belgian Hemato-Oncology Group (HOVON). A randomized phase 3 study on the effect of thalidomide combined with adriamycin, dexamethasone, and high-dose melphalan, followed by thalidomide maintenance in patients with multiple myeloma. Blood. 2010 Feb 11;115(6):1113-20. Epub 2009 Oct 30. [http://www.bloodjournal.org/content/115/6/1113 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19880501 PubMed]
+## '''Update:''' van de Donk NW, van der Holt B, Minnema MC, Vellenga E, Croockewit S, Kersten MJ, von dem Borne PA, Ypma P, Schaafsma R, de Weerdt O, Klein SK, Delforge M, Levin MD, Bos GM, Jie KG, Sinnige H, Coenen JL, de Waal EG, Zweegman S, Sonneveld P, Lokhorst HM. Thalidomide before and after autologous stem cell transplantation in recently diagnosed multiple myeloma (HOVON-50): long-term results from the phase 3, randomised controlled trial. Lancet Haematol. 2018 Oct;5(10):e479-e492. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(18)30149-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30290905 PubMed]
+# '''MRC Myeloma IX:''' Morgan GJ, Davies FE, Gregory WM, Cocks K, Bell SE, Szubert AJ, Navarro-Coy N, Drayson MT, Owen RG, Feyler S, Ashcroft AJ, Ross F, Byrne J, Roddie H, Rudin C, Cook G, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Study Group. First-line treatment with zoledronic acid as compared with clodronic acid in multiple myeloma (MRC Myeloma IX): a randomised controlled trial. Lancet. 2010 Dec 11;376(9757):1989-99. Epub 2010 Dec 3. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)62051-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3639680/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21131037 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Russell NH, Bell SE, Szubert AJ, Navarro Coy N, Cook G, Feyler S, Byrne JL, Roddie H, Rudin C, Drayson MT, Owen RG, Ross FM, Jackson GH, Child JA; NCRI Haematological Oncology Study Group. Cyclophosphamide, thalidomide, and dexamethasone (CTD) as initial therapy for patients with multiple myeloma unsuitable for autologous transplantation. Blood. 2011 Aug 4;118(5):1231-8. Epub 2011 Jun 7. [http://www.bloodjournal.org/content/118/5/1231.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152492/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21652683 PubMed]
+## '''Update:''' Morgan GJ, Gregory WM, Davies FE, Bell SE, Szubert AJ, Brown JM, Coy NN, Cook G, Russell NH, Rudin C, Roddie H, Drayson MT, Owen RG, Ross FM, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Studies Group. The role of maintenance thalidomide therapy in multiple myeloma: MRC Myeloma IX results and meta-analysis. Blood. 2012 Jan 5;119(1):7-15. Epub 2011 Oct 20. [http://www.bloodjournal.org/content/119/1/7.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22021371 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Bell SE, Szubert AJ, Navarro Coy N, Cook G, Feyler S, Johnson PR, Rudin C, Drayson MT, Owen RG, Ross FM, Russell NH, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Studies Group. Cyclophosphamide, thalidomide, and dexamethasone as induction therapy for newly diagnosed multiple myeloma patients destined for autologous stem-cell transplantation: MRC Myeloma IX randomized trial results. Haematologica. 2012 Mar;97(3):442-50. Epub 2011 Nov 4. [http://www.haematologica.org/content/97/3/442.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3291601/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22058209 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Bell SE, Szubert AJ, Cook G, Drayson MT, Owen RG, Ross FM, Jackson G, Child JA. Long-term follow-up of MRC Myeloma IX trial: Survival outcomes with bisphosphonate and thalidomide treatment. Clin Cancer Res. 2013 Nov 1;19(21):6030-8. Epub 2013 Aug 30. [http://clincancerres.aacrjournals.org/content/19/21/6030.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23995858 PubMed]
+# '''EBMT-NMAM2000:''' Björkstrand B, Iacobelli S, Hegenbart U, Gruber A, Greinix H, Volin L, Narni F, Musto P, Beksac M, Bosi A, Milone G, Corradini P, Goldschmidt H, de Witte T, Morris C, Niederwieser D, Gahrton G. Tandem autologous/reduced-intensity conditioning allogeneic stem-cell transplantation versus autologous transplantation in myeloma: long-term follow-up. J Clin Oncol. 2011 Aug 1;29(22):3016-22. Epub 2011 Jul 5. Erratum in: J Clin Oncol. 2011 Sep 20;29(27):3721. [http://ascopubs.org/doi/full/10.1200/jco.2010.32.7312 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21730266 PubMed]
+## '''Update:''' Gahrton G, Iacobelli S, Björkstrand B, Hegenbart U, Gruber A, Greinix H, Volin L, Narni F, Carella AM, Beksac M, Bosi A, Milone G, Corradini P, Schönland S, Friberg K, van Biezen A, Goldschmidt H, de Witte T, Morris C, Niederwieser D, Garderet L, Kröger N; EBMT Chronic Malignancies Working Party Plasma Cell Disorders Subcommittee. Autologous/reduced-intensity allogeneic stem cell transplantation vs autologous transplantation in multiple myeloma: long-term results of the EBMT-NMAM2000 study. Blood. 2013 Jun 20;121(25):5055-63. Epub 2013 Mar 12. [http://www.bloodjournal.org/content/121/25/5055.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23482933 PubMed]
+# '''IFM 2007-02:''' Moreau P, Avet-Loiseau H, Facon T, Attal M, Tiab M, Hulin C, Doyen C, Garderet L, Randriamalala E, Araujo C, Lepeu G, Marit G, Caillot D, Escoffre M, Lioure B, Benboubker L, Pégourié B, Kolb B, Stoppa AM, Fuzibet JG, Decaux O, Dib M, Berthou C, Chaleteix C, Sebban C, Traullé C, Fontan J, Wetterwald M, Lenain P, Mathiot C, Harousseau JL. Bortezomib plus dexamethasone versus reduced-dose bortezomib, thalidomide plus dexamethasone as induction treatment before autologous stem cell transplantation in newly diagnosed multiple myeloma. Blood. 2011 Nov 24;118(22):5752-8. Epub 2011 Aug 17. [http://www.bloodjournal.org/content/118/22/5752.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21849487 PubMed]
+# '''GEM05/MENOS65:''' Rosiñol L, Oriol A, Teruel AI, Hernández D, López-Jiménez J, de la Rubia J, Granell M, Besalduch J, Palomera L, González Y, Etxebeste MA, Díaz-Mediavilla J, Hernández MT, de Arriba F, Gutiérrez NC, Martín-Ramos ML, Cibeira MT, Mateos MV, Martínez J, Alegre A, Lahuerta JJ, San Miguel J, Bladé J; Programa para el Estudio y la Terapéutica de las Hemopatías Malignas/Grupo Español de Mieloma (PETHEMA/GEM) group. Superiority of bortezomib, thalidomide, and dexamethasone (VTD) as induction pretransplantation therapy in multiple myeloma: a randomized phase 3 PETHEMA/GEM study. Blood. 2012 Aug 3;120(8):1589-96. Epub 2012 Jul 12. [http://www.bloodjournal.org/content/120/8/1589.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22791289 PubMed]
+## '''Update:''' Rosiñol L, Oriol A, Teruel AI, de la Guía AL, Blanchard M, de la Rubia J, Granell M, Sampol M, Palomera L, González Y, Etxebeste M, Martínez-Martínez R, Hernández MT, de Arriba F, Alegre A, Cibeira M, Mateos M, Martínez-López J, Lahuerta JJ, San Miguel J, Bladé J. Bortezomib and thalidomide maintenance after stem cell transplantation for multiple myeloma: a PETHEMA/GEM trial. Leukemia. 2017 Sep;31(9):1922-1927. Epub 2017 Jan 23. [https://www.nature.com/leu/journal/v31/n9/full/leu201735a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28111466 PubMed]
+# '''HOVON-65/GMMG-HD4:''' Sonneveld P, Schmidt-Wolf IG, van der Holt B, El Jarari L, Bertsch U, Salwender H, Zweegman S, Vellenga E, Broyl A, Blau IW, Weisel KC, Wittebol S, Bos GM, Stevens-Kroef M, Scheid C, Pfreundschuh M, Hose D, Jauch A, van der Velde H, Raymakers R, Schaafsma MR, Kersten MJ, van Marwijk-Kooy M, Duehrsen U, Lindemann W, Wijermans PW, Lokhorst HM, Goldschmidt HM. Bortezomib induction and maintenance treatment in patients with newly diagnosed multiple myeloma: results of the randomized phase III HOVON-65/ GMMG-HD4 trial. J Clin Oncol. 2012 Aug 20;30(24):2946-55. Epub 2012 Jul 16. [http://jco.ascopubs.org/content/30/24/2946.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22802322 PubMed]
+## '''Subgroup analysis:''' Neben K, Lokhorst HM, Jauch A, Bertsch U, Hielscher T, van der Holt B, Salwender H, Blau IW, Weisel K, Pfreundschuh M, Scheid C, Dührsen U, Lindemann W, Schmidt-Wolf IG, Peter N, Teschendorf C, Martin H, Haenel M, Derigs HG, Raab MS, Ho AD, van de Velde H, Hose D, Sonneveld P, Goldschmidt H. Administration of bortezomib before and after autologous stem cell transplantation improves outcome in multiple myeloma patients with deletion 17p. Blood. 2012 Jan 26;119(4):940-8. Epub 2011 Dec 8. [http://www.bloodjournal.org/content/119/4/940.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22160383 PubMed]
+## '''Update:''' Goldschmidt H, Lokhorst HM, Mai EK, van der Holt B, Blau IW, Zweegman S, Weisel KC, Vellenga E, Pfreundschuh M, Kersten MJ, Scheid C, Croockewit S, Raymakers R, Hose D, Potamianou A, Jauch A, Hillengass J, Stevens-Kroef M, Raab MS, Broijl A, Lindemann HW, Bos GMJ, Brossart P, van Marwijk Kooy M, Ypma P, Duehrsen U, Schaafsma RM, Bertsch U, Hielscher T, Jarari L, Salwender HJ, Sonneveld P. Bortezomib before and after high-dose therapy in myeloma: long-term results from the phase III HOVON-65/GMMG-HD4 trial. Leukemia. 2018 Feb;32(2):383-390. Epub 2017 Jul 4. [https://www.nature.com/articles/leu2017211 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28761118 PubMed]
+# Lok A, Mocquard J, Bourcier J, Redelsperger L, Bonnet A, Chauvin C, Thomare P, Mahe B, Touzeau C, Moreau P. Subcutaneous Bortezomib incorporated into the Bortezomib-Thalidomide-Dexamethasone regimen as part of frontline therapy in the context of autologous stem-cell transplantation for multiple myeloma. Haematologica. 2014 Mar;99(3):e33-4. Epub 2014 Feb 14. [http://www.haematologica.org/content/99/3/e33.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943328/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24532044 PubMed]
+# Roussel M, Lauwers-Cances V, Robillard N, Hulin C, Leleu X, Benboubker L, Marit G, Moreau P, Pegourie B, Caillot D, Fruchart C, Stoppa AM, Gentil C, Wuilleme S, Huynh A, Hebraud B, Corre J, Chretien ML, Facon T, Avet-Loiseau H, Attal M. Front-line transplantation program with lenalidomide, bortezomib, and dexamethasone combination as induction and consolidation followed by lenalidomide maintenance in patients with multiple myeloma: a phase II study by the Intergroupe Francophone du Myélome. J Clin Oncol. 2014 Sep 1;32(25):2712-7. Epub 2014 Jul 14. [http://jco.ascopubs.org/content/32/25/2712.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25024076 PubMed]
+<!-- # '''Abstract:''' Pieter Sonneveld, Emilie Asselberg-Hacker, Sonja Zweegman, Bronno van der Holt, Marie Jose Kersten, Edo Vellenga, Marinus van Marwijk Kooy, Okke de Weerdt, Sarah Lonergan, Antonio Palumbo, Henk Lokhorst. Dose Escalation Phase 2 Trial Of Carfilzomib Combined With Thalidomide and Low-Dose Dexamethason In Newly Diagnosed, Transplant Eligible Patients With Multiple Myeloma. A Trial Of The European Myeloma Network. Blood Nov 2013,122(21)688 [http://www.bloodjournal.org/content/122/21/688 link to abstract] -->
+# Sonneveld P, Asselbergs E, Zweegman S, van der Holt B, Kersten MJ, Vellenga E, van Marwijk-Kooy M, Broyl A, de Weerdt O, Lonergan S, Palumbo A, Lokhorst H. Phase 2 study of carfilzomib, thalidomide and dexamethasone as induction/consolidation therapy for newly diagnosed multiple myeloma. Blood. 2015 Jan 15;125(3):449-56. Epub 2014 Nov 14. [http://www.bloodjournal.org/content/125/3/449 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4300390/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25398935 PubMed]
+# '''GMMG-MM5:''' Mai EK, Bertsch U, Dürig J, Kunz C, Haenel M, Blau IW, Munder M, Jauch A, Schurich B, Hielscher T, Merz M, Huegle-Doerr B, Seckinger A, Hose D, Hillengass J, Raab MS, Neben K, Lindemann HW, Zeis M, Gerecke C, Schmidt-Wolf IG, Weisel K, Scheid C, Salwender H, Goldschmidt H. Phase III trial of bortezomib, cyclophosphamide and dexamethasone (VCD) versus bortezomib, doxorubicin and dexamethasone (PAd) in newly diagnosed myeloma. Leukemia. 2015 Aug;29(8):1721-9. Epub 2015 Mar 19. [https://www.nature.com/leu/journal/v29/n8/full/leu201580a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25787915 PubMed]
+# '''GMMG-HD2:''' Mai EK, Benner A, Bertsch U, Brossart P, Hänel A, Kunzmann V, Naumann R, Neben K, Egerer G, Ho AD, Hillengass J, Raab MS, Neubauer A, Peyn A, Ko YD, Peter N, Scheid C, Goldschmidt H. Single versus tandem high-dose melphalan followed by autologous blood stem cell transplantation in multiple myeloma: long-term results from the phase III GMMG-HD2 trial. Br J Haematol. 2016 Jun;173(5):731-41. Epub 2016 Mar 17. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13994/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26990892 PubMed]
+# '''IFM 2009:''' Attal M, Lauwers-Cances V, Hulin C, Leleu X, Caillot D, Escoffre M, Arnulf B, Macro M, Belhadj K, Garderet L, Roussel M, Payen C, Mathiot C, Fermand JP, Meuleman N, Rollet S, Maglio ME, Zeytoonjian AA, Weller EA, Munshi N, Anderson KC, Richardson PG, Facon T, Avet-Loiseau H, Harousseau JL, Moreau P; IFM 2009 Study. Lenalidomide, bortezomib, and dexamethasone with transplantation for myeloma. N Engl J Med. 2017 Apr 6;376(14):1311-1320. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28379796 PubMed]
+
+==MPR {{#subobject:611aa1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+MPR: '''<u>M</u>'''elphalan, '''<u>P</u>'''rednisone, '''<u>R</u>'''evlimid (Lenalidomide)
+===Variant #1, 0.18/2/10 {{#subobject:eac77a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 Palumbo et al. 2014 (GIMEMA RV-209)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Tandem_melphalan.2C_then_auto_HSCT|Tandem Melphalan, then auto HSCT]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment. To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#Rd|Rd induction]] x 4
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 0.18 mg/kg PO once per day on days 1 to 4
+*[[Prednisone (Sterapred)]] 2 mg/kg PO once per day on days 1 to 4
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+
+'''28-day cycle for 6 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_monotherapy|Lnalidomide maintenance]] versus [[Multiple_myeloma_-_historical#Observation|no further treatment]]
+
+===Variant #2 {{#subobject:bd5044|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v27/n3/full/leu2012271a.html Falco et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this is a component of the sequential "RP-MPR-RP" protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#Lenalidomide_.26_Prednisone|RP induction]] x 4
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 2 mg PO three times per week
+*[[Prednisone (Sterapred)]] 50 mg PO three times per week 
+*[[Lenalidomide (Revlimid)]] 10 or 15 mg PO once per day on days 1 to 21
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day as thromboprophylaxis during [[Lenalidomide (Revlimid)]] treatment. Unclear from protocol if this also means off weeks.
+*Antiviral prophylaxis if history of VZV.
+
+'''28-day cycle for 6 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_.26_Prednisone_2|RP maintenance]]
+
+===References===
+# Falco P, Cavallo F, Larocca A, Rossi D, Guglielmelli T, Rocci A, Grasso M, Siez ML, De Paoli L, Oliva S, Molica S, Mina R, Gay F, Benevolo G, Musto P, Omedè P, Freilone R, Bringhen S, Carella AM, Gaidano G, Boccadoro M, Palumbo A. Lenalidomide-prednisone induction followed by lenalidomide-melphalan-prednisone consolidation and lenalidomide-prednisone maintenance in newly diagnosed elderly unfit myeloma patients. Leukemia. 2013 Mar;27(3):695-701. Epub 2012 Sep 21. [https://www.nature.com/leu/journal/v27/n3/full/leu2012271a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22996335 PubMed]
+# '''GIMEMA RV-209:''' Palumbo A, Cavallo F, Gay F, Di Raimondo F, Ben Yehuda D, Petrucci MT, Pezzatti S, Caravita T, Cerrato C, Ribakovsky E, Genuardi M, Cafro A, Marcatti M, Catalano L, Offidani M, Carella AM, Zamagni E, Patriarca F, Musto P, Evangelista A, Ciccone G, Omedé P, Crippa C, Corradini P, Nagler A, Boccadoro M, Cavo M. Autologous transplantation and maintenance therapy in multiple myeloma. N Engl J Med. 2014 Sep 4;371(10):895-905. [https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25184862 PubMed]
+
+==RVD {{#subobject:3d2d57|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RVD: '''<u>R</u>'''evlimid (Lenalidomide), '''<u>V</u>'''elcade (Bortezomib), '''<u>D</u>'''examethasone
+<br>VDR: '''<u>V</u>'''elcade (Bortezomib), '''<u>D</u>'''examethasone, '''<u>R</u>'''evlimid (Lenalidomide)
+<br>VRD: '''<u>V</u>'''elcade (Bortezomib), '''<u>R</u>'''evlimid (Lenalidomide), '''<u>D</u>'''examethasone
+<br>VRd: '''<u>V</u>'''elcade (Bortezomib), '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+===Variant #1, 2 cycles post-transplant with lower-dose dex {{#subobject:073d3b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 Attal et al. 2017 (IFM 2009)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 14
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 10 mg PO once per day on days 1, 2, 4, 5, 8, 9, 11, 12
+
+'''21-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_monotherapy|Lenalidomide maintenance]]
+
+===Variant #2, 2 cycles post-transplant with higher-dose dex {{#subobject:073d3b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/32/25/2712.full Roussel et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Two months after hematologic recovery, patients without progressive disease began treatment.''
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 14
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15
+
+====Supportive medications====
+*[[:Category:Low_molecular_weight_heparins |Low–molecular weight heparin (LMWH)]] for DVT prophylaxis
+*[[:Category:Antivirals |Antiviral therapy]] with example [[Valacyclovir (Valtrex) | valacyclovir]] given, for herpes zoster prevention
+*[[:Category:Antibacterials |Antibiotic prophylaxis]] with example [[Amoxicillin | amoxicillin]] given, for bacterial infections 
+
+'''21-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_monotherapy|Lenalidomide maintenance]]
+
+===Variant #3, 5 cycles, no transplant {{#subobject:073d3b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 Attal et al. 2017 (IFM 2009)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Melphalan.2C_then_auto_HSCT|Melphalan, then auto HSCT]]
+|style="background-color:#d73027"|Inferior PFS
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#RVD|RVD induction]] x 3
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 14
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 10 mg PO once per day on days 1, 2, 4, 5, 8, 9, 11, 12
+
+'''21-day cycle for 5 cycles'''
+====Subsequent treatment====
+*[[#Lenalidomide_monotherapy|Lenalidomide maintenance]]
+
+===Variant #4, 8 cycles, no transplant {{#subobject:7fe92b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5030380/ Jacobus et al. 2016 (E1A05)]
+|style="background-color:#1a9851"|Phase III (E)
+|Rd
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+''Note: this trial closed early due to poor accrual so only descriptive results are available.''
+====Preceding treatment====
+*Dexamethasone-based induction for 1 to 6 cycles
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 14
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15
+
+'''21-day cycle for 8 cycles'''
+===References===
+# '''Retrospective:''' Nooka AK, Kaufman JL, Muppidi S, Langston A, Heffner LT, Gleason C, Casbourne D, Saxe D, Boise LH, Lonial S. Consolidation and maintenance therapy with lenalidomide, bortezomib and dexamethasone (RVD) in high-risk myeloma patients. Leukemia. 2014 Mar;28(3):690-3. Epub 2013 Nov 13. [https://www.nature.com/leu/journal/v28/n3/full/leu2013335a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24220275 PubMed]
+# Roussel M, Lauwers-Cances V, Robillard N, Hulin C, Leleu X, Benboubker L, Marit G, Moreau P, Pegourie B, Caillot D, Fruchart C, Stoppa AM, Gentil C, Wuilleme S, Huynh A, Hebraud B, Corre J, Chretien ML, Facon T, Avet-Loiseau H, Attal M. Front-line transplantation program with lenalidomide, bortezomib, and dexamethasone combination as induction and consolidation followed by lenalidomide maintenance in patients with multiple myeloma: a phase II study by the Intergroupe Francophone du Myélome. J Clin Oncol. 2014 Sep 1;32(25):2712-7. Epub 2014 Jul 14. [http://jco.ascopubs.org/content/32/25/2712.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25024076 PubMed]
+# '''E1A05:''' Jacobus SJ, Rajkumar SV, Weiss M, Stewart AK, Stadtmauer EA, Callander NS, Dreosti LM, Lacy MQ, Fonseca R. Randomized phase III trial of consolidation therapy with bortezomib-lenalidomide-Dexamethasone (VRd) vs bortezomib-dexamethasone (Vd) for patients with multiple myeloma who have completed a dexamethasone based induction regimen. Blood Cancer J. 2016 Jul 29;6(7):e448. [https://www.nature.com/articles/bcj201655 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5030380/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27471864 PubMed] 
+# '''IFM 2009:''' Attal M, Lauwers-Cances V, Hulin C, Leleu X, Caillot D, Escoffre M, Arnulf B, Macro M, Belhadj K, Garderet L, Roussel M, Payen C, Mathiot C, Fermand JP, Meuleman N, Rollet S, Maglio ME, Zeytoonjian AA, Weller EA, Munshi N, Anderson KC, Richardson PG, Facon T, Avet-Loiseau H, Harousseau JL, Moreau P; IFM 2009 Study. Lenalidomide, bortezomib, and dexamethasone with transplantation for myeloma. N Engl J Med. 2017 Apr 6;376(14):1311-1320. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28379796 PubMed]
+
+==Tandem melphalan, then auto HSCT {{#subobject:dd75e9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, MEL100 x 2 {{#subobject:b2cefd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/5/800.long Palumbo et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|VGPR or better: 82%
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#PAD_doxil|PAD doxil induction]] x 4
+====Chemotherapy, first transplant====
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once (day not specified)
+
+'''Stem cells re-infused on day 0'''
+
+====Chemotherapy, second transplant====
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once (day not specified)
+====Subsequent treatment====
+*[[#Lenalidomide_.26_Prednisone_2|RP maintenance]]
+
+===Variant #2, MEL140, then MEL200 {{#subobject:509dbc|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/108/10/3289.long Attal et al. 2006 (IFM 99-02)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma_-_historical#VAD|VAD]] x 3 to 4
+====Chemotherapy, first transplant====
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV once (day not specified)
+
+'''Stem cells re-infused on day 0'''
+
+====Chemotherapy, second transplant====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once (day not specified)
+====Subsequent treatment====
+*[[Multiple_myeloma_-_historical#Observation|Observation]] versus [[#Thalidomide_monotherapy|thalidomide maintenance]]
+
+===Variant #3, MEL200 x 2 {{#subobject:dd954b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/115/6/1113 Lokhorst et al. 2009 (HOVON-50)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://www.bloodjournal.org/content/115/10/1873.long Palumbo et al. 2009 (GIS MM2001)]
+|style="background-color:#1a9851"|Phase III (C)
+|MEL100 x 2
+| style="background-color:#1a9850" |Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3611089/ Krishnan et al. 2011 (BMT CTN 0102)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Melphalan.2C_then_auto HSCT.2C_then_RIC_allo HSCT|MEL200, then auto HSCT, then RIC allo HSCT]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (GMMG-HD4)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 Palumbo et al. 2014 (RV-MM-PI-209)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#MPR|MPR consolidation]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract Gay et al. 2015 (EMN-441)]
+|style="background-color:#1a9851"|Phase III (E)
+|CRD consolidation
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13994/abstract Mai et al. 2016 (GMMG-HD2)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Melphalan.2C_then_auto_HSCT|Melphalan, then auto HSCT]]
+|style="background-color:#eeee01"|Non-inferior EFS
+|-
+|}
+====Preceding treatment====
+{| class="wikitable sortable" style="text-align: center"
+!'''Trial'''
+!'''Induction regimen'''
+!'''# of cycles'''
+|-
+|rowspan=2|'''HOVON-50
+|[[Multiple_myeloma,_induction#TAD|TAD]]
+|3
+|-
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|3
+|-
+|'''BMT CTN 0102
+|Not specified
+|N/A
+|-
+|rowspan=2|'''GMMG-HD4
+|[[Multiple_myeloma,_induction#PAD|PAD]]
+|3
+|-
+|[[Multiple_myeloma_-_historical#VAD|VAD]]
+|3
+|-
+|'''RV-MM-PI-209
+|[[Multiple_myeloma,_induction#Rd|Rd]]
+|4
+|-
+|'''EMN-441
+|[[Multiple_myeloma,_induction#Rd|Rd]]
+|4
+|-
+|}
+====Chemotherapy, first transplant====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once on day -2
+
+'''Stem cells re-infused on day 0'''
+
+====Chemotherapy, second transplant====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once on day -2
+
+'''Stem cells re-infused on day 0'''
+====Subsequent treatment====
+''Treatment followed by varying consolidation and/or maintenance regimens:
+{| class="wikitable sortable" style="text-align: center"
+!'''Trial'''
+!'''Subsequent regimen'''
+!'''Type of regimen'''
+!'''Duration'''
+|-
+|rowspan=2|'''HOVON-50
+|[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa]] (if induced with VAD)
+|Maintenance
+|Indefinite
+|-
+|[[#Thalidomide_monotherapy|Thalidomide]] (if induced with TAD)
+|Maintenance
+|Indefinite
+|-
+|rowspan=2|'''BMT CTN 0102
+|[[Multiple_myeloma_-_historical#Observation|No further treatment]]
+|N/A
+|N/A
+|-
+|[[#Thal-Dex_2|Thal-Dex]]
+|Maintenance
+|1 year
+|-
+|rowspan=2|'''HOVON-65
+|[[#Bortezomib_monotherapy_2|Bortezomib]] (if induced with PAD)
+|Maintenance
+|2 years
+|-
+|[[#Thalidomide_monotherapy|Thalidomide]] (if induced with VAD)
+|Maintenance
+|2 years
+|-
+|rowspan=2|'''RV-MM-PI-209
+|[[#Lenalidomide_monotherapy|Lenalidomide]]
+|Maintenance
+|Indefinite
+|-
+|[[Multiple_myeloma_-_historical#Observation|No further treatment]]
+|N/A
+|N/A
+|-
+|rowspan=2|'''EMN-441
+|[[#Lenalidomide_monotherapy|Lenalidomide]]
+|Maintenance
+|Indefinite
+|-
+|[[#Lenalidomide_.26_Prednisone_2|Lenalidomide & Prednisone]]
+|Maintenance
+|Indefinite
+|-
+|}
+
+===Variant #4, MEL200 x 2 (split doses) {{#subobject:9ceef8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/89/3/789.long Barlogie et al. 1997 (Total Therapy)]
+|style="background-color:#91cf61"|Non-randomized
+|style="background-color:#d3d3d3"|
+|83%
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa065464 Bruno et al. 2007]
+|style="background-color:#1a9851"|Randomized (C)
+|Allogeneic HSCT
+| style="background-color:#d73027" |Inferior OS
+|-
+|}
+''Note: reported efficacy for Total Therapy is based on the 1999 update. Bruno et al. 2007 does not contain treatment details.''
+====Preceding treatment====
+*[[Multiple_myeloma_-_historical#EDAP|EDAP]] x 1
+====Chemotherapy, first transplant====
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once per day on days -3 & -2
+
+'''Stem cells re-infused on day 0'''
+
+====Chemotherapy, second transplant====
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once per day on days -3 & -2
+
+'''Stem cells re-infused on day 0'''
+====Subsequent treatment====
+*[[Multiple_myeloma_-_historical#Interferon_alfa_monotherapy|Interferon alfa maintenance]]
+
+===References===
+# '''Total Therapy:''' Barlogie B, Jagannath S, Vesole DH, Naucke S, Cheson B, Mattox S, Bracy D, Salmon S, Jacobson J, Crowley J, Tricot G. Superiority of tandem autologous transplantation over standard therapy for previously untreated multiple myeloma. Blood. 1997 Feb 1;89(3):789-93. [http://www.bloodjournal.org/content/89/3/789.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9028309 PubMed]
+## '''Update:''' Barlogie B, Jagannath S, Desikan KR, Mattox S, Vesole D, Siegel D, Tricot G, Munshi N, Fassas A, Singhal S, Mehta J, Anaissie E, Dhodapkar D, Naucke S, Cromer J, Sawyer J, Epstein J, Spoon D, Ayers D, Cheson B, Crowley J. Total therapy with tandem transplants for newly diagnosed multiple myeloma. Blood. 1999 Jan 1;93(1):55-65. [http://www.bloodjournal.org/content/93/1/55.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9864146 PubMed]
+## '''Pooled update:''' Barlogie B, Attal M, Crowley J, van Rhee F, Szymonifka J, Moreau P, Durie BG, Harousseau JL. Long-term follow-up of autotransplantation trials for multiple myeloma: update of protocols conducted by the Intergroupe Francophone du Myelome, Southwest Oncology Group, and University of Arkansas for Medical Sciences. J Clin Oncol. 2010 Mar 1;28(7):1209-14. Epub 2010 Jan 19. Erratum in: J Clin Oncol. 2010 Jul 20;28(21):3543. [http://jco.ascopubs.org/content/28/7/1209.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834471/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20085933 PubMed]
+# '''IFM 99-02:''' Attal M, Harousseau JL, Leyvraz S, Doyen C, Hulin C, Benboubker L, Yakoub Agha I, Bourhis JH, Garderet L, Pegourie B, Dumontet C, Renaud M, Voillat L, Berthou C, Marit G, Monconduit M, Caillot D, Grobois B, Avet-Loiseau H, Moreau P, Facon T; Inter-Groupe Francophone du Myélome (IFM). Maintenance therapy with thalidomide improves survival in patients with multiple myeloma. Blood. 2006 Nov 15;108(10):3289-94. Epub 2006 Jul 27. [http://www.bloodjournal.org/content/108/10/3289.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16873668 PubMed]
+## '''Update:''' Barlogie B, Attal M, Crowley J, van Rhee F, Szymonifka J, Moreau P, Durie BG, Harousseau JL. Long-term follow-up of autotransplantation trials for multiple myeloma: update of protocols conducted by the intergroupe francophone du myelome, southwest oncology group, and university of arkansas for medical sciences. J Clin Oncol. 2010 Mar 1;28(7):1209-14. Epub 2010 Jan 19. Erratum in: J Clin Oncol. 2010 Jul 20;28(21):3543. [http://jco.ascopubs.org/content/28/7/1209.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20085933 PubMed]
+# Bruno B, Rotta M, Patriarca F, Mordini N, Allione B, Carnevale-Schianca F, Giaccone L, Sorasio R, Omedè P, Baldi I, Bringhen S, Massaia M, Aglietta M, Levis A, Gallamini A, Fanin R, Palumbo A, Storb R, Ciccone G, Boccadoro M. A comparison of allografting with autografting for newly diagnosed myeloma. N Engl J Med. 2007 Mar 15;356(11):1110-20. [https://www.nejm.org/doi/full/10.1056/NEJMoa065464 link to original article] '''does not contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17360989 PubMed]
+# Rosiñol L, Pérez-Simón JA, Sureda A, de la Rubia J, de Arriba F, Lahuerta JJ, González JD, Díaz-Mediavilla J, Hernández B, García-Frade J, Carrera D, León A, Hernández M, Abellán PF, Bergua JM, San Miguel J, Bladé J; Programa para el Estudio y la Terapéutica de las Hemopatías Malignas y Grupo Español de Mieloma (PETHEMA/GEM). A prospective PETHEMA study of tandem autologous transplantation versus autograft followed by reduced-intensity conditioning allogeneic transplantation in newly diagnosed multiple myeloma. Blood. 2008 Nov 1;112(9):3591-3. Epub 2008 Jul 8. [http://www.bloodjournal.org/content/112/9/3591.long link to original article] '''does not contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18612103 PubMed]
+<!-- Presented in part at the 50th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 7, 2008. -->
+# '''HOVON-50:''' Lokhorst HM, van der Holt B, Zweegman S, Vellenga E, Croockewit S, van Oers MH, von dem Borne P, Wijermans P, Schaafsma R, de Weerdt O, Wittebol S, Delforge M, Berenschot H, Bos GM, Jie KS, Sinnige H, van Marwijk-Kooy M, Joosten P, Minnema MC, van Ammerlaan R, Sonneveld P; Dutch-Belgian Hemato-Oncology Group (HOVON). A randomized phase 3 study on the effect of thalidomide combined with adriamycin, dexamethasone, and high-dose melphalan, followed by thalidomide maintenance in patients with multiple myeloma. Blood. 2010 Feb 11;115(6):1113-20. Epub 2009 Oct 30. [http://www.bloodjournal.org/content/115/6/1113 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19880501 PubMed]
+## '''Update:''' van de Donk NW, van der Holt B, Minnema MC, Vellenga E, Croockewit S, Kersten MJ, von dem Borne PA, Ypma P, Schaafsma R, de Weerdt O, Klein SK, Delforge M, Levin MD, Bos GM, Jie KG, Sinnige H, Coenen JL, de Waal EG, Zweegman S, Sonneveld P, Lokhorst HM. Thalidomide before and after autologous stem cell transplantation in recently diagnosed multiple myeloma (HOVON-50): long-term results from the phase 3, randomised controlled trial. Lancet Haematol. 2018 Oct;5(10):e479-e492. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(18)30149-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30290905 PubMed]
+# '''GIS MM2001:''' Palumbo A, Bringhen S, Bruno B, Falcone AP, Liberati AM, Grasso M, Ria R, Pisani F, Cangialosi C, Caravita T, Levi A, Meloni G, Nozza A, Pregno P, Gabbas A, Callea V, Rizzo M, Annino L, De Stefano V, Musto P, Baldi I, Cavallo F, Petrucci MT, Massaia M, Boccadoro M. Melphalan 200 mg/m(2) versus melphalan 100 mg/m(2) in newly diagnosed myeloma patients: a prospective, multicenter phase 3 study. Blood. 2010 Mar 11;115(10):1873-9. Epub 2009 Dec 1. Erratum in: Blood. 2010 Sep 23;116(12):2195. [http://www.bloodjournal.org/content/115/10/1873.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19965659 PubMed]
+# Palumbo A, Gay F, Falco P, Crippa C, Montefusco V, Patriarca F, Rossini F, Caltagirone S, Benevolo G, Pescosta N, Guglielmelli T, Bringhen S, Offidani M, Giuliani N, Petrucci MT, Musto P, Liberati AM, Rossi G, Corradini P, Boccadoro M. Bortezomib as induction before autologous transplantation, followed by lenalidomide as consolidation-maintenance in untreated multiple myeloma patients. J Clin Oncol. 2010 Feb 10;28(5):800-7. Epub 2010 Jan 4. Erratum in: J Clin Oncol. 2010 May 1;28(13):2314. [http://jco.ascopubs.org/content/28/5/800.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20048187 PubMed]
+## '''Update:''' Gay F, Magarotto V, Crippa C, Pescosta N, Guglielmelli T, Cavallo F, Pezzatti S, Ferrari S, Liberati AM, Oliva S, Patriarca F, Offidani M, Omedé P, Montefusco V, Petrucci MT, Giuliani N, Passera R, Pietrantuono G, Boccadoro M, Corradini P, Palumbo A. Bortezomib induction, reduced-intensity transplantation, and lenalidomide consolidation-maintenance for myeloma: updated results. Blood. 2013 Aug 22;122(8):1376-83. Epub 2013 Jun 17. [http://www.bloodjournal.org/content/122/8/1376.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23775712 PubMed]
+# '''GIMEMA MM-BO2005:''' Cavo M, Tacchetti P, Patriarca F, Petrucci MT, Pantani L, Galli M, Di Raimondo F, Crippa C, Zamagni E, Palumbo A, Offidani M, Corradini P, Narni F, Spadano A, Pescosta N, Deliliers GL, Ledda A, Cellini C, Caravita T, Tosi P, Baccarani M; GIMEMA Italian Myeloma Network. Bortezomib with thalidomide plus dexamethasone compared with thalidomide plus dexamethasone as induction therapy before, and consolidation therapy after, double autologous stem-cell transplantation in newly diagnosed multiple myeloma: a randomised phase 3 study. Lancet. 2010 Dec 18;376(9758):2075-85. Epub 2010 Dec 9. Erratum in: Lancet. 2011 Nov 26;378(9806):1846. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61424-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21146205 PubMed]
+## '''Update:''' Cavo M, Pantani L, Petrucci MT, Patriarca F, Zamagni E, Donnarumma D, Crippa C, Boccadoro M, Perrone G, Falcone A, Nozzoli C, Zambello R, Masini L, Furlan A, Brioli A, Derudas D, Ballanti S, Dessanti ML, De Stefano V, Carella AM, Marcatti M, Nozza A, Ferrara F, Callea V, Califano C, Pezzi A, Baraldi A, Grasso M, Musto P, Palumbo A; GIMEMA (Gruppo Italiano Malattie Ematologiche dell'Adulto) Italian Myeloma Network. Bortezomib-thalidomide-dexamethasone is superior to thalidomide-dexamethasone as consolidation therapy after autologous hematopoietic stem cell transplantation in patients with newly diagnosed multiple myeloma. Blood. 2012 Jul 5;120(1):9-19. Epub 2012 Apr 12. [http://www.bloodjournal.org/content/120/1/9.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22498745 PubMed]
+# Krishnan A, Pasquini MC, Logan B, Stadtmauer EA, Vesole DH, Alyea E 3rd, Antin JH, Comenzo R, Goodman S, Hari P, Laport G, Qazilbash MH, Rowley S, Sahebi F, Somlo G, Vogl DT, Weisdorf D, Ewell M, Wu J, Geller NL, Horowitz MM, Giralt S, Maloney DG; Blood Marrow Transplant Clinical Trials Network (BMT CTN). Autologous haemopoietic stem-cell transplantation followed by allogeneic or autologous haemopoietic stem-cell transplantation in patients with multiple myeloma (BMT CTN 0102): a phase 3 biological assignment trial. Lancet Oncol. 2011 Dec;12(13):1195-203. Epub 2011 Sep 29. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3611089/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21962393 PubMed]
+# '''HOVON-65/GMMG-HD4:''' Sonneveld P, Schmidt-Wolf IG, van der Holt B, El Jarari L, Bertsch U, Salwender H, Zweegman S, Vellenga E, Broyl A, Blau IW, Weisel KC, Wittebol S, Bos GM, Stevens-Kroef M, Scheid C, Pfreundschuh M, Hose D, Jauch A, van der Velde H, Raymakers R, Schaafsma MR, Kersten MJ, van Marwijk-Kooy M, Duehrsen U, Lindemann W, Wijermans PW, Lokhorst HM, Goldschmidt HM. Bortezomib induction and maintenance treatment in patients with newly diagnosed multiple myeloma: results of the randomized phase III HOVON-65/ GMMG-HD4 trial. J Clin Oncol. 2012 Aug 20;30(24):2946-55. Epub 2012 Jul 16. [http://jco.ascopubs.org/content/30/24/2946.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22802322 PubMed]
+## '''Subgroup analysis:''' Neben K, Lokhorst HM, Jauch A, Bertsch U, Hielscher T, van der Holt B, Salwender H, Blau IW, Weisel K, Pfreundschuh M, Scheid C, Dührsen U, Lindemann W, Schmidt-Wolf IG, Peter N, Teschendorf C, Martin H, Haenel M, Derigs HG, Raab MS, Ho AD, van de Velde H, Hose D, Sonneveld P, Goldschmidt H. Administration of bortezomib before and after autologous stem cell transplantation improves outcome in multiple myeloma patients with deletion 17p. Blood. 2012 Jan 26;119(4):940-8. Epub 2011 Dec 8. [http://www.bloodjournal.org/content/119/4/940.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22160383 PubMed]
+## '''Update:''' Goldschmidt H, Lokhorst HM, Mai EK, van der Holt B, Blau IW, Zweegman S, Weisel KC, Vellenga E, Pfreundschuh M, Kersten MJ, Scheid C, Croockewit S, Raymakers R, Hose D, Potamianou A, Jauch A, Hillengass J, Stevens-Kroef M, Raab MS, Broijl A, Lindemann HW, Bos GMJ, Brossart P, van Marwijk Kooy M, Ypma P, Duehrsen U, Schaafsma RM, Bertsch U, Hielscher T, Jarari L, Salwender HJ, Sonneveld P. Bortezomib before and after high-dose therapy in myeloma: long-term results from the phase III HOVON-65/GMMG-HD4 trial. Leukemia. 2018 Feb;32(2):383-390. Epub 2017 Jul 4. [https://www.nature.com/articles/leu2017211 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28761118 PubMed]
+# '''Meta-analysis:''' Armeson KE, Hill EG, Costa LJ. Tandem autologous vs autologous plus reduced intensity allogeneic transplantation in the upfront management of multiple myeloma: meta-analysis of trials with biological assignment. Bone Marrow Transplant. 2013 Apr;48(4):562-7. Epub 2012 Sep 10. Review. [https://www.nature.com/bmt/journal/v48/n4/full/bmt2012173a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22964593 PubMed]
+# '''RV-MM-PI-209:''' Palumbo A, Cavallo F, Gay F, Di Raimondo F, Ben Yehuda D, Petrucci MT, Pezzatti S, Caravita T, Cerrato C, Ribakovsky E, Genuardi M, Cafro A, Marcatti M, Catalano L, Offidani M, Carella AM, Zamagni E, Patriarca F, Musto P, Evangelista A, Ciccone G, Omedé P, Crippa C, Corradini P, Nagler A, Boccadoro M, Cavo M. Autologous transplantation and maintenance therapy in multiple myeloma. N Engl J Med. 2014 Sep 4;371(10):895-905. [https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25184862 PubMed]
+# '''EMN-441:''' Gay F, Oliva S, Petrucci MT, Conticello C, Catalano L, Corradini P, Siniscalchi A, Magarotto V, Pour L, Carella A, Malfitano A, Petrò D, Evangelista A, Spada S, Pescosta N, Omedè P, Campbell P, Liberati AM, Offidani M, Ria R, Pulini S, Patriarca F, Hajek R, Spencer A, Boccadoro M, Palumbo A. Chemotherapy plus lenalidomide versus autologous transplantation, followed by lenalidomide plus prednisone versus lenalidomide maintenance, in patients with multiple myeloma: a randomised, multicentre, phase 3 trial. Lancet Oncol. 2015 Dec;16(16):1617-29. Epub 2015 Nov 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26596670 PubMed]
+# '''GMMG-HD2:''' Mai EK, Benner A, Bertsch U, Brossart P, Hänel A, Kunzmann V, Naumann R, Neben K, Egerer G, Ho AD, Hillengass J, Raab MS, Neubauer A, Peyn A, Ko YD, Peter N, Scheid C, Goldschmidt H. Single versus tandem high-dose melphalan followed by autologous blood stem cell transplantation in multiple myeloma: long-term results from the phase III GMMG-HD2 trial. Br J Haematol. 2016 Jun;173(5):731-41. Epub 2016 Mar 17. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13994/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26990892 PubMed]
+
+==Thal-Dex {{#subobject:13b509|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TD: '''<u>T</u>'''halidomide, '''<u>D</u>'''examethasone
+<br>Thal-Dex: '''<u>Thal</u>'''idomide, '''<u>Dex</u>'''amethasone
+===Regimen {{#subobject:f79d0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61424-9/fulltext Cavo et al. 2010 (GIMEMA MM-BO2005)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[#Tandem_melphalan.2C_then_auto_HSCT|Tandem MEL200 with auto HSCT]], with interim Thal-Dex maintenance (see paper for details)
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day 
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4, 20 to 23
+
+====Supportive medications====
+*[[Acyclovir (Zovirax)]] prophylaxis recommended
+
+'''35-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[Multiple_myeloma_-_historical#Dexamethasone_monotherapy_2|Dexamethasone maintenance]]
+===References===
+# '''GIMEMA MM-BO2005:''' Cavo M, Tacchetti P, Patriarca F, Petrucci MT, Pantani L, Galli M, Di Raimondo F, Crippa C, Zamagni E, Palumbo A, Offidani M, Corradini P, Narni F, Spadano A, Pescosta N, Deliliers GL, Ledda A, Cellini C, Caravita T, Tosi P, Baccarani M; GIMEMA Italian Myeloma Network. Bortezomib with thalidomide plus dexamethasone compared with thalidomide plus dexamethasone as induction therapy before, and consolidation therapy after, double autologous stem-cell transplantation in newly diagnosed multiple myeloma: a randomised phase 3 study. Lancet. 2010 Dec 18;376(9758):2075-85. Epub 2010 Dec 9. Erratum in: Lancet. 2011 Nov 26;378(9806):1846. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61424-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21146205 PubMed]
+## '''Update:''' Cavo M, Pantani L, Petrucci MT, Patriarca F, Zamagni E, Donnarumma D, Crippa C, Boccadoro M, Perrone G, Falcone A, Nozzoli C, Zambello R, Masini L, Furlan A, Brioli A, Derudas D, Ballanti S, Dessanti ML, De Stefano V, Carella AM, Marcatti M, Nozza A, Ferrara F, Callea V, Califano C, Pezzi A, Baraldi A, Grasso M, Musto P, Palumbo A; GIMEMA (Gruppo Italiano Malattie Ematologiche dell'Adulto) Italian Myeloma Network. Bortezomib-thalidomide-dexamethasone is superior to thalidomide-dexamethasone as consolidation therapy after autologous hematopoietic stem cell transplantation in patients with newly diagnosed multiple myeloma. Blood. 2012 Jul 5;120(1):9-19. Epub 2012 Apr 12. [http://www.bloodjournal.org/content/120/1/9.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22498745 PubMed]
+
+==VMP {{#subobject:028a65|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VMP: '''<u>V</u>'''elcade (Bortezomib), '''<u>M</u>'''elphalan, '''<u>P</u>'''rednisone
+===Regimen {{#subobject:a9c980|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/108/7/2165.long Mateos et al. 2006]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+''Note: this was the phase II portion of this phase I/II study.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VMP|VMP induction]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Melphalan (Alkeran)]] 9 mg/m<sup>2</sup> PO once per day on days 1 to 4
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO once per day on days 1 to 4
+
+'''35-day cycle for 5 cycles'''
+===References===
+# Mateos MV, Hernández JM, Hernández MT, Gutiérrez NC, Palomera L, Fuertes M, Díaz-Mediavilla J, Lahuerta JJ, de la Rubia J, Terol MJ, Sureda A, Bargay J, Ribas P, de Arriba F, Alegre A, Oriol A, Carrera D, García-Laraña J, García-Sanz R, Bladé J, Prósper F, Mateo G, Esseltine DL, van de Velde H, San Miguel JF. Bortezomib plus melphalan and prednisone in elderly untreated patients with multiple myeloma: results of a multicenter phase 1/2 study. Blood. 2006 Oct 1;108(7):2165-72. Epub 2006 Jun 13. [http://www.bloodjournal.org/content/108/7/2165.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16772605 PubMed] 
+
+==VTD {{#subobject:c74cc6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VTD: '''<u>V</u>'''elcade (Bortezomib), '''<u>T</u>'''halidomide, '''<u>D</u>'''examethasone
+===Variant #1, "vTD" {{#subobject:ac81d8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943328/ Lok et al. 2014]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|Melphalan with autologous hematopoietic stem cell transplantation]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1 mg/m<sup>2</sup> SC once per day on days 1, 4, 8, 11
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day 
+*[[Dexamethasone (Decadron)]] 40 mg (route not specified) once per day on days 1 to 4
+
+'''21-day cycle for 2 cycles'''
+
+===Variant #2 {{#subobject:85c53d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2810%2961424-9/fulltext Cavo et al. 2010 (GIMEMA MM-BO2005)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''VTD consolidation is to begin 3 months after the second transplant.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VTD|VTD induction]], then [[#Melphalan.2C_then_auto_HSCT|high-dose melphalam with tandem autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day on days 1 to 35
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 2, 8, 9, 15, 16, 22, 23
+
+====Supportive medications====
+*[[Acyclovir (Zovirax)]] prophylaxis recommended
+
+'''35-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[Multiple_myeloma_-_historical#Dexamethasone_monotherapy_2|Dexamethasone maintenance]]
+
+===Variant #3 {{#subobject:9a493a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/28/12/2077.long Ladetto et al. 2010 (GIMEMA VEL-03-096)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|Melphalan, then HSCT]], with at least a very good partial response (VGPR)
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.6 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day, increased by 50 mg each week, up to a maximum of 200 mg PO once per day
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4, 8 to 11, 15 to 18
+
+'''35-day cycle for 4 cycles'''
+
+===References===
+# '''GIMEMA VEL-03-096:''' Ladetto M, Pagliano G, Ferrero S, Cavallo F, Drandi D, Santo L, Crippa C, De Rosa L, Pregno P, Grasso M, Liberati AM, Caravita T, Pisani F, Guglielmelli T, Callea V, Musto P, Cangialosi C, Passera R, Boccadoro M, Palumbo A. Major tumor shrinking and persistent molecular remissions after consolidation with bortezomib, thalidomide, and dexamethasone in patients with autografted myeloma. J Clin Oncol. 2010 Apr 20;28(12):2077-84. Epub 2010 Mar 22. [http://jco.ascopubs.org/content/28/12/2077.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20308672 PubMed]
+## '''Update:''' Ferrero S, Ladetto M, Drandi D, Cavallo F, Genuardi E, Urbano M, Caltagirone S, Grasso M, Rossini F, Guglielmelli T, Cangialosi C, Liberati AM, Callea V, Carovita T, Crippa C, De Rosa L, Pisani F, Falcone AP, Pregno P, Oliva S, Terragna C, Musto P, Passera R, Boccadoro M, Palumbo A. Long-term results of the GIMEMA VEL-03-096 trial in MM patients receiving VTD consolidation after ASCT: MRD kinetics' impact on survival. Leukemia. 2015 Mar;29(3):689-95. Epub 2014 Jul 16. [https://www.nature.com/leu/journal/v29/n3/full/leu2014219a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25027515 PubMed]
+# '''GIMEMA MM-BO2005:''' Cavo M, Tacchetti P, Patriarca F, Petrucci MT, Pantani L, Galli M, Di Raimondo F, Crippa C, Zamagni E, Palumbo A, Offidani M, Corradini P, Narni F, Spadano A, Pescosta N, Deliliers GL, Ledda A, Cellini C, Caravita T, Tosi P, Baccarani M; GIMEMA Italian Myeloma Network. Bortezomib with thalidomide plus dexamethasone compared with thalidomide plus dexamethasone as induction therapy before, and consolidation therapy after, double autologous stem-cell transplantation in newly diagnosed multiple myeloma: a randomised phase 3 study. Lancet. 2010 Dec 18;376(9758):2075-85. Epub 2010 Dec 9. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2810%2961424-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21146205 PubMed]
+## '''Update:''' Cavo M, Pantani L, Petrucci MT, Patriarca F, Zamagni E, Donnarumma D, Crippa C, Boccadoro M, Perrone G, Falcone A, Nozzoli C, Zambello R, Masini L, Furlan A, Brioli A, Derudas D, Ballanti S, Dessanti ML, De Stefano V, Carella AM, Marcatti M, Nozza A, Ferrara F, Callea V, Califano C, Pezzi A, Baraldi A, Grasso M, Musto P, Palumbo A; GIMEMA (Gruppo Italiano Malattie Ematologiche dell'Adulto) Italian Myeloma Network. Bortezomib-thalidomide-dexamethasone is superior to thalidomide-dexamethasone as consolidation therapy after autologous hematopoietic stem cell transplantation in patients with newly diagnosed multiple myeloma. Blood. 2012 Jul 5;120(1):9-19. Epub 2012 Apr 12. [http://www.bloodjournal.org/content/120/1/9.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22498745 PubMed]
+# Lok A, Mocquard J, Bourcier J, Redelsperger L, Bonnet A, Chauvin C, Thomare P, Mahe B, Touzeau C, Moreau P. Subcutaneous bortezomib incorporated into the bortezomib-thalidomide-dexamethasone regimen as part of frontline therapy in the context of autologous stem-cell transplantation for multiple myeloma. Haematologica. 2014 Mar;99(3):e33-4. Epub 2014 Feb 14. [http://www.haematologica.org/content/99/3/e33.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943328/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24532044 PubMed]
+
+=Maintenance after first-line therapy=
+''Note that there is no crisp distinction between consolidation and maintenance. Generally regimens that are intended for a long or indefinite duration would be considered maintenance, whereas regimens with a short intended course would be considered consolidation.''
+
+==Bortezomib monotherapy {{#subobject:d759b6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, IV x 2 years {{#subobject:85e781|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (HOVON-65)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Thalidomide_monotherapy|Thalidomide]]
+|style="background-color:#1a9850"|Superior PFS (*)
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (GMMG-HD4)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Thalidomide_monotherapy|Thalidomide]]
+|style="background-color:#1a9850"|Superior PFS (*)
+|-
+|}
+''Note that in the initial publication, this arm seemed to have an overall survival advantage; this was no longer present in the updated report of 2017; PFS was the primary endpoint.''
+====Preceding treatment====
+*HOVON-65: [[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with single autologous hematopoietic stem cell transplant]]
+*GMMG-HD4: [[#Tandem_melphalan.2C_then_auto_HSCT|High-dose melphalan with tandem autologous hematopoietic stem cell transplants]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once on day 1
+
+'''14-day cycle for 2 years'''
+
+===Variant #2, SC, indefinite {{#subobject:3897c8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v30/n6/full/leu201636a.html Larocca et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VP|VP]] x 9
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> SC once on day 1
+
+'''14-day cycles'''
+===References===
+# '''HOVON-65/GMMG-HD4:''' Sonneveld P, Schmidt-Wolf IG, van der Holt B, El Jarari L, Bertsch U, Salwender H, Zweegman S, Vellenga E, Broyl A, Blau IW, Weisel KC, Wittebol S, Bos GM, Stevens-Kroef M, Scheid C, Pfreundschuh M, Hose D, Jauch A, van der Velde H, Raymakers R, Schaafsma MR, Kersten MJ, van Marwijk-Kooy M, Duehrsen U, Lindemann W, Wijermans PW, Lokhorst HM, Goldschmidt HM. Bortezomib induction and maintenance treatment in patients with newly diagnosed multiple myeloma: results of the randomized phase III HOVON-65/ GMMG-HD4 trial. J Clin Oncol. 2012 Aug 20;30(24):2946-55. Epub 2012 Jul 16. [http://jco.ascopubs.org/content/30/24/2946.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22802322 PubMed]
+## '''Subgroup analysis:''' Neben K, Lokhorst HM, Jauch A, Bertsch U, Hielscher T, van der Holt B, Salwender H, Blau IW, Weisel K, Pfreundschuh M, Scheid C, Dührsen U, Lindemann W, Schmidt-Wolf IG, Peter N, Teschendorf C, Martin H, Haenel M, Derigs HG, Raab MS, Ho AD, van de Velde H, Hose D, Sonneveld P, Goldschmidt H. Administration of bortezomib before and after autologous stem cell transplantation improves outcome in multiple myeloma patients with deletion 17p. Blood. 2012 Jan 26;119(4):940-8. Epub 2011 Dec 8. [http://www.bloodjournal.org/content/119/4/940.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22160383 PubMed]
+## '''Update:''' Goldschmidt H, Lokhorst HM, Mai EK, van der Holt B, Blau IW, Zweegman S, Weisel KC, Vellenga E, Pfreundschuh M, Kersten MJ, Scheid C, Croockewit S, Raymakers R, Hose D, Potamianou A, Jauch A, Hillengass J, Stevens-Kroef M, Raab MS, Broijl A, Lindemann HW, Bos GMJ, Brossart P, van Marwijk Kooy M, Ypma P, Duehrsen U, Schaafsma RM, Bertsch U, Hielscher T, Jarari L, Salwender HJ, Sonneveld P. Bortezomib before and after high-dose therapy in myeloma: long-term results from the phase III HOVON-65/GMMG-HD4 trial. Leukemia. 2018 Feb;32(2):383-390. Epub 2017 Jul 4. [https://www.nature.com/articles/leu2017211 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28761118 PubMed]
+# Larocca A, Bringhen S, Petrucci MT, Oliva S, Falcone AP, Caravita T, Villani O, Benevolo G, Liberati AM, Morabito F, Montefusco V, Passera R, De Rosa L, Omedé P, Vincelli ID, Spada S, Carella AM, Ponticelli E, Derudas D, Genuardi M, Guglielmelli T, Nozzoli C, Aghemo E, De Paoli L, Conticello C, Musolino C, Offidani M, Boccadoro M, Sonneveld P, Palumbo A. A phase 2 study of three low-dose intensity subcutaneous bortezomib regimens in elderly frail patients with untreated multiple myeloma. Leukemia. 2016 Jun;30(6):1320-6. [https://www.nature.com/leu/journal/v30/n6/full/leu201636a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26898189 PubMed]
+
+==Bortezomib & Dexamethasone {{#subobject:f25dc6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8ce3fb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.14536/abstract Berdeja et al. 2017]
+|style="background-color:#91cf61"|Phase II
+|ORR: 91%
+|-
+|}
+''Note: this is the modified treatment schema.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#BBD|BBD]] x 8
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV or SC once on day 1
+*[[Dexamethasone (Decadron)]] 20 mg PO once on day 1
+
+'''14-day cycle for 2 years'''
+
+===References===
+# Berdeja JG, Bauer T, Arrowsmith E, Essell J, Murphy P, Reeves JA Jr, Boccia RV, Donnellan W, Flinn I. Phase II study of bendamustine, bortezomib and dexamethasone (BBD) in the first-line treatment of patients with multiple myeloma who are not candidates for high dose chemotherapy. Br J Haematol. 2017 Apr;177(2):254-262. Epub 2017 Feb 7. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.14536/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28169430 PubMed]
+
+==Carfilzomib monotherapy {{#subobject:cf0af4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, bi-weekly {{#subobject:fdc86d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/124/1/63 Bringhen et al. 2014 (IST-CAR-506)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CCyd|CCyd]] x 9
+====Chemotherapy====
+*[[Carfilzomib (Kyprolis)]] 36 mg/m<sup>2</sup> IV once per day on days 1, 2, 15, 16
+
+'''28-day cycles'''
+
+===Variant #2, weekly {{#subobject:54dd57|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/articles/leu2017327 Bringhen et al. 2017 (IST-CAR-561)]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+''Note: this is the MTD established for the phase II portion of the trial.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CCyd|wKCyd]] x 9
+====Chemotherapy====
+*[[Carfilzomib (Kyprolis)]] 70 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+===References===
+<!-- # '''Abstract:''' Palumbo, Antonio; Bringhen, Sara; Villani, Oreste; Siniscalchi, Agostina; Russo, Eleonora; Uccello, Giuseppina; Cerrato, Chiara; Gilestro, Milena; Rossi, Davide; Boccadoro, Mario. Carfilzomib, Cyclophosphamide and Dexamethasone (CCd) for Newly Diagnosed Multiple Myeloma (MM) Patients. ASH Annual Meeting Abstracts 2012 120: 730 [http://abstracts.hematologylibrary.org/cgi/content/abstract/120/21/730 link to abstract] -->
+# '''IST-CAR-506:''' Bringhen S, Petrucci MT, Larocca A, Conticello C, Rossi D, Magarotto V, Musto P, Boccadifuoco L, Offidani M, Omedé P, Gentilini F, Ciccone G, Benevolo G, Genuardi M, Montefusco V, Oliva S, Caravita T, Tacchetti P, Boccadoro M, Sonneveld P, Palumbo A. Carfilzomib, cyclophosphamide, and dexamethasone in patients with newly diagnosed multiple myeloma: a multicenter, phase 2 study. Blood. 2014 Jul 3;124(1):63-9. Epub 2014 May 22. [http://www.bloodjournal.org/content/124/1/63 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24855212 PubMed]
+# '''IST-CAR-561:''' Bringhen S, D'Agostino M, De Paoli L, Montefusco V, Liberati AM, Galieni P, Grammatico S, Muccio VE, Esma F, De Angelis C, Musto P, Ballanti S, Offidani M, Petrucci MT, Gaidano G, Corradini P, Palumbo A, Sonneveld P, Boccadoro M. Phase 1/2 study of weekly carfilzomib, cyclophosphamide, dexamethasone in newly diagnosed transplant-ineligible myeloma. Leukemia. 2018 Apr;32(4):979-985. Epub 2017 Nov 16. [https://www.nature.com/articles/leu2017327 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29263440 PubMed]
+
+==CRd (Carfilzomib) {{#subobject:9f1904|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CRd: '''<u>C</u>'''arfilzomib, '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+<br>KRd: '''<u>K</u>'''yprolis (Carfilzomib), '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+
+===Regimen {{#subobject:df3763|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5162553/ Jakubowiak et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''This is the MTD dosing in this phase I/II trial.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CRd_.28Carfilzomib.29|CRd]] x 8
+====Chemotherapy====
+*[[Carfilzomib (Kyprolis)]] 36 mg/m<sup>2</sup> IV once per day on days 1, 2, 15, 16
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg (route not specified) once per week on days 1, 8, 15, 22
+
+'''28-day cycle for 16 cycles'''
+====Subsequent treatment====
+*It was recommended that patients proceed to [[#Lenalidomide_monotherapy|lenalidomide maintenance]]
+
+===References===
+# Jakubowiak AJ, Dytfeld D, Griffith KA, Lebovic D, Vesole DH, Jagannath S, Al-Zoubi A, Anderson T, Nordgren B, Detweiler-Short K, Stockerl-Goldstein K, Ahmed A, Jobkar T, Durecki DE, McDonnell K, Mietzel M, Couriel D, Kaminski M, Vij R. A phase 1/2 study of carfilzomib in combination with lenalidomide and low-dose dexamethasone as a frontline treatment for multiple myeloma. Blood. 2012 Aug 30;120(9):1801-9. Epub 2012 Jun 4. [http://www.bloodjournal.org/content/120/9/1801.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5162553/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22665938 PubMed]
+
+==Daratumumab monotherapy {{#subobject:744fd9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9dcf90|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1714678 Mateos et al. 2017 (ALCYONE)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#D-VMP|D-VMP]] x 9
+====Chemotherapy====
+*[[Daratumumab (Darzalex)]] 16 mg/kg IV once on day 1
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO once prior to [[Daratumumab (Darzalex)]]
+
+'''28-day cycles'''
+===References===
+# '''ALCYONE:''' Mateos MV, Dimopoulos MA, Cavo M, Suzuki K, Jakubowiak A, Knop S, Doyen C, Lucio P, Nagy Z, Kaplan P, Pour L, Cook M, Grosicki S, Crepaldi A, Liberati AM, Campbell P, Shelekhova T, Yoon SS, Iosava G, Fujisaki T, Garg M, Chiu C, Wang J, Carson R, Crist W, Deraedt W, Nguyen H, Qi M, San-Miguel J; ALCYONE Trial Investigators. Daratumumab plus bortezomib, melphalan, and prednisone for untreated myeloma. N Engl J Med. 2018 Feb 8;378(6):518-528. Epub 2017 Dec 12. [https://www.nejm.org/doi/full/10.1056/NEJMoa1714678 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29231133 PubMed]
+
+==Ixazomib monotherapy {{#subobject:af8692|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, indefinite {{#subobject:214582|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71125-8/abstract Kumar et al. 2014]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#IRd|IRd]] x 12
+====Chemotherapy====
+*[[Ixazomib (Ninlaro)]] 4 mg PO once per day on days 1, 8, 15
+
+'''28-day cycles''' 
+
+===Variant #2, 2-year course {{#subobject:532db5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)33003-4/fulltext Dimopoulos et al. 2018 (TOURMALINE-MM3)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[Multiple_myeloma_-_historical#Placebo|Placebo]]
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|Melphalan with auto HSCT]]
+====Chemotherapy====
+*[[Ixazomib (Ninlaro)]] as follows:
+**Cycles 1 to 4: 3 mg PO once per day on days 1, 8, 15
+**Cycle 5 onwards, if tolerated: 4 mg PO once per day on days 1, 8, 15
+
+'''28-day cycle for up to 2 years'''
+
+===References===
+<!-- Presented at ASH 2012 and ASH 2014, Abstract 82: Long-Term Ixazomib Maintenance Is Tolerable and Improves Depth of Response Following Ixazomib-Lenalidomide-Dexamethasone Induction in Patients (Pts) with Previously Untreated Multiple Myeloma (MM): Phase 2 Study Results -->
+# Kumar SK, Berdeja JG, Niesvizky R, Lonial S, Laubach JP, Hamadani M, Stewart AK, Hari P, Roy V, Vescio R, Kaufman JL, Berg D, Liao E, Di Bacco A, Estevam J, Gupta N, Hui AM, Rajkumar V, Richardson PG. Safety and tolerability of ixazomib, an oral proteasome inhibitor, in combination with lenalidomide and dexamethasone in patients with previously untreated multiple myeloma: an open-label phase 1/2 study. Lancet Oncol. 2014 Dec;15(13):1503-12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)71125-8/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25456369 PubMed]
+# '''TOURMALINE-MM3:''' Dimopoulos MA, Gay F, Schjesvold F, Beksac M, Hajek R, Weisel KC, Goldschmidt H, Maisnar V, Moreau P, Min CK, Pluta A, Chng WJ, Kaiser M, Zweegman S, Mateos MV, Spencer A, Iida S, Morgan G, Suryanarayan K, Teng Z, Skacel T, Palumbo A, Dash AB, Gupta N, Labotka R, Rajkumar SV; TOURMALINE-MM3 study group. Oral ixazomib maintenance following autologous stem cell transplantation (TOURMALINE-MM3): a double-blind, randomised, placebo-controlled phase 3 trial. Lancet. 2018 Dec 10. [Epub ahead of print] [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)33003-4/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30545780 PubMed]
+
+==Lenalidomide monotherapy {{#subobject:1bb17c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, indefinite 10 mg 21/28 {{#subobject:7a71f8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/28/4459.long Palumbo et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://jco.ascopubs.org/content/28/5/800.long Palumbo et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1112704 Palumbo et al. 2012 (MM-015)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 Palumbo et al. 2014 (RV-MM-PI-209)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566809/ Stewart et al. 2015 (ECOG E1A06)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract Gay et al. 2015 (EMN-441)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Lenalidomide_.26_Prednisone_2|Lenalidomide & Prednisone]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://www.bloodjournal.org/content/127/9/1102.long Magarotto et al. 2016 (EMN01)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Lenalidomide_.26_Prednisone_2|Lenalidomide & Prednisone]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|[http://www.bloodjournal.org/content/127/9/1109.long Zweegman et al. 2016 (HOVON87/NMSG18)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Thalidomide_monotherapy|Thalidomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30687-9/fulltext Jackson et al. 2018 (UK NCRI Myeloma XI)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Preceding treatment====
+*Palumbo et al. 2007 & MM-015: [[Multiple_myeloma,_induction#MPR|MPR induction]] x 9
+*Palumbo et al. 2010: [[#Lenalidomide_.26_Prednisone|RP consolidation]] 
+*RV-MM-PI-209: [[#Tandem_melphalan.2C_then_auto_HSCT|Tandem high-dose melphalan with autologous hematopoietic stem cell transplants]] versus [[#MPR|MPR consolidation]]
+*ECOG E1A06: [[Multiple_myeloma,_induction#MPR|mPR induction]] x 12
+*EMN-441: [[#Tandem_melphalan.2C_then_auto_HSCT|Tandem high-dose melphalan with autologous hematopoietic cell transplants]] versus CRD consolidation
+*EMN01: [[Multiple_myeloma,_induction#CPR|CPR]] versus [[Multiple_myeloma,_induction#MPR|MPR]] versus [[Multiple_myeloma,_induction#Rd|Rd]] induction x 9
+*HOVON87/NMSG18: [[Multiple_myeloma,_induction#MPR|MPR induction]] x 9
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+
+====Supportive medications====
+*Varies depending on reference:
+*'''MM-015:''' [[Aspirin]] 75 to 100 mg PO once per day
+*'''Palumbo et al. 2007 and Palumbo et al. 2010:''' [[Aspirin]] 100 mg PO once per day
+*'''ECOG E1A06:''' [[Aspirin]] was required (dose not specified)
+**''Full anticoagulation was used for patients at "higher risk" for DVT''
+*'''EMN01:''' [[Aspirin]] or [[:Category:Low molecular weight heparins|LMWH]] or [[Warfarin (Coumadin)]] at physician's discretion (mandatory)
+*'''ECOG E1A06:''' [[Pamidronate (Aredia)]] 90 mg IV once per month recommended for patients with "active bone disease"
+*'''Palumbo et al. 2007:''' [[Ciprofloxacin (Cipro)]] 500 mg PO twice per day
+
+'''28-day cycles'''
+
+===Variant #2, indefinite 15 mg per day {{#subobject:afeaa0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1114138 Attal et al. 2012 (IFM 2005-02)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Placebo|Placebo]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy, consolidation====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycle for 2 cycles, then'''
+
+====Chemotherapy, maintenance====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day x 3 months, then increased to 15 mg PO once per day if tolerated
+
+====Supportive medications====
+*"Thromboprophylaxis was not used"
+
+'''Continued indefinitely'''
+
+===Variant #3, indefinite 30 mg per day {{#subobject:9d6a85|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3744390/ McCarthy et al. 2012 (CALGB 100104)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Placebo|Placebo]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|Melphalan with auto HSCT]], within 100 to 120 days
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 20 mg PO once per day; after 3 months, dose may be increased to 30 mg PO once per day if the patient's ANC remains at least 1000/uL and platelet count is at least 75 x 10<sup>9</sup>/L
+**Dose adjustments can be found in the paper's supplementary appendix
+
+====Supportive medications====
+*Patients at high risk of deep venous thrombosis (DVT) or pulmonary embolism (PE) received [[Aspirin]], [[:Category:Low_molecular_weight_heparins|low molecular weight heparin]], or [[Warfarin (Coumadin)]] unless contraindicated. High risk patients were defined as people with: history of diabetes, coronary artery disease, "DVT/PE, significant family history, performance status of at least 2, smoking history, use of oral contraceptives, and[/or] concurrent use of epoetin."
+
+'''Continued indefinitely'''
+
+===Variant #4, 2 years of 25 mg 21/28 {{#subobject:537dbc|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://oncology.jamanetwork.com/article.aspx?articleid=2363017 Korde et al. 2016 (NCI 12-C-0107)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://oncology.jamanetwork.com/article.aspx?articleid=2363017 Korde et al. 2016 (NCI 11-C-0221)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CRd_.28Carfilzomib.29|CRd]] x 8
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycle for up to 24 cycles'''
+
+===Variant #5, 1 year of 10 to 15 mg per day {{#subobject:99cf02|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/32/25/2712.full Roussel et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 Attal et al. 2017 (IFM 2009)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[#RVD|RVD consolidation]]
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day, escalated to 15 mg PO once per day after 3 months, if tolerated.
+
+'''12-month course'''
+
+===Variant #6, indefinite 25 mg 21/28 {{#subobject:2650d7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5162553/ Jakubowiak et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CRd_.28Carfilzomib.29|CRd]] x 24
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycles'''
+
+===References===
+# Palumbo A, Falco P, Corradini P, Falcone A, Di Raimondo F, Giuliani N, Crippa C, Ciccone G, Omedè P, Ambrosini MT, Gay F, Bringhen S, Musto P, Foà R, Knight R, Zeldis JB, Boccadoro M, Petrucci MT; GIMEMA--Italian Multiple Myeloma Network. Melphalan, prednisone, and lenalidomide treatment for newly diagnosed myeloma: a report from the GIMEMA--Italian Multiple Myeloma Network. J Clin Oncol. 2007 Oct 1;25(28):4459-65. Epub 2007 Sep 4. [http://jco.ascopubs.org/content/25/28/4459.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17785703 PubMed]
+# Palumbo A, Gay F, Falco P, Crippa C, Montefusco V, Patriarca F, Rossini F, Caltagirone S, Benevolo G, Pescosta N, Guglielmelli T, Bringhen S, Offidani M, Giuliani N, Petrucci MT, Musto P, Liberati AM, Rossi G, Corradini P, Boccadoro M. Bortezomib as induction before autologous transplantation, followed by lenalidomide as consolidation-maintenance in untreated multiple myeloma patients. J Clin Oncol. 2010 Feb 10;28(5):800-7. Epub 2010 Jan 4. Erratum in: J Clin Oncol. 2010 May 1;28(13):2314. [http://jco.ascopubs.org/content/28/5/800.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20048187 PubMed]
+## '''Update:''' Gay F, Magarotto V, Crippa C, Pescosta N, Guglielmelli T, Cavallo F, Pezzatti S, Ferrari S, Liberati AM, Oliva S, Patriarca F, Offidani M, Omedé P, Montefusco V, Petrucci MT, Giuliani N, Passera R, Pietrantuono G, Boccadoro M, Corradini P, Palumbo A. Bortezomib induction, reduced-intensity transplantation, and lenalidomide consolidation-maintenance for myeloma: updated results. Blood. 2013 Aug 22;122(8):1376-83. Epub 2013 Jun 17. [http://www.bloodjournal.org/content/122/8/1376.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23775712 PubMed]
+# '''CALGB 100104:''' McCarthy PL, Owzar K, Hofmeister CC, Hurd DD, Hassoun H, Richardson PG, Giralt S, Stadtmauer EA, Weisdorf DJ, Vij R, Moreb JS, Callander NS, Van Besien K, Gentile T, Isola L, Maziarz RT, Gabriel DA, Bashey A, Landau H, Martin T, Qazilbash MH, Levitan D, McClune B, Schlossman R, Hars V, Postiglione J, Jiang C, Bennett E, Barry S, Bressler L, Kelly M, Seiler M, Rosenbaum C, Hari P, Pasquini MC, Horowitz MM, Shea TC, Devine SM, Anderson KC, Linker C. Lenalidomide after stem-cell transplantation for multiple myeloma. N Engl J Med. 2012 May 10;366(19):1770-81. [https://www.nejm.org/doi/full/10.1056/NEJMoa1114083 link to original article] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1114083/suppl_file/nejmoa1114083_appendix.pdf link to supplementary appendix] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3744390/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22571201 PubMed]
+## '''Update:''' Holstein SA, Jung SH, Richardson PG, Hofmeister CC, Hurd DD, Hassoun H, Giralt S, Stadtmauer EA, Weisdorf DJ, Vij R, Moreb JS, Callander NS, van Besien K, Gentile TG, Isola L, Maziarz RT, Bashey A, Landau H, Martin T, Qazilbash MH, Rodriguez C, McClune B, Schlossman RL, Smith SE, Hars V, Owzar K, Jiang C, Boyd M, Schultz C, Wilson M, Hari P, Pasquini MC, Horowitz MM, Shea TC, Devine SM, Linker C, Anderson KC, McCarthy PL. Updated analysis of CALGB (Alliance) 100104 assessing lenalidomide versus placebo maintenance after single autologous stem-cell transplantation for multiple myeloma: a randomised, double-blind, phase 3 trial. Lancet Haematol. 2017 Sep;4(9):e431-e442. Epub 2017 Aug 17. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(17)30140-0/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28826616 PubMed]
+# '''IFM2005-02:''' Attal M, Lauwers-Cances V, Marit G, Caillot D, Moreau P, Facon T, Stoppa AM, Hulin C, Benboubker L, Garderet L, Decaux O, Leyvraz S, Vekemans MC, Voillat L, Michallet M, Pegourie B, Dumontet C, Roussel M, Leleu X, Mathiot C, Payen C, Avet-Loiseau H, Harousseau JL; IFM Investigators. Lenalidomide maintenance after stem-cell transplantation for multiple myeloma. N Engl J Med. 2012 May 10;366(19):1782-91. [https://www.nejm.org/doi/full/10.1056/NEJMoa1114138 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22571202 PubMed]
+## '''Update: Abstract:''' Michel Attal, MD, Valerie Cances Lauwers, Gerald Marit, Denis Caillot, Thierry Facon, MD, Cyrille Hulin, Philippe Moreau, MD, Claire Mathiot, Murielle Roussel, Catherine Payen, H. Avet-Loiseau and Jean Luc Harousseau. Maintenance Treatment with Lenalidomide After Transplantation for MYELOMA : Final Analysis of the IFM 2005-02. ASH 2010 Abstract 310. [https://ash.confex.com/ash/2010/webprogram/Paper26522.html link to abstract]
+# Jakubowiak AJ, Dytfeld D, Griffith KA, Lebovic D, Vesole DH, Jagannath S, Al-Zoubi A, Anderson T, Nordgren B, Detweiler-Short K, Stockerl-Goldstein K, Ahmed A, Jobkar T, Durecki DE, McDonnell K, Mietzel M, Couriel D, Kaminski M, Vij R. A phase 1/2 study of carfilzomib in combination with lenalidomide and low-dose dexamethasone as a frontline treatment for multiple myeloma. Blood. 2012 Aug 30;120(9):1801-9. Epub 2012 Jun 4. [http://www.bloodjournal.org/content/120/9/1801.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5162553/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22665938 PubMed]
+# '''MM-015:''' Palumbo A, Hajek R, Delforge M, Kropff M, Petrucci MT, Catalano J, Gisslinger H, Wiktor-Jedrzejczak W, Zodelava M, Weisel K, Cascavilla N, Iosava G, Cavo M, Kloczko J, Bladé J, Beksac M, Spicka I, Plesner T, Radke J, Langer C, Ben Yehuda D, Corso A, Herbein L, Yu Z, Mei J, Jacques C, Dimopoulos MA; MM-015 Investigators. Continuous lenalidomide treatment for newly diagnosed multiple myeloma. N Engl J Med. 2012 May 10;366(19):1759-69. Erratum in: N Engl J Med. 2012 Jul 19;367(3):285. [https://www.nejm.org/doi/full/10.1056/NEJMoa1112704 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22571200 PubMed]
+# Roussel M, Lauwers-Cances V, Robillard N, Hulin C, Leleu X, Benboubker L, Marit G, Moreau P, Pegourie B, Caillot D, Fruchart C, Stoppa AM, Gentil C, Wuilleme S, Huynh A, Hebraud B, Corre J, Chretien ML, Facon T, Avet-Loiseau H, Attal M. Front-line transplantation program with lenalidomide, bortezomib, and dexamethasone combination as induction and consolidation followed by lenalidomide maintenance in patients with multiple myeloma: a phase II study by the Intergroupe Francophone du Myélome. J Clin Oncol. 2014 Sep 1;32(25):2712-7. Epub 2014 Jul 14. [http://jco.ascopubs.org/content/32/25/2712.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25024076 PubMed]
+# '''RV-MM-PI-209:''' Palumbo A, Cavallo F, Gay F, Di Raimondo F, Ben Yehuda D, Petrucci MT, Pezzatti S, Caravita T, Cerrato C, Ribakovsky E, Genuardi M, Cafro A, Marcatti M, Catalano L, Offidani M, Carella AM, Zamagni E, Patriarca F, Musto P, Evangelista A, Ciccone G, Omedé P, Crippa C, Corradini P, Nagler A, Boccadoro M, Cavo M. Autologous transplantation and maintenance therapy in multiple myeloma. N Engl J Med. 2014 Sep 4;371(10):895-905. [https://www.nejm.org/doi/full/10.1056/NEJMoa1402888 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25184862 PubMed]
+# '''GMMG-MM5:''' Mai EK, Bertsch U, Dürig J, Kunz C, Haenel M, Blau IW, Munder M, Jauch A, Schurich B, Hielscher T, Merz M, Huegle-Doerr B, Seckinger A, Hose D, Hillengass J, Raab MS, Neben K, Lindemann HW, Zeis M, Gerecke C, Schmidt-Wolf IG, Weisel K, Scheid C, Salwender H, Goldschmidt H. Phase III trial of bortezomib, cyclophosphamide and dexamethasone (VCD) versus bortezomib, doxorubicin and dexamethasone (PAd) in newly diagnosed myeloma. Leukemia. 2015 Aug;29(8):1721-9. Epub 2015 Mar 19. [https://www.nature.com/leu/journal/v29/n8/full/leu201580a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25787915 PubMed]
+# '''ECOG E1A06:''' Stewart AK, Jacobus S, Fonseca R, Weiss M, Callander NS, Chanan-Khan AA, Rajkumar SV. Melphalan, prednisone, and thalidomide vs melphalan, prednisone, and lenalidomide (ECOG E1A06) in untreated multiple myeloma. Blood. 2015 Sep 10;126(11):1294-301. Epub 2015 Jul 8. [http://www.bloodjournal.org/content/126/11/1294.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566809/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26157076 PubMed]
+# '''EMN-441:''' Gay F, Oliva S, Petrucci MT, Conticello C, Catalano L, Corradini P, Siniscalchi A, Magarotto V, Pour L, Carella A, Malfitano A, Petrò D, Evangelista A, Spada S, Pescosta N, Omedè P, Campbell P, Liberati AM, Offidani M, Ria R, Pulini S, Patriarca F, Hajek R, Spencer A, Boccadoro M, Palumbo A. Chemotherapy plus lenalidomide versus autologous transplantation, followed by lenalidomide plus prednisone versus lenalidomide maintenance, in patients with multiple myeloma: a randomised, multicentre, phase 3 trial. Lancet Oncol. 2015 Dec;16(16):1617-29. Epub 2015 Nov 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26596670 PubMed]
+# '''EMN01:''' Magarotto V, Bringhen S, Offidani M, Benevolo G, Patriarca F, Mina R, Falcone AP, De Paoli L, Pietrantuono G, Gentili S, Musolino C, Giuliani N, Bernardini A, Conticello C, Pulini S, Ciccone G, Maisnar V, Ruggeri M, Zambello R, Guglielmelli T, Ledda A, Liberati AM, Montefusco V, Hajek R, Boccadoro M, Palumbo A. Triplet vs doublet lenalidomide-containing regimens for the treatment of elderly patients with newly diagnosed multiple myeloma. Blood. 2016 Mar 3;127(9):1102-8. Epub 2016 Jan 4. [http://www.bloodjournal.org/content/127/9/1102.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26729895 PubMed]
+# '''HOVON87/NMSG18:''' Zweegman S, van der Holt B, Mellqvist UH, Salomo M, Bos GM, Levin MD, Visser-Wisselaar H, Hansson M, van der Velden AW, Deenik W, Gruber A, Coenen JL, Plesner T, Klein SK, Tanis BC, Szatkowski DL, Brouwer RE, Westerman M, Leys MR, Sinnige HA, Haukås E, van der Hem KG, Durian MF, Mattijssen EV, van de Donk NW, Stevens-Kroef MJ, Sonneveld P, Waage A. Melphalan, prednisone, and lenalidomide versus melphalan, prednisone, and thalidomide in untreated multiple myeloma. Blood. 2016 Mar 3;127(9):1109-16. Epub 2016 Jan 22. [http://www.bloodjournal.org/content/127/9/1109.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26802176 PubMed]
+# '''Abstract: Meta-analysis:''' Michel Attal, Antonio Palumbo, Sarah A. Holstein, Valerie Lauwers-Cances, Maria Teresa Petrucci, Paul G. Richardson, Cyrille Hulin, Patrizia Tosi, Kenneth Carl Anderson, Denis Caillot, Valeria Magarotto, Philippe Moreau, Gerald Marit, Zhinuan Yu, Philip L. McCarthy. Lenalidomide (LEN) maintenance (MNTC) after high-dose melphalan and autologous stem cell transplant (ASCT) in multiple myeloma (MM): A meta-analysis (MA) of overall survival (OS). J Clin Oncol 34, 2016 (suppl; abstr 8001) [http://meetinglibrary.asco.org/content/168948-176 link to abstract]
+<!--
+# '''Abstract:''' Korde, Neha; Zingone, Adriana; Kwok, Mary; Manasanch, Elisabet E.; Costello, Rene; Zuchlinski, Diamond; Mulquin, Marcia; Maric, Irina; Calvo, Katherine R; Braylan, Raul C.; Yuan, Constance; Tembhare, Prashant Ramesh; Stetler-Stevenson, Maryalice; Arthur, Diane C; Raffeld, Mark; Xi, Liqiang; Choyke, Peter; Kurdziel, Karen; Lindenberg, Liza; Steinberg, Seth M.; Roschewski, Mark; Landgren, Ola. Phase II Clinical and Correlative Study of Carfilzomib, Lenalidomide, and Dexamethasone (CRd) in Newly Diagnosed Multiple Myeloma (MM) Patients ASH Annual Meeting Abstracts 2012 120: 732 [http://abstracts.hematologylibrary.org/cgi/content/abstract/120/21/732 link to abstract] -->
+# '''NCI 11-C-0221; NCI 12-C-0107:''' Korde N, Roschewski M, Zingone A, Kwok M, Manasanch EE, Bhutani M, Tageja N, Kazandjian D, Mailankody S, Wu P, Morrison C, Costello R, Zhang Y, Burton D, Mulquin M, Zuchlinski D, Lamping L, Carpenter A, Wall Y, Carter G, Cunningham SC, Gounden V, Sissung TM, Peer C, Maric I, Calvo KR, Braylan R, Yuan C, Stetler-Stevenson M, Arthur DC, Kong KA, Weng L, Faham M, Lindenberg L, Kurdziel K, Choyke P, Steinberg SM, Figg W, Landgren O. Treatment With carfilzomib-lenalidomide-dexamethasone with lenalidomide extension in patients with smoldering or newly diagnosed multiple myeloma. JAMA Oncol. 2015 Sep;1(6):746-54. [http://oncology.jamanetwork.com/article.aspx?articleid=2363017 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26181891 PubMed]
+# '''IFM 2009:''' Attal M, Lauwers-Cances V, Hulin C, Leleu X, Caillot D, Escoffre M, Arnulf B, Macro M, Belhadj K, Garderet L, Roussel M, Payen C, Mathiot C, Fermand JP, Meuleman N, Rollet S, Maglio ME, Zeytoonjian AA, Weller EA, Munshi N, Anderson KC, Richardson PG, Facon T, Avet-Loiseau H, Harousseau JL, Moreau P; IFM 2009 Study. Lenalidomide, bortezomib, and dexamethasone with transplantation for myeloma. N Engl J Med. 2017 Apr 6;376(14):1311-1320. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611750 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28379796 PubMed]
+# '''UK NCRI Myeloma XI:''' Jackson GH, Davies FE, Pawlyn C, Cairns DA, Striha A, Collett C, Hockaday A, Jones JR, Kishore B, Garg M, Williams CD, Karunanithi K, Lindsay J, Jenner MW, Cook G, Russell NH, Kaiser MF, Drayson MT, Owen RG, Gregory WM, Morgan GJ; UK NCRI Haemato-oncology Clinical Studies Group. Lenalidomide maintenance versus observation for patients with newly diagnosed multiple myeloma (Myeloma XI): a multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2018 Dec 14. [Epub ahead of print] [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30687-9/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30559051 PubMed]
+
+==Lenalidomide & Prednisone {{#subobject:6261f9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, prednisone 25 mg every other day {{#subobject:2cd1c5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/127/9/1102.long Magarotto et al. 2016 (EMN01)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Lenalidomide_monotherapy|Lenalidomide]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#CPR|CPR]] x 9 versus [[Multiple_myeloma,_induction#MPR|MPR]] x 9 versus [[Multiple_myeloma,_induction#Rd|Rd]] x 9
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Prednisone (Sterapred)]] 25 mg PO once every other day
+
+====Supportive medications====
+*[[Aspirin]] or [[:Category:Low molecular weight heparins|LMWH]] or [[Warfarin (Coumadin)]] at physician's discretion (mandatory)
+
+'''28-day cycles'''
+
+===Variant #2, prednisone 25 mg TIW {{#subobject:5276c5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v27/n3/full/leu2012271a.html Falco et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#MPR|MPR consolidation]] x 6
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Prednisone (Sterapred)]] 25 mg PO three times per week
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day as thromboprophylaxis during [[Lenalidomide (Revlimid)]] treatment. Unclear from protocol if this also means off weeks.
+*Antiviral prophylaxis if history of VZV.
+
+'''28-day cycles'''
+
+===Variant #3, prednisone 50 mg every other day {{#subobject:2acd15|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract Gay et al. 2015 (EMN-441)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Lenalidomide_monotherapy|Lenalidomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[#Tandem_melphalan.2C_then_auto_HSCT|Tandem high-dose melphalan with autologous hematopoietic stem cell transplants]] versus CRD consolidation
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Prednisone (Sterapred)]] 50 mg PO once every other day
+
+'''28-day cycles'''
+
+===References===
+# Falco P, Cavallo F, Larocca A, Rossi D, Guglielmelli T, Rocci A, Grasso M, Siez ML, De Paoli L, Oliva S, Molica S, Mina R, Gay F, Benevolo G, Musto P, Omedè P, Freilone R, Bringhen S, Carella AM, Gaidano G, Boccadoro M, Palumbo A. Lenalidomide-prednisone induction followed by lenalidomide-melphalan-prednisone consolidation and lenalidomide-prednisone maintenance in newly diagnosed elderly unfit myeloma patients. Leukemia. 2013 Mar;27(3):695-701. Epub 2012 Sep 21. [https://www.nature.com/leu/journal/v27/n3/full/leu2012271a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22996335 PubMed]
+# '''EMN-441:''' Gay F, Oliva S, Petrucci MT, Conticello C, Catalano L, Corradini P, Siniscalchi A, Magarotto V, Pour L, Carella A, Malfitano A, Petrò D, Evangelista A, Spada S, Pescosta N, Omedè P, Campbell P, Liberati AM, Offidani M, Ria R, Pulini S, Patriarca F, Hajek R, Spencer A, Boccadoro M, Palumbo A. Chemotherapy plus lenalidomide versus autologous transplantation, followed by lenalidomide plus prednisone versus lenalidomide maintenance, in patients with multiple myeloma: a randomised, multicentre, phase 3 trial. Lancet Oncol. 2015 Dec;16(16):1617-29. Epub 2015 Nov 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00389-7/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26596670 PubMed]
+# '''EMN01:''' Magarotto V, Bringhen S, Offidani M, Benevolo G, Patriarca F, Mina R, Falcone AP, De Paoli L, Pietrantuono G, Gentili S, Musolino C, Giuliani N, Bernardini A, Conticello C, Pulini S, Ciccone G, Maisnar V, Ruggeri M, Zambello R, Guglielmelli T, Ledda A, Liberati AM, Montefusco V, Hajek R, Boccadoro M, Palumbo A. Triplet vs doublet lenalidomide-containing regimens for the treatment of elderly patients with newly diagnosed multiple myeloma. Blood. 2016 Mar 3;127(9):1102-8. Epub 2016 Jan 4. [http://www.bloodjournal.org/content/127/9/1102.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26729895 PubMed]
+
+==Rd {{#subobject:945256|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Rd: '''<u>R</u>'''evlimid (Lenalidomide) & low-dose '''<u>d</u>'''examethasone
+===Regimen {{#subobject:ef4eb4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(16)31594-X/fulltext Durie et al. 2016 (SWOG S0777)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#Rd|Rd]] x 6 versus [[Multiple_myeloma,_induction#RVD|VRd]] x 8
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15, 22
+
+'''28-day cycles'''
+===References===
+# '''SWOG S0777:''' Durie BG, Hoering A, Abidi MH, Rajkumar SV, Epstein J, Kahanic SP, Thakuri M, Reu F, Reynolds CM, Sexton R, Orlowski RZ, Barlogie B, Dispenzieri A. Bortezomib with lenalidomide and dexamethasone versus lenalidomide and dexamethasone alone in patients with newly diagnosed myeloma without intent for immediate autologous stem-cell transplant (SWOG S0777): a randomised, open-label, phase 3 trial. Lancet. 2017 Feb 4;389(10068):519-527. Epub 2016 Dec 22. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(16)31594-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28017406 PubMed]
+
+==RVD {{#subobject:416bec|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RVD: '''<u>R</u>'''evlimid (Lenalidomide), '''<u>V</u>'''elcade (Bortezomib), '''<u>D</u>'''examethasone
+<br>VDR: '''<u>V</u>'''elcade (Bortezomib), '''<u>D</u>'''examethasone, '''<u>R</u>'''evlimid (Lenalidomide)
+<br>VRD: '''<u>V</u>'''elcade (Bortezomib), '''<u>R</u>'''evlimid (Lenalidomide), '''<u>D</u>'''examethasone
+<br>VRd: '''<u>V</u>'''elcade (Bortezomib), '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+===Variant #1, 3-year course {{#subobject:8392a1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879104/ Nair et al. 2010 (2006-66)]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Preceding treatment====
+*VTD-PACE consolidation (per Total Therapy 3 protocol)
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 20, then 5 mg PO once per day on days 21 to 28
+*[[Bortezomib (Velcade)]] as follows:
+**Year 1: 1.0 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+**Years 2 & 3: 1.0 mg/m<sup>2</sup> IV once per week
+*[[Dexamethasone (Decadron)]] as follows:
+
+'''3-year course'''
+===Variant #2, Indefinite {{#subobject:b97d68|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324254/ Richardson et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#RVD|RVD]] x 4 to 8 cycles
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg (or previously tolerated dose) PO once per day on days 1 to 14
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> (or previously tolerated dose) IV once per day on days 1 & 8
+*[[Dexamethasone (Decadron)]] 20 mg (or previously tolerated dose) PO once per day on days 1, 2, 8, 9
+
+====Supportive medications====
+*[[Aspirin]] 81 mg or 325 mg PO once per day 
+*[[:Category:Antivirals |Antiviral therapy]], such as [[Acyclovir (Zovirax)]] 400 mg PO once per day 
+*[[:Category:Bisphosphonates|Bisphosphonate]]
+
+'''21-day cycles'''
+===References===
+# '''2006-66:''' Nair B, van Rhee F, Shaughnessy JD Jr, Anaissie E, Szymonifka J, Hoering A, Alsayed Y, Waheed S, Crowley J, Barlogie B. Superior results of Total Therapy 3 (2003-33) in gene expression profiling-defined low-risk multiple myeloma confirmed in subsequent trial 2006-66 with VRD maintenance. Blood. 2010 May 27;115(21):4168-73. Epub 2010 Feb 2. [http://www.bloodjournal.org/content/115/21/4168.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879104/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20124509 PubMed]
+# Richardson PG, Weller E, Lonial S, Jakubowiak AJ, Jagannath S, Raje NS, Avigan DE, Xie W, Ghobrial IM, Schlossman RL, Mazumder A, Munshi NC, Vesole DH, Joyce R, Kaufman JL, Doss D, Warren DL, Lunde LE, Kaster S, Delaney C, Hideshima T, Mitsiades CS, Knight R, Esseltine DL, Anderson KC. Lenalidomide, bortezomib, and dexamethasone combination therapy in patients with newly diagnosed multiple myeloma. Blood. 2010 Aug 5;116(5):679-86. Epub 2010 Apr 12. [http://www.bloodjournal.org/content/116/5/679.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324254/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20385792 PubMed]
+# '''Retrospective:''' Nooka AK, Kaufman JL, Muppidi S, Langston A, Heffner LT, Gleason C, Casbourne D, Saxe D, Boise LH, Lonial S. Consolidation and maintenance therapy with lenalidomide, bortezomib and dexamethasone (RVD) in high-risk myeloma patients. Leukemia. 2014 Mar;28(3):690-3. Epub 2013 Nov 13. [https://www.nature.com/leu/journal/v28/n3/full/leu2013335a.html link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24220275 PubMed]
+
+==Thalidomide monotherapy {{#subobject:9f2412|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 50 mg/day x 2 years {{#subobject:c09c56|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (HOVON-65)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Bortezomib_monotherapy_2|Bortezomib]]
+|style="background-color:#d73027"|Inferior PFS (*)
+|-
+|[http://jco.ascopubs.org/content/30/24/2946.long Sonneveld et al. 2012 (GMMG-HD4)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Bortezomib_monotherapy_2|Bortezomib]]
+|style="background-color:#d73027"|Inferior PFS (*)
+|-
+|}
+''Note that in the initial publication, this arm seemed to have an overall survival disadvantage; this was no longer present in the updated report of 2017; PFS was the primary endpoint. Observed efficacy is for induction PAD, then transplant, then maintenance bortezomib compared with induction VAD, then transplant, then maintenance thalidomide. Treatment starts 4 weeks after the final autologous hematopoietic stem cell transplant.''
+====Preceding treatment====
+*HOVON-65: [[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic stem cell transplant]]
+*GMMG-HD4: [[#Tandem_melphalan.2C_then_auto_HSCT|High-dose melphalan with tandem autologous hematopoietic stem cell transplants]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day
+
+'''2-year course'''
+
+===Variant #2, 50 mg/d, indefinite {{#subobject:dbd3f3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/19/3160.long Wijermans et al. 2010 (HOVON 49)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://www.bloodjournal.org/content/115/6/1113 Lokhorst et al. 2009 (HOVON-50)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Complex_multipart_regimens#HOVON-50|See link]]
+|style="background-color:#1a9850"|[[Complex_multipart_regimens#HOVON-50|See link]]
+|-
+|}
+====Preceding treatment====
+*HOVON 49: [[Multiple_myeloma,_induction#MPT|MPT]] x 8
+*HOVON-50: [[Multiple_myeloma,_consolidation_and_maintenance#Melphalan.2C_then_auto_HSCT|single]] or [[Multiple_myeloma,_consolidation_and_maintenance#Tandem_melphalan.2C_then_auto_HSCT|tandem]] melphalan auto HSCT
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day
+
+====Supportive medications====
+*'''HOVON 49:''' [[:Category:Bisphosphonates|Bisphosphonate]] use recommended with [[Pamidronate (Aredia)]] or [[Clodronate (Bonefos)]]; "a maximum treatment period of 2 years was recommended in patients without active disease."
+*'''HOVON 49:''' During maintenance therapy, "low-dose [[Aspirin]] was advised"
+
+'''Continued indefinitely'''
+
+===Variant #3, 50 -> 100 mg/d, indefinite {{#subobject:24fe5b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3639680/ Morgan et al. 2010 (MRC Myeloma IX)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Preceding treatment====
+*Intensive treatment pathway: [[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+*Non-intensive treatment pathway: [[Multiple_myeloma,_induction#CTD|CTDa]] versus [[Multiple_myeloma_-_historical#MP|MP]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] as follows:
+**Weeks 1 to 4: 50 mg PO once per day
+**Week 5 onwards: 100 mg PO once per day
+
+'''Continued indefinitely'''
+
+===Variant #4, 100 mg/day x 3 years {{#subobject:5b0623|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://www.bloodjournal.org/content/120/8/1589.long Rosiñol et al. 2012 (GEM05/MENOS65)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. [[Multiple_myeloma_-_historical#Interferon_alfa|Interferon alfa-2b]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|2. [[#VT|TV]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS (*)
+|-
+|}
+''Note: Reported efficacy for GEM05/MENOS65 is based on the 2017 update.''
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous HSCT]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day 
+
+'''Continued for up to 3 years'''
+
+===Variant #5, 100 mg/d, indefinite {{#subobject:596043|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2806%2968338-4/fulltext Palumbo et al. 2006]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566809/ Stewart et al. 2015 (ECOG E1A06)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://www.bloodjournal.org/content/127/9/1109.long Zweegman et al. 2016 (HOVON87/NMSG18)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Lenalidomide_monotherapy|Lenalidomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*Palumbo et al. 2006: [[Multiple_myeloma,_induction#MPT|MPT]] x 6
+*ECOG E1A06: [[Multiple_myeloma,_induction#MPT|MPT]] x 12
+*HOVON87/NMSG18: [[Multiple_myeloma,_induction#MPT|MPT]] x 9
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day 
+
+====Supportive medications====
+*Per ECOG E1A06, [[Aspirin]] was required (dose not specified)
+**Per ECOG E1A06, full anticoagulation was used for patients at "higher risk" for DVT
+*Per ECOG E1A06, [[Pamidronate (Aredia)]] 90 mg IV once per month recommended for patients with "active bone disease"
+
+'''Continued indefinitely'''
+
+===Variant #6, 400 mg/day x 18 months {{#subobject:962746|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/bmt/journal/v37/n9/full/1705339a.html Sahebi et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day, escalated by 50 mg once per week to a target dose of 400 mg PO once per day
+
+====Supportive medications====
+*[[:Category:Bisphosphonates|Bisphosphonate]] once per month
+*Vitamin B6
+
+'''18 months of treatment or 6 months past CR, whichever comes first'''
+
+===Variant #7, 400 mg/d, indefinite {{#subobject:767bfd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/108/10/3289.long Attal et al. 2006 (IFM 99-02)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*VAD x 3 to 4, then [[#Tandem_melphalan.2C_then_auto_HSCT|high-dose melphalan with tandem autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 400 mg PO once per day
+**Dose reductions to a minimum of 50 mg PO once per day were allowed
+
+'''Continued indefinitely'''
+
+===References===
+# Palumbo A, Bringhen S, Caravita T, Merla E, Capparella V, Callea V, Cangialosi C, Grasso M, Rossini F, Galli M, Catalano L, Zamagni E, Petrucci MT, De Stefano V, Ceccarelli M, Ambrosini MT, Avonto I, Falco P, Ciccone G, Liberati AM, Musto P, Boccadoro M; Italian Multiple Myeloma Network (GIMEMA). Oral melphalan and prednisone chemotherapy plus thalidomide compared with melphalan and prednisone alone in elderly patients with multiple myeloma: randomised controlled trial. Lancet. 2006 Mar 11;367(9513):825-31. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2806%2968338-4/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16530576 PubMed]
+## '''Update:''' Palumbo A, Bringhen S, Liberati AM, Caravita T, Falcone A, Callea V, Montanaro M, Ria R, Capaldi A, Zambello R, Benevolo G, Derudas D, Dore F, Cavallo F, Gay F, Falco P, Ciccone G, Musto P, Cavo M, Boccadoro M. Oral melphalan, prednisone, and thalidomide in elderly patients with multiple myeloma: updated results of a randomized controlled trial. Blood. 2008 Oct 15;112(8):3107-14. Epub 2008 May 27. [http://www.bloodjournal.org/content/112/8/3107.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18505783 PubMed]
+# Sahebi F, Spielberger R, Kogut NM, Fung H, Falk PM, Parker P, Krishnan A, Rodriguez R, Nakamura R, Nademanee A, Popplewell L, Frankel P, Ruel C, Tin R, Ilieva P, Forman SJ, Somlo G. Maintenance thalidomide following single cycle autologous peripheral blood stem cell transplant in patients with multiple myeloma. Bone Marrow Transplant. 2006 May;37(9):825-9. [https://www.nature.com/bmt/journal/v37/n9/full/1705339a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16565743 PubMed]
+# '''IFM 99-02:''' Attal M, Harousseau JL, Leyvraz S, Doyen C, Hulin C, Benboubker L, Yakoub Agha I, Bourhis JH, Garderet L, Pegourie B, Dumontet C, Renaud M, Voillat L, Berthou C, Marit G, Monconduit M, Caillot D, Grobois B, Avet-Loiseau H, Moreau P, Facon T; Inter-Groupe Francophone du Myélome (IFM). Maintenance therapy with thalidomide improves survival in patients with multiple myeloma. Blood. 2006 Nov 15;108(10):3289-94. Epub 2006 Jul 27. [http://www.bloodjournal.org/content/108/10/3289.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16873668 PubMed]
+## '''Update:''' Barlogie B, Attal M, Crowley J, van Rhee F, Szymonifka J, Moreau P, Durie BG, Harousseau JL. Long-term follow-up of autotransplantation trials for multiple myeloma: update of protocols conducted by the intergroupe francophone du myelome, southwest oncology group, and university of arkansas for medical sciences. J Clin Oncol. 2010 Mar 1;28(7):1209-14. Epub 2010 Jan 19. Erratum in: J Clin Oncol. 2010 Jul 20;28(21):3543. [http://jco.ascopubs.org/content/28/7/1209.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834471/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20085933 PubMed]
+# '''**RETRACTED**''' Abdelkefi A, Ladeb S, Torjman L, Othman TB, Lakhal A, Romdhane NB, Omri HE, Elloumi M, Belaaj H, Jeddi R, Aissaouï L, Ksouri H, Hassen AB, Msadek F, Saad A, Hsaïri M, Boukef K, Amouri A, Louzir H, Dellagi K, Abdeladhim AB; Tunisian Multiple Myeloma Study Group. Single autologous stem-cell transplantation followed by maintenance therapy with thalidomide is superior to double autologous transplantation in multiple myeloma: results of a multicenter randomized clinical trial. Blood. 2008 Feb 15;111(4):1805-10. Epub 2007 Sep 17. [http://www.bloodjournal.org/content/111/4/1805.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17875806 PubMed] '''**RETRACTED**'''
+<!-- Presented in part at the 50th Annual Meeting of the American Society of Hematology, San Francisco, CA, December 7, 2008. -->
+# '''HOVON-50:''' Lokhorst HM, van der Holt B, Zweegman S, Vellenga E, Croockewit S, van Oers MH, von dem Borne P, Wijermans P, Schaafsma R, de Weerdt O, Wittebol S, Delforge M, Berenschot H, Bos GM, Jie KS, Sinnige H, van Marwijk-Kooy M, Joosten P, Minnema MC, van Ammerlaan R, Sonneveld P; Dutch-Belgian Hemato-Oncology Group (HOVON). A randomized phase 3 study on the effect of thalidomide combined with adriamycin, dexamethasone, and high-dose melphalan, followed by thalidomide maintenance in patients with multiple myeloma. Blood. 2010 Feb 11;115(6):1113-20. Epub 2009 Oct 30. [http://www.bloodjournal.org/content/115/6/1113 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19880501 PubMed]
+## '''Update:''' van de Donk NW, van der Holt B, Minnema MC, Vellenga E, Croockewit S, Kersten MJ, von dem Borne PA, Ypma P, Schaafsma R, de Weerdt O, Klein SK, Delforge M, Levin MD, Bos GM, Jie KG, Sinnige H, Coenen JL, de Waal EG, Zweegman S, Sonneveld P, Lokhorst HM. Thalidomide before and after autologous stem cell transplantation in recently diagnosed multiple myeloma (HOVON-50): long-term results from the phase 3, randomised controlled trial. Lancet Haematol. 2018 Oct;5(10):e479-e492. [https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(18)30149-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30290905 PubMed]
+# '''HOVON 49:''' Wijermans P, Schaafsma M, Termorshuizen F, Ammerlaan R, Wittebol S, Sinnige H, Zweegman S, van Marwijk Kooy M, van der Griend R, Lokhorst H, Sonneveld P; Dutch-Belgium Cooperative Group HOVON. Phase III study of the value of thalidomide added to melphalan plus prednisone in elderly patients with newly diagnosed multiple myeloma: the HOVON 49 Study. J Clin Oncol. 2010 Jul 1;28(19):3160-6. Epub 2010 Jun 1. [http://jco.ascopubs.org/content/28/19/3160.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20516439 PubMed]
+# '''MRC Myeloma IX:''' Morgan GJ, Davies FE, Gregory WM, Cocks K, Bell SE, Szubert AJ, Navarro-Coy N, Drayson MT, Owen RG, Feyler S, Ashcroft AJ, Ross F, Byrne J, Roddie H, Rudin C, Cook G, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Study Group. First-line treatment with zoledronic acid as compared with clodronic acid in multiple myeloma (MRC Myeloma IX): a randomised controlled trial. Lancet. 2010 Dec 11;376(9757):1989-99. Epub 2010 Dec 3. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)62051-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3639680/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21131037 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Russell NH, Bell SE, Szubert AJ, Navarro Coy N, Cook G, Feyler S, Byrne JL, Roddie H, Rudin C, Drayson MT, Owen RG, Ross FM, Jackson GH, Child JA; NCRI Haematological Oncology Study Group. Cyclophosphamide, thalidomide, and dexamethasone (CTD) as initial therapy for patients with multiple myeloma unsuitable for autologous transplantation. Blood. 2011 Aug 4;118(5):1231-8. Epub 2011 Jun 7. [http://www.bloodjournal.org/content/118/5/1231.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152492/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21652683 PubMed]
+## '''Update:''' Morgan GJ, Gregory WM, Davies FE, Bell SE, Szubert AJ, Brown JM, Coy NN, Cook G, Russell NH, Rudin C, Roddie H, Drayson MT, Owen RG, Ross FM, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Studies Group. The role of maintenance thalidomide therapy in multiple myeloma: MRC Myeloma IX results and meta-analysis. Blood. 2012 Jan 5;119(1):7-15. Epub 2011 Oct 20. [http://www.bloodjournal.org/content/119/1/7.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22021371 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Bell SE, Szubert AJ, Navarro Coy N, Cook G, Feyler S, Johnson PR, Rudin C, Drayson MT, Owen RG, Ross FM, Russell NH, Jackson GH, Child JA; National Cancer Research Institute Haematological Oncology Clinical Studies Group. Cyclophosphamide, thalidomide, and dexamethasone as induction therapy for newly diagnosed multiple myeloma patients destined for autologous stem-cell transplantation: MRC Myeloma IX randomized trial results. Haematologica. 2012 Mar;97(3):442-50. Epub 2011 Nov 4. [http://www.haematologica.org/content/97/3/442.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3291601/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22058209 PubMed]
+## '''Update:''' Morgan GJ, Davies FE, Gregory WM, Bell SE, Szubert AJ, Cook G, Drayson MT, Owen RG, Ross FM, Jackson G, Child JA. Long-term follow-up of MRC Myeloma IX trial: Survival outcomes with bisphosphonate and thalidomide treatment. Clin Cancer Res. 2013 Nov 1;19(21):6030-8. Epub 2013 Aug 30. [http://clincancerres.aacrjournals.org/content/19/21/6030.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23995858 PubMed]
+# '''GEM05/MENOS65:''' Rosiñol L, Oriol A, Teruel AI, Hernández D, López-Jiménez J, de la Rubia J, Granell M, Besalduch J, Palomera L, González Y, Etxebeste MA, Díaz-Mediavilla J, Hernández MT, de Arriba F, Gutiérrez NC, Martín-Ramos ML, Cibeira MT, Mateos MV, Martínez J, Alegre A, Lahuerta JJ, San Miguel J, Bladé J; Programa para el Estudio y la Terapéutica de las Hemopatías Malignas/Grupo Español de Mieloma (PETHEMA/GEM) group. Superiority of bortezomib, thalidomide, and dexamethasone (VTD) as induction pretransplantation therapy in multiple myeloma: a randomized phase 3 PETHEMA/GEM study. Blood. 2012 Aug 3;120(8):1589-96. Epub 2012 Jul 12. [http://www.bloodjournal.org/content/120/8/1589.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22791289 PubMed]
+## '''Update:''' Rosiñol L, Oriol A, Teruel AI, de la Guía AL, Blanchard M, de la Rubia J, Granell M, Sampol M, Palomera L, González Y, Etxebeste M, Martínez-Martínez R, Hernández MT, de Arriba F, Alegre A, Cibeira M, Mateos M, Martínez-López J, Lahuerta JJ, San Miguel J, Bladé J. Bortezomib and thalidomide maintenance after stem cell transplantation for multiple myeloma: a PETHEMA/GEM trial. Leukemia. 2017 Sep;31(9):1922-1927. Epub 2017 Jan 23. [https://www.nature.com/leu/journal/v31/n9/full/leu201735a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28111466 PubMed]
+# '''HOVON-65/GMMG-HD4:''' Sonneveld P, Schmidt-Wolf IG, van der Holt B, El Jarari L, Bertsch U, Salwender H, Zweegman S, Vellenga E, Broyl A, Blau IW, Weisel KC, Wittebol S, Bos GM, Stevens-Kroef M, Scheid C, Pfreundschuh M, Hose D, Jauch A, van der Velde H, Raymakers R, Schaafsma MR, Kersten MJ, van Marwijk-Kooy M, Duehrsen U, Lindemann W, Wijermans PW, Lokhorst HM, Goldschmidt HM. Bortezomib induction and maintenance treatment in patients with newly diagnosed multiple myeloma: results of the randomized phase III HOVON-65/ GMMG-HD4 trial. J Clin Oncol. 2012 Aug 20;30(24):2946-55. Epub 2012 Jul 16. [http://jco.ascopubs.org/content/30/24/2946.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22802322 PubMed]
+## '''Subgroup analysis:''' Neben K, Lokhorst HM, Jauch A, Bertsch U, Hielscher T, van der Holt B, Salwender H, Blau IW, Weisel K, Pfreundschuh M, Scheid C, Dührsen U, Lindemann W, Schmidt-Wolf IG, Peter N, Teschendorf C, Martin H, Haenel M, Derigs HG, Raab MS, Ho AD, van de Velde H, Hose D, Sonneveld P, Goldschmidt H. Administration of bortezomib before and after autologous stem cell transplantation improves outcome in multiple myeloma patients with deletion 17p. Blood. 2012 Jan 26;119(4):940-8. Epub 2011 Dec 8. [http://www.bloodjournal.org/content/119/4/940.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22160383 PubMed]
+## '''Update:''' Goldschmidt H, Lokhorst HM, Mai EK, van der Holt B, Blau IW, Zweegman S, Weisel KC, Vellenga E, Pfreundschuh M, Kersten MJ, Scheid C, Croockewit S, Raymakers R, Hose D, Potamianou A, Jauch A, Hillengass J, Stevens-Kroef M, Raab MS, Broijl A, Lindemann HW, Bos GMJ, Brossart P, van Marwijk Kooy M, Ypma P, Duehrsen U, Schaafsma RM, Bertsch U, Hielscher T, Jarari L, Salwender HJ, Sonneveld P. Bortezomib before and after high-dose therapy in myeloma: long-term results from the phase III HOVON-65/GMMG-HD4 trial. Leukemia. 2018 Feb;32(2):383-390. Epub 2017 Jul 4. [https://www.nature.com/articles/leu2017211 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28761118 PubMed]
+# Stewart AK, Jacobus S, Fonseca R, Weiss M, Callander NS, Chanan-Khan AA, Rajkumar SV. Melphalan, prednisone, and thalidomide vs melphalan, prednisone, and lenalidomide (ECOG E1A06) in untreated multiple myeloma. Blood. 2015 Sep 10;126(11):1294-301. Epub 2015 Jul 8. [http://www.bloodjournal.org/content/126/11/1294.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566809/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26157076 PubMed]
+# Zweegman S, van der Holt B, Mellqvist UH, Salomo M, Bos GM, Levin MD, Visser-Wisselaar H, Hansson M, van der Velden AW, Deenik W, Gruber A, Coenen JL, Plesner T, Klein SK, Tanis BC, Szatkowski DL, Brouwer RE, Westerman M, Leys MR, Sinnige HA, Haukås E, van der Hem KG, Durian MF, Mattijssen EV, van de Donk NW, Stevens-Kroef MJ, Sonneveld P, Waage A. Melphalan, prednisone, and lenalidomide versus melphalan, prednisone, and thalidomide in untreated multiple myeloma. Blood. 2016 Mar 3;127(9):1109-16. Epub 2016 Jan 22. [http://www.bloodjournal.org/content/127/9/1109.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26802176 PubMed]
+
+==Thal-Dex {{#subobject:3906a8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TD: '''<u>T</u>'''halidomide, '''<u>D</u>'''examethasone
+<br>Thal-Dex: '''<u>Thal</u>'''idomide, '''<u>Dex</u>'''amethasone
+===Regimen {{#subobject:e146e3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/ajh.23274/full Maiolino et al. 2012]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Dexamethasone_monotherapy_2|Dexamethasone]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 200 mg PO once per day
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+
+'''28-day cycle for 12 months or until disease progression'''
+
+===References===
+# Krishnan A, Pasquini MC, Logan B, Stadtmauer EA, Vesole DH, Alyea E 3rd, Antin JH, Comenzo R, Goodman S, Hari P, Laport G, Qazilbash MH, Rowley S, Sahebi F, Somlo G, Vogl DT, Weisdorf D, Ewell M, Wu J, Geller NL, Horowitz MM, Giralt S, Maloney DG; Blood Marrow Transplant Clinical Trials Network (BMT CTN). Autologous haemopoietic stem-cell transplantation followed by allogeneic or autologous haemopoietic stem-cell transplantation in patients with multiple myeloma (BMT CTN 0102): a phase 3 biological assignment trial. Lancet Oncol. 2011 Dec;12(13):1195-203. Epub 2011 Sep 29. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3611089/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21962393 PubMed]
+<!-- This work was presented in part at the 50th Annual Meeting of the American Society of Hematology, San Francisco, CA, 2008 and at the XII International Myeloma Workshop, Washington, DC, 2009. -->
+# Maiolino A, Hungria VT, Garnica M, Oliveira-Duarte G, Oliveira LC, Mercante DR, Miranda EC, Quero AA, Peres AL, Barros JC, Tanaka P, Magalhães RP, Rego EM, Lorand-Metze I, Lima CS, Renault IZ, Braggio E, Chiattone C, Nucci M, de Souza CA; Brazilian Multiple Myeloma Study Group (BMMSG/GEMOH). Thalidomide plus dexamethasone as a maintenance therapy after autologous hematopoietic stem cell transplantation improves progression-free survival in multiple myeloma. Am J Hematol. 2012 Oct;87(10):948-52. Epub 2012 Jun 23. [https://onlinelibrary.wiley.com/doi/10.1002/ajh.23274/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22730113 PubMed]
+
+==Thalidomide & Prednisolone {{#subobject:6f8a22|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:96e048|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/27/11/1788.long Spencer et al. 2009 (ALLG MM6)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Prednisolone_monotherapy|Prednisolone]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & auto HSCT]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day, increased to 200 mg PO once per day after 14 days (if tolerated)
+*[[Prednisolone (Millipred)]] 50 mg PO once every other day 
+
+'''Thalidomide stopped after 12 months; prednisolone continued indefinitely'''
+
+===References===
+<!-- Presented in part at the 48th Annual Meeting of the American Society of Hematology, Orlando, FL, December 9-12, 2006; and at the XIth International Myeloma Workshop, Kos Island, Greece, June 25-30, 2007. -->
+# '''ALLG MM6:''' Spencer A, Prince HM, Roberts AW, Prosser IW, Bradstock KF, Coyle L, Gill DS, Horvath N, Reynolds J, Kennedy N. Consolidation therapy with low-dose thalidomide and prednisolone prolongs the survival of multiple myeloma patients undergoing a single autologous stem-cell transplantation procedure. J Clin Oncol. 2009 Apr 10;27(11):1788-93. Epub 2009 Mar 9. [http://jco.ascopubs.org/content/27/11/1788.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19273705 PubMed]
+## '''Subgroup analysis:''' Ho PJ, Brown RD, Spencer A, Jeffels M, Daniher D, Gibson J, Joshua DE. Thalidomide consolidation improves progression-free survival in myeloma with normal but not up-regulated expression of fibroblast growth factor receptor 3: analysis from the Australasian Leukaemia and Lymphoma Group MM6 clinical trial. Leuk Lymphoma. 2012 Sep;53(9):1728-34. Epub 2012 Mar 13. [https://www.tandfonline.com/doi/full/10.3109/10428194.2012.664842 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22329352 PubMed]
+
+==Thalidomide & Prednisone {{#subobject:c74709|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:ff7fc7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3587317/ Stewart et al. 2013 (NCIC CTG Myeloma 10)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Multiple_myeloma_-_historical#Observation|Observation]]
+|style="background-color:#1a9851"|Improved PFS
+|style="background-color:#ffffbe"|Decreased QOL
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic stem cell transplant]]
+====Chemotherapy====
+*[[Thalidomide (Thalomid)]] 200 mg PO once per day 
+*[[Prednisone (Sterapred)]] 50 mg PO once every other day
+
+====Supportive medications====
+*"[[:Category:Bisphosphonates|Bisphosphonates]], histamine-2 blockers, and laxatives were recommended"
+*"Anticoagulant and antiplatelet medications were not mandated"
+
+'''Four years or until disease progression'''
+
+===References===
+# Stewart AK, Trudel S, Bahlis NJ, White D, Sabry W, Belch A, Reiman T, Roy J, Shustik C, Kovacs MJ, Rubinger M, Cantin G, Song K, Tompkins KA, Marcellus DC, Lacy MQ, Sussman J, Reece D, Brundage M, Harnett EL, Shepherd L, Chapman JA, Meyer RM. A randomized phase 3 trial of thalidomide and prednisone as maintenance therapy after ASCT in patients with MM with a quality-of-life assessment: the National Cancer Institute of Canada Clinicals Trials Group Myeloma 10 Trial. Blood. 2013 Feb 28;121(9):1517-23. Epub 2013 Jan 7. [http://www.bloodjournal.org/content/121/9/1517.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3587317/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23297129 PubMed]
+
+==VP {{#subobject:ee2988|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VP: '''<u>V</u>'''elcade (Bortezomib) & '''<u>P</u>'''rednisone
+===Regimen {{#subobject:763da1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(10)70187-X/fulltext Mateos et al. 2010 (GEM2005)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#VT|VT]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VMP|VMP]] x 6 versus [[Multiple_myeloma,_induction#VTP|VTP]] x 6
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Prednisone (Sterapred)]] 50 mg PO once every other day 
+
+====Supportive medications====
+*Patients with bone disease received [[:Category:Bisphosphonates|bisphosphonates]]
+*Prophylactic [[Acyclovir (Zovirax)]] was recommended.
+
+'''3-month cycle for up to 3 years'''
+
+===References===
+# '''GEM2005:''' Mateos MV, Oriol A, Martínez-López J, Gutiérrez N, Teruel AI, de Paz R, García-Laraña J, Bengoechea E, Martín A, Mediavilla JD, Palomera L, de Arriba F, González Y, Hernández JM, Sureda A, Bello JL, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, García-Sanz R, Cibeira MT, Ramos ML, Vidriales MB, Paiva B, Montalbán MA, Lahuerta JJ, Bladé J, Miguel JF. Bortezomib, melphalan, and prednisone versus bortezomib, thalidomide, and prednisone as induction therapy followed by maintenance treatment with bortezomib and thalidomide versus bortezomib and prednisone in elderly patients with untreated multiple myeloma: a randomised trial. Lancet Oncol. 2010 Oct;11(10):934-41. Epub 2010 Aug 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(10)70187-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20739218 PubMed]
+## '''Subgroup analysis:''' Mateos MV, Gutiérrez NC, Martín-Ramos ML, Paiva B, Montalbán MA, Oriol A, Martínez-López J, Teruel AI, Bengoechea E, Martín A, Díaz-Mediavilla J, de Arriba F, Palomera L, Hernández JM, Sureda A, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, Fernández M, García-Sanz R, Vidriales MB, Bladé J, Lahuerta JJ, San Miguel JF. Outcome according to cytogenetic abnormalities and DNA ploidy in myeloma patients receiving short induction with weekly bortezomib followed by maintenance. Blood. 2011 Oct 27;118(17):4547-53. Epub 2011 Sep 6. [http://www.bloodjournal.org/content/118/17/4547.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21900193 PubMed]
+## '''Update:''' Mateos MV, Oriol A, Martínez-López J, Gutiérrez N, Teruel AI, López de la Guía A, López J, Bengoechea E, Pérez M, Polo M, Palomera L, de Arriba F, González Y, Hernández JM, Granell M, Bello JL, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, García-Sanz R, Lahuerta JJ, Bladé J, San-Miguel JF. Maintenance therapy with bortezomib plus thalidomide or bortezomib plus prednisone in elderly multiple myeloma patients included in the GEM2005MAS65 trial. Blood. 2012 Sep 27;120(13):2581-8. Epub 2012 Aug 13. [http://www.bloodjournal.org/content/120/13/2581 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22889759 PubMed]
+## '''Update:''' Mateos MV, Oriol A, Martínez-López J, Teruel AI, López de la Guía A, López J, Bengoechea E, Pérez M, Martínez R, Palomera L, de Arriba F, González Y, Hernández JM, Granell M, Bello JL, Bargay J, Peñalver FJ, Martín-Mateos ML, Paiva B, Montalbán MA, Bladé J, Lahuerta JJ, San-Miguel JF. Update of the GEM2005 trial comparing VMP/VTP as induction in elderly multiple myeloma patients: do we still need alkylators?. Blood. 2014 Sep 18;124(12):1887-93. Epub 2014 Aug 7. [http://www.bloodjournal.org/content/124/12/1887 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25102853 PubMed]
+
+==VT {{#subobject:e94510|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VT: '''<u>V</u>'''elcade (Bortezomib) & '''<u>T</u>'''halidomide
+<br>TV: '''<u>T</u>'''halidomide & '''<u>V</u>'''elcade (Bortezomib)
+===Variant #1, 1.3/50 x 2 y {{#subobject:8a32ae|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/28/34/5101.long Palumbo et al. 2010 (GIMEMA MM-03-05)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VMPT|VMPT]] x 9
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV bolus once on day 1
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day
+
+'''14-day cycle for up to 2 years or until disease progression or relapse'''
+===Variant #2, 1.3/50 x 3 y {{#subobject:8eb947|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(10)70187-X/fulltext Mateos et al. 2010 (GEM2005)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#VP|VP]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[Multiple_myeloma,_induction#VMP|VMP]] x 6 versus [[Multiple_myeloma,_induction#VTP|VTP]] x 6
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day 
+
+====Supportive medications====
+*Patients with bone disease received [[:Category:Bisphosphonates|bisphosphonates]]
+*Prophylactic [[Acyclovir (Zovirax)|aciclovir]] was recommended.
+*Thromboprophylaxis with either [[aspirin]] or [[:Category:Low_molecular_weight_heparins|low molecular weight heparin]]
+
+'''3-month cycle for up to 3 years'''
+===Variant #3, 1.3/100 {{#subobject:61320d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/120/8/1589.long Rosiñol et al. 2012 (GEM05/MENOS65)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. [[Multiple_myeloma_-_historical#Interferon_alfa|Interferon alfa-2b]]<br> 2. [[#Thalidomide_monotherapy|Thalidomide]]
+|style="background-color:#91cf60"|Seems to have superior PFS (*)
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment. Reported efficacy is based on the 2017 update.''
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous HCT]]
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day 
+
+'''3-month cycle for up to 3 years'''
+===References===
+# '''GEM2005:''' Mateos MV, Oriol A, Martínez-López J, Gutiérrez N, Teruel AI, de Paz R, García-Laraña J, Bengoechea E, Martín A, Mediavilla JD, Palomera L, de Arriba F, González Y, Hernández JM, Sureda A, Bello JL, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, García-Sanz R, Cibeira MT, Ramos ML, Vidriales MB, Paiva B, Montalbán MA, Lahuerta JJ, Bladé J, Miguel JF. Bortezomib, melphalan, and prednisone versus bortezomib, thalidomide, and prednisone as induction therapy followed by maintenance treatment with bortezomib and thalidomide versus bortezomib and prednisone in elderly patients with untreated multiple myeloma: a randomised trial. Lancet Oncol. 2010 Oct;11(10):934-41. Epub 2010 Aug 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(10)70187-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20739218 PubMed]
+## '''Subgroup analysis:''' Mateos MV, Gutiérrez NC, Martín-Ramos ML, Paiva B, Montalbán MA, Oriol A, Martínez-López J, Teruel AI, Bengoechea E, Martín A, Díaz-Mediavilla J, de Arriba F, Palomera L, Hernández JM, Sureda A, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, Fernández M, García-Sanz R, Vidriales MB, Bladé J, Lahuerta JJ, San Miguel JF. Outcome according to cytogenetic abnormalities and DNA ploidy in myeloma patients receiving short induction with weekly bortezomib followed by maintenance. Blood. 2011 Oct 27;118(17):4547-53. Epub 2011 Sep 6. [http://www.bloodjournal.org/content/118/17/4547.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21900193 PubMed]
+## '''Update:''' Mateos MV, Oriol A, Martínez-López J, Gutiérrez N, Teruel AI, López de la Guía A, López J, Bengoechea E, Pérez M, Polo M, Palomera L, de Arriba F, González Y, Hernández JM, Granell M, Bello JL, Bargay J, Peñalver FJ, Ribera JM, Martín-Mateos ML, García-Sanz R, Lahuerta JJ, Bladé J, San-Miguel JF. Maintenance therapy with bortezomib plus thalidomide or bortezomib plus prednisone in elderly multiple myeloma patients included in the GEM2005MAS65 trial. Blood. 2012 Sep 27;120(13):2581-8. Epub 2012 Aug 13. [http://www.bloodjournal.org/content/120/13/2581 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22889759 PubMed]
+## '''Update:''' Mateos MV, Oriol A, Martínez-López J, Teruel AI, López de la Guía A, López J, Bengoechea E, Pérez M, Martínez R, Palomera L, de Arriba F, González Y, Hernández JM, Granell M, Bello JL, Bargay J, Peñalver FJ, Martín-Mateos ML, Paiva B, Montalbán MA, Bladé J, Lahuerta JJ, San-Miguel JF. Update of the GEM2005 trial comparing VMP/VTP as induction in elderly multiple myeloma patients: do we still need alkylators?. Blood. 2014 Sep 18;124(12):1887-93. Epub 2014 Aug 7. [http://www.bloodjournal.org/content/124/12/1887 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25102853 PubMed]
+# '''GIMEMA MM-03-05:''' Palumbo A, Bringhen S, Rossi D, Cavalli M, Larocca A, Ria R, Offidani M, Patriarca F, Nozzoli C, Guglielmelli T, Benevolo G, Callea V, Baldini L, Morabito F, Grasso M, Leonardi G, Rizzo M, Falcone AP, Gottardi D, Montefusco V, Musto P, Petrucci MT, Ciccone G, Boccadoro M. Bortezomib-melphalan-prednisone-thalidomide followed by maintenance with bortezomib-thalidomide compared with bortezomib-melphalan-prednisone for initial treatment of multiple myeloma: a randomized controlled trial. J Clin Oncol. 2010 Dec 1;28(34):5101-9. Epub 2010 Oct 12. [http://jco.ascopubs.org/content/28/34/5101.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20940200 PubMed]
+## '''Post-hoc analysis:''' Bringhen S, Larocca A, Rossi D, Cavalli M, Genuardi M, Ria R, Gentili S, Patriarca F, Nozzoli C, Levi A, Guglielmelli T, Benevolo G, Callea V, Rizzo V, Cangialosi C, Musto P, De Rosa L, Liberati AM, Grasso M, Falcone AP, Evangelista A, Cavo M, Gaidano G, Boccadoro M, Palumbo A. Efficacy and safety of once-weekly bortezomib in multiple myeloma patients. Blood. 2010 Dec 2;116(23):4745-53. Epub 2010 Aug 31. [http://www.bloodjournal.org/content/116/23/4745.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20807892 PubMed]
+## '''Subgroup analysis:''' Morabito F, Gentile M, Mazzone C, Rossi D, Di Raimondo F, Bringhen S, Ria R, Offidani M, Patriarca F, Nozzoli C, Petrucci MT, Benevolo G, Vincelli I, Guglielmelli T, Grasso M, Marasca R, Baldini L, Montefusco V, Musto P, Cascavilla N, Majolino I, Musolino C, Cavo M, Boccadoro M, Palumbo A. Safety and efficacy of bortezomib-melphalan-prednisone-thalidomide followed by bortezomib-thalidomide maintenance (VMPT-VT) versus bortezomib-melphalan-prednisone (VMP) in untreated multiple myeloma patients with renal impairment. Blood. 2011 Nov 24;118(22):5759-66. Epub 2011 Sep 27. [http://www.bloodjournal.org/content/118/22/5759.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/21951682 PubMed]
+## '''Update:''' Palumbo A, Bringhen S, Larocca A, Rossi D, Di Raimondo F, Magarotto V, Patriarca F, Levi A, Benevolo G, Vincelli ID, Grasso M, Franceschini L, Gottardi D, Zambello R, Montefusco V, Falcone AP, Omedé P, Marasca R, Morabito F, Mina R, Guglielmelli T, Nozzoli C, Passera R, Gaidano G, Offidani M, Ria R, Petrucci MT, Musto P, Boccadoro M, Cavo M. Bortezomib-melphalan-prednisone-thalidomide followed by maintenance with bortezomib-thalidomide compared with bortezomib-melphalan-prednisone for initial treatment of multiple myeloma: updated follow-up and improved survival. J Clin Oncol. 2014 Mar 1;32(7):634-40. Epub 2014 Jan 21. [http://jco.ascopubs.org/content/32/7/634.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24449241 PubMed]
+# '''GEM05/MENOS65:''' Rosiñol L, Oriol A, Teruel AI, Hernández D, López-Jiménez J, de la Rubia J, Granell M, Besalduch J, Palomera L, González Y, Etxebeste MA, Díaz-Mediavilla J, Hernández MT, de Arriba F, Gutiérrez NC, Martín-Ramos ML, Cibeira MT, Mateos MV, Martínez J, Alegre A, Lahuerta JJ, San Miguel J, Bladé J; Programa para el Estudio y la Terapéutica de las Hemopatías Malignas/Grupo Español de Mieloma (PETHEMA/GEM) group. Superiority of bortezomib, thalidomide, and dexamethasone (VTD) as induction pretransplantation therapy in multiple myeloma: a randomized phase 3 PETHEMA/GEM study. Blood. 2012 Aug 3;120(8):1589-96. Epub 2012 Jul 12. [http://www.bloodjournal.org/content/120/8/1589.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22791289 PubMed]
+## '''Update:''' Rosiñol L, Oriol A, Teruel AI, de la Guía AL, Blanchard M, de la Rubia J, Granell M, Sampol M, Palomera L, González Y, Etxebeste M, Martínez-Martínez R, Hernández MT, de Arriba F, Alegre A, Cibeira M, Mateos M, Martínez-López J, Lahuerta JJ, San Miguel J, Bladé J. Bortezomib and thalidomide maintenance after stem cell transplantation for multiple myeloma: a PETHEMA/GEM trial. Leukemia. 2017 Sep;31(9):1922-1927. Epub 2017 Jan 23. [https://www.nature.com/leu/journal/v31/n9/full/leu201735a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28111466 PubMed]
+
+<section end=1st-consol />
+{{#lst:Multiple myeloma|bottom}}
+[[Category:Multiple myeloma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Plasma cell dyscrasias]]

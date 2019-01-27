@@ -1,0 +1,1074 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Dewdney.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Summerdewdney|Summer B. Dewdney, MD]]<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2016:''' Colombo et al. [https://www.esmo.org/Guidelines/Gynaecological-Cancers/ESMO-ESGO-ESTRO-Consensus-Conference-on-Endometrial-Cancer ESMO-ESGO-ESTRO Consensus Conference on Endometrial Cancer: diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/uterine.pdf NCCN Guidelines - Uterine Neoplasms]
+
+=Adjuvant therapy=
+==CIM {{#subobject:ac4dbb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CIM: '''<u>C</u>'''isplatin, '''<u>I</u>'''fosfamide, '''<u>M</u>'''esna
+===Regimen {{#subobject:f97ea4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752331 Wolfson et al. 2007 (GOG 150)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Whole_abdominal_radiation_.28WAI.29|Whole abdominal irradiation]]
+|style="background-color:#d9ef8b"|Might have superior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Endometrial_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 20 mg/m<sup>2</sup> IV at an infusion rate of approximately 1 mg/min once per day on days 1 to 4, '''given first'''
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 4, '''given second, with [[Mesna (Mesnex)]]'''
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 120 mg/m<sup>2</sup> IV bolus over 15 minutes once on day 1, then 1500 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, '''given second, with [[Ifosfamide (Ifex)]]'''
+*Suggested hydration: 1 liter of NS or 1/2 NS given over several hours prior to chemotherapy
+
+'''21-day cycle for 3 cycles'''
+
+===References===
+# '''GOG 150:''' Wolfson AH, Brady MF, Rocereto T, Mannel RS, Lee YC, Futoran RJ, Cohn DE, Ioffe OB. A Gynecologic Oncology Group randomized phase III trial of whole abdominal irradiation (WAI) vs cisplatin-ifosfamide and mesna (CIM) as post-surgical therapy in stage I-IV carcinosarcoma (CS) of the uterus. Gynecol Oncol. 2007 Nov;107(2):177-85. Epub 2007 Sep 5. [https://www.gynecologiconcology-online.net/article/S0090-8258(07)00567-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752331/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/17822748 PubMed]
+
+==Cisplatin & Doxorubicin {{#subobject:4d10f0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CD: '''<u>C</u>'''isplatin & '''<u>D</u>'''oxorubicin
+===Variant #1, 50/45 {{#subobject:ef532f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(08)00938-4/abstract Homesley et al. 2008 (GOG 184)]
+|style="background-color:#1a9851"|Phase III (C)
+|Cisplatin, Doxorubicin, Paclitaxel
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: body surface area was capped at 2.0 m<sup>2</sup>. Treatment was to start within 8 weeks of completion of RT.''
+====Preceding treatment====
+*[[Surgery#Endometrial_cancer_surgery|Surgery]], then [[#Radiation_therapy|RT]]
+
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV once on day 1, '''given second'''
+*[[Doxorubicin (Adriamycin)]] 45 mg/m<sup>2</sup> IV once on day 1, '''given first'''
+
+====Supportive medications====
+*G-CSF, ONE of the following:
+**[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day on days 2 to 11, or until ANC increases to 10,000/uL
+**[[Pegfilgrastim (Neulasta)]] 6 mg SC once on day 2
+*[[Dexamethasone (Decadron)]] 10 mg IV once prior to chemotherapy
+*[[:Category:Serotonin_5-HT3_antagonists|5-HT3 antagonist]]
+
+'''21-day cycle for 6 cycles'''
+
+===Variant #2, 50/60, no cap on BSA {{#subobject:5bab3b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/24/1/36.long Randall et al. 2006 (GOG 122)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Whole_abdominal_radiation_.28WAI.29|Whole abdominal irradiation]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Endometrial_cancer_surgery|Surgery]], with optimal debulking
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] as follows:
+**Cycles 1 to 7: 60 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive hydration====
+*Normal saline at 500 mL/H for 2 hours prior to and after [[Cisplatin (Platinol)]]
+
+'''21-day cycle for 8 cycles'''
+
+===References===
+# '''GOG 122:''' Randall ME, Filiaci VL, Muss H, Spirtos NM, Mannel RS, Fowler J, Thigpen JT, Benda JA; Gynecologic Oncology Group Study. Randomized phase III trial of whole-abdominal irradiation versus doxorubicin and cisplatin chemotherapy in advanced endometrial carcinoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2006 Jan 1;24(1):36-44. Epub 2005 Dec 5. [http://jco.ascopubs.org/content/24/1/36.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16330675 PubMed]
+# '''GOG 184:''' Homesley HD, Filiaci V, Gibbons SK, Long HJ, Cella D, Spirtos NM, Morris RT, DeGeest K, Lee R, Montag A. A randomized phase III trial in advanced endometrial carcinoma of surgery and volume directed radiation followed by cisplatin and doxorubicin with or without paclitaxel: A Gynecologic Oncology Group study. Gynecol Oncol. 2009 Mar;112(3):543-52. Epub 2008 Dec 23. [http://www.gynecologiconcology-online.net/article/S0090-8258(08)00938-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4459781/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19108877 PubMed]
+
+==Observation==
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1985.3.9.1240 Omura et al. 1985 (GOG 20)]
+|style="background-color:#1a9851"|Phase III (C)
+|Doxorubicin
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(03)00863-1/fulltext Keys et al. 2004 (GOG 99)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Radiation_therapy|RT]]
+| style="background-color:#d73027" |Inferior RFS
+|-
+|}
+''No further treatment.''
+====Preceding treatment====
+*[[Surgery#Endometrial_cancer_surgery|Surgery]]
+===References===
+# '''GOG 20:''' Omura GA, Blessing JA, Major F, Lifshitz S, Ehrlich CE, Mangan C, Beecham J, Park R, Silverberg S. A randomized clinical trial of adjuvant adriamycin in uterine sarcomas: a Gynecologic Oncology Group Study. J Clin Oncol. 1985 Sep;3(9):1240-5. [http://ascopubs.org/doi/abs/10.1200/JCO.1985.3.9.1240 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3897471 PubMed]
+# '''GOG 99:''' Keys HM, Roberts JA, Brunetto VL, Zaino RJ, Spirtos NM, Bloss JD, Pearlman A, Maiman MA, Bell JG; Gynecologic Oncology Group. A phase III trial of surgery with or without adjunctive external pelvic radiation therapy in intermediate risk endometrial adenocarcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2004 Mar;92(3):744-51. Erratum in: Gynecol Oncol. 2004 Jul;94(1):241-2. [https://www.gynecologiconcology-online.net/article/S0090-8258(03)00863-1/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14984936 PubMed]
+
+==Radiation therapy {{#subobject:24a846|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:4bfd6d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(03)00863-1/fulltext Keys et al. 2004 (GOG 99)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Observation|Observation]]
+| style="background-color:#1a9850" |Superior RFS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2360651/ Maggi et al. 2006]
+|style="background-color:#1a9851"|Phase III (C)
+|CAP
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(07)00786-X/fulltext Susumu et al. 2007]
+|style="background-color:#1a9851"|Phase III (C)
+|CAP
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(08)00938-4/abstract Homesley et al. 2008 (GOG 184)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30079-2/fulltext de Boer et al. 2018 (PORTEC-3)]
+|style="background-color:#1a9851"|Phase III (C)
+|Cisplatin & RT, then Carboplatin & Paclitaxel
+| style="background-color:#d73027" |Inferior FFS
+|-
+|}
+''Note: in PORTEC-3, radiation is to start within 4 to 6 weeks after surgery, and no later than 8 weeks; although the co-primary endpoint of FFS was met, OS was not different between the arms and chemoradiotherapy was not recommended. See individual papers for exact dosing details.''
+====Preceding treatment====
+*[[Surgery#Endometrial_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] to the pelvis, 40 to 50 Gy
+**If cervical involvement, brachytherapy boost
+
+'''One course'''
+====Subsequent treatment====
+*GOG 184: [[#Cisplatin_.26_Doxorubicin|Cisplatin & Doxorubicin]] x 6 versus Cisplatin, Doxorubicin, Paclitaxel x 6
+
+===References===
+# '''GOG 99:''' Keys HM, Roberts JA, Brunetto VL, Zaino RJ, Spirtos NM, Bloss JD, Pearlman A, Maiman MA, Bell JG; Gynecologic Oncology Group. A phase III trial of surgery with or without adjunctive external pelvic radiation therapy in intermediate risk endometrial adenocarcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2004 Mar;92(3):744-51. Erratum in: Gynecol Oncol. 2004 Jul;94(1):241-2. [https://www.gynecologiconcology-online.net/article/S0090-8258(03)00863-1/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14984936 PubMed]
+# Maggi R, Lissoni A, Spina F, Melpignano M, Zola P, Favalli G, Colombo A, Fossati R. Adjuvant chemotherapy vs radiotherapy in high-risk endometrial carcinoma: results of a randomised trial. Br J Cancer. 2006 Aug 7;95(3):266-71. Epub 2006 Jul 25. [https://www.nature.com/articles/6603279 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2360651/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/16868539 PubMed]
+# Susumu N, Sagae S, Udagawa Y, Niwa K, Kuramoto H, Satoh S, Kudo R; Japanese Gynecologic Oncology Group. Randomized phase III trial of pelvic radiotherapy versus cisplatin-based combined chemotherapy in patients with intermediate- and high-risk endometrial cancer: a Japanese Gynecologic Oncology Group study. Gynecol Oncol. 2008 Jan;108(1):226-33. Epub 2007 Nov 9. [https://www.gynecologiconcology-online.net/article/S0090-8258(07)00786-X/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17996926 PubMed]
+# '''GOG 184:''' Homesley HD, Filiaci V, Gibbons SK, Long HJ, Cella D, Spirtos NM, Morris RT, DeGeest K, Lee R, Montag A. A randomized phase III trial in advanced endometrial carcinoma of surgery and volume directed radiation followed by cisplatin and doxorubicin with or without paclitaxel: A Gynecologic Oncology Group study. Gynecol Oncol. 2009 Mar;112(3):543-52. Epub 2008 Dec 23. [http://www.gynecologiconcology-online.net/article/S0090-8258(08)00938-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4459781/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19108877 PubMed]
+# '''PORTEC-3:''' de Boer SM, Powell ME, Mileshkin L, Katsaros D, Bessette P, Haie-Meder C, Ottevanger PB, Ledermann JA, Khaw P, Colombo A, Fyles A, Baron MH, Jürgenliemk-Schulz IM, Kitchener HC, Nijman HW, Wilson G, Brooks S, Carinelli S, Provencher D, Hanzen C, Lutgens LCHW, Smit VTHBM, Singh N, Do V, D'Amico R, Nout RA, Feeney A, Verhoeven-Adema KW, Putter H, Creutzberg CL; PORTEC study group. Adjuvant chemoradiotherapy versus radiotherapy alone for women with high-risk endometrial cancer (PORTEC-3): final results of an international, open-label, multicentre, randomised, phase 3 trial. Lancet Oncol. 2018 Mar;19(3):295-309. Epub 2018 Feb 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30079-2/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5840256/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29449189 PubMed]
+
+==Whole abdominal radiation (WAI) {{#subobject:37c051|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1ab715|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/24/1/36.long Randall et al. 2006 (GOG 122)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_.26_Doxorubicin|Cisplatin & Doxorubicin]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752331 Wolfson et al. 2007 (GOG 150)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#CIM|CIM]]
+|style="background-color:#fee08b"|Might have inferior OS
+|-
+|}
+''Not commonly used but was a comparator arm; here for reference purposes only.''
+====Radiotherapy====
+*[[External beam radiotherapy]]
+===References===
+# '''GOG 122:''' Randall ME, Filiaci VL, Muss H, Spirtos NM, Mannel RS, Fowler J, Thigpen JT, Benda JA; Gynecologic Oncology Group Study. Randomized phase III trial of whole-abdominal irradiation versus doxorubicin and cisplatin chemotherapy in advanced endometrial carcinoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2006 Jan 1;24(1):36-44. Epub 2005 Dec 5. [http://jco.ascopubs.org/content/24/1/36.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16330675 PubMed]
+# '''GOG 150:''' Wolfson AH, Brady MF, Rocereto T, Mannel RS, Lee YC, Futoran RJ, Cohn DE, Ioffe OB. A Gynecologic Oncology Group randomized phase III trial of whole abdominal irradiation (WAI) vs cisplatin-ifosfamide and mesna (CIM) as post-surgical therapy in stage I-IV carcinosarcoma (CS) of the uterus. Gynecol Oncol. 2007 Nov;107(2):177-85. Epub 2007 Sep 5. [https://www.gynecologiconcology-online.net/article/S0090-8258(07)00567-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752331/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/17822748 PubMed]
+
+=Chemotherapy for advanced, recurrent, or metastatic disease=
+==Bevacizumab monotherapy {{#subobject:b29ce2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8159f4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3107744/ Aghajanian et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+<!-- Presented in part at the 45th Annual Meeting of the American Society of Clinical Oncology, May 29-June 2, 2009, Orlando, FL. -->
+# Aghajanian C, Sill MW, Darcy KM, Greer B, McMeekin DS, Rose PG, Rotmensch J, Barnes MN, Hanjani P, Leslie KK. Phase II trial of bevacizumab in recurrent or persistent endometrial cancer: a Gynecologic Oncology Group study. J Clin Oncol. 2011 Jun 1;29(16):2259-65. Epub 2011 May 2. [http://jco.ascopubs.org/content/29/16/2259.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3107744/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21537039 PubMed]
+
+==Carboplatin monotherapy {{#subobject:f9b8ad|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 300 mg/m<sup>2</sup> {{#subobject:6a2df1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(02)00504-X/fulltext van Wijk et al. 2003]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#88419d; color:white |ORR: 13% (95% CI 6-25%)
+|-
+|}
+''This dosing is intended for patients previously treated with chemotherapy.''
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 300 mg/m<sup>2</sup> IV over 30 minutes once on day 1
+
+'''28-day cycles'''
+
+===Variant #2, 400 mg/m<sup>2</sup> {{#subobject:2d401b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(02)00504-X/fulltext van Wijk et al. 2003]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#88419d; color:white |ORR: 13% (95% CI 6-25%)
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] 400 mg/m<sup>2</sup> IV over 30 minutes once on day 1
+
+'''28-day cycles'''
+
+===References===
+# van Wijk FH, Lhommé C, Bolis G, Scotto di Palumbo V, Tumolo S, Nooij M, de Oliveira CF, Vermorken JB; European Organization for Research and Treatment of Cancer Gynaecological Cancer Group. Phase II study of carboplatin in patients with advanced or recurrent endometrial carcinoma: a trial of the EORTC Gynaecological Cancer Group. Eur J Cancer. 2003 Jan;39(1):78-85. [https://www.ejcancer.com/article/S0959-8049(02)00504-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12504662 PubMed]
+
+==Carboplatin & Doxorubicin liposomal {{#subobject:c8ff00|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d48f39|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359926/ Pignata et al. 2007 (END-1)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV over 30 minutes once on day 1, '''given first'''
+*[[Pegylated liposomal doxorubicin (Doxil)]] 40 mg/m<sup>2</sup> IV over 60 minutes once on day 1, '''given second'''
+
+====Supportive medications====
+*"No prophylactic use of [[:Category:Granulocyte colony-stimulating factors|G-CSF]] was recommended. In case of grade 4 neutropaenia, even without fever, therapeutic and prophylactic use of G-CSF was allowed."
+
+'''28-day cycle for 3 to 6 cycles''' 
+
+''All patients received 3 cycles of therapy. If there was no unacceptable toxicity, patients with stable or responsive disease received an additional 3 cycles.''
+
+===References===
+# '''END-1:''' Pignata S, Scambia G, Pisano C, Breda E, Di Maio M, Greggi S, Ferrandina G, Lorusso D, Zagonel V, Febbraro A, Riva N, De Rosa V, Gallo C, Perrone F; Multicentre Italian Trials in Ovarian Cancer and Gynecologic Malignancies Group. A multicentre phase II study of carboplatin plus pegylated liposomal doxorubicin as first-line chemotherapy for patients with advanced or recurrent endometrial carcinoma: the END-1 study of the MITO (Multicentre Italian Trials in Ovarian Cancer and Gynecologic Malignancies) group. Br J Cancer. 2007 Jun 4;96(11):1639-43. Epub 2007 May 8. '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2359926/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/17486128 PubMed]
+
+==Carboplatin & Paclitaxel {{#subobject:b0e21f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 5/175, finite duration {{#subobject:7ab5c0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(08)00083-8/abstract Pectasides et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV over 60 minutes once on day 1, '''given second'''
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV over 3 hours once on day 1, '''given first'''
+
+'''21-day cycle for 6 to 9 cycles'''
+
+===Variant #2, 5/175, indefinite {{#subobject:100919|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://journals.lww.com/ijgc/Fulltext/2008/07000/Treatment_of_primary_advanced_and_recurrent.30.aspx Sorbe et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV over 60 minutes once on day 1
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV over 3 hours once on day 1
+
+'''21-day cycles'''
+
+===Variant #3, with range {{#subobject:3a58ce|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/19/20/4048.long Hoskins et al. 2001]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 to 7 IV once on day 1, '''given second'''
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV over 3 hours once on day 1, '''given first'''
+
+'''21-day cycles'''
+
+===References===
+# Hoskins PJ, Swenerton KD, Pike JA, Wong F, Lim P, Acquino-Parsons C, Lee N. Paclitaxel and carboplatin, alone or with irradiation, in advanced or recurrent endometrial cancer: a phase II study. J Clin Oncol. 2001 Oct 15;19(20):4048-53. [http://jco.ascopubs.org/content/19/20/4048.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11600606 PubMed]
+# Pectasides D, Xiros N, Papaxoinis G, Pectasides E, Sykiotis C, Koumarianou A, Psyrri A, Gaglia A, Kassanos D, Gouveris P, Panayiotidis J, Fountzilas G, Economopoulos T. Carboplatin and paclitaxel in advanced or metastatic endometrial cancer. Gynecol Oncol. 2008 May;109(2):250-4. Epub 2008 Mar 4. [http://www.gynecologiconcology-online.net/article/S0090-8258(08)00083-8/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18299146 PubMed] content property of [http://hemonc.org HemOnc.org]
+# Sorbe B, Andersson H, Boman K, Rosenberg P, Kalling M. Treatment of primary advanced and recurrent endometrial carcinoma with a combination of carboplatin and paclitaxel-long-term follow-up. Int J Gynecol Cancer. 2008 Jul-Aug;18(4):803-8. Epub 2007 Oct 18. [http://journals.lww.com/ijgc/Fulltext/2008/07000/Treatment_of_primary_advanced_and_recurrent.30.aspx link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17944917 PubMed]
+# '''Retrospective:''' Shechter-Maor G, Bruchim I, Ben-Harim Z, Altaras M, Fishman A. Combined chemotherapy regimen of carboplatin and paclitaxel as adjuvant treatment for papillary serous and clear cell endometrial cancer. Int J Gynecol Cancer. 2009 May;19(4):662-4. [http://journals.lww.com/ijgc/pages/articleviewer.aspx?year=2009&issue=05000&article=00029&type=abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19509567 PubMed]
+
+==Cisplatin & Doxorubicin {{#subobject:7f9e48|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+AP: '''<u>A</u>'''driamycin (Doxorubicin) & '''<u>P</u>'''latinol (Cisplatin)
+===Variant #1, 50/45 {{#subobject:1748e2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/22/11/2159.long Fleming et al. 2004a (GOG 177)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin.2C_Doxorubicin.2C_Paclitaxel|Cisplatin, Doxorubicin, Paclitaxel]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: body surface area was capped at 2 m<sup>2</sup>. This dosage was for patients with previous pelvic radiation or who were greater than 65 years old.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> (maximum dose of 100 mg) IV over 60 minutes once on day 1, '''given second'''
+*[[Doxorubicin (Adriamycin)]] 45 mg/m<sup>2</sup> (maximum dose of 90 mg) IV once on day 1, '''given first'''
+
+'''21-day cycle for 7 cycles'''
+
+===Variant #2, 50/60, capped BSA {{#subobject:3b1876|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/22/11/2159.long Fleming et al. 2004a (GOG 177)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin.2C_Doxorubicin.2C_Paclitaxel|Cisplatin, Doxorubicin, Paclitaxel]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: body surface area was capped at 2 m<sup>2</sup>.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> (maximum dose of 100 mg) IV over 60 minutes once on day 1, '''given second'''
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> (maximum dose of 120 mg) IV once on day 1, '''given first'''
+
+'''21-day cycle for 7 cycles'''
+
+===Variant #3, 50/60, no cap on BSA {{#subobject:5baa3b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/15/8/1173/144263 Fleming et al. 2004b (GOG 163)]
+|style="background-color:#1a9851"|Phase III (C)
+|Doxorubicin & Paclitaxel
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2004.02.088 Thigpen et al. 2004 (GOG 107)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Doxorubicin_monotherapy|Doxorubicin]]
+| style="background-color:#91cf60" |Seems to have superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+
+====Supportive hydration====
+*Normal saline at 500 mL/H for 2 hours prior to and after [[Cisplatin (Platinol)]]
+
+'''21-day cycle for up to 8 cycles'''
+
+===Variant #4, 60/60 {{#subobject:828296|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2003.10.083 Gallion et al. 2003 (GOG 139)]
+|style="background-color:#1a9851"|Phase III (C)
+|Chronomodulated Cisplatin & Doxorubicin
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 60 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# '''GOG 139:''' Gallion HH, Brunetto VL, Cibull M, Lentz SS, Reid G, Soper JT, Burger RA, Andersen W; Gynecologic Oncology Group Study. Randomized phase III trial of standard timed doxorubicin plus cisplatin versus circadian timed doxorubicin plus cisplatin in stage III and IV or recurrent endometrial carcinoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2003 Oct 15;21(20):3808-13. [http://ascopubs.org/doi/full/10.1200/JCO.2003.10.083 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14551299 PubMed]
+# '''GOG 177:''' Fleming GF, Brunetto VL, Cella D, Look KY, Reid GC, Munkarah AR, Kline R, Burger RA, Goodman A, Burks RT. Phase III trial of doxorubicin plus cisplatin with or without paclitaxel plus filgrastim in advanced endometrial carcinoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2004 Jun 1;22(11):2159-66. [http://jco.ascopubs.org/content/22/11/2159.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15169803 PubMed]
+# '''GOG 163:''' Fleming GF, Filiaci VL, Bentley RC, Herzog T, Sorosky J, Vaccarello L, Gallion H. Phase III randomized trial of doxorubicin + cisplatin versus doxorubicin + 24-h paclitaxel + filgrastim in endometrial carcinoma: a Gynecologic Oncology Group study. Ann Oncol. 2004 Aug;15(8):1173-8. [https://academic.oup.com/annonc/article/15/8/1173/144263 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15277255 PubMed]
+# '''GOG 107:''' Thigpen JT, Brady MF, Homesley HD, Malfetano J, DuBeshter B, Burger RA, Liao S. Phase III trial of doxorubicin with or without cisplatin in advanced endometrial carcinoma: a Gynecologic Oncology Group study. J Clin Oncol. 2004 Oct 1;22(19):3902-8. [http://ascopubs.org/doi/full/10.1200/JCO.2004.02.088 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15459211 PubMed]
+
+==Cisplatin, Doxorubicin, Paclitaxel {{#subobject:b61c1e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TAP: '''<u>T</u>'''axol (Paclitaxel), '''<u>A</u>'''driamycin (Doxorubicin), '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:68777b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/22/11/2159.long Fleming et al. 2004 (GOG 177)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Cisplatin_.26_Doxorubicin_2|Cisplatin & Doxorubicin]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+''Note: body surface area capped at 2.0 m<sup>2</sup>.''
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 50 mg/m<sup>2</sup> IV over 60 minutes once on day 1, '''given second'''
+*[[Doxorubicin (Adriamycin)]] 45 mg/m<sup>2</sup> IV once on day 1, '''given first'''
+*[[Paclitaxel (Taxol)]] 160 mg/m<sup>2</sup> IV over 3 hours once on day 2
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day on days 3 to 12
+
+'''21-day cycle for 7 cycles'''
+
+===References===
+# '''GOG 177:''' Fleming GF, Brunetto VL, Cella D, Look KY, Reid GC, Munkarah AR, Kline R, Burger RA, Goodman A, Burks RT. Phase III trial of doxorubicin plus cisplatin with or without paclitaxel plus filgrastim in advanced endometrial carcinoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2004 Jun 1;22(11):2159-66. [http://jco.ascopubs.org/content/22/11/2159.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15169803 PubMed]
+
+==Cisplatin & Paclitaxel {{#subobject:89fd88|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b3c8fd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(00)95827-X/abstract Dimopoulos et al. 2000]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV over 2 hours once on day 1, '''given second'''
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV over 3 hours once on day 1, '''given first'''
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO given twice, 12 and 6 hours prior to [[Paclitaxel (Taxol)]]
+*[[Diphenhydramine (Benadryl)]] 25 mg IV once 30 minutes prior to [[Paclitaxel (Taxol)]]
+*[[Ranitidine (Zantac)]] 50 mg IV once 30 minutes prior to [[Paclitaxel (Taxol)]]
+*900 mL normal saline mixed with 100 mL mannitol given over 1 hour prior to [[Cisplatin (Platinol)]]
+*2 liters NS with potassium & magnesium after [[Cisplatin (Platinol)]]
+*"Appropriate antiemetics"
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 5 and continuing until WBC greater than 10,000 x 10<sup>9</sup>/L
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# Dimopoulos MA, Papadimitriou CA, Georgoulias V, Moulopoulos LA, Aravantinos G, Gika D, Karpathios S, Stamatelopoulos S. Paclitaxel and cisplatin in advanced or recurrent carcinoma of the endometrium: long-term results of a phase II multicenter study. Gynecol Oncol. 2000 Jul;78(1):52-7. [http://www.gynecologiconcology-online.net/article/S0090-8258(00)95827-X/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10873410 PubMed]
+
+==Dactinomycin monotherapy {{#subobject:97a01a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:2019ab|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(99)95652-4/abstract Moore et al. 1999]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Dactinomycin (Cosmegen)]] 2 mg/m<sup>2</sup> IV over 15 minutes once on day 1
+
+'''28-day cycles'''
+
+===References===
+# Moore DH, Blessing JA, Dunton C, Buller RE, Reid GC. Dactinomycin in the treatment of recurrent or persistent endometrial carcinoma: A Phase II study of the Gynecologic Oncology Group. Gynecol Oncol. 1999 Dec;75(3):473-5. [http://www.gynecologiconcology-online.net/article/S0090-8258(99)95652-4/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10600310 PubMed]
+
+==Doxorubicin monotherapy {{#subobject:e5b103|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:5d91e9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pubmed/369691 Thigpen et al. 1979]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0142(19830815)52:4%3C626::AID-CNCR2820520409%3E3.0.CO;2-E Omura et al. 1983 (GOG 21)]
+|style="background-color:#1a9851"|Phase III (C)
+|Dacarbazine & Doxorubicin
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0142(19850415)55:8%3C1648::AID-CNCR2820550806%3E3.0.CO;2-7 Muss et al. 1985 (GOG 42)]
+|style="background-color:#1a9851"|Phase III (C)
+|AC
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.7.1408 Thigpen et al. 1994 (GOG 48)]
+|style="background-color:#1a9851"|Phase III (C)
+|AC
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2004.02.088 Thigpen et al. 2004 (GOG 107)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Cisplatin_.26_Doxorubicin_2|Cisplatin & Doxorubicin]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Thigpen JT, Buchsbaum HJ, Mangan C, Blessing JA. Phase II trial of adriamycin in the treatment of advanced or recurrent endometrial carcinoma: a Gynecologic Oncology Group study. Cancer Treat Rep. 1979 Jan;63(1):21-7. [https://www.ncbi.nlm.nih.gov/pubmed/369691 PubMed]
+# '''GOG 21:''' Omura GA, Major FJ, Blessing JA, Sedlacek TV, Thigpen JT, Creasman WT, Zaino RJ. A randomized study of adriamycin with and without dimethyl triazenoimidazole carboxamide in advanced uterine sarcomas. Cancer. 1983 Aug 15;52(4):626-32. [https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0142(19830815)52:4%3C626::AID-CNCR2820520409%3E3.0.CO;2-E link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/6344983 PubMed]
+# '''GOG 42:''' Muss HB, Bundy B, DiSaia PJ, Homesley HD, Fowler WC Jr, Creasman W, Yordan E. Treatment of recurrent or advanced uterine sarcoma: a randomized trial of doxorubicin versus doxorubicin and cyclophosphamide (a phase III trial of the Gynecologic Oncology Group). Cancer. 1985 Apr 15;55(8):1648-53. [https://onlinelibrary.wiley.com/doi/abs/10.1002/1097-0142(19850415)55:8%3C1648::AID-CNCR2820550806%3E3.0.CO;2-7 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3884128 PubMed]
+# '''GOG 48:''' Thigpen JT, Blessing JA, DiSaia PJ, Yordan E, Carson LF, Evers C. A randomized comparison of doxorubicin alone versus doxorubicin plus cyclophosphamide in the management of advanced or recurrent endometrial carcinoma: a Gynecologic Oncology Group study. J Clin Oncol. 1994 Jul;12(7):1408-14. [http://ascopubs.org/doi/abs/10.1200/JCO.1994.12.7.1408 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8021731 PubMed]
+# '''GOG 107:''' Thigpen JT, Brady MF, Homesley HD, Malfetano J, DuBeshter B, Burger RA, Liao S. Phase III trial of doxorubicin with or without cisplatin in advanced endometrial carcinoma: a Gynecologic Oncology Group study. J Clin Oncol. 2004 Oct 1;22(19):3902-8. [http://ascopubs.org/doi/full/10.1200/JCO.2004.02.088 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15459211 PubMed]
+
+==Ifosfamide monotherapy {{#subobject:b078a0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 1200 mg/m<sup>2</sup> (3 days/cycle) {{#subobject:fc7107|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/5/526.long Homesley et al. 2007 (GOG 161)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Ifosfamide_.26_Paclitaxel|Ifosfamide & Paclitaxel]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: GOG 161 specifies that PO [[Mesna (Mesnex)]] is to be taken in 3 divided doses, but only lists 2 time points for its use. The timing of the middle dose is estimated based on other references. This dosage is intended for patients with previous radiation.''
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1200 mg/m<sup>2</sup> IV once per day on days 1 to 3 
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2000 mg IV over 12 hours once per day on days 1 to 3, starting 15 minutes before [[Ifosfamide (Ifex)]]
+**Alternate PO dosing: 1330 mg PO taken three times per day, 1 hour before, 4 hours after, and 8 hours after [[Ifosfamide (Ifex)]] (4000 mg total dose per day), on days 1 to 3
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 4, to continue until ANC is greater than or equal to 2000/uL
+
+'''21-day cycle for 8 cycles'''
+
+===Variant #2, 1500 mg/m<sup>2</sup> (5 days/cycle) {{#subobject:450cd5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(00)96001-3/pdf Sutton et al. 2000 (GOG 108)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#CIM|CIM]]
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|}
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV once per day on days 1 to 5 
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 1500 mg/m<sup>2</sup> IV once per day on days 1 to 5
+
+'''21-day cycle for 8 cycles'''
+
+===Variant #3, 1600 mg/m<sup>2</sup> (3 days/cycle) {{#subobject:5e6305|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/5/526.long Homesley et al. 2007 (GOG 161)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Ifosfamide_.26_Paclitaxel|Ifosfamide & Paclitaxel]]
+|style="background-color:#fc8d59"|Seems to have inferior OS
+|-
+|}
+''Note: GOG 161 specifies that PO [[Mesna (Mesnex)]] is to be taken in 3 divided doses, but only lists 2 time points for its use. The timing of the middle dose is estimated based on other references.''
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1600 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Dosage for patients with previous radiation: 1200 mg/m<sup>2</sup> IV once per day on days 1 to 3 
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2000 mg IV over 12 hours once per day on days 1 to 3, starting 15 minutes before [[Ifosfamide (Ifex)]]
+**Alternate PO dosing: 1330 mg PO taken three times per day, 1 hour before, 4 hours after, and 8 hours after [[Ifosfamide (Ifex)]] (4000 mg total dose per day), on days 1 to 3
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 4, to continue until ANC is greater than or equal to 2000/uL
+
+'''21-day cycle for 8 cycles'''
+
+===References===
+# '''GOG 108:''' Sutton G, Brunetto VL, Kilgore L, Soper JT, McGehee R, Olt G, Lentz SS, Sorosky J, Hsiu JG. A phase III trial of ifosfamide with or without cisplatin in carcinosarcoma of the uterus: A Gynecologic Oncology Group Study. Gynecol Oncol. 2000 Nov;79(2):147-53. [https://www.gynecologiconcology-online.net/article/S0090-8258(00)96001-3/pdf link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11063636 PubMed]
+# '''GOG 161:''' Homesley HD, Filiaci V, Markman M, Bitterman P, Eaton L, Kilgore LC, Monk BJ, Ueland FR; Gynecologic Oncology Group. Phase III trial of ifosfamide with or without paclitaxel in advanced uterine carcinosarcoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2007 Feb 10;25(5):526-31. [http://jco.ascopubs.org/content/25/5/526.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17290061 PubMed]
+
+==Ifosfamide & Paclitaxel {{#subobject:824258|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d519c4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/5/526.long Homesley et al. 2007 (GOG 161)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Ifosfamide_monotherapy|Ifosfamide]]
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|}
+
+''Note: GOG 161 specifies that PO [[Mesna (Mesnex)]] is to be taken in 3 divided doses, but only lists 2 time points for its use. The timing of the middle dose is estimated based on other references.''
+====Chemotherapy====
+*[[Ifosfamide (Ifex)]] 1600 mg/m<sup>2</sup> IV once per day on days 1 to 3
+**Dosage for patients with previous radiation: 1200 mg/m<sup>2</sup> IV once per day on days 1 to 3 
+*[[Paclitaxel (Taxol)]] 135 mg/m<sup>2</sup> IV over 3 hours once on day 1
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 2000 mg IV over 12 hours once per day on days 1 to 3, starting 15 minutes before [[Ifosfamide (Ifex)]]
+**Alternate PO dosing: 1330 mg PO taken three times per day, 1 hour before, 4 hours after, and 8 hours after [[Ifosfamide (Ifex)]] (4000 mg total dose per day), on days 1 to 3
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 4, to continue until ANC is greater than or equal to 2000/uL
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO given twice, 12 and 6 hours prior to [[Paclitaxel (Taxol)]]
+*[[Diphenhydramine (Benadryl)]] 50 mg IV once 30 minutes prior to [[Paclitaxel (Taxol)]]
+*[[Cimetidine (Tagamet)]] 300 mg IV or [[Ranitidine (Zantac)]] 50 mg IV once 30 minutes prior to [[Paclitaxel (Taxol)]]
+
+'''21-day cycle for 8 cycles'''
+
+===References===
+# '''GOG 161:''' Homesley HD, Filiaci V, Markman M, Bitterman P, Eaton L, Kilgore LC, Monk BJ, Ueland FR; Gynecologic Oncology Group. Phase III trial of ifosfamide with or without paclitaxel in advanced uterine carcinosarcoma: a Gynecologic Oncology Group Study. J Clin Oncol. 2007 Feb 10;25(5):526-31. [http://jco.ascopubs.org/content/25/5/526.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17290061 PubMed]
+
+==Paclitaxel monotherapy {{#subobject:ceedf6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 175 mg/m<sup>2</sup> {{#subobject:f1656b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/7/8/861.long Lissoni et al. 1996]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(02)00068-9/abstract Lincoln et al. 2003]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(15)00855-0/fulltext McMeekin et al. 2015]
+| style="background-color:#1a9851" |Phase III (C)
+|Ixabepilone
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: in Lincoln et al. 2003, this was the dosage for patients with previous pelvic radiation.''
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV over 3 hours once on day 1
+
+====Supportive medications====
+*[[Hydrocortisone (Cortef)]] 250 mg IV once 1 hour prior to paclitaxel
+*[[Chlorpheniramine (Chlor-Trimeton)]] 10 mg IM once 1 hour prior to paclitaxel
+*[[Cimetidine (Tagamet)]] 300 mg IV once 1 hour prior to paclitaxel
+
+'''21-day cycles'''
+
+===Variant #2, 200 mg/m<sup>2</sup> {{#subobject:a2c4fa|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(96)90227-9/abstract Ball et al. 1996]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(02)00068-9/abstract Lincoln et al. 2003]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: in Ball et al. 1996, this was the dosage for patients with previous pelvic radiation.''
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 200 mg/m<sup>2</sup> IV over 3 hours once on day 1
+**Ball et al. 1996 gave as a 24 hour continuous infusion
+**Dose can be changed to 135 or 110 mg/m<sup>2</sup> depending on toxicity
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO given twice, 12 and 6 hours prior to paclitaxel
+*[[Diphenhydramine (Benadryl)]] 50 mg IV or PO once 30 minutes prior to paclitaxel
+*[[Cimetidine (Tagamet)]] 300 mg IV once 30 minutes prior to paclitaxel
+
+'''21-day cycles'''
+
+===Variant #3, 250 mg/m<sup>2</sup> {{#subobject:68d2e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(96)90227-9/abstract Ball et al. 1996]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 250 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+**Dosage for patients with previous pelvic radiation: 200 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+**Dose can be changed to 200, 170, 135, 110 mg/m<sup>2</sup> depending on toxicity
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO given twice, 12 and 6 hours prior to paclitaxel
+*[[Diphenhydramine (Benadryl)]] 50 mg IV or PO once 30 minutes prior to paclitaxel
+*[[Cimetidine (Tagamet)]] 300 mg IV once 30 minutes prior to paclitaxel
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 3, 24 hours after chemotherapy, continued for at least 12 days or until two successive total leukocyte counts are 10,000 or greater, whichever comes last
+
+'''21-day cycles'''
+
+===References===
+# Ball HG, Blessing JA, Lentz SS, Mutch DG. A phase II trial of paclitaxel in patients with advanced or recurrent adenocarcinoma of the endometrium: a Gynecologic Oncology Group study. Gynecol Oncol. 1996 Aug;62(2):278-81. [http://www.gynecologiconcology-online.net/article/S0090-8258(96)90227-9/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8751561 PubMed]
+# Lissoni A, Zanetta G, Losa G, Gabriele A, Parma G, Mangioni C. Phase II study of paclitaxel as salvage treatment in advanced endometrial cancer. Ann Oncol. 1996 Oct;7(8):861-3. [http://annonc.oxfordjournals.org/content/7/8/861.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8922203 PubMed]
+# Lincoln S, Blessing JA, Lee RB, Rocereto TF. Activity of paclitaxel as second-line chemotherapy in endometrial carcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2003 Mar;88(3):277-81. [http://www.gynecologiconcology-online.net/article/S0090-8258(02)00068-9/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12648575 PubMed]
+# McMeekin S, Dizon D, Barter J, Scambia G, Manzyuk L, Lisyanskaya A, Oaknin A, Ringuette S, Mukhopadhyay P, Rosenberg J, Vergote I. Phase III randomized trial of second-line ixabepilone versus paclitaxel or doxorubicin in women with advanced endometrial cancer. Gynecol Oncol. 2015 Jul;138(1):18-23. Epub 2015 Apr 26. [https://www.gynecologiconcology-online.net/article/S0090-8258(15)00855-0/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25925990 PubMed]
+
+==Pembrolizumab monotherapy {{#subobject:e0d17a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:87f9c7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.72.5952 Ott et al. 2017 (KEYNOTE-028)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ Le et al. 2017 (KEYNOTE-016)]
+| style="background-color:#ffffbe" |Phase II, <20 pts of this subtype
+|-
+|}
+''Note: KEYNOTE-016 was an expansion to a CRC-specific trial.''
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 10 mg/kg IV once on day 1
+
+'''14-day cycle for up to 2 years'''
+
+===References===
+# '''KEYNOTE-028:''' Ott PA, Bang YJ, Berton-Rigaud D, Elez E, Pishvaian MJ, Rugo HS, Puzanov I, Mehnert JM, Aung KL, Lopez J, Carrigan M, Saraf S, Chen M, Soria JC. Safety and antitumor activity of pembrolizumab in advanced programmed death ligand 1-positive endometrial cancer: results from the KEYNOTE-028 study. J Clin Oncol. 2017 Aug 1;35(22):2535-2541. Epub 2017 May 10. [http://ascopubs.org/doi/full/10.1200/JCO.2017.72.5952 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28489510 PubMed]
+# '''KEYNOTE-016:''' Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, Lu S, Kemberling H, Wilt C, Luber BS, Wong F, Azad NS, Rucki AA, Laheru D, Donehower R, Zaheer A, Fisher GA, Crocenzi TS, Lee JJ, Greten TF, Duffy AG, Ciombor KK, Eyring AD, Lam BH, Joe A, Kang SP, Holdhoff M, Danilova L, Cope L, Meyer C, Zhou S, Goldberg RM, Armstrong DK, Bever KM, Fader AN, Taube J, Housseau F, Spetzler D, Xiao N, Pardoll DM, Papadopoulos N, Kinzler KW, Eshleman JR, Vogelstein B, Anders RA, Diaz LA Jr. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science. 2017 Jul 28;357(6349):409-413. Epub 2017 Jun 8. [http://science.sciencemag.org/content/357/6349/409.long link to original article]  [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5576142/ link to PMC article] '''contains verified protocol in supplement''' [https://www.ncbi.nlm.nih.gov/pubmed/28596308 PubMed]
+
+==Temsirolimus monotherapy {{#subobject:c19c6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:53c722|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158598/ Oza et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temsirolimus (Torisel)]] 25 mg IV over 30 minutes once per day on days 1, 8, 15, 22
+
+'''28-day cycles'''
+
+===References===
+# Oza AM, Elit L, Tsao MS, Kamel-Reid S, Biagi J, Provencher DM, Gotlieb WH, Hoskins PJ, Ghatage P, Tonkin KS, Mackay HJ, Mazurka J, Sederias J, Ivy P, Dancey JE, Eisenhauer EA. Phase II study of temsirolimus in women with recurrent or metastatic endometrial cancer: a trial of the NCIC Clinical Trials Group. J Clin Oncol. 2011 Aug 20;29(24):3278-85. Epub 2011 Jul 25. [http://jco.ascopubs.org/content/29/24/3278.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158598/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/21788564 PubMed]
+
+==Topotecan monotherapy {{#subobject:9a02a0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1c2f98|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/21/11/2110.long Wadler et al. 2003 (ECOG E3E93)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Topotecan (Hycamtin)]] 1.5 mg/m<sup>2</sup> IV once per day on days 1 to 5
+**Dosage for patients with previous pelvic radiation: 1.2 mg/m<sup>2</sup>, which can be increased to the 1.5 mg/m<sup>2</sup> dose in later cycles if there are no toxicities higher than grade 1
+
+'''21-day cycles'''
+
+===References===
+# '''ECOG E3E93:''' Wadler S, Levy DE, Lincoln ST, Soori GS, Schink JC, Goldberg G. Topotecan is an active agent in the first-line treatment of metastatic or recurrent endometrial carcinoma: Eastern Cooperative Oncology Group Study E3E93. J Clin Oncol. 2003 Jun 1;21(11):2110-4. [http://jco.ascopubs.org/content/21/11/2110.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12775736 PubMed]
+
+=Endocrine therapy for advanced, recurrent, or metastatic disease=
+==Anastrozole monotherapy {{#subobject:534a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8c4e67|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(00)95865-7/abstract Rose et al. 2000]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Hormonotherapy====
+*[[Anastrozole (Arimidex)]] 1 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Rose PG, Brunetto VL, VanLe L, Bell J, Walker JL, Lee RB. A phase II trial of anastrozole in advanced recurrent or persistent endometrial carcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2000 Aug;78(2):212-6. [http://www.gynecologiconcology-online.net/article/S0090-8258(00)95865-7/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10926805 PubMed]
+
+==Medroxyprogesterone acetate monotherapy {{#subobject:6c7bb9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8b5e67|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM196102022640503 Kelley & Baker 1961]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://jco.ascopubs.org/content/17/6/1736.long Thigpen et al. 1999]
+|style="background-color:#1a9851"|Phase III (C)
+|High-dose medroxyprogesterone acetate
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm. Kelley & Baker 1961 examined a variety of progestins and is included for historic interest.''
+====Hormonotherapy====
+*[[Medroxyprogesterone acetate (MPA)]] 200 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Kelley RM, Baker WH. Progestational agents in the treatment of carcinoma of the endometrium. N Engl J Med. 1961 Feb 2;264:216-22. [https://www.nejm.org/doi/full/10.1056/NEJM196102022640503 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/13752346 PubMed]
+# Thigpen JT, Brady MF, Alvarez RD, Adelson MD, Homesley HD, Manetta A, Soper JT, Given FT. Oral medroxyprogesterone acetate in the treatment of advanced or recurrent endometrial carcinoma: a dose-response study by the Gynecologic Oncology Group. J Clin Oncol. 1999 Jun;17(6):1736-44. [http://jco.ascopubs.org/content/17/6/1736.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10561210 PubMed]
+
+==Medroxyprogesterone acetate & Tamoxifen {{#subobject:60584d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:334b8c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(03)00651-6/abstract Whitney et al. 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Hormonotherapy====
+*[[Medroxyprogesterone acetate (MPA)]] 100 mg PO twice per day on even-numbered weeks (for example, week 2, 4, 6, etc.)
+*[[Tamoxifen (Nolvadex)]] 20 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Whitney CW, Brunetto VL, Zaino RJ, Lentz SS, Sorosky J, Armstrong DK, Lee RB; Gynecologic Oncology Group study. Phase II study of medroxyprogesterone acetate plus tamoxifen in advanced endometrial carcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2004 Jan;92(1):4-9. [http://www.gynecologiconcology-online.net/article/S0090-8258(03)00651-6/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14751130 PubMed]
+
+==Megestrol acetate monotherapy {{#subobject:4b50ea|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:52dc53|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM196102022640503 Kelley & Baker 1961]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[http://journals.lww.com/amjclinicaloncology/Fulltext/2001/02000/Megestrol_and_Tamoxifen_in_Patients_With_Advanced.7.aspx Pandya et al. 2001 (ECOG E4882)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#Megestrol_acetate_.26_Tamoxifen|Megestrol acetate & Tamoxifen]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm. Kelley & Baker 1961 examined a variety of progestins and is included for historic interest.''
+====Hormonotherapy====
+*[[Megestrol acetate (Megace)]] 80 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Kelley RM, Baker WH. Progestational agents in the treatment of carcinoma of the endometrium. N Engl J Med. 1961 Feb 2;264:216-22. [https://www.nejm.org/doi/full/10.1056/NEJM196102022640503 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/13752346 PubMed]
+# Pandya KJ, Yeap BY, Weiner LM, Krook JE, Erban JK, Schinella RA, Davis TE. Megestrol and tamoxifen in patients with advanced endometrial cancer: an Eastern Cooperative Oncology Group Study (E4882). Am J Clin Oncol. 2001 Feb;24(1):43-6. [http://journals.lww.com/amjclinicaloncology/Fulltext/2001/02000/Megestrol_and_Tamoxifen_in_Patients_With_Advanced.7.aspx link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11232948 PubMed]
+
+==Megestrol acetate & Tamoxifen {{#subobject:f03c30|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4e79f7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://journals.lww.com/amjclinicaloncology/Fulltext/2001/02000/Megestrol_and_Tamoxifen_in_Patients_With_Advanced.7.aspx Pandya et al. 2001 (ECOG E4882)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Megestrol_acetate_monotherapy|Megestrol acetate]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://www.gynecologiconcology-online.net/article/S0090-8258(03)00787-X/fulltext Fiorica et al. 2004]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+====Hormonotherapy====
+*[[Megestrol acetate (Megace)]] 80 mg PO twice per day x 3 weeks, alternating with tamoxifen
+*[[Tamoxifen (Nolvadex)]] 20 mg PO twice per day x 3 weeks, alternating with megestrol
+
+'''Continued indefinitely'''
+
+===References===
+# '''ECOG E4882:''' Pandya KJ, Yeap BY, Weiner LM, Krook JE, Erban JK, Schinella RA, Davis TE. Megestrol and tamoxifen in patients with advanced endometrial cancer: an Eastern Cooperative Oncology Group Study (E4882). Am J Clin Oncol. 2001 Feb;24(1):43-6. [http://journals.lww.com/amjclinicaloncology/Fulltext/2001/02000/Megestrol_and_Tamoxifen_in_Patients_With_Advanced.7.aspx link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11232948 PubMed]
+# Fiorica JV, Brunetto VL, Hanjani P, Lentz SS, Mannel R, Andersen W; Gynecologic Oncology Group study. Phase II trial of alternating courses of megestrol acetate and tamoxifen in advanced endometrial carcinoma: a Gynecologic Oncology Group study. Gynecol Oncol. 2004 Jan;92(1):10-4. [http://www.gynecologiconcology-online.net/article/S0090-8258(03)00787-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14751131 PubMed]
+
+==Tamoxifen monotherapy {{#subobject:ab84a1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:af71e3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.gynecologiconcology-online.net/article/0090-8258(89)90839-1/pdf Quinn et al. 1989]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://jco.ascopubs.org/content/19/2/364.long Thigpen et al. 2001 (GOG-81F)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Hormonotherapy====
+*[[Tamoxifen (Nolvadex)]] 20 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Quinn MA, Campbell JJ. Tamoxifen therapy in advanced/recurrent endometrial carcinoma. Gynecol Oncol. 1989 Jan;32(1):1-3. [http://www.gynecologiconcology-online.net/article/0090-8258(89)90839-1/pdf link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/2909443 PubMed]
+# '''GOG-81F:''' Thigpen T, Brady MF, Homesley HD, Soper JT, Bell J. Tamoxifen in the treatment of advanced or recurrent endometrial carcinoma: a Gynecologic Oncology Group study. J Clin Oncol. 2001 Jan 15;19(2):364-7. [http://jco.ascopubs.org/content/19/2/364.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11208827 PubMed]
+
+[[Category:Endometrial cancer regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gynecologic cancers]]

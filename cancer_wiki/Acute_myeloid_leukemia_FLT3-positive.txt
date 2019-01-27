@@ -1,0 +1,241 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->{| class="wikitable" style="text-align:center; width:50%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:MartinSchoen.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Marteens|Martin Schoen, MD, MPH]]<br>St. Louis, MO</big>
+|-
+|}
+<big>'''Note: these are biomarker-specific regimens for patients with FLT3 internal tandem duplicated (FLT3-ITD) or tyrosine kinase domain mutated (FLT3-TKD) AML, please see the [[Acute myeloid leukemia|main AML page]] for other regimens.'''</big>
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Upfront induction therapy, standard patients=
+==7+3d & Midostaurin {{#subobject:b7ea7e|Regimen=1}}==
+{{#subobject:fef011|Variant=1}}
+{{:Cytarabine, Daunorubicin, and Midostaurin induction therapy for acute myeloid leukemia (AML)}}
+
+=First-line induction therapy, older patients or "unfit" patients=
+==7+3d & Sorafenib {{#subobject:6ad412|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:c95c56|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 50%" |Study
+! style="width: 50%" |[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ Uy et al. 2017 (CALGB 11001)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cytarabine (Cytosar)]] 100 mg/m<sup>2</sup>/day IV continuous infusion on days 1 to 7 (total dose: 700 mg/m<sup>2</sup>)
+*[[Daunorubicin (Cerubidine)]] 60 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Sorafenib (Nexavar)]] 400 mg PO twice per day on days 1 to 7
+
+'''7-day course'''
+====Subsequent treatment====
+*Patients not achieving a hypoplastic marrow on day 14 received re-induction with 5+2 & sorafenib
+*Patients achieving a CR or CRi: [[#IDAC_.26_Sorafenib|IDAC & sorafenib consolidation]]
+
+===References===
+# '''CALGB 11001:''' Uy GL, Mandrekar SJ, Laumann K, Marcucci G, Zhao W, Levis MJ, Klepin HD, Baer MR, Powell BL, Westervelt P, DeAngelo DJ, Stock W, Sanford B, Blum WG, Bloomfield CD, Stone RM, Larson RA. A phase 2 study incorporating sorafenib into the chemotherapy for older adults with FLT3-mutated acute myeloid leukemia: CALGB 11001. Blood Adv. 2017 Jan 24;1(5):331-340. [http://www.bloodadvances.org/content/1/5/331 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29034366 PubMed]
+
+=Consolidation after upfront therapy=
+==HiDAC & Midostaurin {{#subobject:a12f1b|Regimen=1}}==
+{{#subobject:c3e162|Variant=1}}
+{{:Cytarabine & Midostaurin consolidation therapy for acute myeloid leukemia (AML)}}
+
+==IDAC & Sorafenib {{#subobject:c2cc06|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+IDAC & Sorafenib: '''<u>I</u>'''ntermediate '''<u>D</u>'''ose '''<u>A</u>'''ra-'''<u>C</u>''' (Cytarabine) & Sorafenib
+===Regimen {{#subobject:b52969|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 50%" |Study
+! style="width: 50%" |[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ Uy et al. 2017 (CALGB 11001)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[#7.2B3d_.26_Sorafenib|7+3d & sorafenib induction]]
+====Chemotherapy====
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV over 3 hours once per day on days 1 to 5
+*[[Sorafenib (Nexavar)]] 400 mg PO twice per day for 28 days
+
+'''Two cycles'''
+====Subsequent treatment====
+*[[#Sorafenib_monotherapy|Sorafenib maintenance]]
+
+===References===
+# '''CALGB 11001:''' Uy GL, Mandrekar SJ, Laumann K, Marcucci G, Zhao W, Levis MJ, Klepin HD, Baer MR, Powell BL, Westervelt P, DeAngelo DJ, Stock W, Sanford B, Blum WG, Bloomfield CD, Stone RM, Larson RA. A phase 2 study incorporating sorafenib into the chemotherapy for older adults with FLT3-mutated acute myeloid leukemia: CALGB 11001. Blood Adv. 2017 Jan 24;1(5):331-340. [http://www.bloodadvances.org/content/1/5/331 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29034366 PubMed]
+
+=Maintenance after upfront therapy=
+==Midostaurin monotherapy {{#subobject:e0bb17|Regimen=1}}==
+{{#subobject:9fe269|Variant=1}}
+{{:Midostaurin (Rydapt) maintenance therapy for acute myeloid leukemia (AML)}}
+
+==Sorafenib monotherapy {{#subobject:23822e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b50325|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 50%" |Study
+! style="width: 50%" |[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ Uy et al. 2017 (CALGB 11001)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[#IDAC_.26_Sorafenib|IDAC & Sorafenib consolidation]]
+====Chemotherapy====
+*[[Sorafenib (Nexavar)]] 400 mg PO twice per day 
+
+'''28-day cycle for up to 12 cycles'''
+
+===References===
+# '''CALGB 11001:''' Uy GL, Mandrekar SJ, Laumann K, Marcucci G, Zhao W, Levis MJ, Klepin HD, Baer MR, Powell BL, Westervelt P, DeAngelo DJ, Stock W, Sanford B, Blum WG, Bloomfield CD, Stone RM, Larson RA. A phase 2 study incorporating sorafenib into the chemotherapy for older adults with FLT3-mutated acute myeloid leukemia: CALGB 11001. Blood Adv. 2017 Jan 24;1(5):331-340. [http://www.bloodadvances.org/content/1/5/331 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5637402/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29034366 PubMed]
+
+=Relapsed or refractory, salvage therapy=
+==Midostaurin monotherapy {{#subobject:badb27|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:170b53|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!Study
+![[Levels_of_Evidence#Evidence|Evidence]]
+!Comparator
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4135183/ Fischer et al. 2010]
+| style="background-color:#1a9851" |Randomized Phase IIB (E)
+|Midostaurin 100 mg twice per day
+|-
+|}
+====Chemotherapy====
+*[[Midostaurin (Rydapt)]] 50 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #2 {{#subobject:2dfbf4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!Study
+![[Levels_of_Evidence#Evidence|Evidence]]
+!Comparator
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4135183/ Fischer et al. 2010]
+| style="background-color:#1a9851" |Randomized Phase IIB (E)
+|Midostaurin 50 mg twice per day
+|-
+|}
+====Chemotherapy====
+*[[Midostaurin (Rydapt)]] 100 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===Variant #3 {{#subobject:c52466|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 50%" |Study
+! style="width: 50%" |[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/105/1/54.long Stone et al. 2004]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Patients were required to have a FLT3 ITD or FLT3 p.D835Y mutation.''
+====Chemotherapy====
+*[[Midostaurin (Rydapt)]] 75 mg PO TID
+
+'''28-day cycles'''
+
+===References===
+# Stone RM, DeAngelo DJ, Klimek V, Galinsky I, Estey E, Nimer SD, Grandin W, Lebwohl D, Wang Y, Cohen P, Fox EA, Neuberg D, Clark J, Gilliland DG, Griffin JD. Patients with acute myeloid leukemia and an activating mutation in FLT3 respond to a small-molecule FLT3 tyrosine kinase inhibitor, PKC412. Blood. 2005 Jan 1;105(1):54-60. Epub 2004 Sep 2. [http://www.bloodjournal.org/content/105/1/54.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15345597 PubMed]
+<!-- Presented in part at the 45th Annual Meeting of the American Society of Hematology, December 6-9, 2003, San Diego, CA. -->
+# Fischer T, Stone RM, Deangelo DJ, Galinsky I, Estey E, Lanza C, Fox E, Ehninger G, Feldman EJ, Schiller GJ, Klimek VM, Nimer SD, Gilliland DG, Dutreix C, Huntsman-Labed A, Virkus J, Giles FJ. Phase IIB trial of oral Midostaurin (PKC412), the FMS-like tyrosine kinase 3 receptor (FLT3) and multi-targeted kinase inhibitor, in patients with acute myeloid leukemia and high-risk myelodysplastic syndrome with either wild-type or mutated FLT3. J Clin Oncol. 2010 Oct 1;28(28):4339-45. Epub 2010 Aug 23. [http://jco.ascopubs.org/content/28/28/4339.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4135183/ link to PMC article] '''contains verified protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/20733134 PubMed]
+
+=Relapsed or refractory, further lines of therapy=
+==Gilteritinib monotherapy {{#subobject:0384e2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:10f04d|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 25%" |Study
+! style="width: 25%" |[[Levels_of_Evidence#Evidence|Evidence]]
+! style="width: 25%" |Comparator
+! style="width: 25%" |[[Levels of Evidence|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30416-3/fulltext Perl et al. 2017]
+| style="background-color:#91cf61" |Phase I/II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|ADMIRAL
+| style="background-color:#1a9851" |Phase III (E)
+|Salvage Chemotherapy
+|Not reported
+|}
+====Chemotherapy====
+*[[Gilteritinib (Xospata)]] 120 mg PO once per day
+
+'''28-day cycles'''
+
+===References===
+# Perl AE, Altman JK, Cortes J, Smith C, Litzow M, Baer MR, Claxton D, Erba HP, Gill S, Goldberg S, Jurcic JG, Larson RA, Liu C, Ritchie E, Schiller G, Spira AI, Strickland SA, Tibes R, Ustun C, Wang ES, Stuart R, Röllig C, Neubauer A, Martinelli G, Bahceci E, Levis M. Selective inhibition of FLT3 by gilteritinib in relapsed or refractory acute myeloid leukaemia: a multicentre, first-in-human, open-label, phase 1-2 study. Lancet Oncol. 2017 Aug;18(8):1061-1075. Epub 2017 Jun 20. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30416-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28645776 PubMed]
+# ADMIRAL [https://clinicaltrials.gov/ct2/show/NCT02421939 Clinical Trial]
+
+==Azacitidine & Sorafenib {{#subobject:e3a8ee|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:9c1ff|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+! style="width: 50%" |Study
+! style="width: 50%" |[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674666/ Ravandi et al. 2013]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Azacitidine (Vidaza)]] 75 mg/m<sup>2</sup> SC or IV once per day on days 1 to 7
+*[[Sorafenib (Nexavar)]] 400 mg PO twice per day
+
+====Supportive medications====
+* "All patients received antimicrobials, supportive care, and transfusions of blood products according to the institutional guidelines."
+
+'''4 to 8 week cycles at treating physician's discretion'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Ravandi F, Alattar ML, Grunwald MR, Rudek MA, Rajkhowa T, Richie MA, Pierce S, Daver N, Garcia-Manero G, Faderl S, Nazha A, Konopleva M, Borthakur G, Burger J, Kadia T, Dellasala S, Andreeff M, Cortes J, Kantarjian H, Levis M. Phase 2 study of azacytidine plus sorafenib in patients with acute myeloid leukemia and FLT-3 internal tandem duplication mutation. Blood. 2013 Jun 6;121(23):4655-62. Epub 2013 Apr 23. [http://www.bloodjournal.org/content/121/23/4655.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3674666/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23613521 PubMed]
+
+= Investigational agents =
+''These are drugs under study with at least some promising results for this disease.''
+* [[Quizartinib (AC220)]]
+[[Category:Acute myeloid leukemia regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Acute leukemias]]

@@ -1,0 +1,225 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+<!--Is there a regimen missing from this list? Would you like to share a different dosage/schedule or an additional reference for a regimen? Have you noticed an error? Do you have an idea that will help the site grow to better meet your needs and the needs of many others? You are [[How_to_contribute|invited to contribute to the site]].-->
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/squamous.pdf NCCN Guidelines - Squamous Cell Skin Cancer]
+
+=Neoadjuvant chemotherapy=
+==Bleomycin & Cisplatin {{#subobject:25eb19|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d4d7f3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://journals.lww.com/amjclinicaloncology/pages/articleviewer.aspx?year=1999&issue=02000&article=00008&type=abstract Denic 1999]
+|style="background-color:#ffffbe"|Pilot, <20 patients reported
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 4
+*[[Bleomycin (Blenoxane)]] 20 mg IV once per day on days 1 to 4
+
+'''21-day cycle for 3 cycles'''
+====Subsequent treatment====
+*[[Surgery#Surgical_resection|Surgery]]
+===References===
+# Denic S. Preoperative treatment of advanced skin carcinoma with cisplatin and bleomycin. Am J Clin Oncol. 1999 Feb;22(1):32-4. [http://journals.lww.com/amjclinicaloncology/pages/articleviewer.aspx?year=1999&issue=02000&article=00008&type=abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10025376 PubMed]
+
+=Adjuvant therapy=
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2006.05.9873 Brewster et al. 2007]
+| style="background-color:#1a9851" |Phase III (C)
+|Retinoic acid & IFN
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''No further treatment.''
+====Preceding treatment====
+*[[Surgery#Surgical_resection|Surgical resection]]
+===References===
+# Brewster AM, Lee JJ, Clayman GL, Clifford JL, Reyes MJ, Zhou X, Sabichi AL, Strom SS, Collins R, Meyers CA, Lippman SM. Randomized trial of adjuvant 13-cis-retinoic acid and interferon alfa for patients with aggressive skin squamous cell carcinoma. J Clin Oncol. 2007 May 20;25(15):1974-8. [http://ascopubs.org/doi/full/10.1200/JCO.2006.05.9873 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17513803 PubMed]
+
+=Advanced or metastatic disease, all lines of therapy=
+
+==Cemiplimab monotherapy {{#subobject:946331|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, weight-based dose {{#subobject:f6a63a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1805131 Migden et al. 2018 (R2810-ONC-1423; R2810-ONC-1540)]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+''Note: this is the dose used in Groups 1 & 2.''
+====Immunotherapy====
+*[[Cemiplimab (Libtayo)]] 3 mg/kg IV over 30 minutes once on day 1
+
+'''14-day cycle for up to 96 weeks'''
+
+===Variant #2, fixed-dose {{#subobject:389373|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1805131 Migden et al. 2018 (R2810-ONC-1423; R2810-ONC-1540)]
+|style="background-color:#91cf61"|Phase I/II
+|-
+|}
+''Note: this is dose used in Group 3 of the phase II trial.''
+====Immunotherapy====
+*[[Cemiplimab (Libtayo)]] 350 mg IV over 30 minutes once on day 1
+
+'''21-day cycle for up to 54 weeks'''
+===References===
+# '''R2810-ONC-1423; R2810-ONC-1540:''' Migden MR, Rischin D, Schmults CD, Guminski A, Hauschild A, Lewis KD, Chung CH, Hernandez-Aya L, Lim AM, Chang ALS, Rabinowits G, Thai AA, Dunn LA, Hughes BGM, Khushalani NI, Modi B, Schadendorf D, Gao B, Seebach F, Li S, Li J, Mathias M, Booth J, Mohan K, Stankevich E, Babiker HM, Brana I, Gil-Martin M, Homsi J, Johnson ML, Moreno V, Niu J, Owonikoko TK, Papadopoulos KP, Yancopoulos GD, Lowy I, Fury MG. PD-1 blockade with cemiplimab in advanced cutaneous squamous-cell carcinoma. N Engl J Med. 2018 Jul 26;379(4):341-351. Epub 2018 Jun 4. [https://www.nejm.org/doi/full/10.1056/NEJMoa1805131 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29863979 PubMed]
+
+==Cetuximab monotherapy {{#subobject:5f3411|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, weekly, indefinite {{#subobject:f75d12|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/29/25/3419.long Maubec et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 400 mg/m<sup>2</sup> IV once, then 250 mg/m<sup>2</sup> IV once per week
+
+'''Given for at least 6 weeks, to be continued until progression of disease or unacceptable toxicity'''
+
+===Variant #2, weekly x 3 mo {{#subobject:7579ab|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/hed.21299/abstract Kim et al. 2011]
+|style="background-color:#ffffbe"|Case report
+|-
+|}
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 400 mg/m<sup>2</sup> IV once, then 250 mg/m<sup>2</sup> IV once per week 
+
+'''3 month course'''
+
+===Variant #3, intermittent {{#subobject:608448|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/j.1524-4725.2010.01786.x/abstract Miller et al. 2010]
+|style="background-color:#ffffbe"|Case report
+|-
+|}
+====Chemotherapy====
+*[[Cetuximab (Erbitux)]] 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once per day on days 8, 15, 22
+
+'''6-month cycles, given indefinitely unless progression occurs'''
+
+===References===
+# '''Case report:''' Bauman JE, Eaton KD, Martins RG. Treatment of recurrent squamous cell carcinoma of the skin with cetuximab. Arch Dermatol. 2007 Jul;143(7):889-92. [http://archderm.ama-assn.org/cgi/content/full/143/7/889 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17638733 PubMed]
+# '''Case report:''' Suen JK, Bressler L, Shord SS, Warso M, Villano JL. Cutaneous squamous cell carcinoma responding serially to single-agent cetuximab. Anticancer Drugs. 2007 Aug;18(7):827-9. [http://journals.lww.com/anti-cancerdrugs/pages/articleviewer.aspx?year=2007&issue=08000&article=00011&type=abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17581306 PubMed]
+# '''Case report:''' Arnold AW, Bruckner-Tuderman L, Zuger C, Itin PH. Cetuximab therapy of metastasizing cutaneous squamous cell carcinoma in a patient with severe recessive dystrophic epidermolysis bullosa. Dermatology. 2009;219(1):80-3. Epub 2009 May 13. [http://content.karger.com/produktedb/produkte.asp?DOI=10.1159/000218714 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19439919 PubMed]
+# '''Case report:''' Miller K, Sherman W, Ratner D. Complete clinical response to cetuximab in a patient with metastatic cutaneous squamous cell carcinoma. Dermatol Surg. 2010 Dec;36(12):2069-74. Epub 2010 Oct 11. [https://onlinelibrary.wiley.com/doi/10.1111/j.1524-4725.2010.01786.x/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21044226 PubMed] content property of [http://hemonc.org HemOnc.org] 
+# '''Case report:''' Kim S, Eleff M, Nicolaou N. Cetuximab as primary treatment for cutaneous squamous cell carcinoma to the neck. Head Neck. 2011 Feb;33(2):286-8. [https://onlinelibrary.wiley.com/doi/10.1002/hed.21299/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19953623 PubMed] 
+# Maubec E, Petrow P, Scheer-Senyarich I, Duvillard P, Lacroix L, Gelly J, Certain A, Duval X, Crickx B, Buffard V, Basset-Seguin N, Saez P, Duval-Modeste AB, Adamski H, Mansard S, Grange F, Dompmartin A, Faivre S, Mentré F, Avril MF. Phase II study of cetuximab as first-line single-drug therapy in patients with unresectable squamous cell carcinoma of the skin. J Clin Oncol. 2011 Sep 1;29(25):3419-26. Epub 2011 Aug 1. [http://jco.ascopubs.org/content/29/25/3419.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21810686 PubMed]
+
+==Cisplatin & Doxorubicin {{#subobject:ab12b5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f6ac66|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/8/2/342.long Guthrie et al. 1990]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# '''Case series:''' Guthrie TH, Porubsky ES. Successful systemic chemotherapy of advanced squamous and basal cell carcinoma of the skin with cis-diamminedichloroplatinum III and doxorubicin. Laryngoscope. 1982 Nov;92(11):1298-9. [https://onlinelibrary.wiley.com/doi/abs/10.1288/00005537-198211000-00014 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/6890609 PubMed]
+# '''Case series:''' Guthrie TH Jr, McElveen LJ, Porubsky ES, Harmon JD. Cisplatin and doxorubicin. An effective chemotherapy combination in the treatment of advanced basal cell and squamous carcinoma of the skin. Cancer. 1985 Apr 15;55(8):1629-32. [https://www.ncbi.nlm.nih.gov/pubmed/4038911 PubMed] 
+# '''Case series:''' Guthrie TH Jr, Porubsky ES, Luxenberg MN, Shah KJ, Wurtz KL, Watson PR. Cisplatin-based chemotherapy in advanced basal and squamous cell carcinomas of the skin: results in 28 patients including 13 patients receiving multimodality therapy. J Clin Oncol. 1990 Feb;8(2):342-6. [http://jco.ascopubs.org/content/8/2/342.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2405109 PubMed]
+
+==Cisplatin, Interferon alfa-2a, Isotretinoin {{#subobject:74bf3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:399afe|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/20/2/364.long Shin et al. 2002]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+
+''Note: Shin et al. 2002 did not clearly specify whether the interferon alfa used in the trial was 2a or 2b, but based on the details in the paper and the references cited, it is inferred that interferon alfa-2a was used.''
+====Chemoimmunotherapy====
+*[[Interferon alfa-2a (Roferon-A)]] 5,000,000 units/m<sup>2</sup> SC 3 times per week
+*[[Isotretinoin (Accutane)]] 1 mg/kg PO once per day
+*[[Cisplatin (Platinol)]] 20 mg/m<sup>2</sup> IV once per week
+
+===References===
+# Shin DM, Glisson BS, Khuri FR, Clifford JL, Clayman G, Benner SE, Forastiere AA, Ginsberg L, Liu D, Lee JJ, Myers J, Goepfert H, Lotan R, Hong WK, Lippman SM. Phase II and biologic study of interferon alfa, retinoic acid, and cisplatin in advanced squamous skin cancer. J Clin Oncol. 2002 Jan 15;20(2):364-70. [http://jco.ascopubs.org/content/20/2/364.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11786562 PubMed]
+
+=Investigational agents=
+''Drugs with some degree of promising activity in clinical trials.''
+*[[Cemiplimab (REGN2810)]]
+
+[[Category:Cutaneous squamous cell carcinoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Skin cancers]]

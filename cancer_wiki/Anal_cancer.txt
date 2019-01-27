@@ -1,0 +1,138 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Page editor'''
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:Seifter.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>Ari Seifter, MD<br>University of Illinois at Chicago<br>Chicago, IL</big>
+| style="background-color:#F0F0F0; width:15%" |[[File:nkv.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Neetavenepalli|Neeta K. Venepalli, MD, MBA]]<br>University of Illinois at Chicago<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|} 
+
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*[https://annonc.oxfordjournals.org/content/25/suppl_3/iii10.full.pdf+html Anal cancer: ESMO-ESSO-ESTRO Clinical Practice Guidelines for diagnosis, treatment and follow-up] [https://www.ncbi.nlm.nih.gov/pubmed/25239441 PubMed]
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/anal.pdf NCCN Guidelines - Anal Carcinoma]
+
+=Definitive chemoradiotherapy for locally advanced disease=
+==Capecitabine, Mitomycin, RT {{#subobject:6a7b17 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9368b2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.redjournal.org/article/S0360-3016(07)04703-7/fulltext Glynne-Jones et al. 2008]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 825 mg/m<sup>2</sup> PO twice per day on radiation days
+*[[Mitomycin (Mutamycin)]] 12 mg/m<sup>2</sup> IV once on day 1
+*Concurrent [[External_beam_radiotherapy|radiation therapy]]: 1.8 Gy per day x 28 fractions (total dose: 50.4 Gy)
+
+'''6-week course'''
+===References===
+# '''EXTRA:''' Glynne-Jones R, Meadows H, Wan S, Gollins S, Leslie M, Levine E, McDonald AC, Myint S, Samuel L, Sebag-Montefiore D; National Cancer Research Institute Anal Sub Group and Colorectal Clinical Oncology Group. EXTRA--a multicenter phase II study of chemoradiation using a 5 day per week oral regimen of capecitabine and intravenous mitomycin C in anal cancer. Int J Radiat Oncol Biol Phys. 2008 Sep 1;72(1):119-26. Epub 2008 May 9. [https://www.redjournal.org/article/S0360-3016(07)04703-7/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18472366 PubMed]
+
+==Cisplatin, Fluorouracil, RT {{#subobject:6c5a17 |Regimen=1}}==
+{{#subobject:6d1962 |Variant=1}}
+{{:Fluorouracil, cisplatin, radiation therapy for anal cancer}}
+
+==Fluorouracil, Mitomycin, RT {{#subobject:744af9|Regimen=1}}==
+{{#subobject:cf4334 |Variant=1}}
+{{#subobject:8659c6 |Variant=1}}
+{{#subobject:63839c |Variant=1}}
+{{:Fluorouracil, mitomycin, radiation therapy for anal cancer}}
+
+==Radiation therapy {{#subobject:f4d6d6|Regimen=1}}==
+{{#subobject:57260e |Variant=1}}
+{{:Radiation therapy for anal cancer}}
+
+=Metastatic disease, first-line therapy=
+==Cisplatin & Fluorouracil {{#subobject:f83c8e|Regimen=1}}==
+{{#subobject:88896f |Variant=1}}
+{{:Fluorouracil & cisplatin for anal cancer}}
+
+==mDCF {{#subobject:70e20f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mDCF: '''<u>m</u>'''odified '''<u>D</u>'''ocetaxel, '''<u>C</u>'''isplatin, '''<u>F</u>'''luorouracil
+===Regimen {{#subobject:323b13|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30321-8/fulltext Kim et al. 2018 (Epitopes-HPV02)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Docetaxel (Taxotere)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Cisplatin (Platinol)]] 40 mg/m<sup>2</sup> IV once on day 1
+*[[Fluorouracil (5-FU)]] 1200 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours, started on day 1 (total dose per cycle: 2400 mg/m<sup>2</sup>)
+
+'''14-day cycle for 8 cycles'''
+
+===References===
+# '''Epitopes-HPV02:''' Kim S, François E, André T, Samalin E, Jary M, El Hajbi F, Baba-Hamed N, Pernot S, Kaminsky MC, Bouché O, Desrame J, Zoubir M, Ghiringhelli F, Parzy A, De La Fouchardiere C, Smith D, Deberne M, Spehner L, Badet N, Adotevi O, Anota A, Meurisse A, Vernerey D, Taieb J, Vendrely V, Buecher B, Borg C. Docetaxel, cisplatin, and fluorouracil chemotherapy for metastatic or unresectable locally recurrent anal squamous cell carcinoma (Epitopes-HPV02): a multicentre, single-arm, phase 2 study. Lancet Oncol. 2018 Aug;19(8):1094-1106. Epub 2018 Jul 2. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30321-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/30042063 PubMed]
+
+=Metastatic disease, subsequent lines of therapy=
+==Nivolumab monotherapy {{#subobject:09c0df|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f2c946|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5809128/ Morris et al. 2017 (NCI9673)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Immunotherapy====
+*[[Nivolumab (Opdivo)]] 3 mg/kg IV once on day 1
+
+'''14-day cycles'''
+===References===
+# '''NCI9673:''' Morris VK, Salem ME, Nimeiri H, Iqbal S, Singh P, Ciombor K, Polite B, Deming D, Chan E, Wade JL, Xiao L, Bekaii-Saab T, Vence L, Blando J, Mahvash A, Foo WC, Ohaji C, Pasia M, Bland G, Ohinata A, Rogers J, Mehdizadeh A, Banks K, Lanman R, Wolff RA, Streicher H, Allison J, Sharma P, Eng C. Nivolumab for previously treated unresectable metastatic anal cancer (NCI9673): a multicentre, single-arm, phase 2 study. Lancet Oncol. 2017 Apr;18(4):446-453. Epub 2017 Feb 18. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30104-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5809128/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28223062 PubMed]
+
+==Pembrolizumab monotherapy {{#subobject:82c0df|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f2c123|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5406758/ Ott et al. 2017 (KEYNOTE-028)]
+| style="background-color:#91cf61" |Phase Ib, >20 pts in this subgroup
+|-
+|}
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 10 mg/kg IV once on day 1
+
+'''14-day cycle for up to 2 years'''
+===References===
+# '''KEYNOTE-028:''' Ott PA, Piha-Paul SA, Munster P, Pishvaian MJ, van Brummelen EMJ, Cohen RB, Gomez-Roca C, Ejadi S, Stein M, Chan E, Simonelli M, Morosky A, Saraf S, Emancipator K, Koshiji M, Bennouna J. Safety and antitumor activity of the anti-PD-1 antibody pembrolizumab in patients with recurrent carcinoma of the anal canal. Ann Oncol. 2017 May 1;28(5):1036-1041. [https://academic.oup.com/annonc/article/28/5/1036/2972137 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5406758/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28453692 PubMed]
+
+[[Category:Anal cancer regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gastrointestinal cancers]]

@@ -1,0 +1,97 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Jcvillasboas.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Jcvillasboas|J.C. Villasboas Bisneto, MD]]<br>Mayo Clinic<br>Rochester, MN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+''Note: Mediastinal gray-zone lymphome (MGZL) is considered intermediate between [[Primary mediastinal B-cell lymphoma|primary mediastinal B-cell lymphoma (PMBL)]] and [[Hodgkin lymphoma|nodular sclerosis Hodgkin lymphoma (NSHL)]]. Given that it is treated more similarly to the non-Hodgkin lymphoma, it is included here.''
+
+=Untreated=
+
+==DA-R-EPOCH {{#subobject:856660|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DA-R-EPOCH: '''<u>D</u>'''ose '''<u>A</u>'''djusted  '''<u>R</u>'''ituximab, '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin)
+<br>DA-EPOCH-R
+===Regimen {{#subobject:3202d4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4155269/ Wilson et al. 2014 (NCI 93-C-0133<sub>MGZL</sub>)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this should be considered a substudy under the master protocol NCI 93-C-0133.''
+====Chemotherapy====
+*[[Rituximab (Rituxan)]] 375 mg/m<sup>2</sup> IV once per cycle or 1 day before the start of EPOCH (depending on reference)
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>)
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO twice per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m<sup>2</sup>) 
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 15 minutes once on day 5
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 5 mcg/kg SC once per day, starting on day 6 and continuing until ANC greater than 5000/uL past nadir
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] 160/800 mg PO twice per day 3 days per week 
+***Alternative used only in García-Suárez et al. 2007: cotrimoxazole 480 mg PO twice per day 3 days per week
+**[[Atovaquone (Mepron)]] 1500 mg PO once per day 
+**[[Pentamidine (Nebupent)]] 300 mg nebulized every 28 days
+*Only in García-Suárez et al. 2007: [[Darbepoetin alfa (Aranesp)]] 2.25 mcg/kg SC when hemoglobin concentration was less than or equal to 10 g/dL.
+
+'''21-day cycle for 6 to 8 cycles'''
+
+====Dose-adjustments====
+*Start cycle 1 as described above.
+*Obtain CBCs twice per week for nadir measurements.
+*If nadir ANC greater than 500/uL, increase etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*If nadir ANC less than 500/uL on 1 or 2 measurements, use same doses as last cycle.
+*If nadir ANC less than 500/uL on at least 3 measurements, decrease etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*And/or if nadir platelet count less than 25 x 10<sup>9</sup>/L on at least 1 measurement, decrease etoposide, doxorubicin, and cyclophosphamide by 20% compared to previous cycle.
+*'''Dose adjustments below the cycle 1 starting dose only applies to cyclophosphamide.''' The lowest etoposide and doxorubicin would be dosed at is the original cycle 1 dose.
+*Can start new cycle every 21 days if ANC greater than 1000/uL and platelets greater than 100 x 10<sup>9</sup>/L. If counts are below those levels, check daily CBC and continue growth factor support until counts are adequate and next cycle can start.
+
+===References===
+# '''NCI 93-C-0133:''' Wilson WH, Pittaluga S, Nicolae A, Camphausen K, Shovlin M, Steinberg SM, Roschewski M, Staudt LM, Jaffe ES, Dunleavy K. A prospective study of mediastinal gray-zone lymphoma. Blood. 2014 Sep 4;124(10):1563-9. Epub 2014 Jul 14. [http://www.bloodjournal.org/content/124/10/1563.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4155269/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25024303 PubMed]
+
+=Relapsed or refractory=
+
+==Brentuximab vedotin monotherapy {{#subobject:148648|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:bb7dfb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/125/9/1394 Jacobsen et al. 2015]
+|style="background-color:#ffffbe"|Phase II, <20 pts in this subgroup
+|-
+|}
+''This regimen was evaluated in patients with CD30+ non-Hodgkin lymphoma, as determined by immunohistochemistry.''
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg IV over 30 minutes once on day 1
+
+'''21-day cycles, given until progression or unacceptable toxicity'''
+
+===References===
+<!-- '''Abstract:''' Nancy L. Bartlett, MD, Jeff P. Sharman, MD, Yasuhiro Oki, MD, Ranjana H. Advani, MD, Celeste M. Bello, MD, Jane N. Winter, MD, Yin Yang, MS, Dana A. Kennedy, PharmD and Eric D. Jacobsen, MD. A Phase 2 Study Of Brentuximab Vedotin In Patients With Relapsed Or Refractory CD30-Positive Non-Hodgkin Lymphomas: Interim Results In Patients With DLBCL and Other B-Cell Lymphomas. ASH Abstract 848. [https://ash.confex.com/ash/2013/webprogram/Paper59695.html link to abstract] -->
+# Jacobsen ED, Sharman JP, Oki Y, Advani RH, Winter JN, Bello CM, Spitzer G, Palanca-Wessels MC, Kennedy DA, Levine P, Yang J, Bartlett NL. Brentuximab vedotin demonstrates objective responses in a phase 2 study of relapsed/refractory DLBCL with variable CD30 expression. Blood. 2015 Feb 26;125(9):1394-402. Epub 2015 Jan 8. [http://www.bloodjournal.org/content/125/9/1394 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25573987 PubMed]
+
+[[Category:Mediastinal gray-zone lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Aggressive lymphomas]]

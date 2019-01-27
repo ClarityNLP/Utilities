@@ -1,0 +1,327 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+''Note: these studies were specific to ALCL or had ALCL subgroups; regimens used in [[Peripheral_T-cell_lymphoma|PTCL, NOS]] are also often used in this condition.''
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' d'Amore et al. [https://www.esmo.org/Guidelines/Haematological-Malignancies/Peripheral-T-Cell-Lymphomas Peripheral T-cell lymphomas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+=Untreated=
+==APO {{#subobject:6964de|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+APO: '''<u>A</u>'''driamycin (Doxorubicin), '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine)
+===Regimen {{#subobject:985a91|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682366/ Alexander et al. 2014 (ANHL0131)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+|-
+|}
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]]
+*[[Prednisone (Sterapred)]]
+*[[Vincristine (Oncovin)]]
+====Subsequent treatment====
+*APO versus APV maintenance
+===References===
+# '''ANHL0131:''' Alexander S, Kraveka JM, Weitzman S, Lowe E, Smith L, Lynch JC, Chang M, Kinney MC, Perkins SL, Laver J, Gross TG, Weinstein H. Advanced stage anaplastic large cell lymphoma in children and adolescents: results of ANHL0131, a randomized phase III trial of APO versus a modified regimen with vinblastine: a report from the children's oncology group. Pediatr Blood Cancer. 2014 Dec;61(12):2236-42. Epub 2014 Aug 23. [https://onlinelibrary.wiley.com/doi/abs/10.1002/pbc.25187 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682366/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25156886 PubMed]
+
+==BV-CHP {{#subobject:6964de|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BV-CHP: '''<u>B</u>'''rentuximab '''<u>V</u>'''edotin, '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>P</u>'''rednisone
+===Regimen {{#subobject:985a91|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|ECHELON-2 (*)
+|style="background-color:#1a9851"|Phase III (E)
+|[[#CHOP|CHOP]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: this trial has not been published in abstract or manuscript form, to our knowledge.''
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg (maximum dose of 180 mg) IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]]
+*[[Doxorubicin (Adriamycin)]]
+*[[Prednisone (Sterapred)]]
+
+'''21-day cycle for 6 to 8 cycles'''
+
+===References===
+# '''ECHELON-2:''' [https://clinicaltrials.gov/ct2/show/NCT01777152 ClinicalTrials.gov record]
+
+==DA-EPOCH {{#subobject:6c5911|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DA-EPOCH: '''<u>D</u>'''ose '''<u>A</u>'''djusted '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone, '''<u>O</u>'''ncovin (Vincristine), '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin)
+
+===Regimen {{#subobject:659929|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4697904/ Dunleavy et al. 2016 (NCI 93-C-0133<sub>ALCL</sub>)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this should be considered a substudy under the master protocol NCI 93-C-0133.''
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 50 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 200 mg/m<sup>2</sup>) 
+*[[Prednisone (Sterapred)]] 60 mg/m<sup>2</sup> PO twice per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 0.4 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 1.6 mg/m2) 
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 2 hours once on day 5
+*[[Doxorubicin (Adriamycin)]] 10 mg/m<sup>2</sup>/day IV continuous infusion over 96 hours, started on day 1 (total dose per cycle: 40 mg/m<sup>2</sup>)
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] 300 mcg SC once per day, starting on day 6 and continuing until ANC greater than 5000/uL past nadir
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] 160/800 mg (or equivalent if allergic) PO once per day on 3 days per week
+**Note: It's assumed this is what the supplement for Dunleavy et al. 2013 meant by "Baxtrim (sulphametoxazole and trimethoprim)"
+*[[Omeprazole (Prilosec)]] 20 mg (or equivalent) PO once per day
+*[[Docusate (Colace)]] (dose not specified) and [[Sennosides (Senna)]] 2 tablets PO twice per day as needed for constipation
+*Lactulose 20 g PO Q6H as needed for constipation
+*Hepatitis B surface antigen positive patients received daily antiviral therapy until 8 weeks after completion of chemotherapy
+
+'''21-day cycle for 6 to 8 cycles'''
+
+====Dose adjustments====
+*Start cycle 1 as described above.
+*Obtain CBCs twice per week for nadir measurements.
+*If nadir ANC greater than 500/uL, increase etoposide, doxorubicin, and cyclophosphamide by one level (20%) compared to previous cycle.
+*If nadir ANC less than 500/uL, use same doses as last cycle.
+*If nadir platelet count less than 25 x 10<sup>9</sup>/L, decrease etoposide, doxorubicin, and cyclophosphamide by 20% compared to the previous cycle.
+
+===References===
+# '''NCI 93-C-0133:''' Dunleavy K, Pittaluga S, Shovlin M, Roschewski M, Lai C, Steinberg SM, Jaffe ES, Wilson WH. Phase II trial of dose-adjusted EPOCH in untreated systemic anaplastic large cell lymphoma. Haematologica. 2016 Jan;101(1):e27-9. [http://www.haematologica.org/content/101/1/e27.long link to original article] '''refers to protocol in [https://www.nejm.org/doi/full/10.1056/NEJMoa1214561 Dunleavy et al. 2013]''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4697904/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26518748 PubMed]
+
+==CHOEP {{#subobject:c516ab|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOEP: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>E</u>'''toposide, '''<u>P</u>'''rednisone
+<br>CHOPE
+<br>VACOP
+===Example orders===
+*[[Example orders for CHOEP in lymphoma]]
+
+===Regimen {{#subobject:f61648|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[http://www.bloodjournal.org/content/104/3/626.long Pfreundschuh et al. 2004 (DSHNHL NHL-B1)]
+|style="background-color:#1a9851"|Phase III (E)
+|1. CHOP-21<br> 2. CHOP-14
+|Not reported by subgroup
+|Not reported by subgroup
+|}
+
+''This regimen was used in 20 ALCL patients (CHOEP-21) and 16 ALCL patients (CHOEP-14) in the NHL-B1 trial. The authors did not report a subgroup analysis for this minority population.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 2 mg IV once on day 1
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 1 to 3
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*For 14-day cycles: [[Filgrastim (Neupogen)]] 300 mcg (for patients less than 75 kg) or 480 mcg (for patients at least 75 kg) SC once per day on days 4 to 13
+*[[Filgrastim (Neupogen)]] use for 21-day cycles is by discretion of ordering physician
+
+'''14 or 21-day cycles for 6 cycles''', next cycle to start as long as WBC count is greater than 2.5 x 10<sup>9</sup>/L and platelets greater than 80 x 10<sup>9</sup>/L
+*CHOEP-14 uses 14-day cycles; CHOEP-21 uses 21-day cycles
+====Subsequent treatment====
+*Patients with initial bulky disease (mass conglomerate at least 7.5 cm) received 36 Gy radiation therapy and to extranodal sites of disease when possible
+
+===References===
+# '''DSHNHL NHL-B1:''' Pfreundschuh M, Trümper L, Kloess M, Schmits R, Feller AC, Rudolph C, Reiser M, Hossfeld DK, Metzner B, Hasenclever D, Schmitz N, Glass B, Rübe C, Loeffler M; German High-Grade Non-Hodgkin's Lymphoma Study Group. Two-weekly or 3-weekly CHOP chemotherapy with or without etoposide for the treatment of young patients with good-prognosis (normal LDH) aggressive lymphomas: results of the NHL-B1 trial of the DSHNHL. Blood. 2004 Aug 1;104(3):626-33. Epub 2004 Feb 24. [http://www.bloodjournal.org/content/104/3/626.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14982884 PubMed]
+
+==CHOP {{#subobject:4ca454|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CHOP: '''<u>C</u>'''yclophosphamide, '''<u>H</u>'''ydroxydaunorubicin (Doxorubicin), '''<u>O</u>'''ncovin (Vincristine), '''<u>P</u>'''rednisone
+<br>CHOP-21
+<br>ACOP
+<br>CAVP
+<br>COPA
+<br>VACP
+<br>VCAP
+===Regimen {{#subobject:9e770b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[http://www.bloodjournal.org/content/104/3/626.long Pfreundschuh et al. 2004 (DSHNHL NHL-B1)]
+|style="background-color:#91cf61"|Phase III, <20 pts in arm (C)
+|1. CHOEP<br> 2. CHOP-14
+|Not reported by subgroup
+|Not reported by subgroup
+|}
+''This regimen was used in 14 ALCL patients in DSHNHL NHL-B1. The authors did not report a subgroup analysis for this minority population.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV once on day 1
+*[[Doxorubicin (Adriamycin)]] 50 mg/m<sup>2</sup> IV once on day 1
+*[[Vincristine (Oncovin)]] 2 mg IV once on day 1
+*[[Prednisone (Sterapred)]] 100 mg PO once per day on days 1 to 5
+
+====Supportive medications====
+*At the discretion of ordering physician: [[Filgrastim (Neupogen)]] 300 mcg (for patients less than 75 kg) or 480 mcg (for patients at least 75 kg) SC once per day on days 4 to 13 
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# '''DSHNHL NHL-B1:''' Pfreundschuh M, Trümper L, Kloess M, Schmits R, Feller AC, Rudolph C, Reiser M, Hossfeld DK, Metzner B, Hasenclever D, Schmitz N, Glass B, Rübe C, Loeffler M; German High-Grade Non-Hodgkin's Lymphoma Study Group. Two-weekly or 3-weekly CHOP chemotherapy with or without etoposide for the treatment of young patients with good-prognosis (normal LDH) aggressive lymphomas: results of the NHL-B1 trial of the DSHNHL. Blood. 2004 Aug 1;104(3):626-33. Epub 2004 Feb 24. [http://www.bloodjournal.org/content/104/3/626.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14982884 PubMed]
+
+=Relapsed or refractory, salvage therapy=
+
+==Brentuximab vedotin monotherapy {{#subobject:e32d67|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:46fbc9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3731651/ Gopal et al. 2012 (SGN35-006)]
+|style="background-color:#ffffbe"|Phase II, <20 pts in subgroup
+|-
+|[http://jco.ascopubs.org/content/30/18/2190.long Pro et al. 2012 (SG035-0004)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659993/ Gibb et al. 2012]
+|style="background-color:#91cf61"|Named Patient Programme
+|-
+|}
+''Note: SGN35-006 is a re-treatment trial; all patients were previously exposed to brentuximab vedotin. Patients who had received the 1.2 mg/kg dose on a prior trial also received that dose at re-treatment.''
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg IV over 30 minutes once on day 1
+
+'''21-day cycle for up to 16 infusions (SG035-0004), as a bridge to transplant (Gibb et al. 2012), or until progression (Bartlett et al. 2014)'''
+
+===References===
+# '''SGN35-006:''' Gopal AK, Ramchandren R, O'Connor OA, Berryman RB, Advani RH, Chen R, Smith SE, Cooper M, Rothe A, Matous JV, Grove LE, Zain J. Safety and efficacy of brentuximab vedotin for Hodgkin lymphoma recurring after allogeneic stem cell transplantation. Blood. 2012 Jul 19;120(3):560-8. Epub 2012 Apr 17. [http://bloodjournal.hematologylibrary.org/content/120/3/560.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3731651/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22510871 PubMed]
+## '''Update:''' Bartlett NL, Chen R, Fanale MA, Brice P, Gopal A, Smith SE, Advani R, Matous JV, Ramchandren R, Rosenblatt JD, Huebner D, Levine P, Grove L, Forero-Torres A. Retreatment with brentuximab vedotin in patients with CD30-positive hematologic malignancies. J Hematol Oncol. 2014 Mar 19;7:24. [http://jhoonline.biomedcentral.com/articles/10.1186/1756-8722-7-24 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3994656/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24642247 PubMed]
+# '''SG035-0004:''' Pro B, Advani R, Brice P, Bartlett NL, Rosenblatt JD, Illidge T, Matous J, Ramchandren R, Fanale M, Connors JM, Yang Y, Sievers EL, Kennedy DA, Shustov A. Brentuximab vedotin (SGN-35) in patients with relapsed or refractory systemic anaplastic large-cell lymphoma: results of a phase II study. J Clin Oncol. 2012 Jun 20;30(18):2190-6. Epub 2012 May 21. [http://jco.ascopubs.org/content/30/18/2190.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22614995 PubMed]
+## '''Update: Abstract:''' Barbara Pro, MD, Ranjana Advani, MD, Pauline Brice, MD, Nancy L. Bartlett, MD, Joseph D. Rosenblatt, MD, Tim Illidge, Jeffrey Matous, MD, Radhakrishnan Ramchandern, MD, Michelle A. Fanale, MD, Joseph M. Connors, MD, Yinghui Wang, MS, Dirk Huebner, MD, Dana A. Kennedy, PharmD, BCOP and Andrei R. Shustov, MD. Four-Year Survival Data from an Ongoing Pivotal Phase 2 Study of Brentuximab Vedotin in Patients with Relapsed or Refractory Systemic Anaplastic Large Cell Lymphoma. ASH Annual Meeting 2014, Abstract 3095 [https://ash.confex.com/ash/2014/webprogram/Paper67039.html link to abstract]
+## '''Update:''' Pro B, Advani R, Brice P, Bartlett NL, Rosenblatt JD, Illidge T, Matous J, Ramchandren R, Fanale M, Connors JM, Fenton K, Huebner D, Pinelli JM, Kennedy DA, Shustov A. Five-year results of brentuximab vedotin in patients with relapsed or refractory systemic anaplastic large cell lymphoma. Blood. 2017 Dec 21;130(25):2709-2717. Epub 2017 Oct 3. [http://www.bloodjournal.org/content/130/25/2709.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28974506 PubMed]
+# Gibb A, Jones C, Bloor A, Kulkarni S, Illidge T, Linton K, Radford J. Brentuximab vedotin in refractory CD30+ lymphomas: a bridge to allogeneic transplantation in approximately one quarter of patients treated on a Named Patient Programme at a single UK center. Haematologica. 2013 Apr;98(4):611-4. Epub 2012 Oct 12. [http://www.haematologica.org/content/98/4/611.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659993/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23065511 PubMed]
+# '''Retrospective:''' Gopal AK, Bartlett NL, Forero-Torres A, Younes A, Chen R, Friedberg JW, Matous JV, Shustov AR, Smith SE, Zain J, O'Meara MM, Fanale MA. Brentuximab vedotin in patients aged 60 years or older with relapsed or refractory CD30-positive lymphomas: a retrospective evaluation of safety and efficacy. Leuk Lymphoma. 2014 Oct;55(10):2328-34. Epub 2014 Feb 24. [http://www.tandfonline.com/doi/full/10.3109/10428194.2013.876496 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24359243 PubMed]
+
+==DHAP {{#subobject:5a2988|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DHAP: '''<u>D</u>'''examethasone, '''<u>H</u>'''igh-dose '''<u>A</u>'''ra-C (cytarabine), '''<u>P</u>'''latinol (cisplatin)
+
+===Regimen {{#subobject:d2a377|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/32/31/3490.full Crump et al. 2014 (NCIC-CTG LY.12)]
+|style="background-color:#91cf61"|Phase III, <20 in this arm (C)
+|[[Anaplastic_large_cell_lymphoma#GDP|GDP]]
+|style="background-color:#eeee01"|Non-inferior ORR
+|-
+|}
+====Chemotherapy====
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+*[[Cytarabine (Cytosar)]] 2000 mg/m<sup>2</sup> IV over 3 hours every 12 hours for 2 doses on day 2 (total of 2 doses)
+*[[Cisplatin (Platinol)]] 100 mg/m<sup>2</sup> IV continuous infusion over 24 hours, started on day 1
+
+'''21-day cycle for up to 3 cycles'''
+
+===References===
+<!-- Presented in part at the Annual Meeting of the American Society of Hematology, Atlanta, GA, December 7-10, 2013, and the International Conference on Malignant Lymphoma, Lugano, Switzerland, June 19-22, 2013. -->
+# '''NCIC-CTG LY.12:''' Crump M, Kuruvilla J, Couban S, MacDonald DA, Kukreti V, Kouroukis CT, Rubinger M, Buckstein R, Imrie KR, Federico M, Di Renzo N, Howson-Jan K, Baetz T, Kaizer L, Voralia M, Olney HJ, Turner AR, Sussman J, Hay AE, Djurfeldt MS, Meyer RM, Chen BE, Shepherd LE. Randomized comparison of gemcitabine, dexamethasone, and cisplatin versus dexamethasone, cytarabine, and cisplatin chemotherapy before autologous stem-cell transplantation for relapsed and refractory aggressive lymphomas: NCIC-CTG LY.12. J Clin Oncol. 2014 Nov 1;32(31):3490-6. Epub 2014 Sep 29. [http://jco.ascopubs.org/content/32/31/3490.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25267740 PubMed]
+
+==GDP {{#subobject:21f926|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GDP: '''<u>G</u>'''emcitabine, '''<u>D</u>'''examethasone, '''<u>P</u>'''latinol (Cisplatin)
+
+===Regimen {{#subobject:ce43d5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/32/31/3490.full Crump et al. 2014 (NCIC-CTG LY.12)]
+|style="background-color:#91cf61"|Phase III, <20 pts in this arm (E)
+|[[Anaplastic_large_cell_lymphoma#DHAP|DHAP]]
+|style="background-color:#eeee01"|Non-inferior ORR
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 3 cycles'''
+
+===References===
+<!-- Presented in part at the Annual Meeting of the American Society of Hematology, Atlanta, GA, December 7-10, 2013, and the International Conference on Malignant Lymphoma, Lugano, Switzerland, June 19-22, 2013. -->
+# '''NCIC-CTG LY.12:''' Crump M, Kuruvilla J, Couban S, MacDonald DA, Kukreti V, Kouroukis CT, Rubinger M, Buckstein R, Imrie KR, Federico M, Di Renzo N, Howson-Jan K, Baetz T, Kaizer L, Voralia M, Olney HJ, Turner AR, Sussman J, Hay AE, Djurfeldt MS, Meyer RM, Chen BE, Shepherd LE. Randomized comparison of gemcitabine, dexamethasone, and cisplatin versus dexamethasone, cytarabine, and cisplatin chemotherapy before autologous stem-cell transplantation for relapsed and refractory aggressive lymphomas: NCIC-CTG LY.12. J Clin Oncol. 2014 Nov 1;32(31):3490-6. Epub 2014 Sep 29. [http://jco.ascopubs.org/content/32/31/3490.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25267740 PubMed]
+
+=Consolidation after salvage therapy=
+==FluBuCy, then allo HSCT {{#subobject:84acb0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FluBuCy: '''<u>Flu</u>'''darabine, '''<u>Bu</u>'''sulfan, '''<u>Cy</u>'''clophosphamide
+===Regimen {{#subobject:bfe434|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext Glass et al. 2014 (DSHNHL R3)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+{{#lst:Allogeneic HSCT|bfe434}}
+===References===
+<!-- # Glass B, rabbits Kamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N. High-dose chemotherapy Followed by allogeneic stem cell transplantation in relapsed and refractory high-risk aggressive non-Hodgkin's lymphoma: Results of a prospective study of the German high-grade non-Hodgkin's lymphoma study group. J Clin Oncol 30, 2012 (suppl; abstr 8004) -->
+# '''DSHNHL R3:''' Glass B, Hasenkamp J, Wulf G, Dreger P, Pfreundschuh M, Gramatzki M, Silling G, Wilhelm C, Zeis M, Görlitz A, Pfeiffer S, Hilgers R, Truemper L, Schmitz N; on behalf of the German High-Grade Lymphoma Study Group. Rituximab after lymphoma-directed conditioning and allogeneic stem-cell transplantation for relapsed and refractory aggressive non-Hodgkin lymphoma (DSHNHL R3): an open-label, randomised, phase 2 trial. Lancet Oncol. 2014 Jun;15(7):757-66. Epub 2014 May 11. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70161-5/fulltext link to original article] [http://www.dshnhl.org/app/download/9495510598/Studienprotokoll+DSHNHL+alloFBC+final+vollst.pdf link to original protocol (in German)] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24827808 PubMed]
+
+[[Category:Anaplastic large cell lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:T-cell lymphomas]]

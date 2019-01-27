@@ -1,0 +1,403 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''
+
+Is there a regimen missing from this list?  Would you like to share a different dosage/schedule or an additional reference for a regimen?  Have you noticed an error?  Do you have an idea that will help the site grow to better meet your needs and the needs of many others?  You are [[How_to_contribute|invited to contribute to the site]].-->
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2015:''' d'Amore et al. [https://www.esmo.org/Guidelines/Haematological-Malignancies/Peripheral-T-Cell-Lymphomas Peripheral T-cell lymphomas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+=="How I Treat"==
+* Tse E, Kwong YL. How I treat NK/T-cell lymphomas. Blood. 2013 Jun 20;121(25):4997-5005. Epub 2013 May 7. [http://www.bloodjournal.org/content/121/25/4997.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23652805 PubMed]
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas]
+
+=Untreated=
+
+==Cisplatin & RT {{#subobject:544d0b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Cisplatin & RT: Cisplatin & '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+
+===Regimen {{#subobject:550baf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/27/35/6027.long Kim et al. 2009]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 83%
+|-
+|}
+====Chemoradiotherapy====
+*[[Cisplatin (Platinol)]] 30 mg/m<sup>2</sup> IV once per week
+*Concurrent [[External_beam_radiotherapy|radiation therapy]] to the primary tumor, 1.8 to 2 Gy fractions (median total dose: 40 Gy), given 5 times per week.
+====Subsequent treatment====
+*[[#VIPD|VIPD consolidation]], 3 to 5 weeks after the last dose of cisplatin
+
+===References===
+# Kim SJ, Kim K, Kim BS, Kim CY, Suh C, Huh J, Lee SW, Kim JS, Cho J, Lee GW, Kang KM, Eom HS, Pyo HR, Ahn YC, Ko YH, Kim WS. Phase II trial of concurrent radiation and weekly cisplatin followed by VIPD chemotherapy in newly diagnosed,  stage IE to IIE, nasal, extranodal NK/T-Cell Lymphoma: Consortium for Improving Survival of Lymphoma study. J Clin Oncol. 2009 Dec 10;27(35):6027-32. [http://jco.ascopubs.org/content/27/35/6027.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19884539 PubMed]
+
+==DEP & RT {{#subobject:d8a9eb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DEP & RT: '''<u>D</u>'''examethasone, '''<u>E</u>'''toposide, '''<u>P</u>'''latinol (Cisplatin), '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+
+===Regimen {{#subobject:f93f37|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/ejh.12405/full Tsai et al. 2014]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 81%
+|-
+|}
+''Dosing details not available in the abstract.''
+====Chemoradiotherapy====
+*[[Dexamethasone (Decadron)]]
+*[[Etoposide (Vepesid)]]
+*[[Cisplatin (Platinol)]]
+*Concurrent [[External_beam_radiotherapy|radiation therapy]] to the primary tumor, 5040 cGy in 28 fractions over 5 weeks
+
+'''28-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[#VIPD|VIPD consolidation]]
+
+===References===
+# Tsai HJ, Lin SF, Chen CC, Chen TY, Su WC, Hwang WL, Lin JC, Chiou TJ, Kao WY, Chiu CF, Chang YF, Chang JS, Chang MC, Su IJ. Long-term results of a phase II trial with frontline concurrent chemoradiotherapy followed by consolidation chemotherapy for localized nasal natural killer/T-cell lymphoma. Eur J Haematol. 2015 Feb;94(2):130-7. Epub 2014 Oct 10. [https://onlinelibrary.wiley.com/doi/10.1111/ejh.12405/full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24957163 PubMed]
+
+==DeVIC & RT {{#subobject:4b25e6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+DeVIC & RT: '''<u>De</u>'''xamethasone, '''<u>V</u>'''P-16 (Etoposide), '''<u>I</u>'''fosfamide, '''<u>C</u>'''arboplatin, '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:74ecfd|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/27/33/5594.long Yamaguchi et al. 2009 (JCOG0211)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 81%
+|-
+|}
+
+====Chemotherapy, Dose Level I====
+*[[Dexamethasone (Decadron)]] 40 mg IV once per day on days 1 to 3
+*[[Etoposide (Vepesid)]] 67 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 3
+*[[Ifosfamide (Ifex)]] 1000 mg/m<sup>2</sup> IV over 3 hours once per day on days 1 to 3
+*[[Carboplatin (Paraplatin)]] 200 mg/m<sup>2</sup> IV over 30 minutes once on day 1
+
+====Chemotherapy, Dose Level II====
+*[[Dexamethasone (Decadron)]] 40 mg IV once per day on days 1 to 3
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV over 2 hours once per day on days 1 to 3
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV over 3 hours once per day on days 1 to 3
+*[[Carboplatin (Paraplatin)]] 300 mg/m<sup>2</sup> IV over 30 minutes once on day 1
+
+====Supportive medications====
+*[[Filgrastim (Neupogen)]] (dose/route/schedule not specified) started for WBC count less than 2 x 10<sup>9</sup>/L or ANC less than 1000/uL; discontinued if WBC count greater than 5 x 10<sup>9</sup>/L.
+
+'''21-day cycle for 3 cycles'''
+
+====Radiotherapy====
+''Started simultaneously with the beginning of cycle 1 of chemotherapy''
+*Stage IE disease: Concurrent [[External_beam_radiotherapy|radiation therapy]], 2 Gy fractions x 25 fractions (total dose: 50 Gy) over 5 weeks
+*Stage IIE disease: Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 28 fractions (total dose: 50.4 Gy) over 6 weeks
+
+===References===
+# Yamaguchi M, Tobinai K, Oguchi M, Ishizuka N, Kobayashi Y, Isobe Y, Ishizawa K, Maseki N, Itoh K, Usui N, Wasada I, Kinoshita T, Ohshima K, Matsuno Y, Terauchi T, Nawano S, Ishikura S, Kagami Y, Hotta T, Oshimi K. Phase I/II study of concurrent chemoradiotherapy for localized nasal natural killer/T-cell lymphoma: Japan Clinical Oncology Group Study JCOG0211. J Clin Oncol. 2009 Nov 20;27(33):5594-600. [http://jco.ascopubs.org/content/27/33/5594.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19805668 PubMed]
+## '''Update:''' Yamaguchi M, Tobinai K, Oguchi M, Ishizuka N, Kobayashi Y, Isobe Y, Ishizawa K, Maseki N, Itoh K, Usui N, Wasada I, Kinoshita T, Hotta T, Tsukasaki K, Oshimi K. Concurrent chemoradiotherapy for localized nasal natural killer/T-cell lymphoma: an updated analysis of the Japan clinical oncology group study JCOG0211. J Clin Oncol. 2012 Nov 10;30(32):4044-6. Epub 2012 Oct 8. [http://jco.ascopubs.org/content/30/32/4044.2.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23045573 PubMed]
+
+==GELOX, then RT {{#subobject:e51517|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GELOX, then RT: '''<u>G</u>'''emcitabine, '''<u>L</u>'''-asparaginase, '''<u>O</u>'''xaliplatin followed by '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:ed4bb8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.27752/full Wang et al. 2012]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#f7fcfd" |ORR: 96%
+|-
+|}
+====Chemotherapy====
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IV once per day on days 1 to 7
+*[[Oxaliplatin (Eloxatin)]] 130 mg/m<sup>2</sup> IV once on day 1
+
+'''3-weeks cycle for at least 2 cycles, followed by:'''
+
+====Radiotherapy====
+*[[External_beam_radiotherapy|IFRT]] to 56 grays (Gy) in 28 fractions, 5 fractions per week
+
+'''Followed by more chemotherapy within one week of radiation completion, up to 6 total cycles'''
+
+===References===
+# Wang L, Wang ZH, Chen XQ, Li YJ, Wang KF, Xia YF, Xia ZJ. First-line combination of gemcitabine, oxaliplatin, and L-asparaginase (GELOX) followed by involved-field radiation therapy for patients with stage IE/IIE extranodal natural killer/T-cell lymphoma. Cancer. 2013 Jan 15;119(2):348-55. Epub 2012 Jul 18. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.27752/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22811078 PubMed]
+
+==LVP "Sandwich" {{#subobject:b50432|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+LVP: '''<u>L</u>'''-asparaginase, '''<u>V</u>'''incristine, '''<u>P</u>'''rednisolone
+===Regimen {{#subobject:5a27c1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.26629/full Jiang et al. 2011]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 84%
+|-
+|}
+====Chemotherapy====
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+*[[Prednisolone (Millipred)]] 100 mg PO once per day on days to 5
+
+'''21-day cycle for 2 cycles, followed by:'''
+
+====Radiotherapy====
+*[[External beam radiotherapy]] to the nasal cavity and surrounding sinuses, 56 Gy in 28 fractions, once per day, five days per week
+
+'''Resume chemotherapy one week after completion of radiation, up to 6 total cycles'''
+
+===References===
+# Jiang M, Zhang H, Jiang Y, Yang Q, Xie L, Liu W, Zhang W, Ji X, Li P, Chen N, Zhao S, Wang F, Zou L. Phase 2 trial of "sandwich" L-asparaginase, vincristine, and prednisone chemotherapy with radiotherapy in newly diagnosed, stage IE to IIE, nasal type, extranodal natural killer/T-cell lymphoma. Cancer. 2012 Jul 1;118(13):3294-301. Epub 2011 Dec 2. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.26629/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22139825 PubMed]
+
+==MESA {{#subobject:54b89d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+MESA: '''<u>M</u>'''ethotrexate, '''<u>E</u>'''toposide, '''<u>S</u>'''teroid (dexamethasone), PEG-'''<u>A</u>'''-sparaginase
+===Regimen {{#subobject:f98dcf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5763273/ Liang et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#e0ecf4"|ORR: 87%
+|-
+|}
+''Note: this regimen also incorporates radiation, see text for details.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 2000 mg/m<sup>2</sup> IV once on day 1
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 2 to 4
+*[[Dexamethasone (Decadron)]] 20 mg/m<sup>2</sup> IV once per day on days 2 to 5
+*[[Pegaspargase (Oncaspar)]] 2500 IU/m<sup>2</sup> IM once on day 5
+*[[External_beam_radiotherapy|radiation therapy]]
+
+'''21-day cycle for up to 7 cycles'''
+===References===
+# Liang R, Gao GX, Chen JP, Wang JS, Wang XM, Zeng Y, Bai QX, Zhang T, Yang L, Dong BX, Gu HT, Shu MM, Hao CX, Wang JH, Zhang N, Chen XQ. A phase 2 study of methotrexate, etoposide, dexamethasone, and pegaspargase chemotherapy for newly diagnosed, relapsed, or refractory extranodal natural killer/T-cell lymphoma, nasal type: a multicenter trial in Northwest China. Hematol Oncol. 2017 Dec;35(4):619-629. Epub 2016 Oct 10. [https://onlinelibrary.wiley.com/doi/10.1002/hon.2325/full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5763273/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27723108 PubMed]
+
+==SMILE {{#subobject:eaf2e1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+SMILE: '''<u>S</u>'''teroid (Dexamethasone), '''<u>M</u>'''ethotrexate, '''<u>I</u>'''fosfamide, '''<u>L</u>'''-asparaginase, '''<u>E</u>'''toposide
+===Regimen {{#subobject:cfe666|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/29/33/4410.long Yamaguchi et al. 2011]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#e0ecf4"|ORR: 79%
+|-
+|}
+====Chemotherapy====
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 2 to 4
+*[[Methotrexate (MTX)]] 2000 mg/m<sup>2</sup> IV over 6 hours once on day 1
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV once per day on days 2 to 4
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IV once per day on days 8, 10, 12, 14, 16, 18, 20
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 2 to 4
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 15 mg IV or PO Q6H x 4 doses per day on days 2 to 4, beginning 30 hours after completion of [[Methotrexate (MTX)]]
+*[[Mesna (Mesnex)]] 300 mg/m<sup>2</sup> IV three times per day on days 2 to 4; first dose given together with [[Ifosfamide (Ifex)]], second dose given at 4 hours after start of [[Ifosfamide (Ifex)]], and third dose given 8 hours after start of [[Ifosfamide (Ifex)]]
+*[[Filgrastim (Neupogen)]] (dose not specified) IV or SC once per day, starting on day 6, given until WBC count greater than 5 x 10<sup>9</sup>/L
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] prophylaxis recommended
+
+'''28-day cycle for 2 cycles'''
+
+''After 2 cycles, patients could receive additional treatment with SMILE and/or other chemotherapy, with or without autologous/allogeneic stem cell transplant.''
+
+===References===
+# '''Phase 1:''' Yamaguchi M, Suzuki R, Kwong YL, Kim WS, Hasegawa Y, Izutsu K, Suzumiya J, Okamura T, Nakamura S, Kawa K, Oshimi K. Phase I study of dexamethasone, methotrexate, ifosfamide, L-asparaginase, and etoposide (SMILE) chemotherapy for advanced-stage, relapsed or refractory extranodal natural killer (NK)/T-cell lymphoma and leukemia. Cancer Sci. 2008 May;99(5):1016-20. Epub 2008 Feb 19. [https://onlinelibrary.wiley.com/doi/10.1111/j.1349-7006.2008.00768.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18294294 PubMed] content property of [http://hemonc.org HemOnc.org]
+# Yamaguchi M, Kwong YL, Kim WS, Maeda Y, Hashimoto C, Suh C, Izutsu K, Ishida F, Isobe Y, Sueoka E, Suzumiya J, Kodama T, Kimura H, Hyo R, Nakamura S, Oshimi K, Suzuki R. Phase II study of SMILE chemotherapy for newly diagnosed stage IV, relapsed, or refractory extranodal natural killer (NK)/T-cell lymphoma, nasal type: the NK-Cell Tumor Study Group study. J Clin Oncol. 2011 Nov 20;29(33):4410-6. Epub 2011 Oct 11. [http://jco.ascopubs.org/content/29/33/4410.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21990393 PubMed]
+
+=Consolidation after upfront therapy=
+==VIPD {{#subobject:1de775|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VIPD: '''<u>V</u>'''P-16 (Etoposide), '''<u>I</u>'''fosfamide, '''<u>P</u>'''latinol (Cisplatin), '''<u>D</u>'''examethasone
+
+===Regimen {{#subobject:76171b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/27/35/6027.long Kim et al. 2009]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/ejh.12405/full Tsai et al. 2014]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Details here are from the '''Kim et al. 2009''' manuscript.''
+====Preceding treatment====
+*'''Kim et al. 2009:''' [[#Cisplatin_.26_RT|Cisplatin & concurrent RT]]
+*'''Tsai et al. 2014:''' [[#DEP_.26_RT|DEP & concurrent RT]]
+====Chemotherapy====
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1 to 3
+*[[Ifosfamide (Ifex)]] 1200 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 3
+*[[Cisplatin (Platinol)]] 33 mg/m<sup>2</sup> IV over 60 minutes once per day on days 1 to 3
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[Mesna (Mesnex)]] 240 mg/m<sup>2</sup> IV over 15 minutes once per day on days 1 to 3
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]] given for grade 3 or 4 neutropenia
+
+'''21-day cycle for up to 3 cycles'''
+
+===References===
+# Kim SJ, Kim K, Kim BS, Kim CY, Suh C, Huh J, Lee SW, Kim JS, Cho J, Lee GW, Kang KM, Eom HS, Pyo HR, Ahn YC, Ko YH, Kim WS. Phase II trial of concurrent radiation and weekly cisplatin followed by VIPD chemotherapy in newly diagnosed,  stage IE to IIE, nasal, extranodal NK/T-Cell Lymphoma: Consortium for Improving Survival of Lymphoma study. J Clin Oncol. 2009 Dec 10;27(35):6027-32. [http://jco.ascopubs.org/content/27/35/6027.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19884539 PubMed]
+# Tsai HJ, Lin SF, Chen CC, Chen TY, Su WC, Hwang WL, Lin JC, Chiou TJ, Kao WY, Chiu CF, Chang YF, Chang JS, Chang MC, Su IJ. Long-term results of a phase II trial with frontline concurrent chemoradiotherapy followed by consolidation chemotherapy for localized nasal natural killer/T-cell lymphoma. Eur J Haematol. 2015 Feb;94(2):130-7. Epub 2014 Oct 10. [https://onlinelibrary.wiley.com/doi/10.1111/ejh.12405/full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24957163 PubMed]
+
+=Relapsed or refractory=
+
+==AspaMetDex {{#subobject:407753|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+AspaMetDex: '''<u>Aspa</u>'''raginase, '''<u>Met</u>'''hotrexate, '''<u>Dex</u>'''amethasone
+
+===Regimen {{#subobject:305a48|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/117/6/1834.long Jaccard et al. 2011]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 78%
+|-
+|}
+
+====Chemotherapy====
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IM once per day on days 2, 4, 6, 8
+**Patients who had allergies to Asparaginase (Elspar) received [[Asparaginase Erwinia chrysanthemi (Erwinaze)]] 20,000 units/m<sup>2</sup> IM once per day on days 2, 4, 6, 8
+*[[Methotrexate (MTX)]] 3000 mg/m<sup>2</sup> (route not specified) once on day 1
+**Patients greater than 70 years old received 2000 mg/m<sup>2</sup> (route not specified) once on day 1
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+**Patients greater than 70 years old received 20 mg PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] (dose/route/schedule not specified) prophylaxis, discontinued during [[Methotrexate (MTX)]] administration
+*[[Valacyclovir (Valtrex)]] (dose/route/schedule not specified) prophylaxis
+*For [[Methotrexate (MTX)]]: alkaline hydration and [[Folinic acid (Leucovorin)]] rescue (dose/route/schedule not specified)
+
+'''21-day cycle for 3 cycles'''
+
+''See Jaccard et al. 2011 for details about further treatment.''
+
+===References===
+# Jaccard A, Gachard N, Marin B, Rogez S, Audrain M, Suarez F, Tilly H, Morschhauser F, Thieblemont C, Ysebaert L, Devidas A, Petit B, de Leval L, Gaulard P, Feuillard J, Bordessoule D, Hermine O; GELA and GOELAMS Intergroup. Efficacy of L-asparaginase with methotrexate and dexamethasone (AspaMetDex regimen) in patients with refractory or relapsing extranodal NK/T-cell lymphoma,  a phase 2 study. Blood. 2011 Feb 10;117(6):1834-9. [http://bloodjournal.hematologylibrary.org/content/117/6/1834.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21123825 PubMed]
+
+==L-Asparaginase, Vincristine, Prednisolone {{#subobject:1ba9b6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+LVP: '''<u>L</u>'''-asparaginase, '''<u>V</u>'''incristine, '''<u>P</u>'''rednisolone
+===Regimen {{#subobject:651a7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pubmed/12953813 Yong et al. 2003]
+|style="background-color:#ffffbe"|Phase II, <20 patients
+| style="background-color:#e0ecf4" |ORR: 83%
+|-
+|}
+''Regimen details are from a review article; original article is not available through PubMed''
+====Chemotherapy====
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> IV once on day 1
+*[[Prednisolone (Millipred)]] 100 mg PO once per day on days to 5
+
+===References===
+# Yong W, Zheng W, Zhang Y, Zhu J, Wei Y, Zhu D, Li J. L-asparaginase-based regimen in the treatment of refractory midline nasal/nasal-type T/NK-cell lymphoma. Int J Hematol. 2003 Aug;78(2):163-7. [https://www.ncbi.nlm.nih.gov/pubmed/12953813 PubMed]
+
+==SMILE {{#subobject:924b1a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+SMILE: '''<u>S</u>'''teroid (Dexamethasone), '''<u>M</u>'''ethotrexate, '''<u>I</u>'''fosfamide, '''<u>L</u>'''-asparaginase, '''<u>E</u>'''toposide
+===Regimen {{#subobject:aa2ac|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/29/33/4410.long Yamaguchi et al. 2011]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#e0ecf4" |ORR: 79%
+|-
+|}
+====Chemotherapy====
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 2 to 4
+*[[Methotrexate (MTX)]] 2000 mg/m<sup>2</sup> IV over 6 hours once on day 1
+*[[Ifosfamide (Ifex)]] 1500 mg/m<sup>2</sup> IV once per day on days 2 to 4
+*[[Asparaginase (Elspar)]] 6000 units/m<sup>2</sup> IV once per day on days 8, 10, 12, 14, 16, 18, 20
+*[[Etoposide (Vepesid)]] 100 mg/m<sup>2</sup> IV once per day on days 2 to 4
+
+====Supportive medications====
+*[[Folinic acid (Leucovorin)]] 15 mg IV or PO Q6H x 4 doses per day on days 2 to 4, beginning 30 hours after completion of [[Methotrexate (MTX)]]
+*[[Mesna (Mesnex)]] 300 mg/m<sup>2</sup> IV three times per day on days 2 to 4; first dose given together with [[Ifosfamide (Ifex)]], second dose given at 4 hours after start of [[Ifosfamide (Ifex)]], and third dose given 8 hours after start of [[Ifosfamide (Ifex)]]
+*[[Filgrastim (Neupogen)]] (dose not specified) IV or SC once per day, starting on day 6, given until WBC count greater than 5 x 10<sup>9</sup>/L
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] prophylaxis recommended
+
+'''28-day cycle for 2 cycles'''
+
+''After 2 cycles, patients could receive additional treatment with SMILE and/or other chemotherapy, with or without autologous/allogeneic stem cell transplant.''
+
+===References===
+# '''Phase 1:''' Yamaguchi M, Suzuki R, Kwong YL, Kim WS, Hasegawa Y, Izutsu K, Suzumiya J, Okamura T, Nakamura S, Kawa K, Oshimi K. Phase I study of dexamethasone, methotrexate, ifosfamide, L-asparaginase, and etoposide (SMILE) chemotherapy for advanced-stage, relapsed or refractory extranodal natural killer (NK)/T-cell lymphoma and leukemia. Cancer Sci. 2008 May;99(5):1016-20. Epub 2008 Feb 19. [https://onlinelibrary.wiley.com/doi/10.1111/j.1349-7006.2008.00768.x/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18294294 PubMed] content property of [http://hemonc.org HemOnc.org]
+# Yamaguchi M, Kwong YL, Kim WS, Maeda Y, Hashimoto C, Suh C, Izutsu K, Ishida F, Isobe Y, Sueoka E, Suzumiya J, Kodama T, Kimura H, Hyo R, Nakamura S, Oshimi K, Suzuki R. Phase II study of SMILE chemotherapy for newly diagnosed stage IV, relapsed, or refractory extranodal natural killer (NK)/T-cell lymphoma, nasal type: the NK-Cell Tumor Study Group study. J Clin Oncol. 2011 Nov 20;29(33):4410-6. Epub 2011 Oct 11. [http://jco.ascopubs.org/content/29/33/4410.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21990393 PubMed]
+
+[[Category:Extranodal NK/T-cell lymphoma, nasal type regimens]]
+[[Category:Disease-specific pages]]
+[[Category:T-cell lymphomas]]

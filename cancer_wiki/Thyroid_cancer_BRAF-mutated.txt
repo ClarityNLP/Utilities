@@ -1,0 +1,75 @@
+{| class="wikitable" style="text-align:center; width:50%"
+! style="color:white; font-size:125%; background-color:#08519c" align="center" colspan="2" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0" |[[File:Jeenavarghese.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Jvarghese|Jeena M. Varghese, MBBS]]<br>Houston, TX</big><br>[https://www.linkedin.com/in/jeena-varghese-b2b45b9b/ LinkedIn]
+|-
+|}
+<big>'''Note: these are biomarker-specific regimens, please see the [[Thyroid cancer|main thyroid cancer page]] for other regimens.'''</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Differentiated thyroid cancer, all lines of therapy=
+==Vemurafenib monotherapy {{#subobject:3f8f49|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:7fb6ac|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5532535/ Brose et al. 2016 (NO25530)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Note: this study was in patients with papillary thyroid cancer, only.''
+====Chemotherapy====
+*[[Vemurafenib (Zelboraf)]] 960 mg PO twice per day
+
+'''28-day cycles until progression or intolerable toxicity'''
+
+===References===
+# '''NO25530:''' Brose MS, Cabanillas ME, Cohen EE, Wirth LJ, Riehl T, Yue H, Sherman SI, Sherman EJ. Vemurafenib in patients with BRAF(V600E)-positive metastatic or unresectable papillary thyroid cancer refractory to radioactive iodine: a non-randomised, multicentre, open-label, phase 2 trial. Lancet Oncol. 2016 Sep;17(9):1272-82. Epub 2016 Jul 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(16)30166-8/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5532535/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27460442 PubMed]
+
+=Anaplastic thyroid cancer, all lines of therapy=
+==Dabrafenib & Trametinib {{#subobject:b078c2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:e03f2c|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791845/ Subbiah et al. 2017 (BRF117019)]
+| style="background-color:#ffffbe" |Phase II, <20 pts in subgroup
+| style="background-color:#bfd3e6" |ORR: 63% (95% CI, 35-85)
+|-
+|}
+''Patients in this subgroup had previously treated anaplastic thyroid cancer with BRAF p.V600E mutation.''
+====Chemotherapy====
+*[[Dabrafenib (Tafinlar)]] 150 mg PO twice per day
+*[[Trametinib (Mekinist)]] 2 mg PO once per day
+
+'''Continuously'''
+
+===References===
+# '''BRF117019:''' Subbiah V, Kreitman RJ, Wainberg ZA, Cho JY, Schellens JHM, Soria JC, Wen PY, Zielinski C, Cabanillas ME, Urbanowitz G, Mookerjee B, Wang D, Rangwala F, Keam B. Dabrafenib and trametinib treatment in patients with locally advanced or metastatic BRAF V600-mutant anaplastic thyroid cancer. J Clin Oncol. 2018 Jan 1;36(1):7-13. Epub 2017 Oct 26. [http://ascopubs.org/doi/full/10.1200/JCO.2017.73.6785 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5791845/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/29072975 PubMed]
+
+[[Category:Biomarker-specific pages]]
+[[Category:Thyroid cancer regimens]]
+[[Category:Endocrine cancers]]
+[[Category:Head and neck cancers]]

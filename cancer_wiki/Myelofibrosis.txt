@@ -1,0 +1,297 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Sanjay_mohan.png|frameless|upright=0.3|center]]
+|<big>[[User:Sanjaymohan|Sanjay R. Mohan, MD, MSCI]]<br>Nashville, TN</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==ESMO==
+*'''2015:''' Vannucchi et al. [https://www.esmo.org/Guidelines/Haematological-Malignancies/Philadelphia-Chromosome-Negative-Chronic-Myeloproliferative-Neoplasms Philadelphia chromosome-negative chronic myeloproliferative neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/mpn.pdf NCCN Guidelines - Myeloproliferative Neoplasms]
+
+=All lines of therapy=
+==Lenalidomide monotherapy {{#subobject:1 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:1 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/108/4/1158.long Tefferi et al. 2006]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day
+
+===References===
+<!-- no pre-pub disclosed -->
+# Tefferi A, Cortes J, Verstovsek S, Mesa RA, Thomas D, Lasho TL, Hogan WJ, Litzow MR, Allred JB, Jones D, Byrne C, Zeldis JB, Ketterling RP, McClure RF, Giles F, Kantarjian HM. Lenalidomide therapy in myelofibrosis with myeloid metaplasia. Blood. 2006 Aug 15;108(4):1158-64. Epub 2006 Apr 11. [http://www.bloodjournal.org/content/108/4/1158.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16609064 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4822164/ Verstovsek et al. 2012 (COMFORT-I)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Ruxolitinib_monotherapy|Ruxolitinib]]
+| style="background-color:#fc8d59" |Seems to have inferior OS (*)
+|-
+|[http://oncology.jamanetwork.com/article.aspx?articleid=2330618 Pardanani et al. 2015 (JAKARTA)]
+|style="background-color:#1a9851"|Phase III (C)
+|Fedratinib
+|style="background-color:#d73027"|Inferior RR
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5383927/ Tefferi et al. 2016 (RESUME)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Pomalidomide_monotherapy|Pomalidomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+
+''No active treatment; included here because it was used as a comparator in one or more randomized controlled trials. Note that although fedratinib had superior efficacy to placebo, it had unacceptable toxicity and is no longer under active development. Reported efficacy for COMFORT-I is based on the 2017 update.''
+
+===References===
+# '''COMFORT-I:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger M, Miller C, Silver RT, Talpaz M, Winton EF, Harvey JH Jr, Arcasoy MO, Hexner E, Lyons RM, Paquette R, Raza A, Vaddi K, Erickson-Viitanen S, Koumenis IL, Sun W, Sandor V, Kantarjian HM. A double-blind, placebo-controlled trial of ruxolitinib for myelofibrosis. N Engl J Med. 2012 Mar 1;366(9):799-807. [https://www.nejm.org/doi/full/10.1056/NEJMoa1110557 link to original article] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1110557/suppl_file/nejmoa1110557_appendix.pdf supplementary appendix] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1110557/suppl_file/nejmoa1110557_protocol.pdf trial protocol] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4822164/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22375971 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH, Arcasoy MO, Hexner EO, Lyons RM, Paquette R, Raza A, Vaddi K, Erickson-Viitanen S, Sun W, Sandor V, Kantarjian HM. Efficacy, safety and survival with ruxolitinib treatment in patients with myelofibrosis: results of a median 2-year follow-up of COMFORT-I. Haematologica. 2013 Dec;98(12):1865-71. Epub 2013 Sep 13. [http://www.haematologica.org/content/98/12/1865.full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3856961/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24038026 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH, Arcasoy MO, Hexner EO, Lyons RM, Raza A, Vaddi K, Sun W, Peng W, Sandor V, Kantarjian H. Three-year efficacy, overall survival, and safety of ruxolitinib therapy in patients with myelofibrosis from the COMFORT-I study. Haematologica. 2015 Apr;100(4):479-88. Epub 2015 Jan 23. [http://www.haematologica.org/content/100/4/479.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4380721/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25616577 PubMed]
+## '''Pooled update:''' Vannucchi AM, Kantarjian HM, Kiladjian JJ, Gotlib J, Cervantes F, Mesa RA, Sarlis NJ, Peng W, Sandor V, Gopalakrishna P, Hmissi A, Stalbovskaya V, Gupta V, Harrison C, Verstovsek S; COMFORT Investigators. A pooled analysis of overall survival in COMFORT-I and COMFORT-II, 2 randomized phase III trials of ruxolitinib for the treatment of myelofibrosis. Haematologica. 2015 Sep;100(9):1139-45. Epub 2015 Jun 11. [http://www.haematologica.org/content/100/9/1139.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4800694/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26069290 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH Jr, Arcasoy MO, Hexner EO, Lyons RM, Paquette R, Raza A, Jones M, Kornacki D, Sun K, Kantarjian H; COMFORT-I investigators. Long-term treatment with ruxolitinib for patients with myelofibrosis: 5-year update from the randomized, double-blind, placebo-controlled, phase 3 COMFORT-I trial. J Hematol Oncol. 2017 Feb 22;10(1):55. [https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0417-z link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5322633/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28228106 PubMed]
+# '''JAKARTA:''' Pardanani A, Harrison C, Cortes JE, Cervantes F, Mesa RA, Milligan D, Masszi T, Mishchenko E, Jourdan E, Vannucchi AM, Drummond MW, Jurgutis M, Kuliczkowski K, Gheorghita E, Passamonti F, Neumann F, Patki A, Gao G, Tefferi A. Safety and efficacy of fedratinib in patients with primary or secondary myelofibrosis: A randomized clinical trial. JAMA Oncol. 2015 Aug 1;1(5):643-51. [http://oncology.jamanetwork.com/article.aspx?articleid=2330618 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26181658 PubMed]
+# '''RESUME:''' Tefferi A, Al-Ali HK, Barosi G, Devos T, Gisslinger H, Jiang Q, Kiladjian JJ, Mesa R, Passamonti F, McMullin MF, Ribrag V, Schiller G, Vannucchi AM, Zhou D, Reiser D, Zhong J, Gale RP. A randomized study of pomalidomide vs placebo in persons with myeloproliferative neoplasm-associated myelofibrosis and RBC-transfusion dependence. Leukemia. 2017 Apr;31(4):896-902. Epub 2016 Oct 24. [https://www.nature.com/leu/journal/v31/n4/full/leu2016300a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5383927/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27773929 PubMed]
+
+==Pomalidomide monotherapy {{#subobject:3 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:4 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nature.com/leu/journal/v25/n2/full/leu2010254a.html Begna et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5383927/ Tefferi et al. 2016 (RESUME)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 0.5 mg PO once per day
+**In '''Begna et al. 2010''', escalation up to 2 mg PO once per day allowed after first six cycles
+
+'''28-day cycles'''
+
+===Variant #2 {{#subobject:3 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ Tefferi et al. 2009]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|1. [[#Pomalidomide_.26_Prednisone|Pomalidomide (2 mg/d) & Prednisone]]<br> 2. [[#Pomalidomide_.26_Prednisone|Pomalidomide (0.5 mg/d) & Prednisone]]<br> 3. [[#Prednisone_monotherapy|Prednisone]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 2 mg PO once per day
+
+'''28-day cycles'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Tefferi A, Verstovsek S, Barosi G, Passamonti F, Roboz GJ, Gisslinger H, Paquette RL, Cervantes F, Rivera CE, Deeg HJ, Thiele J, Kvasnicka HM, Vardiman JW, Zhang Y, Bekele BN, Mesa RA, Gale RP, Kantarjian HM. Pomalidomide is active in the treatment of anemia associated with myelofibrosis. J Clin Oncol. 2009 Sep 20;27(27):4563-9. Epub 2009 Aug 3. [http://jco.ascopubs.org/content/27/27/4563.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19652059 PubMed]
+# Begna KH, Mesa RA, Pardanani A, Hogan WJ, Litzow MR, McClure RF, Tefferi A. A phase-2 trial of low-dose pomalidomide in myelofibrosis. Leukemia. 2011 Feb;25(2):301-4. Epub 2010 Nov 5. [https://www.nature.com/leu/journal/v25/n2/full/leu2010254a.html trial protocol] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21052089 PubMed]
+# '''RESUME:''' Tefferi A, Al-Ali HK, Barosi G, Devos T, Gisslinger H, Jiang Q, Kiladjian JJ, Mesa R, Passamonti F, McMullin MF, Ribrag V, Schiller G, Vannucchi AM, Zhou D, Reiser D, Zhong J, Gale RP. A randomized study of pomalidomide vs placebo in persons with myeloproliferative neoplasm-associated myelofibrosis and RBC-transfusion dependence. Leukemia. 2017 Apr;31(4):896-902. Epub 2016 Oct 24. [https://www.nature.com/leu/journal/v31/n4/full/leu2016300a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5383927/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27773929 PubMed]
+
+==Pomalidomide & Prednisone {{#subobject:4 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1 {{#subobject:5 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ Tefferi et al. 2009]
+|style="background-color:#91cf61"|Randomized Phase II, <20 in this arm (E)
+|1. [[#Pomalidomide_monotherapy|Pomalidomide]]<br> 2. [[#Pomalidomide_.26_Prednisone|Pomalidomide (0.5 mg/d) & Prednisone]]<br> 3. [[#Prednisone_monotherapy|Prednisone]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 2 mg PO once per day
+*[[Prednisone (Sterapred)]] as follows:
+**Cycle 1: 30 mg PO once per day 
+**Cycle 2: 15 mg PO once per day 
+**Cycle 3: 15 mg PO every other day
+
+'''28-day cycles'''
+
+===Variant #2 {{#subobject:6 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ Tefferi et al. 2009]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|1. [[#Pomalidomide_monotherapy|Pomalidomide]]<br> 2. [[#Pomalidomide_.26_Prednisone|Pomalidomide (2 mg/d) & Prednisone]]<br> 3. [[#Prednisone_monotherapy|Prednisone]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 0.5 mg PO once per day
+*[[Prednisone (Sterapred)]] as follows:
+**Cycle 1: 30 mg PO once per day 
+**Cycle 2: 15 mg PO once per day 
+**Cycle 3: 15 mg PO every other day
+
+'''28-day cycles'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Tefferi A, Verstovsek S, Barosi G, Passamonti F, Roboz GJ, Gisslinger H, Paquette RL, Cervantes F, Rivera CE, Deeg HJ, Thiele J, Kvasnicka HM, Vardiman JW, Zhang Y, Bekele BN, Mesa RA, Gale RP, Kantarjian HM. Pomalidomide is active in the treatment of anemia associated with myelofibrosis. J Clin Oncol. 2009 Sep 20;27(27):4563-9. Epub 2009 Aug 3. [http://jco.ascopubs.org/content/27/27/4563.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19652059 PubMed]
+
+==Prednisone monotherapy {{#subobject:5 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:7 |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ Tefferi et al. 2009]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|1. [[#Pomalidomide_monotherapy|Pomalidomide]]<br> 2. [[#Pomalidomide_.26_Prednisone|Pomalidomide (2 mg/d) & Prednisone]]<br> 3. [[#Pomalidomide_.26_Prednisone|Pomalidomide (0.5 mg/d) & Prednisone]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemotherapy====
+*[[Prednisone (Sterapred)]] as follows:
+**Cycle 1: 30 mg PO once per day 
+**Cycle 2: 15 mg PO once per day 
+**Cycle 3: 15 mg PO every other day
+
+'''28-day cycle for 3 cycles'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Tefferi A, Verstovsek S, Barosi G, Passamonti F, Roboz GJ, Gisslinger H, Paquette RL, Cervantes F, Rivera CE, Deeg HJ, Thiele J, Kvasnicka HM, Vardiman JW, Zhang Y, Bekele BN, Mesa RA, Gale RP, Kantarjian HM. Pomalidomide is active in the treatment of anemia associated with myelofibrosis. J Clin Oncol. 2009 Sep 20;27(27):4563-9. Epub 2009 Aug 3. [http://jco.ascopubs.org/content/27/27/4563.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4979191/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19652059 PubMed]
+
+==Ruxolitinib monotherapy {{#subobject:6 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:8 |Variant=1}}===
+COMFORT: '''<u>CO</u>'''ntrolled '''<u>M</u>'''yelo'''<u>F</u>'''ibrosis Study with '''<u>OR</u>'''al JAK Inhibitor '''<u>T</u>'''reatment
+
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187954/ Verstovsek et al. 2010]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4822164/ Verstovsek et al. 2012 (COMFORT-I)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Placebo|Placebo]]
+|style="background-color:#91cf60"|Seems to have superior OS (*)
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1110556 Harrison et al. 2012 (COMFORT-II)]
+|style="background-color:#1a9851"|Phase III (E)
+|"Best available therapy"
+|style="background-color:#91cf60"|Seems to have superior OS
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13379/full Mead et al. 2015 (ROBUST)]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5060023/ Al-Ali et al. 2016 (JUMP)]
+|style="background-color:#91cf61"|Phase 3b
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.73.4418 Mesa et al. 2017 (SIMPLIFY-1)]
+|style="background-color:#1a9851"|Phase III (C)
+|Momelotinib
+|style="background-color:#eeee01"|Non-inferior spleen response
+|-
+|}
+''Patients in COMFORT-II who received "best available therapy" generally received no active treatment, [[Hydroxyurea (Hydrea)]], or [[:Category:Steroids|glucocorticoids]]. Reported efficacy for COMFORT-I is based on the 2017 update.''
+====Chemotherapy====
+*[[Ruxolitinib (Jakafi)]] 10 to 25 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# '''SIMPLIFY-1:''' Verstovsek S, Kantarjian H, Mesa RA, Pardanani AD, Cortes-Franco J, Thomas DA, Estrov Z, Fridman JS, Bradley EC, Erickson-Viitanen S, Vaddi K, Levy R, Tefferi A. Safety and efficacy of INCB018424, a JAK1 and JAK2 inhibitor, in myelofibrosis. N Engl J Med. 2010 Sep 16;363(12):1117-27. [https://www.nejm.org/doi/full/10.1056/NEJMoa1002028 link to original article] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1002028/suppl_file/nejmoa1002028_appendix.pdf supplementary appendix] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187954/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20843246 PubMed]
+# '''COMFORT-I:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger M, Miller C, Silver RT, Talpaz M, Winton EF, Harvey JH Jr, Arcasoy MO, Hexner E, Lyons RM, Paquette R, Raza A, Vaddi K, Erickson-Viitanen S, Koumenis IL, Sun W, Sandor V, Kantarjian HM. A double-blind, placebo-controlled trial of ruxolitinib for myelofibrosis. N Engl J Med. 2012 Mar 1;366(9):799-807. [https://www.nejm.org/doi/full/10.1056/NEJMoa1110557 link to original article] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1110557/suppl_file/nejmoa1110557_appendix.pdf supplementary appendix] [https://www.nejm.org/doi/suppl/10.1056/NEJMoa1110557/suppl_file/nejmoa1110557_protocol.pdf trial protocol] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4822164/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22375971 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH, Arcasoy MO, Hexner EO, Lyons RM, Paquette R, Raza A, Vaddi K, Erickson-Viitanen S, Sun W, Sandor V, Kantarjian HM. Efficacy, safety and survival with ruxolitinib treatment in patients with myelofibrosis: results of a median 2-year follow-up of COMFORT-I. Haematologica. 2013 Dec;98(12):1865-71. Epub 2013 Sep 13. [http://www.haematologica.org/content/98/12/1865.full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3856961/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24038026 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Levy RS, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH, Arcasoy MO, Hexner EO, Lyons RM, Raza A, Vaddi K, Sun W, Peng W, Sandor V, Kantarjian H. Three-year efficacy, overall survival, and safety of ruxolitinib therapy in patients with myelofibrosis from the COMFORT-I study. Haematologica. 2015 Apr;100(4):479-88. Epub 2015 Jan 23. [http://www.haematologica.org/content/100/4/479.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4380721/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25616577 PubMed]
+## '''Pooled update:''' Vannucchi AM, Kantarjian HM, Kiladjian JJ, Gotlib J, Cervantes F, Mesa RA, Sarlis NJ, Peng W, Sandor V, Gopalakrishna P, Hmissi A, Stalbovskaya V, Gupta V, Harrison C, Verstovsek S; COMFORT Investigators. A pooled analysis of overall survival in COMFORT-I and COMFORT-II, 2 randomized phase III trials of ruxolitinib for the treatment of myelofibrosis. Haematologica. 2015 Sep;100(9):1139-45. Epub 2015 Jun 11. [http://www.haematologica.org/content/100/9/1139.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4800694/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26069290 PubMed]
+## '''Update:''' Verstovsek S, Mesa RA, Gotlib J, Gupta V, DiPersio JF, Catalano JV, Deininger MW, Miller CB, Silver RT, Talpaz M, Winton EF, Harvey JH Jr, Arcasoy MO, Hexner EO, Lyons RM, Paquette R, Raza A, Jones M, Kornacki D, Sun K, Kantarjian H; COMFORT-I investigators. Long-term treatment with ruxolitinib for patients with myelofibrosis: 5-year update from the randomized, double-blind, placebo-controlled, phase 3 COMFORT-I trial. J Hematol Oncol. 2017 Feb 22;10(1):55. [https://jhoonline.biomedcentral.com/articles/10.1186/s13045-017-0417-z link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5322633/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28228106 PubMed]
+# '''COMFORT-II:''' Harrison C, Kiladjian JJ, Al-Ali HK, Gisslinger H, Waltzman R, Stalbovskaya V, McQuitty M, Hunter DS, Levy R, Knoops L, Cervantes F, Vannucchi AM, Barbui T, Barosi G. JAK inhibition with ruxolitinib versus best available therapy for myelofibrosis. N Engl J Med. 2012 Mar 1;366(9):787-98. [https://www.nejm.org/doi/full/10.1056/NEJMoa1110556 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22375970 PubMed] content property of [http://hemonc.org HemOnc.org]
+## '''Update:''' Cervantes F, Vannucchi AM, Kiladjian JJ, Al-Ali HK, Sirulnik A, Stalbovskaya V, McQuitty M, Hunter DS, Levy RS, Passamonti F, Barbui T, Barosi G, Harrison CN, Knoops L, Gisslinger H. Three-year efficacy, safety, and survival findings from COMFORT-II, a phase 3 study comparing ruxolitinib with best available therapy for myelofibrosis. Blood. 2013 Dec 12;122(25):4047-53. Epub 2013 Oct 30. Erratum in: Blood. 2016 Dec 22;128(25):3013. [http://www.bloodjournal.org/content/122/25/4047.full link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24174625 PubMed]
+## '''Pooled update:''' Vannucchi AM, Kantarjian HM, Kiladjian JJ, Gotlib J, Cervantes F, Mesa RA, Sarlis NJ, Peng W, Sandor V, Gopalakrishna P, Hmissi A, Stalbovskaya V, Gupta V, Harrison C, Verstovsek S; COMFORT Investigators. A pooled analysis of overall survival in COMFORT-I and COMFORT-II, 2 randomized phase III trials of ruxolitinib for the treatment of myelofibrosis. Haematologica. 2015 Sep;100(9):1139-45. Epub 2015 Jun 11. [http://www.haematologica.org/content/100/9/1139.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4800694/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26069290 PubMed]
+## '''Update:''' Harrison CN, Vannucchi AM, Kiladjian JJ, Al-Ali HK, Gisslinger H, Knoops L, Cervantes F, Jones MM, Sun K, McQuitty M, Stalbovskaya V, Gopalakrishna P, Barbui T. Long-term findings from COMFORT-II, a phase 3 study of ruxolitinib vs best available therapy for myelofibrosis. Leukemia. 2016 Aug;30(8):1701-7. Epub 2016 May 23. [https://www.nature.com/leu/journal/v30/n8/full/leu2016148a.html link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5399157/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27211272 PubMed]
+# '''ROBUST:''' Mead AJ, Milojkovic D, Knapper S, Garg M, Chacko J, Farquharson M, Yin J, Ali S, Clark RE, Andrews C, Ktiouet Dawson M, Harrison C. Response to ruxolitinib in patients with intermediate-1-, intermediate-2-, and high-risk myelofibrosis: results of the UK ROBUST Trial. Br J Haematol. 2015 Jul;170(1):29-39. Epub 2015 Mar 30. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13379/full link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25824940 PubMed]
+# '''JUMP:''' Al-Ali HK, Griesshammer M, le Coutre P, Waller CF, Liberati AM, Schafhausen P, Tavares R, Giraldo P, Foltz L, Raanani P, Gupta V, Tannir B, Ronco JP, Ghosh J, Martino B, Vannucchi AM. Safety and efficacy of ruxolitinib in an open-label, multicenter, single-arm phase 3b expanded-access study in patients with myelofibrosis: a snapshot of 1144 patients in the JUMP trial. Haematologica. 2016 Sep;101(9):1065-73. Epub 2016 May 31. [http://www.haematologica.org/content/101/9/1065.abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5060023/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27247324 PubMed]
+# '''SIMPLIFY-1:''' Mesa RA, Kiladjian JJ, Catalano JV, Devos T, Egyed M, Hellmann A, McLornan D, Shimoda K, Winton EF, Deng W, Dubowy RL, Maltzman JD, Cervantes F, Gotlib J. SIMPLIFY-1: a phase III randomized trial of momelotinib versus ruxolitinib in Janus kinase inhibitor-naïve patients with myelofibrosis. J Clin Oncol. 2017 Dec 1;35(34):3844-3850. Epub 2017 Sep 20. [http://ascopubs.org/doi/full/10.1200/JCO.2017.73.4418 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28930494 PubMed]
+
+=Investigational agents=
+*[[Momelotinib (CYT387)]]
+*[[Pacritinib (SB1518)]]
+
+[[Category:Myelofibrosis regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Myeloproliferative neoplasms]]

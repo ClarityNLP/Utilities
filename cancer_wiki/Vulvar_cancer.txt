@@ -1,0 +1,72 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Dewdney.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Summerdewdney|Summer B. Dewdney, MD]]<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/vulvar.pdf NCCN Guidelines - Vulvar Cancer]
+
+=Neoadjuvant therapy=
+==Cisplatin & RT {{#subobject:89c649|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:63d249|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.gynecologiconcology-online.net/article/S0090-8258(11)00884-5/fulltext Moore et al. 2011]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemoradiotherapy====
+*[[Cisplatin (Platinol)]] 40 mg/m<sup>2</sup> IV once per week
+*Concurrent [[External_beam_radiotherapy|radiation therapy]]: 1.8 Gy x 32 fractions, for a dose of 57.6 Gy
+
+'''One course'''
+====Subsequent treatment====
+*[[Surgery|Surgical resection]] of residual disease (or biopsy to confirm CR)
+
+===References===
+# Moore DH, Ali S, Koh WJ, Michael H, Barnes MN, McCourt CK, Homesley HD, Walker JL. A phase II trial of radiation therapy and weekly cisplatin chemotherapy for the treatment of locally-advanced squamous cell carcinoma of the vulva: a Gynecologic Oncology Group study. Gynecol Oncol. 2012 Mar;124(3):529-33. Epub 2011 Nov 9. [https://www.gynecologiconcology-online.net/article/S0090-8258(11)00884-5/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22079361 PubMed]
+
+=Locally advanced or metastatic disease=
+''Due to its relative rarity, there are very few prospective trials in advanced and metastatic vulvar cancer. In clinical practice, many adopt regimens from the cervical cancer literature; see the [[Cervical_cancer|cervical cancer page]] for those regimens.''
+
+==Paclitaxel monotherapy {{#subobject:635f43|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:723bf0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2731017/ Witteveen et al. 2009]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 175 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 10 cycles'''
+===References===
+# Witteveen PO, van der Velden J, Vergote I, Guerra C, Scarabeli C, Coens C, Demonty G, Reed N. Phase II study on paclitaxel in patients with recurrent, metastatic or locally advanced vulvar cancer not amenable to surgery or radiotherapy: a study of the EORTC-GCG (European Organisation for Research and Treatment of Cancer--Gynaecological Cancer Group). Ann Oncol. 2009 Sep;20(9):1511-6. Epub 2009 Jun 1. [https://academic.oup.com/annonc/article/20/9/1511/218207 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2731017/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19487487 PubMed]
+
+[[Category:Vulvar cancer regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gynecologic cancers]]

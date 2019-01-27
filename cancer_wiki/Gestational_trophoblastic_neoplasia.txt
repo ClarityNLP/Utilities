@@ -1,0 +1,81 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Dewdney.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Summerdewdney|Summer B. Dewdney, MD]]<br>Chicago, IL</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+==ESMO==
+*'''2013:''' Seckl et al. [https://www.esmo.org/Guidelines/Gynaecological-Cancers/Gestational-Trophoblastic-Disease Gestational trophoblastic disease: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/gtn.pdf NCCN Guidelines - Gestational Trophoblastic Neoplasia]
+
+=Low-risk disease, all lines of therapy=
+==Dactinomycin monotherapy {{#subobject:415b07|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fcf204|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068058/ Osborne et al. 2011 (GOG 0174)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Methotrexate_monotherapy|Methotrexate]]
+|style="background-color:#91cf60"|Seems to have superior CR rate
+|-
+|}
+====Chemotherapy====
+*[[Dactinomycin (Cosmegen)]] 1.25 mg/m<sup>2</sup> IV push once every 2 weeks
+
+'''Treatment continued "until the βhCG assay had reached the institutional normal, or until either a rise or plateau in the βhCG level was observed"'''
+===References===
+# '''GOG 0174:''' Osborne RJ, Filiaci V, Schink JC, Mannel RS, Alvarez Secord A, Kelley JL, Provencher D, Scott Miller D, Covens AL, Lage JM. Phase III trial of weekly methotrexate or pulsed dactinomycin for low-risk gestational trophoblastic neoplasia: a Gynecologic Oncology Group study. J Clin Oncol. 2011 Mar 1;29(7):825-31. Epub 2011 Jan 24. [http://ascopubs.org/doi/full/10.1200/JCO.2010.30.4386 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068058/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21263100 PubMed]
+
+==Methotrexate monotherapy {{#subobject:d33308|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b3d0ec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;"
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1016/0020-7292(89)90779-0 Homesley et al. 1988]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068058/ Osborne et al. 2011 (GOG 0174)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Dactinomycin_monotherapy|Dactinomycin]]
+|style="background-color:#fc8d59"|Seems to have inferior CR rate
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 30 mg/m<sup>2</sup> IM once per week
+
+'''Treatment continued "until the βhCG assay had reached the institutional normal, or until either a rise or plateau in the βhCG level was observed"'''
+===References===
+# Homesley HD, Blessing JA, Rettenmaier M, Capizzi RL, Major FJ, Twiggs LB. Weekly intramuscular methotrexate for nonmetastatic gestational trophoblastic disease. Obstet Gynecol. 1988 Sep;72(3 Pt 1):413-8. [https://obgyn.onlinelibrary.wiley.com/doi/abs/10.1016/0020-7292(89)90779-0 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/2457192 PubMed]
+# '''GOG 0174:''' Osborne RJ, Filiaci V, Schink JC, Mannel RS, Alvarez Secord A, Kelley JL, Provencher D, Scott Miller D, Covens AL, Lage JM. Phase III trial of weekly methotrexate or pulsed dactinomycin for low-risk gestational trophoblastic neoplasia: a Gynecologic Oncology Group study. J Clin Oncol. 2011 Mar 1;29(7):825-31. Epub 2011 Jan 24. [http://ascopubs.org/doi/full/10.1200/JCO.2010.30.4386 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3068058/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21263100 PubMed]
+
+[[Category:Gestational trophoblastic neoplasia regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gynecologic cancers]]

@@ -1,0 +1,145 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:Headshot Cowan.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Andrewc072|Andrew J. Cowan, MD]]<br>Seattle, WA</big><br>[https://www.linkedin.com/in/andrew-cowan-63b3a130/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==EMN==
+*'''2018:''' Gavriatopoulou et al. [https://www.nature.com/articles/s41375-018-0209-7 European myeloma network recommendations on diagnosis and management of patients with rare plasma cell dyscrasias] [https://www.ncbi.nlm.nih.gov/pubmed/30038381 PubMed]
+==IMWG==
+*'''2012:''' de Larrea et al. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4112539/ Consensus Statement on Diagnostic Requirements, Response Criteria, and Treatment Recommendations by the International Myeloma Working Group (IMWG)]
+
+=First-line therapy=
+
+==PAD/VCD {{#subobject:cc293b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PAD/VCD: '''<u>P</u>'''S-341 (Bortezomib), '''<u>A</u>'''driamycin liposomal (Doxorubicin liposomal), '''<u>D</u>'''examethasone alternating with '''<u>V</u>'''elcade (Bortezomib), '''<u>C</u>'''yclophosphamide, '''<u>D</u>'''examethasone
+
+===Regimen {{#subobject:9763fb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/34/18/2125.full Royer et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy, PAD portion====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> SC once per day on days 1, 4, 8, 11
+*[[Pegylated liposomal doxorubicin (Doxil)]] 30 mg/m<sup>2</sup> IV once on day 4
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 4, 8, 11
+
+'''Two 21-day cycles (1 & 3), alternating with VCD'''
+
+====Chemotherapy, VCD portion====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> SC once per day on days 1, 4, 8, 11
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> PO once per day on days 1 & 8
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 4, 8, 11
+
+'''Two 21-day cycles (2 & 4), alternating with PAD'''
+====Subsequent treatment====
+*Responding patients: [[#Melphalan.2C_then_auto_HSCT|High-dose melphalan & autologous hematopoietic stem cell transplant]]
+
+===References===
+<!-- Presented at the 55th American Society of Hematology Annual Meeting, New Orleans, LA, December 7-10, 2013, and the 40th Annual Meeting of the European Society for Blood and Marrow Transplantation, Milan, Italy, March 30 to April 2, 2014. -->
+# Royer B, Minvielle S, Diouf M, Roussel M, Karlin L, Hulin C, Arnulf B, Macro M, Cailleres S, Brion A, Brechignac S, Belhadj K, Chretien ML, Wetterwald M, Chaleteix C, Tiab M, Leleu X, Frenzel L, Garderet L, Choquet S, Fuzibet JG, Dauriac C, Forneker LM, Benboubker L, Facon T, Moreau P, Avet-Loiseau H, Marolleau JP. Bortezomib, Doxorubicin, Cyclophosphamide, Dexamethasone Induction Followed by Stem Cell Transplantation for Primary Plasma Cell Leukemia: A Prospective Phase II Study of the Intergroupe Francophone du Myélome. J Clin Oncol. 2016 Jun 20;34(18):2125-32. Epub 2016 Apr 25. [http://jco.ascopubs.org/content/34/18/2125.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27114594 PubMed]
+
+==Rd {{#subobject:dc6eae|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Rd: '''<u>R</u>'''evlimid (Lenalidomide) & low-dose '''<u>d</u>'''examethasone
+<br>RevDex: '''<u>Rev</u>'''limid (Lenalidomide) & '''<u>Dex</u>'''amethasone
+<br>Ld: '''<u>L</u>'''enalidomide & low-dose '''<u>d</u>'''examethasone
+<br>LenDex: '''<u>L</u>'''enalidomide & '''<u>D</u>'''examethasone
+===Regimen {{#subobject:be34d7|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v28/n1/full/leu2013241a.html Musto et al. 2013]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15, 22
+
+'''28-day cycle for 4 cycles'''
+====Subsequent treatment====
+*Responding patients eligible for transplant: HSCT per center protocol
+*Responding patients ineligible for transplant received 4 more cycles of Rd, then [[#Lenalidomide_monotherapy|lenalidomide maintenance]]
+
+===References===
+# Musto P, Simeon V, Martorelli MC, Petrucci MT, Cascavilla N, Di Raimondo F, Caravita T, Morabito F, Offidani M, Olivieri A, Benevolo G, Mina R, Guariglia R, D'Arena G, Mansueto G, Filardi N, Nobile F, Levi A, Falcone A, Cavalli M, Pietrantuono G, Villani O, Bringhen S, Omedè P, Lerose R, Agnelli L, Todoerti K, Neri A, Boccadoro M, Palumbo A. Lenalidomide and low-dose dexamethasone for newly diagnosed primary plasma cell leukemia. Leukemia. 2014 Jan;28(1):222-5. Epub 2013 Aug 20. [https://www.nature.com/leu/journal/v28/n1/full/leu2013241a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23958922 PubMed]
+
+=Consolidation after first-line therapy=
+
+==Melphalan, then auto HSCT {{#subobject:5cf2b0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:e8054d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/34/18/2125.full Royer et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#PAD.2FVCD|PAD alternating with VCD]]
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once
+**Patients older than 65 years or with CrCl less than 30 mL/min/1.73m<sup>2</sup>: 140 mg/m<sup>2</sup>
+
+===References===
+<!-- Presented at the 55th American Society of Hematology Annual Meeting, New Orleans, LA, December 7-10, 2013, and the 40th Annual Meeting of the European Society for Blood and Marrow Transplantation, Milan, Italy, March 30 to April 2, 2014. -->
+# Royer B, Minvielle S, Diouf M, Roussel M, Karlin L, Hulin C, Arnulf B, Macro M, Cailleres S, Brion A, Brechignac S, Belhadj K, Chretien ML, Wetterwald M, Chaleteix C, Tiab M, Leleu X, Frenzel L, Garderet L, Choquet S, Fuzibet JG, Dauriac C, Forneker LM, Benboubker L, Facon T, Moreau P, Avet-Loiseau H, Marolleau JP. Bortezomib, Doxorubicin, Cyclophosphamide, Dexamethasone Induction Followed by Stem Cell Transplantation for Primary Plasma Cell Leukemia: A Prospective Phase II Study of the Intergroupe Francophone du Myélome. J Clin Oncol. 2016 Jun 20;34(18):2125-32. Epub 2016 Apr 25. [http://jco.ascopubs.org/content/34/18/2125.full link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27114594 PubMed]
+
+=Maintenance after first-line therapy=
+
+==Lenalidomide monotherapy {{#subobject:bec321|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:45c352|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v28/n1/full/leu2013241a.html Musto et al. 2013]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Rd|Rd]] x 8
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+
+'''28-day cycles'''
+
+===References===
+# Musto P, Simeon V, Martorelli MC, Petrucci MT, Cascavilla N, Di Raimondo F, Caravita T, Morabito F, Offidani M, Olivieri A, Benevolo G, Mina R, Guariglia R, D'Arena G, Mansueto G, Filardi N, Nobile F, Levi A, Falcone A, Cavalli M, Pietrantuono G, Villani O, Bringhen S, Omedè P, Lerose R, Agnelli L, Todoerti K, Neri A, Boccadoro M, Palumbo A. Lenalidomide and low-dose dexamethasone for newly diagnosed primary plasma cell leukemia. Leukemia. 2014 Jan;28(1):222-5. Epub 2013 Aug 20. [https://www.nature.com/leu/journal/v28/n1/full/leu2013241a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23958922 PubMed]
+
+[[Category:Plasma cell leukemia regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Plasma cell dyscrasias]]

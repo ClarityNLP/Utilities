@@ -1,0 +1,134 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" style="color:white; font-size:125%; background-color:#08519c" align="center" |'''Page editor'''
+! colspan="2" style="color:white; font-size:125%; background-color:#08519c" align="center" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |
+| style="width:35%" |<big>Matthew J. Rioth MD, MS<br>Denver, CO</big>
+|style="background-color:#F0F0F0|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+<big>'''Note: this page is for regimens specific to uveal melanoma; see the [[Melanoma|main melanoma page]] for other regimens.</big>
+
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/uveal.pdf NCCN Guidelines - Uveal Melanoma]
+
+=Metastatic or unresectable disease=
+==Dacarbazine monotherapy {{#subobject:d3599b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:bede4c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4249701/ Carvajal et al. 2014]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|Selumetinib
+| style="background-color:#fee08b" |Might have inferior OS
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.74.1090 Carvajal et al. 2018 (SUMIT)]
+|style="background-color:#1a9851"|Phase III (C)
+|Dacarbazine & Selumetinib
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Dacarbazine (DTIC)]] 1000 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+# Carvajal RD, Sosman JA, Quevedo JF, Milhem MM, Joshua AM, Kudchadkar RR, Linette GP, Gajewski TF, Lutzky J, Lawson DH, Lao CD, Flynn PJ, Albertini MR, Sato T, Lewis K, Doyle A, Ancell K, Panageas KS, Bluth M, Hedvat C, Erinjeri J, Ambrosini G, Marr B, Abramson DH, Dickson MA, Wolchok JD, Chapman PB, Schwartz GK. Effect of selumetinib vs chemotherapy on progression-free survival in uveal melanoma: a randomized clinical trial. JAMA. 2014 Jun 18;311(23):2397-405. [https://jamanetwork.com/journals/jama/fullarticle/1881312 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4249701/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24938562 PubMed]
+# '''SUMIT:''' Carvajal RD, Piperno-Neumann S, Kapiteijn E, Chapman PB, Frank S, Joshua AM, Piulats JM, Wolter P, Cocquyt V, Chmielowski B, Evans TRJ, Gastaud L, Linette G, Berking C, Schachter J, Rodrigues MJ, Shoushtari AN, Clemett D, Ghiorghiu D, Mariani G, Spratt S, Lovick S, Barker P, Kilgour E, Lai Z, Schwartz GK, Nathan P. Selumetinib in combination with dacarbazine in patients with metastatic uveal melanoma: a phase III, multicenter, randomized trial (SUMIT). J Clin Oncol. 2018 Apr 20;36(12):1232-1239. Epub 2018 Mar 12. [http://ascopubs.org/doi/full/10.1200/JCO.2017.74.1090 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29528792 PubMed]
+
+==Fotemustine monotherapy {{#subobject:92d0c6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:ff4f50|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433517/ Leyvraz et al. 2014 (EORTC 18021)]
+| style="background-color:#1a9851" |Phase III (C)
+|IHA Fotemustine
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Fotemustine (Muphoran)]] as follows:
+**Weeks 1 to 3: 100 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+**Weeks 4 to 8: no treatment
+**Week 9 onwards: 100 mg/m<sup>2</sup> IV once on day 1, every 3 weeks
+
+'''8-week induction cycle, then 21-day cycles'''
+
+===References===
+# '''EORTC 18021:''' Leyvraz S, Piperno-Neumann S, Suciu S, Baurain JF, Zdzienicki M, Testori A, Marshall E, Scheulen M, Jouary T, Negrier S, Vermorken JB, Kaempgen E, Durando X, Schadendorf D, Gurunath RK, Keilholz U. Hepatic intra-arterial versus intravenous fotemustine in patients with liver metastases from uveal melanoma (EORTC 18021): a multicentric randomized trial. Ann Oncol. 2014 Mar;25(3):742-6. Epub 2014 Feb 7. [https://academic.oup.com/annonc/article/25/3/742/149384 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4433517/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24510314 PubMed]
+
+==TACE {{#subobject:f96a1b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TACE: '''<u>T</u>'''rans-'''<u>A</u>'''rterial '''<u>C</u>'''hemo-'''<u>E</u>'''mbolization
+===Regimen {{#subobject:93050b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://jamanetwork.com/journals/jama/article-abstract/373516 Mavligit et al. 1988]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[TACE]] 
+
+'''1 or more treatments'''
+
+===References===
+# Mavligit GM, Charnsangavej C, Carrasco CH, Patt YZ, Benjamin RS, Wallace S. Regression of ocular melanoma metastatic to the liver after hepatic arterial chemoembolization with cisplatin and polyvinyl sponge. JAMA. 1988 Aug 19;260(7):974-6. [https://jamanetwork.com/journals/jama/article-abstract/373516 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3398202 PubMed]
+
+==TILs {{#subobject:f33e1b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TILs: '''<u>T</u>'''umor '''<u>I</u>'''filtrating '''<u>L</u>'''ymphocyte'''<u>s</u>'''
+===Regimen {{#subobject:12350b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490083/ Chandran et al. 2017 (NCI 13-C-0093)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[Autologous_HSCT#FC|FC]] lymphodepletion
+====Immunotherapy====
+*[[Autologous TILs]]
+
+===References===
+# '''NCI 13-C-0093:''' Chandran SS, Somerville RPT, Yang JC, Sherry RM, Klebanoff CA, Goff SL, Wunderlich JR, Danforth DN, Zlott D, Paria BC, Sabesan AC, Srivastava AK, Xi L, Pham TH, Raffeld M, White DE, Toomey MA, Rosenberg SA, Kammula US. Treatment of metastatic uveal melanoma with adoptive transfer of tumour-infiltrating lymphocytes: a single-centre, two-stage, single-arm, phase 2 study. Lancet Oncol. 2017 Jun;18(6):792-802. Epub 2017 Apr 7. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30251-6/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5490083/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28395880 PubMed]
+
+[[Category:Uveal melanoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Skin cancers]]

@@ -1,0 +1,1356 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:nkv.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Neetavenepalli|Neeta K. Venepalli, MD, MBA]]<br>Chicago, IL</big>
+|-
+|}
+<big>Note: the page has regimens specific to rectal cancer. Please see the [[Colon_cancer|'''colon cancer page''']] for regimens specific to colon cancer as well as regimens intended more generically for colorectal cancer (e.g., [[Colon_cancer#CapeOx|adjuvant CapeOx]]).</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[http://www.esmo.org/ ESMO]==
+*'''2017:''' Glynne-Jones et al. [https://www.esmo.org/Guidelines/Gastrointestinal-Cancers/Rectal-Cancer Rectal cancer: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+===Older===
+*'''2013:''' Glimelius et al. [http://annonc.oxfordjournals.org/content/24/suppl_6/vi81.full.pdf+html Rectal cancer: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up] [https://www.ncbi.nlm.nih.gov/pubmed/24078665 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/rectal.pdf NCCN Guidelines - Rectal Cancer]
+
+==SIOG==
+*'''2013:''' [https://academic.oup.com/annonc/article/26/3/463/222917 Treatment of colorectal cancer in older patients: International Society of Geriatric Oncology (SIOG) consensus recommendations 2013]
+=Neoadjuvant therapy=
+
+==Capecitabine & RT {{#subobject:1887b9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+
+===Variant #1, continuous capecitabine {{#subobject:a05392|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1002/cncr.25943 Park et al. 2011]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Capecitabine_.26_RT_2|Adjuvant Capecitabine & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#1a9850" |Superior sphincter preservation
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_.26_RT|5-FU & RT]]
+|style="background-color:#eeee01"|Non-inferior OS
+|
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ O'Connell et al. 2014 (NSABP R-04)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_.26_RT|1. 5-FU & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+|style="background-color:#eeee01"|Similar toxicity
+|-
+|2. CapeOx & RT<br> [[#Fluorouracil.2C_Oxaliplatin.2C_RT|3. FUOX & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#1a9850" |Superior toxicity
+|-
+|}
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 825 mg/m<sup>2</sup> PO twice per day on days 1 to 38
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''One course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Capecitabine_monotherapy|adjuvant capecitabine]]
+
+===Variant #2, interrupted capecitabine {{#subobject:19cc2a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/10.1200/JCO.2009.25.8376 Gérard et al. 2010 (ACCORD 12/0405 PRODIGE 2)]
+|style="background-color:#1a9851"|Phase III (C)
+|CapeOx & RT
+|style="background-color:#fee08b"|Might have inferior pCR rate
+|-
+|}
+''Note: adjuvant therapy was not specified.''
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 800 mg/m<sup>2</sup> PO twice per day five days per week, on days of radiotherapy
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 45 Gy total in 25 fractions
+
+'''One course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+===References===
+# '''ACCORD 12:''' Gérard JP, Azria D, Gourgou-Bourgade S, Martel-Laffay I, Hennequin C, Etienne PL, Vendrely V, François E, de La Roche G, Bouché O, Mirabel X, Denis B, Mineur L, Berdah JF, Mahé MA, Bécouarn Y, Dupuis O, Lledo G, Montoto-Grillot C, Conroy T. Comparison of two neoadjuvant chemoradiotherapy regimens for locally advanced rectal cancer: results of the phase III trial ACCORD 12/0405-PRODIGE 2. J Clin Oncol. 2010 Apr 1;28(10):1638-44. Epub 2010 Mar 1. [http://ascopubs.org/doi/10.1200/JCO.2009.25.8376 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20194850 PubMed]
+## '''Update:''' Gérard JP, Azria D, Gourgou-Bourgade S, Martel-Lafay I, Hennequin C, Etienne PL, Vendrely V, François E, de La Roche G, Bouché O, Mirabel X, Denis B, Mineur L, Berdah JF, Mahé MA, Bécouarn Y, Dupuis O, Lledo G, Seitz JF, Bedenne L, Juzyna B, Conroy T. Clinical outcome of the ACCORD 12/0405 PRODIGE 2 randomized trial in rectal cancer. J Clin Oncol. 2012 Dec 20;30(36):4558-65. Epub 2012 Oct 29. [http://ascopubs.org/doi/full/10.1200/JCO.2012.42.8771 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23109696 PubMed]
+# Park JH, Yoon SM, Yu CS, Kim JH, Kim TW, Kim JC. Randomized phase 3 trial comparing preoperative and postoperative chemoradiotherapy with capecitabine for locally advanced rectal cancer. Cancer. 2011 Aug 15;117(16):3703-12. Epub 2011 Feb 15. [https://onlinelibrary.wiley.com/doi/full/10.1002/cncr.25943 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21328328 PubMed]
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+# '''NSABP R-04:''' O'Connell MJ, Colangelo LH, Beart RW, Petrelli NJ, Allegra CJ, Sharif S, Pitot HC, Shields AF, Landry JC, Ryan DP, Parda DS, Mohiuddin M, Arora A, Evans LS, Bahary N, Soori GS, Eakle J, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Wozniak TF, Roh MS, Yothers G, Wolmark N. Capecitabine and oxaliplatin in the preoperative multimodality treatment of rectal cancer: surgical end points from National Surgical Adjuvant Breast and Bowel Project trial R-04. J Clin Oncol. 2014 Jun 20;32(18):1927-34. Epub 2014 May 5. [http://ascopubs.org/doi/full/10.1200/JCO.2013.53.7753 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24799484 PubMed]
+## '''Update:''' Allegra CJ, Yothers G, O'Connell MJ, Beart RW, Wozniak TF, Pitot HC, Shields AF, Landry JC, Ryan DP, Arora A, Evans LS, Bahary N, Soori G, Eakle JF, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Sharif S, Roh MS, Wolmark N. Neoadjuvant 5-FU or capecitabine plus radiation with or without oxaliplatin in rectal cancer patients: a phase III randomized clinical trial. J Natl Cancer Inst. 2015 Sep 14;107(11). Erratum in: J Natl Cancer Inst. 2016 Apr;108(4). [https://academic.oup.com/jnci/article/107/11/djv248/2457689 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4849360/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26374429 PubMed]
+
+==Capecitabine, Sorafenib, RT {{#subobject:1812b9|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:a01232|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(17)31402-8/fulltext von Moos et al. 2017 (SAKK 41/08)]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+''Note: this regimen was intended for KRAS-mutated rectal cancer.''
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 825 mg/m<sup>2</sup> PO twice per day on days 1 to 33
+*[[Sorafenib (Nexavar)]] 400 mg PO once per day
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 45 Gy total
+
+'''5-week course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+===References===
+# '''SAKK 41/08:''' von Moos R, Koeberle D, Schacher S, Hayoz S, Winterhalder RC, Roth A, Bodoky G, Samaras P, Berger MD, Rauch D, Saletti P, Plasswilm L, Zwahlen D, Meier UR, Yan P, Izzo P, Klingbiel D, Bärtschi D, Zaugg K; Swiss Group for Clinical Cancer Research (SAKK). Neoadjuvant radiotherapy combined with capecitabine and sorafenib in patients with advanced KRAS-mutated rectal cancer: A phase I/II trial (SAKK 41/08). Eur J Cancer. 2018 Jan;89:82-89. Epub 2017 Dec 11. [https://www.ejcancer.com/article/S0959-8049(17)31402-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29241084 PubMed]
+
+==CapeOx {{#subobject:cf9acc|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CapeOX: '''<u>Cape</u>'''citabine & '''<u>OX</u>'''aliplatin
+===Regimen {{#subobject:205ad6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70381-X/fulltext Chua et al. 2010]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Oxaliplatin (Eloxatin)]] 130 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[#Capecitabine_.26_RT|Capecitabine & RT]], then [[Surgery#Total_mesorectal_excision|TME]]
+
+===References===
+# Chua YJ, Barbachano Y, Cunningham D, Oates JR, Brown G, Wotherspoon A, Tait D, Massey A, Tebbutt NC, Chau I. Neoadjuvant capecitabine and oxaliplatin before chemoradiotherapy and total mesorectal excision in MRI-defined poor-risk rectal cancer: a phase 2 trial. Lancet Oncol. 2010 Mar;11(3):241-8. Epub 2010 Jan 25. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70381-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20106720 PubMed]
+
+==CapeOx, Cetuximab, RT {{#subobject:2d68ed|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CapeOX, Cetuximab, RT: '''<u>Cape</u>'''citabine, '''<u>OX</u>'''aliplatin, Cetuximab, '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:5a3ef0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.clinical-colorectal-cancer.com/article/S1533-0028(17)30061-0/fulltext Leichman et al. 2017 (SWOG S0713)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 825 mg/m<sup>2</sup> PO twice per day on Monday to Friday
+*[[Oxaliplatin (Eloxatin)]] as follows:
+**Cycle 1: 50 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22, 29
+**Cycle 2: 50 mg/m<sup>2</sup> IV once per day on days 1, 8, 22, 29
+*[[Cetuximab (Erbitux)]] as follows:
+**Cycle 1: 400 mg/m<sup>2</sup> IV once on day 1, then 250 mg/m<sup>2</sup> IV once per day on days 8, 15, 22, 29
+**Cycle 2: 250 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22, 29
+*[[External_beam_radiotherapy|RT]] 180 cGy in 25 fractions, started with cycle 2
+
+'''35-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[Surgery#Total_mesorectal_excision|TME]]
+
+===References===
+# '''SWOG S0713:''' Leichman CG, McDonough SL, Smalley SR, Billingsley KG, Lenz HJ, Beldner MA, Hezel AF, Velasco MR, Guthrie KA, Blanke CD, Hochster HS. Cetuximab Combined With Induction Oxaliplatin and Capecitabine, Followed by Neoadjuvant Chemoradiation for Locally Advanced Rectal Cancer: SWOG 0713. Clin Colorectal Cancer. 2018 Mar;17(1):e121-e125. Epub 2017 Oct 24. [https://www.clinical-colorectal-cancer.com/article/S1533-0028(17)30061-0/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29233486 PubMed]
+
+==Fluorouracil & RT {{#subobject:bffc7f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, continuous {{#subobject:5801b6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2010.34.4911 Aschele et al. 2011 (STAR-01)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Fluorouracil.2C_Oxaliplatin.2C_RT|FUOX & RT]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|style="background-color:#1a9850"|Superior toxicity
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2012.42.9597 Ngan et al. 2012 (TTROG 01.014)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Radiation_therapy|Short-course RT]]
+| style="background-color:#ffffbf" |Seems not superior
+|style="background-color:#eeee01"|Similar toxicity
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ O'Connell et al. 2014 (NSABP R-04)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine_.26_RT|1. Capecitabine & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+|style="background-color:#eeee01"|Similar toxicity
+|-
+|2. CapeOx & RT<br> [[#Fluorouracil.2C_Oxaliplatin.2C_RT|3. FUOX & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#1a9850" |Superior toxicity
+|-
+|}
+''Note: efficacy for STAR-01 is based on the 2016 update.''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion for approximately 6 weeks
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''One course'''
+====Subsequent treatment====
+*STAR-01: [[Surgery#Rectal_cancer_surgery|Surgery]], preferably [[Surgery#Total_mesorectal_excision|TME]], then fluourouracil-based adjuvant therapy
+*NSABP R-04: [[Surgery#Rectal_cancer_surgery|Surgery]]
+
+===Variant #2, intermittent {{#subobject:3c5452|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa040694 Sauer et al. 2004 (CAO/ARO/AIO-94)]
+|style="background-color:#1a9851"|Phase III (E)
+|Adjuvant 5-FU & RT
+|style="background-color:#1a9850"|Superior five-year cumulative incidence of local relapse
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine_.26_RT|Capecitabine & RT]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract Rödel et al. 2012 (CAO/ARO/AIO-04)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Fluorouracil.2C_Oxaliplatin.2C_RT|Fluorouracil, Oxaliplatin, RT]]
+|style="background-color:#fc8d59"|Seems to have inferior pCR rate
+|-
+|}
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 1000 mg/m<sup>2</sup>/day IV continuous infusion over 120 hours, started on day 1 (total dose per cycle: 5000 mg/m<sup>2</sup>)
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''28-day cycle for 2 cycles'''
+====Subsequent treatment====
+*CAO/ARO/AIO-94: [[Surgery#Total_mesorectal_excision|TME]], then [[#Fluorouracil_monotherapy|adjuvant fluorouracil]]
+
+===References===
+# '''CAO/ARO/AIO-94:''' Sauer R, Becker H, Hohenberger W, Rödel C, Wittekind C, Fietkau R, Martus P, Tschmelitsch J, Hager E, Hess CF, Karstens JH, Liersch T, Schmidberger H, Raab R; German Rectal Cancer Study Group. Preoperative versus postoperative chemoradiotherapy for rectal cancer. N Engl J Med. 2004 Oct 21;351(17):1731-40. [https://www.nejm.org/doi/full/10.1056/NEJMoa040694 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15496622 PubMed]
+## '''Update:''' Sauer R, Liersch T, Merkel S, Fietkau R, Hohenberger W, Hess C, Becker H, Raab HR, Villanueva MT, Witzigmann H, Wittekind C, Beissbarth T, Rödel C. Preoperative versus postoperative chemoradiotherapy for locally advanced rectal cancer: results of the German CAO/ARO/AIO-94 randomized phase III trial after a median follow-up of 11 years. J Clin Oncol. 2012 Jun 1;30(16):1926-33. Epub 2012 Apr 23. [http://jco.ascopubs.org/content/30/16/1926.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22529255 PubMed]
+# '''STAR-01:''' Aschele C, Cionini L, Lonardi S, Pinto C, Cordio S, Rosati G, Artale S, Tagliagambe A, Ambrosini G, Rosetti P, Bonetti A, Negru ME, Tronconi MC, Luppi G, Silvano G, Corsi DC, Bochicchio AM, Chiaulon G, Gallo M, Boni L. Primary tumor response to preoperative chemoradiation with or without oxaliplatin in locally advanced rectal cancer: pathologic results of the STAR-01 randomized phase III trial. J Clin Oncol. 2011 Jul 10;29(20):2773-80. Epub 2011 May 23. [http://ascopubs.org/doi/full/10.1200/JCO.2010.34.4911 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21606427 PubMed]
+## '''Update: Abstract:''' Carlo Aschele, Sara Lonardi, Luca Cionini, Carmine Pinto, Stefano Sergio Cordio, Gerardo Rosati, Andrea Sartore Bianchi, Angiolo Tagliagambe, Michela Frisinghelli, Vittorina Zagonel, Paola Rosetti, Maria Emanuela Negru, Andrea Bonetti, Maria Chiara Tronconi, Gabriele Luppi, Anna Rita Marsella, Domenico C. Corsi, Anna Maria Bochicchio, Nicoletta Pella, and Luca Boni. Final results of STAR-01: A randomized phase III trial comparing preoperative chemoradiation with or without oxaliplatin in locally advanced rectal cancer. Journal of Clinical Oncology 2016 34:15_suppl, 3521-3521 [http://ascopubs.org/doi/abs/10.1200/JCO.2016.34.15_suppl.3521 link to abstract]
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+# '''CAO/ARO/AIO-04:''' Rödel C, Liersch T, Becker H, Fietkau R, Hohenberger W, Hothorn T, Graeven U, Arnold D, Lang-Welzenbach M, Raab HR, Sülberg H, Wittekind C, Potapov S, Staib L, Hess C, Weigang-Köhler K, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R; German Rectal Cancer Study Group. Preoperative chemoradiotherapy and postoperative chemotherapy with fluorouracil and oxaliplatin versus fluorouracil alone in locally advanced rectal cancer: initial results of the German CAO/ARO/AIO-04 randomised phase 3 trial. Lancet Oncol. 2012 Jul;13(7):679-87. Epub 2012 May 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22627104 PubMed]
+## '''Update:''' Rödel C, Graeven U, Fietkau R, Hohenberger W, Hothorn T, Arnold D, Hofheinz RD, Ghadimi M, Wolff HA, Lang-Welzenbach M, Raab HR, Wittekind C, Ströbel P, Staib L, Wilhelm M, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R, Liersch T; German Rectal Cancer Study Group. Oxaliplatin added to fluorouracil-based preoperative chemoradiotherapy and postoperative chemotherapy of locally advanced rectal cancer (the German CAO/ARO/AIO-04 study): final results of the multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2015 Aug;16(8):979-89. Epub 2015 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00159-X/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26189067 PubMed]
+# '''TTROG 01.014:''' Ngan SY, Burmeister B, Fisher RJ, Solomon M, Goldstein D, Joseph D, Ackland SP, Schache D, McClure B, McLachlan SA, McKendrick J, Leong T, Hartopeanu C, Zalcberg J, Mackay J. Randomized trial of short-course radiotherapy versus long-course chemoradiation comparing rates of local recurrence in patients with T3 rectal cancer: Trans-Tasman Radiation Oncology Group trial 01.04. J Clin Oncol. 2012 Nov 1;30(31):3827-33. Epub 2012 Sep 24. Erratum in: J Clin Oncol. 2013 Jan 20;31(3):399. [http://ascopubs.org/doi/full/10.1200/JCO.2012.42.9597 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23008301 PubMed]
+# '''NSABP R-04:''' O'Connell MJ, Colangelo LH, Beart RW, Petrelli NJ, Allegra CJ, Sharif S, Pitot HC, Shields AF, Landry JC, Ryan DP, Parda DS, Mohiuddin M, Arora A, Evans LS, Bahary N, Soori GS, Eakle J, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Wozniak TF, Roh MS, Yothers G, Wolmark N. Capecitabine and oxaliplatin in the preoperative multimodality treatment of rectal cancer: surgical end points from National Surgical Adjuvant Breast and Bowel Project trial R-04. J Clin Oncol. 2014 Jun 20;32(18):1927-34. Epub 2014 May 5.  [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24799484 PubMed]
+## '''Update:''' Allegra CJ, Yothers G, O'Connell MJ, Beart RW, Wozniak TF, Pitot HC, Shields AF, Landry JC, Ryan DP, Arora A, Evans LS, Bahary N, Soori G, Eakle JF, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Sharif S, Roh MS, Wolmark N. Neoadjuvant 5-FU or capecitabine plus radiation with or without oxaliplatin in rectal cancer patients: a phase III randomized clinical trial. J Natl Cancer Inst. 2015 Sep 14;107(11). Erratum in: J Natl Cancer Inst. 2016 Apr;108(4). [https://academic.oup.com/jnci/article/107/11/djv248/2457689 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4849360/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26374429 PubMed]
+
+==Fluorouracil, Folinic acid, RT {{#subobject:fbe1a7|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, 800/200 ("Nordic schedule") {{#subobject:3780c0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2007.15.3858 Braendengen et al. 2008 (LARCS)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Radiation_therapy|Radiotherapy]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|}
+''Note: reported efficacy is based on the 2018 update.''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV once per day on days 1 & 2, '''given first, prior to RT'''
+*[[Folinic acid (Leucovorin)]] 100 mg IV once per day on days 1 & 2, '''given second'''
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 2 Gy x 25 fractions, total of 50 Gy over 5 weeks
+
+'''14-day cycle for 3 cycles'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Fluorouracil_.26_Folinic_acid|5-FU & Leucovorin]] x 8
+
+===Variant #2, 1625/100 {{#subobject:0160e1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2773471/ Roh et al. 2009 (NSABP R-03)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil.2C_then_Fluorouracil_.26_RT.2C_then_Fluorouracil|Postoperative chemoradiotherapy]]
+| style="background-color:#d9ef8b" |Might have superior OS
+|-
+|}
+====Preceding treatment====
+*5-FU & Leucovorin x 1
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 325 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy over 5 weeks
+
+'''28-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Fluorouracil_.26_Folinic_acid|5-FU & Leucovorin]] x 4
+
+===Variant #3, 1750/100 {{#subobject:7d3ec1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2006.06.7629 Gérard et al. 2006 (FFCD 9203)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Radiation_therapy|Radiotherapy]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|[https://www.nejm.org/doi/10.1056/NEJMoa060829 Bosset et al. 2006 (EORTC 22921)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Radiation_therapy|Radiotherapy]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|[https://www.thegreenjournal.com/article/S0167-8140(14)00414-9/fulltext Sainato et al. 2014 (I-CNR-RT)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Note: these trials were negative for the primary endpoint of overall survival, but had much improved local control for the experimental arm.''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 350 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 5
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 45 Gy over 5 weeks
+
+'''28-day cycle for 2 cycles'''
+====Subsequent treatment====
+*FFCD 9203 & EORTC 22921: [[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Fluorouracil_.26_Folinic_acid|adjuvant 5-FU & LV]] x 2
+*I-CNR-RT: [[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Fluorouracil_.26_Folinic_acid|adjuvant 5-FU & LV]] versus [[#Observation|no further treatment]]
+
+===Variant #4, 2800/400 {{#subobject:98d3ca|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://jco.ascopubs.org/content/34/27/3300.full Deng et al. 2016 (FOWARC)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. mFOLFOX6
+|style="background-color:#91cf60"|Seems to have superior pCR rate
+|-
+|[[#mFOLFOX6_.26_RT|2. mFOLFOX6 & RT]]
+|style="background-color:#d73027"|Inferior pCR rate
+|-
+|}
+''Note: this regimen is stated to be based on the de Gramont regimen in the manuscript, although the details are different than those in [http://jco.ascopubs.org/content/18/16/2938.long de Gramont et al. 2000].''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*Concurrent [[External_beam_radiotherapy|radiation therapy]] given during cycles 2 to 4: 1.8 to 2.0 Gy once per day Monday through Friday for a total of 23 to 28 fractions over 5 to 6 weeks and a total dose of 46.0 to 50.4 Gy
+
+'''14-day cycle for 5 cycles'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then [[#Fluorouracil_.26_Folinic_acid|adjuvant 5-FU & LV]] x 7
+
+===References===
+# '''FFCD 9203:''' Gérard JP, Conroy T, Bonnetain F, Bouché O, Chapet O, Closon-Dejardin MT, Untereiner M, Leduc B, Francois E, Maurel J, Seitz JF, Buecher B, Mackiewicz R, Ducreux M, Bedenne L. Preoperative radiotherapy with or without concurrent fluorouracil and leucovorin in T3-4 rectal cancers: results of FFCD 9203. J Clin Oncol. 2006 Oct 1;24(28):4620-5. [http://ascopubs.org/doi/full/10.1200/JCO.2006.06.7629 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17008704 PubMed]
+# '''EORTC 22921:''' Bosset JF, Collette L, Calais G, Mineur L, Maingon P, Radosevic-Jelic L, Daban A, Bardet E, Beny A, Ollier JC; EORTC Radiotherapy Group Trial 22921. Chemotherapy with preoperative radiotherapy in rectal cancer. N Engl J Med. 2006 Sep 14;355(11):1114-23. Erratum in: N Engl J Med. 2007 Aug 16;357(7):728. [https://www.nejm.org/doi/10.1056/NEJMoa060829 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16971718 PubMed]
+## '''Update:''' Bosset JF, Calais G, Mineur L, Maingon P, Stojanovic-Rundic S, Bensadoun RJ, Bardet E, Beny A, Ollier JC, Bolla M, Marchal D, Van Laethem JL, Klein V, Giralt J, Clavère P, Glanzmann C, Cellier P, Collette L; EORTC Radiation Oncology Group. Fluorouracil-based adjuvant chemotherapy after preoperative chemoradiotherapy in rectal cancer: long-term results of the EORTC 22921 randomised study. Lancet Oncol. 2014 Feb;15(2):184-90. Epub 2014 Jan 17. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70599-0/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24440473 PubMed]
+# '''LARCS:''' Braendengen M, Tveit KM, Berglund A, Birkemeyer E, Frykholm G, Påhlman L, Wiig JN, Byström P, Bujko K, Glimelius B. Randomized phase III study comparing preoperative radiotherapy with chemoradiotherapy in nonresectable rectal cancer. J Clin Oncol. 2008 Aug 1;26(22):3687-94. [http://ascopubs.org/doi/full/10.1200/JCO.2007.15.3858 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18669453 PubMed]
+## '''Update:''' Brændengen M, Glimelius B. Preoperative radiotherapy or chemoradiotherapy in rectal cancer - Is survival improved? An update of the "Nordic" LARC study in non-resectable cancers. Radiother Oncol. 2018 Jun;127(3):392-395. Epub 2018 May 16. [https://www.thegreenjournal.com/article/S0167-8140(18)30245-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29778486 PubMed]
+# '''NSABP R-03:''' Roh MS, Colangelo LH, O'Connell MJ, Yothers G, Deutsch M, Allegra CJ, Kahlenberg MS, Baez-Diaz L, Ursiny CS, Petrelli NJ, Wolmark N. Preoperative multimodality therapy improves disease-free survival in patients with carcinoma of the rectum: NSABP R-03. J Clin Oncol. 2009 Nov 1;27(31):5124-30. Epub 2009 Sep 21. [http://ascopubs.org/doi/full/10.1200/JCO.2009.22.0467 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2773471/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19770376 PubMed]
+# '''I-CNR-RT:''' Sainato A, Cernusco Luna Nunzia V, Valentini V, De Paoli A, Maurizi ER, Lupattelli M, Aristei C, Vidali C, Conti M, Galardi A, Ponticelli P, Friso ML, Iannone T, Osti FM, Manfredi B, Coppola M, Orlandini C, Cionini L. No benefit of adjuvant Fluorouracil Leucovorin chemotherapy after neoadjuvant chemoradiotherapy in locally advanced cancer of the rectum (LARC): Long term results of a randomized trial (I-CNR-RT). Radiother Oncol. 2014 Nov;113(2):223-9. Epub 2014 Nov 14. [https://www.thegreenjournal.com/article/S0167-8140(14)00414-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25454175 PubMed]
+<!-- Presented at the 51st Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, May 29-June 2, 2015, and 18th Annual Meeting of the Chinese Society of Clinical Oncology, Xiamen, China, September 16-20, 2015. -->
+# '''FOWARC:''' Deng Y, Chi P, Lan P, Wang L, Chen W, Cui L, Chen D, Cao J, Wei H, Peng X, Huang Z, Cai G, Zhao R, Huang Z, Xu L, Zhou H, Wei Y, Zhang H, Zheng J, Huang Y, Zhou Z, Cai Y, Kang L, Huang M, Peng J, Ren D, Wang J. Modified FOLFOX6 with or without radiation versus fluorouracil and leucovorin with radiation in neoadjuvant treatment of locally advanced rectal cancer: initial results of the Chinese FOWARC multicenter, open-label, randomized three-arm phase III trial. J Clin Oncol. 2016 Sep 20;34(27):3300-7. Epub 2016 Aug 1. [http://jco.ascopubs.org/content/34/27/3300.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27480145 PubMed]
+
+==Fluorouracil, Oxaliplatin, RT {{#subobject:b3761c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FUOX & RT: '''<u>F</u>'''luoro'''<u>U</u>'''racil, '''<u>OX</u>'''aliplatin, '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, 225/50 {{#subobject:66269c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ O'Connell et al. 2014 (NSABP R-04)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_.26_RT|1. 5-FU & RT]]<br> [[#Capecitabine_.26_RT|2. Capecitabine & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+|style="background-color:#d73027"|Inferior toxicity
+|-
+|3. CapeOx & RT
+| style="background-color:#ffffbf" |Seems not superior
+| style="background-color:#eeee01" |Similar toxicity
+|-
+|}
+''Note: this is an experimental arm that did not meet its primary endpoint; included here because other variants of this regimen have demonstrated comparative superiority.''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion for 5 days, started on Mondays
+*[[Oxaliplatin (Eloxatin)]] 50 mg/m<sup>2</sup> IV once per week (5 doses)
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''5.5-week course'''
+
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+
+===Variant #2, 225/60 {{#subobject:0b1c02|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 20%"|Study
+!style="width: 20%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 20%"|Comparator
+!style="width: 20%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+!style="width: 20%"|[[Levels_of_Evidence#Toxicity|Toxicity]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2010.34.4911 Aschele et al. 2011 (STAR-01)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_.26_RT|Fluorouracil & RT]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|style="background-color:#d73027"|Inferior toxicity
+|-
+|}
+''Note: efficacy is based on the 2016 update. This is an experimental arm that did not meet its primary endpoint; included here because other variants of this regimen have demonstrated comparative superiority.''
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion for approximately 6 weeks
+*[[Oxaliplatin (Eloxatin)]] 60 mg/m<sup>2</sup> IV once per week (6 doses)
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''6-week course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], preferably [[Surgery#Total_mesorectal_excision|TME]], then fluourouracil-based adjuvant therapy
+
+===Variant #3, 250/50 {{#subobject:858489|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract Rödel et al. 2012 (CAO/ARO/AIO-04)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_.26_RT|Fluorouracil & RT]]
+|style="background-color:#91cf60"|Seems to have superior pCR rate
+|-
+|}
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 250 mg/m<sup>2</sup>/day IV continuous infusion over 14 days, started on day 1 (total dose per cycle: 3500 mg/m<sup>2</sup>)
+*[[Oxaliplatin (Eloxatin)]] 50 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''21-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then [[#FOLFOX|adjuvant FOLFOX]]
+
+===References===
+# '''STAR-01:''' Aschele C, Cionini L, Lonardi S, Pinto C, Cordio S, Rosati G, Artale S, Tagliagambe A, Ambrosini G, Rosetti P, Bonetti A, Negru ME, Tronconi MC, Luppi G, Silvano G, Corsi DC, Bochicchio AM, Chiaulon G, Gallo M, Boni L. Primary tumor response to preoperative chemoradiation with or without oxaliplatin in locally advanced rectal cancer: pathologic results of the STAR-01 randomized phase III trial. J Clin Oncol. 2011 Jul 10;29(20):2773-80. Epub 2011 May 23. [http://ascopubs.org/doi/full/10.1200/JCO.2010.34.4911 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21606427 PubMed]
+## '''Update: Abstract:''' Carlo Aschele, Sara Lonardi, Luca Cionini, Carmine Pinto, Stefano Sergio Cordio, Gerardo Rosati, Andrea Sartore Bianchi, Angiolo Tagliagambe, Michela Frisinghelli, Vittorina Zagonel, Paola Rosetti, Maria Emanuela Negru, Andrea Bonetti, Maria Chiara Tronconi, Gabriele Luppi, Anna Rita Marsella, Domenico C. Corsi, Anna Maria Bochicchio, Nicoletta Pella, and Luca Boni. Final results of STAR-01: A randomized phase III trial comparing preoperative chemoradiation with or without oxaliplatin in locally advanced rectal cancer. Journal of Clinical Oncology 2016 34:15_suppl, 3521-3521 [http://ascopubs.org/doi/abs/10.1200/JCO.2016.34.15_suppl.3521 link to abstract]
+# '''CAO/ARO/AIO-04:''' Rödel C, Liersch T, Becker H, Fietkau R, Hohenberger W, Hothorn T, Graeven U, Arnold D, Lang-Welzenbach M, Raab HR, Sülberg H, Wittekind C, Potapov S, Staib L, Hess C, Weigang-Köhler K, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R; German Rectal Cancer Study Group. Preoperative chemoradiotherapy and postoperative chemotherapy with fluorouracil and oxaliplatin versus fluorouracil alone in locally advanced rectal cancer: initial results of the German CAO/ARO/AIO-04 randomised phase 3 trial. Lancet Oncol. 2012 Jul;13(7):679-87. Epub 2012 May 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22627104 PubMed]
+## '''Update:''' Rödel C, Graeven U, Fietkau R, Hohenberger W, Hothorn T, Arnold D, Hofheinz RD, Ghadimi M, Wolff HA, Lang-Welzenbach M, Raab HR, Wittekind C, Ströbel P, Staib L, Wilhelm M, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R, Liersch T; German Rectal Cancer Study Group. Oxaliplatin added to fluorouracil-based preoperative chemoradiotherapy and postoperative chemotherapy of locally advanced rectal cancer (the German CAO/ARO/AIO-04 study): final results of the multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2015 Aug;16(8):979-89. Epub 2015 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00159-X/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26189067 PubMed]
+# '''NSABP R-04:''' O'Connell MJ, Colangelo LH, Beart RW, Petrelli NJ, Allegra CJ, Sharif S, Pitot HC, Shields AF, Landry JC, Ryan DP, Parda DS, Mohiuddin M, Arora A, Evans LS, Bahary N, Soori GS, Eakle J, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Wozniak TF, Roh MS, Yothers G, Wolmark N. Capecitabine and oxaliplatin in the preoperative multimodality treatment of rectal cancer: surgical end points from National Surgical Adjuvant Breast and Bowel Project trial R-04. J Clin Oncol. 2014 Jun 20;32(18):1927-34. Epub 2014 May 5.  [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050205/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24799484 PubMed]
+## '''Update:''' Allegra CJ, Yothers G, O'Connell MJ, Beart RW, Wozniak TF, Pitot HC, Shields AF, Landry JC, Ryan DP, Arora A, Evans LS, Bahary N, Soori G, Eakle JF, Robertson JM, Moore DF Jr, Mullane MR, Marchello BT, Ward PJ, Sharif S, Roh MS, Wolmark N. Neoadjuvant 5-FU or capecitabine plus radiation with or without oxaliplatin in rectal cancer patients: a phase III randomized clinical trial. J Natl Cancer Inst. 2015 Sep 14;107(11). Erratum in: J Natl Cancer Inst. 2016 Apr;108(4). [https://academic.oup.com/jnci/article/107/11/djv248/2457689 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4849360/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26374429 PubMed]
+
+==mFOLFOX6 & RT {{#subobject:4ffffc|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+mFOLFOX6 & RT: '''<u>m</u>'''odified '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin and '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:9bf2ab|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://jco.ascopubs.org/content/34/27/3300.full Deng et al. 2016 (FOWARC)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil.2C_Folinic_acid.2C_RT|1. Fluorouracil, Folinic acid, RT]]
+|style="background-color:#1a9850"|Superior pCR rate
+|-
+|2. mFOLFOX6
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Chemoradiotherapy====
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once on day 1
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus once on day 1, then 2400 mg/m<sup>2</sup>/day IV continuous infusion over 48 hours (total dose per cycle: 2800 mg/m<sup>2</sup>)
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV once on day 1
+*Concurrent [[External_beam_radiotherapy|radiation therapy]] given before or after surgery at physician discretion: 1.8 to 2.0 Gy once per day Monday through Friday for a total of 23 to 28 fractions over 5 to 6 weeks and a total dose of 46.0 to 50.4 Gy
+
+'''14-day cycle for 4 to 6 cycles'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]], then 6 to 8 more cycles of mFOLFOX6
+
+===References===
+<!-- Presented at the 51st Annual Meeting of the American Society of Clinical Oncology, Chicago, IL, May 29-June 2, 2015, and 18th Annual Meeting of the Chinese Society of Clinical Oncology, Xiamen, China, September 16-20, 2015. -->
+# '''FOWARC:''' Deng Y, Chi P, Lan P, Wang L, Chen W, Cui L, Chen D, Cao J, Wei H, Peng X, Huang Z, Cai G, Zhao R, Huang Z, Xu L, Zhou H, Wei Y, Zhang H, Zheng J, Huang Y, Zhou Z, Cai Y, Kang L, Huang M, Peng J, Ren D, Wang J. Modified FOLFOX6 with or without radiation versus fluorouracil and leucovorin with radiation in neoadjuvant treatment of locally advanced rectal cancer: initial results of the Chinese FOWARC multicenter, open-label, randomized three-arm phase III trial. J Clin Oncol. 2016 Sep 20;34(27):3300-7. Epub 2016 Aug 1. [http://jco.ascopubs.org/content/34/27/3300.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27480145 PubMed]
+
+==Radiation therapy {{#subobject:41234c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, 25 Gy {{#subobject:9abcab|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199704033361402 Cedermark et al. 1997 (Swedish Rectal Cancer Trial)]
+|style="background-color:#1a9851"|Phase III (E)
+|Surgery alone
+|style="background-color:#1a9850"|Superior OS
+|-
+|[https://www.nejm.org/doi/10.1056/NEJMoa010580 Kapiteijn et al. 2001]
+|style="background-color:#1a9851"|Phase III (E)
+|Surgery alone
+|style="background-color:#1a9850"|Superior local recurrence rate
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2668947/ Sebag-Montefiore et al. 2009 (MRC CR07; NCIC CTG CO.16)]
+|style="background-color:#1a9851"|Phase III (C)
+|Selective postoperative 5-FU & RT
+| style="background-color:#91cf60" |Seems to have superior DFS
+|-
+|[https://academic.oup.com/annonc/article/27/5/834/2769824 Bujko et al. 2016 (PGBRJG0109)]
+|style="background-color:#1a9851"|Phase III (E)
+|5-FU, LV, RT, +/- oxaliplatin
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|}
+''Note: although the primary endpoint of PGBRJG0109 was negative, overall survival seemd to be superior in this arm.''
+====Radiotherapy====
+*[[External_beam_radiotherapy|Radiation therapy]], 5.0 Gy once per day for a total of 5 fractions (total dose: 25 Gy)
+
+'''5-day course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+*PGBRJG0109: [[Surgery#Rectal_cancer_surgery|Surgery]], then FOLFOX4 x 3
+
+===Variant #2, 40 Gy {{#subobject:8b0799|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(96)05348-2/fulltext Oates et al. 1996]
+|style="background-color:#1a9851"|Phase III (E)
+|Surgery alone
+| style="background-color:#91cf60" |Seems to have superior DFS
+|-
+|}
+''Of historic interest.''
+====Radiotherapy====
+*[[External_beam_radiotherapy|Radiation therapy]], 2.0 Gy once per day, 5 days per week, for a total of 20 fractions (total dose: 40 Gy)
+
+'''4-week course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+
+===Variant #3, 50 Gy {{#subobject:159853|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2007.15.3858 Braendengen et al. 2008 (LARCS)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Fluorouracil.2C_Folinic_acid.2C_RT|5-FU, LV, RT]]
+| style="background-color:#ffffbf" |Seems not superior (*)
+|-
+|}
+''Of historic interest. Reported efficacy is based on the 2018 update.''
+====Radiotherapy====
+*[[External_beam_radiotherapy|Radiation therapy]], 2.0 Gy once per day, 5 days per week, for a total of 25 fractions (total dose: 50 Gy)
+
+'''4-week course'''
+====Subsequent treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+===References===
+# Oates GD, Stenning SP, Hardcastle JD; Medical Research Council Rectal Cancer Working Party. Randomised trial of surgery alone versus radiotherapy followed by surgery for potentially operable locally advanced rectal cancer. Lancet. 1996 Dec 14;348(9042):1605-10. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(96)05348-2/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8961989 PubMed]
+# '''Swedish Rectal Cancer Trial:''' Cedermark B, Dahlberg M, Glimelius B, Påhlman L, Rutqvist LE, Wilking N; Swedish Rectal Cancer Trial investigators. Improved survival with preoperative radiotherapy in resectable rectal cancer. N Engl J Med. 1997 Apr 3;336(14):980-7. Erratum in: N Engl J Med 1997 May 22;336(21):1539. [https://www.nejm.org/doi/full/10.1056/NEJM199704033361402 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9091798 PubMed]
+## '''Update:''' Folkesson J, Birgisson H, Pahlman L, Cedermark B, Glimelius B, Gunnarsson U. Swedish Rectal Cancer Trial: long lasting benefits from radiotherapy on survival and local recurrence rate. J Clin Oncol. 2005 Aug 20;23(24):5644-50. [http://ascopubs.org/doi/full/10.1200/JCO.2005.08.144 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16110023 PubMed]
+# Kapiteijn E, Marijnen CA, Nagtegaal ID, Putter H, Steup WH, Wiggers T, Rutten HJ, Pahlman L, Glimelius B, van Krieken JH, Leer JW, van de Velde CJ; Dutch Colorectal Cancer Group. Preoperative radiotherapy combined with total mesorectal excision for resectable rectal cancer. N Engl J Med. 2001 Aug 30;345(9):638-46. [https://www.nejm.org/doi/10.1056/NEJMoa010580 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11547717 PubMed]
+# '''LARCS:''' Braendengen M, Tveit KM, Berglund A, Birkemeyer E, Frykholm G, Påhlman L, Wiig JN, Byström P, Bujko K, Glimelius B. Randomized phase III study comparing preoperative radiotherapy with chemoradiotherapy in nonresectable rectal cancer. J Clin Oncol. 2008 Aug 1;26(22):3687-94. [http://ascopubs.org/doi/full/10.1200/JCO.2007.15.3858 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18669453 PubMed]
+## '''Update:''' Brændengen M, Glimelius B. Preoperative radiotherapy or chemoradiotherapy in rectal cancer - Is survival improved? An update of the "Nordic" LARC study in non-resectable cancers. Radiother Oncol. 2018 Jun;127(3):392-395. Epub 2018 May 16. [https://www.thegreenjournal.com/article/S0167-8140(18)30245-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29778486 PubMed]
+# '''MRC CR07; NCIC CTG CO.16:''' Sebag-Montefiore D, Stephens RJ, Steele R, Monson J, Grieve R, Khanna S, Quirke P, Couture J, de Metz C, Myint AS, Bessell E, Griffiths G, Thompson LC, Parmar M. Preoperative radiotherapy versus selective postoperative chemoradiotherapy in patients with rectal cancer (MRC CR07 and NCIC-CTG C016): a multicentre, randomised trial. Lancet. 2009 Mar 7;373(9666):811-20. [https://www.thelancet.com/journals/lancet/article/PIIS0140673609604840/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2668947/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19269519 PubMed]
+# '''PGBRJG0109:''' Bujko K, Wyrwicz L, Rutkowski A, Malinowska M, Pietrzak L, Kryński J, Michalski W, Olędzki J, Kuśnierz J, Zając L, Bednarczyk M, Szczepkowski M, Tarnowski W, Kosakowska E, Zwoliński J, Winiarek M, Wiśniowska K, Partycki M, Bęczkowska K, Polkowski W, Styliński R, Wierzbicki R, Bury P, Jankiewicz M, Paprota K, Lewicka M, Ciseł B, Skórzewska M, Mielko J, Bębenek M, Maciejczyk A, Kapturkiewicz B, Dybko A, Hajac Ł, Wojnar A, Leśniak T, Zygulska J, Jantner D, Chudyba E, Zegarski W, Las-Jankowska M, Jankowski M, Kołodziejski L, Radkowski A, Żelazowska-Omiotek U, Czeremszyńska B, Kępka L, Kolb-Sielecki J, Toczko Z, Fedorowicz Z, Dziki A, Danek A, Nawrocki G, Sopyło R, Markiewicz W, Kędzierawski P, Wydmański J; Polish Colorectal Study Group. Long-course oxaliplatin-based preoperative chemoradiation versus 5 × 5 Gy and consolidation chemotherapy for cT4 or fixed cT3 rectal cancer: results of a randomized phase III study. Ann Oncol. 2016 May;27(5):834-42. Epub 2016 Feb 15. [https://academic.oup.com/annonc/article/27/5/834/2769824 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26884592 PubMed]
+
+=Adjuvant chemotherapy=
+==Capecitabine monotherapy {{#subobject:38d595|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4e5ce4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_monotherapy|Fluorouracil]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|[https://academic.oup.com/annonc/article/26/4/696/203767 Breugom et al. 2014 (SCRIPT)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Observation|Observation]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*Recktum-III: [[#Capecitabine_.26_RT|Neoadjuvant capecitabine & RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+*SCRIPT: 5-FU-based chemoradiotherapy or [[#Radiation_therapy|RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1250 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+
+'''21-day cycle for 5 (Rektum-III) or 8 (SCRIPT) cycles'''
+
+===References===
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+# '''SCRIPT:''' Breugom AJ, van Gijn W, Muller EW, Berglund Å, van den Broek CB, Fokstuen T, Gelderblom H, Kapiteijn E, Leer JW, Marijnen CA, Martijn H, Meershoek-Klein Kranenbarg E, Nagtegaal ID, Påhlman L, Punt CJ, Putter H, Roodvoets AG, Rutten HJ, Steup WH, Glimelius B, van de Velde CJ; Cooperative Investigators of Dutch Colorectal Cancer Group and Nordic Gastrointestinal Tumour Adjuvant Therapy Group. Adjuvant chemotherapy for rectal cancer patients treated with preoperative (chemo)radiotherapy and total mesorectal excision: a Dutch Colorectal Cancer Group (DCCG) randomized phase III trial. Ann Oncol. 2015 Apr;26(4):696-701. Epub 2014 Dec 5. [https://academic.oup.com/annonc/article/26/4/696/203767 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25480874 PubMed]
+
+==Fluorouracil monotherapy {{#subobject:adc56e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:66d35a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine_monotherapy|Capecitabine]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|}
+====Preceding treatment====
+*[[#Fluorouracil_.26_RT|Neoadjuvant fluorouracil & RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 4 cycles'''
+
+===Variant #2 {{#subobject:38a90a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract Rödel et al. 2012 (CAO/ARO/AIO-04)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#FOLFOX|FOLFOX]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+====Preceding treatment====
+*[[#Fluorouracil_.26_RT|Neoadjuvant fluorouracil & RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5, 29
+
+'''4 cycles (length not specified)'''
+
+===References===
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+# '''CAO/ARO/AIO-04:''' Rödel C, Liersch T, Becker H, Fietkau R, Hohenberger W, Hothorn T, Graeven U, Arnold D, Lang-Welzenbach M, Raab HR, Sülberg H, Wittekind C, Potapov S, Staib L, Hess C, Weigang-Köhler K, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R; German Rectal Cancer Study Group. Preoperative chemoradiotherapy and postoperative chemotherapy with fluorouracil and oxaliplatin versus fluorouracil alone in locally advanced rectal cancer: initial results of the German CAO/ARO/AIO-04 randomised phase 3 trial. Lancet Oncol. 2012 Jul;13(7):679-87. Epub 2012 May 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22627104 PubMed]
+## '''Update:''' Rödel C, Graeven U, Fietkau R, Hohenberger W, Hothorn T, Arnold D, Hofheinz RD, Ghadimi M, Wolff HA, Lang-Welzenbach M, Raab HR, Wittekind C, Ströbel P, Staib L, Wilhelm M, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R, Liersch T; German Rectal Cancer Study Group. Oxaliplatin added to fluorouracil-based preoperative chemoradiotherapy and postoperative chemotherapy of locally advanced rectal cancer (the German CAO/ARO/AIO-04 study): final results of the multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2015 Aug;16(8):979-89. Epub 2015 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00159-X/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26189067 PubMed]
+
+==Fluorouracil & Folinic acid {{#subobject:d6c3bd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 500/500 {{#subobject:cc7508|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/jnci/article/92/5/388/2606692 Wolmark et al. 2000 (NSABP R-02)]
+|style="background-color:#1a9851"|Phase III (C)
+|Chemoradiation
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22, 29, 36, '''given 1 hour after leucovorin'''
+*[[Folinic acid (Leucovorin)]] 500 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22, 29, 36, '''given first'''
+
+'''8-week cycle for 6 cycles'''
+
+===Variant #2, 1000/120 ("Nordic regimen") {{#subobject:9df33b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/26/4/696/203767 Breugom et al. 2014 (PROCTOR)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Observation|Observation]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is an experimental arm that did not meet its primary endpoint; included here because other variants of this regimen have been used as a standard comparator. This is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*5-FU-based chemoradiotherapy or [[#Radiation_therapy|RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV once per day on days 1 & 2, '''given first''' (total dose per cycle: 1000 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 60 mg/m<sup>2</sup> IV once per day on days 1 & 2, '''given second''' (total dose per cycle: 120 mg/m<sup>2</sup>)
+
+'''14-day cycle for 12 cycles'''
+
+===Variant #3, 1900/100 {{#subobject:9df33b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70377-8/abstract Hong et al. 2014 (ADORE)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[#FOLFOX|FOLFOX]]
+|style="background-color:#fc8d59"|Seems to have inferior DFS
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*Fluoropyrimidine-based chemoradiation, then [[Surgery#Total_mesorectal_excision|TME]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 380 mg/m<sup>2</sup> IV once per day on days 1 to 5 (total dose per cycle: 1900 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 5 (total dose per cycle: 100 mg/m<sup>2</sup>)
+
+'''28-day cycle for 4 cycles'''
+
+===Variant #4, 2125/100 ("Mayo regimen") {{#subobject:9df33b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/26/4/696/203767 Breugom et al. 2014 (PROCTOR)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Observation|Observation]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://academic.oup.com/annonc/article/26/6/1208/161972 Delbaldo et al. 2015 (R98)]
+|style="background-color:#1a9851"|Phase III (C)
+|FOLFIRI
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this is an experimental arm that did not meet its primary endpoint; included here because it was eventually used to establish this regimen as a standard comparator. This is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*PROCTOR: 5-FU-based chemoradiotherapy or [[#Radiation_therapy|RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 425 mg/m<sup>2</sup> IV once per day on days 1 to 5 (total dose per cycle: 2125 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV once per day on days 1 to 5 (total dose per cycle: 100 mg/m<sup>2</sup>)
+
+'''4- to 5-week cycle for 6 cycles'''
+
+===References===
+# '''NSABP R-02:''' Wolmark N, Wieand HS, Hyams DM, Colangelo L, Dimitrov NV, Romond EH, Wexler M, Prager D, Cruz AB Jr, Gordon PH, Petrelli NJ, Deutsch M, Mamounas E, Wickerham DL, Fisher ER, Rockette H, Fisher B. Randomized trial of postoperative adjuvant chemotherapy with or without radiotherapy for carcinoma of the rectum: National Surgical Adjuvant Breast and Bowel Project Protocol R-02. J Natl Cancer Inst. 2000 Mar 1;92(5):388-96. [https://academic.oup.com/jnci/article/92/5/388/2606692 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10699069 PubMed]
+# '''ADORE:''' Hong YS, Nam BH, Kim KP, Kim JE, Park SJ, Park YS, Park JO, Kim SY, Kim TY, Kim JH, Ahn JB, Lim SB, Yu CS, Kim JC, Yun SH, Kim JH, Park JH, Park HC, Jung KH, Kim TW. Oxaliplatin, fluorouracil, and leucovorin versus fluorouracil and leucovorin as adjuvant chemotherapy for locally advanced rectal cancer after preoperative chemoradiotherapy (ADORE): an open-label, multicentre, phase 2, randomised controlled trial. Lancet Oncol. 2014 Oct;15(11):1245-53. Epub 2014 Sep 4. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70377-8/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25201358 PubMed]
+# '''PROCTOR:''' Breugom AJ, van Gijn W, Muller EW, Berglund Å, van den Broek CB, Fokstuen T, Gelderblom H, Kapiteijn E, Leer JW, Marijnen CA, Martijn H, Meershoek-Klein Kranenbarg E, Nagtegaal ID, Påhlman L, Punt CJ, Putter H, Roodvoets AG, Rutten HJ, Steup WH, Glimelius B, van de Velde CJ; Cooperative Investigators of Dutch Colorectal Cancer Group and Nordic Gastrointestinal Tumour Adjuvant Therapy Group. Adjuvant chemotherapy for rectal cancer patients treated with preoperative (chemo)radiotherapy and total mesorectal excision: a Dutch Colorectal Cancer Group (DCCG) randomized phase III trial. Ann Oncol. 2015 Apr;26(4):696-701. Epub 2014 Dec 5. [https://academic.oup.com/annonc/article/26/4/696/203767 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25480874 PubMed]
+# '''R98:''' Delbaldo C, Ychou M, Zawadi A, Douillard JY, André T, Guerin-Meyer V, Rougier P, Dupuis O, Faroux R, Jouhaud A, Quinaux E, Buyse M, Piedbois P; AERO, GERCOR, FNLCC and FFCD. Postoperative irinotecan in resected stage II-III rectal cancer: final analysis of the French R98 Intergroup trial. Ann Oncol. 2015 Jun;26(6):1208-15. Epub 2015 Mar 3. [https://academic.oup.com/annonc/article/26/6/1208/161972 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25739671 PubMed]
+
+==FOLFOX {{#subobject:fad3f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FOLFOX: '''<u>FOL</u>'''inic acid, '''<u>F</u>'''luorouracil, '''<u>OX</u>'''aliplatin
+
+===Variant #1 {{#subobject:f31fc0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70377-8/abstract Hong et al. 2014 (ADORE)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Fluorouracil_.26_Folinic_acid|Fluorouracil & 5-FU]]
+|style="background-color:#91cf60"|Seems to have superior DFS
+|-
+|}
+====Preceding treatment====
+*Fluoropyrimidine-based chemoradiation, then [[Surgery#Total_mesorectal_excision|TME]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus on day 1, then 2400 mg/m<sup>2</sup> IV continuous infusion over 46 hours (total dose: 2800 mg/m<sup>2</sup>)
+*[[Folinic acid (Leucovorin)]] 200 mg/m<sup>2</sup> IV once on day 1
+*[[Oxaliplatin (Eloxatin)]] 85 mg/m<sup>2</sup> IV once on day 1
+
+'''14-day cycle for 8 cycles'''
+
+===Variant #2 {{#subobject:f3300f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract Rödel et al. 2012 (CAO/ARO/AIO-04)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil_monotherapy|Fluorouracil]]
+|style="background-color:#d3d3d3"|Not reported
+|-
+|}
+''Note: it is unclear from the abstract whether the intent is for 8 cycles (16 doses of oxaliplatin) or 8 doses of oxaliplatin.''
+====Preceding treatment====
+*[[#Fluorouracil.2C_Oxaliplatin.2C_RT|Neoadjuvant fluorouracil, oxaliplatin, RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]] 2400 mg/m<sup>2</sup> IV continuous infusion over 48 hours twice per cycle on days 1 & 2, 15 & 16
+*[[Folinic acid (Leucovorin)]] 400 mg/m<sup>2</sup> IV once per day on days 1 & 15
+*[[Oxaliplatin (Eloxatin)]] 100 mg/m<sup>2</sup> IV once per day on days 1 & 15
+
+'''8 cycles'''
+
+===References===
+# '''ADORE:''' Hong YS, Nam BH, Kim KP, Kim JE, Park SJ, Park YS, Park JO, Kim SY, Kim TY, Kim JH, Ahn JB, Lim SB, Yu CS, Kim JC, Yun SH, Kim JH, Park JH, Park HC, Jung KH, Kim TW. Oxaliplatin, fluorouracil, and leucovorin versus fluorouracil and leucovorin as adjuvant chemotherapy for locally advanced rectal cancer after preoperative chemoradiotherapy (ADORE): an open-label, multicentre, phase 2, randomised controlled trial. Lancet Oncol. 2014 Oct;15(11):1245-53. Epub 2014 Sep 4. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70377-8/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25201358 PubMed]
+# '''CAO/ARO/AIO-04:''' Rödel C, Liersch T, Becker H, Fietkau R, Hohenberger W, Hothorn T, Graeven U, Arnold D, Lang-Welzenbach M, Raab HR, Sülberg H, Wittekind C, Potapov S, Staib L, Hess C, Weigang-Köhler K, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R; German Rectal Cancer Study Group. Preoperative chemoradiotherapy and postoperative chemotherapy with fluorouracil and oxaliplatin versus fluorouracil alone in locally advanced rectal cancer: initial results of the German CAO/ARO/AIO-04 randomised phase 3 trial. Lancet Oncol. 2012 Jul;13(7):679-87. Epub 2012 May 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70187-0/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22627104 PubMed]
+## '''Update:''' Rödel C, Graeven U, Fietkau R, Hohenberger W, Hothorn T, Arnold D, Hofheinz RD, Ghadimi M, Wolff HA, Lang-Welzenbach M, Raab HR, Wittekind C, Ströbel P, Staib L, Wilhelm M, Grabenbauer GG, Hoffmanns H, Lindemann F, Schlenska-Lange A, Folprecht G, Sauer R, Liersch T; German Rectal Cancer Study Group. Oxaliplatin added to fluorouracil-based preoperative chemoradiotherapy and postoperative chemotherapy of locally advanced rectal cancer (the German CAO/ARO/AIO-04 study): final results of the multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2015 Aug;16(8):979-89. Epub 2015 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)00159-X/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26189067 PubMed]
+
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=3|[https://www.nejm.org/doi/full/10.1056/NEJM198506063122301 Mittelman et al. 1985]
+|rowspan=3 style="background-color:#1a9851" |Phase III (C)
+|5-FU & Semustine
+| style="background-color:#d3d3d3" |Not reported
+|-
+|5-FU, Semustine, RT
+| style="background-color:#d73027" |Inferior RFS
+|-
+|[[#Radiation_therapy_2|RT]]
+| style="background-color:#d3d3d3" |Not reported
+|-
+|[https://academic.oup.com/annonc/article/25/7/1356/2801207 Glynne-Jones et al. 2014 (Chronicle)]
+| style="background-color:#1a9851" |Phase III (C)
+|XELOX
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.thegreenjournal.com/article/S0167-8140(14)00414-9/fulltext Sainato et al. 2014 (I-CNR-RT)]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Fluorouracil_.26_Folinic_acid|5-FU & LV]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://academic.oup.com/annonc/article/26/4/696/203767 Breugom et al. 2014 (PROCTOR)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Fluorouracil_.26_Folinic_acid|5-FU & LV]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://academic.oup.com/annonc/article/26/4/696/203767 Breugom et al. 2014 (SCRIPT)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine_monotherapy|Capecitabine]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''No further treatment after (neoadjuvant therapy) and surgery.''
+====Preceding treatment====
+*Mittelman et al. 1985: [[Surgery#Rectal_cancer_surgery|Surgery]]
+*Chronicle: 5-FU-based chemoradiotherapy, then [[Surgery#Rectal_cancer_surgery|surgery]]
+*I-CNR-RT: [[#Fluorouracil.2C_Folinic_acid.2C_RT|5-FU, LV, RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+*PROCTOR & SCRIPT: 5-FU-based chemoradiotherapy or [[#Radiation_therapy|RT]], then [[Surgery#Rectal_cancer_surgery|surgery]]
+===References===
+# Mittelman A, Holyoke ED, Stablein DM, Novak JW, Thomas PRM, Moertel CG, Weiland LH, Livstone EM, Bruckner HW, Knowlton AH; Gastrointestinal Tumor Study Group. Prolongation of the disease-free interval in surgically treated rectal carcinoma. N Engl J Med. 1985 Jun 6;312(23):1465-72. [https://www.nejm.org/doi/full/10.1056/NEJM198506063122301 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/2859523 PubMed]
+# '''Chronicle:''' Glynne-Jones R, Counsell N, Quirke P, Mortensen N, Maraveyas A, Meadows HM, Ledermann J, Sebag-Montefiore D. Chronicle: results of a randomised phase III trial in locally advanced rectal cancer after neoadjuvant chemoradiation randomising postoperative adjuvant capecitabine plus oxaliplatin (XELOX) versus control. Ann Oncol. 2014 Jul;25(7):1356-62. Epub 2014 Apr 8. [https://academic.oup.com/annonc/article/25/7/1356/2801207 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/24718885 PubMed]
+# '''I-CNR-RT:''' Sainato A, Cernusco Luna Nunzia V, Valentini V, De Paoli A, Maurizi ER, Lupattelli M, Aristei C, Vidali C, Conti M, Galardi A, Ponticelli P, Friso ML, Iannone T, Osti FM, Manfredi B, Coppola M, Orlandini C, Cionini L. No benefit of adjuvant Fluorouracil Leucovorin chemotherapy after neoadjuvant chemoradiotherapy in locally advanced cancer of the rectum (LARC): Long term results of a randomized trial (I-CNR-RT). Radiother Oncol. 2014 Nov;113(2):223-9. Epub 2014 Nov 14. [https://www.thegreenjournal.com/article/S0167-8140(14)00414-9/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25454175 PubMed]
+# '''PROCTOR/SCRIPT:''' Breugom AJ, van Gijn W, Muller EW, Berglund Å, van den Broek CB, Fokstuen T, Gelderblom H, Kapiteijn E, Leer JW, Marijnen CA, Martijn H, Meershoek-Klein Kranenbarg E, Nagtegaal ID, Påhlman L, Punt CJ, Putter H, Roodvoets AG, Rutten HJ, Steup WH, Glimelius B, van de Velde CJ; Cooperative Investigators of Dutch Colorectal Cancer Group and Nordic Gastrointestinal Tumour Adjuvant Therapy Group. Adjuvant chemotherapy for rectal cancer patients treated with preoperative (chemo)radiotherapy and total mesorectal excision: a Dutch Colorectal Cancer Group (DCCG) randomized phase III trial. Ann Oncol. 2015 Apr;26(4):696-701. Epub 2014 Dec 5. [https://academic.oup.com/annonc/article/26/4/696/203767 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25480874 PubMed]
+
+==S-1 monotherapy {{#subobject:ec10ef|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:0ee98c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4922318/ Oki et al. 2016 (ACTS-RC)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#UFT_monotherapy|UFT]]
+|style="background-color:#91cf60"|Seems to have superior RFS
+|-
+|}
+''Note: these patients did not receive preoperative therapy.''
+====Preceding treatment====
+*Curative [[Surgery#Rectal_cancer_surgery|resection]] for stage II or stage III rectal cancer, within 49 days
+====Chemotherapy====
+*[[Tegafur, gimeracil, oteracil (S-1)]] as follows:
+**BSA less than 1.25 m<sup>2</sup>: 40 mg PO twice per day on days 1 to 28
+**BSA 1.25 to 1.50 m<sup>2</sup>: 50 mg PO twice per day on days 1 to 28
+**BSA 1.50 or greater m<sup>2</sup>: 60 mg PO twice per day on days 1 to 28
+
+'''42-day cycles for 12 months'''
+===References===
+# Oki E, Murata A, Yoshida K, Maeda K, Ikejiri K, Munemoto Y, Sasaki K, Matsuda C, Kotake M, Suenaga T, Matsuda H, Emi Y, Kakeji Y, Baba H, Hamada C, Saji S, Maehara Y. A randomized phase III trial comparing S-1 versus UFT as adjuvant chemotherapy for stage II/III rectal cancer (JFMC35-C1: ACTS-RC). Ann Oncol. 2016 Jul;27(7):1266-72. Epub 2016 Apr 7. [https://academic.oup.com/annonc/article/27/7/1266/1741828 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4922318/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27056996 PubMed]
+
+==UFT monotherapy {{#subobject:0c1194|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:7dc55c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://link.springer.com/article/10.1007%2Fs00280-010-1358-1 Hamaguchi et al. 2010 (NSAS-CC)]
+|style="background-color:#1a9851"|Phase III (E)
+|Surgery alone
+| style="background-color:#91cf60" |Seems to have superior OS (*)
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4922318/ Oki et al. 2016 (ACTS-RC)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#S-1_monotherapy|S-1]]
+|style="background-color:#fc8d59"|Seems to have inferior RFS
+|-
+|}
+''Note: these patients did not receive preoperative therapy.''
+====Preceding treatment====
+*Curative [[Surgery#Rectal_cancer_surgery|resection]] for stage II or stage III rectal cancer, within 49 days
+====Chemotherapy====
+*[[Tegafur and uracil (UFT)]] as follows:
+**BSA less than 1.25 m<sup>2</sup>: 250 mg PO twice per day on days 1 to 5
+**BSA 1.25 or greater m<sup>2</sup>: 300 mg PO twice per day on days 1 to 5
+
+'''7-day cycles for 12 months'''
+
+===References===
+# '''NSAS-CC:''' Hamaguchi T, Shirao K, Moriya Y, Yoshida S, Kodaira S, Ohashi Y; NSAS-CC Group. Final results of randomized trials by the National Surgical Adjuvant Study of Colorectal Cancer (NSAS-CC). Cancer Chemother Pharmacol. 2011 Mar;67(3):587-96. Epub 2010 May 19. [https://link.springer.com/article/10.1007%2Fs00280-010-1358-1 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20490797 PubMed]
+# '''ACTS-RC:''' Oki E, Murata A, Yoshida K, Maeda K, Ikejiri K, Munemoto Y, Sasaki K, Matsuda C, Kotake M, Suenaga T, Matsuda H, Emi Y, Kakeji Y, Baba H, Hamada C, Saji S, Maehara Y. A randomized phase III trial comparing S-1 versus UFT as adjuvant chemotherapy for stage II/III rectal cancer (JFMC35-C1: ACTS-RC). Ann Oncol. 2016 Jul;27(7):1266-72. Epub 2016 Apr 7. [https://academic.oup.com/annonc/article/27/7/1266/1741828 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4922318/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27056996 PubMed]
+
+=Adjuvant chemoradiotherapy=
+==Capecitabine, then Capecitabine & RT, then Capecitabine {{#subobject:4c3312|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+
+===Regimen {{#subobject:2028c1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil.2C_then_Fluorouracil_.26_RT.2C_then_Fluorouracil|5-FU, then 5-FU & RT, then 5-FU]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Capecitabine (Xeloda)]] 1250 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+
+'''21-day cycle for 2 cycles, followed by:'''
+
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 825 mg/m<sup>2</sup> PO twice per day on days 1 to 38
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''Followed by:'''
+
+====Chemotherapy, part 2====
+*[[Capecitabine (Xeloda)]] 1250 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+
+'''21-day cycle for 3 cycles'''
+
+===References===
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 12. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+
+==Capecitabine & RT {{#subobject:3cec7f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:5ea375|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5041927/ Feng et al. 2016 (CAMS_rectal cancer_01)]
+|style="background-color:#1a9851"|Phase III (C)
+|CapeOx & RT
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemoradiotherapy====
+*[[Capecitabine (Xeloda)]] 800 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 45 to 50.4 Gy total in 25 to 28 fractions
+
+'''21-day cycle for 2 cycles'''
+
+===References===
+# '''CAMS_rectal cancer_01:''' Feng YR, Zhu Y, Liu LY, Wang WH, Wang SL, Song YW, Wang X, Tang Y, Liu YP, Ren H, Fang H, Zhang SP, Liu XF, Yu ZH, Li YX, Jin J. Interim analysis of postoperative chemoradiotherapy with capecitabine and oxaliplatin versus capecitabine alone for pathological stage II and III rectal cancer: a randomized multicenter phase III trial. Oncotarget. 2016 May 3;7(18):25576-84. [http://www.oncotarget.com/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=8226&path%5B%5D=24328 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5041927/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27014909 PubMed]
+
+==Fluorouracil & RT {{#subobject:25293e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:e903ad|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/10/6/671/155243 Fountzilas et al. 1999]
+|style="background-color:#1a9851"|Phase III (C)
+|5-FU & LV, then 5-FU & RT, then 5-FU & LV
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]]
+*[[External_beam_radiotherapy|Radiation therapy]]
+
+===References===
+# Fountzilas G, Zisiadis A, Dafni U, Konstantaras C, Hatzitheoharis G, Liaros A, Athanassiou E, Dombros N, Dervenis C, Basdanis G, Gamvros O, Souparis A, Briasoulis E, Samantas E, Kappas A, Kosmidis P, Skarlos D, Pavlidis N. Postoperative radiation and concomitant bolus fluorouracil with or without additional chemotherapy with fluorouracil and high-dose leucovorin in patients with high-risk rectal cancer: a randomized phase III study conducted by the Hellenic Cooperative Oncology Group. Ann Oncol. 1999 Jun;10(6):671-6. [https://academic.oup.com/annonc/article/10/6/671/155243 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/10442189 PubMed]
+
+==Fluorouracil, then Fluorouracil & RT, then Fluorouracil {{#subobject:423753|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+
+===Variant #1, Bolus 5-FU (500 mg/m<sup>2</sup>), then CI 5-FU & RT, then Bolus 5-FU (450 mg/m<sup>2</sup>) {{#subobject:d06581|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199408253310803 O'Connell et al. 1994 (INT 864751)]
+|style="background-color:#1a9851"|Phase III (E)
+|Bolus 5-FU, then bolus 5-FU & RT, then bolus 5-FU
+| style="background-color:#1a9850" |Superior OS
+|-
+|rowspan=2|[http://jco.ascopubs.org/content/24/22/3542.long Smalley et al. 2006 (GI INT 0144)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Bolus 5-FU, then RT, then Bolus 5-FU
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. CI 5-FU, then 5-FU & RT, then CI 5-FU
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: INT 864751 also included a randomization to add semustine, which is only of historic interest.''
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles, followed immediately by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion while radiation is being given
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 25 fractions for an initial dose of 45 Gy, which is followed by a 1.8 Gy x 3 fraction (5.4 Gy total) boost to the tumor bed and adjacent lymph nodes, and then optionally a 1.8 Gy x 2 fraction (3.6 Gy total) boost to the tumor bed and a 2 cm margin if the small bowel could be avoided
+
+'''One course, followed 28 days later by:'''
+
+====Chemotherapy, part 2====
+*[[Fluorouracil (5-FU)]] 450 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles'''
+
+===Variant #2, Bolus 5-FU (500 mg/m<sup>2</sup>), then CI 5-FU & RT, then Bolus 5-FU (500 mg/m<sup>2</sup>) {{#subobject:23bcde|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext Hofheinz et al. 2012 (Rektum-III)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Capecitabine.2C_then_Capecitabine_.26_RT.2C_then_Capecitabine|Capecitabine, then Capecitabine & RT, then Capecitabine]]
+|style="background-color:#eeee01"|Non-inferior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles, followed by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion while radiation is being given
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 50.4 Gy total
+
+'''Followed by:'''
+
+====Chemotherapy, part 2====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles'''
+
+===Variant #3, CI 5-FU, then CI 5-FU & RT, then CI 5-FU {{#subobject:da8c0d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://jco.ascopubs.org/content/24/22/3542.long Smalley et al. 2006 (GI INT 0144)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Bolus 5-FU, then 5-FU & RT, then Bolus 5-FU
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. Bolus 5-FU, then RT, then Bolus 5-FU
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Fluorouracil (5-FU)]] 300 mg/m<sup>2</sup>/day IV continuous infusion over 42 days, started on day 1 (total dose: 12,600 mg/m<sup>2</sup>)
+
+'''8-week course, followed in 2 weeks by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 225 mg/m<sup>2</sup>/day IV continuous infusion while radiation is being given
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 25 fractions for an initial dose of 45 Gy, which is followed by a 1.8 Gy x 3 fraction (5.4 Gy total) boost to the tumor bed and adjacent lymph nodes, and then optionally a 1.8 Gy x 2 fraction (3.6 Gy total) boost to the tumor bed and a 2 cm margin if the small bowel could be avoided
+
+'''Followed in 28 days by:'''
+
+====Chemotherapy, part 2====
+*[[Fluorouracil (5-FU)]] 300 mg/m<sup>2</sup>/day IV continuous infusion on days 1 to 56
+
+'''56-day course'''
+
+===Variant #4, bolus 5-FU, then bolus 5-FU & RT, then bolus 5-FU {{#subobject:3d1b7b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM199408253310803 O'Connell et al. 1994 (INT 864751)]
+|style="background-color:#1a9851"|Phase III (C)
+|Bolus 5-FU, then CI 5-FU & RT, then bolus 5-FU
+| style="background-color:#d73027" |Inferior OS
+|-
+|rowspan=3|[http://jco.ascopubs.org/content/15/5/2030.long Tepper et al. 1997 (GI INT 0114)]
+|rowspan=3 style="background-color:#1a9851"|Phase III (C)
+|[[#5-FU_.26_Leucovorin.2C_then_5-FU.2C_Leucovorin.2C_RT.2C_then_5-FU_.26_Leucovorin|1. 5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. Levamisole combination #1
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|3. Levamisole combination #2
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: INT 864751 also included a randomization to add semustine, which is only of historic interest.''
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles, followed by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 500 mg/m<sup>2</sup> IV bolus 3 days per week during weeks 1 & 5 of radiation, preferably within 2 hours after the day's radiation
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 25 fractions for an initial dose of 45 Gy, which is followed by a 1.8 Gy x 3 fraction (5.4 Gy total) boost to the tumor bed and adjacent lymph nodes, and then optionally a 1.8 Gy x 2 fraction (3.6 Gy total) boost to the tumor bed and a 2 cm margin if the small bowel could be avoided
+
+'''Followed in 28 days by:'''
+
+====Chemotherapy, part 2====
+*[[Fluorouracil (5-FU)]] 450 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles'''
+
+===References===
+# '''INT 864751:''' O'Connell MJ, Martenson JA, Wieand HS, Krook JE, Macdonald JS, Haller DG, Mayer RJ, Gunderson LL, Rich TA. Improving adjuvant therapy for rectal cancer by combining protracted-infusion fluorouracil with radiation therapy after curative surgery. N Engl J Med. 1994 Aug 25;331(8):502-7. [https://www.nejm.org/doi/full/10.1056/NEJM199408253310803 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8041415 PubMed]
+# '''GI INT 0114:''' Tepper JE, O'Connell MJ, Petroni GR, Hollis D, Cooke E, Benson AB 3rd, Cummings B, Gunderson LL, Macdonald JS, Martenson JA. Adjuvant postoperative fluorouracil-modulated chemotherapy combined with pelvic radiation therapy for rectal cancer: initial results of intergroup 0114. J Clin Oncol. 1997 May;15(5):2030-9. [http://jco.ascopubs.org/content/15/5/2030.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9164215 PubMed]
+## '''Update:''' Tepper JE, O'Connell M, Niedzwiecki D, Hollis DR, Benson AB 3rd, Cummings B, Gunderson LL, Macdonald JS, Martenson JA, Mayer RJ. Adjuvant therapy in rectal cancer: analysis of stage, sex, and local control--final report of intergroup 0114. J Clin Oncol. 2002 Apr 1;20(7):1744-50. [http://jco.ascopubs.org/content/20/7/1744.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11919230 PubMed] content property of [http://hemonc.org HemOnc.org]
+# '''GI INT 0144:''' Smalley SR, Benedetti JK, Williamson SK, Robertson JM, Estes NC, Maher T, Fisher B, Rich TA, Martenson JA, Kugler JW, Benson AB 3rd, Haller DG, Mayer RJ, Atkins JN, Cripps C, Pedersen J, Periman PO, Tanaka MS Jr, Leichman CG, Macdonald JS. Phase III trial of fluorouracil-based chemotherapy regimens plus radiotherapy in postoperative adjuvant rectal cancer: GI INT 0144. J Clin Oncol. 2006 Aug 1;24(22):3542-7. [http://jco.ascopubs.org/content/24/22/3542.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16877719 PubMed]
+# '''Rektum-III:''' Hofheinz RD, Wenz F, Post S, Matzdorff A, Laechelt S, Hartmann JT, Müller L, Link H, Moehler M, Kettner E, Fritz E, Hieber U, Lindemann HW, Grunewald M, Kremers S, Constantin C, Hipp M, Hartung G, Gencer D, Kienle P, Burkholder I, Hochhaus A. Chemoradiotherapy with capecitabine versus fluorouracil for locally advanced rectal cancer: a randomised, multicentre, non-inferiority, phase 3 trial. Lancet Oncol. 2012 Jun;13(6):579-88. Epub 2012 Apr 13. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045%2812%2970116-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22503032 PubMed]
+
+==5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin {{#subobject:e9de02|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:cd06ac|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=3|[http://jco.ascopubs.org/content/15/5/2030.long Tepper et al. 1997 (GI INT 0114)]
+|rowspan=3 style="background-color:#1a9851"|Phase III (E)
+|[[#Fluorouracil.2C_then_Fluorouracil_.26_RT.2C_then_Fluorouracil|1. 5-FU, then 5-FU & RT, then 5-FU]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. Levamisole combination #1
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|3. Levamisole combination #2
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Chemotherapy, part 1====
+*[[Fluorouracil (5-FU)]] 425 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5, '''given second'''
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5, '''given first'''
+
+'''28-day cycle for 2 cycles, followed by:'''
+
+====Chemoradiotherapy====
+*[[Fluorouracil (5-FU)]] 400 mg/m<sup>2</sup> IV bolus 4 days per week during weeks 1 & 5 of radiation, preferably within 2 hours after the day's radiation
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV bolus 4 days per week during weeks 1 & 5 of radiation, preferably within 2 hours after the day's radiation
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 1.8 Gy fractions x 25 fractions for an initial dose of 45 Gy, which is followed by a 1.8 Gy x 3 fraction (5.4 Gy total) boost to the tumor bed and adjacent lymph nodes, and then optionally a 1.8 Gy x 2 fraction (3.6 Gy total) boost to the tumor bed and a 2 cm margin if the small bowel could be avoided
+
+'''Followed in 28 days by:'''
+
+====Chemotherapy, part 2====
+*[[Fluorouracil (5-FU)]] 380 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+*[[Folinic acid (Leucovorin)]] 20 mg/m<sup>2</sup> IV bolus once per day on days 1 to 5
+
+'''28-day cycle for 2 cycles'''
+
+===References===
+# '''GI INT 0114:''' Tepper JE, O'Connell MJ, Petroni GR, Hollis D, Cooke E, Benson AB 3rd, Cummings B, Gunderson LL, Macdonald JS, Martenson JA. Adjuvant postoperative fluorouracil-modulated chemotherapy combined with pelvic radiation therapy for rectal cancer: initial results of intergroup 0114. J Clin Oncol. 1997 May;15(5):2030-9. [http://jco.ascopubs.org/content/15/5/2030.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/9164215 PubMed]
+## '''Update:''' Tepper JE, O'Connell M, Niedzwiecki D, Hollis DR, Benson AB 3rd, Cummings B, Gunderson LL, Macdonald JS, Martenson JA, Mayer RJ. Adjuvant therapy in rectal cancer: analysis of stage, sex, and local control--final report of intergroup 0114. J Clin Oncol. 2002 Apr 1;20(7):1744-50. [http://jco.ascopubs.org/content/20/7/1744.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11919230 PubMed]
+
+==Radiation therapy {{#subobject:3f3b45|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:f7cd24|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://academic.oup.com/jnci/article-abstract/80/1/21/886000 Fisher et al. 1988 (NSABP R-01)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. MOF
+| style="background-color:#d3d3d3" |Not reported
+|-
+|2. Surgery alone
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.nejm.org/doi/10.1056/NEJM199103143241101 Krook et al. 1991]
+|style="background-color:#1a9851"|Phase III (C)
+|Fluorouracil & RT
+| style="background-color:#d73027" |Inferior RFS
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(96)05349-4/fulltext Amott et al. 1996]
+|style="background-color:#1a9851"|Phase III (E)
+|Surgery alone
+| style="background-color:#1a9850" |Superior local recurrence rate
+|-
+|}
+''Of historic interest.''
+====Preceding treatment====
+*[[Surgery#Rectal_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External_beam_radiotherapy|Radiation therapy]], 40 to 50.4 Gy
+
+'''4-week course'''
+
+===References===
+# '''NSABP R-01:''' Fisher B, Wolmark N, Rockette H, Redmond C, Deutsch M, Wickerham DL, Fisher ER, Caplan R, Jones J, Lerner H, Gordon P, Feldman M, Cruz A, Legault-Poisson S, Wexler M, Lawrence W, Robidoux A. Postoperative adjuvant chemotherapy or radiation therapy for rectal cancer: results from NSABP protocol R-01. J Natl Cancer Inst. 1988 Mar 2;80(1):21-9. [https://academic.oup.com/jnci/article-abstract/80/1/21/886000 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3276900 PubMed]
+# Krook JE, Moertel CG, Gunderson LL, Wieand HS, Collins RT, Beart RW, Kubista TP, Poon MA, Meyers WC, Mailliard JA, Twito DI, Morton RF, Veeder MH, Witzig TE, Cha S, Vidyarthi SC. Effective surgical adjuvant therapy for high-risk rectal carcinoma. N Engl J Med. 1991 Mar 14;324(11):709-15. [https://www.nejm.org/doi/10.1056/NEJM199103143241101 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/1997835 PubMed]
+# Amott SJ, Stenning SP, Hardcastle JD; Medical Research Council Rectal Cancer Working Party. Randomised trial of surgery alone versus surgery followed by radiotherapy for mobile cancer of the rectum. Lancet. 1996 Dec 14;348(9042):1610-4. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(96)05349-4/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/8961990 PubMed]
+# '''TTROG 01.014:''' Ngan SY, Burmeister B, Fisher RJ, Solomon M, Goldstein D, Joseph D, Ackland SP, Schache D, McClure B, McLachlan SA, McKendrick J, Leong T, Hartopeanu C, Zalcberg J, Mackay J. Randomized trial of short-course radiotherapy versus long-course chemoradiation comparing rates of local recurrence in patients with T3 rectal cancer: Trans-Tasman Radiation Oncology Group trial 01.04. J Clin Oncol. 2012 Nov 1;30(31):3827-33. Epub 2012 Sep 24. Erratum in: J Clin Oncol. 2013 Jan 20;31(3):399. [http://ascopubs.org/doi/full/10.1200/JCO.2012.42.9597 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23008301 PubMed]
+
+=Advanced or metastatic disease=
+''See the [[Colon_cancer|colon cancer page]] for colorectal cancer regimens.''
+
+[[Category:Rectal cancer regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Gastrointestinal cancers]]

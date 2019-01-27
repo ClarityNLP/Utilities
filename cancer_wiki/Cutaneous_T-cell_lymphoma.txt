@@ -1,0 +1,568 @@
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==ESMO==
+*'''2018:''' Willemze et al. [https://www.esmo.org/Guidelines/Haematological-Malignancies/Primary-Cutaneous-Lymphoma Primary cutaneous lymphomas: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/primary_cutaneous.pdf NCCN Guidelines - Primary Cutaneous Lymphomas]
+*[https://www.nccn.org/professionals/physician_gls/pdf/t-cell.pdf NCCN Guidelines - T-cell Lymphomas]
+
+=Upfront therapy=
+==PUVA==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PUVA: '''<u>P</u>'''soralen & '''<u>U</u>'''ltra-'''<u>V</u>'''iolet '''<u>A</u>'''
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198702053160603 Edelson et al. 1987]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2133.2012.11156.x Whittaker et al. 2012 (EORTC 21011)]
+| style="background-color:#1a9851" |Phase III (C)
+|PUVA & Bexarotene
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Therapy====
+*PUVA (see papers for details)
+
+===References===
+# Edelson R, Berger C, Gasparro F, Jegasothy B, Heald P, Wintroub B, Vonderheid E, Knobler R, Wolff K, Plewig G, McKiernan G, Christiansen I, Oster M, Honigsmann H, Wilford H, Kokoschka E, Rehle T, Perez M, Stingl G, Laroche L. Treatment of cutaneous T-cell lymphoma by extracorporeal photochemotherapy: preliminary results. N Engl J Med. 1987 Feb 5;316(6):297-303. [https://www.nejm.org/doi/full/10.1056/NEJM198702053160603 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3543674 PubMed]
+# '''EORTC 21011:''' Whittaker S, Ortiz P, Dummer R, Ranki A, Hasan B, Meulemans B, Gellrich S, Knobler R, Stadler R, Karrasch M. Efficacy and safety of bexarotene combined with psoralen-ultraviolet A (PUVA) compared with PUVA treatment alone in stage IB-IIA mycosis fungoides: final results from the EORTC Cutaneous Lymphoma Task Force phase III randomized clinical trial (NCT00056056). Br J Dermatol. 2012 Sep;167(3):678-87. [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2133.2012.11156.x link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22924950 PubMed]
+
+==Topical therapy==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM198912283212603 Kaye et al. 1989]
+| style="background-color:#1a9851" |Randomized, >20 pts
+|CAV-E & RT
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Usually consists of high-dose topical steroids or nitrogen mustards; see paper for details.''
+===References===
+# Kaye FJ, Bunn PA Jr, Steinberg SM, Stocker JL, Ihde DC, Fischmann AB, Glatstein EJ, Schechter GP, Phelps RM, Foss FM, Parlette HL, Anderson MJ, Sausville EA. A randomized trial comparing combination electron-beam radiation and chemotherapy with topical therapy in the initial treatment of mycosis fungoides. N Engl J Med. 1989 Dec 28;321(26):1784-90. [https://www.nejm.org/doi/full/10.1056/NEJM198912283212603 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/2594037 PubMed]
+
+=Relapsed or refractory=
+
+==Alemtuzumab monotherapy {{#subobject:cd1346|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:7a3b21|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/101/11/4267.long Lundin et al. 2003]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#9ebcda" |ORR: 55%
+|-
+|}
+====Chemotherapy====
+*[[Alemtuzumab (Campath)]] as follows:
+**3 mg IV once on day 1, then
+**Increased to 10 mg IV once as soon as infusion-related reactions tolerated, then
+**Increased to 30 mg IV once as soon as infusion-related reactions tolerated, then
+**30 mg IV 3 days per week
+
+'''Up to 12 weeks of therapy'''
+
+===References===
+# Lundin J, Hagberg H, Repp R, Cavallin-Ståhl E, Fredén S, Juliusson G, Rosenblad E, Tjønnfjord G, Wiklund T, Osterborg A. Phase 2 study of alemtuzumab (anti-CD52 monoclonal antibody) in patients with advanced mycosis fungoides/Sezary syndrome. Blood. 2003 Jun 1;101(11):4267-72. Epub 2003 Jan 23. [http://www.bloodjournal.org/content/101/11/4267.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12543862 PubMed]
+
+==Belinostat monotherapy {{#subobject:f8519|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:693804|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13222/full Foss et al. 2014]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#88419d; color:white |ORR: 14%
+|-
+|}
+====Chemotherapy====
+*[[Belinostat (Beleodaq)]] 1000 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 to 5
+
+'''21-day cycles'''
+
+===References===
+<!-- # '''Abstract:''' Pohlman, Brad, Advani, Ranjana, Duvic, Madeleine, Hymes, Kenneth B., Intragumtornchai, Tanin, Lekhakula, Arnuparp, Shpilberg, Ofer, Lerner, Adam, Ben-Yehuda, Dina, beylot-Barry, Marie, Hillen, Uwe, Fagerberg, Jan, Foss, Francine M. Final Results of a Phase II Trial of Belinostat (PXD101) in Patients with Recurrent or Refractory Peripheral or Cutaneous T-Cell Lymphoma. ASH Annual Meeting Abstracts 2009 114: 920. [http://abstracts.hematologylibrary.org/cgi/content/abstract/114/22/920 link to abstract] -->
+# Foss F, Advani R, Duvic M, Hymes KB, Intragumtornchai T, Lekhakula A, Shpilberg O, Lerner A, Belt RJ, Jacobsen ED, Laurent G, Ben-Yehuda D, Beylot-Barry M, Hillen U, Knoblauch P, Bhat G, Chawla S, Allen LF, Pohlman B. A Phase II trial of Belinostat (PXD101) in patients with relapsed or refractory peripheral or cutaneous T-cell lymphoma. Br J Haematol. 2015 Mar;168(6):811-9. Epub 2014 Nov 17. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13222/full link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25404094 PubMed]
+
+==Bendamustine monotherapy {{#subobject:1a5a99|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:44f094|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/31/1/104.long Demaj et al. 2013 (BENTLY)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c96c6" |ORR: 50%
+|-
+|}
+====Chemotherapy====
+*[[Bendamustine]] 120 mg/m<sup>2</sup> IV once per day on days 1 & 2
+
+'''21-day cycle for 6 cycles'''
+
+===References===
+# '''BENTLY:''' Damaj G, Gressin R, Bouabdallah K, Cartron G, Choufi B, Gyan E, Banos A, Jaccard A, Park S, Tournilhac O, Schiano-de Collela JM, Voillat L, Joly B, Le Gouill S, Saad A, Cony-Makhoul P, Vilque JP, Sanhes L, Schmidt-Tanguy A, Bubenheim M, Houot R, Diouf M, Marolleau JP, Béné MC, Martin A, Lamy T. Results from a prospective, open-label, phase II trial of bendamustine in refractory or relapsed T-cell lymphomas: the BENTLY trial. J Clin Oncol. 2013 Jan 1;31(1):104-10. Epub 2012 Oct 29. [http://jco.ascopubs.org/content/31/1/104.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23109692 PubMed]
+
+==Bexarotene monotherapy {{#subobject:feb851|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:67ef8a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/19/9/2456.long Duvic et al. 2001a]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+| style="background-color:#9ebcda" |ORR: 55%
+|-
+|[http://archderm.jamanetwork.com/article.aspx?articleid=478334 Duvic et al. 2001b]
+|style="background-color:#1a9851"|Phase II/III (E)
+|Bexarotene 6.5 mg/m<sup>2</sup>/d
+| style="background-color:#1a9850" |Superior ORR
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext Prince et al. 2017 (ALCANZA)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Brentuximab_vedotin_monotherapy|Brentuximab vedotin]]
+|style="background-color:#d73027"|Inferior OGRR at 4 months
+|-
+|}
+''This dose is considered the optimal starting dose by Duvic et al. 2001a and the target dose in '''ALCANZA'''.''
+====Chemotherapy====
+*[[Bexarotene (Targretin)]] 300 mg/m<sup>2</sup> PO once per day
+
+'''48-week course in '''ALCANZA'''; duration not specified in '''Duvic et al. 2001a''' but presumptively until progression or intolerance'''
+
+===References===
+# Duvic M, Hymes K, Heald P, Breneman D, Martin AG, Myskowski P, Crowley C, Yocum RC; Bexarotene Worldwide Study Group. Bexarotene is effective and safe for treatment of refractory advanced-stage cutaneous T-cell lymphoma: multinational phase II-III trial results. J Clin Oncol. 2001 May 1;19(9):2456-71. [http://jco.ascopubs.org/content/19/9/2456.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11331325 PubMed]
+# Duvic M, Martin AG, Kim Y, Olsen E, Wood GS, Crowley CA, Yocum RC; Worldwide Bexarotene Study Group. Phase 2 and 3 clinical trial of oral bexarotene (Targretin capsules) for the treatment of refractory or persistent early-stage cutaneous T-cell lymphoma. Arch Dermatol. 2001 May;137(5):581-93. [http://archderm.jamanetwork.com/article.aspx?articleid=478334 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11346336 PubMed]
+# '''ALCANZA:''' Prince HM, Kim YH, Horwitz SM, Dummer R, Scarisbrick J, Quaglino P, Zinzani PL, Wolter P, Sanches JA, Ortiz-Romero PL, Akilov OE, Geskin L, Trotman J, Taylor K, Dalle S, Weichenthal M, Walewski J, Fisher D, Dréno B, Stadler R, Feldman T, Kuzel TM, Wang Y, Palanca-Wessels MC, Zagadailov E, Trepicchio WL, Zhang W, Lin HM, Liu Y, Huebner D, Little M, Whittaker S, Duvic M; ALCANZA study group. Brentuximab vedotin or physician's choice in CD30-positive cutaneous T-cell lymphoma (ALCANZA): an international, open-label, randomised, phase 3, multicentre trial. Lancet. 2017 Aug 5;390(10094):555-566. Epub 2017 Jun 7. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28600132 PubMed]
+
+==Bexarotene & Pralatrexate {{#subobject:8d4e8d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:53ada8|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5511551/ Duvic et al. 2017]
+|style="background-color:#91cf61"|Phase I/II
+| style="background-color:#9ebcda" |ORR: 60%
+|-
+|}
+''This dose is the MTD. Note that the abstract contains a typo for bexarotene dosing; the authors have been contacted.''
+====Chemotherapy====
+*[[Bexarotene (Targretin)]] 150 mg/m<sup>2</sup> PO once per day
+*[[Pralatrexate (Folotyn)]] 15 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+
+===References===
+# Duvic M, Kim YH, Zinzani PL, Horwitz SM. Results from a phase I/II open-label, dose-finding study of pralatrexate and oral bexarotene in patients with relapsed/refractory cutaneous T-cell lymphoma. Clin Cancer Res. 2017 Jul;23(14):3552-6. Epub 2017 Feb 6. [http://clincancerres.aacrjournals.org/content/23/14/3552 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5511551/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/28167509 PubMed]
+
+==Brentuximab vedotin monotherapy {{#subobject:2781ab|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:34eb6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5089160/ Kim et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+| style="background-color:#bfd3e6" |OGRR: 70% (90% CI, 53-83)
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4737859/ Duvic et al. 2015]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#d3d3d3"|
+| style="background-color:#bfd3e6" |ORR: 73% (95% CI, 60-86)
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext Prince et al. 2017 (ALCANZA)]
+|style="background-color:#1a9851"|Phase III (E)
+|Investigator's choice of:<br> 1. [[#Bexarotene_monotherapy|Bexarotene]]<br> 2. [[#Methotrexate_monotherapy|Methotrexate]]
+|style="background-color:#1a9850"|Superior OGRR at 4 months
+|-
+|}
+====Chemotherapy====
+*[[Brentuximab vedotin (Adcetris)]] 1.8 mg/kg IV over 30 minutes once on day 1
+
+'''21-day cycle for up to 16 cycles'''
+
+===References===
+<!-- Presented in part at the 54th Annual Meeting of the American Society of Hematology, December 8-11, 2012, Atlanta, GA, the 56th Annual Meeting of the American Society of Hematology, December 6-9, 2014, San Francisco, CA, and the 72nd Annual Meeting of the Society for Investigative Dermatology, May 9-12, 2012, Raleigh, NC. -->
+# Kim YH, Tavallaee M, Sundram U, Salva KA, Wood GS, Li S, Rozati S, Nagpal S, Krathen M, Reddy S, Hoppe RT, Nguyen-Lin A, Weng WK, Armstrong R, Pulitzer M, Advani RH, Horwitz SM. Phase II investigator-initiated study of brentuximab vedotin in mycosis fungoides and Sézary syndrome with variable CD30 expression level: A multi-institution collaborative project. J Clin Oncol. 2015 Nov 10;33(32):3750-8. Epub 2015 Jul 20. [http://jco.ascopubs.org/content/33/32/3750.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5089160/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26195720 PubMed]
+<!-- Presented in part at the 54th Annual Meeting of the American Society of Hematology, Atlanta, GA, December 8-11, 2012; the 55th Annual Meeting of the American Society of Hematology, New Orleans, LA, December 7-10, 2013; the 75th Annual Meeting of the Society of Investigative Dermatology, Raleigh, NC, May 9-12, 2012; the International Investigative Dermatology Meeting, Edinburgh, United Kingdom, May 8-11, 2013; the 2nd World Congress Cutaneous Lymphoma, Berlin, Germany, February 6-9, 2013; and the 6th Annual T-Cell Lymphoma Forum, San Francisco, CA, January 23-25, 2014. -->
+# Duvic M, Tetzlaff MT, Gangar P, Clos AL, Sui D, Talpur R. Results of a phase II trial of brentuximab vedotin for CD30+ cutaneous T-cell lymphoma and lymphomatoid papulosis. J Clin Oncol. 2015 Nov 10;33(32):3759-65. Epub 2015 Aug 10. [http://jco.ascopubs.org/content/33/32/3759.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4737859/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/26261247 PubMed]
+# '''ALCANZA:''' Prince HM, Kim YH, Horwitz SM, Dummer R, Scarisbrick J, Quaglino P, Zinzani PL, Wolter P, Sanches JA, Ortiz-Romero PL, Akilov OE, Geskin L, Trotman J, Taylor K, Dalle S, Weichenthal M, Walewski J, Fisher D, Dréno B, Stadler R, Feldman T, Kuzel TM, Wang Y, Palanca-Wessels MC, Zagadailov E, Trepicchio WL, Zhang W, Lin HM, Liu Y, Huebner D, Little M, Whittaker S, Duvic M; ALCANZA study group. Brentuximab vedotin or physician's choice in CD30-positive cutaneous T-cell lymphoma (ALCANZA): an international, open-label, randomised, phase 3, multicentre trial. Lancet. 2017 Aug 5;390(10094):555-566. Epub 2017 Jun 7. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28600132 PubMed]
+
+==Denileukin diftitox monotherapy {{#subobject:751a63|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:4e103c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/19/2/376.long Olsen et al. 2001 (L4389-10)]
+|style="background-color:#1a9851"|Phase III (E)
+|Alternate dosing (9 mcg/kg)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|rowspan=2|[http://jco.ascopubs.org/content/28/11/1870.long Prince et al. 2010 (L4389-11)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Denileukin diftitox 9 mcg/kg
+|style="background-color:#1a9850"|Superior ORR
+|-
+|2. Placebo
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+''Dose is that which was recommended in L4389-11 based on superior response.''
+====Chemotherapy====
+*[[Denileukin diftitox (Ontak)]] 18 mcg/kg IV over 15 to 60 minutes once per day on days 1 to 5
+
+====Supportive medications====
+*"Premedication with [[Acetaminophen (Tylenol)]] (650 mg in Olsen et al. 2001) and an antihistamine was required 30 to 60 minutes before each infusion" and could be used after infusions as needed.
+*Olsen et al. 2001 used [[Promethazine (Phenergan)]] 25 mg or [[Prochlorperazine (Compazine)]] 10 mg (route/schedule not specified) as needed for nausea.
+*Corticosteroid use was not allowed.
+
+'''21-day cycles for up to 8 cycles'''
+
+''Up to 3 additional cycles allowed in L4389-10 for patients who had ongoing response.''
+
+===References===
+# '''L4389-10:''' Olsen E, Duvic M, Frankel A, Kim Y, Martin A, Vonderheid E, Jegasothy B, Wood G, Gordon M, Heald P, Oseroff A, Pinter-Brown L, Bowen G, Kuzel T, Fivenson D, Foss F, Glode M, Molina A, Knobler E, Stewart S, Cooper K, Stevens S, Craig F, Reuben J, Bacha P, Nichols J. Pivotal phase III trial of two dose levels of denileukin diftitox for the treatment of cutaneous T-cell lymphoma. J Clin Oncol. 2001 Jan 15;19(2):376-88. [http://jco.ascopubs.org/content/19/2/376.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/11208829 PubMed]
+<!-- Presented in part at the 43rd Annual Meeting of the American Society of Clinical Oncology, June 1-5, 2007, Chicago, IL; and the 44th Annual Meeting of the American Society of Clinical Oncology, May 30-June 3, 2008, Chicago, IL. -->
+# '''L4389-11:''' Prince HM, Duvic M, Martin A, Sterry W, Assaf C, Sun Y, Straus D, Acosta M, Negro-Vilar A. Phase III placebo-controlled trial of denileukin diftitox for patients with cutaneous T-cell lymphoma. J Clin Oncol. 2010 Apr 10;28(11):1870-7. Epub 2010 Mar 8. [http://jco.ascopubs.org/content/28/11/1870.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20212249 PubMed]
+<!-- Presented in part at the 46th Annual Meeting of the American Society of Clinical Oncology in Chicago, IL, June 4-8, 2010 -->
+# '''Meta-analysis:''' Duvic M, Geskin L, Prince HM. Duration of response in cutaneous T-cell lymphoma patients treated with denileukin diftitox: results from 3 phase III studies. Clin Lymphoma Myeloma Leuk. 2013 Aug;13(4):377-84. Epub 2013 Jun 14. [http://www.clinical-lymphoma-myeloma-leukemia.com/article/S2152-2650(13)00095-5/abstract link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23770157 PubMed]
+
+==Lenalidomide monotherapy {{#subobject:d48e4c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:2dd505|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/123/8/1159.full Querfeld et al. 2013]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c6bb1" |ORR: 28%
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+**Dose increased by 5 mg per day with each cycle to a maximum of 25 mg PO once per day, as tolerated
+
+'''28-day cycle for up to 2 years or until disease progression'''
+
+===References===
+# Querfeld C, Rosen ST, Guitart J, Duvic M, Kim YH, Dusza SW, Kuzel TM. Results of an open-label multicenter phase II trial of lenalidomide monotherapy in refractory mycosis fungoides and Sezary syndrome. Blood. 2014 Feb 20;123(8):1159-66. Epub 2013 Dec 11. [http://bloodjournal.hematologylibrary.org/content/123/8/1159.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24335103 PubMed]
+
+==Methotrexate monotherapy {{#subobject:0ff378|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:dfe411|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext Prince et al. 2017 (ALCANZA)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Brentuximab_vedotin_monotherapy|Brentuximab vedotin]]
+|style="background-color:#d73027"|Inferior OGRR at 4 months
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Methotrexate (MTX)]] 5 to 50 mg PO once per week
+
+'''48-week course'''
+
+===References===
+# '''Retrospective:''' Zackheim HS, Kashani-Sabet M, McMillan A. Low-dose methotrexate to treat mycosis fungoides: a retrospective study in 69 patients. J Am Acad Dermatol. 2003 Nov;49(5):873-8. [https://www.jaad.org/article/S0190-9622(03)01591-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14576667 PubMed]
+# '''ALCANZA:''' Prince HM, Kim YH, Horwitz SM, Dummer R, Scarisbrick J, Quaglino P, Zinzani PL, Wolter P, Sanches JA, Ortiz-Romero PL, Akilov OE, Geskin L, Trotman J, Taylor K, Dalle S, Weichenthal M, Walewski J, Fisher D, Dréno B, Stadler R, Feldman T, Kuzel TM, Wang Y, Palanca-Wessels MC, Zagadailov E, Trepicchio WL, Zhang W, Lin HM, Liu Y, Huebner D, Little M, Whittaker S, Duvic M; ALCANZA study group. Brentuximab vedotin or physician's choice in CD30-positive cutaneous T-cell lymphoma (ALCANZA): an international, open-label, randomised, phase 3, multicentre trial. Lancet. 2017 Aug 5;390(10094):555-566. Epub 2017 Jun 7. [https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(17)31266-7/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28600132 PubMed]
+
+==Mogamulizumab monotherapy {{#subobject:8d8ae3|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 8-week course {{#subobject:2848bf|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/32/11/1157.long Ogura et al. 2014 (KW-0761-004)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Mogamulizumab (Poteligeo)]] 1 mg/kg IV once per week
+
+'''8-week course'''
+
+===Variant #2, indefinite {{#subobject:097b16|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/125/12/1883.long Duvic et al. 2015 (KW-0761-001)]
+|style="background-color:#91cf61"|Phase I/II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30379-6/fulltext Kim et al. 2018 (MAVORIC)]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#Vorinostat_monotherapy|Vorinostat]]
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+''Note: in KW-0761-001, a two-week "period of observation" was undertaken after cycle 1.''
+====Chemotherapy====
+*[[Mogamulizumab (Poteligeo)]] as follows:
+**Cycle 1: 1 mg/kg IV once per day on days 1, 8, 15, 22
+**Subsequent cycles: 1 mg/kg IV once per day on days 1 & 15
+
+'''28-day cycles'''
+
+===References===
+# '''KW-0761-004:''' Ogura M, Ishida T, Hatake K, Taniwaki M, Ando K, Tobinai K, Fujimoto K, Yamamoto K, Miyamoto T, Uike N, Tanimoto M, Tsukasaki K, Ishizawa K, Suzumiya J, Inagaki H, Tamura K, Akinaga S, Tomonaga M, Ueda R. Multicenter phase II study of mogamulizumab (KW-0761), a defucosylated anti-cc chemokine receptor 4 antibody, in patients with relapsed peripheral T-cell lymphoma and cutaneous T-cell lymphoma. J Clin Oncol. 2014 Apr 10;32(11):1157-63. Epub 2014 Mar 10. [http://jco.ascopubs.org/content/32/11/1157.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24616310 PubMed]
+# '''KW-0761-001:''' Duvic M, Pinter-Brown LC, Foss FM, Sokol L, Jorgensen JL, Challagundla P, Dwyer KM, Zhang X, Kurman MR, Ballerini R, Liu L, Kim YH. Phase 1/2 study of mogamulizumab, a defucosylated anti-CCR4 antibody, in previously treated patients with cutaneous T-cell lymphoma. Blood. 2015 Mar 19;125(12):1883-9. Epub 2015 Jan 20. [http://www.bloodjournal.org/content/125/12/1883.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25605368 PubMed]
+# '''MAVORIC:''' Kim YH, Bagot M, Pinter-Brown L, Rook AH, Porcu P, Horwitz SM, Whittaker S, Tokura Y, Vermeer M, Zinzani PL, Sokol L, Morris S, Kim EJ, Ortiz-Romero PL, Eradat H, Scarisbrick J, Tsianakas A, Elmets C, Dalle S, Fisher DC, Halwani A, Poligone B, Greer J, Fierro MT, Khot A, Moskowitz AJ, Musiek A, Shustov A, Pro B, Geskin LJ, Dwyer K, Moriya J, Leoni M, Humphrey JS, Hudgens S, Grebennik DO, Tobinai K, Duvic M; MAVORIC Investigators. Mogamulizumab versus vorinostat in previously treated cutaneous T-cell lymphoma (MAVORIC): an international, open-label, randomised, controlled phase 3 trial. Lancet Oncol. 2018 Sep;19(9):1192-1204. Epub 2018 Aug 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30379-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30100375 PubMed]
+
+==Placebo==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/28/11/1870.long Prince et al. 2010 (L4389-11)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Denileukin_diftitox_monotherapy|Denileukin diftitox]]
+| style="background-color:#d73027" |Inferior PFS
+|-
+|}
+===References===
+<!-- Presented in part at the 43rd Annual Meeting of the American Society of Clinical Oncology, June 1-5, 2007, Chicago, IL; and the 44th Annual Meeting of the American Society of Clinical Oncology, May 30-June 3, 2008, Chicago, IL. -->
+# '''L4389-11:''' Prince HM, Duvic M, Martin A, Sterry W, Assaf C, Sun Y, Straus D, Acosta M, Negro-Vilar A. Phase III placebo-controlled trial of denileukin diftitox for patients with cutaneous T-cell lymphoma. J Clin Oncol. 2010 Apr 10;28(11):1870-7. Epub 2010 Mar 8. [http://jco.ascopubs.org/content/28/11/1870.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20212249 PubMed]
+
+==Pralatrexate monotherapy {{#subobject:1df1c0|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:ac3b67|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://bloodjournal.hematologylibrary.org/content/119/18/4115.long Horwitz et al. 2012]
+|style="background-color:#91cf61"|Phase II
+|style="background-color:#737373; color:white"|RR: 45%
+|-
+|}
+''Dose is that identified as recommended based on de-escalation strategy.''
+====Chemotherapy====
+*[[Pralatrexate (Folotyn)]] 15 mg/m<sup>2</sup> IV push once per day on days 1, 8, 15
+
+====Supportive medications====
+*[[Cyanocobalamin (Vitamin B12)]] 1 mg IM once every 8 to 10 weeks, within 10 weeks of treatment initiation
+*[[Folic acid (Folate)]] 1 mg PO once per day, starting at least 10 days prior to treatment initiation
+
+'''28-day cycles'''
+
+===References===
+# Horwitz SM, Kim YH, Foss F, Zain JM, Myskowski PL, Lechowicz MJ, Fisher DC, Shustov AR, Bartlett NL, Delioukina ML, Koutsoukos T, Saunders ME, O'Connor OA, Duvic M. Identification of an active, well-tolerated dose of pralatrexate in patients with relapsed or refractory cutaneous T-cell lymphoma. Blood. 2012 May 3;119(18):4115-22. Epub 2012 Mar 6. [http://bloodjournal.hematologylibrary.org/content/119/18/4115.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22394596 PubMed]
+
+==Romidepsin monotherapy {{#subobject:b4c097|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:7ef1f5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2773225/ Piekarz et al. 2009]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c6bb1" |ORR: 34% (95% CI, 23-46)
+|-
+|[http://jco.ascopubs.org/content/28/29/4485.full Whittaker et al. 2010 (GPI-04-0001)]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c6bb1" |ORR: 34% (95% CI, 25-45)
+|-
+|}
+====Chemotherapy====
+*[[Romidepsin (Istodax)]] 14 mg/m<sup>2</sup> IV over 4 hours once per day on days 1, 8, 15
+
+'''28-day cycle for up to 6 cycles, with optional extension of treatment for patients with stable disease or response'''
+
+===References===
+# Piekarz RL, Frye R, Turner M, Wright JJ, Allen SL, Kirschbaum MH, Zain J, Prince HM, Leonard JP, Geskin LJ, Reeder C, Joske D, Figg WD, Gardner ER, Steinberg SM, Jaffe ES, Stetler-Stevenson M, Lade S, Fojo AT, Bates SE. Phase II multi-institutional trial of the histone deacetylase inhibitor romidepsin as monotherapy for patients with cutaneous T-cell lymphoma. J Clin Oncol. 2009 Nov 10;27(32):5410-7. Epub 2009 Oct 13. [http://jco.ascopubs.org/content/27/32/5410.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2773225/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19826128 PubMed]
+# '''GPI-04-0001:''' Whittaker SJ, Demierre MF, Kim EJ, Rook AH, Lerner A, Duvic M, Scarisbrick J, Reddy S, Robak T, Becker JC, Samtsov A, McCulloch W, Kim YH. Final results from a multicenter, international, pivotal study of romidepsin in refractory cutaneous T-cell lymphoma. J Clin Oncol. 2010 Oct 10;28(29):4485-91. Epub 2010 Aug 9. [http://jco.ascopubs.org/content/28/29/4485.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20697094 PubMed]
+
+==Vorinostat monotherapy {{#subobject:6a3a5b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d18568|Variant=1}}===
+{| class="wikitable" style="color:white; background-color:#404040"
+|<small>'''FDA-recommended dose'''</small>
+|-
+|}
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1785068/ Duvic et al. 2006]
+|style="background-color:#91cf61"|Phase IIa
+| style="background-color:#d3d3d3" |
+| style="background-color:#88419d; color:white |ORR: 24%
+|-
+|[http://jco.ascopubs.org/content/25/21/3109.full Olsen et al. 2007]
+|style="background-color:#91cf61"|Phase IIb
+| style="background-color:#d3d3d3" |
+| style="background-color:#8c6bb1" |ORR: 30%
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30379-6/fulltext Kim et al. 2018 (MAVORIC)]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Mogamulizumab_monotherapy|Mogamulizumab]]
+| style="background-color:#d73027" |Inferior PFS
+|-
+|}
+''Note: Duvic et al. 2006 evaluated several different doses, but this is the one that "had the most favorable safety profile". To our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Vorinostat (Zolinza)]] 400 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Duvic M, Talpur R, Ni X, Zhang C, Hazarika P, Kelly C, Chiao JH, Reilly JF, Ricker JL, Richon VM, Frankel SR. Phase 2 trial of oral vorinostat (suberoylanilide hydroxamic acid, SAHA) for refractory cutaneous T-cell lymphoma (CTCL). Blood. 2007 Jan 1;109(1):31-9. Epub 2006 Sep 7. Erratum in: Blood. 2007 Jun 15;109(12):5086. [http://www.bloodjournal.org/content/109/1/31.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1785068/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16960145 PubMed]
+# Olsen EA, Kim YH, Kuzel TM, Pacheco TR, Foss FM, Parker S, Frankel SR, Chen C, Ricker JL, Arduino JM, Duvic M. Phase IIb multicenter trial of vorinostat in patients with persistent, progressive, or treatment refractory cutaneous T-cell lymphoma. J Clin Oncol. 2007 Jul 20;25(21):3109-15. [http://jco.ascopubs.org/content/25/21/3109.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17577020 PubMed]
+## '''Update:''' Duvic M, Olsen EA, Breneman D, Pacheco TR, Parker S, Vonderheid EC, Abuav R, Ricker JL, Rizvi S, Chen C, Boileau K, Gunchenko A, Sanz-Rodriguez C, Geskin LJ. Evaluation of the long-term tolerability and clinical benefit of vorinostat in patients with advanced cutaneous T-cell lymphoma. Clin Lymphoma Myeloma. 2009 Dec;9(6):412-6. [https://www.sciencedirect.com/science/article/pii/S1557919011700312 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/19951879 PubMed]
+# '''MAVORIC:''' Kim YH, Bagot M, Pinter-Brown L, Rook AH, Porcu P, Horwitz SM, Whittaker S, Tokura Y, Vermeer M, Zinzani PL, Sokol L, Morris S, Kim EJ, Ortiz-Romero PL, Eradat H, Scarisbrick J, Tsianakas A, Elmets C, Dalle S, Fisher DC, Halwani A, Poligone B, Greer J, Fierro MT, Khot A, Moskowitz AJ, Musiek A, Shustov A, Pro B, Geskin LJ, Dwyer K, Moriya J, Leoni M, Humphrey JS, Hudgens S, Grebennik DO, Tobinai K, Duvic M; MAVORIC Investigators. Mogamulizumab versus vorinostat in previously treated cutaneous T-cell lymphoma (MAVORIC): an international, open-label, randomised, controlled phase 3 trial. Lancet Oncol. 2018 Sep;19(9):1192-1204. Epub 2018 Aug 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30379-6/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30100375 PubMed]
+
+=Relapsed or refractory, subsequent lines of treatment=
+==Denileukin diftitox monotherapy {{#subobject:bf44d8|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:3a3d12|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.tandfonline.com/doi/full/10.3109/10428194.2012.720372 Duvic et al. 2012]
+| style="background-color:#91cf61" |Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[Denileukin diftitox (Ontak)]] 18 mcg/kg IV once per day on days 1 to 5
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# Duvic M, Martin AG, Olsen EA, Fivenson DP, Prince HM. Efficacy and safety of denileukin diftitox retreatment in patients with relapsed cutaneous T-cell lymphoma. Leuk Lymphoma. 2013 Mar;54(3):514-9. Epub 2012 Sep 3. [https://www.tandfonline.com/doi/full/10.3109/10428194.2012.720372 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22891708 PubMed]
+
+[[Category:Cutaneous T-cell lymphoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Skin cancers]]
+[[Category:T-cell lymphomas]]

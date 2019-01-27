@@ -1,0 +1,840 @@
+{{#lst:Section editor transclusions|breast}}
+<big>'''Note: this page has regimens which are specific to breast cancer that is triple negative. Please see the [[breast cancer]] page for other chemotherapy regimens.'''</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+==[https://www.asco.org/ ASCO]==
+*'''2016:''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4933134/ Use of biomarkers to guide decisions on adjuvant systemic therapy for women with early-stage invasive breast cancer: American Society of Clinical Oncology clinical practice guideline]
+*'''2015:''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5478102/ Use of biomarkers to guide decisions on systemic therapy for women with metastatic breast cancer: American Society of Clinical Oncology Clinical practice guideline]
+
+=Neoadjuvant chemotherapy=
+==AC {{#subobject:b17f90|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+AC: '''<u>A</u>'''driamycin (Doxorubicin) & '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:37a97e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ Rugo et al. 2016 (I-SPY 2)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[#Paclitaxel_monotherapy|T]] x 12 wk versus Paclitaxel & VC x 12 wk
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+<!-- Presented in part at the San Antonio Breast Cancer Symposium, December 10–14, 2013. -->
+# '''I-SPY 2:''' Rugo HS, Olopade OI, DeMichele A, Yau C, van 't Veer LJ, Buxton MB, Hogarth M, Hylton NM, Paoloni M, Perlmutter J, Symmans WF, Yee D, Chien AJ, Wallace AM, Kaplan HG, Boughey JC, Haddad TC, Albain KS, Liu MC, Isaacs C, Khan QJ, Lang JE, Viscusi RK, Pusztai L, Moulder SL, Chui SY, Kemmer KA, Elias AD, Edmiston KK, Euhus DM, Haley BB, Nanda R, Northfelt DW, Tripathy D, Wood WC, Ewing C, Schwab R, Lyandres J, Davis SE, Hirst GL, Sanil A, Berry DA, Esserman LJ; I-SPY 2 Investigators. Adaptive randomization of veliparib-carboplatin treatment in breast cancer. N Engl J Med. 2016 Jul 7;375(1):23-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa1513749 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27406347 PubMed]
+
+==Carboplatin & Docetaxel {{#subobject:82336a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CbD: '''<u>C</u>'''ar'''<u>b</u>'''oplatin & '''<u>D</u>'''ocetaxel
+===Regimen {{#subobject:645a51|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5156592/ Sharma et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|56-59% pCR rate
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 6 IV once on day 1
+*[[Docetaxel (Taxotere)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 6 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+# Sharma P, López-Tarruella S, García-Saenz JA, Ward C, Connor CS, Gómez HL, Prat A, Moreno F, Jerez-Gilarranz Y, Barnadas A, Picornell AC, Del Monte-Millán M, Gonzalez-Rivera M, Massarrah T, Pelaez-Lorenzo B, Palomero MI, González Del Val R, Cortes J, Fuentes Rivera H, Bretel Morales D, Márquez-Rodas I, Perou CM, Wagner JL, Mammen JM, McGinness MK, Klemp JR, Amin AL, Fabian CJ, Heldstab J, Godwin AK, Jensen RA, Kimler BF, Khan QJ, Martin M. Efficacy of neoadjuvant carboplatin plus docetaxel in triple-negative breast cancer: Combined analysis of two cohorts. Clin Cancer Res. 2017 Feb 1;23(3):649-657. Epub 2016 Jun 14. [http://clincancerres.aacrjournals.org/content/23/3/649 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5156592/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27301700 PubMed]
+
+==Carboplatin & Paclitaxel {{#subobject:2926d1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d222b9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ Sikov et al. 2014 (CALGB 40603)]
+|style="background-color:#1a9851" |Phase III (E)
+|[[#Paclitaxel_monotherapy|Paclitaxel]]
+| style="background-color:#1a9850" |Superior pCR rate
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30111-6/fulltext Loibl et al. 2018 (BrighTNess)]
+|rowspan=2 style="background-color:#1a9851" |Phase III (E)
+|1. Carboplatin, Paclitaxel, Veliparib
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|2. [[#Paclitaxel_monotherapy|Paclitaxel]]
+|style="background-color:#d3d3d3"|Not reported in abstract
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 6 IV once on day 1
+*[[Paclitaxel (Taxol)]] 80 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*CALGB 40603: [[#ddAC|ddAC]] x 4, then [[Surgery#Breast_cancer_surgery|surgery]]
+*BrighTNess: [[#AC|AC]] x 4 or [[#ddAC|ddAC]] x 4, then [[Surgery#Breast_cancer_surgery|surgery]]
+===References===
+<!-- Presented in part at the 36th Annual San Antonio Breast Cancer Symposium, San Antonio, TX, December 10-14, 2013. -->
+# '''CALGB 40603:''' Sikov WM, Berry DA, Perou CM, Singh B, Cirrincione CT, Tolaney SM, Kuzma CS, Pluard TJ, Somlo G, Port ER, Golshan M, Bellon JR, Collyar D, Hahn OM, Carey LA, Hudis CA, Winer EP. Impact of the addition of carboplatin and/or bevacizumab to neoadjuvant once-per-week paclitaxel followed by dose-dense doxorubicin and cyclophosphamide on pathologic complete response rates in stage II to III triple-negative breast cancer: CALGB 40603 (Alliance). J Clin Oncol. 2015 Jan 1;33(1):13-21. Epub 2014 Aug 4. [http://ascopubs.org/doi/full/10.1200/JCO.2014.57.0572 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25092775 PubMed]
+# '''BrighTNess:''' Loibl S, O'Shaughnessy J, Untch M, Sikov WM, Rugo HS, McKee MD, Huober J, Golshan M, von Minckwitz G, Maag D, Sullivan D, Wolmark N, McIntyre K, Ponce Lorenzo JJ, Metzger Filho O, Rastogi P, Symmans WF, Liu X, Geyer CE Jr. Addition of the PARP inhibitor veliparib plus carboplatin or carboplatin alone to standard neoadjuvant chemotherapy in triple-negative breast cancer (BrighTNess): a randomised, phase 3 trial. Lancet Oncol. 2018 Apr;19(4):497-509. Epub 2018 Feb 28. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30111-6/fulltext link to original article] '''contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29501363 PubMed]
+
+==Carboplatin & nab-Paclitaxel {{#subobject:413b7d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:bcb4af|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/jnci/article-abstract/110/6/628/4698155 Gluz et al. 2018 (WSG-ADAPT-TN)]
+|style="background-color:#1a9851"|Phase III (E)
+|Gemcitabine & nab-Paclitaxel
+|style="background-color:#1a9850"|Superior pCR rate
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 2 IV once per day on days 1 & 8
+*[[Paclitaxel, nanoparticle albumin-bound (Abraxane)]] 125 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+# '''WSG-ADAPT-TN:''' Gluz O, Nitz U, Liedtke C, Christgen M, Grischke EM, Forstbauer H, Braun M, Warm M, Hackmann J, Uleer C, Aktas B, Schumacher C, Bangemann N, Lindner C, Kuemmel S, Clemens M, Potenberg J, Staib P, Kohls A, von Schumann R, Kates R, Kates R, Schumacher J, Wuerstlein R, Kreipe HH, Harbeck N. Comparison of neoadjuvant nab-paclitaxel+carboplatin vs nab-paclitaxel+gemcitabine in triple-negative breast cancer: randomized WSG-ADAPT-TN trial results. J Natl Cancer Inst. 2018 Jun 1;110(6):628-637. [https://academic.oup.com/jnci/article-abstract/110/6/628/4698155 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29228315 PubMed]
+
+==Cisplatin monotherapy {{#subobject:82336a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:645a51|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834466/ Silver et al. 2010]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#8c96c6" |50% [[#Miller-Payne_scoring_system|good pathologic response]]
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+# Silver DP, Richardson AL, Eklund AC, Wang ZC, Szallasi Z, Li Q, Juul N, Leong CO, Calogrias D, Buraimoh A, Fatima A, Gelman RS, Ryan PD, Tung NM, De Nicolo A, Ganesan S, Miron A, Colin C, Sgroi DC, Ellisen LW, Winer EP, Garber JE. Efficacy of neoadjuvant cisplatin in triple-negative breast cancer. J Clin Oncol. 2010 Mar 1;28(7):1145-53. Epub 2010 Jan 25. [http://ascopubs.org/doi/full/10.1200/JCO.2009.22.4725 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834466/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20100965 PubMed]
+
+==ddAC {{#subobject:349de1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+ddAC: '''<u>d</u>'''ose-'''<u>d</u>'''ense '''<u>A</u>'''driamycin (Doxorubicin) & '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:90a446|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ Sikov et al. 2014 (CALGB 40603)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ Rugo et al. 2016 (I-SPY 2)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*CALGB 40603: Carboplatin & Bevacizumab x 4 versus [[#Carboplatin_.26_Paclitaxel|Carboplatin & Paclitaxel]] x 4 versus Carboplatin, Paclitaxel, Bevacizumab versus [[#Paclitaxel_monotherapy|T]] x 12 wk
+*I-SPY2: [[#Paclitaxel_monotherapy|T]] x 12 wk versus Paclitaxel & VC x 12 wk
+
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+====Supportive medications====
+*[[:Category:Granulocyte colony-stimulating factors|G-CSF]]
+'''14-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+<!-- Presented in part at the 36th Annual San Antonio Breast Cancer Symposium, San Antonio, TX, December 10-14, 2013. -->
+# '''CALGB 40603:''' Sikov WM, Berry DA, Perou CM, Singh B, Cirrincione CT, Tolaney SM, Kuzma CS, Pluard TJ, Somlo G, Port ER, Golshan M, Bellon JR, Collyar D, Hahn OM, Carey LA, Hudis CA, Winer EP. Impact of the addition of carboplatin and/or bevacizumab to neoadjuvant once-per-week paclitaxel followed by dose-dense doxorubicin and cyclophosphamide on pathologic complete response rates in stage II to III triple-negative breast cancer: CALGB 40603 (Alliance). J Clin Oncol. 2015 Jan 1;33(1):13-21. Epub 2014 Aug 4. [http://ascopubs.org/doi/full/10.1200/JCO.2014.57.0572 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25092775 PubMed]
+<!-- Presented in part at the San Antonio Breast Cancer Symposium, December 10–14, 2013. -->
+# '''I-SPY 2:''' Rugo HS, Olopade OI, DeMichele A, Yau C, van 't Veer LJ, Buxton MB, Hogarth M, Hylton NM, Paoloni M, Perlmutter J, Symmans WF, Yee D, Chien AJ, Wallace AM, Kaplan HG, Boughey JC, Haddad TC, Albain KS, Liu MC, Isaacs C, Khan QJ, Lang JE, Viscusi RK, Pusztai L, Moulder SL, Chui SY, Kemmer KA, Elias AD, Edmiston KK, Euhus DM, Haley BB, Nanda R, Northfelt DW, Tripathy D, Wood WC, Ewing C, Schwab R, Lyandres J, Davis SE, Hirst GL, Sanil A, Berry DA, Esserman LJ; I-SPY 2 Investigators. Adaptive randomization of veliparib-carboplatin treatment in breast cancer. N Engl J Med. 2016 Jul 7;375(1):23-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa1513749 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27406347 PubMed]
+
+==Docetaxel & Bevacizumab {{#subobject:1216fd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:0ff4c4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1111065 von Minckwitz et al. 2012 (GeparQuinto)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Complex_multipart_regimens#GeparQuinto|See link]]
+|[[Complex_multipart_regimens#GeparQuinto|See link]]
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Preceding treatment====
+*[[#EC_.26_Bevacizumab|EC & Bevacizumab]] x 4
+====Chemotherapy====
+*[[Docetaxel (Taxotere)]] 100 mg/m<sup>2</sup> IV once on day 1
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+# von Minckwitz G, Eidtmann H, Rezai M, Fasching PA, Tesch H, Eggemann H, Schrader I, Kittel K, Hanusch C, Kreienberg R, Solbach C, Gerber B, Jackisch C, Kunz G, Blohmer JU, Huober J, Hauschild M, Fehm T, Müller BM, Denkert C, Loibl S, Nekljudova V, Untch M; German Breast Group; Arbeitsgemeinschaft Gynäkologische Onkologie–Breast Study Groups. Neoadjuvant chemotherapy and bevacizumab for HER2-negative breast cancer. N Engl J Med. 2012 Jan 26;366(4):299-309. [https://www.nejm.org/doi/full/10.1056/NEJMoa1111065 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22276820 PubMed]
+
+==EC & Bevacizumab {{#subobject:3e1e8f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+EC & Bevacizumab: '''<u>E</u>'''pirubicin, '''<u>C</u>'''yclophosphamide, Bevacizumab
+===Regimen {{#subobject:da3717|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1111065 von Minckwitz et al. 2012 (GeparQuinto)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Complex_multipart_regimens#GeparQuinto|See link]]
+|[[Complex_multipart_regimens#GeparQuinto|See link]]
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Chemotherapy====
+*[[Epirubicin (Ellence)]] 90 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*[[#Docetaxel_.26_Bevacizumab|Docetaxel & Bevacizumab]], then [[Surgery#Breast_cancer_surgery|surgery]]
+
+===References===
+# von Minckwitz G, Eidtmann H, Rezai M, Fasching PA, Tesch H, Eggemann H, Schrader I, Kittel K, Hanusch C, Kreienberg R, Solbach C, Gerber B, Jackisch C, Kunz G, Blohmer JU, Huober J, Hauschild M, Fehm T, Müller BM, Denkert C, Loibl S, Nekljudova V, Untch M; German Breast Group; Arbeitsgemeinschaft Gynäkologische Onkologie–Breast Study Groups. Neoadjuvant chemotherapy and bevacizumab for HER2-negative breast cancer. N Engl J Med. 2012 Jan 26;366(4):299-309. [https://www.nejm.org/doi/full/10.1056/NEJMoa1111065 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22276820 PubMed]
+
+==Paclitaxel monotherapy {{#subobject:ed63d4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+T: '''<u>T</u>'''axol (Paclitaxel)
+<br>wP: '''<u>w</u>'''eekly '''<u>P</u>'''aclitaxel
+===Regimen {{#subobject:306354|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ Sikov et al. 2014 (CALGB 40603)]
+|style="background-color:#1a9851" |Phase III (C)
+|[[#Carboplatin_.26_Paclitaxel|Carboplatin & Paclitaxel]]<br> Carboplatin, Paclitaxel, Bevacizumab<br> Paclitaxel & Bevacizumab
+| style="background-color:#d73027" |Inferior pCR rate
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ Rugo et al. 2016 (I-SPY 2)]
+|style="background-color:#1a9851"|Adaptively Randomized Phase II (C)
+|Paclitaxel & VC
+|style="background-color:#fc8d59"|Seems to have inferior pCR rate
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30111-6/fulltext Loibl et al. 2018 (BrighTNess)]
+|rowspan=2 style="background-color:#1a9851" |Phase III (C)
+|1. [[#Carboplatin_.26_Paclitaxel|Carboplatin & Paclitaxel]]
+|style="background-color:#d3d3d3"|Not reported in abstract
+|-
+|2. Carboplatin, Paclitaxel, Veliparib
+| style="background-color:#d73027" |Inferior pCR rate
+|-
+|}
+''Note: this is a component of a sequential treatment protocol; to our knowledge there are no references to support using it as a stand-alone treatment.''
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 80 mg/m<sup>2</sup> IV once per week
+
+'''12-week course'''
+====Subsequent treatment====
+*CALGB 40603: [[#ddAC|ddAC]] x 4, then [[Surgery#Breast_cancer_surgery|surgery]]
+*I-SPY2 & BrighTNess: [[#AC|AC]] x 4 or [[#ddAC|ddAC]] x 4, then [[Surgery#Breast_cancer_surgery|surgery]]
+
+===References===
+<!-- Presented in part at the 36th Annual San Antonio Breast Cancer Symposium, San Antonio, TX, December 10-14, 2013. -->
+# '''CALGB 40603:''' Sikov WM, Berry DA, Perou CM, Singh B, Cirrincione CT, Tolaney SM, Kuzma CS, Pluard TJ, Somlo G, Port ER, Golshan M, Bellon JR, Collyar D, Hahn OM, Carey LA, Hudis CA, Winer EP. Impact of the addition of carboplatin and/or bevacizumab to neoadjuvant once-per-week paclitaxel followed by dose-dense doxorubicin and cyclophosphamide on pathologic complete response rates in stage II to III triple-negative breast cancer: CALGB 40603 (Alliance). J Clin Oncol. 2015 Jan 1;33(1):13-21. Epub 2014 Aug 4. [http://ascopubs.org/doi/full/10.1200/JCO.2014.57.0572 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4268249/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25092775 PubMed]
+<!-- Presented in part at the San Antonio Breast Cancer Symposium, December 10–14, 2013. -->
+# '''I-SPY 2:''' Rugo HS, Olopade OI, DeMichele A, Yau C, van 't Veer LJ, Buxton MB, Hogarth M, Hylton NM, Paoloni M, Perlmutter J, Symmans WF, Yee D, Chien AJ, Wallace AM, Kaplan HG, Boughey JC, Haddad TC, Albain KS, Liu MC, Isaacs C, Khan QJ, Lang JE, Viscusi RK, Pusztai L, Moulder SL, Chui SY, Kemmer KA, Elias AD, Edmiston KK, Euhus DM, Haley BB, Nanda R, Northfelt DW, Tripathy D, Wood WC, Ewing C, Schwab R, Lyandres J, Davis SE, Hirst GL, Sanil A, Berry DA, Esserman LJ; I-SPY 2 Investigators. Adaptive randomization of veliparib-carboplatin treatment in breast cancer. N Engl J Med. 2016 Jul 7;375(1):23-34. [https://www.nejm.org/doi/full/10.1056/NEJMoa1513749 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5259561/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/27406347 PubMed]
+# '''BrighTNess:''' Loibl S, O'Shaughnessy J, Untch M, Sikov WM, Rugo HS, McKee MD, Huober J, Golshan M, von Minckwitz G, Maag D, Sullivan D, Wolmark N, McIntyre K, Ponce Lorenzo JJ, Metzger Filho O, Rastogi P, Symmans WF, Liu X, Geyer CE Jr. Addition of the PARP inhibitor veliparib plus carboplatin or carboplatin alone to standard neoadjuvant chemotherapy in triple-negative breast cancer (BrighTNess): a randomised, phase 3 trial. Lancet Oncol. 2018 Apr;19(4):497-509. Epub 2018 Feb 28. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(18)30111-6/fulltext link to original article] '''contain protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29501363 PubMed]
+
+=Neoadjuvant response criteria=
+
+==Clinical response rate (cRR)==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+''Although fairly dated, some trials such as [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3107749/ ACOSOG Z1031] make use of the WHO criteria for response to neoadjuvant therapy. Included here primarily for historical purposes.''
+===References===
+# Miller AB, Hoogstraten B, Staquet M, Winkler A. Reporting results of cancer treatment. Cancer. 1981 Jan 1;47(1):207-14. [https://onlinelibrary.wiley.com/doi/10.1002/1097-0142(19810101)47:1%3C207::AID-CNCR2820470134%3E3.0.CO;2-6/abstract link to original article]  [https://www.ncbi.nlm.nih.gov/pubmed/7459811 PubMed]
+
+==Miller-Payne scoring system==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+*Grade 1: No change or some changes to individual malignant cells, but no reduction in overall cellularity
+*Grade 2: Minor loss of tumor cells (up to 30%), but overall cellularity still high 
+*Grade 3: An estimated 30 to 90% reduction in the number of tumor cells
+*Grade 4: Marked disappearance of tumor cells such that only small clusters or widely dispersed individual cells remain (loss of greater than 90% of tumor cells) 
+*Grade 5: No invasive cancer cells identifiable in sections from the site of the tumor (carcinoma ''in situ'' may be present) 
+===References===
+# Ogston KN, Miller ID, Payne S, Hutcheon AW, Sarkar TK, Smith I, Schofield A, Heys SD. A new histological grading system to assess response of breast cancers to primary chemotherapy: prognostic significance and survival. Breast. 2003 Oct;12(5):320-7. [http://www.thebreastonline.com/article/S0960-9776(03)00106-1/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/14659147 PubMed]
+
+==Residual cancer burden (RCB)==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+*The RCB is calculated as follows: RCB = 1.4 (''f<sub>inv</sub>*d<sub>prim</sub>'')<sup>0.17</sup> + [4(1 - 0.75<sup>''LN''</sup>)''d<sub>met</sub>'']<sup>0.17</sup>
+**where ''d<sub>prim</sub>'' is derived from the bidimensional diameters of the primary tumor bed in the resected specimen, ''f<sub>inv</sub>'' is the proportion of the primary tumor bed that contains invasive carcinoma, ''LN'' is the number of axillary lymph nodes containing metastatic carcinoma, and ''d<sub>met</sub>'' is the diameter of the largest metastasis in an axillary lymph node.
+**The cut-off points are 1.36 and 3.28.
+===References===
+# Symmans WF, Peintinger F, Hatzis C, Rajan R, Kuerer H, Valero V, Assad L, Poniecka A, Hennessy B, Green M, Buzdar AU, Singletary SE, Hortobagyi GN, Pusztai L. Measurement of residual breast cancer burden to predict survival after neoadjuvant chemotherapy. J Clin Oncol. 2007 Oct 1;25(28):4414-22. Epub 2007 Sep 4. [http://ascopubs.org/doi/full/10.1200/JCO.2007.10.6823 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/17785706 PubMed]
+
+==Residual disease in breast and nodes (RDBN)==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+*Level 1: pCR in breast and nodes with or without ''in situ'' carcinoma
+*Levels 2 to 4: Residual disease, calculated as 0.2 (residual breast tumor size in cm) + index of involved nodes (0 for no positive nodes, 1 for 1 to 4 positive nodes, 2 for 5 to 7 positive nodes, and 3 for 8 positive nodes) + the Scarff–Bloom–Richardson grade (1, 2, or 3). The cut-off points are 3 and 4.3.
+===References===
+# Chollet P, Abrial C, Durando X, Thivat E, Tacca O, Mouret-Reynier MA, Leheurteur M, Kwiatkowski F, Dauplat J, Penault-Llorca F. A new prognostic classification after primary chemotherapy for breast cancer: residual disease in breast and nodes (RDBN). Cancer J. 2008 Mar-Apr;14(2):128-32. [https://insights.ovid.com/pubmed?pmid=18391619 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18391619 PubMed]
+
+==Sataloff's classification==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+*Breast: 
+**T-A: Total or nearly total therapeutic effect 
+**T-B: Greater than 50% therapeutic effect
+**T-C: Less than 50% therapeutic effect 
+**T-D: No therapeutic effect
+*Lymph node:
+**N-A: Therapeutic effect but no metastasis
+**N-B: No metastasis, no therapeutic effect
+**N-C: Therapeutic effect but metastasis
+**N-D: Metastasis, no therapeutic effect
+===References===
+# Sataloff DM, Mason BA, Prestipino AJ, Seinige UL, Lieber CP, Baloch Z. Pathologic response to induction chemotherapy in locally advanced carcinoma of the breast: a determinant of outcome. J Am Coll Surg. 1995 Mar;180(3):297-306. [https://www.ncbi.nlm.nih.gov/pubmed/7874340 PubMed]
+
+==Tumor response ratio==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Calculated as follows: Residual breast disease observed upon pathologic examination divided by the size of the tumor on the pre-neoadjuvant therapy image.
+*TRR = 0: pathologic complete response (pCR)
+*TRR greater than 0 up to 0.4: strong partial response
+*TRR greater than 0.4 up to 1.0: weak partial response (WPR)
+*TRR greater than 1.0: tumor growth
+===References===
+# Miller M, Ottesen RA, Niland JC, Kruper L, Chen SL, Vito C. Tumor response ratio predicts overall survival in breast cancer patients treated with neoadjuvant chemotherapy. Ann Surg Oncol. 2014 Oct;21(10):3317-23. Epub 2014 Jul 25. [https://link.springer.com/article/10.1245%2Fs10434-014-3922-0 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25059788 PubMed]
+
+==ypTNM staging==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+This system is proprietary to the AJCC. Please [https://cancerstaging.org/Pages/default.aspx visit their site] or consult the AJCC Manual for further details.
+
+=Adjuvant chemotherapy=
+==AC {{#subobject:843320|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+AC: '''<u>A</u>'''driamycin (Doxorubicin) & '''<u>C</u>'''yclophosphamide
+===Regimen {{#subobject:2e4988|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+| rowspan="2" |[http://jco.ascopubs.org/content/8/9/1483.long Fisher et al. 1990 (NSABP B-15)]
+| rowspan="2" style="background-color:#1a9851" |Phase III (E)
+|1. AC, then CMF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|2. [[#CMF|CMF]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://link.springer.com/article/10.1007%2Fs10549-017-4285-6 Yardley et al. 2017 (TITAN - breast)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Note: NSABP B-15 was conducted prior to routine testing of HER2, so it technically included "double-negative" patients. TITAN is labeled "TITAN - breast" so as not to confuse it with the trial by the same name in NSCLC.''
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Doxorubicin (Adriamycin)]] 60 mg/m<sup>2</sup> IV once on day 1
+*[[Cyclophosphamide (Cytoxan)]] 600 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for 4 cycles'''
+====Subsequent treatment====
+*TITAN: Ixabepilone versus Paclitaxel
+===References===
+# '''NSABP B-15:''' Fisher B, Brown AM, Dimitrov NV, Poisson R, Redmond C, Margolese RG, Bowman D, Wolmark N, Wickerham DL, Kardinal CG, Shibata H, Paterson AHG, Sutherland CM, Robert NJ, Ager PJ, Levy L, Wolter J, Wozniak T, Fisher ER, Deutsch M. Two months of doxorubicin-cyclophosphamide with and without interval reinduction therapy compared with 6 months of cyclophosphamide, methotrexate, and fluorouracil in positive-node breast cancer patients with tamoxifen-nonresponsive tumors: results from the National Surgical Adjuvant Breast and Bowel Project B-15. J Clin Oncol. 1990 Sep;8(9):1483-96. [http://jco.ascopubs.org/content/8/9/1483.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2202791 PubMed]
+## '''Pooled update:''' Taghian A, Jeong JH, Mamounas E, Anderson S, Bryant J, Deutsch M, Wolmark N. Patterns of locoregional failure in patients with operable breast cancer treated by mastectomy and adjuvant chemotherapy with or without tamoxifen and without radiotherapy: results from five National Surgical Adjuvant Breast and Bowel Project randomized clinical trials. J Clin Oncol. 2004 Nov 1;22(21):4247-54. Epub 2004 Sep 27. [http://ascopubs.org/doi/full/10.1200/JCO.2004.01.042 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15452182 PubMed]
+# '''TITAN:''' Yardley DA, Arrowsmith ER, Daniel BR, Eakle J, Brufsky A, Drosick DR, Kudrik F, Bosserman LD, Keaton MR, Goble SA, Bubis JA, Priego VM, Pendergrass K, Manalo Y, Bury M, Gravenor DS, Rodriguez GI, Inhorn RC, Young RR, Harwin WN, Silver C, Hainsworth JD, Burris HA 3rd. TITAN: phase III study of doxorubicin/cyclophosphamide followed by ixabepilone or paclitaxel in early-stage triple-negative breast cancer. Breast Cancer Res Treat. 2017 Aug;164(3):649-658. Epub 2017 May 15. [https://link.springer.com/article/10.1007%2Fs10549-017-4285-6 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28508185 PubMed]
+
+==Bevacizumab-containing therapy==
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70335-8/fulltext Cameron et al. 2013 (BEATRICE)]
+| style="background-color:#1a9851" |Phase III (E)
+|Standard adjuvant therapy
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''This is the negative experimental arm of an important negative trial, so is included here for reference purposes, only.''
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+===References===
+# '''BEATRICE:''' Cameron D, Brown J, Dent R, Jackisch C, Mackey J, Pivot X, Steger GG, Suter TM, Toi M, Parmar M, Laeufle R, Im YH, Romieu G, Harvey V, Lipatov O, Pienkowski T, Cottu P, Chan A, Im SA, Hall PS, Bubuteishvili-Pacaud L, Henschel V, Deurloo RJ, Pallaud C, Bell R. Adjuvant bevacizumab-containing therapy in triple-negative breast cancer (BEATRICE): primary results of a randomised, phase 3 trial. Lancet Oncol. 2013 Sep;14(10):933-42. Epub 2013 Aug 7. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70335-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23932548 PubMed]
+## '''Update:''' Bell R, Brown J, Parmar M, Toi M, Suter T, Steger GG, Pivot X, Mackey J, Jackisch C, Dent R, Hall P, Xu N, Morales L, Provencher L, Hegg R, Vanlemmens L, Kirsch A, Schneeweiss A, Masuda N, Overkamp F, Cameron D. Final efficacy and updated safety results of the randomized phase III BEATRICE trial evaluating adjuvant bevacizumab-containing therapy in triple-negative early breast cancer. Ann Oncol. 2017 Apr 1;28(4):754-760. [https://academic.oup.com/annonc/article/28/4/754/2716543 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/27993816 PubMed]
+
+==CMF {{#subobject:9c9c1d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CMF: '''<u>C</u>'''yclophosphamide, '''<u>M</u>'''ethotrexate, '''<u>F</u>'''luorouracil
+===Variant #1, 1000/50/2000 {{#subobject:4a3zd3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.karger.com/Article/Abstract/69831 Ploner et al. 2003]
+| style="background-color:#1a9851" |Phase III (C)
+|AV-CMF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this trial was conducted prior to routine testing of HER2, so it technically included "double-negative" patients.''
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Methotrexate (MTX)]] 25 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Fluorouracil (5-FU)]] 1000 mg/m<sup>2</sup> IV oncer per day on days 1 & 8
+
+'''28-day cycle for 6 cycles'''
+
+===Variant #2, 1400/80/1200 {{#subobject:4a77d3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+| rowspan="2" |[http://jco.ascopubs.org/content/8/9/1483.long Fisher et al. 1990 (NSABP B-15)]
+| rowspan="2" style="background-color:#1a9851" |Phase III (C)
+|1. [[#AC_2|AC]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|2. AC, then CMF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this trial was conducted prior to routine testing of HER2, so it technically included "double-negative" patients.''
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 14
+*[[Methotrexate (MTX)]] 40 mg/m<sup>2</sup> IV once per day on days 1 & 8
+*[[Fluorouracil (5-FU)]] 600 mg/m<sup>2</sup> IV oncer per day on days 1 & 8
+
+'''28-day cycle for 6 cycles'''
+
+===References===
+# '''NSABP B-15:''' Fisher B, Brown AM, Dimitrov NV, Poisson R, Redmond C, Margolese RG, Bowman D, Wolmark N, Wickerham DL, Kardinal CG, Shibata H, Paterson AHG, Sutherland CM, Robert NJ, Ager PJ, Levy L, Wolter J, Wozniak T, Fisher ER, Deutsch M. Two months of doxorubicin-cyclophosphamide with and without interval reinduction therapy compared with 6 months of cyclophosphamide, methotrexate, and fluorouracil in positive-node breast cancer patients with tamoxifen-nonresponsive tumors: results from the National Surgical Adjuvant Breast and Bowel Project B-15. J Clin Oncol. 1990 Sep;8(9):1483-96. [http://jco.ascopubs.org/content/8/9/1483.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2202791 PubMed]
+# Ploner F, Jakesz R, Hausmaninger H, Kolb R, Stierer M, Fridrik M, Steindorfer P, Gnant M, Haider K, Mlineritsch B, Tschurtschenthaler G, Steger G, Seifert M, Kubista E, Samonigg H; Austrian Breast And Colorectal Cancer Study Group. Randomised trial: One cycle of anthracycline-containing adjuvant chemotherapy compared with six cycles of CMF treatment in node-positive, hormone receptor-negative breast cancer patients. Onkologie. 2003 Apr;26(2):115-9. [https://www.karger.com/Article/Abstract/69831 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/12771518 PubMed]
+
+==FAC {{#subobject:1e6621|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+FAC: '''<u>F</u>'''luorouracil, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>C</u>'''yclophosphamide
+<br>CAF: '''<u>C</u>'''yclophosphamide, '''<u>A</u>'''driamycin (Doxorubicin), '''<u>F</u>'''luorouracil
+===Regimen {{#subobject:04f8a6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1998.16.7.2382 Fetting et al. 1998 (INT-0108)]
+| style="background-color:#1a9851" |Phase III (C)
+|16-week CAF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Fluorouracil (5-FU)]]
+*[[Doxorubicin (Adriamycin)]]
+*[[Cyclophosphamide (Cytoxan)]]
+
+'''21-day cycle for 6 cycles'''
+===References===
+# '''INT-0108:''' Fetting JH, Gray R, Fairclough DL, Smith TJ, Margolin KA, Citron ML, Grove-Conrad M, Cella D, Pandya K, Robert N, Henderson IC, Osborne CK, Abeloff MD. Sixteen-week multidrug regimen versus cyclophosphamide, doxorubicin, and fluorouracil as adjuvant therapy for node-positive, receptor-negative breast cancer: an Intergroup study. J Clin Oncol. 1998 Jul;16(7):2382-91. [http://ascopubs.org/doi/abs/10.1200/JCO.1998.16.7.2382 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9667255 PubMed]
+
+==Observation==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(97)10010-7/fulltext Jakesz et al. 1998]
+|style="background-color:#1a9851" |Phase III (C)
+|AV-CMF
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Note: this trial was conducted prior to routine testing of HER2, so it technically included "double-negative" patients. No further treatment after surgery.''
+====Preceding treatment====
+*[[Surgery#Breast_cancer_surgery|Surgery]]
+
+===References===
+# Jakesz R, Samonigg H, Gnant M, Kubista E, Steindorfer P, Hausmaninger H, Sevelda P, Tschurtschenthaler B, Fridrik M, Stierer M, Kolb R, Steger G; Austrian Breast Cancer Study Group. Very low-dose adjuvant chemotherapy in steroid receptor negative stage I breast cancer patients. Eur J Cancer. 1998 Jan; 34 (1): 66-70. [https://www.ejcancer.com/article/S0959-8049(97)10010-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9624239 PubMed]
+
+=Metastatic disease, first-line therapy=
+==Carboplatin & Gemcitabine {{#subobject:83a5ee|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GC: '''<u>G</u>'''emcitabine & '''<u>C</u>'''arboplatin
+===Regimen {{#subobject:e571d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1011418 O'Shaughnessy et al. 2011 (TCD11485)]
+| style="background-color:#1a9851" |Randomized Phase II (C)
+|GC & Iniparib
+| style="background-color:#d73027" |Inferior OS
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2014.55.2984 O'Shaughnessy et al. 2014 (EFC11486)]
+| style="background-color:#1a9851" |Phase III (C)
+|GC & Iniparib
+| style="background-color:#fee08b" |Might have inferior PFS
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 2 IV once per day on days 1 & 8
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycles'''
+
+===References===
+# '''TCD11485:''' O'Shaughnessy J, Osborne C, Pippen JE, Yoffe M, Patt D, Rocha C, Koo IC, Sherman BM, Bradley C. Iniparib plus chemotherapy in metastatic triple-negative breast cancer. N Engl J Med. 2011 Jan 20;364(3):205-14. Epub 2011 Jan 5. [https://www.nejm.org/doi/full/10.1056/NEJMoa1011418 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21208101 PubMed]
+# '''EFC11486:''' O'Shaughnessy J, Schwartzberg L, Danso MA, Miller KD, Rugo HS, Neubauer M, Robert N, Hellerstedt B, Saleh M, Richards P, Specht JM, Yardley DA, Carlson RW, Finn RS, Charpentier E, Garcia-Ribas I, Winer EP. Phase III study of iniparib plus gemcitabine and carboplatin versus gemcitabine and carboplatin in patients with metastatic triple-negative breast cancer. J Clin Oncol. 2014 Dec 1;32(34):3840-7. Epub 2014 Oct 27. [http://ascopubs.org/doi/full/10.1200/JCO.2014.55.2984 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25349301 PubMed]
+
+==Cisplatin & Docetaxel {{#subobject:70722b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+TP: '''<u>T</u>'''axotere (Docetaxel) & '''<u>P</u>'''latinol (Cisplatin)
+===Regimen {{#subobject:bd572d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://academic.oup.com/annonc/article/24/5/1219/214775 Fan et al. 2012]
+|style="background-color:#1a9851"|Phase III (E)
+|TX
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+*[[Docetaxel (Taxotere)]] 75 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycle for up to 6 cycles'''
+
+===References===
+# Fan Y, Xu BH, Yuan P, Ma F, Wang JY, Ding XY, Zhang P, Li Q, Cai RG. Docetaxel-cisplatin might be superior to docetaxel-capecitabine in the first-line treatment of metastatic triple-negative breast cancer. Ann Oncol. 2013 May;24(5):1219-25. Epub 2012 Dec 5. [https://academic.oup.com/annonc/article/24/5/1219/214775 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23223332 PubMed]
+
+==Cisplatin & Gemcitabine {{#subobject:289ea6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4cd112|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)70064-1/fulltext Hu et al. 2015 (CBCSG006)]
+|style="background-color:#1a9851"|Phase III (E)
+|Gemcitabine & Paclitaxel
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Cisplatin (Platinol)]] 75 mg/m<sup>2</sup> IV once on day 1
+*[[Gemcitabine (Gemzar)]] 1250 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycle for up to 8 cycles'''
+
+===References===
+# '''CBCSG006:''' Hu XC, Zhang J, Xu BH, Cai L, Ragaz J, Wang ZH, Wang BY, Teng YE, Tong ZS, Pan YY, Yin YM, Wu CP, Jiang ZF, Wang XJ, Lou GY, Liu DG, Feng JF, Luo JF, Sun K, Gu YJ, Wu J, Shao ZM. Cisplatin plus gemcitabine versus paclitaxel plus gemcitabine as first-line therapy for metastatic triple-negative breast cancer (CBCSG006): a randomised, open-label, multicentre, phase 3 trial. Lancet Oncol. 2015 Apr;16(4):436-46. Epub 2015 Mar 18. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(15)70064-1/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25795409 PubMed]
+
+==Paclitaxel monotherapy {{#subobject:3e5448|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen, 80 mg/m<sup>2</sup> 3 weeks on, 1 week off {{#subobject:710f06|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30450-3/fulltext Kim et al. 2017 (LOTUS)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|Ipatasertib & Paclitaxel
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|}
+====Chemotherapy====
+*[[Paclitaxel (Taxol)]] 80 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+
+===References===
+# '''LOTUS:''' Kim SB, Dent R, Im SA, Espié M, Blau S, Tan AR, Isakoff SJ, Oliveira M, Saura C, Wongchenko MJ, Kapp AV, Chan WY, Singel SM, Maslyar DJ, Baselga J; LOTUS investigators. Ipatasertib plus paclitaxel versus placebo plus paclitaxel as first-line therapy for metastatic triple-negative breast cancer (LOTUS): a multicentre, randomised, double-blind, placebo-controlled, phase 2 trial. Lancet Oncol. 2017 Oct;18(10):1360-1372. Epub 2017 Aug 8. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30450-3/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28800861 PubMed]
+
+==nab-Paclitaxel monotherapy {{#subobject:60fc26|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:266f82|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1809615 Schmid et al. 2018 (IMpassion130)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#nab-Paclitaxel_.26_Atezolizumab|nab-Paclitaxel & Atezolizumab]]
+| style="background-color:#fee08b" |Might have inferior OS
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Paclitaxel, nanoparticle albumin-bound (Abraxane)]] 100 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+
+'''28-day cycles'''
+
+===References===
+# '''IMpassion130:''' Schmid P, Adams S, Rugo HS, Schneeweiss A, Barrios CH, Iwata H, Diéras V, Hegg R, Im SA, Shaw Wright G, Henschel V, Molinero L, Chui SY, Funke R, Husain A, Winer EP, Loi S, Emens LA; IMpassion130 Trial Investigators. Atezolizumab and nab-paclitaxel in advanced triple-negative breast cancer. N Engl J Med. 2018 Nov 29;379(22):2108-2121. Epub 2018 Oct 20. [https://www.nejm.org/doi/full/10.1056/NEJMoa1809615 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30345906 PubMed]
+
+==nab-Paclitaxel & Atezolizumab {{#subobject:1c4fec|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:a9eff4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1809615 Schmid et al. 2018 (IMpassion130)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#nab-Paclitaxel_monotherapy|nab-Paclitaxel]]
+| style="background-color:#d9ef8b" |Might have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Paclitaxel, nanoparticle albumin-bound (Abraxane)]] 100 mg/m<sup>2</sup> IV once per day on days 1, 8, 15
+*[[Atezolizumab (Tecentriq)]] 840 mg IV once per day on days 1 & 15
+
+'''28-day cycles'''
+
+===References===
+# '''IMpassion130:''' Schmid P, Adams S, Rugo HS, Schneeweiss A, Barrios CH, Iwata H, Diéras V, Hegg R, Im SA, Shaw Wright G, Henschel V, Molinero L, Chui SY, Funke R, Husain A, Winer EP, Loi S, Emens LA; IMpassion130 Trial Investigators. Atezolizumab and nab-paclitaxel in advanced triple-negative breast cancer. N Engl J Med. 2018 Nov 29;379(22):2108-2121. Epub 2018 Oct 20. [https://www.nejm.org/doi/full/10.1056/NEJMoa1809615 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/30345906 PubMed]
+
+=Metastatic disease, subsequent lines of therapy=
+
+==Capecitabine & Ixabepilone {{#subobject:9ce286|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f5cae3|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://jco.ascopubs.org/content/25/33/5210.long Thomas et al. 2007 (CA163-046)]
+| style="background-color:#1a9851" |Phase III (E)
+|Capecitabine
+| style="background-color:#1a9850" |Superior PFS
+|-
+|}
+''Note: 25% of the patients in this trial had TNBC.''
+====Chemotherapy====
+*[[Capecitabine (Xeloda)]] 1000 mg/m<sup>2</sup> PO twice per day on days 1 to 14
+*[[Ixabepilone (Ixempra)]] 40 mg/m<sup>2</sup> IV once on day 1
+
+'''21-day cycles'''
+
+===References===
+<!-- Presented in part at the 43rd Annual Meeting of the American Society of Clinical Oncology, June 3, 2007, Chicago, IL. -->
+# '''CA163-046:''' Thomas ES, Gomez HL, Li RK, Chung HC, Fein LE, Chan VF, Jassem J, Pivot XB, Klimovsky JV, de Mendoza FH, Xu B, Campone M, Lerzo GL, Peck RA, Mukhopadhyay P, Vahdat LT, Roché HH. Ixabepilone plus capecitabine for metastatic breast cancer progressing after anthracycline and taxane treatment. J Clin Oncol. 2007 Nov 20;25(33):5210-7. [http://jco.ascopubs.org/content/25/33/5210.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17968020 PubMed]
+
+==Carboplatin & Gemcitabine {{#subobject:d46b34|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+GC: '''<u>G</u>'''emcitabine & '''<u>C</u>'''arboplatin
+===Regimen {{#subobject:b34f28|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2014.55.2984 O'Shaughnessy et al. 2014 (EFC11486)]
+| style="background-color:#1a9851" |Phase III (C)
+|GC & Iniparib
+| style="background-color:#fee08b" |Might have inferior PFS
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 2 IV once per day on days 1 & 8
+*[[Gemcitabine (Gemzar)]] 1000 mg/m<sup>2</sup> IV once per day on days 1 & 8
+
+'''21-day cycles'''
+
+===References===
+# '''EFC11486:''' O'Shaughnessy J, Schwartzberg L, Danso MA, Miller KD, Rugo HS, Neubauer M, Robert N, Hellerstedt B, Saleh M, Richards P, Specht JM, Yardley DA, Carlson RW, Finn RS, Charpentier E, Garcia-Ribas I, Winer EP. Phase III study of iniparib plus gemcitabine and carboplatin versus gemcitabine and carboplatin in patients with metastatic triple-negative breast cancer. J Clin Oncol. 2014 Dec 1;32(34):3840-7. Epub 2014 Oct 27. [http://ascopubs.org/doi/full/10.1200/JCO.2014.55.2984 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25349301 PubMed]
+
+==Enzalutamide monotherapy {{#subobject:33dd99 |Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:56948e |Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2016.71.3495 Traina et al. 2018]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#88419d; color:white |CBR @ 16 wks: 25% (95% CI 17-33)
+|-
+|}
+''Patients had AR-positive TNBC.''
+====Hormonotherapy====
+*[[Enzalutamide (Xtandi)]] 160 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Traina TA, Miller K, Yardley DA, Eakle J, Schwartzberg LS, O'Shaughnessy J, Gradishar W, Schmid P, Winer E, Kelly C, Nanda R, Gucalp A, Awada A, Garcia-Estevez L, Trudeau ME, Steinberg J, Uppal H, Tudor IC, Peterson A, Cortes J. Enzalutamide for the treatment of androgen receptor-expressing triple-negative breast cancer. J Clin Oncol. 2018 Mar 20;36(9):884-890. Epub 2018 Jan 26. [http://ascopubs.org/doi/full/10.1200/JCO.2016.71.3495 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29373071 PubMed]
+
+=Investigational agents=
+''Drugs with some degree of promising activity in clinical trials.''
+*[[Sacituzumab govitecan (IMMU-132)]]
+
+[[Category:Breast cancer regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Breast cancers]]

@@ -1,0 +1,1309 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0"|[[File:SeemaNagpal.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Seemanagpal|Seema Nagpal, MD]]<br>Palo Alto, CA</big>
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.asco.org/ ASCO]==
+*'''2016:''' [http://ascopubs.org/doi/full/10.1200/JCO.2016.70.7562 Radiation therapy for glioblastoma: American Society of Clinical Oncology Clinical Practice Guideline endorsement of the American Society for Radiation Oncology Guideline] [https://www.ncbi.nlm.nih.gov/pubmed/27893327 PubMed]
+==EANO==
+*'''2017:''' [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30345-5/fulltext European Association for Neuro-Oncology (EANO) guidelines for palliative care in adults with glioma] [https://www.ncbi.nlm.nih.gov/pubmed/28593859 PubMed]
+*'''2014:''' [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70011-7/fulltext EANO guideline for the diagnosis and treatment of anaplastic gliomas and glioblastoma] [https://www.ncbi.nlm.nih.gov/pubmed/25079102 PubMed]
+
+==[http://www.esmo.org/ ESMO]==
+*'''2014:''' Stupp et al. [https://www.esmo.org/Guidelines/Neuro-Oncology/High-Grade-Malignant-Glioma High-grade glioma: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf NCCN Guidelines - Central Nervous System Cancers]
+
+=Adjuvant therapy, standard patients=
+==Bevacizumab & RT {{#subobject:ee9fbd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:31c648|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 Herrlinger et al. 2016 (GLARIUS)]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|[[#Temozolomide_.26_RT|Temozolomide & RT]], then [[#Temozolomide_monotherapy_2|Temozolomide]]
+|style="background-color:#1a9850"|Superior PFS-6
+|-
+|}
+To be completed
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Chemoradiotherapy====
+*[[Bevacizumab (Avastin)]]
+*[[External beam radiotherapy]]
+====Subsequent treatment====
+*[[#Irinotecan_.26_Bevacizumab|Irinotecan & bevacizumab maintenance]]
+
+===References===
+# Herrlinger U, Schäfer N, Steinbach JP, Weyerbrock A, Hau P, Goldbrunner R, Friedrich F, Rohde V, Ringel F, Schlegel U, Sabel M, Ronellenfitsch MW, Uhl M, Maciaczyk J, Grau S, Schnell O, Hänel M, Krex D, Vajkoczy P, Gerlach R, Kortmann RD, Mehdorn M, Tüttenberg J, Mayer-Steinacker R, Fietkau R, Brehmer S, Mack F, Stuplich M, Kebir S, Kohnen R, Dunkl E, Leutgeb B, Proescholdt M, Pietsch T, Urbach H, Belka C, Stummer W, Glas M. Bevacizumab plus irinotecan versus temozolomide in newly diagnosed O6-methylguanine-DNA methyltransferase nonmethylated glioblastoma: The randomized GLARIUS trial. J Clin Oncol. 2016 May 10;34(14):1611-9. Epub 2016 Mar 14. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26976423 PubMed]
+
+==Carmustine & RT {{#subobject:ee9fbd|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BCNU & RT: '''<u>BCNU</u>''' (Carmustine) & '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Variant #1, concurrent {{#subobject:cc1540|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.ncbi.nlm.nih.gov/pubmed/3017551 Eyre et al. 1986 (SWOG S7703)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. DTIC & RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. Procarbazine & RT
+| style="background-color:#1a9850" |Superior ORR
+|-
+|[http://ascopubs.org/doi/abs/10.1200/JCO.1993.11.7.1316 Dinapoli et al. 1993]
+|style="background-color:#1a9851"|Phase III (C)
+|PCNU & RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://onlinelibrary.wiley.com/doi/full/10.1002/1097-0142%2820010715%2992%3A2%3C420%3A%3AAID-CNCR1338%3E3.0.CO%3B2-3 Buckner et al. 2001]
+|style="background-color:#1a9851"|Phase III (C)
+|BCNU, IFN alfa, RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2003.10.035 Grossman et al. 2003 (ECOG E2394)]
+|style="background-color:#1a9851"|Phase III (C)
+|BCNU & Cisplatin, then RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2005.04.6979 Buckner et al. 2006 (NCCTG 93-72-52/SWOG S9503)]
+|style="background-color:#1a9851"|Phase III (C)
+|BCNU, Cisplatin, RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4465052/ Blumenthal et al. 2014 (SWOG S0001)]
+|style="background-color:#1a9851"|Phase III (C)
+|BCNU, O⁶-benzylguanine, RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://link.springer.com/article/10.1007%2Fs11060-017-2558-x Ali et al. 2018 (RTOG 9006)]
+|style="background-color:#1a9851"|Phase III (C)
+|BCNU & Hyperfractionated RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Chemoadiotherapy====
+*[[Carmustine (BiCNU)]]
+*[[External beam radiotherapy]]
+
+===Variant #2, sequential {{#subobject:31c648|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[http://thejns.org/doi/full/10.3171/jns.1989.71.1.0001 Shapiro et al. 1989 (BTCG 8001)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. Carmustine, Procarbazine, RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. Carmustine & Hydrea/Procarbazine & VM-26 & RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] starting within 3 weeks after surgical resection, with ONE of the following:
+**Whole brain: 172 cGy (rads) fractions x 35 fractions, given over 7 weeks for a total dose of 6020 cGy (6020 rads/~1700 rets)
+**Whole brain & cone down: 172 cGy (rads) fractions x 25 fractions, given over 5 weeks for a total dose of 4300 cGy (4300 rads), then coned-down boost of 172 cGy (rads) fractions x 10 fractions, given over 2 weeks for a dose of 1720 cGy (rads), and a total cumulative dose of 6020 cGy (rads)
+
+''One course, followed by:''
+====Chemotherapy====
+*[[Carmustine (BiCNU)]] 80 mg/m<sup>2</sup> IV over 30 to 60 minutes once per day on days 1 to 3
+
+====Supportive care====
+*Pulmonary function tests (PFTs) checked before start of therapy, and then when cumulative dose of [[Carmustine (BiCNU)]] reaches 800 mg/m<sup>2</sup> and 1200 mg/m<sup>2</sup>
+
+'''8-week cycles, with no more than a maximum cumulative dose of 1500 mg/m<sup>2</sup> [[Carmustine (BiCNU)]] given'''
+
+===References===
+# '''BTSG 69-01:''' Walker MD, Alexander E Jr, Hunt WE, MacCarty CS, Mahaley MS Jr, Mealey J Jr, Norrell HA, Owens G, Ransohoff J, Wilson CB, Gehan EA, Strike TA. Evaluation of BCNU and/or radiotherapy in the treatment of anaplastic gliomas: a cooperative clinical trial. J Neurosurg. 1978 Sep;49(3):333-43. [http://thejns.org/doi/abs/10.3171/jns.1978.49.3.0333 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/355604 PubMed]
+# '''BTSG 72-01:''' Walker MD, Green SB, Byar DP, Alexander E Jr, Batzdorf U, Brooks WH, Hunt WE, MacCarty CS, Mahaley MS Jr, Mealey J Jr, Owens G, Ransohoff J 2nd, Robertson JT, Shapiro WR, Smith KR Jr, Wilson CB, Strike TA. Randomized comparisons of radiotherapy and nitrosoureas for the treatment of malignant glioma after surgery. N Engl J Med. 1980 Dec 4;303(23):1323-9. [https://www.nejm.org/doi/full/10.1056/NEJM198012043032303 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7001230 PubMed]
+# '''SWOG S7703:''' Eyre HJ, Eltringham JR, Gehan EA, Vogel FS, Al-Sarraf M, Talley RW, Costanzi JJ, Athens JW, Oishi N, Fletcher WS. Randomized comparisons of radiotherapy and carmustine versus procarbazine versus dacarbazine for the treatment of malignant gliomas following surgery: a Southwest Oncology Group Study. Cancer Treat Rep. 1986 Sep;70(9):1085-90. [https://www.ncbi.nlm.nih.gov/pubmed/3017551 PubMed]
+# '''BTCG 8001:''' Shapiro WR, Green SB, Burger PC, Mahaley MS Jr, Selker RG, VanGilder JC, Robertson JT, Ransohoff J, Mealey J Jr, Strike TA, Pistenmaa DA. Randomized trial of three chemotherapy regimens and two radiotherapy regimens and two radiotherapy regimens in postoperative treatment of malignant glioma: Brain Tumor Cooperative Group Trial 8001. J Neurosurg. 1989 Jul;71(1):1-9. [http://thejns.org/doi/full/10.3171/jns.1989.71.1.0001 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/2661738 PubMed]
+# Dinapoli RP, Brown LD, Arusell RM, Earle JD, O'Fallon JR, Buckner JC, Scheithauer BW, Krook JE, Tschetter LK, Maier JA, Pfeifle DM, Gesme DH. Phase III comparative evaluation of PCNU and carmustine combined with radiation therapy for high-grade glioma. J Clin Oncol. 1993 Jul;11(7):1316-21. [http://ascopubs.org/doi/abs/10.1200/JCO.1993.11.7.1316 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/8315428 PubMed]
+# Buckner JC, Schomberg PJ, McGinnis WL, Cascino TL, Scheithauer BW, O'Fallon JR, Morton RF, Kuross SA, Mailliard JA, Hatfield AK, Cole JT, Steen PD, Bernath AM. A phase III study of radiation therapy plus carmustine with or without recombinant interferon-alpha in the treatment of patients with newly diagnosed high-grade glioma. Cancer. 2001 Jul 15;92(2):420-33. [https://onlinelibrary.wiley.com/doi/full/10.1002/1097-0142%2820010715%2992%3A2%3C420%3A%3AAID-CNCR1338%3E3.0.CO%3B2-3 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/11466698 PubMed]
+# '''ECOG E2394:''' Grossman SA, O'Neill A, Grunnet M, Mehta M, Pearlman JL, Wagner H, Gilbert M, Newton HB, Hellman R; Eastern Cooperative Oncology Group. Phase III study comparing three cycles of infusional carmustine and cisplatin followed by radiation therapy with radiation therapy and concurrent carmustine in patients with newly diagnosed supratentorial glioblastoma multiforme: Eastern Cooperative Oncology Group Trial 2394. J Clin Oncol. 2003 Apr 15;21(8):1485-91. [http://ascopubs.org/doi/full/10.1200/JCO.2003.10.035 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/12697871 PubMed]
+# '''NCCTG 93-72-52/SWOG S9503:''' Buckner JC, Ballman KV, Michalak JC, Burton GV, Cascino TL, Schomberg PJ, Hawkins RB, Scheithauer BW, Sandler HM, Marks RS, O'Fallon JR; North Central Cancer Treatment Group 93-72-52; Southwest Oncology Group 9503 Trials. Phase III trial of carmustine and cisplatin compared with carmustine alone and standard radiation therapy or accelerated radiation therapy in patients with glioblastoma multiforme: North Central Cancer Treatment Group 93-72-52 and Southwest Oncology Group 9503 Trials. J Clin Oncol. 2006 Aug 20;24(24):3871-9. [http://ascopubs.org/doi/full/10.1200/JCO.2005.04.6979 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/16921039 PubMed]
+# '''SWOG S0001:''' Blumenthal DT, Rankin C, Stelzer KJ, Spence AM, Sloan AE, Moore DF Jr, Padula GD, Schulman SB, Wade ML, Rushing EJ. A Phase III study of radiation therapy (RT) and O⁶-benzylguanine + BCNU versus RT and BCNU alone and methylation status in newly diagnosed glioblastoma and gliosarcoma: Southwest Oncology Group (SWOG) study S0001. Int J Clin Oncol. 2015 Aug;20(4):650-8. Epub 2014 Nov 19. [https://link.springer.com/article/10.1007%2Fs10147-014-0769-0 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4465052/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25407559 PubMed]
+# '''RTOG 9006:''' Ali AN, Zhang P, Yung WKA, Chen Y, Movsas B, Urtasun RC, Jones CU, Choi KN, Michalski JM, Fischbach AJ, Markoe AM, Schultz CJ, Penas-Prado M, Garg MK, Hartford AC, Kim HE, Won M, Curran WJ Jr. NRG oncology RTOG 9006: a phase III randomized trial of hyperfractionated radiotherapy (RT) and BCNU versus standard RT and BCNU for malignant glioma patients. J Neurooncol. 2018 Mar;137(1):39-47. Epub 2018 Feb 5. [https://link.springer.com/article/10.1007%2Fs11060-017-2558-x link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29404979 PubMed]
+
+==Nimustine & RT {{#subobject:9ff22f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:92d838|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://link.springer.com/article/10.1007%2Fs00280-012-2041-5 Shibui et al. 2012 (JCOG 0305)]
+|style="background-color:#1a9851"|Phase III (C)
+|Nimustine, Procarbazine, RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this is of historic interest; ACNU is not generally available outside of Japan.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Chemoradiotherapy====
+*[[Nimustine (ACNU)]]
+*[[External beam radiotherapy]]
+===References===
+# '''JCOG 0305:''' Shibui S, Narita Y, Mizusawa J, Beppu T, Ogasawara K, Sawamura Y, Kobayashi H, Nishikawa R, Mishima K, Muragaki Y, Maruyama T, Kuratsu J, Nakamura H, Kochi M, Minamida Y, Yamaki T, Kumabe T, Tominaga T, Kayama T, Sakurada K, Nagane M, Kobayashi K, Nakamura H, Ito T, Yazaki T, Sasaki H, Tanaka K, Takahashi H, Asai A, Todo T, Wakabayashi T, Takahashi J, Takano S, Fujimaki T, Sumi M, Miyakita Y, Nakazato Y, Sato A, Fukuda H, Nomura K. Randomized trial of chemoradiotherapy and adjuvant chemotherapy with nimustine (ACNU) versus nimustine plus procarbazine for newly diagnosed anaplastic astrocytoma and glioblastoma (JCOG0305). Cancer Chemother Pharmacol. 2013 Feb;71(2):511-21. Epub 2012 Dec 11. [https://link.springer.com/article/10.1007%2Fs00280-012-2041-5 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/23228988 PubMed]
+
+==Radiation therapy {{#subobject:7dbd68|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:b645f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJM197606172942503 Urtasun et al. 1976]
+|style="background-color:#1a9851"|Randomized (C)
+|Metronidazole & RT
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|rowspan=3|[http://thejns.org/doi/abs/10.3171/jns.1978.49.3.0333 Walker et al. 1978 (BTSG 69-01)]
+|rowspan=3 style="background-color:#1a9851"|Phase III (E)
+|1. Best supportive care
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|2. Carmustine
+| style="background-color:#d9ef8b" |Might have superior OS
+|-
+|3. [[#Carmustine_.26_RT|Carmustine & RT]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|rowspan=2|[https://www.nejm.org/doi/full/10.1056/NEJM198012043032303 Walker et al. 1980 (BTSG 72-01)]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. [[#Carmustine_.26_RT|Carmustine & RT]]<br> 2. Semustine & RT
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|3. Semustine
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa043330 Stupp et al. 2005 (EORTC 22981/26981; NCIC CTG CE.3)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Temozolomide_.26_RT|Temozolomide & RT]], then [[#Temozolomide_monotherapy_2|Temozolomide]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+''Adjuvant radiotherapy alone.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]]
+===References===
+# Urtasun R, Band P, Chapman JD, Feldstein ML, Mielke B, Fryer C. Radiation and high-dose metronidazole in supratentorial glioblastomas. N Engl J Med. 1976 Jun 17;294(25):1364-7. [https://www.nejm.org/doi/full/10.1056/NEJM197606172942503 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/177873 PubMed]
+# '''BTSG 69-01:''' Walker MD, Alexander E Jr, Hunt WE, MacCarty CS, Mahaley MS Jr, Mealey J Jr, Norrell HA, Owens G, Ransohoff J, Wilson CB, Gehan EA, Strike TA. Evaluation of BCNU and/or radiotherapy in the treatment of anaplastic gliomas: a cooperative clinical trial. J Neurosurg. 1978 Sep;49(3):333-43. [http://thejns.org/doi/abs/10.3171/jns.1978.49.3.0333 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/355604 PubMed]
+# '''BTSG 72-01:''' Walker MD, Green SB, Byar DP, Alexander E Jr, Batzdorf U, Brooks WH, Hunt WE, MacCarty CS, Mahaley MS Jr, Mealey J Jr, Owens G, Ransohoff J 2nd, Robertson JT, Shapiro WR, Smith KR Jr, Wilson CB, Strike TA. Randomized comparisons of radiotherapy and nitrosoureas for the treatment of malignant glioma after surgery. N Engl J Med. 1980 Dec 4;303(23):1323-9. [https://www.nejm.org/doi/full/10.1056/NEJM198012043032303 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7001230 PubMed]
+# '''EORTC 22981/26981; NCIC CTG CE.3:''' Stupp R, Mason WP, van den Bent MJ, Weller M, Fisher B, Taphoorn MJ, Belanger K, Brandes AA, Marosi C, Bogdahn U, Curschmann J, Janzer RC, Ludwin SK, Gorlia T, Allgeier A, Lacombe D, Cairncross JG, Eisenhauer E, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumor and Radiotherapy Groups; National Cancer Institute of Canada Clinical Trials Group. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. N Engl J Med. 2005 Mar 10;352(10):987-96. [https://www.nejm.org/doi/full/10.1056/NEJMoa043330 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15758009 PubMed]
+## '''Update:''' Stupp R, Hegi ME, Mason WP, van den Bent MJ, Taphoorn MJ, Janzer RC, Ludwin SK, Allgeier A, Fisher B, Belanger K, Hau P, Brandes AA, Gijtenbeek J, Marosi C, Vecht CJ, Mokhtari K, Wesseling P, Villa S, Eisenhauer E, Gorlia T, Weller M, Lacombe D, Cairncross JG, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumour and Radiation Oncology Groups; National Cancer Institute of Canada Clinical Trials Group. Effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy alone on survival in glioblastoma in a randomised phase III study: 5-year analysis of the EORTC-NCIC trial. Lancet Oncol. 2009 May;10(5):459-66. Epub 2009 Mar 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70025-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19269895 PubMed]
+
+==Temozolomide & RT {{#subobject:5fe805|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RT: '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:2a87ef|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa043330 Stupp et al. 2005 (EORTC 22981/26981; NCIC CTG CE.3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Complex_multipart_regimens#EORTC_22981.2F26981.3B_NCIC_CTG_CE.3|See link]]
+| style="background-color:#1a9850"|[[Complex_multipart_regimens#EORTC_22981.2F26981.3B_NCIC_CTG_CE.3|See link]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3816958/ Gilbert et al. 2013 (RTOG 0525)]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201043/ Gilbert et al. 2014 (RTOG 0825)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[Complex_multipart_regimens#RTOG_0825|See link]]
+| style="background-color:#d73027" |[[Complex_multipart_regimens#RTOG_0825|See link]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1308345 Chinot et al. 2014 (AVAglio)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[Complex_multipart_regimens#AVAglio|See link]]
+| style="background-color:#d73027" |[[Complex_multipart_regimens#AVAglio|See link]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5351686/ Kong et al. 2017]
+|style="background-color:#1a9851"|Phase III (C)
+|Temozolomide & RT with CIK cells
+|style="background-color:#fc8d59"|Seems to have inferior PFS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgical biopsy, partial resection, or total resection]]
+====Chemoradiotherapy====
+*[[Temozolomide (Temodar)]] 75 mg/m<sup>2</sup> PO once per day, used starting the first day of radiation therapy until the last day of radiation therapy, and no longer than 49 days
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 2 Gy fractions x 30 fractions given 5 days per week, for a total dose of 60 Gy
+
+====Supportive medications====
+*PCP prophylaxis with ONE of the following:
+**[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Trimethoprim/Sulfamethoxazole (Bactrim)]]
+**[[Pentamidine (Nebupent)]] 300 mg nebulized inhaled
+*[[Metoclopramide (Reglan)]] or [[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonist]] recommended before the initial doses of radiation therapy & temozolomide
+
+'''One course'''
+====Subsequent treatment====
+*Most protocols: [[#Temozolomide_monotherapy_2|Temozolomide maintenance]], 4 weeks after completion of radiation therapy
+*RTOG 0525: [[#Temozolomide_monotherapy_2|Temozolomide]] versus dose-dense temozolomide maintenance
+
+===References===
+# '''EORTC 22981/26981; NCIC CTG CE.3:''' Stupp R, Mason WP, van den Bent MJ, Weller M, Fisher B, Taphoorn MJ, Belanger K, Brandes AA, Marosi C, Bogdahn U, Curschmann J, Janzer RC, Ludwin SK, Gorlia T, Allgeier A, Lacombe D, Cairncross JG, Eisenhauer E, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumor and Radiotherapy Groups; National Cancer Institute of Canada Clinical Trials Group. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. N Engl J Med. 2005 Mar 10;352(10):987-96. [https://www.nejm.org/doi/full/10.1056/NEJMoa043330 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15758009 PubMed]
+## '''Subgroup analysis:''' Hegi ME, Diserens AC, Gorlia T, Hamou MF, de Tribolet N, Weller M, Kros JM, Hainfellner JA, Mason W, Mariani L, Bromberg JE, Hau P, Mirimanoff RO, Cairncross JG, Janzer RC, Stupp R. MGMT gene silencing and benefit from temozolomide in glioblastoma. N Engl J Med. 2005 Mar 10;352(10):997-1003. [https://www.nejm.org/doi/full/10.1056/NEJMoa043331 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15758010 PubMed]
+## '''Update:''' Stupp R, Hegi ME, Mason WP, van den Bent MJ, Taphoorn MJ, Janzer RC, Ludwin SK, Allgeier A, Fisher B, Belanger K, Hau P, Brandes AA, Gijtenbeek J, Marosi C, Vecht CJ, Mokhtari K, Wesseling P, Villa S, Eisenhauer E, Gorlia T, Weller M, Lacombe D, Cairncross JG, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumour and Radiation Oncology Groups; National Cancer Institute of Canada Clinical Trials Group. Effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy alone on survival in glioblastoma in a randomised phase III study: 5-year analysis of the EORTC-NCIC trial. Lancet Oncol. 2009 May;10(5):459-66. Epub 2009 Mar 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70025-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19269895 PubMed]
+# '''RTOG 0525:''' Gilbert MR, Wang M, Aldape KD, Stupp R, Hegi ME, Jaeckle KA, Armstrong TS, Wefel JS, Won M, Blumenthal DT, Mahajan A, Schultz CJ, Erridge S, Baumert B, Hopkins KI, Tzuk-Shina T, Brown PD, Chakravarti A, Curran WJ Jr, Mehta MP. Dose-dense temozolomide for newly diagnosed glioblastoma: a randomized phase III clinical trial. J Clin Oncol. 2013 Nov 10;31(32):4085-91. Epub 2013 Oct 7. [http://ascopubs.org/doi/full/10.1200/JCO.2013.49.6968 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3816958/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24101040 PubMed]
+# '''RTOG 0825:''' Gilbert MR, Dignam JJ, Armstrong TS, Wefel JS, Blumenthal DT, Vogelbaum MA, Colman H, Chakravarti A, Pugh S, Won M, Jeraj R, Brown PD, Jaeckle KA, Schiff D, Stieber VW, Brachman DG, Werner-Wasik M, Tremont-Lukats IW, Sulman EP, Aldape KD, Curran WJ Jr, Mehta MP. A randomized trial of bevacizumab for newly diagnosed glioblastoma. N Engl J Med. 2014 Feb 20;370(8):699-708. [https://www.nejm.org/doi/full/10.1056/NEJMoa1308573 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201043/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24552317 PubMed]
+# '''AVAglio:''' Chinot OL, Wick W, Mason W, Henriksson R, Saran F, Nishikawa R, Carpentier AF, Hoang-Xuan K, Kavan P, Cernea D, Brandes AA, Hilton M, Abrey L, Cloughesy T. Bevacizumab plus radiotherapy-temozolomide for newly diagnosed glioblastoma. N Engl J Med. 2014 Feb 20;370(8):709-22. [https://www.nejm.org/doi/full/10.1056/NEJMoa1308345 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24552318 PubMed]
+# '''GLARIUS:''' Herrlinger U, Schäfer N, Steinbach JP, Weyerbrock A, Hau P, Goldbrunner R, Friedrich F, Rohde V, Ringel F, Schlegel U, Sabel M, Ronellenfitsch MW, Uhl M, Maciaczyk J, Grau S, Schnell O, Hänel M, Krex D, Vajkoczy P, Gerlach R, Kortmann RD, Mehdorn M, Tüttenberg J, Mayer-Steinacker R, Fietkau R, Brehmer S, Mack F, Stuplich M, Kebir S, Kohnen R, Dunkl E, Leutgeb B, Proescholdt M, Pietsch T, Urbach H, Belka C, Stummer W, Glas M. Bevacizumab plus irinotecan versus temozolomide in newly diagnosed O6-methylguanine-DNA methyltransferase nonmethylated glioblastoma: The randomized GLARIUS trial. J Clin Oncol. 2016 May 10;34(14):1611-9. Epub 2016 Mar 14. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26976423 PubMed]
+# Kong DS, Nam DH, Kang SH, Lee JW, Chang JH, Kim JH, Lim YJ, Koh YC, Chung YG, Kim JM, Kim CH. Phase III randomized trial of autologous cytokine-induced killer cell immunotherapy for newly diagnosed glioblastoma in Korea. Oncotarget. 2017 Jan 24;8(4):7003-7013. [http://www.oncotarget.com/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=12273&path%5B%5D=38864 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5351686/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27690294 PubMed]
+# '''HERBY:''' Grill J, Massimino M, Bouffet E, Azizi AA, McCowage G, Cañete A, Saran F, Le Deley MC, Varlet P, Morgan PS, Jaspan T, Jones C, Giangaspero F, Smith H, Garcia J, Elze MC, Rousseau RF, Abrey L, Hargrave D, Vassal G. Phase II, Open-label, randomized, multicenter trial (HERBY) of bevacizumab in pediatric patients with newly diagnosed high-grade glioma. J Clin Oncol. 2018 Apr 1;36(10):951-958. Epub 2018 Feb 7. [http://ascopubs.org/doi/full/10.1200/JCO.2017.76.0611 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29412784 PubMed]
+
+=Adjuvant therapy, elderly or poor performance status patients=
+==Best supportive care==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa065901 Keime-Guibert et al. 2007]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Radiation_therapy_2|RT x 50 Gy]]
+| style="background-color:#d73027" |Inferior OS
+|-
+|}
+''No antineoplastic therapy after primary surgery.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+
+===References===
+# Keime-Guibert F, Chinot O, Taillandier L, Cartalat-Carel S, Frenay M, Kantor G, Guillamo JS, Jadaud E, Colin P, Bondiau PY, Meneï P, Loiseau H, Bernier V, Honnorat J, Barrié M, Mokhtari K, Mazeron JJ, Bissery A, Delattre JY; Association of French-Speaking Neuro-Oncologists. Radiotherapy for glioblastoma in the elderly. N Engl J Med. 2007 Apr 12;356(15):1527-35. [https://www.nejm.org/doi/full/10.1056/NEJMoa065901 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17429084 PubMed]
+
+==Radiation therapy {{#subobject:7dbd68|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, hypofractionated (34 Gy) {{#subobject:c245f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70265-6/abstract Malmström et al. 2012]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. Standard RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. [[#Temozolomide_monotherapy_2|Temozolomide]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] 10 x 3.40 Gy fractions, five days per week, for a total dose of 34 Gy
+
+'''2-week course'''
+
+===Variant #2, abbreviated course (40 Gy) {{#subobject:73c680|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2004.06.082 Roa et al. 2004]
+|style="background-color:#1a9851"|Randomized Phase II (E)
+|Standard RT (60 Gy)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 Perry et al. 2017 (NCIC CTG CE.6)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Temozolomide_.26_low-dose_RT|Temozolomide & LDRT]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+''Note: Roa et al. 2004 was closed early due to poor accrual.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] 15 x 2.67 Gy fractions, five days per week, for a total dose of 40.05 Gy
+
+'''3-week course'''
+
+===Variant #3, standard course (50.4 Gy) {{#subobject:b6921d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa065901 Keime-Guibert et al. 2007]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Best_supportive_care|Best supportive care]]
+| style="background-color:#1a9850" |Superior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] 28 x 1.80 Gy fractions, five days per week, for a total dose of 50.4 Gy
+
+'''5.5-week course'''
+
+===Variant #4, standard course (60 Gy) {{#subobject:b645f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2004.06.082 Roa et al. 2004]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|Abbreviated RT (40 Gy)
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70265-6/abstract Malmström et al. 2012]
+|rowspan=2 style="background-color:#1a9851"|Phase III (C)
+|1. Hypofractionated RT
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. [[#Temozolomide_monotherapy_2|Temozolomide]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|}
+''Note: Roa et al. 2004 was closed early due to poor accrual.''
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Radiotherapy====
+*[[External beam radiotherapy]] 30 x 2.00 Gy fractions, five days per week, for a total dose of 60 Gy
+
+'''6-week course'''
+
+===References===
+# Roa W, Brasher PM, Bauman G, Anthes M, Bruera E, Chan A, Fisher B, Fulton D, Gulavita S, Hao C, Husain S, Murtha A, Petruk K, Stewart D, Tai P, Urtasun R, Cairncross JG, Forsyth P. Abbreviated course of radiation therapy in older patients with glioblastoma multiforme: a prospective randomized clinical trial. J Clin Oncol. 2004 May 1;22(9):1583-8. Epub 2004 Mar 29. [http://ascopubs.org/doi/full/10.1200/JCO.2004.06.082 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15051755 PubMed]
+# Keime-Guibert F, Chinot O, Taillandier L, Cartalat-Carel S, Frenay M, Kantor G, Guillamo JS, Jadaud E, Colin P, Bondiau PY, Meneï P, Loiseau H, Bernier V, Honnorat J, Barrié M, Mokhtari K, Mazeron JJ, Bissery A, Delattre JY; Association of French-Speaking Neuro-Oncologists. Radiotherapy for glioblastoma in the elderly. N Engl J Med. 2007 Apr 12;356(15):1527-35. [https://www.nejm.org/doi/full/10.1056/NEJMoa065901 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17429084 PubMed]
+# Malmström A, Grønberg BH, Marosi C, Stupp R, Frappaz D, Schultz H, Abacioglu U, Tavelin B, Lhermitte B, Hegi ME, Rosell J, Henriksson R; Nordic Clinical Brain Tumour Study Group (NCBTSG). Temozolomide versus standard 6-week radiotherapy versus hypofractionated radiotherapy in patients older than 60 years with glioblastoma: the Nordic randomised, phase 3 trial. Lancet Oncol. 2012 Sep;13(9):916-26. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70265-6/abstract link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22877848 PubMed]
+# '''NCIC CTG CE.6:''' Perry JR, Laperriere N, O'Callaghan CJ, Brandes AA, Menten J, Phillips C, Fay M, Nishikawa R, Cairncross JG, Roa W, Osoba D, Rossiter JP, Sahgal A, Hirte H, Laigle-Donadey F, Franceschi E, Chinot O, Golfinopoulos V, Fariselli L, Wick A, Feuvret L, Back M, Tills M, Winch C, Baumert BG, Wick W, Ding K, Mason WP; Trial Investigators. Short-course radiation plus temozolomide in elderly patients with glioblastoma. N Engl J Med. 2017 Mar 16;376(11):1027-1037. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28296618 PubMed]
+# Guedes de Castro D, Matiello J, Roa W, Ghosh S, Kepka L, Kumar N, Sinaika V, Lomidze D, Hentati D, Rosenblatt E, Fidarova E. Survival outcomes with short-course radiation therapy in elderly patients with glioblastoma: data from a randomized phase 3 trial. Int J Radiat Oncol Biol Phys. 2017 Jul 15;98(4):931-938. Epub 2017 Mar 30. [https://www.ncbi.nlm.nih.gov/pubmed/28602417 PubMed]
+
+==Temozolomide monotherapy {{#subobject:eaba28|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:f90037|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|rowspan=2|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70265-6/abstract Malmström et al. 2012]
+|rowspan=2 style="background-color:#1a9851"|Phase III (E)
+|1. [[#Radiation_therapy_2|Hypofractionated RT]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|2. [[#Radiation_therapy_2|Standard RT]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''28-day cycle for up to 6 cycles'''
+
+===References===
+# Malmström A, Grønberg BH, Marosi C, Stupp R, Frappaz D, Schultz H, Abacioglu U, Tavelin B, Lhermitte B, Hegi ME, Rosell J, Henriksson R; Nordic Clinical Brain Tumour Study Group (NCBTSG). Temozolomide versus standard 6-week radiotherapy versus hypofractionated radiotherapy in patients older than 60 years with glioblastoma: the Nordic randomised, phase 3 trial. Lancet Oncol. 2012 Sep;13(9):916-26. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(12)70265-6/abstract link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22877848 PubMed]
+
+==Temozolomide & low-dose RT {{#subobject:5fe805|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+LDRT: '''<u>L</u>'''ow-'''<u>D</u>'''ose '''<u>R</u>'''adiation '''<u>T</u>'''herapy
+===Regimen {{#subobject:e80f73|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 Perry et al. 2017 (NCIC CTG CE.6)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Radiation_therapy|Radiotherapy]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*[[Surgery#CNS_cancer_surgery|Surgery]]
+====Chemoradiotherapy====
+*[[Temozolomide (Temodar)]] 75 mg/m<sup>2</sup> PO once per day, starting the first day of radiation therapy until the last day of radiation therapy, and no longer than 21 days
+*Concurrent [[External_beam_radiotherapy|radiation therapy]], 2.67 Gy fractions x 15 fractions given 5 days per week, for a total dose of 40.05 Gy
+
+'''One course'''
+====Subsequent treatment====
+*[[#Temozolomide_monotherapy_2|Temozolomide maintenance]]
+
+===References===
+# '''NCIC CTG CE.6:''' Perry JR, Laperriere N, O'Callaghan CJ, Brandes AA, Menten J, Phillips C, Fay M, Nishikawa R, Cairncross JG, Roa W, Osoba D, Rossiter JP, Sahgal A, Hirte H, Laigle-Donadey F, Franceschi E, Chinot O, Golfinopoulos V, Fariselli L, Wick A, Feuvret L, Back M, Tills M, Winch C, Baumert BG, Wick W, Ding K, Mason WP; Trial Investigators. Short-course radiation plus temozolomide in elderly patients with glioblastoma. N Engl J Med. 2017 Mar 16;376(11):1027-1037. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28296618 PubMed]
+
+=Maintenance after first-line therapy=
+==Irinotecan & Bevacizumab {{#subobject:a72321|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:88cfaa|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 Herrlinger et al. 2016 (GLARIUS)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|-
+|}
+To be completed
+====Preceding treatment====
+*[[#Bevacizumab_.26_RT|Bevacizumab & RT]]
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]]
+*[[Bevacizumab (Avastin)]]
+
+===References===
+# '''GLARIUS:''' Herrlinger U, Schäfer N, Steinbach JP, Weyerbrock A, Hau P, Goldbrunner R, Friedrich F, Rohde V, Ringel F, Schlegel U, Sabel M, Ronellenfitsch MW, Uhl M, Maciaczyk J, Grau S, Schnell O, Hänel M, Krex D, Vajkoczy P, Gerlach R, Kortmann RD, Mehdorn M, Tüttenberg J, Mayer-Steinacker R, Fietkau R, Brehmer S, Mack F, Stuplich M, Kebir S, Kohnen R, Dunkl E, Leutgeb B, Proescholdt M, Pietsch T, Urbach H, Belka C, Stummer W, Glas M. Bevacizumab plus irinotecan versus temozolomide in newly diagnosed O6-methylguanine-DNA methyltransferase nonmethylated glioblastoma: the randomized GLARIUS trial. J Clin Oncol. 2016 May 10;34(14):1611-9. Epub 2016 Mar 14. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26976423 PubMed]
+
+==Temozolomide monotherapy {{#subobject:a5295c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 6 cycles {{#subobject:93c350|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa043330 Stupp et al. 2005 (EORTC 22981/26981; NCIC CTG CE.3)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Complex_multipart_regimens#EORTC_22981.2F26981.3B_NCIC_CTG_CE.3|See link]]
+| style="background-color:#1a9850"|[[Complex_multipart_regimens#EORTC_22981.2F26981.3B_NCIC_CTG_CE.3|See link]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201043/ Gilbert et al. 2014 (RTOG 0825)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[Complex_multipart_regimens#RTOG_0825|See link]]
+| style="background-color:#d73027" |[[Complex_multipart_regimens#RTOG_0825|See link]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1308345 Chinot et al. 2014 (AVAglio)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[Complex_multipart_regimens#AVAglio|See link]]
+| style="background-color:#d73027" |[[Complex_multipart_regimens#AVAglio|See link]]
+|-
+|[https://jamanetwork.com/journals/jama/fullarticle/2475463 Stupp et al. 2015 (EF-14)]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Temozolomide_.26_NovoTTF-100A|Temozolomide & NovoTTF-100A]]
+|style="background-color:#d73027"|Inferior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5351686/ Kong et al. 2017]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|}
+''Note: patients in RTOG 0825 could extend maintenance to 12 cycles if no major adverse events and evidence of ongoing benefit.''
+====Preceding treatment====
+*[[#Temozolomide_.26_RT|Temozolomide & RT]]
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] as follows:
+**Cycle 1: 150 mg/m<sup>2</sup> PO once per day on days 1 to 5 
+**If tolerated, in cycles 2 to 6: 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+====Supportive medications====
+*[[Metoclopramide (Reglan)]] or [[:Category:Serotonin 5-HT3 antagonists|5-HT3 antagonist]] required
+
+'''28-day cycle for 6 cycles'''
+
+===Variant #2, 12 cycles {{#subobject:da0fc9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3816958/ Gilbert et al. 2013 (RTOG 0525)]
+| style="background-color:#1a9851" |Phase III (C)
+|Dose-dense Temozolomide
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 Perry et al. 2017 (NCIC CTG CE.6)]
+|style="background-color:#91cf61"|Non-randomized portion of RCT
+|style="background-color:#d3d3d3"|
+|style="background-color:#d3d3d3"|
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30517-X/fulltext Weller et al. 2017 (ACT IV)]
+| style="background-color:#1a9851" |Phase III (C)
+|Rindopepimut & Temozolomide
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2017.76.0611 Grill et al. 2018 (HERBY)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|[[Complex_multipart_regimens#HERBY|See link]]
+|style="background-color:#ffffbf" |[[Complex_multipart_regimens#HERBY|See link]]
+|-
+|}
+''Note: treatment in ACT IV was given for a minimum of 6 cycles.''
+====Preceding treatment====
+*RTOG 0525: [[Surgery#CNS_cancer_surgery|Surgery]], then [[#Temozolomide_.26_RT|adjuvant temozolomide & RT]]
+*NCIC CTG CE.6: [[Surgery#CNS_cancer_surgery|Surgery]], then [[#Temozolomide_.26_low-dose_RT|adjuvant temozolomide & low-dose RT]]
+*ACT IV: Resection
+*HERBY: [[Surgery#CNS_cancer_surgery|Surgery]], then [[#Temozolomide_.26_RT|adjuvant temozolomide & RT]]
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 150 to 200 mg/m<sup>2</sup> PO once per day on days 1 to 5 
+
+'''28-day cycle for up to 12 cycles'''
+
+===References===
+# '''EORTC 22981/26981; NCIC CTG CE.3:''' Stupp R, Mason WP, van den Bent MJ, Weller M, Fisher B, Taphoorn MJ, Belanger K, Brandes AA, Marosi C, Bogdahn U, Curschmann J, Janzer RC, Ludwin SK, Gorlia T, Allgeier A, Lacombe D, Cairncross JG, Eisenhauer E, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumor and Radiotherapy Groups; National Cancer Institute of Canada Clinical Trials Group. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. N Engl J Med. 2005 Mar 10;352(10):987-96. [https://www.nejm.org/doi/full/10.1056/NEJMoa043330 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15758009 PubMed]
+## '''Subgroup analysis:''' Hegi ME, Diserens AC, Gorlia T, Hamou MF, de Tribolet N, Weller M, Kros JM, Hainfellner JA, Mason W, Mariani L, Bromberg JE, Hau P, Mirimanoff RO, Cairncross JG, Janzer RC, Stupp R. MGMT gene silencing and benefit from temozolomide in glioblastoma. N Engl J Med. 2005 Mar 10;352(10):997-1003. [https://www.nejm.org/doi/full/10.1056/NEJMoa043331 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/15758010 PubMed]
+## '''Update:''' Stupp R, Hegi ME, Mason WP, van den Bent MJ, Taphoorn MJ, Janzer RC, Ludwin SK, Allgeier A, Fisher B, Belanger K, Hau P, Brandes AA, Gijtenbeek J, Marosi C, Vecht CJ, Mokhtari K, Wesseling P, Villa S, Eisenhauer E, Gorlia T, Weller M, Lacombe D, Cairncross JG, Mirimanoff RO; European Organisation for Research and Treatment of Cancer Brain Tumour and Radiation Oncology Groups; National Cancer Institute of Canada Clinical Trials Group. Effects of radiotherapy with concomitant and adjuvant temozolomide versus radiotherapy alone on survival in glioblastoma in a randomised phase III study: 5-year analysis of the EORTC-NCIC trial. Lancet Oncol. 2009 May;10(5):459-66. Epub 2009 Mar 9. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(09)70025-7/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19269895 PubMed]
+# '''RTOG 0525:''' Gilbert MR, Wang M, Aldape KD, Stupp R, Hegi ME, Jaeckle KA, Armstrong TS, Wefel JS, Won M, Blumenthal DT, Mahajan A, Schultz CJ, Erridge S, Baumert B, Hopkins KI, Tzuk-Shina T, Brown PD, Chakravarti A, Curran WJ Jr, Mehta MP. Dose-dense temozolomide for newly diagnosed glioblastoma: a randomized phase III clinical trial. J Clin Oncol. 2013 Nov 10;31(32):4085-91. Epub 2013 Oct 7. [http://ascopubs.org/doi/full/10.1200/JCO.2013.49.6968 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3816958/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24101040 PubMed]
+# '''RTOG 0825:''' Gilbert MR, Dignam JJ, Armstrong TS, Wefel JS, Blumenthal DT, Vogelbaum MA, Colman H, Chakravarti A, Pugh S, Won M, Jeraj R, Brown PD, Jaeckle KA, Schiff D, Stieber VW, Brachman DG, Werner-Wasik M, Tremont-Lukats IW, Sulman EP, Aldape KD, Curran WJ Jr, Mehta MP. A randomized trial of bevacizumab for newly diagnosed glioblastoma. N Engl J Med. 2014 Feb 20;370(8):699-708. [https://www.nejm.org/doi/full/10.1056/NEJMoa1308573 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201043/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24552317 PubMed]
+# '''AVAglio:''' Chinot OL, Wick W, Mason W, Henriksson R, Saran F, Nishikawa R, Carpentier AF, Hoang-Xuan K, Kavan P, Cernea D, Brandes AA, Hilton M, Abrey L, Cloughesy T. Bevacizumab plus radiotherapy-temozolomide for newly diagnosed glioblastoma. N Engl J Med. 2014 Feb 20;370(8):709-22. [https://www.nejm.org/doi/full/10.1056/NEJMoa1308345 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24552318 PubMed]
+# '''EF-14:''' Stupp R, Taillibert S, Kanner AA, Kesari S, Steinberg DM, Toms SA, Taylor LP, Lieberman F, Silvani A, Fink KL, Barnett GH, Zhu JJ, Henson JW, Engelhard HH, Chen TC, Tran DD, Sroubek J, Tran ND, Hottinger AF, Landolfi J, Desai R, Caroli M, Kew Y, Honnorat J, Idbaih A, Kirson ED, Weinberg U, Palti Y, Hegi ME, Ram Z. Maintenance therapy with tumor-treating fields plus temozolomide vs temozolomide alone for glioblastoma: a randomized clinical trial. JAMA. 2015 Dec 15;314(23):2535-43. [https://jamanetwork.com/journals/jama/fullarticle/2475463 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26670971 PubMed]
+## '''Update:''' Stupp R, Taillibert S, Kanner A, Read W, Steinberg DM, Lhermitte B, Toms S, Idbaih A, Ahluwalia MS, Fink K, Di Meco F, Lieberman F, Zhu JJ, Stragliotto G, Tran DD, Brem S, Hottinger AF, Kirson ED, Lavy-Shahaf G, Weinberg U, Kim CY, Paek SH, Nicholas G, Bruna J, Hirte H, Weller M, Palti Y, Hegi ME, Ram Z. Effect of tumor-treating fields plus maintenance temozolomide vs maintenance temozolomide alone on survival in patients with glioblastoma: a randomized clinical trial. JAMA. 2017 Dec 19;318(23):2306-2316. [https://jamanetwork.com/journals/jama/fullarticle/2666504 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29260225 PubMed]
+# '''GLARIUS:''' Herrlinger U, Schäfer N, Steinbach JP, Weyerbrock A, Hau P, Goldbrunner R, Friedrich F, Rohde V, Ringel F, Schlegel U, Sabel M, Ronellenfitsch MW, Uhl M, Maciaczyk J, Grau S, Schnell O, Hänel M, Krex D, Vajkoczy P, Gerlach R, Kortmann RD, Mehdorn M, Tüttenberg J, Mayer-Steinacker R, Fietkau R, Brehmer S, Mack F, Stuplich M, Kebir S, Kohnen R, Dunkl E, Leutgeb B, Proescholdt M, Pietsch T, Urbach H, Belka C, Stummer W, Glas M. Bevacizumab plus irinotecan versus temozolomide in newly diagnosed O6-methylguanine-DNA methyltransferase nonmethylated glioblastoma: The randomized GLARIUS trial. J Clin Oncol. 2016 May 10;34(14):1611-9. Epub 2016 Mar 14. [http://ascopubs.org/doi/full/10.1200/JCO.2015.63.4691 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/26976423 PubMed]
+# Kong DS, Nam DH, Kang SH, Lee JW, Chang JH, Kim JH, Lim YJ, Koh YC, Chung YG, Kim JM, Kim CH. Phase III randomized trial of autologous cytokine-induced killer cell immunotherapy for newly diagnosed glioblastoma in Korea. Oncotarget. 2017 Jan 24;8(4):7003-7013. [http://www.oncotarget.com/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=12273&path%5B%5D=38864 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5351686/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27690294 PubMed]
+# '''NCIC CTG CE.6:''' Perry JR, Laperriere N, O'Callaghan CJ, Brandes AA, Menten J, Phillips C, Fay M, Nishikawa R, Cairncross JG, Roa W, Osoba D, Rossiter JP, Sahgal A, Hirte H, Laigle-Donadey F, Franceschi E, Chinot O, Golfinopoulos V, Fariselli L, Wick A, Feuvret L, Back M, Tills M, Winch C, Baumert BG, Wick W, Ding K, Mason WP; Trial Investigators. Short-course radiation plus temozolomide in elderly patients with glioblastoma. N Engl J Med. 2017 Mar 16;376(11):1027-1037. [https://www.nejm.org/doi/full/10.1056/NEJMoa1611977 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28296618 PubMed]
+# '''ACT IV:''' Weller M, Butowski N, Tran DD, Recht LD, Lim M, Hirte H, Ashby L, Mechtler L, Goldlust SA, Iwamoto F, Drappatz J, O'Rourke DM, Wong M, Hamilton MG, Finocchiaro G, Perry J, Wick W, Green J, He Y, Turner CD, Yellin MJ, Keler T, Davis TA, Stupp R, Sampson JH; ACT IV trial investigators. Rindopepimut with temozolomide for patients with newly diagnosed, EGFRvIII-expressing glioblastoma (ACT IV): a randomised, double-blind, international phase 3 trial. Lancet Oncol. 2017 Oct;18(10):1373-1385. Epub 2017 Aug 23. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30517-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28844499 PubMed]
+# '''HERBY:''' Grill J, Massimino M, Bouffet E, Azizi AA, McCowage G, Cañete A, Saran F, Le Deley MC, Varlet P, Morgan PS, Jaspan T, Jones C, Giangaspero F, Smith H, Garcia J, Elze MC, Rousseau RF, Abrey L, Hargrave D, Vassal G. Phase II, open-label, randomized, multicenter trial (HERBY) of bevacizumab in pediatric patients with newly diagnosed high-grade glioma. J Clin Oncol. 2018 Apr 1;36(10):951-958. Epub 2018 Feb 7. [http://ascopubs.org/doi/full/10.1200/JCO.2017.76.0611 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29412784 PubMed]
+
+==Temozolomide & NovoTTF-100A {{#subobject:4bee42|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d00b22|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://jamanetwork.com/journals/jama/fullarticle/2475463 Stupp et al. 2015 (EF-14)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Temozolomide_monotherapy_2|Temozolomide]]
+|style="background-color:#1a9850"|Superior OS
+|-
+|}
+====Preceding treatment====
+*[[#Temozolomide_.26_RT|Temozolomide & RT]]
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] as follows:
+**Cycle 1: 150 mg/m<sup>2</sup> PO once per day on days 1 to 5 
+**If tolerated, in cycles 2 to 6: 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+*[[NovoTTF-100A system (Optune)]] for at least 18 hours per day
+
+'''28-day cycle for 6 cycles; TTFields could be continued up to 24 months'''
+
+===References===
+# '''EF-14:''' Stupp R, Taillibert S, Kanner AA, Kesari S, Steinberg DM, Toms SA, Taylor LP, Lieberman F, Silvani A, Fink KL, Barnett GH, Zhu JJ, Henson JW, Engelhard HH, Chen TC, Tran DD, Sroubek J, Tran ND, Hottinger AF, Landolfi J, Desai R, Caroli M, Kew Y, Honnorat J, Idbaih A, Kirson ED, Weinberg U, Palti Y, Hegi ME, Ram Z. Maintenance therapy with tumor-treating fields plus temozolomide vs temozolomide alone for glioblastoma: a randomized clinical trial. JAMA. 2015 Dec 15;314(23):2535-43. [https://jamanetwork.com/journals/jama/fullarticle/2475463 link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/26670971 PubMed]
+## '''Update:''' Stupp R, Taillibert S, Kanner A, Read W, Steinberg DM, Lhermitte B, Toms S, Idbaih A, Ahluwalia MS, Fink K, Di Meco F, Lieberman F, Zhu JJ, Stragliotto G, Tran DD, Brem S, Hottinger AF, Kirson ED, Lavy-Shahaf G, Weinberg U, Kim CY, Paek SH, Nicholas G, Bruna J, Hirte H, Weller M, Palti Y, Hegi ME, Ram Z. Effect of tumor-treating fields plus maintenance temozolomide vs maintenance temozolomide alone on survival in patients with glioblastoma: a randomized clinical trial. JAMA. 2017 Dec 19;318(23):2306-2316. [https://jamanetwork.com/journals/jama/fullarticle/2666504 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/29260225 PubMed]
+
+=Recurrent disease, non-curative therapy, randomized data=
+==Carmustine monotherapy {{#subobject:5ead84|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:fc297c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://jamanetwork.com/journals/jama/article-abstract/345130 Fewer et al. 1972]
+| style="background-color:#1a9851" |Phase III (C)
+|Carmustine & Vincristine
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[http://www.neurology.org/content/63/7/1281.long Brandes et al. 2004]
+|style="background-color:#91cf61"|Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+====Chemotherapy====
+*[[Carmustine (BiCNU)]] 80 mg/m<sup>2</sup> IV once per day on days 1 to 3
+
+====Supportive medications====
+*Antiemesis prophylaxis with [[Ondansetron (Zofran)]] 
+*[[:Category:Steroids|Steroids]] at lowest dose necessary
+
+'''8-week cycle for up to 6 cycles'''
+
+===References===
+# Fewer D, Wilson CB, Boldrey EB, Enot KJ, Powell MR. The chemotherapy of brain tumors: clinical experience with carmustine (BCNU) and vincristine. JAMA. 1972 Oct 30;222(5):549-52. [https://jamanetwork.com/journals/jama/article-abstract/345130 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/4343318 PubMed]
+# Brandes AA, Tosoni A, Amistà P, Nicolardi L, Grosso D, Berti F, Ermani M. How effective is BCNU in recurrent glioblastoma in the modern era? A phase II trial. Neurology. 2004 Oct 12;63(7):1281-4. [http://www.neurology.org/content/63/7/1281.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15477552 PubMed]
+
+==Gliadel wafer {{#subobject:3fdb9e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:caa94a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lancet/article/PIIS0140673695907556/fulltext Brem et al. 1995]
+|style="background-color:#1a9851"|Phase III (E)
+|Placebo wafer
+| style="background-color:#1a9850" |Superior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1920672/ Westphal et al. 2003]
+|style="background-color:#1a9851"|Phase III (E)
+|Placebo wafer
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2940677/ Kunwar et al. 2010 (PRECISE)]
+|style="background-color:#1a9851"|Phase III (C)
+|Cintredekin besudotox
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Carmustine wafer, polifeprosan 20 (Gliadel)]]
+
+===References===
+# Brem H, Piantadosi S, Burger PC, Walker M, Selker R, Vick NA, Black K, Sisti M, Brem S, Mohr G, Muller P, Morawetz R, Schold SC; The Polymer-Brain Tumor Treatment Group. Placebo-controlled trial of safety and efficacy of intraoperative controlled delivery by biodegradable polymers of chemotherapy for recurrent gliomas. Lancet. 1995 Apr 22;345(8956):1008-12. [https://www.thelancet.com/journals/lancet/article/PIIS0140673695907556/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/7723496 PubMed]
+# Westphal M, Hilt DC, Bortey E, Delavault P, Olivares R, Warnke PC, Whittle IR, Jääskeläinen J, Ram Z. A phase 3 trial of local chemotherapy with biodegradable carmustine (BCNU) wafers (Gliadel wafers) in patients with primary malignant glioma. Neuro Oncol. 2003 Apr;5(2):79-88. [https://academic.oup.com/neuro-oncology/article/5/2/79/1070081 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1920672/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/12672279 PubMed]
+# '''PRECISE:''' Kunwar S, Chang S, Westphal M, Vogelbaum M, Sampson J, Barnett G, Shaffrey M, Ram Z, Piepmeier J, Prados M, Croteau D, Pedain C, Leland P, Husain SR, Joshi BH, Puri RK; PRECISE Study Group. Phase III randomized trial of CED of IL13-PE38QQR vs Gliadel wafers for recurrent glioblastoma. Neuro Oncol. 2010 Aug;12(8):871-81. Epub 2010 Feb 4. [https://academic.oup.com/neuro-oncology/article/12/8/871/1073747 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2940677/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20511192 PubMed]
+
+==Hydroxyurea monotherapy {{#subobject:227c90|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:6ea460|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://link.springer.com/article/10.1007%2Fs11060-009-9976-3 Dresemann et al. 2009]
+|style="background-color:#1a9851"|Phase III (C)
+|[[#Hydroxyurea_.26_Imatinib|Hydroxyurea & Imatinib]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Hydroxyurea (Hydrea)]]
+
+===References===
+# Dresemann G, Weller M, Rosenthal MA, Wedding U, Wagner W, Engel E, Heinrich B, Mayer-Steinacker R, Karup-Hansen A, Fluge O, Nowak A, Mehdorn M, Schleyer E, Krex D, Olver IN, Steinbach JP, Hosius C, Sieder C, Sorenson G, Parker R, Nikolova Z. Imatinib in combination with hydroxyurea versus hydroxyurea alone as oral therapy in patients with progressive pretreated glioblastoma resistant to standard dose temozolomide. J Neurooncol. 2010 Feb;96(3):393-402. Epub 2009 Aug 18. [https://link.springer.com/article/10.1007%2Fs11060-009-9976-3 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19688297 PubMed]
+
+==Hydroxyurea & Imatinib {{#subobject:1b771d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:1c1791|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annonc.oxfordjournals.org/content/16/10/1702.long Dresemann et al. 2005]
+|style="background-color:#91cf61"|Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://link.springer.com/article/10.1007%2Fs11060-009-9976-3 Dresemann et al. 2009]
+|style="background-color:#1a9851"|Phase III (E)
+|[[#Hydroxyurea_monotherapy|Hydroxyurea]]
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this combination did not succeed in the randomized phase III trial.''
+====Chemotherapy====
+*[[Hydroxyurea (Hydrea)]] 500 mg PO twice per day
+*[[Imatinib (Gleevec)]] 400 mg PO once per day
+
+'''Continued indefinitely'''
+
+===References===
+# Dresemann G. Imatinib and hydroxyurea in pretreated progressive glioblastoma multiforme: a patient series. Ann Oncol. 2005 Oct;16(10):1702-8. Epub 2005 Jul 20. [http://annonc.oxfordjournals.org/content/16/10/1702.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16033874 PubMed]
+# Dresemann G, Weller M, Rosenthal MA, Wedding U, Wagner W, Engel E, Heinrich B, Mayer-Steinacker R, Karup-Hansen A, Fluge O, Nowak A, Mehdorn M, Schleyer E, Krex D, Olver IN, Steinbach JP, Hosius C, Sieder C, Sorenson G, Parker R, Nikolova Z. Imatinib in combination with hydroxyurea versus hydroxyurea alone as oral therapy in patients with progressive pretreated glioblastoma resistant to standard dose temozolomide. J Neurooncol. 2010 Feb;96(3):393-402. Epub 2009 Aug 18. [https://link.springer.com/article/10.1007%2Fs11060-009-9976-3 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/19688297 PubMed]
+
+==Lomustine monotherapy {{#subobject:dc7f4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 100 mg/m<sup>2</sup> {{#subobject:701e36|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834468/ Wick et al. 2010 (JCBF)]
+|style="background-color:#1a9851"|Phase III (C)
+|Enzastaurin
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this was the lower bound of the range specified in the trial.''
+====Chemotherapy====
+*[[Lomustine (Ceenu)]] 100 mg/m<sup>2</sup> PO once on day 1
+
+====Supportive medications====
+*Enzyme-inducing antiepileptic drugs (EIAEDs) needed to be discontinued 14 days before enrolling in the trial
+
+'''42-day cycles'''
+
+===Variant #2, 110 mg/m<sup>2</sup>, uncapped {{#subobject:193934|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021043/ Batchelor et al. 2013]
+|style="background-color:#1a9851"|Phase III (C)
+|1. Cediranib<br> 2. Cediranib & Lomustine
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Lomustine (Ceenu)]] 110 mg/m<sup>2</sup> PO once on day 1
+
+'''42-day cycles'''
+
+===Variant #3, 110 mg/m<sup>2</sup>, capped {{#subobject:193934|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70314-6/fulltext Taal et al. 2014 (BELOB)]
+|style="background-color:#1a9851"|Randomized Phase II (C)
+|Lomustine & Bevacizumab
+|style="background-color:#d3d3d3"|Not reported
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa1707358 Wick et al. 2017 (EORTC 26101)]
+|style="background-color:#1a9851"|Phase III (C)
+|Lomustine & Bevacizumab
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Lomustine (Ceenu)]] 110 mg/m<sup>2</sup> (maximum dose of 200 mg) PO once on day 1
+
+'''42-day cycles'''
+
+===Variant #4, 130 mg/m<sup>2</sup> {{#subobject:704e36|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.sciencedirect.com/science/article/pii/0360301689909206 Bleehen et al. 1989]
+|style="background-color:#1a9851"|Phase III (C)
+|Benznidazole & Lomustine
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834468/ Wick et al. 2010 (JCBF)]
+|style="background-color:#1a9851"|Phase III (C)
+|Enzastaurin
+|style="background-color:#ffffbf"|Seems not superior
+|-
+|}
+''Note: this was the upper bound of the range specified in JCBF.''
+====Chemotherapy====
+*[[Lomustine (Ceenu)]] 130 mg/m<sup>2</sup> PO once on day 1
+
+====Supportive medications====
+*Enzyme-inducing antiepileptic drugs (EIAEDs) needed to be discontinued 14 days before enrolling in JCBF
+
+'''42-day cycle for 6 cycles or indefinitely (JCBF)'''
+
+===References===
+# Bleehen NM, Freedman LS, Stenning SP. A randomized study of CCNU with and without benznidazole in the treatment of recurrent grades 3 and 4 astrocytoma: report to the Medical Research Council by the Brain Tumor Working Party. Int J Radiat Oncol Biol Phys. 1989 Apr;16(4):1077-81. [https://www.sciencedirect.com/science/article/pii/0360301689909206 link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/2539345 PubMed]
+# '''JCBF:''' Wick W, Puduvalli VK, Chamberlain MC, van den Bent MJ, Carpentier AF, Cher LM, Mason W, Weller M, Hong S, Musib L, Liepa AM, Thornton DE, Fine HA. Phase III study of enzastaurin compared with lomustine in the treatment of recurrent intracranial glioblastoma. J Clin Oncol. 2010 Mar 1;28(7):1168-74. Epub 2010 Feb 1. [http://jco.ascopubs.org/content/28/7/1168.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2834468/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20124186 PubMed]
+# Batchelor TT, Mulholland P, Neyns B, Nabors LB, Campone M, Wick A, Mason W, Mikkelsen T, Phuphanich S, Ashby LS, Degroot J, Gattamaneni R, Cher L, Rosenthal M, Payer F, Jürgensmeier JM, Jain RK, Sorensen AG, Xu J, Liu Q, van den Bent M. Phase III randomized trial comparing the efficacy of cediranib as monotherapy, and in combination with lomustine, versus lomustine alone in patients with recurrent glioblastoma. J Clin Oncol. 2013 Sep 10;31(26):3212-8. Epub 2013 Aug 12. [http://ascopubs.org/doi/full/10.1200/JCO.2012.47.2464 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4021043/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23940216 PubMed]
+# '''BELOB:''' Taal W, Oosterkamp HM, Walenkamp AM, Dubbink HJ, Beerepoot LV, Hanse MC, Buter J, Honkoop AH, Boerman D, de Vos FY, Dinjens WN, Enting RH, Taphoorn MJ, van den Berkmortel FW, Jansen RL, Brandsma D, Bromberg JE, van Heuvel I, Vernhout RM, van der Holt B, van den Bent MJ. Single-agent bevacizumab or lomustine versus a combination of bevacizumab plus lomustine in patients with recurrent glioblastoma (BELOB trial): a randomised controlled phase 2 trial. Lancet Oncol. 2014 Aug;15(9):943-53. Epub 2014 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70314-6/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25035291 PubMed]
+## '''HRQoL analysis:''' Dirven L, van den Bent MJ, Bottomley A, van der Meer N, van der Holt B, Vos MJ, Walenkamp AM, Beerepoot LV, Hanse MC, Reijneveld JC, Otten A, de Vos FY, Smits M, Bromberg JE, Taal W, Taphoorn MJ; Dutch Neuro-Oncology Group (LWNO). The impact of bevacizumab on health-related quality of life in patients treated for recurrent glioblastoma: results of the randomised controlled phase 2 BELOB trial. Eur J Cancer. 2015 Jul;51(10):1321-30. Epub 2015 Apr 17. [https://www.ncbi.nlm.nih.gov/pubmed/25899986 PubMed]
+# '''EORTC 26101:''' Wick W, Gorlia T, Bendszus M, Taphoorn M, Sahm F, Harting I, Brandes AA, Taal W, Domont J, Idbaih A, Campone M, Clement PM, Stupp R, Fabbro M, Le Rhun E, Dubois F, Weller M, von Deimling A, Golfinopoulos V, Bromberg JC, Platten M, Klein M, van den Bent MJ. Lomustine and bevacizumab in progressive glioblastoma. N Engl J Med. 2017 Nov 16;377(20):1954-1963. [https://www.nejm.org/doi/full/10.1056/NEJMoa1707358 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/29141164 PubMed]
+
+==NovoTTF-100A monotherapy {{#subobject:1674af|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:4a488e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ejcancer.com/article/S0959-8049(12)00352-8/fulltext Stupp et al. 2012 (EF-11)]
+|style="background-color:#1a9851"|Phase III (E)
+|Investigator's choice
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Local therapy====
+*[[NovoTTF-100A system (Optune)]]
+
+===References===
+# '''EF-11:''' Stupp R, Wong ET, Kanner AA, Steinberg D, Engelhard H, Heidecke V, Kirson ED, Taillibert S, Liebermann F, Dbalý V, Ram Z, Villano JL, Rainov N, Weinberg U, Schiff D, Kunschner L, Raizer J, Honnorat J, Sloan A, Malkin M, Landolfi JC, Payer F, Mehdorn M, Weil RJ, Pannullo SC, Westphal M, Smrcka M, Chin L, Kostron H, Hofer S, Bruce J, Cosgrove R, Paleologous N, Palti Y, Gutin PH. NovoTTF-100A versus physician's choice chemotherapy in recurrent glioblastoma: a randomised phase III trial of a novel treatment modality. Eur J Cancer. 2012 Sep;48(14):2192-202. Epub 2012 May 18. [https://www.ejcancer.com/article/S0959-8049(12)00352-8/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/22608262 PubMed]
+
+==PCV==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+PCV: '''<u>P</u>'''rocarbazine, '''<u>C</u>'''CNU (Lomustine), '''<u>V</u>'''incristine
+===Variant #1, 60/110/1.4 {{#subobject:c3f4c2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pubmed/7407756 Levin et al. 1980]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 60 mg/m<sup>2</sup> PO once per day on days 8 to 21
+*[[Lomustine (Ceenu)]] 110 mg/m<sup>2</sup> PO once on day 1
+*[[Vincristine (Oncovin)]] 1.4 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once per day on days 8 & 29
+
+'''42-day cycles'''
+
+===Variant #2, 100/100/1.5 {{#subobject:41002c|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://ascopubs.org/doi/full/10.1200/JCO.2009.27.1932 Brada et al. 2010]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Temozolomide_monotherapy_3|Temozolomide]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 100 mg/m<sup>2</sup> PO once per day on days 1 to 10
+*[[Lomustine (Ceenu)]] 100 mg/m<sup>2</sup> PO once on day 1
+*[[Vincristine (Oncovin)]] 1.5 mg/m<sup>2</sup> (maximum dose of 2 mg) IV once on day 1
+
+'''42-day cycle for up to 6 cycles'''
+===References===
+# Levin VA, Edwards MS, Wright DC, Seager ML, Schimberg TP, Townsend JJ, Wilson CB. Modified procarbazine, CCNU, and vincristine (PCV 3) combination chemotherapy in the treatment of malignant brain tumors. Cancer Treat Rep. 1980 Feb-Mar;64(2-3):237-44. '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/7407756 PubMed]
+# Brada M, Stenning S, Gabe R, Thompson LC, Levy D, Rampling R, Erridge S, Saran F, Gattamaneni R, Hopkins K, Beall S, Collins VP, Lee SM. Temozolomide versus procarbazine, lomustine, and vincristine in recurrent high-grade glioma. J Clin Oncol. 2010 Oct 20;28(30):4601-8. Epub 2010 Sep 20. [http://ascopubs.org/doi/full/10.1200/JCO.2009.27.1932 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20855843 PubMed]
+
+=Recurrent disease, non-curative therapy, non-randomized or retrospective data=
+==Bevacizumab monotherapy {{#subobject:fc9abc|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:c6f29b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/27/28/4733.long Friedman et al. 2009 (AVF3708g)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once per day on days 1, 15, 29
+
+'''42-day cycle for up to 104 weeks'''
+
+===Variant #2 {{#subobject:35ed36|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645088/ Kreisl et al. 2008 (NCI 06-C-0064E)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once per day on days 1 & 15
+
+'''28-day cycles'''
+====Subsequent treatment====
+*Upon progression: [[#Irinotecan_.26_Bevacizumab_2|Irinotecan & Bevacizumab]]
+
+===References===
+# '''NCI 06-C-0064E:''' Kreisl TN, Kim L, Moore K, Duic P, Royce C, Stroud I, Garren N, Mackey M, Butman JA, Camphausen K, Park J, Albert PS, Fine HA. Phase II trial of single-agent bevacizumab followed by bevacizumab plus irinotecan at tumor progression in recurrent glioblastoma. J Clin Oncol. 2009 Feb 10;27(5):740-5. Epub 2008 Dec 29. [http://jco.ascopubs.org/content/27/5/740.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645088/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/19114704 PubMed]
+<!-- Presented in part at the 12th Annual Meeting of the Society for Neuro-Oncology, November 15-18, 2007, Dallas, TX, and at the 44th Annual Meeting of the American Society of Clinical Oncology, May 30-June 3, 2008, Chicago, IL. -->
+# '''AVF3708g:''' Friedman HS, Prados MD, Wen PY, Mikkelsen T, Schiff D, Abrey LE, Yung WK, Paleologos N, Nicholas MK, Jensen R, Vredenburgh J, Huang J, Zheng M, Cloughesy T. Bevacizumab alone and in combination with irinotecan in recurrent glioblastoma. J Clin Oncol. 2009 Oct 1;27(28):4733-40. Epub 2009 Aug 31. [http://jco.ascopubs.org/content/27/28/4733.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19720927 PubMed]
+# '''BELOB:''' Taal W, Oosterkamp HM, Walenkamp AM, Dubbink HJ, Beerepoot LV, Hanse MC, Buter J, Honkoop AH, Boerman D, de Vos FY, Dinjens WN, Enting RH, Taphoorn MJ, van den Berkmortel FW, Jansen RL, Brandsma D, Bromberg JE, van Heuvel I, Vernhout RM, van der Holt B, van den Bent MJ. Single-agent bevacizumab or lomustine versus a combination of bevacizumab plus lomustine in patients with recurrent glioblastoma (BELOB trial): a randomised controlled phase 2 trial. Lancet Oncol. 2014 Aug;15(9):943-53. Epub 2014 Jul 15. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(14)70314-6/fulltext link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25035291 PubMed]
+## '''HRQoL analysis:''' Dirven L, van den Bent MJ, Bottomley A, van der Meer N, van der Holt B, Vos MJ, Walenkamp AM, Beerepoot LV, Hanse MC, Reijneveld JC, Otten A, de Vos FY, Smits M, Bromberg JE, Taal W, Taphoorn MJ; Dutch Neuro-Oncology Group (LWNO). The impact of bevacizumab on health-related quality of life in patients treated for recurrent glioblastoma: results of the randomised controlled phase 2 BELOB trial. Eur J Cancer. 2015 Jul;51(10):1321-30. Epub 2015 Apr 17. [https://www.ncbi.nlm.nih.gov/pubmed/25899986 PubMed]
+
+==Carboplatin & Bevacizumab {{#subobject:f5673c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, q2wk bevacizumab {{#subobject:ffa90b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.neurology.org/content/70/10/779.long Norden et al. 2008]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 to 6 IV (reference does not list schedule of carboplatin)
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once on day 1
+
+'''14-day cycles'''
+
+===Variant #2, q4wk bevacizumab {{#subobject:401e2e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://journals.lww.com/neurosurgery/pages/articleviewer.aspx?year=2010&issue=07000&article=00013&type=abstract Thompson et al. 2010]
+|style="background-color:#ffffbe"|Retrospective
+|-
+|}
+====Chemotherapy====
+*[[Carboplatin (Paraplatin)]] AUC 5 IV once on day 1
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once on day 1
+
+'''28-day cycles'''	 
+
+===References===
+# '''Retrospective:''' Norden AD, Young GS, Setayesh K, Muzikansky A, Klufas R, Ross GL, Ciampa AS, Ebbeling LG, Levy B, Drappatz J, Kesari S, Wen PY. Bevacizumab for recurrent malignant gliomas: efficacy, toxicity, and patterns of recurrence. Neurology. 2008 Mar 4;70(10):779-87. [http://www.neurology.org/content/70/10/779.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/18316689 PubMed]
+# '''Retrospective:''' Thompson EM, Dosa E, Kraemer DF, Neuwelt EA. Treatment with bevacizumab plus carboplatin for recurrent malignant glioma. Neurosurgery. 2010 Jul;67(1):87-93. [http://journals.lww.com/neurosurgery/pages/articleviewer.aspx?year=2010&issue=07000&article=00013&type=abstract link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4905718/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/20559095 PubMed]
+
+==CART-EGFRvIII cells {{#subobject:ed311c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:26961a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://stm.sciencemag.org/content/9/399/eaaa0984.full O'Rourke et al. 2017]
+|style="background-color:#ffffbe"|Phase I
+|-
+|}
+====Immunotherapy====
+*Autologous CART-EGFRvIII cells, see paper for details
+
+'''One treatment'''
+
+===References===
+# '''Phase I:''' O'Rourke DM, Nasrallah MP, Desai A, Melenhorst JJ, Mansfield K, Morrissette JJD, Martinez-Lage M, Brem S, Maloney E, Shen A, Isaacs R, Mohan S, Plesa G, Lacey SF, Navenot JM, Zheng Z, Levine BL, Okada H, June CH, Brogdon JL, Maus MV. A single dose of peripherally infused EGFRvIII-directed CAR T cells mediates antigen loss and induces adaptive resistance in patients with recurrent glioblastoma. Sci Transl Med. 2017 Jul 19;9(399). [https://www.ncbi.nlm.nih.gov/pubmed/28724573 PubMed] [http://stm.sciencemag.org/content/9/399/eaaa0984.full link to original article]
+
+==Cyclophosphamide monotherapy {{#subobject:1724a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:d0ffd5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.20072/full Chamberlain & Tsao-Wei 2004]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 750 mg/m<sup>2</sup> IV over 30 minutes once per day on days 1 & 2
+
+====Supportive medications====
+*[[Dexamethasone (Decadron)]] allowed for control of neurologic symptoms
+*[[Ondansetron (Zofran)]] 0.15 mg/kg IV once prior to cyclophosphamide
+*[[Dexamethasone (Decadron)]] 4 mg IV once prior to cyclophosphamide
+*1 liter normal saline IV over 2 hours prior to cyclophosphamide
+*[[Prochlorperazine (Compazine)]] (dose/schedule not specified) prn nausea/vomiting
+
+'''28-day cycles'''
+
+===References===
+# Chamberlain MC, Tsao-Wei DD. Salvage chemotherapy with cyclophosphamide for recurrent, temozolomide-refractory glioblastoma multiforme. Cancer. 2004 Mar 15;100(6):1213-20. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.20072/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15022289 PubMed]
+
+==Irinotecan monotherapy {{#subobject:14c7e6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:24c9e2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/17/5/1516.long Friedman et al. 1999]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 125 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+**If tolerated, dose could be increased to 150 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+
+====Supportive medications====
+*[[:Category:Steroids|Steroids]] at lowest dose necessary
+*Avoid laxatives and magnesium-containing antacids due to potential for diarrhea
+
+'''42-day cycles'''
+
+===References===
+# Friedman HS, Petros WP, Friedman AH, Schaaf LJ, Kerby T, Lawyer J, Parry M, Houghton PJ, Lovell S, Rasheed K, Cloughsey T, Stewart ES, Colvin OM, Provenzale JM, McLendon RE, Bigner DD, Cokgor I, Haglund M, Rich J, Ashley D, Malczyn J, Elfring GL, Miller LL. Irinotecan therapy in adults with recurrent or progressive malignant glioma. J Clin Oncol. 1999 May;17(5):1516-25. [http://jco.ascopubs.org/content/17/5/1516.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/10334539 PubMed]
+
+==Irinotecan & Bevacizumab {{#subobject:a9cf4a|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, q2wk bev {{#subobject:a156f1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/25/30/4714.long Chen et al. 2007]
+|style="background-color:#91cf61"|Pilot, >20 pts
+|-
+|[http://jco.ascopubs.org/content/25/30/4722.long Vredenburgh et al. 2007]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://www.neurology.org/content/70/10/779.long Norden et al. 2008]
+|style="background-color:#91cf61"|Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645088/ Kreisl et al. 2008 (NCI 06-C-0064E)]
+|style="background-color:#91cf61"|Phase II
+|-
+|[http://jco.ascopubs.org/content/27/28/4733.long Friedman et al. 2009 (AVF3708g)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: AVF3708g described 6-week cycles in which treatment was every 2 weeks, given up to 104 weeks, and was otherwise identical, so its entry was consolidated with the other ones here.''
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 125 mg/m<sup>2</sup> IV over 90 minutes once on day 1, '''given first'''
+**Patients receiving enzyme-inducing antiepileptic drugs (EIAEDs) are treated with a higher dose: 340 mg/m<sup>2</sup> or 350 mg/m<sup>2</sup> (Chen et al. 2007) IV over 90 minutes once on day 1, '''given first'''
+*[[Bevacizumab (Avastin)]] 10 mg/kg IV once on day 1, '''given second, 90 minutes after the start of irinotecan'''
+**Infusion times for bevacizumab are 90 minutes for the first dose, then if tolerated, 60 minutes for the second dose, and 30 minutes for the third dose and later 
+
+====Supportive medications====
+*[[:Category:Steroids|Steroids]] were generally maintained at the same dose 
+
+'''14-day cycles'''
+
+===Variant #2, q3wk bev {{#subobject:7da12|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://jco.ascopubs.org/content/25/30/4722.long Vredenburgh et al. 2007]
+|style="background-color:#ffffbe"|Phase II, <20 pts
+|-
+|}
+====Chemotherapy====
+*[[Irinotecan (Camptosar)]] 125 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1, 8, 22, 29, '''given first'''
+**Patients receiving enzyme-inducing antiepileptic drugs (EIAEDs) are treated with a higher dose: 350 mg/m<sup>2</sup> IV over 90 minutes once per day on days 1, 8, 22, 29, '''given first'''
+*[[Bevacizumab (Avastin)]] 15 mg/kg IV once per day on days 1 & 22, '''given second, 90 minutes after the start of irinotecan'''
+**Infusion time is 90 minutes for the first dose, then if tolerated, 60 minutes for the second dose, and 30 minutes for the third dose and later 
+
+====Supportive medications====
+*[[:Category:Steroids|Steroids]] were generally maintained at the same dose 
+
+'''42-day cycles'''
+
+===References===
+# Chen W, Delaloye S, Silverman DH, Geist C, Czernin J, Sayre J, Satyamurthy N, Pope W, Lai A, Phelps ME, Cloughesy T. Predicting treatment response of malignant gliomas to bevacizumab and irinotecan by imaging proliferation with [18F] fluorothymidine positron emission tomography: a pilot study. J Clin Oncol. 2007 Oct 20;25(30):4714-21. [http://jco.ascopubs.org/content/25/30/4714.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17947718 PubMed]
+# Vredenburgh JJ, Desjardins A, Herndon JE 2nd, Marcello J, Reardon DA, Quinn JA, Rich JN, Sathornsumetee S, Gururangan S, Sampson J, Wagner M, Bailey L, Bigner DD, Friedman AH, Friedman HS. Bevacizumab plus irinotecan in recurrent glioblastoma multiforme. J Clin Oncol. 2007 Oct 20;25(30):4722-9. [http://jco.ascopubs.org/content/25/30/4722.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17947719 PubMed]
+# Norden AD, Young GS, Setayesh K, Muzikansky A, Klufas R, Ross GL, Ciampa AS, Ebbeling LG, Levy B, Drappatz J, Kesari S, Wen PY. Bevacizumab for recurrent malignant gliomas: efficacy, toxicity, and patterns of recurrence. Neurology. 2008 Mar 4;70(10):779-87. [http://www.neurology.org/content/70/10/779.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18316689 PubMed]
+# '''NCI 06-C-0064E:''' Kreisl TN, Kim L, Moore K, Duic P, Royce C, Stroud I, Garren N, Mackey M, Butman JA, Camphausen K, Park J, Albert PS, Fine HA. Phase II trial of single-agent bevacizumab followed by bevacizumab plus irinotecan at tumor progression in recurrent glioblastoma. J Clin Oncol. 2009 Feb 10;27(5):740-5. Epub 2008 Dec 29. [http://jco.ascopubs.org/content/27/5/740.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645088/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19114704 PubMed]
+<!-- Presented in part at the 12th Annual Meeting of the Society for Neuro-Oncology, November 15-18, 2007, Dallas, TX, and at the 44th Annual Meeting of the American Society of Clinical Oncology, May 30-June 3, 2008, Chicago, IL. -->
+# '''AVF3708g:''' Friedman HS, Prados MD, Wen PY, Mikkelsen T, Schiff D, Abrey LE, Yung WK, Paleologos N, Nicholas MK, Jensen R, Vredenburgh J, Huang J, Zheng M, Cloughesy T. Bevacizumab alone and in combination with irinotecan in recurrent glioblastoma. J Clin Oncol. 2009 Oct 1;27(28):4733-40. Epub 2009 Aug 31. [http://jco.ascopubs.org/content/27/28/4733.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19720927 PubMed]
+
+==Procarbazine monotherapy {{#subobject:69a372|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 125 mg/m<sup>2</sup> {{#subobject:d0f821|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2363506/ Yung et al. 2000]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this is the starting dose for patients who previously received chemotherapy; no instructions for dose escalation are given.''
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 125 mg/m<sup>2</sup> PO once per day on days 1 to 28
+
+====Supportive medications====
+*[[:Category:Steroids|Steroids]] at lowest dose necessary
+
+'''8-week cycles for up to 2 years'''
+
+===Variant #2, 150 mg/m<sup>2</sup> {{#subobject:d1a052|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2363506/ Yung et al. 2000]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''Note: this dosing is intended for patients who have never previously received chemotherapy.''
+====Chemotherapy====
+*[[Procarbazine (Matulane)]] 150 mg/m<sup>2</sup> PO once per day on days 1 to 28
+**Patients who previously received chemotherapy started with 125 mg/m<sup>2</sup> PO once per day on days 1 to 28
+
+====Supportive medications====
+*[[:Category:Steroids|Steroids]] at lowest dose necessary
+
+'''8-week cycles for up to 2 years'''
+
+===References===
+# Yung WK, Albright RE, Olson J, Fredericks R, Fink K, Prados MD, Brada M, Spence A, Hohl RJ, Shapiro W, Glantz M, Greenberg H, Selker RG, Vick NA, Rampling R, Friedman H, Phillips P, Bruner J, Yue N, Osoba D, Zaknoen S, Levin VA. A phase II study of temozolomide vs procarbazine in patients with glioblastoma multiforme at first relapse. Br J Cancer. 2000 Sep;83(5):588-93. [https://www.nature.com/bjc/journal/v83/n5/full/6691316a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2363506/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/10944597 PubMed]
+
+==Temozolomide monotherapy {{#subobject:e73a18|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, continuous {{#subobject:f18af9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.23813/full Perry et al. 2008 (RESCUE)]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+''See paper for details of when this regimen is used.''
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 50 mg/m<sup>2</sup> PO once per day
+
+'''Continued indefinitely'''
+
+===Variant #2, 11 cycles {{#subobject:f06af9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1002/cncr.22961/full Nicholson et al. 2007]
+|style="background-color:#91cf61"|Non-randomized
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] 150 to 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+**Patients who previously received craniospinal irradiation (CSI) instead received 180 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''28-day cycle for up to 11 cycles'''
+
+===Variant #3, 2 years {{#subobject:4cde86|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2363506/ Yung et al. 2000]
+|style="background-color:#91cf61"|Phase II
+|-
+|}
+====Chemotherapy====
+*[[Temozolomide (Temodar)]] as follows:
+**Patients who had never previously received chemotherapy: 200 mg/m<sup>2</sup> PO once per day on days 1 to 5
+**Patients who previously received chemotherapy started with 150 mg/m<sup>2</sup> PO once per day on days 1 to 5
+
+'''28-day cycle for up to 2 years'''
+
+===References===
+# Yung WK, Albright RE, Olson J, Fredericks R, Fink K, Prados MD, Brada M, Spence A, Hohl RJ, Shapiro W, Glantz M, Greenberg H, Selker RG, Vick NA, Rampling R, Friedman H, Phillips P, Bruner J, Yue N, Osoba D, Zaknoen S, Levin VA. A phase II study of temozolomide vs procarbazine in patients with glioblastoma multiforme at first relapse. Br J Cancer. 2000 Sep;83(5):588-93. [https://www.nature.com/bjc/journal/v83/n5/full/6691316a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2363506/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/10944597 PubMed]
+# Nicholson HS, Kretschmar CS, Krailo M, Bernstein M, Kadota R, Fort D, Friedman H, Harris MB, Tedeschi-Blok N, Mazewski C, Sato J, Reaman GH. Phase 2 study of temozolomide in children and adolescents with recurrent central nervous system tumors: a report from the Children's Oncology Group. Cancer. 2007 Oct 1;110(7):1542-50. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.22961/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17705175 PubMed]
+# '''RESCUE:''' Perry JR, Rizek P, Cashman R, Morrison M, Morrison T. Temozolomide rechallenge in recurrent malignant glioma by using a continuous temozolomide schedule: the "rescue" approach. Cancer. 2008 Oct 15;113(8):2152-7. [https://onlinelibrary.wiley.com/doi/10.1002/cncr.23813/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/18756530 PubMed]
+## '''Update:''' Perry JR, Bélanger K, Mason WP, Fulton D, Kavan P, Easaw J, Shields C, Kirby S, Macdonald DR, Eisenstat DD, Thiessen B, Forsyth P, Pouliot JF. Phase II trial of continuous dose-intense temozolomide in recurrent malignant glioma: RESCUE study. J Clin Oncol. 2010 Apr 20;28(12):2051-7. Epub 2010 Mar 22. [http://jco.ascopubs.org/content/28/12/2051.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20308655 PubMed]
+
+=Response criteria=
+==Response Assessment in Neuro-Oncology Working Group==
+* '''2010:''' [http://ascopubs.org/doi/full/10.1200/JCO.2009.26.3541 Updated response assessment criteria for high-grade gliomas: response assessment in neuro-oncology working group] [https://www.ncbi.nlm.nih.gov/pubmed/20231676 PubMed]
+
+[[Category:Glioblastoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:High-grade gliomas]]

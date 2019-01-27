@@ -1,0 +1,50 @@
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+<big>'''Note: these are biomarker-specific regimens, please see the [[Melanoma|main melanoma page]] for other regimens.'''</big>
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Advanced or metastatic disease, TKI-naive=
+==Binimetinib monotherapy {{#subobject:aa3a2b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:8d6382|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70024-X/fulltext Ascierto et al. 2013]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30180-8/fulltext Dummer et al. 2017 (NEMO)]
+|style="background-color:#1a9851"|Phase III (E)
+|[[Melanoma#Dacarbazine_monotherapy|Dacarbazine]]
+|style="background-color:#1a9850"|Superior PFS
+|-
+|}
+====Chemotherapy====
+*[[Binimetinib (Mektovi)]] 45 mg PO twice per day
+
+'''Continued indefinitely'''
+
+===References===
+# Ascierto PA, Schadendorf D, Berking C, Agarwala SS, van Herpen CM, Queirolo P, Blank CU, Hauschild A, Beck JT, St-Pierre A, Niazi F, Wandel S, Peters M, Zubel A, Dummer R. MEK162 for patients with advanced melanoma harbouring NRAS or Val600 BRAF mutations: a non-randomised, open-label phase 2 study. Lancet Oncol. 2013 Mar;14(3):249-56. Epub 2013 Feb 13. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(13)70024-X/fulltext link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23414587 PubMed]
+# '''NEMO:''' Dummer R, Schadendorf D, Ascierto PA, Arance A, Dutriaux C, Di Giacomo AM, Rutkowski P, Del Vecchio M, Gutzmer R, Mandala M, Thomas L, Demidov L, Garbe C, Hogg D, Liszkay G, Queirolo P, Wasserman E, Ford J, Weill M, Sirulnik LA, Jehl V, Bozón V, Long GV, Flaherty K. Binimetinib versus dacarbazine in patients with advanced NRAS-mutant melanoma (NEMO): a multicentre, open-label, randomised, phase 3 trial. Lancet Oncol. 2017 Apr;18(4):435-445. Epub 2017 Mar 8. [https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(17)30180-8/fulltext link to original article] '''contains protocol'''  [https://www.ncbi.nlm.nih.gov/pubmed/28284557 PubMed]
+
+[[Category:Melanoma regimens]]
+[[Category:Biomarker-specific pages]]
+[[Category:Skin cancers]]

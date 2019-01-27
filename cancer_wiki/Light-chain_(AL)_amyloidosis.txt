@@ -1,0 +1,1178 @@
+{| class="wikitable" style="text-align:center; width:100%;"
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26" |'''Page editor'''
+! colspan="2" align="center" style="color:white; font-size:125%; background-color:#de2d26" |'''Section editor'''
+|-
+| style="background-color:#F0F0F0; width:15%" |[[File:Samuelrubinstein.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Samuelrubinstein|Samuel Rubinstein, MD]]<br>Vanderbilt University<br>Nashville, TN</big>
+| style="background-color:#F0F0F0; width:15%" |[[File:Headshot Cowan.jpg|frameless|upright=0.3|center]]
+| style="width:35%" |<big>[[User:Andrewc072|Andrew J. Cowan, MD]]<br>University of Washington<br>Seattle, WA</big><br>[https://www.linkedin.com/in/andrew-cowan-63b3a130/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]] |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+=Guidelines=
+==[http://www.b-s-h.org.uk/ BSH]==
+*'''2014:''' Wechalekar et al. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13155/abstract Guidelines on the management of AL amyloidosis] [https://www.ncbi.nlm.nih.gov/pubmed/25303672 PubMed]
+
+==EMN==
+*'''2018:''' Gavriatopoulou et al. [https://www.nature.com/articles/s41375-018-0209-7 European myeloma network recommendations on diagnosis and management of patients with rare plasma cell dyscrasias] [https://www.ncbi.nlm.nih.gov/pubmed/30038381 PubMed]
+
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/amyloidosis.pdf NCCN Guidelines - Systemic Light Chain Amyloidosis]
+
+=First-line therapy (including transplant ineligible)=
+
+==Bortezomib & Dexamethasone {{#subobject:33ab5d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, lower-dose dex {{#subobject:23d6a1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bbmt.org/article/S1083-8791(15)00230-X/fulltext Sanchorawala et al. 2015]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#c4c4c4" |HRR: 77%
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1, 4, 8, 11
+
+====Supportive medications====
+*[[:Category:Proton_pump_inhibitors|Proton pump inhibitor]]
+*[[:Category:Antivirals|Antiviral medication]]
+
+'''21-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[#Bortezomib_.26_Melphalan.2C_then_auto_HSCT|Bortezomib & high-dose melphalan with autologous hematopoietic stem cell transplant]]
+
+===Variant #2, higher-dose dex {{#subobject:1b0b57|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ Huang et al. 2014]
+| style="background-color:#1a9851" |Randomized Phase II (E)
+|[[#No_induction|No induction]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 4, 8, 11
+
+'''21-day cycle for 2 cycles'''
+====Subsequent treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic stem cell transplant]]
+
+===References===
+# Huang X, Wang Q, Chen W, Zeng C, Chen Z, Gong D, Zhang H, Liu Z. Induction therapy with bortezomib and dexamethasone followed by autologous stem cell transplantation versus autologous stem cell transplantation alone in the treatment of renal AL amyloidosis: a randomized controlled trial. BMC Med. 2014 Jan 6;12:2. [http://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-12-2 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24386911 PubMed]
+# Sanchorawala V, Brauneis D, Shelton AC, Lo S, Sun F, Sloan JM, Quillen K, Seldin DC. Induction therapy with bortezomib followed by bortezomib-high dose melphalan and stem cell transplantation for light chain amyloidosis: Results of a prospective clinical trial. Biol Blood Marrow Transplant. 2015 Aug;21(8):1445-51. Epub 2015 Apr 6. [http://www.bbmt.org/article/S1083-8791(15)00230-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25858810 PubMed]
+
+==Colchicine monotherapy {{#subobject:06983b|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen {{#subobject:9ee4f6|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.amjmed.com/article/0002-9343(85)90521-2/pdf Kyle et al. 1985]
+| style="background-color:#1a9851" |Randomized (E)
+|[[#MP|MP]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|[https://www.amjmed.com/article/0002-9343(87)90222-1/pdf Cohen et al. 1987]
+| style="background-color:#91cf61" |Non-randomized
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+| rowspan="2" |[https://www.nejm.org/doi/full/10.1056/NEJM199704243361702 Kyle et al. 1997]
+| rowspan="2" style="background-color:#1a9851" |Phase III (C)
+|1. [[#MP|MP]]
+| style="background-color:#d73027" |Inferior OS
+|-
+|2. Melphalan, Prednisone, Colchicine
+| style="background-color:#d73027" |Inferior OS
+|-
+|}
+''Of historic interest.''
+====Therapy====
+*[[Colchicine (Colcrys)]] 
+
+===References===
+# Kyle RA, Greipp PR, Garton JP, Gertz MA. Primary systemic amyloidosis: comparison of melphalan/prednisone versus colchicine. Am J Med. 1985 Dec;79(6):708-16. [http://www.amjmed.com/article/0002-9343(85)90521-2/pdf link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/3934968 PubMed]
+# Cohen AS, Rubinow A, Anderson JJ, Skinner M, Mason JH, Libbey C, Kayne H. Survival of patients with primary (AL) amyloidosis: colchicine-treated cases from 1976 to 1983 compared with cases seen in previous years (1961 to 1973). Am J Med. 1987 Jun;82(6):1182-90. [https://www.amjmed.com/article/0002-9343(87)90222-1/pdf link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/3605135 PubMed]
+# Kyle RA, Gertz MA, Greipp PR, Witzig TE, Lust JA, Lacy MQ, Therneau TM. A trial of three regimens for primary amyloidosis: colchicine alone, melphalan and prednisone, and melphalan, prednisone, and colchicine. N Engl J Med. 1997 Apr 24;336(17):1202-7. [https://www.nejm.org/doi/full/10.1056/NEJM199704243361702 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9110907 PubMed]
+
+==CRd (Cyclophosphamide) {{#subobject:4bee23|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CRd: '''<u>Cy</u>'''clophosphamide, '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+<br>LDC: '''<u>L</u>'''enalidomide, '''<u>D</u>'''examethasone, '''<u>C</u>'''yclophosphamide 
+<br>RdC: '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone, '''<u>C</u>'''yclophosphamide
+
+===Variant #1, "LDC" {{#subobject:8bba62|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13500/full Cibeira et al. 2015]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] as follows:
+**Cycles 1 to 6: 300 mg/m<sup>2</sup> IV once per day on days 1 & 8
+**Cycles 7 to 12: 300 mg/m<sup>2</sup> IV once on day 1
+*[[Lenalidomide (Revlimid)]] as follows:
+**Normal eGFR: 15 mg PO once per day on days 1 to 21
+**eGFR greater than 30 mL/min/1.73m<sup>2</sup> but less than 50 mL/min/1.73m<sup>2</sup>: 10 mg PO once per day on days 1 to 21
+**eGFR less than 30 mL/min/1.73m<sup>2</sup>: 5 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] as follows:
+**Cycles 1 to 6: 20 mg PO once per day on days 1 to 4, 9 to 12
+**Cycles 7 to 12: 20 mg PO once per day on days 1 to 4
+**Cardiac stage III (this is not defined): upfront modification "allowed" but not defined
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day, or [[:Category:Low_molecular_weight_heparins|Low molecular weight heparin]]
+
+'''28-day cycle for 12 cycles'''
+====Subsequent treatment====
+*Patients without progression who were tolerating therapy: [[#Rd|Rd maintenance]]
+
+===Variant #2, "CRd" {{#subobject:d4c970|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418771/ Kumar et al. 2012]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per day on days 1, 8, 15
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15, 22
+
+====Supportive medications====
+*[[Aspirin]] 81, 100, or 325 mg PO once per day for thromboprophylaxis
+*Patients with previous thrombotic histories or who were considered to be higher thrombotic risks were recommended to receive [[:Category:Low_molecular_weight_heparins|low molecular weight heparin]] or [[Warfarin (Coumadin)]]
+*"Routine antibiotic, antiviral, or antifungal prophylaxis was not mandated and left to the discretion of the treating physician."
+
+'''28-day cycle for up to 2 years'''
+
+===Variant #3, "RdC" {{#subobject:92db93|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/119/23/5384.long Kastritis et al. 2012]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+''This was the highest dose level tested in Kastritis et al. 2012, which had no dose-limiting toxicities.''
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4
+*[[Cyclophosphamide (Cytoxan)]] 100 mg PO once per day on days 1 to 10
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once daily for thromboprophylaxis
+*[[:Category:Proton_pump_inhibitors|Proton pump inhibitor]]
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Trimethoprim-sulfamethoxazole (Bactrim)]], dose and schedule not listed
+*[[Valacyclovir (Valtrex)]], dose and schedule not listed
+
+'''28-day cycle for 12 cycles'''
+===References===
+# Kumar SK, Hayman SR, Buadi FK, Roy V, Lacy MQ, Gertz MA, Allred J, Laumann KM, Bergsagel LP, Dingli D, Mikhael JR, Reeder CB, Stewart AK, Zeldenrust SR, Greipp PR, Lust JA, Fonseca R, Russell SJ, Rajkumar SV, Dispenzieri A. Lenalidomide, cyclophosphamide, and dexamethasone (CRd) for light-chain amyloidosis: long-term results from a phase 2 trial. Blood. 2012 May 24;119(21):4860-7. Epub 2012 Apr 13. [http://www.bloodjournal.org/content/119/21/4860.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418771/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22504925 PubMed]
+<!-- no pre-pub disclosed -->
+# Kastritis E, Terpos E, Roussou M, Gavriatopoulou M, Pamboukas C, Boletis I, Marinaki S, Apostolou T, Nikitas N, Gkortzolidis G, Michalis E, Delimpasi S, Dimopoulos MA. A phase 1/2 study of lenalidomide with low-dose oral cyclophosphamide and low-dose dexamethasone (RdC) in AL amyloidosis. Blood. 2012 Jun 7;119(23):5384-90. Epub 2012 Apr 18. [http://www.bloodjournal.org/content/119/23/5384.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22517904 PubMed]
+# Cibeira MT, Oriol A, Lahuerta JJ, Mateos MV, de la Rubia J, Hernández MT, Granell M, Fernández de Larrea C, San Miguel JF, Bladé J; PETHEMA cooperative study group. A phase II trial of lenalidomide, dexamethasone and cyclophosphamide for newly diagnosed patients with systemic immunoglobulin light chain amyloidosis. Br J Haematol. 2015 Sep;170(6):804-13. Epub 2015 May 14. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13500/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25974382 PubMed]
+
+==CTD {{#subobject:c079c5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CTD: '''<u>C</u>'''yclophosphamide, '''<u>T</u>'''halidomide, '''<u>D</u>'''examethasone
+
+===Variant #1 {{#subobject:4605b4|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/457.long Wechalekar et al. 2007]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per week
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day on days 1 to 21, then increased to 200 mg PO once per day if well tolerated after 4 weeks
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4, 9 to 12
+
+====Supportive medications====
+*"Antimicrobial and thromboprophylaxis were given according to local protocol"; no routine thromboprophylaxis
+
+'''21-day cycles, "given until a stable clonal response was achieved on consecutive samples at least 4 weeks apart" or until confirmed lack of response'''
+
+===Variant #2, risk attenuated regimen {{#subobject:b049b0|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/457.long Wechalekar et al. 2007]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+
+''For elderly patients (age greater than 70 years), NYHA heart failure greater than class II, and those with significant fluid overload.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per day on days 1, 8, 15
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day on days 1 to 28, increased by 50 mg every 4 weeks as tolerated to a maximum dose of 200 mg PO once per day
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4, 15 to 18
+
+====Supportive medications====
+*"Antimicrobial and thromboprophylaxis were given according to local protocol"; no routine thromboprophylaxis
+
+'''28-day cycles, "given until a stable clonal response was achieved on consecutive samples at least 4 weeks apart" or until confirmed lack of response'''
+
+===References===
+<!-- no pre-pub disclosed -->
+# Wechalekar AD, Goodman HJ, Lachmann HJ, Offer M, Hawkins PN, Gillmore JD. Safety and efficacy of risk-adapted cyclophosphamide, thalidomide, and dexamethasone in systemic AL amyloidosis. Blood. 2007 Jan 15;109(2):457-64. Epub 2006 Sep 21. [http://www.bloodjournal.org/content/109/2/457.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16990593 PubMed]
+
+==Lenalidomide monotherapy {{#subobject:1dca0c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1, 15 mg dosing {{#subobject:3b9f18|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/492.full Sanchorwala et al. 2006]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''The trial used an initial dose of lenalidomide of 25 mg PO once per day, but it was reduced to 15 mg because 25 mg was poorly tolerated.''
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+
+====Supportive medications====
+*[[Aspirin]] 81 or 325 mg (physician discretion) PO once per day as prophylaxis
+
+'''28-day cycles'''
+====Subsequent treatment====
+*If no response after 3 cycles of therapy, then patients were escalated to [[#Rd_2|lenalidomide & dexamethasone]]. Otherwise, treatment continued indefinitely
+
+===Variant #2, 25 mg dosing {{#subobject:f71995|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/465.long Dispenzieri et al. 2006]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+
+'''28-day cycles'''
+====Subsequent treatment====
+*If no response after 3 cycles of therapy, then patients were escalated to [[#Rd_2|lenalidomide & dexamethasone]]. Otherwise, treatment continued up to 12 cycles
+
+===References===
+# Sanchorawala V, Wright DG, Rosenzweig M, Finn KT, Fennessey S, Zeldis JB, Skinner M, Seldin DC. Lenalidomide and dexamethasone in the treatment of AL amyloidosis: results of a phase 2 trial. Blood. 2007 Jan 15;109(2):492-6. Epub 2006 Sep 7. [http://www.bloodjournal.org/content/109/2/492.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16960148 PubMed]
+## '''Update:''' Sanchorawala V, Finn KT, Fennessey S, Shelton A, Doros G, Zeldis JB, Seldin DC. Durable hematologic complete responses can be achieved with lenalidomide in AL amyloidosis. Blood. 2010 Sep 16;116(11):1990-1. [http://www.bloodjournal.org/content/116/11/1990.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20847211 PubMed]
+# Dispenzieri A, Lacy MQ, Zeldenrust SR, Hayman SR, Kumar SK, Geyer SM, Lust JA, Allred JB, Witzig TE, Rajkumar SV, Greipp PR, Russell SJ, Kabat B, Gertz MA. The activity of lenalidomide with or without dexamethasone in patients with primary systemic amyloidosis. Blood. 2007 Jan 15;109(2):465-70. Epub 2006 Sep 28. [http://www.bloodjournal.org/content/109/2/465.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17008538 PubMed]
+
+==M-DEX {{#subobject:c07166|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+M-DEX: '''<u>M</u>'''elphalan & '''<u>DEX</u>'''amethasone
+===Variant #1 {{#subobject:ce6a1b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa070484 Jaccard et al. 2007]
+| style="background-color:#1a9851" |Phase III (C)
+|[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan, then auto HSCT]]
+| style="background-color:#91cf60" |Seems to have superior OS
+|-
+|}
+''Note: to our knowledge, this regimen was not tested as an experimental arm in an RCT prior to becoming a standard comparator arm.''
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 10 mg/m<sup>2</sup> PO once per day on days 1 to 4
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[:Category:Proton_pump_inhibitors|Proton pump inhibitor]]
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)]] three times per week
+
+'''1-month cycle for up to 18 cycles'''
+
+''Patients achieving complete hematologic remission could stop treatment after 12 cycles.''
+
+===Variant #2 {{#subobject:ad7105|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/103/8/2936.long Palladini et al. 2003]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 0.22 mg/kg PO once per day on days 1 to 4
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[Omeprazole (Prilosec)]] 20 mg PO once per day on days 1 to 10
+*[[Ciprofloxacin (Cipro)]] 250 mg PO twice per day on days 1 to 10
+*[[Itraconazole (Sporanox)]] 100 mg PO once per day on days 1 to 10
+
+'''28-day cycle for up to 9 cycles'''
+
+===References===
+# Palladini G, Perfetti V, Obici L, Caccialanza R, Semino A, Adami F, Cavallero G, Rustichelli R, Virga G, Merlini G. Association of melphalan and high-dose dexamethasone is effective and well tolerated in patients with AL (primary) amyloidosis who are ineligible for stem cell transplantation. Blood. 2004 Apr 15;103(8):2936-8. Epub 2003 Dec 18. [http://www.bloodjournal.org/content/103/8/2936.long link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/15070667 PubMed]
+## '''Update:''' Palladini G, Russo P, Nuvolone M, Lavatelli F, Perfetti V, Obici L, Merlini G. Treatment with oral melphalan plus dexamethasone produces long-term remissions in AL amyloidosis. Blood. 2007 Jul 15;110(2):787-8. [http://www.bloodjournal.org/content/110/2/787.long link to original article][https://www.ncbi.nlm.nih.gov/pubmed/17606766 PubMed]
+## '''Update:''' Palladini G, Milani P, Foli A, Obici L, Lavatelli F, Nuvolone M, Caccialanza R, Perlini S, Merlini G. Oral melphalan and dexamethasone grants extended survival with minimal toxicity in AL amyloidosis: long-term results of a risk-adapted approach. Haematologica. 2014 Apr;99(4):743-50. Epub 2013 Nov 8. [http://www.haematologica.org/content/99/4/743.full link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3971085/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24213149 PubMed]
+# Jaccard A, Moreau P, Leblond V, Leleu X, Benboubker L, Hermine O, Recher C, Asli B, Lioure B, Royer B, Jardin F, Bridoux F, Grosbois B, Jaubert J, Piette JC, Ronco P, Quet F, Cogne M, Fermand JP; Myélome Autogreffe (MAG) and Intergroupe Francophone du Myélome (IFM) Intergroup. High-dose melphalan versus melphalan plus dexamethasone for AL amyloidosis. N Engl J Med. 2007 Sep 13;357(11):1083-93. [https://www.nejm.org/doi/full/10.1056/NEJMoa070484 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17855669 PubMed]
+
+==MP {{#subobject:946da1|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+MP: '''<u>M</u>'''elphalan & '''<u>P</u>'''rednisone
+===Regimen {{#subobject:b1471a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/52/4/818.long Kyle et al. 1978]
+| style="background-color:#1a9851" |Randomized (E)
+|Placebo
+| style="background-color:#91cf60" |Longer time on treatment
+|-
+|[http://www.amjmed.com/article/0002-9343(85)90521-2/pdf Kyle et al. 1985]
+| style="background-color:#1a9851" |Randomized (E)
+|[[#Colchicine_monotherapy|Colchicine]]
+| style="background-color:#ffffbf" |Seems not superior
+|-
+| rowspan="2" |[https://www.nejm.org/doi/full/10.1056/NEJM199704243361702 Kyle et al. 1997]
+| rowspan="2" style="background-color:#1a9851" |Phase III (C)
+|1. [[#Colchicine_monotherapy|Colchicine]]
+| style="background-color:#1a9850" |Superior OS
+|-
+|2. Melphalan, Prednisone, Colchicine
+| style="background-color:#ffffbf" |Seems not superior
+|-
+|}
+''Of historic interest.''
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 
+*[[Prednisone (Sterapred)]]
+
+===References===
+# Kyle RA, Greipp PR. Primary systemic amyloidosis: comparison of melphalan and prednisone versus placebo. Blood. 1978 Oct;52(4):818-27. [http://www.bloodjournal.org/content/52/4/818.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/356916 PubMed]
+# Kyle RA, Greipp PR, Garton JP, Gertz MA. Primary systemic amyloidosis: comparison of melphalan/prednisone versus colchicine. Am J Med. 1985 Dec;79(6):708-16. [http://www.amjmed.com/article/0002-9343(85)90521-2/pdf link to SD article] [https://www.ncbi.nlm.nih.gov/pubmed/3934968 PubMed]
+# Kyle RA, Gertz MA, Greipp PR, Witzig TE, Lust JA, Lacy MQ, Therneau TM. A trial of three regimens for primary amyloidosis: colchicine alone, melphalan and prednisone, and melphalan, prednisone, and colchicine. N Engl J Med. 1997 Apr 24;336(17):1202-7. [https://www.nejm.org/doi/full/10.1056/NEJM199704243361702 link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/9110907 PubMed]
+
+==MRD {{#subobject:159853|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+MRD: '''<u>M</u>'''elphalan, '''<u>R</u>'''evlimid (Lenalidomide), '''<u>D</u>'''examethasone
+<br>L-M-Dex: '''<u>L</u>'''enalidomide, '''<u>M</u>'''elphalan, '''<u>D</u>'''examethasone
+===Variant #1, "L-M-Dex" {{#subobject:301867|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.haematologica.org/content/102/8/1424 Hegenbart et al. 2017]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+''Note: the manuscript states "treatment consisted of a total of 6 times 4 cycles"; this has been clarified with the authors to mean 6 times 4-week cycles.''
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Melphalan (Alkeran)]] 0.15 mg/kg PO once per day on days 1 to 4
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4
+
+'''28-day cycle for 6 cycles'''
+
+====Supportive medications====
+*Thromboprophylaxis with ONE of the following:
+**Standard patients: [[Aspirin]] 100 mg PO once per day 
+**Patients with a history of VTE or thrombophilia: [[:Category:Low molecular weight heparins|low-molecular weight heparin]] (dose/schedule not specified)
+
+===Variant #2 {{#subobject:3310f2|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3640126/ Sanchorwala et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+''Sanchorawala et al. 2012 did not outright specify oral routes for melphalan and dexamethasone, but this is assumed based on how the paper discussed existing oral melphalan and dexamethasone regimens.''
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 5 mg/m<sup>2</sup> PO once per day on days 1 to 4
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per week
+
+====Supportive medications====
+*[[Aspirin]] 325 mg PO once per day to decrease risk of [[Lenalidomide (Revlimid)]]-associated venous thromboembolism (VTE)
+*[[:Category:Proton_pump_inhibitors|Proton pump inhibitor]] to decrease risk of gastritis from [[Dexamethasone (Decadron)]]
+
+'''28-day cycle for 12 cycles, until progression of disease, or unacceptable toxicity'''
+
+===Variant #3 {{#subobject:7d51af|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/116/23/4777.long Moreau et al. 2010]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+''This is the MTD dosing.''
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 0.18 mg/kg PO once per day on days 1 to 4
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[:Category:Low_molecular_weight_heparins|LMWH]] for the first 4 cycles, then [[Aspirin]] as another option if no thrombosis
+
+'''28-day cycle for up to 9 cycles'''
+
+===References===
+<!-- This work has been presented previously at the 51st American Society of Hematology annual meeting, New Orleans, December 7, 2009, oral presentation, abstract 427; and the XIIth International Symposium on Amyloidosis, Rome, Italy, April 21, 2010, oral presentation, abstract 86. -->
+# Moreau P, Jaccard A, Benboubker L, Royer B, Leleu X, Bridoux F, Salles G, Leblond V, Roussel M, Alakl M, Hermine O, Planche L, Harousseau JL, Fermand JP. Lenalidomide in combination with melphalan and dexamethasone in patients with newly diagnosed AL amyloidosis: a multicenter phase 1/2 dose-escalation study. Blood. 2010 Dec 2;116(23):4777-82. Epub 2010 Aug 19. [http://www.bloodjournal.org/content/116/23/4777.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/20724537 PubMed]
+# Sanchorawala V, Patel JM, Sloan JM, Shelton AC, Zeldis JB, Seldin DC. Melphalan, lenalidomide and dexamethasone for the treatment of immunoglobulin light chain amyloidosis: results of a phase II trial. Haematologica. 2013 May;98(5):789-92. Epub 2012 Nov 9. [http://www.haematologica.org/content/98/5/789.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3640126/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/23144200 PubMed]
+# Hegenbart U, Bochtler T, Benner A, Becker N, Kimmich C, Kristen AV, Beimler J, Hund E, Zorn M, Freiberger A, Gawlik M, Goldschmidt H, Hose D, Jauch A, Ho AD, Schönland SO. Lenalidomide/melphalan/dexamethasone in newly diagnosed patients with immunoglobulin light chain amyloidosis: results of a prospective phase 2 study with long-term follow up. Haematologica. 2017 Aug;102(8):1424-1431. Epub 2017 May 18. [http://www.haematologica.org/content/102/8/1424 link to original article] '''contains verified protocol'''[https://www.ncbi.nlm.nih.gov/pubmed/28522573 PubMed]
+
+==No induction==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Regimen===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ Huang et al. 2014]
+| style="background-color:#1a9851" |Randomized Phase II (C)
+|[[#Bortezomib_.26_Dexamethasone|BD]]
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|}
+''No induction prior to transplant.''
+====Subsequent treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic stem cell transplant]]
+
+===References===
+# Huang X, Wang Q, Chen W, Zeng C, Chen Z, Gong D, Zhang H, Liu Z. Induction therapy with bortezomib and dexamethasone followed by autologous stem cell transplantation versus autologous stem cell transplantation alone in the treatment of renal AL amyloidosis: a randomized controlled trial. BMC Med. 2014 Jan 6;12:2. [http://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-12-2 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24386911 PubMed]
+
+==VDC {{#subobject:d1f835|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VDC: '''<u>V</u>'''elcade (Bortezomib), '''<u>D</u>'''examethasone, '''<u>C</u>'''yclophosphamide
+<br>CyBorD: '''<u>Cy</u>'''clophosphamide, '''<u>Bor</u>'''tezomib, '''<u>D</u>'''examethasone
+===Variant #1, 300/1.3/40 {{#subobject:8d1a0b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557400/ Mikhael et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+''Note: Mikhael et al. 2012 does not explicitly define the route for bortezomib or dexamethasone; the routes below were used in the majority of patients, per the authors.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> PO once per week
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> SC once per day on days 1, 4, 8, 11
+*[[Dexamethasone (Decadron)]] 40 mg PO once per week
+
+====Supportive medications====
+*[[:Category:Antivirals|Antiviral]] prophylaxis
+
+'''28-day cycle for 2 to 6 cycles'''
+
+===Variant #2, 300/1.5/40 {{#subobject:9e2799|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557400/ Mikhael et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+''Note: Mikhael et al. 2012 does not explicitly define the route for bortezomib or dexamethasone; the routes below were used in the majority of patients, per the authors.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 300 mg/m<sup>2</sup> PO once per week
+*[[Bortezomib (Velcade)]] 1.5 mg/m<sup>2</sup> SC once per day on days 1, 8, 15, 22
+*[[Dexamethasone (Decadron)]] 40 mg PO once per week
+
+====Supportive medications====
+*[[:Category:Antivirals|Antiviral]] prophylaxis
+
+'''28-day cycle for 2 to 6 cycles'''
+
+===References===
+# Mikhael JR, Schuster SR, Jimenez-Zepeda VH, Bello N, Spong J, Reeder CB, Stewart AK, Bergsagel PL, Fonseca R. Cyclophosphamide-bortezomib-dexamethasone (CyBorD) produces rapid and complete hematologic response in patients with AL amyloidosis. Blood. 2012 May 10;119(19):4391-4. Epub 2012 Feb 13. [http://www.bloodjournal.org/content/119/19/4391.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557400/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22331188 PubMed]
+# '''Retrospective:''' Jaccard A, Comenzo RL, Hari P, Hawkins PN, Roussel M, Morel P, Macro M, Pellegrin JL, Lazaro E, Mohty D, Mercie P, Decaux O, Gillmore J, Lavergne D, Bridoux F, Wechalekar AD, Venner CP. Efficacy of bortezomib, cyclophosphamide and dexamethasone in treatment-naïve patients with high-risk cardiac AL amyloidosis (Mayo Clinic stage III). Haematologica. 2014 Sep;99(9):1479-85. Epub 2014 May 23. [http://www.haematologica.org/content/99/9/1479.long link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4562537/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/24859879 PubMed]
+# '''Retrospective:''' Palladini G, Sachchithanantham S, Milani P, Gillmore J, Foli A, Lachmann H, Basset M, Hawkins P, Merlini G, Wechalekar AD. A European collaborative study of cyclophosphamide, bortezomib, and dexamethasone in upfront treatment of systemic AL amyloidosis. Blood. 2015 Jul 30;126(5):612-5. Epub 2015 May 18. [http://www.bloodjournal.org/content/126/5/612.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/25987656 PubMed]
+
+==VMD {{#subobject:ce3e96|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+VMD: '''<u>V</u>'''elcade (Bortezomib), '''<u>M</u>'''elphalan, '''<u>D</u>'''examethasone
+
+===Regimen {{#subobject:f500cb|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://ash.confex.com/ash/2009/webprogram/Paper24495.html Zonder et al. 2009]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22, '''given first'''
+**Patients with peripheral neuropathy at baseline received 1.0 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Melphalan (Alkeran)]] 9 mg/m<sup>2</sup> PO once per day on days 1 to 4, '''given third'''
+**Patients with serum creatinine greater than 2.5 mg/dL received 6 mg/m<sup>2</sup> PO once per day on days 1 to 4
+*[[Dexamethasone (Decadron)]] 40 mg IV or PO once per day on days 1, 8, 15, 22, '''given second'''
+**Patients older than 70 years of age, with peripheral edema or congestive heart failure (CHF) received 20 mg IV or PO once per day on days 1, 2, 8, 9, 15, 16, 22, 23
+
+'''4 to 6 week cycle for up to 20 cycles'''
+
+===References===
+# '''Abstract:''' Zonder JA, Sanchorawala V, Snyder RM, Matous J, Terebelo H, Janakiraman N, Mapara MY, Lalo S, Tageja N, Webb C, Monsma D, Sellers C, Abrams J, Gasparetto C. Melphalan and Dexamethasone Plus Bortezomib Induces Hematologic and Organ Responses in AL Amyloidosis with Tolerable Neurotoxicity. Blood (ASH Annual Meeting Abstracts), Nov 2009; 114: 746. [http://ash.confex.com/ash/2009/webprogram/Paper24495.html link to abstract]
+
+=Consolidation after first-line therapy=
+==Bortezomib & Dexamethasone {{#subobject:ccdebb|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+BD: '''<u>B</u>'''ortezomib & '''<u>D</u>'''examethasone
+===Regimen {{#subobject:c63d93|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html Landau et al. 2012]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[#Melphalan.2C_then_auto_HSCT|High-dose melphalan with autologous hematopoietic stem cell transplant]], with less than CR
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] as follows:
+**Cycles 1 & 2: 1.3 mg/m<sup>2</sup> IV once per day on days 1, 4, 8, 11
+**Cycles 2 to 6: 1.3 mg/m<sup>2</sup> IV once per day on days 1, 8, 15, 22
+*[[Dexamethasone (Decadron)]] as follows:
+**Cycles 1 & 2: 20 mg PO once per day on days 1, 2, 4, 5, 8, 9, 11, 12
+**Cycles 2 to 6: 20 mg PO once per day on days 1, 2, 8, 9, 15, 16, 22, 23
+
+'''21-day cycle for 2 cycles, then 35-day cycle for 4 cycles (6 total)'''
+===References===
+# Landau H, Hassoun H, Rosenzweig MA, Maurer M, Liu J, Flombaum C, Bello C, Hoover E, Riedel E, Giralt S, Comenzo RL. Bortezomib and dexamethasone consolidation following risk-adapted melphalan and stem cell transplantation for patients with newly diagnosed light-chain amyloidosis. Leukemia. 2013 Apr;27(4):823-8. Epub 2012 Sep 27. [https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23014566 PubMed]
+
+==Bortezomib & Melphalan, then auto HSCT {{#subobject:5426f4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, HDM 140 mg/m<sup>2</sup> {{#subobject:c0ec02|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bbmt.org/article/S1083-8791(15)00230-X/fulltext Sanchorawala et al. 2015]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#c4c4c4" |HRR: 77%
+|-
+|}
+====Preceding treatment====
+*[[#Bortezomib_.26_Dexamethasone|Bortezomib & Dexamethasone]] x 2 
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1 mg/m<sup>2</sup> IV once per day on days -6, -3, +1, +4
+*[[Melphalan (Alkeran)]] 70 mg/m<sup>2</sup> IV once per day on days -2 & -1
+
+'''Stem cells re-infused on day 0'''
+
+===Variant #2, HDM 200 mg/m<sup>2</sup> {{#subobject:0bfd33|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bbmt.org/article/S1083-8791(15)00230-X/fulltext Sanchorawala et al. 2015]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#c4c4c4" |HRR: 77%
+|-
+|}
+====Preceding treatment====
+*[[#Bortezomib_.26_Dexamethasone|Bortezomib & Dexamethasone]] x 2 
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1 mg/m<sup>2</sup> IV once per day on days -6, -3, +1, +4
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once per day on days -2 & -1
+
+'''Stem cells re-infused on day 0'''
+===References===
+# Sanchorawala V, Brauneis D, Shelton AC, Lo S, Sun F, Sloan JM, Quillen K, Seldin DC. Induction therapy with bortezomib followed by bortezomib-high dose melphalan and stem cell transplantation for light chain amyloidosis: Results of a prospective clinical trial. Biol Blood Marrow Transplant. 2015 Aug;21(8):1445-51. Epub 2015 Apr 6. [http://www.bbmt.org/article/S1083-8791(15)00230-X/fulltext link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25858810 PubMed]
+
+==Melphalan, then auto HSCT {{#subobject:34c98c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1, 100 mg/m<sup>2</sup> {{#subobject:01c7af|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html Landau et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+|-
+|}
+''Note: this dose was intended for patients aged 61 to 70 with cardiac and/or renal compromise.''
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 100 mg/m<sup>2</sup> IV once (day not specified)
+
+'''Stem cell re-infused on day not specified'''
+====Subsequent treatment====
+*Less than CR: [[#Bortezomib_.26_Dexamethasone_2|BD consolidation]] x 6
+===Variant #2, 140 mg/m<sup>2</sup> {{#subobject:a7075d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annals.org/article.aspx?articleid=717091 Skinner et al. 2004]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa070484 Jaccard et al. 2007]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#M-DEX|M-DEX]]
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|[https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html Landau et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ Huang et al. 2014]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Note: in Jaccard et al. 2007, this dose was intended for patients older than 65, with an EF below 30%, with a calculated CrCl of less than 30 ml per minute, or with severe liver disease. In Landau et al. 2012, this dose was intended for patients up to age 60 with cardiac and/or renal compromise, or for patients aged 61 to 70 without cardiac or renal compromise. In Huang et al. 2014, this dose was intended for patients up to age 65 with cardiac or renal compromise.''
+====Preceding treatment====
+*Huang et al. 2014: [[#Bortezomib_.26_Dexamethasone|BD]] x 2 versus [[#No_induction|no induction]]
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 140 mg/m<sup>2</sup> IV once on day 0
+
+'''Stem cell re-infused on day 2'''
+====Subsequent treatment====
+*Landau et al. 2012, less than CR: [[#Bortezomib_.26_Dexamethasone_2|BD consolidation]] x 6
+===Variant #3, 200 mg/m<sup>2</sup> {{#subobject:418872|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 25%"|Study
+!style="width: 25%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 25%"|Comparator
+!style="width: 25%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://annals.org/article.aspx?articleid=717091 Skinner et al. 2004]
+| style="background-color:#91cf61" |Phase II
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.nejm.org/doi/full/10.1056/NEJMoa070484 Jaccard et al. 2007]
+| style="background-color:#1a9851" |Phase III (E)
+|[[#M-DEX|M-DEX]]
+| style="background-color:#fc8d59" |Seems to have inferior OS
+|-
+|[https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html Landau et al. 2012]
+| style="background-color:#ffffbe" |Phase II, <20 pts
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ Huang et al. 2014]
+| style="background-color:#91cf61" |Non-randomized portion of RCT
+| style="background-color:#d3d3d3" |
+| style="background-color:#d3d3d3" |
+|-
+|}
+''Note: in Landau et al. 2012, this dose was intended for patients up to age 60 without cardiac or renal compromise. In Huang et al. 2014, this dose was intended for patients up to age 65 without cardiac or renal compromise.''
+====Preceding treatment====
+*Huang et al. 2014: [[#Bortezomib_.26_Dexamethasone|BD]] x 2 versus [[#No_induction|no induction]]
+====Chemotherapy====
+*[[Melphalan (Alkeran)]] 200 mg/m<sup>2</sup> IV once on day 0
+
+'''Stem cell re-infused on day 2'''
+====Subsequent treatment====
+*Landau et al. 2012, less than CR: [[#Bortezomib_.26_Dexamethasone_2|BD consolidation]] x 6
+===References===
+# Skinner M, Sanchorawala V, Seldin DC, Dember LM, Falk RH, Berk JL, Anderson JJ, O'Hara C, Finn KT, Libbey CA, Wiesman J, Quillen K, Swan N, Wright DG. High-dose melphalan and autologous stem-cell transplantation in patients with AL amyloidosis: an 8-year study. Ann Intern Med. 2004 Jan 20;140(2):85-93. [http://annals.org/article.aspx?articleid=717091 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/14734330 PubMed]
+# Jaccard A, Moreau P, Leblond V, Leleu X, Benboubker L, Hermine O, Recher C, Asli B, Lioure B, Royer B, Jardin F, Bridoux F, Grosbois B, Jaubert J, Piette JC, Ronco P, Quet F, Cogne M, Fermand JP; Myélome Autogreffe (MAG) and Intergroupe Francophone du Myélome (IFM) Intergroup. High-dose melphalan versus melphalan plus dexamethasone for AL amyloidosis. N Engl J Med. 2007 Sep 13;357(11):1083-93. [https://www.nejm.org/doi/full/10.1056/NEJMoa070484 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17855669 PubMed]
+# Landau H, Hassoun H, Rosenzweig MA, Maurer M, Liu J, Flombaum C, Bello C, Hoover E, Riedel E, Giralt S, Comenzo RL. Bortezomib and dexamethasone consolidation following risk-adapted melphalan and stem cell transplantation for patients with newly diagnosed light-chain amyloidosis. Leukemia. 2013 Apr;27(4):823-8. Epub 2012 Sep 27. [https://www.nature.com/leu/journal/v27/n4/full/leu2012274a.html link to original article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/23014566 PubMed]
+# Huang X, Wang Q, Chen W, Zeng C, Chen Z, Gong D, Zhang H, Liu Z. Induction therapy with bortezomib and dexamethasone followed by autologous stem cell transplantation versus autologous stem cell transplantation alone in the treatment of renal AL amyloidosis: a randomized controlled trial. BMC Med. 2014 Jan 6;12:2. [http://bmcmedicine.biomedcentral.com/articles/10.1186/1741-7015-12-2 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895846/ link to PMC article] '''contains protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/24386911 PubMed]
+
+=Maintenance after first-line therapy=
+==Rd {{#subobject:adfbd2|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Rd: '''<u>R</u>'''evlimid (Lenalidomide) & low-dose '''<u>d</u>'''examethasone
+<br>RevDex: '''<u>Rev</u>'''limid (Lenalidomide) & '''<u>Dex</u>'''amethasone
+<br>Ld: '''<u>L</u>'''enalidomide & low-dose '''<u>d</u>'''examethasone
+<br>LenDex: '''<u>Len</u>'''alidomide & '''<u>Dex</u>'''amethasone
+===Regimen {{#subobject:066689|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://onlinelibrary.wiley.com/doi/10.1111/bjh.13500/full Cibeira et al. 2015]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*[[#CRd_.28Cyclophosphamide.29|LDC]] x 12
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 10 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day or [[:Category:Low_molecular_weight_heparins|Low molecular weight heparin]]
+
+'''28-day cycle for 3 years'''
+
+===References===
+# Cibeira MT, Oriol A, Lahuerta JJ, Mateos MV, de la Rubia J, Hernández MT, Granell M, Fernández de Larrea C, San Miguel JF, Bladé J; PETHEMA cooperative study group. A phase II trial of lenalidomide, dexamethasone and cyclophosphamide for newly diagnosed patients with systemic immunoglobulin light chain amyloidosis. Br J Haematol. 2015 Sep;170(6):804-13. Epub 2015 May 14. [https://onlinelibrary.wiley.com/doi/10.1111/bjh.13500/full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/25974382 PubMed]
+
+=Relapsed or refractory=
+
+==Bortezomib monotherapy {{#subobject:2518e6|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Variant #1, twice per week {{#subobject:b37e74|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/118/4/865.long Reece et al. 2011 (CAN2007)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.3 mg/m<sup>2</sup> (route not specified) once per day on days 1, 4, 8, 11
+
+'''21-day cycle for up to 8 cycles, with extended treatment allowed for patients with clear clinical benefit'''
+
+===Variant #2, weekly schedule {{#subobject:5be0b9|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/118/4/865.long Reece et al. 2011 (CAN2007)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Bortezomib (Velcade)]] 1.6 mg/m<sup>2</sup> (route not specified) once per day on days 1, 8, 15, 22
+
+'''35-day cycle for up to 8 cycles, with extended treatment allowed for patients with clear clinical benefit'''
+
+===References===
+<!--
+# Reece DE, Sanchorawala V, Hegenbart U, Merlini G, Palladini G, Fermand JP, Vescio RA, Liu X, Elsayed YA, Cakana A, Comenzo RL; VELCADE CAN2007 Study Group. Weekly and twice-weekly bortezomib in patients with systemic AL amyloidosis: results of a phase 1 dose-escalation study. Blood. 2009 Aug 20;114(8):1489-97. Epub 2009 Jun 4. [http://www.bloodjournal.org/content/114/8/1489.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/19498019 PubMed] content property of [http://hemonc.org HemOnc.org]
+# '''Retrospective:''' Kastritis E, Wechalekar AD, Dimopoulos MA, Merlini G, Hawkins PN, Perfetti V, Gillmore JD, Palladini G. Bortezomib with or without dexamethasone in primary systemic (light chain) amyloidosis. J Clin Oncol. 2010 Feb 20;28(6):1031-7. Epub 2010 Jan 19. [http://jco.ascopubs.org/content/28/6/1031.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/20085941 PubMed]
+-->
+# '''CAN2007:''' Reece DE, Hegenbart U, Sanchorawala V, Merlini G, Palladini G, Bladé J, Fermand JP, Hassoun H, Heffner L, Vescio RA, Liu K, Enny C, Esseltine DL, van de Velde H, Cakana A, Comenzo RL. Efficacy and safety of once-weekly and twice-weekly bortezomib in patients with relapsed systemic AL amyloidosis: results of a phase 1/2 study. Blood. 2011 Jul 28;118(4):865-73. Epub 2011 May 11. [http://www.bloodjournal.org/content/118/4/865.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21562045 PubMed]
+## '''Update:''' Reece DE, Hegenbart U, Sanchorawala V, Merlini G, Palladini G, Bladé J, Fermand JP, Hassoun H, Heffner L, Kukreti V, Vescio RA, Pei L, Enny C, Esseltine DL, van de Velde H, Cakana A, Comenzo RL. Long-term follow-up from a phase 1/2 study of single-agent bortezomib in relapsed systemic AL amyloidosis. Blood. 2014 Oct 16;124(16):2498-506. Epub 2014 Sep 8. [http://www.bloodjournal.org/content/124/16/2498 link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4199951/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/25202139 PubMed]
+
+==CRd (Cyclophosphamide) {{#subobject:449fc5|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CRd: '''<u>C</u>'''yclophosphamide, '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone
+<br>CLD: '''<u>C</u>'''yclophosphamide, '''<u>L</u>'''enalidomide '''<u>D</u>'''examethasone
+<br>RdC: '''<u>R</u>'''evlimid (Lenalidomide), low-dose '''<u>d</u>'''examethasone, '''<u>C</u>'''yclophosphamide
+===Variant #1 {{#subobject:97779b|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418771/ Kumar et al. 2012]
+| style="background-color:#91cf61" |Phase II
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659931/ Palladini et al. 2012 (AC-003-IT)]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per day on days 1, 8, 15
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1, 8, 15, 22
+**In AC-003-IT only, patients who retained over 3% body weight despite "optimal diuretic use" received 20 mg PO once per week
+
+====Supportive medications====
+(varies depending on reference)
+*[[Aspirin]] 81, 100, or 325 mg PO once per day for thromboprophylaxis
+*In Kumar et al. 2012, patients with previous thrombotic histories or who were considered to be higher thrombotic risks were recommended to receive low molecular weight heparin or [[Warfarin (Coumadin)]]
+*Kumar et al. 2012: "Routine antibiotic, antiviral, or antifungal prophylaxis was not mandated and left to the discretion of the treating physician."
+
+'''28-day cycle for up to 9 cycles or 2 years, depending on reference'''
+
+===Variant #2 {{#subobject:ab62e|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[http://www.bloodjournal.org/content/119/23/5384.long Kastritis et al. 2012]
+| style="background-color:#91cf61" |Phase I/II
+|ORR: 55% (hematologic response)<br> 22% (organ response)
+|-
+|}
+''This was the highest dose level tested, which had no dose-limiting toxicities.''
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4
+*[[Cyclophosphamide (Cytoxan)]] 100 mg PO once per day on days 1 to 10
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day for thromboprophylaxis
+*Proton pump inhibitor
+*[[Trimethoprim/Sulfamethoxazole (Bactrim DS)|Trimethoprim-sulfamethoxazole (Bactrim)]], dose and schedule not listed
+*[[Valacyclovir (Valtrex)]], dose and schedule not listed
+
+'''28-day cycle for 12 cycles'''
+
+===References===
+# Kumar SK, Hayman SR, Buadi FK, Roy V, Lacy MQ, Gertz MA, Allred J, Laumann KM, Bergsagel LP, Dingli D, Mikhael JR, Reeder CB, Stewart AK, Zeldenrust SR, Greipp PR, Lust JA, Fonseca R, Russell SJ, Rajkumar SV, Dispenzieri A. Lenalidomide, cyclophosphamide, and dexamethasone (CRd) for light-chain amyloidosis: long-term results from a phase 2 trial. Blood. 2012 May 24;119(21):4860-7. Epub 2012 Apr 13. [http://www.bloodjournal.org/content/119/21/4860.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418771/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22504925 PubMed]
+# Kastritis E, Terpos E, Roussou M, Gavriatopoulou M, Pamboukas C, Boletis I, Marinaki S, Apostolou T, Nikitas N, Gkortzolidis G, Michalis E, Delimpasi S, Dimopoulos MA. A phase 1/2 study of lenalidomide with low-dose oral cyclophosphamide and low-dose dexamethasone (RdC) in AL amyloidosis. Blood. 2012 Jun 7;119(23):5384-90. Epub 2012 Apr 18. [http://www.bloodjournal.org/content/119/23/5384.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/22517904 PubMed]
+# '''AC-003-IT:''' Palladini G, Russo P, Milani P, Foli A, Lavatelli F, Nuvolone M, Perlini S, Merlini G. A phase II trial of cyclophosphamide, lenalidomide and dexamethasone in previously treated patients with AL amyloidosis. Haematologica. 2013 Mar;98(3):433-6. Epub 2012 Sep 14. [http://www.haematologica.org/content/98/3/433.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3659931/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22983583 PubMed]
+
+==CTD {{#subobject:8ae28f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+CTD: '''<u>C</u>'''yclophosphamide, '''<u>T</u>'''halidomide, '''<u>D</u>'''examethasone
+
+===Variant #1 {{#subobject:68db56|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/457.long Wechalekar et al. 2007]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per week
+*[[Thalidomide (Thalomid)]] 100 mg PO once per day on days 1 to 21, then increased to 200 mg PO once per day on days 1 to 21 if well tolerated after 4 weeks
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4, 9 to 12
+
+====Supportive medications====
+*"Antimicrobial and thromboprophylaxis were given according to local protocol"; no routine thromboprophylaxis
+
+'''21-day cycles, "given until a stable clonal response was achieved on consecutive samples at least 4 weeks apart" or until confirmed lack of response'''
+
+===Variant #2, risk attenuated regimen {{#subobject:79cb8f|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/457.long Wechalekar et al. 2007]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+
+''For elderly patients (age greater than 70 years), NYHA heart failure greater than class II, and those with significant fluid overload.''
+====Chemotherapy====
+*[[Cyclophosphamide (Cytoxan)]] 500 mg PO once per day on days 1, 8, 15
+*[[Thalidomide (Thalomid)]] 50 mg PO once per day on days 1 to 28, increased by 50 mg every 4 weeks as tolerated to a maximum dose of 200 mg PO once per day
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1 to 4, 15 to 18
+
+====Supportive medications====
+*"Antimicrobial and thromboprophylaxis were given according to local protocol"; no routine thromboprophylaxis
+
+'''28-day cycles, "given until a stable clonal response was achieved on consecutive samples at least 4 weeks apart" or until confirmed lack of response'''
+
+===References===
+# Wechalekar AD, Goodman HJ, Lachmann HJ, Offer M, Hawkins PN, Gillmore JD. Safety and efficacy of risk-adapted cyclophosphamide, thalidomide, and dexamethasone in systemic AL amyloidosis. Blood. 2007 Jan 15;109(2):457-64. Epub 2006 Sep 21. [http://www.bloodjournal.org/content/109/2/457.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16990593 PubMed]
+
+==Daratumumab monotherapy {{#subobject:866e6e|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:21e2c5|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/130/7/900.long Kaufman et al. 2017]
+| style="background-color:#ffffbe" |Retrospective
+|-
+|}
+
+====Chemotherapy====
+*[[Daratumumab (Darzalex)]] 16 mg/kg IV once per week for 8 weeks, then every other week for 8 doses, then every 4 weeks
+
+====Supportive medications====
+*[[Acetaminophen (Tylenol)]] 650 mg PO prior to daratumumab
+*[[Diphenhydramine (Benadryl)]] 50 mg PO prior to daratumumab
+*[[Dexamethasone (Decadron)]] 20 mg IV or PO prior to daratumumab
+
+'''Continued indefinitely'''
+
+===References===
+# '''Retrospective:''' Kaufman GP, Schrier SL, Lafayette RA, Arai S, Witteles RM, Liedtke M. Daratumumab yields rapid and deep hematologic responses in patients with heavily pretreated AL amyloidosis. Blood. 2017 Aug 17;130(7):900-902. [http://www.bloodjournal.org/content/130/7/900.long link to original article] [https://www.ncbi.nlm.nih.gov/pubmed/28615223 PubMed]
+
+==Ixazomib monotherapy {{#subobject:6fd012|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:26856d|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/130/5/597.long Sanchorawala et al. 2017]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+''This is the MTD dosing determined in this phase I/II trial.''
+====Chemotherapy====
+*[[Ixazomib (Ninlaro)]] 4 mg PO once per day on days 1, 8, 15
+
+'''28-day cycle for up to 12 cycles or longer if patient was "deriving clinical benefit"''' 
+====Subsequent treatment====
+*Patients with less than PR after four cycles: [[#Ixazomib_.26_Dexamethasone|Ixazomib & dexamethasone]]
+
+===References===
+# Sanchorawala V, Palladini G, Kukreti V, Zonder JA, Cohen AD, Seldin DC, Dispenzieri A, Jaccard A, Schönland SO, Berg D, Yang H, Gupta N, Hui AM, Comenzo RL, Merlini G. A phase 1/2 study of the oral proteasome inhibitor ixazomib in relapsed or refractory AL amyloidosis. Blood. 2017 Aug 3;130(5):597-605. Epub 2017 May 26. [http://www.bloodjournal.org/content/130/5/597.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28550039 PubMed]
+
+==Ixazomib & Dexamethasone {{#subobject:71db9c|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:22a5ec|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/130/5/597.long Sanchorawala et al. 2017]
+| style="background-color:#91cf61" |Phase I/II
+|-
+|}
+====Preceding treatment====
+*[[#Ixazomib_monotherapy|Ixazomib]] x 4, with less than PR
+====Chemotherapy====
+*[[Ixazomib (Ninlaro)]] 4 mg PO once per day on days 1, 8, 15
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4
+
+'''28-day cycles''' 
+
+===References===
+# Sanchorawala V, Palladini G, Kukreti V, Zonder JA, Cohen AD, Seldin DC, Dispenzieri A, Jaccard A, Schönland SO, Berg D, Yang H, Gupta N, Hui AM, Comenzo RL, Merlini G. A phase 1/2 study of the oral proteasome inhibitor ixazomib in relapsed or refractory AL amyloidosis. Blood. 2017 Aug 3;130(5):597-605. Epub 2017 May 26. [http://www.bloodjournal.org/content/130/5/597.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28550039 PubMed]
+
+==Pomalidomide & Dexamethasone {{#subobject:77727f|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+===Variant #1 {{#subobject:e32103|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/129/15/2120.long Palladini et al. 2017]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 4 mg PO once per day
+*[[Dexamethasone (Decadron)]] 20 mg PO once per week
+
+'''28-day cycles'''
+
+===Variant #2 {{#subobject:5b3fd1|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/128/8/1059.long Sanchorawala et al. 2016]
+| style="background-color:#ffffbe" |Phase I/II, <20 pts
+|-
+|}
+''Note: although the trial enrolled 27 patients, only 18 were treated at the MTD reproduced here:''
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 4 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg PO once per week
+
+'''28-day cycles'''
+
+===Variant #3 {{#subobject:ef8da|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3369677/ Dispenzieri et al. 2012]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Pomalidomide (Pomalyst)]] 2 mg PO once per day
+**See Dispenzieri et al. 2012 for dose escalations and reductions
+*[[Dexamethasone (Decadron)]] 40 mg PO once per week
+
+====Supportive medications====
+*[[Aspirin]] 325 mg PO once per day for thromboprophylaxis
+
+'''28-day cycles'''
+
+===References===
+# Dispenzieri A, Buadi F, Laumann K, LaPlant B, Hayman SR, Kumar SK, Dingli D, Zeldenrust SR, Mikhael JR, Hall R, Rajkumar SV, Reeder C, Fonseca R, Bergsagel PL, Stewart AK, Roy V, Witzig TE, Lust JA, Russell SJ, Gertz MA, Lacy MQ. Activity of pomalidomide in patients with immunoglobulin light-chain amyloidosis. Blood. 2012 Jun 7;119(23):5397-404. Epub 2012 Apr 4. [http://www.bloodjournal.org/content/119/23/5397.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3369677/ link to PMC article] [https://www.ncbi.nlm.nih.gov/pubmed/22493299 PubMed]
+# Sanchorawala V, Shelton AC, Lo S, Varga C, Sloan JM, Seldin DC. Pomalidomide and dexamethasone in the treatment of AL amyloidosis: results of a phase 1 and 2 trial. Blood. 2016 Aug 25;128(8):1059-62. Epub 2016 Jul 5. [http://www.bloodjournal.org/content/128/8/1059.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27381904 PubMed]
+# Palladini G, Milani P, Foli A, Basset M, Russo F, Perlini S, Merlini G. A phase 2 trial of pomalidomide and dexamethasone rescue treatment in patients with AL amyloidosis. Blood. 2017 Apr 13;129(15):2120-2123. Epub 2017 Jan 27. [http://www.bloodjournal.org/content/129/15/2120.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/28130212 PubMed]
+
+==Rd {{#subobject:50cc20|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+Rd: '''<u>R</u>'''evlimid (Lenalidomide) & low-dose '''<u>d</u>'''examethasone
+<br>RevDex: '''<u>Rev</u>'''limid (Lenalidomide) & '''<u>Dex</u>'''amethasone
+<br>Ld: '''<u>L</u>'''enalidomide & low-dose '''<u>d</u>'''examethasone
+<br>LenDex: '''<u>L</u>'''enalidomide & '''<u>D</u>'''examethasone
+===Variant #1, weekly dexamethasone {{#subobject:45b0fe|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://link.springer.com/article/10.1007%2Fs00277-011-1244-x Palladini et al. 2012]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 20 mg PO once per day on days 1, 8, 15, 22
+
+====Supportive medications====
+*[[Aspirin]] 100 mg PO once per day as thromboprophylaxis
+*[[Omeprazole (Prilosec)]] 20 mg PO once per day
+
+'''28-day cycles'''
+
+===Variant #2, pulsed dexamethasone {{#subobject:503e2a|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/492.full Sanchorwala et al. 2006]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*Treatment failure after [[#Lenalidomide_monotherapy|lenalidomide]] x 3 cycles
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 15 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 10 to 20 mg PO once per day on days 1 to 4, 9 to 12, 17 to 20, given every other cycle
+
+====Supportive medications====
+*[[Aspirin]] 81 or 325 mg (physician discretion) PO once per day as thromboprophylaxis
+*[[:Category:Proton_pump_inhibitors|Proton pump inhibitor]]
+
+'''28-day cycles'''
+
+===References===
+# Sanchorawala V, Wright DG, Rosenzweig M, Finn KT, Fennessey S, Zeldis JB, Skinner M, Seldin DC. Lenalidomide and dexamethasone in the treatment of AL amyloidosis: results of a phase 2 trial. Blood. 2007 Jan 15;109(2):492-6. Epub 2006 Sep 7. [http://www.bloodjournal.org/content/109/2/492.full link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/16960148 PubMed]
+# Palladini G, Russo P, Foli A, Milani P, Lavatelli F, Obici L, Nuvolone M, Brugnatelli S, Invernizzi R, Merlini G. Salvage therapy with lenalidomide and dexamethasone in patients with advanced AL amyloidosis refractory to melphalan, bortezomib, and thalidomide. Ann Hematol. 2012 Jan;91(1):89-92. [http://link.springer.com/article/10.1007%2Fs00277-011-1244-x link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/21533608 PubMed]
+
+==RD {{#subobject:34466d|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+RD: '''<u>R</u>'''evlimid (Lenalidomide) & high-dose '''<u>D</u>'''examethasone
+===Regimen {{#subobject:78c466|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 50%"|Study
+!style="width: 50%"|[[Levels_of_Evidence#Evidence|Evidence]]
+|-
+|[http://www.bloodjournal.org/content/109/2/465.long Dispenzieri et al. 2006]
+| style="background-color:#91cf61" |Phase II
+|-
+|}
+====Preceding treatment====
+*Treatment failure after [[#Lenalidomide_monotherapy|lenalidomide]] x 3 cycles
+====Chemotherapy====
+*[[Lenalidomide (Revlimid)]] 25 mg PO once per day on days 1 to 21
+*[[Dexamethasone (Decadron)]] 40 mg PO once per day on days 1 to 4, 15 to 18
+
+'''28-day cycle for 12 or more cycles''
+
+===References===
+# Dispenzieri A, Lacy MQ, Zeldenrust SR, Hayman SR, Kumar SK, Geyer SM, Lust JA, Allred JB, Witzig TE, Rajkumar SV, Greipp PR, Russell SJ, Kabat B, Gertz MA. The activity of lenalidomide with or without dexamethasone in patients with primary systemic amyloidosis. Blood. 2007 Jan 15;109(2):465-70. Epub 2006 Sep 28. [http://www.bloodjournal.org/content/109/2/465.long link to original article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/17008538 PubMed]
+
+[[Category:Light-chain (AL) amyloidosis regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Plasma cell dyscrasias]]

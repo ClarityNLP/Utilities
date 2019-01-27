@@ -1,0 +1,54 @@
+<!--'''Use of this site is subject to you reading and agreeing with the terms set forth in the [[HemOnc.org_-_A_Hematology_Oncology_Wiki:General_disclaimer|disclaimer]]. If this is your first time visiting, we suggest you read the [[tutorial]].'''-->
+
+Is there a regimen missing from this list?  Would you like to share a different dosage/schedule or an additional reference for a regimen?  Have you noticed an error?  Do you have an idea that will help the site grow to better meet your needs and the needs of many others?  You are [[How_to_contribute|invited to contribute to the site]].
+{| class="wikitable" style="text-align:center; width:50%;"
+!colspan="2" align="center" style="color:white; font-size:125%; background-color:#08519c"|'''Section editor'''
+|-
+|style="background-color:#F0F0F0|[[File:Bethbuchbinder.jpg|frameless|upright=0.3|center]]
+|<big>[[User:Bethbuchbinder|Elizabeth Buchbinder, MD]]<br>Boston, MA</big><br>[https://www.linkedin.com/in/beth-buchbinder-2a9b994/ LinkedIn]
+|-
+|}
+{| class="wikitable" style="float:right; margin-right: 5px;"
+|-
+|<div style="background-color: #fee0d1; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}" align="right"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Regimen |limit=10000|format=sum}} [[Tutorial#Regimens|regimens]] on this page</b></font></div>
+<div style="background-color: #deebf6; border: 1px solid #808000; padding: 5px; {{border-radius|16px}}"><font size="4"><b>{{#ask: [[-Has subobject::{{FULLPAGENAME}}]]  |?Variant |limit=10000|format=sum}} [[Tutorial#Variants|variants]] on this page</b></font></div>
+|}
+{{TOC limit|limit=3}}
+
+=Guidelines=
+==[https://www.nccn.org/ NCCN]==
+*[https://www.nccn.org/professionals/physician_gls/pdf/mcc.pdf NCCN Guidelines - Merkel Cell Carcinoma]
+
+=Metastatic or advanced disease, all lines of therapy=
+==Avelumab monotherapy {{#subobject:41b46c|Regimen=1}}==
+{{#subobject:bcebae|Variant=1}}
+{{:Avelumab (Bavencio) for merkel cell carcinoma}}
+
+==Pembrolizumab monotherapy {{#subobject:515cc4|Regimen=1}}==
+{| class="wikitable" style="float:right; margin-left: 5px;"
+|-
+|[[#top|back to top]]
+|}
+
+===Regimen {{#subobject:0b8a79|Variant=1}}===
+{| class="wikitable" style="width: 100%; text-align:center;" 
+!style="width: 33%"|Study
+!style="width: 33%"|[[Levels_of_Evidence#Evidence|Evidence]]
+!style="width: 33%"|[[Levels_of_Evidence#Efficacy|Efficacy]]
+|-
+|[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927341/ Nghiem et al. 2016]
+|style="background-color:#91cf61"|Phase II
+|56% (95% CI 35-76%)
+|-
+|}
+====Immunotherapy====
+*[[Pembrolizumab (Keytruda)]] 2 mg/kg IV once on day 1
+
+'''21-day cycles for up to 2 years or until CR, progression, or intolerable toxicity'''
+
+===References===
+# Nghiem PT, Bhatia S, Lipson EJ, Kudchadkar RR, Miller NJ, Annamalai L, Berry S, Chartash EK, Daud A, Fling SP, Friedlander PA, Kluger HM, Kohrt HE, Lundgren L, Margolin K, Mitchell A, Olencki T, Pardoll DM, Reddy SA, Shantha EM, Sharfman WH, Sharon E, Shemanski LR, Shinohara MM, Sunshine JC, Taube JM, Thompson JA, Townson SM, Yearley JH, Topalian SL, Cheever MA. PD-1 blockade with pembrolizumab in advanced Merkel-cell carcinoma. N Engl J Med. 2016 Jun 30;374(26):2542-52. Epub 2016 Apr 19. [https://www.nejm.org/doi/full/10.1056/NEJMoa1603702 link to original article] [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927341/ link to PMC article] '''contains verified protocol''' [https://www.ncbi.nlm.nih.gov/pubmed/27093365 PubMed]
+
+[[Category:Merkel cell carcinoma regimens]]
+[[Category:Disease-specific pages]]
+[[Category:Skin cancers]]
