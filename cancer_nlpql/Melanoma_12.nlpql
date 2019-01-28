@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Melanoma, CVD, IL-2, IFN alfa-2b - sequential biochemotherapy (Metastatic or unresectable disease)" version "1";
+phenotype "Regimen for Melanoma, CVD, IL-2, IFN alfa-2b - sequential biochemotherapy (Metastatic or unresectable disease)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Keflex", "Cephalexin"
+    "keflex", "cephalexin"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Cipro", "Ciprofloxacin"
+    "cipro", "ciprofloxacin"
 ];
 
 define Medications1:
@@ -40,7 +40,7 @@ define Medications1:
             
     
 termset MedicationTerms2:[
-    "Neupogen", "Filgrastim"
+    "neupogen", "filgrastim"
 ];
 
 define Medications2:
@@ -52,7 +52,7 @@ define Medications2:
             
     
 termset MedicationTerms3:[
-    "Zofran", "Ondansetron"
+    "zofran", "ondansetron"
 ];
 
 define Medications3:
@@ -64,7 +64,7 @@ define Medications3:
             
     
 termset MedicationTerms4:[
-    "Ativan", "Lorazepam"
+    "ativan", "lorazepam"
 ];
 
 define Medications4:
@@ -76,7 +76,7 @@ define Medications4:
             
     
 termset MedicationTerms5:[
-    "Tylenol", "Acetaminophen"
+    "tylenol", "acetaminophen"
 ];
 
 define Medications5:
@@ -88,7 +88,7 @@ define Medications5:
             
     
 termset MedicationTerms6:[
-    "Zantac", "Ranitidine"
+    "zantac", "ranitidine"
 ];
 
 define Medications6:
@@ -100,7 +100,7 @@ define Medications6:
             
     
 termset MedicationTerms7:[
-    "Atarax", "Hydroxyzine"
+    "atarax", "hydroxyzine"
 ];
 
 define Medications7:
@@ -112,7 +112,7 @@ define Medications7:
             
     
 termset MedicationTerms8:[
-    "Benadryl", "Diphenhydramine"
+    "benadryl", "diphenhydramine"
 ];
 
 define Medications8:
@@ -124,7 +124,7 @@ define Medications8:
             
     
 termset MedicationTerms9:[
-    "Demerol", "Meperidine"
+    "demerol", "meperidine"
 ];
 
 define Medications9:

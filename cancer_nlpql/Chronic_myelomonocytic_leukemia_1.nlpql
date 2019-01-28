@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Chronic_myelomonocytic_leukemia, Azacitidine & Lenalidomide (First-line therapy)" version "1";
+phenotype "Regimen for Chronic_myelomonocytic_leukemia, Azacitidine & Lenalidomide (First-line therapy)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Vidaza", "Azacitidine"
+    "vidaza", "azacitidine"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Revlimid", "Lenalidomide"
+    "revlimid", "lenalidomide"
 ];
 
 define Medications1:

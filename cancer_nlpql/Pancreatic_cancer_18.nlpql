@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Pancreatic_cancer, Gemcitabine & nab-Paclitaxel (Metastatic disease, first-line)" version "1";
+phenotype "Regimen for Pancreatic_cancer, Gemcitabine & nab-Paclitaxel (Metastatic disease, first-line)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Gemzar", "Gemcitabine"
+    "gemzar", "gemcitabine"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Abraxane", "Paclitaxel, nanoparticle albumin-bound"
+    "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
 define Medications1:

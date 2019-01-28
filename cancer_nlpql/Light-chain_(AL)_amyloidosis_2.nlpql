@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Light-chain_(AL)_amyloidosis, CTD (First-line therapy (including transplant ineligible))" version "1";
+phenotype "Regimen for Light-chain_(AL)_amyloidosis, CTD (First-line therapy (including transplant ineligible))" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Cytoxan", "Cyclophosphamide"
+    "cytoxan", "cyclophosphamide"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Thalomid", "Thalidomide"
+    "thalomid", "thalidomide"
 ];
 
 define Medications1:
@@ -40,7 +40,7 @@ define Medications1:
             
     
 termset MedicationTerms2:[
-    "Decadron", "Dexamethasone"
+    "decadron", "dexamethasone"
 ];
 
 define Medications2:

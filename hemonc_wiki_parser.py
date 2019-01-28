@@ -71,6 +71,10 @@ def pretty_text(thing):
     return txt.strip()
 
 
+def normalize_drug(d):
+    return ' '.join(d.split('_')).lower()
+
+
 def generate_medications(brands, drugs):
     define_str = ''
     keys = []
@@ -78,7 +82,7 @@ def generate_medications(brands, drugs):
     if len(brands) > 1:
         n = 0
         for b in brands:
-            terms = '"{}", "{}"'.format(b, drugs[n])
+            terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
             nlpql = '''
     
 termset MedicationTerms%d:[
@@ -98,14 +102,14 @@ define Medications%d:
 
         return define_str, keys
     else:
-        terms = '"{}", "{}"'.format(brands[0], drugs[0])
+        terms = '"{}", "{}"'.format(normalize_drug(brands[0]), normalize_drug(drugs[0]))
         nlpql = '''
 
 termset MedicationTerms:[
     %s
 ];
 
-define final ReceivedMonotherapy:
+define final ReceivedTherapy:
   Clarity.ProviderAssertion({
     termset:[MedicationTerms],
     documentset:[Docs]
@@ -136,9 +140,9 @@ def generate_nlpql(cancer, treatments):
         regimen = k
         regimen_type = obj['regimen_type']
         if regimen_type == '':
-            nlpql_name = '{}, {}'.format(cancer, regimen)
+            nlpql_name = 'Regimen for {}, {}'.format(cancer, regimen)
         else:
-            nlpql_name = '{}, {} ({})'.format(cancer, regimen, regimen_type)
+            nlpql_name = 'Regimen for {}, {} ({})'.format(cancer, regimen, regimen_type)
         define_str, keys = generate_medications(obj['brands'], obj['drugs'])
         if len(obj['brands']) > 1:
             result_str = generate_results(keys)

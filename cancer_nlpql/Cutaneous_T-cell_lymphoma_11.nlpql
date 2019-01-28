@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Cutaneous_T-cell_lymphoma, Romidepsin monotherapy (Relapsed or refractory)" version "1";
+phenotype "Regimen for Cutaneous_T-cell_lymphoma, Romidepsin monotherapy (Relapsed or refractory)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,10 +16,10 @@ documentset Docs:
 
 
 termset MedicationTerms:[
-    "Istodax", "Romidepsin"
+    "istodax", "romidepsin"
 ];
 
-define final ReceivedMonotherapy:
+define final ReceivedTherapy:
   Clarity.ProviderAssertion({
     termset:[MedicationTerms],
     documentset:[Docs]

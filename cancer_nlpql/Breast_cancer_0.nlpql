@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Breast_cancer, AC (Neoadjuvant chemotherapy)" version "1";
+phenotype "Regimen for Breast_cancer, AC (Neoadjuvant chemotherapy)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Adriamycin", "Doxorubicin"
+    "adriamycin", "doxorubicin"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Cytoxan", "Cyclophosphamide"
+    "cytoxan", "cyclophosphamide"
 ];
 
 define Medications1:

@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Rhabdomyosarcoma, VAC (All lines of therapy)" version "1";
+phenotype "Regimen for Rhabdomyosarcoma, VAC (All lines of therapy)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Oncovin", "Vincristine"
+    "oncovin", "vincristine"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Cosmegen", "Dactinomycin"
+    "cosmegen", "dactinomycin"
 ];
 
 define Medications1:
@@ -40,7 +40,7 @@ define Medications1:
             
     
 termset MedicationTerms2:[
-    "Cytoxan", "Cyclophosphamide"
+    "cytoxan", "cyclophosphamide"
 ];
 
 define Medications2:

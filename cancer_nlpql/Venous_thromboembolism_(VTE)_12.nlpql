@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Venous_thromboembolism_(VTE), Heparin monotherapy (VTE treatment, all lines of therapy)" version "1";
+phenotype "Regimen for Venous_thromboembolism_(VTE), Heparin monotherapy (VTE treatment, all lines of therapy)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,10 +16,10 @@ documentset Docs:
 
 
 termset MedicationTerms:[
-    "Heparin", "Heparin"
+    "heparin", "heparin"
 ];
 
-define final ReceivedMonotherapy:
+define final ReceivedTherapy:
   Clarity.ProviderAssertion({
     termset:[MedicationTerms],
     documentset:[Docs]

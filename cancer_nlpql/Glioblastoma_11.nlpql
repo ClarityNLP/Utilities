@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Glioblastoma, Hydroxyurea & Imatinib (Recurrent disease, non-curative therapy, randomized data)" version "1";
+phenotype "Regimen for Glioblastoma, Hydroxyurea & Imatinib (Recurrent disease, non-curative therapy, randomized data)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -16,7 +16,7 @@ documentset Docs:
 
     
 termset MedicationTerms0:[
-    "Hydrea", "Hydroxyurea"
+    "hydrea", "hydroxyurea"
 ];
 
 define Medications0:
@@ -28,7 +28,7 @@ define Medications0:
             
     
 termset MedicationTerms1:[
-    "Gleevec", "Imatinib"
+    "gleevec", "imatinib"
 ];
 
 define Medications1:
