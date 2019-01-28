@@ -1,0 +1,71 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Paclitaxel" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"platinol", "cisplatin"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"taxol", "paclitaxel"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Cisplatin and Paclitaxel", "Cisplatin / Paclitaxel", "Cisplatin & Paclitaxel", "Cisplatin/Paclitaxel"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedCisplatin__Paclitaxel:
+    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Head_and_neck_cancer, Endometrial_cancer, Cutaneous_basal_cell_carcinoma, Ovarian_cancer, Esophageal_cancer, Cervical_cancer, Non-small_cell_lung_cancer
+
+
+***/
+ 

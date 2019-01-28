@@ -1,0 +1,55 @@
+
+// Phenotype library name
+phenotype "Regimen for Lenalidomide monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"revlimid", "lenalidomide"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Lenalidomide monotherapy"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma, Light-chain_(AL)_amyloidosis, Transformed_lymphoma, Polycythemia_vera, Peripheral_T-cell_lymphoma, Marginal_zone_lymphoma, Multiple_myeloma_relapsedrefractory, Chronic_lymphocytic_leukemia_(CLLSLL), Myelofibrosis, Waldenström_macroglobulinemia, Cutaneous_T-cell_lymphoma, Hodgkin_lymphoma, Plasma_cell_leukemia, Mantle_cell_lymphoma, Adult_T-cell_leukemia-lymphoma, Myelodysplastic_syndrome
+
+
+***/
+ 

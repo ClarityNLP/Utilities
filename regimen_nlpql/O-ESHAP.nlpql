@@ -1,0 +1,107 @@
+
+// Phenotype library name
+phenotype "Regimen for O-ESHAP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"arzerra", "ofatumumab"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"vepesid", "etoposide"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"solumedrol", "methylprednisolone"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms3:[
+"cytosar", "cytarabine"
+];
+
+define Medications3:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms3],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms4:[
+"platinol", "cisplatin"
+];
+
+define Medications4:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms4],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "O-ESHAP"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedO-ESHAP:
+    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+***/
+ 

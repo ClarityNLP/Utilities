@@ -1,0 +1,55 @@
+
+// Phenotype library name
+phenotype "Regimen for Pembrolizumab monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"keytruda", "pembrolizumab"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Pembrolizumab monotherapy"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Bladder_cancer, Primary_mediastinal_B-cell_lymphoma, MSI-H_or_dMMR, Endometrial_cancer, Head_and_neck_cancer, Transformed_lymphoma, Gastric_cancer, Merkel_cell_carcinoma, Cholangiocarcinoma, Cervical_cancer, Hepatocellular_carcinoma, Hodgkin_lymphoma, Melanoma, Non-small_cell_lung_cancer, Anal_cancer
+
+
+***/
+ 

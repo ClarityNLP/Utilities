@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for Carboplatin, Olaparib, Paclitaxel" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"paraplatin", "carboplatin"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"lynparza", "olaparib"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"taxol", "paclitaxel"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Carboplatin, Olaparib, Paclitaxel"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedCarboplatin_Olaparib_Paclitaxel:
+    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Ovarian_cancer
+
+
+***/
+ 

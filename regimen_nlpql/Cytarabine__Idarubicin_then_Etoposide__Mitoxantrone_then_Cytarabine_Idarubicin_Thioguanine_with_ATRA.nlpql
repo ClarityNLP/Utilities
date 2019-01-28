@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"atra", "all-trans retinoic acid"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"cytosar", "cytarabine"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"idamycin", "idarubicin"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine / Idarubicin, then Etoposide / Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine and Idarubicin, then Etoposide and Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine/Idarubicin, then Etoposide/Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedCytarabine__Idarubicin_then_Etoposide__Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA:
+    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_promyelocytic_leukemia
+
+
+***/
+ 

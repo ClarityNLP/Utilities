@@ -1,0 +1,55 @@
+
+// Phenotype library name
+phenotype "Regimen for Temozolomide monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"temodar", "temozolomide"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Temozolomide monotherapy"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: CNS_lymphoma, Soft_tissue_sarcoma, Pancreatic_NET, Acute_myeloid_leukemia, Melanoma, Glioblastoma, Anaplastic_glioma, Neuroendocrine_tumors, Low-grade_glioma, Small_cell_lung_cancer, Myelodysplastic_syndrome
+
+
+***/
+ 

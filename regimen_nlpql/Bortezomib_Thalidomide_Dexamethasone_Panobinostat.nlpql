@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for Bortezomib, Thalidomide, Dexamethasone, Panobinostat" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"velcade", "bortezomib"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"thalomid", "thalidomide"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"decadron", "dexamethasone"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms3:[
+"farydak", "panobinostat"
+];
+
+define Medications3:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms3],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedBortezomib_Thalidomide_Dexamethasone_Panobinostat:
+    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
+***/
+ 

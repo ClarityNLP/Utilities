@@ -1,0 +1,55 @@
+
+// Phenotype library name
+phenotype "Regimen for Brentuximab vedotin monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"adcetris", "brentuximab vedotin"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma, Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma, Mediastinal_gray-zone_lymphoma, Hodgkin_lymphoma
+
+
+***/
+ 

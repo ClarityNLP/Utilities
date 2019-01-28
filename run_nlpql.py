@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 2
+cur_job = 204
 
 ip = '18.220.133.76'
 # ip = 'localhost'
@@ -48,6 +48,15 @@ def cleanup(job_id):
         print('delete the job ' + str(job_id))
 
 
+def has_data(job_id):
+    # http://18.220.133.76:5000/phenotype_subjects/1397/true
+    res = requests.get("http://{}:5000/phenotype_subjects/{}/true".format(ip, job_id))
+    if res.status_code == 200:
+        json_res = res.json()
+        return len(json_res)
+    return 0
+
+
 def job_runner(i, fname):
     print('Attempting job %d' % i)
     if get_active_workers() < max_workers:
@@ -71,6 +80,11 @@ if __name__ == "__main__":
                 job_runner(n, f)
             n += 1
     else:
-        startid = 2352
-        for n in range(startid, startid + 500):
-            cleanup(n)
+        startid = 0
+        for n in range(startid, startid + 2000):
+            patient_count = has_data(n)
+            if patient_count == 0:
+                cleanup(n)
+            else:
+                print("job {} has {} patients".format(n, patient_count))
+

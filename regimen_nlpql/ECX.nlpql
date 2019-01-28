@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for ECX" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"ellence", "epirubicin"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"platinol", "cisplatin"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"xeloda", "capecitabine"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "ECX"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedECX:
+    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Esophageal_cancer, Gastric_cancer
+
+
+***/
+ 

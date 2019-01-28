@@ -1,0 +1,55 @@
+
+// Phenotype library name
+phenotype "Regimen for Rituximab monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"rituxan", "rituximab"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Rituximab monotherapy"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma, Acquired_coagulopathy, CNS_lymphoma, HIV-associated_lymphoma, Follicular_lymphoma, Castleman_disease, Inherited_coagulopathy, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Immune_thrombocytopenia_(ITP), Waldenström_macroglobulinemia, Hodgkin_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Hairy_cell_leukemia, Cold_agglutinin_disease, Thrombotic_thrombocytopenic_purpura
+
+
+***/
+ 

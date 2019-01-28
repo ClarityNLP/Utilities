@@ -1,0 +1,131 @@
+
+// Phenotype library name
+phenotype "Regimen for eBEACOPP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"blenoxane", "bleomycin"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"vepesid", "etoposide"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"adriamycin", "doxorubicin"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms3:[
+"cytoxan", "cyclophosphamide"
+];
+
+define Medications3:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms3],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms4:[
+"oncovin", "vincristine"
+];
+
+define Medications4:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms4],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms5:[
+"matulane", "procarbazine"
+];
+
+define Medications5:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms5],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms6:[
+"sterapred", "prednisone"
+];
+
+define Medications6:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms6],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "eBEACOPP"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedeBEACOPP:
+    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+***/
+ 

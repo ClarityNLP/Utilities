@@ -1,0 +1,71 @@
+
+// Phenotype library name
+phenotype "Regimen for Chlorambucil & Obinutuzumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"gazyva", "obinutuzumab"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"leukeran", "chlorambucil"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Chlorambucil / Obinutuzumab", "GClb", "Chlorambucil & Obinutuzumab", "Chlorambucil/Obinutuzumab", "Chlorambucil and Obinutuzumab"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedChlorambucil__Obinutuzumab:
+    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
+***/
+ 

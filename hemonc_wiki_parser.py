@@ -5,6 +5,7 @@ from mwparserfromhell.nodes.wikilink import Wikilink
 from mwparserfromhell.nodes.comment import Comment
 from anytree import Node, RenderTree
 from pathlib import Path
+from urllib.parse import unquote_plus
 import json
 
 treatment_names = ['Chemoradiotherapy', 'Supportive medications', 'Chemotherapy', 'Immunosuppressive therapy',
@@ -27,10 +28,19 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 {}
 
+// Regimen names
+{}
+
 // Results
 {}
+
+// Comments
+/***
+{}
+***/
  
 '''
+keep_characters = ('-', '_')
 
 
 def title_text(parent):
@@ -39,7 +49,7 @@ def title_text(parent):
     title = ''
     for t1 in parent.title.nodes:
         title += (pretty_text(t1) + ' ')
-    return title.strip()
+    return title.replace('#top ', '').strip()
 
 
 def contents_text(parent):
@@ -48,7 +58,7 @@ def contents_text(parent):
     title = ''
     for t1 in parent.contents.nodes:
         title += (pretty_text(t1) + ' ')
-    return title.strip()
+    return title.replace('#top ', '').strip()
 
 
 def pretty_text(thing):
@@ -68,7 +78,8 @@ def pretty_text(thing):
         txt = (title_text(thing) + ": ")
     else:
         print('what is this thing {}'.format(type(thing)))
-    return txt.strip()
+
+    return txt.replace('#top ', '').strip()
 
 
 def normalize_drug(d):
@@ -79,83 +90,98 @@ def generate_medications(brands, drugs):
     define_str = ''
     keys = []
 
-    if len(brands) > 1:
-        n = 0
-        for b in brands:
-            terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
-            nlpql = '''
-    
+    n = 0
+    for b in brands:
+        terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
+        nlpql = '''
+
 termset MedicationTerms%d:[
-    %s
+%s
 ];
 
 define Medications%d:
-  Clarity.ProviderAssertion({
-    termset:[MedicationTerms%d],
-    documentset:[Docs]
-   }); 
-        
-            ''' % (n, terms, n, n)
-            keys.append('Medications{}'.format(n))
-            n += 1
-            define_str += nlpql
+Clarity.ProviderAssertion({
+termset:[MedicationTerms%d],
+documentset:[Docs]
+}); 
+    
+        ''' % (n, terms, n, n)
+        keys.append('Medications{}'.format(n))
+        n += 1
+        define_str += nlpql
 
-        return define_str, keys
-    else:
-        terms = '"{}", "{}"'.format(normalize_drug(brands[0]), normalize_drug(drugs[0]))
+    return define_str, keys
+
+
+def generate_regimens(regimens):
+
+    if len(regimens) > 0:
+        regimen_str = '"' + '", "'.join(regimens) + '"'
         nlpql = '''
 
-termset MedicationTerms:[
+termset RegimenTerms:[
     %s
 ];
 
-define final ReceivedTherapy:
+define RegimenMentioned:
   Clarity.ProviderAssertion({
-    termset:[MedicationTerms],
+    termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                ''' % terms
-        return nlpql, []
+                        ''' % regimen_str
+
+        return nlpql, 'RegimenMentioned'
+    return '', ''
 
 
-def generate_results(keys):
-    clause = " AND ".join(keys)
+def generate_results(regimen_name, med_keys, regimen_key):
+    med_clause = " AND ".join(med_keys)
     return '''
 
-define final ReceivedAllTherapies:
-    where %s;
-        ''' % clause
+define final Received%s:
+    where (%s) OR %s;
+        ''' % (regimen_name, med_clause, regimen_key)
 
 
-def generate_nlpql(cancer, treatments):
+def generate_nlpql(treatments):
     # 'drugs': cn.drugs,
     # 'brands': cn.brands,
     # 'regimen': cn.regimen,
     # 'regimen_type': cn.regimen_type,
-    # 'cancer_type': oncology_class
+    # 'cancers': oncology_class
     i = 0
     for k in treatments.keys():
         obj = treatments[k]
+        comment_str = ''
         regimen = k
-        regimen_type = obj['regimen_type']
-        if regimen_type == '':
-            nlpql_name = 'Regimen for {}, {}'.format(cancer, regimen)
-        else:
-            nlpql_name = 'Regimen for {}, {} ({})'.format(cancer, regimen, regimen_type)
+        nlpql_name = 'Regimen for {}'.format(regimen)
         nlpql_name = " ".join(nlpql_name.replace('"', "'").split("_"))
-        define_str, keys = generate_medications(obj['brands'], obj['drugs'])
+        med_define_str, med_keys = generate_medications(obj['brands'], obj['drugs'])
+        reg_define_str, reg_key = generate_regimens(obj['regimen_names'])
+        cancers = list(set(obj['cancers']))
+        cancer_str = ", ".join(cancers)
+        comment_str += ("""
+Known regimen for: {}
+
+""").format(cancer_str)
+        filename = "".join(c for c in unquote_plus(regimen.replace(" ", '_')).replace('/wiki/', '') if c.isalnum() or c in
+                           keep_characters).rstrip()
+
         if len(obj['brands']) > 1:
-            result_str = generate_results(keys)
+            result_str = generate_results(filename, med_keys, reg_key)
         else:
             result_str = ''
         print('nlpql for ', nlpql_name)
-        with open('./cancer_nlpql/{}_{}.nlpql'.format(cancer, i), 'w') as file:
-            file.write(nlpql_template.format(nlpql_name, define_str, result_str))
-            i += 1
+
+        if len(filename) > 0:
+            with open('./regimen_nlpql/{}.nlpql'.format(filename), 'w') as file:
+                file.write(nlpql_template.format(nlpql_name, med_define_str, reg_define_str, result_str, comment_str))
+                i += 1
 
 
 if __name__ == "__main__":
+    treatment_map = dict()
     path_list = Path('./cancer_wiki').glob('**/*.txt')
     for p in path_list:
         # because path is object not string
@@ -183,10 +209,10 @@ if __name__ == "__main__":
                     if cur_level == 0:
                         if is_treatment:
                             cur_node = Node(cur_title, drugs=list(), brands=list(), instructions=list(),
-                                            regimen='', variant='', regimen_type='')
+                                            regimen='', variant='', regimen_type='', regimen_names=list())
                         else:
                             cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), instructions=list(),
-                                            regimen='', variant='', regimen_type='')
+                                            regimen='', variant='', regimen_type='', regimen_names=list())
 
                     else:
                         parent_level = n.level - 1
@@ -195,25 +221,47 @@ if __name__ == "__main__":
 
                             if is_treatment:
                                 if parent_level - 1 >= 0:
-                                    grandparent = last_nodes[parent_level-1].name
+                                    grandparent_node = last_nodes[parent_level - 1]
+                                    grandparent = grandparent_node.name
                                 else:
                                     grandparent = ''
+                                    grandparent_node = None
                                 if parent_level - 2 >= 0:
-                                    g_grandparent = last_nodes[parent_level-2].name
+                                    g_grandparent_node = last_nodes[parent_level-2]
+                                    g_grandparent = g_grandparent_node.name
                                 else:
                                     g_grandparent = ''
+                                    g_grandparent_node = None
                                 if parent.name != 'Regimen':
                                     variant = parent.name
                                 else:
                                     variant = ''
+                                regimen_names = list()
+                                if len(grandparent) > 0:
+                                    regimen_names.append(grandparent)
+                                if grandparent_node and grandparent_node.data:
+                                    for d in grandparent_node.data:
+                                        if ':' in d:
+                                            reg_name = d.split(':')
+                                            regimen_names.append(reg_name[0])
+                                alternate_regimens = list()
+                                for r in regimen_names:
+                                    if '&' in r:
+                                        alternate_regimens.append(r.replace(' & ', ' and '))
+                                        alternate_regimens.append(r.replace(' & ', ' / '))
+                                        alternate_regimens.append(r.replace(' & ', '/'))
+                                regimen_names.extend(alternate_regimens)
+                                regimen_names = list(set(regimen_names))
                                 cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
-                                                regimen=grandparent, variant=variant, regimen_type=g_grandparent)
+                                                regimen=grandparent, variant=variant, regimen_type=g_grandparent,
+                                                regimen_names=regimen_names)
                             else:
                                 cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list(),
-                                                drugs=list(), brands=list(), regimen='', variant='', regimen_type='')
+                                                drugs=list(), brands=list(), regimen='', variant='', regimen_type='',
+                                                regimen_names=list())
                         else:
                             cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), regimen='', variant='',
-                                            regimen_type='')
+                                            regimen_type='', regimen_names=list())
 
                     cur_level = n.level
                     last_nodes[cur_level] = cur_node
@@ -254,7 +302,7 @@ if __name__ == "__main__":
                             else:
                                 cur_node.data.append('')
 
-        treatment_map = dict()
+        print("found regimens for ", oncology_class)
         for cn in treatment_nodes:
             # print('--------------------------')
             # print(RenderTree(cn))
@@ -262,19 +310,21 @@ if __name__ == "__main__":
                 if cn.regimen not in treatment_map:
                     if len(cn.drugs) == 0:
                         continue
-                    treatment_map[cn.regimen] = {
+                    doc = {
                         'drugs': cn.drugs,
                         'brands': cn.brands,
                         'regimen': cn.regimen,
                         'regimen_type': cn.regimen_type,
-                        'cancer_type': oncology_class
+                        'cancers': list(),
+                        'regimen_names': cn.regimen_names
+
                     }
+                    doc['cancers'].append(oncology_class)
+                    treatment_map[cn.regimen] = doc
+                else:
+                    treatment_map[cn.regimen]['cancers'].append(oncology_class)
             except Exception as e:
                 print(e)
 
-        if len(treatment_map.items()) > 0:
-            generate_nlpql(oncology_class, treatment_map)
-        else:
-            print('no treatment for ', oncology_class)
-        # json_string = json.dumps(treatment_map, indent=4)
-        # print(json_string)
+    if len(treatment_map.items()) > 0:
+        generate_nlpql(treatment_map)

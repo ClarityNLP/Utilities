@@ -1,0 +1,167 @@
+
+// Phenotype library name
+phenotype "Regimen for Hyper-CVAD & Dasatinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+
+termset MedicationTerms0:[
+"mesnex", "mesna"
+];
+
+define Medications0:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms0],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms1:[
+"cipro", "ciprofloxacin"
+];
+
+define Medications1:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms1],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms2:[
+"levaquin", "levofloxacin"
+];
+
+define Medications2:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms2],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms3:[
+"bactrim ds", "trimethoprim/sulfamethoxazole"
+];
+
+define Medications3:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms3],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms4:[
+"diflucan", "fluconazole"
+];
+
+define Medications4:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms4],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms5:[
+"zovirax", "acyclovir"
+];
+
+define Medications5:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms5],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms6:[
+"valtrex", "valacyclovir"
+];
+
+define Medications6:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms6],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms7:[
+"neupogen", "filgrastim"
+];
+
+define Medications7:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms7],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms8:[
+"zyloprim", "allopurinol"
+];
+
+define Medications8:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms8],
+documentset:[Docs]
+}); 
+    
+        
+
+termset MedicationTerms9:[
+"elitek", "rasburicase"
+];
+
+define Medications9:
+Clarity.ProviderAssertion({
+termset:[MedicationTerms9],
+documentset:[Docs]
+}); 
+    
+        
+
+// Regiment names
+
+
+termset RegimenTerms:[
+    "Hyper-CVAD and Dasatinib", "Hyper-CVAD/Dasatinib", "Hyper-CVAD / Dasatinib", "Hyper-CVAD & Dasatinib"
+];
+
+define RegimenMentioned:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+                        
+
+// Results
+
+
+define final ReceivedHyper-CVAD__Dasatinib:
+    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6 AND Medications7 AND Medications8 AND Medications9) OR RegimenMentioned;
+        
+
+// Comments
+/***
+
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
+***/
+ 
