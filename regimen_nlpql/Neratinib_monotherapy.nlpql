@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"nerlynx", "neratinib"
+termset TreatmentTerms0:[
+    "nerlynx", "neratinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Neratinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Neratinib monotherapy"
+    "Neratinibmonotherapy", "Neratinib_monotherapy", "Neratinib monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Neratinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Neratinibmonotherapy:
+    where Treatment_Neratinib OR Regimen_Neratinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: ERBB2_(HER2), ERBB3_(HER3)
+Known regimen for: ERBB3_(HER3), ERBB2_(HER2)
 
 
 ***/

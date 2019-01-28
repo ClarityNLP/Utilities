@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"afinitor", "everolimus"
+termset TreatmentTerms0:[
+    "afinitor", "everolimus"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Everolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Everolimus monotherapy"
+    "Everolimus_monotherapy", "Everolimusmonotherapy", "Everolimus monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Everolimusmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Everolimusmonotherapy:
+    where Treatment_Everolimus OR Regimen_Everolimusmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Renal_cell_carcinoma, Pancreatic_NET, Thymoma, Waldenström_macroglobulinemia, Hodgkin_lymphoma, Mantle_cell_lymphoma, Neuroendocrine_tumors
+Known regimen for: Waldenström_macroglobulinemia, Hodgkin_lymphoma, Pancreatic_NET, Diffuse_large_B-cell_lymphoma, Renal_cell_carcinoma, Thymoma, Neuroendocrine_tumors, Mantle_cell_lymphoma
 
 
 ***/

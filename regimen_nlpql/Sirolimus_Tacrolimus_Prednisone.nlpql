@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rapamune", "sirolimus"
+termset TreatmentTerms0:[
+    "rapamune", "sirolimus"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Sirolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"prograf", "tacrolimus"
+        
+termset TreatmentTerms1:[
+    "prograf", "tacrolimus"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Tacrolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms2:[
+    "sterapred", "prednisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Sirolimus, Tacrolimus, Prednisone"
+    "Sirolimus_Tacrolimus_Prednisone", "Sirolimus& Tacrolimus& Prednisone", "Sirolimus, Tacrolimus, Prednisone", "Sirolimus/Tacrolimus/Prednisone", "Sirolimus &  Tacrolimus &  Prednisone", "Sirolimus- Tacrolimus- Prednisone", "Sirolimus and  Tacrolimus and  Prednisone", "Sirolimus/ Tacrolimus/ Prednisone", "SirolimusTacrolimusPrednisone"
 ];
 
-define RegimenMentioned:
+define Regimen_SirolimusTacrolimusPrednisone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedSirolimus_Tacrolimus_Prednisone:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Sirolimus AND Treatment_Tacrolimus AND Treatment_Prednisone;
+    
+define final Received_SirolimusTacrolimusPrednisone:
+    where Regimen_SirolimusTacrolimusPrednisone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

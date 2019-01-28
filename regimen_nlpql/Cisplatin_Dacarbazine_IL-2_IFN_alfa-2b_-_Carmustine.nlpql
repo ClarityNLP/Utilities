@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"dtic", "dacarbazine"
+        
+termset TreatmentTerms1:[
+    "dtic", "dacarbazine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"bicnu", "carmustine"
+        
+termset TreatmentTerms2:[
+    "bicnu", "carmustine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Carmustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"proleukin", "aldesleukin"
+        
+termset TreatmentTerms3:[
+    "proleukin", "aldesleukin"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Aldesleukin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"intron-a", "interferon alfa-2b"
+        
+termset TreatmentTerms4:[
+    "intron-a", "interferon alfa-2b"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Interferonalfa2b:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine"
+    "CisplatinDacarbazineIL2IFNalfa2bCarmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b &/- Carmustine", "Cisplatin and  Dacarbazine and  IL-2 and  IFN alfa-2b +/- Carmustine", "Cisplatin& Dacarbazine& IL-2& IFN alfa-2b +/- Carmustine", "Cisplatin, Dacarbazine, IL/2, IFN alfa/2b +// Carmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine", "Cisplatin/Dacarbazine/IL-2/IFN alfa-2b +/- Carmustine", "Cisplatin &  Dacarbazine &  IL-2 &  IFN alfa-2b +/- Carmustine", "Cisplatin_Dacarbazine_IL-2_IFN_alfa-2b_-_Carmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b  / /- Carmustine", "Cisplatin- Dacarbazine- IL-2- IFN alfa-2b +/- Carmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b //- Carmustine", "Cisplatin/ Dacarbazine/ IL-2/ IFN alfa-2b +/- Carmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b  & /- Carmustine", "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b  and /- Carmustine", "Cisplatin, Dacarbazine, IL2, IFN alfa2b +/ Carmustine"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinDacarbazineIL2IFNalfa2bCarmustine:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Dacarbazine_IL-2_IFN_alfa-2b_-_Carmustine:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Dacarbazine AND Treatment_Carmustine AND Treatment_Aldesleukin AND Treatment_Interferonalfa2b;
+    
+define final Received_CisplatinDacarbazineIL2IFNalfa2bCarmustine:
+    where Regimen_CisplatinDacarbazineIL2IFNalfa2bCarmustine OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

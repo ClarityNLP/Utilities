@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"afinitor", "everolimus"
+termset TreatmentTerms0:[
+    "afinitor", "everolimus"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Everolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"velcade", "bortezomib"
+        
+termset TreatmentTerms1:[
+    "velcade", "bortezomib"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms2:[
+    "rituxan", "rituximab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "RVR"
 ];
 
-define RegimenMentioned:
+define Regimen_RVR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedRVR:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Everolimus AND Treatment_Bortezomib AND Treatment_Rituximab;
+    
+define final Received_RVR:
+    where Regimen_RVR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

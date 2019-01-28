@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"xeloda", "capecitabine"
+termset TreatmentTerms0:[
+    "xeloda", "capecitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Capecitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"camptosar", "irinotecan"
+        
+termset TreatmentTerms1:[
+    "camptosar", "irinotecan"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CAPIRI", "CapeIRI", "XELIRI"
+    "XELIRI", "CAPIRI", "CapeIRI"
 ];
 
-define RegimenMentioned:
+define Regimen_XELIRI:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCAPIRI:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Capecitabine AND Treatment_Irinotecan;
+    
+define final Received_CAPIRI:
+    where Regimen_XELIRI OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Colon_cancer
 
 
 ***/

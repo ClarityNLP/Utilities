@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"conmana", "icotinib"
+termset TreatmentTerms0:[
+    "conmana", "icotinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Icotinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Icotinib monotherapy"
+    "Icotinibmonotherapy", "Icotinib monotherapy", "Icotinib_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Icotinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Icotinibmonotherapy:
+    where Treatment_Icotinib OR Regimen_Icotinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Non-small_cell_lung_cancer, CNS_carcinoma
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated
 
 
 ***/

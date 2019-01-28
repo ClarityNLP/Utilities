@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"mtx", "methotrexate"
+termset TreatmentTerms0:[
+    "mtx", "methotrexate"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"prograf", "tacrolimus"
+        
+termset TreatmentTerms1:[
+    "prograf", "tacrolimus"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Tacrolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"zolinza", "vorinostat"
+        
+termset TreatmentTerms2:[
+    "zolinza", "vorinostat"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Vorinostat:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Vorinostat"
+    "Methotrexate, Tacrolimus, Vorinostat", "Methotrexate/ Tacrolimus/ Vorinostat", "Methotrexate- Tacrolimus- Vorinostat", "Methotrexate/Tacrolimus/Vorinostat", "MethotrexateTacrolimusVorinostat", "Methotrexate& Tacrolimus& Vorinostat", "Methotrexate and  Tacrolimus and  Vorinostat", "Methotrexate_Tacrolimus_Vorinostat", "Methotrexate &  Tacrolimus &  Vorinostat"
 ];
 
-define RegimenMentioned:
+define Regimen_MethotrexateTacrolimusVorinostat:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedMethotrexate_Tacrolimus_Vorinostat:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methotrexate AND Treatment_Tacrolimus AND Treatment_Vorinostat;
+    
+define final Received_MethotrexateTacrolimusVorinostat:
+    where Regimen_MethotrexateTacrolimusVorinostat OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

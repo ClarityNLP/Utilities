@@ -1,0 +1,94 @@
+
+// Phenotype library name
+phenotype "Regimen for mFOLFOX6 & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "leucovorin", "folinic acid"
+];
+
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "eloxatin", "oxaliplatin"
+];
+
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "external beam radiotherapy", "external beam radiotherapy"
+];
+
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "mFOLFOX6RT", "mFOLFOX6/RT", "mFOLFOX6 & RT", "mFOLFOX6_RT", "mFOLFOX6 and RT", "mFOLFOX6 / RT"
+];
+
+define Regimen_mFOLFOX6RT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Folinicacid AND Treatment_Fluorouracil AND Treatment_Oxaliplatin AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_mFOLFOX6RT:
+    where Regimen_mFOLFOX6RT OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Rectal_cancer
+
+
+***/
+ 

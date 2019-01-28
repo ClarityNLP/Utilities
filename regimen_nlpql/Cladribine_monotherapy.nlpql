@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"leustatin", "cladribine"
+termset TreatmentTerms0:[
+    "leustatin", "cladribine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cladribine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cladribine monotherapy"
+    "Cladribine_monotherapy", "Cladribinemonotherapy", "Cladribine monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Cladribinemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Cladribinemonotherapy:
+    where Treatment_Cladribine OR Regimen_Cladribinemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Langerhans_cell_histiocytosis, Mantle_cell_lymphoma, Systemic_mastocytosis, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia
+Known regimen for: Hairy_cell_leukemia, Chronic_lymphocytic_leukemia_(CLLSLL), Langerhans_cell_histiocytosis, Systemic_mastocytosis, Marginal_zone_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

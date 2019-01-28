@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"leucovorin", "folinic acid"
+termset TreatmentTerms0:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Nilotinib-based consolidation"
+    "Nilotinibbasedconsolidation", "Nilotinibbased consolidation", "Nilotinib-based_consolidation", "Nilotinib-based consolidation", "Nilotinib/based consolidation"
 ];
 
-define RegimenMentioned:
+define Regimen_Nilotinibbasedconsolidation:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Nilotinibbasedconsolidation:
+    where Treatment_Folinicacid OR Regimen_Nilotinibbasedconsolidation;
+            
 
 // Comments
 /***

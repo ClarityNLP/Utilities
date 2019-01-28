@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"lonsurf", "trifluridine and tipiracil"
+termset TreatmentTerms0:[
+    "lonsurf", "trifluridine and tipiracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Trifluridineandtipiracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Trifluridine and tipiracil monotherapy"
+    "Trifluridine / tipiracil monotherapy", "Trifluridine&tipiracil monotherapy", "Trifluridine & tipiracil monotherapy", "Trifluridine/tipiracil monotherapy", "Trifluridine and tipiracil monotherapy", "Trifluridine_and_tipiracil_monotherapy", "Trifluridineandtipiracilmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Trifluridinetipiracilmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Trifluridineandtipiracilmonotherapy:
+    where Treatment_Trifluridineandtipiracil OR Regimen_Trifluridinetipiracilmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Colon_cancer
 
 
 ***/

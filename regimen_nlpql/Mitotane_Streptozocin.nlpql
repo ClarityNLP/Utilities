@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Mitotane & Streptozocin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    ":category:serotonin 5-ht3 antagonists", ":category:serotonin 5-ht3 antagonists"
+];
+
+define Treatment_CategorySerotonin5HT3antagonists:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "cortef", "hydrocortisone"
+];
+
+define Treatment_Hydrocortisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Mitotane & Streptozocin", "Mitotane and Streptozocin", "MitotaneStreptozocin", "Mitotane / Streptozocin", "Mitotane/Streptozocin", "Mitotane_Streptozocin"
+];
+
+define Regimen_MitotaneStreptozocin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_CategorySerotonin5HT3antagonists AND Treatment_Hydrocortisone;
+    
+define final Received_MitotaneStreptozocin:
+    where Regimen_MitotaneStreptozocin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Adrenocortical_carcinoma
+
+
+***/
+ 

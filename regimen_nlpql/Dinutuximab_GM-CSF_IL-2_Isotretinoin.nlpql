@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"unituxin", "dinutuximab"
+termset TreatmentTerms0:[
+    "unituxin", "dinutuximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Dinutuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leukine", "sargramostim"
+        
+termset TreatmentTerms1:[
+    "leukine", "sargramostim"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Sargramostim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"proleukin", "aldesleukin"
+        
+termset TreatmentTerms2:[
+    "proleukin", "aldesleukin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Aldesleukin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"accutane", "isotretinoin"
+        
+termset TreatmentTerms3:[
+    "accutane", "isotretinoin"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Isotretinoin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Dinutuximab, GM-CSF, IL-2, Isotretinoin"
+    "Dinutuximab_GM-CSF_IL-2_Isotretinoin", "Dinutuximab/GM-CSF/IL-2/Isotretinoin", "Dinutuximab &  GM-CSF &  IL-2 &  Isotretinoin", "Dinutuximab, GM/CSF, IL/2, Isotretinoin", "Dinutuximab- GM-CSF- IL-2- Isotretinoin", "Dinutuximab& GM-CSF& IL-2& Isotretinoin", "DinutuximabGMCSFIL2Isotretinoin", "Dinutuximab, GMCSF, IL2, Isotretinoin", "Dinutuximab and  GM-CSF and  IL-2 and  Isotretinoin", "Dinutuximab, GM-CSF, IL-2, Isotretinoin", "Dinutuximab/ GM-CSF/ IL-2/ Isotretinoin"
 ];
 
-define RegimenMentioned:
+define Regimen_DinutuximabGMCSFIL2Isotretinoin:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedDinutuximab_GM-CSF_IL-2_Isotretinoin:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Dinutuximab AND Treatment_Sargramostim AND Treatment_Aldesleukin AND Treatment_Isotretinoin;
+    
+define final Received_DinutuximabGMCSFIL2Isotretinoin:
+    where Regimen_DinutuximabGMCSFIL2Isotretinoin OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

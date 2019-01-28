@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"navelbine", "vinorelbine"
+        
+termset TreatmentTerms1:[
+    "navelbine", "vinorelbine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vinorelbine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"erbitux", "cetuximab"
+        
+termset TreatmentTerms2:[
+    "erbitux", "cetuximab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cetuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Vinorelbine, Cetuximab"
+    "CisplatinVinorelbineCetuximab", "Cisplatin and  Vinorelbine and  Cetuximab", "Cisplatin, Vinorelbine, Cetuximab", "Cisplatin/Vinorelbine/Cetuximab", "Cisplatin/ Vinorelbine/ Cetuximab", "Cisplatin_Vinorelbine_Cetuximab", "Cisplatin &  Vinorelbine &  Cetuximab", "Cisplatin& Vinorelbine& Cetuximab", "Cisplatin- Vinorelbine- Cetuximab"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinVinorelbineCetuximab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Vinorelbine_Cetuximab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Vinorelbine AND Treatment_Cetuximab;
+    
+define final Received_CisplatinVinorelbineCetuximab:
+    where Regimen_CisplatinVinorelbineCetuximab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

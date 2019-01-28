@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Nimustine & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "acnu", "nimustine"
+];
+
+define Treatment_Nimustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "external beam radiotherapy", "external beam radiotherapy"
+];
+
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Nimustine / RT", "NimustineRT", "Nimustine & RT", "Nimustine and RT", "RT", "Nimustine_RT", "Nimustine/RT"
+];
+
+define Regimen_NimustineRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Nimustine AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_NimustineRT:
+    where Regimen_NimustineRT OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Glioblastoma
+
+
+***/
+ 

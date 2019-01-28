@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"kymriah", "tisagenlecleucel"
+termset TreatmentTerms0:[
+    "kymriah", "tisagenlecleucel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Tisagenlecleucel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Tisagenlecleucel monotherapy"
+    "Tisagenlecleucel_monotherapy", "Tisagenlecleucel monotherapy", "Tisagenlecleucelmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Tisagenlecleucelmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Tisagenlecleucelmonotherapy:
+    where Treatment_Tisagenlecleucel OR Regimen_Tisagenlecleucelmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

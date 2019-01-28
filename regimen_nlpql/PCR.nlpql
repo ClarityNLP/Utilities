@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"nipent", "pentostatin"
+termset TreatmentTerms0:[
+    "nipent", "pentostatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Pentostatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cytoxan", "cyclophosphamide"
+        
+termset TreatmentTerms1:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms2:[
+    "rituxan", "rituximab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "PCR"
 ];
 
-define RegimenMentioned:
+define Regimen_PCR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedPCR:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Pentostatin AND Treatment_Cyclophosphamide AND Treatment_Rituximab;
+    
+define final Received_PCR:
+    where Regimen_PCR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Follicular_lymphoma, Marginal_zone_lymphoma
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Follicular_lymphoma
 
 
 ***/

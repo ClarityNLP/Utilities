@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"neupogen", "filgrastim"
+termset TreatmentTerms0:[
+    "neupogen", "filgrastim"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "TC, then IE, VDoxoC, VEC"
+    "TC,&IE, VDoxoC, VEC", "TCthenIEVDoxoCVEC", "TC, then IE, VDoxoC, VEC", "TC, & IE, VDoxoC, VEC", "TC/ then IE/ VDoxoC/ VEC", "TC& then IE& VDoxoC& VEC", "TC, and IE, VDoxoC, VEC", "TC,, IE, VDoxoC, VEC", "TC &  then IE &  VDoxoC &  VEC", "TC, / IE, VDoxoC, VEC", "TC/then IE/VDoxoC/VEC", "TC- then IE- VDoxoC- VEC", "TC and  then IE and  VDoxoC and  VEC", "TC,/IE, VDoxoC, VEC", "TC_then_IE_VDoxoC_VEC"
 ];
 
-define RegimenMentioned:
+define Regimen_TCIEVDoxoCVEC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_TCthenIEVDoxoCVEC:
+    where Treatment_Filgrastim OR Regimen_TCIEVDoxoCVEC;
+            
 
 // Comments
 /***

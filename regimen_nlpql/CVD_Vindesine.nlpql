@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"eldisine", "vindesine"
+        
+termset TreatmentTerms1:[
+    "eldisine", "vindesine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vindesine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"dtic", "dacarbazine"
+        
+termset TreatmentTerms2:[
+    "dtic", "dacarbazine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CVD (Vindesine)", "CVD"
+    "CVD_Vindesine", "CVDVindesine", "CVD", "CVD (Vindesine)"
 ];
 
-define RegimenMentioned:
+define Regimen_CVDVindesine:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCVD_Vindesine:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Vindesine AND Treatment_Dacarbazine;
+    
+define final Received_CVDVindesine:
+    where Regimen_CVDVindesine OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

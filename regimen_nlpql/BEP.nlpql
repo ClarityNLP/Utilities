@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"blenoxane", "bleomycin"
+termset TreatmentTerms0:[
+    "blenoxane", "bleomycin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bleomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"vepesid", "etoposide"
+        
+termset TreatmentTerms1:[
+    "vepesid", "etoposide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"platinol", "cisplatin"
+        
+termset TreatmentTerms2:[
+    "platinol", "cisplatin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "BEP", "PEB"
+    "PEB", "BEP"
 ];
 
-define RegimenMentioned:
+define Regimen_PEB:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedBEP:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bleomycin AND Treatment_Etoposide AND Treatment_Cisplatin;
+    
+define final Received_BEP:
+    where Regimen_PEB OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Adenocarcinoma_of_unknown_primary
+Known regimen for: Adenocarcinoma_of_unknown_primary, Testicular_cancer
 
 
 ***/

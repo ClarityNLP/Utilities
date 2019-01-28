@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"fludara", "fludarabine"
+termset TreatmentTerms0:[
+    "fludara", "fludarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"alkeran", "melphalan"
+        
+termset TreatmentTerms1:[
+    "alkeran", "melphalan"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"campath", "alemtuzumab"
+        
+termset TreatmentTerms2:[
+    "campath", "alemtuzumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Alemtuzumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Melphalan, Alemtuzumab"
+    "Fludarabine &  Melphalan &  Alemtuzumab", "Fludarabine/Melphalan/Alemtuzumab", "Fludarabine_Melphalan_Alemtuzumab", "Fludarabine/ Melphalan/ Alemtuzumab", "FludarabineMelphalanAlemtuzumab", "Fludarabine- Melphalan- Alemtuzumab", "Fludarabine, Melphalan, Alemtuzumab", "Fludarabine& Melphalan& Alemtuzumab", "Fludarabine and  Melphalan and  Alemtuzumab"
 ];
 
-define RegimenMentioned:
+define Regimen_FludarabineMelphalanAlemtuzumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFludarabine_Melphalan_Alemtuzumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fludarabine AND Treatment_Melphalan AND Treatment_Alemtuzumab;
+    
+define final Received_FludarabineMelphalanAlemtuzumab:
+    where Regimen_FludarabineMelphalanAlemtuzumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

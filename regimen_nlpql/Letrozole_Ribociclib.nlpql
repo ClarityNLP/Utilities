@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Letrozole & Ribociclib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "zoladex", "goserelin"
+];
+
+define Treatment_Goserelin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "LetrozoleRibociclib", "Letrozole/Ribociclib", "Letrozole & Ribociclib", "Letrozole and Ribociclib", "Letrozole / Ribociclib", "Letrozole_Ribociclib"
+];
+
+define Regimen_LetrozoleRibociclib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_LetrozoleRibociclib:
+    where Treatment_Goserelin OR Regimen_LetrozoleRibociclib;
+            
+
+// Comments
+/***
+
+Known regimen for: Breast_cancer_ERPR-positive
+
+
+***/
+ 

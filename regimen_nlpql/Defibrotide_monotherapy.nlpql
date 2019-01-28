@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"defitelio", "defibrotide"
+termset TreatmentTerms0:[
+    "defitelio", "defibrotide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Defibrotide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Defibrotide monotherapy"
+    "Defibrotide_monotherapy", "Defibrotide monotherapy", "Defibrotidemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Defibrotidemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Defibrotidemonotherapy:
+    where Treatment_Defibrotide OR Regimen_Defibrotidemonotherapy;
+            
 
 // Comments
 /***

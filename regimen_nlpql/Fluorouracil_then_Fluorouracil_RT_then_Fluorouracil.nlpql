@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Fluorouracil, then Fluorouracil & RT, then Fluorouracil" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Fluorouracil, then Fluorouracil/RT, then Fluorouracil", "Fluorouracil, and Fluorouracil & RT, and Fluorouracil", "Fluorouracil& then Fluorouracil & RT& then Fluorouracil", "Fluorouracil, & Fluorouracil & RT, & Fluorouracil", "Fluorouracil, then Fluorouracil / RT, then Fluorouracil", "Fluorouracil, then Fluorouracil & RT, then Fluorouracil", "Fluorouracil &  then Fluorouracil & RT &  then Fluorouracil", "Fluorouracil, then Fluorouracil and RT, then Fluorouracil", "Fluorouracil/ then Fluorouracil & RT/ then Fluorouracil", "Fluorouracil,&Fluorouracil & RT,&Fluorouracil", "Fluorouracil- then Fluorouracil & RT- then Fluorouracil", "Fluorouracil/then Fluorouracil & RT/then Fluorouracil", "Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil", "Fluorouracil,, Fluorouracil & RT,, Fluorouracil", "Fluorouracil and  then Fluorouracil & RT and  then Fluorouracil", "Fluorouracil, / Fluorouracil & RT, / Fluorouracil", "FluorouracilthenFluorouracilRTthenFluorouracil", "RT", "Fluorouracil,/Fluorouracil & RT,/Fluorouracil"
+];
+
+define Regimen_FluorouracilthenFluorouracilRTthenFluorouracil:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_FluorouracilthenFluorouracilRTthenFluorouracil:
+    where Treatment_Fluorouracil OR Regimen_FluorouracilthenFluorouracilRTthenFluorouracil;
+            
+
+// Comments
+/***
+
+Known regimen for: Rectal_cancer
+
+
+***/
+ 

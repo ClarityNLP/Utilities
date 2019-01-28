@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Ixazomib & Dexamethasone" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "ninlaro", "ixazomib"
+];
+
+define Treatment_Ixazomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "decadron", "dexamethasone"
+];
+
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Ixazomib & Dexamethasone", "Ixazomib and Dexamethasone", "IxazomibDexamethasone", "Ixazomib / Dexamethasone", "Ixazomib_Dexamethasone", "Ixazomib/Dexamethasone"
+];
+
+define Regimen_IxazomibDexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ixazomib AND Treatment_Dexamethasone;
+    
+define final Received_IxazomibDexamethasone:
+    where Regimen_IxazomibDexamethasone OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
+
+
+***/
+ 

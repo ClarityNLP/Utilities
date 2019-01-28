@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms1:[
+    "oncovin", "vincristine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"blenoxane", "bleomycin"
+        
+termset TreatmentTerms2:[
+    "blenoxane", "bleomycin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Bleomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"paraplatin", "carboplatin"
+        
+termset TreatmentTerms3:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "C-BOP"
+    "CBOP", "C-BOP", "C/BOP"
 ];
 
-define RegimenMentioned:
+define Regimen_CBOP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedC-BOP:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Vincristine AND Treatment_Bleomycin AND Treatment_Carboplatin;
+    
+define final Received_CBOP:
+    where Regimen_CBOP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"darzalex", "daratumumab"
+termset TreatmentTerms0:[
+    "darzalex", "daratumumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Daratumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Daratumumab monotherapy"
+    "Daratumumab_monotherapy", "Daratumumab monotherapy", "Daratumumabmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Daratumumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Daratumumabmonotherapy:
+    where Treatment_Daratumumab OR Regimen_Daratumumabmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
 
 
 ***/

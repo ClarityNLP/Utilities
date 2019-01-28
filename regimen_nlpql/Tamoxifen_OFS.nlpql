@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Tamoxifen & OFS" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "zoladex", "goserelin"
+];
+
+define Treatment_Goserelin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Tamoxifen/OFS", "Tamoxifen and OFS", "TamoxifenOFS", "Tamoxifen_OFS", "Tamoxifen & OFS", "Tamoxifen / OFS"
+];
+
+define Regimen_TamoxifenOFS:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_TamoxifenOFS:
+    where Treatment_Goserelin OR Regimen_TamoxifenOFS;
+            
+
+// Comments
+/***
+
+Known regimen for: Breast_cancer_ERPR-positive
+
+
+***/
+ 

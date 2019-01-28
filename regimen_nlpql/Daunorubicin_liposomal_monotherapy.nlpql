@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"daunoxome", "daunorubicin liposomal"
+termset TreatmentTerms0:[
+    "daunoxome", "daunorubicin liposomal"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Daunorubicinliposomal:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin liposomal monotherapy"
+    "Daunorubicin_liposomal_monotherapy", "Daunorubicin liposomal monotherapy", "Daunorubicinliposomalmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Daunorubicinliposomalmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Daunorubicinliposomalmonotherapy:
+    where Treatment_Daunorubicinliposomal OR Regimen_Daunorubicinliposomalmonotherapy;
+            
 
 // Comments
 /***

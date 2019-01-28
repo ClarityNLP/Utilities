@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gilotrif", "afatinib"
+termset TreatmentTerms0:[
+    "gilotrif", "afatinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Afatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Afatinib monotherapy"
+    "Afatinib monotherapy", "Afatinib_monotherapy", "Afatinibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Afatinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Afatinibmonotherapy:
+    where Treatment_Afatinib OR Regimen_Afatinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Non-small_cell_lung_cancer, CNS_carcinoma, Head_and_neck_cancer
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated, Head_and_neck_cancer
 
 
 ***/

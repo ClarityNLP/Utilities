@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Belotecan & Cisplatin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "camptobell", "belotecan"
+];
+
+define Treatment_Belotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Belotecan/Cisplatin", "BelotecanCisplatin", "BP", "Belotecan / Cisplatin", "Belotecan and Cisplatin", "Belotecan & Cisplatin", "Belotecan_Cisplatin"
+];
+
+define Regimen_BelotecanCisplatin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Belotecan AND Treatment_Cisplatin;
+    
+define final Received_BelotecanCisplatin:
+    where Regimen_BelotecanCisplatin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Small_cell_lung_cancer
+
+
+***/
+ 

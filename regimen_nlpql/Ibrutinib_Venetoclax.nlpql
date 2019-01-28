@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Ibrutinib & Venetoclax" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "imbruvica", "ibrutinib"
+];
+
+define Treatment_Ibrutinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "venclexta", "venetoclax"
+];
+
+define Treatment_Venetoclax:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Ibrutinib/Venetoclax", "Ibrutinib / Venetoclax", "Ibrutinib and Venetoclax", "Ibrutinib & Venetoclax", "Ibrutinib_Venetoclax", "IbrutinibVenetoclax"
+];
+
+define Regimen_IbrutinibVenetoclax:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ibrutinib AND Treatment_Venetoclax;
+    
+define final Received_IbrutinibVenetoclax:
+    where Regimen_IbrutinibVenetoclax OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Mantle_cell_lymphoma
+
+
+***/
+ 

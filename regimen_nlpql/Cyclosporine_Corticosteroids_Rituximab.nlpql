@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-":category:cyclosporines", ":category:cyclosporines"
+termset TreatmentTerms0:[
+    ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_CategoryCyclosporines:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-":category:steroids", ":category:steroids"
+        
+termset TreatmentTerms1:[
+    ":category:steroids", ":category:steroids"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_CategorySteroids:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms2:[
+    "sterapred", "prednisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms3:[
+    "rituxan", "rituximab"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Corticosteroids, Rituximab"
+    "Cyclosporine_Corticosteroids_Rituximab", "CyclosporineCorticosteroidsRituximab", "Cyclosporine &  Corticosteroids &  Rituximab", "Cyclosporine& Corticosteroids& Rituximab", "Cyclosporine- Corticosteroids- Rituximab", "Cyclosporine/Corticosteroids/Rituximab", "Cyclosporine/ Corticosteroids/ Rituximab", "Cyclosporine, Corticosteroids, Rituximab", "Cyclosporine and  Corticosteroids and  Rituximab"
 ];
 
-define RegimenMentioned:
+define Regimen_CyclosporineCorticosteroidsRituximab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCyclosporine_Corticosteroids_Rituximab:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_CategoryCyclosporines AND Treatment_CategorySteroids AND Treatment_Prednisone AND Treatment_Rituximab;
+    
+define final Received_CyclosporineCorticosteroidsRituximab:
+    where Regimen_CyclosporineCorticosteroidsRituximab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

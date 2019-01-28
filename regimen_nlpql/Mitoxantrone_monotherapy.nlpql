@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"novantrone", "mitoxantrone"
+termset TreatmentTerms0:[
+    "novantrone", "mitoxantrone"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Mitoxantrone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Mitoxantrone monotherapy"
+    "Mitoxantronemonotherapy", "Mitoxantrone_monotherapy", "Mitoxantrone monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Mitoxantronemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Mitoxantronemonotherapy:
+    where Treatment_Mitoxantrone OR Regimen_Mitoxantronemonotherapy;
+            
 
 // Comments
 /***

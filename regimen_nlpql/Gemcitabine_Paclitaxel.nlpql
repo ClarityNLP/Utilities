@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Gemcitabine & Paclitaxel" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "taxol", "paclitaxel"
+];
+
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "GemcitabinePaclitaxel", "Gemcitabine/Paclitaxel", "Gemcitabine and Paclitaxel", "Gemcitabine & Paclitaxel", "Gemcitabine / Paclitaxel", "Gemcitabine_Paclitaxel"
+];
+
+define Regimen_GemcitabinePaclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Paclitaxel;
+    
+define final Received_GemcitabinePaclitaxel:
+    where Regimen_GemcitabinePaclitaxel OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Testicular_cancer, Bladder_cancer
+
+
+***/
+ 

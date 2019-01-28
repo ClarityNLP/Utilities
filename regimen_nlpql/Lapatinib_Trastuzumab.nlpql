@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Lapatinib & Trastuzumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "tykerb", "lapatinib"
+];
+
+define Treatment_Lapatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "herceptin", "trastuzumab"
+];
+
+define Treatment_Trastuzumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "LapatinibTrastuzumab", "Lapatinib_Trastuzumab", "Lapatinib and Trastuzumab", "Lapatinib & Trastuzumab", "Lapatinib / Trastuzumab", "Lapatinib/Trastuzumab"
+];
+
+define Regimen_LapatinibTrastuzumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Lapatinib AND Treatment_Trastuzumab;
+    
+define final Received_LapatinibTrastuzumab:
+    where Regimen_LapatinibTrastuzumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Breast_cancer_HER2-positive
+
+
+***/
+ 

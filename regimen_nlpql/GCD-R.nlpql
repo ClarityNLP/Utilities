@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gemzar", "gemcitabine"
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"paraplatin", "carboplatin"
+        
+termset TreatmentTerms1:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms2:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms3:[
+    "rituxan", "rituximab"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "GCD-R"
+    "GCD/R", "GCD-R", "GCDR"
 ];
 
-define RegimenMentioned:
+define Regimen_GCDR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedGCD-R:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Carboplatin AND Treatment_Dexamethasone AND Treatment_Rituximab;
+    
+define final Received_GCDR:
+    where Regimen_GCDR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

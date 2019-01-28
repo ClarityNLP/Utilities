@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gemzar", "gemcitabine"
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"elspar", "asparaginase"
+        
+termset TreatmentTerms1:[
+    "elspar", "asparaginase"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Asparaginase:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"eloxatin", "oxaliplatin"
+        
+termset TreatmentTerms2:[
+    "eloxatin", "oxaliplatin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "GELOX, then RT"
+    "GELOX& then RT", "GELOX- then RT", "GELOX, and RT", "GELOX,&RT", "GELOX, / RT", "GELOXthenRT", "GELOX, & RT", "GELOX/ then RT", "GELOX and  then RT", "GELOX, then RT", "GELOX &  then RT", "GELOX_then_RT", "GELOX,, RT", "GELOX,/RT", "GELOX/then RT"
 ];
 
-define RegimenMentioned:
+define Regimen_GELOXthenRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedGELOX_then_RT:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Asparaginase AND Treatment_Oxaliplatin;
+    
+define final Received_GELOXthenRT:
+    where Regimen_GELOXthenRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

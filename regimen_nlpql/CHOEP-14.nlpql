@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytoxan", "cyclophosphamide"
+termset TreatmentTerms0:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms1:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms2:[
+    "oncovin", "vincristine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"vepesid", "etoposide"
+        
+termset TreatmentTerms3:[
+    "vepesid", "etoposide"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms4:[
+    "sterapred", "prednisone"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CHOEP-14"
+    "CHOEP14", "CHOEP-14", "CHOEP/14"
 ];
 
-define RegimenMentioned:
+define Regimen_CHOEP14:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCHOEP-14:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Etoposide AND Treatment_Prednisone;
+    
+define final Received_CHOEP14:
+    where Regimen_CHOEP14 OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

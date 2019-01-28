@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Gemcitabine & Sunitinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "sutent", "sunitinib"
+];
+
+define Treatment_Sunitinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Gemcitabine / Sunitinib", "Gemcitabine & Sunitinib", "Gemcitabine/Sunitinib", "Gemcitabine_Sunitinib", "Gemcitabine and Sunitinib", "GemcitabineSunitinib"
+];
+
+define Regimen_GemcitabineSunitinib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Sunitinib;
+    
+define final Received_GemcitabineSunitinib:
+    where Regimen_GemcitabineSunitinib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Renal_cell_carcinoma
+
+
+***/
+ 

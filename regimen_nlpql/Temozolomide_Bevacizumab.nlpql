@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Temozolomide & Bevacizumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "temodar", "temozolomide"
+];
+
+define Treatment_Temozolomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "avastin", "bevacizumab"
+];
+
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Temozolomide/Bevacizumab", "Temozolomide / Bevacizumab", "Temozolomide & Bevacizumab", "TB", "Temozolomide and Bevacizumab", "TemozolomideBevacizumab", "Temozolomide_Bevacizumab"
+];
+
+define Regimen_TemozolomideBevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Temozolomide AND Treatment_Bevacizumab;
+    
+define final Received_TemozolomideBevacizumab:
+    where Regimen_TemozolomideBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_NET, Melanoma
+
+
+***/
+ 

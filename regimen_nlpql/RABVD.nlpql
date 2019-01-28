@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rituxan", "rituximab"
+termset TreatmentTerms0:[
+    "rituxan", "rituximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms1:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"blenoxane", "bleomycin"
+        
+termset TreatmentTerms2:[
+    "blenoxane", "bleomycin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Bleomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"velban", "vinblastine"
+        
+termset TreatmentTerms3:[
+    "velban", "vinblastine"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Vinblastine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"dtic", "dacarbazine"
+        
+termset TreatmentTerms4:[
+    "dtic", "dacarbazine"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "RABVD"
 ];
 
-define RegimenMentioned:
+define Regimen_RABVD:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedRABVD:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Rituximab AND Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
+    
+define final Received_RABVD:
+    where Regimen_RABVD OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

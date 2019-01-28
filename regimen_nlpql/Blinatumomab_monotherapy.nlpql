@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"blincyto", "blinatumomab"
+termset TreatmentTerms0:[
+    "blincyto", "blinatumomab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Blinatumomab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Blinatumomab monotherapy"
+    "Blinatumomab_monotherapy", "Blinatumomabmonotherapy", "Blinatumomab monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Blinatumomabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Blinatumomabmonotherapy:
+    where Treatment_Blinatumomab OR Regimen_Blinatumomabmonotherapy;
+            
 
 // Comments
 /***

@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"xeloda", "capecitabine"
+termset TreatmentTerms0:[
+    "xeloda", "capecitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Capecitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"mutamycin", "mitomycin"
+        
+termset TreatmentTerms1:[
+    "mutamycin", "mitomycin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Mitomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms2:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Mitomycin, RT"
+    "Capecitabine/ Mitomycin/ RT", "Capecitabine- Mitomycin- RT", "Capecitabine& Mitomycin& RT", "Capecitabine/Mitomycin/RT", "Capecitabine, Mitomycin, RT", "CapecitabineMitomycinRT", "Capecitabine_Mitomycin_RT", "Capecitabine &  Mitomycin &  RT", "Capecitabine and  Mitomycin and  RT"
 ];
 
-define RegimenMentioned:
+define Regimen_CapecitabineMitomycinRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCapecitabine_Mitomycin_RT:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Capecitabine AND Treatment_Mitomycin AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_CapecitabineMitomycinRT:
+    where Regimen_CapecitabineMitomycinRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

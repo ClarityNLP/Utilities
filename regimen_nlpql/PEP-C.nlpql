@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"zofran", "ondansetron"
+termset TreatmentTerms0:[
+    "zofran", "ondansetron"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ondansetron:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"matulane", "procarbazine"
+        
+termset TreatmentTerms1:[
+    "matulane", "procarbazine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Procarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "PEP-C"
+    "PEPC", "PEP-C", "PEP/C"
 ];
 
-define RegimenMentioned:
+define Regimen_PEPC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedPEP-C:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ondansetron AND Treatment_Procarbazine;
+    
+define final Received_PEPC:
+    where Regimen_PEPC OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma
+Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

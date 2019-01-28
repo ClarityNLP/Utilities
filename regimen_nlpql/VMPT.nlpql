@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"velcade", "bortezomib"
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"alkeran", "melphalan"
+        
+termset TreatmentTerms1:[
+    "alkeran", "melphalan"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms2:[
+    "sterapred", "prednisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"thalomid", "thalidomide"
+        
+termset TreatmentTerms3:[
+    "thalomid", "thalidomide"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Thalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "VMPT"
 ];
 
-define RegimenMentioned:
+define Regimen_VMPT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedVMPT:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Melphalan AND Treatment_Prednisone AND Treatment_Thalidomide;
+    
+define final Received_VMPT:
+    where Regimen_VMPT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

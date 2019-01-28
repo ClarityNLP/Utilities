@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms2:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Fluorouracil, RT"
+    "CisplatinFluorouracilRT", "Cisplatin &  Fluorouracil &  RT", "Cisplatin/ Fluorouracil/ RT", "Cisplatin/Fluorouracil/RT", "Cisplatin& Fluorouracil& RT", "Cisplatin- Fluorouracil- RT", "Cisplatin and  Fluorouracil and  RT", "Cisplatin, Fluorouracil, RT", "Cisplatin_Fluorouracil_RT"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinFluorouracilRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Fluorouracil_RT:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_CisplatinFluorouracilRT:
+    where Regimen_CisplatinFluorouracilRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Cervical_cancer, Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: Cervical_cancer, Head_and_neck_cancer, Esophageal_cancer, Bladder_cancer
 
 
 ***/

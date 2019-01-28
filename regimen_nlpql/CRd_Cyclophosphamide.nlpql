@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytoxan", "cyclophosphamide"
+termset TreatmentTerms0:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"revlimid", "lenalidomide"
+        
+termset TreatmentTerms1:[
+    "revlimid", "lenalidomide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Lenalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms2:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CRD", "CRD (Cyclophosphamide)"
+    "CRDCyclophosphamide", "CRD", "CRD_Cyclophosphamide", "CRD (Cyclophosphamide)"
 ];
 
-define RegimenMentioned:
+define Regimen_CRDCyclophosphamide:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCRD_Cyclophosphamide:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cyclophosphamide AND Treatment_Lenalidomide AND Treatment_Dexamethasone;
+    
+define final Received_CRDCyclophosphamide:
+    where Regimen_CRDCyclophosphamide OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

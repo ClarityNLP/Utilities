@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bendamustine", "bendamustine"
+termset TreatmentTerms0:[
+    "bendamustine", "bendamustine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bendamustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R-B", "BR"
+    "RB", "R/B", "R-B", "BR"
 ];
 
-define RegimenMentioned:
+define Regimen_RB:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedBR:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bendamustine AND Treatment_Rituximab;
+    
+define final Received_BR:
+    where Regimen_RB OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Hairy_cell_leukemia, Cold_agglutinin_disease
+Known regimen for: Hairy_cell_leukemia, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Cold_agglutinin_disease, Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

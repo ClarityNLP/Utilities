@@ -1,0 +1,105 @@
+
+// Phenotype library name
+phenotype "Regimen for mFOLFOXIRI & Cetuximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "fusilev", "levoleucovorin"
+];
+
+define Treatment_Levoleucovorin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "eloxatin", "oxaliplatin"
+];
+
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "camptosar", "irinotecan"
+];
+
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms4:[
+    "erbitux", "cetuximab"
+];
+
+define Treatment_Cetuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "mFOLFOXIRICetuximab", "mFOLFOXIRI/Cetuximab", "mFOLFOXIRI / Cetuximab", "mFOLFOXIRI & Cetuximab", "mFOLFOXIRI_Cetuximab", "mFOLFOXIRI and Cetuximab"
+];
+
+define Regimen_mFOLFOXIRICetuximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Levoleucovorin AND Treatment_Oxaliplatin AND Treatment_Irinotecan AND Treatment_Cetuximab;
+    
+define final Received_mFOLFOXIRICetuximab:
+    where Regimen_mFOLFOXIRICetuximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Colon_cancer_KRAS_wild-type
+
+
+***/
+ 

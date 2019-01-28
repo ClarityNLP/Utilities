@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Busulfan & Fludarabine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "myleran", "busulfan"
+];
+
+define Treatment_Busulfan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "fludara", "fludarabine"
+];
+
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "BuFlu", "Flu/Bu", "Busulfan & Fludarabine", "Busulfan / Fludarabine", "Busulfan/Fludarabine", "BusulfanFludarabine", "Busulfan_Fludarabine", "FluBu", "Busulfan and Fludarabine"
+];
+
+define Regimen_BuFlu:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Busulfan AND Treatment_Fludarabine;
+    
+define final Received_BusulfanFludarabine:
+    where Regimen_BuFlu OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Allogeneic_HSCT
+
+
+***/
+ 

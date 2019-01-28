@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"velcade", "bortezomib"
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cytoxan", "cyclophosphamide"
+        
+termset TreatmentTerms1:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms2:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms3:[
+    "oncovin", "vincristine"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"millipred", "prednisolone"
+        
+termset TreatmentTerms4:[
+    "millipred", "prednisolone"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Prednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "BCHOP"
 ];
 
-define RegimenMentioned:
+define Regimen_BCHOP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedBCHOP:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisolone;
+    
+define final Received_BCHOP:
+    where Regimen_BCHOP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

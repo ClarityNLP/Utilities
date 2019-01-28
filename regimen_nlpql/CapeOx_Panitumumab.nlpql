@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for CapeOx & Panitumumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "xeloda", "capecitabine"
+];
+
+define Treatment_Capecitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "eloxatin", "oxaliplatin"
+];
+
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "vectibix", "panitumumab"
+];
+
+define Treatment_Panitumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CapeOx / Panitumumab", "CapeOx & Panitumumab", "CapeOx_Panitumumab", "CapeOx and Panitumumab", "CapeOx/Panitumumab", "CapeOxPanitumumab"
+];
+
+define Regimen_CapeOxPanitumumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Capecitabine AND Treatment_Oxaliplatin AND Treatment_Panitumumab;
+    
+define final Received_CapeOxPanitumumab:
+    where Regimen_CapeOxPanitumumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Colon_cancer_KRAS_wild-type
+
+
+***/
+ 

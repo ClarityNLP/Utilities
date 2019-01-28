@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"velcade", "bortezomib"
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "VR"
 ];
 
-define RegimenMentioned:
+define Regimen_VR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedVR:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Rituximab;
+    
+define final Received_VR:
+    where Regimen_VR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Waldenström_macroglobulinemia, Follicular_lymphoma
+Known regimen for: Waldenström_macroglobulinemia, Follicular_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

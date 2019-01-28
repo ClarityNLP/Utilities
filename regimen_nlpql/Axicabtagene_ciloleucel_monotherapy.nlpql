@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tylenol", "acetaminophen"
+termset TreatmentTerms0:[
+    "tylenol", "acetaminophen"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Acetaminophen:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"benadryl", "diphenhydramine"
+        
+termset TreatmentTerms1:[
+    "benadryl", "diphenhydramine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Diphenhydramine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Axicabtagene ciloleucel monotherapy"
+    "Axicabtagene ciloleucel monotherapy", "Axicabtageneciloleucelmonotherapy", "Axicabtagene_ciloleucel_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Axicabtageneciloleucelmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedAxicabtagene_ciloleucel_monotherapy:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Acetaminophen AND Treatment_Diphenhydramine;
+    
+define final Received_Axicabtageneciloleucelmonotherapy:
+    where Regimen_Axicabtageneciloleucelmonotherapy OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma
 
 
 ***/

@@ -1,0 +1,94 @@
+
+// Phenotype library name
+phenotype "Regimen for IFL & Bevacizumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "camptosar", "irinotecan"
+];
+
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "leucovorin", "folinic acid"
+];
+
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "avastin", "bevacizumab"
+];
+
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "mIFL & Bevacizumab", "IFL/Bevacizumab", "mIFL and Bevacizumab", "IFL & Bevacizumab", "IFL and Bevacizumab", "mIFL/Bevacizumab", "mIFL / Bevacizumab", "IFL / Bevacizumab", "IFL_Bevacizumab", "mIFLBevacizumab", "IFLBevacizumab", "mIFL_Bevacizumab"
+];
+
+define Regimen_mIFLBevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Irinotecan AND Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Bevacizumab;
+    
+define final Received_IFLBevacizumab:
+    where Regimen_mIFLBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Colon_cancer
+
+
+***/
+ 

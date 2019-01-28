@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"paraplatin", "carboplatin"
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"taxol", "paclitaxel"
+        
+termset TreatmentTerms1:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"avastin", "bevacizumab"
+        
+termset TreatmentTerms2:[
+    "avastin", "bevacizumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Paclitaxel, Bevacizumab", "B+CP", "PacCBev", "BCP"
+    "Carboplatin/ Paclitaxel/ Bevacizumab", "Carboplatin &  Paclitaxel &  Bevacizumab", "Carboplatin, Paclitaxel, Bevacizumab", "PacCBev", "B & CP", "B+CP", "Carboplatin- Paclitaxel- Bevacizumab", "B and CP", "CarboplatinPaclitaxelBevacizumab", "B / CP", "Carboplatin/Paclitaxel/Bevacizumab", "Carboplatin& Paclitaxel& Bevacizumab", "Carboplatin_Paclitaxel_Bevacizumab", "BCP", "B&CP", "B/CP", "Carboplatin and  Paclitaxel and  Bevacizumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinPaclitaxelBevacizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_Paclitaxel_Bevacizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Paclitaxel AND Treatment_Bevacizumab;
+    
+define final Received_CarboplatinPaclitaxelBevacizumab:
+    where Regimen_CarboplatinPaclitaxelBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer
 
 
 ***/

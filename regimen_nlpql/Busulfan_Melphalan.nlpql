@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Busulfan & Melphalan" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "myleran", "busulfan"
+];
+
+define Treatment_Busulfan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "alkeran", "melphalan"
+];
+
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Busulfan / Melphalan", "Busulfan/Melphalan", "Busulfan and Melphalan", "Busulfan_Melphalan", "Busulfan & Melphalan", "BusulfanMelphalan", "BuMel"
+];
+
+define Regimen_BusulfanMelphalan:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Busulfan AND Treatment_Melphalan;
+    
+define final Received_BusulfanMelphalan:
+    where Regimen_BusulfanMelphalan OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Autologous_HSCT
+
+
+***/
+ 

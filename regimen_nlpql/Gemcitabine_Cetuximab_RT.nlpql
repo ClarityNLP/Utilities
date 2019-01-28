@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"erbitux", "cetuximab"
+termset TreatmentTerms0:[
+    "erbitux", "cetuximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cetuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"gemzar", "gemcitabine"
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms2:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "RT", "Gemcitabine, Cetuximab, RT"
+    "Gemcitabine, Cetuximab, RT", "Gemcitabine &  Cetuximab &  RT", "Gemcitabine/ Cetuximab/ RT", "Gemcitabine- Cetuximab- RT", "Gemcitabine/Cetuximab/RT", "Gemcitabine& Cetuximab& RT", "GemcitabineCetuximabRT", "Gemcitabine and  Cetuximab and  RT", "Gemcitabine_Cetuximab_RT", "RT"
 ];
 
-define RegimenMentioned:
+define Regimen_GemcitabineCetuximabRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedGemcitabine_Cetuximab_RT:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cetuximab AND Treatment_Gemcitabine AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_GemcitabineCetuximabRT:
+    where Regimen_GemcitabineCetuximabRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"istodax", "romidepsin"
+termset TreatmentTerms0:[
+    "istodax", "romidepsin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Romidepsin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Romidepsin monotherapy"
+    "Romidepsin_monotherapy", "Romidepsin monotherapy", "Romidepsinmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Romidepsinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Romidepsinmonotherapy:
+    where Treatment_Romidepsin OR Regimen_Romidepsinmonotherapy;
+            
 
 // Comments
 /***

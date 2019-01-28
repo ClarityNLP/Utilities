@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"zoladex", "goserelin"
+termset TreatmentTerms0:[
+    "zoladex", "goserelin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Goserelin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Letrozole monotherapy"
+    "Letrozole monotherapy", "Letrozole_monotherapy", "Letrozolemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Letrozolemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Letrozolemonotherapy:
+    where Treatment_Goserelin OR Regimen_Letrozolemonotherapy;
+            
 
 // Comments
 /***

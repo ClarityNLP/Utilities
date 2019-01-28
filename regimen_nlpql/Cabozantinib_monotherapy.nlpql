@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cometriq", "cabozantinib"
+termset TreatmentTerms0:[
+    "cometriq", "cabozantinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cabozantinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cabozantinib monotherapy"
+    "Cabozantinib monotherapy", "Cabozantinib_monotherapy", "Cabozantinibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Cabozantinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Cabozantinibmonotherapy:
+    where Treatment_Cabozantinib OR Regimen_Cabozantinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Prostate_cancer, Hepatocellular_carcinoma, Non-small_cell_lung_cancer, Renal_cell_carcinoma, Thyroid_cancer
+Known regimen for: Prostate_cancer, Hepatocellular_carcinoma, Thyroid_cancer, Non-small_cell_lung_cancer, Renal_cell_carcinoma
 
 
 ***/

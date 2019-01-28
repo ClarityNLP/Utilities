@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxotere", "docetaxel"
+termset TreatmentTerms0:[
+    "taxotere", "docetaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"ellence", "epirubicin"
+        
+termset TreatmentTerms1:[
+    "ellence", "epirubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Epirubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "ED", "DE", "ET"
+    "DE", "ED", "ET"
 ];
 
-define RegimenMentioned:
+define Regimen_DE:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedDE:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Docetaxel AND Treatment_Epirubicin;
+    
+define final Received_DE:
+    where Regimen_DE OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

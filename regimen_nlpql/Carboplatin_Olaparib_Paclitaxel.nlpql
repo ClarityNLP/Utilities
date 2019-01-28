@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"paraplatin", "carboplatin"
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"lynparza", "olaparib"
+        
+termset TreatmentTerms1:[
+    "lynparza", "olaparib"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Olaparib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"taxol", "paclitaxel"
+        
+termset TreatmentTerms2:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Olaparib, Paclitaxel"
+    "Carboplatin/Olaparib/Paclitaxel", "Carboplatin_Olaparib_Paclitaxel", "CarboplatinOlaparibPaclitaxel", "Carboplatin, Olaparib, Paclitaxel", "Carboplatin& Olaparib& Paclitaxel", "Carboplatin- Olaparib- Paclitaxel", "Carboplatin &  Olaparib &  Paclitaxel", "Carboplatin/ Olaparib/ Paclitaxel", "Carboplatin and  Olaparib and  Paclitaxel"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinOlaparibPaclitaxel:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_Olaparib_Paclitaxel:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Olaparib AND Treatment_Paclitaxel;
+    
+define final Received_CarboplatinOlaparibPaclitaxel:
+    where Regimen_CarboplatinOlaparibPaclitaxel OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

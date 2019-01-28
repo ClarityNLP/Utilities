@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"neupogen", "filgrastim"
+termset TreatmentTerms0:[
+    "neupogen", "filgrastim"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "maxi-R-CHOP/R-HiDAC"
+    "maxi-R-CHOP/R-HiDAC", "maxi/R/CHOP/R/HiDAC", "maxiRCHOPRHiDAC", "maxiRCHOP/RHiDAC", "maxi-R-CHOPR-HiDAC"
 ];
 
-define RegimenMentioned:
+define Regimen_maxiRCHOPRHiDAC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_maxiRCHOPRHiDAC:
+    where Treatment_Filgrastim OR Regimen_maxiRCHOPRHiDAC;
+            
 
 // Comments
 /***

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cyramza", "ramucirumab"
+termset TreatmentTerms0:[
+    "cyramza", "ramucirumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ramucirumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Ramucirumab monotherapy"
+    "Ramucirumabmonotherapy", "Ramucirumab monotherapy", "Ramucirumab_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Ramucirumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Ramucirumabmonotherapy:
+    where Treatment_Ramucirumab OR Regimen_Ramucirumabmonotherapy;
+            
 
 // Comments
 /***

@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal 5-FU"
+    "Intraperitoneal 5FU", "Intraperitoneal_5-FU", "Intraperitoneal 5-FU", "Intraperitoneal 5/FU", "Intraperitoneal5FU"
 ];
 
-define RegimenMentioned:
+define Regimen_Intraperitoneal5FU:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedIntraperitoneal_5-FU:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid;
+    
+define final Received_Intraperitoneal5FU:
+    where Regimen_Intraperitoneal5FU OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

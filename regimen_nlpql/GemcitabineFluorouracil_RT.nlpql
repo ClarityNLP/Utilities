@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Gemcitabine/Fluorouracil & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Gemcitabine/Fluorouracil & RT", "Gemcitabine/Fluorouracil/RT", "GemcitabineFluorouracilRT", "Gemcitabine/Fluorouracil and RT", "GemcitabineFluorouracil_RT", "Gemcitabine/Fluorouracil / RT"
+];
+
+define Regimen_GemcitabineFluorouracilRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_GemcitabineFluorouracilRT:
+    where Treatment_Gemcitabine OR Regimen_GemcitabineFluorouracilRT;
+            
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_cancer
+
+
+***/
+ 

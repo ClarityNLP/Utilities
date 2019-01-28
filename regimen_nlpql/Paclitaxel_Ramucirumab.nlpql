@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Paclitaxel & Ramucirumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cyramza", "ramucirumab"
+];
+
+define Treatment_Ramucirumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "taxol", "paclitaxel"
+];
+
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Paclitaxel / Ramucirumab", "PaclitaxelRamucirumab", "Paclitaxel_Ramucirumab", "Paclitaxel & Ramucirumab", "Paclitaxel/Ramucirumab", "Paclitaxel and Ramucirumab"
+];
+
+define Regimen_PaclitaxelRamucirumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ramucirumab AND Treatment_Paclitaxel;
+    
+define final Received_PaclitaxelRamucirumab:
+    where Regimen_PaclitaxelRamucirumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Esophageal_cancer, Gastric_cancer
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bevyxxa", "betrixaban"
+termset TreatmentTerms0:[
+    "bevyxxa", "betrixaban"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Betrixaban:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Betrixaban monotherapy"
+    "Betrixabanmonotherapy", "Betrixaban_monotherapy", "Betrixaban monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Betrixabanmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Betrixabanmonotherapy:
+    where Treatment_Betrixaban OR Regimen_Betrixabanmonotherapy;
+            
 
 // Comments
 /***

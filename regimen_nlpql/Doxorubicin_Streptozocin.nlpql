@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Doxorubicin & Streptozocin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "adriamycin", "doxorubicin"
+];
+
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "zanosar", "streptozocin"
+];
+
+define Treatment_Streptozocin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Doxorubicin_Streptozocin", "DoxorubicinStreptozocin", "Doxorubicin & Streptozocin", "Doxorubicin and Streptozocin", "Doxorubicin / Streptozocin", "Doxorubicin/Streptozocin"
+];
+
+define Regimen_DoxorubicinStreptozocin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Doxorubicin AND Treatment_Streptozocin;
+    
+define final Received_DoxorubicinStreptozocin:
+    where Regimen_DoxorubicinStreptozocin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_NET
+
+
+***/
+ 

@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"platinol", "cisplatin"
+        
+termset TreatmentTerms1:[
+    "platinol", "cisplatin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms2:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "PCF"
 ];
 
-define RegimenMentioned:
+define Regimen_PCF:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedPCF:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxel AND Treatment_Cisplatin AND Treatment_Fluorouracil;
+    
+define final Received_PCF:
+    where Regimen_PCF OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Penile_cancer, SCC_of_unknown_primary, Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: SCC_of_unknown_primary, Penile_cancer, Esophageal_cancer, Head_and_neck_cancer
 
 
 ***/

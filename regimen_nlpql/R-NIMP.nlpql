@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rituxan", "rituximab"
+termset TreatmentTerms0:[
+    "rituxan", "rituximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"navelbine", "vinorelbine"
+        
+termset TreatmentTerms1:[
+    "navelbine", "vinorelbine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vinorelbine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"ifex", "ifosfamide"
+        
+termset TreatmentTerms2:[
+    "ifex", "ifosfamide"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"novantrone", "mitoxantrone"
+        
+termset TreatmentTerms3:[
+    "novantrone", "mitoxantrone"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Mitoxantrone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms4:[
+    "sterapred", "prednisone"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R-NIMP"
+    "R-NIMP", "R/NIMP", "RNIMP"
 ];
 
-define RegimenMentioned:
+define Regimen_RNIMP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedR-NIMP:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Rituximab AND Treatment_Vinorelbine AND Treatment_Ifosfamide AND Treatment_Mitoxantrone AND Treatment_Prednisone;
+    
+define final Received_RNIMP:
+    where Regimen_RNIMP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

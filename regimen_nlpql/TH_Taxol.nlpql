@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"herceptin", "trastuzumab"
+        
+termset TreatmentTerms1:[
+    "herceptin", "trastuzumab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Trastuzumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "T-T", "TH (Taxol)", "TH"
+    "T/T", "TH", "TH (Taxol)", "TH_Taxol", "T-T", "THTaxol", "TT"
 ];
 
-define RegimenMentioned:
+define Regimen_TT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedTH_Taxol:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxel AND Treatment_Trastuzumab;
+    
+define final Received_THTaxol:
+    where Regimen_TT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

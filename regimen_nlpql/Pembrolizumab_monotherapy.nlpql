@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"keytruda", "pembrolizumab"
+termset TreatmentTerms0:[
+    "keytruda", "pembrolizumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Pembrolizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Pembrolizumab monotherapy"
+    "Pembrolizumab_monotherapy", "Pembrolizumabmonotherapy", "Pembrolizumab monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Pembrolizumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Pembrolizumabmonotherapy:
+    where Treatment_Pembrolizumab OR Regimen_Pembrolizumabmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Primary_mediastinal_B-cell_lymphoma, MSI-H_or_dMMR, Endometrial_cancer, Head_and_neck_cancer, Transformed_lymphoma, Gastric_cancer, Merkel_cell_carcinoma, Cholangiocarcinoma, Cervical_cancer, Hepatocellular_carcinoma, Hodgkin_lymphoma, Melanoma, Non-small_cell_lung_cancer, Anal_cancer
+Known regimen for: Melanoma, Hodgkin_lymphoma, Head_and_neck_cancer, Cervical_cancer, Gastric_cancer, Hepatocellular_carcinoma, Anal_cancer, Merkel_cell_carcinoma, Endometrial_cancer, MSI-H_or_dMMR, Non-small_cell_lung_cancer, Transformed_lymphoma, Bladder_cancer, Cholangiocarcinoma, Primary_mediastinal_B-cell_lymphoma
 
 
 ***/

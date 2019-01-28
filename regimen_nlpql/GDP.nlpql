@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gemzar", "gemcitabine"
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms1:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"platinol", "cisplatin"
+        
+termset TreatmentTerms2:[
+    "platinol", "cisplatin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "GDP"
 ];
 
-define RegimenMentioned:
+define Regimen_GDP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedGDP:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Dexamethasone AND Treatment_Cisplatin;
+    
+define final Received_GDP:
+    where Regimen_GDP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
+Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
 
 
 ***/

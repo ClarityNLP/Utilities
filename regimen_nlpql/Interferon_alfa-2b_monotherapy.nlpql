@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"intron-a", "interferon alfa-2b"
+termset TreatmentTerms0:[
+    "intron-a", "interferon alfa-2b"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Interferonalfa2b:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2b monotherapy", "HDI"
+    "Interferon alfa-2b monotherapy", "Interferonalfa2bmonotherapy", "Interferon_alfa-2b_monotherapy", "Interferon alfa/2b monotherapy", "Interferon alfa2b monotherapy", "HDI"
 ];
 
-define RegimenMentioned:
+define Regimen_Interferonalfa2bmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Interferonalfa2bmonotherapy:
+    where Treatment_Interferonalfa2b OR Regimen_Interferonalfa2bmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Renal_cell_carcinoma, Neuroendocrine_tumors, Systemic_mastocytosis, Melanoma
+Known regimen for: Systemic_mastocytosis, Renal_cell_carcinoma, Neuroendocrine_tumors, Melanoma
 
 
 ***/

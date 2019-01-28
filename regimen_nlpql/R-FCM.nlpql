@@ -14,81 +14,80 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rituxan", "rituximab"
+termset TreatmentTerms0:[
+    "rituxan", "rituximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"fludara", "fludarabine"
+        
+termset TreatmentTerms1:[
+    "fludara", "fludarabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"cytoxan", "cyclophosphamide"
+        
+termset TreatmentTerms2:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"novantrone", "mitoxantrone"
+        
+termset TreatmentTerms3:[
+    "novantrone", "mitoxantrone"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Mitoxantrone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R-FCM"
+    "R-FCM", "R/FCM", "RFCM"
 ];
 
-define RegimenMentioned:
+define Regimen_RFCM:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedR-FCM:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Rituximab AND Treatment_Fludarabine AND Treatment_Cyclophosphamide AND Treatment_Mitoxantrone;
+    
+define final Received_RFCM:
+    where Regimen_RFCM OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma
+Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

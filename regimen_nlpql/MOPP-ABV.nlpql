@@ -14,111 +14,107 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"mustargen", "mechlorethamine"
+termset TreatmentTerms0:[
+    "mustargen", "mechlorethamine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Mechlorethamine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms1:[
+    "oncovin", "vincristine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"matulane", "procarbazine"
+        
+termset TreatmentTerms2:[
+    "matulane", "procarbazine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Procarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms3:[
+    "sterapred", "prednisone"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms4:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms5:[
-"blenoxane", "bleomycin"
+        
+termset TreatmentTerms5:[
+    "blenoxane", "bleomycin"
 ];
 
-define Medications5:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms5],
-documentset:[Docs]
+define Treatment_Bleomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms5],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms6:[
-"velban", "vinblastine"
+        
+termset TreatmentTerms6:[
+    "velban", "vinblastine"
 ];
 
-define Medications6:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms6],
-documentset:[Docs]
+define Treatment_Vinblastine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms6],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "MOPP-ABV"
+    "MOPP-ABV", "MOPPABV", "MOPP/ABV"
 ];
 
-define RegimenMentioned:
+define Regimen_MOPPABV:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedMOPP-ABV:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Mechlorethamine AND Treatment_Vincristine AND Treatment_Procarbazine AND Treatment_Prednisone AND Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vinblastine;
+    
+define final Received_MOPPABV:
+    where Regimen_MOPPABV OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

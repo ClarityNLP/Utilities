@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Dacarbazine & Doxorubicin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "dtic", "dacarbazine"
+];
+
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "adriamycin", "doxorubicin"
+];
+
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "DacarbazineDoxorubicin", "Dacarbazine and Doxorubicin", "Dacarbazine & Doxorubicin", "Dacarbazine_Doxorubicin", "AD", "Dacarbazine/Doxorubicin", "Dacarbazine / Doxorubicin"
+];
+
+define Regimen_DacarbazineDoxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Dacarbazine AND Treatment_Doxorubicin;
+    
+define final Received_DacarbazineDoxorubicin:
+    where Regimen_DacarbazineDoxorubicin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Soft_tissue_sarcoma
+
+
+***/
+ 

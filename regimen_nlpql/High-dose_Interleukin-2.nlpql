@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"proleukin", "aldesleukin"
+termset TreatmentTerms0:[
+    "proleukin", "aldesleukin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Aldesleukin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "HD IL-2", "High-dose Interleukin-2"
+    "HighdoseInterleukin2", "Highdose Interleukin2", "High/dose Interleukin/2", "HD IL/2", "HD_IL-2", "High-dose Interleukin-2", "High-dose_Interleukin-2", "HD IL-2", "HDIL2", "HD IL2"
 ];
 
-define RegimenMentioned:
+define Regimen_HighdoseInterleukin2:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_HighdoseInterleukin2:
+    where Treatment_Aldesleukin OR Regimen_HighdoseInterleukin2;
+            
 
 // Comments
 /***

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"temodar", "temozolomide"
+termset TreatmentTerms0:[
+    "temodar", "temozolomide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Temozolomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "RT, then Temozolomide"
+    "RT and  then Temozolomide", "RT, & Temozolomide", "RT/ then Temozolomide", "RT& then Temozolomide", "RT/then Temozolomide", "RTthenTemozolomide", "RT,, Temozolomide", "RT, and Temozolomide", "RT,&Temozolomide", "RT &  then Temozolomide", "RT,/Temozolomide", "RT, / Temozolomide", "RT- then Temozolomide", "RT, then Temozolomide", "RT_then_Temozolomide"
 ];
 
-define RegimenMentioned:
+define Regimen_RTandthenTemozolomide:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_RTthenTemozolomide:
+    where Treatment_Temozolomide OR Regimen_RTandthenTemozolomide;
+            
 
 // Comments
 /***

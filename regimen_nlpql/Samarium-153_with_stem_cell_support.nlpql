@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"neupogen", "filgrastim"
+termset TreatmentTerms0:[
+    "neupogen", "filgrastim"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leukine", "sargramostim"
+        
+termset TreatmentTerms1:[
+    "leukine", "sargramostim"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Sargramostim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Samarium-153 with stem cell support"
+    "Samarium153withstemcellsupport", "Samarium153 with stem cell support", "Samarium-153 with stem cell support", "Samarium/153 with stem cell support", "Samarium-153_with_stem_cell_support"
 ];
 
-define RegimenMentioned:
+define Regimen_Samarium153withstemcellsupport:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedSamarium-153_with_stem_cell_support:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Filgrastim AND Treatment_Sargramostim;
+    
+define final Received_Samarium153withstemcellsupport:
+    where Regimen_Samarium153withstemcellsupport OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

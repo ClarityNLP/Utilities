@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"neupogen", "filgrastim"
+termset TreatmentTerms0:[
+    "neupogen", "filgrastim"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"valtrex", "valacyclovir"
+        
+termset TreatmentTerms1:[
+    "valtrex", "valacyclovir"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Valacyclovir:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"zovirax", "acyclovir"
+        
+termset TreatmentTerms2:[
+    "zovirax", "acyclovir"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Acyclovir:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"bactrim ds", "trimethoprim/sulfamethoxazole"
+        
+termset TreatmentTerms3:[
+    "bactrim ds", "trimethoprim/sulfamethoxazole"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_TrimethoprimSulfamethoxazole:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Z-BEAM"
+    "Z-BEAM", "ZBEAM", "Z/BEAM"
 ];
 
-define RegimenMentioned:
+define Regimen_ZBEAM:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedZ-BEAM:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Filgrastim AND Treatment_Valacyclovir AND Treatment_Acyclovir AND Treatment_TrimethoprimSulfamethoxazole;
+    
+define final Received_ZBEAM:
+    where Regimen_ZBEAM OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

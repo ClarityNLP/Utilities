@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Gemcitabine & Irinotecan" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "camptosar", "irinotecan"
+];
+
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Gemcitabine/Irinotecan", "Gemcitabine and Irinotecan", "Gemcitabine / Irinotecan", "Gemcitabine & Irinotecan", "Gemcitabine_Irinotecan", "GemcitabineIrinotecan"
+];
+
+define Regimen_GemcitabineIrinotecan:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Irinotecan;
+    
+define final Received_GemcitabineIrinotecan:
+    where Regimen_GemcitabineIrinotecan OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Adenocarcinoma_of_unknown_primary
+
+
+***/
+ 

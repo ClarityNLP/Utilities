@@ -92,21 +92,21 @@ def generate_medications(brands, drugs):
 
     n = 0
     for b in brands:
+        main_name = safe_name(drugs[n], no_punc=True)
         terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
         nlpql = '''
-
-termset MedicationTerms%d:[
-%s
+termset TreatmentTerms%d:[
+    %s
 ];
 
-define Medications%d:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms%d],
-documentset:[Docs]
+define Treatment_%s:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms%d],
+        documentset:[Docs]
 }); 
-    
-        ''' % (n, terms, n, n)
-        keys.append('Medications{}'.format(n))
+
+        ''' % (n, terms, main_name, n)
+        keys.append('Treatment_{}'.format(main_name))
         n += 1
         define_str += nlpql
 
@@ -116,32 +116,53 @@ documentset:[Docs]
 def generate_regimens(regimens):
 
     if len(regimens) > 0:
+        main_name = safe_name(regimens[0], no_punc=True)
         regimen_str = '"' + '", "'.join(regimens) + '"'
         nlpql = '''
-
 termset RegimenTerms:[
     %s
 ];
 
-define RegimenMentioned:
+define Regimen_%s:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
+''' % (regimen_str, main_name)
 
-                        ''' % regimen_str
-
-        return nlpql, 'RegimenMentioned'
+        return nlpql, 'Regimen_%s' % main_name
     return '', ''
 
 
 def generate_results(regimen_name, med_keys, regimen_key):
     med_clause = " AND ".join(med_keys)
-    return '''
+    if len(med_keys) == 1:
+        return '''
+        
+define final Received_%s:
+    where %s OR %s;
+            ''' % (regimen_name, med_keys[0], regimen_key)
+    else:
+        return '''
+        
+define ReceivedRegimenTreatments:
+    where %s;
+    
+define final Received_%s:
+    where %s OR ReceivedRegimenTreatments;        
+        
+        
+        ''' % (med_clause, regimen_name, regimen_key)
 
-define final Received%s:
-    where (%s) OR %s;
-        ''' % (regimen_name, med_clause, regimen_key)
+
+def safe_name(name, no_punc=False):
+    if no_punc:
+        txt = "".join(c for c in unquote_plus(name.replace(" ", '_')).replace('/wiki/', '') if c.isalnum()).rstrip()
+    else:
+        txt = "".join(c for c in unquote_plus(name.replace(" ", '_')).replace('/wiki/', '') if c.isalnum() or c in
+                               keep_characters).rstrip()
+    txt = txt.replace('__', '_')
+    return txt
 
 
 def generate_nlpql(treatments):
@@ -165,13 +186,9 @@ def generate_nlpql(treatments):
 Known regimen for: {}
 
 """).format(cancer_str)
-        filename = "".join(c for c in unquote_plus(regimen.replace(" ", '_')).replace('/wiki/', '') if c.isalnum() or c in
-                           keep_characters).rstrip()
-
-        if len(obj['brands']) > 1:
-            result_str = generate_results(filename, med_keys, reg_key)
-        else:
-            result_str = ''
+        filename = safe_name(regimen)
+        regimen_final_name= safe_name(regimen, no_punc=True)
+        result_str = generate_results(regimen_final_name, med_keys, reg_key)
         print('nlpql for ', nlpql_name)
 
         if len(filename) > 0:
@@ -250,6 +267,37 @@ if __name__ == "__main__":
                                         alternate_regimens.append(r.replace(' & ', ' and '))
                                         alternate_regimens.append(r.replace(' & ', ' / '))
                                         alternate_regimens.append(r.replace(' & ', '/'))
+                                    if '-' in r:
+                                        alternate_regimens.append(r.replace('-', ''))
+                                        alternate_regimens.append(r.replace('-', '/'))
+                                    if ',' in r:
+                                        alternate_regimens.append(r.replace(',', '/'))
+                                        alternate_regimens.append(r.replace(', ', '/'))
+                                        alternate_regimens.append(r.replace(',', '-'))
+                                        alternate_regimens.append(r.replace(',', ' and '))
+                                        alternate_regimens.append(r.replace(',', ' & '))
+                                        alternate_regimens.append(r.replace(',', '&'))
+                                    if ' and ' in r:
+                                        alternate_regimens.append(r.replace(' and ', '&'))
+                                        alternate_regimens.append(r.replace(' and ', ' & '))
+                                        alternate_regimens.append(r.replace(' and ', ' / '))
+                                        alternate_regimens.append(r.replace(' and ', '/'))
+                                    if '+' in r:
+                                        alternate_regimens.append(r.replace('+', ' and '))
+                                        alternate_regimens.append(r.replace('+', '&'))
+                                        alternate_regimens.append(r.replace('+', ' & '))
+                                        alternate_regimens.append(r.replace('+', ' / '))
+                                        alternate_regimens.append(r.replace('+', '/'))
+                                    if ' then ' in r:
+                                        alternate_regimens.append(r.replace(' then ', ', '))
+                                        alternate_regimens.append(r.replace(' then ', ' and '))
+                                        alternate_regimens.append(r.replace(' then ', ' & '))
+                                        alternate_regimens.append(r.replace(' then ', '&'))
+                                        alternate_regimens.append(r.replace(' then ', ' / '))
+                                        alternate_regimens.append(r.replace(' then ', '/'))
+                                    alternate_regimens.append(safe_name(r, no_punc=True))
+                                    alternate_regimens.append(safe_name(r, no_punc=False))
+
                                 regimen_names.extend(alternate_regimens)
                                 regimen_names = list(set(regimen_names))
                                 cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),

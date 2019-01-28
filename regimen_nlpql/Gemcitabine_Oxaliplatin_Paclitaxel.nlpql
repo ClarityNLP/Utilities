@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gemzar", "gemcitabine"
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"eloxatin", "oxaliplatin"
+        
+termset TreatmentTerms1:[
+    "eloxatin", "oxaliplatin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"taxol", "paclitaxel"
+        
+termset TreatmentTerms2:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "GOP", "Gemcitabine, Oxaliplatin, Paclitaxel"
+    "Gemcitabine_Oxaliplatin_Paclitaxel", "Gemcitabine& Oxaliplatin& Paclitaxel", "Gemcitabine and  Oxaliplatin and  Paclitaxel", "Gemcitabine/ Oxaliplatin/ Paclitaxel", "GemcitabineOxaliplatinPaclitaxel", "Gemcitabine &  Oxaliplatin &  Paclitaxel", "GOP", "Gemcitabine/Oxaliplatin/Paclitaxel", "Gemcitabine, Oxaliplatin, Paclitaxel", "Gemcitabine- Oxaliplatin- Paclitaxel"
 ];
 
-define RegimenMentioned:
+define Regimen_GemcitabineOxaliplatinPaclitaxel:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedGemcitabine_Oxaliplatin_Paclitaxel:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Oxaliplatin AND Treatment_Paclitaxel;
+    
+define final Received_GemcitabineOxaliplatinPaclitaxel:
+    where Regimen_GemcitabineOxaliplatinPaclitaxel OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

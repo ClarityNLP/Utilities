@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"camptosar", "irinotecan"
+termset TreatmentTerms0:[
+    "camptosar", "irinotecan"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms2:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "mIFL", "IFL"
+    "IFL", "mIFL"
 ];
 
-define RegimenMentioned:
+define Regimen_IFL:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedIFL:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Irinotecan AND Treatment_Fluorouracil AND Treatment_Folinicacid;
+    
+define final Received_IFL:
+    where Regimen_IFL OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

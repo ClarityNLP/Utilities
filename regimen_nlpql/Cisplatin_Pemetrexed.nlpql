@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Pemetrexed" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "alimta", "pemetrexed"
+];
+
+define Treatment_Pemetrexed:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CisplatinPemetrexed", "Cisplatin_Pemetrexed", "Cisplatin and Pemetrexed", "Cisplatin / Pemetrexed", "Cisplatin/Pemetrexed", "Cisplatin & Pemetrexed"
+];
+
+define Regimen_CisplatinPemetrexed:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Pemetrexed;
+    
+define final Received_CisplatinPemetrexed:
+    where Regimen_CisplatinPemetrexed OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Mesothelioma
+
+
+***/
+ 

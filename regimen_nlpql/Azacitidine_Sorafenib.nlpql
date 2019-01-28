@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Azacitidine & Sorafenib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "vidaza", "azacitidine"
+];
+
+define Treatment_Azacitidine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "nexavar", "sorafenib"
+];
+
+define Treatment_Sorafenib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Azacitidine & Sorafenib", "AzacitidineSorafenib", "Azacitidine_Sorafenib", "Azacitidine / Sorafenib", "Azacitidine/Sorafenib", "Azacitidine and Sorafenib"
+];
+
+define Regimen_AzacitidineSorafenib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Azacitidine AND Treatment_Sorafenib;
+    
+define final Received_AzacitidineSorafenib:
+    where Regimen_AzacitidineSorafenib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia_FLT3-positive
+
+
+***/
+ 

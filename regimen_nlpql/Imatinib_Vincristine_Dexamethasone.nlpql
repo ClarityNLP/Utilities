@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gleevec", "imatinib"
+termset TreatmentTerms0:[
+    "gleevec", "imatinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Imatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms1:[
+    "oncovin", "vincristine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms2:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Imatinib, Vincristine, Dexamethasone"
+    "Imatinib/Vincristine/Dexamethasone", "ImatinibVincristineDexamethasone", "Imatinib/ Vincristine/ Dexamethasone", "Imatinib and  Vincristine and  Dexamethasone", "Imatinib_Vincristine_Dexamethasone", "Imatinib& Vincristine& Dexamethasone", "Imatinib- Vincristine- Dexamethasone", "Imatinib &  Vincristine &  Dexamethasone", "Imatinib, Vincristine, Dexamethasone"
 ];
 
-define RegimenMentioned:
+define Regimen_ImatinibVincristineDexamethasone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedImatinib_Vincristine_Dexamethasone:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Imatinib AND Treatment_Vincristine AND Treatment_Dexamethasone;
+    
+define final Received_ImatinibVincristineDexamethasone:
+    where Regimen_ImatinibVincristineDexamethasone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

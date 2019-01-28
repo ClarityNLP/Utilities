@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"iclusig", "ponatinib"
+termset TreatmentTerms0:[
+    "iclusig", "ponatinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ponatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Ponatinib monotherapy"
+    "Ponatinibmonotherapy", "Ponatinib_monotherapy", "Ponatinib monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Ponatinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Ponatinibmonotherapy:
+    where Treatment_Ponatinib OR Regimen_Ponatinibmonotherapy;
+            
 
 // Comments
 /***

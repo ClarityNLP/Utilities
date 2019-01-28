@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Vorinostat & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "zolinza", "vorinostat"
+];
+
+define Treatment_Vorinostat:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Vorinostat / Rituximab", "Vorinostat & Rituximab", "Vorinostat_Rituximab", "Vorinostat and Rituximab", "VorinostatRituximab", "Vorinostat/Rituximab"
+];
+
+define Regimen_VorinostatRituximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Vorinostat AND Treatment_Rituximab;
+    
+define final Received_VorinostatRituximab:
+    where Regimen_VorinostatRituximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Follicular_lymphoma
+
+
+***/
+ 

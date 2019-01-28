@@ -14,93 +14,91 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"mutamycin", "mitomycin"
+        
+termset TreatmentTerms1:[
+    "mutamycin", "mitomycin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Mitomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms2:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms3:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms4:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "RT", "Fluorouracil, Mitomycin, RT"
+    "Fluorouracil& Mitomycin& RT", "Fluorouracil/ Mitomycin/ RT", "Fluorouracil/Mitomycin/RT", "Fluorouracil and  Mitomycin and  RT", "Fluorouracil- Mitomycin- RT", "Fluorouracil, Mitomycin, RT", "Fluorouracil &  Mitomycin &  RT", "FluorouracilMitomycinRT", "RT", "Fluorouracil_Mitomycin_RT"
 ];
 
-define RegimenMentioned:
+define Regimen_FluorouracilMitomycinRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFluorouracil_Mitomycin_RT:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Mitomycin AND Treatment_Externalbeamradiotherapy AND Treatment_Externalbeamradiotherapy AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_FluorouracilMitomycinRT:
+    where Regimen_FluorouracilMitomycinRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Cervical_cancer, Head_and_neck_cancer
+Known regimen for: Cervical_cancer, Head_and_neck_cancer, Bladder_cancer
 
 
 ***/

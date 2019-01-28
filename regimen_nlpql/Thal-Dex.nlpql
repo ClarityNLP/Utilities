@@ -14,69 +14,69 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"thalomid", "thalidomide"
+termset TreatmentTerms0:[
+    "thalomid", "thalidomide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Thalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"thalomid", "thalidomide"
+        
+termset TreatmentTerms1:[
+    "thalomid", "thalidomide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Thalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms2:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "TD", "Thal-Dex"
+    "Thal-Dex", "Thal/Dex", "TD", "ThalDex"
 ];
 
-define RegimenMentioned:
+define Regimen_ThalDex:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedThal-Dex:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Thalidomide AND Treatment_Thalidomide AND Treatment_Dexamethasone;
+    
+define final Received_ThalDex:
+    where Regimen_ThalDex OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
+Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
 
 
 ***/

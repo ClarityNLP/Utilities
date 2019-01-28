@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"navelbine", "vinorelbine"
+termset TreatmentTerms0:[
+    "navelbine", "vinorelbine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Vinorelbine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Vinorelbine monotherapy"
+    "Vinorelbine_monotherapy", "Vinorelbinemonotherapy", "Vinorelbine monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Vinorelbinemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Vinorelbinemonotherapy:
+    where Treatment_Vinorelbine OR Regimen_Vinorelbinemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Ovarian_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Hodgkin_lymphoma, Mesothelioma, Small_cell_lung_cancer
+Known regimen for: Hodgkin_lymphoma, Ovarian_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Mesothelioma, Small_cell_lung_cancer, Diffuse_large_B-cell_lymphoma
 
 
 ***/

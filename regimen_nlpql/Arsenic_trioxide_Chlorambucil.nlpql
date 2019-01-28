@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Arsenic trioxide & Chlorambucil" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "trisenox", "arsenic trioxide"
+];
+
+define Treatment_Arsenictrioxide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "leukeran", "chlorambucil"
+];
+
+define Treatment_Chlorambucil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "ArsenictrioxideChlorambucil", "Arsenic trioxide / Chlorambucil", "Arsenic trioxide/Chlorambucil", "Arsenic trioxide and Chlorambucil", "Arsenic_trioxide_Chlorambucil", "Arsenic trioxide & Chlorambucil"
+];
+
+define Regimen_ArsenictrioxideChlorambucil:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Arsenictrioxide AND Treatment_Chlorambucil;
+    
+define final Received_ArsenictrioxideChlorambucil:
+    where Regimen_ArsenictrioxideChlorambucil OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Mantle_cell_lymphoma
+
+
+***/
+ 

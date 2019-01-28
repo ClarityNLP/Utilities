@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Bortezomib & Dexamethasone" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
+];
+
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "decadron", "dexamethasone"
+];
+
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "BortezomibDexamethasone", "Bortezomib & Dexamethasone", "Bortezomib/Dexamethasone", "Bortezomib and Dexamethasone", "Bortezomib / Dexamethasone", "Bortezomib_Dexamethasone"
+];
+
+define Regimen_BortezomibDexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Dexamethasone;
+    
+define final Received_BortezomibDexamethasone:
+    where Regimen_BortezomibDexamethasone OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+
+
+***/
+ 

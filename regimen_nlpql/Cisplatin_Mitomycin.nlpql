@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Mitomycin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "mutamycin", "mitomycin"
+];
+
+define Treatment_Mitomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CisplatinMitomycin", "Cisplatin_Mitomycin", "Cisplatin & Mitomycin", "Cisplatin / Mitomycin", "Cisplatin and Mitomycin", "Cisplatin/Mitomycin"
+];
+
+define Regimen_CisplatinMitomycin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Mitomycin;
+    
+define final Received_CisplatinMitomycin:
+    where Regimen_CisplatinMitomycin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Cervical_cancer
+
+
+***/
+ 

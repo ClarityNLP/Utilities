@@ -1,0 +1,94 @@
+
+// Phenotype library name
+phenotype "Regimen for Mitotane & EDP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "lysodren", "mitotane"
+];
+
+define Treatment_Mitotane:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "vepesid", "etoposide"
+];
+
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "adriamycin", "doxorubicin"
+];
+
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Mitotane_EDP", "Mitotane / EDP", "Mitotane & EDP", "Mitotane/EDP", "MitotaneEDP", "Mitotane and EDP"
+];
+
+define Regimen_MitotaneEDP:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Mitotane AND Treatment_Etoposide AND Treatment_Doxorubicin AND Treatment_Cisplatin;
+    
+define final Received_MitotaneEDP:
+    where Regimen_MitotaneEDP OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Adrenocortical_carcinoma
+
+
+***/
+ 

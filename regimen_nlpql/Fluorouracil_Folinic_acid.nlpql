@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Fluorouracil & Folinic acid" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
+];
+
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Fluorouracil & Folinic acid", "Fluorouracil_Folinic_acid", "Fluorouracil and Folinic acid", "Fluorouracil / Folinic acid", "FluorouracilFolinicacid", "Fluorouracil/Folinic acid"
+];
+
+define Regimen_FluorouracilFolinicacid:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid;
+    
+define final Received_FluorouracilFolinicacid:
+    where Regimen_FluorouracilFolinicacid OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_cancer, Cervical_cancer, Rectal_cancer, Hepatocellular_carcinoma, Cholangiocarcinoma, Esophageal_cancer, Colon_cancer
+
+
+***/
+ 

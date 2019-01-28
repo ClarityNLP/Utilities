@@ -14,99 +14,96 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rituxan", "rituximab"
+termset TreatmentTerms0:[
+    "rituxan", "rituximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms1:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"bicnu", "carmustine"
+        
+termset TreatmentTerms2:[
+    "bicnu", "carmustine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Carmustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"vepesid", "etoposide"
+        
+termset TreatmentTerms3:[
+    "vepesid", "etoposide"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"cytosar", "cytarabine"
+        
+termset TreatmentTerms4:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms5:[
-"alkeran", "melphalan"
+        
+termset TreatmentTerms5:[
+    "alkeran", "melphalan"
 ];
 
-define Medications5:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms5],
-documentset:[Docs]
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms5],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R-DexaBEAM"
+    "R-DexaBEAM", "R/DexaBEAM", "RDexaBEAM"
 ];
 
-define RegimenMentioned:
+define Regimen_RDexaBEAM:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedR-DexaBEAM:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Rituximab AND Treatment_Dexamethasone AND Treatment_Carmustine AND Treatment_Etoposide AND Treatment_Cytarabine AND Treatment_Melphalan;
+    
+define final Received_RDexaBEAM:
+    where Regimen_RDexaBEAM OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

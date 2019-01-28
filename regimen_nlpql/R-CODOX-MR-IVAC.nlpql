@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytosar", "cytarabine"
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms1:[
+    "mtx", "methotrexate"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"cortef", "hydrocortisone"
+        
+termset TreatmentTerms2:[
+    "cortef", "hydrocortisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Hydrocortisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R-CODOX-M/R-IVAC"
+    "RCODOXMRIVAC", "R-CODOX-M/R-IVAC", "RCODOXM/RIVAC", "R-CODOX-MR-IVAC", "R/CODOX/M/R/IVAC"
 ];
 
-define RegimenMentioned:
+define Regimen_RCODOXMRIVAC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedR-CODOX-MR-IVAC:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Methotrexate AND Treatment_Hydrocortisone;
+    
+define final Received_RCODOXMRIVAC:
+    where Regimen_RCODOXMRIVAC OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

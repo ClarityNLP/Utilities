@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"abraxane", "paclitaxel, nanoparticle albumin-bound"
+termset TreatmentTerms0:[
+    "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxelnanoparticlealbuminbound:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "nab-Paclitaxel monotherapy"
+    "nab-Paclitaxel_monotherapy", "nabPaclitaxelmonotherapy", "nab/Paclitaxel monotherapy", "nabPaclitaxel monotherapy", "nab-Paclitaxel monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_nabPaclitaxelmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_nabPaclitaxelmonotherapy:
+    where Treatment_Paclitaxelnanoparticlealbuminbound OR Regimen_nabPaclitaxelmonotherapy;
+            
 
 // Comments
 /***

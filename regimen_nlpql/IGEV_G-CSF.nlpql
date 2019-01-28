@@ -1,0 +1,94 @@
+
+// Phenotype library name
+phenotype "Regimen for IGEV & G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "ifex", "ifosfamide"
+];
+
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "navelbine", "vinorelbine"
+];
+
+define Treatment_Vinorelbine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "millipred", "prednisolone"
+];
+
+define Treatment_Prednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "IGEV & G-CSF", "IGEV & GCSF", "IGEVGCSF", "IGEV / G-CSF", "IGEV & G/CSF", "IGEV_G-CSF", "IGEV/G-CSF", "IGEV and G-CSF"
+];
+
+define Regimen_IGEVGCSF:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ifosfamide AND Treatment_Gemcitabine AND Treatment_Vinorelbine AND Treatment_Prednisolone;
+    
+define final Received_IGEVGCSF:
+    where Regimen_IGEVGCSF OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Stem_cell_mobilization
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bicnu", "carmustine"
+termset TreatmentTerms0:[
+    "bicnu", "carmustine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carmustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "RT, then Carmustine"
+    "RT and  then Carmustine", "RT& then Carmustine", "RT_then_Carmustine", "RT, & Carmustine", "RT, / Carmustine", "RT,/Carmustine", "RT,, Carmustine", "RT/then Carmustine", "RTthenCarmustine", "RT, and Carmustine", "RT,&Carmustine", "RT, then Carmustine", "RT- then Carmustine", "RT &  then Carmustine", "RT/ then Carmustine"
 ];
 
-define RegimenMentioned:
+define Regimen_RTandthenCarmustine:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_RTthenCarmustine:
+    where Treatment_Carmustine OR Regimen_RTandthenCarmustine;
+            
 
 // Comments
 /***

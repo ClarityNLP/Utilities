@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Aspirin & Anagrelide" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "aspirin", "aspirin"
+];
+
+define Treatment_aspirin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "plavix", "clopidogrel"
+];
+
+define Treatment_Clopidogrel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Aspirin & Anagrelide", "Aspirin_Anagrelide", "AspirinAnagrelide", "Aspirin/Anagrelide", "Aspirin and Anagrelide", "Aspirin / Anagrelide"
+];
+
+define Regimen_AspirinAnagrelide:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_aspirin AND Treatment_Clopidogrel;
+    
+define final Received_AspirinAnagrelide:
+    where Regimen_AspirinAnagrelide OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Essential_thrombocythemia
+
+
+***/
+ 

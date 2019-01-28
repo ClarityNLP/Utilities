@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxotere", "docetaxel"
+termset TreatmentTerms0:[
+    "taxotere", "docetaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel monotherapy"
+    "Docetaxel monotherapy", "Docetaxelmonotherapy", "Docetaxel_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Docetaxelmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Docetaxelmonotherapy:
+    where Treatment_Docetaxel OR Regimen_Docetaxelmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Head_and_neck_cancer, Ovarian_cancer, Esophageal_cancer, Gastric_cancer, Cervical_cancer, Breast_cancer, Non-small_cell_lung_cancer, Melanoma, Small_cell_lung_cancer
+Known regimen for: Melanoma, Ovarian_cancer, Breast_cancer, Head_and_neck_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Small_cell_lung_cancer, Gastric_cancer, Bladder_cancer, Esophageal_cancer
 
 
 ***/

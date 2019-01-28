@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Tegafur & Uracil" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "uft", "tegafur and uracil"
+];
+
+define Treatment_Tegafuranduracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Tegafur_Uracil", "TegafurUracil", "Tegafur & Uracil", "Tegafur and Uracil", "Tegafur/Uracil", "Tegafur / Uracil"
+];
+
+define Regimen_TegafurUracil:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_TegafurUracil:
+    where Treatment_Tegafuranduracil OR Regimen_TegafurUracil;
+            
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Head_and_neck_cancer
+
+
+***/
+ 

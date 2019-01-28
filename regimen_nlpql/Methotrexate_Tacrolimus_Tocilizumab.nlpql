@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"mtx", "methotrexate"
+termset TreatmentTerms0:[
+    "mtx", "methotrexate"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"prograf", "tacrolimus"
+        
+termset TreatmentTerms1:[
+    "prograf", "tacrolimus"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Tacrolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"actemra", "tocilizumab"
+        
+termset TreatmentTerms2:[
+    "actemra", "tocilizumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Tocilizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Tocilizumab"
+    "Methotrexate& Tacrolimus& Tocilizumab", "Methotrexate/ Tacrolimus/ Tocilizumab", "Methotrexate/Tacrolimus/Tocilizumab", "MethotrexateTacrolimusTocilizumab", "Methotrexate &  Tacrolimus &  Tocilizumab", "Methotrexate_Tacrolimus_Tocilizumab", "Methotrexate and  Tacrolimus and  Tocilizumab", "Methotrexate- Tacrolimus- Tocilizumab", "Methotrexate, Tacrolimus, Tocilizumab"
 ];
 
-define RegimenMentioned:
+define Regimen_MethotrexateTacrolimusTocilizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedMethotrexate_Tacrolimus_Tocilizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methotrexate AND Treatment_Tacrolimus AND Treatment_Tocilizumab;
+    
+define final Received_MethotrexateTacrolimusTocilizumab:
+    where Regimen_MethotrexateTacrolimusTocilizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

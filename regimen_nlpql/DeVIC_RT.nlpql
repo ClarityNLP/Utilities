@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for DeVIC & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "neupogen", "filgrastim"
+];
+
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "DeVIC and RT", "DeVIC / RT", "DeVIC/RT", "DeVICRT", "DeVIC_RT", "DeVIC & RT"
+];
+
+define Regimen_DeVICandRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_DeVICRT:
+    where Treatment_Filgrastim OR Regimen_DeVICandRT;
+            
+
+// Comments
+/***
+
+Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type
+
+
+***/
+ 

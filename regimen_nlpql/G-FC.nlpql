@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gazyva", "obinutuzumab"
+termset TreatmentTerms0:[
+    "gazyva", "obinutuzumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Obinutuzumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"fludara", "fludarabine"
+        
+termset TreatmentTerms1:[
+    "fludara", "fludarabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"cytoxan", "cyclophosphamide"
+        
+termset TreatmentTerms2:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "G-FC"
+    "GFC", "G/FC", "G-FC"
 ];
 
-define RegimenMentioned:
+define Regimen_GFC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedG-FC:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Obinutuzumab AND Treatment_Fludarabine AND Treatment_Cyclophosphamide;
+    
+define final Received_GFC:
+    where Regimen_GFC OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

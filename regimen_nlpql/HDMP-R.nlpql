@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"solumedrol", "methylprednisolone"
+termset TreatmentTerms0:[
+    "solumedrol", "methylprednisolone"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Methylprednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "HDMP-R"
+    "HDMP-R", "HDMP/R", "HDMPR"
 ];
 
-define RegimenMentioned:
+define Regimen_HDMPR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedHDMP-R:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methylprednisolone AND Treatment_Rituximab;
+    
+define final Received_HDMPR:
+    where Regimen_HDMPR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

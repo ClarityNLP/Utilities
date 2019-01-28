@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"neoral", "cyclosporine modified"
+termset TreatmentTerms0:[
+    "neoral", "cyclosporine modified"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cyclosporinemodified:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms1:[
+    "mtx", "methotrexate"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"solumedrol", "methylprednisolone"
+        
+termset TreatmentTerms2:[
+    "solumedrol", "methylprednisolone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Methylprednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Methotrexate, MP"
+    "Cyclosporine& Methotrexate& MP", "Cyclosporine- Methotrexate- MP", "Cyclosporine, Methotrexate, MP", "Cyclosporine &  Methotrexate &  MP", "Cyclosporine/ Methotrexate/ MP", "Cyclosporine_Methotrexate_MP", "Cyclosporine and  Methotrexate and  MP", "CyclosporineMethotrexateMP", "Cyclosporine/Methotrexate/MP"
 ];
 
-define RegimenMentioned:
+define Regimen_CyclosporineMethotrexateMP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCyclosporine_Methotrexate_MP:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cyclosporinemodified AND Treatment_Methotrexate AND Treatment_Methylprednisolone;
+    
+define final Received_CyclosporineMethotrexateMP:
+    where Regimen_CyclosporineMethotrexateMP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

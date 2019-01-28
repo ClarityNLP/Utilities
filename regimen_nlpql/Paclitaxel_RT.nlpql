@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Paclitaxel & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
+];
+
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "external beam radiotherapy", "external beam radiotherapy"
+];
+
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Paclitaxel and RT", "Paclitaxel/RT", "Paclitaxel_RT", "Paclitaxel / RT", "PaclitaxelRT", "Paclitaxel & RT"
+];
+
+define Regimen_PaclitaxelandRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxel AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_PaclitaxelRT:
+    where Regimen_PaclitaxelandRT OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Head_and_neck_cancer, Bladder_cancer
+
+
+***/
+ 

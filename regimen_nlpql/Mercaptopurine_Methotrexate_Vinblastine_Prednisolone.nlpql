@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"purinethol", "mercaptopurine"
+termset TreatmentTerms0:[
+    "purinethol", "mercaptopurine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Mercaptopurine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms1:[
+    "mtx", "methotrexate"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"velban", "vinblastine"
+        
+termset TreatmentTerms2:[
+    "velban", "vinblastine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Vinblastine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"millipred", "prednisolone"
+        
+termset TreatmentTerms3:[
+    "millipred", "prednisolone"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Prednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Mercaptopurine, Methotrexate, Vinblastine, Prednisolone"
+    "Mercaptopurine, Methotrexate, Vinblastine, Prednisolone", "Mercaptopurine_Methotrexate_Vinblastine_Prednisolone", "Mercaptopurine &  Methotrexate &  Vinblastine &  Prednisolone", "Mercaptopurine& Methotrexate& Vinblastine& Prednisolone", "Mercaptopurine/Methotrexate/Vinblastine/Prednisolone", "Mercaptopurine/ Methotrexate/ Vinblastine/ Prednisolone", "Mercaptopurine and  Methotrexate and  Vinblastine and  Prednisolone", "MercaptopurineMethotrexateVinblastinePrednisolone", "Mercaptopurine- Methotrexate- Vinblastine- Prednisolone"
 ];
 
-define RegimenMentioned:
+define Regimen_MercaptopurineMethotrexateVinblastinePrednisolone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedMercaptopurine_Methotrexate_Vinblastine_Prednisolone:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Mercaptopurine AND Treatment_Methotrexate AND Treatment_Vinblastine AND Treatment_Prednisolone;
+    
+define final Received_MercaptopurineMethotrexateVinblastinePrednisolone:
+    where Regimen_MercaptopurineMethotrexateVinblastinePrednisolone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

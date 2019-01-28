@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxotere", "docetaxel"
+termset TreatmentTerms0:[
+    "taxotere", "docetaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"gemzar", "gemcitabine"
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel, Gemcitabine, RT", "RT"
+    "Docetaxel, Gemcitabine, RT", "Docetaxel &  Gemcitabine &  RT", "Docetaxel and  Gemcitabine and  RT", "DocetaxelGemcitabineRT", "Docetaxel/ Gemcitabine/ RT", "Docetaxel/Gemcitabine/RT", "Docetaxel_Gemcitabine_RT", "Docetaxel& Gemcitabine& RT", "Docetaxel- Gemcitabine- RT", "RT"
 ];
 
-define RegimenMentioned:
+define Regimen_DocetaxelGemcitabineRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedDocetaxel_Gemcitabine_RT:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Docetaxel AND Treatment_Gemcitabine;
+    
+define final Received_DocetaxelGemcitabineRT:
+    where Regimen_DocetaxelGemcitabineRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

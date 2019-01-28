@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Azacitidine & Gemtuzumab ozogamicin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "mylotarg", "gemtuzumab ozogamicin"
+];
+
+define Treatment_Gemtuzumabozogamicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Azacitidine and Gemtuzumab ozogamicin", "Azacitidine/Gemtuzumab ozogamicin", "AzacitidineGemtuzumabozogamicin", "Azacitidine / Gemtuzumab ozogamicin", "Azacitidine_Gemtuzumab_ozogamicin", "Azacitidine & Gemtuzumab ozogamicin"
+];
+
+define Regimen_AzacitidineandGemtuzumabozogamicin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_AzacitidineGemtuzumabozogamicin:
+    where Treatment_Gemtuzumabozogamicin OR Regimen_AzacitidineandGemtuzumabozogamicin;
+            
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+***/
+ 

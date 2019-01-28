@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytosar", "cytarabine"
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"ifex", "ifosfamide"
+        
+termset TreatmentTerms1:[
+    "ifex", "ifosfamide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Ifosfamide, G-CSF"
+    "Cytarabine and  Ifosfamide and  G-CSF", "Cytarabine/ Ifosfamide/ G-CSF", "Cytarabine, Ifosfamide, G/CSF", "Cytarabine_Ifosfamide_G-CSF", "CytarabineIfosfamideGCSF", "Cytarabine, Ifosfamide, G-CSF", "Cytarabine, Ifosfamide, GCSF", "Cytarabine/Ifosfamide/G-CSF", "Cytarabine &  Ifosfamide &  G-CSF", "Cytarabine& Ifosfamide& G-CSF", "Cytarabine- Ifosfamide- G-CSF"
 ];
 
-define RegimenMentioned:
+define Regimen_CytarabineandIfosfamideandGCSF:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCytarabine_Ifosfamide_G-CSF:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Ifosfamide;
+    
+define final Received_CytarabineIfosfamideGCSF:
+    where Regimen_CytarabineandIfosfamideandGCSF OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & S-1" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "s-1", "tegafur, gimeracil, oteracil"
+];
+
+define Treatment_Tegafurgimeraciloteracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "SP", "Cisplatin & S/1", "CisplatinS1", "Cisplatin/S-1", "Cisplatin & S1", "Cisplatin_S-1", "CS", "Cisplatin / S-1", "Cisplatin & S-1", "Cisplatin and S-1"
+];
+
+define Regimen_SP:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Tegafurgimeraciloteracil;
+    
+define final Received_CisplatinS1:
+    where Regimen_SP OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Gastric_cancer
+
+
+***/
+ 

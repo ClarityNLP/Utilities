@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Imatinib & Prednisone" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gleevec", "imatinib"
+];
+
+define Treatment_Imatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "sterapred", "prednisone"
+];
+
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Imatinib_Prednisone", "Imatinib / Prednisone", "Imatinib & Prednisone", "Imatinib and Prednisone", "ImatinibPrednisone", "Imatinib/Prednisone"
+];
+
+define Regimen_ImatinibPrednisone:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Imatinib AND Treatment_Prednisone;
+    
+define final Received_ImatinibPrednisone:
+    where Regimen_ImatinibPrednisone OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
+***/
+ 

@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"revlimid", "lenalidomide"
+termset TreatmentTerms0:[
+    "revlimid", "lenalidomide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Lenalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Lenalidomide monotherapy"
+    "Lenalidomide_monotherapy", "Lenalidomide monotherapy", "Lenalidomidemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Lenalidomidemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Lenalidomidemonotherapy:
+    where Treatment_Lenalidomide OR Regimen_Lenalidomidemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma, Light-chain_(AL)_amyloidosis, Transformed_lymphoma, Polycythemia_vera, Peripheral_T-cell_lymphoma, Marginal_zone_lymphoma, Multiple_myeloma_relapsedrefractory, Chronic_lymphocytic_leukemia_(CLLSLL), Myelofibrosis, Waldenström_macroglobulinemia, Cutaneous_T-cell_lymphoma, Hodgkin_lymphoma, Plasma_cell_leukemia, Mantle_cell_lymphoma, Adult_T-cell_leukemia-lymphoma, Myelodysplastic_syndrome
+Known regimen for: Multiple_myeloma_relapsedrefractory, Waldenström_macroglobulinemia, Hodgkin_lymphoma, Myelodysplastic_syndrome, Follicular_lymphoma, Adult_T-cell_leukemia-lymphoma, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Light-chain_(AL)_amyloidosis, Myelofibrosis, Plasma_cell_leukemia, Polycythemia_vera, Transformed_lymphoma, Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"fusilev", "levoleucovorin"
+        
+termset TreatmentTerms2:[
+    "fusilev", "levoleucovorin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Levoleucovorin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"eloxatin", "oxaliplatin"
+        
+termset TreatmentTerms3:[
+    "eloxatin", "oxaliplatin"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "mFOLFOX6"
 ];
 
-define RegimenMentioned:
+define Regimen_mFOLFOX6:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedmFOLFOX6:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Levoleucovorin AND Treatment_Oxaliplatin;
+    
+define final Received_mFOLFOX6:
+    where Regimen_mFOLFOX6 OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

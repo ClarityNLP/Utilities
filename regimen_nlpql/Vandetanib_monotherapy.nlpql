@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"caprelsa", "vandetanib"
+termset TreatmentTerms0:[
+    "caprelsa", "vandetanib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Vandetanib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Vandetanib monotherapy"
+    "Vandetanib_monotherapy", "Vandetanib monotherapy", "Vandetanibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Vandetanibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Vandetanibmonotherapy:
+    where Treatment_Vandetanib OR Regimen_Vandetanibmonotherapy;
+            
 
 // Comments
 /***

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Bortezomib & Melphalan, then auto HSCT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
+];
+
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "alkeran", "melphalan"
+];
+
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Bortezomib_Melphalan_then_auto_HSCT", "Bortezomib & Melphalan, then auto HSCT", "Bortezomib & Melphalan, & auto HSCT", "BortezomibMelphalanthenautoHSCT", "Bortezomib and Melphalan, then auto HSCT", "Bortezomib & Melphalan& then auto HSCT", "Bortezomib & Melphalan, / auto HSCT", "Bortezomib/Melphalan, then auto HSCT", "Bortezomib & Melphalan &  then auto HSCT", "Bortezomib & Melphalan and  then auto HSCT", "Bortezomib & Melphalan, and auto HSCT", "Bortezomib & Melphalan/then auto HSCT", "Bortezomib & Melphalan,&auto HSCT", "Bortezomib & Melphalan- then auto HSCT", "Bortezomib & Melphalan,/auto HSCT", "Bortezomib & Melphalan/ then auto HSCT", "Bortezomib / Melphalan, then auto HSCT", "Bortezomib & Melphalan,, auto HSCT"
+];
+
+define Regimen_BortezomibMelphalanthenautoHSCT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Melphalan;
+    
+define final Received_BortezomibMelphalanthenautoHSCT:
+    where Regimen_BortezomibMelphalanthenautoHSCT OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Light-chain_(AL)_amyloidosis
+
+
+***/
+ 

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Arsenic trioxide & Idarubicin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "trisenox", "arsenic trioxide"
+];
+
+define Treatment_Arsenictrioxide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "idamycin", "idarubicin"
+];
+
+define Treatment_Idarubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "ArsenictrioxideIdarubicin", "Arsenic trioxide & Idarubicin", "Arsenic_trioxide_Idarubicin", "Arsenic trioxide / Idarubicin", "Arsenic trioxide and Idarubicin", "Arsenic trioxide/Idarubicin"
+];
+
+define Regimen_ArsenictrioxideIdarubicin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Arsenictrioxide AND Treatment_Idarubicin;
+    
+define final Received_ArsenictrioxideIdarubicin:
+    where Regimen_ArsenictrioxideIdarubicin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_promyelocytic_leukemia
+
+
+***/
+ 

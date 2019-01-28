@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"sylvant", "siltuximab"
+termset TreatmentTerms0:[
+    "sylvant", "siltuximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Siltuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Siltuximab monotherapy"
+    "Siltuximab_monotherapy", "Siltuximabmonotherapy", "Siltuximab monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Siltuximabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Siltuximabmonotherapy:
+    where Treatment_Siltuximab OR Regimen_Siltuximabmonotherapy;
+            
 
 // Comments
 /***

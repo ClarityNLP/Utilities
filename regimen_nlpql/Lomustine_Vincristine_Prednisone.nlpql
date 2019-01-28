@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"ceenu", "lomustine"
+termset TreatmentTerms0:[
+    "ceenu", "lomustine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Lomustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms1:[
+    "oncovin", "vincristine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms2:[
+    "sterapred", "prednisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Lomustine, Vincristine, Prednisone"
+    "Lomustine, Vincristine, Prednisone", "Lomustine/Vincristine/Prednisone", "Lomustine/ Vincristine/ Prednisone", "LomustineVincristinePrednisone", "Lomustine- Vincristine- Prednisone", "Lomustine and  Vincristine and  Prednisone", "Lomustine &  Vincristine &  Prednisone", "Lomustine& Vincristine& Prednisone", "Lomustine_Vincristine_Prednisone"
 ];
 
-define RegimenMentioned:
+define Regimen_LomustineVincristinePrednisone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedLomustine_Vincristine_Prednisone:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Lomustine AND Treatment_Vincristine AND Treatment_Prednisone;
+    
+define final Received_LomustineVincristinePrednisone:
+    where Regimen_LomustineVincristinePrednisone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

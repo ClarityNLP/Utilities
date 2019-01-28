@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cerubidine", "daunorubicin"
+termset TreatmentTerms0:[
+    "cerubidine", "daunorubicin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin monotherapy"
+    "Daunorubicin monotherapy", "Daunorubicinmonotherapy", "Daunorubicin_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Daunorubicinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Daunorubicinmonotherapy:
+    where Treatment_Daunorubicin OR Regimen_Daunorubicinmonotherapy;
+            
 
 // Comments
 /***

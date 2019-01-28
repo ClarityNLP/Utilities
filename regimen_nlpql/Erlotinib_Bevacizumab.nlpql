@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Erlotinib & Bevacizumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "tarceva", "erlotinib"
+];
+
+define Treatment_Erlotinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "avastin", "bevacizumab"
+];
+
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Erlotinib / Bevacizumab", "Erlotinib/Bevacizumab", "Erlotinib & Bevacizumab", "Erlotinib and Bevacizumab", "ErlotinibBevacizumab", "Erlotinib_Bevacizumab"
+];
+
+define Regimen_ErlotinibBevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Erlotinib AND Treatment_Bevacizumab;
+    
+define final Received_ErlotinibBevacizumab:
+    where Regimen_ErlotinibBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hepatocellular_carcinoma, Adenocarcinoma_of_unknown_primary, Renal_cell_carcinoma, Cholangiocarcinoma, Non-small_cell_lung_cancer_EGFR-mutated
+
+
+***/
+ 

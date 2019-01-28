@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"xeloda", "capecitabine"
+termset TreatmentTerms0:[
+    "xeloda", "capecitabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Capecitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"taxotere", "docetaxel"
+        
+termset TreatmentTerms1:[
+    "taxotere", "docetaxel"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"eloxatin", "oxaliplatin"
+        
+termset TreatmentTerms2:[
+    "eloxatin", "oxaliplatin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms3:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Docetaxel, Oxaliplatin, RT", "RT"
+    "Capecitabine_Docetaxel_Oxaliplatin_RT", "Capecitabine/Docetaxel/Oxaliplatin/RT", "Capecitabine/ Docetaxel/ Oxaliplatin/ RT", "Capecitabine and  Docetaxel and  Oxaliplatin and  RT", "Capecitabine- Docetaxel- Oxaliplatin- RT", "Capecitabine, Docetaxel, Oxaliplatin, RT", "CapecitabineDocetaxelOxaliplatinRT", "Capecitabine &  Docetaxel &  Oxaliplatin &  RT", "Capecitabine& Docetaxel& Oxaliplatin& RT", "RT"
 ];
 
-define RegimenMentioned:
+define Regimen_CapecitabineDocetaxelOxaliplatinRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCapecitabine_Docetaxel_Oxaliplatin_RT:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Capecitabine AND Treatment_Docetaxel AND Treatment_Oxaliplatin AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_CapecitabineDocetaxelOxaliplatinRT:
+    where Regimen_CapecitabineDocetaxelOxaliplatinRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytosar", "cytarabine"
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"idamycin", "idarubicin"
+        
+termset TreatmentTerms1:[
+    "idamycin", "idarubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Idarubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "IA", "AI", "7+3i"
+    "73i", "7&3i", "7 and 3i", "7/3i", "7 / 3i", "IA", "7+3i", "AI", "7 & 3i"
 ];
 
-define RegimenMentioned:
+define Regimen_73i:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final Received73i:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Idarubicin;
+    
+define final Received_73i:
+    where Regimen_73i OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"trisenox", "arsenic trioxide"
+termset TreatmentTerms0:[
+    "trisenox", "arsenic trioxide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Arsenictrioxide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"atra", "all-trans retinoic acid"
+        
+termset TreatmentTerms1:[
+    "atra", "all-trans retinoic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Alltransretinoicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"idamycin", "idarubicin"
+        
+termset TreatmentTerms2:[
+    "idamycin", "idarubicin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Idarubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide, ATRA, Idarubicin"
+    "Arsenic trioxide and  ATRA and  Idarubicin", "Arsenic trioxide/ ATRA/ Idarubicin", "Arsenic_trioxide_ATRA_Idarubicin", "Arsenic trioxide &  ATRA &  Idarubicin", "Arsenic trioxide/ATRA/Idarubicin", "ArsenictrioxideATRAIdarubicin", "Arsenic trioxide- ATRA- Idarubicin", "Arsenic trioxide, ATRA, Idarubicin", "Arsenic trioxide& ATRA& Idarubicin"
 ];
 
-define RegimenMentioned:
+define Regimen_ArsenictrioxideandATRAandIdarubicin:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedArsenic_trioxide_ATRA_Idarubicin:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Arsenictrioxide AND Treatment_Alltransretinoicacid AND Treatment_Idarubicin;
+    
+define final Received_ArsenictrioxideATRAIdarubicin:
+    where Regimen_ArsenictrioxideandATRAandIdarubicin OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

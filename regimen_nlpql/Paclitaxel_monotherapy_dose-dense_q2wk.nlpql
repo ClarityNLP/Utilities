@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel monotherapy, dose-dense (q2wk)", "ddT"
+    "Paclitaxel monotherapy &  dose-dense (q2wk)", "Paclitaxel monotherapy, dose/dense (q2wk)", "Paclitaxel monotherapy/ dose-dense (q2wk)", "Paclitaxel monotherapy/dose-dense (q2wk)", "Paclitaxel monotherapy, dose-dense (q2wk)", "Paclitaxel monotherapy- dose-dense (q2wk)", "Paclitaxel monotherapy& dose-dense (q2wk)", "Paclitaxelmonotherapydosedenseq2wk", "Paclitaxel monotherapy and  dose-dense (q2wk)", "Paclitaxel_monotherapy_dose-dense_q2wk", "ddT", "Paclitaxel monotherapy, dosedense (q2wk)"
 ];
 
-define RegimenMentioned:
+define Regimen_Paclitaxelmonotherapydosedenseq2wk:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Paclitaxelmonotherapydosedenseq2wk:
+    where Treatment_Paclitaxel OR Regimen_Paclitaxelmonotherapydosedenseq2wk;
+            
 
 // Comments
 /***

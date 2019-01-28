@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tagrisso", "osimertinib"
+termset TreatmentTerms0:[
+    "tagrisso", "osimertinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Osimertinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Osimertinib monotherapy"
+    "Osimertinibmonotherapy", "Osimertinib monotherapy", "Osimertinib_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Osimertinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Osimertinibmonotherapy:
+    where Treatment_Osimertinib OR Regimen_Osimertinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, CNS_carcinoma
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated
 
 
 ***/

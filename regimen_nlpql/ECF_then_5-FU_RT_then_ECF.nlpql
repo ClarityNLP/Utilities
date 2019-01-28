@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for ECF, then 5-FU & RT, then ECF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "ellence", "epirubicin"
+];
+
+define Treatment_Epirubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "ECF, & 5-FU & RT, & ECF", "ECF, then 5-FU and RT, then ECF", "ECF- then 5-FU & RT- then ECF", "ECF, then 5-FU / RT, then ECF", "ECF and  then 5-FU & RT and  then ECF", "ECF& then 5-FU & RT& then ECF", "ECF, then 5-FU & RT, then ECF", "ECF, then 5-FU/RT, then ECF", "ECF,/5-FU & RT,/ECF", "ECF_then_5-FU_RT_then_ECF", "ECF,, 5-FU & RT,, ECF", "ECF,&5-FU & RT,&ECF", "ECF/ then 5-FU & RT/ then ECF", "ECF &  then 5-FU & RT &  then ECF", "ECF, then 5FU & RT, then ECF", "ECF, and 5-FU & RT, and ECF", "ECF/then 5-FU & RT/then ECF", "ECFthen5FURTthenECF", "ECF, then 5/FU & RT, then ECF", "ECF, / 5-FU & RT, / ECF"
+];
+
+define Regimen_ECF5FURTECF:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Epirubicin AND Treatment_Cisplatin AND Treatment_Fluorouracil;
+    
+define final Received_ECFthen5FURTthenECF:
+    where Regimen_ECF5FURTECF OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Esophageal_cancer
+
+
+***/
+ 

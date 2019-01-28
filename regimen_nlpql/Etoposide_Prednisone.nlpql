@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Etoposide & Prednisone" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "vepesid", "etoposide"
+];
+
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "sterapred", "prednisone"
+];
+
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Etoposide & Prednisone", "EtoposidePrednisone", "Etoposide and Prednisone", "Etoposide/Prednisone", "Etoposide / Prednisone", "Etoposide_Prednisone"
+];
+
+define Regimen_EtoposidePrednisone:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Etoposide AND Treatment_Prednisone;
+    
+define final Received_EtoposidePrednisone:
+    where Regimen_EtoposidePrednisone OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Langerhans_cell_histiocytosis
+
+
+***/
+ 

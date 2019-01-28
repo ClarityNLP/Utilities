@@ -14,111 +14,107 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"atra", "all-trans retinoic acid"
+termset TreatmentTerms0:[
+    "atra", "all-trans retinoic acid"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Alltransretinoicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"purinethol", "mercaptopurine"
+        
+termset TreatmentTerms1:[
+    "purinethol", "mercaptopurine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Mercaptopurine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms2:[
+    "mtx", "methotrexate"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms3:[
+    "mtx", "methotrexate"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"purinethol", "mercaptopurine"
+        
+termset TreatmentTerms4:[
+    "purinethol", "mercaptopurine"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Mercaptopurine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms5:[
-"mtx", "methotrexate"
+        
+termset TreatmentTerms5:[
+    "mtx", "methotrexate"
 ];
 
-define Medications5:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms5],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms5],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms6:[
-"purinethol", "mercaptopurine"
+        
+termset TreatmentTerms6:[
+    "purinethol", "mercaptopurine"
 ];
 
-define Medications6:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms6],
-documentset:[Docs]
+define Treatment_Mercaptopurine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms6],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "ATRA, Mercaptopurine, Methotrexate"
+    "ATRA- Mercaptopurine- Methotrexate", "ATRA& Mercaptopurine& Methotrexate", "ATRA/Mercaptopurine/Methotrexate", "ATRA/ Mercaptopurine/ Methotrexate", "ATRA_Mercaptopurine_Methotrexate", "ATRA, Mercaptopurine, Methotrexate", "ATRA &  Mercaptopurine &  Methotrexate", "ATRA and  Mercaptopurine and  Methotrexate", "ATRAMercaptopurineMethotrexate"
 ];
 
-define RegimenMentioned:
+define Regimen_ATRAMercaptopurineMethotrexate:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedATRA_Mercaptopurine_Methotrexate:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Alltransretinoicacid AND Treatment_Mercaptopurine AND Treatment_Methotrexate AND Treatment_Methotrexate AND Treatment_Mercaptopurine AND Treatment_Methotrexate AND Treatment_Mercaptopurine;
+    
+define final Received_ATRAMercaptopurineMethotrexate:
+    where Regimen_ATRAMercaptopurineMethotrexate OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

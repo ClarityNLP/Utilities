@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"hycamtin", "topotecan"
+        
+termset TreatmentTerms1:[
+    "hycamtin", "topotecan"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Topotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"avastin", "bevacizumab"
+        
+termset TreatmentTerms2:[
+    "avastin", "bevacizumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel, Topotecan, Bevacizumab", "TP+Bev"
+    "Paclitaxel and  Topotecan and  Bevacizumab", "TP/Bev", "TP&Bev", "TP+Bev", "TPBev", "Paclitaxel &  Topotecan &  Bevacizumab", "Paclitaxel& Topotecan& Bevacizumab", "Paclitaxel, Topotecan, Bevacizumab", "Paclitaxel_Topotecan_Bevacizumab", "TP & Bev", "TP and Bev", "Paclitaxel/Topotecan/Bevacizumab", "Paclitaxel- Topotecan- Bevacizumab", "PaclitaxelTopotecanBevacizumab", "Paclitaxel/ Topotecan/ Bevacizumab", "TP / Bev"
 ];
 
-define RegimenMentioned:
+define Regimen_PaclitaxelandTopotecanandBevacizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedPaclitaxel_Topotecan_Bevacizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxel AND Treatment_Topotecan AND Treatment_Bevacizumab;
+    
+define final Received_PaclitaxelTopotecanBevacizumab:
+    where Regimen_PaclitaxelandTopotecanandBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

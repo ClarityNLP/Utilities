@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"velban", "vinblastine"
+        
+termset TreatmentTerms1:[
+    "velban", "vinblastine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vinblastine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"external beam radiotherapy", "external beam radiotherapy"
+        
+termset TreatmentTerms2:[
+    "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Vinblastine, RT"
+    "CisplatinVinblastineRT", "Cisplatin/ Vinblastine/ RT", "Cisplatin& Vinblastine& RT", "Cisplatin- Vinblastine- RT", "Cisplatin &  Vinblastine &  RT", "Cisplatin/Vinblastine/RT", "Cisplatin, Vinblastine, RT", "Cisplatin_Vinblastine_RT", "Cisplatin and  Vinblastine and  RT"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinVinblastineRT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Vinblastine_RT:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Vinblastine AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_CisplatinVinblastineRT:
+    where Regimen_CisplatinVinblastineRT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

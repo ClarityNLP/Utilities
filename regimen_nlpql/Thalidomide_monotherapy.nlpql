@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"thalomid", "thalidomide"
+termset TreatmentTerms0:[
+    "thalomid", "thalidomide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Thalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Thalidomide monotherapy"
+    "Thalidomide monotherapy", "Thalidomide_monotherapy", "Thalidomidemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Thalidomidemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Thalidomidemonotherapy:
+    where Treatment_Thalidomide OR Regimen_Thalidomidemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Polycythemia_vera
+Known regimen for: Polycythemia_vera, Multiple_myeloma_relapsedrefractory
 
 
 ***/

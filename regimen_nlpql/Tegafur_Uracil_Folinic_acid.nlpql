@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"uft", "tegafur and uracil"
+termset TreatmentTerms0:[
+    "uft", "tegafur and uracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Tegafuranduracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Tegafur, Uracil, Folinic acid", "UFT + LV"
+    "UFT + LV", "UFT & LV", "UFT_LV", "UFT  and  LV", "Tegafur &  Uracil &  Folinic acid", "Tegafur and  Uracil and  Folinic acid", "Tegafur/Uracil/Folinic acid", "Tegafur/ Uracil/ Folinic acid", "UFTLV", "TegafurUracilFolinicacid", "Tegafur, Uracil, Folinic acid", "UFT / LV", "Tegafur_Uracil_Folinic_acid", "Tegafur- Uracil- Folinic acid", "Tegafur& Uracil& Folinic acid", "UFT  &  LV", "UFT  /  LV"
 ];
 
-define RegimenMentioned:
+define Regimen_UFTLV:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedTegafur_Uracil_Folinic_acid:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Tegafuranduracil AND Treatment_Folinicacid;
+    
+define final Received_TegafurUracilFolinicacid:
+    where Regimen_UFTLV OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

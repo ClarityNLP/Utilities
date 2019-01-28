@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"matulane", "procarbazine"
+termset TreatmentTerms0:[
+    "matulane", "procarbazine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Procarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Procarbazine monotherapy"
+    "Procarbazine monotherapy", "Procarbazinemonotherapy", "Procarbazine_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Procarbazinemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Procarbazinemonotherapy:
+    where Treatment_Procarbazine OR Regimen_Procarbazinemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Glioblastoma, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Glioblastoma
 
 
 ***/

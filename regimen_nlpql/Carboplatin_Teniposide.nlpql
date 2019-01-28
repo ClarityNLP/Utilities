@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Carboplatin & Teniposide" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
+];
+
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "vumon", "teniposide"
+];
+
+define Treatment_Teniposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Carboplatin and Teniposide", "CarboplatinTeniposide", "Carboplatin / Teniposide", "Carboplatin/Teniposide", "Carboplatin & Teniposide", "Carboplatin_Teniposide"
+];
+
+define Regimen_CarboplatinandTeniposide:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Teniposide;
+    
+define final Received_CarboplatinTeniposide:
+    where Regimen_CarboplatinandTeniposide OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Low-grade_glioma
+
+
+***/
+ 

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for CYVE & G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
+];
+
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "vepesid", "etoposide"
+];
+
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CYVE/G-CSF", "CYVE and G-CSF", "CYVE & G-CSF", "CYVE / G-CSF", "CYVE & G/CSF", "CYVEGCSF", "CYVE & GCSF", "CYVE_G-CSF"
+];
+
+define Regimen_CYVEGCSF:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Etoposide;
+    
+define final Received_CYVEGCSF:
+    where Regimen_CYVEGCSF OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Stem_cell_mobilization
+
+
+***/
+ 

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Bortezomib & Melphalan" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "velcade", "bortezomib"
+];
+
+define Treatment_Bortezomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "alkeran", "melphalan"
+];
+
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "BorHDM", "Bortezomib / Melphalan", "Bortezomib & Melphalan", "Bortezomib/Melphalan", "BortezomibMelphalan", "Bortezomib and Melphalan", "Bor-HDM", "Bor/HDM", "Bortezomib_Melphalan"
+];
+
+define Regimen_BorHDM:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bortezomib AND Treatment_Melphalan;
+    
+define final Received_BortezomibMelphalan:
+    where Regimen_BorHDM OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Autologous_HSCT
+
+
+***/
+ 

@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"arzerra", "ofatumumab"
+termset TreatmentTerms0:[
+    "arzerra", "ofatumumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ofatumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Ofatumumab monotherapy"
+    "Ofatumumabmonotherapy", "Ofatumumab monotherapy", "Ofatumumab_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Ofatumumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Ofatumumabmonotherapy:
+    where Treatment_Ofatumumab OR Regimen_Ofatumumabmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Follicular_lymphoma
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

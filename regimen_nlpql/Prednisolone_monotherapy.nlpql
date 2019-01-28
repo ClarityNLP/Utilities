@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"millipred", "prednisolone"
+termset TreatmentTerms0:[
+    "millipred", "prednisolone"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Prednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Prednisolone monotherapy"
+    "Prednisolonemonotherapy", "Prednisolone monotherapy", "Prednisolone_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Prednisolonemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Prednisolonemonotherapy:
+    where Treatment_Prednisolone OR Regimen_Prednisolonemonotherapy;
+            
 
 // Comments
 /***

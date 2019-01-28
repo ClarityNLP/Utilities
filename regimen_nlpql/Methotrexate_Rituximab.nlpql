@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Methotrexate & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "mtx", "methotrexate"
+];
+
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Methotrexate & Rituximab", "Methotrexate/Rituximab", "Methotrexate_Rituximab", "Methotrexate and Rituximab", "MethotrexateRituximab", "Methotrexate / Rituximab"
+];
+
+define Regimen_MethotrexateRituximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methotrexate AND Treatment_Rituximab;
+    
+define final Received_MethotrexateRituximab:
+    where Regimen_MethotrexateRituximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: CNS_lymphoma
+
+
+***/
+ 

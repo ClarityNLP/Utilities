@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Temozolomide & NovoTTF-100A" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "temodar", "temozolomide"
+];
+
+define Treatment_Temozolomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "optune", "novottf-100a system"
+];
+
+define Treatment_NovoTTF100Asystem:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Temozolomide_NovoTTF-100A", "TemozolomideNovoTTF100A", "Temozolomide & NovoTTF100A", "Temozolomide & NovoTTF-100A", "Temozolomide and NovoTTF-100A", "Temozolomide & NovoTTF/100A", "Temozolomide / NovoTTF-100A", "Temozolomide/NovoTTF-100A"
+];
+
+define Regimen_TemozolomideNovoTTF100A:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Temozolomide AND Treatment_NovoTTF100Asystem;
+    
+define final Received_TemozolomideNovoTTF100A:
+    where Regimen_TemozolomideNovoTTF100A OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Glioblastoma
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"trisenox", "arsenic trioxide"
+termset TreatmentTerms0:[
+    "trisenox", "arsenic trioxide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Arsenictrioxide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide monotherapy"
+    "Arsenic_trioxide_monotherapy", "Arsenictrioxidemonotherapy", "Arsenic trioxide monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Arsenictrioxidemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Arsenictrioxidemonotherapy:
+    where Treatment_Arsenictrioxide OR Regimen_Arsenictrioxidemonotherapy;
+            
 
 // Comments
 /***

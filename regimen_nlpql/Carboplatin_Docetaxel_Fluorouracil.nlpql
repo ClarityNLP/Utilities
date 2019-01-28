@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"paraplatin", "carboplatin"
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"taxotere", "docetaxel"
+        
+termset TreatmentTerms1:[
+    "taxotere", "docetaxel"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms2:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Docetaxel, Fluorouracil"
+    "Carboplatin_Docetaxel_Fluorouracil", "Carboplatin/ Docetaxel/ Fluorouracil", "Carboplatin &  Docetaxel &  Fluorouracil", "Carboplatin/Docetaxel/Fluorouracil", "Carboplatin& Docetaxel& Fluorouracil", "Carboplatin- Docetaxel- Fluorouracil", "CarboplatinDocetaxelFluorouracil", "Carboplatin, Docetaxel, Fluorouracil", "Carboplatin and  Docetaxel and  Fluorouracil"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinDocetaxelFluorouracil:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_Docetaxel_Fluorouracil:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Docetaxel AND Treatment_Fluorouracil;
+    
+define final Received_CarboplatinDocetaxelFluorouracil:
+    where Regimen_CarboplatinDocetaxelFluorouracil OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

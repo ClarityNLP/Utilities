@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"eloxatin", "oxaliplatin"
+termset TreatmentTerms0:[
+    "eloxatin", "oxaliplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin monotherapy"
+    "Oxaliplatin monotherapy", "Oxaliplatin_monotherapy", "Oxaliplatinmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Oxaliplatinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Oxaliplatinmonotherapy:
+    where Treatment_Oxaliplatin OR Regimen_Oxaliplatinmonotherapy;
+            
 
 // Comments
 /***

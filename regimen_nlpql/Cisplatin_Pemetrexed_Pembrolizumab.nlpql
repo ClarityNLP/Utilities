@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"folate", "folic acid"
+termset TreatmentTerms0:[
+    "folate", "folic acid"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Folicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"vitamin b12", "cyanocobalamin"
+        
+termset TreatmentTerms1:[
+    "vitamin b12", "cyanocobalamin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cyanocobalamin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-":category:steroids", ":category:steroids"
+        
+termset TreatmentTerms2:[
+    ":category:steroids", ":category:steroids"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_CategorySteroids:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Pemetrexed, Pembrolizumab"
+    "Cisplatin& Pemetrexed& Pembrolizumab", "Cisplatin/Pemetrexed/Pembrolizumab", "Cisplatin, Pemetrexed, Pembrolizumab", "Cisplatin/ Pemetrexed/ Pembrolizumab", "Cisplatin and  Pemetrexed and  Pembrolizumab", "Cisplatin- Pemetrexed- Pembrolizumab", "Cisplatin &  Pemetrexed &  Pembrolizumab", "Cisplatin_Pemetrexed_Pembrolizumab", "CisplatinPemetrexedPembrolizumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinPemetrexedPembrolizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Pemetrexed_Pembrolizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Folicacid AND Treatment_Cyanocobalamin AND Treatment_CategorySteroids;
+    
+define final Received_CisplatinPemetrexedPembrolizumab:
+    where Regimen_CisplatinPemetrexedPembrolizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

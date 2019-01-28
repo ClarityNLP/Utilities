@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tibsovo", "ivosidenib"
+termset TreatmentTerms0:[
+    "tibsovo", "ivosidenib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ivosidenib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Ivosidenib monotherapy"
+    "Ivosidenib_monotherapy", "Ivosidenib monotherapy", "Ivosidenibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Ivosidenibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Ivosidenibmonotherapy:
+    where Treatment_Ivosidenib OR Regimen_Ivosidenibmonotherapy;
+            
 
 // Comments
 /***

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Interferon alfa-2b & Zidovudine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "intron-a", "interferon alfa-2b"
+];
+
+define Treatment_Interferonalfa2b:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "retrovir", "zidovudine"
+];
+
+define Treatment_Zidovudine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Interferonalfa2bZidovudine", "Interferon alfa-2b/Zidovudine", "Interferon alfa-2b & Zidovudine", "Interferon alfa2b & Zidovudine", "Interferon_alfa-2b_Zidovudine", "Interferon alfa/2b & Zidovudine", "Interferon alfa-2b and Zidovudine", "Interferon alfa-2b / Zidovudine"
+];
+
+define Regimen_Interferonalfa2bZidovudine:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Interferonalfa2b AND Treatment_Zidovudine;
+    
+define final Received_Interferonalfa2bZidovudine:
+    where Regimen_Interferonalfa2bZidovudine OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Adult_T-cell_leukemia-lymphoma
+
+
+***/
+ 

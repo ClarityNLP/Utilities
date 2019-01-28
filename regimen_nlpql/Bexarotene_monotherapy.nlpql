@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"targretin", "bexarotene"
+termset TreatmentTerms0:[
+    "targretin", "bexarotene"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bexarotene:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene monotherapy"
+    "Bexarotene monotherapy", "Bexarotene_monotherapy", "Bexarotenemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Bexarotenemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Bexarotenemonotherapy:
+    where Treatment_Bexarotene OR Regimen_Bexarotenemonotherapy;
+            
 
 // Comments
 /***

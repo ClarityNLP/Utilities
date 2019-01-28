@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Carboplatin & Fluorouracil" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
+];
+
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Carboplatin / Fluorouracil", "CarboplatinFluorouracil", "Carboplatin/Fluorouracil", "Carboplatin & Fluorouracil", "Carboplatin_Fluorouracil", "Carboplatin and Fluorouracil"
+];
+
+define Regimen_CarboplatinFluorouracil:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Fluorouracil;
+    
+define final Received_CarboplatinFluorouracil:
+    where Regimen_CarboplatinFluorouracil OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Head_and_neck_cancer
+
+
+***/
+ 

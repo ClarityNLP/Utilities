@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"arzerra", "ofatumumab"
+termset TreatmentTerms0:[
+    "arzerra", "ofatumumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ofatumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"vepesid", "etoposide"
+        
+termset TreatmentTerms1:[
+    "vepesid", "etoposide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"solumedrol", "methylprednisolone"
+        
+termset TreatmentTerms2:[
+    "solumedrol", "methylprednisolone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Methylprednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"cytosar", "cytarabine"
+        
+termset TreatmentTerms3:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"platinol", "cisplatin"
+        
+termset TreatmentTerms4:[
+    "platinol", "cisplatin"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "O-ESHAP"
+    "OESHAP", "O/ESHAP", "O-ESHAP"
 ];
 
-define RegimenMentioned:
+define Regimen_OESHAP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedO-ESHAP:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ofatumumab AND Treatment_Etoposide AND Treatment_Methylprednisolone AND Treatment_Cytarabine AND Treatment_Cisplatin;
+    
+define final Received_OESHAP:
+    where Regimen_OESHAP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

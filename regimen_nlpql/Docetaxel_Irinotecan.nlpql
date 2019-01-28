@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Docetaxel & Irinotecan" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "taxotere", "docetaxel"
+];
+
+define Treatment_Docetaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "camptosar", "irinotecan"
+];
+
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "DocetaxelIrinotecan", "Docetaxel and Irinotecan", "Docetaxel/Irinotecan", "Docetaxel_Irinotecan", "Docetaxel / Irinotecan", "Docetaxel & Irinotecan"
+];
+
+define Regimen_DocetaxelIrinotecan:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Docetaxel AND Treatment_Irinotecan;
+    
+define final Received_DocetaxelIrinotecan:
+    where Regimen_DocetaxelIrinotecan OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Esophageal_cancer
+
+
+***/
+ 

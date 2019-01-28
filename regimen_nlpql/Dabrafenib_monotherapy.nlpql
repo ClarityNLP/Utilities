@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tafinlar", "dabrafenib"
+termset TreatmentTerms0:[
+    "tafinlar", "dabrafenib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Dabrafenib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Dabrafenib monotherapy"
+    "Dabrafenib monotherapy", "Dabrafenib_monotherapy", "Dabrafenibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Dabrafenibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Dabrafenibmonotherapy:
+    where Treatment_Dabrafenib OR Regimen_Dabrafenibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Melanoma_BRAF-mutated, CNS_melanoma
+Known regimen for: CNS_melanoma, Melanoma_BRAF-mutated
 
 
 ***/

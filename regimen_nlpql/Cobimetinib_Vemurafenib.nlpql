@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cobimetinib & Vemurafenib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cotellic", "cobimetinib"
+];
+
+define Treatment_Cobimetinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "zelboraf", "vemurafenib"
+];
+
+define Treatment_Vemurafenib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cobimetinib & Vemurafenib", "Cobimetinib and Vemurafenib", "Cobimetinib / Vemurafenib", "Cobimetinib_Vemurafenib", "Cobimetinib/Vemurafenib", "CobimetinibVemurafenib"
+];
+
+define Regimen_CobimetinibVemurafenib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cobimetinib AND Treatment_Vemurafenib;
+    
+define final Received_CobimetinibVemurafenib:
+    where Regimen_CobimetinibVemurafenib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Melanoma_BRAF-mutated
+
+
+***/
+ 

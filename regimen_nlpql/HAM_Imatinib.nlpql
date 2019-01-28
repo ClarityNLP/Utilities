@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for HAM & Imatinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
+];
+
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "novantrone", "mitoxantrone"
+];
+
+define Treatment_Mitoxantrone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "gleevec", "imatinib"
+];
+
+define Treatment_Imatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "HAM and Imatinib", "HAM / Imatinib", "HAM_Imatinib", "HAMImatinib", "HAM/Imatinib", "HAM & Imatinib"
+];
+
+define Regimen_HAMandImatinib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Mitoxantrone AND Treatment_Imatinib;
+    
+define final Received_HAMImatinib:
+    where Regimen_HAMandImatinib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
+***/
+ 

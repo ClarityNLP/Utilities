@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"hydrea", "hydroxyurea"
+termset TreatmentTerms0:[
+    "hydrea", "hydroxyurea"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Hydroxyurea:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea monotherapy"
+    "Hydroxyureamonotherapy", "Hydroxyurea_monotherapy", "Hydroxyurea monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Hydroxyureamonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Hydroxyureamonotherapy:
+    where Treatment_Hydroxyurea OR Regimen_Hydroxyureamonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Polycythemia_vera, Glioblastoma, Sickle_cell_anemia, Essential_thrombocythemia
+Known regimen for: Glioblastoma, Sickle_cell_anemia, Polycythemia_vera, Hypereosinophilic_syndrome, Essential_thrombocythemia
 
 
 ***/

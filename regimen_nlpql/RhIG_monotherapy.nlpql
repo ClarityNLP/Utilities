@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tylenol", "acetaminophen"
+termset TreatmentTerms0:[
+    "tylenol", "acetaminophen"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Acetaminophen:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms1:[
+    "sterapred", "prednisone"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "RhIG monotherapy", "RhIG"
+    "RhIG_monotherapy", "RhIGmonotherapy", "RhIG monotherapy", "RhIG"
 ];
 
-define RegimenMentioned:
+define Regimen_RhIGmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedRhIG_monotherapy:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Acetaminophen AND Treatment_Prednisone;
+    
+define final Received_RhIGmonotherapy:
+    where Regimen_RhIGmonotherapy OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "external beam radiotherapy", "external beam radiotherapy"
+];
+
+define Treatment_Externalbeamradiotherapy:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cisplatin_RT", "Cisplatin and RT", "Cisplatin & RT", "Cisplatin / RT", "Cisplatin/RT", "RT", "CisplatinRT"
+];
+
+define Regimen_CisplatinRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Externalbeamradiotherapy;
+    
+define final Received_CisplatinRT:
+    where Regimen_CisplatinRT OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type, Head_and_neck_cancer, Cervical_cancer, Vulvar_cancer, Non-small_cell_lung_cancer, Nasopharyngeal_carcinoma, Bladder_cancer
+
+
+***/
+ 

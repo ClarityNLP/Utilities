@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"mtx", "methotrexate"
+termset TreatmentTerms0:[
+    "mtx", "methotrexate"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"ceenu", "lomustine"
+        
+termset TreatmentTerms1:[
+    "ceenu", "lomustine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Lomustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"matulane", "procarbazine"
+        
+termset TreatmentTerms2:[
+    "matulane", "procarbazine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Procarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"solumedrol", "methylprednisolone"
+        
+termset TreatmentTerms3:[
+    "solumedrol", "methylprednisolone"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Methylprednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Lomustine, Methotrexate, Procarbazine, Methylprednisolone"
+    "Lomustine/Methotrexate/Procarbazine/Methylprednisolone", "Lomustine, Methotrexate, Procarbazine, Methylprednisolone", "Lomustine and  Methotrexate and  Procarbazine and  Methylprednisolone", "Lomustine &  Methotrexate &  Procarbazine &  Methylprednisolone", "Lomustine_Methotrexate_Procarbazine_Methylprednisolone", "Lomustine& Methotrexate& Procarbazine& Methylprednisolone", "LomustineMethotrexateProcarbazineMethylprednisolone", "Lomustine/ Methotrexate/ Procarbazine/ Methylprednisolone", "Lomustine- Methotrexate- Procarbazine- Methylprednisolone"
 ];
 
-define RegimenMentioned:
+define Regimen_LomustineMethotrexateProcarbazineMethylprednisolone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedLomustine_Methotrexate_Procarbazine_Methylprednisolone:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methotrexate AND Treatment_Lomustine AND Treatment_Procarbazine AND Treatment_Methylprednisolone;
+    
+define final Received_LomustineMethotrexateProcarbazineMethylprednisolone:
+    where Regimen_LomustineMethotrexateProcarbazineMethylprednisolone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

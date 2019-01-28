@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"accutane", "isotretinoin"
+termset TreatmentTerms0:[
+    "accutane", "isotretinoin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Isotretinoin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Isotretinoin monotherapy"
+    "Isotretinoinmonotherapy", "Isotretinoin monotherapy", "Isotretinoin_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Isotretinoinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Isotretinoinmonotherapy:
+    where Treatment_Isotretinoin OR Regimen_Isotretinoinmonotherapy;
+            
 
 // Comments
 /***

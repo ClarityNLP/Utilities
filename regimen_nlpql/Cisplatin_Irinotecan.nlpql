@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Irinotecan" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "camptosar", "irinotecan"
+];
+
+define Treatment_Irinotecan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cisplatin_Irinotecan", "Cisplatin and Irinotecan", "Cisplatin / Irinotecan", "CisplatinIrinotecan", "IC", "Cisplatin & Irinotecan", "Cisplatin/Irinotecan"
+];
+
+define Regimen_CisplatinIrinotecan:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Irinotecan;
+    
+define final Received_CisplatinIrinotecan:
+    where Regimen_CisplatinIrinotecan OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary, Penile_cancer, Esophageal_cancer
+
+
+***/
+ 

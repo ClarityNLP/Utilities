@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Interferon alfa-2b & DLI" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "intron-a", "interferon alfa-2b"
+];
+
+define Treatment_Interferonalfa2b:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Interferon alfa-2b / DLI", "DLI", "Interferon alfa-2b & DLI", "Interferon alfa/2b & DLI", "Interferon alfa-2b/DLI", "Interferon_alfa-2b_DLI", "Interferon alfa2b & DLI", "Interferonalfa2bDLI", "Interferon alfa-2b and DLI"
+];
+
+define Regimen_Interferonalfa2bDLI:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_Interferonalfa2bDLI:
+    where Treatment_Interferonalfa2b OR Regimen_Interferonalfa2bDLI;
+            
+
+// Comments
+/***
+
+Known regimen for: Chronic_myelogenous_leukemia
+
+
+***/
+ 

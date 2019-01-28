@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytosar", "cytarabine"
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cerubidine", "daunorubicin"
+        
+termset TreatmentTerms1:[
+    "cerubidine", "daunorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"vepesid", "etoposide"
+        
+termset TreatmentTerms2:[
+    "vepesid", "etoposide"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "ADE", "HIDAC-3-5", "HIDAC-3-7", "ADE (high-dose Ara-C)"
+    "ADE (high/dose Ara/C)", "ADEhighdoseAraC", "HIDAC/3/5", "HIDAC-3-5", "ADE (highdose AraC)", "HIDAC37", "HIDAC-3-7", "HIDAC35", "ADE", "ADE_high-dose_Ara-C", "ADE (high-dose Ara-C)", "HIDAC/3/7"
 ];
 
-define RegimenMentioned:
+define Regimen_ADEhighdoseAraC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedADE_high-dose_Ara-C:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Etoposide;
+    
+define final Received_ADEhighdoseAraC:
+    where Regimen_ADEhighdoseAraC OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

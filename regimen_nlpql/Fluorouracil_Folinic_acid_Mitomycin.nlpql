@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"mutamycin", "mitomycin"
+        
+termset TreatmentTerms2:[
+    "mutamycin", "mitomycin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Mitomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Folinic acid, Mitomycin"
+    "FluorouracilFolinicacidMitomycin", "Fluorouracil/ Folinic acid/ Mitomycin", "Fluorouracil_Folinic_acid_Mitomycin", "Fluorouracil/Folinic acid/Mitomycin", "Fluorouracil &  Folinic acid &  Mitomycin", "Fluorouracil and  Folinic acid and  Mitomycin", "Fluorouracil- Folinic acid- Mitomycin", "Fluorouracil& Folinic acid& Mitomycin", "Fluorouracil, Folinic acid, Mitomycin"
 ];
 
-define RegimenMentioned:
+define Regimen_FluorouracilFolinicacidMitomycin:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFluorouracil_Folinic_acid_Mitomycin:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Mitomycin;
+    
+define final Received_FluorouracilFolinicacidMitomycin:
+    where Regimen_FluorouracilFolinicacidMitomycin OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"doxil", "pegylated liposomal doxorubicin"
+        
+termset TreatmentTerms1:[
+    "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Pegylatedliposomaldoxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms2:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Doxorubicin liposomal, Fluorouracil"
+    "Cisplatin and  Doxorubicin liposomal and  Fluorouracil", "Cisplatin, Doxorubicin liposomal, Fluorouracil", "Cisplatin_Doxorubicin_liposomal_Fluorouracil", "CisplatinDoxorubicinliposomalFluorouracil", "Cisplatin &  Doxorubicin liposomal &  Fluorouracil", "Cisplatin- Doxorubicin liposomal- Fluorouracil", "Cisplatin/ Doxorubicin liposomal/ Fluorouracil", "Cisplatin& Doxorubicin liposomal& Fluorouracil", "Cisplatin/Doxorubicin liposomal/Fluorouracil"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinandDoxorubicinliposomalandFluorouracil:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Doxorubicin_liposomal_Fluorouracil:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Pegylatedliposomaldoxorubicin AND Treatment_Fluorouracil;
+    
+define final Received_CisplatinDoxorubicinliposomalFluorouracil:
+    where Regimen_CisplatinandDoxorubicinliposomalandFluorouracil OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

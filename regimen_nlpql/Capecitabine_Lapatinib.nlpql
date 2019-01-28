@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Capecitabine & Lapatinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "xeloda", "capecitabine"
+];
+
+define Treatment_Capecitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "tykerb", "lapatinib"
+];
+
+define Treatment_Lapatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CapecitabineLapatinib", "Capecitabine_Lapatinib", "Capecitabine/Lapatinib", "Capecitabine and Lapatinib", "Capecitabine & Lapatinib", "Capecitabine / Lapatinib"
+];
+
+define Regimen_CapecitabineLapatinib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Capecitabine AND Treatment_Lapatinib;
+    
+define final Received_CapecitabineLapatinib:
+    where Regimen_CapecitabineLapatinib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: CNS_carcinoma
+
+
+***/
+ 

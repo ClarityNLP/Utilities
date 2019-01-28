@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Fluorouracil & Streptozocin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "zanosar", "streptozocin"
+];
+
+define Treatment_Streptozocin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Fluorouracil & Streptozocin", "Fluorouracil/Streptozocin", "Fluorouracil_Streptozocin", "Fluorouracil / Streptozocin", "FluorouracilStreptozocin", "Fluorouracil and Streptozocin"
+];
+
+define Regimen_FluorouracilStreptozocin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Streptozocin;
+    
+define final Received_FluorouracilStreptozocin:
+    where Regimen_FluorouracilStreptozocin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_NET, Neuroendocrine_tumors
+
+
+***/
+ 

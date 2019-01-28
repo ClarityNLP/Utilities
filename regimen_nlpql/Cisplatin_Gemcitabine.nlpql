@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Gemcitabine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cisplatin/Gemcitabine", "Cisplatin & Gemcitabine", "Cisplatin / Gemcitabine", "Cisplatin_Gemcitabine", "GC", "CisplatinGemcitabine", "Cisplatin and Gemcitabine"
+];
+
+define Regimen_CisplatinGemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Gemcitabine;
+    
+define final Received_CisplatinGemcitabine:
+    where Regimen_CisplatinGemcitabine OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Cholangiocarcinoma, Mesothelioma, Bladder_cancer, Adenocarcinoma_of_unknown_primary, Breast_cancer_triple_negative, Ovarian_cancer
+
+
+***/
+ 

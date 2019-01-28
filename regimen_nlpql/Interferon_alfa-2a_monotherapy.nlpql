@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"roferon-a", "interferon alfa-2a"
+termset TreatmentTerms0:[
+    "roferon-a", "interferon alfa-2a"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Interferonalfa2a:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2a monotherapy"
+    "Interferon alfa2a monotherapy", "Interferonalfa2amonotherapy", "Interferon alfa/2a monotherapy", "Interferon alfa-2a monotherapy", "Interferon_alfa-2a_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Interferonalfa2amonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Interferonalfa2amonotherapy:
+    where Treatment_Interferonalfa2a OR Regimen_Interferonalfa2amonotherapy;
+            
 
 // Comments
 /***

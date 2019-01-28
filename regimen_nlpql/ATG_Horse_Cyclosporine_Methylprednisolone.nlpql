@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"atgam", "antithymocyte globulin, horse atg"
+termset TreatmentTerms0:[
+    "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_AntithymocyteglobulinhorseATG:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"sandimmune", "cyclosporine non-modified"
+        
+termset TreatmentTerms1:[
+    "sandimmune", "cyclosporine non-modified"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cyclosporinenonmodified:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"solumedrol", "methylprednisolone"
+        
+termset TreatmentTerms2:[
+    "solumedrol", "methylprednisolone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Methylprednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse), Cyclosporine, Methylprednisolone"
+    "ATG (Horse), Cyclosporine, Methylprednisolone", "ATG (Horse) &  Cyclosporine &  Methylprednisolone", "ATG (Horse)/Cyclosporine/Methylprednisolone", "ATGHorseCyclosporineMethylprednisolone", "ATG (Horse) and  Cyclosporine and  Methylprednisolone", "ATG (Horse)& Cyclosporine& Methylprednisolone", "ATG (Horse)/ Cyclosporine/ Methylprednisolone", "ATG_Horse_Cyclosporine_Methylprednisolone", "ATG (Horse)- Cyclosporine- Methylprednisolone"
 ];
 
-define RegimenMentioned:
+define Regimen_ATGHorseCyclosporineMethylprednisolone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedATG_Horse_Cyclosporine_Methylprednisolone:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_AntithymocyteglobulinhorseATG AND Treatment_Cyclosporinenonmodified AND Treatment_Methylprednisolone;
+    
+define final Received_ATGHorseCyclosporineMethylprednisolone:
+    where Regimen_ATGHorseCyclosporineMethylprednisolone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

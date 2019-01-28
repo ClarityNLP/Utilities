@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Carmustine & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "bicnu", "carmustine"
+];
+
+define Treatment_Carmustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Carmustine and RT", "BCNU_RT", "Carmustine / RT", "BCNURT", "BCNU & RT", "Carmustine & RT", "Carmustine/RT", "BCNU/RT", "BCNU and RT", "BCNU / RT", "Carmustine_RT", "CarmustineRT"
+];
+
+define Regimen_CarmustineandRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_CarmustineRT:
+    where Treatment_Carmustine OR Regimen_CarmustineandRT;
+            
+
+// Comments
+/***
+
+Known regimen for: Glioblastoma
+
+
+***/
+ 

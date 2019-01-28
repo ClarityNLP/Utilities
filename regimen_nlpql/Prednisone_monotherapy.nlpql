@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"sterapred", "prednisone"
+termset TreatmentTerms0:[
+    "sterapred", "prednisone"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Prednisone monotherapy"
+    "Prednisone monotherapy", "Prednisonemonotherapy", "Prednisone_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Prednisonemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Prednisonemonotherapy:
+    where Treatment_Prednisone OR Regimen_Prednisonemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Acquired_coagulopathy, Immune_thrombocytopenia_(ITP), Myelofibrosis
+Known regimen for: Myelofibrosis, Immune_thrombocytopenia_(ITP), Acquired_coagulopathy
 
 
 ***/

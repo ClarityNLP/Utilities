@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Ifosfamide & Paclitaxel" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "ifex", "ifosfamide"
+];
+
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "taxol", "paclitaxel"
+];
+
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Ifosfamide & Paclitaxel", "Ifosfamide and Paclitaxel", "Ifosfamide / Paclitaxel", "Ifosfamide/Paclitaxel", "Ifosfamide_Paclitaxel", "IfosfamidePaclitaxel"
+];
+
+define Regimen_IfosfamidePaclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ifosfamide AND Treatment_Paclitaxel;
+    
+define final Received_IfosfamidePaclitaxel:
+    where Regimen_IfosfamidePaclitaxel OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Testicular_cancer, Endometrial_cancer, Small_cell_lung_cancer
+
+
+***/
+ 

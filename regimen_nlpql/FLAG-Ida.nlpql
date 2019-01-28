@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"fludara", "fludarabine"
+termset TreatmentTerms0:[
+    "fludara", "fludarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cytosar", "cytarabine"
+        
+termset TreatmentTerms1:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"granocyte", "lenograstim"
+        
+termset TreatmentTerms2:[
+    "granocyte", "lenograstim"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Lenograstim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"idamycin", "idarubicin"
+        
+termset TreatmentTerms3:[
+    "idamycin", "idarubicin"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Idarubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "FLAG-Ida"
+    "FLAG-Ida", "FLAG/Ida", "FLAGIda"
 ];
 
-define RegimenMentioned:
+define Regimen_FLAGIda:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFLAG-Ida:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fludarabine AND Treatment_Cytarabine AND Treatment_Lenograstim AND Treatment_Idarubicin;
+    
+define final Received_FLAGIda:
+    where Regimen_FLAGIda OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

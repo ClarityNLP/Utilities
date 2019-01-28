@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"tecentriq", "atezolizumab"
+termset TreatmentTerms0:[
+    "tecentriq", "atezolizumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Atezolizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Atezolizumab monotherapy"
+    "Atezolizumab monotherapy", "Atezolizumab_monotherapy", "Atezolizumabmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Atezolizumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Atezolizumabmonotherapy:
+    where Treatment_Atezolizumab OR Regimen_Atezolizumabmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Non-small_cell_lung_cancer, Small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Bladder_cancer
 
 
 ***/

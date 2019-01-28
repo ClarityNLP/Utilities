@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-":category:steroids", ":category:steroids"
+termset TreatmentTerms0:[
+    ":category:steroids", ":category:steroids"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_CategorySteroids:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"taxol", "paclitaxel"
+        
+termset TreatmentTerms1:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Paclitaxel, Ipilimumab"
+    "CarboplatinPaclitaxelIpilimumab", "Carboplatin_Paclitaxel_Ipilimumab", "Carboplatin- Paclitaxel- Ipilimumab", "Carboplatin, Paclitaxel, Ipilimumab", "Carboplatin &  Paclitaxel &  Ipilimumab", "Carboplatin& Paclitaxel& Ipilimumab", "Carboplatin/Paclitaxel/Ipilimumab", "Carboplatin/ Paclitaxel/ Ipilimumab", "Carboplatin and  Paclitaxel and  Ipilimumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinPaclitaxelIpilimumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_Paclitaxel_Ipilimumab:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_CategorySteroids AND Treatment_Paclitaxel;
+    
+define final Received_CarboplatinPaclitaxelIpilimumab:
+    where Regimen_CarboplatinPaclitaxelIpilimumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

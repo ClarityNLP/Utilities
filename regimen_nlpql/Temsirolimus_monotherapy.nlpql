@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"torisel", "temsirolimus"
+termset TreatmentTerms0:[
+    "torisel", "temsirolimus"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Temsirolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Temsirolimus monotherapy"
+    "Temsirolimusmonotherapy", "Temsirolimus_monotherapy", "Temsirolimus monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Temsirolimusmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Temsirolimusmonotherapy:
+    where Treatment_Temsirolimus OR Regimen_Temsirolimusmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, CNS_lymphoma, Follicular_lymphoma, Endometrial_cancer, Renal_cell_carcinoma, Mantle_cell_lymphoma
+Known regimen for: CNS_lymphoma, Follicular_lymphoma, Renal_cell_carcinoma, Endometrial_cancer, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "T", "Paclitaxel monotherapy, weekly"
+    "T", "Paclitaxel monotherapy and  weekly", "Paclitaxel monotherapy/ weekly", "Paclitaxel monotherapy- weekly", "Paclitaxel monotherapy& weekly", "Paclitaxel_monotherapy_weekly", "Paclitaxel monotherapy &  weekly", "Paclitaxelmonotherapyweekly", "Paclitaxel monotherapy/weekly", "Paclitaxel monotherapy, weekly"
 ];
 
-define RegimenMentioned:
+define Regimen_T:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Paclitaxelmonotherapyweekly:
+    where Treatment_Paclitaxel OR Regimen_T;
+            
 
 // Comments
 /***

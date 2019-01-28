@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Arsenic trioxide, then ATRA & Daunorubicin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "trisenox", "arsenic trioxide"
+];
+
+define Treatment_Arsenictrioxide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Arsenic trioxide/then ATRA & Daunorubicin", "ArsenictrioxidethenATRADaunorubicin", "Arsenic trioxide, then ATRA & Daunorubicin", "Arsenic trioxide/ then ATRA & Daunorubicin", "Arsenic trioxide,/ATRA & Daunorubicin", "Arsenic trioxide, then ATRA / Daunorubicin", "Arsenic trioxide- then ATRA & Daunorubicin", "Arsenic_trioxide_then_ATRA_Daunorubicin", "Arsenic trioxide& then ATRA & Daunorubicin", "Arsenic trioxide,&ATRA & Daunorubicin", "Arsenic trioxide, and ATRA & Daunorubicin", "Arsenic trioxide,, ATRA & Daunorubicin", "Arsenic trioxide, then ATRA and Daunorubicin", "Arsenic trioxide &  then ATRA & Daunorubicin", "Arsenic trioxide, / ATRA & Daunorubicin", "Arsenic trioxide, then ATRA/Daunorubicin", "Arsenic trioxide and  then ATRA & Daunorubicin", "Arsenic trioxide, & ATRA & Daunorubicin"
+];
+
+define Regimen_ArsenictrioxidethenATRADaunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_ArsenictrioxidethenATRADaunorubicin:
+    where Treatment_Arsenictrioxide OR Regimen_ArsenictrioxidethenATRADaunorubicin;
+            
+
+// Comments
+/***
+
+Known regimen for: Acute_promyelocytic_leukemia
+
+
+***/
+ 

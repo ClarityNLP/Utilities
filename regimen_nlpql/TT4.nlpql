@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"decadron", "dexamethasone"
+termset TreatmentTerms0:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-":category:cyclosporines", ":category:cyclosporines"
+        
+termset TreatmentTerms1:[
+    ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_CategoryCyclosporines:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms2:[
+    "rituxan", "rituximab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "TT4"
 ];
 
-define RegimenMentioned:
+define Regimen_TT4:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedTT4:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Dexamethasone AND Treatment_CategoryCyclosporines AND Treatment_Rituximab;
+    
+define final Received_TT4:
+    where Regimen_TT4 OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

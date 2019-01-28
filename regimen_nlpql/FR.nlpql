@@ -14,57 +14,58 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"fludara", "fludarabine"
+termset TreatmentTerms0:[
+    "fludara", "fludarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fludarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"rituxan", "rituximab"
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "FR"
 ];
 
-define RegimenMentioned:
+define Regimen_FR:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFR:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fludarabine AND Treatment_Rituximab;
+    
+define final Received_FR:
+    where Regimen_FR OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Marginal_zone_lymphoma, Waldenström_macroglobulinemia, Mantle_cell_lymphoma, Cold_agglutinin_disease
+Known regimen for: Follicular_lymphoma, Cold_agglutinin_disease, Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

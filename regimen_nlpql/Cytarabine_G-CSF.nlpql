@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Cytarabine & G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
+];
+
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "CytarabineGCSF", "Cytarabine & G-CSF", "Cytarabine & G/CSF", "Cytarabine / G-CSF", "Cytarabine & GCSF", "Cytarabine/G-CSF", "Cytarabine and G-CSF", "Cytarabine_G-CSF"
+];
+
+define Regimen_CytarabineGCSF:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_CytarabineGCSF:
+    where Treatment_Cytarabine OR Regimen_CytarabineGCSF;
+            
+
+// Comments
+/***
+
+Known regimen for: Stem_cell_mobilization
+
+
+***/
+ 

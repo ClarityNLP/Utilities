@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"alimta", "pemetrexed"
+termset TreatmentTerms0:[
+    "alimta", "pemetrexed"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Pemetrexed:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Pemetrexed monotherapy"
+    "Pemetrexed monotherapy", "Pemetrexedmonotherapy", "Pemetrexed_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Pemetrexedmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Pemetrexedmonotherapy:
+    where Treatment_Pemetrexed OR Regimen_Pemetrexedmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Ovarian_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Mesothelioma
+Known regimen for: Cervical_cancer, Non-small_cell_lung_cancer, Mesothelioma, Bladder_cancer, Ovarian_cancer
 
 
 ***/

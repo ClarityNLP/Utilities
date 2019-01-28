@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"5-fu", "fluorouracil"
+        
+termset TreatmentTerms1:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"erbitux", "cetuximab"
+        
+termset TreatmentTerms2:[
+    "erbitux", "cetuximab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Cetuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CF-C", "Cisplatin, Fluorouracil, Cetuximab"
+    "Cisplatin and  Fluorouracil and  Cetuximab", "Cisplatin_Fluorouracil_Cetuximab", "Cisplatin- Fluorouracil- Cetuximab", "Cisplatin, Fluorouracil, Cetuximab", "CF-C", "Cisplatin/ Fluorouracil/ Cetuximab", "CF/C", "CisplatinFluorouracilCetuximab", "Cisplatin& Fluorouracil& Cetuximab", "Cisplatin/Fluorouracil/Cetuximab", "Cisplatin &  Fluorouracil &  Cetuximab", "CFC"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinandFluorouracilandCetuximab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Fluorouracil_Cetuximab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Cetuximab;
+    
+define final Received_CisplatinFluorouracilCetuximab:
+    where Regimen_CisplatinandFluorouracilandCetuximab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

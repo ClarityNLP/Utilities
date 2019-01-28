@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Fluorouracil/Fluorouracil & RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Fluorouracil/Fluorouracil/RT", "FluorouracilFluorouracil_RT", "Fluorouracil/Fluorouracil & RT", "Fluorouracil/Fluorouracil / RT", "FluorouracilFluorouracilRT", "Fluorouracil/Fluorouracil and RT"
+];
+
+define Regimen_FluorouracilFluorouracilRT:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_FluorouracilFluorouracilRT:
+    where Treatment_Fluorouracil OR Regimen_FluorouracilFluorouracilRT;
+            
+
+// Comments
+/***
+
+Known regimen for: Pancreatic_cancer
+
+
+***/
+ 

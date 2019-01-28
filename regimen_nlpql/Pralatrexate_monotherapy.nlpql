@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"folotyn", "pralatrexate"
+termset TreatmentTerms0:[
+    "folotyn", "pralatrexate"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Pralatrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Pralatrexate monotherapy"
+    "Pralatrexate_monotherapy", "Pralatrexate monotherapy", "Pralatrexatemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Pralatrexatemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Pralatrexatemonotherapy:
+    where Treatment_Pralatrexate OR Regimen_Pralatrexatemonotherapy;
+            
 
 // Comments
 /***

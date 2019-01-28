@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"lysodren", "mitotane"
+termset TreatmentTerms0:[
+    "lysodren", "mitotane"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Mitotane:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Mitotane monotherapy"
+    "Mitotane_monotherapy", "Mitotane monotherapy", "Mitotanemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Mitotanemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Mitotanemonotherapy:
+    where Treatment_Mitotane OR Regimen_Mitotanemonotherapy;
+            
 
 // Comments
 /***

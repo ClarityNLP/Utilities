@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"gleevec", "imatinib"
+termset TreatmentTerms0:[
+    "gleevec", "imatinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Imatinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy"
+    "Imatinibmonotherapy", "Imatinib_monotherapy", "Imatinib monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Imatinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Imatinibmonotherapy:
+    where Treatment_Imatinib OR Regimen_Imatinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Systemic_mastocytosis, Chronic_myelogenous_leukemia, Gastrointestinal_stromal_tumor, Melanoma, Soft_tissue_sarcoma, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: Soft_tissue_sarcoma, Gastrointestinal_stromal_tumor, B-cell_acute_lymphoblastic_leukemia_Ph-positive, Chronic_myelogenous_leukemia, Hypereosinophilic_syndrome, Melanoma, Systemic_mastocytosis
 
 
 ***/

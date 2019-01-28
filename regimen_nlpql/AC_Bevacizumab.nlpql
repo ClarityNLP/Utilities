@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for AC & Bevacizumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "adriamycin", "doxorubicin"
+];
+
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "avastin", "bevacizumab"
+];
+
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "AC / Bevacizumab", "ACBevacizumab", "AC+Bev", "AC / Bev", "AC&Bev", "AC and Bevacizumab", "AC_Bevacizumab", "AC/Bevacizumab", "AC and Bev", "ACBev", "AC/Bev", "AC & Bev", "AC & Bevacizumab"
+];
+
+define Regimen_ACBevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Doxorubicin AND Treatment_Cyclophosphamide AND Treatment_Bevacizumab;
+    
+define final Received_ACBevacizumab:
+    where Regimen_ACBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Breast_cancer
+
+
+***/
+ 

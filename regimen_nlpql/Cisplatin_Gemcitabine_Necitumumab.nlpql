@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"gemzar", "gemcitabine"
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"portrazza", "necitumumab"
+        
+termset TreatmentTerms2:[
+    "portrazza", "necitumumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Necitumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Gemcitabine, Necitumumab"
+    "Cisplatin/ Gemcitabine/ Necitumumab", "Cisplatin, Gemcitabine, Necitumumab", "Cisplatin &  Gemcitabine &  Necitumumab", "CisplatinGemcitabineNecitumumab", "Cisplatin/Gemcitabine/Necitumumab", "Cisplatin and  Gemcitabine and  Necitumumab", "Cisplatin_Gemcitabine_Necitumumab", "Cisplatin& Gemcitabine& Necitumumab", "Cisplatin- Gemcitabine- Necitumumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinGemcitabineNecitumumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Gemcitabine_Necitumumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Gemcitabine AND Treatment_Necitumumab;
+    
+define final Received_CisplatinGemcitabineNecitumumab:
+    where Regimen_CisplatinGemcitabineNecitumumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

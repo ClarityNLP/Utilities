@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Paclitaxel & Pazopanib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
+];
+
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "votrient", "pazopanib"
+];
+
+define Treatment_Pazopanib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Paclitaxel / Pazopanib", "PaclitaxelPazopanib", "Paclitaxel_Pazopanib", "Paclitaxel & Pazopanib", "Paclitaxel/Pazopanib", "Paclitaxel and Pazopanib"
+];
+
+define Regimen_PaclitaxelPazopanib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxel AND Treatment_Pazopanib;
+    
+define final Received_PaclitaxelPazopanib:
+    where Regimen_PaclitaxelPazopanib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Ovarian_cancer
+
+
+***/
+ 

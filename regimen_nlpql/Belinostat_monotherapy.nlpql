@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"beleodaq", "belinostat"
+termset TreatmentTerms0:[
+    "beleodaq", "belinostat"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Belinostat:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Belinostat monotherapy"
+    "Belinostatmonotherapy", "Belinostat_monotherapy", "Belinostat monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Belinostatmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Belinostatmonotherapy:
+    where Treatment_Belinostat OR Regimen_Belinostatmonotherapy;
+            
 
 // Comments
 /***

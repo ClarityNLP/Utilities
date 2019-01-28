@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"zoladex", "goserelin"
+termset TreatmentTerms0:[
+    "zoladex", "goserelin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Goserelin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Anastrozole monotherapy"
+    "Anastrozole monotherapy", "Anastrozole_monotherapy", "Anastrozolemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Anastrozolemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Anastrozolemonotherapy:
+    where Treatment_Goserelin OR Regimen_Anastrozolemonotherapy;
+            
 
 // Comments
 /***

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for ATG (Rabbit) & Cyclosporine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "thymoglobulin", "antithymocyte globulin, rabbit atg"
+];
+
+define Treatment_AntithymocyteglobulinrabbitATG:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    ":category:cyclosporines", ":category:cyclosporines"
+];
+
+define Treatment_CategoryCyclosporines:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "ATG_Rabbit_Cyclosporine", "ATG (Rabbit) / Cyclosporine", "ATG (Rabbit) & Cyclosporine", "ATG (Rabbit) and Cyclosporine", "ATG (Rabbit)/Cyclosporine", "ATGRabbitCyclosporine"
+];
+
+define Regimen_ATGRabbitCyclosporine:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_AntithymocyteglobulinrabbitATG AND Treatment_CategoryCyclosporines;
+    
+define final Received_ATGRabbitCyclosporine:
+    where Regimen_ATGRabbitCyclosporine OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Aplastic_anemia
+
+
+***/
+ 

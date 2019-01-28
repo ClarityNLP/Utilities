@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"leucovorin", "folinic acid"
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"onivyde", "irinotecan liposome"
+        
+termset TreatmentTerms2:[
+    "onivyde", "irinotecan liposome"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Irinotecanliposome:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
+    "Fluorouracil/ Folinic acid/ nanoliposomal Irinotecan", "Fluorouracil and  Folinic acid and  nanoliposomal Irinotecan", "Fluorouracil- Folinic acid- nanoliposomal Irinotecan", "Fluorouracil &  Folinic acid &  nanoliposomal Irinotecan", "Fluorouracil& Folinic acid& nanoliposomal Irinotecan", "Fluorouracil/Folinic acid/nanoliposomal Irinotecan", "Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan", "FluorouracilFolinicacidnanoliposomalIrinotecan", "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
 ];
 
-define RegimenMentioned:
+define Regimen_FluorouracilFolinicacidnanoliposomalIrinotecan:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedFluorouracil_Folinic_acid_nanoliposomal_Irinotecan:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Irinotecanliposome;
+    
+define final Received_FluorouracilFolinicacidnanoliposomalIrinotecan:
+    where Regimen_FluorouracilFolinicacidnanoliposomalIrinotecan OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"alkeran", "melphalan"
+termset TreatmentTerms0:[
+    "alkeran", "melphalan"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Melphalan:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Melphalan, then auto HSCT"
+    "Melphalan &  then auto HSCT", "Melphalan/then auto HSCT", "Melphalan_then_auto_HSCT", "Melphalan/ then auto HSCT", "Melphalan& then auto HSCT", "MelphalanthenautoHSCT", "Melphalan, / auto HSCT", "Melphalan and  then auto HSCT", "Melphalan,/auto HSCT", "Melphalan,, auto HSCT", "Melphalan, and auto HSCT", "Melphalan, & auto HSCT", "Melphalan,&auto HSCT", "Melphalan, then auto HSCT", "Melphalan- then auto HSCT"
 ];
 
-define RegimenMentioned:
+define Regimen_MelphalanthenautoHSCT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_MelphalanthenautoHSCT:
+    where Treatment_Melphalan OR Regimen_MelphalanthenautoHSCT;
+            
 
 // Comments
 /***

@@ -14,147 +14,140 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"keflex", "cephalexin"
+termset TreatmentTerms0:[
+    "keflex", "cephalexin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cephalexin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cipro", "ciprofloxacin"
+        
+termset TreatmentTerms1:[
+    "cipro", "ciprofloxacin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Ciprofloxacin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"neupogen", "filgrastim"
+        
+termset TreatmentTerms2:[
+    "neupogen", "filgrastim"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Filgrastim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"zofran", "ondansetron"
+        
+termset TreatmentTerms3:[
+    "zofran", "ondansetron"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Ondansetron:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"ativan", "lorazepam"
+        
+termset TreatmentTerms4:[
+    "ativan", "lorazepam"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Lorazepam:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms5:[
-"tylenol", "acetaminophen"
+        
+termset TreatmentTerms5:[
+    "tylenol", "acetaminophen"
 ];
 
-define Medications5:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms5],
-documentset:[Docs]
+define Treatment_Acetaminophen:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms5],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms6:[
-"zantac", "ranitidine"
+        
+termset TreatmentTerms6:[
+    "zantac", "ranitidine"
 ];
 
-define Medications6:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms6],
-documentset:[Docs]
+define Treatment_Ranitidine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms6],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms7:[
-"atarax", "hydroxyzine"
+        
+termset TreatmentTerms7:[
+    "atarax", "hydroxyzine"
 ];
 
-define Medications7:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms7],
-documentset:[Docs]
+define Treatment_Hydroxyzine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms7],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms8:[
-"benadryl", "diphenhydramine"
+        
+termset TreatmentTerms8:[
+    "benadryl", "diphenhydramine"
 ];
 
-define Medications8:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms8],
-documentset:[Docs]
+define Treatment_Diphenhydramine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms8],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms9:[
-"demerol", "meperidine"
+        
+termset TreatmentTerms9:[
+    "demerol", "meperidine"
 ];
 
-define Medications9:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms9],
-documentset:[Docs]
+define Treatment_Meperidine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms9],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "bioCT", "CVD, IL-2, IFN alfa-2b", "CVD, IL-2, IFN alfa-2b - sequential biochemotherapy"
+    "CVD/IL-2/IFN alfa-2b - sequential biochemotherapy", "CVD& IL-2& IFN alfa-2b", "CVD and  IL-2 and  IFN alfa-2b - sequential biochemotherapy", "CVD, IL2, IFN alfa2b  sequential biochemotherapy", "CVD_IL-2_IFN_alfa-2b_-_sequential_biochemotherapy", "CVD/IL-2/IFN alfa-2b", "CVD/ IL-2/ IFN alfa-2b - sequential biochemotherapy", "CVD &  IL-2 &  IFN alfa-2b - sequential biochemotherapy", "CVD- IL-2- IFN alfa-2b", "CVD, IL2, IFN alfa2b", "CVD- IL-2- IFN alfa-2b - sequential biochemotherapy", "CVD, IL/2, IFN alfa/2b", "CVD and  IL-2 and  IFN alfa-2b", "CVDIL2IFNalfa2b", "CVDIL2IFNalfa2bsequentialbiochemotherapy", "CVD_IL-2_IFN_alfa-2b", "CVD, IL/2, IFN alfa/2b / sequential biochemotherapy", "CVD, IL-2, IFN alfa-2b - sequential biochemotherapy", "bioCT", "CVD, IL-2, IFN alfa-2b", "CVD& IL-2& IFN alfa-2b - sequential biochemotherapy", "CVD &  IL-2 &  IFN alfa-2b", "CVD/ IL-2/ IFN alfa-2b"
 ];
 
-define RegimenMentioned:
+define Regimen_CVDIL2IFNalfa2bsequentialbiochemotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCVD_IL-2_IFN_alfa-2b_-_sequential_biochemotherapy:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4 AND Medications5 AND Medications6 AND Medications7 AND Medications8 AND Medications9) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cephalexin AND Treatment_Ciprofloxacin AND Treatment_Filgrastim AND Treatment_Ondansetron AND Treatment_Lorazepam AND Treatment_Acetaminophen AND Treatment_Ranitidine AND Treatment_Hydroxyzine AND Treatment_Diphenhydramine AND Treatment_Meperidine;
+    
+define final Received_CVDIL2IFNalfa2bsequentialbiochemotherapy:
+    where Regimen_CVDIL2IFNalfa2bsequentialbiochemotherapy OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

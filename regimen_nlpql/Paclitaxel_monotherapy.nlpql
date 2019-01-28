@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"taxol", "paclitaxel"
+termset TreatmentTerms0:[
+    "taxol", "paclitaxel"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxel:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel monotherapy"
+    "Paclitaxel monotherapy", "Paclitaxel_monotherapy", "Paclitaxelmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Paclitaxelmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Paclitaxelmonotherapy:
+    where Treatment_Paclitaxel OR Regimen_Paclitaxelmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Penile_cancer, Vascular_sarcoma, Endometrial_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Esophageal_cancer, Gastric_cancer, Cervical_cancer, Melanoma, Small_cell_lung_cancer, Vulvar_cancer
+Known regimen for: Melanoma, Ovarian_cancer, Vascular_sarcoma, Cervical_cancer, Gastric_cancer, Vulvar_cancer, Endometrial_cancer, Small_cell_lung_cancer, Bladder_cancer, Breast_cancer_triple_negative, Penile_cancer, Esophageal_cancer
 
 
 ***/

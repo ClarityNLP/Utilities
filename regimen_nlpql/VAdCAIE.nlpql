@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"mesnex", "mesna"
+termset TreatmentTerms0:[
+    "mesnex", "mesna"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Mesna:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"ifex", "ifosfamide"
+        
+termset TreatmentTerms1:[
+    "ifex", "ifosfamide"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "VAdCA/IE"
+    "VAdCAIE", "VAdCA/IE"
 ];
 
-define RegimenMentioned:
+define Regimen_VAdCAIE:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedVAdCAIE:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Mesna AND Treatment_Ifosfamide;
+    
+define final Received_VAdCAIE:
+    where Regimen_VAdCAIE OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

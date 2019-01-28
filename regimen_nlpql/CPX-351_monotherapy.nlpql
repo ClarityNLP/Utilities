@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"vyxeos", "cytarabine and daunorubicin liposomal"
+termset TreatmentTerms0:[
+    "vyxeos", "cytarabine and daunorubicin liposomal"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabineanddaunorubicinliposomal:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "CPX-351", "CPX-351 monotherapy"
+    "CPX351", "CPX-351 monotherapy", "CPX351monotherapy", "CPX-351", "CPX-351_monotherapy", "CPX/351", "CPX/351 monotherapy", "CPX351 monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_CPX351:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_CPX351monotherapy:
+    where Treatment_Cytarabineanddaunorubicinliposomal OR Regimen_CPX351;
+            
 
 // Comments
 /***

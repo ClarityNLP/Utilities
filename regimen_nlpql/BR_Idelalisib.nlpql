@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for BR & Idelalisib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "bendamustine", "bendamustine"
+];
+
+define Treatment_Bendamustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "zydelig", "idelalisib"
+];
+
+define Treatment_Idelalisib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "BR / Idelalisib", "BR and Idelalisib", "BRIdelalisib", "BR & Idelalisib", "BR/Idelalisib", "BR_Idelalisib"
+];
+
+define Regimen_BRIdelalisib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Bendamustine AND Treatment_Rituximab AND Treatment_Idelalisib;
+    
+define final Received_BRIdelalisib:
+    where Regimen_BRIdelalisib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
+***/
+ 

@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-":category:cyclosporines", ":category:cyclosporines"
+termset TreatmentTerms0:[
+    ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_CategoryCyclosporines:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"rapamune", "sirolimus"
+        
+termset TreatmentTerms1:[
+    "rapamune", "sirolimus"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Sirolimus:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms2:[
+    "sterapred", "prednisone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Sirolimus, Prednisone"
+    "Cyclosporine and  Sirolimus and  Prednisone", "Cyclosporine &  Sirolimus &  Prednisone", "Cyclosporine& Sirolimus& Prednisone", "Cyclosporine, Sirolimus, Prednisone", "Cyclosporine- Sirolimus- Prednisone", "Cyclosporine/Sirolimus/Prednisone", "Cyclosporine/ Sirolimus/ Prednisone", "CyclosporineSirolimusPrednisone", "Cyclosporine_Sirolimus_Prednisone"
 ];
 
-define RegimenMentioned:
+define Regimen_CyclosporineandSirolimusandPrednisone:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCyclosporine_Sirolimus_Prednisone:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_CategoryCyclosporines AND Treatment_Sirolimus AND Treatment_Prednisone;
+    
+define final Received_CyclosporineSirolimusPrednisone:
+    where Regimen_CyclosporineandSirolimusandPrednisone OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

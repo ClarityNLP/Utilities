@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cerubidine", "daunorubicin"
+termset TreatmentTerms0:[
+    "cerubidine", "daunorubicin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms1:[
+    "oncovin", "vincristine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"millipred", "prednisolone"
+        
+termset TreatmentTerms2:[
+    "millipred", "prednisolone"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Prednisolone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"tasigna", "nilotinib"
+        
+termset TreatmentTerms3:[
+    "tasigna", "nilotinib"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Nilotinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
+    "Daunorubicin- Vincristine- Prednisolone- Nilotinib", "Daunorubicin& Vincristine& Prednisolone& Nilotinib", "Daunorubicin/Vincristine/Prednisolone/Nilotinib", "Daunorubicin/ Vincristine/ Prednisolone/ Nilotinib", "Daunorubicin and  Vincristine and  Prednisolone and  Nilotinib", "DaunorubicinVincristinePrednisoloneNilotinib", "Daunorubicin &  Vincristine &  Prednisolone &  Nilotinib", "Daunorubicin_Vincristine_Prednisolone_Nilotinib", "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
 ];
 
-define RegimenMentioned:
+define Regimen_DaunorubicinVincristinePrednisoloneNilotinib:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedDaunorubicin_Vincristine_Prednisolone_Nilotinib:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Daunorubicin AND Treatment_Vincristine AND Treatment_Prednisolone AND Treatment_Nilotinib;
+    
+define final Received_DaunorubicinVincristinePrednisoloneNilotinib:
+    where Regimen_DaunorubicinVincristinePrednisoloneNilotinib OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

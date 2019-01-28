@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"leukine", "sargramostim"
+termset TreatmentTerms0:[
+    "leukine", "sargramostim"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Sargramostim:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "IL-2 monotherapy"
+    "IL-2_monotherapy", "IL/2 monotherapy", "IL2monotherapy", "IL2 monotherapy", "IL-2 monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_IL2monotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_IL2monotherapy:
+    where Treatment_Sargramostim OR Regimen_IL2monotherapy;
+            
 
 // Comments
 /***

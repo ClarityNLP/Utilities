@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for ATRA & Daunorubicin" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "atra", "all-trans retinoic acid"
+];
+
+define Treatment_Alltransretinoicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "cerubidine", "daunorubicin"
+];
+
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "ATRA & Daunorubicin", "ATRA and Daunorubicin", "ATRA / Daunorubicin", "ATRA/Daunorubicin", "ATRA_Daunorubicin", "ATRADaunorubicin"
+];
+
+define Regimen_ATRADaunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Alltransretinoicacid AND Treatment_Daunorubicin;
+    
+define final Received_ATRADaunorubicin:
+    where Regimen_ATRADaunorubicin OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_promyelocytic_leukemia
+
+
+***/
+ 

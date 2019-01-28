@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"calquence", "acalabrutinib"
+termset TreatmentTerms0:[
+    "calquence", "acalabrutinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Acalabrutinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Acalabrutinib monotherapy"
+    "Acalabrutinib monotherapy", "Acalabrutinibmonotherapy", "Acalabrutinib_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Acalabrutinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Acalabrutinibmonotherapy:
+    where Treatment_Acalabrutinib OR Regimen_Acalabrutinibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Mantle_cell_lymphoma
 
 
 ***/

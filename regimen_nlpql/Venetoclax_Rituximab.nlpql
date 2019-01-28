@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Venetoclax & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "venclexta", "venetoclax"
+];
+
+define Treatment_Venetoclax:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "VEN & R", "VEN/R", "Venetoclax / Rituximab", "VenetoclaxRituximab", "VEN and R", "Venetoclax & Rituximab", "Venetoclax/Rituximab", "Venetoclax and Rituximab", "Venetoclax_Rituximab", "VEN&R", "VENR", "VEN / R", "VEN+R"
+];
+
+define Regimen_VENR:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Venetoclax AND Treatment_Rituximab;
+    
+define final Received_VenetoclaxRituximab:
+    where Regimen_VENR OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
+***/
+ 

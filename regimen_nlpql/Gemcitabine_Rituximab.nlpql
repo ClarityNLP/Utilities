@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Gemcitabine & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Gemcitabine/Rituximab", "GemcitabineRituximab", "Gemcitabine_Rituximab", "Gemcitabine and Rituximab", "Gemcitabine / Rituximab", "Gemcitabine & Rituximab"
+];
+
+define Regimen_GemcitabineRituximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Gemcitabine AND Treatment_Rituximab;
+    
+define final Received_GemcitabineRituximab:
+    where Regimen_GemcitabineRituximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+***/
+ 

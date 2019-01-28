@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"javlor", "vinflunine"
+termset TreatmentTerms0:[
+    "javlor", "vinflunine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Vinflunine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Vinflunine monotherapy"
+    "Vinflunine monotherapy", "Vinflunine_monotherapy", "Vinfluninemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Vinfluninemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Vinfluninemonotherapy:
+    where Treatment_Vinflunine OR Regimen_Vinfluninemonotherapy;
+            
 
 // Comments
 /***

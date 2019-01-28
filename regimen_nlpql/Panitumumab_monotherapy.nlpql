@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"vectibix", "panitumumab"
+termset TreatmentTerms0:[
+    "vectibix", "panitumumab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Panitumumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Panitumumab monotherapy"
+    "Panitumumab monotherapy", "Panitumumabmonotherapy", "Panitumumab_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Panitumumabmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Panitumumabmonotherapy:
+    where Treatment_Panitumumab OR Regimen_Panitumumabmonotherapy;
+            
 
 // Comments
 /***

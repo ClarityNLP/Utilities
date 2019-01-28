@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Chlorambucil & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "leukeran", "chlorambucil"
+];
+
+define Treatment_Chlorambucil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "rituxan", "rituximab"
+];
+
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Chlorambucil / Rituximab", "Chlorambucil & Rituximab", "CLB-R", "Chlorambucil_Rituximab", "CLBR", "RClb", "ChlorambucilRituximab", "Chlorambucil/Rituximab", "CLB/R", "Chlorambucil and Rituximab"
+];
+
+define Regimen_ChlorambucilRituximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Chlorambucil AND Treatment_Rituximab;
+    
+define final Received_ChlorambucilRituximab:
+    where Regimen_ChlorambucilRituximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Mantle_cell_lymphoma
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rituxan", "rituximab"
+termset TreatmentTerms0:[
+    "rituxan", "rituximab"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Rituximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Rituximab monotherapy, very extended course"
+    "Rituximabmonotherapyveryextendedcourse", "Rituximab monotherapy &  very extended course", "Rituximab monotherapy- very extended course", "Rituximab_monotherapy_very_extended_course", "Rituximab monotherapy/very extended course", "Rituximab monotherapy/ very extended course", "Rituximab monotherapy and  very extended course", "Rituximab monotherapy, very extended course", "Rituximab monotherapy& very extended course"
 ];
 
-define RegimenMentioned:
+define Regimen_Rituximabmonotherapyveryextendedcourse:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Rituximabmonotherapyveryextendedcourse:
+    where Treatment_Rituximab OR Regimen_Rituximabmonotherapyveryextendedcourse;
+            
 
 // Comments
 /***

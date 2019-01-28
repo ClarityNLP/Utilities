@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"ninlaro", "ixazomib"
+termset TreatmentTerms0:[
+    "ninlaro", "ixazomib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Ixazomib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Ixazomib monotherapy"
+    "Ixazomib_monotherapy", "Ixazomibmonotherapy", "Ixazomib monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Ixazomibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Ixazomibmonotherapy:
+    where Treatment_Ixazomib OR Regimen_Ixazomibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
 
 
 ***/

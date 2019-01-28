@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"paraplatin", "carboplatin"
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"abraxane", "paclitaxel, nanoparticle albumin-bound"
+        
+termset TreatmentTerms1:[
+    "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Paclitaxelnanoparticlealbuminbound:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"keytruda", "pembrolizumab"
+        
+termset TreatmentTerms2:[
+    "keytruda", "pembrolizumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Pembrolizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, nab-Paclitaxel, Pembrolizumab"
+    "Carboplatin, nab/Paclitaxel, Pembrolizumab", "CarboplatinnabPaclitaxelPembrolizumab", "Carboplatin/ nab-Paclitaxel/ Pembrolizumab", "Carboplatin and  nab-Paclitaxel and  Pembrolizumab", "Carboplatin &  nab-Paclitaxel &  Pembrolizumab", "Carboplatin, nab-Paclitaxel, Pembrolizumab", "Carboplatin/nab-Paclitaxel/Pembrolizumab", "Carboplatin, nabPaclitaxel, Pembrolizumab", "Carboplatin& nab-Paclitaxel& Pembrolizumab", "Carboplatin_nab-Paclitaxel_Pembrolizumab", "Carboplatin- nab-Paclitaxel- Pembrolizumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinnabPaclitaxelPembrolizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_nab-Paclitaxel_Pembrolizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Paclitaxelnanoparticlealbuminbound AND Treatment_Pembrolizumab;
+    
+define final Received_CarboplatinnabPaclitaxelPembrolizumab:
+    where Regimen_CarboplatinnabPaclitaxelPembrolizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

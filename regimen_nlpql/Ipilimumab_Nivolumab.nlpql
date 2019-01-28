@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Ipilimumab & Nivolumab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "yervoy", "ipilimumab"
+];
+
+define Treatment_Ipilimumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "opdivo", "nivolumab"
+];
+
+define Treatment_Nivolumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Ipilimumab and Nivolumab", "Ipilimumab/Nivolumab", "IpilimumabNivolumab", "Ipilimumab & Nivolumab", "Ipilimumab_Nivolumab", "Ipilimumab / Nivolumab"
+];
+
+define Regimen_IpilimumabandNivolumab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Ipilimumab AND Treatment_Nivolumab;
+    
+define final Received_IpilimumabNivolumab:
+    where Regimen_IpilimumabandNivolumab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Melanoma
+
+
+***/
+ 

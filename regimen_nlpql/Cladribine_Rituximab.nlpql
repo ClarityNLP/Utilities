@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Cladribine & Rituximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "leustatin", "cladribine"
+];
+
+define Treatment_Cladribine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cladribine & Rituximab", "Cladribine / Rituximab", "Cladribine/Rituximab", "Cladribine and Rituximab", "Cladribine_Rituximab", "CladribineRituximab"
+];
+
+define Regimen_CladribineRituximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_CladribineRituximab:
+    where Treatment_Cladribine OR Regimen_CladribineRituximab;
+            
+
+// Comments
+/***
+
+Known regimen for: Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Hairy_cell_leukemia, Mantle_cell_lymphoma
+
+
+***/
+ 

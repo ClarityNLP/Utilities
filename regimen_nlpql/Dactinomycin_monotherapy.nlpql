@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cosmegen", "dactinomycin"
+termset TreatmentTerms0:[
+    "cosmegen", "dactinomycin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Dactinomycin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Dactinomycin monotherapy"
+    "Dactinomycin_monotherapy", "Dactinomycin monotherapy", "Dactinomycinmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Dactinomycinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Dactinomycinmonotherapy:
+    where Treatment_Dactinomycin OR Regimen_Dactinomycinmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Wilms_tumor, Gestational_trophoblastic_neoplasia, Endometrial_cancer
+Known regimen for: Endometrial_cancer, Gestational_trophoblastic_neoplasia, Wilms_tumor
 
 
 ***/

@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"5-fu", "fluorouracil"
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil monotherapy"
+    "Fluorouracil_monotherapy", "Fluorouracilmonotherapy", "Fluorouracil monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Fluorouracilmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Fluorouracilmonotherapy:
+    where Treatment_Fluorouracil OR Regimen_Fluorouracilmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Head_and_neck_cancer, Pancreatic_cancer, Gastric_cancer, Colon_cancer
+Known regimen for: Pancreatic_cancer, Head_and_neck_cancer, Rectal_cancer, Gastric_cancer, Colon_cancer
 
 
 ***/

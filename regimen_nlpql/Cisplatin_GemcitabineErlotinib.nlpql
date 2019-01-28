@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin & Gemcitabine/Erlotinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
+];
+
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "tarceva", "erlotinib"
+];
+
+define Treatment_Erlotinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Cisplatin and Gemcitabine/Erlotinib", "Cisplatin & Gemcitabine/Erlotinib", "CisplatinGemcitabineErlotinib", "Cisplatin/Gemcitabine/Erlotinib", "Cisplatin / Gemcitabine/Erlotinib", "Cisplatin_GemcitabineErlotinib"
+];
+
+define Regimen_CisplatinandGemcitabineErlotinib:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Gemcitabine AND Treatment_Erlotinib;
+    
+define final Received_CisplatinGemcitabineErlotinib:
+    where Regimen_CisplatinandGemcitabineErlotinib OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated
+
+
+***/
+ 

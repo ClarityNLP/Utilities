@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"coumadin", "warfarin"
+termset TreatmentTerms0:[
+    "coumadin", "warfarin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Warfarin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Warfarin monotherapy"
+    "Warfarin monotherapy", "Warfarinmonotherapy", "Warfarin_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Warfarinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Warfarinmonotherapy:
+    where Treatment_Warfarin OR Regimen_Warfarinmonotherapy;
+            
 
 // Comments
 /***

@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"paraplatin", "carboplatin"
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"alimta", "pemetrexed"
+        
+termset TreatmentTerms1:[
+    "alimta", "pemetrexed"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Pemetrexed:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"avastin", "bevacizumab"
+        
+termset TreatmentTerms2:[
+    "avastin", "bevacizumab"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "PemCBev", "Carboplatin, Pemetrexed, Bevacizumab"
+    "Carboplatin/ Pemetrexed/ Bevacizumab", "Carboplatin& Pemetrexed& Bevacizumab", "CarboplatinPemetrexedBevacizumab", "Carboplatin- Pemetrexed- Bevacizumab", "Carboplatin &  Pemetrexed &  Bevacizumab", "Carboplatin/Pemetrexed/Bevacizumab", "Carboplatin_Pemetrexed_Bevacizumab", "PemCBev", "Carboplatin, Pemetrexed, Bevacizumab", "Carboplatin and  Pemetrexed and  Bevacizumab"
 ];
 
-define RegimenMentioned:
+define Regimen_CarboplatinPemetrexedBevacizumab:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCarboplatin_Pemetrexed_Bevacizumab:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Pemetrexed AND Treatment_Bevacizumab;
+    
+define final Received_CarboplatinPemetrexedBevacizumab:
+    where Regimen_CarboplatinPemetrexedBevacizumab OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

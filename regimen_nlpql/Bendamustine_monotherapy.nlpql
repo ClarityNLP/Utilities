@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bendamustine", "bendamustine"
+termset TreatmentTerms0:[
+    "bendamustine", "bendamustine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bendamustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Bendamustine monotherapy"
+    "Bendamustine_monotherapy", "Bendamustine monotherapy", "Bendamustinemonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Bendamustinemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Bendamustinemonotherapy:
+    where Treatment_Bendamustine OR Regimen_Bendamustinemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma, Transformed_lymphoma, Autologous_HSCT, Peripheral_T-cell_lymphoma, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Cutaneous_T-cell_lymphoma, Hodgkin_lymphoma, Small_cell_lung_cancer
+Known regimen for: Hodgkin_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma, Cutaneous_T-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Transformed_lymphoma, Small_cell_lung_cancer, Peripheral_T-cell_lymphoma, Autologous_HSCT, Diffuse_large_B-cell_lymphoma
 
 
 ***/

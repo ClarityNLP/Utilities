@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"cytosar", "cytarabine"
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cerubidine", "daunorubicin"
+        
+termset TreatmentTerms1:[
+    "cerubidine", "daunorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "AD", "DA", "7+3d", "7+3d (standard-dose)"
+    "7+3d", "7&3d", "7 & 3d", "7/3d", "73d", "7/3d (standard-dose)", "DA", "7 and 3d (standard-dose)", "7 / 3d (standard-dose)", "7&3d (standard-dose)", "73dstandarddose", "7 and 3d", "7+3d (standard-dose)", "7 / 3d", "AD", "7+3d (standard/dose)", "73d_standard-dose", "7+3d (standarddose)", "7 & 3d (standard-dose)"
 ];
 
-define RegimenMentioned:
+define Regimen_73d:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final Received73d_standard-dose:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Daunorubicin;
+    
+define final Received_73dstandarddose:
+    where Regimen_73d OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Interferon alfa-2a & Interleukin-2" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "roferon-a", "interferon alfa-2a"
+];
+
+define Treatment_Interferonalfa2a:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "proleukin", "aldesleukin"
+];
+
+define Treatment_Aldesleukin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Interferon alfa-2a & Interleukin-2", "Interferon_alfa-2a_Interleukin-2", "Interferon alfa-2a/Interleukin-2", "Interferon alfa-2a / Interleukin-2", "Interferon alfa-2a and Interleukin-2", "Interferonalfa2aInterleukin2", "Interferon alfa/2a & Interleukin/2", "Interferon alfa2a & Interleukin2"
+];
+
+define Regimen_Interferonalfa2aInterleukin2:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Interferonalfa2a AND Treatment_Aldesleukin;
+    
+define final Received_Interferonalfa2aInterleukin2:
+    where Regimen_Interferonalfa2aInterleukin2 OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Renal_cell_carcinoma
+
+
+***/
+ 

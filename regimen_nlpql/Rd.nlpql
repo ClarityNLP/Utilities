@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"revlimid", "lenalidomide"
+termset TreatmentTerms0:[
+    "revlimid", "lenalidomide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Lenalidomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"decadron", "dexamethasone"
+        
+termset TreatmentTerms1:[
+    "decadron", "dexamethasone"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Dexamethasone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"al", "category:light-chain"
+        
+termset TreatmentTerms2:[
+    "al", "category:light-chain"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_CategoryLightchain:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"category:disease-specific pages", "category:disease-specific pages"
+        
+termset TreatmentTerms3:[
+    "category:disease-specific pages", "category:disease-specific pages"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_CategoryDiseasespecificpages:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"category:plasma cell dyscrasias", "category:plasma cell dyscrasias"
+        
+termset TreatmentTerms4:[
+    "category:plasma cell dyscrasias", "category:plasma cell dyscrasias"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_CategoryPlasmacelldyscrasias:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "RD"
 ];
 
-define RegimenMentioned:
+define Regimen_RD:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedRD:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Lenalidomide AND Treatment_Dexamethasone AND Treatment_CategoryLightchain AND Treatment_CategoryDiseasespecificpages AND Treatment_CategoryPlasmacelldyscrasias;
+    
+define final Received_RD:
+    where Regimen_RD OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

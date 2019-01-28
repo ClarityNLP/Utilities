@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-":category:cyclosporines", ":category:cyclosporines"
+termset TreatmentTerms0:[
+    ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_CategoryCyclosporines:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine monotherapy"
+    "Cyclosporine_monotherapy", "Cyclosporinemonotherapy", "Cyclosporine monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Cyclosporinemonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Cyclosporinemonotherapy:
+    where Treatment_CategoryCyclosporines OR Regimen_Cyclosporinemonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Castleman_disease, Immune_thrombocytopenia_(ITP), Aplastic_anemia, Myelodysplastic_syndrome
+Known regimen for: Castleman_disease, Aplastic_anemia, Immune_thrombocytopenia_(ITP), Myelodysplastic_syndrome
 
 
 ***/

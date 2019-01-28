@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Brentuximab vedotin & Dacarbazine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "adcetris", "brentuximab vedotin"
+];
+
+define Treatment_Brentuximabvedotin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "dtic", "dacarbazine"
+];
+
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Brentuximab_vedotin_Dacarbazine", "Brentuximab vedotin and Dacarbazine", "Brentuximab vedotin/Dacarbazine", "BrentuximabvedotinDacarbazine", "Brentuximab vedotin & Dacarbazine", "Brentuximab vedotin / Dacarbazine"
+];
+
+define Regimen_BrentuximabvedotinDacarbazine:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Brentuximabvedotin AND Treatment_Dacarbazine;
+    
+define final Received_BrentuximabvedotinDacarbazine:
+    where Regimen_BrentuximabvedotinDacarbazine OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"proleukin", "aldesleukin"
+termset TreatmentTerms0:[
+    "proleukin", "aldesleukin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Aldesleukin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Low-dose Interleukin-2", "LD IL-2"
+    "LD IL-2", "LDIL2", "LD IL/2", "LD_IL-2", "Lowdose Interleukin2", "LD IL2", "Low-dose Interleukin-2", "LowdoseInterleukin2", "Low-dose_Interleukin-2", "Low/dose Interleukin/2"
 ];
 
-define RegimenMentioned:
+define Regimen_LDIL2:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_LowdoseInterleukin2:
+    where Treatment_Aldesleukin OR Regimen_LDIL2;
+            
 
 // Comments
 /***

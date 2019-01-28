@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Carboplatin & Gemcitabine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "paraplatin", "carboplatin"
+];
+
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "gemzar", "gemcitabine"
+];
+
+define Treatment_Gemcitabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Carboplatin_Gemcitabine", "Carboplatin/Gemcitabine", "GC", "Carboplatin & Gemcitabine", "Carboplatin / Gemcitabine", "Carboplatin and Gemcitabine", "CarboplatinGemcitabine"
+];
+
+define Regimen_CarboplatinGemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carboplatin AND Treatment_Gemcitabine;
+    
+define final Received_CarboplatinGemcitabine:
+    where Regimen_CarboplatinGemcitabine OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Non-small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bosulif", "bosutinib"
+termset TreatmentTerms0:[
+    "bosulif", "bosutinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Bosutinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Bosutinib monotherapy"
+    "Bosutinib_monotherapy", "Bosutinib monotherapy", "Bosutinibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Bosutinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Bosutinibmonotherapy:
+    where Treatment_Bosutinib OR Regimen_Bosutinibmonotherapy;
+            
 
 // Comments
 /***

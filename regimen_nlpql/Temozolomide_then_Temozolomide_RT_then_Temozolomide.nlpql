@@ -1,0 +1,56 @@
+
+// Phenotype library name
+phenotype "Regimen for Temozolomide, then Temozolomide & RT, then Temozolomide" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "temodar", "temozolomide"
+];
+
+define Treatment_Temozolomide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Temozolomide, then Temozolomide / RT, then Temozolomide", "Temozolomide, & Temozolomide & RT, & Temozolomide", "Temozolomide, then Temozolomide and RT, then Temozolomide", "Temozolomide/ then Temozolomide & RT/ then Temozolomide", "Temozolomide, then Temozolomide/RT, then Temozolomide", "Temozolomide, and Temozolomide & RT, and Temozolomide", "Temozolomide and  then Temozolomide & RT and  then Temozolomide", "Temozolomide& then Temozolomide & RT& then Temozolomide", "Temozolomide,, Temozolomide & RT,, Temozolomide", "Temozolomide &  then Temozolomide & RT &  then Temozolomide", "Temozolomide- then Temozolomide & RT- then Temozolomide", "TemozolomidethenTemozolomideRTthenTemozolomide", "Temozolomide_then_Temozolomide_RT_then_Temozolomide", "Temozolomide,&Temozolomide & RT,&Temozolomide", "Temozolomide, then Temozolomide & RT, then Temozolomide", "Temozolomide, / Temozolomide & RT, / Temozolomide", "Temozolomide/then Temozolomide & RT/then Temozolomide", "Temozolomide,/Temozolomide & RT,/Temozolomide"
+];
+
+define Regimen_TemozolomidethenTemozolomideRTthenTemozolomide:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Received_TemozolomidethenTemozolomideRTthenTemozolomide:
+    where Treatment_Temozolomide OR Regimen_TemozolomidethenTemozolomideRTthenTemozolomide;
+            
+
+// Comments
+/***
+
+Known regimen for: Anaplastic_glioma
+
+
+***/
+ 

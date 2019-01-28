@@ -1,0 +1,83 @@
+
+// Phenotype library name
+phenotype "Regimen for DA 3 + 10, GO" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "cytosar", "cytarabine"
+];
+
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "cerubidine", "daunorubicin"
+];
+
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "mylotarg", "gemtuzumab ozogamicin"
+];
+
+define Treatment_Gemtuzumabozogamicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "DA 3 + 10/ GO", "DA 3 + 10/GO", "DA 3 + 10, GO", "DA 3 + 10 and  GO", "DA 3  /  10, GO", "DA 3 & 10, GO", "DA_3_10_GO", "DA 3 + 10 &  GO", "DA 3  &  10, GO", "DA 3 + 10- GO", "DA 3  and  10, GO", "DA 3 / 10, GO", "DA 3 + 10& GO", "DA310GO"
+];
+
+define Regimen_DA310GO:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Gemtuzumabozogamicin;
+    
+define final Received_DA310GO:
+    where Regimen_DA310GO OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+***/
+ 

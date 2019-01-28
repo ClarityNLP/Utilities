@@ -14,87 +14,85 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"vepesid", "etoposide"
+termset TreatmentTerms0:[
+    "vepesid", "etoposide"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Etoposide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"sterapred", "prednisone"
+        
+termset TreatmentTerms1:[
+    "sterapred", "prednisone"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"oncovin", "vincristine"
+        
+termset TreatmentTerms2:[
+    "oncovin", "vincristine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Vincristine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"cytoxan", "cyclophosphamide"
+        
+termset TreatmentTerms3:[
+    "cytoxan", "cyclophosphamide"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Cyclophosphamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms4:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms4:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications4:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms4],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms4],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "EPOCH, dose-escalated", "EPOCH"
+    "EPOCH/ dose-escalated", "EPOCH/dose-escalated", "EPOCH", "EPOCH, dose/escalated", "EPOCH &  dose-escalated", "EPOCH& dose-escalated", "EPOCH, doseescalated", "EPOCH_dose-escalated", "EPOCH and  dose-escalated", "EPOCH- dose-escalated", "EPOCHdoseescalated", "EPOCH, dose-escalated"
 ];
 
-define RegimenMentioned:
+define Regimen_EPOCHdoseescalated:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedEPOCH_dose-escalated:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3 AND Medications4) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Etoposide AND Treatment_Prednisone AND Treatment_Vincristine AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin;
+    
+define final Received_EPOCHdoseescalated:
+    where Regimen_EPOCHdoseescalated OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

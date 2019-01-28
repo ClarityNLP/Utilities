@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"platinol", "cisplatin"
+termset TreatmentTerms0:[
+    "platinol", "cisplatin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Cisplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"ellence", "epirubicin"
+        
+termset TreatmentTerms1:[
+    "ellence", "epirubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Epirubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"ifex", "ifosfamide"
+        
+termset TreatmentTerms2:[
+    "ifex", "ifosfamide"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Ifosfamide:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Epirubicin, Ifosfamide"
+    "Cisplatin_Epirubicin_Ifosfamide", "CisplatinEpirubicinIfosfamide", "Cisplatin/Epirubicin/Ifosfamide", "Cisplatin &  Epirubicin &  Ifosfamide", "Cisplatin& Epirubicin& Ifosfamide", "Cisplatin, Epirubicin, Ifosfamide", "Cisplatin/ Epirubicin/ Ifosfamide", "Cisplatin- Epirubicin- Ifosfamide", "Cisplatin and  Epirubicin and  Ifosfamide"
 ];
 
-define RegimenMentioned:
+define Regimen_CisplatinEpirubicinIfosfamide:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedCisplatin_Epirubicin_Ifosfamide:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Cisplatin AND Treatment_Epirubicin AND Treatment_Ifosfamide;
+    
+define final Received_CisplatinEpirubicinIfosfamide:
+    where Regimen_CisplatinEpirubicinIfosfamide OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

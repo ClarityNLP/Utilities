@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"bicnu", "carmustine"
+termset TreatmentTerms0:[
+    "bicnu", "carmustine"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Carmustine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"thioplex", "thiotepa"
+        
+termset TreatmentTerms1:[
+    "thioplex", "thiotepa"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Thiotepa:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "BCNU/TT"
+    "BCNU/TT", "BCNUTT"
 ];
 
-define RegimenMentioned:
+define Regimen_BCNUTT:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedBCNUTT:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Carmustine AND Treatment_Thiotepa;
+    
+define final Received_BCNUTT:
+    where Regimen_BCNUTT OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"arixtra", "fondaparinux"
+termset TreatmentTerms0:[
+    "arixtra", "fondaparinux"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Fondaparinux:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Fondaprinux monotherapy"
+    "Fondaprinux monotherapy", "Fondaprinux_monotherapy", "Fondaprinuxmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Fondaprinuxmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Fondaprinuxmonotherapy:
+    where Treatment_Fondaparinux OR Regimen_Fondaprinuxmonotherapy;
+            
 
 // Comments
 /***

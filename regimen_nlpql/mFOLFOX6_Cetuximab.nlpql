@@ -1,0 +1,94 @@
+
+// Phenotype library name
+phenotype "Regimen for mFOLFOX6 & Cetuximab" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "5-fu", "fluorouracil"
+];
+
+define Treatment_Fluorouracil:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "leucovorin", "folinic acid"
+];
+
+define Treatment_Folinicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms2:[
+    "eloxatin", "oxaliplatin"
+];
+
+define Treatment_Oxaliplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms3:[
+    "erbitux", "cetuximab"
+];
+
+define Treatment_Cetuximab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "mFOLFOX6 and Cetuximab", "mFOLFOX6_Cetuximab", "mFOLFOX6/Cetuximab", "mFOLFOX6 & Cetuximab", "mFOLFOX6Cetuximab", "mFOLFOX6 / Cetuximab"
+];
+
+define Regimen_mFOLFOX6andCetuximab:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Oxaliplatin AND Treatment_Cetuximab;
+    
+define final Received_mFOLFOX6Cetuximab:
+    where Regimen_mFOLFOX6andCetuximab OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Esophageal_cancer, Colon_cancer_KRAS_wild-type
+
+
+***/
+ 

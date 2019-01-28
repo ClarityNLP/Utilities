@@ -14,75 +14,74 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"adcetris", "brentuximab vedotin"
+termset TreatmentTerms0:[
+    "adcetris", "brentuximab vedotin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Brentuximabvedotin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"adriamycin", "doxorubicin"
+        
+termset TreatmentTerms1:[
+    "adriamycin", "doxorubicin"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Doxorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"velban", "vinblastine"
+        
+termset TreatmentTerms2:[
+    "velban", "vinblastine"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Vinblastine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms3:[
-"dtic", "dacarbazine"
+        
+termset TreatmentTerms3:[
+    "dtic", "dacarbazine"
 ];
 
-define Medications3:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms3],
-documentset:[Docs]
+define Treatment_Dacarbazine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms3],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "A+AVD", "BV + AVD"
+    "A&AVD", "BV & AVD", "BVAVD", "A+AVD", "AAVD", "BV_AVD", "A & AVD", "A / AVD", "BV + AVD", "BV  &  AVD", "BV  /  AVD", "BV / AVD", "BV  and  AVD", "A/AVD", "A and AVD"
 ];
 
-define RegimenMentioned:
+define Regimen_AAVD:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedAAVD:
-    where (Medications0 AND Medications1 AND Medications2 AND Medications3) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Brentuximabvedotin AND Treatment_Doxorubicin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
+    
+define final Received_AAVD:
+    where Regimen_AAVD OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

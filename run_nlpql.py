@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 204
+cur_job = 0
 
 ip = '18.220.133.76'
 # ip = 'localhost'
@@ -14,7 +14,7 @@ ip = '18.220.133.76'
 url = 'http://' + ip + ':5000/'
 nlpql_url = url + 'nlpql'
 delete_url = url + 'delete_job/'
-nlpql_path = './cancer_nlpql/'
+nlpql_path = './regimen_nlpql/'
 
 
 def get_active_workers():

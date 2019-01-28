@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"zydelig", "idelalisib"
+termset TreatmentTerms0:[
+    "zydelig", "idelalisib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Idelalisib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Idelalisib monotherapy"
+    "Idelalisibmonotherapy", "Idelalisib_monotherapy", "Idelalisib monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Idelalisibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Idelalisibmonotherapy:
+    where Treatment_Idelalisib OR Regimen_Idelalisibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Follicular_lymphoma, Marginal_zone_lymphoma
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Follicular_lymphoma
 
 
 ***/

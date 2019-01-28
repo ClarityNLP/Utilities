@@ -1,0 +1,72 @@
+
+// Phenotype library name
+phenotype "Regimen for Methotrexate & Prednisone" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms0:[
+    "mtx", "methotrexate"
+];
+
+define Treatment_Methotrexate:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "sterapred", "prednisone"
+];
+
+define Treatment_Prednisone:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset RegimenTerms:[
+    "Methotrexate and Prednisone", "Methotrexate/Prednisone", "Methotrexate / Prednisone", "Methotrexate & Prednisone", "MethotrexatePrednisone", "Methotrexate_Prednisone"
+];
+
+define Regimen_MethotrexateandPrednisone:
+  Clarity.ProviderAssertion({
+    termset:[RegimenTerms],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Methotrexate AND Treatment_Prednisone;
+    
+define final Received_MethotrexatePrednisone:
+    where Regimen_MethotrexateandPrednisone OR ReceivedRegimenTreatments;        
+        
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Large_granular_lymphocytic_leukemia
+
+
+***/
+ 

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"vizimpro", "dacomitinib"
+termset TreatmentTerms0:[
+    "vizimpro", "dacomitinib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Dacomitinib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Dacomitinib monotherapy"
+    "Dacomitinib_monotherapy", "Dacomitinib monotherapy", "Dacomitinibmonotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Dacomitinibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Dacomitinibmonotherapy:
+    where Treatment_Dacomitinib OR Regimen_Dacomitinibmonotherapy;
+            
 
 // Comments
 /***

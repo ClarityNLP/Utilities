@@ -14,51 +14,52 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-":category:granulocyte colony-stimulating factors", ":category:granulocyte colony-stimulating factors"
+termset TreatmentTerms0:[
+    ":category:granulocyte colony-stimulating factors", ":category:granulocyte colony-stimulating factors"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_CategoryGranulocytecolonystimulatingfactors:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-":category:pcp prophylaxis", ":category:pcp prophylaxis"
+        
+termset TreatmentTerms1:[
+    ":category:pcp prophylaxis", ":category:pcp prophylaxis"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_CategoryPCPprophylaxis:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "R, then CHOP"
+    "R/ then CHOP", "R, & CHOP", "R,, CHOP", "R,&CHOP", "RthenCHOP", "R& then CHOP", "R and  then CHOP", "R- then CHOP", "R/then CHOP", "R, / CHOP", "R_then_CHOP", "R,/CHOP", "R, then CHOP", "R, and CHOP", "R &  then CHOP"
 ];
 
-define RegimenMentioned:
+define Regimen_RthenCHOP:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedR_then_CHOP:
-    where (Medications0 AND Medications1) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_CategoryGranulocytecolonystimulatingfactors AND Treatment_CategoryPCPprophylaxis;
+    
+define final Received_RthenCHOP:
+    where Regimen_RthenCHOP OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

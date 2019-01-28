@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"abraxane", "paclitaxel, nanoparticle albumin-bound"
+termset TreatmentTerms0:[
+    "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Paclitaxelnanoparticlealbuminbound:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"avastin", "bevacizumab"
+        
+termset TreatmentTerms1:[
+    "avastin", "bevacizumab"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Bevacizumab:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"paraplatin", "carboplatin"
+        
+termset TreatmentTerms2:[
+    "paraplatin", "carboplatin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Carboplatin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
     "ABC"
 ];
 
-define RegimenMentioned:
+define Regimen_ABC:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedABC:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Paclitaxelnanoparticlealbuminbound AND Treatment_Bevacizumab AND Treatment_Carboplatin;
+    
+define final Received_ABC:
+    where Regimen_ABC OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

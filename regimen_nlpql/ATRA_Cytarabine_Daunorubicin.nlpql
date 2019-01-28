@@ -14,63 +14,63 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"atra", "all-trans retinoic acid"
+termset TreatmentTerms0:[
+    "atra", "all-trans retinoic acid"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Alltransretinoicacid:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms1:[
-"cytosar", "cytarabine"
+        
+termset TreatmentTerms1:[
+    "cytosar", "cytarabine"
 ];
 
-define Medications1:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms1],
-documentset:[Docs]
+define Treatment_Cytarabine:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
+        documentset:[Docs]
 }); 
-    
-        
 
-termset MedicationTerms2:[
-"cerubidine", "daunorubicin"
+        
+termset TreatmentTerms2:[
+    "cerubidine", "daunorubicin"
 ];
 
-define Medications2:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms2],
-documentset:[Docs]
+define Treatment_Daunorubicin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms2],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "ATRA, Cytarabine, Daunorubicin"
+    "ATRA- Cytarabine- Daunorubicin", "ATRA &  Cytarabine &  Daunorubicin", "ATRA, Cytarabine, Daunorubicin", "ATRA_Cytarabine_Daunorubicin", "ATRA and  Cytarabine and  Daunorubicin", "ATRA& Cytarabine& Daunorubicin", "ATRA/Cytarabine/Daunorubicin", "ATRA/ Cytarabine/ Daunorubicin", "ATRACytarabineDaunorubicin"
 ];
 
-define RegimenMentioned:
+define Regimen_ATRACytarabineDaunorubicin:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
-
-define final ReceivedATRA_Cytarabine_Daunorubicin:
-    where (Medications0 AND Medications1 AND Medications2) OR RegimenMentioned;
+        
+define ReceivedRegimenTreatments:
+    where Treatment_Alltransretinoicacid AND Treatment_Cytarabine AND Treatment_Daunorubicin;
+    
+define final Received_ATRACytarabineDaunorubicin:
+    where Regimen_ATRACytarabineDaunorubicin OR ReceivedRegimenTreatments;        
+        
+        
         
 
 // Comments

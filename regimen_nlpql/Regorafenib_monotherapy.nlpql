@@ -14,41 +14,42 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"stivarga", "regorafenib"
+termset TreatmentTerms0:[
+    "stivarga", "regorafenib"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Regorafenib:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Regorafenib monotherapy"
+    "Regorafenib monotherapy", "Regorafenibmonotherapy", "Regorafenib_monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Regorafenibmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Regorafenibmonotherapy:
+    where Treatment_Regorafenib OR Regimen_Regorafenibmonotherapy;
+            
 
 // Comments
 /***
 
-Known regimen for: Renal_cell_carcinoma, Gastric_cancer, Hepatocellular_carcinoma, Gastrointestinal_stromal_tumor, Colon_cancer, Soft_tissue_sarcoma
+Known regimen for: Soft_tissue_sarcoma, Gastrointestinal_stromal_tumor, Hepatocellular_carcinoma, Gastric_cancer, Renal_cell_carcinoma, Colon_cancer
 
 
 ***/

@@ -14,36 +14,37 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-
-termset MedicationTerms0:[
-"rydapt", "midostaurin"
+termset TreatmentTerms0:[
+    "rydapt", "midostaurin"
 ];
 
-define Medications0:
-Clarity.ProviderAssertion({
-termset:[MedicationTerms0],
-documentset:[Docs]
+define Treatment_Midostaurin:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
 }); 
-    
+
         
 
-// Regiment names
-
+// Regimen names
 
 termset RegimenTerms:[
-    "Midostaurin monotherapy"
+    "Midostaurin_monotherapy", "Midostaurinmonotherapy", "Midostaurin monotherapy"
 ];
 
-define RegimenMentioned:
+define Regimen_Midostaurinmonotherapy:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 
-                        
 
 // Results
 
+        
+define final Received_Midostaurinmonotherapy:
+    where Treatment_Midostaurin OR Regimen_Midostaurinmonotherapy;
+            
 
 // Comments
 /***
