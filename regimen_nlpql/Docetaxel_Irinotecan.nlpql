@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelIrinotecan", "Docetaxel and Irinotecan", "Docetaxel/Irinotecan", "Docetaxel_Irinotecan", "Docetaxel / Irinotecan", "Docetaxel & Irinotecan"
+    "Docetaxel & Irinotecan"
 ];
 
-define Regimen_DocetaxelIrinotecan:
+define final DocetaxelIrinotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DocetaxelIrinotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Irinotecan;
-    
-define final Received_DocetaxelIrinotecan:
-    where Regimen_DocetaxelIrinotecan OR ReceivedRegimenTreatments;        
+define final DocetaxelIrinotecanTreatments:
+    where DocetaxelTreatment AND IrinotecanTreatment;
+          
         
         
         

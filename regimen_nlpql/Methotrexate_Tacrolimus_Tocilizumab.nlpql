@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "prograf", "tacrolimus"
 ];
 
-define Treatment_Tacrolimus:
+define  TacrolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "actemra", "tocilizumab"
 ];
 
-define Treatment_Tocilizumab:
+define  TocilizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Tocilizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate& Tacrolimus& Tocilizumab", "Methotrexate/ Tacrolimus/ Tocilizumab", "Methotrexate/Tacrolimus/Tocilizumab", "MethotrexateTacrolimusTocilizumab", "Methotrexate &  Tacrolimus &  Tocilizumab", "Methotrexate_Tacrolimus_Tocilizumab", "Methotrexate and  Tacrolimus and  Tocilizumab", "Methotrexate- Tacrolimus- Tocilizumab", "Methotrexate, Tacrolimus, Tocilizumab"
+    "Methotrexate, Tacrolimus, Tocilizumab"
 ];
 
-define Regimen_MethotrexateTacrolimusTocilizumab:
+define final MethotrexateTacrolimusTocilizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MethotrexateTacrolimusTocilizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Tacrolimus AND Treatment_Tocilizumab;
-    
-define final Received_MethotrexateTacrolimusTocilizumab:
-    where Regimen_MethotrexateTacrolimusTocilizumab OR ReceivedRegimenTreatments;        
+define final MethotrexateTacrolimusTocilizumabTreatments:
+    where MethotrexateTreatment AND TacrolimusTreatment AND TocilizumabTreatment;
+          
         
         
         

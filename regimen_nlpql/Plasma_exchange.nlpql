@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "persantine", "dipyridamole"
 ];
 
-define Treatment_Dipyridamole:
+define  DipyridamoleTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "aspirin", "aspirin"
 ];
 
-define Treatment_Aspirin:
+define  AspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Aspirin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Plasma exchange", "Plasmaexchange", "Plasma_exchange"
+    "Plasma exchange"
 ];
 
-define Regimen_Plasmaexchange:
+define final PlasmaexchangeRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Plasmaexchange:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dipyridamole AND Treatment_Aspirin;
-    
-define final Received_Plasmaexchange:
-    where Regimen_Plasmaexchange OR ReceivedRegimenTreatments;        
+define final PlasmaexchangeTreatments:
+    where DipyridamoleTreatment AND AspirinTreatment;
+          
         
         
         

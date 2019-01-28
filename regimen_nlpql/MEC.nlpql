@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "MICE", "MEC"
 ];
 
-define Regimen_MICE:
+define final MECRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MICE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mitoxantrone AND Treatment_Etoposide AND Treatment_Cytarabine;
-    
-define final Received_MEC:
-    where Regimen_MICE OR ReceivedRegimenTreatments;        
+define final MECTreatments:
+    where MitoxantroneTreatment AND EtoposideTreatment AND CytarabineTreatment;
+          
         
         
         

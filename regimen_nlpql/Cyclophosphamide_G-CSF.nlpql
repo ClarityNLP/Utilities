@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define final CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & G/CSF", "Cyclophosphamide & GCSF", "Cyclophosphamide/G-CSF", "Cyclophosphamide / G-CSF", "Cyclophosphamide and G-CSF", "Cyclophosphamide & G-CSF", "Cyclophosphamide_G-CSF", "CyclophosphamideGCSF"
+    "Cyclophosphamide & G-CSF"
 ];
 
-define Regimen_CyclophosphamideGCSF:
+define final CyclophosphamideGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_CyclophosphamideGCSF:
 
 // Results
 
-        
-define final Received_CyclophosphamideGCSF:
-    where Treatment_Cyclophosphamide OR Regimen_CyclophosphamideGCSF;
-            
 
 // Comments
 /***

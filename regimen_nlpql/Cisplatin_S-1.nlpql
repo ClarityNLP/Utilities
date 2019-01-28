@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "s-1", "tegafur, gimeracil, oteracil"
 ];
 
-define Treatment_Tegafurgimeraciloteracil:
+define  TegafurgimeraciloteracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Tegafurgimeraciloteracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "SP", "Cisplatin & S/1", "CisplatinS1", "Cisplatin/S-1", "Cisplatin & S1", "Cisplatin_S-1", "CS", "Cisplatin / S-1", "Cisplatin & S-1", "Cisplatin and S-1"
+    "CS", "Cisplatin & S-1", "SP"
 ];
 
-define Regimen_SP:
+define final CisplatinS1Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_SP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Tegafurgimeraciloteracil;
-    
-define final Received_CisplatinS1:
-    where Regimen_SP OR ReceivedRegimenTreatments;        
+define final CisplatinS1Treatments:
+    where CisplatinTreatment AND TegafurgimeraciloteracilTreatment;
+          
         
         
         

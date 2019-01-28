@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mustargen", "mechlorethamine"
 ];
 
-define Treatment_Mechlorethamine:
+define  MechlorethamineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,7 +84,7 @@ termset TreatmentTerms6:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms6],
         documentset:[Docs]
@@ -98,7 +98,7 @@ termset RegimenTerms:[
     "MOPP-ABV", "MOPPABV", "MOPP/ABV"
 ];
 
-define Regimen_MOPPABV:
+define final MOPPABVRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -108,11 +108,9 @@ define Regimen_MOPPABV:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mechlorethamine AND Treatment_Vincristine AND Treatment_Procarbazine AND Treatment_Prednisone AND Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vinblastine;
-    
-define final Received_MOPPABV:
-    where Regimen_MOPPABV OR ReceivedRegimenTreatments;        
+define final MOPPABVTreatments:
+    where MechlorethamineTreatment AND VincristineTreatment AND ProcarbazineTreatment AND PrednisoneTreatment AND DoxorubicinTreatment AND BleomycinTreatment AND VinblastineTreatment;
+          
         
         
         

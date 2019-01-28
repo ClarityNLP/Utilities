@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -76,7 +76,7 @@ termset RegimenTerms:[
     "RABVD"
 ];
 
-define Regimen_RABVD:
+define final RABVDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RABVD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
-    
-define final Received_RABVD:
-    where Regimen_RABVD OR ReceivedRegimenTreatments;        
+define final RABVDTreatments:
+    where RituximabTreatment AND DoxorubicinTreatment AND BleomycinTreatment AND VinblastineTreatment AND DacarbazineTreatment;
+          
         
         
         

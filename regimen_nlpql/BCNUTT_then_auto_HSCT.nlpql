@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define  CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Thiotepa:
 // Regimen names
 
 termset RegimenTerms:[
-    "BCNU/TT, / auto HSCT", "BCNU/TT &  then auto HSCT", "BCNU/TT,&auto HSCT", "BCNU/TT,, auto HSCT", "BCNU/TT,/auto HSCT", "BCNU/TT/ then auto HSCT", "BCNUTTthenautoHSCT", "BCNU/TT, then auto HSCT", "BCNU/TT/then auto HSCT", "BCNU/TT, & auto HSCT", "BCNU/TT- then auto HSCT", "BCNU/TT& then auto HSCT", "BCNU/TT, and auto HSCT", "BCNUTT_then_auto_HSCT", "BCNU/TT", "BCNU/TT and  then auto HSCT", "BCNUTT"
+    "BCNU/TT", "BCNUTT", "BCNU/TT, then auto HSCT"
 ];
 
-define Regimen_BCNUTTautoHSCT:
+define final BCNUTTthenautoHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BCNUTTautoHSCT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carmustine AND Treatment_Thiotepa;
-    
-define final Received_BCNUTTthenautoHSCT:
-    where Regimen_BCNUTTautoHSCT OR ReceivedRegimenTreatments;        
+define final BCNUTTthenautoHSCTTreatments:
+    where CarmustineTreatment AND ThiotepaTreatment;
+          
         
         
         

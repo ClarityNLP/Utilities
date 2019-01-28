@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define  DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dactinomycin/Vincristine", "DactinomycinVincristine", "Dactinomycin / Vincristine", "Dactinomycin & Vincristine", "Dactinomycin and Vincristine", "Dactinomycin_Vincristine"
+    "Dactinomycin & Vincristine"
 ];
 
-define Regimen_DactinomycinVincristine:
+define final DactinomycinVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DactinomycinVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dactinomycin AND Treatment_Vincristine;
-    
-define final Received_DactinomycinVincristine:
-    where Regimen_DactinomycinVincristine OR ReceivedRegimenTreatments;        
+define final DactinomycinVincristineTreatments:
+    where DactinomycinTreatment AND VincristineTreatment;
+          
         
         
         

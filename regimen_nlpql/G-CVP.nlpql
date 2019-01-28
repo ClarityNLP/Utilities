@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gazyva", "obinutuzumab"
 ];
 
-define Treatment_Obinutuzumab:
+define  ObinutuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "G-CVP", "GCVP", "G/CVP"
+    "G/CVP", "G-CVP", "GCVP"
 ];
 
-define Regimen_GCVP:
+define final GCVPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_GCVP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Obinutuzumab AND Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_GCVP:
-    where Regimen_GCVP OR ReceivedRegimenTreatments;        
+define final GCVPTreatments:
+    where ObinutuzumabTreatment AND CyclophosphamideTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         

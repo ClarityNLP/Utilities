@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "MPT"
 ];
 
-define Regimen_MPT:
+define final MPTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MPT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Melphalan AND Treatment_Prednisone AND Treatment_Thalidomide;
-    
-define final Received_MPT:
-    where Regimen_MPT OR ReceivedRegimenTreatments;        
+define final MPTTreatments:
+    where MelphalanTreatment AND PrednisoneTreatment AND ThalidomideTreatment;
+          
         
         
         

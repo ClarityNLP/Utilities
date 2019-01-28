@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "XH", "Capecitabine / Trastuzumab", "Capecitabine_Trastuzumab", "Capecitabine/Trastuzumab", "CapecitabineTrastuzumab", "Capecitabine & Trastuzumab", "Capecitabine and Trastuzumab"
+    "XH", "Capecitabine & Trastuzumab"
 ];
 
-define Regimen_XH:
+define final CapecitabineTrastuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_XH:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Trastuzumab;
-    
-define final Received_CapecitabineTrastuzumab:
-    where Regimen_XH OR ReceivedRegimenTreatments;        
+define final CapecitabineTrastuzumabTreatments:
+    where CapecitabineTreatment AND TrastuzumabTreatment;
+          
         
         
         

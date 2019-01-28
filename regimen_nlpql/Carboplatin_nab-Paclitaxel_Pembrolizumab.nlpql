@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Treatment_Paclitaxelnanoparticlealbuminbound:
+define  PaclitaxelnanoparticlealbuminboundTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "keytruda", "pembrolizumab"
 ];
 
-define Treatment_Pembrolizumab:
+define  PembrolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Pembrolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, nab/Paclitaxel, Pembrolizumab", "CarboplatinnabPaclitaxelPembrolizumab", "Carboplatin/ nab-Paclitaxel/ Pembrolizumab", "Carboplatin and  nab-Paclitaxel and  Pembrolizumab", "Carboplatin &  nab-Paclitaxel &  Pembrolizumab", "Carboplatin, nab-Paclitaxel, Pembrolizumab", "Carboplatin/nab-Paclitaxel/Pembrolizumab", "Carboplatin, nabPaclitaxel, Pembrolizumab", "Carboplatin& nab-Paclitaxel& Pembrolizumab", "Carboplatin_nab-Paclitaxel_Pembrolizumab", "Carboplatin- nab-Paclitaxel- Pembrolizumab"
+    "Carboplatin, nab-Paclitaxel, Pembrolizumab"
 ];
 
-define Regimen_CarboplatinnabPaclitaxelPembrolizumab:
+define final CarboplatinnabPaclitaxelPembrolizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinnabPaclitaxelPembrolizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxelnanoparticlealbuminbound AND Treatment_Pembrolizumab;
-    
-define final Received_CarboplatinnabPaclitaxelPembrolizumab:
-    where Regimen_CarboplatinnabPaclitaxelPembrolizumab OR ReceivedRegimenTreatments;        
+define final CarboplatinnabPaclitaxelPembrolizumabTreatments:
+    where CarboplatinTreatment AND PaclitaxelnanoparticlealbuminboundTreatment AND PembrolizumabTreatment;
+          
         
         
         

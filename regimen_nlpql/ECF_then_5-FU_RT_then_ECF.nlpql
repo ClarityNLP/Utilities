@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "ECF, & 5-FU & RT, & ECF", "ECF, then 5-FU and RT, then ECF", "ECF- then 5-FU & RT- then ECF", "ECF, then 5-FU / RT, then ECF", "ECF and  then 5-FU & RT and  then ECF", "ECF& then 5-FU & RT& then ECF", "ECF, then 5-FU & RT, then ECF", "ECF, then 5-FU/RT, then ECF", "ECF,/5-FU & RT,/ECF", "ECF_then_5-FU_RT_then_ECF", "ECF,, 5-FU & RT,, ECF", "ECF,&5-FU & RT,&ECF", "ECF/ then 5-FU & RT/ then ECF", "ECF &  then 5-FU & RT &  then ECF", "ECF, then 5FU & RT, then ECF", "ECF, and 5-FU & RT, and ECF", "ECF/then 5-FU & RT/then ECF", "ECFthen5FURTthenECF", "ECF, then 5/FU & RT, then ECF", "ECF, / 5-FU & RT, / ECF"
+    "ECF, then 5-FU & RT, then ECF"
 ];
 
-define Regimen_ECF5FURTECF:
+define final ECFthen5FURTthenECFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ECF5FURTECF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epirubicin AND Treatment_Cisplatin AND Treatment_Fluorouracil;
-    
-define final Received_ECFthen5FURTthenECF:
-    where Regimen_ECF5FURTECF OR ReceivedRegimenTreatments;        
+define final ECFthen5FURTthenECFTreatments:
+    where EpirubicinTreatment AND CisplatinTreatment AND FluorouracilTreatment;
+          
         
         
         

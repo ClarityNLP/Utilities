@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define  ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib/Vincristine/Dexamethasone", "ImatinibVincristineDexamethasone", "Imatinib/ Vincristine/ Dexamethasone", "Imatinib and  Vincristine and  Dexamethasone", "Imatinib_Vincristine_Dexamethasone", "Imatinib& Vincristine& Dexamethasone", "Imatinib- Vincristine- Dexamethasone", "Imatinib &  Vincristine &  Dexamethasone", "Imatinib, Vincristine, Dexamethasone"
+    "Imatinib, Vincristine, Dexamethasone"
 ];
 
-define Regimen_ImatinibVincristineDexamethasone:
+define final ImatinibVincristineDexamethasoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ImatinibVincristineDexamethasone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Imatinib AND Treatment_Vincristine AND Treatment_Dexamethasone;
-    
-define final Received_ImatinibVincristineDexamethasone:
-    where Regimen_ImatinibVincristineDexamethasone OR ReceivedRegimenTreatments;        
+define final ImatinibVincristineDexamethasoneTreatments:
+    where ImatinibTreatment AND VincristineTreatment AND DexamethasoneTreatment;
+          
         
         
         

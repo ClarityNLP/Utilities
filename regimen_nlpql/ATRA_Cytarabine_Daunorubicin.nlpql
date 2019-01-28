@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Daunorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA- Cytarabine- Daunorubicin", "ATRA &  Cytarabine &  Daunorubicin", "ATRA, Cytarabine, Daunorubicin", "ATRA_Cytarabine_Daunorubicin", "ATRA and  Cytarabine and  Daunorubicin", "ATRA& Cytarabine& Daunorubicin", "ATRA/Cytarabine/Daunorubicin", "ATRA/ Cytarabine/ Daunorubicin", "ATRACytarabineDaunorubicin"
+    "ATRA, Cytarabine, Daunorubicin"
 ];
 
-define Regimen_ATRACytarabineDaunorubicin:
+define final ATRACytarabineDaunorubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ATRACytarabineDaunorubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alltransretinoicacid AND Treatment_Cytarabine AND Treatment_Daunorubicin;
-    
-define final Received_ATRACytarabineDaunorubicin:
-    where Regimen_ATRACytarabineDaunorubicin OR ReceivedRegimenTreatments;        
+define final ATRACytarabineDaunorubicinTreatments:
+    where AlltransretinoicacidTreatment AND CytarabineTreatment AND DaunorubicinTreatment;
+          
         
         
         

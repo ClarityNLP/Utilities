@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Oxaliplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "NordicFLOX", "Nordic_FLOX", "FLOX", "Nordic FLOX"
+    "Nordic FLOX", "FLOX"
 ];
 
-define Regimen_NordicFLOX:
+define final NordicFLOXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_NordicFLOX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Oxaliplatin;
-    
-define final Received_NordicFLOX:
-    where Regimen_NordicFLOX OR ReceivedRegimenTreatments;        
+define final NordicFLOXTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND OxaliplatinTreatment;
+          
         
         
         

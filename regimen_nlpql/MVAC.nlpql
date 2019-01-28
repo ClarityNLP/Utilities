@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "MVAC"
 ];
 
-define Regimen_MVAC:
+define final MVACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MVAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Vinblastine AND Treatment_Doxorubicin AND Treatment_Cisplatin;
-    
-define final Received_MVAC:
-    where Regimen_MVAC OR ReceivedRegimenTreatments;        
+define final MVACTreatments:
+    where MethotrexateTreatment AND VinblastineTreatment AND DoxorubicinTreatment AND CisplatinTreatment;
+          
         
         
         

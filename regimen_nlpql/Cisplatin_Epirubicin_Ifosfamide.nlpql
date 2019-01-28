@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Epirubicin_Ifosfamide", "CisplatinEpirubicinIfosfamide", "Cisplatin/Epirubicin/Ifosfamide", "Cisplatin &  Epirubicin &  Ifosfamide", "Cisplatin& Epirubicin& Ifosfamide", "Cisplatin, Epirubicin, Ifosfamide", "Cisplatin/ Epirubicin/ Ifosfamide", "Cisplatin- Epirubicin- Ifosfamide", "Cisplatin and  Epirubicin and  Ifosfamide"
+    "Cisplatin, Epirubicin, Ifosfamide"
 ];
 
-define Regimen_CisplatinEpirubicinIfosfamide:
+define final CisplatinEpirubicinIfosfamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinEpirubicinIfosfamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Epirubicin AND Treatment_Ifosfamide;
-    
-define final Received_CisplatinEpirubicinIfosfamide:
-    where Regimen_CisplatinEpirubicinIfosfamide OR ReceivedRegimenTreatments;        
+define final CisplatinEpirubicinIfosfamideTreatments:
+    where CisplatinTreatment AND EpirubicinTreatment AND IfosfamideTreatment;
+          
         
         
         

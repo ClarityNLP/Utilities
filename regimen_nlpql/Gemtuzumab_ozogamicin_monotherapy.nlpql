@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define Treatment_Gemtuzumabozogamicin:
+define final GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Gemtuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemtuzumab ozogamicin monotherapy", "Gemtuzumabozogamicinmonotherapy", "Gemtuzumab_ozogamicin_monotherapy"
+    "Gemtuzumab ozogamicin monotherapy"
 ];
 
-define Regimen_Gemtuzumabozogamicinmonotherapy:
+define final GemtuzumabozogamicinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Gemtuzumabozogamicinmonotherapy:
 
 // Results
 
-        
-define final Received_Gemtuzumabozogamicinmonotherapy:
-    where Treatment_Gemtuzumabozogamicin OR Regimen_Gemtuzumabozogamicinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel, Fluorouracil, RT", "DocetaxelFluorouracilRT", "Docetaxel& Fluorouracil& RT", "Docetaxel and  Fluorouracil and  RT", "Docetaxel/ Fluorouracil/ RT", "Docetaxel- Fluorouracil- RT", "Docetaxel/Fluorouracil/RT", "Docetaxel_Fluorouracil_RT", "Docetaxel &  Fluorouracil &  RT", "RT"
+    "Docetaxel, Fluorouracil, RT", "RT"
 ];
 
-define Regimen_DocetaxelFluorouracilRT:
+define final DocetaxelFluorouracilRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_DocetaxelFluorouracilRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Fluorouracil AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_DocetaxelFluorouracilRT:
-    where Regimen_DocetaxelFluorouracilRT OR ReceivedRegimenTreatments;        
+define final DocetaxelFluorouracilRTTreatments:
+    where DocetaxelTreatment AND FluorouracilTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

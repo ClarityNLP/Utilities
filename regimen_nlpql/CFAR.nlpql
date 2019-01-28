@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "CFAR"
 ];
 
-define Regimen_CFAR:
+define final CFARRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CFAR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Fludarabine AND Treatment_Alemtuzumab AND Treatment_Rituximab;
-    
-define final Received_CFAR:
-    where Regimen_CFAR OR ReceivedRegimenTreatments;        
+define final CFARTreatments:
+    where CyclophosphamideTreatment AND FludarabineTreatment AND AlemtuzumabTreatment AND RituximabTreatment;
+          
         
         
         

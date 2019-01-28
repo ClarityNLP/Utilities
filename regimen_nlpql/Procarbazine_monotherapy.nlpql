@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define final ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Procarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Procarbazine monotherapy", "Procarbazinemonotherapy", "Procarbazine_monotherapy"
+    "Procarbazine monotherapy"
 ];
 
-define Regimen_Procarbazinemonotherapy:
+define final ProcarbazinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Procarbazinemonotherapy:
 
 // Results
 
-        
-define final Received_Procarbazinemonotherapy:
-    where Treatment_Procarbazine OR Regimen_Procarbazinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: CNS_lymphoma, Glioblastoma
+Known regimen for: Glioblastoma, CNS_lymphoma
 
 
 ***/

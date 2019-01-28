@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define Treatment_Brentuximabvedotin:
+define  BrentuximabvedotinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "BV/CHP", "BV-CHP", "BVCHP"
+    "BVCHP", "BV-CHP", "BV/CHP"
 ];
 
-define Regimen_BVCHP:
+define final BVCHPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_BVCHP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Brentuximabvedotin AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Prednisone;
-    
-define final Received_BVCHP:
-    where Regimen_BVCHP OR ReceivedRegimenTreatments;        
+define final BVCHPTreatments:
+    where BrentuximabvedotinTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment AND PrednisoneTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_BVCHP:
 // Comments
 /***
 
-Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
+Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 ***/

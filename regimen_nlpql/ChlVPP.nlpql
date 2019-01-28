@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "ChlVPP"
 ];
 
-define Regimen_ChlVPP:
+define final ChlVPPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ChlVPP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Chlorambucil AND Treatment_Vinblastine AND Treatment_Procarbazine AND Treatment_Prednisone;
-    
-define final Received_ChlVPP:
-    where Regimen_ChlVPP OR ReceivedRegimenTreatments;        
+define final ChlVPPTreatments:
+    where ChlorambucilTreatment AND VinblastineTreatment AND ProcarbazineTreatment AND PrednisoneTreatment;
+          
         
         
         

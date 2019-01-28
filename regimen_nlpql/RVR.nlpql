@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "afinitor", "everolimus"
 ];
 
-define Treatment_Everolimus:
+define  EverolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "RVR"
 ];
 
-define Regimen_RVR:
+define final RVRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RVR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Everolimus AND Treatment_Bortezomib AND Treatment_Rituximab;
-    
-define final Received_RVR:
-    where Regimen_RVR OR ReceivedRegimenTreatments;        
+define final RVRTreatments:
+    where EverolimusTreatment AND BortezomibTreatment AND RituximabTreatment;
+          
         
         
         

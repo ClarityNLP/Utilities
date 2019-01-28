@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define final GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine_monotherapy", "Gemcitabinemonotherapy", "Gemcitabine monotherapy"
+    "Gemcitabine monotherapy"
 ];
 
-define Regimen_Gemcitabinemonotherapy:
+define final GemcitabinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Gemcitabinemonotherapy:
 
 // Results
 
-        
-define final Received_Gemcitabinemonotherapy:
-    where Treatment_Gemcitabine OR Regimen_Gemcitabinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Ovarian_cancer, Pancreatic_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Osteosarcoma, Mesothelioma, Small_cell_lung_cancer, Bladder_cancer, Cholangiocarcinoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Cervical_cancer, Small_cell_lung_cancer, Pancreatic_cancer, Cholangiocarcinoma, Ovarian_cancer, Bladder_cancer, Diffuse_large_B-cell_lymphoma, Non-small_cell_lung_cancer, Osteosarcoma, Mesothelioma
 
 
 ***/

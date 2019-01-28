@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine and  Ifosfamide and  G-CSF", "Cytarabine/ Ifosfamide/ G-CSF", "Cytarabine, Ifosfamide, G/CSF", "Cytarabine_Ifosfamide_G-CSF", "CytarabineIfosfamideGCSF", "Cytarabine, Ifosfamide, G-CSF", "Cytarabine, Ifosfamide, GCSF", "Cytarabine/Ifosfamide/G-CSF", "Cytarabine &  Ifosfamide &  G-CSF", "Cytarabine& Ifosfamide& G-CSF", "Cytarabine- Ifosfamide- G-CSF"
+    "Cytarabine, Ifosfamide, G-CSF"
 ];
 
-define Regimen_CytarabineandIfosfamideandGCSF:
+define final CytarabineIfosfamideGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineandIfosfamideandGCSF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Ifosfamide;
-    
-define final Received_CytarabineIfosfamideGCSF:
-    where Regimen_CytarabineandIfosfamideandGCSF OR ReceivedRegimenTreatments;        
+define final CytarabineIfosfamideGCSFTreatments:
+    where CytarabineTreatment AND IfosfamideTreatment;
+          
         
         
         

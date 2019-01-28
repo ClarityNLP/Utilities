@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "RHiDAC", "R/HiDAC", "R-HiDAC"
+    "RHiDAC", "R-HiDAC", "R/HiDAC"
 ];
 
-define Regimen_RHiDAC:
+define final RHiDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_RHiDAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Cytarabine;
-    
-define final Received_RHiDAC:
-    where Regimen_RHiDAC OR ReceivedRegimenTreatments;        
+define final RHiDACTreatments:
+    where RituximabTreatment AND CytarabineTreatment;
+          
         
         
         

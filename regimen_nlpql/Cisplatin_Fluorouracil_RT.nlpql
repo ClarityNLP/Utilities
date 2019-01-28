@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinFluorouracilRT", "Cisplatin &  Fluorouracil &  RT", "Cisplatin/ Fluorouracil/ RT", "Cisplatin/Fluorouracil/RT", "Cisplatin& Fluorouracil& RT", "Cisplatin- Fluorouracil- RT", "Cisplatin and  Fluorouracil and  RT", "Cisplatin, Fluorouracil, RT", "Cisplatin_Fluorouracil_RT"
+    "Cisplatin, Fluorouracil, RT"
 ];
 
-define Regimen_CisplatinFluorouracilRT:
+define final CisplatinFluorouracilRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinFluorouracilRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CisplatinFluorouracilRT:
-    where Regimen_CisplatinFluorouracilRT OR ReceivedRegimenTreatments;        
+define final CisplatinFluorouracilRTTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CisplatinFluorouracilRT:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Head_and_neck_cancer, Esophageal_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Cervical_cancer, Head_and_neck_cancer, Esophageal_cancer
 
 
 ***/

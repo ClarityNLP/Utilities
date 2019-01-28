@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     ":category:granulocyte colony-stimulating factors", ":category:granulocyte colony-stimulating factors"
 ];
 
-define Treatment_CategoryGranulocytecolonystimulatingfactors:
+define  CategoryGranulocytecolonystimulatingfactorsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:pcp prophylaxis", ":category:pcp prophylaxis"
 ];
 
-define Treatment_CategoryPCPprophylaxis:
+define  CategoryPCPprophylaxisTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_CategoryPCPprophylaxis:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/ then CHOP", "R, & CHOP", "R,, CHOP", "R,&CHOP", "RthenCHOP", "R& then CHOP", "R and  then CHOP", "R- then CHOP", "R/then CHOP", "R, / CHOP", "R_then_CHOP", "R,/CHOP", "R, then CHOP", "R, and CHOP", "R &  then CHOP"
+    "R, then CHOP"
 ];
 
-define Regimen_RthenCHOP:
+define final RthenCHOPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_RthenCHOP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_CategoryGranulocytecolonystimulatingfactors AND Treatment_CategoryPCPprophylaxis;
-    
-define final Received_RthenCHOP:
-    where Regimen_RthenCHOP OR ReceivedRegimenTreatments;        
+define final RthenCHOPTreatments:
+    where CategoryGranulocytecolonystimulatingfactorsTreatment AND CategoryPCPprophylaxisTreatment;
+          
         
         
         

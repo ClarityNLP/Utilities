@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ixempra", "ixabepilone"
 ];
 
-define Treatment_Ixabepilone:
+define  IxabepiloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ixabepilone:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapecitabineIxabepilone", "Capecitabine/Ixabepilone", "Capecitabine & Ixabepilone", "Capecitabine_Ixabepilone", "Capecitabine and Ixabepilone", "Capecitabine / Ixabepilone"
+    "Capecitabine & Ixabepilone"
 ];
 
-define Regimen_CapecitabineIxabepilone:
+define final CapecitabineIxabepiloneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CapecitabineIxabepilone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Ixabepilone;
-    
-define final Received_CapecitabineIxabepilone:
-    where Regimen_CapecitabineIxabepilone OR ReceivedRegimenTreatments;        
+define final CapecitabineIxabepiloneTreatments:
+    where CapecitabineTreatment AND IxabepiloneTreatment;
+          
         
         
         

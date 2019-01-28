@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fusilev", "levoleucovorin"
 ];
 
-define Treatment_Levoleucovorin:
+define  LevoleucovorinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOXIRICetuximab", "mFOLFOXIRI/Cetuximab", "mFOLFOXIRI / Cetuximab", "mFOLFOXIRI & Cetuximab", "mFOLFOXIRI_Cetuximab", "mFOLFOXIRI and Cetuximab"
+    "mFOLFOXIRI & Cetuximab"
 ];
 
-define Regimen_mFOLFOXIRICetuximab:
+define final mFOLFOXIRICetuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_mFOLFOXIRICetuximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Levoleucovorin AND Treatment_Oxaliplatin AND Treatment_Irinotecan AND Treatment_Cetuximab;
-    
-define final Received_mFOLFOXIRICetuximab:
-    where Regimen_mFOLFOXIRICetuximab OR ReceivedRegimenTreatments;        
+define final mFOLFOXIRICetuximabTreatments:
+    where FluorouracilTreatment AND LevoleucovorinTreatment AND OxaliplatinTreatment AND IrinotecanTreatment AND CetuximabTreatment;
+          
         
         
         

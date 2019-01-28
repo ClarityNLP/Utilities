@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "hexalen", "altretamine"
 ];
 
-define Treatment_Altretamine:
+define final AltretamineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Altretamine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Altretamine monotherapy", "Altretamine_monotherapy", "Altretaminemonotherapy"
+    "Altretamine monotherapy"
 ];
 
-define Regimen_Altretaminemonotherapy:
+define final AltretaminemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Altretaminemonotherapy:
 
 // Results
 
-        
-define final Received_Altretaminemonotherapy:
-    where Treatment_Altretamine OR Regimen_Altretaminemonotherapy;
-            
 
 // Comments
 /***

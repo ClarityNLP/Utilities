@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "CTD"
 ];
 
-define Regimen_CTD:
+define final CTDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CTD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Thalidomide AND Treatment_Dexamethasone;
-    
-define final Received_CTD:
-    where Regimen_CTD OR ReceivedRegimenTreatments;        
+define final CTDTreatments:
+    where CyclophosphamideTreatment AND ThalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CTD:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction, Light-chain_(AL)_amyloidosis
 
 
 ***/

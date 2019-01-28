@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan_TBI", "Melphalan/TBI", "MelphalanTBI", "Melphalan / TBI", "Melphalan & TBI", "Melphalan and TBI"
+    "Melphalan & TBI"
 ];
 
-define Regimen_MelphalanTBI:
+define final MelphalanTBIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MelphalanTBI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Melphalan AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_MelphalanTBI:
-    where Regimen_MelphalanTBI OR ReceivedRegimenTreatments;        
+define final MelphalanTBITreatments:
+    where MelphalanTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

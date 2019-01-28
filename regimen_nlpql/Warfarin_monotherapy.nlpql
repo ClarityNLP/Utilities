@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "coumadin", "warfarin"
 ];
 
-define Treatment_Warfarin:
+define final WarfarinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Warfarin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Warfarin monotherapy", "Warfarinmonotherapy", "Warfarin_monotherapy"
+    "Warfarin monotherapy"
 ];
 
-define Regimen_Warfarinmonotherapy:
+define final WarfarinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Warfarinmonotherapy:
 
 // Results
 
-        
-define final Received_Warfarinmonotherapy:
-    where Treatment_Warfarin OR Regimen_Warfarinmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Antiphospholipid_antibody_syndrome, Venous_thromboembolism_(VTE)
+Known regimen for: Venous_thromboembolism_(VTE), Antiphospholipid_antibody_syndrome
 
 
 ***/

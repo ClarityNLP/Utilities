@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "s-1", "tegafur, gimeracil, oteracil"
 ];
 
-define Treatment_Tegafurgimeraciloteracil:
+define final TegafurgimeraciloteracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tegafurgimeraciloteracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "S-1_monotherapy", "S1 monotherapy", "S-1 monotherapy", "S/1 monotherapy", "S1monotherapy"
+    "S-1 monotherapy"
 ];
 
-define Regimen_S1monotherapy:
+define final S1monotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_S1monotherapy:
 
 // Results
 
-        
-define final Received_S1monotherapy:
-    where Treatment_Tegafurgimeraciloteracil OR Regimen_S1monotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Rectal_cancer, Non-small_cell_lung_cancer, Gastric_cancer, Colon_cancer
+Known regimen for: Pancreatic_cancer, Rectal_cancer, Gastric_cancer, Non-small_cell_lung_cancer, Colon_cancer
 
 
 ***/

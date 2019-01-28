@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "FOLFOX4"
 ];
 
-define Regimen_FOLFOX4:
+define final FOLFOX4Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FOLFOX4:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Oxaliplatin;
-    
-define final Received_FOLFOX4:
-    where Regimen_FOLFOX4 OR ReceivedRegimenTreatments;        
+define final FOLFOX4Treatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND OxaliplatinTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_FOLFOX4:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Esophageal_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Esophageal_cancer, Hepatocellular_carcinoma
 
 
 ***/

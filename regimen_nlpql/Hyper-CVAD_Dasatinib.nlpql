@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mesnex", "mesna"
 ];
 
-define Treatment_Mesna:
+define  MesnaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cipro", "ciprofloxacin"
 ];
 
-define Treatment_Ciprofloxacin:
+define  CiprofloxacinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "levaquin", "levofloxacin"
 ];
 
-define Treatment_Levofloxacin:
+define  LevofloxacinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "bactrim ds", "trimethoprim/sulfamethoxazole"
 ];
 
-define Treatment_TrimethoprimSulfamethoxazole:
+define  TrimethoprimSulfamethoxazoleTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "diflucan", "fluconazole"
 ];
 
-define Treatment_Fluconazole:
+define  FluconazoleTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "zovirax", "acyclovir"
 ];
 
-define Treatment_Acyclovir:
+define  AcyclovirTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,7 +84,7 @@ termset TreatmentTerms6:[
     "valtrex", "valacyclovir"
 ];
 
-define Treatment_Valacyclovir:
+define  ValacyclovirTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms6],
         documentset:[Docs]
@@ -95,7 +95,7 @@ termset TreatmentTerms7:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms7],
         documentset:[Docs]
@@ -106,7 +106,7 @@ termset TreatmentTerms8:[
     "zyloprim", "allopurinol"
 ];
 
-define Treatment_Allopurinol:
+define  AllopurinolTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms8],
         documentset:[Docs]
@@ -117,7 +117,7 @@ termset TreatmentTerms9:[
     "elitek", "rasburicase"
 ];
 
-define Treatment_Rasburicase:
+define  RasburicaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms9],
         documentset:[Docs]
@@ -128,10 +128,10 @@ define Treatment_Rasburicase:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper/CVAD & Dasatinib", "Hyper-CVAD & Dasatinib", "Hyper-CVAD_Dasatinib", "HyperCVADDasatinib", "Hyper-CVAD/Dasatinib", "Hyper-CVAD and Dasatinib", "HyperCVAD & Dasatinib", "Hyper-CVAD / Dasatinib"
+    "Hyper-CVAD & Dasatinib"
 ];
 
-define Regimen_HyperCVADDasatinib:
+define final HyperCVADDasatinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -141,11 +141,9 @@ define Regimen_HyperCVADDasatinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mesna AND Treatment_Ciprofloxacin AND Treatment_Levofloxacin AND Treatment_TrimethoprimSulfamethoxazole AND Treatment_Fluconazole AND Treatment_Acyclovir AND Treatment_Valacyclovir AND Treatment_Filgrastim AND Treatment_Allopurinol AND Treatment_Rasburicase;
-    
-define final Received_HyperCVADDasatinib:
-    where Regimen_HyperCVADDasatinib OR ReceivedRegimenTreatments;        
+define final HyperCVADDasatinibTreatments:
+    where MesnaTreatment AND CiprofloxacinTreatment AND LevofloxacinTreatment AND TrimethoprimSulfamethoxazoleTreatment AND FluconazoleTreatment AND AcyclovirTreatment AND ValacyclovirTreatment AND FilgrastimTreatment AND AllopurinolTreatment AND RasburicaseTreatment;
+          
         
         
         

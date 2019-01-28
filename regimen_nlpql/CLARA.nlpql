@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "clolar", "clofarabine"
 ];
 
-define Treatment_Clofarabine:
+define  ClofarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "CLARA"
 ];
 
-define Regimen_CLARA:
+define final CLARARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CLARA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Clofarabine AND Treatment_Cytarabine AND Treatment_Filgrastim;
-    
-define final Received_CLARA:
-    where Regimen_CLARA OR ReceivedRegimenTreatments;        
+define final CLARATreatments:
+    where ClofarabineTreatment AND CytarabineTreatment AND FilgrastimTreatment;
+          
         
         
         

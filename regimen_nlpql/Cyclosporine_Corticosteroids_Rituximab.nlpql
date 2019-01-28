@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:steroids", ":category:steroids"
 ];
 
-define Treatment_CategorySteroids:
+define  CategorySteroidsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine_Corticosteroids_Rituximab", "CyclosporineCorticosteroidsRituximab", "Cyclosporine &  Corticosteroids &  Rituximab", "Cyclosporine& Corticosteroids& Rituximab", "Cyclosporine- Corticosteroids- Rituximab", "Cyclosporine/Corticosteroids/Rituximab", "Cyclosporine/ Corticosteroids/ Rituximab", "Cyclosporine, Corticosteroids, Rituximab", "Cyclosporine and  Corticosteroids and  Rituximab"
+    "Cyclosporine, Corticosteroids, Rituximab"
 ];
 
-define Regimen_CyclosporineCorticosteroidsRituximab:
+define final CyclosporineCorticosteroidsRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CyclosporineCorticosteroidsRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_CategoryCyclosporines AND Treatment_CategorySteroids AND Treatment_Prednisone AND Treatment_Rituximab;
-    
-define final Received_CyclosporineCorticosteroidsRituximab:
-    where Regimen_CyclosporineCorticosteroidsRituximab OR ReceivedRegimenTreatments;        
+define final CyclosporineCorticosteroidsRituximabTreatments:
+    where CategoryCyclosporinesTreatment AND CategorySteroidsTreatment AND PrednisoneTreatment AND RituximabTreatment;
+          
         
         
         

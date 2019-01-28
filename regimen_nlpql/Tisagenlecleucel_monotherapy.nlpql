@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kymriah", "tisagenlecleucel"
 ];
 
-define Treatment_Tisagenlecleucel:
+define final TisagenlecleucelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tisagenlecleucel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tisagenlecleucel_monotherapy", "Tisagenlecleucel monotherapy", "Tisagenlecleucelmonotherapy"
+    "Tisagenlecleucel monotherapy"
 ];
 
-define Regimen_Tisagenlecleucelmonotherapy:
+define final TisagenlecleucelmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Tisagenlecleucelmonotherapy:
 
 // Results
 
-        
-define final Received_Tisagenlecleucelmonotherapy:
-    where Treatment_Tisagenlecleucel OR Regimen_Tisagenlecleucelmonotherapy;
-            
 
 // Comments
 /***

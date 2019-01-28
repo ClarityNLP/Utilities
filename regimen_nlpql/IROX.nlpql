@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "IROX"
 ];
 
-define Regimen_IROX:
+define final IROXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IROX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Oxaliplatin;
-    
-define final Received_IROX:
-    where Regimen_IROX OR ReceivedRegimenTreatments;        
+define final IROXTreatments:
+    where IrinotecanTreatment AND OxaliplatinTreatment;
+          
         
         
         

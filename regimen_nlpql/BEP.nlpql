@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "PEB", "BEP"
+    "BEP", "PEB"
 ];
 
-define Regimen_PEB:
+define final BEPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PEB:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bleomycin AND Treatment_Etoposide AND Treatment_Cisplatin;
-    
-define final Received_BEP:
-    where Regimen_PEB OR ReceivedRegimenTreatments;        
+define final BEPTreatments:
+    where BleomycinTreatment AND EtoposideTreatment AND CisplatinTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_BEP:
 // Comments
 /***
 
-Known regimen for: Adenocarcinoma_of_unknown_primary, Testicular_cancer
+Known regimen for: Testicular_cancer, Adenocarcinoma_of_unknown_primary
 
 
 ***/

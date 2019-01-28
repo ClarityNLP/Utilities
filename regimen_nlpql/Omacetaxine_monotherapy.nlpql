@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "procrit", "epoetin alfa"
 ];
 
-define Treatment_Epoetinalfa:
+define  EpoetinalfaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "aranesp", "darbepoetin alfa"
 ];
 
-define Treatment_Darbepoetinalfa:
+define  DarbepoetinalfaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Darbepoetinalfa:
 // Regimen names
 
 termset RegimenTerms:[
-    "Omacetaxine_monotherapy", "Omacetaxine monotherapy", "Omacetaxinemonotherapy"
+    "Omacetaxine monotherapy"
 ];
 
-define Regimen_Omacetaxinemonotherapy:
+define final OmacetaxinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Omacetaxinemonotherapy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epoetinalfa AND Treatment_Darbepoetinalfa;
-    
-define final Received_Omacetaxinemonotherapy:
-    where Regimen_Omacetaxinemonotherapy OR ReceivedRegimenTreatments;        
+define final OmacetaxinemonotherapyTreatments:
+    where EpoetinalfaTreatment AND DarbepoetinalfaTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX-C", "CX/C", "CXC"
+    "CX-C", "CXC", "CX/C"
 ];
 
-define Regimen_CXC:
+define final CXCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CXC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Capecitabine AND Treatment_Cetuximab;
-    
-define final Received_CXC:
-    where Regimen_CXC OR ReceivedRegimenTreatments;        
+define final CXCTreatments:
+    where CisplatinTreatment AND CapecitabineTreatment AND CetuximabTreatment;
+          
         
         
         

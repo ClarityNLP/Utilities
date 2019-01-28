@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "inlyta", "axitinib"
 ];
 
-define Treatment_Axitinib:
+define  AxitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "tace", "tace"
 ];
 
-define Treatment_TACE:
+define  TACETreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_TACE:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axitinib_TACE", "Axitinib / TACE", "AxitinibTACE", "Axitinib and TACE", "Axitinib & TACE", "Axitinib/TACE"
+    "Axitinib & TACE"
 ];
 
-define Regimen_AxitinibTACE:
+define final AxitinibTACERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AxitinibTACE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Axitinib AND Treatment_TACE;
-    
-define final Received_AxitinibTACE:
-    where Regimen_AxitinibTACE OR ReceivedRegimenTreatments;        
+define final AxitinibTACETreatments:
+    where AxitinibTreatment AND TACETreatment;
+          
         
         
         

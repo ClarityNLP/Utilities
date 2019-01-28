@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "CYM"
 ];
 
-define Regimen_CYM:
+define final CYMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CYM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Methotrexate;
-    
-define final Received_CYM:
-    where Regimen_CYM OR ReceivedRegimenTreatments;        
+define final CYMTreatments:
+    where CytarabineTreatment AND MethotrexateTreatment;
+          
         
         
         

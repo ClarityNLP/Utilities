@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "vectibix", "panitumumab"
 ];
 
-define Treatment_Panitumumab:
+define  PanitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Panitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI / Panitumumab", "FOLFIRIPanitumumab", "FOLFIRI & Panitumumab", "FOLFIRI/Panitumumab", "FOLFIRI_Panitumumab", "FOLFIRI and Panitumumab"
+    "FOLFIRI & Panitumumab"
 ];
 
-define Regimen_FOLFIRIPanitumumab:
+define final FOLFIRIPanitumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_FOLFIRIPanitumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Fluorouracil AND Treatment_Irinotecan AND Treatment_Panitumumab;
-    
-define final Received_FOLFIRIPanitumumab:
-    where Regimen_FOLFIRIPanitumumab OR ReceivedRegimenTreatments;        
+define final FOLFIRIPanitumumabTreatments:
+    where FolinicacidTreatment AND FluorouracilTreatment AND IrinotecanTreatment AND PanitumumabTreatment;
+          
         
         
         

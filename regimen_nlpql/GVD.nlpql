@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "GVD"
 ];
 
-define Regimen_GVD:
+define final GVDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_GVD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Vinorelbine AND Treatment_Pegylatedliposomaldoxorubicin;
-    
-define final Received_GVD:
-    where Regimen_GVD OR ReceivedRegimenTreatments;        
+define final GVDTreatments:
+    where GemcitabineTreatment AND VinorelbineTreatment AND PegylatedliposomaldoxorubicinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ontak", "denileukin diftitox"
 ];
 
-define Treatment_Denileukindiftitox:
+define final DenileukindiftitoxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Denileukindiftitox:
 // Regimen names
 
 termset RegimenTerms:[
-    "Denileukin diftitox monotherapy", "Denileukindiftitoxmonotherapy", "Denileukin_diftitox_monotherapy"
+    "Denileukin diftitox monotherapy"
 ];
 
-define Regimen_Denileukindiftitoxmonotherapy:
+define final DenileukindiftitoxmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Denileukindiftitoxmonotherapy:
 
 // Results
 
-        
-define final Received_Denileukindiftitoxmonotherapy:
-    where Treatment_Denileukindiftitox OR Regimen_Denileukindiftitoxmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "FSHAI", "F/SHAI", "F-SHAI"
+    "F-SHAI", "FSHAI", "F/SHAI"
 ];
 
-define Regimen_FSHAI:
+define final FSHAIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FSHAI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Cytarabine AND Treatment_Idarubicin;
-    
-define final Received_FSHAI:
-    where Regimen_FSHAI OR ReceivedRegimenTreatments;        
+define final FSHAITreatments:
+    where FludarabineTreatment AND CytarabineTreatment AND IdarubicinTreatment;
+          
         
         
         

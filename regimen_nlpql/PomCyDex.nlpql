@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "pomalyst", "pomalidomide"
 ];
 
-define Treatment_Pomalidomide:
+define  PomalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "PCD", "PomCyDex"
+    "PomCyDex", "PCD"
 ];
 
-define Regimen_PCD:
+define final PomCyDexRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PCD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pomalidomide AND Treatment_Cyclophosphamide AND Treatment_Dexamethasone;
-    
-define final Received_PomCyDex:
-    where Regimen_PCD OR ReceivedRegimenTreatments;        
+define final PomCyDexTreatments:
+    where PomalidomideTreatment AND CyclophosphamideTreatment AND DexamethasoneTreatment;
+          
         
         
         

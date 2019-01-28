@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Mitomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan/Mitomycin", "IrinotecanMitomycin", "Irinotecan and Mitomycin", "Irinotecan / Mitomycin", "Irinotecan & Mitomycin", "Irinotecan_Mitomycin"
+    "Irinotecan & Mitomycin"
 ];
 
-define Regimen_IrinotecanMitomycin:
+define final IrinotecanMitomycinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IrinotecanMitomycin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Mitomycin;
-    
-define final Received_IrinotecanMitomycin:
-    where Regimen_IrinotecanMitomycin OR ReceivedRegimenTreatments;        
+define final IrinotecanMitomycinTreatments:
+    where IrinotecanTreatment AND MitomycinTreatment;
+          
         
         
         

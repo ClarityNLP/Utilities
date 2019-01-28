@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "MA"
 ];
 
-define Regimen_MA:
+define final MARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Doxorubicin;
-    
-define final Received_MA:
-    where Regimen_MA OR ReceivedRegimenTreatments;        
+define final MATreatments:
+    where MethotrexateTreatment AND DoxorubicinTreatment;
+          
         
         
         

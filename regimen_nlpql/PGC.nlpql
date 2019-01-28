@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "PGC", "PCG"
+    "PCG", "PGC"
 ];
 
-define Regimen_PGC:
+define final PGCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PGC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Gemcitabine AND Treatment_Cisplatin;
-    
-define final Received_PGC:
-    where Regimen_PGC OR ReceivedRegimenTreatments;        
+define final PGCTreatments:
+    where PaclitaxelTreatment AND GemcitabineTreatment AND CisplatinTreatment;
+          
         
         
         

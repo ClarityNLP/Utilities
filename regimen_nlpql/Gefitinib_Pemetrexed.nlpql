@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "iressa", "gefitinib"
 ];
 
-define Treatment_Gefitinib:
+define  GefitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alimta", "pemetrexed"
 ];
 
-define Treatment_Pemetrexed:
+define  PemetrexedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Pemetrexed:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gefitinib / Pemetrexed", "Gefitinib/Pemetrexed", "P/G", "PG", "P+G", "Gefitinib & Pemetrexed", "Gefitinib_Pemetrexed", "GefitinibPemetrexed", "P&G", "P / G", "P and G", "P & G", "Gefitinib and Pemetrexed"
+    "P/G", "P and G", "P+G", "PG", "Gefitinib & Pemetrexed", "P & G", "P&G", "P / G"
 ];
 
-define Regimen_GefitinibPemetrexed:
+define final GefitinibPemetrexedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GefitinibPemetrexed:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gefitinib AND Treatment_Pemetrexed;
-    
-define final Received_GefitinibPemetrexed:
-    where Regimen_GefitinibPemetrexed OR ReceivedRegimenTreatments;        
+define final GefitinibPemetrexedTreatments:
+    where GefitinibTreatment AND PemetrexedTreatment;
+          
         
         
         

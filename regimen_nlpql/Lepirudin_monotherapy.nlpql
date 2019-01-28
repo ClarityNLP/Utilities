@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "refludan", "lepirudin"
 ];
 
-define Treatment_Lepirudin:
+define final LepirudinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Lepirudin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lepirudin_monotherapy", "Lepirudinmonotherapy", "Lepirudin monotherapy"
+    "Lepirudin monotherapy"
 ];
 
-define Regimen_Lepirudinmonotherapy:
+define final LepirudinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Lepirudinmonotherapy:
 
 // Results
 
-        
-define final Received_Lepirudinmonotherapy:
-    where Treatment_Lepirudin OR Regimen_Lepirudinmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Venous_thromboembolism_(VTE), Heparin-induced_thrombocytopenia_(HIT)
+Known regimen for: Heparin-induced_thrombocytopenia_(HIT), Venous_thromboembolism_(VTE)
 
 
 ***/

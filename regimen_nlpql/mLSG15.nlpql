@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "cymerin", "ranimustine"
 ];
 
-define Treatment_Ranimustine:
+define  RanimustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "eldisine", "vindesine"
 ];
 
-define Treatment_Vindesine:
+define  VindesineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,7 +84,7 @@ termset TreatmentTerms6:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms6],
         documentset:[Docs]
@@ -95,7 +95,7 @@ termset TreatmentTerms7:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms7],
         documentset:[Docs]
@@ -109,7 +109,7 @@ termset RegimenTerms:[
     "mLSG15"
 ];
 
-define Regimen_mLSG15:
+define final mLSG15Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -119,11 +119,9 @@ define Regimen_mLSG15:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vincristine AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Prednisone AND Treatment_Ranimustine AND Treatment_Vindesine AND Treatment_Etoposide AND Treatment_Carboplatin;
-    
-define final Received_mLSG15:
-    where Regimen_mLSG15 OR ReceivedRegimenTreatments;        
+define final mLSG15Treatments:
+    where VincristineTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment AND PrednisoneTreatment AND RanimustineTreatment AND VindesineTreatment AND EtoposideTreatment AND CarboplatinTreatment;
+          
         
         
         

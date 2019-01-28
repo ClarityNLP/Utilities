@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define final CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDAC", "HDAraC", "HiDAC"
+    "HDAC", "HiDAC", "HDAraC"
 ];
 
-define Regimen_HDAC:
+define final HiDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_HDAC:
 
 // Results
 
-        
-define final Received_HiDAC:
-    where Treatment_Cytarabine OR Regimen_HDAC;
-            
 
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Acute_myeloid_leukemia
 
 
 ***/

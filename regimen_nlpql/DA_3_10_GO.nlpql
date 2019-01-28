@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define Treatment_Gemtuzumabozogamicin:
+define  GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Gemtuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA 3 + 10/ GO", "DA 3 + 10/GO", "DA 3 + 10, GO", "DA 3 + 10 and  GO", "DA 3  /  10, GO", "DA 3 & 10, GO", "DA_3_10_GO", "DA 3 + 10 &  GO", "DA 3  &  10, GO", "DA 3 + 10- GO", "DA 3  and  10, GO", "DA 3 / 10, GO", "DA 3 + 10& GO", "DA310GO"
+    "DA 3 + 10, GO"
 ];
 
-define Regimen_DA310GO:
+define final DA310GORegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_DA310GO:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Gemtuzumabozogamicin;
-    
-define final Received_DA310GO:
-    where Regimen_DA310GO OR ReceivedRegimenTreatments;        
+define final DA310GOTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND GemtuzumabozogamicinTreatment;
+          
         
         
         

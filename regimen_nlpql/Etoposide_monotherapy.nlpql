@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define final EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide monotherapy", "Etoposide_monotherapy", "Etoposidemonotherapy"
+    "Etoposide monotherapy"
 ];
 
-define Regimen_Etoposidemonotherapy:
+define final EtoposidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Etoposidemonotherapy:
 
 // Results
 
-        
-define final Received_Etoposidemonotherapy:
-    where Treatment_Etoposide OR Regimen_Etoposidemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Vascular_sarcoma, Anaplastic_glioma, Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Testicular_cancer, Ovarian_cancer
+Known regimen for: Small_cell_lung_cancer, Anaplastic_glioma, Ovarian_cancer, Testicular_cancer, Esophageal_cancer, Diffuse_large_B-cell_lymphoma, Vascular_sarcoma
 
 
 ***/

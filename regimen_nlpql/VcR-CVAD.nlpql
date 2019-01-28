@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,10 +84,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "VcR-CVAD", "VcRCVAD", "VcR/CVAD"
+    "VcRCVAD", "VcR/CVAD", "VcR-CVAD"
 ];
 
-define Regimen_VcRCVAD:
+define final VcRCVADRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -97,11 +97,9 @@ define Regimen_VcRCVAD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Doxorubicin AND Treatment_Dexamethasone;
-    
-define final Received_VcRCVAD:
-    where Regimen_VcRCVAD OR ReceivedRegimenTreatments;        
+define final VcRCVADTreatments:
+    where BortezomibTreatment AND RituximabTreatment AND CyclophosphamideTreatment AND VincristineTreatment AND DoxorubicinTreatment AND DexamethasoneTreatment;
+          
         
         
         

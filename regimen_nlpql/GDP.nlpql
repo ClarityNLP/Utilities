@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "GDP"
 ];
 
-define Regimen_GDP:
+define final GDPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_GDP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Dexamethasone AND Treatment_Cisplatin;
-    
-define final Received_GDP:
-    where Regimen_GDP OR ReceivedRegimenTreatments;        
+define final GDPTreatments:
+    where GemcitabineTreatment AND DexamethasoneTreatment AND CisplatinTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_GDP:
 // Comments
 /***
 
-Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
+Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 ***/

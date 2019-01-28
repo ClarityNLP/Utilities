@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alecensa", "alectinib"
 ];
 
-define Treatment_Alectinib:
+define final AlectinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Alectinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alectinib monotherapy", "Alectinibmonotherapy", "Alectinib_monotherapy"
+    "Alectinib monotherapy"
 ];
 
-define Regimen_Alectinibmonotherapy:
+define final AlectinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Alectinibmonotherapy:
 
 // Results
 
-        
-define final Received_Alectinibmonotherapy:
-    where Treatment_Alectinib OR Regimen_Alectinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_ALK-positive
+Known regimen for: Non-small_cell_lung_cancer_ALK-positive, CNS_carcinoma
 
 
 ***/

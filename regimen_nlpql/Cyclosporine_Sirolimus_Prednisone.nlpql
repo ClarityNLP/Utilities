@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rapamune", "sirolimus"
 ];
 
-define Treatment_Sirolimus:
+define  SirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine and  Sirolimus and  Prednisone", "Cyclosporine &  Sirolimus &  Prednisone", "Cyclosporine& Sirolimus& Prednisone", "Cyclosporine, Sirolimus, Prednisone", "Cyclosporine- Sirolimus- Prednisone", "Cyclosporine/Sirolimus/Prednisone", "Cyclosporine/ Sirolimus/ Prednisone", "CyclosporineSirolimusPrednisone", "Cyclosporine_Sirolimus_Prednisone"
+    "Cyclosporine, Sirolimus, Prednisone"
 ];
 
-define Regimen_CyclosporineandSirolimusandPrednisone:
+define final CyclosporineSirolimusPrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CyclosporineandSirolimusandPrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_CategoryCyclosporines AND Treatment_Sirolimus AND Treatment_Prednisone;
-    
-define final Received_CyclosporineSirolimusPrednisone:
-    where Regimen_CyclosporineandSirolimusandPrednisone OR ReceivedRegimenTreatments;        
+define final CyclosporineSirolimusPrednisoneTreatments:
+    where CategoryCyclosporinesTreatment AND SirolimusTreatment AND PrednisoneTreatment;
+          
         
         
         

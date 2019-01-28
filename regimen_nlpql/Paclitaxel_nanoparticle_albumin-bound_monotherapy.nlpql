@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Treatment_Paclitaxelnanoparticlealbuminbound:
+define final PaclitaxelnanoparticlealbuminboundTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Paclitaxelnanoparticlealbuminbound:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel, nanoparticle albumin/bound monotherapy", "Paclitaxelnanoparticlealbuminboundmonotherapy", "Paclitaxel &  nanoparticle albumin-bound monotherapy", "Paclitaxel- nanoparticle albumin-bound monotherapy", "Paclitaxel/nanoparticle albumin-bound monotherapy", "Paclitaxel and  nanoparticle albumin-bound monotherapy", "Paclitaxel/ nanoparticle albumin-bound monotherapy", "Paclitaxel, nanoparticle albumin-bound monotherapy", "Paclitaxel, nanoparticle albuminbound monotherapy", "Paclitaxel_nanoparticle_albumin-bound_monotherapy", "Paclitaxel& nanoparticle albumin-bound monotherapy"
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
 ];
 
-define Regimen_Paclitaxelnanoparticlealbuminboundmonotherapy:
+define final PaclitaxelnanoparticlealbuminboundmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Paclitaxelnanoparticlealbuminboundmonotherapy:
 
 // Results
 
-        
-define final Received_Paclitaxelnanoparticlealbuminboundmonotherapy:
-    where Treatment_Paclitaxelnanoparticlealbuminbound OR Regimen_Paclitaxelnanoparticlealbuminboundmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Melanoma, Breast_cancer, Pancreatic_cancer, Gastric_cancer, Bladder_cancer, Ovarian_cancer
+Known regimen for: Melanoma, Pancreatic_cancer, Ovarian_cancer, Bladder_cancer, Breast_cancer, Gastric_cancer
 
 
 ***/

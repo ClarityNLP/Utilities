@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Cisplatin, RT", "Capecitabine- Cisplatin- RT", "Capecitabine& Cisplatin& RT", "Capecitabine/ Cisplatin/ RT", "Capecitabine_Cisplatin_RT", "Capecitabine/Cisplatin/RT", "Capecitabine and  Cisplatin and  RT", "Capecitabine &  Cisplatin &  RT", "CapecitabineCisplatinRT", "RT"
+    "Capecitabine, Cisplatin, RT", "RT"
 ];
 
-define Regimen_CapecitabineCisplatinRT:
+define final CapecitabineCisplatinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CapecitabineCisplatinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Capecitabine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineCisplatinRT:
-    where Regimen_CapecitabineCisplatinRT OR ReceivedRegimenTreatments;        
+define final CapecitabineCisplatinRTTreatments:
+    where CisplatinTreatment AND CapecitabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CHVP+I", "R-CHVP and I", "R-CHVP&I", "RCHVP+I", "R-CHVP & I", "R-CHVP/I", "R-CHVPI", "R-CHVP+I", "R-CHVP / I", "RCHVPI"
+    "R-CHVPI", "R-CHVP & I", "R/CHVP+I", "R-CHVP and I", "R-CHVP&I", "R-CHVP / I", "R-CHVP+I", "R-CHVP/I", "RCHVPI", "RCHVP+I"
 ];
 
-define Regimen_RCHVPI:
+define final RCHVPIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RCHVPI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Etoposide AND Treatment_Prednisolone;
-    
-define final Received_RCHVPI:
-    where Regimen_RCHVPI OR ReceivedRegimenTreatments;        
+define final RCHVPITreatments:
+    where RituximabTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment AND EtoposideTreatment AND PrednisoloneTreatment;
+          
         
         
         

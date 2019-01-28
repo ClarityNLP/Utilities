@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define  DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Dactinomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "M/BCD", "MBCD", "M-BCD"
+    "M-BCD", "MBCD", "M/BCD"
 ];
 
-define Regimen_MBCD:
+define final MBCDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MBCD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Bleomycin AND Treatment_Cyclophosphamide AND Treatment_Dactinomycin;
-    
-define final Received_MBCD:
-    where Regimen_MBCD OR ReceivedRegimenTreatments;        
+define final MBCDTreatments:
+    where MethotrexateTreatment AND BleomycinTreatment AND CyclophosphamideTreatment AND DactinomycinTreatment;
+          
         
         
         

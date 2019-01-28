@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define  MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "ESHAP"
 ];
 
-define Regimen_ESHAP:
+define final ESHAPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ESHAP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Methylprednisolone AND Treatment_Cytarabine AND Treatment_Cisplatin;
-    
-define final Received_ESHAP:
-    where Regimen_ESHAP OR ReceivedRegimenTreatments;        
+define final ESHAPTreatments:
+    where EtoposideTreatment AND MethylprednisoloneTreatment AND CytarabineTreatment AND CisplatinTreatment;
+          
         
         
         

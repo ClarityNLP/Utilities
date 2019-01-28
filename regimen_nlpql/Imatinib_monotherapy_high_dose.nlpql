@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define final ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Imatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy &  high dose", "Imatinibmonotherapyhighdose", "Imatinib monotherapy and  high dose", "Imatinib monotherapy/high dose", "Imatinib monotherapy& high dose", "Imatinib monotherapy, high dose", "Imatinib monotherapy/ high dose", "Imatinib_monotherapy_high_dose", "Imatinib monotherapy- high dose"
+    "Imatinib monotherapy, high dose"
 ];
 
-define Regimen_Imatinibmonotherapyhighdose:
+define final ImatinibmonotherapyhighdoseRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Imatinibmonotherapyhighdose:
 
 // Results
 
-        
-define final Received_Imatinibmonotherapyhighdose:
-    where Treatment_Imatinib OR Regimen_Imatinibmonotherapyhighdose;
-            
 
 // Comments
 /***

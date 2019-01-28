@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define  TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide/low-dose RT", "Temozolomide & lowdose RT", "Temozolomide & low-dose RT", "TemozolomidelowdoseRT", "Temozolomide and low-dose RT", "Temozolomide & low/dose RT", "LDRT", "Temozolomide / low-dose RT", "Temozolomide_low-dose_RT"
+    "Temozolomide & low-dose RT", "LDRT"
 ];
 
-define Regimen_TemozolomidelowdoseRT:
+define final TemozolomidelowdoseRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TemozolomidelowdoseRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Temozolomide AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_TemozolomidelowdoseRT:
-    where Regimen_TemozolomidelowdoseRT OR ReceivedRegimenTreatments;        
+define final TemozolomidelowdoseRTTreatments:
+    where TemozolomideTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

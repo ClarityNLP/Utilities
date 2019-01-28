@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define final FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, then Fluorouracil/RT, then Fluorouracil", "Fluorouracil, and Fluorouracil & RT, and Fluorouracil", "Fluorouracil& then Fluorouracil & RT& then Fluorouracil", "Fluorouracil, & Fluorouracil & RT, & Fluorouracil", "Fluorouracil, then Fluorouracil / RT, then Fluorouracil", "Fluorouracil, then Fluorouracil & RT, then Fluorouracil", "Fluorouracil &  then Fluorouracil & RT &  then Fluorouracil", "Fluorouracil, then Fluorouracil and RT, then Fluorouracil", "Fluorouracil/ then Fluorouracil & RT/ then Fluorouracil", "Fluorouracil,&Fluorouracil & RT,&Fluorouracil", "Fluorouracil- then Fluorouracil & RT- then Fluorouracil", "Fluorouracil/then Fluorouracil & RT/then Fluorouracil", "Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil", "Fluorouracil,, Fluorouracil & RT,, Fluorouracil", "Fluorouracil and  then Fluorouracil & RT and  then Fluorouracil", "Fluorouracil, / Fluorouracil & RT, / Fluorouracil", "FluorouracilthenFluorouracilRTthenFluorouracil", "RT", "Fluorouracil,/Fluorouracil & RT,/Fluorouracil"
+    "RT", "Fluorouracil, then Fluorouracil & RT, then Fluorouracil"
 ];
 
-define Regimen_FluorouracilthenFluorouracilRTthenFluorouracil:
+define final FluorouracilthenFluorouracilRTthenFluorouracilRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_FluorouracilthenFluorouracilRTthenFluorouracil:
 
 // Results
 
-        
-define final Received_FluorouracilthenFluorouracilRTthenFluorouracil:
-    where Treatment_Fluorouracil OR Regimen_FluorouracilthenFluorouracilRTthenFluorouracil;
-            
 
 // Comments
 /***

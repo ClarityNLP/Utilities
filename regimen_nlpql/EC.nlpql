@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "EC"
 ];
 
-define Regimen_EC:
+define final ECRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_EC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epirubicin AND Treatment_Cyclophosphamide;
-    
-define final Received_EC:
-    where Regimen_EC OR ReceivedRegimenTreatments;        
+define final ECTreatments:
+    where EpirubicinTreatment AND CyclophosphamideTreatment;
+          
         
         
         

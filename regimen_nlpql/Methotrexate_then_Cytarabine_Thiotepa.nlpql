@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define final MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate- then Cytarabine & Thiotepa", "Methotrexate and  then Cytarabine & Thiotepa", "Methotrexate, then Cytarabine/Thiotepa", "Methotrexate/then Cytarabine & Thiotepa", "Methotrexate,/Cytarabine & Thiotepa", "Methotrexate/ then Cytarabine & Thiotepa", "Methotrexate_then_Cytarabine_Thiotepa", "Methotrexate, then Cytarabine & Thiotepa", "Methotrexate,&Cytarabine & Thiotepa", "Methotrexate &  then Cytarabine & Thiotepa", "Methotrexate, then Cytarabine and Thiotepa", "Methotrexate,, Cytarabine & Thiotepa", "Methotrexate, & Cytarabine & Thiotepa", "Methotrexate, then Cytarabine / Thiotepa", "Methotrexate, / Cytarabine & Thiotepa", "Methotrexate, and Cytarabine & Thiotepa", "Methotrexate& then Cytarabine & Thiotepa", "MethotrexatethenCytarabineThiotepa"
+    "Methotrexate, then Cytarabine & Thiotepa"
 ];
 
-define Regimen_MethotrexatethenCytarabineThiotepa:
+define final MethotrexatethenCytarabineThiotepaRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_MethotrexatethenCytarabineThiotepa:
 
 // Results
 
-        
-define final Received_MethotrexatethenCytarabineThiotepa:
-    where Treatment_Methotrexate OR Regimen_MethotrexatethenCytarabineThiotepa;
-            
 
 // Comments
 /***

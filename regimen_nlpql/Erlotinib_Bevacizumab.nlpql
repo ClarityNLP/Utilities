@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tarceva", "erlotinib"
 ];
 
-define Treatment_Erlotinib:
+define  ErlotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Erlotinib / Bevacizumab", "Erlotinib/Bevacizumab", "Erlotinib & Bevacizumab", "Erlotinib and Bevacizumab", "ErlotinibBevacizumab", "Erlotinib_Bevacizumab"
+    "Erlotinib & Bevacizumab"
 ];
 
-define Regimen_ErlotinibBevacizumab:
+define final ErlotinibBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ErlotinibBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Erlotinib AND Treatment_Bevacizumab;
-    
-define final Received_ErlotinibBevacizumab:
-    where Regimen_ErlotinibBevacizumab OR ReceivedRegimenTreatments;        
+define final ErlotinibBevacizumabTreatments:
+    where ErlotinibTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_ErlotinibBevacizumab:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Adenocarcinoma_of_unknown_primary, Renal_cell_carcinoma, Cholangiocarcinoma, Non-small_cell_lung_cancer_EGFR-mutated
+Known regimen for: Cholangiocarcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Renal_cell_carcinoma, Adenocarcinoma_of_unknown_primary, Hepatocellular_carcinoma
 
 
 ***/

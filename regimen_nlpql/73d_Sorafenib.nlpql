@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "nexavar", "sorafenib"
 ];
 
-define Treatment_Sorafenib:
+define  SorafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Sorafenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "7 & 3d & Sorafenib", "7 / 3d & Sorafenib", "7+3d/Sorafenib", "7/3d & Sorafenib", "7+3d & Sorafenib", "73dSorafenib", "7&3d & Sorafenib", "7+3d / Sorafenib", "73d_Sorafenib", "7+3d and Sorafenib", "7 and 3d & Sorafenib"
+    "7+3d & Sorafenib"
 ];
 
-define Regimen_73dSorafenib:
+define final 73dSorafenibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_73dSorafenib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Sorafenib;
-    
-define final Received_73dSorafenib:
-    where Regimen_73dSorafenib OR ReceivedRegimenTreatments;        
+define final 73dSorafenibTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND SorafenibTreatment;
+          
         
         
         

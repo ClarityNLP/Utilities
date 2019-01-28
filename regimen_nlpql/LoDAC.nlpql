@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define final CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "LoDAC", "LDAC"
+    "LDAC", "LoDAC"
 ];
 
-define Regimen_LoDAC:
+define final LoDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_LoDAC:
 
 // Results
 
-        
-define final Received_LoDAC:
-    where Treatment_Cytarabine OR Regimen_LoDAC;
-            
 
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia
 
 
 ***/

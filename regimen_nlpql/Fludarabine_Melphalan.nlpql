@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     ":category:antithymocyte globulin", ":category:antithymocyte globulin"
 ];
 
-define Treatment_CategoryAntithymocyteglobulin:
+define  CategoryAntithymocyteglobulinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_CategoryAntithymocyteglobulin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine_Melphalan", "Flu-Mel", "Fludarabine and Melphalan", "FludarabineMelphalan", "Flu/Mel", "FluMel", "Fludarabine / Melphalan", "Fludarabine & Melphalan", "Fludarabine/Melphalan"
+    "FluMel", "Fludarabine & Melphalan", "Flu/Mel", "Flu-Mel"
 ];
 
-define Regimen_FludarabineMelphalan:
+define final FludarabineMelphalanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FludarabineMelphalan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Melphalan AND Treatment_CategoryAntithymocyteglobulin;
-    
-define final Received_FludarabineMelphalan:
-    where Regimen_FludarabineMelphalan OR ReceivedRegimenTreatments;        
+define final FludarabineMelphalanTreatments:
+    where FludarabineTreatment AND MelphalanTreatment AND CategoryAntithymocyteglobulinTreatment;
+          
         
         
         

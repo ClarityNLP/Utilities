@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-NIMP", "R/NIMP", "RNIMP"
+    "R/NIMP", "R-NIMP", "RNIMP"
 ];
 
-define Regimen_RNIMP:
+define final RNIMPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RNIMP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Vinorelbine AND Treatment_Ifosfamide AND Treatment_Mitoxantrone AND Treatment_Prednisone;
-    
-define final Received_RNIMP:
-    where Regimen_RNIMP OR ReceivedRegimenTreatments;        
+define final RNIMPTreatments:
+    where RituximabTreatment AND VinorelbineTreatment AND IfosfamideTreatment AND MitoxantroneTreatment AND PrednisoneTreatment;
+          
         
         
         

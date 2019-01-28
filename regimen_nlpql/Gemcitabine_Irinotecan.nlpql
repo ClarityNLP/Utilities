@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine/Irinotecan", "Gemcitabine and Irinotecan", "Gemcitabine / Irinotecan", "Gemcitabine & Irinotecan", "Gemcitabine_Irinotecan", "GemcitabineIrinotecan"
+    "Gemcitabine & Irinotecan"
 ];
 
-define Regimen_GemcitabineIrinotecan:
+define final GemcitabineIrinotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabineIrinotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Irinotecan;
-    
-define final Received_GemcitabineIrinotecan:
-    where Regimen_GemcitabineIrinotecan OR ReceivedRegimenTreatments;        
+define final GemcitabineIrinotecanTreatments:
+    where GemcitabineTreatment AND IrinotecanTreatment;
+          
         
         
         

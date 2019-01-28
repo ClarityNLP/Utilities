@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate &  Vinblastine &  Prednisone", "Methotrexate_Vinblastine_Prednisone", "Methotrexate/Vinblastine/Prednisone", "Methotrexate- Vinblastine- Prednisone", "Methotrexate& Vinblastine& Prednisone", "Methotrexate and  Vinblastine and  Prednisone", "MethotrexateVinblastinePrednisone", "Methotrexate, Vinblastine, Prednisone", "Methotrexate/ Vinblastine/ Prednisone"
+    "Methotrexate, Vinblastine, Prednisone"
 ];
 
-define Regimen_MethotrexateVinblastinePrednisone:
+define final MethotrexateVinblastinePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MethotrexateVinblastinePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Vinblastine AND Treatment_Prednisone;
-    
-define final Received_MethotrexateVinblastinePrednisone:
-    where Regimen_MethotrexateVinblastinePrednisone OR ReceivedRegimenTreatments;        
+define final MethotrexateVinblastinePrednisoneTreatments:
+    where MethotrexateTreatment AND VinblastineTreatment AND PrednisoneTreatment;
+          
         
         
         

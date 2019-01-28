@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "VIPD"
 ];
 
-define Regimen_VIPD:
+define final VIPDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_VIPD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Ifosfamide AND Treatment_Cisplatin AND Treatment_Dexamethasone;
-    
-define final Received_VIPD:
-    where Regimen_VIPD OR ReceivedRegimenTreatments;        
+define final VIPDTreatments:
+    where EtoposideTreatment AND IfosfamideTreatment AND CisplatinTreatment AND DexamethasoneTreatment;
+          
         
         
         

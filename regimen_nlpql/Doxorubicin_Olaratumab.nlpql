@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "lartruvo", "olaratumab"
 ];
 
-define Treatment_Olaratumab:
+define  OlaratumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Olaratumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_Olaratumab", "DoxorubicinOlaratumab", "Doxorubicin & Olaratumab", "Doxorubicin/Olaratumab", "Doxorubicin and Olaratumab", "Doxorubicin / Olaratumab"
+    "Doxorubicin & Olaratumab"
 ];
 
-define Regimen_DoxorubicinOlaratumab:
+define final DoxorubicinOlaratumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinOlaratumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Olaratumab;
-    
-define final Received_DoxorubicinOlaratumab:
-    where Regimen_DoxorubicinOlaratumab OR ReceivedRegimenTreatments;        
+define final DoxorubicinOlaratumabTreatments:
+    where DoxorubicinTreatment AND OlaratumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Lenalidomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/BL", "R-BL", "RBL"
+    "R-BL", "R/BL", "RBL"
 ];
 
-define Regimen_RBL:
+define final RBLRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RBL:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Bendamustine AND Treatment_Lenalidomide;
-    
-define final Received_RBL:
-    where Regimen_RBL OR ReceivedRegimenTreatments;        
+define final RBLTreatments:
+    where RituximabTreatment AND BendamustineTreatment AND LenalidomideTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_RBL:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

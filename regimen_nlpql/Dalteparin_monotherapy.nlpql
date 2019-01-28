@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fragmin", "dalteparin"
 ];
 
-define Treatment_Dalteparin:
+define final DalteparinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dalteparin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dalteparinmonotherapy", "Dalteparin_monotherapy", "Dalteparin monotherapy"
+    "Dalteparin monotherapy"
 ];
 
-define Regimen_Dalteparinmonotherapy:
+define final DalteparinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Dalteparinmonotherapy:
 
 // Results
 
-        
-define final Received_Dalteparinmonotherapy:
-    where Treatment_Dalteparin OR Regimen_Dalteparinmonotherapy;
-            
 
 // Comments
 /***

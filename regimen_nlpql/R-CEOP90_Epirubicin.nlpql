@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCEOP90Epirubicin", "RCEOP90", "R-CEOP90 (Epirubicin)", "R-CEOP90", "R/CEOP90", "R-CEOP90_Epirubicin", "RCEOP90 (Epirubicin)", "R/CEOP90 (Epirubicin)"
+    "R-CEOP90 (Epirubicin)", "R-CEOP90", "RCEOP90", "R/CEOP90"
 ];
 
-define Regimen_RCEOP90Epirubicin:
+define final RCEOP90EpirubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RCEOP90Epirubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Epirubicin AND Treatment_Vincristine AND Treatment_Prednisolone;
-    
-define final Received_RCEOP90Epirubicin:
-    where Regimen_RCEOP90Epirubicin OR ReceivedRegimenTreatments;        
+define final RCEOP90EpirubicinTreatments:
+    where RituximabTreatment AND CyclophosphamideTreatment AND EpirubicinTreatment AND VincristineTreatment AND PrednisoloneTreatment;
+          
         
         
         

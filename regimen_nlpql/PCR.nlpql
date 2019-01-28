@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "nipent", "pentostatin"
 ];
 
-define Treatment_Pentostatin:
+define  PentostatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "PCR"
 ];
 
-define Regimen_PCR:
+define final PCRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PCR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pentostatin AND Treatment_Cyclophosphamide AND Treatment_Rituximab;
-    
-define final Received_PCR:
-    where Regimen_PCR OR ReceivedRegimenTreatments;        
+define final PCRTreatments:
+    where PentostatinTreatment AND CyclophosphamideTreatment AND RituximabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_PCR:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Follicular_lymphoma
+Known regimen for: Waldenström_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Follicular_lymphoma
 
 
 ***/

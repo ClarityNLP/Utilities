@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin/Ifosfamide", "Carboplatin_Ifosfamide", "Carboplatin and Ifosfamide", "Carboplatin & Ifosfamide", "Carboplatin / Ifosfamide", "CarboplatinIfosfamide"
+    "Carboplatin & Ifosfamide"
 ];
 
-define Regimen_CarboplatinIfosfamide:
+define final CarboplatinIfosfamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinIfosfamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Ifosfamide;
-    
-define final Received_CarboplatinIfosfamide:
-    where Regimen_CarboplatinIfosfamide OR ReceivedRegimenTreatments;        
+define final CarboplatinIfosfamideTreatments:
+    where CarboplatinTreatment AND IfosfamideTreatment;
+          
         
         
         

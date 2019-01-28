@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "thymoglobulin", "antithymocyte globulin, rabbit atg"
 ];
 
-define Treatment_AntithymocyteglobulinrabbitATG:
+define  AntithymocyteglobulinrabbitATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_AntithymocyteglobulinrabbitATG:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine and  Busulfan and  ATG", "Fludarabine, Busulfan, ATG", "Fludarabine/Busulfan/ATG", "Fludarabine &  Busulfan &  ATG", "Fludarabine/ Busulfan/ ATG", "Fludarabine- Busulfan- ATG", "Fludarabine_Busulfan_ATG", "FludarabineBusulfanATG", "Fludarabine& Busulfan& ATG"
+    "Fludarabine, Busulfan, ATG"
 ];
 
-define Regimen_FludarabineandBusulfanandATG:
+define final FludarabineBusulfanATGRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FludarabineandBusulfanandATG:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Busulfan AND Treatment_AntithymocyteglobulinrabbitATG;
-    
-define final Received_FludarabineBusulfanATG:
-    where Regimen_FludarabineandBusulfanandATG OR ReceivedRegimenTreatments;        
+define final FludarabineBusulfanATGTreatments:
+    where FludarabineTreatment AND BusulfanTreatment AND AntithymocyteglobulinrabbitATGTreatment;
+          
         
         
         

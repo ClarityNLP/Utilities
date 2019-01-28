@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin pegylated liposomal / Gemcitabine", "Doxorubicin pegylated liposomal and Gemcitabine", "Doxorubicin pegylated liposomal & Gemcitabine", "Doxorubicin_pegylated_liposomal_Gemcitabine", "Doxorubicin pegylated liposomal/Gemcitabine", "DoxorubicinpegylatedliposomalGemcitabine"
+    "Doxorubicin pegylated liposomal & Gemcitabine"
 ];
 
-define Regimen_DoxorubicinpegylatedliposomalGemcitabine:
+define final DoxorubicinpegylatedliposomalGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinpegylatedliposomalGemcitabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pegylatedliposomaldoxorubicin AND Treatment_Gemcitabine;
-    
-define final Received_DoxorubicinpegylatedliposomalGemcitabine:
-    where Regimen_DoxorubicinpegylatedliposomalGemcitabine OR ReceivedRegimenTreatments;        
+define final DoxorubicinpegylatedliposomalGemcitabineTreatments:
+    where PegylatedliposomaldoxorubicinTreatment AND GemcitabineTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define  MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Methylprednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab & Methylprednisolone", "Alemtuzumab_Methylprednisolone", "Alemtuzumab and Methylprednisolone", "Alemtuzumab/Methylprednisolone", "AlemtuzumabMethylprednisolone", "Alemtuzumab / Methylprednisolone"
+    "Alemtuzumab & Methylprednisolone"
 ];
 
-define Regimen_AlemtuzumabMethylprednisolone:
+define final AlemtuzumabMethylprednisoloneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AlemtuzumabMethylprednisolone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alemtuzumab AND Treatment_Methylprednisolone;
-    
-define final Received_AlemtuzumabMethylprednisolone:
-    where Regimen_AlemtuzumabMethylprednisolone OR ReceivedRegimenTreatments;        
+define final AlemtuzumabMethylprednisoloneTreatments:
+    where AlemtuzumabTreatment AND MethylprednisoloneTreatment;
+          
         
         
         

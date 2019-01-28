@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinIrinotecan", "IC", "Carboplatin and Irinotecan", "Carboplatin/Irinotecan", "IP", "Carboplatin & Irinotecan", "Carboplatin_Irinotecan", "Carboplatin / Irinotecan"
+    "IC", "IP", "Carboplatin & Irinotecan"
 ];
 
-define Regimen_CarboplatinIrinotecan:
+define final CarboplatinIrinotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinIrinotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Irinotecan;
-    
-define final Received_CarboplatinIrinotecan:
-    where Regimen_CarboplatinIrinotecan OR ReceivedRegimenTreatments;        
+define final CarboplatinIrinotecanTreatments:
+    where CarboplatinTreatment AND IrinotecanTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "73i", "7&3i", "7 and 3i", "7/3i", "7 / 3i", "IA", "7+3i", "AI", "7 & 3i"
+    "7 and 3i", "AI", "IA", "7/3i", "7 / 3i", "7 & 3i", "73i", "7+3i", "7&3i"
 ];
 
-define Regimen_73i:
+define final 73iRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_73i:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Idarubicin;
-    
-define final Received_73i:
-    where Regimen_73i OR ReceivedRegimenTreatments;        
+define final 73iTreatments:
+    where CytarabineTreatment AND IdarubicinTreatment;
+          
         
         
         

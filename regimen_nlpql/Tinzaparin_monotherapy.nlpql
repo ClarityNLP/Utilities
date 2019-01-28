@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "innohep", "tinzaparin"
 ];
 
-define Treatment_Tinzaparin:
+define final TinzaparinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tinzaparin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tinzaparinmonotherapy", "Tinzaparin_monotherapy", "Tinzaparin monotherapy"
+    "Tinzaparin monotherapy"
 ];
 
-define Regimen_Tinzaparinmonotherapy:
+define final TinzaparinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Tinzaparinmonotherapy:
 
 // Results
 
-        
-define final Received_Tinzaparinmonotherapy:
-    where Treatment_Tinzaparin OR Regimen_Tinzaparinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define final ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Arsenictrioxide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide/then ATRA & Daunorubicin", "ArsenictrioxidethenATRADaunorubicin", "Arsenic trioxide, then ATRA & Daunorubicin", "Arsenic trioxide/ then ATRA & Daunorubicin", "Arsenic trioxide,/ATRA & Daunorubicin", "Arsenic trioxide, then ATRA / Daunorubicin", "Arsenic trioxide- then ATRA & Daunorubicin", "Arsenic_trioxide_then_ATRA_Daunorubicin", "Arsenic trioxide& then ATRA & Daunorubicin", "Arsenic trioxide,&ATRA & Daunorubicin", "Arsenic trioxide, and ATRA & Daunorubicin", "Arsenic trioxide,, ATRA & Daunorubicin", "Arsenic trioxide, then ATRA and Daunorubicin", "Arsenic trioxide &  then ATRA & Daunorubicin", "Arsenic trioxide, / ATRA & Daunorubicin", "Arsenic trioxide, then ATRA/Daunorubicin", "Arsenic trioxide and  then ATRA & Daunorubicin", "Arsenic trioxide, & ATRA & Daunorubicin"
+    "Arsenic trioxide, then ATRA & Daunorubicin"
 ];
 
-define Regimen_ArsenictrioxidethenATRADaunorubicin:
+define final ArsenictrioxidethenATRADaunorubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_ArsenictrioxidethenATRADaunorubicin:
 
 // Results
 
-        
-define final Received_ArsenictrioxidethenATRADaunorubicin:
-    where Treatment_Arsenictrioxide OR Regimen_ArsenictrioxidethenATRADaunorubicin;
-            
 
 // Comments
 /***

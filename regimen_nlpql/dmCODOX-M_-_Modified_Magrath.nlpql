@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "dmCODOX/M", "dmCODOXM", "dmCODOXMModifiedMagrath", "dmCODOX-M_-_Modified_Magrath", "dmCODOX/M / Modified Magrath", "dmCODOX-M - Modified Magrath", "dmCODOXM  Modified Magrath", "dmCODOX-M"
+    "dmCODOX-M", "dmCODOXM", "dmCODOX-M - Modified Magrath", "dmCODOX/M"
 ];
 
-define Regimen_dmCODOXM:
+define final dmCODOXMModifiedMagrathRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_dmCODOXM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Doxorubicin AND Treatment_Methotrexate;
-    
-define final Received_dmCODOXMModifiedMagrath:
-    where Regimen_dmCODOXM OR ReceivedRegimenTreatments;        
+define final dmCODOXMModifiedMagrathTreatments:
+    where CyclophosphamideTreatment AND VincristineTreatment AND DoxorubicinTreatment AND MethotrexateTreatment;
+          
         
         
         

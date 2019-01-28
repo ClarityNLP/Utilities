@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "imfinzi", "durvalumab"
 ];
 
-define Treatment_Durvalumab:
+define final DurvalumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Durvalumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Durvalumabmonotherapy", "Durvalumab monotherapy", "Durvalumab_monotherapy"
+    "Durvalumab monotherapy"
 ];
 
-define Regimen_Durvalumabmonotherapy:
+define final DurvalumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Durvalumabmonotherapy:
 
 // Results
 
-        
-define final Received_Durvalumabmonotherapy:
-    where Treatment_Durvalumab OR Regimen_Durvalumabmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "intron-a", "interferon alfa-2b"
 ];
 
-define Treatment_Interferonalfa2b:
+define  Interferonalfa2bTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "retrovir", "zidovudine"
 ];
 
-define Treatment_Zidovudine:
+define  ZidovudineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Zidovudine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferonalfa2bZidovudine", "Interferon alfa-2b/Zidovudine", "Interferon alfa-2b & Zidovudine", "Interferon alfa2b & Zidovudine", "Interferon_alfa-2b_Zidovudine", "Interferon alfa/2b & Zidovudine", "Interferon alfa-2b and Zidovudine", "Interferon alfa-2b / Zidovudine"
+    "Interferon alfa-2b & Zidovudine"
 ];
 
-define Regimen_Interferonalfa2bZidovudine:
+define final Interferonalfa2bZidovudineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Interferonalfa2bZidovudine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Interferonalfa2b AND Treatment_Zidovudine;
-    
-define final Received_Interferonalfa2bZidovudine:
-    where Regimen_Interferonalfa2bZidovudine OR ReceivedRegimenTreatments;        
+define final Interferonalfa2bZidovudineTreatments:
+    where Interferonalfa2bTreatment AND ZidovudineTreatment;
+          
         
         
         

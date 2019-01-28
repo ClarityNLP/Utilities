@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine_Oxaliplatin_Paclitaxel", "Gemcitabine& Oxaliplatin& Paclitaxel", "Gemcitabine and  Oxaliplatin and  Paclitaxel", "Gemcitabine/ Oxaliplatin/ Paclitaxel", "GemcitabineOxaliplatinPaclitaxel", "Gemcitabine &  Oxaliplatin &  Paclitaxel", "GOP", "Gemcitabine/Oxaliplatin/Paclitaxel", "Gemcitabine, Oxaliplatin, Paclitaxel", "Gemcitabine- Oxaliplatin- Paclitaxel"
+    "Gemcitabine, Oxaliplatin, Paclitaxel", "GOP"
 ];
 
-define Regimen_GemcitabineOxaliplatinPaclitaxel:
+define final GemcitabineOxaliplatinPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_GemcitabineOxaliplatinPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Oxaliplatin AND Treatment_Paclitaxel;
-    
-define final Received_GemcitabineOxaliplatinPaclitaxel:
-    where Regimen_GemcitabineOxaliplatinPaclitaxel OR ReceivedRegimenTreatments;        
+define final GemcitabineOxaliplatinPaclitaxelTreatments:
+    where GemcitabineTreatment AND OxaliplatinTreatment AND PaclitaxelTreatment;
+          
         
         
         

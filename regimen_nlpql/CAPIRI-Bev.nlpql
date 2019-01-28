@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CAPIRI-Bev", "CAPIRIBev", "XELIRIBev", "XELIRI/Bev", "CAPIRI/Bev", "XELIRI-Bev"
+    "XELIRIBev", "CAPIRIBev", "XELIRI-Bev", "CAPIRI/Bev", "CAPIRI-Bev", "XELIRI/Bev"
 ];
 
-define Regimen_CAPIRIBev:
+define final CAPIRIBevRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CAPIRIBev:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Irinotecan AND Treatment_Bevacizumab;
-    
-define final Received_CAPIRIBev:
-    where Regimen_CAPIRIBev OR ReceivedRegimenTreatments;        
+define final CAPIRIBevTreatments:
+    where CapecitabineTreatment AND IrinotecanTreatment AND BevacizumabTreatment;
+          
         
         
         

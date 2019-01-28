@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define  ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib_Prednisone", "Imatinib / Prednisone", "Imatinib & Prednisone", "Imatinib and Prednisone", "ImatinibPrednisone", "Imatinib/Prednisone"
+    "Imatinib & Prednisone"
 ];
 
-define Regimen_ImatinibPrednisone:
+define final ImatinibPrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ImatinibPrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Imatinib AND Treatment_Prednisone;
-    
-define final Received_ImatinibPrednisone:
-    where Regimen_ImatinibPrednisone OR ReceivedRegimenTreatments;        
+define final ImatinibPrednisoneTreatments:
+    where ImatinibTreatment AND PrednisoneTreatment;
+          
         
         
         

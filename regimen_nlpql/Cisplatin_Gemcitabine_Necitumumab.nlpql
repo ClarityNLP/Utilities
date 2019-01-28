@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "portrazza", "necitumumab"
 ];
 
-define Treatment_Necitumumab:
+define  NecitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Necitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/ Gemcitabine/ Necitumumab", "Cisplatin, Gemcitabine, Necitumumab", "Cisplatin &  Gemcitabine &  Necitumumab", "CisplatinGemcitabineNecitumumab", "Cisplatin/Gemcitabine/Necitumumab", "Cisplatin and  Gemcitabine and  Necitumumab", "Cisplatin_Gemcitabine_Necitumumab", "Cisplatin& Gemcitabine& Necitumumab", "Cisplatin- Gemcitabine- Necitumumab"
+    "Cisplatin, Gemcitabine, Necitumumab"
 ];
 
-define Regimen_CisplatinGemcitabineNecitumumab:
+define final CisplatinGemcitabineNecitumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinGemcitabineNecitumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Gemcitabine AND Treatment_Necitumumab;
-    
-define final Received_CisplatinGemcitabineNecitumumab:
-    where Regimen_CisplatinGemcitabineNecitumumab OR ReceivedRegimenTreatments;        
+define final CisplatinGemcitabineNecitumumabTreatments:
+    where CisplatinTreatment AND GemcitabineTreatment AND NecitumumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zolinza", "vorinostat"
 ];
 
-define Treatment_Vorinostat:
+define final VorinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vorinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vorinostatmonotherapy", "Vorinostat monotherapy", "Vorinostat_monotherapy"
+    "Vorinostat monotherapy"
 ];
 
-define Regimen_Vorinostatmonotherapy:
+define final VorinostatmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Vorinostatmonotherapy:
 
 // Results
 
-        
-define final Received_Vorinostatmonotherapy:
-    where Treatment_Vorinostat OR Regimen_Vorinostatmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Cutaneous_T-cell_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma
+Known regimen for: Marginal_zone_lymphoma, Cutaneous_T-cell_lymphoma, Follicular_lymphoma
 
 
 ***/

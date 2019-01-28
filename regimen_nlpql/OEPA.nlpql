@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "OEPA"
 ];
 
-define Regimen_OEPA:
+define final OEPARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_OEPA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vincristine AND Treatment_Etoposide AND Treatment_Prednisone AND Treatment_Doxorubicin;
-    
-define final Received_OEPA:
-    where Regimen_OEPA OR ReceivedRegimenTreatments;        
+define final OEPATreatments:
+    where VincristineTreatment AND EtoposideTreatment AND PrednisoneTreatment AND DoxorubicinTreatment;
+          
         
         
         

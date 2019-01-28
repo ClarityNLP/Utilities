@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "vectibix", "panitumumab"
 ];
 
-define Treatment_Panitumumab:
+define  PanitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Panitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and  Fluorouracil and  Panitumumab", "Cisplatin, Fluorouracil, Panitumumab", "Cisplatin/Fluorouracil/Panitumumab", "Cisplatin& Fluorouracil& Panitumumab", "Cisplatin_Fluorouracil_Panitumumab", "Cisplatin- Fluorouracil- Panitumumab", "Cisplatin/ Fluorouracil/ Panitumumab", "Cisplatin &  Fluorouracil &  Panitumumab", "CisplatinFluorouracilPanitumumab"
+    "Cisplatin, Fluorouracil, Panitumumab"
 ];
 
-define Regimen_CisplatinandFluorouracilandPanitumumab:
+define final CisplatinFluorouracilPanitumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinandFluorouracilandPanitumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Panitumumab;
-    
-define final Received_CisplatinFluorouracilPanitumumab:
-    where Regimen_CisplatinandFluorouracilandPanitumumab OR ReceivedRegimenTreatments;        
+define final CisplatinFluorouracilPanitumumabTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment AND PanitumumabTreatment;
+          
         
         
         

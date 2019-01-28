@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "MTIP", "M/TIP", "M-TIP"
+    "M/TIP", "M-TIP", "MTIP"
 ];
 
-define Regimen_MTIP:
+define final MTIPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MTIP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Paclitaxel AND Treatment_Ifosfamide AND Treatment_Cisplatin;
-    
-define final Received_MTIP:
-    where Regimen_MTIP OR ReceivedRegimenTreatments;        
+define final MTIPTreatments:
+    where MethotrexateTreatment AND PaclitaxelTreatment AND IfosfamideTreatment AND CisplatinTreatment;
+          
         
         
         

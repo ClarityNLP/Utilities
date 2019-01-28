@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "VDCR", "RVDC"
 ];
 
-define Regimen_VDCR:
+define final RVDCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_VDCR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lenalidomide AND Treatment_Bortezomib AND Treatment_Dexamethasone AND Treatment_Cyclophosphamide;
-    
-define final Received_RVDC:
-    where Regimen_VDCR OR ReceivedRegimenTreatments;        
+define final RVDCTreatments:
+    where LenalidomideTreatment AND BortezomibTreatment AND DexamethasoneTreatment AND CyclophosphamideTreatment;
+          
         
         
         

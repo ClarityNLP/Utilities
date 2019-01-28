@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinGemcitabineBevacizumab", "Carboplatin- Gemcitabine- Bevacizumab", "Carboplatin &  Gemcitabine &  Bevacizumab", "Carboplatin, Gemcitabine, Bevacizumab", "Carboplatin& Gemcitabine& Bevacizumab", "Carboplatin/Gemcitabine/Bevacizumab", "Carboplatin_Gemcitabine_Bevacizumab", "Carboplatin/ Gemcitabine/ Bevacizumab", "Carboplatin and  Gemcitabine and  Bevacizumab"
+    "Carboplatin, Gemcitabine, Bevacizumab"
 ];
 
-define Regimen_CarboplatinGemcitabineBevacizumab:
+define final CarboplatinGemcitabineBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinGemcitabineBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Gemcitabine AND Treatment_Bevacizumab;
-    
-define final Received_CarboplatinGemcitabineBevacizumab:
-    where Regimen_CarboplatinGemcitabineBevacizumab OR ReceivedRegimenTreatments;        
+define final CarboplatinGemcitabineBevacizumabTreatments:
+    where CarboplatinTreatment AND GemcitabineTreatment AND BevacizumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "afinitor", "everolimus"
 ];
 
-define Treatment_Everolimus:
+define  EverolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "lenvima", "lenvatinib"
 ];
 
-define Treatment_Lenvatinib:
+define  LenvatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Lenvatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus & Lenvatinib", "Everolimus and Lenvatinib", "Everolimus_Lenvatinib", "Everolimus/Lenvatinib", "EverolimusLenvatinib", "Everolimus / Lenvatinib"
+    "Everolimus & Lenvatinib"
 ];
 
-define Regimen_EverolimusLenvatinib:
+define final EverolimusLenvatinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_EverolimusLenvatinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Everolimus AND Treatment_Lenvatinib;
-    
-define final Received_EverolimusLenvatinib:
-    where Regimen_EverolimusLenvatinib OR ReceivedRegimenTreatments;        
+define final EverolimusLenvatinibTreatments:
+    where EverolimusTreatment AND LenvatinibTreatment;
+          
         
         
         

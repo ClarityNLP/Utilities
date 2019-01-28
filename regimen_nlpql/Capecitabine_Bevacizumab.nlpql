@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine / Bevacizumab", "CB", "CapecitabineBevacizumab", "Capecitabine/Bevacizumab", "Capecitabine and Bevacizumab", "Capecitabine_Bevacizumab", "Capecitabine & Bevacizumab"
+    "Capecitabine & Bevacizumab", "CB"
 ];
 
-define Regimen_CapecitabineBevacizumab:
+define final CapecitabineBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CapecitabineBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Bevacizumab;
-    
-define final Received_CapecitabineBevacizumab:
-    where Regimen_CapecitabineBevacizumab OR ReceivedRegimenTreatments;        
+define final CapecitabineBevacizumabTreatments:
+    where CapecitabineTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CapecitabineBevacizumab:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Colon_cancer
+Known regimen for: Colon_cancer, Hepatocellular_carcinoma
 
 
 ***/

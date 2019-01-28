@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "arixtra", "fondaparinux"
 ];
 
-define Treatment_Fondaparinux:
+define final FondaparinuxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fondaparinux:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fondaprinux monotherapy", "Fondaprinux_monotherapy", "Fondaprinuxmonotherapy"
+    "Fondaprinux monotherapy"
 ];
 
-define Regimen_Fondaprinuxmonotherapy:
+define final FondaprinuxmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Fondaprinuxmonotherapy:
 
 // Results
 
-        
-define final Received_Fondaprinuxmonotherapy:
-    where Treatment_Fondaparinux OR Regimen_Fondaprinuxmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "imbruvica", "ibrutinib"
 ];
 
-define Treatment_Ibrutinib:
+define  IbrutinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "venclexta", "venetoclax"
 ];
 
-define Treatment_Venetoclax:
+define  VenetoclaxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Venetoclax:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib/Venetoclax", "Ibrutinib / Venetoclax", "Ibrutinib and Venetoclax", "Ibrutinib & Venetoclax", "Ibrutinib_Venetoclax", "IbrutinibVenetoclax"
+    "Ibrutinib & Venetoclax"
 ];
 
-define Regimen_IbrutinibVenetoclax:
+define final IbrutinibVenetoclaxRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IbrutinibVenetoclax:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ibrutinib AND Treatment_Venetoclax;
-    
-define final Received_IbrutinibVenetoclax:
-    where Regimen_IbrutinibVenetoclax OR ReceivedRegimenTreatments;        
+define final IbrutinibVenetoclaxTreatments:
+    where IbrutinibTreatment AND VenetoclaxTreatment;
+          
         
         
         

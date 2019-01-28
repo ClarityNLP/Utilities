@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define  DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "VAdCA"
 ];
 
-define Regimen_VAdCA:
+define final VAdCARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_VAdCA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vincristine AND Treatment_Doxorubicin AND Treatment_Cyclophosphamide AND Treatment_Dactinomycin;
-    
-define final Received_VAdCA:
-    where Regimen_VAdCA OR ReceivedRegimenTreatments;        
+define final VAdCATreatments:
+    where VincristineTreatment AND DoxorubicinTreatment AND CyclophosphamideTreatment AND DactinomycinTreatment;
+          
         
         
         

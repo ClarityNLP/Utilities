@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "Ox-P", "OxP", "Ox/P"
 ];
 
-define Regimen_OxP:
+define final OxPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_OxP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Oxaliplatin AND Treatment_Prednisone;
-    
-define final Received_OxP:
-    where Regimen_OxP OR ReceivedRegimenTreatments;        
+define final OxPTreatments:
+    where OxaliplatinTreatment AND PrednisoneTreatment;
+          
         
         
         

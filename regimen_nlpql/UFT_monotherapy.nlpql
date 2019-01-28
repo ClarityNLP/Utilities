@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "uft", "tegafur and uracil"
 ];
 
-define Treatment_Tegafuranduracil:
+define final TegafuranduracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tegafuranduracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFTmonotherapy", "UFT monotherapy", "UFT_monotherapy"
+    "UFT monotherapy"
 ];
 
-define Regimen_UFTmonotherapy:
+define final UFTmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_UFTmonotherapy:
 
 // Results
 
-        
-define final Received_UFTmonotherapy:
-    where Treatment_Tegafuranduracil OR Regimen_UFTmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define Treatment_AntithymocyteglobulinhorseATG:
+define  AntithymocyteglobulinhorseATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rapamune", "sirolimus"
 ];
 
-define Treatment_Sirolimus:
+define  SirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Sirolimus:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse) &  Cyclosporine &  Sirolimus", "ATG (Horse)/Cyclosporine/Sirolimus", "ATG (Horse)& Cyclosporine& Sirolimus", "ATG (Horse) and  Cyclosporine and  Sirolimus", "ATGHorseCyclosporineSirolimus", "ATG (Horse)/ Cyclosporine/ Sirolimus", "ATG (Horse), Cyclosporine, Sirolimus", "ATG_Horse_Cyclosporine_Sirolimus", "ATG (Horse)- Cyclosporine- Sirolimus"
+    "ATG (Horse), Cyclosporine, Sirolimus"
 ];
 
-define Regimen_ATGHorseCyclosporineSirolimus:
+define final ATGHorseCyclosporineSirolimusRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ATGHorseCyclosporineSirolimus:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_AntithymocyteglobulinhorseATG AND Treatment_CategoryCyclosporines AND Treatment_Sirolimus;
-    
-define final Received_ATGHorseCyclosporineSirolimus:
-    where Regimen_ATGHorseCyclosporineSirolimus OR ReceivedRegimenTreatments;        
+define final ATGHorseCyclosporineSirolimusTreatments:
+    where AntithymocyteglobulinhorseATGTreatment AND CategoryCyclosporinesTreatment AND SirolimusTreatment;
+          
         
         
         

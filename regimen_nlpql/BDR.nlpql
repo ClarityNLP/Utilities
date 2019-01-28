@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "BORID", "BDR"
+    "BDR", "BORID"
 ];
 
-define Regimen_BORID:
+define final BDRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BORID:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Rituximab AND Treatment_Dexamethasone;
-    
-define final Received_BDR:
-    where Regimen_BORID OR ReceivedRegimenTreatments;        
+define final BDRTreatments:
+    where BortezomibTreatment AND RituximabTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_BDR:
 // Comments
 /***
 
-Known regimen for: Waldenström_macroglobulinemia, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Waldenström_macroglobulinemia
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "EAR and G-CSF", "EAR & G-CSF", "EAR_G-CSF", "EAR & G/CSF", "EAR / G-CSF", "EAR/G-CSF", "EAR & GCSF", "EARGCSF"
+    "EAR & G-CSF"
 ];
 
-define Regimen_EARandGCSF:
+define final EARGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_EARandGCSF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Cytarabine AND Treatment_Rituximab;
-    
-define final Received_EARGCSF:
-    where Regimen_EARandGCSF OR ReceivedRegimenTreatments;        
+define final EARGCSFTreatments:
+    where EtoposideTreatment AND CytarabineTreatment AND RituximabTreatment;
+          
         
         
         

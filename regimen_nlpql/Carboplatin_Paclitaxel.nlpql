@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Paclitaxel", "Carboplatin / Paclitaxel", "CarboplatinPaclitaxel", "Carboplatin_Paclitaxel", "Carboplatin and Paclitaxel", "Carboplatin/Paclitaxel"
+    "Carboplatin & Paclitaxel"
 ];
 
-define Regimen_CarboplatinPaclitaxel:
+define final CarboplatinPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxel;
-    
-define final Received_CarboplatinPaclitaxel:
-    where Regimen_CarboplatinPaclitaxel OR ReceivedRegimenTreatments;        
+define final CarboplatinPaclitaxelTreatments:
+    where CarboplatinTreatment AND PaclitaxelTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CarboplatinPaclitaxel:
 // Comments
 /***
 
-Known regimen for: Melanoma, Ovarian_cancer, Cervical_cancer, Gastric_cancer, Prostate_cancer, Non-small_cell_lung_cancer, Endometrial_cancer, Bladder_cancer, Adenocarcinoma_of_unknown_primary, Breast_cancer_triple_negative, Thymoma, Esophageal_cancer
+Known regimen for: Cervical_cancer, Melanoma, Prostate_cancer, Ovarian_cancer, Bladder_cancer, Breast_cancer_triple_negative, Gastric_cancer, Endometrial_cancer, Adenocarcinoma_of_unknown_primary, Esophageal_cancer, Non-small_cell_lung_cancer, Thymoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Etoposide_RT", "Carboplatin, Etoposide, RT", "CarboplatinEtoposideRT", "Carboplatin and  Etoposide and  RT", "Carboplatin& Etoposide& RT", "Carboplatin/Etoposide/RT", "EP/RT", "Carboplatin- Etoposide- RT", "Carboplatin &  Etoposide &  RT", "EPRT", "Carboplatin/ Etoposide/ RT", "EP & RT", "EP_RT", "EP and RT", "EP / RT"
+    "EPRT", "EP_RT", "EP & RT", "EP and RT", "EP/RT", "EP / RT", "Carboplatin, Etoposide, RT"
 ];
 
-define Regimen_CarboplatinEtoposideRT:
+define final CarboplatinEtoposideRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinEtoposideRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Etoposide AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CarboplatinEtoposideRT:
-    where Regimen_CarboplatinEtoposideRT OR ReceivedRegimenTreatments;        
+define final CarboplatinEtoposideRTTreatments:
+    where CarboplatinTreatment AND EtoposideTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

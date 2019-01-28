@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "prograf", "tacrolimus"
 ];
 
-define Treatment_Tacrolimus:
+define  TacrolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "zolinza", "vorinostat"
 ];
 
-define Treatment_Vorinostat:
+define  VorinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Vorinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Vorinostat", "Methotrexate/ Tacrolimus/ Vorinostat", "Methotrexate- Tacrolimus- Vorinostat", "Methotrexate/Tacrolimus/Vorinostat", "MethotrexateTacrolimusVorinostat", "Methotrexate& Tacrolimus& Vorinostat", "Methotrexate and  Tacrolimus and  Vorinostat", "Methotrexate_Tacrolimus_Vorinostat", "Methotrexate &  Tacrolimus &  Vorinostat"
+    "Methotrexate, Tacrolimus, Vorinostat"
 ];
 
-define Regimen_MethotrexateTacrolimusVorinostat:
+define final MethotrexateTacrolimusVorinostatRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MethotrexateTacrolimusVorinostat:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Tacrolimus AND Treatment_Vorinostat;
-    
-define final Received_MethotrexateTacrolimusVorinostat:
-    where Regimen_MethotrexateTacrolimusVorinostat OR ReceivedRegimenTreatments;        
+define final MethotrexateTacrolimusVorinostatTreatments:
+    where MethotrexateTreatment AND TacrolimusTreatment AND VorinostatTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define Treatment_Brentuximabvedotin:
+define final BrentuximabvedotinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Brentuximabvedotin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab_vedotin_monotherapy", "Brentuximab vedotin monotherapy", "Brentuximabvedotinmonotherapy"
+    "Brentuximab vedotin monotherapy"
 ];
 
-define Regimen_Brentuximabvedotinmonotherapy:
+define final BrentuximabvedotinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Brentuximabvedotinmonotherapy:
 
 // Results
 
-        
-define final Received_Brentuximabvedotinmonotherapy:
-    where Treatment_Brentuximabvedotin OR Regimen_Brentuximabvedotinmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Anaplastic_large_cell_lymphoma, Mediastinal_gray-zone_lymphoma, Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Cutaneous_T-cell_lymphoma, Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma, Mediastinal_gray-zone_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Alltransretinoicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADE/ATRA", "ADEATRA", "ADE & ATRA", "ADE / ATRA", "ADE_ATRA", "ADE and ATRA"
+    "ADE / ATRA", "ADE/ATRA", "ADEATRA", "ADE_ATRA", "ADE & ATRA", "ADE and ATRA"
 ];
 
-define Regimen_ADEATRA:
+define final ADEATRARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ADEATRA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Etoposide AND Treatment_Alltransretinoicacid;
-    
-define final Received_ADEATRA:
-    where Regimen_ADEATRA OR ReceivedRegimenTreatments;        
+define final ADEATRATreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND EtoposideTreatment AND AlltransretinoicacidTreatment;
+          
         
         
         

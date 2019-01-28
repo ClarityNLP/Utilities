@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define final CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Carmustine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustine and RT", "BCNU_RT", "Carmustine / RT", "BCNURT", "BCNU & RT", "Carmustine & RT", "Carmustine/RT", "BCNU/RT", "BCNU and RT", "BCNU / RT", "Carmustine_RT", "CarmustineRT"
+    "Carmustine & RT", "BCNU / RT", "BCNURT", "BCNU & RT", "BCNU and RT", "BCNU/RT", "BCNU_RT"
 ];
 
-define Regimen_CarmustineandRT:
+define final CarmustineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_CarmustineandRT:
 
 // Results
 
-        
-define final Received_CarmustineRT:
-    where Treatment_Carmustine OR Regimen_CarmustineandRT;
-            
 
 // Comments
 /***

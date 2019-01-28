@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define final FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexatemonotherapy", "Methotrexate monotherapy", "Methotrexate_monotherapy"
+    "Methotrexate monotherapy"
 ];
 
-define Regimen_Methotrexatemonotherapy:
+define final MethotrexatemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Methotrexatemonotherapy:
 
 // Results
 
-        
-define final Received_Methotrexatemonotherapy:
-    where Treatment_Folinicacid OR Regimen_Methotrexatemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: CNS_lymphoma, Cutaneous_T-cell_lymphoma, Gestational_trophoblastic_neoplasia, Head_and_neck_cancer
+Known regimen for: Gestational_trophoblastic_neoplasia, Head_and_neck_cancer, CNS_lymphoma, Cutaneous_T-cell_lymphoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "besponsa", "inotuzumab ozogamicin"
 ];
 
-define Treatment_Inotuzumabozogamicin:
+define final InotuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Inotuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Inotuzumabozogamicinmonotherapy", "Inotuzumab_ozogamicin_monotherapy", "Inotuzumab ozogamicin monotherapy"
+    "Inotuzumab ozogamicin monotherapy"
 ];
 
-define Regimen_Inotuzumabozogamicinmonotherapy:
+define final InotuzumabozogamicinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Inotuzumabozogamicinmonotherapy:
 
 // Results
 
-        
-define final Received_Inotuzumabozogamicinmonotherapy:
-    where Treatment_Inotuzumabozogamicin OR Regimen_Inotuzumabozogamicinmonotherapy;
-            
 
 // Comments
 /***

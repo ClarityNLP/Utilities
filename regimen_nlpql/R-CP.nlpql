@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define  MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Methylprednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CP", "R-CP", "RCP"
+    "RCP", "R-CP", "R/CP"
 ];
 
-define Regimen_RCP:
+define final RCPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_RCP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Prednisone AND Treatment_Methylprednisolone;
-    
-define final Received_RCP:
-    where Regimen_RCP OR ReceivedRegimenTreatments;        
+define final RCPTreatments:
+    where RituximabTreatment AND CyclophosphamideTreatment AND PrednisoneTreatment AND MethylprednisoloneTreatment;
+          
         
         
         

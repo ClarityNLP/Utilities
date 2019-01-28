@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define final MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan monotherapy", "Melphalanmonotherapy", "Melphalan_monotherapy"
+    "Melphalan monotherapy"
 ];
 
-define Regimen_Melphalanmonotherapy:
+define final MelphalanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Melphalanmonotherapy:
 
 // Results
 
-        
-define final Received_Melphalanmonotherapy:
-    where Treatment_Melphalan OR Regimen_Melphalanmonotherapy;
-            
 
 // Comments
 /***

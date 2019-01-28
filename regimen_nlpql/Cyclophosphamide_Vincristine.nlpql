@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Vincristine", "Cyclophosphamide_Vincristine", "Cyclophosphamide / Vincristine", "Cyclophosphamide and Vincristine", "CyclophosphamideVincristine", "Cyclophosphamide/Vincristine"
+    "Cyclophosphamide & Vincristine"
 ];
 
-define Regimen_CyclophosphamideVincristine:
+define final CyclophosphamideVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamideVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Vincristine;
-    
-define final Received_CyclophosphamideVincristine:
-    where Regimen_CyclophosphamideVincristine OR ReceivedRegimenTreatments;        
+define final CyclophosphamideVincristineTreatments:
+    where CyclophosphamideTreatment AND VincristineTreatment;
+          
         
         
         

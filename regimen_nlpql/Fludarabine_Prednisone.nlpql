@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine & Prednisone", "Fludarabine and Prednisone", "Fludarabine/Prednisone", "Fludarabine_Prednisone", "Fludarabine / Prednisone", "FludarabinePrednisone"
+    "Fludarabine & Prednisone"
 ];
 
-define Regimen_FludarabinePrednisone:
+define final FludarabinePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_FludarabinePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Prednisone;
-    
-define final Received_FludarabinePrednisone:
-    where Regimen_FludarabinePrednisone OR ReceivedRegimenTreatments;        
+define final FludarabinePrednisoneTreatments:
+    where FludarabineTreatment AND PrednisoneTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "lynparza", "olaparib"
 ];
 
-define Treatment_Olaparib:
+define  OlaparibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin/Olaparib/Paclitaxel", "Carboplatin_Olaparib_Paclitaxel", "CarboplatinOlaparibPaclitaxel", "Carboplatin, Olaparib, Paclitaxel", "Carboplatin& Olaparib& Paclitaxel", "Carboplatin- Olaparib- Paclitaxel", "Carboplatin &  Olaparib &  Paclitaxel", "Carboplatin/ Olaparib/ Paclitaxel", "Carboplatin and  Olaparib and  Paclitaxel"
+    "Carboplatin, Olaparib, Paclitaxel"
 ];
 
-define Regimen_CarboplatinOlaparibPaclitaxel:
+define final CarboplatinOlaparibPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinOlaparibPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Olaparib AND Treatment_Paclitaxel;
-    
-define final Received_CarboplatinOlaparibPaclitaxel:
-    where Regimen_CarboplatinOlaparibPaclitaxel OR ReceivedRegimenTreatments;        
+define final CarboplatinOlaparibPaclitaxelTreatments:
+    where CarboplatinTreatment AND OlaparibTreatment AND PaclitaxelTreatment;
+          
         
         
         

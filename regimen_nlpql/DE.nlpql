@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Epirubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DE", "ED", "ET"
+    "ED", "ET", "DE"
 ];
 
-define Regimen_DE:
+define final DERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Epirubicin;
-    
-define final Received_DE:
-    where Regimen_DE OR ReceivedRegimenTreatments;        
+define final DETreatments:
+    where DocetaxelTreatment AND EpirubicinTreatment;
+          
         
         
         

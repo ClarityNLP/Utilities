@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide / Vincristine/Cisplatin / Etoposide", "Cyclophosphamide_VincristineCisplatin_Etoposide", "CyclophosphamideVincristineCisplatinEtoposide", "Cyclophosphamide/Vincristine/Cisplatin/Etoposide", "Cyclophosphamide and Vincristine/Cisplatin and Etoposide", "Cyclophosphamide & Vincristine/Cisplatin & Etoposide"
+    "Cyclophosphamide & Vincristine/Cisplatin & Etoposide"
 ];
 
-define Regimen_CyclophosphamideVincristineCisplatinEtoposide:
+define final CyclophosphamideVincristineCisplatinEtoposideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamideVincristineCisplatinEtoposide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Vincristine;
-    
-define final Received_CyclophosphamideVincristineCisplatinEtoposide:
-    where Regimen_CyclophosphamideVincristineCisplatinEtoposide OR ReceivedRegimenTreatments;        
+define final CyclophosphamideVincristineCisplatinEtoposideTreatments:
+    where CyclophosphamideTreatment AND VincristineTreatment;
+          
         
         
         

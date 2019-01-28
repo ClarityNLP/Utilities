@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "accutane", "isotretinoin"
 ];
 
-define Treatment_Isotretinoin:
+define final IsotretinoinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Isotretinoin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Isotretinoinmonotherapy", "Isotretinoin monotherapy", "Isotretinoin_monotherapy"
+    "Isotretinoin monotherapy"
 ];
 
-define Regimen_Isotretinoinmonotherapy:
+define final IsotretinoinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Isotretinoinmonotherapy:
 
 // Results
 
-        
-define final Received_Isotretinoinmonotherapy:
-    where Treatment_Isotretinoin OR Regimen_Isotretinoinmonotherapy;
-            
 
 // Comments
 /***

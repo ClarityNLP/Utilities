@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "folotyn", "pralatrexate"
 ];
 
-define Treatment_Pralatrexate:
+define final PralatrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pralatrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pralatrexate_monotherapy", "Pralatrexate monotherapy", "Pralatrexatemonotherapy"
+    "Pralatrexate monotherapy"
 ];
 
-define Regimen_Pralatrexatemonotherapy:
+define final PralatrexatemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Pralatrexatemonotherapy:
 
 // Results
 
-        
-define final Received_Pralatrexatemonotherapy:
-    where Treatment_Pralatrexate OR Regimen_Pralatrexatemonotherapy;
-            
 
 // Comments
 /***

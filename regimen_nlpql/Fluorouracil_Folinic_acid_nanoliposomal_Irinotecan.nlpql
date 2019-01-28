@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "onivyde", "irinotecan liposome"
 ];
 
-define Treatment_Irinotecanliposome:
+define  IrinotecanliposomeTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Irinotecanliposome:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil/ Folinic acid/ nanoliposomal Irinotecan", "Fluorouracil and  Folinic acid and  nanoliposomal Irinotecan", "Fluorouracil- Folinic acid- nanoliposomal Irinotecan", "Fluorouracil &  Folinic acid &  nanoliposomal Irinotecan", "Fluorouracil& Folinic acid& nanoliposomal Irinotecan", "Fluorouracil/Folinic acid/nanoliposomal Irinotecan", "Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan", "FluorouracilFolinicacidnanoliposomalIrinotecan", "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
+    "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
 ];
 
-define Regimen_FluorouracilFolinicacidnanoliposomalIrinotecan:
+define final FluorouracilFolinicacidnanoliposomalIrinotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FluorouracilFolinicacidnanoliposomalIrinotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Irinotecanliposome;
-    
-define final Received_FluorouracilFolinicacidnanoliposomalIrinotecan:
-    where Regimen_FluorouracilFolinicacidnanoliposomalIrinotecan OR ReceivedRegimenTreatments;        
+define final FluorouracilFolinicacidnanoliposomalIrinotecanTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND IrinotecanliposomeTreatment;
+          
         
         
         

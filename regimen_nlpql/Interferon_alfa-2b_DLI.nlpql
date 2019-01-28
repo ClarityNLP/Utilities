@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "intron-a", "interferon alfa-2b"
 ];
 
-define Treatment_Interferonalfa2b:
+define final Interferonalfa2bTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Interferonalfa2b:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2b / DLI", "DLI", "Interferon alfa-2b & DLI", "Interferon alfa/2b & DLI", "Interferon alfa-2b/DLI", "Interferon_alfa-2b_DLI", "Interferon alfa2b & DLI", "Interferonalfa2bDLI", "Interferon alfa-2b and DLI"
+    "DLI", "Interferon alfa-2b & DLI"
 ];
 
-define Regimen_Interferonalfa2bDLI:
+define final Interferonalfa2bDLIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Interferonalfa2bDLI:
 
 // Results
 
-        
-define final Received_Interferonalfa2bDLI:
-    where Treatment_Interferonalfa2b OR Regimen_Interferonalfa2bDLI;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define final DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dexamethasone_monotherapy", "Dexamethasonemonotherapy", "Dexamethasone monotherapy"
+    "Dexamethasone monotherapy"
 ];
 
-define Regimen_Dexamethasonemonotherapy:
+define final DexamethasonemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Dexamethasonemonotherapy:
 
 // Results
 
-        
-define final Received_Dexamethasonemonotherapy:
-    where Treatment_Dexamethasone OR Regimen_Dexamethasonemonotherapy;
-            
 
 // Comments
 /***

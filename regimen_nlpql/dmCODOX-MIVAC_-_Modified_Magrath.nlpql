@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,10 +84,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "dmCODOX-MIVAC", "dmCODOX-M/IVAC - Modified Magrath", "dmCODOX/M/IVAC / Modified Magrath", "dmCODOX/M/IVAC", "dmCODOX-M/IVAC", "dmCODOX-MIVAC_-_Modified_Magrath", "dmCODOXM/IVAC  Modified Magrath", "dmCODOXMIVAC", "dmCODOXM/IVAC", "dmCODOXMIVACModifiedMagrath"
+    "dmCODOX-M/IVAC - Modified Magrath", "dmCODOX-M/IVAC"
 ];
 
-define Regimen_dmCODOXMIVAC:
+define final dmCODOXMIVACModifiedMagrathRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -97,11 +97,9 @@ define Regimen_dmCODOXMIVAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Methotrexate AND Treatment_Cytarabine AND Treatment_Methotrexate AND Treatment_Folinicacid AND Treatment_Methotrexate;
-    
-define final Received_dmCODOXMIVACModifiedMagrath:
-    where Regimen_dmCODOXMIVAC OR ReceivedRegimenTreatments;        
+define final dmCODOXMIVACModifiedMagrathTreatments:
+    where CytarabineTreatment AND MethotrexateTreatment AND CytarabineTreatment AND MethotrexateTreatment AND FolinicacidTreatment AND MethotrexateTreatment;
+          
         
         
         

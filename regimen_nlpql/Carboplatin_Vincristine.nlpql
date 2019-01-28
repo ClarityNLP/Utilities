@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "VC", "Carboplatin / Vincristine", "Carboplatin/Vincristine", "Carboplatin_Vincristine", "Carboplatin & Vincristine", "Carboplatin and Vincristine", "CarboplatinVincristine", "CV"
+    "CV", "Carboplatin & Vincristine", "VC"
 ];
 
-define Regimen_VC:
+define final CarboplatinVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_VC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Vincristine;
-    
-define final Received_CarboplatinVincristine:
-    where Regimen_VC OR ReceivedRegimenTreatments;        
+define final CarboplatinVincristineTreatments:
+    where CarboplatinTreatment AND VincristineTreatment;
+          
         
         
         

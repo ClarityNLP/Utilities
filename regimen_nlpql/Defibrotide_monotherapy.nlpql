@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "defitelio", "defibrotide"
 ];
 
-define Treatment_Defibrotide:
+define final DefibrotideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Defibrotide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Defibrotide_monotherapy", "Defibrotide monotherapy", "Defibrotidemonotherapy"
+    "Defibrotide monotherapy"
 ];
 
-define Regimen_Defibrotidemonotherapy:
+define final DefibrotidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Defibrotidemonotherapy:
 
 // Results
 
-        
-define final Received_Defibrotidemonotherapy:
-    where Treatment_Defibrotide OR Regimen_Defibrotidemonotherapy;
-            
 
 // Comments
 /***

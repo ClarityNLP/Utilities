@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "s-1", "tegafur, gimeracil, oteracil"
 ];
 
-define Treatment_Tegafurgimeraciloteracil:
+define  TegafurgimeraciloteracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "IRIS"
 ];
 
-define Regimen_IRIS:
+define final IRISRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IRIS:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Tegafurgimeraciloteracil;
-    
-define final Received_IRIS:
-    where Regimen_IRIS OR ReceivedRegimenTreatments;        
+define final IRISTreatments:
+    where IrinotecanTreatment AND TegafurgimeraciloteracilTreatment;
+          
         
         
         

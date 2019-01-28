@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mekinist", "trametinib"
 ];
 
-define Treatment_Trametinib:
+define final TrametinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Trametinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trametinib_monotherapy", "Trametinib monotherapy", "Trametinibmonotherapy"
+    "Trametinib monotherapy"
 ];
 
-define Regimen_Trametinibmonotherapy:
+define final TrametinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Trametinibmonotherapy:
 
 // Results
 
-        
-define final Received_Trametinibmonotherapy:
-    where Treatment_Trametinib OR Regimen_Trametinibmonotherapy;
-            
 
 // Comments
 /***

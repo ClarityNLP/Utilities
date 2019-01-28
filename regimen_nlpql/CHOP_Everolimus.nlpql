@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "afinitor", "everolimus"
 ];
 
-define Treatment_Everolimus:
+define  EverolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Everolimus:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP/Everolimus", "CHOP and Everolimus", "CHOP & Everolimus", "CHOPEverolimus", "CHOP_Everolimus", "CHOP / Everolimus"
+    "CHOP & Everolimus"
 ];
 
-define Regimen_CHOPEverolimus:
+define final CHOPEverolimusRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_CHOPEverolimus:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisone AND Treatment_Everolimus;
-    
-define final Received_CHOPEverolimus:
-    where Regimen_CHOPEverolimus OR ReceivedRegimenTreatments;        
+define final CHOPEverolimusTreatments:
+    where CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment AND EverolimusTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "KTd"
 ];
 
-define Regimen_KTd:
+define final KTdRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_KTd:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Thalidomide;
-    
-define final Received_KTd:
-    where Regimen_KTd OR ReceivedRegimenTreatments;        
+define final KTdTreatments:
+    where BortezomibTreatment AND ThalidomideTreatment;
+          
         
         
         

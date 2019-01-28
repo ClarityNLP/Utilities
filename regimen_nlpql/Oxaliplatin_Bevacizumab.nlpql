@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin/Bevacizumab", "Oxaliplatin and Bevacizumab", "Oxaliplatin_Bevacizumab", "Oxaliplatin & Bevacizumab", "Oxaliplatin / Bevacizumab", "OxaliplatinBevacizumab"
+    "Oxaliplatin & Bevacizumab"
 ];
 
-define Regimen_OxaliplatinBevacizumab:
+define final OxaliplatinBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_OxaliplatinBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Oxaliplatin AND Treatment_Bevacizumab;
-    
-define final Received_OxaliplatinBevacizumab:
-    where Regimen_OxaliplatinBevacizumab OR ReceivedRegimenTreatments;        
+define final OxaliplatinBevacizumabTreatments:
+    where OxaliplatinTreatment AND BevacizumabTreatment;
+          
         
         
         

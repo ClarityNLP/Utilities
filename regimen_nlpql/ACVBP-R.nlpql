@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eldisine", "vindesine"
 ];
 
-define Treatment_Vindesine:
+define  VindesineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,10 +84,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-ACVBP", "R/ACVBP", "RACVBP", "ACVBP-R", "ACVBP/R", "ACVBPR"
+    "RACVBP", "ACVBP-R", "ACVBPR", "ACVBP/R", "R-ACVBP", "R/ACVBP"
 ];
 
-define Regimen_RACVBP:
+define final ACVBPRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -97,11 +97,9 @@ define Regimen_RACVBP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Cyclophosphamide AND Treatment_Vindesine AND Treatment_Bleomycin AND Treatment_Prednisone AND Treatment_Rituximab;
-    
-define final Received_ACVBPR:
-    where Regimen_RACVBP OR ReceivedRegimenTreatments;        
+define final ACVBPRTreatments:
+    where DoxorubicinTreatment AND CyclophosphamideTreatment AND VindesineTreatment AND BleomycinTreatment AND PrednisoneTreatment AND RituximabTreatment;
+          
         
         
         

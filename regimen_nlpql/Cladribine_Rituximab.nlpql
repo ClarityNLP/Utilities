@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leustatin", "cladribine"
 ];
 
-define Treatment_Cladribine:
+define final CladribineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cladribine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine & Rituximab", "Cladribine / Rituximab", "Cladribine/Rituximab", "Cladribine and Rituximab", "Cladribine_Rituximab", "CladribineRituximab"
+    "Cladribine & Rituximab"
 ];
 
-define Regimen_CladribineRituximab:
+define final CladribineRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_CladribineRituximab:
 
 // Results
 
-        
-define final Received_CladribineRituximab:
-    where Treatment_Cladribine OR Regimen_CladribineRituximab;
-            
 
 // Comments
 /***
 
-Known regimen for: Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Hairy_cell_leukemia, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Hairy_cell_leukemia
 
 
 ***/

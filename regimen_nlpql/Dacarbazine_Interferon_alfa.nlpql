@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:interferons", ":category:interferons"
 ];
 
-define Treatment_CategoryInterferons:
+define  CategoryInterferonsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_CategoryInterferons:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine/Interferon alfa", "Dacarbazine and Interferon alfa", "DacarbazineInterferonalfa", "Dacarbazine & Interferon alfa", "Dacarbazine_Interferon_alfa", "Dacarbazine / Interferon alfa"
+    "Dacarbazine & Interferon alfa"
 ];
 
-define Regimen_DacarbazineInterferonalfa:
+define final DacarbazineInterferonalfaRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DacarbazineInterferonalfa:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dacarbazine AND Treatment_CategoryInterferons;
-    
-define final Received_DacarbazineInterferonalfa:
-    where Regimen_DacarbazineInterferonalfa OR ReceivedRegimenTreatments;        
+define final DacarbazineInterferonalfaTreatments:
+    where DacarbazineTreatment AND CategoryInterferonsTreatment;
+          
         
         
         

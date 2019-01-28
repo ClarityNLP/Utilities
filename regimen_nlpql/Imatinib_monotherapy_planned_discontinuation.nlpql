@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define final ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Imatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy, planned discontinuation", "Imatinib monotherapy- planned discontinuation", "Imatinib monotherapy& planned discontinuation", "Imatinib_monotherapy_planned_discontinuation", "Imatinib monotherapy &  planned discontinuation", "Imatinib monotherapy/ planned discontinuation", "Imatinib monotherapy/planned discontinuation", "Imatinib monotherapy and  planned discontinuation", "Imatinibmonotherapyplanneddiscontinuation"
+    "Imatinib monotherapy, planned discontinuation"
 ];
 
-define Regimen_Imatinibmonotherapyplanneddiscontinuation:
+define final ImatinibmonotherapyplanneddiscontinuationRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Imatinibmonotherapyplanneddiscontinuation:
 
 // Results
 
-        
-define final Received_Imatinibmonotherapyplanneddiscontinuation:
-    where Treatment_Imatinib OR Regimen_Imatinibmonotherapyplanneddiscontinuation;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     ":category:serotonin 5-ht3 antagonists", ":category:serotonin 5-ht3 antagonists"
 ];
 
-define Treatment_CategorySerotonin5HT3antagonists:
+define  CategorySerotonin5HT3antagonistsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cortef", "hydrocortisone"
 ];
 
-define Treatment_Hydrocortisone:
+define  HydrocortisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Hydrocortisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane & Streptozocin", "Mitotane and Streptozocin", "MitotaneStreptozocin", "Mitotane / Streptozocin", "Mitotane/Streptozocin", "Mitotane_Streptozocin"
+    "Mitotane & Streptozocin"
 ];
 
-define Regimen_MitotaneStreptozocin:
+define final MitotaneStreptozocinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MitotaneStreptozocin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_CategorySerotonin5HT3antagonists AND Treatment_Hydrocortisone;
-    
-define final Received_MitotaneStreptozocin:
-    where Regimen_MitotaneStreptozocin OR ReceivedRegimenTreatments;        
+define final MitotaneStreptozocinTreatments:
+    where CategorySerotonin5HT3antagonistsTreatment AND HydrocortisoneTreatment;
+          
         
         
         

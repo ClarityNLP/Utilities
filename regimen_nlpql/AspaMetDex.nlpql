@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "elspar", "asparaginase"
 ];
 
-define Treatment_Asparaginase:
+define  AsparaginaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "erwinaze", "asparaginase erwinia chrysanthemi"
 ];
 
-define Treatment_AsparaginaseErwiniachrysanthemi:
+define  AsparaginaseErwiniachrysanthemiTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "AspaMetDex"
 ];
 
-define Regimen_AspaMetDex:
+define final AspaMetDexRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_AspaMetDex:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Asparaginase AND Treatment_AsparaginaseErwiniachrysanthemi AND Treatment_Methotrexate AND Treatment_Dexamethasone;
-    
-define final Received_AspaMetDex:
-    where Regimen_AspaMetDex OR ReceivedRegimenTreatments;        
+define final AspaMetDexTreatments:
+    where AsparaginaseTreatment AND AsparaginaseErwiniachrysanthemiTreatment AND MethotrexateTreatment AND DexamethasoneTreatment;
+          
         
         
         

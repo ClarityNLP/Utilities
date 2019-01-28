@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "perjeta", "pertuzumab"
 ];
 
-define Treatment_Pertuzumab:
+define  PertuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Pertuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "TCHP", "TCHPTaxotere", "TCHP_Taxotere", "TCHP (Taxotere)"
+    "TCHP (Taxotere)", "TCHP"
 ];
 
-define Regimen_TCHP:
+define final TCHPTaxotereRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_TCHP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Carboplatin AND Treatment_Trastuzumab AND Treatment_Pertuzumab;
-    
-define final Received_TCHPTaxotere:
-    where Regimen_TCHP OR ReceivedRegimenTreatments;        
+define final TCHPTaxotereTreatments:
+    where DocetaxelTreatment AND CarboplatinTreatment AND TrastuzumabTreatment AND PertuzumabTreatment;
+          
         
         
         

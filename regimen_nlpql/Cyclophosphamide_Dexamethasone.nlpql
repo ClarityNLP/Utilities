@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide / Dexamethasone", "Cyclophosphamide/Dexamethasone", "Cyclophosphamide and Dexamethasone", "Cyclophosphamide_Dexamethasone", "Cyclophosphamide & Dexamethasone", "CyclophosphamideDexamethasone"
+    "Cyclophosphamide & Dexamethasone"
 ];
 
-define Regimen_CyclophosphamideDexamethasone:
+define final CyclophosphamideDexamethasoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamideDexamethasone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Dexamethasone;
-    
-define final Received_CyclophosphamideDexamethasone:
-    where Regimen_CyclophosphamideDexamethasone OR ReceivedRegimenTreatments;        
+define final CyclophosphamideDexamethasoneTreatments:
+    where CyclophosphamideTreatment AND DexamethasoneTreatment;
+          
         
         
         

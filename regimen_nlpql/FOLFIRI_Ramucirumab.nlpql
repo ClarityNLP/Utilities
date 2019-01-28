@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cyramza", "ramucirumab"
 ];
 
-define Treatment_Ramucirumab:
+define  RamucirumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Ramucirumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Ramucirumab", "FOLFIRI and Ramucirumab", "FOLFIRIRamucirumab", "FOLFIRI/Ramucirumab", "FOLFIRI_Ramucirumab", "FOLFIRI / Ramucirumab"
+    "FOLFIRI & Ramucirumab"
 ];
 
-define Regimen_FOLFIRIRamucirumab:
+define final FOLFIRIRamucirumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_FOLFIRIRamucirumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Fluorouracil AND Treatment_Irinotecan AND Treatment_Ramucirumab;
-    
-define final Received_FOLFIRIRamucirumab:
-    where Regimen_FOLFIRIRamucirumab OR ReceivedRegimenTreatments;        
+define final FOLFIRIRamucirumabTreatments:
+    where FolinicacidTreatment AND FluorouracilTreatment AND IrinotecanTreatment AND RamucirumabTreatment;
+          
         
         
         

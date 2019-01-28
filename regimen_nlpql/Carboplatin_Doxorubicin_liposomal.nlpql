@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Pegylatedliposomaldoxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin / Doxorubicin liposomal", "Carboplatin & Doxorubicin liposomal", "Carboplatin/Doxorubicin liposomal", "Carboplatin and Doxorubicin liposomal", "Carboplatin_Doxorubicin_liposomal", "CarboplatinDoxorubicinliposomal"
+    "Carboplatin & Doxorubicin liposomal"
 ];
 
-define Regimen_CarboplatinDoxorubicinliposomal:
+define final CarboplatinDoxorubicinliposomalRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinDoxorubicinliposomal:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Pegylatedliposomaldoxorubicin;
-    
-define final Received_CarboplatinDoxorubicinliposomal:
-    where Regimen_CarboplatinDoxorubicinliposomal OR ReceivedRegimenTreatments;        
+define final CarboplatinDoxorubicinliposomalTreatments:
+    where CarboplatinTreatment AND PegylatedliposomaldoxorubicinTreatment;
+          
         
         
         

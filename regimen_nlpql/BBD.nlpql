@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "BBD"
 ];
 
-define Regimen_BBD:
+define final BBDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BBD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bendamustine AND Treatment_Bortezomib AND Treatment_Dexamethasone;
-    
-define final Received_BBD:
-    where Regimen_BBD OR ReceivedRegimenTreatments;        
+define final BBDTreatments:
+    where BendamustineTreatment AND BortezomibTreatment AND DexamethasoneTreatment;
+          
         
         
         

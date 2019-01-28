@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define final BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Busulfan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfanmonotherapy", "Busulfan monotherapy", "Busulfan_monotherapy"
+    "Busulfan monotherapy"
 ];
 
-define Regimen_Busulfanmonotherapy:
+define final BusulfanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Busulfanmonotherapy:
 
 // Results
 
-        
-define final Received_Busulfanmonotherapy:
-    where Treatment_Busulfan OR Regimen_Busulfanmonotherapy;
-            
 
 // Comments
 /***

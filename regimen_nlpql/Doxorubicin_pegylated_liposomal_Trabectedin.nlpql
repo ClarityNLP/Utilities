@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "yondelis", "trabectedin"
 ];
 
-define Treatment_Trabectedin:
+define  TrabectedinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Trabectedin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_pegylated_liposomal_Trabectedin", "DoxorubicinpegylatedliposomalTrabectedin", "Doxorubicin pegylated liposomal/Trabectedin", "Doxorubicin pegylated liposomal and Trabectedin", "Doxorubicin pegylated liposomal & Trabectedin", "Doxorubicin pegylated liposomal / Trabectedin"
+    "Doxorubicin pegylated liposomal & Trabectedin"
 ];
 
-define Regimen_DoxorubicinpegylatedliposomalTrabectedin:
+define final DoxorubicinpegylatedliposomalTrabectedinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinpegylatedliposomalTrabectedin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pegylatedliposomaldoxorubicin AND Treatment_Trabectedin;
-    
-define final Received_DoxorubicinpegylatedliposomalTrabectedin:
-    where Regimen_DoxorubicinpegylatedliposomalTrabectedin OR ReceivedRegimenTreatments;        
+define final DoxorubicinpegylatedliposomalTrabectedinTreatments:
+    where PegylatedliposomaldoxorubicinTreatment AND TrabectedinTreatment;
+          
         
         
         

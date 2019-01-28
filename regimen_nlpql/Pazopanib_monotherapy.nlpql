@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "votrient", "pazopanib"
 ];
 
-define Treatment_Pazopanib:
+define final PazopanibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pazopanib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pazopanib_monotherapy", "Pazopanib monotherapy", "Pazopanibmonotherapy"
+    "Pazopanib monotherapy"
 ];
 
-define Regimen_Pazopanibmonotherapy:
+define final PazopanibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Pazopanibmonotherapy:
 
 // Results
 
-        
-define final Received_Pazopanibmonotherapy:
-    where Treatment_Pazopanib OR Regimen_Pazopanibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Gastrointestinal_stromal_tumor, Thyroid_cancer, Renal_cell_carcinoma, Ovarian_cancer
+Known regimen for: Soft_tissue_sarcoma, Thyroid_cancer, Ovarian_cancer, Renal_cell_carcinoma, Gastrointestinal_stromal_tumor
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cyramza", "ramucirumab"
 ];
 
-define Treatment_Ramucirumab:
+define final RamucirumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Ramucirumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ramucirumabmonotherapy", "Ramucirumab monotherapy", "Ramucirumab_monotherapy"
+    "Ramucirumab monotherapy"
 ];
 
-define Regimen_Ramucirumabmonotherapy:
+define final RamucirumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Ramucirumabmonotherapy:
 
 // Results
 
-        
-define final Received_Ramucirumabmonotherapy:
-    where Treatment_Ramucirumab OR Regimen_Ramucirumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
 
 
 ***/

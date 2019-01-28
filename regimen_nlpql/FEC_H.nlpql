@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "FEC and H", "FEC & H", "FEC/H", "FECH", "FEC_H", "FEC / H"
+    "FEC / H", "FEC_H", "FEC and H", "FEC & H", "FECH", "FEC/H"
 ];
 
-define Regimen_FECandH:
+define final FECHRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_FECandH:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Epirubicin AND Treatment_Cyclophosphamide AND Treatment_Trastuzumab;
-    
-define final Received_FECH:
-    where Regimen_FECandH OR ReceivedRegimenTreatments;        
+define final FECHTreatments:
+    where FluorouracilTreatment AND EpirubicinTreatment AND CyclophosphamideTreatment AND TrastuzumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA/Cytarabine/Idarubicin", "ATRACytarabineIdarubicin", "ATRA- Cytarabine- Idarubicin", "ATRA and  Cytarabine and  Idarubicin", "ATRA_Cytarabine_Idarubicin", "ATRA &  Cytarabine &  Idarubicin", "ATRA& Cytarabine& Idarubicin", "ATRA, Cytarabine, Idarubicin", "ATRA/ Cytarabine/ Idarubicin"
+    "ATRA, Cytarabine, Idarubicin"
 ];
 
-define Regimen_ATRACytarabineIdarubicin:
+define final ATRACytarabineIdarubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ATRACytarabineIdarubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alltransretinoicacid AND Treatment_Cytarabine AND Treatment_Idarubicin;
-    
-define final Received_ATRACytarabineIdarubicin:
-    where Regimen_ATRACytarabineIdarubicin OR ReceivedRegimenTreatments;        
+define final ATRACytarabineIdarubicinTreatments:
+    where AlltransretinoicacidTreatment AND CytarabineTreatment AND IdarubicinTreatment;
+          
         
         
         

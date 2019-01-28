@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tecentriq", "atezolizumab"
 ];
 
-define Treatment_Atezolizumab:
+define  AtezolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Atezolizumab & Bevacizumab", "Atezolizumab and Bevacizumab", "Atezolizumab_Bevacizumab", "Atezolizumab / Bevacizumab", "Atezolizumab/Bevacizumab", "AtezolizumabBevacizumab"
+    "Atezolizumab & Bevacizumab"
 ];
 
-define Regimen_AtezolizumabBevacizumab:
+define final AtezolizumabBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AtezolizumabBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Atezolizumab AND Treatment_Bevacizumab;
-    
-define final Received_AtezolizumabBevacizumab:
-    where Regimen_AtezolizumabBevacizumab OR ReceivedRegimenTreatments;        
+define final AtezolizumabBevacizumabTreatments:
+    where AtezolizumabTreatment AND BevacizumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define final RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rituximabmonotherapyveryextendedcourse", "Rituximab monotherapy &  very extended course", "Rituximab monotherapy- very extended course", "Rituximab_monotherapy_very_extended_course", "Rituximab monotherapy/very extended course", "Rituximab monotherapy/ very extended course", "Rituximab monotherapy and  very extended course", "Rituximab monotherapy, very extended course", "Rituximab monotherapy& very extended course"
+    "Rituximab monotherapy, very extended course"
 ];
 
-define Regimen_Rituximabmonotherapyveryextendedcourse:
+define final RituximabmonotherapyveryextendedcourseRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Rituximabmonotherapyveryextendedcourse:
 
 // Results
 
-        
-define final Received_Rituximabmonotherapyveryextendedcourse:
-    where Treatment_Rituximab OR Regimen_Rituximabmonotherapyveryextendedcourse;
-            
 
 // Comments
 /***

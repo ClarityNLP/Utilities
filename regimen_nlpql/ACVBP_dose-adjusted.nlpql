@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eldisine", "vindesine"
 ];
 
-define Treatment_Vindesine:
+define  VindesineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "ACVBP_dose-adjusted", "ACVBP/ dose-adjusted", "ACVBP", "ACVBP- dose-adjusted", "ACVBP, dose/adjusted", "ACVBP, doseadjusted", "ACVBP and  dose-adjusted", "ACVBP &  dose-adjusted", "ACVBP/dose-adjusted", "ACVBP& dose-adjusted", "ACVBP, dose-adjusted", "ACVBPdoseadjusted"
+    "ACVBP", "ACVBP, dose-adjusted"
 ];
 
-define Regimen_ACVBPdoseadjusted:
+define final ACVBPdoseadjustedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_ACVBPdoseadjusted:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Cyclophosphamide AND Treatment_Vindesine AND Treatment_Bleomycin AND Treatment_Prednisone;
-    
-define final Received_ACVBPdoseadjusted:
-    where Regimen_ACVBPdoseadjusted OR ReceivedRegimenTreatments;        
+define final ACVBPdoseadjustedTreatments:
+    where DoxorubicinTreatment AND CyclophosphamideTreatment AND VindesineTreatment AND BleomycinTreatment AND PrednisoneTreatment;
+          
         
         
         

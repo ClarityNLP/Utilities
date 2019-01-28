@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "hydrea", "hydroxyurea"
 ];
 
-define Treatment_Hydroxyurea:
+define final HydroxyureaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Hydroxyurea:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyureamonotherapy", "Hydroxyurea_monotherapy", "Hydroxyurea monotherapy"
+    "Hydroxyurea monotherapy"
 ];
 
-define Regimen_Hydroxyureamonotherapy:
+define final HydroxyureamonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Hydroxyureamonotherapy:
 
 // Results
 
-        
-define final Received_Hydroxyureamonotherapy:
-    where Treatment_Hydroxyurea OR Regimen_Hydroxyureamonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Glioblastoma, Sickle_cell_anemia, Polycythemia_vera, Hypereosinophilic_syndrome, Essential_thrombocythemia
+Known regimen for: Glioblastoma, Essential_thrombocythemia, Sickle_cell_anemia, Hypereosinophilic_syndrome, Polycythemia_vera
 
 
 ***/

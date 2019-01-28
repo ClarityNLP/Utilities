@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "BortezomibCyclophosphamide", "Bortezomib_Cyclophosphamide", "Bortezomib/Cyclophosphamide", "Bortezomib and Cyclophosphamide", "Bortezomib / Cyclophosphamide", "Bortezomib & Cyclophosphamide"
+    "Bortezomib & Cyclophosphamide"
 ];
 
-define Regimen_BortezomibCyclophosphamide:
+define final BortezomibCyclophosphamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BortezomibCyclophosphamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Cyclophosphamide;
-    
-define final Received_BortezomibCyclophosphamide:
-    where Regimen_BortezomibCyclophosphamide OR ReceivedRegimenTreatments;        
+define final BortezomibCyclophosphamideTreatments:
+    where BortezomibTreatment AND CyclophosphamideTreatment;
+          
         
         
         

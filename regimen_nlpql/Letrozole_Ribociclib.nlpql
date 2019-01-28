@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zoladex", "goserelin"
 ];
 
-define Treatment_Goserelin:
+define final GoserelinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Goserelin:
 // Regimen names
 
 termset RegimenTerms:[
-    "LetrozoleRibociclib", "Letrozole/Ribociclib", "Letrozole & Ribociclib", "Letrozole and Ribociclib", "Letrozole / Ribociclib", "Letrozole_Ribociclib"
+    "Letrozole & Ribociclib"
 ];
 
-define Regimen_LetrozoleRibociclib:
+define final LetrozoleRibociclibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_LetrozoleRibociclib:
 
 // Results
 
-        
-define final Received_LetrozoleRibociclib:
-    where Treatment_Goserelin OR Regimen_LetrozoleRibociclib;
-            
 
 // Comments
 /***

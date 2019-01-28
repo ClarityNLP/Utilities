@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "torisel", "temsirolimus"
 ];
 
-define Treatment_Temsirolimus:
+define  TemsirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "BeRT"
 ];
 
-define Regimen_BeRT:
+define final BeRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BeRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bendamustine AND Treatment_Rituximab AND Treatment_Temsirolimus;
-    
-define final Received_BeRT:
-    where Regimen_BeRT OR ReceivedRegimenTreatments;        
+define final BeRTTreatments:
+    where BendamustineTreatment AND RituximabTreatment AND TemsirolimusTreatment;
+          
         
         
         

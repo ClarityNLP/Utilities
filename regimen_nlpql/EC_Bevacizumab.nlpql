@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "EC_Bevacizumab", "EC and Bevacizumab", "EC & Bevacizumab", "EC/Bevacizumab", "EC / Bevacizumab", "ECBevacizumab"
+    "EC & Bevacizumab"
 ];
 
-define Regimen_ECBevacizumab:
+define final ECBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ECBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epirubicin AND Treatment_Cyclophosphamide AND Treatment_Bevacizumab;
-    
-define final Received_ECBevacizumab:
-    where Regimen_ECBevacizumab OR ReceivedRegimenTreatments;        
+define final ECBevacizumabTreatments:
+    where EpirubicinTreatment AND CyclophosphamideTreatment AND BevacizumabTreatment;
+          
         
         
         

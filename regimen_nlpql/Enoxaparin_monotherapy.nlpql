@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lovenox", "enoxaparin"
 ];
 
-define Treatment_Enoxaparin:
+define final EnoxaparinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Enoxaparin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Enoxaparin_monotherapy", "Enoxaparin monotherapy", "Enoxaparinmonotherapy"
+    "Enoxaparin monotherapy"
 ];
 
-define Regimen_Enoxaparinmonotherapy:
+define final EnoxaparinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Enoxaparinmonotherapy:
 
 // Results
 
-        
-define final Received_Enoxaparinmonotherapy:
-    where Treatment_Enoxaparin OR Regimen_Enoxaparinmonotherapy;
-            
 
 // Comments
 /***

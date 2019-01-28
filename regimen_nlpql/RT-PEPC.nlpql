@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "aspirin", "aspirin"
 ];
 
-define Treatment_Aspirin:
+define final AspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -32,7 +32,7 @@ termset RegimenTerms:[
     "RT/PEPC", "RT-PEPC", "RTPEPC"
 ];
 
-define Regimen_RTPEPC:
+define final RTPEPCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_RTPEPC:
 
 // Results
 
-        
-define final Received_RTPEPC:
-    where Treatment_Aspirin OR Regimen_RTPEPC;
-            
 
 // Comments
 /***

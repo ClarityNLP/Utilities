@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mesnex", "mesna"
 ];
 
-define Treatment_Mesna:
+define  MesnaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Filgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "VDCIE", "VDC/IE"
+    "VDC/IE", "VDCIE"
 ];
 
-define Regimen_VDCIE:
+define final VDCIERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_VDCIE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mesna AND Treatment_Cyclophosphamide AND Treatment_Filgrastim;
-    
-define final Received_VDCIE:
-    where Regimen_VDCIE OR ReceivedRegimenTreatments;        
+define final VDCIETreatments:
+    where MesnaTreatment AND CyclophosphamideTreatment AND FilgrastimTreatment;
+          
         
         
         

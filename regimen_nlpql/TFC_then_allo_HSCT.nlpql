@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "TFC", "TFC- then allo HSCT", "TFC/then allo HSCT", "TFC and  then allo HSCT", "TFC, / allo HSCT", "TFC/ then allo HSCT", "TFC, then allo HSCT", "TFC,/allo HSCT", "TFCthenalloHSCT", "TFC, & allo HSCT", "TFC& then allo HSCT", "TFC &  then allo HSCT", "TFC_then_allo_HSCT", "TFC,&allo HSCT", "TFC,, allo HSCT", "TFC, and allo HSCT"
+    "TFC, then allo HSCT", "TFC"
 ];
 
-define Regimen_TFC:
+define final TFCthenalloHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TFC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Thiotepa AND Treatment_Fludarabine AND Treatment_Cyclophosphamide;
-    
-define final Received_TFCthenalloHSCT:
-    where Regimen_TFC OR ReceivedRegimenTreatments;        
+define final TFCthenalloHSCTTreatments:
+    where ThiotepaTreatment AND FludarabineTreatment AND CyclophosphamideTreatment;
+          
         
         
         

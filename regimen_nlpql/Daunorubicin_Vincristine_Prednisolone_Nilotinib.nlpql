@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "tasigna", "nilotinib"
 ];
 
-define Treatment_Nilotinib:
+define  NilotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Nilotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin- Vincristine- Prednisolone- Nilotinib", "Daunorubicin& Vincristine& Prednisolone& Nilotinib", "Daunorubicin/Vincristine/Prednisolone/Nilotinib", "Daunorubicin/ Vincristine/ Prednisolone/ Nilotinib", "Daunorubicin and  Vincristine and  Prednisolone and  Nilotinib", "DaunorubicinVincristinePrednisoloneNilotinib", "Daunorubicin &  Vincristine &  Prednisolone &  Nilotinib", "Daunorubicin_Vincristine_Prednisolone_Nilotinib", "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
+    "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
 ];
 
-define Regimen_DaunorubicinVincristinePrednisoloneNilotinib:
+define final DaunorubicinVincristinePrednisoloneNilotinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_DaunorubicinVincristinePrednisoloneNilotinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Daunorubicin AND Treatment_Vincristine AND Treatment_Prednisolone AND Treatment_Nilotinib;
-    
-define final Received_DaunorubicinVincristinePrednisoloneNilotinib:
-    where Regimen_DaunorubicinVincristinePrednisoloneNilotinib OR ReceivedRegimenTreatments;        
+define final DaunorubicinVincristinePrednisoloneNilotinibTreatments:
+    where DaunorubicinTreatment AND VincristineTreatment AND PrednisoloneTreatment AND NilotinibTreatment;
+          
         
         
         

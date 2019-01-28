@@ -91,6 +91,11 @@ def generate_medications(brands, drugs):
     keys = []
 
     n = 0
+    single = len(brands) == 1
+    if single:
+        final_str = 'final'
+    else:
+        final_str = ''
     for b in brands:
         main_name = safe_name(drugs[n], no_punc=True)
         terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
@@ -99,60 +104,54 @@ termset TreatmentTerms%d:[
     %s
 ];
 
-define Treatment_%s:
+define %s %sTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms%d],
         documentset:[Docs]
 }); 
 
-        ''' % (n, terms, main_name, n)
-        keys.append('Treatment_{}'.format(main_name))
+        ''' % (n, terms, final_str, main_name, n)
+        keys.append('{}Treatment'.format(main_name))
         n += 1
         define_str += nlpql
 
     return define_str, keys
 
 
-def generate_regimens(regimens):
+def generate_regimens(main_reg_name, regimens):
 
     if len(regimens) > 0:
-        main_name = safe_name(regimens[0], no_punc=True)
+        main_name = safe_name(main_reg_name, no_punc=True)
         regimen_str = '"' + '", "'.join(regimens) + '"'
         nlpql = '''
 termset RegimenTerms:[
     %s
 ];
 
-define Regimen_%s:
+define final %sRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
    }); 
 ''' % (regimen_str, main_name)
 
-        return nlpql, 'Regimen_%s' % main_name
+        return nlpql, '%sRegimen' % main_name
     return '', ''
 
 
 def generate_results(regimen_name, med_keys, regimen_key):
     med_clause = " AND ".join(med_keys)
     if len(med_keys) == 1:
-        return '''
-        
-define final Received_%s:
-    where %s OR %s;
-            ''' % (regimen_name, med_keys[0], regimen_key)
+        return ''
     else:
         return '''
         
-define ReceivedRegimenTreatments:
+define final %sTreatments:
     where %s;
-    
-define final Received_%s:
-    where %s OR ReceivedRegimenTreatments;        
+          
         
         
-        ''' % (med_clause, regimen_name, regimen_key)
+        ''' % (regimen_name, med_clause)
 
 
 def safe_name(name, no_punc=False):
@@ -179,7 +178,7 @@ def generate_nlpql(treatments):
         nlpql_name = 'Regimen for {}'.format(regimen)
         nlpql_name = " ".join(nlpql_name.replace('"', "'").split("_"))
         med_define_str, med_keys = generate_medications(obj['brands'], obj['drugs'])
-        reg_define_str, reg_key = generate_regimens(obj['regimen_names'])
+        reg_define_str, reg_key = generate_regimens(regimen, obj['regimen_names'])
         cancers = list(set(obj['cancers']))
         cancer_str = ", ".join(cancers)
         comment_str += ("""
@@ -263,6 +262,8 @@ if __name__ == "__main__":
                                             regimen_names.append(reg_name[0])
                                 alternate_regimens = list()
                                 for r in regimen_names:
+                                    if len(r) > 10:
+                                        continue
                                     if '&' in r:
                                         alternate_regimens.append(r.replace(' & ', ' and '))
                                         alternate_regimens.append(r.replace(' & ', ' / '))
@@ -270,13 +271,6 @@ if __name__ == "__main__":
                                     if '-' in r:
                                         alternate_regimens.append(r.replace('-', ''))
                                         alternate_regimens.append(r.replace('-', '/'))
-                                    if ',' in r:
-                                        alternate_regimens.append(r.replace(',', '/'))
-                                        alternate_regimens.append(r.replace(', ', '/'))
-                                        alternate_regimens.append(r.replace(',', '-'))
-                                        alternate_regimens.append(r.replace(',', ' and '))
-                                        alternate_regimens.append(r.replace(',', ' & '))
-                                        alternate_regimens.append(r.replace(',', '&'))
                                     if ' and ' in r:
                                         alternate_regimens.append(r.replace(' and ', '&'))
                                         alternate_regimens.append(r.replace(' and ', ' & '))
@@ -288,13 +282,7 @@ if __name__ == "__main__":
                                         alternate_regimens.append(r.replace('+', ' & '))
                                         alternate_regimens.append(r.replace('+', ' / '))
                                         alternate_regimens.append(r.replace('+', '/'))
-                                    if ' then ' in r:
-                                        alternate_regimens.append(r.replace(' then ', ', '))
-                                        alternate_regimens.append(r.replace(' then ', ' and '))
-                                        alternate_regimens.append(r.replace(' then ', ' & '))
-                                        alternate_regimens.append(r.replace(' then ', '&'))
-                                        alternate_regimens.append(r.replace(' then ', ' / '))
-                                        alternate_regimens.append(r.replace(' then ', '/'))
+                                        alternate_regimens.append(r.replace('+', ''))
                                     alternate_regimens.append(safe_name(r, no_punc=True))
                                     alternate_regimens.append(safe_name(r, no_punc=False))
 

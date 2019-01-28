@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "GCD/R", "GCD-R", "GCDR"
+    "GCDR", "GCD/R", "GCD-R"
 ];
 
-define Regimen_GCDR:
+define final GCDRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_GCDR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Carboplatin AND Treatment_Dexamethasone AND Treatment_Rituximab;
-    
-define final Received_GCDR:
-    where Regimen_GCDR OR ReceivedRegimenTreatments;        
+define final GCDRTreatments:
+    where GemcitabineTreatment AND CarboplatinTreatment AND DexamethasoneTreatment AND RituximabTreatment;
+          
         
         
         

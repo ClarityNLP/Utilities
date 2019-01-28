@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rapamune", "sirolimus"
 ];
 
-define Treatment_Sirolimus:
+define  SirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "prograf", "tacrolimus"
 ];
 
-define Treatment_Tacrolimus:
+define  TacrolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sirolimus_Tacrolimus_Prednisone", "Sirolimus& Tacrolimus& Prednisone", "Sirolimus, Tacrolimus, Prednisone", "Sirolimus/Tacrolimus/Prednisone", "Sirolimus &  Tacrolimus &  Prednisone", "Sirolimus- Tacrolimus- Prednisone", "Sirolimus and  Tacrolimus and  Prednisone", "Sirolimus/ Tacrolimus/ Prednisone", "SirolimusTacrolimusPrednisone"
+    "Sirolimus, Tacrolimus, Prednisone"
 ];
 
-define Regimen_SirolimusTacrolimusPrednisone:
+define final SirolimusTacrolimusPrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_SirolimusTacrolimusPrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Sirolimus AND Treatment_Tacrolimus AND Treatment_Prednisone;
-    
-define final Received_SirolimusTacrolimusPrednisone:
-    where Regimen_SirolimusTacrolimusPrednisone OR ReceivedRegimenTreatments;        
+define final SirolimusTacrolimusPrednisoneTreatments:
+    where SirolimusTreatment AND TacrolimusTreatment AND PrednisoneTreatment;
+          
         
         
         

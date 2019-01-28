@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define final FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "TACE& then 5-FU", "TACEthen5FU", "TACE,, 5-FU", "TACE, / 5-FU", "TACE_then_5-FU", "TACE, then 5FU", "TACE, and 5-FU", "TACE,/5-FU", "TACE/ then 5-FU", "TACE, then 5/FU", "TACE- then 5-FU", "TACE/then 5-FU", "TACE,&5-FU", "TACE, & 5-FU", "TACE &  then 5-FU", "TACE and  then 5-FU", "TACE, then 5-FU"
+    "TACE, then 5-FU"
 ];
 
-define Regimen_TACEthen5FU:
+define final TACEthen5FURegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_TACEthen5FU:
 
 // Results
 
-        
-define final Received_TACEthen5FU:
-    where Treatment_Fluorouracil OR Regimen_TACEthen5FU;
-            
 
 // Comments
 /***

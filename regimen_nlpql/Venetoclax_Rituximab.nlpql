@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "venclexta", "venetoclax"
 ];
 
-define Treatment_Venetoclax:
+define  VenetoclaxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "VEN & R", "VEN/R", "Venetoclax / Rituximab", "VenetoclaxRituximab", "VEN and R", "Venetoclax & Rituximab", "Venetoclax/Rituximab", "Venetoclax and Rituximab", "Venetoclax_Rituximab", "VEN&R", "VENR", "VEN / R", "VEN+R"
+    "VEN+R", "VEN & R", "VENR", "VEN / R", "VEN&R", "VEN/R", "VEN and R", "Venetoclax & Rituximab"
 ];
 
-define Regimen_VENR:
+define final VenetoclaxRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_VENR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Venetoclax AND Treatment_Rituximab;
-    
-define final Received_VenetoclaxRituximab:
-    where Regimen_VENR OR ReceivedRegimenTreatments;        
+define final VenetoclaxRituximabTreatments:
+    where VenetoclaxTreatment AND RituximabTreatment;
+          
         
         
         

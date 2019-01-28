@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rapamune", "sirolimus"
 ];
 
-define Treatment_Sirolimus:
+define final SirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Sirolimus:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sirolimus monotherapy", "Sirolimus_monotherapy", "Sirolimusmonotherapy"
+    "Sirolimus monotherapy"
 ];
 
-define Regimen_Sirolimusmonotherapy:
+define final SirolimusmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Sirolimusmonotherapy:
 
 // Results
 
-        
-define final Received_Sirolimusmonotherapy:
-    where Treatment_Sirolimus OR Regimen_Sirolimusmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Castleman_disease, Autoimmune_cytopenias
+Known regimen for: Autoimmune_cytopenias, Castleman_disease
 
 
 ***/

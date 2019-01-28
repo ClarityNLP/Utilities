@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ovastat", "treosulfan"
 ];
 
-define Treatment_Treosulfan:
+define final TreosulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Treosulfan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Treosulfan monotherapy", "Treosulfan_monotherapy", "Treosulfanmonotherapy"
+    "Treosulfan monotherapy"
 ];
 
-define Regimen_Treosulfanmonotherapy:
+define final TreosulfanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Treosulfanmonotherapy:
 
 // Results
 
-        
-define final Received_Treosulfanmonotherapy:
-    where Treatment_Treosulfan OR Regimen_Treosulfanmonotherapy;
-            
 
 // Comments
 /***

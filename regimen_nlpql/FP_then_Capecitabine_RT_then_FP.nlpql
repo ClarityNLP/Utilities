@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "FP &  then Capecitabine & RT &  then FP", "FP, then Capecitabine / RT, then FP", "FP/ then Capecitabine & RT/ then FP", "FP, then Capecitabine & RT, then FP", "FP, then Capecitabine/RT, then FP", "FP, then Capecitabine and RT, then FP", "FP, / Capecitabine & RT, / FP", "FP_then_Capecitabine_RT_then_FP", "FP,, Capecitabine & RT,, FP", "FP, & Capecitabine & RT, & FP", "FP- then Capecitabine & RT- then FP", "FP,&Capecitabine & RT,&FP", "FP,/Capecitabine & RT,/FP", "FP, and Capecitabine & RT, and FP", "FP and  then Capecitabine & RT and  then FP", "FPthenCapecitabineRTthenFP", "FP/then Capecitabine & RT/then FP", "FP& then Capecitabine & RT& then FP"
+    "FP, then Capecitabine & RT, then FP"
 ];
 
-define Regimen_FPthenCapecitabineRTthenFP:
+define final FPthenCapecitabineRTthenFPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_FPthenCapecitabineRTthenFP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil;
-    
-define final Received_FPthenCapecitabineRTthenFP:
-    where Regimen_FPthenCapecitabineRTthenFP OR ReceivedRegimenTreatments;        
+define final FPthenCapecitabineRTthenFPTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment;
+          
         
         
         

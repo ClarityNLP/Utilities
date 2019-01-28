@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "MCP"
 ];
 
-define Regimen_MCP:
+define final MCPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MCP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mitoxantrone AND Treatment_Chlorambucil AND Treatment_Prednisone;
-    
-define final Received_MCP:
-    where Regimen_MCP OR ReceivedRegimenTreatments;        
+define final MCPTreatments:
+    where MitoxantroneTreatment AND ChlorambucilTreatment AND PrednisoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_MCP:
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Marginal_zone_lymphoma
 
 
 ***/

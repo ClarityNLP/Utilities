@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Alemtuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP-AL", "CHOPAL", "CHOP-C", "CHOP/AL", "CHOPC", "CHOP/C"
+    "CHOP/C", "CHOP-AL", "CHOP-C", "CHOPC", "CHOPAL", "CHOP/AL"
 ];
 
-define Regimen_CHOPAL:
+define final CHOPALRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_CHOPAL:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisone AND Treatment_Alemtuzumab;
-    
-define final Received_CHOPAL:
-    where Regimen_CHOPAL OR ReceivedRegimenTreatments;        
+define final CHOPALTreatments:
+    where CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment AND AlemtuzumabTreatment;
+          
         
         
         

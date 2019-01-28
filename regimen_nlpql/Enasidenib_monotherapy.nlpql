@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "idhifa", "enasidenib"
 ];
 
-define Treatment_Enasidenib:
+define final EnasidenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Enasidenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Enasidenibmonotherapy", "Enasidenib monotherapy", "Enasidenib_monotherapy"
+    "Enasidenib monotherapy"
 ];
 
-define Regimen_Enasidenibmonotherapy:
+define final EnasidenibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Enasidenibmonotherapy:
 
 // Results
 
-        
-define final Received_Enasidenibmonotherapy:
-    where Treatment_Enasidenib OR Regimen_Enasidenibmonotherapy;
-            
 
 // Comments
 /***

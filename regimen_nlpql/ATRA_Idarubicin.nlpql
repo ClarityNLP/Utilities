@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA/Idarubicin", "ATRA_Idarubicin", "ATRA and Idarubicin", "ATRA & Idarubicin", "ATRA / Idarubicin", "AIDA", "ATRAIdarubicin"
+    "AIDA", "ATRA & Idarubicin"
 ];
 
-define Regimen_ATRAIdarubicin:
+define final ATRAIdarubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ATRAIdarubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alltransretinoicacid AND Treatment_Idarubicin;
-    
-define final Received_ATRAIdarubicin:
-    where Regimen_ATRAIdarubicin OR ReceivedRegimenTreatments;        
+define final ATRAIdarubicinTreatments:
+    where AlltransretinoicacidTreatment AND IdarubicinTreatment;
+          
         
         
         

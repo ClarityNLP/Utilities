@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Doxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "EPOCH/ dose-escalated", "EPOCH/dose-escalated", "EPOCH", "EPOCH, dose/escalated", "EPOCH &  dose-escalated", "EPOCH& dose-escalated", "EPOCH, doseescalated", "EPOCH_dose-escalated", "EPOCH and  dose-escalated", "EPOCH- dose-escalated", "EPOCHdoseescalated", "EPOCH, dose-escalated"
+    "EPOCH", "EPOCH, dose-escalated"
 ];
 
-define Regimen_EPOCHdoseescalated:
+define final EPOCHdoseescalatedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_EPOCHdoseescalated:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Prednisone AND Treatment_Vincristine AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin;
-    
-define final Received_EPOCHdoseescalated:
-    where Regimen_EPOCHdoseescalated OR ReceivedRegimenTreatments;        
+define final EPOCHdoseescalatedTreatments:
+    where EtoposideTreatment AND PrednisoneTreatment AND VincristineTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment;
+          
         
         
         

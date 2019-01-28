@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gazyva", "obinutuzumab"
 ];
 
-define Treatment_Obinutuzumab:
+define  ObinutuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Chlorambucil:
 // Regimen names
 
 termset RegimenTerms:[
-    "GClb", "Chlorambucil / Obinutuzumab", "Chlorambucil and Obinutuzumab", "Chlorambucil/Obinutuzumab", "ChlorambucilObinutuzumab", "Chlorambucil & Obinutuzumab", "Chlorambucil_Obinutuzumab"
+    "GClb", "Chlorambucil & Obinutuzumab"
 ];
 
-define Regimen_GClb:
+define final ChlorambucilObinutuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GClb:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Obinutuzumab AND Treatment_Chlorambucil;
-    
-define final Received_ChlorambucilObinutuzumab:
-    where Regimen_GClb OR ReceivedRegimenTreatments;        
+define final ChlorambucilObinutuzumabTreatments:
+    where ObinutuzumabTreatment AND ChlorambucilTreatment;
+          
         
         
         

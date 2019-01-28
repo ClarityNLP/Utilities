@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bu/TT/Cy, & auto HSCT", "BuTTCy", "Bu/TT/Cy& then auto HSCT", "Bu/TT/Cy,/auto HSCT", "BuTTCy_then_auto_HSCT", "Bu/TT/Cy- then auto HSCT", "Bu/TT/Cy &  then auto HSCT", "Bu/TT/Cy/ then auto HSCT", "Bu/TT/Cy, then auto HSCT", "Bu/TT/Cy", "Bu/TT/Cy/then auto HSCT", "BuTTCythenautoHSCT", "Bu/TT/Cy, and auto HSCT", "Bu/TT/Cy,&auto HSCT", "Bu/TT/Cy, / auto HSCT", "Bu/TT/Cy,, auto HSCT", "Bu/TT/Cy and  then auto HSCT"
+    "Bu/TT/Cy", "BuTTCy", "Bu/TT/Cy, then auto HSCT"
 ];
 
-define Regimen_BuTTCyautoHSCT:
+define final BuTTCythenautoHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BuTTCyautoHSCT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Busulfan AND Treatment_Thiotepa AND Treatment_Cyclophosphamide;
-    
-define final Received_BuTTCythenautoHSCT:
-    where Regimen_BuTTCyautoHSCT OR ReceivedRegimenTreatments;        
+define final BuTTCythenautoHSCTTreatments:
+    where BusulfanTreatment AND ThiotepaTreatment AND CyclophosphamideTreatment;
+          
         
         
         

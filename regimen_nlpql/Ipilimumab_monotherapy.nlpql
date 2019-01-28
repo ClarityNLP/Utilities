@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "yervoy", "ipilimumab"
 ];
 
-define Treatment_Ipilimumab:
+define final IpilimumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Ipilimumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ipilimumab_monotherapy", "Ipilimumab monotherapy", "Ipilimumabmonotherapy"
+    "Ipilimumab monotherapy"
 ];
 
-define Regimen_Ipilimumabmonotherapy:
+define final IpilimumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Ipilimumabmonotherapy:
 
 // Results
 
-        
-define final Received_Ipilimumabmonotherapy:
-    where Treatment_Ipilimumab OR Regimen_Ipilimumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Melanoma
+Known regimen for: Small_cell_lung_cancer, Melanoma, Non-small_cell_lung_cancer
 
 
 ***/

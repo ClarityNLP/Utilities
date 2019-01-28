@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "elspar", "asparaginase"
 ];
 
-define Treatment_Asparaginase:
+define  AsparaginaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "L-Asparaginase/ Vincristine/ Prednisolone", "LVP", "L/Asparaginase, Vincristine, Prednisolone", "L-Asparaginase and  Vincristine and  Prednisolone", "L-Asparaginase_Vincristine_Prednisolone", "L-Asparaginase &  Vincristine &  Prednisolone", "L-Asparaginase- Vincristine- Prednisolone", "L-Asparaginase& Vincristine& Prednisolone", "L-Asparaginase, Vincristine, Prednisolone", "LAsparaginaseVincristinePrednisolone", "LAsparaginase, Vincristine, Prednisolone", "L-Asparaginase/Vincristine/Prednisolone"
+    "LVP", "L-Asparaginase, Vincristine, Prednisolone"
 ];
 
-define Regimen_LAsparaginaseVincristinePrednisolone:
+define final LAsparaginaseVincristinePrednisoloneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_LAsparaginaseVincristinePrednisolone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Asparaginase AND Treatment_Vincristine AND Treatment_Prednisolone;
-    
-define final Received_LAsparaginaseVincristinePrednisolone:
-    where Regimen_LAsparaginaseVincristinePrednisolone OR ReceivedRegimenTreatments;        
+define final LAsparaginaseVincristinePrednisoloneTreatments:
+    where AsparaginaseTreatment AND VincristineTreatment AND PrednisoloneTreatment;
+          
         
         
         

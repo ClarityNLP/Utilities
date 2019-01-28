@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin / Fluorouracil", "CarboplatinFluorouracil", "Carboplatin/Fluorouracil", "Carboplatin & Fluorouracil", "Carboplatin_Fluorouracil", "Carboplatin and Fluorouracil"
+    "Carboplatin & Fluorouracil"
 ];
 
-define Regimen_CarboplatinFluorouracil:
+define final CarboplatinFluorouracilRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinFluorouracil:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Fluorouracil;
-    
-define final Received_CarboplatinFluorouracil:
-    where Regimen_CarboplatinFluorouracil OR ReceivedRegimenTreatments;        
+define final CarboplatinFluorouracilTreatments:
+    where CarboplatinTreatment AND FluorouracilTreatment;
+          
         
         
         

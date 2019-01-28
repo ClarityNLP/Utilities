@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide/Etoposide", "Cyclophosphamide / Etoposide", "Cyclophosphamide_Etoposide", "Cyclophosphamide and Etoposide", "Cyclophosphamide & Etoposide", "CyclophosphamideEtoposide"
+    "Cyclophosphamide & Etoposide"
 ];
 
-define Regimen_CyclophosphamideEtoposide:
+define final CyclophosphamideEtoposideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamideEtoposide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Etoposide;
-    
-define final Received_CyclophosphamideEtoposide:
-    where Regimen_CyclophosphamideEtoposide OR ReceivedRegimenTreatments;        
+define final CyclophosphamideEtoposideTreatments:
+    where CyclophosphamideTreatment AND EtoposideTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "IfosfamideMethotrexate", "Ifosfamide / Methotrexate", "Ifosfamide/Methotrexate", "Ifosfamide & Methotrexate", "Ifosfamide_Methotrexate", "Ifosfamide and Methotrexate"
+    "Ifosfamide & Methotrexate"
 ];
 
-define Regimen_IfosfamideMethotrexate:
+define final IfosfamideMethotrexateRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IfosfamideMethotrexate:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ifosfamide AND Treatment_Methotrexate;
-    
-define final Received_IfosfamideMethotrexate:
-    where Regimen_IfosfamideMethotrexate OR ReceivedRegimenTreatments;        
+define final IfosfamideMethotrexateTreatments:
+    where IfosfamideTreatment AND MethotrexateTreatment;
+          
         
         
         

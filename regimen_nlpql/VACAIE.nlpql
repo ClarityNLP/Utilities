@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mesnex", "mesna"
 ];
 
-define Treatment_Mesna:
+define  MesnaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "VACA/IE", "VACAIE"
 ];
 
-define Regimen_VACAIE:
+define final VACAIERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_VACAIE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mesna AND Treatment_Cyclophosphamide;
-    
-define final Received_VACAIE:
-    where Regimen_VACAIE OR ReceivedRegimenTreatments;        
+define final VACAIETreatments:
+    where MesnaTreatment AND CyclophosphamideTreatment;
+          
         
         
         

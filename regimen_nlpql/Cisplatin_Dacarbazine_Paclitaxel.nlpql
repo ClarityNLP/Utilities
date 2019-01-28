@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/ Dacarbazine/ Paclitaxel", "Cisplatin- Dacarbazine- Paclitaxel", "Cisplatin, Dacarbazine, Paclitaxel", "Cisplatin &  Dacarbazine &  Paclitaxel", "Cisplatin and  Dacarbazine and  Paclitaxel", "CisplatinDacarbazinePaclitaxel", "Cisplatin/Dacarbazine/Paclitaxel", "Cisplatin& Dacarbazine& Paclitaxel", "Cisplatin_Dacarbazine_Paclitaxel"
+    "Cisplatin, Dacarbazine, Paclitaxel"
 ];
 
-define Regimen_CisplatinDacarbazinePaclitaxel:
+define final CisplatinDacarbazinePaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinDacarbazinePaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Dacarbazine AND Treatment_Paclitaxel;
-    
-define final Received_CisplatinDacarbazinePaclitaxel:
-    where Regimen_CisplatinDacarbazinePaclitaxel OR ReceivedRegimenTreatments;        
+define final CisplatinDacarbazinePaclitaxelTreatments:
+    where CisplatinTreatment AND DacarbazineTreatment AND PaclitaxelTreatment;
+          
         
         
         

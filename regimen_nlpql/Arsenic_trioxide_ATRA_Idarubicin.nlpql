@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define  ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide and  ATRA and  Idarubicin", "Arsenic trioxide/ ATRA/ Idarubicin", "Arsenic_trioxide_ATRA_Idarubicin", "Arsenic trioxide &  ATRA &  Idarubicin", "Arsenic trioxide/ATRA/Idarubicin", "ArsenictrioxideATRAIdarubicin", "Arsenic trioxide- ATRA- Idarubicin", "Arsenic trioxide, ATRA, Idarubicin", "Arsenic trioxide& ATRA& Idarubicin"
+    "Arsenic trioxide, ATRA, Idarubicin"
 ];
 
-define Regimen_ArsenictrioxideandATRAandIdarubicin:
+define final ArsenictrioxideATRAIdarubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ArsenictrioxideandATRAandIdarubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Arsenictrioxide AND Treatment_Alltransretinoicacid AND Treatment_Idarubicin;
-    
-define final Received_ArsenictrioxideATRAIdarubicin:
-    where Regimen_ArsenictrioxideandATRAandIdarubicin OR ReceivedRegimenTreatments;        
+define final ArsenictrioxideATRAIdarubicinTreatments:
+    where ArsenictrioxideTreatment AND AlltransretinoicacidTreatment AND IdarubicinTreatment;
+          
         
         
         

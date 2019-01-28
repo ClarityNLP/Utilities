@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "nipent", "pentostatin"
 ];
 
-define Treatment_Pentostatin:
+define final PentostatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pentostatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pentostatin_monotherapy", "Pentostatinmonotherapy", "Pentostatin monotherapy"
+    "Pentostatin monotherapy"
 ];
 
-define Regimen_Pentostatinmonotherapy:
+define final PentostatinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Pentostatinmonotherapy:
 
 // Results
 
-        
-define final Received_Pentostatinmonotherapy:
-    where Treatment_Pentostatin OR Regimen_Pentostatinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "hycamtin", "topotecan"
 ];
 
-define Treatment_Topotecan:
+define final TopotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Topotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Topotecanmonotherapy", "Topotecan monotherapy", "Topotecan_monotherapy"
+    "Topotecan monotherapy"
 ];
 
-define Regimen_Topotecanmonotherapy:
+define final TopotecanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Topotecanmonotherapy:
 
 // Results
 
-        
-define final Received_Topotecanmonotherapy:
-    where Treatment_Topotecan OR Regimen_Topotecanmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, CNS_lymphoma, Small_cell_lung_cancer, Endometrial_cancer, Ovarian_cancer
+Known regimen for: Cervical_cancer, Small_cell_lung_cancer, Ovarian_cancer, Endometrial_cancer, CNS_lymphoma
 
 
 ***/

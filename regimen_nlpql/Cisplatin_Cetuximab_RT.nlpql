@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Cetuximab, RT", "Cisplatin_Cetuximab_RT", "Cisplatin& Cetuximab& RT", "Cisplatin and  Cetuximab and  RT", "Cisplatin- Cetuximab- RT", "Cisplatin/ Cetuximab/ RT", "CisplatinCetuximabRT", "Cisplatin/Cetuximab/RT", "Cisplatin &  Cetuximab &  RT", "RT"
+    "Cisplatin, Cetuximab, RT", "RT"
 ];
 
-define Regimen_CisplatinCetuximabRT:
+define final CisplatinCetuximabRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinCetuximabRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Cetuximab AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CisplatinCetuximabRT:
-    where Regimen_CisplatinCetuximabRT OR ReceivedRegimenTreatments;        
+define final CisplatinCetuximabRTTreatments:
+    where CisplatinTreatment AND CetuximabTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "blincyto", "blinatumomab"
 ];
 
-define Treatment_Blinatumomab:
+define final BlinatumomabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Blinatumomab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Blinatumomab_monotherapy", "Blinatumomabmonotherapy", "Blinatumomab monotherapy"
+    "Blinatumomab monotherapy"
 ];
 
-define Regimen_Blinatumomabmonotherapy:
+define final BlinatumomabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Blinatumomabmonotherapy:
 
 // Results
 
-        
-define final Received_Blinatumomabmonotherapy:
-    where Treatment_Blinatumomab OR Regimen_Blinatumomabmonotherapy;
-            
 
 // Comments
 /***

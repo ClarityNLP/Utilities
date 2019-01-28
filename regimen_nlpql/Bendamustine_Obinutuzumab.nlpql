@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gazyva", "obinutuzumab"
 ];
 
-define Treatment_Obinutuzumab:
+define  ObinutuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bendamustine:
 // Regimen names
 
 termset RegimenTerms:[
-    "BendamustineObinutuzumab", "Bendamustine & Obinutuzumab", "Bendamustine / Obinutuzumab", "Bendamustine_Obinutuzumab", "Bendamustine and Obinutuzumab", "G/B", "G-B", "GB", "Bendamustine/Obinutuzumab"
+    "G-B", "GB", "Bendamustine & Obinutuzumab", "G/B"
 ];
 
-define Regimen_BendamustineObinutuzumab:
+define final BendamustineObinutuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BendamustineObinutuzumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Obinutuzumab AND Treatment_Bendamustine;
-    
-define final Received_BendamustineObinutuzumab:
-    where Regimen_BendamustineObinutuzumab OR ReceivedRegimenTreatments;        
+define final BendamustineObinutuzumabTreatments:
+    where ObinutuzumabTreatment AND BendamustineTreatment;
+          
         
         
         

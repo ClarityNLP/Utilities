@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vidaza", "azacitidine"
 ];
 
-define Treatment_Azacitidine:
+define  AzacitidineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Lenalidomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine_Lenalidomide", "Azacitidine & Lenalidomide", "Azacitidine/Lenalidomide", "Azacitidine / Lenalidomide", "AzacitidineLenalidomide", "Azacitidine and Lenalidomide"
+    "Azacitidine & Lenalidomide"
 ];
 
-define Regimen_AzacitidineLenalidomide:
+define final AzacitidineLenalidomideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AzacitidineLenalidomide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Azacitidine AND Treatment_Lenalidomide;
-    
-define final Received_AzacitidineLenalidomide:
-    where Regimen_AzacitidineLenalidomide OR ReceivedRegimenTreatments;        
+define final AzacitidineLenalidomideTreatments:
+    where AzacitidineTreatment AND LenalidomideTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_AzacitidineLenalidomide:
 // Comments
 /***
 
-Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia
 
 
 ***/

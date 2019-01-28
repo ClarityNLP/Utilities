@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "T and Bev", "T & Bev", "Bev&D", "T / Bev", "T+Bev", "Docetaxel & Bevacizumab", "Docetaxel/Bevacizumab", "Docetaxel and Bevacizumab", "Docetaxel_Bevacizumab", "Bev / D", "T&Bev", "Docetaxel / Bevacizumab", "Bev/D", "DocetaxelBevacizumab", "TBev", "T/Bev", "Bev and D", "BevD", "Bev+D", "Bev & D"
+    "T & Bev", "Bev/D", "Bev and D", "BevD", "T / Bev", "Bev&D", "T+Bev", "Bev & D", "T and Bev", "Bev / D", "Docetaxel & Bevacizumab", "T/Bev", "TBev", "T&Bev", "Bev+D"
 ];
 
-define Regimen_TandBev:
+define final DocetaxelBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TandBev:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Bevacizumab;
-    
-define final Received_DocetaxelBevacizumab:
-    where Regimen_TandBev OR ReceivedRegimenTreatments;        
+define final DocetaxelBevacizumabTreatments:
+    where DocetaxelTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_DocetaxelBevacizumab:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_triple_negative, Breast_cancer
+Known regimen for: Breast_cancer, Breast_cancer_triple_negative
 
 
 ***/

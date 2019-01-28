@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "odomzo", "sonidegib"
 ];
 
-define Treatment_Sonidegib:
+define final SonidegibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Sonidegib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sonidegibmonotherapy", "Sonidegib_monotherapy", "Sonidegib monotherapy"
+    "Sonidegib monotherapy"
 ];
 
-define Regimen_Sonidegibmonotherapy:
+define final SonidegibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Sonidegibmonotherapy:
 
 // Results
 
-        
-define final Received_Sonidegibmonotherapy:
-    where Treatment_Sonidegib OR Regimen_Sonidegibmonotherapy;
-            
 
 // Comments
 /***

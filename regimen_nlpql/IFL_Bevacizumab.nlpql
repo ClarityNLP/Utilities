@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "mIFL & Bevacizumab", "IFL/Bevacizumab", "mIFL and Bevacizumab", "IFL & Bevacizumab", "IFL and Bevacizumab", "mIFL/Bevacizumab", "mIFL / Bevacizumab", "IFL / Bevacizumab", "IFL_Bevacizumab", "mIFLBevacizumab", "IFLBevacizumab", "mIFL_Bevacizumab"
+    "IFL & Bevacizumab", "mIFL & Bevacizumab"
 ];
 
-define Regimen_mIFLBevacizumab:
+define final IFLBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_mIFLBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Bevacizumab;
-    
-define final Received_IFLBevacizumab:
-    where Regimen_mIFLBevacizumab OR ReceivedRegimenTreatments;        
+define final IFLBevacizumabTreatments:
+    where IrinotecanTreatment AND FluorouracilTreatment AND FolinicacidTreatment AND BevacizumabTreatment;
+          
         
         
         

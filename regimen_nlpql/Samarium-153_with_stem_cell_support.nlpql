@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leukine", "sargramostim"
 ];
 
-define Treatment_Sargramostim:
+define  SargramostimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Sargramostim:
 // Regimen names
 
 termset RegimenTerms:[
-    "Samarium153withstemcellsupport", "Samarium153 with stem cell support", "Samarium-153 with stem cell support", "Samarium/153 with stem cell support", "Samarium-153_with_stem_cell_support"
+    "Samarium-153 with stem cell support"
 ];
 
-define Regimen_Samarium153withstemcellsupport:
+define final Samarium153withstemcellsupportRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Samarium153withstemcellsupport:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Filgrastim AND Treatment_Sargramostim;
-    
-define final Received_Samarium153withstemcellsupport:
-    where Regimen_Samarium153withstemcellsupport OR ReceivedRegimenTreatments;        
+define final Samarium153withstemcellsupportTreatments:
+    where FilgrastimTreatment AND SargramostimTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "conmana", "icotinib"
 ];
 
-define Treatment_Icotinib:
+define final IcotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Icotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Icotinibmonotherapy", "Icotinib monotherapy", "Icotinib_monotherapy"
+    "Icotinib monotherapy"
 ];
 
-define Regimen_Icotinibmonotherapy:
+define final IcotinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Icotinibmonotherapy:
 
 // Results
 
-        
-define final Received_Icotinibmonotherapy:
-    where Treatment_Icotinib OR Regimen_Icotinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated
+Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, CNS_carcinoma, Non-small_cell_lung_cancer
 
 
 ***/

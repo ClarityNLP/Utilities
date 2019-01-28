@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Procarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "C-MOPP", "CMOPP", "C/MOPP", "COPP"
+    "COPP", "C-MOPP", "CMOPP", "C/MOPP"
 ];
 
-define Regimen_CMOPP:
+define final CMOPPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CMOPP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Prednisone AND Treatment_Procarbazine;
-    
-define final Received_CMOPP:
-    where Regimen_CMOPP OR ReceivedRegimenTreatments;        
+define final CMOPPTreatments:
+    where CyclophosphamideTreatment AND VincristineTreatment AND PrednisoneTreatment AND ProcarbazineTreatment;
+          
         
         
         

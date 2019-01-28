@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lonsurf", "trifluridine and tipiracil"
 ];
 
-define Treatment_Trifluridineandtipiracil:
+define final TrifluridineandtipiracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Trifluridineandtipiracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trifluridine / tipiracil monotherapy", "Trifluridine&tipiracil monotherapy", "Trifluridine & tipiracil monotherapy", "Trifluridine/tipiracil monotherapy", "Trifluridine and tipiracil monotherapy", "Trifluridine_and_tipiracil_monotherapy", "Trifluridineandtipiracilmonotherapy"
+    "Trifluridine and tipiracil monotherapy"
 ];
 
-define Regimen_Trifluridinetipiracilmonotherapy:
+define final TrifluridineandtipiracilmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Trifluridinetipiracilmonotherapy:
 
 // Results
 
-        
-define final Received_Trifluridineandtipiracilmonotherapy:
-    where Treatment_Trifluridineandtipiracil OR Regimen_Trifluridinetipiracilmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Gastric_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Gastric_cancer
 
 
 ***/

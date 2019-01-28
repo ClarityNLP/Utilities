@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "keytruda", "pembrolizumab"
 ];
 
-define Treatment_Pembrolizumab:
+define  PembrolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Pembrolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin/Paclitaxel/Pembrolizumab", "Carboplatin &  Paclitaxel &  Pembrolizumab", "Carboplatin and  Paclitaxel and  Pembrolizumab", "Carboplatin& Paclitaxel& Pembrolizumab", "CarboplatinPaclitaxelPembrolizumab", "Carboplatin_Paclitaxel_Pembrolizumab", "Carboplatin- Paclitaxel- Pembrolizumab", "Carboplatin, Paclitaxel, Pembrolizumab", "Carboplatin/ Paclitaxel/ Pembrolizumab"
+    "Carboplatin, Paclitaxel, Pembrolizumab"
 ];
 
-define Regimen_CarboplatinPaclitaxelPembrolizumab:
+define final CarboplatinPaclitaxelPembrolizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinPaclitaxelPembrolizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxel AND Treatment_Pembrolizumab;
-    
-define final Received_CarboplatinPaclitaxelPembrolizumab:
-    where Regimen_CarboplatinPaclitaxelPembrolizumab OR ReceivedRegimenTreatments;        
+define final CarboplatinPaclitaxelPembrolizumabTreatments:
+    where CarboplatinTreatment AND PaclitaxelTreatment AND PembrolizumabTreatment;
+          
         
         
         

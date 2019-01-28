@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "provenge", "sipuleucel-t"
 ];
 
-define Treatment_SipuleucelT:
+define final SipuleucelTTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_SipuleucelT:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sipuleucel-T_monotherapy", "Sipuleucel/T monotherapy", "SipuleucelTmonotherapy", "Sipuleucel-T monotherapy", "SipuleucelT monotherapy"
+    "Sipuleucel-T monotherapy"
 ];
 
-define Regimen_SipuleucelTmonotherapy:
+define final SipuleucelTmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_SipuleucelTmonotherapy:
 
 // Results
 
-        
-define final Received_SipuleucelTmonotherapy:
-    where Treatment_SipuleucelT OR Regimen_SipuleucelTmonotherapy;
-            
 
 // Comments
 /***

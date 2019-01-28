@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sutent", "sunitinib"
 ];
 
-define Treatment_Sunitinib:
+define final SunitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Sunitinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sunitinib monotherapy", "Sunitinibmonotherapy", "Sunitinib_monotherapy"
+    "Sunitinib monotherapy"
 ];
 
-define Regimen_Sunitinibmonotherapy:
+define final SunitinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Sunitinibmonotherapy:
 
 // Results
 
-        
-define final Received_Sunitinibmonotherapy:
-    where Treatment_Sunitinib OR Regimen_Sunitinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_NET, Gastrointestinal_stromal_tumor, Thyroid_cancer, Small_cell_lung_cancer, Renal_cell_carcinoma, Thymoma, Testicular_cancer
+Known regimen for: Small_cell_lung_cancer, Thyroid_cancer, Renal_cell_carcinoma, Pancreatic_NET, Testicular_cancer, Gastrointestinal_stromal_tumor, Thymoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "ABVD"
 ];
 
-define Regimen_ABVD:
+define final ABVDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ABVD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
-    
-define final Received_ABVD:
-    where Regimen_ABVD OR ReceivedRegimenTreatments;        
+define final ABVDTreatments:
+    where DoxorubicinTreatment AND BleomycinTreatment AND VinblastineTreatment AND DacarbazineTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "CPR"
 ];
 
-define Regimen_CPR:
+define final CPRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CPR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Prednisone AND Treatment_Lenalidomide;
-    
-define final Received_CPR:
-    where Regimen_CPR OR ReceivedRegimenTreatments;        
+define final CPRTreatments:
+    where CyclophosphamideTreatment AND PrednisoneTreatment AND LenalidomideTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CPR:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
 
 
 ***/

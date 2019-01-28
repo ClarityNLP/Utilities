@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alunbrig", "brigatinib"
 ];
 
-define Treatment_Brigatinib:
+define final BrigatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Brigatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brigatinib_monotherapy", "Brigatinibmonotherapy", "Brigatinib monotherapy"
+    "Brigatinib monotherapy"
 ];
 
-define Regimen_Brigatinibmonotherapy:
+define final BrigatinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Brigatinibmonotherapy:
 
 // Results
 
-        
-define final Received_Brigatinibmonotherapy:
-    where Treatment_Brigatinib OR Regimen_Brigatinibmonotherapy;
-            
 
 // Comments
 /***

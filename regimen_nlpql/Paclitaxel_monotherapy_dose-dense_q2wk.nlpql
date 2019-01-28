@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define final PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel monotherapy &  dose-dense (q2wk)", "Paclitaxel monotherapy, dose/dense (q2wk)", "Paclitaxel monotherapy/ dose-dense (q2wk)", "Paclitaxel monotherapy/dose-dense (q2wk)", "Paclitaxel monotherapy, dose-dense (q2wk)", "Paclitaxel monotherapy- dose-dense (q2wk)", "Paclitaxel monotherapy& dose-dense (q2wk)", "Paclitaxelmonotherapydosedenseq2wk", "Paclitaxel monotherapy and  dose-dense (q2wk)", "Paclitaxel_monotherapy_dose-dense_q2wk", "ddT", "Paclitaxel monotherapy, dosedense (q2wk)"
+    "Paclitaxel monotherapy, dose-dense (q2wk)", "ddT"
 ];
 
-define Regimen_Paclitaxelmonotherapydosedenseq2wk:
+define final Paclitaxelmonotherapydosedenseq2wkRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Paclitaxelmonotherapydosedenseq2wk:
 
 // Results
 
-        
-define final Received_Paclitaxelmonotherapydosedenseq2wk:
-    where Treatment_Paclitaxel OR Regimen_Paclitaxelmonotherapydosedenseq2wk;
-            
 
 // Comments
 /***

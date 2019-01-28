@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leustatin", "cladribine"
 ];
 
-define Treatment_Cladribine:
+define final CladribineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cladribine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine_monotherapy", "Cladribinemonotherapy", "Cladribine monotherapy"
+    "Cladribine monotherapy"
 ];
 
-define Regimen_Cladribinemonotherapy:
+define final CladribinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Cladribinemonotherapy:
 
 // Results
 
-        
-define final Received_Cladribinemonotherapy:
-    where Treatment_Cladribine OR Regimen_Cladribinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hairy_cell_leukemia, Chronic_lymphocytic_leukemia_(CLLSLL), Langerhans_cell_histiocytosis, Systemic_mastocytosis, Marginal_zone_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Marginal_zone_lymphoma, Systemic_mastocytosis, Mantle_cell_lymphoma, Langerhans_cell_histiocytosis, Hairy_cell_leukemia, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

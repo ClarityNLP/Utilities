@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABV (Vincristine)", "ABVVincristine", "ABV_Vincristine", "ABV"
+    "ABV", "ABV (Vincristine)"
 ];
 
-define Regimen_ABVVincristine:
+define final ABVVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ABVVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Bleomycin AND Treatment_Vincristine;
-    
-define final Received_ABVVincristine:
-    where Regimen_ABVVincristine OR ReceivedRegimenTreatments;        
+define final ABVVincristineTreatments:
+    where DoxorubicinTreatment AND BleomycinTreatment AND VincristineTreatment;
+          
         
         
         

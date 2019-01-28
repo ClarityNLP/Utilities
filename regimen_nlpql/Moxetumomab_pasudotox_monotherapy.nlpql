@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lumoxiti", "moxetumomab pasudotox"
 ];
 
-define Treatment_Moxetumomabpasudotox:
+define final MoxetumomabpasudotoxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Moxetumomabpasudotox:
 // Regimen names
 
 termset RegimenTerms:[
-    "Moxetumomab pasudotox monotherapy", "Moxetumomabpasudotoxmonotherapy", "Moxetumomab_pasudotox_monotherapy"
+    "Moxetumomab pasudotox monotherapy"
 ];
 
-define Regimen_Moxetumomabpasudotoxmonotherapy:
+define final MoxetumomabpasudotoxmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Moxetumomabpasudotoxmonotherapy:
 
 // Results
 
-        
-define final Received_Moxetumomabpasudotoxmonotherapy:
-    where Treatment_Moxetumomabpasudotox OR Regimen_Moxetumomabpasudotoxmonotherapy;
-            
 
 // Comments
 /***

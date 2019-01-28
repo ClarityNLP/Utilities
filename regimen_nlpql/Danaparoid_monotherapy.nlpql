@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "orgaran", "danaparoid"
 ];
 
-define Treatment_Danaparoid:
+define final DanaparoidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Danaparoid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Danaparoid monotherapy", "Danaparoid_monotherapy", "Danaparoidmonotherapy"
+    "Danaparoid monotherapy"
 ];
 
-define Regimen_Danaparoidmonotherapy:
+define final DanaparoidmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Danaparoidmonotherapy:
 
 // Results
 
-        
-define final Received_Danaparoidmonotherapy:
-    where Treatment_Danaparoid OR Regimen_Danaparoidmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "TAC (Taxotere)", "TACTaxotere", "TAC", "TAC_Taxotere", "ATC"
+    "TAC", "TAC (Taxotere)", "ATC"
 ];
 
-define Regimen_TACTaxotere:
+define final TACTaxotereRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TACTaxotere:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Doxorubicin AND Treatment_Cyclophosphamide;
-    
-define final Received_TACTaxotere:
-    where Regimen_TACTaxotere OR ReceivedRegimenTreatments;        
+define final TACTaxotereTreatments:
+    where DocetaxelTreatment AND DoxorubicinTreatment AND CyclophosphamideTreatment;
+          
         
         
         

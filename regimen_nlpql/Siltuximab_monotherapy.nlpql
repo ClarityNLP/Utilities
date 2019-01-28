@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sylvant", "siltuximab"
 ];
 
-define Treatment_Siltuximab:
+define final SiltuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Siltuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Siltuximab_monotherapy", "Siltuximabmonotherapy", "Siltuximab monotherapy"
+    "Siltuximab monotherapy"
 ];
 
-define Regimen_Siltuximabmonotherapy:
+define final SiltuximabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Siltuximabmonotherapy:
 
 // Results
 
-        
-define final Received_Siltuximabmonotherapy:
-    where Treatment_Siltuximab OR Regimen_Siltuximabmonotherapy;
-            
 
 // Comments
 /***

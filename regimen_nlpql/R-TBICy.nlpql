@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/TBI/Cy", "R-TBICy", "RTBICy", "R-TBI/Cy", "RTBI/Cy"
+    "R-TBI/Cy", "RTBI/Cy", "R/TBI/Cy", "RTBICy", "R-TBICy"
 ];
 
-define Regimen_RTBICy:
+define final RTBICyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RTBICy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Externalbeamradiotherapy AND Treatment_Cyclophosphamide;
-    
-define final Received_RTBICy:
-    where Regimen_RTBICy OR ReceivedRegimenTreatments;        
+define final RTBICyTreatments:
+    where RituximabTreatment AND ExternalbeamradiotherapyTreatment AND CyclophosphamideTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "TT4"
 ];
 
-define Regimen_TT4:
+define final TT4Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TT4:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dexamethasone AND Treatment_CategoryCyclosporines AND Treatment_Rituximab;
-    
-define final Received_TT4:
-    where Regimen_TT4 OR ReceivedRegimenTreatments;        
+define final TT4Treatments:
+    where DexamethasoneTreatment AND CategoryCyclosporinesTreatment AND RituximabTreatment;
+          
         
         
         

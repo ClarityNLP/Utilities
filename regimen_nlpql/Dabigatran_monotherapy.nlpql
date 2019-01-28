@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "pradaxa", "dabigatran"
 ];
 
-define Treatment_Dabigatran:
+define final DabigatranTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dabigatran:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabigatranmonotherapy", "Dabigatran_monotherapy", "Dabigatran monotherapy"
+    "Dabigatran monotherapy"
 ];
 
-define Regimen_Dabigatranmonotherapy:
+define final DabigatranmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Dabigatranmonotherapy:
 
 // Results
 
-        
-define final Received_Dabigatranmonotherapy:
-    where Treatment_Dabigatran OR Regimen_Dabigatranmonotherapy;
-            
 
 // Comments
 /***

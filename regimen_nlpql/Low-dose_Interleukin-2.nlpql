@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "proleukin", "aldesleukin"
 ];
 
-define Treatment_Aldesleukin:
+define final AldesleukinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Aldesleukin:
 // Regimen names
 
 termset RegimenTerms:[
-    "LD IL-2", "LDIL2", "LD IL/2", "LD_IL-2", "Lowdose Interleukin2", "LD IL2", "Low-dose Interleukin-2", "LowdoseInterleukin2", "Low-dose_Interleukin-2", "Low/dose Interleukin/2"
+    "LD IL2", "LDIL2", "LD IL-2", "LD_IL-2", "LD IL/2", "Low-dose Interleukin-2"
 ];
 
-define Regimen_LDIL2:
+define final LowdoseInterleukin2Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_LDIL2:
 
 // Results
 
-        
-define final Received_LowdoseInterleukin2:
-    where Treatment_Aldesleukin OR Regimen_LDIL2;
-            
 
 // Comments
 /***
 
-Known regimen for: Renal_cell_carcinoma, Melanoma
+Known regimen for: Melanoma, Renal_cell_carcinoma
 
 
 ***/

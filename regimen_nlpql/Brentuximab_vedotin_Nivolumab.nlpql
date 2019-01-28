@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define Treatment_Brentuximabvedotin:
+define  BrentuximabvedotinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "opdivo", "nivolumab"
 ];
 
-define Treatment_Nivolumab:
+define  NivolumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Nivolumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab vedotin & Nivolumab", "Brentuximab vedotin/Nivolumab", "Brentuximab vedotin / Nivolumab", "Brentuximab vedotin and Nivolumab", "BrentuximabvedotinNivolumab", "Brentuximab_vedotin_Nivolumab"
+    "Brentuximab vedotin & Nivolumab"
 ];
 
-define Regimen_BrentuximabvedotinNivolumab:
+define final BrentuximabvedotinNivolumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BrentuximabvedotinNivolumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Brentuximabvedotin AND Treatment_Nivolumab;
-    
-define final Received_BrentuximabvedotinNivolumab:
-    where Regimen_BrentuximabvedotinNivolumab OR ReceivedRegimenTreatments;        
+define final BrentuximabvedotinNivolumabTreatments:
+    where BrentuximabvedotinTreatment AND NivolumabTreatment;
+          
         
         
         

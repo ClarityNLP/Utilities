@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neoral", "cyclosporine modified"
 ];
 
-define Treatment_Cyclosporinemodified:
+define  CyclosporinemodifiedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine- Methotrexate- Prednisone", "Cyclosporine, Methotrexate, Prednisone", "Cyclosporine& Methotrexate& Prednisone", "Cyclosporine/Methotrexate/Prednisone", "Cyclosporine and  Methotrexate and  Prednisone", "Cyclosporine &  Methotrexate &  Prednisone", "Cyclosporine/ Methotrexate/ Prednisone", "CyclosporineMethotrexatePrednisone", "Cyclosporine_Methotrexate_Prednisone"
+    "Cyclosporine, Methotrexate, Prednisone"
 ];
 
-define Regimen_CyclosporineMethotrexatePrednisone:
+define final CyclosporineMethotrexatePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CyclosporineMethotrexatePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclosporinemodified AND Treatment_Methotrexate AND Treatment_Prednisone;
-    
-define final Received_CyclosporineMethotrexatePrednisone:
-    where Regimen_CyclosporineMethotrexatePrednisone OR ReceivedRegimenTreatments;        
+define final CyclosporineMethotrexatePrednisoneTreatments:
+    where CyclosporinemodifiedTreatment AND MethotrexateTreatment AND PrednisoneTreatment;
+          
         
         
         

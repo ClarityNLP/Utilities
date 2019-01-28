@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bosulif", "bosutinib"
 ];
 
-define Treatment_Bosutinib:
+define final BosutinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Bosutinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bosutinib_monotherapy", "Bosutinib monotherapy", "Bosutinibmonotherapy"
+    "Bosutinib monotherapy"
 ];
 
-define Regimen_Bosutinibmonotherapy:
+define final BosutinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Bosutinibmonotherapy:
 
 // Results
 
-        
-define final Received_Bosutinibmonotherapy:
-    where Treatment_Bosutinib OR Regimen_Bosutinibmonotherapy;
-            
 
 // Comments
 /***

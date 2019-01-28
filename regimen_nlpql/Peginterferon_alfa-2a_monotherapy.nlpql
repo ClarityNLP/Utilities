@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "pegasys", "peginterferon alfa-2a"
 ];
 
-define Treatment_Peginterferonalfa2a:
+define final Peginterferonalfa2aTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Peginterferonalfa2a:
 // Regimen names
 
 termset RegimenTerms:[
-    "Peginterferon alfa-2a monotherapy", "Peginterferon alfa/2a monotherapy", "Peginterferon alfa2a monotherapy", "Peginterferonalfa2amonotherapy", "Peginterferon_alfa-2a_monotherapy"
+    "Peginterferon alfa-2a monotherapy"
 ];
 
-define Regimen_Peginterferonalfa2amonotherapy:
+define final Peginterferonalfa2amonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Peginterferonalfa2amonotherapy:
 
 // Results
 
-        
-define final Received_Peginterferonalfa2amonotherapy:
-    where Treatment_Peginterferonalfa2a OR Regimen_Peginterferonalfa2amonotherapy;
-            
 
 // Comments
 /***

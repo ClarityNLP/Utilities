@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Doxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA/EPOCH", "DAEPOCH", "DA-EPOCH"
+    "DAEPOCH", "DA-EPOCH", "DA/EPOCH"
 ];
 
-define Regimen_DAEPOCH:
+define final DAEPOCHRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_DAEPOCH:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Prednisone AND Treatment_Vincristine AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin;
-    
-define final Received_DAEPOCH:
-    where Regimen_DAEPOCH OR ReceivedRegimenTreatments;        
+define final DAEPOCHTreatments:
+    where EtoposideTreatment AND PrednisoneTreatment AND VincristineTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment;
+          
         
         
         
@@ -98,7 +96,7 @@ define final Received_DAEPOCH:
 // Comments
 /***
 
-Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
+Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 ***/

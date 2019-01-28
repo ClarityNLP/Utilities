@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define final FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil/Fluorouracil/RT", "FluorouracilFluorouracil_RT", "Fluorouracil/Fluorouracil & RT", "Fluorouracil/Fluorouracil / RT", "FluorouracilFluorouracilRT", "Fluorouracil/Fluorouracil and RT"
+    "Fluorouracil/Fluorouracil & RT"
 ];
 
-define Regimen_FluorouracilFluorouracilRT:
+define final FluorouracilFluorouracilRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_FluorouracilFluorouracilRT:
 
 // Results
 
-        
-define final Received_FluorouracilFluorouracilRT:
-    where Treatment_Fluorouracil OR Regimen_FluorouracilFluorouracilRT;
-            
 
 // Comments
 /***

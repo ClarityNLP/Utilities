@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define final FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Filgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "DeVIC and RT", "DeVIC / RT", "DeVIC/RT", "DeVICRT", "DeVIC_RT", "DeVIC & RT"
+    "DeVICRT", "DeVIC_RT", "DeVIC / RT", "DeVIC/RT", "DeVIC & RT", "DeVIC and RT"
 ];
 
-define Regimen_DeVICandRT:
+define final DeVICRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_DeVICandRT:
 
 // Results
 
-        
-define final Received_DeVICRT:
-    where Treatment_Filgrastim OR Regimen_DeVICandRT;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zelboraf", "vemurafenib"
 ];
 
-define Treatment_Vemurafenib:
+define final VemurafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vemurafenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vemurafenib_monotherapy", "Vemurafenibmonotherapy", "Vemurafenib monotherapy"
+    "Vemurafenib monotherapy"
 ];
 
-define Regimen_Vemurafenibmonotherapy:
+define final VemurafenibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Vemurafenibmonotherapy:
 
 // Results
 
-        
-define final Received_Vemurafenibmonotherapy:
-    where Treatment_Vemurafenib OR Regimen_Vemurafenibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hairy_cell_leukemia, BRAF, Thyroid_cancer_BRAF-mutated, Erdheim-Chester_disease, Langerhans_cell_histiocytosis, Melanoma_BRAF-mutated, Multiple_myeloma_relapsedrefractory
+Known regimen for: Melanoma_BRAF-mutated, Thyroid_cancer_BRAF-mutated, Erdheim-Chester_disease, BRAF, Langerhans_cell_histiocytosis, Hairy_cell_leukemia, Multiple_myeloma_relapsedrefractory
 
 
 ***/

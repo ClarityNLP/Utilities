@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define  TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "optune", "novottf-100a system"
 ];
 
-define Treatment_NovoTTF100Asystem:
+define  NovoTTF100AsystemTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_NovoTTF100Asystem:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide_NovoTTF-100A", "TemozolomideNovoTTF100A", "Temozolomide & NovoTTF100A", "Temozolomide & NovoTTF-100A", "Temozolomide and NovoTTF-100A", "Temozolomide & NovoTTF/100A", "Temozolomide / NovoTTF-100A", "Temozolomide/NovoTTF-100A"
+    "Temozolomide & NovoTTF-100A"
 ];
 
-define Regimen_TemozolomideNovoTTF100A:
+define final TemozolomideNovoTTF100ARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TemozolomideNovoTTF100A:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Temozolomide AND Treatment_NovoTTF100Asystem;
-    
-define final Received_TemozolomideNovoTTF100A:
-    where Regimen_TemozolomideNovoTTF100A OR ReceivedRegimenTreatments;        
+define final TemozolomideNovoTTF100ATreatments:
+    where TemozolomideTreatment AND NovoTTF100AsystemTreatment;
+          
         
         
         

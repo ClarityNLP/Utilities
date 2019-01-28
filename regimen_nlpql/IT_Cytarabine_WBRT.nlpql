@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine_WBRT", "ITCytarabineWBRT", "IT Cytarabine and WBRT", "IT_Cytarabine_WBRT", "IT Cytarabine/WBRT", "CytarabineWBRT", "Cytarabine & WBRT", "Cytarabine/WBRT", "IT Cytarabine / WBRT", "Cytarabine / WBRT", "Cytarabine and WBRT", "IT Cytarabine & WBRT"
+    "IT Cytarabine & WBRT", "Cytarabine & WBRT"
 ];
 
-define Regimen_CytarabineWBRT:
+define final ITCytarabineWBRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineWBRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_ITCytarabineWBRT:
-    where Regimen_CytarabineWBRT OR ReceivedRegimenTreatments;        
+define final ITCytarabineWBRTTreatments:
+    where CytarabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

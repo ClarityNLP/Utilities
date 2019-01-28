@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tecentriq", "atezolizumab"
 ];
 
-define Treatment_Atezolizumab:
+define  AtezolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "ABCP"
 ];
 
-define Regimen_ABCP:
+define final ABCPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ABCP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Atezolizumab AND Treatment_Bevacizumab AND Treatment_Carboplatin AND Treatment_Paclitaxel;
-    
-define final Received_ABCP:
-    where Regimen_ABCP OR ReceivedRegimenTreatments;        
+define final ABCPTreatments:
+    where AtezolizumabTreatment AND BevacizumabTreatment AND CarboplatinTreatment AND PaclitaxelTreatment;
+          
         
         
         

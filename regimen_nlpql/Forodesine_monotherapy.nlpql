@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fodosine", "forodesine"
 ];
 
-define Treatment_Forodesine:
+define final ForodesineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Forodesine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Forodesine_monotherapy", "Forodesinemonotherapy", "Forodesine monotherapy"
+    "Forodesine monotherapy"
 ];
 
-define Regimen_Forodesinemonotherapy:
+define final ForodesinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Forodesinemonotherapy:
 
 // Results
 
-        
-define final Received_Forodesinemonotherapy:
-    where Treatment_Forodesine OR Regimen_Forodesinemonotherapy;
-            
 
 // Comments
 /***

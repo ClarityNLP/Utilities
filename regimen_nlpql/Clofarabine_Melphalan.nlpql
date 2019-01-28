@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "clolar", "clofarabine"
 ];
 
-define Treatment_Clofarabine:
+define  ClofarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine/Melphalan", "Clofarabine & Melphalan", "ClofarabineMelphalan", "Clofarabine_Melphalan", "Clofarabine / Melphalan", "Clofarabine and Melphalan"
+    "Clofarabine & Melphalan"
 ];
 
-define Regimen_ClofarabineMelphalan:
+define final ClofarabineMelphalanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ClofarabineMelphalan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Clofarabine AND Treatment_Melphalan;
-    
-define final Received_ClofarabineMelphalan:
-    where Regimen_ClofarabineMelphalan OR ReceivedRegimenTreatments;        
+define final ClofarabineMelphalanTreatments:
+    where ClofarabineTreatment AND MelphalanTreatment;
+          
         
         
         

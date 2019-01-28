@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leukine", "sargramostim"
 ];
 
-define Treatment_Sargramostim:
+define final SargramostimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Sargramostim:
 // Regimen names
 
 termset RegimenTerms:[
-    "IL-2_monotherapy", "IL/2 monotherapy", "IL2monotherapy", "IL2 monotherapy", "IL-2 monotherapy"
+    "IL-2 monotherapy"
 ];
 
-define Regimen_IL2monotherapy:
+define final IL2monotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_IL2monotherapy:
 
 // Results
 
-        
-define final Received_IL2monotherapy:
-    where Treatment_Sargramostim OR Regimen_IL2monotherapy;
-            
 
 // Comments
 /***

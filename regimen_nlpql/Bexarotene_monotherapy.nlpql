@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "targretin", "bexarotene"
 ];
 
-define Treatment_Bexarotene:
+define final BexaroteneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Bexarotene:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene monotherapy", "Bexarotene_monotherapy", "Bexarotenemonotherapy"
+    "Bexarotene monotherapy"
 ];
 
-define Regimen_Bexarotenemonotherapy:
+define final BexarotenemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Bexarotenemonotherapy:
 
 // Results
 
-        
-define final Received_Bexarotenemonotherapy:
-    where Treatment_Bexarotene OR Regimen_Bexarotenemonotherapy;
-            
 
 // Comments
 /***

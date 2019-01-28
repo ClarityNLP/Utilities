@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "folate", "folic acid"
 ];
 
-define Treatment_Folicacid:
+define  FolicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vitamin b12", "cyanocobalamin"
 ];
 
-define Treatment_Cyanocobalamin:
+define  CyanocobalaminTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     ":category:steroids", ":category:steroids"
 ];
 
-define Treatment_CategorySteroids:
+define  CategorySteroidsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_CategorySteroids:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin& Pemetrexed& Pembrolizumab", "Cisplatin/Pemetrexed/Pembrolizumab", "Cisplatin, Pemetrexed, Pembrolizumab", "Cisplatin/ Pemetrexed/ Pembrolizumab", "Cisplatin and  Pemetrexed and  Pembrolizumab", "Cisplatin- Pemetrexed- Pembrolizumab", "Cisplatin &  Pemetrexed &  Pembrolizumab", "Cisplatin_Pemetrexed_Pembrolizumab", "CisplatinPemetrexedPembrolizumab"
+    "Cisplatin, Pemetrexed, Pembrolizumab"
 ];
 
-define Regimen_CisplatinPemetrexedPembrolizumab:
+define final CisplatinPemetrexedPembrolizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinPemetrexedPembrolizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folicacid AND Treatment_Cyanocobalamin AND Treatment_CategorySteroids;
-    
-define final Received_CisplatinPemetrexedPembrolizumab:
-    where Regimen_CisplatinPemetrexedPembrolizumab OR ReceivedRegimenTreatments;        
+define final CisplatinPemetrexedPembrolizumabTreatments:
+    where FolicacidTreatment AND CyanocobalaminTreatment AND CategorySteroidsTreatment;
+          
         
         
         

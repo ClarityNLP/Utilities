@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and  Paclitaxel and  Bevacizumab", "Cisplatin/Paclitaxel/Bevacizumab", "CP and Bev", "CP / Bev", "Cisplatin& Paclitaxel& Bevacizumab", "Cisplatin- Paclitaxel- Bevacizumab", "Cisplatin &  Paclitaxel &  Bevacizumab", "CPBev", "CP/Bev", "Cisplatin/ Paclitaxel/ Bevacizumab", "CP & Bev", "CP&Bev", "CisplatinPaclitaxelBevacizumab", "CP+Bev", "Cisplatin, Paclitaxel, Bevacizumab", "Cisplatin_Paclitaxel_Bevacizumab"
+    "CP/Bev", "CP and Bev", "CP / Bev", "CP & Bev", "CP+Bev", "CP&Bev", "CPBev", "Cisplatin, Paclitaxel, Bevacizumab"
 ];
 
-define Regimen_CisplatinandPaclitaxelandBevacizumab:
+define final CisplatinPaclitaxelBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinandPaclitaxelandBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Paclitaxel AND Treatment_Bevacizumab;
-    
-define final Received_CisplatinPaclitaxelBevacizumab:
-    where Regimen_CisplatinandPaclitaxelandBevacizumab OR ReceivedRegimenTreatments;        
+define final CisplatinPaclitaxelBevacizumabTreatments:
+    where CisplatinTreatment AND PaclitaxelTreatment AND BevacizumabTreatment;
+          
         
         
         

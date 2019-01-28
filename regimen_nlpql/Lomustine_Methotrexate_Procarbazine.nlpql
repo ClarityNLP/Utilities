@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ceenu", "lomustine"
 ];
 
-define Treatment_Lomustine:
+define  LomustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Procarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine- Methotrexate- Procarbazine", "Lomustine& Methotrexate& Procarbazine", "Lomustine/ Methotrexate/ Procarbazine", "Lomustine/Methotrexate/Procarbazine", "Lomustine and  Methotrexate and  Procarbazine", "Lomustine &  Methotrexate &  Procarbazine", "Lomustine, Methotrexate, Procarbazine", "Lomustine_Methotrexate_Procarbazine", "MCP", "LomustineMethotrexateProcarbazine"
+    "Lomustine, Methotrexate, Procarbazine", "MCP"
 ];
 
-define Regimen_LomustineMethotrexateProcarbazine:
+define final LomustineMethotrexateProcarbazineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_LomustineMethotrexateProcarbazine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lomustine AND Treatment_Methotrexate AND Treatment_Procarbazine;
-    
-define final Received_LomustineMethotrexateProcarbazine:
-    where Regimen_LomustineMethotrexateProcarbazine OR ReceivedRegimenTreatments;        
+define final LomustineMethotrexateProcarbazineTreatments:
+    where LomustineTreatment AND MethotrexateTreatment AND ProcarbazineTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "farydak", "panobinostat"
 ];
 
-define Treatment_Panobinostat:
+define  PanobinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Panobinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "BortezomibPanobinostat", "Bortezomib / Panobinostat", "Bortezomib & Panobinostat", "Bortezomib/Panobinostat", "Bortezomib_Panobinostat", "Bortezomib and Panobinostat"
+    "Bortezomib & Panobinostat"
 ];
 
-define Regimen_BortezomibPanobinostat:
+define final BortezomibPanobinostatRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BortezomibPanobinostat:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Panobinostat;
-    
-define final Received_BortezomibPanobinostat:
-    where Regimen_BortezomibPanobinostat OR ReceivedRegimenTreatments;        
+define final BortezomibPanobinostatTreatments:
+    where BortezomibTreatment AND PanobinostatTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "FOLFOX"
 ];
 
-define Regimen_FOLFOX:
+define final FOLFOXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FOLFOX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Fluorouracil AND Treatment_Oxaliplatin;
-    
-define final Received_FOLFOX:
-    where Regimen_FOLFOX OR ReceivedRegimenTreatments;        
+define final FOLFOXTreatments:
+    where FolinicacidTreatment AND FluorouracilTreatment AND OxaliplatinTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_FOLFOX:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Rectal_cancer
+Known regimen for: Rectal_cancer, Pancreatic_cancer
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bleomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bleomycin / Cisplatin", "Bleomycin & Cisplatin", "Bleomycin and Cisplatin", "BleomycinCisplatin", "Bleomycin_Cisplatin", "Bleomycin/Cisplatin"
+    "Bleomycin & Cisplatin"
 ];
 
-define Regimen_BleomycinCisplatin:
+define final BleomycinCisplatinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BleomycinCisplatin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Bleomycin;
-    
-define final Received_BleomycinCisplatin:
-    where Regimen_BleomycinCisplatin OR ReceivedRegimenTreatments;        
+define final BleomycinCisplatinTreatments:
+    where CisplatinTreatment AND BleomycinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "portrazza", "necitumumab"
 ];
 
-define Treatment_Necitumumab:
+define final NecitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Necitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Necitumumab_monotherapy", "Necitumumab monotherapy", "Necitumumabmonotherapy"
+    "Necitumumab monotherapy"
 ];
 
-define Regimen_Necitumumabmonotherapy:
+define final NecitumumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Necitumumabmonotherapy:
 
 // Results
 
-        
-define final Received_Necitumumabmonotherapy:
-    where Treatment_Necitumumab OR Regimen_Necitumumabmonotherapy;
-            
 
 // Comments
 /***

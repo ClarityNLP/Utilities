@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin", "5-FU / Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU / Leucovorin", "5FU & Leucovorin, then 5FU, Leucovorin, RT, then 5FU & Leucovorin", "5-FU & Leucovorin- then 5-FU- Leucovorin- RT- then 5-FU & Leucovorin", "RT", "5-FU_Leucovorin_then_5-FU_Leucovorin_RT_then_5-FU_Leucovorin", "5-FU & Leucovorin& then 5-FU& Leucovorin& RT& then 5-FU & Leucovorin", "5/FU & Leucovorin, then 5/FU, Leucovorin, RT, then 5/FU & Leucovorin", "5-FU & Leucovorin,, 5-FU, Leucovorin, RT,, 5-FU & Leucovorin", "5-FU & Leucovorin,/5-FU, Leucovorin, RT,/5-FU & Leucovorin", "5-FU & Leucovorin/then 5-FU/Leucovorin/RT/then 5-FU & Leucovorin", "5-FU & Leucovorin, & 5-FU, Leucovorin, RT, & 5-FU & Leucovorin", "5-FU & Leucovorin, / 5-FU, Leucovorin, RT, / 5-FU & Leucovorin", "5-FU and Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU and Leucovorin", "5-FU & Leucovorin/ then 5-FU/ Leucovorin/ RT/ then 5-FU & Leucovorin", "5-FU/Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU/Leucovorin", "5-FU & Leucovorin,&5-FU, Leucovorin, RT,&5-FU & Leucovorin", "5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin", "5-FU & Leucovorin &  then 5-FU &  Leucovorin &  RT &  then 5-FU & Leucovorin", "5-FU & Leucovorin and  then 5-FU and  Leucovorin and  RT and  then 5-FU & Leucovorin", "5-FU & Leucovorin, and 5-FU, Leucovorin, RT, and 5-FU & Leucovorin"
+    "RT", "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin"
 ];
 
-define Regimen_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
+define final 5FULeucovorinthen5FULeucovorinRTthen5FULeucovorinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid;
-    
-define final Received_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
-    where Regimen_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin OR ReceivedRegimenTreatments;        
+define final 5FULeucovorinthen5FULeucovorinRTthen5FULeucovorinTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Esophageal_cancer, Gastric_cancer
+Known regimen for: Rectal_cancer, Gastric_cancer, Esophageal_cancer
 
 
 ***/

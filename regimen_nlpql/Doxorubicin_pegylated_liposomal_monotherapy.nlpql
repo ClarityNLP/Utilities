@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define final PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pegylatedliposomaldoxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicinpegylatedliposomalmonotherapy", "Doxorubicin_pegylated_liposomal_monotherapy", "Doxorubicin pegylated liposomal monotherapy"
+    "Doxorubicin pegylated liposomal monotherapy"
 ];
 
-define Regimen_Doxorubicinpegylatedliposomalmonotherapy:
+define final DoxorubicinpegylatedliposomalmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Doxorubicinpegylatedliposomalmonotherapy:
 
 // Results
 
-        
-define final Received_Doxorubicinpegylatedliposomalmonotherapy:
-    where Treatment_Pegylatedliposomaldoxorubicin OR Regimen_Doxorubicinpegylatedliposomalmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Vascular_sarcoma, Ovarian_cancer
+Known regimen for: Ovarian_cancer, Vascular_sarcoma
 
 
 ***/

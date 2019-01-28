@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cortef", "hydrocortisone"
 ];
 
-define Treatment_Hydrocortisone:
+define  HydrocortisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Hydrocortisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCODOXMRIVAC", "R-CODOX-M/R-IVAC", "RCODOXM/RIVAC", "R-CODOX-MR-IVAC", "R/CODOX/M/R/IVAC"
+    "R-CODOX-M/R-IVAC"
 ];
 
-define Regimen_RCODOXMRIVAC:
+define final RCODOXMRIVACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RCODOXMRIVAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Methotrexate AND Treatment_Hydrocortisone;
-    
-define final Received_RCODOXMRIVAC:
-    where Regimen_RCODOXMRIVAC OR ReceivedRegimenTreatments;        
+define final RCODOXMRIVACTreatments:
+    where CytarabineTreatment AND MethotrexateTreatment AND HydrocortisoneTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "fusilev", "levoleucovorin"
 ];
 
-define Treatment_Levoleucovorin:
+define  LevoleucovorinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "mFOLFOX6"
 ];
 
-define Regimen_mFOLFOX6:
+define final mFOLFOX6Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_mFOLFOX6:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Levoleucovorin AND Treatment_Oxaliplatin;
-    
-define final Received_mFOLFOX6:
-    where Regimen_mFOLFOX6 OR ReceivedRegimenTreatments;        
+define final mFOLFOX6Treatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND LevoleucovorinTreatment AND OxaliplatinTreatment;
+          
         
         
         

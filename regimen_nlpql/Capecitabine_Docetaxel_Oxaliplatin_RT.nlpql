@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine_Docetaxel_Oxaliplatin_RT", "Capecitabine/Docetaxel/Oxaliplatin/RT", "Capecitabine/ Docetaxel/ Oxaliplatin/ RT", "Capecitabine and  Docetaxel and  Oxaliplatin and  RT", "Capecitabine- Docetaxel- Oxaliplatin- RT", "Capecitabine, Docetaxel, Oxaliplatin, RT", "CapecitabineDocetaxelOxaliplatinRT", "Capecitabine &  Docetaxel &  Oxaliplatin &  RT", "Capecitabine& Docetaxel& Oxaliplatin& RT", "RT"
+    "Capecitabine, Docetaxel, Oxaliplatin, RT", "RT"
 ];
 
-define Regimen_CapecitabineDocetaxelOxaliplatinRT:
+define final CapecitabineDocetaxelOxaliplatinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CapecitabineDocetaxelOxaliplatinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Docetaxel AND Treatment_Oxaliplatin AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineDocetaxelOxaliplatinRT:
-    where Regimen_CapecitabineDocetaxelOxaliplatinRT OR ReceivedRegimenTreatments;        
+define final CapecitabineDocetaxelOxaliplatinRTTreatments:
+    where CapecitabineTreatment AND DocetaxelTreatment AND OxaliplatinTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

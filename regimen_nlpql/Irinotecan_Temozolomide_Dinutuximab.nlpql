@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leukine", "sargramostim"
 ];
 
-define Treatment_Sargramostim:
+define final SargramostimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Sargramostim:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan &  Temozolomide &  Dinutuximab", "Irinotecan/ Temozolomide/ Dinutuximab", "Irinotecan- Temozolomide- Dinutuximab", "Irinotecan, Temozolomide, Dinutuximab", "Irinotecan/Temozolomide/Dinutuximab", "Irinotecan_Temozolomide_Dinutuximab", "Irinotecan and  Temozolomide and  Dinutuximab", "IrinotecanTemozolomideDinutuximab", "Irinotecan& Temozolomide& Dinutuximab"
+    "Irinotecan, Temozolomide, Dinutuximab"
 ];
 
-define Regimen_IrinotecanTemozolomideDinutuximab:
+define final IrinotecanTemozolomideDinutuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_IrinotecanTemozolomideDinutuximab:
 
 // Results
 
-        
-define final Received_IrinotecanTemozolomideDinutuximab:
-    where Treatment_Sargramostim OR Regimen_IrinotecanTemozolomideDinutuximab;
-            
 
 // Comments
 /***

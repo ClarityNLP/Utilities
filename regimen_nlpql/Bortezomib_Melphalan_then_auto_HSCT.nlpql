@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib_Melphalan_then_auto_HSCT", "Bortezomib & Melphalan, then auto HSCT", "Bortezomib & Melphalan, & auto HSCT", "BortezomibMelphalanthenautoHSCT", "Bortezomib and Melphalan, then auto HSCT", "Bortezomib & Melphalan& then auto HSCT", "Bortezomib & Melphalan, / auto HSCT", "Bortezomib/Melphalan, then auto HSCT", "Bortezomib & Melphalan &  then auto HSCT", "Bortezomib & Melphalan and  then auto HSCT", "Bortezomib & Melphalan, and auto HSCT", "Bortezomib & Melphalan/then auto HSCT", "Bortezomib & Melphalan,&auto HSCT", "Bortezomib & Melphalan- then auto HSCT", "Bortezomib & Melphalan,/auto HSCT", "Bortezomib & Melphalan/ then auto HSCT", "Bortezomib / Melphalan, then auto HSCT", "Bortezomib & Melphalan,, auto HSCT"
+    "Bortezomib & Melphalan, then auto HSCT"
 ];
 
-define Regimen_BortezomibMelphalanthenautoHSCT:
+define final BortezomibMelphalanthenautoHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BortezomibMelphalanthenautoHSCT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Melphalan;
-    
-define final Received_BortezomibMelphalanthenautoHSCT:
-    where Regimen_BortezomibMelphalanthenautoHSCT OR ReceivedRegimenTreatments;        
+define final BortezomibMelphalanthenautoHSCTTreatments:
+    where BortezomibTreatment AND MelphalanTreatment;
+          
         
         
         

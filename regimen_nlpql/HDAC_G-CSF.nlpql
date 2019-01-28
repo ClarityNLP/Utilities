@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Filgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDAC / G-CSF", "HDAC & G/CSF", "HDAC/G-CSF", "HDAC_G-CSF", "HDAC & G-CSF", "HDAC and G-CSF", "HDAC & GCSF", "HDACGCSF"
+    "HDAC & G-CSF"
 ];
 
-define Regimen_HDACGCSF:
+define final HDACGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_HDACGCSF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Filgrastim;
-    
-define final Received_HDACGCSF:
-    where Regimen_HDACGCSF OR ReceivedRegimenTreatments;        
+define final HDACGCSFTreatments:
+    where CytarabineTreatment AND FilgrastimTreatment;
+          
         
         
         

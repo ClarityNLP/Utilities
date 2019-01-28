@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "TCF", "DCF"
+    "DCF", "TCF"
 ];
 
-define Regimen_TCF:
+define final DCFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TCF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Cisplatin AND Treatment_Fluorouracil;
-    
-define final Received_DCF:
-    where Regimen_TCF OR ReceivedRegimenTreatments;        
+define final DCFTreatments:
+    where DocetaxelTreatment AND CisplatinTreatment AND FluorouracilTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_DCF:
 // Comments
 /***
 
-Known regimen for: SCC_of_unknown_primary, Head_and_neck_cancer, Nasopharyngeal_carcinoma, Penile_cancer, Esophageal_cancer
+Known regimen for: Nasopharyngeal_carcinoma, Penile_cancer, SCC_of_unknown_primary, Esophageal_cancer, Head_and_neck_cancer
 
 
 ***/

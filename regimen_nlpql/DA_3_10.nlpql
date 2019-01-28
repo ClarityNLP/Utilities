@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Daunorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA 3 & 10", "DA 3 + 10", "DA 3  and  10", "DA 3 / 10", "DA 3  /  10", "DA310", "DA_3_10", "DA 3  &  10"
+    "DA 3 + 10", "DA 3  &  10", "DA310", "DA 3 / 10", "DA 3 & 10", "DA_3_10", "DA 3  /  10", "DA 3  10", "DA 3  and  10"
 ];
 
-define Regimen_DA310:
+define final DA310Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DA310:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin;
-    
-define final Received_DA310:
-    where Regimen_DA310 OR ReceivedRegimenTreatments;        
+define final DA310Treatments:
+    where CytarabineTreatment AND DaunorubicinTreatment;
+          
         
         
         

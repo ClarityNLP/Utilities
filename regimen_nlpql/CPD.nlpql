@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kyprolis", "carfilzomib"
 ];
 
-define Treatment_Carfilzomib:
+define  CarfilzomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "pomalyst", "pomalidomide"
 ];
 
-define Treatment_Pomalidomide:
+define  PomalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "KPD", "CPD"
+    "CPD", "KPD"
 ];
 
-define Regimen_KPD:
+define final CPDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_KPD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carfilzomib AND Treatment_Pomalidomide AND Treatment_Dexamethasone;
-    
-define final Received_CPD:
-    where Regimen_KPD OR ReceivedRegimenTreatments;        
+define final CPDTreatments:
+    where CarfilzomibTreatment AND PomalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         

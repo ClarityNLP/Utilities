@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "daunoxome", "daunorubicin liposomal"
 ];
 
-define Treatment_Daunorubicinliposomal:
+define final DaunorubicinliposomalTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Daunorubicinliposomal:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin_liposomal_monotherapy", "Daunorubicin liposomal monotherapy", "Daunorubicinliposomalmonotherapy"
+    "Daunorubicin liposomal monotherapy"
 ];
 
-define Regimen_Daunorubicinliposomalmonotherapy:
+define final DaunorubicinliposomalmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Daunorubicinliposomalmonotherapy:
 
 // Results
 
-        
-define final Received_Daunorubicinliposomalmonotherapy:
-    where Treatment_Daunorubicinliposomal OR Regimen_Daunorubicinliposomalmonotherapy;
-            
 
 // Comments
 /***

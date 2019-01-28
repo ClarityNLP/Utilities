@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vyxeos", "cytarabine and daunorubicin liposomal"
 ];
 
-define Treatment_Cytarabineanddaunorubicinliposomal:
+define final CytarabineanddaunorubicinliposomalTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cytarabineanddaunorubicinliposomal:
 // Regimen names
 
 termset RegimenTerms:[
-    "CPX351", "CPX-351 monotherapy", "CPX351monotherapy", "CPX-351", "CPX-351_monotherapy", "CPX/351", "CPX/351 monotherapy", "CPX351 monotherapy"
+    "CPX/351", "CPX-351 monotherapy", "CPX351", "CPX-351"
 ];
 
-define Regimen_CPX351:
+define final CPX351monotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_CPX351:
 
 // Results
 
-        
-define final Received_CPX351monotherapy:
-    where Treatment_Cytarabineanddaunorubicinliposomal OR Regimen_CPX351;
-            
 
 // Comments
 /***

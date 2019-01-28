@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil & Folinic acid", "Fluorouracil_Folinic_acid", "Fluorouracil and Folinic acid", "Fluorouracil / Folinic acid", "FluorouracilFolinicacid", "Fluorouracil/Folinic acid"
+    "Fluorouracil & Folinic acid"
 ];
 
-define Regimen_FluorouracilFolinicacid:
+define final FluorouracilFolinicacidRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_FluorouracilFolinicacid:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid;
-    
-define final Received_FluorouracilFolinicacid:
-    where Regimen_FluorouracilFolinicacid OR ReceivedRegimenTreatments;        
+define final FluorouracilFolinicacidTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_FluorouracilFolinicacid:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Cervical_cancer, Rectal_cancer, Hepatocellular_carcinoma, Cholangiocarcinoma, Esophageal_cancer, Colon_cancer
+Known regimen for: Cervical_cancer, Pancreatic_cancer, Cholangiocarcinoma, Rectal_cancer, Esophageal_cancer, Colon_cancer, Hepatocellular_carcinoma
 
 
 ***/

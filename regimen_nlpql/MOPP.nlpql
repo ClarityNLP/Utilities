@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mustargen", "mechlorethamine"
 ];
 
-define Treatment_Mechlorethamine:
+define  MechlorethamineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "MOPP"
 ];
 
-define Regimen_MOPP:
+define final MOPPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MOPP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mechlorethamine AND Treatment_Vincristine AND Treatment_Procarbazine AND Treatment_Prednisone;
-    
-define final Received_MOPP:
-    where Regimen_MOPP OR ReceivedRegimenTreatments;        
+define final MOPPTreatments:
+    where MechlorethamineTreatment AND VincristineTreatment AND ProcarbazineTreatment AND PrednisoneTreatment;
+          
         
         
         

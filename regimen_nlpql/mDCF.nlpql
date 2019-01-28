@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "mDCF"
 ];
 
-define Regimen_mDCF:
+define final mDCFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_mDCF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Cisplatin AND Treatment_Fluorouracil;
-    
-define final Received_mDCF:
-    where Regimen_mDCF OR ReceivedRegimenTreatments;        
+define final mDCFTreatments:
+    where DocetaxelTreatment AND CisplatinTreatment AND FluorouracilTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_mDCF:
 // Comments
 /***
 
-Known regimen for: Anal_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Anal_cancer
 
 
 ***/

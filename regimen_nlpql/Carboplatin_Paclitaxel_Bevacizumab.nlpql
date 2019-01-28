@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin/ Paclitaxel/ Bevacizumab", "Carboplatin &  Paclitaxel &  Bevacizumab", "Carboplatin, Paclitaxel, Bevacizumab", "PacCBev", "B & CP", "B+CP", "Carboplatin- Paclitaxel- Bevacizumab", "B and CP", "CarboplatinPaclitaxelBevacizumab", "B / CP", "Carboplatin/Paclitaxel/Bevacizumab", "Carboplatin& Paclitaxel& Bevacizumab", "Carboplatin_Paclitaxel_Bevacizumab", "BCP", "B&CP", "B/CP", "Carboplatin and  Paclitaxel and  Bevacizumab"
+    "BCP", "B and CP", "B/CP", "B & CP", "B / CP", "Carboplatin, Paclitaxel, Bevacizumab", "B&CP", "PacCBev", "B+CP"
 ];
 
-define Regimen_CarboplatinPaclitaxelBevacizumab:
+define final CarboplatinPaclitaxelBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinPaclitaxelBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxel AND Treatment_Bevacizumab;
-    
-define final Received_CarboplatinPaclitaxelBevacizumab:
-    where Regimen_CarboplatinPaclitaxelBevacizumab OR ReceivedRegimenTreatments;        
+define final CarboplatinPaclitaxelBevacizumabTreatments:
+    where CarboplatinTreatment AND PaclitaxelTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CarboplatinPaclitaxelBevacizumab:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer
+Known regimen for: Ovarian_cancer, Non-small_cell_lung_cancer
 
 
 ***/

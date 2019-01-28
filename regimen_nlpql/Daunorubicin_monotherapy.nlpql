@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define final DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Daunorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin monotherapy", "Daunorubicinmonotherapy", "Daunorubicin_monotherapy"
+    "Daunorubicin monotherapy"
 ];
 
-define Regimen_Daunorubicinmonotherapy:
+define final DaunorubicinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Daunorubicinmonotherapy:
 
 // Results
 
-        
-define final Received_Daunorubicinmonotherapy:
-    where Treatment_Daunorubicin OR Regimen_Daunorubicinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "iclusig", "ponatinib"
 ];
 
-define Treatment_Ponatinib:
+define final PonatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Ponatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ponatinibmonotherapy", "Ponatinib_monotherapy", "Ponatinib monotherapy"
+    "Ponatinib monotherapy"
 ];
 
-define Regimen_Ponatinibmonotherapy:
+define final PonatinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Ponatinibmonotherapy:
 
 // Results
 
-        
-define final Received_Ponatinibmonotherapy:
-    where Treatment_Ponatinib OR Regimen_Ponatinibmonotherapy;
-            
 
 // Comments
 /***

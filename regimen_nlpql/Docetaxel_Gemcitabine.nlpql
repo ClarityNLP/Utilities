@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel/Gemcitabine", "Docetaxel_Gemcitabine", "Docetaxel & Gemcitabine", "Docetaxel / Gemcitabine", "DocetaxelGemcitabine", "Docetaxel and Gemcitabine"
+    "Docetaxel & Gemcitabine"
 ];
 
-define Regimen_DocetaxelGemcitabine:
+define final DocetaxelGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DocetaxelGemcitabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Gemcitabine;
-    
-define final Received_DocetaxelGemcitabine:
-    where Regimen_DocetaxelGemcitabine OR ReceivedRegimenTreatments;        
+define final DocetaxelGemcitabineTreatments:
+    where DocetaxelTreatment AND GemcitabineTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_DocetaxelGemcitabine:
 // Comments
 /***
 
-Known regimen for: Adenocarcinoma_of_unknown_primary, Ewings_sarcoma, Osteosarcoma, Soft_tissue_sarcoma
+Known regimen for: Osteosarcoma, Adenocarcinoma_of_unknown_primary, Ewings_sarcoma, Soft_tissue_sarcoma
 
 
 ***/

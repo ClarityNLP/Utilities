@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define  CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -84,10 +84,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-DexaBEAM", "R/DexaBEAM", "RDexaBEAM"
+    "RDexaBEAM", "R/DexaBEAM", "R-DexaBEAM"
 ];
 
-define Regimen_RDexaBEAM:
+define final RDexaBEAMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -97,11 +97,9 @@ define Regimen_RDexaBEAM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Dexamethasone AND Treatment_Carmustine AND Treatment_Etoposide AND Treatment_Cytarabine AND Treatment_Melphalan;
-    
-define final Received_RDexaBEAM:
-    where Regimen_RDexaBEAM OR ReceivedRegimenTreatments;        
+define final RDexaBEAMTreatments:
+    where RituximabTreatment AND DexamethasoneTreatment AND CarmustineTreatment AND EtoposideTreatment AND CytarabineTreatment AND MelphalanTreatment;
+          
         
         
         

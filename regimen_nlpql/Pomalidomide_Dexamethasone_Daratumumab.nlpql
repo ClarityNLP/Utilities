@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "pomalyst", "pomalidomide"
 ];
 
-define Treatment_Pomalidomide:
+define  PomalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "darzalex", "daratumumab"
 ];
 
-define Treatment_Daratumumab:
+define  DaratumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Daratumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "PomalidomideDexamethasoneDaratumumab", "Pomalidomide_Dexamethasone_Daratumumab", "Pomalidomide- Dexamethasone- Daratumumab", "Pomalidomide &  Dexamethasone &  Daratumumab", "Pomalidomide/Dexamethasone/Daratumumab", "Pomalidomide, Dexamethasone, Daratumumab", "Pomalidomide and  Dexamethasone and  Daratumumab", "Pomalidomide& Dexamethasone& Daratumumab", "Pomalidomide/ Dexamethasone/ Daratumumab"
+    "Pomalidomide, Dexamethasone, Daratumumab"
 ];
 
-define Regimen_PomalidomideDexamethasoneDaratumumab:
+define final PomalidomideDexamethasoneDaratumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PomalidomideDexamethasoneDaratumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pomalidomide AND Treatment_Dexamethasone AND Treatment_Daratumumab;
-    
-define final Received_PomalidomideDexamethasoneDaratumumab:
-    where Regimen_PomalidomideDexamethasoneDaratumumab OR ReceivedRegimenTreatments;        
+define final PomalidomideDexamethasoneDaratumumabTreatments:
+    where PomalidomideTreatment AND DexamethasoneTreatment AND DaratumumabTreatment;
+          
         
         
         

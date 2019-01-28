@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alimta", "pemetrexed"
 ];
 
-define Treatment_Pemetrexed:
+define  PemetrexedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Pemetrexed:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinPemetrexed", "Cisplatin_Pemetrexed", "Cisplatin and Pemetrexed", "Cisplatin / Pemetrexed", "Cisplatin/Pemetrexed", "Cisplatin & Pemetrexed"
+    "Cisplatin & Pemetrexed"
 ];
 
-define Regimen_CisplatinPemetrexed:
+define final CisplatinPemetrexedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinPemetrexed:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Pemetrexed;
-    
-define final Received_CisplatinPemetrexed:
-    where Regimen_CisplatinPemetrexed OR ReceivedRegimenTreatments;        
+define final CisplatinPemetrexedTreatments:
+    where CisplatinTreatment AND PemetrexedTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CisplatinPemetrexed:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Mesothelioma
+Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
 
 
 ***/

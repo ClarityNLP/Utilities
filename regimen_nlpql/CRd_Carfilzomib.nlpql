@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kyprolis", "carfilzomib"
 ];
 
-define Treatment_Carfilzomib:
+define  CarfilzomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "CRd (Carfilzomib)", "KRd", "CRd_Carfilzomib", "CRdCarfilzomib", "CRd"
+    "CRd (Carfilzomib)", "KRd", "CRd"
 ];
 
-define Regimen_CRdCarfilzomib:
+define final CRdCarfilzomibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CRdCarfilzomib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carfilzomib AND Treatment_Lenalidomide AND Treatment_Dexamethasone;
-    
-define final Received_CRdCarfilzomib:
-    where Regimen_CRdCarfilzomib OR ReceivedRegimenTreatments;        
+define final CRdCarfilzomibTreatments:
+    where CarfilzomibTreatment AND LenalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         

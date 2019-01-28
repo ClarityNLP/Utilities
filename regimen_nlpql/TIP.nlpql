@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "TIP"
 ];
 
-define Regimen_TIP:
+define final TIPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TIP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Ifosfamide AND Treatment_Cisplatin;
-    
-define final Received_TIP:
-    where Regimen_TIP OR ReceivedRegimenTreatments;        
+define final TIPTreatments:
+    where PaclitaxelTreatment AND IfosfamideTreatment AND CisplatinTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_TIP:
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Penile_cancer
+Known regimen for: Penile_cancer, Testicular_cancer
 
 
 ***/

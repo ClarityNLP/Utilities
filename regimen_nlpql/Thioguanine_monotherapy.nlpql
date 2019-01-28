@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tabloid", "thioguanine"
 ];
 
-define Treatment_Thioguanine:
+define final ThioguanineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Thioguanine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thioguanine_monotherapy", "Thioguanine monotherapy", "Thioguaninemonotherapy"
+    "Thioguanine monotherapy"
 ];
 
-define Regimen_Thioguaninemonotherapy:
+define final ThioguaninemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Thioguaninemonotherapy:
 
 // Results
 
-        
-define final Received_Thioguaninemonotherapy:
-    where Treatment_Thioguanine OR Regimen_Thioguaninemonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Oxaliplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELOX", "CapeOx", "CapeOX", "CAPOX"
+    "CAPOX", "CapeOX", "CapeOx", "XELOX"
 ];
 
-define Regimen_XELOX:
+define final CapeOxRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_XELOX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Oxaliplatin;
-    
-define final Received_CapeOx:
-    where Regimen_XELOX OR ReceivedRegimenTreatments;        
+define final CapeOxTreatments:
+    where CapecitabineTreatment AND OxaliplatinTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CapeOx:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Rectal_cancer, Hepatocellular_carcinoma, Gastric_cancer, Esophageal_cancer, Colon_cancer
+Known regimen for: Pancreatic_cancer, Rectal_cancer, Gastric_cancer, Esophageal_cancer, Colon_cancer, Hepatocellular_carcinoma
 
 
 ***/

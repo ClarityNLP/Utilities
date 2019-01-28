@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin& Docetaxel& RT", "Cisplatin, Docetaxel, RT", "Cisplatin- Docetaxel- RT", "CisplatinDocetaxelRT", "Cisplatin &  Docetaxel &  RT", "Cisplatin_Docetaxel_RT", "Cisplatin/Docetaxel/RT", "Cisplatin/ Docetaxel/ RT", "Cisplatin and  Docetaxel and  RT", "RT"
+    "Cisplatin, Docetaxel, RT", "RT"
 ];
 
-define Regimen_CisplatinDocetaxelRT:
+define final CisplatinDocetaxelRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinDocetaxelRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Docetaxel AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CisplatinDocetaxelRT:
-    where Regimen_CisplatinDocetaxelRT OR ReceivedRegimenTreatments;        
+define final CisplatinDocetaxelRTTreatments:
+    where CisplatinTreatment AND DocetaxelTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CisplatinDocetaxelRT:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Non-small_cell_lung_cancer
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vumon", "teniposide"
 ];
 
-define Treatment_Teniposide:
+define final TeniposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Teniposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Teniposidemonotherapy", "Teniposide_monotherapy", "Teniposide monotherapy"
+    "Teniposide monotherapy"
 ];
 
-define Regimen_Teniposidemonotherapy:
+define final TeniposidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Teniposidemonotherapy:
 
 // Results
 
-        
-define final Received_Teniposidemonotherapy:
-    where Treatment_Teniposide OR Regimen_Teniposidemonotherapy;
-            
 
 // Comments
 /***

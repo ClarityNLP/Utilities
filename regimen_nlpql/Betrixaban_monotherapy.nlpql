@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bevyxxa", "betrixaban"
 ];
 
-define Treatment_Betrixaban:
+define final BetrixabanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Betrixaban:
 // Regimen names
 
 termset RegimenTerms:[
-    "Betrixabanmonotherapy", "Betrixaban_monotherapy", "Betrixaban monotherapy"
+    "Betrixaban monotherapy"
 ];
 
-define Regimen_Betrixabanmonotherapy:
+define final BetrixabanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Betrixabanmonotherapy:
 
 // Results
 
-        
-define final Received_Betrixabanmonotherapy:
-    where Treatment_Betrixaban OR Regimen_Betrixabanmonotherapy;
-            
 
 // Comments
 /***

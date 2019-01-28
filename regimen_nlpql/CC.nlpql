@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leustatin", "cladribine"
 ];
 
-define Treatment_Cladribine:
+define  CladribineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "CC"
 ];
 
-define Regimen_CC:
+define final CCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cladribine AND Treatment_Cyclophosphamide;
-    
-define final Received_CC:
-    where Regimen_CC OR ReceivedRegimenTreatments;        
+define final CCTreatments:
+    where CladribineTreatment AND CyclophosphamideTreatment;
+          
         
         
         

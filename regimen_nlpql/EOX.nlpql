@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Capecitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "EOC", "EOX"
+    "EOX", "EOC"
 ];
 
-define Regimen_EOC:
+define final EOXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_EOC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epirubicin AND Treatment_Oxaliplatin AND Treatment_Capecitabine;
-    
-define final Received_EOX:
-    where Regimen_EOC OR ReceivedRegimenTreatments;        
+define final EOXTreatments:
+    where EpirubicinTreatment AND OxaliplatinTreatment AND CapecitabineTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_EOX:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define Treatment_Gemtuzumabozogamicin:
+define  GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Gemtuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "7&3d & GO", "7+3d & GO", "7/3d & GO", "73dGO", "7+3d / GO", "73d_GO", "7 / 3d & GO", "7+3d/GO", "7 & 3d & GO", "7 and 3d & GO", "7+3d and GO"
+    "73dGO", "7 / 3d & GO", "7&3d & GO", "7 and 3d & GO", "7+3d / GO", "7/3d & GO", "73d_GO", "7+3d & GO", "7 & 3d & GO", "73d & GO", "7+3d and GO", "7+3d/GO"
 ];
 
-define Regimen_73dGO:
+define final 73dGORegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_73dGO:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Gemtuzumabozogamicin;
-    
-define final Received_73dGO:
-    where Regimen_73dGO OR ReceivedRegimenTreatments;        
+define final 73dGOTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND GemtuzumabozogamicinTreatment;
+          
         
         
         

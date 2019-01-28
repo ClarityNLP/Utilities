@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define  DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Dactinomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "IP/BCD", "IPBCD", "IP-BCD"
+    "IP-BCD", "IPBCD", "IP/BCD"
 ];
 
-define Regimen_IPBCD:
+define final IPBCDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_IPBCD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ifosfamide AND Treatment_Cisplatin AND Treatment_Bleomycin AND Treatment_Cyclophosphamide AND Treatment_Dactinomycin;
-    
-define final Received_IPBCD:
-    where Regimen_IPBCD OR ReceivedRegimenTreatments;        
+define final IPBCDTreatments:
+    where IfosfamideTreatment AND CisplatinTreatment AND BleomycinTreatment AND CyclophosphamideTreatment AND DactinomycinTreatment;
+          
         
         
         

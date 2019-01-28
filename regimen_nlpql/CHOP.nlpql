@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "CHOP"
 ];
 
-define Regimen_CHOP:
+define final CHOPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CHOP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_CHOP:
-    where Regimen_CHOP OR ReceivedRegimenTreatments;        
+define final CHOPTreatments:
+    where CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_CHOP:
 // Comments
 /***
 
-Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma, HIV-associated_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Peripheral_T-cell_lymphoma, HIV-associated_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 ***/

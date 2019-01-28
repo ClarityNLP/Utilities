@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define final IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecanmonotherapy", "Irinotecan_monotherapy", "Irinotecan monotherapy"
+    "Irinotecan monotherapy"
 ];
 
-define Regimen_Irinotecanmonotherapy:
+define final IrinotecanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Irinotecanmonotherapy:
 
 // Results
 
-        
-define final Received_Irinotecanmonotherapy:
-    where Treatment_Irinotecan OR Regimen_Irinotecanmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Glioblastoma, Anaplastic_glioma, Small_cell_lung_cancer, Gastric_cancer, Esophageal_cancer, Colon_cancer
+Known regimen for: Cervical_cancer, Small_cell_lung_cancer, Anaplastic_glioma, Gastric_cancer, Esophageal_cancer, Glioblastoma, Colon_cancer
 
 
 ***/

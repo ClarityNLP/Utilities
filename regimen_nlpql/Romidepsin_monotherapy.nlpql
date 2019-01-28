@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "istodax", "romidepsin"
 ];
 
-define Treatment_Romidepsin:
+define final RomidepsinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Romidepsin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Romidepsin_monotherapy", "Romidepsin monotherapy", "Romidepsinmonotherapy"
+    "Romidepsin monotherapy"
 ];
 
-define Regimen_Romidepsinmonotherapy:
+define final RomidepsinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Romidepsinmonotherapy:
 
 // Results
 
-        
-define final Received_Romidepsinmonotherapy:
-    where Treatment_Romidepsin OR Regimen_Romidepsinmonotherapy;
-            
 
 // Comments
 /***

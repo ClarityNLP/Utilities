@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "BuCyTBI"
 ];
 
-define Regimen_BuCyTBI:
+define final BuCyTBIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BuCyTBI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Busulfan AND Treatment_Cyclophosphamide AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_BuCyTBI:
-    where Regimen_BuCyTBI OR ReceivedRegimenTreatments;        
+define final BuCyTBITreatments:
+    where BusulfanTreatment AND CyclophosphamideTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

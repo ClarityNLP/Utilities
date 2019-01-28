@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gliadel", "carmustine wafer, polifeprosan 20"
 ];
 
-define Treatment_Carmustinewaferpolifeprosan20:
+define final Carmustinewaferpolifeprosan20Treatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Carmustinewaferpolifeprosan20:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gliadel wafer", "Gliadelwafer", "Gliadel_wafer"
+    "Gliadel wafer"
 ];
 
-define Regimen_Gliadelwafer:
+define final GliadelwaferRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Gliadelwafer:
 
 // Results
 
-        
-define final Received_Gliadelwafer:
-    where Treatment_Carmustinewaferpolifeprosan20 OR Regimen_Gliadelwafer;
-            
 
 // Comments
 /***

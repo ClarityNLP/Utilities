@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fudr", "floxuridine"
 ];
 
-define Treatment_Floxuridine:
+define final FloxuridineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Floxuridine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hepatic arterial chemotherapy", "Hepatic_arterial_chemotherapy", "Hepaticarterialchemotherapy"
+    "Hepatic arterial chemotherapy"
 ];
 
-define Regimen_Hepaticarterialchemotherapy:
+define final HepaticarterialchemotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Hepaticarterialchemotherapy:
 
 // Results
 
-        
-define final Received_Hepaticarterialchemotherapy:
-    where Treatment_Floxuridine OR Regimen_Hepaticarterialchemotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ninlaro", "ixazomib"
 ];
 
-define Treatment_Ixazomib:
+define  IxazomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ixazomib & Dexamethasone", "Ixazomib and Dexamethasone", "IxazomibDexamethasone", "Ixazomib / Dexamethasone", "Ixazomib_Dexamethasone", "Ixazomib/Dexamethasone"
+    "Ixazomib & Dexamethasone"
 ];
 
-define Regimen_IxazomibDexamethasone:
+define final IxazomibDexamethasoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IxazomibDexamethasone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ixazomib AND Treatment_Dexamethasone;
-    
-define final Received_IxazomibDexamethasone:
-    where Regimen_IxazomibDexamethasone OR ReceivedRegimenTreatments;        
+define final IxazomibDexamethasoneTreatments:
+    where IxazomibTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_IxazomibDexamethasone:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
 
 
 ***/

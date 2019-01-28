@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin- Paclitaxel- RT", "Carboplatin and  Paclitaxel and  RT", "Carboplatin& Paclitaxel& RT", "Carboplatin, Paclitaxel, RT", "Carboplatin_Paclitaxel_RT", "Carboplatin/Paclitaxel/RT", "Carboplatin &  Paclitaxel &  RT", "Carboplatin/ Paclitaxel/ RT", "RT", "CarboplatinPaclitaxelRT"
+    "Carboplatin, Paclitaxel, RT", "RT"
 ];
 
-define Regimen_CarboplatinPaclitaxelRT:
+define final CarboplatinPaclitaxelRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinPaclitaxelRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxel AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CarboplatinPaclitaxelRT:
-    where Regimen_CarboplatinPaclitaxelRT OR ReceivedRegimenTreatments;        
+define final CarboplatinPaclitaxelRTTreatments:
+    where CarboplatinTreatment AND PaclitaxelTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CarboplatinPaclitaxelRT:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: Head_and_neck_cancer, Esophageal_cancer, Non-small_cell_lung_cancer
 
 
 ***/

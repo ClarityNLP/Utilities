@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define  CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "MiniBEAM", "Mini-BEAM", "Mini/BEAM"
 ];
 
-define Regimen_MiniBEAM:
+define final MiniBEAMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MiniBEAM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carmustine AND Treatment_Etoposide AND Treatment_Cytarabine AND Treatment_Melphalan;
-    
-define final Received_MiniBEAM:
-    where Regimen_MiniBEAM OR ReceivedRegimenTreatments;        
+define final MiniBEAMTreatments:
+    where CarmustineTreatment AND EtoposideTreatment AND CytarabineTreatment AND MelphalanTreatment;
+          
         
         
         

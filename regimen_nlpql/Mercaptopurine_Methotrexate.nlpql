@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "purinethol", "mercaptopurine"
 ];
 
-define Treatment_Mercaptopurine:
+define  MercaptopurineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mercaptopurine / Methotrexate", "MercaptopurineMethotrexate", "Mercaptopurine/Methotrexate", "Mercaptopurine_Methotrexate", "Mercaptopurine & Methotrexate", "Mercaptopurine and Methotrexate"
+    "Mercaptopurine & Methotrexate"
 ];
 
-define Regimen_MercaptopurineMethotrexate:
+define final MercaptopurineMethotrexateRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MercaptopurineMethotrexate:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mercaptopurine AND Treatment_Methotrexate;
-    
-define final Received_MercaptopurineMethotrexate:
-    where Regimen_MercaptopurineMethotrexate OR ReceivedRegimenTreatments;        
+define final MercaptopurineMethotrexateTreatments:
+    where MercaptopurineTreatment AND MethotrexateTreatment;
+          
         
         
         

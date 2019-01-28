@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "unituxin", "dinutuximab"
 ];
 
-define Treatment_Dinutuximab:
+define  DinutuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leukine", "sargramostim"
 ];
 
-define Treatment_Sargramostim:
+define  SargramostimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "proleukin", "aldesleukin"
 ];
 
-define Treatment_Aldesleukin:
+define  AldesleukinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "accutane", "isotretinoin"
 ];
 
-define Treatment_Isotretinoin:
+define  IsotretinoinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Isotretinoin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dinutuximab_GM-CSF_IL-2_Isotretinoin", "Dinutuximab/GM-CSF/IL-2/Isotretinoin", "Dinutuximab &  GM-CSF &  IL-2 &  Isotretinoin", "Dinutuximab, GM/CSF, IL/2, Isotretinoin", "Dinutuximab- GM-CSF- IL-2- Isotretinoin", "Dinutuximab& GM-CSF& IL-2& Isotretinoin", "DinutuximabGMCSFIL2Isotretinoin", "Dinutuximab, GMCSF, IL2, Isotretinoin", "Dinutuximab and  GM-CSF and  IL-2 and  Isotretinoin", "Dinutuximab, GM-CSF, IL-2, Isotretinoin", "Dinutuximab/ GM-CSF/ IL-2/ Isotretinoin"
+    "Dinutuximab, GM-CSF, IL-2, Isotretinoin"
 ];
 
-define Regimen_DinutuximabGMCSFIL2Isotretinoin:
+define final DinutuximabGMCSFIL2IsotretinoinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_DinutuximabGMCSFIL2Isotretinoin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dinutuximab AND Treatment_Sargramostim AND Treatment_Aldesleukin AND Treatment_Isotretinoin;
-    
-define final Received_DinutuximabGMCSFIL2Isotretinoin:
-    where Regimen_DinutuximabGMCSFIL2Isotretinoin OR ReceivedRegimenTreatments;        
+define final DinutuximabGMCSFIL2IsotretinoinTreatments:
+    where DinutuximabTreatment AND SargramostimTreatment AND AldesleukinTreatment AND IsotretinoinTreatment;
+          
         
         
         

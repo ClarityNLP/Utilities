@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Mitomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinMitomycin", "Cisplatin_Mitomycin", "Cisplatin & Mitomycin", "Cisplatin / Mitomycin", "Cisplatin and Mitomycin", "Cisplatin/Mitomycin"
+    "Cisplatin & Mitomycin"
 ];
 
-define Regimen_CisplatinMitomycin:
+define final CisplatinMitomycinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinMitomycin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Mitomycin;
-    
-define final Received_CisplatinMitomycin:
-    where Regimen_CisplatinMitomycin OR ReceivedRegimenTreatments;        
+define final CisplatinMitomycinTreatments:
+    where CisplatinTreatment AND MitomycinTreatment;
+          
         
         
         

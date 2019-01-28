@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and  Doxorubicin liposomal and  Fluorouracil", "Cisplatin, Doxorubicin liposomal, Fluorouracil", "Cisplatin_Doxorubicin_liposomal_Fluorouracil", "CisplatinDoxorubicinliposomalFluorouracil", "Cisplatin &  Doxorubicin liposomal &  Fluorouracil", "Cisplatin- Doxorubicin liposomal- Fluorouracil", "Cisplatin/ Doxorubicin liposomal/ Fluorouracil", "Cisplatin& Doxorubicin liposomal& Fluorouracil", "Cisplatin/Doxorubicin liposomal/Fluorouracil"
+    "Cisplatin, Doxorubicin liposomal, Fluorouracil"
 ];
 
-define Regimen_CisplatinandDoxorubicinliposomalandFluorouracil:
+define final CisplatinDoxorubicinliposomalFluorouracilRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinandDoxorubicinliposomalandFluorouracil:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Pegylatedliposomaldoxorubicin AND Treatment_Fluorouracil;
-    
-define final Received_CisplatinDoxorubicinliposomalFluorouracil:
-    where Regimen_CisplatinandDoxorubicinliposomalandFluorouracil OR ReceivedRegimenTreatments;        
+define final CisplatinDoxorubicinliposomalFluorouracilTreatments:
+    where CisplatinTreatment AND PegylatedliposomaldoxorubicinTreatment AND FluorouracilTreatment;
+          
         
         
         

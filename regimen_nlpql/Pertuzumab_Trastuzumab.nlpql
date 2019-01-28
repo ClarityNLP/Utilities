@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "perjeta", "pertuzumab"
 ];
 
-define Treatment_Pertuzumab:
+define  PertuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pertuzumab / Trastuzumab", "Pertuzumab and Trastuzumab", "Pertuzumab/Trastuzumab", "Pertuzumab_Trastuzumab", "Pertuzumab & Trastuzumab", "PertuzumabTrastuzumab"
+    "Pertuzumab & Trastuzumab"
 ];
 
-define Regimen_PertuzumabTrastuzumab:
+define final PertuzumabTrastuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PertuzumabTrastuzumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pertuzumab AND Treatment_Trastuzumab;
-    
-define final Received_PertuzumabTrastuzumab:
-    where Regimen_PertuzumabTrastuzumab OR ReceivedRegimenTreatments;        
+define final PertuzumabTrastuzumabTreatments:
+    where PertuzumabTreatment AND TrastuzumabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_PertuzumabTrastuzumab:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_HER2-positive, ERBB2_(HER2)
+Known regimen for: ERBB2_(HER2), Breast_cancer_HER2-positive
 
 
 ***/

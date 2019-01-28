@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "venclexta", "venetoclax"
 ];
 
-define Treatment_Venetoclax:
+define final VenetoclaxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Venetoclax:
 // Regimen names
 
 termset RegimenTerms:[
-    "Venetoclaxmonotherapy", "Venetoclax monotherapy", "Venetoclax_monotherapy"
+    "Venetoclax monotherapy"
 ];
 
-define Regimen_Venetoclaxmonotherapy:
+define final VenetoclaxmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Venetoclaxmonotherapy:
 
 // Results
 
-        
-define final Received_Venetoclaxmonotherapy:
-    where Treatment_Venetoclax OR Regimen_Venetoclaxmonotherapy;
-            
 
 // Comments
 /***

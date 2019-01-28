@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "penicillin v", "penicillin v"
 ];
 
-define Treatment_PenicillinV:
+define  PenicillinVTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "erythromycin", "erythromycin"
 ];
 
-define Treatment_Erythromycin:
+define  ErythromycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Erythromycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eculizumab_monotherapy", "Eculizumab monotherapy", "Eculizumabmonotherapy"
+    "Eculizumab monotherapy"
 ];
 
-define Regimen_Eculizumabmonotherapy:
+define final EculizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Eculizumabmonotherapy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_PenicillinV AND Treatment_Erythromycin;
-    
-define final Received_Eculizumabmonotherapy:
-    where Regimen_Eculizumabmonotherapy OR ReceivedRegimenTreatments;        
+define final EculizumabmonotherapyTreatments:
+    where PenicillinVTreatment AND ErythromycinTreatment;
+          
         
         
         

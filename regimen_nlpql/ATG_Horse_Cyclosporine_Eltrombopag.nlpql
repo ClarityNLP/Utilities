@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define Treatment_AntithymocyteglobulinhorseATG:
+define  AntithymocyteglobulinhorseATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_CategoryCyclosporines:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse)/Cyclosporine/Eltrombopag", "ATG (Horse)- Cyclosporine- Eltrombopag", "ATGHorseCyclosporineEltrombopag", "ATG (Horse)& Cyclosporine& Eltrombopag", "ATG (Horse)/ Cyclosporine/ Eltrombopag", "ATG (Horse), Cyclosporine, Eltrombopag", "ATG (Horse) and  Cyclosporine and  Eltrombopag", "ATG (Horse) &  Cyclosporine &  Eltrombopag", "ATG_Horse_Cyclosporine_Eltrombopag"
+    "ATG (Horse), Cyclosporine, Eltrombopag"
 ];
 
-define Regimen_ATGHorseCyclosporineEltrombopag:
+define final ATGHorseCyclosporineEltrombopagRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ATGHorseCyclosporineEltrombopag:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_AntithymocyteglobulinhorseATG AND Treatment_CategoryCyclosporines;
-    
-define final Received_ATGHorseCyclosporineEltrombopag:
-    where Regimen_ATGHorseCyclosporineEltrombopag OR ReceivedRegimenTreatments;        
+define final ATGHorseCyclosporineEltrombopagTreatments:
+    where AntithymocyteglobulinhorseATGTreatment AND CategoryCyclosporinesTreatment;
+          
         
         
         

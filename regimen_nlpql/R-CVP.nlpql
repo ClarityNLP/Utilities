@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CVP", "R-CVP", "RCVP"
+    "R-CVP", "RCVP", "R/CVP"
 ];
 
-define Regimen_RCVP:
+define final RCVPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_RCVP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_RCVP:
-    where Regimen_RCVP OR ReceivedRegimenTreatments;        
+define final RCVPTreatments:
+    where RituximabTreatment AND CyclophosphamideTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_RCVP:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma_nodular_lymphocyte-predominant, Follicular_lymphoma, Marginal_zone_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Marginal_zone_lymphoma, Follicular_lymphoma
 
 
 ***/

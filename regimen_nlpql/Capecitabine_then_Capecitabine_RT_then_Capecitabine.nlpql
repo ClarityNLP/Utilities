@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define final CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Capecitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, then Capecitabine and RT, then Capecitabine", "Capecitabine,, Capecitabine & RT,, Capecitabine", "Capecitabine, then Capecitabine/RT, then Capecitabine", "Capecitabine- then Capecitabine & RT- then Capecitabine", "Capecitabine& then Capecitabine & RT& then Capecitabine", "Capecitabine/then Capecitabine & RT/then Capecitabine", "Capecitabine, & Capecitabine & RT, & Capecitabine", "Capecitabine, and Capecitabine & RT, and Capecitabine", "Capecitabine,&Capecitabine & RT,&Capecitabine", "Capecitabine and  then Capecitabine & RT and  then Capecitabine", "Capecitabine &  then Capecitabine & RT &  then Capecitabine", "Capecitabine, / Capecitabine & RT, / Capecitabine", "Capecitabine,/Capecitabine & RT,/Capecitabine", "Capecitabine/ then Capecitabine & RT/ then Capecitabine", "Capecitabine_then_Capecitabine_RT_then_Capecitabine", "Capecitabine, then Capecitabine / RT, then Capecitabine", "Capecitabine, then Capecitabine & RT, then Capecitabine", "CapecitabinethenCapecitabineRTthenCapecitabine", "RT"
+    "RT", "Capecitabine, then Capecitabine & RT, then Capecitabine"
 ];
 
-define Regimen_CapecitabinethenCapecitabineandRTthenCapecitabine:
+define final CapecitabinethenCapecitabineRTthenCapecitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_CapecitabinethenCapecitabineandRTthenCapecitabine:
 
 // Results
 
-        
-define final Received_CapecitabinethenCapecitabineRTthenCapecitabine:
-    where Treatment_Capecitabine OR Regimen_CapecitabinethenCapecitabineandRTthenCapecitabine;
-            
 
 // Comments
 /***

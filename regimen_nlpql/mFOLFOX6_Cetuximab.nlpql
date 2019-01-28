@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOX6 and Cetuximab", "mFOLFOX6_Cetuximab", "mFOLFOX6/Cetuximab", "mFOLFOX6 & Cetuximab", "mFOLFOX6Cetuximab", "mFOLFOX6 / Cetuximab"
+    "mFOLFOX6 & Cetuximab"
 ];
 
-define Regimen_mFOLFOX6andCetuximab:
+define final mFOLFOX6CetuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_mFOLFOX6andCetuximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Oxaliplatin AND Treatment_Cetuximab;
-    
-define final Received_mFOLFOX6Cetuximab:
-    where Regimen_mFOLFOX6andCetuximab OR ReceivedRegimenTreatments;        
+define final mFOLFOX6CetuximabTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND OxaliplatinTreatment AND CetuximabTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_mFOLFOX6Cetuximab:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Colon_cancer_KRAS_wild-type
+Known regimen for: Colon_cancer_KRAS_wild-type, Esophageal_cancer
 
 
 ***/

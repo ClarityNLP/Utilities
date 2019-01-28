@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sutent", "sunitinib"
 ];
 
-define Treatment_Sunitinib:
+define  SunitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Sunitinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine / Sunitinib", "Gemcitabine & Sunitinib", "Gemcitabine/Sunitinib", "Gemcitabine_Sunitinib", "Gemcitabine and Sunitinib", "GemcitabineSunitinib"
+    "Gemcitabine & Sunitinib"
 ];
 
-define Regimen_GemcitabineSunitinib:
+define final GemcitabineSunitinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabineSunitinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Sunitinib;
-    
-define final Received_GemcitabineSunitinib:
-    where Regimen_GemcitabineSunitinib OR ReceivedRegimenTreatments;        
+define final GemcitabineSunitinibTreatments:
+    where GemcitabineTreatment AND SunitinibTreatment;
+          
         
         
         

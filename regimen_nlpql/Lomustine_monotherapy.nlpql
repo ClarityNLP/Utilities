@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ceenu", "lomustine"
 ];
 
-define Treatment_Lomustine:
+define final LomustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Lomustine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine monotherapy", "Lomustinemonotherapy", "Lomustine_monotherapy"
+    "Lomustine monotherapy"
 ];
 
-define Regimen_Lomustinemonotherapy:
+define final LomustinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Lomustinemonotherapy:
 
 // Results
 
-        
-define final Received_Lomustinemonotherapy:
-    where Treatment_Lomustine OR Regimen_Lomustinemonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Chlorambucil:
 // Regimen names
 
 termset RegimenTerms:[
-    "VADC", "VAD / C", "VAD and C", "VAD&C", "VAD+C", "VAD & C", "VAD/C"
+    "VAD & C", "VAD&C", "VAD and C", "VADC", "VAD+C", "VAD / C", "VAD/C"
 ];
 
-define Regimen_VADC:
+define final VADCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_VADC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vincristine AND Treatment_Doxorubicin AND Treatment_Dexamethasone AND Treatment_Chlorambucil;
-    
-define final Received_VADC:
-    where Regimen_VADC OR ReceivedRegimenTreatments;        
+define final VADCTreatments:
+    where VincristineTreatment AND DoxorubicinTreatment AND DexamethasoneTreatment AND ChlorambucilTreatment;
+          
         
         
         

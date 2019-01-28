@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "al", "category:light-chain"
 ];
 
-define Treatment_CategoryLightchain:
+define  CategoryLightchainTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "category:disease-specific pages", "category:disease-specific pages"
 ];
 
-define Treatment_CategoryDiseasespecificpages:
+define  CategoryDiseasespecificpagesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "category:plasma cell dyscrasias", "category:plasma cell dyscrasias"
 ];
 
-define Treatment_CategoryPlasmacelldyscrasias:
+define  CategoryPlasmacelldyscrasiasTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -76,7 +76,7 @@ termset RegimenTerms:[
     "RD"
 ];
 
-define Regimen_RD:
+define final RDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lenalidomide AND Treatment_Dexamethasone AND Treatment_CategoryLightchain AND Treatment_CategoryDiseasespecificpages AND Treatment_CategoryPlasmacelldyscrasias;
-    
-define final Received_RD:
-    where Regimen_RD OR ReceivedRegimenTreatments;        
+define final RDTreatments:
+    where LenalidomideTreatment AND DexamethasoneTreatment AND CategoryLightchainTreatment AND CategoryDiseasespecificpagesTreatment AND CategoryPlasmacelldyscrasiasTreatment;
+          
         
         
         
@@ -98,7 +96,7 @@ define final Received_RD:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, POEMS
+Known regimen for: POEMS, Light-chain_(AL)_amyloidosis
 
 
 ***/

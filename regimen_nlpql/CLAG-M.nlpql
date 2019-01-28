@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leustatin", "cladribine"
 ];
 
-define Treatment_Cladribine:
+define  CladribineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Mitoxantrone:
 // Regimen names
 
 termset RegimenTerms:[
-    "CLAG/M", "CLAGM", "CLAG-M"
+    "CLAGM", "CLAG-M", "CLAG/M"
 ];
 
-define Regimen_CLAGM:
+define final CLAGMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CLAGM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cladribine AND Treatment_Cytarabine AND Treatment_Filgrastim AND Treatment_Mitoxantrone;
-    
-define final Received_CLAGM:
-    where Regimen_CLAGM OR ReceivedRegimenTreatments;        
+define final CLAGMTreatments:
+    where CladribineTreatment AND CytarabineTreatment AND FilgrastimTreatment AND MitoxantroneTreatment;
+          
         
         
         

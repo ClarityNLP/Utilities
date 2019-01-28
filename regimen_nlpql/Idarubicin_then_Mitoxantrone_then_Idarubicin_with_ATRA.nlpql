@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA", "Idarubicin/ then Mitoxantrone/ then Idarubicin/ with ATRA", "Idarubicin,/Mitoxantrone,/Idarubicin, with ATRA", "Idarubicin& then Mitoxantrone& then Idarubicin& with ATRA", "Idarubicin,&Mitoxantrone,&Idarubicin, with ATRA", "Idarubicin and  then Mitoxantrone and  then Idarubicin and  with ATRA", "Idarubicin &  then Mitoxantrone &  then Idarubicin &  with ATRA", "Idarubicin, / Mitoxantrone, / Idarubicin, with ATRA", "Idarubicin,, Mitoxantrone,, Idarubicin, with ATRA", "Idarubicin- then Mitoxantrone- then Idarubicin- with ATRA", "IdarubicinthenMitoxantronethenIdarubicinwithATRA", "Idarubicin, and Mitoxantrone, and Idarubicin, with ATRA", "Idarubicin, & Mitoxantrone, & Idarubicin, with ATRA", "Idarubicin/then Mitoxantrone/then Idarubicin/with ATRA", "Idarubicin, then Mitoxantrone, then Idarubicin, with ATRA"
+    "Idarubicin, then Mitoxantrone, then Idarubicin, with ATRA"
 ];
 
-define Regimen_IdarubicinthenMitoxantronethenIdarubicinwithATRA:
+define final IdarubicinthenMitoxantronethenIdarubicinwithATRARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IdarubicinthenMitoxantronethenIdarubicinwithATRA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alltransretinoicacid AND Treatment_Idarubicin;
-    
-define final Received_IdarubicinthenMitoxantronethenIdarubicinwithATRA:
-    where Regimen_IdarubicinthenMitoxantronethenIdarubicinwithATRA OR ReceivedRegimenTreatments;        
+define final IdarubicinthenMitoxantronethenIdarubicinwithATRATreatments:
+    where AlltransretinoicacidTreatment AND IdarubicinTreatment;
+          
         
         
         

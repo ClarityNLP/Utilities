@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "PVAG"
 ];
 
-define Regimen_PVAG:
+define final PVAGRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_PVAG:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Prednisone AND Treatment_Vinblastine AND Treatment_Doxorubicin AND Treatment_Gemcitabine;
-    
-define final Received_PVAG:
-    where Regimen_PVAG OR ReceivedRegimenTreatments;        
+define final PVAGTreatments:
+    where PrednisoneTreatment AND VinblastineTreatment AND DoxorubicinTreatment AND GemcitabineTreatment;
+          
         
         
         

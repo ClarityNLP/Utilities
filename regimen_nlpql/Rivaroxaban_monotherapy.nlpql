@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xarelto", "rivaroxaban"
 ];
 
-define Treatment_Rivaroxaban:
+define final RivaroxabanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Rivaroxaban:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rivaroxaban monotherapy", "Rivaroxabanmonotherapy", "Rivaroxaban_monotherapy"
+    "Rivaroxaban monotherapy"
 ];
 
-define Regimen_Rivaroxabanmonotherapy:
+define final RivaroxabanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Rivaroxabanmonotherapy:
 
 // Results
 
-        
-define final Received_Rivaroxabanmonotherapy:
-    where Treatment_Rivaroxaban OR Regimen_Rivaroxabanmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Antiphospholipid_antibody_syndrome, Venous_thromboembolism_(VTE), Heparin-induced_thrombocytopenia_(HIT)
+Known regimen for: Heparin-induced_thrombocytopenia_(HIT), Venous_thromboembolism_(VTE), Antiphospholipid_antibody_syndrome
 
 
 ***/

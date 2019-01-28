@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "actemra", "tocilizumab"
 ];
 
-define Treatment_Tocilizumab:
+define final TocilizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tocilizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tocilizumabmonotherapy", "Tocilizumab_monotherapy", "Tocilizumab monotherapy"
+    "Tocilizumab monotherapy"
 ];
 
-define Regimen_Tocilizumabmonotherapy:
+define final TocilizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Tocilizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Tocilizumabmonotherapy:
-    where Treatment_Tocilizumab OR Regimen_Tocilizumabmonotherapy;
-            
 
 // Comments
 /***

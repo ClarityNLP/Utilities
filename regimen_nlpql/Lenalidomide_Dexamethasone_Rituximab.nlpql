@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "LenalidomideDexamethasoneRituximab", "Lenalidomide_Dexamethasone_Rituximab", "Lenalidomide/Dexamethasone/Rituximab", "Lenalidomide, Dexamethasone, Rituximab", "Lenalidomide- Dexamethasone- Rituximab", "Lenalidomide &  Dexamethasone &  Rituximab", "Lenalidomide and  Dexamethasone and  Rituximab", "Lenalidomide/ Dexamethasone/ Rituximab", "Lenalidomide& Dexamethasone& Rituximab"
+    "Lenalidomide, Dexamethasone, Rituximab"
 ];
 
-define Regimen_LenalidomideDexamethasoneRituximab:
+define final LenalidomideDexamethasoneRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_LenalidomideDexamethasoneRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lenalidomide AND Treatment_Dexamethasone AND Treatment_Rituximab;
-    
-define final Received_LenalidomideDexamethasoneRituximab:
-    where Regimen_LenalidomideDexamethasoneRituximab OR ReceivedRegimenTreatments;        
+define final LenalidomideDexamethasoneRituximabTreatments:
+    where LenalidomideTreatment AND DexamethasoneTreatment AND RituximabTreatment;
+          
         
         
         

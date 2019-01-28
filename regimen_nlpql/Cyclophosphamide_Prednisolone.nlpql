@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide_Prednisolone", "Cyclophosphamide/Prednisolone", "Cyclophosphamide and Prednisolone", "Cyclophosphamide / Prednisolone", "CyclophosphamidePrednisolone", "Cyclophosphamide & Prednisolone"
+    "Cyclophosphamide & Prednisolone"
 ];
 
-define Regimen_CyclophosphamidePrednisolone:
+define final CyclophosphamidePrednisoloneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamidePrednisolone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Prednisolone;
-    
-define final Received_CyclophosphamidePrednisolone:
-    where Regimen_CyclophosphamidePrednisolone OR ReceivedRegimenTreatments;        
+define final CyclophosphamidePrednisoloneTreatments:
+    where CyclophosphamideTreatment AND PrednisoloneTreatment;
+          
         
         
         

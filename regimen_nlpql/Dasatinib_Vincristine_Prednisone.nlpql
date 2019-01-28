@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sprycel", "dasatinib"
 ];
 
-define Treatment_Dasatinib:
+define  DasatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib- Vincristine- Prednisone", "Dasatinib_Vincristine_Prednisone", "Dasatinib, Vincristine, Prednisone", "Dasatinib/Vincristine/Prednisone", "DasatinibVincristinePrednisone", "Dasatinib& Vincristine& Prednisone", "Dasatinib/ Vincristine/ Prednisone", "Dasatinib &  Vincristine &  Prednisone", "Dasatinib and  Vincristine and  Prednisone"
+    "Dasatinib, Vincristine, Prednisone"
 ];
 
-define Regimen_DasatinibVincristinePrednisone:
+define final DasatinibVincristinePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_DasatinibVincristinePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dasatinib AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_DasatinibVincristinePrednisone:
-    where Regimen_DasatinibVincristinePrednisone OR ReceivedRegimenTreatments;        
+define final DasatinibVincristinePrednisoneTreatments:
+    where DasatinibTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         

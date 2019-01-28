@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Oxaliplatin, RT", "Fluorouracil/Oxaliplatin/RT", "Fluorouracil and  Oxaliplatin and  RT", "Fluorouracil_Oxaliplatin_RT", "Fluorouracil& Oxaliplatin& RT", "Fluorouracil/ Oxaliplatin/ RT", "Fluorouracil &  Oxaliplatin &  RT", "Fluorouracil- Oxaliplatin- RT", "FluorouracilOxaliplatinRT", "RT"
+    "RT", "Fluorouracil, Oxaliplatin, RT"
 ];
 
-define Regimen_FluorouracilOxaliplatinRT:
+define final FluorouracilOxaliplatinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FluorouracilOxaliplatinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Oxaliplatin AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_FluorouracilOxaliplatinRT:
-    where Regimen_FluorouracilOxaliplatinRT OR ReceivedRegimenTreatments;        
+define final FluorouracilOxaliplatinRTTreatments:
+    where FluorouracilTreatment AND OxaliplatinTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

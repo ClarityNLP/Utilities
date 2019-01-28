@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tylenol", "acetaminophen"
 ];
 
-define Treatment_Acetaminophen:
+define  AcetaminophenTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "benadryl", "diphenhydramine"
 ];
 
-define Treatment_Diphenhydramine:
+define  DiphenhydramineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Diphenhydramine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axicabtagene ciloleucel monotherapy", "Axicabtageneciloleucelmonotherapy", "Axicabtagene_ciloleucel_monotherapy"
+    "Axicabtagene ciloleucel monotherapy"
 ];
 
-define Regimen_Axicabtageneciloleucelmonotherapy:
+define final AxicabtageneciloleucelmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Axicabtageneciloleucelmonotherapy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Acetaminophen AND Treatment_Diphenhydramine;
-    
-define final Received_Axicabtageneciloleucelmonotherapy:
-    where Regimen_Axicabtageneciloleucelmonotherapy OR ReceivedRegimenTreatments;        
+define final AxicabtageneciloleucelmonotherapyTreatments:
+    where AcetaminophenTreatment AND DiphenhydramineTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_Axicabtageneciloleucelmonotherapy:
 // Comments
 /***
 
-Known regimen for: Transformed_lymphoma, Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma
+Known regimen for: Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

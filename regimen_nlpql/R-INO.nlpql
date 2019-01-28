@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "besponsa", "inotuzumab ozogamicin"
 ];
 
-define Treatment_Inotuzumabozogamicin:
+define  InotuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Inotuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-INO", "R/INO", "RINO"
+    "R/INO", "R-INO", "RINO"
 ];
 
-define Regimen_RINO:
+define final RINORegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_RINO:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Inotuzumabozogamicin;
-    
-define final Received_RINO:
-    where Regimen_RINO OR ReceivedRegimenTreatments;        
+define final RINOTreatments:
+    where RituximabTreatment AND InotuzumabozogamicinTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_RINO:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma
 
 
 ***/

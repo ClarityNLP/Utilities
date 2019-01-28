@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "zanosar", "streptozocin"
 ];
 
-define Treatment_Streptozocin:
+define  StreptozocinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Streptozocin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_Streptozocin", "DoxorubicinStreptozocin", "Doxorubicin & Streptozocin", "Doxorubicin and Streptozocin", "Doxorubicin / Streptozocin", "Doxorubicin/Streptozocin"
+    "Doxorubicin & Streptozocin"
 ];
 
-define Regimen_DoxorubicinStreptozocin:
+define final DoxorubicinStreptozocinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinStreptozocin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Streptozocin;
-    
-define final Received_DoxorubicinStreptozocin:
-    where Regimen_DoxorubicinStreptozocin OR ReceivedRegimenTreatments;        
+define final DoxorubicinStreptozocinTreatments:
+    where DoxorubicinTreatment AND StreptozocinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "javlor", "vinflunine"
 ];
 
-define Treatment_Vinflunine:
+define final VinflunineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vinflunine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinflunine monotherapy", "Vinflunine_monotherapy", "Vinfluninemonotherapy"
+    "Vinflunine monotherapy"
 ];
 
-define Regimen_Vinfluninemonotherapy:
+define final VinfluninemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Vinfluninemonotherapy:
 
 // Results
 
-        
-define final Received_Vinfluninemonotherapy:
-    where Treatment_Vinflunine OR Regimen_Vinfluninemonotherapy;
-            
 
 // Comments
 /***

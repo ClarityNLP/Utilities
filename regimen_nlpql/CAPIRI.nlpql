@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELIRI", "CAPIRI", "CapeIRI"
+    "CAPIRI", "CapeIRI", "XELIRI"
 ];
 
-define Regimen_XELIRI:
+define final CAPIRIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_XELIRI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Irinotecan;
-    
-define final Received_CAPIRI:
-    where Regimen_XELIRI OR ReceivedRegimenTreatments;        
+define final CAPIRITreatments:
+    where CapecitabineTreatment AND IrinotecanTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CAPIRI:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Esophageal_cancer
 
 
 ***/

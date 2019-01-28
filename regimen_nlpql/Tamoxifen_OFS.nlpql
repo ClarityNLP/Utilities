@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zoladex", "goserelin"
 ];
 
-define Treatment_Goserelin:
+define final GoserelinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Goserelin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamoxifen/OFS", "Tamoxifen and OFS", "TamoxifenOFS", "Tamoxifen_OFS", "Tamoxifen & OFS", "Tamoxifen / OFS"
+    "Tamoxifen & OFS"
 ];
 
-define Regimen_TamoxifenOFS:
+define final TamoxifenOFSRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_TamoxifenOFS:
 
 // Results
 
-        
-define final Received_TamoxifenOFS:
-    where Treatment_Goserelin OR Regimen_TamoxifenOFS;
-            
 
 // Comments
 /***

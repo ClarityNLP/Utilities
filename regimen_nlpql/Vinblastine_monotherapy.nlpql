@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define final VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vinblastine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinblastine_monotherapy", "Vinblastinemonotherapy", "Vinblastine monotherapy"
+    "Vinblastine monotherapy"
 ];
 
-define Regimen_Vinblastinemonotherapy:
+define final VinblastinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Vinblastinemonotherapy:
 
 // Results
 
-        
-define final Received_Vinblastinemonotherapy:
-    where Treatment_Vinblastine OR Regimen_Vinblastinemonotherapy;
-            
 
 // Comments
 /***

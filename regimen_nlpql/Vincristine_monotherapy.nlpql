@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define final VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vincristinemonotherapy", "Vincristine monotherapy", "Vincristine_monotherapy"
+    "Vincristine monotherapy"
 ];
 
-define Regimen_Vincristinemonotherapy:
+define final VincristinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Vincristinemonotherapy:
 
 // Results
 
-        
-define final Received_Vincristinemonotherapy:
-    where Treatment_Vincristine OR Regimen_Vincristinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Wilms_tumor, Thrombotic_thrombocytopenic_purpura
+Known regimen for: Thrombotic_thrombocytopenic_purpura, Wilms_tumor
 
 
 ***/

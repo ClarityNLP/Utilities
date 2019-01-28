@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sprycel", "dasatinib"
 ];
 
-define Treatment_Dasatinib:
+define final DasatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dasatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib_monotherapy", "Dasatinib monotherapy", "Dasatinibmonotherapy"
+    "Dasatinib monotherapy"
 ];
 
-define Regimen_Dasatinibmonotherapy:
+define final DasatinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Dasatinibmonotherapy:
 
 // Results
 
-        
-define final Received_Dasatinibmonotherapy:
-    where Treatment_Dasatinib OR Regimen_Dasatinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Systemic_mastocytosis, Chronic_myelogenous_leukemia, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: Chronic_myelogenous_leukemia, Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive
 
 
 ***/

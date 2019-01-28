@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "imbruvica", "ibrutinib"
 ];
 
-define Treatment_Ibrutinib:
+define  IbrutinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Ibrutinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "BR / Ibrutinib", "BR_Ibrutinib", "BR/Ibrutinib", "BRIbrutinib", "IBR", "BR and Ibrutinib", "BR & Ibrutinib"
+    "IBR", "BR & Ibrutinib"
 ];
 
-define Regimen_BRIbrutinib:
+define final BRIbrutinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_BRIbrutinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bendamustine AND Treatment_Rituximab AND Treatment_Ibrutinib;
-    
-define final Received_BRIbrutinib:
-    where Regimen_BRIbrutinib OR ReceivedRegimenTreatments;        
+define final BRIbrutinibTreatments:
+    where BendamustineTreatment AND RituximabTreatment AND IbrutinibTreatment;
+          
         
         
         

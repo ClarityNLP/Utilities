@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "farydak", "panobinostat"
 ];
 
-define Treatment_Panobinostat:
+define final PanobinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Panobinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Panobinostatmonotherapy", "Panobinostat monotherapy", "Panobinostat_monotherapy"
+    "Panobinostat monotherapy"
 ];
 
-define Regimen_Panobinostatmonotherapy:
+define final PanobinostatmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Panobinostatmonotherapy:
 
 // Results
 
-        
-define final Received_Panobinostatmonotherapy:
-    where Treatment_Panobinostat OR Regimen_Panobinostatmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Waldenström_macroglobulinemia, Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Waldenström_macroglobulinemia, Diffuse_large_B-cell_lymphoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "hycamtin", "topotecan"
 ];
 
-define Treatment_Topotecan:
+define  TopotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel and  Topotecan and  Bevacizumab", "TP/Bev", "TP&Bev", "TP+Bev", "TPBev", "Paclitaxel &  Topotecan &  Bevacizumab", "Paclitaxel& Topotecan& Bevacizumab", "Paclitaxel, Topotecan, Bevacizumab", "Paclitaxel_Topotecan_Bevacizumab", "TP & Bev", "TP and Bev", "Paclitaxel/Topotecan/Bevacizumab", "Paclitaxel- Topotecan- Bevacizumab", "PaclitaxelTopotecanBevacizumab", "Paclitaxel/ Topotecan/ Bevacizumab", "TP / Bev"
+    "TPBev", "TP & Bev", "TP&Bev", "TP/Bev", "TP / Bev", "TP and Bev", "TP+Bev", "Paclitaxel, Topotecan, Bevacizumab"
 ];
 
-define Regimen_PaclitaxelandTopotecanandBevacizumab:
+define final PaclitaxelTopotecanBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PaclitaxelandTopotecanandBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Topotecan AND Treatment_Bevacizumab;
-    
-define final Received_PaclitaxelTopotecanBevacizumab:
-    where Regimen_PaclitaxelandTopotecanandBevacizumab OR ReceivedRegimenTreatments;        
+define final PaclitaxelTopotecanBevacizumabTreatments:
+    where PaclitaxelTreatment AND TopotecanTreatment AND BevacizumabTreatment;
+          
         
         
         

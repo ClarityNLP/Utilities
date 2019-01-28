@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define final MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan &  then auto HSCT", "Melphalan/then auto HSCT", "Melphalan_then_auto_HSCT", "Melphalan/ then auto HSCT", "Melphalan& then auto HSCT", "MelphalanthenautoHSCT", "Melphalan, / auto HSCT", "Melphalan and  then auto HSCT", "Melphalan,/auto HSCT", "Melphalan,, auto HSCT", "Melphalan, and auto HSCT", "Melphalan, & auto HSCT", "Melphalan,&auto HSCT", "Melphalan, then auto HSCT", "Melphalan- then auto HSCT"
+    "Melphalan, then auto HSCT"
 ];
 
-define Regimen_MelphalanthenautoHSCT:
+define final MelphalanthenautoHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_MelphalanthenautoHSCT:
 
 // Results
 
-        
-define final Received_MelphalanthenautoHSCT:
-    where Treatment_Melphalan OR Regimen_MelphalanthenautoHSCT;
-            
 
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Plasma_cell_leukemia
+Known regimen for: Plasma_cell_leukemia, Light-chain_(AL)_amyloidosis
 
 
 ***/

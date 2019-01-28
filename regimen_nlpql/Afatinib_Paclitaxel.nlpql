@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gilotrif", "afatinib"
 ];
 
-define Treatment_Afatinib:
+define  AfatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Afatinib and Paclitaxel", "Afatinib_Paclitaxel", "AfatinibPaclitaxel", "Afatinib/Paclitaxel", "Afatinib & Paclitaxel", "Afatinib / Paclitaxel"
+    "Afatinib & Paclitaxel"
 ];
 
-define Regimen_AfatinibandPaclitaxel:
+define final AfatinibPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AfatinibandPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Afatinib AND Treatment_Paclitaxel;
-    
-define final Received_AfatinibPaclitaxel:
-    where Regimen_AfatinibandPaclitaxel OR ReceivedRegimenTreatments;        
+define final AfatinibPaclitaxelTreatments:
+    where AfatinibTreatment AND PaclitaxelTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP-14", "ICHOP", "I-CHOP", "CHOP-DI", "CHOP14", "CHOP/DI", "CHOPDI", "I/CHOP", "CHOP/14"
+    "CHOPDI", "CHOP/14", "CHOP/DI", "CHOP14", "CHOP-14", "I/CHOP", "ICHOP", "CHOP-DI", "I-CHOP"
 ];
 
-define Regimen_CHOP14:
+define final CHOP14Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CHOP14:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_CHOP14:
-    where Regimen_CHOP14 OR ReceivedRegimenTreatments;        
+define final CHOP14Treatments:
+    where CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         

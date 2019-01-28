@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "elspar", "asparaginase"
 ];
 
-define Treatment_Asparaginase:
+define  AsparaginaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -76,7 +76,7 @@ termset RegimenTerms:[
     "SMILE"
 ];
 
-define Regimen_SMILE:
+define final SMILERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_SMILE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dexamethasone AND Treatment_Methotrexate AND Treatment_Ifosfamide AND Treatment_Asparaginase AND Treatment_Etoposide;
-    
-define final Received_SMILE:
-    where Regimen_SMILE OR ReceivedRegimenTreatments;        
+define final SMILETreatments:
+    where DexamethasoneTreatment AND MethotrexateTreatment AND IfosfamideTreatment AND AsparaginaseTreatment AND EtoposideTreatment;
+          
         
         
         

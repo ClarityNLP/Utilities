@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cetuximab/RT", "Cetuximab and RT", "CetuximabRT", "Cetuximab / RT", "Cetuximab_RT", "Cetuximab & RT", "RT"
+    "RT", "Cetuximab & RT"
 ];
 
-define Regimen_CetuximabRT:
+define final CetuximabRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CetuximabRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cetuximab AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CetuximabRT:
-    where Regimen_CetuximabRT OR ReceivedRegimenTreatments;        
+define final CetuximabRTTreatments:
+    where CetuximabTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

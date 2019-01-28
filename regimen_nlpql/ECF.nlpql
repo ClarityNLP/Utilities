@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define  EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "ECF"
 ];
 
-define Regimen_ECF:
+define final ECFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ECF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Epirubicin AND Treatment_Cisplatin AND Treatment_Fluorouracil;
-    
-define final Received_ECF:
-    where Regimen_ECF OR ReceivedRegimenTreatments;        
+define final ECFTreatments:
+    where EpirubicinTreatment AND CisplatinTreatment AND FluorouracilTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_ECF:
 // Comments
 /***
 
-Known regimen for: Cholangiocarcinoma, Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Cholangiocarcinoma, Esophageal_cancer
 
 
 ***/

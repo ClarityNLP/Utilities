@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "T/T", "TH", "TH (Taxol)", "TH_Taxol", "T-T", "THTaxol", "TT"
+    "TT", "TH_Taxol", "T/T", "TH (Taxol)", "TH", "T-T", "THTaxol"
 ];
 
-define Regimen_TT:
+define final THTaxolRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Trastuzumab;
-    
-define final Received_THTaxol:
-    where Regimen_TT OR ReceivedRegimenTreatments;        
+define final THTaxolTreatments:
+    where PaclitaxelTreatment AND TrastuzumabTreatment;
+          
         
         
         

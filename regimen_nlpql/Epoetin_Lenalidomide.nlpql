@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define final LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Lenalidomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Epoetin & Lenalidomide", "EpoetinLenalidomide", "Epoetin_Lenalidomide", "Epoetin/Lenalidomide", "Epoetin and Lenalidomide", "Epoetin / Lenalidomide"
+    "Epoetin & Lenalidomide"
 ];
 
-define Regimen_EpoetinLenalidomide:
+define final EpoetinLenalidomideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_EpoetinLenalidomide:
 
 // Results
 
-        
-define final Received_EpoetinLenalidomide:
-    where Treatment_Lenalidomide OR Regimen_EpoetinLenalidomide;
-            
 
 // Comments
 /***

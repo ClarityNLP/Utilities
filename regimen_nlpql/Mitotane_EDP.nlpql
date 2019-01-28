@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lysodren", "mitotane"
 ];
 
-define Treatment_Mitotane:
+define  MitotaneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane_EDP", "Mitotane / EDP", "Mitotane & EDP", "Mitotane/EDP", "MitotaneEDP", "Mitotane and EDP"
+    "Mitotane & EDP"
 ];
 
-define Regimen_MitotaneEDP:
+define final MitotaneEDPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_MitotaneEDP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mitotane AND Treatment_Etoposide AND Treatment_Doxorubicin AND Treatment_Cisplatin;
-    
-define final Received_MitotaneEDP:
-    where Regimen_MitotaneEDP OR ReceivedRegimenTreatments;        
+define final MitotaneEDPTreatments:
+    where MitotaneTreatment AND EtoposideTreatment AND DoxorubicinTreatment AND CisplatinTreatment;
+          
         
         
         

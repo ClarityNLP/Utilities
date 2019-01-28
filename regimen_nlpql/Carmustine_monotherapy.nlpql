@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define final CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Carmustine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustinemonotherapy", "Carmustine monotherapy", "Carmustine_monotherapy"
+    "Carmustine monotherapy"
 ];
 
-define Regimen_Carmustinemonotherapy:
+define final CarmustinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Carmustinemonotherapy:
 
 // Results
 
-        
-define final Received_Carmustinemonotherapy:
-    where Treatment_Carmustine OR Regimen_Carmustinemonotherapy;
-            
 
 // Comments
 /***

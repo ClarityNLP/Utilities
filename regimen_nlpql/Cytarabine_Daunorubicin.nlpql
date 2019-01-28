@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Daunorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine_Daunorubicin", "Cytarabine / Daunorubicin", "Cytarabine and Daunorubicin", "Cytarabine & Daunorubicin", "CytarabineDaunorubicin", "Cytarabine/Daunorubicin"
+    "Cytarabine & Daunorubicin"
 ];
 
-define Regimen_CytarabineDaunorubicin:
+define final CytarabineDaunorubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineDaunorubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin;
-    
-define final Received_CytarabineDaunorubicin:
-    where Regimen_CytarabineDaunorubicin OR ReceivedRegimenTreatments;        
+define final CytarabineDaunorubicinTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CytarabineDaunorubicin:
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Acute_promyelocytic_leukemia
+Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
 
 
 ***/

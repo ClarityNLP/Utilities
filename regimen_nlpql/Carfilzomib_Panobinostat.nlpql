@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kyprolis", "carfilzomib"
 ];
 
-define Treatment_Carfilzomib:
+define  CarfilzomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "farydak", "panobinostat"
 ];
 
-define Treatment_Panobinostat:
+define  PanobinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Panobinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib and Panobinostat", "CarfilzomibPanobinostat", "Carfilzomib & Panobinostat", "Carfilzomib_Panobinostat", "Carfilzomib/Panobinostat", "Carfilzomib / Panobinostat"
+    "Carfilzomib & Panobinostat"
 ];
 
-define Regimen_CarfilzomibandPanobinostat:
+define final CarfilzomibPanobinostatRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarfilzomibandPanobinostat:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carfilzomib AND Treatment_Panobinostat;
-    
-define final Received_CarfilzomibPanobinostat:
-    where Regimen_CarfilzomibandPanobinostat OR ReceivedRegimenTreatments;        
+define final CarfilzomibPanobinostatTreatments:
+    where CarfilzomibTreatment AND PanobinostatTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define final BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab monotherapy", "Bevacizumab_monotherapy", "Bevacizumabmonotherapy"
+    "Bevacizumab monotherapy"
 ];
 
-define Regimen_Bevacizumabmonotherapy:
+define final BevacizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Bevacizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Bevacizumabmonotherapy:
-    where Treatment_Bevacizumab OR Regimen_Bevacizumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Breast_cancer, Vascular_sarcoma, Cervical_cancer, Glioblastoma, Anaplastic_glioma, Hepatocellular_carcinoma, Non-small_cell_lung_cancer, Small_cell_lung_cancer, Renal_cell_carcinoma, Endometrial_cancer, Ovarian_cancer, Colon_cancer
+Known regimen for: Cervical_cancer, Small_cell_lung_cancer, Anaplastic_glioma, Ovarian_cancer, Renal_cell_carcinoma, Breast_cancer, Endometrial_cancer, Non-small_cell_lung_cancer, Glioblastoma, Colon_cancer, Vascular_sarcoma, Hepatocellular_carcinoma
 
 
 ***/

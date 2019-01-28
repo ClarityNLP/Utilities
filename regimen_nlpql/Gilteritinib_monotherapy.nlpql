@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xospata", "gilteritinib"
 ];
 
-define Treatment_Gilteritinib:
+define final GilteritinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Gilteritinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gilteritinibmonotherapy", "Gilteritinib monotherapy", "Gilteritinib_monotherapy"
+    "Gilteritinib monotherapy"
 ];
 
-define Regimen_Gilteritinibmonotherapy:
+define final GilteritinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Gilteritinibmonotherapy:
 
 // Results
 
-        
-define final Received_Gilteritinibmonotherapy:
-    where Treatment_Gilteritinib OR Regimen_Gilteritinibmonotherapy;
-            
 
 // Comments
 /***

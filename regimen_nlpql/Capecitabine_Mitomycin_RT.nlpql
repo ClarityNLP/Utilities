@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine/ Mitomycin/ RT", "Capecitabine- Mitomycin- RT", "Capecitabine& Mitomycin& RT", "Capecitabine/Mitomycin/RT", "Capecitabine, Mitomycin, RT", "CapecitabineMitomycinRT", "Capecitabine_Mitomycin_RT", "Capecitabine &  Mitomycin &  RT", "Capecitabine and  Mitomycin and  RT"
+    "Capecitabine, Mitomycin, RT"
 ];
 
-define Regimen_CapecitabineMitomycinRT:
+define final CapecitabineMitomycinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CapecitabineMitomycinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Mitomycin AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineMitomycinRT:
-    where Regimen_CapecitabineMitomycinRT OR ReceivedRegimenTreatments;        
+define final CapecitabineMitomycinRTTreatments:
+    where CapecitabineTreatment AND MitomycinTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

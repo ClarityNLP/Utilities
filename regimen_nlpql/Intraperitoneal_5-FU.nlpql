@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal 5FU", "Intraperitoneal_5-FU", "Intraperitoneal 5-FU", "Intraperitoneal 5/FU", "Intraperitoneal5FU"
+    "Intraperitoneal 5-FU"
 ];
 
-define Regimen_Intraperitoneal5FU:
+define final Intraperitoneal5FURegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_Intraperitoneal5FU:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid;
-    
-define final Received_Intraperitoneal5FU:
-    where Regimen_Intraperitoneal5FU OR ReceivedRegimenTreatments;        
+define final Intraperitoneal5FUTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment;
+          
         
         
         

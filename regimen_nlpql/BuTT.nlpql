@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Thiotepa:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuTT", "Bu/TT"
+    "Bu/TT", "BuTT"
 ];
 
-define Regimen_BuTT:
+define final BuTTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BuTT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Busulfan AND Treatment_Thiotepa;
-    
-define final Received_BuTT:
-    where Regimen_BuTT OR ReceivedRegimenTreatments;        
+define final BuTTTreatments:
+    where BusulfanTreatment AND ThiotepaTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine& Carboplatin& Paclitaxel& RT", "CapecitabineCarboplatinPaclitaxelRT", "Capecitabine, Carboplatin, Paclitaxel, RT", "Capecitabine and  Carboplatin and  Paclitaxel and  RT", "Capecitabine/Carboplatin/Paclitaxel/RT", "Capecitabine- Carboplatin- Paclitaxel- RT", "Capecitabine_Carboplatin_Paclitaxel_RT", "RT", "Capecitabine/ Carboplatin/ Paclitaxel/ RT", "Capecitabine &  Carboplatin &  Paclitaxel &  RT"
+    "Capecitabine, Carboplatin, Paclitaxel, RT", "RT"
 ];
 
-define Regimen_CapecitabineCarboplatinPaclitaxelRT:
+define final CapecitabineCarboplatinPaclitaxelRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CapecitabineCarboplatinPaclitaxelRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Paclitaxel AND Treatment_Capecitabine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineCarboplatinPaclitaxelRT:
-    where Regimen_CapecitabineCarboplatinPaclitaxelRT OR ReceivedRegimenTreatments;        
+define final CapecitabineCarboplatinPaclitaxelRTTreatments:
+    where CarboplatinTreatment AND PaclitaxelTreatment AND CapecitabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

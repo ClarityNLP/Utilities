@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant", "Fludarabine- Cyclophosphamide- TBI for dUCB or haploidentical transplant", "Fludarabine& Cyclophosphamide& TBI for dUCB or haploidentical transplant", "Fludarabine/ Cyclophosphamide/ TBI for dUCB or haploidentical transplant", "Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant", "dUCB", "Fludarabine &  Cyclophosphamide &  TBI for dUCB or haploidentical transplant", "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "Fludarabine/Cyclophosphamide/TBI for dUCB or haploidentical transplant", "Fludarabine and  Cyclophosphamide and  TBI for dUCB or haploidentical transplant"
+    "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "dUCB"
 ];
 
-define Regimen_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant:
+define final FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplantRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Cyclophosphamide AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant:
-    where Regimen_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant OR ReceivedRegimenTreatments;        
+define final FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplantTreatments:
+    where FludarabineTreatment AND CyclophosphamideTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

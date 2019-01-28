@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Idarubicin, / Etoposide & Mitoxantrone, / Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin- then Etoposide & Mitoxantrone- then Cytarabine- Idarubicin- Thioguanine- with ATRA", "Cytarabine & Idarubicin& then Etoposide & Mitoxantrone& then Cytarabine& Idarubicin& Thioguanine& with ATRA", "Cytarabine & Idarubicin, & Etoposide & Mitoxantrone, & Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin,/Etoposide & Mitoxantrone,/Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin and  then Etoposide & Mitoxantrone and  then Cytarabine and  Idarubicin and  Thioguanine and  with ATRA", "Cytarabine and Idarubicin, then Etoposide and Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin,, Etoposide & Mitoxantrone,, Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin,&Etoposide & Mitoxantrone,&Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguaninewithATRA", "Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA", "Cytarabine & Idarubicin/then Etoposide & Mitoxantrone/then Cytarabine/Idarubicin/Thioguanine/with ATRA", "Cytarabine/Idarubicin, then Etoposide/Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin/ then Etoposide & Mitoxantrone/ then Cytarabine/ Idarubicin/ Thioguanine/ with ATRA", "Cytarabine / Idarubicin, then Etoposide / Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin, and Etoposide & Mitoxantrone, and Cytarabine, Idarubicin, Thioguanine, with ATRA", "Cytarabine & Idarubicin &  then Etoposide & Mitoxantrone &  then Cytarabine &  Idarubicin &  Thioguanine &  with ATRA"
+    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA"
 ];
 
-define Regimen_CytarabineIdarubicinEtoposideMitoxantroneCytarabineIdarubicinThioguaninewithATRA:
+define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguaninewithATRARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CytarabineIdarubicinEtoposideMitoxantroneCytarabineIdarubicinThio
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alltransretinoicacid AND Treatment_Cytarabine AND Treatment_Idarubicin;
-    
-define final Received_CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguaninewithATRA:
-    where Regimen_CytarabineIdarubicinEtoposideMitoxantroneCytarabineIdarubicinThioguaninewithATRA OR ReceivedRegimenTreatments;        
+define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguaninewithATRATreatments:
+    where AlltransretinoicacidTreatment AND CytarabineTreatment AND IdarubicinTreatment;
+          
         
         
         

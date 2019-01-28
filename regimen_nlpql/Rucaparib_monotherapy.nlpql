@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rubraca", "rucaparib"
 ];
 
-define Treatment_Rucaparib:
+define final RucaparibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Rucaparib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rucaparibmonotherapy", "Rucaparib_monotherapy", "Rucaparib monotherapy"
+    "Rucaparib monotherapy"
 ];
 
-define Regimen_Rucaparibmonotherapy:
+define final RucaparibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Rucaparibmonotherapy:
 
 // Results
 
-        
-define final Received_Rucaparibmonotherapy:
-    where Treatment_Rucaparib OR Regimen_Rucaparibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and Ifosfamide", "CisplatinIfosfamide", "Cisplatin/Ifosfamide", "Cisplatin_Ifosfamide", "Cisplatin / Ifosfamide", "Cisplatin & Ifosfamide"
+    "Cisplatin & Ifosfamide"
 ];
 
-define Regimen_CisplatinandIfosfamide:
+define final CisplatinIfosfamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinandIfosfamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Ifosfamide;
-    
-define final Received_CisplatinIfosfamide:
-    where Regimen_CisplatinandIfosfamide OR ReceivedRegimenTreatments;        
+define final CisplatinIfosfamideTreatments:
+    where CisplatinTreatment AND IfosfamideTreatment;
+          
         
         
         

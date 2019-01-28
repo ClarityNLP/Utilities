@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil/Folinic acid/RT", "Fluorouracil& Folinic acid& RT", "FluorouracilFolinicacidRT", "Fluorouracil/ Folinic acid/ RT", "Fluorouracil, Folinic acid, RT", "Fluorouracil and  Folinic acid and  RT", "Fluorouracil- Folinic acid- RT", "Fluorouracil_Folinic_acid_RT", "RT", "Fluorouracil &  Folinic acid &  RT"
+    "RT", "Fluorouracil, Folinic acid, RT"
 ];
 
-define Regimen_FluorouracilFolinicacidRT:
+define final FluorouracilFolinicacidRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FluorouracilFolinicacidRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Folinicacid AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_FluorouracilFolinicacidRT:
-    where Regimen_FluorouracilFolinicacidRT OR ReceivedRegimenTreatments;        
+define final FluorouracilFolinicacidRTTreatments:
+    where FluorouracilTreatment AND FolinicacidTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

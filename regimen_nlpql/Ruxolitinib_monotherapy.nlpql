@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "jakafi", "ruxolitinib"
 ];
 
-define Treatment_Ruxolitinib:
+define final RuxolitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Ruxolitinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ruxolitinib monotherapy", "Ruxolitinib_monotherapy", "Ruxolitinibmonotherapy"
+    "Ruxolitinib monotherapy"
 ];
 
-define Regimen_Ruxolitinibmonotherapy:
+define final RuxolitinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Ruxolitinibmonotherapy:
 
 // Results
 
-        
-define final Received_Ruxolitinibmonotherapy:
-    where Treatment_Ruxolitinib OR Regimen_Ruxolitinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Chronic_lymphocytic_leukemia_(CLLSLL), Myelofibrosis, Polycythemia_vera, Hypereosinophilic_syndrome, Essential_thrombocythemia
+Known regimen for: Acute_myeloid_leukemia, Myelofibrosis, Essential_thrombocythemia, Hypereosinophilic_syndrome, Polycythemia_vera, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

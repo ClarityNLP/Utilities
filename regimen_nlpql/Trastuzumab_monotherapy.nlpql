@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define final TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trastuzumab_monotherapy", "Trastuzumabmonotherapy", "Trastuzumab monotherapy"
+    "Trastuzumab monotherapy"
 ];
 
-define Regimen_Trastuzumabmonotherapy:
+define final TrastuzumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Trastuzumabmonotherapy:
 
 // Results
 
-        
-define final Received_Trastuzumabmonotherapy:
-    where Treatment_Trastuzumab OR Regimen_Trastuzumabmonotherapy;
-            
 
 // Comments
 /***

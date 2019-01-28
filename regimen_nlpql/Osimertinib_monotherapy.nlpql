@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tagrisso", "osimertinib"
 ];
 
-define Treatment_Osimertinib:
+define final OsimertinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Osimertinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Osimertinibmonotherapy", "Osimertinib monotherapy", "Osimertinib_monotherapy"
+    "Osimertinib monotherapy"
 ];
 
-define Regimen_Osimertinibmonotherapy:
+define final OsimertinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Osimertinibmonotherapy:
 
 // Results
 
-        
-define final Received_Osimertinibmonotherapy:
-    where Treatment_Osimertinib OR Regimen_Osimertinibmonotherapy;
-            
 
 // Comments
 /***

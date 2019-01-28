@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide& Dacarbazine& Vincristine", "Cyclophosphamide &  Dacarbazine &  Vincristine", "Cyclophosphamide and  Dacarbazine and  Vincristine", "CVD", "CyclophosphamideDacarbazineVincristine", "Cyclophosphamide_Dacarbazine_Vincristine", "Cyclophosphamide, Dacarbazine, Vincristine", "Cyclophosphamide- Dacarbazine- Vincristine", "Cyclophosphamide/ Dacarbazine/ Vincristine", "Cyclophosphamide/Dacarbazine/Vincristine"
+    "Cyclophosphamide, Dacarbazine, Vincristine", "CVD"
 ];
 
-define Regimen_CyclophosphamideDacarbazineVincristine:
+define final CyclophosphamideDacarbazineVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CyclophosphamideDacarbazineVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Dacarbazine AND Treatment_Vincristine;
-    
-define final Received_CyclophosphamideDacarbazineVincristine:
-    where Regimen_CyclophosphamideDacarbazineVincristine OR ReceivedRegimenTreatments;        
+define final CyclophosphamideDacarbazineVincristineTreatments:
+    where CyclophosphamideTreatment AND DacarbazineTreatment AND VincristineTreatment;
+          
         
         
         

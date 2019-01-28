@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lenvima", "lenvatinib"
 ];
 
-define Treatment_Lenvatinib:
+define final LenvatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Lenvatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenvatinib_monotherapy", "Lenvatinib monotherapy", "Lenvatinibmonotherapy"
+    "Lenvatinib monotherapy"
 ];
 
-define Regimen_Lenvatinibmonotherapy:
+define final LenvatinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Lenvatinibmonotherapy:
 
 // Results
 
-        
-define final Received_Lenvatinibmonotherapy:
-    where Treatment_Lenvatinib OR Regimen_Lenvatinibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "imbruvica", "ibrutinib"
 ];
 
-define Treatment_Ibrutinib:
+define  IbrutinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "arzerra", "ofatumumab"
 ];
 
-define Treatment_Ofatumumab:
+define  OfatumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ofatumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib & Ofatumumab", "Ibrutinib_Ofatumumab", "IbrutinibOfatumumab", "Ibrutinib/Ofatumumab", "Ibrutinib / Ofatumumab", "Ibrutinib and Ofatumumab"
+    "Ibrutinib & Ofatumumab"
 ];
 
-define Regimen_IbrutinibOfatumumab:
+define final IbrutinibOfatumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IbrutinibOfatumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ibrutinib AND Treatment_Ofatumumab;
-    
-define final Received_IbrutinibOfatumumab:
-    where Regimen_IbrutinibOfatumumab OR ReceivedRegimenTreatments;        
+define final IbrutinibOfatumumabTreatments:
+    where IbrutinibTreatment AND OfatumumabTreatment;
+          
         
         
         

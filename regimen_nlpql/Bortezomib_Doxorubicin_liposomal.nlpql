@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Pegylatedliposomaldoxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib_Doxorubicin_liposomal", "Bortezomib and Doxorubicin liposomal", "Bortezomib / Doxorubicin liposomal", "Bortezomib & Doxorubicin liposomal", "BortezomibDoxorubicinliposomal", "Bortezomib/Doxorubicin liposomal"
+    "Bortezomib & Doxorubicin liposomal"
 ];
 
-define Regimen_BortezomibDoxorubicinliposomal:
+define final BortezomibDoxorubicinliposomalRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BortezomibDoxorubicinliposomal:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Pegylatedliposomaldoxorubicin;
-    
-define final Received_BortezomibDoxorubicinliposomal:
-    where Regimen_BortezomibDoxorubicinliposomal OR ReceivedRegimenTreatments;        
+define final BortezomibDoxorubicinliposomalTreatments:
+    where BortezomibTreatment AND PegylatedliposomaldoxorubicinTreatment;
+          
         
         
         

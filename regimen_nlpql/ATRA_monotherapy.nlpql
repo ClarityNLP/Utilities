@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define final AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Alltransretinoicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRAmonotherapy", "ATRA_monotherapy", "ATRA monotherapy"
+    "ATRA monotherapy"
 ];
 
-define Regimen_ATRAmonotherapy:
+define final ATRAmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_ATRAmonotherapy:
 
 // Results
 
-        
-define final Received_ATRAmonotherapy:
-    where Treatment_Alltransretinoicacid OR Regimen_ATRAmonotherapy;
-            
 
 // Comments
 /***

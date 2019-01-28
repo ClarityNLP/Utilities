@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define  DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "VAI", "IVA"
 ];
 
-define Regimen_VAI:
+define final VAIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_VAI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vincristine AND Treatment_Dactinomycin AND Treatment_Ifosfamide;
-    
-define final Received_VAI:
-    where Regimen_VAI OR ReceivedRegimenTreatments;        
+define final VAITreatments:
+    where VincristineTreatment AND DactinomycinTreatment AND IfosfamideTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_VAI:
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Rhabdomyosarcoma
+Known regimen for: Rhabdomyosarcoma, Ewings_sarcoma
 
 
 ***/

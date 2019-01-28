@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sylatron", "peginterferon alfa-2b"
 ];
 
-define Treatment_Peginterferonalfa2b:
+define final Peginterferonalfa2bTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Peginterferonalfa2b:
 // Regimen names
 
 termset RegimenTerms:[
-    "Peginterferon alfa2b monotherapy", "Peginterferon alfa/2b monotherapy", "Peginterferon_alfa-2b_monotherapy", "Peginterferonalfa2bmonotherapy", "Peginterferon alfa-2b monotherapy"
+    "Peginterferon alfa-2b monotherapy"
 ];
 
-define Regimen_Peginterferonalfa2bmonotherapy:
+define final Peginterferonalfa2bmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Peginterferonalfa2bmonotherapy:
 
 // Results
 
-        
-define final Received_Peginterferonalfa2bmonotherapy:
-    where Treatment_Peginterferonalfa2b OR Regimen_Peginterferonalfa2bmonotherapy;
-            
 
 // Comments
 /***

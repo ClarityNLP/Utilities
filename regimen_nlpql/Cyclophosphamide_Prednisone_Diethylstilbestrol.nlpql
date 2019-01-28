@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "coumadin", "warfarin"
 ];
 
-define Treatment_Warfarin:
+define final WarfarinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Warfarin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide- Prednisone- Diethylstilbestrol", "Cyclophosphamide& Prednisone& Diethylstilbestrol", "Cyclophosphamide/ Prednisone/ Diethylstilbestrol", "Cyclophosphamide, Prednisone, Diethylstilbestrol", "Cyclophosphamide/Prednisone/Diethylstilbestrol", "CyclophosphamidePrednisoneDiethylstilbestrol", "CPD", "Cyclophosphamide_Prednisone_Diethylstilbestrol", "Cyclophosphamide &  Prednisone &  Diethylstilbestrol", "Cyclophosphamide and  Prednisone and  Diethylstilbestrol"
+    "CPD", "Cyclophosphamide, Prednisone, Diethylstilbestrol"
 ];
 
-define Regimen_CyclophosphamidePrednisoneDiethylstilbestrol:
+define final CyclophosphamidePrednisoneDiethylstilbestrolRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_CyclophosphamidePrednisoneDiethylstilbestrol:
 
 // Results
 
-        
-define final Received_CyclophosphamidePrednisoneDiethylstilbestrol:
-    where Treatment_Warfarin OR Regimen_CyclophosphamidePrednisoneDiethylstilbestrol;
-            
 
 // Comments
 /***

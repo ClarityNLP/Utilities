@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil& Mitomycin& RT", "Fluorouracil/ Mitomycin/ RT", "Fluorouracil/Mitomycin/RT", "Fluorouracil and  Mitomycin and  RT", "Fluorouracil- Mitomycin- RT", "Fluorouracil, Mitomycin, RT", "Fluorouracil &  Mitomycin &  RT", "FluorouracilMitomycinRT", "RT", "Fluorouracil_Mitomycin_RT"
+    "RT", "Fluorouracil, Mitomycin, RT"
 ];
 
-define Regimen_FluorouracilMitomycinRT:
+define final FluorouracilMitomycinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_FluorouracilMitomycinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Mitomycin AND Treatment_Externalbeamradiotherapy AND Treatment_Externalbeamradiotherapy AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_FluorouracilMitomycinRT:
-    where Regimen_FluorouracilMitomycinRT OR ReceivedRegimenTreatments;        
+define final FluorouracilMitomycinRTTreatments:
+    where FluorouracilTreatment AND MitomycinTreatment AND ExternalbeamradiotherapyTreatment AND ExternalbeamradiotherapyTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         
@@ -98,7 +96,7 @@ define final Received_FluorouracilMitomycinRT:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Head_and_neck_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Cervical_cancer, Head_and_neck_cancer
 
 
 ***/

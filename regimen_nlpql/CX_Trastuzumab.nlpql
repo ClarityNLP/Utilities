@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX/Trastuzumab", "CX and Trastuzumab", "CXTrastuzumab", "CX & Trastuzumab", "CX_Trastuzumab", "CX", "CX / Trastuzumab"
+    "CX", "CX & Trastuzumab"
 ];
 
-define Regimen_CXTrastuzumab:
+define final CXTrastuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CXTrastuzumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Capecitabine AND Treatment_Trastuzumab;
-    
-define final Received_CXTrastuzumab:
-    where Regimen_CXTrastuzumab OR ReceivedRegimenTreatments;        
+define final CXTrastuzumabTreatments:
+    where CisplatinTreatment AND CapecitabineTreatment AND TrastuzumabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CXTrastuzumab:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
 
 
 ***/

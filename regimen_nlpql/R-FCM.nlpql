@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Mitoxantrone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-FCM", "R/FCM", "RFCM"
+    "R/FCM", "RFCM", "R-FCM"
 ];
 
-define Regimen_RFCM:
+define final RFCMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_RFCM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Fludarabine AND Treatment_Cyclophosphamide AND Treatment_Mitoxantrone;
-    
-define final Received_RFCM:
-    where Regimen_RFCM OR ReceivedRegimenTreatments;        
+define final RFCMTreatments:
+    where RituximabTreatment AND FludarabineTreatment AND CyclophosphamideTreatment AND MitoxantroneTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_RFCM:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma
 
 
 ***/

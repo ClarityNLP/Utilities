@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define final AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Alemtuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab monotherapy", "Alemtuzumabmonotherapy", "Alemtuzumab_monotherapy"
+    "Alemtuzumab monotherapy"
 ];
 
-define Regimen_Alemtuzumabmonotherapy:
+define final AlemtuzumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Alemtuzumabmonotherapy:
 
 // Results
 
-        
-define final Received_Alemtuzumabmonotherapy:
-    where Treatment_Alemtuzumab OR Regimen_Alemtuzumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Autoimmune_cytopenias, Adult_T-cell_leukemia-lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Hypereosinophilic_syndrome, Waldenström_macroglobulinemia, Cutaneous_T-cell_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Autoimmune_cytopenias, Adult_T-cell_leukemia-lymphoma, Waldenström_macroglobulinemia, Myelodysplastic_syndrome, Hypereosinophilic_syndrome, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

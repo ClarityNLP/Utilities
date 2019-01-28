@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "AT", "AT_Taxol", "ATTaxol", "AT (Taxol)"
+    "AT_Taxol", "AT (Taxol)", "AT", "ATTaxol"
 ];
 
-define Regimen_AT:
+define final ATTaxolRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Paclitaxel;
-    
-define final Received_ATTaxol:
-    where Regimen_AT OR ReceivedRegimenTreatments;        
+define final ATTaxolTreatments:
+    where DoxorubicinTreatment AND PaclitaxelTreatment;
+          
         
         
         

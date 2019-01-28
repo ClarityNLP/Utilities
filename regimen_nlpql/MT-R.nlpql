@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define  TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "MTR", "MT-R", "MT/R"
+    "MT/R", "MT-R", "MTR"
 ];
 
-define Regimen_MTR:
+define final MTRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_MTR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Temozolomide AND Treatment_Rituximab;
-    
-define final Received_MTR:
-    where Regimen_MTR OR ReceivedRegimenTreatments;        
+define final MTRTreatments:
+    where MethotrexateTreatment AND TemozolomideTreatment AND RituximabTreatment;
+          
         
         
         

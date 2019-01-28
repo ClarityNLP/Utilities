@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define final ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Chlorambucil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chlorambucil_monotherapy", "Chlorambucilmonotherapy", "Chlorambucil monotherapy"
+    "Chlorambucil monotherapy"
 ];
 
-define Regimen_Chlorambucilmonotherapy:
+define final ChlorambucilmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Chlorambucilmonotherapy:
 
 // Results
 
-        
-define final Received_Chlorambucilmonotherapy:
-    where Treatment_Chlorambucil OR Regimen_Chlorambucilmonotherapy;
-            
 
 // Comments
 /***

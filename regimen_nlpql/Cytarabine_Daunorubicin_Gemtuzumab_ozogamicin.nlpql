@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define Treatment_Gemtuzumabozogamicin:
+define  GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Gemtuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine/ Daunorubicin/ Gemtuzumab ozogamicin", "Cytarabine &  Daunorubicin &  Gemtuzumab ozogamicin", "CytarabineDaunorubicinGemtuzumabozogamicin", "Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin", "Cytarabine, Daunorubicin, Gemtuzumab ozogamicin", "Cytarabine& Daunorubicin& Gemtuzumab ozogamicin", "Cytarabine/Daunorubicin/Gemtuzumab ozogamicin", "Cytarabine and  Daunorubicin and  Gemtuzumab ozogamicin", "Cytarabine- Daunorubicin- Gemtuzumab ozogamicin"
+    "Cytarabine, Daunorubicin, Gemtuzumab ozogamicin"
 ];
 
-define Regimen_CytarabineDaunorubicinGemtuzumabozogamicin:
+define final CytarabineDaunorubicinGemtuzumabozogamicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CytarabineDaunorubicinGemtuzumabozogamicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Gemtuzumabozogamicin;
-    
-define final Received_CytarabineDaunorubicinGemtuzumabozogamicin:
-    where Regimen_CytarabineDaunorubicinGemtuzumabozogamicin OR ReceivedRegimenTreatments;        
+define final CytarabineDaunorubicinGemtuzumabozogamicinTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND GemtuzumabozogamicinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "nerlynx", "neratinib"
 ];
 
-define Treatment_Neratinib:
+define  NeratinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Neratinib_Paclitaxel", "Neratinib / Paclitaxel", "Neratinib/Paclitaxel", "Neratinib and Paclitaxel", "NeratinibPaclitaxel", "Neratinib & Paclitaxel"
+    "Neratinib & Paclitaxel"
 ];
 
-define Regimen_NeratinibPaclitaxel:
+define final NeratinibPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_NeratinibPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Neratinib AND Treatment_Paclitaxel;
-    
-define final Received_NeratinibPaclitaxel:
-    where Regimen_NeratinibPaclitaxel OR ReceivedRegimenTreatments;        
+define final NeratinibPaclitaxelTreatments:
+    where NeratinibTreatment AND PaclitaxelTreatment;
+          
         
         
         

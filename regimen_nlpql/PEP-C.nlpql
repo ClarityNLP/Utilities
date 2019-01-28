@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zofran", "ondansetron"
 ];
 
-define Treatment_Ondansetron:
+define  OndansetronTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Procarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "PEPC", "PEP-C", "PEP/C"
+    "PEP-C", "PEPC", "PEP/C"
 ];
 
-define Regimen_PEPC:
+define final PEPCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PEPC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ondansetron AND Treatment_Procarbazine;
-    
-define final Received_PEPC:
-    where Regimen_PEPC OR ReceivedRegimenTreatments;        
+define final PEPCTreatments:
+    where OndansetronTreatment AND ProcarbazineTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_PEPC:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma
 
 
 ***/

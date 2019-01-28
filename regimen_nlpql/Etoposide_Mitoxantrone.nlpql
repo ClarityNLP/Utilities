@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Mitoxantrone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide & Mitoxantrone", "Etoposide / Mitoxantrone", "Etoposide/Mitoxantrone", "Etoposide_Mitoxantrone", "Etoposide and Mitoxantrone", "EtoposideMitoxantrone"
+    "Etoposide & Mitoxantrone"
 ];
 
-define Regimen_EtoposideMitoxantrone:
+define final EtoposideMitoxantroneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_EtoposideMitoxantrone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Mitoxantrone;
-    
-define final Received_EtoposideMitoxantrone:
-    where Regimen_EtoposideMitoxantrone OR ReceivedRegimenTreatments;        
+define final EtoposideMitoxantroneTreatments:
+    where EtoposideTreatment AND MitoxantroneTreatment;
+          
         
         
         

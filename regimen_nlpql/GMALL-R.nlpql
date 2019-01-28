@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "GMALLR", "GMALL-R", "GMALL/R"
+    "GMALL/R", "GMALLR", "GMALL-R"
 ];
 
-define Regimen_GMALLR:
+define final GMALLRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GMALLR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Methotrexate;
-    
-define final Received_GMALLR:
-    where Regimen_GMALLR OR ReceivedRegimenTreatments;        
+define final GMALLRTreatments:
+    where FolinicacidTreatment AND MethotrexateTreatment;
+          
         
         
         

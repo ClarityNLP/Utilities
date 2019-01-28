@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "BortezomibDexamethasone", "Bortezomib & Dexamethasone", "Bortezomib/Dexamethasone", "Bortezomib and Dexamethasone", "Bortezomib / Dexamethasone", "Bortezomib_Dexamethasone"
+    "Bortezomib & Dexamethasone"
 ];
 
-define Regimen_BortezomibDexamethasone:
+define final BortezomibDexamethasoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BortezomibDexamethasone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Dexamethasone;
-    
-define final Received_BortezomibDexamethasone:
-    where Regimen_BortezomibDexamethasone OR ReceivedRegimenTreatments;        
+define final BortezomibDexamethasoneTreatments:
+    where BortezomibTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_BortezomibDexamethasone:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction, Light-chain_(AL)_amyloidosis
 
 
 ***/

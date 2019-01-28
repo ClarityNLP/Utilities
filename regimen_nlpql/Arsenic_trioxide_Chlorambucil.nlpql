@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define  ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Chlorambucil:
 // Regimen names
 
 termset RegimenTerms:[
-    "ArsenictrioxideChlorambucil", "Arsenic trioxide / Chlorambucil", "Arsenic trioxide/Chlorambucil", "Arsenic trioxide and Chlorambucil", "Arsenic_trioxide_Chlorambucil", "Arsenic trioxide & Chlorambucil"
+    "Arsenic trioxide & Chlorambucil"
 ];
 
-define Regimen_ArsenictrioxideChlorambucil:
+define final ArsenictrioxideChlorambucilRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ArsenictrioxideChlorambucil:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Arsenictrioxide AND Treatment_Chlorambucil;
-    
-define final Received_ArsenictrioxideChlorambucil:
-    where Regimen_ArsenictrioxideChlorambucil OR ReceivedRegimenTreatments;        
+define final ArsenictrioxideChlorambucilTreatments:
+    where ArsenictrioxideTreatment AND ChlorambucilTreatment;
+          
         
         
         

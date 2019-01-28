@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define final PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "T", "Paclitaxel monotherapy and  weekly", "Paclitaxel monotherapy/ weekly", "Paclitaxel monotherapy- weekly", "Paclitaxel monotherapy& weekly", "Paclitaxel_monotherapy_weekly", "Paclitaxel monotherapy &  weekly", "Paclitaxelmonotherapyweekly", "Paclitaxel monotherapy/weekly", "Paclitaxel monotherapy, weekly"
+    "Paclitaxel monotherapy, weekly", "T"
 ];
 
-define Regimen_T:
+define final PaclitaxelmonotherapyweeklyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_T:
 
 // Results
 
-        
-define final Received_Paclitaxelmonotherapyweekly:
-    where Treatment_Paclitaxel OR Regimen_T;
-            
 
 // Comments
 /***

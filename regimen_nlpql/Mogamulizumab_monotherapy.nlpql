@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "poteligeo", "mogamulizumab"
 ];
 
-define Treatment_Mogamulizumab:
+define final MogamulizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mogamulizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mogamulizumab monotherapy", "Mogamulizumabmonotherapy", "Mogamulizumab_monotherapy"
+    "Mogamulizumab monotherapy"
 ];
 
-define Regimen_Mogamulizumabmonotherapy:
+define final MogamulizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mogamulizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Mogamulizumabmonotherapy:
-    where Treatment_Mogamulizumab OR Regimen_Mogamulizumabmonotherapy;
-            
 
 // Comments
 /***

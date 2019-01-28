@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vumon", "teniposide"
 ];
 
-define Treatment_Teniposide:
+define  TeniposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Teniposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin and Teniposide", "CarboplatinTeniposide", "Carboplatin / Teniposide", "Carboplatin/Teniposide", "Carboplatin & Teniposide", "Carboplatin_Teniposide"
+    "Carboplatin & Teniposide"
 ];
 
-define Regimen_CarboplatinandTeniposide:
+define final CarboplatinTeniposideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinandTeniposide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Teniposide;
-    
-define final Received_CarboplatinTeniposide:
-    where Regimen_CarboplatinandTeniposide OR ReceivedRegimenTreatments;        
+define final CarboplatinTeniposideTreatments:
+    where CarboplatinTreatment AND TeniposideTreatment;
+          
         
         
         

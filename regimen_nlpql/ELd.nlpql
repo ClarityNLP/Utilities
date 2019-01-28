@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "ERd", "ELd"
 ];
 
-define Regimen_ERd:
+define final ELdRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ERd:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Elotuzumab AND Treatment_Lenalidomide AND Treatment_Dexamethasone AND Treatment_Elotuzumab;
-    
-define final Received_ELd:
-    where Regimen_ERd OR ReceivedRegimenTreatments;        
+define final ELdTreatments:
+    where ElotuzumabTreatment AND LenalidomideTreatment AND DexamethasoneTreatment AND ElotuzumabTreatment;
+          
         
         
         

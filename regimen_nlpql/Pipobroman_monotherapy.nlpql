@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vercyte", "pipobroman"
 ];
 
-define Treatment_Pipobroman:
+define final PipobromanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pipobroman:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pipobromanmonotherapy", "Pipobroman monotherapy", "Pipobroman_monotherapy"
+    "Pipobroman monotherapy"
 ];
 
-define Regimen_Pipobromanmonotherapy:
+define final PipobromanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Pipobromanmonotherapy:
 
 // Results
 
-        
-define final Received_Pipobromanmonotherapy:
-    where Treatment_Pipobroman OR Regimen_Pipobromanmonotherapy;
-            
 
 // Comments
 /***

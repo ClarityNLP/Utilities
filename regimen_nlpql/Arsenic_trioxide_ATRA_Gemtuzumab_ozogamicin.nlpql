@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define  ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define Treatment_Gemtuzumabozogamicin:
+define  GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Gemtuzumabozogamicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide/ATRA/Gemtuzumab ozogamicin", "Arsenic trioxide &  ATRA &  Gemtuzumab ozogamicin", "ArsenictrioxideATRAGemtuzumabozogamicin", "Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin", "Arsenic trioxide/ ATRA/ Gemtuzumab ozogamicin", "Arsenic trioxide, ATRA, Gemtuzumab ozogamicin", "Arsenic trioxide and  ATRA and  Gemtuzumab ozogamicin", "Arsenic trioxide& ATRA& Gemtuzumab ozogamicin", "Arsenic trioxide- ATRA- Gemtuzumab ozogamicin"
+    "Arsenic trioxide, ATRA, Gemtuzumab ozogamicin"
 ];
 
-define Regimen_ArsenictrioxideATRAGemtuzumabozogamicin:
+define final ArsenictrioxideATRAGemtuzumabozogamicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ArsenictrioxideATRAGemtuzumabozogamicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Arsenictrioxide AND Treatment_Alltransretinoicacid AND Treatment_Gemtuzumabozogamicin;
-    
-define final Received_ArsenictrioxideATRAGemtuzumabozogamicin:
-    where Regimen_ArsenictrioxideATRAGemtuzumabozogamicin OR ReceivedRegimenTreatments;        
+define final ArsenictrioxideATRAGemtuzumabozogamicinTreatments:
+    where ArsenictrioxideTreatment AND AlltransretinoicacidTreatment AND GemtuzumabozogamicinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ontak", "denileukin diftitox"
 ];
 
-define Treatment_Denileukindiftitox:
+define  DenileukindiftitoxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -76,7 +76,7 @@ termset RegimenTerms:[
     "DDCHOP", "DD-CHOP", "DD/CHOP"
 ];
 
-define Regimen_DDCHOP:
+define final DDCHOPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_DDCHOP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Denileukindiftitox AND Treatment_Cyclophosphamide AND Treatment_Doxorubicin AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_DDCHOP:
-    where Regimen_DDCHOP OR ReceivedRegimenTreatments;        
+define final DDCHOPTreatments:
+    where DenileukindiftitoxTreatment AND CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         

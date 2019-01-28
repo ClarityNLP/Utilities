@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "VAD", "BDD", "PAd", "PAD"
+    "PAD", "VAD", "BDD", "PAd"
 ];
 
-define Regimen_VAD:
+define final PADRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_VAD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Doxorubicin AND Treatment_Dexamethasone;
-    
-define final Received_PAD:
-    where Regimen_VAD OR ReceivedRegimenTreatments;        
+define final PADTreatments:
+    where BortezomibTreatment AND DoxorubicinTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_PAD:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
 
 
 ***/

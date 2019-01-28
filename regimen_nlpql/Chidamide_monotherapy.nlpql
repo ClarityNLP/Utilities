@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "epidaza", "chidamide"
 ];
 
-define Treatment_Chidamide:
+define final ChidamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Chidamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chidamide_monotherapy", "Chidamidemonotherapy", "Chidamide monotherapy"
+    "Chidamide monotherapy"
 ];
 
-define Regimen_Chidamidemonotherapy:
+define final ChidamidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Chidamidemonotherapy:
 
 // Results
 
-        
-define final Received_Chidamidemonotherapy:
-    where Treatment_Chidamide OR Regimen_Chidamidemonotherapy;
-            
 
 // Comments
 /***

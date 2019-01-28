@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "pomalyst", "pomalidomide"
 ];
 
-define Treatment_Pomalidomide:
+define  PomalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "PCP"
 ];
 
-define Regimen_PCP:
+define final PCPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PCP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pomalidomide AND Treatment_Cyclophosphamide AND Treatment_Prednisone;
-    
-define final Received_PCP:
-    where Regimen_PCP OR ReceivedRegimenTreatments;        
+define final PCPTreatments:
+    where PomalidomideTreatment AND CyclophosphamideTreatment AND PrednisoneTreatment;
+          
         
         
         

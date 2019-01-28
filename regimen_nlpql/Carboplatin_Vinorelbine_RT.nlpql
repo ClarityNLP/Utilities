@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Vinorelbine, RT", "Carboplatin- Vinorelbine- RT", "Carboplatin &  Vinorelbine &  RT", "Carboplatin& Vinorelbine& RT", "CarboplatinVinorelbineRT", "Carboplatin/ Vinorelbine/ RT", "Carboplatin_Vinorelbine_RT", "Carboplatin and  Vinorelbine and  RT", "Carboplatin/Vinorelbine/RT"
+    "Carboplatin, Vinorelbine, RT"
 ];
 
-define Regimen_CarboplatinVinorelbineRT:
+define final CarboplatinVinorelbineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinVinorelbineRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Vinorelbine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CarboplatinVinorelbineRT:
-    where Regimen_CarboplatinVinorelbineRT OR ReceivedRegimenTreatments;        
+define final CarboplatinVinorelbineRTTreatments:
+    where CarboplatinTreatment AND VinorelbineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

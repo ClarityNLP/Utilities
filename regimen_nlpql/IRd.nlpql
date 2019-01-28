@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ninlaro", "ixazomib"
 ];
 
-define Treatment_Ixazomib:
+define  IxazomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "IRd"
 ];
 
-define Regimen_IRd:
+define final IRdRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_IRd:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ixazomib AND Treatment_Lenalidomide AND Treatment_Dexamethasone;
-    
-define final Received_IRd:
-    where Regimen_IRd OR ReceivedRegimenTreatments;        
+define final IRdTreatments:
+    where IxazomibTreatment AND LenalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         

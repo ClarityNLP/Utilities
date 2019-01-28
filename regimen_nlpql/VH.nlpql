@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "VH"
 ];
 
-define Regimen_VH:
+define final VHRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_VH:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vinorelbine AND Treatment_Trastuzumab;
-    
-define final Received_VH:
-    where Regimen_VH OR ReceivedRegimenTreatments;        
+define final VHTreatments:
+    where VinorelbineTreatment AND TrastuzumabTreatment;
+          
         
         
         

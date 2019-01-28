@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "clolar", "clofarabine"
 ];
 
-define Treatment_Clofarabine:
+define final ClofarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Clofarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabinemonotherapy", "Clofarabine_monotherapy", "Clofarabine monotherapy"
+    "Clofarabine monotherapy"
 ];
 
-define Regimen_Clofarabinemonotherapy:
+define final ClofarabinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Clofarabinemonotherapy:
 
 // Results
 
-        
-define final Received_Clofarabinemonotherapy:
-    where Treatment_Clofarabine OR Regimen_Clofarabinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia
 
 
 ***/

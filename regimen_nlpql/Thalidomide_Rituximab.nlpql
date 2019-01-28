@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thalidomide_Rituximab", "Thalidomide / Rituximab", "Thalidomide & Rituximab", "Thalidomide and Rituximab", "ThalidomideRituximab", "Thalidomide/Rituximab"
+    "Thalidomide & Rituximab"
 ];
 
-define Regimen_ThalidomideRituximab:
+define final ThalidomideRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ThalidomideRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Thalidomide AND Treatment_Rituximab;
-    
-define final Received_ThalidomideRituximab:
-    where Regimen_ThalidomideRituximab OR ReceivedRegimenTreatments;        
+define final ThalidomideRituximabTreatments:
+    where ThalidomideTreatment AND RituximabTreatment;
+          
         
         
         

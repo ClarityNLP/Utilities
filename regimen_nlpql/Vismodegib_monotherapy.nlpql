@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "erivedge", "vismodegib"
 ];
 
-define Treatment_Vismodegib:
+define final VismodegibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vismodegib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vismodegib_monotherapy", "Vismodegibmonotherapy", "Vismodegib monotherapy"
+    "Vismodegib monotherapy"
 ];
 
-define Regimen_Vismodegibmonotherapy:
+define final VismodegibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Vismodegibmonotherapy:
 
 // Results
 
-        
-define final Received_Vismodegibmonotherapy:
-    where Treatment_Vismodegib OR Regimen_Vismodegibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Cutaneous_basal_cell_carcinoma, SMO_or_PTCH-1_(Hedgehog)
+Known regimen for: SMO_or_PTCH-1_(Hedgehog), Cutaneous_basal_cell_carcinoma
 
 
 ***/

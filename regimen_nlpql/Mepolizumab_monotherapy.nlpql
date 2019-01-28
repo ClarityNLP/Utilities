@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "nucala", "mepolizumab"
 ];
 
-define Treatment_Mepolizumab:
+define final MepolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mepolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mepolizumab monotherapy", "Mepolizumab_monotherapy", "Mepolizumabmonotherapy"
+    "Mepolizumab monotherapy"
 ];
 
-define Regimen_Mepolizumabmonotherapy:
+define final MepolizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mepolizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Mepolizumabmonotherapy:
-    where Treatment_Mepolizumab OR Regimen_Mepolizumabmonotherapy;
-            
 
 // Comments
 /***

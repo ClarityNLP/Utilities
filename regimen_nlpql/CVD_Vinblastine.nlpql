@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dacarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "CVD_Vinblastine", "CVDVinblastine", "CVD", "CVD (Vinblastine)"
+    "CVD (Vinblastine)", "CVD"
 ];
 
-define Regimen_CVDVinblastine:
+define final CVDVinblastineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CVDVinblastine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
-    
-define final Received_CVDVinblastine:
-    where Regimen_CVDVinblastine OR ReceivedRegimenTreatments;        
+define final CVDVinblastineTreatments:
+    where CisplatinTreatment AND VinblastineTreatment AND DacarbazineTreatment;
+          
         
         
         

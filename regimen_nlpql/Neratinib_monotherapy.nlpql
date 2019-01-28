@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "nerlynx", "neratinib"
 ];
 
-define Treatment_Neratinib:
+define final NeratinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Neratinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Neratinibmonotherapy", "Neratinib_monotherapy", "Neratinib monotherapy"
+    "Neratinib monotherapy"
 ];
 
-define Regimen_Neratinibmonotherapy:
+define final NeratinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Neratinibmonotherapy:
 
 // Results
 
-        
-define final Received_Neratinibmonotherapy:
-    where Treatment_Neratinib OR Regimen_Neratinibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide & Prednisone", "EtoposidePrednisone", "Etoposide and Prednisone", "Etoposide/Prednisone", "Etoposide / Prednisone", "Etoposide_Prednisone"
+    "Etoposide & Prednisone"
 ];
 
-define Regimen_EtoposidePrednisone:
+define final EtoposidePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_EtoposidePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Etoposide AND Treatment_Prednisone;
-    
-define final Received_EtoposidePrednisone:
-    where Regimen_EtoposidePrednisone OR ReceivedRegimenTreatments;        
+define final EtoposidePrednisoneTreatments:
+    where EtoposideTreatment AND PrednisoneTreatment;
+          
         
         
         

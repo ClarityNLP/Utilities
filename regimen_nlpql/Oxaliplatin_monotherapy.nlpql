@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define final OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Oxaliplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin monotherapy", "Oxaliplatin_monotherapy", "Oxaliplatinmonotherapy"
+    "Oxaliplatin monotherapy"
 ];
 
-define Regimen_Oxaliplatinmonotherapy:
+define final OxaliplatinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Oxaliplatinmonotherapy:
 
 // Results
 
-        
-define final Received_Oxaliplatinmonotherapy:
-    where Treatment_Oxaliplatin OR Regimen_Oxaliplatinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define final GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine,, Fluorouracil & RT,, Gemcitabine", "Gemcitabine/then Fluorouracil & RT/then Gemcitabine", "Gemcitabine/ then Fluorouracil & RT/ then Gemcitabine", "Gemcitabine, & Fluorouracil & RT, & Gemcitabine", "Gemcitabine, / Fluorouracil & RT, / Gemcitabine", "Gemcitabine, and Fluorouracil & RT, and Gemcitabine", "Gemcitabine, then Fluorouracil and RT, then Gemcitabine", "Gemcitabine &  then Fluorouracil & RT &  then Gemcitabine", "Gemcitabine and  then Fluorouracil & RT and  then Gemcitabine", "Gemcitabine, then Fluorouracil / RT, then Gemcitabine", "Gemcitabine,&Fluorouracil & RT,&Gemcitabine", "Gemcitabine_then_Fluorouracil_RT_then_Gemcitabine", "Gemcitabine, then Fluorouracil/RT, then Gemcitabine", "Gemcitabine,/Fluorouracil & RT,/Gemcitabine", "GemcitabinethenFluorouracilRTthenGemcitabine", "Gemcitabine- then Fluorouracil & RT- then Gemcitabine", "Gemcitabine& then Fluorouracil & RT& then Gemcitabine", "RT", "Gemcitabine, then Fluorouracil & RT, then Gemcitabine"
+    "Gemcitabine, then Fluorouracil & RT, then Gemcitabine", "RT"
 ];
 
-define Regimen_GemcitabineFluorouracilRTGemcitabine:
+define final GemcitabinethenFluorouracilRTthenGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_GemcitabineFluorouracilRTGemcitabine:
 
 // Results
 
-        
-define final Received_GemcitabinethenFluorouracilRTthenGemcitabine:
-    where Treatment_Gemcitabine OR Regimen_GemcitabineFluorouracilRTGemcitabine;
-            
 
 // Comments
 /***

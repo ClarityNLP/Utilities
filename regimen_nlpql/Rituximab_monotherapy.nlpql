@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define final RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rituximabmonotherapy", "Rituximab_monotherapy", "Rituximab monotherapy"
+    "Rituximab monotherapy"
 ];
 
-define Regimen_Rituximabmonotherapy:
+define final RituximabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Rituximabmonotherapy:
 
 // Results
 
-        
-define final Received_Rituximabmonotherapy:
-    where Treatment_Rituximab OR Regimen_Rituximabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Hairy_cell_leukemia, Immune_thrombocytopenia_(ITP), Castleman_disease, CNS_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Diffuse_large_B-cell_lymphoma, Inherited_coagulopathy, Cold_agglutinin_disease, HIV-associated_lymphoma, Thrombotic_thrombocytopenic_purpura, Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Acquired_coagulopathy, Mantle_cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Immune_thrombocytopenia_(ITP), Cold_agglutinin_disease, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Inherited_coagulopathy, Marginal_zone_lymphoma, Follicular_lymphoma, Mantle_cell_lymphoma, Waldenström_macroglobulinemia, HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma, CNS_lymphoma, Hairy_cell_leukemia, Thrombotic_thrombocytopenic_purpura, Chronic_lymphocytic_leukemia_(CLLSLL), Acquired_coagulopathy, Castleman_disease
 
 
 ***/

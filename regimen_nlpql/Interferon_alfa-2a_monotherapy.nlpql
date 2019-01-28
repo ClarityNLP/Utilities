@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "roferon-a", "interferon alfa-2a"
 ];
 
-define Treatment_Interferonalfa2a:
+define final Interferonalfa2aTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Interferonalfa2a:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa2a monotherapy", "Interferonalfa2amonotherapy", "Interferon alfa/2a monotherapy", "Interferon alfa-2a monotherapy", "Interferon_alfa-2a_monotherapy"
+    "Interferon alfa-2a monotherapy"
 ];
 
-define Regimen_Interferonalfa2amonotherapy:
+define final Interferonalfa2amonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Interferonalfa2amonotherapy:
 
 // Results
 
-        
-define final Received_Interferonalfa2amonotherapy:
-    where Treatment_Interferonalfa2a OR Regimen_Interferonalfa2amonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Renal_cell_carcinoma, Melanoma
+Known regimen for: Melanoma, Renal_cell_carcinoma
 
 
 ***/

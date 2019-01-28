@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cyramza", "ramucirumab"
 ];
 
-define Treatment_Ramucirumab:
+define  RamucirumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel / Ramucirumab", "PaclitaxelRamucirumab", "Paclitaxel_Ramucirumab", "Paclitaxel & Ramucirumab", "Paclitaxel/Ramucirumab", "Paclitaxel and Ramucirumab"
+    "Paclitaxel & Ramucirumab"
 ];
 
-define Regimen_PaclitaxelRamucirumab:
+define final PaclitaxelRamucirumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PaclitaxelRamucirumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ramucirumab AND Treatment_Paclitaxel;
-    
-define final Received_PaclitaxelRamucirumab:
-    where Regimen_PaclitaxelRamucirumab OR ReceivedRegimenTreatments;        
+define final PaclitaxelRamucirumabTreatments:
+    where RamucirumabTreatment AND PaclitaxelTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_PaclitaxelRamucirumab:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
 
 
 ***/

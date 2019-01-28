@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "iressa", "gefitinib"
 ];
 
-define Treatment_Gefitinib:
+define final GefitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Gefitinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gefitinib_monotherapy", "Gefitinibmonotherapy", "Gefitinib monotherapy"
+    "Gefitinib monotherapy"
 ];
 
-define Regimen_Gefitinibmonotherapy:
+define final GefitinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Gefitinibmonotherapy:
 
 // Results
 
-        
-define final Received_Gefitinibmonotherapy:
-    where Treatment_Gefitinib OR Regimen_Gefitinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated
+Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Non-small_cell_lung_cancer
 
 
 ***/

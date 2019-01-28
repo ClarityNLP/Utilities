@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define final FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil_monotherapy", "Fluorouracilmonotherapy", "Fluorouracil monotherapy"
+    "Fluorouracil monotherapy"
 ];
 
-define Regimen_Fluorouracilmonotherapy:
+define final FluorouracilmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Fluorouracilmonotherapy:
 
 // Results
 
-        
-define final Received_Fluorouracilmonotherapy:
-    where Treatment_Fluorouracil OR Regimen_Fluorouracilmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Head_and_neck_cancer, Rectal_cancer, Gastric_cancer, Colon_cancer
+Known regimen for: Pancreatic_cancer, Rectal_cancer, Gastric_cancer, Head_and_neck_cancer, Colon_cancer
 
 
 ***/

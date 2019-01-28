@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "venclexta", "venetoclax"
 ];
 
-define Treatment_Venetoclax:
+define  VenetoclaxTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Venetoclax:
 // Regimen names
 
 termset RegimenTerms:[
-    "LoDAC_Venetoclax", "LoDACVenetoclax", "LoDAC & Venetoclax", "LoDAC and Venetoclax", "LoDAC / Venetoclax", "LoDAC/Venetoclax"
+    "LoDAC & Venetoclax"
 ];
 
-define Regimen_LoDACVenetoclax:
+define final LoDACVenetoclaxRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_LoDACVenetoclax:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Venetoclax;
-    
-define final Received_LoDACVenetoclax:
-    where Regimen_LoDACVenetoclax OR ReceivedRegimenTreatments;        
+define final LoDACVenetoclaxTreatments:
+    where CytarabineTreatment AND VenetoclaxTreatment;
+          
         
         
         

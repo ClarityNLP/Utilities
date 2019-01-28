@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define Treatment_Brentuximabvedotin:
+define  BrentuximabvedotinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dacarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab_vedotin_Dacarbazine", "Brentuximab vedotin and Dacarbazine", "Brentuximab vedotin/Dacarbazine", "BrentuximabvedotinDacarbazine", "Brentuximab vedotin & Dacarbazine", "Brentuximab vedotin / Dacarbazine"
+    "Brentuximab vedotin & Dacarbazine"
 ];
 
-define Regimen_BrentuximabvedotinDacarbazine:
+define final BrentuximabvedotinDacarbazineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BrentuximabvedotinDacarbazine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Brentuximabvedotin AND Treatment_Dacarbazine;
-    
-define final Received_BrentuximabvedotinDacarbazine:
-    where Regimen_BrentuximabvedotinDacarbazine OR ReceivedRegimenTreatments;        
+define final BrentuximabvedotinDacarbazineTreatments:
+    where BrentuximabvedotinTreatment AND DacarbazineTreatment;
+          
         
         
         

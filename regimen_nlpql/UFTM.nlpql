@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "uft", "tegafur and uracil"
 ];
 
-define Treatment_Tegafuranduracil:
+define  TegafuranduracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "UFTM"
 ];
 
-define Regimen_UFTM:
+define final UFTMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_UFTM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Tegafuranduracil AND Treatment_Mitomycin;
-    
-define final Received_UFTM:
-    where Regimen_UFTM OR ReceivedRegimenTreatments;        
+define final UFTMTreatments:
+    where TegafuranduracilTreatment AND MitomycinTreatment;
+          
         
         
         

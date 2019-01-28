@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "aliqopa", "copanlisib"
 ];
 
-define Treatment_Copanlisib:
+define final CopanlisibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Copanlisib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Copanlisib monotherapy", "Copanlisibmonotherapy", "Copanlisib_monotherapy"
+    "Copanlisib monotherapy"
 ];
 
-define Regimen_Copanlisibmonotherapy:
+define final CopanlisibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Copanlisibmonotherapy:
 
 // Results
 
-        
-define final Received_Copanlisibmonotherapy:
-    where Treatment_Copanlisib OR Regimen_Copanlisibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alimta", "pemetrexed"
 ];
 
-define Treatment_Pemetrexed:
+define  PemetrexedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/ Pemetrexed/ Bevacizumab", "Cisplatin& Pemetrexed& Bevacizumab", "Cisplatin_Pemetrexed_Bevacizumab", "Cisplatin/Pemetrexed/Bevacizumab", "CisplatinPemetrexedBevacizumab", "Cisplatin &  Pemetrexed &  Bevacizumab", "PCB", "Cisplatin, Pemetrexed, Bevacizumab", "Cisplatin and  Pemetrexed and  Bevacizumab", "Cisplatin- Pemetrexed- Bevacizumab"
+    "Cisplatin, Pemetrexed, Bevacizumab", "PCB"
 ];
 
-define Regimen_CisplatinPemetrexedBevacizumab:
+define final CisplatinPemetrexedBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinPemetrexedBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Pemetrexed AND Treatment_Bevacizumab;
-    
-define final Received_CisplatinPemetrexedBevacizumab:
-    where Regimen_CisplatinPemetrexedBevacizumab OR ReceivedRegimenTreatments;        
+define final CisplatinPemetrexedBevacizumabTreatments:
+    where CisplatinTreatment AND PemetrexedTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CisplatinPemetrexedBevacizumab:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Mesothelioma
+Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
 
 
 ***/

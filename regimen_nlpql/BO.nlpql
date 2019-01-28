@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "blenoxane", "bleomycin"
 ];
 
-define Treatment_Bleomycin:
+define  BleomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "BO"
 ];
 
-define Regimen_BO:
+define final BORegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BO:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bleomycin AND Treatment_Vincristine;
-    
-define final Received_BO:
-    where Regimen_BO OR ReceivedRegimenTreatments;        
+define final BOTreatments:
+    where BleomycinTreatment AND VincristineTreatment;
+          
         
         
         

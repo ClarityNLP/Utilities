@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thal-Dex", "Thal/Dex", "TD", "ThalDex"
+    "TD", "Thal/Dex", "ThalDex", "Thal-Dex"
 ];
 
-define Regimen_ThalDex:
+define final ThalDexRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ThalDex:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Thalidomide AND Treatment_Thalidomide AND Treatment_Dexamethasone;
-    
-define final Received_ThalDex:
-    where Regimen_ThalDex OR ReceivedRegimenTreatments;        
+define final ThalDexTreatments:
+    where ThalidomideTreatment AND ThalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_ThalDex:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
 
 
 ***/

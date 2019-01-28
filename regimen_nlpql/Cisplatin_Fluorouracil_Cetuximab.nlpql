@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and  Fluorouracil and  Cetuximab", "Cisplatin_Fluorouracil_Cetuximab", "Cisplatin- Fluorouracil- Cetuximab", "Cisplatin, Fluorouracil, Cetuximab", "CF-C", "Cisplatin/ Fluorouracil/ Cetuximab", "CF/C", "CisplatinFluorouracilCetuximab", "Cisplatin& Fluorouracil& Cetuximab", "Cisplatin/Fluorouracil/Cetuximab", "Cisplatin &  Fluorouracil &  Cetuximab", "CFC"
+    "Cisplatin, Fluorouracil, Cetuximab", "CFC", "CF-C", "CF/C"
 ];
 
-define Regimen_CisplatinandFluorouracilandCetuximab:
+define final CisplatinFluorouracilCetuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinandFluorouracilandCetuximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Cetuximab;
-    
-define final Received_CisplatinFluorouracilCetuximab:
-    where Regimen_CisplatinandFluorouracilandCetuximab OR ReceivedRegimenTreatments;        
+define final CisplatinFluorouracilCetuximabTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment AND CetuximabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CisplatinFluorouracilCetuximab:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: Head_and_neck_cancer, Esophageal_cancer
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define  TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Temozolomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan and Temozolomide", "Irinotecan_Temozolomide", "Irinotecan/Temozolomide", "Irinotecan / Temozolomide", "IrinotecanTemozolomide", "Irinotecan & Temozolomide"
+    "Irinotecan & Temozolomide"
 ];
 
-define Regimen_IrinotecanandTemozolomide:
+define final IrinotecanTemozolomideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IrinotecanandTemozolomide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Temozolomide;
-    
-define final Received_IrinotecanTemozolomide:
-    where Regimen_IrinotecanandTemozolomide OR ReceivedRegimenTreatments;        
+define final IrinotecanTemozolomideTreatments:
+    where IrinotecanTreatment AND TemozolomideTreatment;
+          
         
         
         

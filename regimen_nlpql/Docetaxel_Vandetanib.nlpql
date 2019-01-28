@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "caprelsa", "vandetanib"
 ];
 
-define Treatment_Vandetanib:
+define  VandetanibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vandetanib:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelVandetanib", "Docetaxel / Vandetanib", "Docetaxel and Vandetanib", "Docetaxel & Vandetanib", "Docetaxel_Vandetanib", "Docetaxel/Vandetanib"
+    "Docetaxel & Vandetanib"
 ];
 
-define Regimen_DocetaxelVandetanib:
+define final DocetaxelVandetanibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DocetaxelVandetanib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Vandetanib;
-    
-define final Received_DocetaxelVandetanib:
-    where Regimen_DocetaxelVandetanib OR ReceivedRegimenTreatments;        
+define final DocetaxelVandetanibTreatments:
+    where DocetaxelTreatment AND VandetanibTreatment;
+          
         
         
         

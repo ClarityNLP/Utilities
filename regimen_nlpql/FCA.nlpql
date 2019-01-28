@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Alemtuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "FCCam", "FCA"
+    "FCA", "FCCam"
 ];
 
-define Regimen_FCCam:
+define final FCARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FCCam:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Cyclophosphamide AND Treatment_Alemtuzumab;
-    
-define final Received_FCA:
-    where Regimen_FCCam OR ReceivedRegimenTreatments;        
+define final FCATreatments:
+    where FludarabineTreatment AND CyclophosphamideTreatment AND AlemtuzumabTreatment;
+          
         
         
         

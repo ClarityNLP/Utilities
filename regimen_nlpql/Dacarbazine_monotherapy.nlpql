@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define final DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dacarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine_monotherapy", "Dacarbazinemonotherapy", "Dacarbazine monotherapy"
+    "Dacarbazine monotherapy"
 ];
 
-define Regimen_Dacarbazinemonotherapy:
+define final DacarbazinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Dacarbazinemonotherapy:
 
 // Results
 
-        
-define final Received_Dacarbazinemonotherapy:
-    where Treatment_Dacarbazine OR Regimen_Dacarbazinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Melanoma
+Known regimen for: Melanoma, Soft_tissue_sarcoma
 
 
 ***/

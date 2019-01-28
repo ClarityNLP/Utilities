@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cerubidine", "daunorubicin"
 ];
 
-define Treatment_Daunorubicin:
+define  DaunorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "1035", "7-3-7", "8/3/5", "10/3/5", "ADE (standard-dose Ara-C)", "ADEstandarddoseAraC", "ADE (standard/dose Ara/C)", "ADE_standard-dose_Ara-C", "737", "10-3-5", "ADE", "8-3-5", "ADE (standarddose AraC)", "835", "7/3/7"
+    "7/3/7", "737", "835", "10-3-5", "7-3-7", "10/3/5", "ADE", "8/3/5", "8-3-5", "1035", "ADE (standard-dose Ara-C)"
 ];
 
-define Regimen_1035:
+define final ADEstandarddoseAraCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_1035:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Daunorubicin AND Treatment_Etoposide;
-    
-define final Received_ADEstandarddoseAraC:
-    where Regimen_1035 OR ReceivedRegimenTreatments;        
+define final ADEstandarddoseAraCTreatments:
+    where CytarabineTreatment AND DaunorubicinTreatment AND EtoposideTreatment;
+          
         
         
         

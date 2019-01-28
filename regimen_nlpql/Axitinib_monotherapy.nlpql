@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "inlyta", "axitinib"
 ];
 
-define Treatment_Axitinib:
+define final AxitinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Axitinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axitinibmonotherapy", "Axitinib monotherapy", "Axitinib_monotherapy"
+    "Axitinib monotherapy"
 ];
 
-define Regimen_Axitinibmonotherapy:
+define final AxitinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Axitinibmonotherapy:
 
 // Results
 
-        
-define final Received_Axitinibmonotherapy:
-    where Treatment_Axitinib OR Regimen_Axitinibmonotherapy;
-            
 
 // Comments
 /***

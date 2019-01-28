@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Oxaliplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-DHAOx", "R/DHAOx", "RDHAOx"
+    "R/DHAOx", "R-DHAOx", "RDHAOx"
 ];
 
-define Regimen_RDHAOx:
+define final RDHAOxRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_RDHAOx:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Dexamethasone AND Treatment_Cytarabine AND Treatment_Oxaliplatin;
-    
-define final Received_RDHAOx:
-    where Regimen_RDHAOx OR ReceivedRegimenTreatments;        
+define final RDHAOxTreatments:
+    where RituximabTreatment AND DexamethasoneTreatment AND CytarabineTreatment AND OxaliplatinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "copiktra", "duvelisib"
 ];
 
-define Treatment_Duvelisib:
+define final DuvelisibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Duvelisib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Duvelisib monotherapy", "Duvelisib_monotherapy", "Duvelisibmonotherapy"
+    "Duvelisib monotherapy"
 ];
 
-define Regimen_Duvelisibmonotherapy:
+define final DuvelisibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Duvelisibmonotherapy:
 
 // Results
 
-        
-define final Received_Duvelisibmonotherapy:
-    where Treatment_Duvelisib OR Regimen_Duvelisibmonotherapy;
-            
 
 // Comments
 /***

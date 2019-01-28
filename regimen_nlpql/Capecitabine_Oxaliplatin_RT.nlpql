@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine/Oxaliplatin/RT", "CapecitabineOxaliplatinRT", "Capecitabine/ Oxaliplatin/ RT", "Capecitabine &  Oxaliplatin &  RT", "Capecitabine- Oxaliplatin- RT", "Capecitabine, Oxaliplatin, RT", "Capecitabine& Oxaliplatin& RT", "Capecitabine_Oxaliplatin_RT", "RT", "Capecitabine and  Oxaliplatin and  RT"
+    "RT", "Capecitabine, Oxaliplatin, RT"
 ];
 
-define Regimen_CapecitabineOxaliplatinRT:
+define final CapecitabineOxaliplatinRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CapecitabineOxaliplatinRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Oxaliplatin AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineOxaliplatinRT:
-    where Regimen_CapecitabineOxaliplatinRT OR ReceivedRegimenTreatments;        
+define final CapecitabineOxaliplatinRTTreatments:
+    where CapecitabineTreatment AND OxaliplatinTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

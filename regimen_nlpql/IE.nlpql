@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "IE"
 ];
 
-define Regimen_IE:
+define final IERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ifosfamide AND Treatment_Etoposide;
-    
-define final Received_IE:
-    where Regimen_IE OR ReceivedRegimenTreatments;        
+define final IETreatments:
+    where IfosfamideTreatment AND EtoposideTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_IE:
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Osteosarcoma
+Known regimen for: Osteosarcoma, Ewings_sarcoma
 
 
 ***/

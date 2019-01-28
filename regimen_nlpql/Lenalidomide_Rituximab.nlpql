@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "LenalidomideRituximab", "Lenalidomide & Rituximab", "Lenalidomide and Rituximab", "Lenalidomide/Rituximab", "Lenalidomide_Rituximab", "Lenalidomide / Rituximab"
+    "Lenalidomide & Rituximab"
 ];
 
-define Regimen_LenalidomideRituximab:
+define final LenalidomideRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_LenalidomideRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lenalidomide AND Treatment_Rituximab;
-    
-define final Received_LenalidomideRituximab:
-    where Regimen_LenalidomideRituximab OR ReceivedRegimenTreatments;        
+define final LenalidomideRituximabTreatments:
+    where LenalidomideTreatment AND RituximabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_LenalidomideRituximab:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Transformed_lymphoma, Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Transformed_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma, Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

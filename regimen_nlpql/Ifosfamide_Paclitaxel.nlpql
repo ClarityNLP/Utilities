@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ifosfamide & Paclitaxel", "Ifosfamide and Paclitaxel", "Ifosfamide / Paclitaxel", "Ifosfamide/Paclitaxel", "Ifosfamide_Paclitaxel", "IfosfamidePaclitaxel"
+    "Ifosfamide & Paclitaxel"
 ];
 
-define Regimen_IfosfamidePaclitaxel:
+define final IfosfamidePaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IfosfamidePaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ifosfamide AND Treatment_Paclitaxel;
-    
-define final Received_IfosfamidePaclitaxel:
-    where Regimen_IfosfamidePaclitaxel OR ReceivedRegimenTreatments;        
+define final IfosfamidePaclitaxelTreatments:
+    where IfosfamideTreatment AND PaclitaxelTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_IfosfamidePaclitaxel:
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Endometrial_cancer, Small_cell_lung_cancer
+Known regimen for: Testicular_cancer, Small_cell_lung_cancer, Endometrial_cancer
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define  ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "atra", "all-trans retinoic acid"
 ];
 
-define Treatment_Alltransretinoicacid:
+define  AlltransretinoicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Alltransretinoicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide / ATRA", "Arsenic_trioxide_ATRA", "ArsenictrioxideATRA", "Arsenic trioxide/ATRA", "Arsenic trioxide & ATRA", "Arsenic trioxide and ATRA"
+    "Arsenic trioxide & ATRA"
 ];
 
-define Regimen_ArsenictrioxideATRA:
+define final ArsenictrioxideATRARegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ArsenictrioxideATRA:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Arsenictrioxide AND Treatment_Alltransretinoicacid;
-    
-define final Received_ArsenictrioxideATRA:
-    where Regimen_ArsenictrioxideATRA OR ReceivedRegimenTreatments;        
+define final ArsenictrioxideATRATreatments:
+    where ArsenictrioxideTreatment AND AlltransretinoicacidTreatment;
+          
         
         
         

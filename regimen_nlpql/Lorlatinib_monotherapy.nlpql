@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lorbrena", "lorlatinib"
 ];
 
-define Treatment_Lorlatinib:
+define final LorlatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Lorlatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lorlatinib monotherapy", "Lorlatinib_monotherapy", "Lorlatinibmonotherapy"
+    "Lorlatinib monotherapy"
 ];
 
-define Regimen_Lorlatinibmonotherapy:
+define final LorlatinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Lorlatinibmonotherapy:
 
 // Results
 
-        
-define final Received_Lorlatinibmonotherapy:
-    where Treatment_Lorlatinib OR Regimen_Lorlatinibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zejula", "niraparib"
 ];
 
-define Treatment_Niraparib:
+define final NiraparibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Niraparib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Niraparibmonotherapy", "Niraparib monotherapy", "Niraparib_monotherapy"
+    "Niraparib monotherapy"
 ];
 
-define Regimen_Niraparibmonotherapy:
+define final NiraparibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Niraparibmonotherapy:
 
 // Results
 
-        
-define final Received_Niraparibmonotherapy:
-    where Treatment_Niraparib OR Regimen_Niraparibmonotherapy;
-            
 
 // Comments
 /***

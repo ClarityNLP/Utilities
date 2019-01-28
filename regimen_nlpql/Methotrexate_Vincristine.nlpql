@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate & Vincristine", "Methotrexate_Vincristine", "Methotrexate/Vincristine", "Methotrexate / Vincristine", "Methotrexate and Vincristine", "MethotrexateVincristine"
+    "Methotrexate & Vincristine"
 ];
 
-define Regimen_MethotrexateVincristine:
+define final MethotrexateVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MethotrexateVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Methotrexate AND Treatment_Vincristine;
-    
-define final Received_MethotrexateVincristine:
-    where Regimen_MethotrexateVincristine OR ReceivedRegimenTreatments;        
+define final MethotrexateVincristineTreatments:
+    where MethotrexateTreatment AND VincristineTreatment;
+          
         
         
         

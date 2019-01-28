@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lysodren", "mitotane"
 ];
 
-define Treatment_Mitotane:
+define final MitotaneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mitotane:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane_monotherapy", "Mitotane monotherapy", "Mitotanemonotherapy"
+    "Mitotane monotherapy"
 ];
 
-define Regimen_Mitotanemonotherapy:
+define final MitotanemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mitotanemonotherapy:
 
 // Results
 
-        
-define final Received_Mitotanemonotherapy:
-    where Treatment_Mitotane OR Regimen_Mitotanemonotherapy;
-            
 
 // Comments
 /***

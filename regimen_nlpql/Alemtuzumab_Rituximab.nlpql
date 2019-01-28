@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab/Rituximab", "Alemtuzumab_Rituximab", "Alemtuzumab / Rituximab", "AlemtuzumabRituximab", "Alemtuzumab and Rituximab", "Alemtuzumab & Rituximab"
+    "Alemtuzumab & Rituximab"
 ];
 
-define Regimen_AlemtuzumabRituximab:
+define final AlemtuzumabRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_AlemtuzumabRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Alemtuzumab AND Treatment_Rituximab AND Treatment_Rituximab;
-    
-define final Received_AlemtuzumabRituximab:
-    where Regimen_AlemtuzumabRituximab OR ReceivedRegimenTreatments;        
+define final AlemtuzumabRituximabTreatments:
+    where AlemtuzumabTreatment AND RituximabTreatment AND RituximabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "hycamtin", "topotecan"
 ];
 
-define Treatment_Topotecan:
+define  TopotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Topotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin / Topotecan", "CisplatinTopotecan", "Cisplatin_Topotecan", "Cisplatin and Topotecan", "TC", "Cisplatin/Topotecan", "Cisplatin & Topotecan"
+    "Cisplatin & Topotecan", "TC"
 ];
 
-define Regimen_CisplatinTopotecan:
+define final CisplatinTopotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinTopotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Topotecan;
-    
-define final Received_CisplatinTopotecan:
-    where Regimen_CisplatinTopotecan OR ReceivedRegimenTreatments;        
+define final CisplatinTopotecanTreatments:
+    where CisplatinTreatment AND TopotecanTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "beleodaq", "belinostat"
 ];
 
-define Treatment_Belinostat:
+define final BelinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Belinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Belinostatmonotherapy", "Belinostat_monotherapy", "Belinostat monotherapy"
+    "Belinostat monotherapy"
 ];
 
-define Regimen_Belinostatmonotherapy:
+define final BelinostatmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Belinostatmonotherapy:
 
 // Results
 
-        
-define final Received_Belinostatmonotherapy:
-    where Treatment_Belinostat OR Regimen_Belinostatmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thp", "pirarubicin"
 ];
 
-define Treatment_Pirarubicin:
+define final PirarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pirarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pirarubicin_monotherapy", "Pirarubicin monotherapy", "Pirarubicinmonotherapy"
+    "Pirarubicin monotherapy"
 ];
 
-define Regimen_Pirarubicinmonotherapy:
+define final PirarubicinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Pirarubicinmonotherapy:
 
 // Results
 
-        
-define final Received_Pirarubicinmonotherapy:
-    where Treatment_Pirarubicin OR Regimen_Pirarubicinmonotherapy;
-            
 
 // Comments
 /***

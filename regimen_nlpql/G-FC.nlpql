@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gazyva", "obinutuzumab"
 ];
 
-define Treatment_Obinutuzumab:
+define  ObinutuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "GFC", "G/FC", "G-FC"
+    "G-FC", "GFC", "G/FC"
 ];
 
-define Regimen_GFC:
+define final GFCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_GFC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Obinutuzumab AND Treatment_Fludarabine AND Treatment_Cyclophosphamide;
-    
-define final Received_GFC:
-    where Regimen_GFC OR ReceivedRegimenTreatments;        
+define final GFCTreatments:
+    where ObinutuzumabTreatment AND FludarabineTreatment AND CyclophosphamideTreatment;
+          
         
         
         

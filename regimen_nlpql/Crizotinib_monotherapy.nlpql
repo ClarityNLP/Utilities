@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xalkori", "crizotinib"
 ];
 
-define Treatment_Crizotinib:
+define final CrizotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Crizotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Crizotinibmonotherapy", "Crizotinib monotherapy", "Crizotinib_monotherapy"
+    "Crizotinib monotherapy"
 ];
 
-define Regimen_Crizotinibmonotherapy:
+define final CrizotinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Crizotinibmonotherapy:
 
 // Results
 
-        
-define final Received_Crizotinibmonotherapy:
-    where Treatment_Crizotinib OR Regimen_Crizotinibmonotherapy;
-            
 
 // Comments
 /***

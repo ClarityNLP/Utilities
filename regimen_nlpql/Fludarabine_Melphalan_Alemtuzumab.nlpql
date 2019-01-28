@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "campath", "alemtuzumab"
 ];
 
-define Treatment_Alemtuzumab:
+define  AlemtuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Alemtuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine &  Melphalan &  Alemtuzumab", "Fludarabine/Melphalan/Alemtuzumab", "Fludarabine_Melphalan_Alemtuzumab", "Fludarabine/ Melphalan/ Alemtuzumab", "FludarabineMelphalanAlemtuzumab", "Fludarabine- Melphalan- Alemtuzumab", "Fludarabine, Melphalan, Alemtuzumab", "Fludarabine& Melphalan& Alemtuzumab", "Fludarabine and  Melphalan and  Alemtuzumab"
+    "Fludarabine, Melphalan, Alemtuzumab"
 ];
 
-define Regimen_FludarabineMelphalanAlemtuzumab:
+define final FludarabineMelphalanAlemtuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FludarabineMelphalanAlemtuzumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Melphalan AND Treatment_Alemtuzumab;
-    
-define final Received_FludarabineMelphalanAlemtuzumab:
-    where Regimen_FludarabineMelphalanAlemtuzumab OR ReceivedRegimenTreatments;        
+define final FludarabineMelphalanAlemtuzumabTreatments:
+    where FludarabineTreatment AND MelphalanTreatment AND AlemtuzumabTreatment;
+          
         
         
         

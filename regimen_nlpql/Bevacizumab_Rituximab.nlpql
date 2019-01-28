@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab/Rituximab", "Bevacizumab & Rituximab", "Bevacizumab_Rituximab", "Bevacizumab and Rituximab", "Bevacizumab / Rituximab", "BevacizumabRituximab"
+    "Bevacizumab & Rituximab"
 ];
 
-define Regimen_BevacizumabRituximab:
+define final BevacizumabRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BevacizumabRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bevacizumab AND Treatment_Rituximab;
-    
-define final Received_BevacizumabRituximab:
-    where Regimen_BevacizumabRituximab OR ReceivedRegimenTreatments;        
+define final BevacizumabRituximabTreatments:
+    where BevacizumabTreatment AND RituximabTreatment;
+          
         
         
         

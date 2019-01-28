@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thymoglobulin", "antithymocyte globulin, rabbit atg"
 ];
 
-define Treatment_AntithymocyteglobulinrabbitATG:
+define  AntithymocyteglobulinrabbitATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     ":category:cyclosporines", ":category:cyclosporines"
 ];
 
-define Treatment_CategoryCyclosporines:
+define  CategoryCyclosporinesTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_CategoryCyclosporines:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG_Rabbit_Cyclosporine", "ATG (Rabbit) / Cyclosporine", "ATG (Rabbit) & Cyclosporine", "ATG (Rabbit) and Cyclosporine", "ATG (Rabbit)/Cyclosporine", "ATGRabbitCyclosporine"
+    "ATG (Rabbit) & Cyclosporine"
 ];
 
-define Regimen_ATGRabbitCyclosporine:
+define final ATGRabbitCyclosporineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ATGRabbitCyclosporine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_AntithymocyteglobulinrabbitATG AND Treatment_CategoryCyclosporines;
-    
-define final Received_ATGRabbitCyclosporine:
-    where Regimen_ATGRabbitCyclosporine OR ReceivedRegimenTreatments;        
+define final ATGRabbitCyclosporineTreatments:
+    where AntithymocyteglobulinrabbitATGTreatment AND CategoryCyclosporinesTreatment;
+          
         
         
         

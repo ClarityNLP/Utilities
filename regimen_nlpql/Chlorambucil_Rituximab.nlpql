@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chlorambucil / Rituximab", "Chlorambucil & Rituximab", "CLB-R", "Chlorambucil_Rituximab", "CLBR", "RClb", "ChlorambucilRituximab", "Chlorambucil/Rituximab", "CLB/R", "Chlorambucil and Rituximab"
+    "CLBR", "CLB-R", "RClb", "Chlorambucil & Rituximab", "CLB/R"
 ];
 
-define Regimen_ChlorambucilRituximab:
+define final ChlorambucilRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ChlorambucilRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Chlorambucil AND Treatment_Rituximab;
-    
-define final Received_ChlorambucilRituximab:
-    where Regimen_ChlorambucilRituximab OR ReceivedRegimenTreatments;        
+define final ChlorambucilRituximabTreatments:
+    where ChlorambucilTreatment AND RituximabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_ChlorambucilRituximab:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 ***/

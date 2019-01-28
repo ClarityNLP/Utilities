@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine/ Paclitaxel/ RT", "Capecitabine- Paclitaxel- RT", "Capecitabine &  Paclitaxel &  RT", "Capecitabine& Paclitaxel& RT", "Capecitabine and  Paclitaxel and  RT", "Capecitabine, Paclitaxel, RT", "Capecitabine/Paclitaxel/RT", "Capecitabine_Paclitaxel_RT", "CapecitabinePaclitaxelRT", "RT"
+    "Capecitabine, Paclitaxel, RT", "RT"
 ];
 
-define Regimen_CapecitabinePaclitaxelRT:
+define final CapecitabinePaclitaxelRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CapecitabinePaclitaxelRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Paclitaxel AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabinePaclitaxelRT:
-    where Regimen_CapecitabinePaclitaxelRT OR ReceivedRegimenTreatments;        
+define final CapecitabinePaclitaxelRTTreatments:
+    where CapecitabineTreatment AND PaclitaxelTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

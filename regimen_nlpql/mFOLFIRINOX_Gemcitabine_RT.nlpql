@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neulasta", "pegfilgrastim"
 ];
 
-define Treatment_Pegfilgrastim:
+define final PegfilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pegfilgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFIRINOX/ Gemcitabine/ RT", "mFOLFIRINOX and  Gemcitabine and  RT", "mFOLFIRINOXGemcitabineRT", "mFOLFIRINOX_Gemcitabine_RT", "mFOLFIRINOX, Gemcitabine, RT", "mFOLFIRINOX& Gemcitabine& RT", "mFOLFIRINOX/Gemcitabine/RT", "mFOLFIRINOX- Gemcitabine- RT", "mFOLFIRINOX &  Gemcitabine &  RT"
+    "mFOLFIRINOX, Gemcitabine, RT"
 ];
 
-define Regimen_mFOLFIRINOXGemcitabineRT:
+define final mFOLFIRINOXGemcitabineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_mFOLFIRINOXGemcitabineRT:
 
 // Results
 
-        
-define final Received_mFOLFIRINOXGemcitabineRT:
-    where Treatment_Pegfilgrastim OR Regimen_mFOLFIRINOXGemcitabineRT;
-            
 
 // Comments
 /***

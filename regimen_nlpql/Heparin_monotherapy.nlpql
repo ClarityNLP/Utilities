@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "heparin", "heparin"
 ];
 
-define Treatment_Heparin:
+define final HeparinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Heparin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Heparin_monotherapy", "Heparinmonotherapy", "Heparin monotherapy"
+    "Heparin monotherapy"
 ];
 
-define Regimen_Heparinmonotherapy:
+define final HeparinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Heparinmonotherapy:
 
 // Results
 
-        
-define final Received_Heparinmonotherapy:
-    where Treatment_Heparin OR Regimen_Heparinmonotherapy;
-            
 
 // Comments
 /***

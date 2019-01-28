@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Mitoxantrone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine_Mitoxantrone", "Cytarabine & Mitoxantrone", "MIDAC", "Cytarabine / Mitoxantrone", "CytarabineMitoxantrone", "Cytarabine/Mitoxantrone", "Cytarabine and Mitoxantrone"
+    "Cytarabine & Mitoxantrone", "MIDAC"
 ];
 
-define Regimen_CytarabineMitoxantrone:
+define final CytarabineMitoxantroneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineMitoxantrone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Mitoxantrone;
-    
-define final Received_CytarabineMitoxantrone:
-    where Regimen_CytarabineMitoxantrone OR ReceivedRegimenTreatments;        
+define final CytarabineMitoxantroneTreatments:
+    where CytarabineTreatment AND MitoxantroneTreatment;
+          
         
         
         

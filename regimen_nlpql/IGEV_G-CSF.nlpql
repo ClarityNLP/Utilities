@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "IGEV & G-CSF", "IGEV & GCSF", "IGEVGCSF", "IGEV / G-CSF", "IGEV & G/CSF", "IGEV_G-CSF", "IGEV/G-CSF", "IGEV and G-CSF"
+    "IGEV & G-CSF"
 ];
 
-define Regimen_IGEVGCSF:
+define final IGEVGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_IGEVGCSF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ifosfamide AND Treatment_Gemcitabine AND Treatment_Vinorelbine AND Treatment_Prednisolone;
-    
-define final Received_IGEVGCSF:
-    where Regimen_IGEVGCSF OR ReceivedRegimenTreatments;        
+define final IGEVGCSFTreatments:
+    where IfosfamideTreatment AND GemcitabineTreatment AND VinorelbineTreatment AND PrednisoloneTreatment;
+          
         
         
         

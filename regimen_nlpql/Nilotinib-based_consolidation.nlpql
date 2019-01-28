@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define final FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nilotinibbasedconsolidation", "Nilotinibbased consolidation", "Nilotinib-based_consolidation", "Nilotinib-based consolidation", "Nilotinib/based consolidation"
+    "Nilotinib-based consolidation"
 ];
 
-define Regimen_Nilotinibbasedconsolidation:
+define final NilotinibbasedconsolidationRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Nilotinibbasedconsolidation:
 
 // Results
 
-        
-define final Received_Nilotinibbasedconsolidation:
-    where Treatment_Folinicacid OR Regimen_Nilotinibbasedconsolidation;
-            
 
 // Comments
 /***

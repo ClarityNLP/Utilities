@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin / Ifosfamide", "Doxorubicin and Ifosfamide", "Doxorubicin & Ifosfamide", "DoxorubicinIfosfamide", "AIM", "Doxorubicin/Ifosfamide", "Doxorubicin_Ifosfamide"
+    "AIM", "Doxorubicin & Ifosfamide"
 ];
 
-define Regimen_DoxorubicinIfosfamide:
+define final DoxorubicinIfosfamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinIfosfamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Ifosfamide;
-    
-define final Received_DoxorubicinIfosfamide:
-    where Regimen_DoxorubicinIfosfamide OR ReceivedRegimenTreatments;        
+define final DoxorubicinIfosfamideTreatments:
+    where DoxorubicinTreatment AND IfosfamideTreatment;
+          
         
         
         

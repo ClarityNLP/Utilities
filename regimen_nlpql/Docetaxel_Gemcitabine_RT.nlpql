@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel, Gemcitabine, RT", "Docetaxel &  Gemcitabine &  RT", "Docetaxel and  Gemcitabine and  RT", "DocetaxelGemcitabineRT", "Docetaxel/ Gemcitabine/ RT", "Docetaxel/Gemcitabine/RT", "Docetaxel_Gemcitabine_RT", "Docetaxel& Gemcitabine& RT", "Docetaxel- Gemcitabine- RT", "RT"
+    "Docetaxel, Gemcitabine, RT", "RT"
 ];
 
-define Regimen_DocetaxelGemcitabineRT:
+define final DocetaxelGemcitabineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DocetaxelGemcitabineRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Gemcitabine;
-    
-define final Received_DocetaxelGemcitabineRT:
-    where Regimen_DocetaxelGemcitabineRT OR ReceivedRegimenTreatments;        
+define final DocetaxelGemcitabineRTTreatments:
+    where DocetaxelTreatment AND GemcitabineTreatment;
+          
         
         
         

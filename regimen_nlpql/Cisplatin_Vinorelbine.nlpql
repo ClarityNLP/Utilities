@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vinorelbine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin / Vinorelbine", "VC", "Cisplatin & Vinorelbine", "Cisplatin_Vinorelbine", "Cisplatin and Vinorelbine", "CisplatinVinorelbine", "Cisplatin/Vinorelbine"
+    "VC", "Cisplatin & Vinorelbine"
 ];
 
-define Regimen_CisplatinVinorelbine:
+define final CisplatinVinorelbineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinVinorelbine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Vinorelbine;
-    
-define final Received_CisplatinVinorelbine:
-    where Regimen_CisplatinVinorelbine OR ReceivedRegimenTreatments;        
+define final CisplatinVinorelbineTreatments:
+    where CisplatinTreatment AND VinorelbineTreatment;
+          
         
         
         

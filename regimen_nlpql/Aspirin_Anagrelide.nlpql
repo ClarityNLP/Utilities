@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "aspirin", "aspirin"
 ];
 
-define Treatment_aspirin:
+define  aspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "plavix", "clopidogrel"
 ];
 
-define Treatment_Clopidogrel:
+define  ClopidogrelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Clopidogrel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin & Anagrelide", "Aspirin_Anagrelide", "AspirinAnagrelide", "Aspirin/Anagrelide", "Aspirin and Anagrelide", "Aspirin / Anagrelide"
+    "Aspirin & Anagrelide"
 ];
 
-define Regimen_AspirinAnagrelide:
+define final AspirinAnagrelideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_AspirinAnagrelide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_aspirin AND Treatment_Clopidogrel;
-    
-define final Received_AspirinAnagrelide:
-    where Regimen_AspirinAnagrelide OR ReceivedRegimenTreatments;        
+define final AspirinAnagrelideTreatments:
+    where aspirinTreatment AND ClopidogrelTreatment;
+          
         
         
         

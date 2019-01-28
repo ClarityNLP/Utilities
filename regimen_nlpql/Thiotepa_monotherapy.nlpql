@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define final ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Thiotepa:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thiotepa_monotherapy", "Thiotepamonotherapy", "Thiotepa monotherapy"
+    "Thiotepa monotherapy"
 ];
 
-define Regimen_Thiotepamonotherapy:
+define final ThiotepamonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Thiotepamonotherapy:
 
 // Results
 
-        
-define final Received_Thiotepamonotherapy:
-    where Treatment_Thiotepa OR Regimen_Thiotepamonotherapy;
-            
 
 // Comments
 /***

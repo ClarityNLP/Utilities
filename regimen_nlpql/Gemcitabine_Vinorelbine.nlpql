@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define  VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vinorelbine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Vinorelbine", "Gemcitabine and Vinorelbine", "Gemcitabine / Vinorelbine", "Gemcitabine/Vinorelbine", "Gemcitabine_Vinorelbine", "GemcitabineVinorelbine"
+    "Gemcitabine & Vinorelbine"
 ];
 
-define Regimen_GemcitabineVinorelbine:
+define final GemcitabineVinorelbineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabineVinorelbine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Vinorelbine;
-    
-define final Received_GemcitabineVinorelbine:
-    where Regimen_GemcitabineVinorelbine OR ReceivedRegimenTreatments;        
+define final GemcitabineVinorelbineTreatments:
+    where GemcitabineTreatment AND VinorelbineTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_GemcitabineVinorelbine:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Mesothelioma, Soft_tissue_sarcoma
+Known regimen for: Mesothelioma, Non-small_cell_lung_cancer, Soft_tissue_sarcoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define  MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     ":category:granulocyte colony-stimulating factors", ":category:granulocyte colony-stimulating factors"
 ];
 
-define Treatment_CategoryGranulocytecolonystimulatingfactors:
+define  CategoryGranulocytecolonystimulatingfactorsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_CategoryGranulocytecolonystimulatingfactors:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMACLO/RIVAM", "RMACLORIVAM", "R-MACLOR-IVAM", "R-MACLO/R-IVAM", "R/MACLO/R/IVAM"
+    "R-MACLO/R-IVAM"
 ];
 
-define Regimen_RMACLORIVAM:
+define final RMACLORIVAMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RMACLORIVAM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Methotrexate AND Treatment_CategoryGranulocytecolonystimulatingfactors;
-    
-define final Received_RMACLORIVAM:
-    where Regimen_RMACLORIVAM OR ReceivedRegimenTreatments;        
+define final RMACLORIVAMTreatments:
+    where FolinicacidTreatment AND MethotrexateTreatment AND CategoryGranulocytecolonystimulatingfactorsTreatment;
+          
         
         
         

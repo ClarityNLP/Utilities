@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin and  Fluorouracil and  RT", "Carboplatin& Fluorouracil& RT", "Carboplatin/Fluorouracil/RT", "Carboplatin, Fluorouracil, RT", "Carboplatin- Fluorouracil- RT", "Carboplatin/ Fluorouracil/ RT", "Carboplatin &  Fluorouracil &  RT", "Carboplatin_Fluorouracil_RT", "CarboplatinFluorouracilRT", "RT"
+    "RT", "Carboplatin, Fluorouracil, RT"
 ];
 
-define Regimen_CarboplatinandFluorouracilandRT:
+define final CarboplatinFluorouracilRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinandFluorouracilandRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Fluorouracil AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CarboplatinFluorouracilRT:
-    where Regimen_CarboplatinandFluorouracilandRT OR ReceivedRegimenTreatments;        
+define final CarboplatinFluorouracilRTTreatments:
+    where CarboplatinTreatment AND FluorouracilTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CarboplatinFluorouracilRT:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: Head_and_neck_cancer, Esophageal_cancer
 
 
 ***/

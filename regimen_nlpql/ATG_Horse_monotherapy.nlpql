@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define Treatment_AntithymocyteglobulinhorseATG:
+define final AntithymocyteglobulinhorseATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_AntithymocyteglobulinhorseATG:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG", "ATG (Horse) monotherapy", "ATGHorsemonotherapy", "ATG_Horse_monotherapy"
+    "ATG", "ATG (Horse) monotherapy"
 ];
 
-define Regimen_ATG:
+define final ATGHorsemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_ATG:
 
 // Results
 
-        
-define final Received_ATGHorsemonotherapy:
-    where Treatment_AntithymocyteglobulinhorseATG OR Regimen_ATG;
-            
 
 // Comments
 /***

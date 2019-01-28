@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine/Rituximab", "GemcitabineRituximab", "Gemcitabine_Rituximab", "Gemcitabine and Rituximab", "Gemcitabine / Rituximab", "Gemcitabine & Rituximab"
+    "Gemcitabine & Rituximab"
 ];
 
-define Regimen_GemcitabineRituximab:
+define final GemcitabineRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabineRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Rituximab;
-    
-define final Received_GemcitabineRituximab:
-    where Regimen_GemcitabineRituximab OR ReceivedRegimenTreatments;        
+define final GemcitabineRituximabTreatments:
+    where GemcitabineTreatment AND RituximabTreatment;
+          
         
         
         

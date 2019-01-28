@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "keytruda", "pembrolizumab"
 ];
 
-define Treatment_Pembrolizumab:
+define final PembrolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Pembrolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pembrolizumab_monotherapy", "Pembrolizumabmonotherapy", "Pembrolizumab monotherapy"
+    "Pembrolizumab monotherapy"
 ];
 
-define Regimen_Pembrolizumabmonotherapy:
+define final PembrolizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Pembrolizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Pembrolizumabmonotherapy:
-    where Treatment_Pembrolizumab OR Regimen_Pembrolizumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Melanoma, Hodgkin_lymphoma, Head_and_neck_cancer, Cervical_cancer, Gastric_cancer, Hepatocellular_carcinoma, Anal_cancer, Merkel_cell_carcinoma, Endometrial_cancer, MSI-H_or_dMMR, Non-small_cell_lung_cancer, Transformed_lymphoma, Bladder_cancer, Cholangiocarcinoma, Primary_mediastinal_B-cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Cervical_cancer, Primary_mediastinal_B-cell_lymphoma, Melanoma, Transformed_lymphoma, Cholangiocarcinoma, Bladder_cancer, Gastric_cancer, Merkel_cell_carcinoma, Endometrial_cancer, MSI-H_or_dMMR, Non-small_cell_lung_cancer, Head_and_neck_cancer, Hepatocellular_carcinoma, Anal_cancer
 
 
 ***/

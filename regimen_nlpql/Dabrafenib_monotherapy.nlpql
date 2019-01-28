@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tafinlar", "dabrafenib"
 ];
 
-define Treatment_Dabrafenib:
+define final DabrafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dabrafenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabrafenib monotherapy", "Dabrafenib_monotherapy", "Dabrafenibmonotherapy"
+    "Dabrafenib monotherapy"
 ];
 
-define Regimen_Dabrafenibmonotherapy:
+define final DabrafenibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Dabrafenibmonotherapy:
 
 // Results
 
-        
-define final Received_Dabrafenibmonotherapy:
-    where Treatment_Dabrafenib OR Regimen_Dabrafenibmonotherapy;
-            
 
 // Comments
 /***

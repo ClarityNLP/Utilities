@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "tarceva", "erlotinib"
 ];
 
-define Treatment_Erlotinib:
+define  ErlotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Erlotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Erlotinib", "CapecitabineErlotinib", "Capecitabine / Erlotinib", "Capecitabine_Erlotinib", "Capecitabine/Erlotinib", "Capecitabine and Erlotinib"
+    "Capecitabine & Erlotinib"
 ];
 
-define Regimen_CapecitabineErlotinib:
+define final CapecitabineErlotinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CapecitabineErlotinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Erlotinib;
-    
-define final Received_CapecitabineErlotinib:
-    where Regimen_CapecitabineErlotinib OR ReceivedRegimenTreatments;        
+define final CapecitabineErlotinibTreatments:
+    where CapecitabineTreatment AND ErlotinibTreatment;
+          
         
         
         

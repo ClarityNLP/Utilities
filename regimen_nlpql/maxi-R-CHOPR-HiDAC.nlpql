@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define final FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Filgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "maxi-R-CHOP/R-HiDAC", "maxi/R/CHOP/R/HiDAC", "maxiRCHOPRHiDAC", "maxiRCHOP/RHiDAC", "maxi-R-CHOPR-HiDAC"
+    "maxi-R-CHOP/R-HiDAC"
 ];
 
-define Regimen_maxiRCHOPRHiDAC:
+define final maxiRCHOPRHiDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_maxiRCHOPRHiDAC:
 
 // Results
 
-        
-define final Received_maxiRCHOPRHiDAC:
-    where Treatment_Filgrastim OR Regimen_maxiRCHOPRHiDAC;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define Treatment_Brentuximabvedotin:
+define  BrentuximabvedotinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Dacarbazine:
 // Regimen names
 
 termset RegimenTerms:[
-    "A&AVD", "BV & AVD", "BVAVD", "A+AVD", "AAVD", "BV_AVD", "A & AVD", "A / AVD", "BV + AVD", "BV  &  AVD", "BV  /  AVD", "BV / AVD", "BV  and  AVD", "A/AVD", "A and AVD"
+    "A and AVD", "BV  AVD", "BV  /  AVD", "A&AVD", "BV / AVD", "BV + AVD", "AAVD", "A & AVD", "BV  &  AVD", "BV_AVD", "BV  and  AVD", "BV & AVD", "A+AVD", "BVAVD", "A/AVD", "A / AVD"
 ];
 
-define Regimen_AAVD:
+define final AAVDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_AAVD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Brentuximabvedotin AND Treatment_Doxorubicin AND Treatment_Vinblastine AND Treatment_Dacarbazine;
-    
-define final Received_AAVD:
-    where Regimen_AAVD OR ReceivedRegimenTreatments;        
+define final AAVDTreatments:
+    where BrentuximabvedotinTreatment AND DoxorubicinTreatment AND VinblastineTreatment AND DacarbazineTreatment;
+          
         
         
         

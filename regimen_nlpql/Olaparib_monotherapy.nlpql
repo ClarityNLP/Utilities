@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "lynparza", "olaparib"
 ];
 
-define Treatment_Olaparib:
+define final OlaparibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Olaparib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Olaparib_monotherapy", "Olaparibmonotherapy", "Olaparib monotherapy"
+    "Olaparib monotherapy"
 ];
 
-define Regimen_Olaparibmonotherapy:
+define final OlaparibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Olaparibmonotherapy:
 
 // Results
 
-        
-define final Received_Olaparibmonotherapy:
-    where Treatment_Olaparib OR Regimen_Olaparibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Breast_cancer_BRCA-mutated, Prostate_cancer, Pancreatic_cancer, Ovarian_cancer
+Known regimen for: Breast_cancer_BRCA-mutated, Pancreatic_cancer, Ovarian_cancer, Prostate_cancer
 
 
 ***/

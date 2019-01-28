@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "zoladex", "goserelin"
 ];
 
-define Treatment_Goserelin:
+define final GoserelinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Goserelin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Anastrozole monotherapy", "Anastrozole_monotherapy", "Anastrozolemonotherapy"
+    "Anastrozole monotherapy"
 ];
 
-define Regimen_Anastrozolemonotherapy:
+define final AnastrozolemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Anastrozolemonotherapy:
 
 // Results
 
-        
-define final Received_Anastrozolemonotherapy:
-    where Treatment_Goserelin OR Regimen_Anastrozolemonotherapy;
-            
 
 // Comments
 /***

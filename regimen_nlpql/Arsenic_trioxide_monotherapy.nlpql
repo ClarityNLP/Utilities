@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "trisenox", "arsenic trioxide"
 ];
 
-define Treatment_Arsenictrioxide:
+define final ArsenictrioxideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Arsenictrioxide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic_trioxide_monotherapy", "Arsenictrioxidemonotherapy", "Arsenic trioxide monotherapy"
+    "Arsenic trioxide monotherapy"
 ];
 
-define Regimen_Arsenictrioxidemonotherapy:
+define final ArsenictrioxidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Arsenictrioxidemonotherapy:
 
 // Results
 
-        
-define final Received_Arsenictrioxidemonotherapy:
-    where Treatment_Arsenictrioxide OR Regimen_Arsenictrioxidemonotherapy;
-            
 
 // Comments
 /***

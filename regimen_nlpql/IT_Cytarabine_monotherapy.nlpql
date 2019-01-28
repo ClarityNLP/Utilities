@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define final CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Cytarabine monotherapy", "IT_Cytarabine_monotherapy", "ITCytarabinemonotherapy"
+    "IT Cytarabine monotherapy"
 ];
 
-define Regimen_ITCytarabinemonotherapy:
+define final ITCytarabinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_ITCytarabinemonotherapy:
 
 // Results
 
-        
-define final Received_ITCytarabinemonotherapy:
-    where Treatment_Cytarabine OR Regimen_ITCytarabinemonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "performance status", "performance status"
 ];
 
-define Treatment_Performancestatus:
+define  PerformancestatusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan/Cetuximab", "IrinotecanCetuximab", "Irinotecan / Cetuximab", "Irinotecan & Cetuximab", "Irinotecan_Cetuximab", "Irinotecan and Cetuximab"
+    "Irinotecan & Cetuximab"
 ];
 
-define Regimen_IrinotecanCetuximab:
+define final IrinotecanCetuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_IrinotecanCetuximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Performancestatus AND Treatment_Cetuximab;
-    
-define final Received_IrinotecanCetuximab:
-    where Regimen_IrinotecanCetuximab OR ReceivedRegimenTreatments;        
+define final IrinotecanCetuximabTreatments:
+    where IrinotecanTreatment AND PerformancestatusTreatment AND CetuximabTreatment;
+          
         
         
         

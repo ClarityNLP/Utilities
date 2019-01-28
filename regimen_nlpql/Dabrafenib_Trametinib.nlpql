@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tafinlar", "dabrafenib"
 ];
 
-define Treatment_Dabrafenib:
+define  DabrafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mekinist", "trametinib"
 ];
 
-define Treatment_Trametinib:
+define  TrametinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Trametinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabrafenib & Trametinib", "DabrafenibTrametinib", "Dabrafenib / Trametinib", "Dabrafenib and Trametinib", "Dabrafenib/Trametinib", "Dabrafenib_Trametinib"
+    "Dabrafenib & Trametinib"
 ];
 
-define Regimen_DabrafenibTrametinib:
+define final DabrafenibTrametinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DabrafenibTrametinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dabrafenib AND Treatment_Trametinib;
-    
-define final Received_DabrafenibTrametinib:
-    where Regimen_DabrafenibTrametinib OR ReceivedRegimenTreatments;        
+define final DabrafenibTrametinibTreatments:
+    where DabrafenibTreatment AND TrametinibTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_DabrafenibTrametinib:
 // Comments
 /***
 
-Known regimen for: BRAF, CNS_melanoma, Thyroid_cancer_BRAF-mutated, Non-small_cell_lung_cancer_BRAF-mutated, Melanoma_BRAF-mutated
+Known regimen for: Melanoma_BRAF-mutated, CNS_melanoma, Thyroid_cancer_BRAF-mutated, BRAF, Non-small_cell_lung_cancer_BRAF-mutated
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "leukeran", "chlorambucil"
 ];
 
-define Treatment_Chlorambucil:
+define  ChlorambucilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Chlorambucil:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-VAD and C", "R-VAD & C", "R/VAD+C", "RVAD+C", "R-VAD&C", "R-VAD / C", "RVADC", "R-VAD+C", "R-VAD/C", "R-VADC"
+    "RVAD+C", "R-VAD / C", "R-VAD/C", "RVADC", "R-VAD+C", "R-VADC", "R-VAD and C", "R/VAD+C", "R-VAD & C", "R-VAD&C"
 ];
 
-define Regimen_RVADandC:
+define final RVADCRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RVADandC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Vincristine AND Treatment_Doxorubicin AND Treatment_Dexamethasone AND Treatment_Chlorambucil;
-    
-define final Received_RVADC:
-    where Regimen_RVADandC OR ReceivedRegimenTreatments;        
+define final RVADCTreatments:
+    where RituximabTreatment AND VincristineTreatment AND DoxorubicinTreatment AND DexamethasoneTreatment AND ChlorambucilTreatment;
+          
         
         
         

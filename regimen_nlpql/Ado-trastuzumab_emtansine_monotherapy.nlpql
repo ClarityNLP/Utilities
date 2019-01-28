@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kadcyla", "ado-trastuzumab emtansine"
 ];
 
-define Treatment_Adotrastuzumabemtansine:
+define final AdotrastuzumabemtansineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Adotrastuzumabemtansine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ado-trastuzumab_emtansine_monotherapy", "Ado/trastuzumab emtansine monotherapy", "Ado-trastuzumab emtansine monotherapy", "Adotrastuzumabemtansinemonotherapy", "Adotrastuzumab emtansine monotherapy"
+    "Ado-trastuzumab emtansine monotherapy"
 ];
 
-define Regimen_Adotrastuzumabemtansinemonotherapy:
+define final AdotrastuzumabemtansinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Adotrastuzumabemtansinemonotherapy:
 
 // Results
 
-        
-define final Received_Adotrastuzumabemtansinemonotherapy:
-    where Treatment_Adotrastuzumabemtansine OR Regimen_Adotrastuzumabemtansinemonotherapy;
-            
 
 // Comments
 /***

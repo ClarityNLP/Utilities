@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "RVD", "VDR", "VRD", "VRd"
+    "VRd", "RVD", "VRD", "VDR"
 ];
 
-define Regimen_RVD:
+define final RVDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RVD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Lenalidomide AND Treatment_Bortezomib AND Treatment_Dexamethasone;
-    
-define final Received_RVD:
-    where Regimen_RVD OR ReceivedRegimenTreatments;        
+define final RVDTreatments:
+    where LenalidomideTreatment AND BortezomibTreatment AND DexamethasoneTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_RVD:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
 
 
 ***/

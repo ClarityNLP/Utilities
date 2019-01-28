@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "FR"
 ];
 
-define Regimen_FR:
+define final FRRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_FR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Rituximab;
-    
-define final Received_FR:
-    where Regimen_FR OR ReceivedRegimenTreatments;        
+define final FRTreatments:
+    where FludarabineTreatment AND RituximabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_FR:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Cold_agglutinin_disease, Waldenström_macroglobulinemia, Marginal_zone_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Cold_agglutinin_disease, Marginal_zone_lymphoma, Follicular_lymphoma, Mantle_cell_lymphoma, Waldenström_macroglobulinemia
 
 
 ***/

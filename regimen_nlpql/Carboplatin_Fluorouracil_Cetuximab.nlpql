@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "erbitux", "cetuximab"
 ];
 
-define Treatment_Cetuximab:
+define  CetuximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cetuximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Fluorouracil_Cetuximab", "Carboplatin& Fluorouracil& Cetuximab", "Carboplatin &  Fluorouracil &  Cetuximab", "CarboplatinFluorouracilCetuximab", "Carboplatin, Fluorouracil, Cetuximab", "Carboplatin/ Fluorouracil/ Cetuximab", "Carboplatin- Fluorouracil- Cetuximab", "Carboplatin/Fluorouracil/Cetuximab", "Carboplatin and  Fluorouracil and  Cetuximab"
+    "Carboplatin, Fluorouracil, Cetuximab"
 ];
 
-define Regimen_CarboplatinFluorouracilCetuximab:
+define final CarboplatinFluorouracilCetuximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinFluorouracilCetuximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Fluorouracil AND Treatment_Cetuximab;
-    
-define final Received_CarboplatinFluorouracilCetuximab:
-    where Regimen_CarboplatinFluorouracilCetuximab OR ReceivedRegimenTreatments;        
+define final CarboplatinFluorouracilCetuximabTreatments:
+    where CarboplatinTreatment AND FluorouracilTreatment AND CetuximabTreatment;
+          
         
         
         

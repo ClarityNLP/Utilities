@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CAPOX-B", "CapeOX / Bevacizumab", "CapeOX and Bevacizumab", "XELOX / Bevacizumab", "CAPOX/B", "XELOX and Bevacizumab", "XELOX/Bevacizumab", "XELOX_Bevacizumab", "CapeOx/Bevacizumab", "CAPOXB", "CapeOX_Bevacizumab", "CapeOXBevacizumab", "XELOXBevacizumab", "CapeOX & Bevacizumab", "XELOX & Bevacizumab", "CapeOxBevacizumab", "CapeOx / Bevacizumab", "CapeOx_Bevacizumab", "CapeOX/Bevacizumab", "CapeOx & Bevacizumab", "CapeOx and Bevacizumab"
+    "XELOX & Bevacizumab", "CAPOXB", "CapeOX & Bevacizumab", "CAPOX/B", "CapeOx & Bevacizumab", "CAPOX-B"
 ];
 
-define Regimen_CAPOXB:
+define final CapeOxBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CAPOXB:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Oxaliplatin AND Treatment_Bevacizumab;
-    
-define final Received_CapeOxBevacizumab:
-    where Regimen_CAPOXB OR ReceivedRegimenTreatments;        
+define final CapeOxBevacizumabTreatments:
+    where CapecitabineTreatment AND OxaliplatinTreatment AND BevacizumabTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_CapeOxBevacizumab:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Colon_cancer
+Known regimen for: Colon_cancer, Hepatocellular_carcinoma
 
 
 ***/

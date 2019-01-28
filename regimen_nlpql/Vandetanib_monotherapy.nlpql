@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "caprelsa", "vandetanib"
 ];
 
-define Treatment_Vandetanib:
+define final VandetanibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vandetanib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vandetanib_monotherapy", "Vandetanib monotherapy", "Vandetanibmonotherapy"
+    "Vandetanib monotherapy"
 ];
 
-define Regimen_Vandetanibmonotherapy:
+define final VandetanibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Vandetanibmonotherapy:
 
 // Results
 
-        
-define final Received_Vandetanibmonotherapy:
-    where Treatment_Vandetanib OR Regimen_Vandetanibmonotherapy;
-            
 
 // Comments
 /***

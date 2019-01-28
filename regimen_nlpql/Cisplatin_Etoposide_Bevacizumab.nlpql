@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinEtoposideBevacizumab", "Cisplatin, Etoposide, Bevacizumab", "Cisplatin& Etoposide& Bevacizumab", "Cisplatin_Etoposide_Bevacizumab", "Cisplatin/Etoposide/Bevacizumab", "Cisplatin &  Etoposide &  Bevacizumab", "Cisplatin- Etoposide- Bevacizumab", "Cisplatin and  Etoposide and  Bevacizumab", "Cisplatin/ Etoposide/ Bevacizumab"
+    "Cisplatin, Etoposide, Bevacizumab"
 ];
 
-define Regimen_CisplatinEtoposideBevacizumab:
+define final CisplatinEtoposideBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinEtoposideBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Etoposide AND Treatment_Bevacizumab;
-    
-define final Received_CisplatinEtoposideBevacizumab:
-    where Regimen_CisplatinEtoposideBevacizumab OR ReceivedRegimenTreatments;        
+define final CisplatinEtoposideBevacizumabTreatments:
+    where CisplatinTreatment AND EtoposideTreatment AND BevacizumabTreatment;
+          
         
         
         

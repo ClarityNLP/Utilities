@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vectibix", "panitumumab"
 ];
 
-define Treatment_Panitumumab:
+define final PanitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Panitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Panitumumab monotherapy", "Panitumumabmonotherapy", "Panitumumab_monotherapy"
+    "Panitumumab monotherapy"
 ];
 
-define Regimen_Panitumumabmonotherapy:
+define final PanitumumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Panitumumabmonotherapy:
 
 // Results
 
-        
-define final Received_Panitumumabmonotherapy:
-    where Treatment_Panitumumab OR Regimen_Panitumumabmonotherapy;
-            
 
 // Comments
 /***

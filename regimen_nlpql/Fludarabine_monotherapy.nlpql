@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define final FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fludarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine monotherapy", "Fludarabinemonotherapy", "Fludarabine_monotherapy"
+    "Fludarabine monotherapy"
 ];
 
-define Regimen_Fludarabinemonotherapy:
+define final FludarabinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Fludarabinemonotherapy:
 
 // Results
 
-        
-define final Received_Fludarabinemonotherapy:
-    where Treatment_Fludarabine OR Regimen_Fludarabinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenström_macroglobulinemia, Marginal_zone_lymphoma
+Known regimen for: Waldenström_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 ***/

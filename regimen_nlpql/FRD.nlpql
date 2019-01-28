@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "farydak", "panobinostat"
 ];
 
-define Treatment_Panobinostat:
+define  PanobinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "FRD"
 ];
 
-define Regimen_FRD:
+define final FRDRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FRD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Panobinostat AND Treatment_Lenalidomide AND Treatment_Dexamethasone;
-    
-define final Received_FRD:
-    where Regimen_FRD OR ReceivedRegimenTreatments;        
+define final FRDTreatments:
+    where PanobinostatTreatment AND LenalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         

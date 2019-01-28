@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "TAP", "Cisplatin and  Doxorubicin and  Paclitaxel", "Cisplatin &  Doxorubicin &  Paclitaxel", "Cisplatin& Doxorubicin& Paclitaxel", "Cisplatin- Doxorubicin- Paclitaxel", "CisplatinDoxorubicinPaclitaxel", "Cisplatin/ Doxorubicin/ Paclitaxel", "Cisplatin, Doxorubicin, Paclitaxel", "Cisplatin_Doxorubicin_Paclitaxel", "Cisplatin/Doxorubicin/Paclitaxel"
+    "TAP", "Cisplatin, Doxorubicin, Paclitaxel"
 ];
 
-define Regimen_TAP:
+define final CisplatinDoxorubicinPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TAP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Doxorubicin AND Treatment_Paclitaxel;
-    
-define final Received_CisplatinDoxorubicinPaclitaxel:
-    where Regimen_TAP OR ReceivedRegimenTreatments;        
+define final CisplatinDoxorubicinPaclitaxelTreatments:
+    where CisplatinTreatment AND DoxorubicinTreatment AND PaclitaxelTreatment;
+          
         
         
         

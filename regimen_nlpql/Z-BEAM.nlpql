@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define  FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "valtrex", "valacyclovir"
 ];
 
-define Treatment_Valacyclovir:
+define  ValacyclovirTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "zovirax", "acyclovir"
 ];
 
-define Treatment_Acyclovir:
+define  AcyclovirTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "bactrim ds", "trimethoprim/sulfamethoxazole"
 ];
 
-define Treatment_TrimethoprimSulfamethoxazole:
+define  TrimethoprimSulfamethoxazoleTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_TrimethoprimSulfamethoxazole:
 // Regimen names
 
 termset RegimenTerms:[
-    "Z-BEAM", "ZBEAM", "Z/BEAM"
+    "ZBEAM", "Z-BEAM", "Z/BEAM"
 ];
 
-define Regimen_ZBEAM:
+define final ZBEAMRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_ZBEAM:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Filgrastim AND Treatment_Valacyclovir AND Treatment_Acyclovir AND Treatment_TrimethoprimSulfamethoxazole;
-    
-define final Received_ZBEAM:
-    where Regimen_ZBEAM OR ReceivedRegimenTreatments;        
+define final ZBEAMTreatments:
+    where FilgrastimTreatment AND ValacyclovirTreatment AND AcyclovirTreatment AND TrimethoprimSulfamethoxazoleTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "DEP_RT", "DEP / RT", "DEPRT", "DEP & RT", "DEP and RT", "DEP/RT"
+    "DEPRT", "DEP / RT", "DEP/RT", "DEP & RT", "DEP_RT", "DEP and RT"
 ];
 
-define Regimen_DEPRT:
+define final DEPRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_DEPRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dexamethasone AND Treatment_Etoposide AND Treatment_Cisplatin AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_DEPRT:
-    where Regimen_DEPRT OR ReceivedRegimenTreatments;        
+define final DEPRTTreatments:
+    where DexamethasoneTreatment AND EtoposideTreatment AND CisplatinTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define final PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Prednisone monotherapy", "Prednisonemonotherapy", "Prednisone_monotherapy"
+    "Prednisone monotherapy"
 ];
 
-define Regimen_Prednisonemonotherapy:
+define final PrednisonemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Prednisonemonotherapy:
 
 // Results
 
-        
-define final Received_Prednisonemonotherapy:
-    where Treatment_Prednisone OR Regimen_Prednisonemonotherapy;
-            
 
 // Comments
 /***

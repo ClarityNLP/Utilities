@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cyclophosphamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Busulfan, Cyclophosphamide", "Fludarabine/Busulfan/Cyclophosphamide", "Fludarabine- Busulfan- Cyclophosphamide", "Fludarabine& Busulfan& Cyclophosphamide", "Fludarabine_Busulfan_Cyclophosphamide", "Fludarabine and  Busulfan and  Cyclophosphamide", "FludarabineBusulfanCyclophosphamide", "FluBuCy", "Fludarabine &  Busulfan &  Cyclophosphamide", "Fludarabine/ Busulfan/ Cyclophosphamide"
+    "Fludarabine, Busulfan, Cyclophosphamide", "FluBuCy"
 ];
 
-define Regimen_FludarabineBusulfanCyclophosphamide:
+define final FludarabineBusulfanCyclophosphamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FludarabineBusulfanCyclophosphamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Busulfan AND Treatment_Cyclophosphamide;
-    
-define final Received_FludarabineBusulfanCyclophosphamide:
-    where Regimen_FludarabineBusulfanCyclophosphamide OR ReceivedRegimenTreatments;        
+define final FludarabineBusulfanCyclophosphamideTreatments:
+    where FludarabineTreatment AND BusulfanTreatment AND CyclophosphamideTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,7 +73,7 @@ termset TreatmentTerms5:[
     "empliciti", "elotuzumab"
 ];
 
-define Treatment_Elotuzumab:
+define  ElotuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms5],
         documentset:[Docs]
@@ -87,7 +87,7 @@ termset RegimenTerms:[
     "EBd"
 ];
 
-define Regimen_EBd:
+define final EBdRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -97,11 +97,9 @@ define Regimen_EBd:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Elotuzumab AND Treatment_Bortezomib AND Treatment_Dexamethasone AND Treatment_Elotuzumab AND Treatment_Elotuzumab AND Treatment_Elotuzumab;
-    
-define final Received_EBd:
-    where Regimen_EBd OR ReceivedRegimenTreatments;        
+define final EBdTreatments:
+    where ElotuzumabTreatment AND BortezomibTreatment AND DexamethasoneTreatment AND ElotuzumabTreatment AND ElotuzumabTreatment AND ElotuzumabTreatment;
+          
         
         
         

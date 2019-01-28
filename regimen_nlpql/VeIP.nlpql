@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velban", "vinblastine"
 ];
 
-define Treatment_Vinblastine:
+define  VinblastineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "VeIP"
 ];
 
-define Regimen_VeIP:
+define final VeIPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_VeIP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Vinblastine AND Treatment_Ifosfamide AND Treatment_Cisplatin;
-    
-define final Received_VeIP:
-    where Regimen_VeIP OR ReceivedRegimenTreatments;        
+define final VeIPTreatments:
+    where VinblastineTreatment AND IfosfamideTreatment AND CisplatinTreatment;
+          
         
         
         

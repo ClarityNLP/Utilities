@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "halaven", "eribulin"
 ];
 
-define Treatment_Eribulin:
+define final EribulinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Eribulin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eribulinmonotherapy", "Eribulin_monotherapy", "Eribulin monotherapy"
+    "Eribulin monotherapy"
 ];
 
-define Regimen_Eribulinmonotherapy:
+define final EribulinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Eribulinmonotherapy:
 
 // Results
 
-        
-define final Received_Eribulinmonotherapy:
-    where Treatment_Eribulin OR Regimen_Eribulinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mesnex", "mesna"
 ];
 
-define Treatment_Mesna:
+define  MesnaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ifex", "ifosfamide"
 ];
 
-define Treatment_Ifosfamide:
+define  IfosfamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ifosfamide:
 // Regimen names
 
 termset RegimenTerms:[
-    "VAdCAIE", "VAdCA/IE"
+    "VAdCA/IE", "VAdCAIE"
 ];
 
-define Regimen_VAdCAIE:
+define final VAdCAIERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_VAdCAIE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mesna AND Treatment_Ifosfamide;
-    
-define final Received_VAdCAIE:
-    where Regimen_VAdCAIE OR ReceivedRegimenTreatments;        
+define final VAdCAIETreatments:
+    where MesnaTreatment AND IfosfamideTreatment;
+          
         
         
         

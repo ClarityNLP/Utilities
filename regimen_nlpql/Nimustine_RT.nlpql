@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "acnu", "nimustine"
 ];
 
-define Treatment_Nimustine:
+define  NimustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nimustine / RT", "NimustineRT", "Nimustine & RT", "Nimustine and RT", "RT", "Nimustine_RT", "Nimustine/RT"
+    "Nimustine & RT", "RT"
 ];
 
-define Regimen_NimustineRT:
+define final NimustineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_NimustineRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Nimustine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_NimustineRT:
-    where Regimen_NimustineRT OR ReceivedRegimenTreatments;        
+define final NimustineRTTreatments:
+    where NimustineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

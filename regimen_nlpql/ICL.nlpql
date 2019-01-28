@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "ceenu", "lomustine"
 ];
 
-define Treatment_Lomustine:
+define  LomustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "ICL"
 ];
 
-define Regimen_ICL:
+define final ICLRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ICL:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Idarubicin AND Treatment_Cytarabine AND Treatment_Lomustine;
-    
-define final Received_ICL:
-    where Regimen_ICL OR ReceivedRegimenTreatments;        
+define final ICLTreatments:
+    where IdarubicinTreatment AND CytarabineTreatment AND LomustineTreatment;
+          
         
         
         

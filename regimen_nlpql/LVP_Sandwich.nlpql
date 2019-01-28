@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "elspar", "asparaginase"
 ];
 
-define Treatment_Asparaginase:
+define  AsparaginaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Prednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "LVP "Sandwich"", "LVP", "LVPSandwich", "LVP_Sandwich"
+    "LVP "Sandwich"", "LVP"
 ];
 
-define Regimen_LVPSandwich:
+define final LVPSandwichRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_LVPSandwich:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Asparaginase AND Treatment_Vincristine AND Treatment_Prednisolone;
-    
-define final Received_LVPSandwich:
-    where Regimen_LVPSandwich OR ReceivedRegimenTreatments;        
+define final LVPSandwichTreatments:
+    where AsparaginaseTreatment AND VincristineTreatment AND PrednisoloneTreatment;
+          
         
         
         

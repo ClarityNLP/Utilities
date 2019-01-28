@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gazyva", "obinutuzumab"
 ];
 
-define Treatment_Obinutuzumab:
+define final ObinutuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Obinutuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Obinutuzumab monotherapy", "Obinutuzumab_monotherapy", "Obinutuzumabmonotherapy"
+    "Obinutuzumab monotherapy"
 ];
 
-define Regimen_Obinutuzumabmonotherapy:
+define final ObinutuzumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Obinutuzumabmonotherapy:
 
 // Results
 
-        
-define final Received_Obinutuzumabmonotherapy:
-    where Treatment_Obinutuzumab OR Regimen_Obinutuzumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Diffuse_large_B-cell_lymphoma, Follicular_lymphoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "s-1", "tegafur, gimeracil, oteracil"
 ];
 
-define Treatment_Tegafurgimeraciloteracil:
+define  TegafurgimeraciloteracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "SOX"
 ];
 
-define Regimen_SOX:
+define final SOXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_SOX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Tegafurgimeraciloteracil AND Treatment_Oxaliplatin;
-    
-define final Received_SOX:
-    where Regimen_SOX OR ReceivedRegimenTreatments;        
+define final SOXTreatments:
+    where TegafurgimeraciloteracilTreatment AND OxaliplatinTreatment;
+          
         
         
         

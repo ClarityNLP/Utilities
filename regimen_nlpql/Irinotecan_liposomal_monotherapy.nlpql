@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "onivyde", "irinotecan liposome"
 ];
 
-define Treatment_Irinotecanliposome:
+define final IrinotecanliposomeTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Irinotecanliposome:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan_liposomal_monotherapy", "Irinotecan liposomal monotherapy", "Irinotecanliposomalmonotherapy"
+    "Irinotecan liposomal monotherapy"
 ];
 
-define Regimen_Irinotecanliposomalmonotherapy:
+define final IrinotecanliposomalmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Irinotecanliposomalmonotherapy:
 
 // Results
 
-        
-define final Received_Irinotecanliposomalmonotherapy:
-    where Treatment_Irinotecanliposome OR Regimen_Irinotecanliposomalmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
 
 
 ***/

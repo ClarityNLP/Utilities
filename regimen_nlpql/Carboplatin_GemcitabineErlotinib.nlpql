@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "tarceva", "erlotinib"
 ];
 
-define Treatment_Erlotinib:
+define  ErlotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Erlotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin and Gemcitabine/Erlotinib", "Carboplatin/Gemcitabine/Erlotinib", "Carboplatin & Gemcitabine/Erlotinib", "Carboplatin / Gemcitabine/Erlotinib", "Carboplatin_GemcitabineErlotinib", "CarboplatinGemcitabineErlotinib"
+    "Carboplatin & Gemcitabine/Erlotinib"
 ];
 
-define Regimen_CarboplatinandGemcitabineErlotinib:
+define final CarboplatinGemcitabineErlotinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinandGemcitabineErlotinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Gemcitabine AND Treatment_Erlotinib;
-    
-define final Received_CarboplatinGemcitabineErlotinib:
-    where Regimen_CarboplatinandGemcitabineErlotinib OR ReceivedRegimenTreatments;        
+define final CarboplatinGemcitabineErlotinibTreatments:
+    where CarboplatinTreatment AND GemcitabineTreatment AND ErlotinibTreatment;
+          
         
         
         

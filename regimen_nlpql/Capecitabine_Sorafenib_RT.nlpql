@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "nexavar", "sorafenib"
 ];
 
-define Treatment_Sorafenib:
+define  SorafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "CapecitabineSorafenibRT", "Capecitabine and  Sorafenib and  RT", "Capecitabine_Sorafenib_RT", "Capecitabine- Sorafenib- RT", "Capecitabine& Sorafenib& RT", "Capecitabine/Sorafenib/RT", "Capecitabine &  Sorafenib &  RT", "Capecitabine/ Sorafenib/ RT", "Capecitabine, Sorafenib, RT"
+    "Capecitabine, Sorafenib, RT", "RT"
 ];
 
-define Regimen_RT:
+define final CapecitabineSorafenibRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_RT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Sorafenib AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineSorafenibRT:
-    where Regimen_RT OR ReceivedRegimenTreatments;        
+define final CapecitabineSorafenibRTTreatments:
+    where CapecitabineTreatment AND SorafenibTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

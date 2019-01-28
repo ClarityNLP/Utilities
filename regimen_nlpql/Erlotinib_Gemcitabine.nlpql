@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tarceva", "erlotinib"
 ];
 
-define Treatment_Erlotinib:
+define  ErlotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Erlotinib_Gemcitabine", "Erlotinib/Gemcitabine", "Erlotinib and Gemcitabine", "Erlotinib & Gemcitabine", "Erlotinib / Gemcitabine", "ErlotinibGemcitabine"
+    "Erlotinib & Gemcitabine"
 ];
 
-define Regimen_ErlotinibGemcitabine:
+define final ErlotinibGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ErlotinibGemcitabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Erlotinib AND Treatment_Gemcitabine;
-    
-define final Received_ErlotinibGemcitabine:
-    where Regimen_ErlotinibGemcitabine OR ReceivedRegimenTreatments;        
+define final ErlotinibGemcitabineTreatments:
+    where ErlotinibTreatment AND GemcitabineTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "arzerra", "ofatumumab"
 ];
 
-define Treatment_Ofatumumab:
+define  OfatumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define  MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "OESHAP", "O/ESHAP", "O-ESHAP"
+    "OESHAP", "O-ESHAP", "O/ESHAP"
 ];
 
-define Regimen_OESHAP:
+define final OESHAPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_OESHAP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Ofatumumab AND Treatment_Etoposide AND Treatment_Methylprednisolone AND Treatment_Cytarabine AND Treatment_Cisplatin;
-    
-define final Received_OESHAP:
-    where Regimen_OESHAP OR ReceivedRegimenTreatments;        
+define final OESHAPTreatments:
+    where OfatumumabTreatment AND EtoposideTreatment AND MethylprednisoloneTreatment AND CytarabineTreatment AND CisplatinTreatment;
+          
         
         
         

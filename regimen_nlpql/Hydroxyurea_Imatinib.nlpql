@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "hydrea", "hydroxyurea"
 ];
 
-define Treatment_Hydroxyurea:
+define  HydroxyureaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define  ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Imatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea/Imatinib", "Hydroxyurea and Imatinib", "Hydroxyurea_Imatinib", "Hydroxyurea / Imatinib", "Hydroxyurea & Imatinib", "HydroxyureaImatinib"
+    "Hydroxyurea & Imatinib"
 ];
 
-define Regimen_HydroxyureaImatinib:
+define final HydroxyureaImatinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_HydroxyureaImatinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Hydroxyurea AND Treatment_Imatinib;
-    
-define final Received_HydroxyureaImatinib:
-    where Regimen_HydroxyureaImatinib OR ReceivedRegimenTreatments;        
+define final HydroxyureaImatinibTreatments:
+    where HydroxyureaTreatment AND ImatinibTreatment;
+          
         
         
         

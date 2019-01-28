@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "hydrea", "hydroxyurea"
 ];
 
-define Treatment_Hydroxyurea:
+define  HydroxyureaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/Fluorouracil/Hydroxyurea/RT", "Cisplatin &  Fluorouracil &  Hydroxyurea &  RT", "Cisplatin& Fluorouracil& Hydroxyurea& RT", "Cisplatin_Fluorouracil_Hydroxyurea_RT", "Cisplatin- Fluorouracil- Hydroxyurea- RT", "Cisplatin/ Fluorouracil/ Hydroxyurea/ RT", "CisplatinFluorouracilHydroxyureaRT", "Cisplatin and  Fluorouracil and  Hydroxyurea and  RT", "Cisplatin, Fluorouracil, Hydroxyurea, RT", "RT"
+    "RT", "Cisplatin, Fluorouracil, Hydroxyurea, RT"
 ];
 
-define Regimen_CisplatinFluorouracilHydroxyureaRT:
+define final CisplatinFluorouracilHydroxyureaRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_CisplatinFluorouracilHydroxyureaRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Hydroxyurea AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CisplatinFluorouracilHydroxyureaRT:
-    where Regimen_CisplatinFluorouracilHydroxyureaRT OR ReceivedRegimenTreatments;        
+define final CisplatinFluorouracilHydroxyureaRTTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment AND HydroxyureaTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

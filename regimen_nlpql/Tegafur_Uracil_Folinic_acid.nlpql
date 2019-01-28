@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "uft", "tegafur and uracil"
 ];
 
-define Treatment_Tegafuranduracil:
+define  TegafuranduracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Folinicacid:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFT + LV", "UFT & LV", "UFT_LV", "UFT  and  LV", "Tegafur &  Uracil &  Folinic acid", "Tegafur and  Uracil and  Folinic acid", "Tegafur/Uracil/Folinic acid", "Tegafur/ Uracil/ Folinic acid", "UFTLV", "TegafurUracilFolinicacid", "Tegafur, Uracil, Folinic acid", "UFT / LV", "Tegafur_Uracil_Folinic_acid", "Tegafur- Uracil- Folinic acid", "Tegafur& Uracil& Folinic acid", "UFT  &  LV", "UFT  /  LV"
+    "UFT_LV", "UFT & LV", "UFTLV", "UFT + LV", "UFT  LV", "Tegafur, Uracil, Folinic acid", "UFT / LV", "UFT  and  LV", "UFT  &  LV", "UFT  /  LV"
 ];
 
-define Regimen_UFTLV:
+define final TegafurUracilFolinicacidRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_UFTLV:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Tegafuranduracil AND Treatment_Folinicacid;
-    
-define final Received_TegafurUracilFolinicacid:
-    where Regimen_UFTLV OR ReceivedRegimenTreatments;        
+define final TegafurUracilFolinicacidTreatments:
+    where TegafuranduracilTreatment AND FolinicacidTreatment;
+          
         
         
         

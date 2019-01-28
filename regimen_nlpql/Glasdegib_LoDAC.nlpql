@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "daurismo", "glasdegib"
 ];
 
-define Treatment_Glasdegib:
+define  GlasdegibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Glasdegib / LoDAC", "GlasdegibLoDAC", "Glasdegib and LoDAC", "Glasdegib/LoDAC", "Glasdegib & LoDAC", "Glasdegib_LoDAC"
+    "Glasdegib & LoDAC"
 ];
 
-define Regimen_GlasdegibLoDAC:
+define final GlasdegibLoDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GlasdegibLoDAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Glasdegib AND Treatment_Cytarabine;
-    
-define final Received_GlasdegibLoDAC:
-    where Regimen_GlasdegibLoDAC OR ReceivedRegimenTreatments;        
+define final GlasdegibLoDACTreatments:
+    where GlasdegibTreatment AND CytarabineTreatment;
+          
         
         
         

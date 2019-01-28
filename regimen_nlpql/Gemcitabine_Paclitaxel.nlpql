@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "GemcitabinePaclitaxel", "Gemcitabine/Paclitaxel", "Gemcitabine and Paclitaxel", "Gemcitabine & Paclitaxel", "Gemcitabine / Paclitaxel", "Gemcitabine_Paclitaxel"
+    "Gemcitabine & Paclitaxel"
 ];
 
-define Regimen_GemcitabinePaclitaxel:
+define final GemcitabinePaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabinePaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Paclitaxel;
-    
-define final Received_GemcitabinePaclitaxel:
-    where Regimen_GemcitabinePaclitaxel OR ReceivedRegimenTreatments;        
+define final GemcitabinePaclitaxelTreatments:
+    where GemcitabineTreatment AND PaclitaxelTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_GemcitabinePaclitaxel:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Testicular_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Testicular_cancer, Non-small_cell_lung_cancer
 
 
 ***/

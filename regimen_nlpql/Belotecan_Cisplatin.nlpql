@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptobell", "belotecan"
 ];
 
-define Treatment_Belotecan:
+define  BelotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Belotecan/Cisplatin", "BelotecanCisplatin", "BP", "Belotecan / Cisplatin", "Belotecan and Cisplatin", "Belotecan & Cisplatin", "Belotecan_Cisplatin"
+    "Belotecan & Cisplatin", "BP"
 ];
 
-define Regimen_BelotecanCisplatin:
+define final BelotecanCisplatinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BelotecanCisplatin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Belotecan AND Treatment_Cisplatin;
-    
-define final Received_BelotecanCisplatin:
-    where Regimen_BelotecanCisplatin OR ReceivedRegimenTreatments;        
+define final BelotecanCisplatinTreatments:
+    where BelotecanTreatment AND CisplatinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel and Bevacizumab", "Paclitaxel_Bevacizumab", "Paclitaxel & Bevacizumab", "PaclitaxelBevacizumab", "Paclitaxel/Bevacizumab", "Paclitaxel / Bevacizumab"
+    "Paclitaxel & Bevacizumab"
 ];
 
-define Regimen_PaclitaxelandBevacizumab:
+define final PaclitaxelBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PaclitaxelandBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Bevacizumab;
-    
-define final Received_PaclitaxelBevacizumab:
-    where Regimen_PaclitaxelandBevacizumab OR ReceivedRegimenTreatments;        
+define final PaclitaxelBevacizumabTreatments:
+    where PaclitaxelTreatment AND BevacizumabTreatment;
+          
         
         
         

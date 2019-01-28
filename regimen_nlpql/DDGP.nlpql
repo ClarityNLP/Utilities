@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "oncaspar", "pegaspargase"
 ];
 
-define Treatment_Pegaspargase:
+define  PegaspargaseTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "DDGP"
 ];
 
-define Regimen_DDGP:
+define final DDGPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_DDGP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dexamethasone AND Treatment_Cisplatin AND Treatment_Gemcitabine AND Treatment_Pegaspargase;
-    
-define final Received_DDGP:
-    where Regimen_DDGP OR ReceivedRegimenTreatments;        
+define final DDGPTreatments:
+    where DexamethasoneTreatment AND CisplatinTreatment AND GemcitabineTreatment AND PegaspargaseTreatment;
+          
         
         
         

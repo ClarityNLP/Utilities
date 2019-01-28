@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxol", "paclitaxel"
 ];
 
-define Treatment_Paclitaxel:
+define  PaclitaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "hycamtin", "topotecan"
 ];
 
-define Treatment_Topotecan:
+define  TopotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Topotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & Topotecan", "Paclitaxel / Topotecan", "TP", "PaclitaxelTopotecan", "Paclitaxel/Topotecan", "Paclitaxel_Topotecan", "Paclitaxel and Topotecan"
+    "Paclitaxel & Topotecan", "TP"
 ];
 
-define Regimen_PaclitaxelTopotecan:
+define final PaclitaxelTopotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PaclitaxelTopotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxel AND Treatment_Topotecan;
-    
-define final Received_PaclitaxelTopotecan:
-    where Regimen_PaclitaxelTopotecan OR ReceivedRegimenTreatments;        
+define final PaclitaxelTopotecanTreatments:
+    where PaclitaxelTreatment AND TopotecanTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "vidaza", "azacitidine"
 ];
 
-define Treatment_Azacitidine:
+define final AzacitidineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Azacitidine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine monotherapy", "Azacitidine_monotherapy", "Azacitidinemonotherapy"
+    "Azacitidine monotherapy"
 ];
 
-define Regimen_Azacitidinemonotherapy:
+define final AzacitidinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Azacitidinemonotherapy:
 
 // Results
 
-        
-define final Received_Azacitidinemonotherapy:
-    where Treatment_Azacitidine OR Regimen_Azacitidinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia, Acute_myeloid_leukemia
 
 
 ***/

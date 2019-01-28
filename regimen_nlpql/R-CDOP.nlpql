@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define Treatment_Pegylatedliposomaldoxorubicin:
+define  PegylatedliposomaldoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CDOP", "RCDOP", "DRCOP", "R-CDOP"
+    "R-CDOP", "R/CDOP", "RCDOP", "DRCOP"
 ];
 
-define Regimen_RCDOP:
+define final RCDOPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_RCDOP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pegylatedliposomaldoxorubicin AND Treatment_Rituximab AND Treatment_Cyclophosphamide AND Treatment_Vincristine AND Treatment_Prednisone;
-    
-define final Received_RCDOP:
-    where Regimen_RCDOP OR ReceivedRegimenTreatments;        
+define final RCDOPTreatments:
+    where PegylatedliposomaldoxorubicinTreatment AND RituximabTreatment AND CyclophosphamideTreatment AND VincristineTreatment AND PrednisoneTreatment;
+          
         
         
         

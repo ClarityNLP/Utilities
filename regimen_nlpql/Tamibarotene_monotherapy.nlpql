@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "amnoid", "tamibarotene"
 ];
 
-define Treatment_Tamibarotene:
+define final TamibaroteneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Tamibarotene:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamibarotenemonotherapy", "Tamibarotene_monotherapy", "Tamibarotene monotherapy"
+    "Tamibarotene monotherapy"
 ];
 
-define Regimen_Tamibarotenemonotherapy:
+define final TamibarotenemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Tamibarotenemonotherapy:
 
 // Results
 
-        
-define final Received_Tamibarotenemonotherapy:
-    where Treatment_Tamibarotene OR Regimen_Tamibarotenemonotherapy;
-            
 
 // Comments
 /***

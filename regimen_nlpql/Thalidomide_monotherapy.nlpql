@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define final ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Thalidomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thalidomide monotherapy", "Thalidomide_monotherapy", "Thalidomidemonotherapy"
+    "Thalidomide monotherapy"
 ];
 
-define Regimen_Thalidomidemonotherapy:
+define final ThalidomidemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Thalidomidemonotherapy:
 
 // Results
 
-        
-define final Received_Thalidomidemonotherapy:
-    where Treatment_Thalidomide OR Regimen_Thalidomidemonotherapy;
-            
 
 // Comments
 /***

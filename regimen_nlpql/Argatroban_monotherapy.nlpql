@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "acova", "argatroban"
 ];
 
-define Treatment_Argatroban:
+define  ArgatrobanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "acova", "argatroban"
 ];
 
-define Treatment_Argatroban:
+define  ArgatrobanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "acova", "argatroban"
 ];
 
-define Treatment_Argatroban:
+define  ArgatrobanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Argatroban:
 // Regimen names
 
 termset RegimenTerms:[
-    "Argatrobanmonotherapy", "Argatroban_monotherapy", "Argatroban monotherapy"
+    "Argatroban monotherapy"
 ];
 
-define Regimen_Argatrobanmonotherapy:
+define final ArgatrobanmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_Argatrobanmonotherapy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Argatroban AND Treatment_Argatroban AND Treatment_Argatroban;
-    
-define final Received_Argatrobanmonotherapy:
-    where Regimen_Argatrobanmonotherapy OR ReceivedRegimenTreatments;        
+define final ArgatrobanmonotherapyTreatments:
+    where ArgatrobanTreatment AND ArgatrobanTreatment AND ArgatrobanTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_Argatrobanmonotherapy:
 // Comments
 /***
 
-Known regimen for: Venous_thromboembolism_(VTE), Heparin-induced_thrombocytopenia_(HIT)
+Known regimen for: Heparin-induced_thrombocytopenia_(HIT), Venous_thromboembolism_(VTE)
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mtx", "methotrexate"
 ];
 
-define Treatment_Methotrexate:
+define final MethotrexateTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Methotrexate:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate& then Cytarabine", "Methotrexate, and Cytarabine", "MethotrexatethenCytarabine", "Methotrexate,&Cytarabine", "Methotrexate, & Cytarabine", "Methotrexate,, Cytarabine", "Methotrexate/then Cytarabine", "Methotrexate/ then Cytarabine", "Methotrexate, then Cytarabine", "Methotrexate, / Cytarabine", "Methotrexate- then Cytarabine", "Methotrexate and  then Cytarabine", "Methotrexate_then_Cytarabine", "Methotrexate &  then Cytarabine", "Methotrexate,/Cytarabine"
+    "Methotrexate, then Cytarabine"
 ];
 
-define Regimen_MethotrexatethenCytarabine:
+define final MethotrexatethenCytarabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_MethotrexatethenCytarabine:
 
 // Results
 
-        
-define final Received_MethotrexatethenCytarabine:
-    where Treatment_Methotrexate OR Regimen_MethotrexatethenCytarabine;
-            
 
 // Comments
 /***

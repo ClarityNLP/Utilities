@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "angiomax", "bivalirudin"
 ];
 
-define Treatment_Bivalirudin:
+define final BivalirudinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Bivalirudin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bivalirudinmonotherapy", "Bivalirudin monotherapy", "Bivalirudin_monotherapy"
+    "Bivalirudin monotherapy"
 ];
 
-define Regimen_Bivalirudinmonotherapy:
+define final BivalirudinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Bivalirudinmonotherapy:
 
 // Results
 
-        
-define final Received_Bivalirudinmonotherapy:
-    where Treatment_Bivalirudin OR Regimen_Bivalirudinmonotherapy;
-            
 
 // Comments
 /***

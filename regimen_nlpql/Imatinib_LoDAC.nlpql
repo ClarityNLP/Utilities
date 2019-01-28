@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define  ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "ImatinibLoDAC", "Imatinib and LoDAC", "Imatinib / LoDAC", "Imatinib/LoDAC", "Imatinib & LoDAC", "Imatinib_LoDAC"
+    "Imatinib & LoDAC"
 ];
 
-define Regimen_ImatinibLoDAC:
+define final ImatinibLoDACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ImatinibLoDAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Imatinib AND Treatment_Cytarabine;
-    
-define final Received_ImatinibLoDAC:
-    where Regimen_ImatinibLoDAC OR ReceivedRegimenTreatments;        
+define final ImatinibLoDACTreatments:
+    where ImatinibTreatment AND CytarabineTreatment;
+          
         
         
         

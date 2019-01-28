@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "torisel", "temsirolimus"
 ];
 
-define Treatment_Temsirolimus:
+define  TemsirolimusTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Rituximab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temsirolimus & Rituximab", "Temsirolimus/Rituximab", "Temsirolimus_Rituximab", "TemsirolimusRituximab", "Temsirolimus / Rituximab", "Temsirolimus and Rituximab"
+    "Temsirolimus & Rituximab"
 ];
 
-define Regimen_TemsirolimusRituximab:
+define final TemsirolimusRituximabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TemsirolimusRituximab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Temsirolimus AND Treatment_Rituximab;
-    
-define final Received_TemsirolimusRituximab:
-    where Regimen_TemsirolimusRituximab OR ReceivedRegimenTreatments;        
+define final TemsirolimusRituximabTreatments:
+    where TemsirolimusTreatment AND RituximabTreatment;
+          
         
         
         

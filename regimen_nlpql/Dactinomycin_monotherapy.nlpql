@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cosmegen", "dactinomycin"
 ];
 
-define Treatment_Dactinomycin:
+define final DactinomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Dactinomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dactinomycin_monotherapy", "Dactinomycin monotherapy", "Dactinomycinmonotherapy"
+    "Dactinomycin monotherapy"
 ];
 
-define Regimen_Dactinomycinmonotherapy:
+define final DactinomycinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Dactinomycinmonotherapy:
 
 // Results
 
-        
-define final Received_Dactinomycinmonotherapy:
-    where Treatment_Dactinomycin OR Regimen_Dactinomycinmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Endometrial_cancer, Gestational_trophoblastic_neoplasia, Wilms_tumor
+Known regimen for: Gestational_trophoblastic_neoplasia, Endometrial_cancer, Wilms_tumor
 
 
 ***/

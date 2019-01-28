@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "CYVE/G-CSF", "CYVE and G-CSF", "CYVE & G-CSF", "CYVE / G-CSF", "CYVE & G/CSF", "CYVEGCSF", "CYVE & GCSF", "CYVE_G-CSF"
+    "CYVE & G-CSF"
 ];
 
-define Regimen_CYVEGCSF:
+define final CYVEGCSFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CYVEGCSF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Etoposide;
-    
-define final Received_CYVEGCSF:
-    where Regimen_CYVEGCSF OR ReceivedRegimenTreatments;        
+define final CYVEGCSFTreatments:
+    where CytarabineTreatment AND EtoposideTreatment;
+          
         
         
         

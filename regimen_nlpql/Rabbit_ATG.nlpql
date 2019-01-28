@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thymoglobulin", "antithymocyte globulin, rabbit atg"
 ];
 
-define Treatment_AntithymocyteglobulinrabbitATG:
+define final AntithymocyteglobulinrabbitATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_AntithymocyteglobulinrabbitATG:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rabbit ATG", "RabbitATG", "Rabbit_ATG"
+    "Rabbit_ATG", "Rabbit ATG", "RabbitATG"
 ];
 
-define Regimen_RabbitATG:
+define final RabbitATGRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_RabbitATG:
 
 // Results
 
-        
-define final Received_RabbitATG:
-    where Treatment_AntithymocyteglobulinrabbitATG OR Regimen_RabbitATG;
-            
 
 // Comments
 /***

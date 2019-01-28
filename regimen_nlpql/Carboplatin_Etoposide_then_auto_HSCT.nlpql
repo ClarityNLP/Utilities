@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Etoposide& then auto HSCT", "Carboplatin & Etoposide- then auto HSCT", "Carboplatin/Etoposide, then auto HSCT", "TI/CE", "TI-CE", "Carboplatin & Etoposide,, auto HSCT", "Carboplatin & Etoposide, / auto HSCT", "Carboplatin / Etoposide, then auto HSCT", "Carboplatin & Etoposide/then auto HSCT", "Carboplatin & Etoposide, & auto HSCT", "Carboplatin & Etoposide &  then auto HSCT", "Carboplatin & Etoposide,/auto HSCT", "Carboplatin and Etoposide, then auto HSCT", "CarboplatinEtoposidethenautoHSCT", "Carboplatin & Etoposide,&auto HSCT", "Carboplatin & Etoposide, and auto HSCT", "Carboplatin & Etoposide and  then auto HSCT", "TICE", "Carboplatin & Etoposide, then auto HSCT", "Carboplatin & Etoposide/ then auto HSCT", "Carboplatin_Etoposide_then_auto_HSCT"
+    "TI-CE", "TI/CE", "TICE", "Carboplatin & Etoposide, then auto HSCT"
 ];
 
-define Regimen_CarboplatinEtoposidethenautoHSCT:
+define final CarboplatinEtoposidethenautoHSCTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinEtoposidethenautoHSCT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Etoposide;
-    
-define final Received_CarboplatinEtoposidethenautoHSCT:
-    where Regimen_CarboplatinEtoposidethenautoHSCT OR ReceivedRegimenTreatments;        
+define final CarboplatinEtoposidethenautoHSCTTreatments:
+    where CarboplatinTreatment AND EtoposideTreatment;
+          
         
         
         

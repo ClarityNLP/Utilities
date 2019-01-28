@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DHAP / time intensified", "DHAP - time intensified", "DHAP_-_time_intensified", "DHAPtimeintensified", "DHAP  time intensified"
+    "DHAP - time intensified"
 ];
 
-define Regimen_DHAPtimeintensified:
+define final DHAPtimeintensifiedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_DHAPtimeintensified:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dexamethasone AND Treatment_Cytarabine AND Treatment_Cisplatin;
-    
-define final Received_DHAPtimeintensified:
-    where Regimen_DHAPtimeintensified OR ReceivedRegimenTreatments;        
+define final DHAPtimeintensifiedTreatments:
+    where DexamethasoneTreatment AND CytarabineTreatment AND CisplatinTreatment;
+          
         
         
         

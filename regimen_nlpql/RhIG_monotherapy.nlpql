@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tylenol", "acetaminophen"
 ];
 
-define Treatment_Acetaminophen:
+define  AcetaminophenTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "RhIG_monotherapy", "RhIGmonotherapy", "RhIG monotherapy", "RhIG"
+    "RhIG monotherapy", "RhIG"
 ];
 
-define Regimen_RhIGmonotherapy:
+define final RhIGmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_RhIGmonotherapy:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Acetaminophen AND Treatment_Prednisone;
-    
-define final Received_RhIGmonotherapy:
-    where Regimen_RhIGmonotherapy OR ReceivedRegimenTreatments;        
+define final RhIGmonotherapyTreatments:
+    where AcetaminophenTreatment AND PrednisoneTreatment;
+          
         
         
         

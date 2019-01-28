@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define final MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Methylprednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methylprednisolone monotherapy", "Methylprednisolone_monotherapy", "Methylprednisolonemonotherapy"
+    "Methylprednisolone monotherapy"
 ];
 
-define Regimen_Methylprednisolonemonotherapy:
+define final MethylprednisolonemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Methylprednisolonemonotherapy:
 
 // Results
 
-        
-define final Received_Methylprednisolonemonotherapy:
-    where Treatment_Methylprednisolone OR Regimen_Methylprednisolonemonotherapy;
-            
 
 // Comments
 /***

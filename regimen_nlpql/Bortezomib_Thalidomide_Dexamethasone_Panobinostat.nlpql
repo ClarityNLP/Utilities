@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "velcade", "bortezomib"
 ];
 
-define Treatment_Bortezomib:
+define  BortezomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "farydak", "panobinostat"
 ];
 
-define Treatment_Panobinostat:
+define  PanobinostatTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Panobinostat:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib& Thalidomide& Dexamethasone& Panobinostat", "Bortezomib/Thalidomide/Dexamethasone/Panobinostat", "Bortezomib and  Thalidomide and  Dexamethasone and  Panobinostat", "Bortezomib, Thalidomide, Dexamethasone, Panobinostat", "Bortezomib_Thalidomide_Dexamethasone_Panobinostat", "Bortezomib/ Thalidomide/ Dexamethasone/ Panobinostat", "BortezomibThalidomideDexamethasonePanobinostat", "Bortezomib &  Thalidomide &  Dexamethasone &  Panobinostat", "Bortezomib- Thalidomide- Dexamethasone- Panobinostat"
+    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
 ];
 
-define Regimen_BortezomibThalidomideDexamethasonePanobinostat:
+define final BortezomibThalidomideDexamethasonePanobinostatRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_BortezomibThalidomideDexamethasonePanobinostat:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bortezomib AND Treatment_Thalidomide AND Treatment_Dexamethasone AND Treatment_Panobinostat;
-    
-define final Received_BortezomibThalidomideDexamethasonePanobinostat:
-    where Regimen_BortezomibThalidomideDexamethasonePanobinostat OR ReceivedRegimenTreatments;        
+define final BortezomibThalidomideDexamethasonePanobinostatTreatments:
+    where BortezomibTreatment AND ThalidomideTreatment AND DexamethasoneTreatment AND PanobinostatTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define final IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idarubicin/then Mitoxantrone/then Idarubicin", "Idarubicin/ then Mitoxantrone/ then Idarubicin", "Idarubicin, & Mitoxantrone, & Idarubicin", "IdarubicinthenMitoxantronethenIdarubicin", "Idarubicin- then Mitoxantrone- then Idarubicin", "Idarubicin& then Mitoxantrone& then Idarubicin", "Idarubicin,, Mitoxantrone,, Idarubicin", "Idarubicin,&Mitoxantrone,&Idarubicin", "Idarubicin, and Mitoxantrone, and Idarubicin", "Idarubicin &  then Mitoxantrone &  then Idarubicin", "Idarubicin, / Mitoxantrone, / Idarubicin", "Idarubicin_then_Mitoxantrone_then_Idarubicin", "Idarubicin and  then Mitoxantrone and  then Idarubicin", "Idarubicin, then Mitoxantrone, then Idarubicin", "Idarubicin,/Mitoxantrone,/Idarubicin"
+    "Idarubicin, then Mitoxantrone, then Idarubicin"
 ];
 
-define Regimen_IdarubicinthenMitoxantronethenIdarubicin:
+define final IdarubicinthenMitoxantronethenIdarubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_IdarubicinthenMitoxantronethenIdarubicin:
 
 // Results
 
-        
-define final Received_IdarubicinthenMitoxantronethenIdarubicin:
-    where Treatment_Idarubicin OR Regimen_IdarubicinthenMitoxantronethenIdarubicin;
-            
 
 // Comments
 /***

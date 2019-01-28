@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define final MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mitomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal_hyperthermic_mitomycin", "Intraperitoneal hyperthermic mitomycin", "Intraperitonealhyperthermicmitomycin"
+    "Intraperitoneal hyperthermic mitomycin"
 ];
 
-define Regimen_Intraperitonealhyperthermicmitomycin:
+define final IntraperitonealhyperthermicmitomycinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Intraperitonealhyperthermicmitomycin:
 
 // Results
 
-        
-define final Received_Intraperitonealhyperthermicmitomycin:
-    where Treatment_Mitomycin OR Regimen_Intraperitonealhyperthermicmitomycin;
-            
 
 // Comments
 /***

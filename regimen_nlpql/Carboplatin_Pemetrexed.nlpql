@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alimta", "pemetrexed"
 ];
 
-define Treatment_Pemetrexed:
+define  PemetrexedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Pemetrexed:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin and Pemetrexed", "Carboplatin_Pemetrexed", "Carboplatin/Pemetrexed", "CarboplatinPemetrexed", "Carboplatin & Pemetrexed", "Carboplatin / Pemetrexed"
+    "Carboplatin & Pemetrexed"
 ];
 
-define Regimen_CarboplatinandPemetrexed:
+define final CarboplatinPemetrexedRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarboplatinandPemetrexed:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Pemetrexed;
-    
-define final Received_CarboplatinPemetrexed:
-    where Regimen_CarboplatinandPemetrexed OR ReceivedRegimenTreatments;        
+define final CarboplatinPemetrexedTreatments:
+    where CarboplatinTreatment AND PemetrexedTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CarboplatinPemetrexed:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Mesothelioma
+Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
 
 
 ***/

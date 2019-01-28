@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define final MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mitoxantrone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitoxantronemonotherapy", "Mitoxantrone_monotherapy", "Mitoxantrone monotherapy"
+    "Mitoxantrone monotherapy"
 ];
 
-define Regimen_Mitoxantronemonotherapy:
+define final MitoxantronemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mitoxantronemonotherapy:
 
 // Results
 
-        
-define final Received_Mitoxantronemonotherapy:
-    where Treatment_Mitoxantrone OR Regimen_Mitoxantronemonotherapy;
-            
 
 // Comments
 /***

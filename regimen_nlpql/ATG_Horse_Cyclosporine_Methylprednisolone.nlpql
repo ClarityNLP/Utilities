@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define Treatment_AntithymocyteglobulinhorseATG:
+define  AntithymocyteglobulinhorseATGTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sandimmune", "cyclosporine non-modified"
 ];
 
-define Treatment_Cyclosporinenonmodified:
+define  CyclosporinenonmodifiedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "solumedrol", "methylprednisolone"
 ];
 
-define Treatment_Methylprednisolone:
+define  MethylprednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Methylprednisolone:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse), Cyclosporine, Methylprednisolone", "ATG (Horse) &  Cyclosporine &  Methylprednisolone", "ATG (Horse)/Cyclosporine/Methylprednisolone", "ATGHorseCyclosporineMethylprednisolone", "ATG (Horse) and  Cyclosporine and  Methylprednisolone", "ATG (Horse)& Cyclosporine& Methylprednisolone", "ATG (Horse)/ Cyclosporine/ Methylprednisolone", "ATG_Horse_Cyclosporine_Methylprednisolone", "ATG (Horse)- Cyclosporine- Methylprednisolone"
+    "ATG (Horse), Cyclosporine, Methylprednisolone"
 ];
 
-define Regimen_ATGHorseCyclosporineMethylprednisolone:
+define final ATGHorseCyclosporineMethylprednisoloneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ATGHorseCyclosporineMethylprednisolone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_AntithymocyteglobulinhorseATG AND Treatment_Cyclosporinenonmodified AND Treatment_Methylprednisolone;
-    
-define final Received_ATGHorseCyclosporineMethylprednisolone:
-    where Regimen_ATGHorseCyclosporineMethylprednisolone OR ReceivedRegimenTreatments;        
+define final ATGHorseCyclosporineMethylprednisoloneTreatments:
+    where AntithymocyteglobulinhorseATGTreatment AND CyclosporinenonmodifiedTreatment AND MethylprednisoloneTreatment;
+          
         
         
         

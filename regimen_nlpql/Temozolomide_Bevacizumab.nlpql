@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define  TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide/Bevacizumab", "Temozolomide / Bevacizumab", "Temozolomide & Bevacizumab", "TB", "Temozolomide and Bevacizumab", "TemozolomideBevacizumab", "Temozolomide_Bevacizumab"
+    "TB", "Temozolomide & Bevacizumab"
 ];
 
-define Regimen_TemozolomideBevacizumab:
+define final TemozolomideBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_TemozolomideBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Temozolomide AND Treatment_Bevacizumab;
-    
-define final Received_TemozolomideBevacizumab:
-    where Regimen_TemozolomideBevacizumab OR ReceivedRegimenTreatments;        
+define final TemozolomideBevacizumabTreatments:
+    where TemozolomideTreatment AND BevacizumabTreatment;
+          
         
         
         

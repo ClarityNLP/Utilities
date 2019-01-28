@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tarceva", "erlotinib"
 ];
 
-define Treatment_Erlotinib:
+define final ErlotinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Erlotinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Erlotinib_monotherapy", "Erlotinibmonotherapy", "Erlotinib monotherapy"
+    "Erlotinib monotherapy"
 ];
 
-define Regimen_Erlotinibmonotherapy:
+define final ErlotinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Erlotinibmonotherapy:
 
 // Results
 
-        
-define final Received_Erlotinibmonotherapy:
-    where Treatment_Erlotinib OR Regimen_Erlotinibmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: EGFR, Myelodysplastic_syndrome, Renal_cell_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Esophageal_cancer
+Known regimen for: Renal_cell_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Myelodysplastic_syndrome, Esophageal_cancer, EGFR
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "ellence", "epirubicin"
 ];
 
-define Treatment_Epirubicin:
+define final EpirubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Epirubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Epirubicinmonotherapy", "Epirubicin_monotherapy", "Epirubicin monotherapy"
+    "Epirubicin monotherapy"
 ];
 
-define Regimen_Epirubicinmonotherapy:
+define final EpirubicinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Epirubicinmonotherapy:
 
 // Results
 
-        
-define final Received_Epirubicinmonotherapy:
-    where Treatment_Epirubicin OR Regimen_Epirubicinmonotherapy;
-            
 
 // Comments
 /***

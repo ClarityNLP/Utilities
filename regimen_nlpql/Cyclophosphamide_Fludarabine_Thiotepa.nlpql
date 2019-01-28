@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Thiotepa:
 // Regimen names
 
 termset RegimenTerms:[
-    "CyclophosphamideFludarabineThiotepa", "Cyclophosphamide& Fludarabine& Thiotepa", "Cyclophosphamide &  Fludarabine &  Thiotepa", "Cyclophosphamide and  Fludarabine and  Thiotepa", "Cyclophosphamide/ Fludarabine/ Thiotepa", "Cyclophosphamide_Fludarabine_Thiotepa", "Cyclophosphamide/Fludarabine/Thiotepa", "Cyclophosphamide, Fludarabine, Thiotepa", "Cyclophosphamide- Fludarabine- Thiotepa"
+    "Cyclophosphamide, Fludarabine, Thiotepa"
 ];
 
-define Regimen_CyclophosphamideFludarabineThiotepa:
+define final CyclophosphamideFludarabineThiotepaRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CyclophosphamideFludarabineThiotepa:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Fludarabine AND Treatment_Thiotepa;
-    
-define final Received_CyclophosphamideFludarabineThiotepa:
-    where Regimen_CyclophosphamideFludarabineThiotepa OR ReceivedRegimenTreatments;        
+define final CyclophosphamideFludarabineThiotepaTreatments:
+    where CyclophosphamideTreatment AND FludarabineTreatment AND ThiotepaTreatment;
+          
         
         
         

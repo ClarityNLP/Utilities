@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "AC / Bevacizumab", "ACBevacizumab", "AC+Bev", "AC / Bev", "AC&Bev", "AC and Bevacizumab", "AC_Bevacizumab", "AC/Bevacizumab", "AC and Bev", "ACBev", "AC/Bev", "AC & Bev", "AC & Bevacizumab"
+    "AC&Bev", "AC+Bev", "AC & Bev", "ACBev", "AC & Bevacizumab", "AC and Bev", "AC/Bev", "AC / Bev"
 ];
 
-define Regimen_ACBevacizumab:
+define final ACBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_ACBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Cyclophosphamide AND Treatment_Bevacizumab;
-    
-define final Received_ACBevacizumab:
-    where Regimen_ACBevacizumab OR ReceivedRegimenTreatments;        
+define final ACBevacizumabTreatments:
+    where DoxorubicinTreatment AND CyclophosphamideTreatment AND BevacizumabTreatment;
+          
         
         
         

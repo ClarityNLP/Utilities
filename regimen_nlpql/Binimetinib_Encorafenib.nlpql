@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mektovi", "binimetinib"
 ];
 
-define Treatment_Binimetinib:
+define  BinimetinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "braftovi", "encorafenib"
 ];
 
-define Treatment_Encorafenib:
+define  EncorafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Encorafenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib and Encorafenib", "Binimetinib / Encorafenib", "Binimetinib & Encorafenib", "BinimetinibEncorafenib", "Binimetinib_Encorafenib", "Binimetinib/Encorafenib"
+    "Binimetinib & Encorafenib"
 ];
 
-define Regimen_BinimetinibandEncorafenib:
+define final BinimetinibEncorafenibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BinimetinibandEncorafenib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Binimetinib AND Treatment_Encorafenib;
-    
-define final Received_BinimetinibEncorafenib:
-    where Regimen_BinimetinibandEncorafenib OR ReceivedRegimenTreatments;        
+define final BinimetinibEncorafenibTreatments:
+    where BinimetinibTreatment AND EncorafenibTreatment;
+          
         
         
         

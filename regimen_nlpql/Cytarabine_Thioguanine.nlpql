@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "tabloid", "thioguanine"
 ];
 
-define Treatment_Thioguanine:
+define  ThioguanineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Thioguanine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine/Thioguanine", "CytarabineThioguanine", "Cytarabine and Thioguanine", "Cytarabine / Thioguanine", "Cytarabine_Thioguanine", "Cytarabine & Thioguanine"
+    "Cytarabine & Thioguanine"
 ];
 
-define Regimen_CytarabineThioguanine:
+define final CytarabineThioguanineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineThioguanine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Thioguanine;
-    
-define final Received_CytarabineThioguanine:
-    where Regimen_CytarabineThioguanine OR ReceivedRegimenTreatments;        
+define final CytarabineThioguanineTreatments:
+    where CytarabineTreatment AND ThioguanineTreatment;
+          
         
         
         

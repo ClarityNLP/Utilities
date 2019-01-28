@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Prednisone", "Cyclophosphamide_Prednisone", "CyclophosphamidePrednisone", "Cyclophosphamide and Prednisone", "Cyclophosphamide / Prednisone", "Cyclophosphamide/Prednisone"
+    "Cyclophosphamide & Prednisone"
 ];
 
-define Regimen_CyclophosphamidePrednisone:
+define final CyclophosphamidePrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CyclophosphamidePrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Prednisone;
-    
-define final Received_CyclophosphamidePrednisone:
-    where Regimen_CyclophosphamidePrednisone OR ReceivedRegimenTreatments;        
+define final CyclophosphamidePrednisoneTreatments:
+    where CyclophosphamideTreatment AND PrednisoneTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CyclophosphamidePrednisone:
 // Comments
 /***
 
-Known regimen for: Large_granular_lymphocytic_leukemia, Acquired_coagulopathy, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Acquired_coagulopathy, Large_granular_lymphocytic_leukemia
 
 
 ***/

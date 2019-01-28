@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define final CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Capecitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine monotherapy", "Capecitabinemonotherapy", "Capecitabine_monotherapy"
+    "Capecitabine monotherapy"
 ];
 
-define Regimen_Capecitabinemonotherapy:
+define final CapecitabinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Capecitabinemonotherapy:
 
 // Results
 
-        
-define final Received_Capecitabinemonotherapy:
-    where Treatment_Capecitabine OR Regimen_Capecitabinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Breast_cancer, Pancreatic_cancer, Rectal_cancer, Hepatocellular_carcinoma, Gastric_cancer, Cholangiocarcinoma, Colon_cancer
+Known regimen for: Pancreatic_cancer, Cholangiocarcinoma, Breast_cancer, Rectal_cancer, Gastric_cancer, Colon_cancer, Hepatocellular_carcinoma
 
 
 ***/

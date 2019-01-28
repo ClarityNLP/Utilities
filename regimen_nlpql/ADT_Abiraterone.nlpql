@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "millipred", "prednisolone"
 ];
 
-define Treatment_Prednisolone:
+define  PrednisoloneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADT/Abiraterone", "ADT / Abiraterone", "ADT_Abiraterone", "ADTAbiraterone", "ADT and Abiraterone", "ADT & Abiraterone"
+    "ADT & Abiraterone"
 ];
 
-define Regimen_ADTAbiraterone:
+define final ADTAbirateroneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_ADTAbiraterone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Prednisolone AND Treatment_Prednisone;
-    
-define final Received_ADTAbiraterone:
-    where Regimen_ADTAbiraterone OR ReceivedRegimenTreatments;        
+define final ADTAbirateroneTreatments:
+    where PrednisoloneTreatment AND PrednisoneTreatment;
+          
         
         
         

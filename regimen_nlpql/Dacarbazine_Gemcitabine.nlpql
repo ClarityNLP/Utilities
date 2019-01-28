@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "DacarbazineGemcitabine", "Dacarbazine_Gemcitabine", "Dacarbazine/Gemcitabine", "Dacarbazine and Gemcitabine", "Dacarbazine & Gemcitabine", "Dacarbazine / Gemcitabine"
+    "Dacarbazine & Gemcitabine"
 ];
 
-define Regimen_DacarbazineGemcitabine:
+define final DacarbazineGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DacarbazineGemcitabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dacarbazine AND Treatment_Gemcitabine;
-    
-define final Received_DacarbazineGemcitabine:
-    where Regimen_DacarbazineGemcitabine OR ReceivedRegimenTreatments;        
+define final DacarbazineGemcitabineTreatments:
+    where DacarbazineTreatment AND GemcitabineTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "OLF", "FLO"
 ];
 
-define Regimen_OLF:
+define final OLFRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_OLF:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Oxaliplatin AND Treatment_Folinicacid AND Treatment_Fluorouracil;
-    
-define final Received_OLF:
-    where Regimen_OLF OR ReceivedRegimenTreatments;        
+define final OLFTreatments:
+    where OxaliplatinTreatment AND FolinicacidTreatment AND FluorouracilTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_OLF:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Pancreatic_cancer
 
 
 ***/

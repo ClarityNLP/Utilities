@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Doxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin / Doxorubicin", "Cisplatin_Doxorubicin", "Cisplatin & Doxorubicin", "Cisplatin and Doxorubicin", "Cisplatin/Doxorubicin", "CisplatinDoxorubicin"
+    "Cisplatin & Doxorubicin"
 ];
 
-define Regimen_CisplatinDoxorubicin:
+define final CisplatinDoxorubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinDoxorubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Doxorubicin;
-    
-define final Received_CisplatinDoxorubicin:
-    where Regimen_CisplatinDoxorubicin OR ReceivedRegimenTreatments;        
+define final CisplatinDoxorubicinTreatments:
+    where CisplatinTreatment AND DoxorubicinTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CisplatinDoxorubicin:
 // Comments
 /***
 
-Known regimen for: Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma, Hepatoblastoma, Osteosarcoma, Endometrial_cancer
+Known regimen for: Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma, Endometrial_cancer, Osteosarcoma, Hepatoblastoma
 
 
 ***/

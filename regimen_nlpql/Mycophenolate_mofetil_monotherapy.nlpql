@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cellcept", "mycophenolate mofetil"
 ];
 
-define Treatment_Mycophenolatemofetil:
+define final MycophenolatemofetilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mycophenolatemofetil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mycophenolatemofetilmonotherapy", "Mycophenolate mofetil monotherapy", "Mycophenolate_mofetil_monotherapy"
+    "Mycophenolate mofetil monotherapy"
 ];
 
-define Regimen_Mycophenolatemofetilmonotherapy:
+define final MycophenolatemofetilmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mycophenolatemofetilmonotherapy:
 
 // Results
 
-        
-define final Received_Mycophenolatemofetilmonotherapy:
-    where Treatment_Mycophenolatemofetil OR Regimen_Mycophenolatemofetilmonotherapy;
-            
 
 // Comments
 /***

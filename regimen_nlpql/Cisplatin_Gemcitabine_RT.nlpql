@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/Gemcitabine/RT", "Cisplatin_Gemcitabine_RT", "CisplatinGemcitabineRT", "Cisplatin- Gemcitabine- RT", "Cisplatin/ Gemcitabine/ RT", "Cisplatin, Gemcitabine, RT", "Cisplatin and  Gemcitabine and  RT", "Cisplatin &  Gemcitabine &  RT", "RT", "Cisplatin& Gemcitabine& RT"
+    "Cisplatin, Gemcitabine, RT", "RT"
 ];
 
-define Regimen_CisplatinGemcitabineRT:
+define final CisplatinGemcitabineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinGemcitabineRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Gemcitabine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CisplatinGemcitabineRT:
-    where Regimen_CisplatinGemcitabineRT OR ReceivedRegimenTreatments;        
+define final CisplatinGemcitabineRTTreatments:
+    where CisplatinTreatment AND GemcitabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

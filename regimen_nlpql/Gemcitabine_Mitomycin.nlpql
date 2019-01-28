@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define  MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Mitomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine/Mitomycin", "Gemcitabine / Mitomycin", "Gemcitabine & Mitomycin", "GemcitabineMitomycin", "Gemcitabine_Mitomycin", "Gemcitabine and Mitomycin"
+    "Gemcitabine & Mitomycin"
 ];
 
-define Regimen_GemcitabineMitomycin:
+define final GemcitabineMitomycinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabineMitomycin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Mitomycin;
-    
-define final Received_GemcitabineMitomycin:
-    where Regimen_GemcitabineMitomycin OR ReceivedRegimenTreatments;        
+define final GemcitabineMitomycinTreatments:
+    where GemcitabineTreatment AND MitomycinTreatment;
+          
         
         
         

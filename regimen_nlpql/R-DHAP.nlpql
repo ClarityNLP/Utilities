@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Cisplatin:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/DHAP", "RDHAP", "R-DHAP"
+    "R-DHAP", "R/DHAP", "RDHAP"
 ];
 
-define Regimen_RDHAP:
+define final RDHAPRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_RDHAP:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Rituximab AND Treatment_Dexamethasone AND Treatment_Cytarabine AND Treatment_Cisplatin;
-    
-define final Received_RDHAP:
-    where Regimen_RDHAP OR ReceivedRegimenTreatments;        
+define final RDHAPTreatments:
+    where RituximabTreatment AND DexamethasoneTreatment AND CytarabineTreatment AND CisplatinTreatment;
+          
         
         
         
@@ -87,7 +85,7 @@ define final Received_RDHAP:
 // Comments
 /***
 
-Known regimen for: Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
 
 
 ***/

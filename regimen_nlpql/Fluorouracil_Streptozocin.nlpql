@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "zanosar", "streptozocin"
 ];
 
-define Treatment_Streptozocin:
+define  StreptozocinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Streptozocin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil & Streptozocin", "Fluorouracil/Streptozocin", "Fluorouracil_Streptozocin", "Fluorouracil / Streptozocin", "FluorouracilStreptozocin", "Fluorouracil and Streptozocin"
+    "Fluorouracil & Streptozocin"
 ];
 
-define Regimen_FluorouracilStreptozocin:
+define final FluorouracilStreptozocinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_FluorouracilStreptozocin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Streptozocin;
-    
-define final Received_FluorouracilStreptozocin:
-    where Regimen_FluorouracilStreptozocin OR ReceivedRegimenTreatments;        
+define final FluorouracilStreptozocinTreatments:
+    where FluorouracilTreatment AND StreptozocinTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "nexavar", "sorafenib"
 ];
 
-define Treatment_Sorafenib:
+define  SorafenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Sorafenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "IDAC and Sorafenib", "IDACSorafenib", "IDAC & Sorafenib", "IDAC/Sorafenib", "IDAC / Sorafenib", "IDAC_Sorafenib"
+    "IDAC & Sorafenib"
 ];
 
-define Regimen_IDACandSorafenib:
+define final IDACSorafenibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_IDACandSorafenib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Sorafenib;
-    
-define final Received_IDACSorafenib:
-    where Regimen_IDACandSorafenib OR ReceivedRegimenTreatments;        
+define final IDACSorafenibTreatments:
+    where CytarabineTreatment AND SorafenibTreatment;
+          
         
         
         

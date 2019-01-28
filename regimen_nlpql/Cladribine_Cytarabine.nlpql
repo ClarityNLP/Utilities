@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leustatin", "cladribine"
 ];
 
-define Treatment_Cladribine:
+define  CladribineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Cytarabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine_Cytarabine", "Cladribine and Cytarabine", "Cladribine / Cytarabine", "CladribineCytarabine", "Cladribine & Cytarabine", "Cladribine/Cytarabine"
+    "Cladribine & Cytarabine"
 ];
 
-define Regimen_CladribineCytarabine:
+define final CladribineCytarabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CladribineCytarabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cladribine AND Treatment_Cytarabine;
-    
-define final Received_CladribineCytarabine:
-    where Regimen_CladribineCytarabine OR ReceivedRegimenTreatments;        
+define final CladribineCytarabineTreatments:
+    where CladribineTreatment AND CytarabineTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CladribineCytarabine:
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Langerhans_cell_histiocytosis
+Known regimen for: Langerhans_cell_histiocytosis, Hypereosinophilic_syndrome
 
 
 ***/

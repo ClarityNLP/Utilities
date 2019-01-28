@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "kyprolis", "carfilzomib"
 ];
 
-define Treatment_Carfilzomib:
+define  CarfilzomibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib_Dexamethasone", "Carfilzomib/Dexamethasone", "Kd", "CarfilzomibDexamethasone", "Carfilzomib & Dexamethasone", "Carfilzomib and Dexamethasone", "Carfilzomib / Dexamethasone"
+    "Carfilzomib & Dexamethasone", "Kd"
 ];
 
-define Regimen_CarfilzomibDexamethasone:
+define final CarfilzomibDexamethasoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CarfilzomibDexamethasone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carfilzomib AND Treatment_Dexamethasone;
-    
-define final Received_CarfilzomibDexamethasone:
-    where Regimen_CarfilzomibDexamethasone OR ReceivedRegimenTreatments;        
+define final CarfilzomibDexamethasoneTreatments:
+    where CarfilzomibTreatment AND DexamethasoneTreatment;
+          
         
         
         

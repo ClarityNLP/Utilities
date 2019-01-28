@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Irinotecan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Irinotecan", "Cisplatin and Irinotecan", "Cisplatin / Irinotecan", "CisplatinIrinotecan", "IC", "Cisplatin & Irinotecan", "Cisplatin/Irinotecan"
+    "Cisplatin & Irinotecan", "IC"
 ];
 
-define Regimen_CisplatinIrinotecan:
+define final CisplatinIrinotecanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinIrinotecan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Irinotecan;
-    
-define final Received_CisplatinIrinotecan:
-    where Regimen_CisplatinIrinotecan OR ReceivedRegimenTreatments;        
+define final CisplatinIrinotecanTreatments:
+    where CisplatinTreatment AND IrinotecanTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CisplatinIrinotecan:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary, Penile_cancer, Esophageal_cancer
+Known regimen for: Small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary, Non-small_cell_lung_cancer, Esophageal_cancer, Penile_cancer
 
 
 ***/

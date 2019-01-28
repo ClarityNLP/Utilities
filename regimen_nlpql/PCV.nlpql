@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "matulane", "procarbazine"
 ];
 
-define Treatment_Procarbazine:
+define  ProcarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ceenu", "lomustine"
 ];
 
-define Treatment_Lomustine:
+define  LomustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "PCV"
 ];
 
-define Regimen_PCV:
+define final PCVRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_PCV:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Procarbazine AND Treatment_Lomustine AND Treatment_Vincristine;
-    
-define final Received_PCV:
-    where Regimen_PCV OR ReceivedRegimenTreatments;        
+define final PCVTreatments:
+    where ProcarbazineTreatment AND LomustineTreatment AND VincristineTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_PCV:
 // Comments
 /***
 
-Known regimen for: Low-grade_glioma, Glioblastoma, Anaplastic_glioma
+Known regimen for: Glioblastoma, Low-grade_glioma, Anaplastic_glioma
 
 
 ***/

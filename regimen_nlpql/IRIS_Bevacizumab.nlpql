@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "s-1", "tegafur, gimeracil, oteracil"
 ];
 
-define Treatment_Tegafurgimeraciloteracil:
+define  TegafurgimeraciloteracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "IRIS/Bevacizumab", "IRIS_Bevacizumab", "IRIS and Bevacizumab", "IRIS & Bevacizumab", "IRIS / Bevacizumab", "IRISBevacizumab"
+    "IRIS & Bevacizumab"
 ];
 
-define Regimen_IRISBevacizumab:
+define final IRISBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_IRISBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Irinotecan AND Treatment_Tegafurgimeraciloteracil AND Treatment_Bevacizumab;
-    
-define final Received_IRISBevacizumab:
-    where Regimen_IRISBevacizumab OR ReceivedRegimenTreatments;        
+define final IRISBevacizumabTreatments:
+    where IrinotecanTreatment AND TegafurgimeraciloteracilTreatment AND BevacizumabTreatment;
+          
         
         
         

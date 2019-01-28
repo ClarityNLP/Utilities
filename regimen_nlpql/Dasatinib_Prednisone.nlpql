@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "sprycel", "dasatinib"
 ];
 
-define Treatment_Dasatinib:
+define  DasatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "sterapred", "prednisone"
 ];
 
-define Treatment_Prednisone:
+define  PrednisoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Prednisone:
 // Regimen names
 
 termset RegimenTerms:[
-    "DasatinibPrednisone", "Dasatinib_Prednisone", "Dasatinib & Prednisone", "Dasatinib and Prednisone", "Dasatinib/Prednisone", "Dasatinib / Prednisone"
+    "Dasatinib & Prednisone"
 ];
 
-define Regimen_DasatinibPrednisone:
+define final DasatinibPrednisoneRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DasatinibPrednisone:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dasatinib AND Treatment_Prednisone;
-    
-define final Received_DasatinibPrednisone:
-    where Regimen_DasatinibPrednisone OR ReceivedRegimenTreatments;        
+define final DasatinibPrednisoneTreatments:
+    where DasatinibTreatment AND PrednisoneTreatment;
+          
         
         
         

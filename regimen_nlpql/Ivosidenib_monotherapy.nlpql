@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tibsovo", "ivosidenib"
 ];
 
-define Treatment_Ivosidenib:
+define final IvosidenibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Ivosidenib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ivosidenib_monotherapy", "Ivosidenib monotherapy", "Ivosidenibmonotherapy"
+    "Ivosidenib monotherapy"
 ];
 
-define Regimen_Ivosidenibmonotherapy:
+define final IvosidenibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Ivosidenibmonotherapy:
 
 // Results
 
-        
-define final Received_Ivosidenibmonotherapy:
-    where Treatment_Ivosidenib OR Regimen_Ivosidenibmonotherapy;
-            
 
 // Comments
 /***

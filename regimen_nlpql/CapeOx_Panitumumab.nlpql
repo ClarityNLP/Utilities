@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "vectibix", "panitumumab"
 ];
 
-define Treatment_Panitumumab:
+define  PanitumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Panitumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOx / Panitumumab", "CapeOx & Panitumumab", "CapeOx_Panitumumab", "CapeOx and Panitumumab", "CapeOx/Panitumumab", "CapeOxPanitumumab"
+    "CapeOx & Panitumumab"
 ];
 
-define Regimen_CapeOxPanitumumab:
+define final CapeOxPanitumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CapeOxPanitumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Oxaliplatin AND Treatment_Panitumumab;
-    
-define final Received_CapeOxPanitumumab:
-    where Regimen_CapeOxPanitumumab OR ReceivedRegimenTreatments;        
+define final CapeOxPanitumumabTreatments:
+    where CapecitabineTreatment AND OxaliplatinTreatment AND PanitumumabTreatment;
+          
         
         
         

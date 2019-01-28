@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "TAM6", "TAM"
 ];
 
-define Regimen_TAM6:
+define final TAM6Regimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TAM6:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Externalbeamradiotherapy AND Treatment_Cytarabine AND Treatment_Melphalan;
-    
-define final Received_TAM6:
-    where Regimen_TAM6 OR ReceivedRegimenTreatments;        
+define final TAM6Treatments:
+    where ExternalbeamradiotherapyTreatment AND CytarabineTreatment AND MelphalanTreatment;
+          
         
         
         

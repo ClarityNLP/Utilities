@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "dtic", "dacarbazine"
 ];
 
-define Treatment_Dacarbazine:
+define  DacarbazineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Doxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DacarbazineDoxorubicin", "Dacarbazine and Doxorubicin", "Dacarbazine & Doxorubicin", "Dacarbazine_Doxorubicin", "AD", "Dacarbazine/Doxorubicin", "Dacarbazine / Doxorubicin"
+    "AD", "Dacarbazine & Doxorubicin"
 ];
 
-define Regimen_DacarbazineDoxorubicin:
+define final DacarbazineDoxorubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DacarbazineDoxorubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Dacarbazine AND Treatment_Doxorubicin;
-    
-define final Received_DacarbazineDoxorubicin:
-    where Regimen_DacarbazineDoxorubicin OR ReceivedRegimenTreatments;        
+define final DacarbazineDoxorubicinTreatments:
+    where DacarbazineTreatment AND DoxorubicinTreatment;
+          
         
         
         

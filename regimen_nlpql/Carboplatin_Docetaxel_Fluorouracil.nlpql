@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "paraplatin", "carboplatin"
 ];
 
-define Treatment_Carboplatin:
+define  CarboplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Fluorouracil:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Docetaxel_Fluorouracil", "Carboplatin/ Docetaxel/ Fluorouracil", "Carboplatin &  Docetaxel &  Fluorouracil", "Carboplatin/Docetaxel/Fluorouracil", "Carboplatin& Docetaxel& Fluorouracil", "Carboplatin- Docetaxel- Fluorouracil", "CarboplatinDocetaxelFluorouracil", "Carboplatin, Docetaxel, Fluorouracil", "Carboplatin and  Docetaxel and  Fluorouracil"
+    "Carboplatin, Docetaxel, Fluorouracil"
 ];
 
-define Regimen_CarboplatinDocetaxelFluorouracil:
+define final CarboplatinDocetaxelFluorouracilRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CarboplatinDocetaxelFluorouracil:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carboplatin AND Treatment_Docetaxel AND Treatment_Fluorouracil;
-    
-define final Received_CarboplatinDocetaxelFluorouracil:
-    where Regimen_CarboplatinDocetaxelFluorouracil OR ReceivedRegimenTreatments;        
+define final CarboplatinDocetaxelFluorouracilTreatments:
+    where CarboplatinTreatment AND DocetaxelTreatment AND FluorouracilTreatment;
+          
         
         
         

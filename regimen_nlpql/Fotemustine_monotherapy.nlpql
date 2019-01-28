@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "muphoran", "fotemustine"
 ];
 
-define Treatment_Fotemustine:
+define final FotemustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Fotemustine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fotemustinemonotherapy", "Fotemustine_monotherapy", "Fotemustine monotherapy"
+    "Fotemustine monotherapy"
 ];
 
-define Regimen_Fotemustinemonotherapy:
+define final FotemustinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Fotemustinemonotherapy:
 
 // Results
 
-        
-define final Received_Fotemustinemonotherapy:
-    where Treatment_Fotemustine OR Regimen_Fotemustinemonotherapy;
-            
 
 // Comments
 /***

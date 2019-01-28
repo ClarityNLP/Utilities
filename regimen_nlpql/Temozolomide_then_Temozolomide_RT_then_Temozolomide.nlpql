@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "temodar", "temozolomide"
 ];
 
-define Treatment_Temozolomide:
+define final TemozolomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Temozolomide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide, then Temozolomide / RT, then Temozolomide", "Temozolomide, & Temozolomide & RT, & Temozolomide", "Temozolomide, then Temozolomide and RT, then Temozolomide", "Temozolomide/ then Temozolomide & RT/ then Temozolomide", "Temozolomide, then Temozolomide/RT, then Temozolomide", "Temozolomide, and Temozolomide & RT, and Temozolomide", "Temozolomide and  then Temozolomide & RT and  then Temozolomide", "Temozolomide& then Temozolomide & RT& then Temozolomide", "Temozolomide,, Temozolomide & RT,, Temozolomide", "Temozolomide &  then Temozolomide & RT &  then Temozolomide", "Temozolomide- then Temozolomide & RT- then Temozolomide", "TemozolomidethenTemozolomideRTthenTemozolomide", "Temozolomide_then_Temozolomide_RT_then_Temozolomide", "Temozolomide,&Temozolomide & RT,&Temozolomide", "Temozolomide, then Temozolomide & RT, then Temozolomide", "Temozolomide, / Temozolomide & RT, / Temozolomide", "Temozolomide/then Temozolomide & RT/then Temozolomide", "Temozolomide,/Temozolomide & RT,/Temozolomide"
+    "Temozolomide, then Temozolomide & RT, then Temozolomide"
 ];
 
-define Regimen_TemozolomidethenTemozolomideRTthenTemozolomide:
+define final TemozolomidethenTemozolomideRTthenTemozolomideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_TemozolomidethenTemozolomideRTthenTemozolomide:
 
 // Results
 
-        
-define final Received_TemozolomidethenTemozolomideRTthenTemozolomide:
-    where Treatment_Temozolomide OR Regimen_TemozolomidethenTemozolomideRTthenTemozolomide;
-            
 
 // Comments
 /***

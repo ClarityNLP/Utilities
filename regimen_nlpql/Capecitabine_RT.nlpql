@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "xeloda", "capecitabine"
 ];
 
-define Treatment_Capecitabine:
+define  CapecitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine and RT", "Capecitabine & RT", "Capecitabine_RT", "CapecitabineRT", "Capecitabine/RT", "Capecitabine / RT", "RT"
+    "Capecitabine & RT", "RT"
 ];
 
-define Regimen_CapecitabineandRT:
+define final CapecitabineRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CapecitabineandRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Capecitabine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_CapecitabineRT:
-    where Regimen_CapecitabineandRT OR ReceivedRegimenTreatments;        
+define final CapecitabineRTTreatments:
+    where CapecitabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

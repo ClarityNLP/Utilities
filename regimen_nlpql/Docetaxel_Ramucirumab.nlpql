@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cyramza", "ramucirumab"
 ];
 
-define Treatment_Ramucirumab:
+define  RamucirumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ramucirumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelRamucirumab", "Docetaxel & Ramucirumab", "Docetaxel/Ramucirumab", "Docetaxel / Ramucirumab", "Docetaxel and Ramucirumab", "Docetaxel_Ramucirumab"
+    "Docetaxel & Ramucirumab"
 ];
 
-define Regimen_DocetaxelRamucirumab:
+define final DocetaxelRamucirumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DocetaxelRamucirumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Docetaxel AND Treatment_Ramucirumab;
-    
-define final Received_DocetaxelRamucirumab:
-    where Regimen_DocetaxelRamucirumab OR ReceivedRegimenTreatments;        
+define final DocetaxelRamucirumabTreatments:
+    where DocetaxelTreatment AND RamucirumabTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_DocetaxelRamucirumab:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Non-small_cell_lung_cancer
 
 
 ***/

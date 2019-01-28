@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fusilev", "levoleucovorin"
 ];
 
-define Treatment_Levoleucovorin:
+define  LevoleucovorinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,7 +62,7 @@ termset TreatmentTerms4:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms4],
         documentset:[Docs]
@@ -73,10 +73,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRINOX/Bevacizumab", "FOLFIRINOX and Bevacizumab", "FOLFOXIRI and Bevacizumab", "FOLFOXIRI_Bevacizumab", "FOLFIRINOX_Bevacizumab", "FOLFIRINOX / Bevacizumab", "FOLFOXIRI & Bevacizumab", "FOLFOXIRI/Bevacizumab", "FOLFIRINOXBevacizumab", "FOLFOXIRI / Bevacizumab", "FOLFIRINOX & Bevacizumab", "FOLFOXIRIBevacizumab"
+    "FOLFOXIRI & Bevacizumab", "FOLFIRINOX & Bevacizumab"
 ];
 
-define Regimen_FOLFIRINOXBevacizumab:
+define final FOLFIRINOXBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -86,11 +86,9 @@ define Regimen_FOLFIRINOXBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Levoleucovorin AND Treatment_Oxaliplatin AND Treatment_Irinotecan AND Treatment_Bevacizumab;
-    
-define final Received_FOLFIRINOXBevacizumab:
-    where Regimen_FOLFIRINOXBevacizumab OR ReceivedRegimenTreatments;        
+define final FOLFIRINOXBevacizumabTreatments:
+    where FluorouracilTreatment AND LevoleucovorinTreatment AND OxaliplatinTreatment AND IrinotecanTreatment AND BevacizumabTreatment;
+          
         
         
         

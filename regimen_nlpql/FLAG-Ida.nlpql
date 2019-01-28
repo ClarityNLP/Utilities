@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "granocyte", "lenograstim"
 ];
 
-define Treatment_Lenograstim:
+define  LenograstimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "FLAG-Ida", "FLAG/Ida", "FLAGIda"
+    "FLAGIda", "FLAG-Ida", "FLAG/Ida"
 ];
 
-define Regimen_FLAGIda:
+define final FLAGIdaRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_FLAGIda:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fludarabine AND Treatment_Cytarabine AND Treatment_Lenograstim AND Treatment_Idarubicin;
-    
-define final Received_FLAGIda:
-    where Regimen_FLAGIda OR ReceivedRegimenTreatments;        
+define final FLAGIdaTreatments:
+    where FludarabineTreatment AND CytarabineTreatment AND LenograstimTreatment AND IdarubicinTreatment;
+          
         
         
         

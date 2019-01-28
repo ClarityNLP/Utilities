@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "myleran", "busulfan"
 ];
 
-define Treatment_Busulfan:
+define  BusulfanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Melphalan:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfan / Melphalan", "Busulfan/Melphalan", "Busulfan and Melphalan", "Busulfan_Melphalan", "Busulfan & Melphalan", "BusulfanMelphalan", "BuMel"
+    "Busulfan & Melphalan", "BuMel"
 ];
 
-define Regimen_BusulfanMelphalan:
+define final BusulfanMelphalanRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BusulfanMelphalan:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Busulfan AND Treatment_Melphalan;
-    
-define final Received_BusulfanMelphalan:
-    where Regimen_BusulfanMelphalan OR ReceivedRegimenTreatments;        
+define final BusulfanMelphalanTreatments:
+    where BusulfanTreatment AND MelphalanTreatment;
+          
         
         
         

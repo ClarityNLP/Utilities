@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "idamycin", "idarubicin"
 ];
 
-define Treatment_Idarubicin:
+define  IdarubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Idarubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine / Idarubicin", "Cytarabine/Idarubicin", "Cytarabine and Idarubicin", "Cytarabine_Idarubicin", "Cytarabine & Idarubicin", "CytarabineIdarubicin"
+    "Cytarabine & Idarubicin"
 ];
 
-define Regimen_CytarabineIdarubicin:
+define final CytarabineIdarubicinRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CytarabineIdarubicin:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Idarubicin;
-    
-define final Received_CytarabineIdarubicin:
-    where Regimen_CytarabineIdarubicin OR ReceivedRegimenTreatments;        
+define final CytarabineIdarubicinTreatments:
+    where CytarabineTreatment AND IdarubicinTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CytarabineIdarubicin:
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Acute_promyelocytic_leukemia
+Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
 
 
 ***/

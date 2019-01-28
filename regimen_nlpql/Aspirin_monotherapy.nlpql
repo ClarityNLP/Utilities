@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "aspirin", "aspirin"
 ];
 
-define Treatment_Aspirin:
+define final AspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Aspirin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirinmonotherapy", "Aspirin_monotherapy", "Aspirin monotherapy"
+    "Aspirin monotherapy"
 ];
 
-define Regimen_Aspirinmonotherapy:
+define final AspirinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Aspirinmonotherapy:
 
 // Results
 
-        
-define final Received_Aspirinmonotherapy:
-    where Treatment_Aspirin OR Regimen_Aspirinmonotherapy;
-            
 
 // Comments
 /***

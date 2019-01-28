@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "vepesid", "etoposide"
 ];
 
-define Treatment_Etoposide:
+define  EtoposideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Etoposide:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide / TBI", "Etoposide and TBI", "Etoposide & TBI", "Etoposide_TBI", "Etoposide/TBI", "EtoposideTBI"
+    "Etoposide & TBI"
 ];
 
-define Regimen_EtoposideTBI:
+define final EtoposideTBIRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_EtoposideTBI:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Externalbeamradiotherapy AND Treatment_Etoposide;
-    
-define final Received_EtoposideTBI:
-    where Regimen_EtoposideTBI OR ReceivedRegimenTreatments;        
+define final EtoposideTBITreatments:
+    where ExternalbeamradiotherapyTreatment AND EtoposideTreatment;
+          
         
         
         

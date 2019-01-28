@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "herceptin", "trastuzumab"
 ];
 
-define Treatment_Trastuzumab:
+define  TrastuzumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Trastuzumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "CF and Trastuzumab", "CF & Trastuzumab", "CF_Trastuzumab", "CF", "CF / Trastuzumab", "CFTrastuzumab", "CF/Trastuzumab"
+    "CF & Trastuzumab", "CF"
 ];
 
-define Regimen_CFandTrastuzumab:
+define final CFTrastuzumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CFandTrastuzumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Fluorouracil AND Treatment_Trastuzumab;
-    
-define final Received_CFTrastuzumab:
-    where Regimen_CFandTrastuzumab OR ReceivedRegimenTreatments;        
+define final CFTrastuzumabTreatments:
+    where CisplatinTreatment AND FluorouracilTreatment AND TrastuzumabTreatment;
+          
         
         
         

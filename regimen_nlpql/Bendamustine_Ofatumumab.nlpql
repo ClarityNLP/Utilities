@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bendamustine", "bendamustine"
 ];
 
-define Treatment_Bendamustine:
+define  BendamustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "arzerra", "ofatumumab"
 ];
 
-define Treatment_Ofatumumab:
+define  OfatumumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Ofatumumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bendamustine/Ofatumumab", "Bendamustine / Ofatumumab", "Bendamustine and Ofatumumab", "BendamustineOfatumumab", "BendOfa", "Bendamustine & Ofatumumab", "Bendamustine_Ofatumumab"
+    "BendOfa", "Bendamustine & Ofatumumab"
 ];
 
-define Regimen_BendamustineOfatumumab:
+define final BendamustineOfatumumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BendamustineOfatumumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Bendamustine AND Treatment_Ofatumumab;
-    
-define final Received_BendamustineOfatumumab:
-    where Regimen_BendamustineOfatumumab OR ReceivedRegimenTreatments;        
+define final BendamustineOfatumumabTreatments:
+    where BendamustineTreatment AND OfatumumabTreatment;
+          
         
         
         

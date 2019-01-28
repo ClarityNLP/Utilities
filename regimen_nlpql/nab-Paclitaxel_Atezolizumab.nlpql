@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Treatment_Paclitaxelnanoparticlealbuminbound:
+define  PaclitaxelnanoparticlealbuminboundTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "tecentriq", "atezolizumab"
 ];
 
-define Treatment_Atezolizumab:
+define  AtezolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Atezolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "nab-Paclitaxel / Atezolizumab", "nab-Paclitaxel and Atezolizumab", "nabPaclitaxel & Atezolizumab", "nab/Paclitaxel & Atezolizumab", "nab-Paclitaxel_Atezolizumab", "nabPaclitaxelAtezolizumab", "nab-Paclitaxel & Atezolizumab", "nab-Paclitaxel/Atezolizumab"
+    "nab-Paclitaxel & Atezolizumab"
 ];
 
-define Regimen_nabPaclitaxelAtezolizumab:
+define final nabPaclitaxelAtezolizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_nabPaclitaxelAtezolizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Paclitaxelnanoparticlealbuminbound AND Treatment_Atezolizumab;
-    
-define final Received_nabPaclitaxelAtezolizumab:
-    where Regimen_nabPaclitaxelAtezolizumab OR ReceivedRegimenTreatments;        
+define final nabPaclitaxelAtezolizumabTreatments:
+    where PaclitaxelnanoparticlealbuminboundTreatment AND AtezolizumabTreatment;
+          
         
         
         

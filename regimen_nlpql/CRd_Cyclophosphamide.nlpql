@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "revlimid", "lenalidomide"
 ];
 
-define Treatment_Lenalidomide:
+define  LenalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "CRDCyclophosphamide", "CRD", "CRD_Cyclophosphamide", "CRD (Cyclophosphamide)"
+    "CRD", "CRD (Cyclophosphamide)"
 ];
 
-define Regimen_CRDCyclophosphamide:
+define final CRDCyclophosphamideRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CRDCyclophosphamide:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cyclophosphamide AND Treatment_Lenalidomide AND Treatment_Dexamethasone;
-    
-define final Received_CRDCyclophosphamide:
-    where Regimen_CRDCyclophosphamide OR ReceivedRegimenTreatments;        
+define final CRDCyclophosphamideTreatments:
+    where CyclophosphamideTreatment AND LenalidomideTreatment AND DexamethasoneTreatment;
+          
         
         
         

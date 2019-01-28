@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tecentriq", "atezolizumab"
 ];
 
-define Treatment_Atezolizumab:
+define final AtezolizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Atezolizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Atezolizumab monotherapy", "Atezolizumab_monotherapy", "Atezolizumabmonotherapy"
+    "Atezolizumab monotherapy"
 ];
 
-define Regimen_Atezolizumabmonotherapy:
+define final AtezolizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Atezolizumabmonotherapy:
 
 // Results
 
-        
-define final Received_Atezolizumabmonotherapy:
-    where Treatment_Atezolizumab OR Regimen_Atezolizumabmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer
 
 
 ***/

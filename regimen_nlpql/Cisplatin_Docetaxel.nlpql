@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "taxotere", "docetaxel"
 ];
 
-define Treatment_Docetaxel:
+define  DocetaxelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Docetaxel:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin/Docetaxel", "CisplatinDocetaxel", "Cisplatin & Docetaxel", "Cisplatin_Docetaxel", "Cisplatin and Docetaxel", "Cisplatin / Docetaxel"
+    "Cisplatin & Docetaxel"
 ];
 
-define Regimen_CisplatinDocetaxel:
+define final CisplatinDocetaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinDocetaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Docetaxel;
-    
-define final Received_CisplatinDocetaxel:
-    where Regimen_CisplatinDocetaxel OR ReceivedRegimenTreatments;        
+define final CisplatinDocetaxelTreatments:
+    where CisplatinTreatment AND DocetaxelTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_CisplatinDocetaxel:
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Non-small_cell_lung_cancer, Gastric_cancer, Adenocarcinoma_of_unknown_primary, Breast_cancer_triple_negative, Esophageal_cancer
+Known regimen for: Breast_cancer_triple_negative, Gastric_cancer, Adenocarcinoma_of_unknown_primary, Esophageal_cancer, Non-small_cell_lung_cancer, Head_and_neck_cancer
 
 
 ***/

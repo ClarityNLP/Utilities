@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Gemcitabine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin and Gemcitabine", "Doxorubicin/Gemcitabine", "DoxorubicinGemcitabine", "Doxorubicin & Gemcitabine", "Doxorubicin / Gemcitabine", "Doxorubicin_Gemcitabine"
+    "Doxorubicin & Gemcitabine"
 ];
 
-define Regimen_DoxorubicinandGemcitabine:
+define final DoxorubicinGemcitabineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DoxorubicinandGemcitabine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Doxorubicin AND Treatment_Gemcitabine;
-    
-define final Received_DoxorubicinGemcitabine:
-    where Regimen_DoxorubicinandGemcitabine OR ReceivedRegimenTreatments;        
+define final DoxorubicinGemcitabineTreatments:
+    where DoxorubicinTreatment AND GemcitabineTreatment;
+          
         
         
         

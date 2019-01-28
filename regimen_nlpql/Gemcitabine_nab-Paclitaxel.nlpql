@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "gemzar", "gemcitabine"
 ];
 
-define Treatment_Gemcitabine:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define Treatment_Paclitaxelnanoparticlealbuminbound:
+define  PaclitaxelnanoparticlealbuminboundTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Paclitaxelnanoparticlealbuminbound:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine_nab-Paclitaxel", "NG", "Gemcitabine & nab/Paclitaxel", "Gemcitabine / nab-Paclitaxel", "Gemcitabine & nab-Paclitaxel", "Gemcitabine/nab-Paclitaxel", "Gemcitabine & nabPaclitaxel", "Gemcitabine and nab-Paclitaxel", "GemcitabinenabPaclitaxel"
+    "Gemcitabine & nab-Paclitaxel", "NG"
 ];
 
-define Regimen_GemcitabinenabPaclitaxel:
+define final GemcitabinenabPaclitaxelRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_GemcitabinenabPaclitaxel:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Gemcitabine AND Treatment_Paclitaxelnanoparticlealbuminbound;
-    
-define final Received_GemcitabinenabPaclitaxel:
-    where Regimen_GemcitabinenabPaclitaxel OR ReceivedRegimenTreatments;        
+define final GemcitabinenabPaclitaxelTreatments:
+    where GemcitabineTreatment AND PaclitaxelnanoparticlealbuminboundTreatment;
+          
         
         
         
@@ -65,7 +63,7 @@ define final Received_GemcitabinenabPaclitaxel:
 // Comments
 /***
 
-Known regimen for: Cholangiocarcinoma, Pancreatic_cancer
+Known regimen for: Pancreatic_cancer, Cholangiocarcinoma
 
 
 ***/

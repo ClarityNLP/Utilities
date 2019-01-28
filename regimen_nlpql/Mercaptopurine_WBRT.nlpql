@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "purinethol", "mercaptopurine"
 ];
 
-define Treatment_Mercaptopurine:
+define  MercaptopurineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "external beam radiotherapy", "external beam radiotherapy"
 ];
 
-define Treatment_Externalbeamradiotherapy:
+define  ExternalbeamradiotherapyTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Externalbeamradiotherapy:
 // Regimen names
 
 termset RegimenTerms:[
-    "MercaptopurineWBRT", "Mercaptopurine and WBRT", "Mercaptopurine_WBRT", "Mercaptopurine / WBRT", "Mercaptopurine/WBRT", "Mercaptopurine & WBRT"
+    "Mercaptopurine & WBRT"
 ];
 
-define Regimen_MercaptopurineWBRT:
+define final MercaptopurineWBRTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MercaptopurineWBRT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Mercaptopurine AND Treatment_Externalbeamradiotherapy;
-    
-define final Received_MercaptopurineWBRT:
-    where Regimen_MercaptopurineWBRT OR ReceivedRegimenTreatments;        
+define final MercaptopurineWBRTTreatments:
+    where MercaptopurineTreatment AND ExternalbeamradiotherapyTreatment;
+          
         
         
         

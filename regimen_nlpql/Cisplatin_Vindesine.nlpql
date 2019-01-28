@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "eldisine", "vindesine"
 ];
 
-define Treatment_Vindesine:
+define  VindesineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Vindesine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin and Vindesine", "CisplatinVindesine", "Cisplatin_Vindesine", "Cisplatin / Vindesine", "Cisplatin/Vindesine", "Cisplatin & Vindesine"
+    "Cisplatin & Vindesine"
 ];
 
-define Regimen_CisplatinandVindesine:
+define final CisplatinVindesineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_CisplatinandVindesine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Vindesine;
-    
-define final Received_CisplatinVindesine:
-    where Regimen_CisplatinandVindesine OR ReceivedRegimenTreatments;        
+define final CisplatinVindesineTreatments:
+    where CisplatinTreatment AND VindesineTreatment;
+          
         
         
         

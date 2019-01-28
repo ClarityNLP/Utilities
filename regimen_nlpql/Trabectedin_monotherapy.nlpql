@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "yondelis", "trabectedin"
 ];
 
-define Treatment_Trabectedin:
+define final TrabectedinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Trabectedin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trabectedinmonotherapy", "Trabectedin monotherapy", "Trabectedin_monotherapy"
+    "Trabectedin monotherapy"
 ];
 
-define Regimen_Trabectedinmonotherapy:
+define final TrabectedinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Trabectedinmonotherapy:
 
 // Results
 
-        
-define final Received_Trabectedinmonotherapy:
-    where Treatment_Trabectedin OR Regimen_Trabectedinmonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Ovarian_cancer
+Known regimen for: Ovarian_cancer, Soft_tissue_sarcoma
 
 
 ***/

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alkeran", "melphalan"
 ];
 
-define Treatment_Melphalan:
+define  MelphalanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Dexamethasone:
 // Regimen names
 
 termset RegimenTerms:[
-    "M-DEX", "MDEX", "M/DEX"
+    "MDEX", "M/DEX", "M-DEX"
 ];
 
-define Regimen_MDEX:
+define final MDEXRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_MDEX:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Melphalan AND Treatment_Dexamethasone;
-    
-define final Received_MDEX:
-    where Regimen_MDEX OR ReceivedRegimenTreatments;        
+define final MDEXTreatments:
+    where MelphalanTreatment AND DexamethasoneTreatment;
+          
         
         
         

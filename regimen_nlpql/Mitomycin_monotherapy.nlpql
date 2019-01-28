@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mutamycin", "mitomycin"
 ];
 
-define Treatment_Mitomycin:
+define final MitomycinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Mitomycin:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitomycin monotherapy", "Mitomycin_monotherapy", "Mitomycinmonotherapy"
+    "Mitomycin monotherapy"
 ];
 
-define Regimen_Mitomycinmonotherapy:
+define final MitomycinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Mitomycinmonotherapy:
 
 // Results
 
-        
-define final Received_Mitomycinmonotherapy:
-    where Treatment_Mitomycin OR Regimen_Mitomycinmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "leucovorin", "folinic acid"
 ];
 
-define Treatment_Folinicacid:
+define  FolinicacidTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "camptosar", "irinotecan"
 ];
 
-define Treatment_Irinotecan:
+define  IrinotecanTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "zaltrap", "ziv-aflibercept"
 ];
 
-define Treatment_Zivaflibercept:
+define  ZivafliberceptTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -62,10 +62,10 @@ define Treatment_Zivaflibercept:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Zivaflibercept", "FOLFIRI/Ziv-aflibercept", "FOLFIRIZivaflibercept", "FOLFIRI and Ziv-aflibercept", "FOLFIRI & Ziv-aflibercept", "FOLFIRI / Ziv-aflibercept", "FOLFIRI & Ziv/aflibercept", "FOLFIRI_Ziv-aflibercept"
+    "FOLFIRI & Ziv-aflibercept"
 ];
 
-define Regimen_FOLFIRIZivaflibercept:
+define final FOLFIRIZivafliberceptRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_FOLFIRIZivaflibercept:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Folinicacid AND Treatment_Fluorouracil AND Treatment_Irinotecan AND Treatment_Zivaflibercept;
-    
-define final Received_FOLFIRIZivaflibercept:
-    where Regimen_FOLFIRIZivaflibercept OR ReceivedRegimenTreatments;        
+define final FOLFIRIZivafliberceptTreatments:
+    where FolinicacidTreatment AND FluorouracilTreatment AND IrinotecanTreatment AND ZivafliberceptTreatment;
+          
         
         
         

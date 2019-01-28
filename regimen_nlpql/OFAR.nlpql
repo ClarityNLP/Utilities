@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define Treatment_Oxaliplatin:
+define  OxaliplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "fludara", "fludarabine"
 ];
 
-define Treatment_Fludarabine:
+define  FludarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,7 +51,7 @@ termset TreatmentTerms3:[
     "rituxan", "rituximab"
 ];
 
-define Treatment_Rituximab:
+define  RituximabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms3],
         documentset:[Docs]
@@ -65,7 +65,7 @@ termset RegimenTerms:[
     "OFAR"
 ];
 
-define Regimen_OFAR:
+define final OFARRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,11 +75,9 @@ define Regimen_OFAR:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Oxaliplatin AND Treatment_Fludarabine AND Treatment_Cytarabine AND Treatment_Rituximab;
-    
-define final Received_OFAR:
-    where Regimen_OFAR OR ReceivedRegimenTreatments;        
+define final OFARTreatments:
+    where OxaliplatinTreatment AND FludarabineTreatment AND CytarabineTreatment AND RituximabTreatment;
+          
         
         
         

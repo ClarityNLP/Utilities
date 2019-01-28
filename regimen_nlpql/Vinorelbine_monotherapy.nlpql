@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "navelbine", "vinorelbine"
 ];
 
-define Treatment_Vinorelbine:
+define final VinorelbineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Vinorelbine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinorelbine_monotherapy", "Vinorelbinemonotherapy", "Vinorelbine monotherapy"
+    "Vinorelbine monotherapy"
 ];
 
-define Regimen_Vinorelbinemonotherapy:
+define final VinorelbinemonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Vinorelbinemonotherapy:
 
 // Results
 
-        
-define final Received_Vinorelbinemonotherapy:
-    where Treatment_Vinorelbine OR Regimen_Vinorelbinemonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Ovarian_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Mesothelioma, Small_cell_lung_cancer, Diffuse_large_B-cell_lymphoma
+Known regimen for: Hodgkin_lymphoma, Cervical_cancer, Small_cell_lung_cancer, Ovarian_cancer, Diffuse_large_B-cell_lymphoma, Non-small_cell_lung_cancer, Mesothelioma
 
 
 ***/

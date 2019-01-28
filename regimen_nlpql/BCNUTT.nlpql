@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "bicnu", "carmustine"
 ];
 
-define Treatment_Carmustine:
+define  CarmustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "thioplex", "thiotepa"
 ];
 
-define Treatment_Thiotepa:
+define  ThiotepaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -43,7 +43,7 @@ termset RegimenTerms:[
     "BCNU/TT", "BCNUTT"
 ];
 
-define Regimen_BCNUTT:
+define final BCNUTTRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_BCNUTT:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Carmustine AND Treatment_Thiotepa;
-    
-define final Received_BCNUTT:
-    where Regimen_BCNUTT OR ReceivedRegimenTreatments;        
+define final BCNUTTTreatments:
+    where CarmustineTreatment AND ThiotepaTreatment;
+          
         
         
         

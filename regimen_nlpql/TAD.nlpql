@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "thalomid", "thalidomide"
 ];
 
-define Treatment_Thalidomide:
+define  ThalidomideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "decadron", "dexamethasone"
 ];
 
-define Treatment_Dexamethasone:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "TAD"
 ];
 
-define Regimen_TAD:
+define final TADRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_TAD:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Thalidomide AND Treatment_Doxorubicin AND Treatment_Dexamethasone;
-    
-define final Received_TAD:
-    where Regimen_TAD OR ReceivedRegimenTreatments;        
+define final TADTreatments:
+    where ThalidomideTreatment AND DoxorubicinTreatment AND DexamethasoneTreatment;
+          
         
         
         

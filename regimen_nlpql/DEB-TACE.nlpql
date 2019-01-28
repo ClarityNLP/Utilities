@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "tace", "tace"
 ];
 
-define Treatment_TACE:
+define  TACETreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Doxorubicin:
 // Regimen names
 
 termset RegimenTerms:[
-    "DEBTACE", "DEB-TACE", "DEB/TACE"
+    "DEB/TACE", "DEBTACE", "DEB-TACE"
 ];
 
-define Regimen_DEBTACE:
+define final DEBTACERegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_DEBTACE:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_TACE AND Treatment_Doxorubicin;
-    
-define final Received_DEBTACE:
-    where Regimen_DEBTACE OR ReceivedRegimenTreatments;        
+define final DEBTACETreatments:
+    where TACETreatment AND DoxorubicinTreatment;
+          
         
         
         

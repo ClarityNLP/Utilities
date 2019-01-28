@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "cytosar", "cytarabine"
 ];
 
-define Treatment_Cytarabine:
+define  CytarabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "novantrone", "mitoxantrone"
 ];
 
-define Treatment_Mitoxantrone:
+define  MitoxantroneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "gleevec", "imatinib"
 ];
 
-define Treatment_Imatinib:
+define  ImatinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Imatinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "HAM and Imatinib", "HAM / Imatinib", "HAM_Imatinib", "HAMImatinib", "HAM/Imatinib", "HAM & Imatinib"
+    "HAM & Imatinib"
 ];
 
-define Regimen_HAMandImatinib:
+define final HAMImatinibRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_HAMandImatinib:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cytarabine AND Treatment_Mitoxantrone AND Treatment_Imatinib;
-    
-define final Received_HAMImatinib:
-    where Regimen_HAMandImatinib OR ReceivedRegimenTreatments;        
+define final HAMImatinibTreatments:
+    where CytarabineTreatment AND MitoxantroneTreatment AND ImatinibTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "alimta", "pemetrexed"
 ];
 
-define Treatment_Pemetrexed:
+define  PemetrexedTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "avastin", "bevacizumab"
 ];
 
-define Treatment_Bevacizumab:
+define  BevacizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,10 +40,10 @@ define Treatment_Bevacizumab:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pemetrexed / Bevacizumab", "Pemetrexed & Bevacizumab", "PemetrexedBevacizumab", "Pemetrexed/Bevacizumab", "Pemetrexed_Bevacizumab", "Pemetrexed and Bevacizumab"
+    "Pemetrexed & Bevacizumab"
 ];
 
-define Regimen_PemetrexedBevacizumab:
+define final PemetrexedBevacizumabRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -53,11 +53,9 @@ define Regimen_PemetrexedBevacizumab:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Pemetrexed AND Treatment_Bevacizumab;
-    
-define final Received_PemetrexedBevacizumab:
-    where Regimen_PemetrexedBevacizumab OR ReceivedRegimenTreatments;        
+define final PemetrexedBevacizumabTreatments:
+    where PemetrexedTreatment AND BevacizumabTreatment;
+          
         
         
         

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     ":category:interferons", ":category:interferons"
 ];
 
-define Treatment_CategoryInterferons:
+define final CategoryInterferonsTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_CategoryInterferons:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferonalfamonotherapy", "Interferon alfa monotherapy", "Interferon_alfa_monotherapy"
+    "Interferon alfa monotherapy"
 ];
 
-define Regimen_Interferonalfamonotherapy:
+define final InterferonalfamonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,15 +41,11 @@ define Regimen_Interferonalfamonotherapy:
 
 // Results
 
-        
-define final Received_Interferonalfamonotherapy:
-    where Treatment_CategoryInterferons OR Regimen_Interferonalfamonotherapy;
-            
 
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, Hairy_cell_leukemia, Vascular_sarcoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Chronic_myelogenous_leukemia, Vascular_sarcoma, Hairy_cell_leukemia
 
 
 ***/

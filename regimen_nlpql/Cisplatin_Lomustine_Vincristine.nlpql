@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "platinol", "cisplatin"
 ];
 
-define Treatment_Cisplatin:
+define  CisplatinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "ceenu", "lomustine"
 ];
 
-define Treatment_Lomustine:
+define  LomustineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "oncovin", "vincristine"
 ];
 
-define Treatment_Vincristine:
+define  VincristineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -51,10 +51,10 @@ define Treatment_Vincristine:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin& Lomustine& Vincristine", "Cisplatin_Lomustine_Vincristine", "Cisplatin/Lomustine/Vincristine", "Cisplatin and  Lomustine and  Vincristine", "Cisplatin, Lomustine, Vincristine", "Cisplatin/ Lomustine/ Vincristine", "Cisplatin &  Lomustine &  Vincristine", "CisplatinLomustineVincristine", "Cisplatin- Lomustine- Vincristine"
+    "Cisplatin, Lomustine, Vincristine"
 ];
 
-define Regimen_CisplatinLomustineVincristine:
+define final CisplatinLomustineVincristineRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_CisplatinLomustineVincristine:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Cisplatin AND Treatment_Lomustine AND Treatment_Vincristine;
-    
-define final Received_CisplatinLomustineVincristine:
-    where Regimen_CisplatinLomustineVincristine OR ReceivedRegimenTreatments;        
+define final CisplatinLomustineVincristineTreatments:
+    where CisplatinTreatment AND LomustineTreatment AND VincristineTreatment;
+          
         
         
         

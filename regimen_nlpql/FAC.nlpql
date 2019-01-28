@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "5-fu", "fluorouracil"
 ];
 
-define Treatment_Fluorouracil:
+define  FluorouracilTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,7 +29,7 @@ termset TreatmentTerms1:[
     "adriamycin", "doxorubicin"
 ];
 
-define Treatment_Doxorubicin:
+define  DoxorubicinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ termset TreatmentTerms2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define Treatment_Cyclophosphamide:
+define  CyclophosphamideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms2],
         documentset:[Docs]
@@ -54,7 +54,7 @@ termset RegimenTerms:[
     "FAC"
 ];
 
-define Regimen_FAC:
+define final FACRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -64,11 +64,9 @@ define Regimen_FAC:
 // Results
 
         
-define ReceivedRegimenTreatments:
-    where Treatment_Fluorouracil AND Treatment_Doxorubicin AND Treatment_Cyclophosphamide;
-    
-define final Received_FAC:
-    where Regimen_FAC OR ReceivedRegimenTreatments;        
+define final FACTreatments:
+    where FluorouracilTreatment AND DoxorubicinTreatment AND CyclophosphamideTreatment;
+          
         
         
         
@@ -76,7 +74,7 @@ define final Received_FAC:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_triple_negative, Breast_cancer
+Known regimen for: Breast_cancer, Breast_cancer_triple_negative
 
 
 ***/

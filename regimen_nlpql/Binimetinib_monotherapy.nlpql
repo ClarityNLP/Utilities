@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "mektovi", "binimetinib"
 ];
 
-define Treatment_Binimetinib:
+define final BinimetinibTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Binimetinib:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib monotherapy", "Binimetinibmonotherapy", "Binimetinib_monotherapy"
+    "Binimetinib monotherapy"
 ];
 
-define Regimen_Binimetinibmonotherapy:
+define final BinimetinibmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_Binimetinibmonotherapy:
 
 // Results
 
-        
-define final Received_Binimetinibmonotherapy:
-    where Treatment_Binimetinib OR Regimen_Binimetinibmonotherapy;
-            
 
 // Comments
 /***

@@ -18,7 +18,7 @@ termset TreatmentTerms0:[
     "neupogen", "filgrastim"
 ];
 
-define Treatment_Filgrastim:
+define final FilgrastimTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define Treatment_Filgrastim:
 // Regimen names
 
 termset RegimenTerms:[
-    "TC,&IE, VDoxoC, VEC", "TCthenIEVDoxoCVEC", "TC, then IE, VDoxoC, VEC", "TC, & IE, VDoxoC, VEC", "TC/ then IE/ VDoxoC/ VEC", "TC& then IE& VDoxoC& VEC", "TC, and IE, VDoxoC, VEC", "TC,, IE, VDoxoC, VEC", "TC &  then IE &  VDoxoC &  VEC", "TC, / IE, VDoxoC, VEC", "TC/then IE/VDoxoC/VEC", "TC- then IE- VDoxoC- VEC", "TC and  then IE and  VDoxoC and  VEC", "TC,/IE, VDoxoC, VEC", "TC_then_IE_VDoxoC_VEC"
+    "TC, then IE, VDoxoC, VEC"
 ];
 
-define Regimen_TCIEVDoxoCVEC:
+define final TCthenIEVDoxoCVECRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -41,10 +41,6 @@ define Regimen_TCIEVDoxoCVEC:
 
 // Results
 
-        
-define final Received_TCthenIEVDoxoCVEC:
-    where Treatment_Filgrastim OR Regimen_TCIEVDoxoCVEC;
-            
 
 // Comments
 /***
