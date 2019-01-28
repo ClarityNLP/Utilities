@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 1
+cur_job = 2
 
 ip = '18.220.133.76'
 # ip = 'localhost'

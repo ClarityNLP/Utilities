@@ -143,6 +143,7 @@ def generate_nlpql(cancer, treatments):
             nlpql_name = 'Regimen for {}, {}'.format(cancer, regimen)
         else:
             nlpql_name = 'Regimen for {}, {} ({})'.format(cancer, regimen, regimen_type)
+        nlpql_name = " ".join(nlpql_name.replace('"', "'").split("_"))
         define_str, keys = generate_medications(obj['brands'], obj['drugs'])
         if len(obj['brands']) > 1:
             result_str = generate_results(keys)
