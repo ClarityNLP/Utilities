@@ -51,7 +51,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LVP "Sandwich"", "LVP"
+    "LVP_Sandwich", "LVPSandwich", "LVP", "LVP "Sandwich""
 ];
 
 define final LVPSandwichRegimen:

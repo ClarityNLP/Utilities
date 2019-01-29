@@ -40,7 +40,7 @@ define  AspirinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Plasma exchange"
+    "Plasma_exchange", "Plasmaexchange", "Plasma exchange"
 ];
 
 define final PlasmaexchangeRegimen:

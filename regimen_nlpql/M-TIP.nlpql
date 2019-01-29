@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "M/TIP", "M-TIP", "MTIP"
+    "M/TIP", "MTIP", "M-TIP"
 ];
 
 define final MTIPRegimen:

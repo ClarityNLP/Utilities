@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GC", "Carboplatin & Gemcitabine"
+    "Carboplatin & Gemcitabine", "GC"
 ];
 
 define final CarboplatinGemcitabineRegimen:
@@ -63,7 +63,7 @@ define final CarboplatinGemcitabineTreatments:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_triple_negative, Ovarian_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer, Breast_cancer_triple_negative
 
 
 ***/

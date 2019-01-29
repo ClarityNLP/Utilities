@@ -62,7 +62,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRINOX", "FOLFOXIRI"
+    "FOLFOXIRI", "FOLFIRINOX"
 ];
 
 define final FOLFIRINOXRegimen:

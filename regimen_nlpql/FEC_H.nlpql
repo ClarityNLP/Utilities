@@ -62,7 +62,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FEC / H", "FEC_H", "FEC and H", "FEC & H", "FECH", "FEC/H"
+    "FEC_H", "FEC & H", "FEC / H", "FECH", "FEC and H", "FEC/H"
 ];
 
 define final FECHRegimen:

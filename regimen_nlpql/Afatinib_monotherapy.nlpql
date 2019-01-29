@@ -29,7 +29,7 @@ define final AfatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Afatinib monotherapy"
+    "Afatinib_monotherapy", "Afatinib monotherapy", "Afatinibmonotherapy"
 ];
 
 define final AfatinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final AfatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Non-small_cell_lung_cancer_EGFR-mutated, CNS_carcinoma, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Head_and_neck_cancer, Non-small_cell_lung_cancer_EGFR-mutated, CNS_carcinoma
 
 
 ***/

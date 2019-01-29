@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Cytarabine & WBRT", "Cytarabine & WBRT"
+    "IT Cytarabine / WBRT", "IT Cytarabine/WBRT", "Cytarabine & WBRT", "Cytarabine / WBRT", "IT_Cytarabine_WBRT", "IT Cytarabine & WBRT", "CytarabineWBRT", "IT Cytarabine and WBRT", "Cytarabine_WBRT", "Cytarabine/WBRT", "Cytarabine and WBRT", "ITCytarabineWBRT"
 ];
 
 define final ITCytarabineWBRTRegimen:

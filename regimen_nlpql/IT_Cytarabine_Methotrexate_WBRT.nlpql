@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Methotrexate, WBRT", "IT Cytarabine, Methotrexate, WBRT"
+    "IT Cytarabine, Methotrexate, WBRT", "Cytarabine, Methotrexate, WBRT"
 ];
 
 define final ITCytarabineMethotrexateWBRTRegimen:

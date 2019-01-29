@@ -29,7 +29,7 @@ define final Interferonalfa2bTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DLI", "Interferon alfa-2b & DLI"
+    "Interferon alfa-2b & DLI", "DLI"
 ];
 
 define final Interferonalfa2bDLIRegimen:

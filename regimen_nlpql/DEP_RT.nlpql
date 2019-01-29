@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DEPRT", "DEP / RT", "DEP/RT", "DEP & RT", "DEP_RT", "DEP and RT"
+    "DEP/RT", "DEPRT", "DEP and RT", "DEP / RT", "DEP_RT", "DEP & RT"
 ];
 
 define final DEPRTRegimen:

@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/GemOx", "R-GemOx", "RGemOx"
+    "R/GemOx", "RGemOx", "R-GemOx"
 ];
 
 define final RGemOxRegimen:

@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BCP", "B and CP", "B/CP", "B & CP", "B / CP", "Carboplatin, Paclitaxel, Bevacizumab", "B&CP", "PacCBev", "B+CP"
+    "Carboplatin, Paclitaxel, Bevacizumab", "BCP", "B & CP", "B+CP", "B and CP", "B/CP", "PacCBev", "B&CP", "B / CP"
 ];
 
 define final CarboplatinPaclitaxelBevacizumabRegimen:
@@ -74,7 +74,7 @@ define final CarboplatinPaclitaxelBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer
 
 
 ***/

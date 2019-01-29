@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & RT"
+    "Paclitaxel_RT", "PaclitaxelRT", "Paclitaxel/RT", "Paclitaxel and RT", "Paclitaxel / RT", "Paclitaxel & RT"
 ];
 
 define final PaclitaxelRTRegimen:
@@ -63,7 +63,7 @@ define final PaclitaxelRTTreatments:
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Head_and_neck_cancer
+Known regimen for: Head_and_neck_cancer, Bladder_cancer
 
 
 ***/

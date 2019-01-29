@@ -51,7 +51,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CVD (Vinblastine)", "CVD"
+    "CVD (Vinblastine)", "CVDVinblastine", "CVD_Vinblastine", "CVD"
 ];
 
 define final CVDVinblastineRegimen:

@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IRIS & Bevacizumab"
+    "IRIS_Bevacizumab", "IRISBevacizumab", "IRIS & Bevacizumab", "IRIS/Bevacizumab", "IRIS / Bevacizumab", "IRIS and Bevacizumab"
 ];
 
 define final IRISBevacizumabRegimen:

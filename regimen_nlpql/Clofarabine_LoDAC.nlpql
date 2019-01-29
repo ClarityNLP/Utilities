@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine & LoDAC"
+    "ClofarabineLoDAC", "Clofarabine/LoDAC", "Clofarabine / LoDAC", "Clofarabine_LoDAC", "Clofarabine and LoDAC", "Clofarabine & LoDAC"
 ];
 
 define final ClofarabineLoDACRegimen:

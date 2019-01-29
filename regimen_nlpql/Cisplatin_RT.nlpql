@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & RT", "RT"
+    "Cisplatin_RT", "CisplatinRT", "RT", "Cisplatin & RT", "Cisplatin / RT", "Cisplatin/RT", "Cisplatin and RT"
 ];
 
 define final CisplatinRTRegimen:
@@ -63,7 +63,7 @@ define final CisplatinRTTreatments:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Nasopharyngeal_carcinoma, Extranodal_NKT-cell_lymphoma_nasal_type, Vulvar_cancer, Bladder_cancer, Non-small_cell_lung_cancer, Head_and_neck_cancer
+Known regimen for: Cervical_cancer, Bladder_cancer, Nasopharyngeal_carcinoma, Non-small_cell_lung_cancer, Vulvar_cancer, Head_and_neck_cancer, Extranodal_NKT-cell_lymphoma_nasal_type
 
 
 ***/

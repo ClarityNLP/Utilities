@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Irinotecan, RT", "RT"
+    "RT", "Cisplatin, Irinotecan, RT"
 ];
 
 define final CisplatinIrinotecanRTRegimen:

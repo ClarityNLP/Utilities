@@ -84,7 +84,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RDexaBEAM", "R/DexaBEAM", "R-DexaBEAM"
+    "R/DexaBEAM", "RDexaBEAM", "R-DexaBEAM"
 ];
 
 define final RDexaBEAMRegimen:

@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOX4 & RT"
+    "FOLFOX4 and RT", "FOLFOX4_RT", "FOLFOX4 / RT", "FOLFOX4RT", "FOLFOX4/RT", "FOLFOX4 & RT"
 ];
 
 define final FOLFOX4RTRegimen:

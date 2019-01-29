@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RHiDAC", "R-HiDAC", "R/HiDAC"
+    "R-HiDAC", "R/HiDAC", "RHiDAC"
 ];
 
 define final RHiDACRegimen:

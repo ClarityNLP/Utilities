@@ -62,7 +62,7 @@ define  AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADE / ATRA", "ADE/ATRA", "ADEATRA", "ADE_ATRA", "ADE & ATRA", "ADE and ATRA"
+    "ADE / ATRA", "ADE/ATRA", "ADEATRA", "ADE & ATRA", "ADE_ATRA", "ADE and ATRA"
 ];
 
 define final ADEATRARegimen:

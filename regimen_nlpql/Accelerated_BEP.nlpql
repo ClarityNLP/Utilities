@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Accelerated BEP"
+    "Accelerated BEP", "Accelerated_BEP", "AcceleratedBEP"
 ];
 
 define final AcceleratedBEPRegimen:

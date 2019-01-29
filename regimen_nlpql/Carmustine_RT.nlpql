@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustine & RT", "BCNU / RT", "BCNURT", "BCNU & RT", "BCNU and RT", "BCNU/RT", "BCNU_RT"
+    "Carmustine / RT", "CarmustineRT", "BCNU_RT", "Carmustine and RT", "BCNURT", "BCNU & RT", "Carmustine/RT", "BCNU and RT", "Carmustine & RT", "BCNU/RT", "BCNU / RT", "Carmustine_RT"
 ];
 
 define final CarmustineRTRegimen:

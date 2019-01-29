@@ -51,7 +51,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FCA", "FCCam"
+    "FCCam", "FCA"
 ];
 
 define final FCARegimen:

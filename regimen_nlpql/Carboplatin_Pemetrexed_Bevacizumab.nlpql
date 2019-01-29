@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PemCBev", "Carboplatin, Pemetrexed, Bevacizumab"
+    "Carboplatin, Pemetrexed, Bevacizumab", "PemCBev"
 ];
 
 define final CarboplatinPemetrexedBevacizumabRegimen:

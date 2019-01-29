@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CyBorD", "VDC"
+    "VDC", "CyBorD"
 ];
 
 define final VDCRegimen:
@@ -74,7 +74,7 @@ define final VDCTreatments:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
 
 
 ***/

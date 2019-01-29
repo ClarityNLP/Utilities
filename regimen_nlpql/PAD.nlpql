@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PAD", "VAD", "BDD", "PAd"
+    "BDD", "VAD", "PAD", "PAd"
 ];
 
 define final PADRegimen:
@@ -74,7 +74,7 @@ define final PADTreatments:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
+Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
 
 
 ***/

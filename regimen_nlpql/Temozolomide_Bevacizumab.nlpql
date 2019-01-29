@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TB", "Temozolomide & Bevacizumab"
+    "Temozolomide & Bevacizumab", "TB"
 ];
 
 define final TemozolomideBevacizumabRegimen:

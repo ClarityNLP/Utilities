@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-DHAP", "R/DHAP", "RDHAP"
+    "R/DHAP", "R-DHAP", "RDHAP"
 ];
 
 define final RDHAPRegimen:

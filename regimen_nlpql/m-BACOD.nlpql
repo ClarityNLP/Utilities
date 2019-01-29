@@ -84,7 +84,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "m/BACOD", "mBACOD", "m-BACOD"
+    "mBACOD", "m-BACOD", "m/BACOD"
 ];
 
 define final mBACODRegimen:

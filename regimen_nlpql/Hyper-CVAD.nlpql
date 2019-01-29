@@ -62,7 +62,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper-CVAD", "HyperCVAD", "Hyper/CVAD"
+    "HyperCVAD", "Hyper/CVAD", "Hyper-CVAD"
 ];
 
 define final HyperCVADRegimen:

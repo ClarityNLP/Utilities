@@ -40,7 +40,7 @@ define  PaclitaxelnanoparticlealbuminboundTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & nab-Paclitaxel", "NG"
+    "NG", "Gemcitabine & nab-Paclitaxel"
 ];
 
 define final GemcitabinenabPaclitaxelRegimen:
@@ -63,7 +63,7 @@ define final GemcitabinenabPaclitaxelTreatments:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Cholangiocarcinoma
+Known regimen for: Cholangiocarcinoma, Pancreatic_cancer
 
 
 ***/

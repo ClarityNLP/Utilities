@@ -51,7 +51,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CF & Trastuzumab", "CF"
+    "CFTrastuzumab", "CF / Trastuzumab", "CF", "CF and Trastuzumab", "CF/Trastuzumab", "CF_Trastuzumab", "CF & Trastuzumab"
 ];
 
 define final CFTrastuzumabRegimen:

@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BEP", "PEB"
+    "PEB", "BEP"
 ];
 
 define final BEPRegimen:
@@ -74,7 +74,7 @@ define final BEPTreatments:
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Adenocarcinoma_of_unknown_primary
+Known regimen for: Adenocarcinoma_of_unknown_primary, Testicular_cancer
 
 
 ***/

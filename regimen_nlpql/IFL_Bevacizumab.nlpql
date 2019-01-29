@@ -62,7 +62,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IFL & Bevacizumab", "mIFL & Bevacizumab"
+    "mIFL & Bevacizumab", "IFLBevacizumab", "mIFL_Bevacizumab", "mIFL / Bevacizumab", "IFL/Bevacizumab", "IFL_Bevacizumab", "IFL / Bevacizumab", "IFL & Bevacizumab", "mIFL and Bevacizumab", "IFL and Bevacizumab", "mIFL/Bevacizumab", "mIFLBevacizumab"
 ];
 
 define final IFLBevacizumabRegimen:

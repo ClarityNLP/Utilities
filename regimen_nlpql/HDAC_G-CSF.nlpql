@@ -40,7 +40,7 @@ define  FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDAC & G-CSF"
+    "HDAC & G-CSF", "HDAC & G/CSF", "HDAC and G-CSF", "HDAC/G-CSF", "HDAC_G-CSF", "HDAC & GCSF", "HDAC / G-CSF", "HDACGCSF"
 ];
 
 define final HDACGCSFRegimen:

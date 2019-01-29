@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CLBR", "CLB-R", "RClb", "Chlorambucil & Rituximab", "CLB/R"
+    "Chlorambucil & Rituximab", "CLB-R", "RClb", "CLBR", "CLB/R"
 ];
 
 define final ChlorambucilRituximabRegimen:

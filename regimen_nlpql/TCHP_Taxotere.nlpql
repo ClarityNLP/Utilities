@@ -62,7 +62,7 @@ define  PertuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TCHP (Taxotere)", "TCHP"
+    "TCHPTaxotere", "TCHP", "TCHP (Taxotere)", "TCHP_Taxotere"
 ];
 
 define final TCHPTaxotereRegimen:

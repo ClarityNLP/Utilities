@@ -40,7 +40,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DI EC", "DI_EC", "DIEC"
+    "DIEC", "DI_EC", "DI EC"
 ];
 
 define final DIECRegimen:

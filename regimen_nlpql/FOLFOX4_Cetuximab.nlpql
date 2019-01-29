@@ -62,7 +62,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOX4 & Cetuximab"
+    "FOLFOX4/Cetuximab", "FOLFOX4Cetuximab", "FOLFOX4 and Cetuximab", "FOLFOX4 / Cetuximab", "FOLFOX4_Cetuximab", "FOLFOX4 & Cetuximab"
 ];
 
 define final FOLFOX4CetuximabRegimen:

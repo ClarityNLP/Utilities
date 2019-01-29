@@ -51,7 +51,7 @@ define  FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VDC/IE", "VDCIE"
+    "VDCIE", "VDC/IE"
 ];
 
 define final VDCIERegimen:

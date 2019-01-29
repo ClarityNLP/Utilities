@@ -51,7 +51,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "7/3/7", "737", "835", "10-3-5", "7-3-7", "10/3/5", "ADE", "8/3/5", "8-3-5", "1035", "ADE (standard-dose Ara-C)"
+    "8-3-5", "835", "8/3/5", "10-3-5", "737", "1035", "ADE", "7-3-7", "7/3/7", "10/3/5", "ADE (standard-dose Ara-C)"
 ];
 
 define final ADEstandarddoseAraCRegimen:

@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/NIMP", "R-NIMP", "RNIMP"
+    "R/NIMP", "RNIMP", "R-NIMP"
 ];
 
 define final RNIMPRegimen:

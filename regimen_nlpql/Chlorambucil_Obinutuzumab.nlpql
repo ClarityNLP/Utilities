@@ -40,7 +40,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GClb", "Chlorambucil & Obinutuzumab"
+    "Chlorambucil & Obinutuzumab", "GClb"
 ];
 
 define final ChlorambucilObinutuzumabRegimen:

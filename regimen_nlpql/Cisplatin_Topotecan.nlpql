@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Topotecan", "TC"
+    "TC", "Cisplatin & Topotecan"
 ];
 
 define final CisplatinTopotecanRegimen:

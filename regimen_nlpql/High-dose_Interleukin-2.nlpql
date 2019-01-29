@@ -29,7 +29,7 @@ define final AldesleukinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "High-dose Interleukin-2", "HD IL-2", "HD_IL-2", "HDIL2", "HD IL2", "HD IL/2"
+    "High-dose Interleukin-2", "HD IL-2", "HD IL/2", "HD_IL-2", "HDIL2", "HD IL2"
 ];
 
 define final HighdoseInterleukin2Regimen:
@@ -45,7 +45,7 @@ define final HighdoseInterleukin2Regimen:
 // Comments
 /***
 
-Known regimen for: Melanoma, Renal_cell_carcinoma
+Known regimen for: Renal_cell_carcinoma, Melanoma
 
 
 ***/

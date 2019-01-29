@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA 3 + 10", "DA 3  &  10", "DA310", "DA 3 / 10", "DA 3 & 10", "DA_3_10", "DA 3  /  10", "DA 3  10", "DA 3  and  10"
+    "DA310", "DA 3  10", "DA 3  and  10", "DA_3_10", "DA 3  /  10", "DA 3 + 10", "DA 3 & 10", "DA 3  &  10", "DA 3 / 10"
 ];
 
 define final DA310Regimen:

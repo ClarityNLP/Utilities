@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOX6 & RT"
+    "mFOLFOX6 & RT", "mFOLFOX6/RT", "mFOLFOX6RT", "mFOLFOX6 and RT", "mFOLFOX6 / RT", "mFOLFOX6_RT"
 ];
 
 define final mFOLFOX6RTRegimen:

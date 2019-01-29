@@ -51,7 +51,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABV", "ABV (Vinblastine)"
+    "ABV (Vinblastine)", "ABV", "ABV_Vinblastine", "ABVVinblastine"
 ];
 
 define final ABVVinblastineRegimen:

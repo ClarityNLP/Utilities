@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VRCP", "VR-CP", "VR/CP"
+    "VR-CP", "VRCP", "VR/CP"
 ];
 
 define final VRCPRegimen:

@@ -73,7 +73,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "OESHAP", "O-ESHAP", "O/ESHAP"
+    "O-ESHAP", "OESHAP", "O/ESHAP"
 ];
 
 define final OESHAPRegimen:

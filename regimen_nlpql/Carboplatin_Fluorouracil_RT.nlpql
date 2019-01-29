@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Carboplatin, Fluorouracil, RT"
+    "Carboplatin, Fluorouracil, RT", "RT"
 ];
 
 define final CarboplatinFluorouracilRTRegimen:

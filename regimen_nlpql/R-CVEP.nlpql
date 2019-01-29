@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-CVEP", "R/CVEP", "RCVEP"
+    "RCVEP", "R-CVEP", "R/CVEP"
 ];
 
 define final RCVEPRegimen:

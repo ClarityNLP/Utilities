@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bu/TT/Cy", "BuTTCy", "Bu/TT/Cy, then auto HSCT"
+    "BuTTCy", "Bu/TT/Cy", "Bu/TT/Cy, then auto HSCT"
 ];
 
 define final BuTTCythenautoHSCTRegimen:

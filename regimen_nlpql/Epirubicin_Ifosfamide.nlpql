@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EI", "Epirubicin & Ifosfamide"
+    "Epirubicin & Ifosfamide", "EI"
 ];
 
 define final EpirubicinIfosfamideRegimen:

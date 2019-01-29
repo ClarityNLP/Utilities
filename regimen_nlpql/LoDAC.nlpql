@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LDAC", "LoDAC"
+    "LoDAC", "LDAC"
 ];
 
 define final LoDACRegimen:
@@ -45,7 +45,7 @@ define final LoDACRegimen:
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia
+Known regimen for: Acute_myeloid_leukemia, Myelodysplastic_syndrome
 
 
 ***/

@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal 5-FU"
+    "Intraperitoneal 5/FU", "Intraperitoneal 5-FU", "Intraperitoneal 5FU", "Intraperitoneal_5-FU", "Intraperitoneal5FU"
 ];
 
 define final Intraperitoneal5FURegimen:

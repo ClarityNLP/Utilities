@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELOX & Bevacizumab", "CAPOXB", "CapeOX & Bevacizumab", "CAPOX/B", "CapeOx & Bevacizumab", "CAPOX-B"
+    "CapeOX and Bevacizumab", "CapeOx and Bevacizumab", "XELOX and Bevacizumab", "CapeOx / Bevacizumab", "CapeOxBevacizumab", "CAPOXB", "XELOX/Bevacizumab", "CapeOx/Bevacizumab", "XELOX / Bevacizumab", "XELOX_Bevacizumab", "CapeOX / Bevacizumab", "XELOX & Bevacizumab", "XELOXBevacizumab", "CAPOX/B", "CapeOX/Bevacizumab", "CapeOXBevacizumab", "CAPOX-B", "CapeOx_Bevacizumab", "CapeOx & Bevacizumab", "CapeOX & Bevacizumab", "CapeOX_Bevacizumab"
 ];
 
 define final CapeOxBevacizumabRegimen:
@@ -74,7 +74,7 @@ define final CapeOxBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Hepatocellular_carcinoma
+Known regimen for: Hepatocellular_carcinoma, Colon_cancer
 
 
 ***/

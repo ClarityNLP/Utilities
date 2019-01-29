@@ -51,7 +51,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MEI", "M-EI", "M/EI"
+    "M-EI", "MEI", "M/EI"
 ];
 
 define final MEIRegimen:

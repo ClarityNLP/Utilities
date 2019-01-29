@@ -51,7 +51,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TAM6", "TAM"
+    "TAM", "TAM6"
 ];
 
 define final TAM6Regimen:

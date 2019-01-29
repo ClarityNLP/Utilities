@@ -51,7 +51,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "F-SHAI", "FSHAI", "F/SHAI"
+    "F/SHAI", "F-SHAI", "FSHAI"
 ];
 
 define final FSHAIRegimen:

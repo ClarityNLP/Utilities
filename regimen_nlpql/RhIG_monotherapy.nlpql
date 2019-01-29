@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RhIG monotherapy", "RhIG"
+    "RhIG monotherapy", "RhIG", "RhIG_monotherapy", "RhIGmonotherapy"
 ];
 
 define final RhIGmonotherapyRegimen:

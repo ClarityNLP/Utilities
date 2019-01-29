@@ -40,7 +40,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TT", "TH_Taxol", "T/T", "TH (Taxol)", "TH", "T-T", "THTaxol"
+    "T-T", "TH_Taxol", "T/T", "THTaxol", "TH (Taxol)", "TT", "TH"
 ];
 
 define final THTaxolRegimen:

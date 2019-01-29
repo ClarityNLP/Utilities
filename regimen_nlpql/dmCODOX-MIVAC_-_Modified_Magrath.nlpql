@@ -84,7 +84,7 @@ define  MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "dmCODOX-M/IVAC - Modified Magrath", "dmCODOX-M/IVAC"
+    "dmCODOX/M/IVAC", "dmCODOX-M/IVAC - Modified Magrath", "dmCODOX-M/IVAC", "dmCODOX-MIVAC", "dmCODOXM/IVAC", "dmCODOXMIVAC"
 ];
 
 define final dmCODOXMIVACModifiedMagrathRegimen:

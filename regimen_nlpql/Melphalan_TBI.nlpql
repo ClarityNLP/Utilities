@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan & TBI"
+    "Melphalan / TBI", "Melphalan & TBI", "Melphalan/TBI", "Melphalan_TBI", "Melphalan and TBI", "MelphalanTBI"
 ];
 
 define final MelphalanTBIRegimen:

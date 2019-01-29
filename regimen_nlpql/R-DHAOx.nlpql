@@ -62,7 +62,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/DHAOx", "R-DHAOx", "RDHAOx"
+    "RDHAOx", "R-DHAOx", "R/DHAOx"
 ];
 
 define final RDHAOxRegimen:

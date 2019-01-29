@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
         with open('./' + path_str) as f:
             wikicode = parse(f.read())
-            oncology_class = f.name.split('/')[-1].split('.')[0]
+            oncology_class = (f.name.split('/')[-1].split('.')[0]).replace('ö', 'o')
             # print(oncology_class)
             cur_level = 0
             cur_title = None
@@ -262,7 +262,7 @@ if __name__ == "__main__":
                                             regimen_names.append(reg_name[0])
                                 alternate_regimens = list()
                                 for r in regimen_names:
-                                    if len(r) > 10:
+                                    if len(r) > 20:
                                         continue
                                     if '&' in r:
                                         alternate_regimens.append(r.replace(' & ', ' and '))

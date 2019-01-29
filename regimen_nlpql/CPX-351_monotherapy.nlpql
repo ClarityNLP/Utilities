@@ -29,7 +29,7 @@ define final CytarabineanddaunorubicinliposomalTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CPX/351", "CPX-351 monotherapy", "CPX351", "CPX-351"
+    "CPX/351", "CPX351monotherapy", "CPX-351", "CPX/351 monotherapy", "CPX351", "CPX-351 monotherapy", "CPX-351_monotherapy", "CPX351 monotherapy"
 ];
 
 define final CPX351monotherapyRegimen:

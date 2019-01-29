@@ -84,7 +84,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA-R-EPOCH", "DAREPOCH", "DA/R/EPOCH"
+    "DA/R/EPOCH", "DAREPOCH", "DA-R-EPOCH"
 ];
 
 define final DAREPOCHRegimen:
@@ -107,7 +107,7 @@ define final DAREPOCHTreatments:
 // Comments
 /***
 
-Known regimen for: Primary_mediastinal_B-cell_lymphoma, Mediastinal_gray-zone_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Mediastinal_gray-zone_lymphoma
 
 
 ***/

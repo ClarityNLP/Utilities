@@ -51,7 +51,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADE (high-dose Ara-C)", "HIDAC35", "HIDAC-3-5", "HIDAC-3-7", "HIDAC37", "HIDAC/3/5", "ADE", "HIDAC/3/7"
+    "HIDAC35", "ADE (high-dose Ara-C)", "HIDAC37", "HIDAC/3/7", "ADE", "HIDAC/3/5", "HIDAC-3-7", "HIDAC-3-5"
 ];
 
 define final ADEhighdoseAraCRegimen:

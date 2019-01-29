@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EC & Bevacizumab"
+    "EC/Bevacizumab", "EC_Bevacizumab", "EC / Bevacizumab", "EC and Bevacizumab", "EC & Bevacizumab", "ECBevacizumab"
 ];
 
 define final ECBevacizumabRegimen:

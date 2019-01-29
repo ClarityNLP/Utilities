@@ -73,7 +73,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOXIRI & Bevacizumab", "FOLFIRINOX & Bevacizumab"
+    "FOLFIRINOX & Bevacizumab", "FOLFOXIRI & Bevacizumab"
 ];
 
 define final FOLFIRINOXBevacizumabRegimen:

@@ -51,7 +51,7 @@ define  LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-BL", "R/BL", "RBL"
+    "R/BL", "RBL", "R-BL"
 ];
 
 define final RBLRegimen:

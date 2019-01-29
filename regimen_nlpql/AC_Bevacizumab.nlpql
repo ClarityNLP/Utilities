@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AC&Bev", "AC+Bev", "AC & Bev", "ACBev", "AC & Bevacizumab", "AC and Bev", "AC/Bev", "AC / Bev"
+    "AC / Bev", "AC / Bevacizumab", "AC/Bevacizumab", "AC and Bevacizumab", "ACBevacizumab", "AC_Bevacizumab", "AC & Bevacizumab", "ACBev", "AC & Bev", "AC/Bev", "AC and Bev", "AC+Bev", "AC&Bev"
 ];
 
 define final ACBevacizumabRegimen:

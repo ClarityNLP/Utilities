@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFT_LV", "UFT & LV", "UFTLV", "UFT + LV", "UFT  LV", "Tegafur, Uracil, Folinic acid", "UFT / LV", "UFT  and  LV", "UFT  &  LV", "UFT  /  LV"
+    "UFT & LV", "UFT / LV", "UFTLV", "UFT  /  LV", "UFT  LV", "Tegafur, Uracil, Folinic acid", "UFT_LV", "UFT  and  LV", "UFT + LV", "UFT  &  LV"
 ];
 
 define final TegafurUracilFolinicacidRegimen:

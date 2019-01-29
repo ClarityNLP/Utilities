@@ -73,7 +73,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Fluorouracil, Mitomycin, RT"
+    "Fluorouracil, Mitomycin, RT", "RT"
 ];
 
 define final FluorouracilMitomycinRTRegimen:
@@ -96,7 +96,7 @@ define final FluorouracilMitomycinRTTreatments:
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Cervical_cancer, Head_and_neck_cancer
+Known regimen for: Cervical_cancer, Head_and_neck_cancer, Bladder_cancer
 
 
 ***/

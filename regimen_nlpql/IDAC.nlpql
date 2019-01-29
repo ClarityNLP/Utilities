@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mIDAC", "IDAC"
+    "IDAC", "mIDAC"
 ];
 
 define final IDACRegimen:

@@ -62,7 +62,7 @@ define  CarboplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "C-BOP", "C/BOP", "CBOP"
+    "C-BOP", "CBOP", "C/BOP"
 ];
 
 define final CBOPRegimen:

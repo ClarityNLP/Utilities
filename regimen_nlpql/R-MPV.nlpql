@@ -62,7 +62,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMPV", "R-MPV", "R/MPV"
+    "R-MPV", "RMPV", "R/MPV"
 ];
 
 define final RMPVRegimen:

@@ -29,7 +29,7 @@ define final ApixabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Apixaban monotherapy"
+    "Apixaban_monotherapy", "Apixabanmonotherapy", "Apixaban monotherapy"
 ];
 
 define final ApixabanmonotherapyRegimen:

@@ -51,7 +51,7 @@ define  IbrutinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IBR", "BR & Ibrutinib"
+    "BR and Ibrutinib", "BR / Ibrutinib", "IBR", "BR & Ibrutinib", "BR/Ibrutinib", "BRIbrutinib", "BR_Ibrutinib"
 ];
 
 define final BRIbrutinibRegimen:

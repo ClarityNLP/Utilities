@@ -62,7 +62,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CLAGM", "CLAG-M", "CLAG/M"
+    "CLAGM", "CLAG/M", "CLAG-M"
 ];
 
 define final CLAGMRegimen:

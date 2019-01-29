@@ -29,7 +29,7 @@ define final Carmustinewaferpolifeprosan20Treatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gliadel wafer"
+    "Gliadel_wafer", "Gliadelwafer", "Gliadel wafer"
 ];
 
 define final GliadelwaferRegimen:

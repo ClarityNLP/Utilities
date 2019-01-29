@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CLF", "PLF"
+    "PLF", "CLF"
 ];
 
 define final CLFRegimen:
@@ -74,7 +74,7 @@ define final CLFTreatments:
 // Comments
 /***
 
-Known regimen for: Gastric_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Gastric_cancer
 
 
 ***/

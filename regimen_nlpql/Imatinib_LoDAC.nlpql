@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib & LoDAC"
+    "Imatinib_LoDAC", "Imatinib/LoDAC", "Imatinib & LoDAC", "Imatinib / LoDAC", "Imatinib and LoDAC", "ImatinibLoDAC"
 ];
 
 define final ImatinibLoDACRegimen:

@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Bevacizumab & RT"
+    "Bevacizumab_RT", "Bevacizumab and RT", "Bevacizumab & RT", "Bevacizumab / RT", "BevacizumabRT", "Bevacizumab/RT", "RT"
 ];
 
 define final BevacizumabRTRegimen:

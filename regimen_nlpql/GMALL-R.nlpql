@@ -40,7 +40,7 @@ define  MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GMALL/R", "GMALLR", "GMALL-R"
+    "GMALLR", "GMALL/R", "GMALL-R"
 ];
 
 define final GMALLRRegimen:

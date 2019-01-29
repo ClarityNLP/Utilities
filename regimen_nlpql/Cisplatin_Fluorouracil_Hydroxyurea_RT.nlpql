@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Cisplatin, Fluorouracil, Hydroxyurea, RT"
+    "Cisplatin, Fluorouracil, Hydroxyurea, RT", "RT"
 ];
 
 define final CisplatinFluorouracilHydroxyureaRTRegimen:

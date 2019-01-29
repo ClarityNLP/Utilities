@@ -62,7 +62,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Cetuximab"
+    "FOLFIRI_Cetuximab", "FOLFIRI and Cetuximab", "FOLFIRI/Cetuximab", "FOLFIRI & Cetuximab", "FOLFIRICetuximab", "FOLFIRI / Cetuximab"
 ];
 
 define final FOLFIRICetuximabRegimen:

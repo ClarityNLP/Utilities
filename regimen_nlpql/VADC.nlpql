@@ -62,7 +62,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VAD & C", "VAD&C", "VAD and C", "VADC", "VAD+C", "VAD / C", "VAD/C"
+    "VAD / C", "VAD&C", "VADC", "VAD/C", "VAD & C", "VAD and C", "VAD+C"
 ];
 
 define final VADCRegimen:

@@ -62,7 +62,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOX4 & Bevacizumab", "FOLFOX/B", "FOLFOX-B", "FOLFOXB"
+    "FOLFOX/B", "FOLFOXB", "FOLFOX-B", "FOLFOX4 & Bevacizumab"
 ];
 
 define final FOLFOX4BevacizumabRegimen:

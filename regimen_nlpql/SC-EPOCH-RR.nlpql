@@ -84,7 +84,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "SC-EPOCH-RR"
+    "SCEPOCHRR", "SC/EPOCH/RR", "SC-EPOCH-RR"
 ];
 
 define final SCEPOCHRRRegimen:

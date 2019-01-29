@@ -95,7 +95,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BEACOPP-14", "BEACOPP/14", "BEACOPP14"
+    "BEACOPP/14", "BEACOPP-14", "BEACOPP14"
 ];
 
 define final BEACOPP14Regimen:

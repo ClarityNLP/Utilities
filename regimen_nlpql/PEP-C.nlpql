@@ -40,7 +40,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PEP-C", "PEPC", "PEP/C"
+    "PEP/C", "PEPC", "PEP-C"
 ];
 
 define final PEPCRegimen:
@@ -63,7 +63,7 @@ define final PEPCTreatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma
+Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma
 
 
 ***/

@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Docetaxel, Cetuximab, RT"
+    "Docetaxel, Cetuximab, RT", "RT"
 ];
 
 define final DocetaxelCetuximabRTRegimen:

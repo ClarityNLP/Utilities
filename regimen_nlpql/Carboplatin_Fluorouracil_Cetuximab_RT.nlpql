@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Carboplatin, Fluorouracil, Cetuximab, RT"
+    "Carboplatin, Fluorouracil, Cetuximab, RT", "RT"
 ];
 
 define final CarboplatinFluorouracilCetuximabRTRegimen:

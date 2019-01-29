@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Fluorouracil, Cetuximab", "CFC", "CF-C", "CF/C"
+    "CF-C", "CFC", "CF/C", "Cisplatin, Fluorouracil, Cetuximab"
 ];
 
 define final CisplatinFluorouracilCetuximabRegimen:

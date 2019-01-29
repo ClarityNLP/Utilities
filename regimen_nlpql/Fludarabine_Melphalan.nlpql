@@ -51,7 +51,7 @@ define  CategoryAntithymocyteglobulinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluMel", "Fludarabine & Melphalan", "Flu/Mel", "Flu-Mel"
+    "FluMel", "Flu/Mel", "Fludarabine & Melphalan", "Flu-Mel"
 ];
 
 define final FludarabineMelphalanRegimen:

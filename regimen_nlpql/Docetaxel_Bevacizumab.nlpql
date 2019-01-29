@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "T & Bev", "Bev/D", "Bev and D", "BevD", "T / Bev", "Bev&D", "T+Bev", "Bev & D", "T and Bev", "Bev / D", "Docetaxel & Bevacizumab", "T/Bev", "TBev", "T&Bev", "Bev+D"
+    "Bev / D", "Docetaxel & Bevacizumab", "Bev&D", "T / Bev", "TBev", "T&Bev", "BevD", "Bev/D", "Bev & D", "Bev+D", "T/Bev", "Bev and D", "T & Bev", "T and Bev", "T+Bev"
 ];
 
 define final DocetaxelBevacizumabRegimen:

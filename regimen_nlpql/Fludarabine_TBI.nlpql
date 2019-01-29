@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine & TBI"
+    "Fludarabine and TBI", "Fludarabine / TBI", "FludarabineTBI", "Fludarabine & TBI", "Fludarabine_TBI", "Fludarabine/TBI"
 ];
 
 define final FludarabineTBIRegimen:

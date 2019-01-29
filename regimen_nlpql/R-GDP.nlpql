@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-GDP", "RGDP", "R/GDP"
+    "R-GDP", "R/GDP", "RGDP"
 ];
 
 define final RGDPRegimen:

@@ -51,7 +51,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMP", "R/MP", "R-MP"
+    "RMP", "R-MP", "R/MP"
 ];
 
 define final RMPRegimen:

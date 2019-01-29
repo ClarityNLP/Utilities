@@ -40,7 +40,7 @@ define  FludarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuFlu", "Flu/Bu", "Busulfan & Fludarabine", "FluBu"
+    "FluBu", "Flu/Bu", "Busulfan & Fludarabine", "BuFlu"
 ];
 
 define final BusulfanFludarabineRegimen:

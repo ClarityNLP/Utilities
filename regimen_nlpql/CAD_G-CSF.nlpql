@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CAD & G-CSF", "CAD"
+    "CAD", "CAD / G-CSF", "CAD/G-CSF", "CAD and G-CSF", "CADGCSF", "CAD_G-CSF", "CAD & G-CSF", "CAD & GCSF", "CAD & G/CSF"
 ];
 
 define final CADGCSFRegimen:

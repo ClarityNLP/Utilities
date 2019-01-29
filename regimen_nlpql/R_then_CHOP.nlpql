@@ -40,7 +40,7 @@ define  CategoryPCPprophylaxisTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R, then CHOP"
+    "RthenCHOP", "R, then CHOP", "R_then_CHOP"
 ];
 
 define final RthenCHOPRegimen:

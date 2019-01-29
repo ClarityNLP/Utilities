@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TI-CE", "TI/CE", "TICE", "Carboplatin & Etoposide, then auto HSCT"
+    "TICE", "Carboplatin & Etoposide, then auto HSCT", "TI-CE", "TI/CE"
 ];
 
 define final CarboplatinEtoposidethenautoHSCTRegimen:

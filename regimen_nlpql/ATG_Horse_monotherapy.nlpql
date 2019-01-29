@@ -29,7 +29,7 @@ define final AntithymocyteglobulinhorseATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG", "ATG (Horse) monotherapy"
+    "ATG (Horse) monotherapy", "ATG"
 ];
 
 define final ATGHorsemonotherapyRegimen:

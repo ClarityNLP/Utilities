@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "OLF", "FLO"
+    "FLO", "OLF"
 ];
 
 define final OLFRegimen:

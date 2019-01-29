@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "dUCB"
+    "dUCB", "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant"
 ];
 
 define final FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplantRegimen:

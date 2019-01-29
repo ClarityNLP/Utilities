@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TD", "Thal/Dex", "ThalDex", "Thal-Dex"
+    "TD", "Thal-Dex", "ThalDex", "Thal/Dex"
 ];
 
 define final ThalDexRegimen:
@@ -74,7 +74,7 @@ define final ThalDexTreatments:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_induction
+Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
 
 
 ***/

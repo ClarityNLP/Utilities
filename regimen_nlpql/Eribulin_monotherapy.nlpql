@@ -29,7 +29,7 @@ define final EribulinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eribulin monotherapy"
+    "Eribulin_monotherapy", "Eribulin monotherapy", "Eribulinmonotherapy"
 ];
 
 define final EribulinmonotherapyRegimen:

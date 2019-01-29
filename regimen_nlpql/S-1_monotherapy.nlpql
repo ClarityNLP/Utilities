@@ -29,7 +29,7 @@ define final TegafurgimeraciloteracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "S-1 monotherapy"
+    "S-1 monotherapy", "S-1_monotherapy", "S1monotherapy", "S1 monotherapy", "S/1 monotherapy"
 ];
 
 define final S1monotherapyRegimen:
@@ -45,7 +45,7 @@ define final S1monotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Rectal_cancer, Gastric_cancer, Non-small_cell_lung_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Non-small_cell_lung_cancer, Rectal_cancer, Gastric_cancer, Pancreatic_cancer
 
 
 ***/

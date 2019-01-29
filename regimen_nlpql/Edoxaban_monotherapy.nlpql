@@ -40,7 +40,7 @@ define  EdoxabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Edoxaban monotherapy"
+    "Edoxaban_monotherapy", "Edoxabanmonotherapy", "Edoxaban monotherapy"
 ];
 
 define final EdoxabanmonotherapyRegimen:

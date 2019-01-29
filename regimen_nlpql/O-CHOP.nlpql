@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "O-CHOP", "O/CHOP", "OCHOP"
+    "OCHOP", "O-CHOP", "O/CHOP"
 ];
 
 define final OCHOPRegimen:

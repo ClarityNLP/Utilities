@@ -29,7 +29,7 @@ define final FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "maxi-R-CHOP/R-HiDAC"
+    "maxiRCHOP/RHiDAC", "maxi-R-CHOP/R-HiDAC", "maxi-R-CHOPR-HiDAC", "maxi/R/CHOP/R/HiDAC", "maxiRCHOPRHiDAC"
 ];
 
 define final maxiRCHOPRHiDACRegimen:

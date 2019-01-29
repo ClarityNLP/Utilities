@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "D-VMP", "DVMP", "D/VMP"
+    "DVMP", "D/VMP", "D-VMP"
 ];
 
 define final DVMPRegimen:

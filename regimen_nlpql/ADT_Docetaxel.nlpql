@@ -40,7 +40,7 @@ define  DocetaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADT & Docetaxel"
+    "ADT & Docetaxel", "ADT / Docetaxel", "ADT_Docetaxel", "ADTDocetaxel", "ADT/Docetaxel", "ADT and Docetaxel"
 ];
 
 define final ADTDocetaxelRegimen:

@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane & EDP"
+    "MitotaneEDP", "Mitotane_EDP", "Mitotane / EDP", "Mitotane and EDP", "Mitotane/EDP", "Mitotane & EDP"
 ];
 
 define final MitotaneEDPRegimen:

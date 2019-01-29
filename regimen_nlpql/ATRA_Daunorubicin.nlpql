@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA & Daunorubicin"
+    "ATRA_Daunorubicin", "ATRA / Daunorubicin", "ATRA and Daunorubicin", "ATRA & Daunorubicin", "ATRA/Daunorubicin", "ATRADaunorubicin"
 ];
 
 define final ATRADaunorubicinRegimen:

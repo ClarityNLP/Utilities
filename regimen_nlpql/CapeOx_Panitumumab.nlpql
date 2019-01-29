@@ -51,7 +51,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOx & Panitumumab"
+    "CapeOxPanitumumab", "CapeOx and Panitumumab", "CapeOx/Panitumumab", "CapeOx / Panitumumab", "CapeOx_Panitumumab", "CapeOx & Panitumumab"
 ];
 
 define final CapeOxPanitumumabRegimen:

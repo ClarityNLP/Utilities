@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine, Cetuximab, RT", "RT"
+    "RT", "Gemcitabine, Cetuximab, RT"
 ];
 
 define final GemcitabineCetuximabRTRegimen:

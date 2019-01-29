@@ -84,7 +84,7 @@ define  ValacyclovirTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-Hyper-CVAD/R-MA"
+    "RHyperCVAD/RMA", "R-Hyper-CVADR-MA", "R-Hyper-CVAD/R-MA", "R/Hyper/CVAD/R/MA", "RHyperCVADRMA"
 ];
 
 define final RHyperCVADRMARegimen:

@@ -51,7 +51,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RBAC", "R/BAC", "R-BAC"
+    "R-BAC", "R/BAC", "RBAC"
 ];
 
 define final RBACRegimen:

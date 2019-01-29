@@ -29,7 +29,7 @@ define final IxazomibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ixazomib monotherapy"
+    "Ixazomib monotherapy", "Ixazomibmonotherapy", "Ixazomib_monotherapy"
 ];
 
 define final IxazomibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final IxazomibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
 
 
 ***/

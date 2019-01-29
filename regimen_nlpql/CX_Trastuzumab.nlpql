@@ -51,7 +51,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX", "CX & Trastuzumab"
+    "CX", "CX / Trastuzumab", "CX_Trastuzumab", "CX/Trastuzumab", "CX & Trastuzumab", "CX and Trastuzumab", "CXTrastuzumab"
 ];
 
 define final CXTrastuzumabRegimen:
@@ -74,7 +74,7 @@ define final CXTrastuzumabTreatments:
 // Comments
 /***
 
-Known regimen for: Gastric_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Gastric_cancer
 
 
 ***/

@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DCF", "TCF"
+    "TCF", "DCF"
 ];
 
 define final DCFRegimen:
@@ -74,7 +74,7 @@ define final DCFTreatments:
 // Comments
 /***
 
-Known regimen for: Nasopharyngeal_carcinoma, Penile_cancer, SCC_of_unknown_primary, Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: Esophageal_cancer, Penile_cancer, Nasopharyngeal_carcinoma, Head_and_neck_cancer, SCC_of_unknown_primary
 
 
 ***/

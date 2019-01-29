@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DCEP & G-CSF"
+    "DCEP / G-CSF", "DCEP/G-CSF", "DCEP & G-CSF", "DCEPGCSF", "DCEP & GCSF", "DCEP_G-CSF", "DCEP & G/CSF", "DCEP and G-CSF"
 ];
 
 define final DCEPGCSFRegimen:

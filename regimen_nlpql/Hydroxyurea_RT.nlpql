@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea & RT", "RT"
+    "HydroxyureaRT", "Hydroxyurea_RT", "Hydroxyurea and RT", "Hydroxyurea/RT", "Hydroxyurea & RT", "Hydroxyurea / RT", "RT"
 ];
 
 define final HydroxyureaRTRegimen:

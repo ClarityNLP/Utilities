@@ -29,7 +29,7 @@ define final ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thiotepa monotherapy"
+    "Thiotepa monotherapy", "Thiotepamonotherapy", "Thiotepa_monotherapy"
 ];
 
 define final ThiotepamonotherapyRegimen:

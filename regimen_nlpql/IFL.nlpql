@@ -51,7 +51,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IFL", "mIFL"
+    "mIFL", "IFL"
 ];
 
 define final IFLRegimen:

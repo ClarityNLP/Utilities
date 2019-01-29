@@ -51,7 +51,7 @@ define  CategoryGranulocytecolonystimulatingfactorsTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-MACLO/R-IVAM"
+    "R/MACLO/R/IVAM", "RMACLO/RIVAM", "R-MACLOR-IVAM", "R-MACLO/R-IVAM", "RMACLORIVAM"
 ];
 
 define final RMACLORIVAMRegimen:

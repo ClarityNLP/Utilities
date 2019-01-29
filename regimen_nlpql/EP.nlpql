@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EP", "ET"
+    "ET", "EP"
 ];
 
 define final EPRegimen:

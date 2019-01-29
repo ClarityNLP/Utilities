@@ -95,7 +95,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Stanford V", "Stanford_V", "StanfordV"
+    "Stanford V", "StanfordV", "Stanford_V"
 ];
 
 define final StanfordVRegimen:

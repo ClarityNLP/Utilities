@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EAR & G-CSF"
+    "EAR & G/CSF", "EAR/G-CSF", "EAR / G-CSF", "EAR & GCSF", "EARGCSF", "EAR & G-CSF", "EAR and G-CSF", "EAR_G-CSF"
 ];
 
 define final EARGCSFRegimen:

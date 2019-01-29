@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 0
+cur_job = 8
 
 ip = '18.220.133.76'
 # ip = 'localhost'
@@ -34,7 +34,7 @@ def run_nlpql(i, filename='query'):
         res = requests.post(nlpql_url, data=nlpql, headers={'content-type': 'text/plain'})
         if res.ok:
             print("Running job %d" % i)
-            time.sleep(30)
+            time.sleep(90)
         else:
             print('Failed to run job %d' % i)
             sys.exit(1)
@@ -57,13 +57,28 @@ def has_data(job_id):
     return 0
 
 
+def cleanup_empty_jobs():
+    # 5000/phenotype_jobs/ALL
+    print('cleanup empty jobs...')
+    res = requests.get("http://{}:5000/phenotype_jobs/ALL".format(ip))
+    if res.status_code == 200:
+        json_res = res.json()
+        for j in json_res:
+            nlp_job_id = j['nlp_job_id']
+            status = j['status']
+            if status == 'COMPLETED' and not has_data(nlp_job_id):
+                cleanup(nlp_job_id)
+
+
 def job_runner(i, fname):
     print('Attempting job %d' % i)
+
     if get_active_workers() < max_workers:
         run_nlpql(i, filename=fname)
-        time.sleep(60)
+        cleanup_empty_jobs()
     else:
         while get_active_workers() >= max_workers:
+            cleanup_empty_jobs()
             print('At max workers for job %d sleeping for 60 secs...' % i)
             time.sleep(60)
         run_nlpql(i, filename=fname)

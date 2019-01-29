@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "7+3d", "7 & 3d", "DA", "7 and 3d", "7&3d", "7+3d (standard-dose)", "AD", "7 / 3d", "73d", "7/3d"
+    "7/3d", "7 and 3d (standard-dose)", "73d_standard-dose", "73d (standard-dose)", "7 / 3d", "DA", "7 & 3d (standard-dose)", "7+3d", "7&3d", "7 / 3d (standard-dose)", "73dstandarddose", "7&3d (standard-dose)", "7 & 3d", "7+3d (standard-dose)", "73d", "7+3d (standarddose)", "7 and 3d", "7/3d (standard-dose)", "7+3d (standard/dose)", "AD"
 ];
 
 define final 73dstandarddoseRegimen:

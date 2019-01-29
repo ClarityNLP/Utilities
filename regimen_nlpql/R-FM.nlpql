@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-FM", "RFM", "FMR", "R/FM"
+    "R-FM", "FMR", "R/FM", "RFM"
 ];
 
 define final RFMRegimen:

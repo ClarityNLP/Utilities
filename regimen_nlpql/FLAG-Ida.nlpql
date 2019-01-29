@@ -62,7 +62,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FLAGIda", "FLAG-Ida", "FLAG/Ida"
+    "FLAG-Ida", "FLAGIda", "FLAG/Ida"
 ];
 
 define final FLAGIdaRegimen:

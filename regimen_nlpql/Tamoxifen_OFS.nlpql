@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamoxifen & OFS"
+    "Tamoxifen & OFS", "Tamoxifen and OFS", "Tamoxifen / OFS", "Tamoxifen_OFS", "Tamoxifen/OFS", "TamoxifenOFS"
 ];
 
 define final TamoxifenOFSRegimen:

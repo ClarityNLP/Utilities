@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Cisplatin, Vinorelbine, RT"
+    "Cisplatin, Vinorelbine, RT", "RT"
 ];
 
 define final CisplatinVinorelbineRTRegimen:

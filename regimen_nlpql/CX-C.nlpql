@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX-C", "CXC", "CX/C"
+    "CX/C", "CXC", "CX-C"
 ];
 
 define final CXCRegimen:

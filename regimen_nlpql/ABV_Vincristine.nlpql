@@ -51,7 +51,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABV", "ABV (Vincristine)"
+    "ABV", "ABV (Vincristine)", "ABV_Vincristine", "ABVVincristine"
 ];
 
 define final ABVVincristineRegimen:

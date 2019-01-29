@@ -40,7 +40,7 @@ define  TegafurgimeraciloteracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CS", "Cisplatin & S-1", "SP"
+    "Cisplatin & S1", "CS", "Cisplatin and S-1", "SP", "Cisplatin & S/1", "CisplatinS1", "Cisplatin/S-1", "Cisplatin_S-1", "Cisplatin / S-1", "Cisplatin & S-1"
 ];
 
 define final CisplatinS1Regimen:

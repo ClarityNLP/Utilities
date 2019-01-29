@@ -51,7 +51,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LVP", "L-Asparaginase, Vincristine, Prednisolone"
+    "L-Asparaginase, Vincristine, Prednisolone", "LVP"
 ];
 
 define final LAsparaginaseVincristinePrednisoloneRegimen:

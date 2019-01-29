@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ddMVAC", "MVAC, dose-dense", "AMVAC"
+    "ddMVAC", "MVAC, dosedense", "AMVAC", "MVACdosedense", "MVAC, dose-dense", "MVAC, dose/dense", "MVAC_dose-dense"
 ];
 
 define final MVACdosedenseRegimen:

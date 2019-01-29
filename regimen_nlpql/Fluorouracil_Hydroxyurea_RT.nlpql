@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Hydroxyurea, RT", "RT"
+    "RT", "Fluorouracil, Hydroxyurea, RT"
 ];
 
 define final FluorouracilHydroxyureaRTRegimen:

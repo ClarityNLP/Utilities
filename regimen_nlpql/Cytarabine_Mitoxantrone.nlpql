@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Mitoxantrone", "MIDAC"
+    "MIDAC", "Cytarabine & Mitoxantrone"
 ];
 
 define final CytarabineMitoxantroneRegimen:

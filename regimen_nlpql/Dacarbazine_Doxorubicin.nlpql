@@ -40,7 +40,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AD", "Dacarbazine & Doxorubicin"
+    "Dacarbazine & Doxorubicin", "AD"
 ];
 
 define final DacarbazineDoxorubicinRegimen:

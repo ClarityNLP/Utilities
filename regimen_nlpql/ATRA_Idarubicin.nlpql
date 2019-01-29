@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AIDA", "ATRA & Idarubicin"
+    "ATRA and Idarubicin", "AIDA", "ATRA/Idarubicin", "ATRA_Idarubicin", "ATRA & Idarubicin", "ATRAIdarubicin", "ATRA / Idarubicin"
 ];
 
 define final ATRAIdarubicinRegimen:

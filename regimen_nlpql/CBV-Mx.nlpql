@@ -62,7 +62,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CBVMx", "CBV-Mx", "CBV/Mx"
+    "CBV-Mx", "CBVMx", "CBV/Mx"
 ];
 
 define final CBVMxRegimen:

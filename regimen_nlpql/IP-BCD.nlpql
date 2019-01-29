@@ -73,7 +73,7 @@ define  DactinomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IP-BCD", "IPBCD", "IP/BCD"
+    "IPBCD", "IP-BCD", "IP/BCD"
 ];
 
 define final IPBCDRegimen:

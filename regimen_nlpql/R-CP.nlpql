@@ -62,7 +62,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCP", "R-CP", "R/CP"
+    "R-CP", "RCP", "R/CP"
 ];
 
 define final RCPRegimen:

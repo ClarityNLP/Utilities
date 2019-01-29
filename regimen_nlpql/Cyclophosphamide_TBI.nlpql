@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cy/TBI", "Cyclophosphamide & TBI", "CyTBI"
+    "CyTBI", "Cy/TBI", "Cyclophosphamide & TBI"
 ];
 
 define final CyclophosphamideTBIRegimen:
@@ -63,7 +63,7 @@ define final CyclophosphamideTBITreatments:
 // Comments
 /***
 
-Known regimen for: Allogeneic_HSCT, Autologous_HSCT
+Known regimen for: Autologous_HSCT, Allogeneic_HSCT
 
 
 ***/
