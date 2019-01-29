@@ -40,7 +40,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Vinblastine"
+    "Cisplatin_Vinblastine", "Cisplatin & Vinblastine", "CisplatinVinblastine"
 ];
 
 define final CisplatinVinblastineRegimen:

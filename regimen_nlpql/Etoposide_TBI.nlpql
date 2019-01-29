@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EtoposideTBI", "Etoposide / TBI", "Etoposide/TBI", "Etoposide & TBI", "Etoposide_TBI", "Etoposide and TBI"
+    "Etoposide_TBI", "EtoposideTBI", "Etoposide & TBI", "Etoposide/TBI", "Etoposide and TBI", "Etoposide / TBI"
 ];
 
 define final EtoposideTBIRegimen:

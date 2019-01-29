@@ -40,7 +40,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuCy", "Busulfan & Cyclophosphamide"
+    "BusulfanCyclophosphamide", "BuCy", "Busulfan_Cyclophosphamide", "Busulfan & Cyclophosphamide"
 ];
 
 define final BusulfanCyclophosphamideRegimen:

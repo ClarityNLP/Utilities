@@ -29,7 +29,7 @@ define final FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Fluorouracil, then Fluorouracil & RT, then Fluorouracil"
+    "Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil", "FluorouracilthenFluorouracilRTthenFluorouracil", "Fluorouracil, then Fluorouracil & RT, then Fluorouracil", "RT"
 ];
 
 define final FluorouracilthenFluorouracilRTthenFluorouracilRegimen:

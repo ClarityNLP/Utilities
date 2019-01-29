@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide & Prednisone"
+    "EtoposidePrednisone", "Etoposide & Prednisone", "Etoposide_Prednisone"
 ];
 
 define final EtoposidePrednisoneRegimen:

@@ -40,7 +40,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab & Methylprednisolone"
+    "Alemtuzumab & Methylprednisolone", "Alemtuzumab_Methylprednisolone", "AlemtuzumabMethylprednisolone"
 ];
 
 define final AlemtuzumabMethylprednisoloneRegimen:

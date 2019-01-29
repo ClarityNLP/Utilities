@@ -73,7 +73,7 @@ define  EverolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP and Everolimus", "CHOP/Everolimus", "CHOP / Everolimus", "CHOPEverolimus", "CHOP_Everolimus", "CHOP & Everolimus"
+    "CHOP / Everolimus", "CHOP_Everolimus", "CHOP/Everolimus", "CHOPEverolimus", "CHOP & Everolimus", "CHOP and Everolimus"
 ];
 
 define final CHOPEverolimusRegimen:

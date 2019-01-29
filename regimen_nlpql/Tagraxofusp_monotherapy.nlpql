@@ -29,7 +29,7 @@ define final TagraxofuspTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tagraxofusp monotherapy"
+    "Tagraxofusp monotherapy", "Tagraxofusp", "Tagraxofusp_monotherapy", "Tagraxofuspmonotherapy"
 ];
 
 define final TagraxofuspmonotherapyRegimen:

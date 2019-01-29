@@ -29,7 +29,7 @@ define final IvosidenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ivosidenib monotherapy"
+    "Ivosidenib_monotherapy", "Ivosidenib monotherapy", "Ivosidenibmonotherapy", "Ivosidenib"
 ];
 
 define final IvosidenibmonotherapyRegimen:

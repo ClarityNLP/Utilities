@@ -40,7 +40,7 @@ define  ThalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide & Thalidomide"
+    "Temozolomide_Thalidomide", "TemozolomideThalidomide", "Temozolomide & Thalidomide"
 ];
 
 define final TemozolomideThalidomideRegimen:

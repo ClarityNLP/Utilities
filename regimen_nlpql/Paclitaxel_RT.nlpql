@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel_RT", "PaclitaxelRT", "Paclitaxel/RT", "Paclitaxel and RT", "Paclitaxel / RT", "Paclitaxel & RT"
+    "Paclitaxel and RT", "PaclitaxelRT", "Paclitaxel / RT", "Paclitaxel_RT", "Paclitaxel & RT", "Paclitaxel/RT"
 ];
 
 define final PaclitaxelRTRegimen:

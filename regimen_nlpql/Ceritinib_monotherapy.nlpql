@@ -29,7 +29,7 @@ define final CeritinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ceritinib monotherapy"
+    "Ceritinibmonotherapy", "Ceritinib", "Ceritinib_monotherapy", "Ceritinib monotherapy"
 ];
 
 define final CeritinibmonotherapyRegimen:

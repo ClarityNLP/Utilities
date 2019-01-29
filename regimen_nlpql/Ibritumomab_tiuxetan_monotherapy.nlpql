@@ -40,7 +40,7 @@ define  IbritumomabtiuxetanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibritumomab tiuxetan monotherapy"
+    "Ibritumomabtiuxetanmonotherapy", "Ibritumomab tiuxetan", "Ibritumomab tiuxetan monotherapy", "Ibritumomab_tiuxetan_monotherapy"
 ];
 
 define final IbritumomabtiuxetanmonotherapyRegimen:

@@ -29,7 +29,7 @@ define final FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TC, then IE, VDoxoC, VEC"
+    "TC_then_IE_VDoxoC_VEC", "TCthenIEVDoxoCVEC", "TC, then IE, VDoxoC, VEC"
 ];
 
 define final TCthenIEVDoxoCVECRegimen:

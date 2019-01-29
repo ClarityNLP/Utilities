@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine & Melphalan"
+    "Clofarabine_Melphalan", "Clofarabine & Melphalan", "ClofarabineMelphalan"
 ];
 
 define final ClofarabineMelphalanRegimen:

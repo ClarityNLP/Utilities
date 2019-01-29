@@ -29,7 +29,7 @@ define final AldesleukinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LD_IL-2", "LD IL-2", "LD IL/2", "Low-dose Interleukin-2", "LDIL2", "LD IL2"
+    "LDIL2", "LD_IL-2", "Low-dose Interleukin-2", "Low-dose_Interleukin-2", "LD IL-2", "LD IL2", "LowdoseInterleukin2", "LD IL/2"
 ];
 
 define final LowdoseInterleukin2Regimen:

@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin & Bevacizumab"
+    "OxaliplatinBevacizumab", "Oxaliplatin_Bevacizumab", "Oxaliplatin & Bevacizumab"
 ];
 
 define final OxaliplatinBevacizumabRegimen:

@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine & Cytarabine"
+    "CladribineCytarabine", "Cladribine_Cytarabine", "Cladribine & Cytarabine"
 ];
 
 define final CladribineCytarabineRegimen:
@@ -63,7 +63,7 @@ define final CladribineCytarabineTreatments:
 // Comments
 /***
 
-Known regimen for: Langerhans_cell_histiocytosis, Hypereosinophilic_syndrome
+Known regimen for: Hypereosinophilic_syndrome, Langerhans_cell_histiocytosis
 
 
 ***/

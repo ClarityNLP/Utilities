@@ -40,7 +40,7 @@ define  PazopanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & Pazopanib"
+    "Paclitaxel_Pazopanib", "Paclitaxel & Pazopanib", "PaclitaxelPazopanib"
 ];
 
 define final PaclitaxelPazopanibRegimen:

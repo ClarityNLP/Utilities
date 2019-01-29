@@ -29,7 +29,7 @@ define final TegafuranduracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TegafurUracil", "Tegafur and Uracil", "Tegafur_Uracil", "Tegafur / Uracil", "Tegafur/Uracil", "Tegafur & Uracil"
+    "Tegafur & Uracil", "Tegafur/Uracil", "Tegafur_Uracil", "Tegafur / Uracil", "Tegafur and Uracil", "TegafurUracil"
 ];
 
 define final TegafurUracilRegimen:
@@ -45,7 +45,7 @@ define final TegafurUracilRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Head_and_neck_cancer
+Known regimen for: Head_and_neck_cancer, Non-small_cell_lung_cancer
 
 
 ***/

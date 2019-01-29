@@ -40,7 +40,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Dacarbazine"
+    "CisplatinDacarbazine", "Cisplatin & Dacarbazine", "Cisplatin_Dacarbazine"
 ];
 
 define final CisplatinDacarbazineRegimen:

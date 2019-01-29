@@ -29,7 +29,7 @@ define final PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel monotherapy, weekly", "T"
+    "Paclitaxelmonotherapyweekly", "Paclitaxel_monotherapy_weekly", "Paclitaxel, weekly", "T", "Paclitaxel monotherapy, weekly"
 ];
 
 define final PaclitaxelmonotherapyweeklyRegimen:

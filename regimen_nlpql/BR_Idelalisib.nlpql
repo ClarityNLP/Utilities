@@ -51,7 +51,7 @@ define  IdelalisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BR/Idelalisib", "BR_Idelalisib", "BR and Idelalisib", "BR & Idelalisib", "BRIdelalisib", "BR / Idelalisib"
+    "BR_Idelalisib", "BR & Idelalisib", "BR/Idelalisib", "BR / Idelalisib", "BRIdelalisib", "BR and Idelalisib"
 ];
 
 define final BRIdelalisibRegimen:

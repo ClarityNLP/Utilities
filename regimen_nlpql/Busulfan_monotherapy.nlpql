@@ -29,7 +29,7 @@ define final BusulfanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfan monotherapy", "Busulfan_monotherapy", "Busulfanmonotherapy"
+    "Busulfan_monotherapy", "Busulfanmonotherapy", "Busulfan", "Busulfan monotherapy"
 ];
 
 define final BusulfanmonotherapyRegimen:

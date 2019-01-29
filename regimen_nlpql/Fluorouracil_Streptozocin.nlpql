@@ -40,7 +40,7 @@ define  StreptozocinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil & Streptozocin"
+    "FluorouracilStreptozocin", "Fluorouracil & Streptozocin", "Fluorouracil_Streptozocin"
 ];
 
 define final FluorouracilStreptozocinRegimen:

@@ -95,7 +95,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ChlVPP/EVA", "ChlVPPEVA"
+    "ChlVPPEVA", "ChlVPP/EVA"
 ];
 
 define final ChlVPPEVARegimen:

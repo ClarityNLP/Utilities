@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Letrozole & Ribociclib"
+    "LetrozoleRibociclib", "Letrozole & Ribociclib", "Letrozole_Ribociclib"
 ];
 
 define final LetrozoleRibociclibRegimen:

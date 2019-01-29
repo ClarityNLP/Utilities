@@ -62,7 +62,7 @@ define  ZivafliberceptTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Ziv-aflibercept"
+    "FOLFIRI_Ziv-aflibercept", "FOLFIRIZivaflibercept", "FOLFIRI & Ziv-aflibercept"
 ];
 
 define final FOLFIRIZivafliberceptRegimen:

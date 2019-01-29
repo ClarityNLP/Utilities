@@ -40,7 +40,7 @@ define  EpirubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Epirubicin", "CIS-EPI", "CIS/EPI", "CISEPI"
+    "Cisplatin_Epirubicin", "CIS-EPI", "CISEPI", "CIS/EPI", "CisplatinEpirubicin", "Cisplatin & Epirubicin"
 ];
 
 define final CisplatinEpirubicinRegimen:

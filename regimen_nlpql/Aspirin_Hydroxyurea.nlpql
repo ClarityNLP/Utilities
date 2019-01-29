@@ -40,7 +40,7 @@ define  ClopidogrelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin & Hydroxyurea"
+    "AspirinHydroxyurea", "Aspirin_Hydroxyurea", "Aspirin & Hydroxyurea"
 ];
 
 define final AspirinHydroxyureaRegimen:

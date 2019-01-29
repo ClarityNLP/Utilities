@@ -40,7 +40,7 @@ define  PralatrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene & Pralatrexate"
+    "Bexarotene_Pralatrexate", "BexarotenePralatrexate", "Bexarotene & Pralatrexate"
 ];
 
 define final BexarotenePralatrexateRegimen:

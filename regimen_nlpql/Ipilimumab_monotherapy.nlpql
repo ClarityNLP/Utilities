@@ -29,7 +29,7 @@ define final IpilimumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ipilimumab monotherapy"
+    "Ipilimumab monotherapy", "Ipilimumab", "Ipilimumab_monotherapy", "Ipilimumabmonotherapy"
 ];
 
 define final IpilimumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final IpilimumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer, Melanoma
+Known regimen for: Small_cell_lung_cancer, Melanoma, Non-small_cell_lung_cancer
 
 
 ***/

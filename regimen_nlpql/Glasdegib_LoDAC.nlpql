@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Glasdegib / LoDAC", "GlasdegibLoDAC", "Glasdegib_LoDAC", "Glasdegib/LoDAC", "Glasdegib & LoDAC", "Glasdegib and LoDAC"
+    "Glasdegib / LoDAC", "GlasdegibLoDAC", "Glasdegib and LoDAC", "Glasdegib & LoDAC", "Glasdegib/LoDAC", "Glasdegib_LoDAC"
 ];
 
 define final GlasdegibLoDACRegimen:

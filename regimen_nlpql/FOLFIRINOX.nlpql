@@ -62,7 +62,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOXIRI", "FOLFIRINOX"
+    "FOLFIRINOX", "FOLFOXIRI"
 ];
 
 define final FOLFIRINOXRegimen:
@@ -85,7 +85,7 @@ define final FOLFIRINOXTreatments:
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Pancreatic_cancer
+Known regimen for: Pancreatic_cancer, Colon_cancer
 
 
 ***/

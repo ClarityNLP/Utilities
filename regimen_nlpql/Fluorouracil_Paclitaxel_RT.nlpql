@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Paclitaxel, RT", "RT"
+    "FluorouracilPaclitaxelRT", "Fluorouracil, Paclitaxel, RT", "Fluorouracil_Paclitaxel_RT", "RT"
 ];
 
 define final FluorouracilPaclitaxelRTRegimen:

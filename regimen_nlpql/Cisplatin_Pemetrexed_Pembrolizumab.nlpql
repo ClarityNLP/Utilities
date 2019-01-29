@@ -51,7 +51,7 @@ define  CategorySteroidsTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Pemetrexed, Pembrolizumab"
+    "CisplatinPemetrexedPembrolizumab", "Cisplatin, Pemetrexed, Pembrolizumab", "Cisplatin_Pemetrexed_Pembrolizumab"
 ];
 
 define final CisplatinPemetrexedPembrolizumabRegimen:

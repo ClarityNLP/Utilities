@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine_RT", "GemcitabineRT", "Gemcitabine and RT", "Gemcitabine / RT", "Gemcitabine & RT", "Gemcitabine/RT", "RT"
+    "GemcitabineRT", "Gemcitabine_RT", "RT", "Gemcitabine/RT", "Gemcitabine & RT", "Gemcitabine / RT", "Gemcitabine and RT"
 ];
 
 define final GemcitabineRTRegimen:

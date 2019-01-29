@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib, Vincristine, Prednisone"
+    "Dasatinib, Vincristine, Prednisone", "Dasatinib_Vincristine_Prednisone", "DasatinibVincristinePrednisone"
 ];
 
 define final DasatinibVincristinePrednisoneRegimen:

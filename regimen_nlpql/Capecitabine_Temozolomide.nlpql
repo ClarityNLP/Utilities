@@ -40,7 +40,7 @@ define  TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Temozolomide"
+    "Capecitabine & Temozolomide", "Capecitabine_Temozolomide", "CapecitabineTemozolomide"
 ];
 
 define final CapecitabineTemozolomideRegimen:

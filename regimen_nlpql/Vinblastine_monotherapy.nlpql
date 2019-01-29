@@ -29,7 +29,7 @@ define final VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinblastine monotherapy"
+    "Vinblastine", "Vinblastine monotherapy", "Vinblastine_monotherapy", "Vinblastinemonotherapy"
 ];
 
 define final VinblastinemonotherapyRegimen:

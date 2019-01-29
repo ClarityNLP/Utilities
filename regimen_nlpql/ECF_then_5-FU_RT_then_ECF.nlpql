@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ECF, then 5-FU & RT, then ECF"
+    "ECF, then 5-FU & RT, then ECF", "ECFthen5FURTthenECF", "ECF_then_5-FU_RT_then_ECF"
 ];
 
 define final ECFthen5FURTthenECFRegimen:

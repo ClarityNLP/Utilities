@@ -40,7 +40,7 @@ define  DocetaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel & Prednisone"
+    "DocetaxelPrednisone", "Docetaxel & Prednisone", "Docetaxel_Prednisone"
 ];
 
 define final DocetaxelPrednisoneRegimen:

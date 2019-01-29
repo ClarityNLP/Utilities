@@ -29,7 +29,7 @@ define final DanaparoidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Danaparoid monotherapy"
+    "Danaparoidmonotherapy", "Danaparoid", "Danaparoid monotherapy", "Danaparoid_monotherapy"
 ];
 
 define final DanaparoidmonotherapyRegimen:

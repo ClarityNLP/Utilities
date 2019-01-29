@@ -51,7 +51,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Lomustine, Vincristine"
+    "Cisplatin, Lomustine, Vincristine", "CisplatinLomustineVincristine", "Cisplatin_Lomustine_Vincristine"
 ];
 
 define final CisplatinLomustineVincristineRegimen:

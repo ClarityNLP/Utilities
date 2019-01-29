@@ -29,7 +29,7 @@ define final DasatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib monotherapy"
+    "Dasatinib", "Dasatinib monotherapy", "Dasatinibmonotherapy", "Dasatinib_monotherapy"
 ];
 
 define final DasatinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final DasatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Systemic_mastocytosis, Chronic_myelogenous_leukemia
 
 
 ***/

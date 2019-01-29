@@ -40,7 +40,7 @@ define  HydrocortisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane & Streptozocin"
+    "Mitotane & Streptozocin", "Mitotane_Streptozocin", "MitotaneStreptozocin"
 ];
 
 define final MitotaneStreptozocinRegimen:

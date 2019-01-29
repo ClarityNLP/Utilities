@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Anastrozole & Ribociclib"
+    "Anastrozole & Ribociclib", "Anastrozole_Ribociclib", "AnastrozoleRibociclib"
 ];
 
 define final AnastrozoleRibociclibRegimen:

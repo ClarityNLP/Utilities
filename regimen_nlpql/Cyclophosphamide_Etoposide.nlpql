@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Etoposide"
+    "Cyclophosphamide & Etoposide", "CyclophosphamideEtoposide", "Cyclophosphamide_Etoposide"
 ];
 
 define final CyclophosphamideEtoposideRegimen:

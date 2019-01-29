@@ -40,7 +40,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Vincristine"
+    "Cyclophosphamide_Vincristine", "CyclophosphamideVincristine", "Cyclophosphamide & Vincristine"
 ];
 
 define final CyclophosphamideVincristineRegimen:

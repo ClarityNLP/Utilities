@@ -29,7 +29,7 @@ define final VandetanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vandetanib monotherapy"
+    "Vandetanib monotherapy", "Vandetanib_monotherapy", "Vandetanibmonotherapy", "Vandetanib"
 ];
 
 define final VandetanibmonotherapyRegimen:

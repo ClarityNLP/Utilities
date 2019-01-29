@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MT-R", "MT/R", "MTR"
+    "MT/R", "MTR", "MT-R"
 ];
 
 define final MTRRegimen:

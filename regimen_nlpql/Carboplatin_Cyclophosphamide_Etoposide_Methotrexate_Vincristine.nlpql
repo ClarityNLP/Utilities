@@ -73,7 +73,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine"
+    "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine", "Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine", "CarboplatinCyclophosphamideEtoposideMethotrexateVincristine"
 ];
 
 define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineRegimen:

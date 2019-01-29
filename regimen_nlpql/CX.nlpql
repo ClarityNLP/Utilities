@@ -40,7 +40,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX", "XP"
+    "XP", "CX"
 ];
 
 define final CXRegimen:

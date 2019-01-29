@@ -40,7 +40,7 @@ define  LapatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Lapatinib"
+    "CapecitabineLapatinib", "Capecitabine & Lapatinib", "Capecitabine_Lapatinib"
 ];
 
 define final CapecitabineLapatinibRegimen:

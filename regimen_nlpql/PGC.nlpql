@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PCG", "PGC"
+    "PGC", "PCG"
 ];
 
 define final PGCRegimen:

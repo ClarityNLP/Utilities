@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bu/TT", "Bu/TT, then auto HSCT", "BuTT"
+    "BuTTthenautoHSCT", "Bu/TT", "BuTT_then_auto_HSCT", "BuTT", "Bu/TT, then auto HSCT"
 ];
 
 define final BuTTthenautoHSCTRegimen:

@@ -128,7 +128,7 @@ define  MeperidineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "bioCT", "CVD, IL-2, IFN alfa-2b", "CVD, IL-2, IFN alfa-2b - sequential biochemotherapy"
+    "CVD, IL-2, IFN alfa-2b", "CVD, IL-2, IFN alfa-2b - sequential biochemotherapy", "bioCT", "CVD_IL-2_IFN_alfa-2b_-_sequential_biochemotherapy", "CVDIL2IFNalfa2b", "CVDIL2IFNalfa2bsequentialbiochemotherapy", "CVD_IL-2_IFN_alfa-2b"
 ];
 
 define final CVDIL2IFNalfa2bsequentialbiochemotherapyRegimen:

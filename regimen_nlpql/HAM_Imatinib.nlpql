@@ -51,7 +51,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HAM / Imatinib", "HAM_Imatinib", "HAM & Imatinib", "HAM/Imatinib", "HAMImatinib", "HAM and Imatinib"
+    "HAM/Imatinib", "HAM & Imatinib", "HAM / Imatinib", "HAM and Imatinib", "HAM_Imatinib", "HAMImatinib"
 ];
 
 define final HAMImatinibRegimen:

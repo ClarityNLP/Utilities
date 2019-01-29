@@ -40,7 +40,7 @@ define  BleomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bleomycin & Cisplatin"
+    "BleomycinCisplatin", "Bleomycin_Cisplatin", "Bleomycin & Cisplatin"
 ];
 
 define final BleomycinCisplatinRegimen:

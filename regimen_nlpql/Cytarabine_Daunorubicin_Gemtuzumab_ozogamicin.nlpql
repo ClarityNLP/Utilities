@@ -51,7 +51,7 @@ define  GemtuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Daunorubicin, Gemtuzumab ozogamicin"
+    "Cytarabine, Daunorubicin, Gemtuzumab ozogamicin", "Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin", "CytarabineDaunorubicinGemtuzumabozogamicin"
 ];
 
 define final CytarabineDaunorubicinGemtuzumabozogamicinRegimen:

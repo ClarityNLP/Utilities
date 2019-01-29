@@ -29,7 +29,7 @@ define final MycophenolatemofetilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mycophenolate mofetil monotherapy"
+    "Mycophenolate mofetil monotherapy", "Mycophenolatemofetilmonotherapy", "Mycophenolate_mofetil_monotherapy", "Mycophenolate mofetil"
 ];
 
 define final MycophenolatemofetilmonotherapyRegimen:

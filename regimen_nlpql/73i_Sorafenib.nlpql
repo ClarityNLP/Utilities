@@ -51,7 +51,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "73i_Sorafenib", "7+3i & Sorafenib", "7+3i / Sorafenib", "7 & 3i & Sorafenib", "7/3i & Sorafenib", "73iSorafenib", "73i & Sorafenib", "7&3i & Sorafenib", "7 and 3i & Sorafenib", "7+3i/Sorafenib", "7 / 3i & Sorafenib", "7+3i and Sorafenib"
+    "73i & Sorafenib", "7+3i and Sorafenib", "7 & 3i & Sorafenib", "73iSorafenib", "7 and 3i & Sorafenib", "73i_Sorafenib", "7&3i & Sorafenib", "7 / 3i & Sorafenib", "7+3i / Sorafenib", "7/3i & Sorafenib", "7+3i/Sorafenib", "7+3i & Sorafenib"
 ];
 
 define final 73iSorafenibRegimen:

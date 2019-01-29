@@ -51,7 +51,7 @@ define  AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Busulfan, ATG"
+    "Fludarabine, Busulfan, ATG", "Fludarabine_Busulfan_ATG", "FludarabineBusulfanATG"
 ];
 
 define final FludarabineBusulfanATGRegimen:

@@ -40,7 +40,7 @@ define  ErythromycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eculizumab monotherapy"
+    "Eculizumabmonotherapy", "Eculizumab_monotherapy", "Eculizumab", "Eculizumab monotherapy"
 ];
 
 define final EculizumabmonotherapyRegimen:

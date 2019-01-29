@@ -29,7 +29,7 @@ define final ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chlorambucil monotherapy"
+    "Chlorambucil monotherapy", "Chlorambucil_monotherapy", "Chlorambucil", "Chlorambucilmonotherapy"
 ];
 
 define final ChlorambucilmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final ChlorambucilmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Follicular_lymphoma, Waldenstrom_macroglobulinemia, Marginal_zone_lymphoma
 
 
 ***/

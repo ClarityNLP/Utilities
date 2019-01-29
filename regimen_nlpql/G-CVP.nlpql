@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "G-CVP", "GCVP", "G/CVP"
+    "G-CVP", "G/CVP", "GCVP"
 ];
 
 define final GCVPRegimen:

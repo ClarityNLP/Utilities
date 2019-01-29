@@ -40,7 +40,7 @@ define  VemurafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cobimetinib & Vemurafenib"
+    "Cobimetinib_Vemurafenib", "CobimetinibVemurafenib", "Cobimetinib & Vemurafenib"
 ];
 
 define final CobimetinibVemurafenibRegimen:

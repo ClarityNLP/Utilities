@@ -29,7 +29,7 @@ define final Peginterferonalfa2bTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Peginterferon alfa-2b monotherapy"
+    "Peginterferon alfa-2b monotherapy", "Peginterferon_alfa-2b_monotherapy", "Peginterferon alfa-2b", "Peginterferonalfa2bmonotherapy"
 ];
 
 define final Peginterferonalfa2bmonotherapyRegimen:

@@ -40,7 +40,7 @@ define  EncorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib & Encorafenib"
+    "Binimetinib_Encorafenib", "Binimetinib & Encorafenib", "BinimetinibEncorafenib"
 ];
 
 define final BinimetinibEncorafenibRegimen:

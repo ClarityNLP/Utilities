@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinRT", "Carboplatin / RT", "Carboplatin/RT", "Carboplatin_RT", "Carboplatin & RT", "RT", "Carboplatin and RT"
+    "Carboplatin/RT", "Carboplatin and RT", "RT", "Carboplatin / RT", "CarboplatinRT", "Carboplatin_RT", "Carboplatin & RT"
 ];
 
 define final CarboplatinRTRegimen:
@@ -63,7 +63,7 @@ define final CarboplatinRTTreatments:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Cervical_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
+Known regimen for: Non-small_cell_lung_cancer, Head_and_neck_cancer, Cervical_cancer, Nasopharyngeal_carcinoma
 
 
 ***/

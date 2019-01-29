@@ -29,7 +29,7 @@ define final RamucirumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ramucirumab monotherapy"
+    "Ramucirumab monotherapy", "Ramucirumab_monotherapy", "Ramucirumabmonotherapy", "Ramucirumab"
 ];
 
 define final RamucirumabmonotherapyRegimen:

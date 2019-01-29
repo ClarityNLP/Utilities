@@ -29,7 +29,7 @@ define final SiltuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Siltuximab monotherapy"
+    "Siltuximab monotherapy", "Siltuximab", "Siltuximabmonotherapy", "Siltuximab_monotherapy"
 ];
 
 define final SiltuximabmonotherapyRegimen:

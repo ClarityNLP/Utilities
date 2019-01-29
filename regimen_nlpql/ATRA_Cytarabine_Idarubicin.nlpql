@@ -51,7 +51,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA, Cytarabine, Idarubicin"
+    "ATRA, Cytarabine, Idarubicin", "ATRACytarabineIdarubicin", "ATRA_Cytarabine_Idarubicin"
 ];
 
 define final ATRACytarabineIdarubicinRegimen:

@@ -40,7 +40,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PEP/C", "PEPC", "PEP-C"
+    "PEPC", "PEP/C", "PEP-C"
 ];
 
 define final PEPCRegimen:

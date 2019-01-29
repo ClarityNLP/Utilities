@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GEMOX-B", "GEMOXB", "GEMOX/B"
+    "GEMOX-B", "GEMOX/B", "GEMOXB"
 ];
 
 define final GEMOXBRegimen:

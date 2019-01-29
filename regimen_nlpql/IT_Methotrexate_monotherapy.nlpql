@@ -29,7 +29,7 @@ define final MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Methotrexate monotherapy"
+    "ITMethotrexatemonotherapy", "IT Methotrexate monotherapy", "IT_Methotrexate_monotherapy", "IT Methotrexate"
 ];
 
 define final ITMethotrexatemonotherapyRegimen:

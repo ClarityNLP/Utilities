@@ -29,7 +29,7 @@ define final ForodesineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Forodesine monotherapy"
+    "Forodesine_monotherapy", "Forodesine monotherapy", "Forodesinemonotherapy", "Forodesine"
 ];
 
 define final ForodesinemonotherapyRegimen:

@@ -29,7 +29,7 @@ define final PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pemetrexed monotherapy"
+    "Pemetrexed_monotherapy", "Pemetrexedmonotherapy", "Pemetrexed monotherapy", "Pemetrexed"
 ];
 
 define final PemetrexedmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final PemetrexedmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Bladder_cancer, Ovarian_cancer, Non-small_cell_lung_cancer, Mesothelioma
+Known regimen for: Ovarian_cancer, Mesothelioma, Bladder_cancer, Cervical_cancer, Non-small_cell_lung_cancer
 
 
 ***/

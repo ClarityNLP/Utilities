@@ -40,7 +40,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DEB/TACE", "DEB-TACE", "DEBTACE"
+    "DEBTACE", "DEB-TACE", "DEB/TACE"
 ];
 
 define final DEBTACERegimen:

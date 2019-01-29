@@ -95,7 +95,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VTD-PACE", "VTDPACE", "VTD/PACE"
+    "VTDPACE", "VTD-PACE", "VTD/PACE"
 ];
 
 define final VTDPACERegimen:

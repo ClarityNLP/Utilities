@@ -29,7 +29,7 @@ define final BrigatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brigatinib monotherapy"
+    "Brigatinib_monotherapy", "Brigatinib monotherapy", "Brigatinib", "Brigatinibmonotherapy"
 ];
 
 define final BrigatinibmonotherapyRegimen:

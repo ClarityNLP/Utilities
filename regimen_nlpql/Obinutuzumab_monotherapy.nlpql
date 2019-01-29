@@ -29,7 +29,7 @@ define final ObinutuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Obinutuzumab monotherapy"
+    "Obinutuzumab_monotherapy", "Obinutuzumab monotherapy", "Obinutuzumab", "Obinutuzumabmonotherapy"
 ];
 
 define final ObinutuzumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final ObinutuzumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Mantle_cell_lymphoma
+Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

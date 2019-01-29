@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Vinorelbine, RT"
+    "Carboplatin_Vinorelbine_RT", "Carboplatin, Vinorelbine, RT", "CarboplatinVinorelbineRT"
 ];
 
 define final CarboplatinVinorelbineRTRegimen:

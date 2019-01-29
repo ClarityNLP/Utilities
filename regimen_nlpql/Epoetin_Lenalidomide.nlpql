@@ -29,7 +29,7 @@ define final LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Epoetin & Lenalidomide"
+    "Epoetin_Lenalidomide", "Epoetin & Lenalidomide", "EpoetinLenalidomide"
 ];
 
 define final EpoetinLenalidomideRegimen:

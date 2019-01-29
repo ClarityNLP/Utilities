@@ -40,7 +40,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea & Imatinib"
+    "Hydroxyurea_Imatinib", "Hydroxyurea & Imatinib", "HydroxyureaImatinib"
 ];
 
 define final HydroxyureaImatinibRegimen:

@@ -40,7 +40,7 @@ define  AldesleukinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2a & Interleukin-2"
+    "Interferonalfa2aInterleukin2", "Interferon alfa-2a & Interleukin-2", "Interferon_alfa-2a_Interleukin-2"
 ];
 
 define final Interferonalfa2aInterleukin2Regimen:

@@ -40,7 +40,7 @@ define  CategoryCyclosporinesTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Rabbit) & Cyclosporine"
+    "ATGRabbitCyclosporine", "ATG (Rabbit) & Cyclosporine", "ATG_Rabbit_Cyclosporine"
 ];
 
 define final ATGRabbitCyclosporineRegimen:

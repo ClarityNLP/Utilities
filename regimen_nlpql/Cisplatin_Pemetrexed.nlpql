@@ -40,7 +40,7 @@ define  PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Pemetrexed"
+    "Cisplatin_Pemetrexed", "CisplatinPemetrexed", "Cisplatin & Pemetrexed"
 ];
 
 define final CisplatinPemetrexedRegimen:

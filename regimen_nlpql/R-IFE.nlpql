@@ -51,7 +51,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-IFE", "R/IFE", "RIFE"
+    "R/IFE", "RIFE", "R-IFE"
 ];
 
 define final RIFERegimen:

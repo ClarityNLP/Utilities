@@ -51,7 +51,7 @@ define  VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Vorinostat"
+    "Methotrexate, Tacrolimus, Vorinostat", "MethotrexateTacrolimusVorinostat", "Methotrexate_Tacrolimus_Vorinostat"
 ];
 
 define final MethotrexateTacrolimusVorinostatRegimen:

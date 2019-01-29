@@ -29,7 +29,7 @@ define final CapecitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, then Capecitabine & RT, then Capecitabine", "RT"
+    "CapecitabinethenCapecitabineRTthenCapecitabine", "Capecitabine_then_Capecitabine_RT_then_Capecitabine", "Capecitabine, then Capecitabine & RT, then Capecitabine", "RT"
 ];
 
 define final CapecitabinethenCapecitabineRTthenCapecitabineRegimen:

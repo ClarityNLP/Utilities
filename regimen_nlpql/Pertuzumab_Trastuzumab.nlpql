@@ -40,7 +40,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pertuzumab & Trastuzumab"
+    "PertuzumabTrastuzumab", "Pertuzumab_Trastuzumab", "Pertuzumab & Trastuzumab"
 ];
 
 define final PertuzumabTrastuzumabRegimen:
@@ -63,7 +63,7 @@ define final PertuzumabTrastuzumabTreatments:
 // Comments
 /***
 
-Known regimen for: ERBB2_(HER2), Breast_cancer_HER2-positive
+Known regimen for: Breast_cancer_HER2-positive, ERBB2_(HER2)
 
 
 ***/

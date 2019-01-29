@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT_then_Carmustine", "RT, then Carmustine", "RTthenCarmustine"
+    "RT, then Carmustine", "RT_then_Carmustine", "RTthenCarmustine"
 ];
 
 define final RTthenCarmustineRegimen:

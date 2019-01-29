@@ -29,7 +29,7 @@ define final TamibaroteneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamibarotene monotherapy"
+    "Tamibarotenemonotherapy", "Tamibarotene_monotherapy", "Tamibarotene monotherapy", "Tamibarotene"
 ];
 
 define final TamibarotenemonotherapyRegimen:

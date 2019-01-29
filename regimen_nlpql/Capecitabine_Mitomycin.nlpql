@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Mitomycin"
+    "Capecitabine_Mitomycin", "CapecitabineMitomycin", "Capecitabine & Mitomycin"
 ];
 
 define final CapecitabineMitomycinRegimen:

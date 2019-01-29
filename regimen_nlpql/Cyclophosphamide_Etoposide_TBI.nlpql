@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide, Etoposide, TBI"
+    "Cyclophosphamide, Etoposide, TBI", "Cyclophosphamide_Etoposide_TBI", "CyclophosphamideEtoposideTBI"
 ];
 
 define final CyclophosphamideEtoposideTBIRegimen:

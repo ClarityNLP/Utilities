@@ -29,7 +29,7 @@ define final PentostatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pentostatin monotherapy"
+    "Pentostatin_monotherapy", "Pentostatinmonotherapy", "Pentostatin", "Pentostatin monotherapy"
 ];
 
 define final PentostatinmonotherapyRegimen:

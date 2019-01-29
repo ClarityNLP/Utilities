@@ -51,7 +51,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Etoposide, Irinotecan"
+    "Cisplatin, Etoposide, Irinotecan", "CisplatinEtoposideIrinotecan", "Cisplatin_Etoposide_Irinotecan"
 ];
 
 define final CisplatinEtoposideIrinotecanRegimen:

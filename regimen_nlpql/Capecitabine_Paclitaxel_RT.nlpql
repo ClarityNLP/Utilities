@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Paclitaxel, RT", "RT"
+    "CapecitabinePaclitaxelRT", "Capecitabine, Paclitaxel, RT", "RT", "Capecitabine_Paclitaxel_RT"
 ];
 
 define final CapecitabinePaclitaxelRTRegimen:

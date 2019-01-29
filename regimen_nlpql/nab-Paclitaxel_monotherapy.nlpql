@@ -29,7 +29,7 @@ define final PaclitaxelnanoparticlealbuminboundTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "nab-Paclitaxel monotherapy"
+    "nab-Paclitaxel_monotherapy", "nabPaclitaxelmonotherapy", "nab-Paclitaxel", "nab-Paclitaxel monotherapy"
 ];
 
 define final nabPaclitaxelmonotherapyRegimen:

@@ -29,7 +29,7 @@ define final AlectinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alectinib monotherapy"
+    "Alectinibmonotherapy", "Alectinib monotherapy", "Alectinib", "Alectinib_monotherapy"
 ];
 
 define final AlectinibmonotherapyRegimen:

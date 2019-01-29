@@ -29,7 +29,7 @@ define final IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ifosfamide monotherapy"
+    "Ifosfamidemonotherapy", "Ifosfamide_monotherapy", "Ifosfamide monotherapy", "Ifosfamide"
 ];
 
 define final IfosfamidemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final IfosfamidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Endometrial_cancer, Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Thymoma, Soft_tissue_sarcoma
+Known regimen for: Small_cell_lung_cancer, Thymoma, Diffuse_large_B-cell_lymphoma, Endometrial_cancer, Cervical_cancer, Soft_tissue_sarcoma
 
 
 ***/

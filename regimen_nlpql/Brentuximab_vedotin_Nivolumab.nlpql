@@ -40,7 +40,7 @@ define  NivolumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab vedotin & Nivolumab"
+    "Brentuximab_vedotin_Nivolumab", "Brentuximab vedotin & Nivolumab", "BrentuximabvedotinNivolumab"
 ];
 
 define final BrentuximabvedotinNivolumabRegimen:

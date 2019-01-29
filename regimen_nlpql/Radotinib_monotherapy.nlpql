@@ -29,7 +29,7 @@ define final RadotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Radotinib monotherapy"
+    "Radotinibmonotherapy", "Radotinib", "Radotinib_monotherapy", "Radotinib monotherapy"
 ];
 
 define final RadotinibmonotherapyRegimen:

@@ -73,7 +73,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib"
+    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib", "DaunorubicinLAsparaginaseVincristinePrednisoneImatinib", "Daunorubicin_L-Asparaginase_Vincristine_Prednisone_Imatinib"
 ];
 
 define final DaunorubicinLAsparaginaseVincristinePrednisoneImatinibRegimen:

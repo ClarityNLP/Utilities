@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BCNU/TT", "BCNUTT"
+    "BCNUTT", "BCNU/TT"
 ];
 
 define final BCNUTTRegimen:

@@ -29,7 +29,7 @@ define final PipobromanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pipobroman monotherapy"
+    "Pipobroman monotherapy", "Pipobroman", "Pipobroman_monotherapy", "Pipobromanmonotherapy"
 ];
 
 define final PipobromanmonotherapyRegimen:

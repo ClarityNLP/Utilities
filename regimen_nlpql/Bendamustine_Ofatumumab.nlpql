@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BendOfa", "Bendamustine & Ofatumumab"
+    "BendamustineOfatumumab", "BendOfa", "Bendamustine & Ofatumumab", "Bendamustine_Ofatumumab"
 ];
 
 define final BendamustineOfatumumabRegimen:

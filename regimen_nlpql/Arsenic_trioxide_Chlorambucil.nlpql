@@ -40,7 +40,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide & Chlorambucil"
+    "ArsenictrioxideChlorambucil", "Arsenic_trioxide_Chlorambucil", "Arsenic trioxide & Chlorambucil"
 ];
 
 define final ArsenictrioxideChlorambucilRegimen:

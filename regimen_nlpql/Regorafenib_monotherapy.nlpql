@@ -29,7 +29,7 @@ define final RegorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Regorafenib monotherapy"
+    "Regorafenib", "Regorafenibmonotherapy", "Regorafenib_monotherapy", "Regorafenib monotherapy"
 ];
 
 define final RegorafenibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final RegorafenibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Renal_cell_carcinoma, Soft_tissue_sarcoma, Gastrointestinal_stromal_tumor, Hepatocellular_carcinoma, Gastric_cancer
+Known regimen for: Hepatocellular_carcinoma, Gastrointestinal_stromal_tumor, Colon_cancer, Renal_cell_carcinoma, Soft_tissue_sarcoma, Gastric_cancer
 
 
 ***/

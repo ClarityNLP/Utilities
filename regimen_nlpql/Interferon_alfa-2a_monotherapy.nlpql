@@ -29,7 +29,7 @@ define final Interferonalfa2aTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2a monotherapy"
+    "Interferon alfa-2a monotherapy", "Interferon alfa-2a", "Interferon_alfa-2a_monotherapy", "Interferonalfa2amonotherapy"
 ];
 
 define final Interferonalfa2amonotherapyRegimen:

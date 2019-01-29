@@ -62,7 +62,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Corticosteroids, Rituximab"
+    "CyclosporineCorticosteroidsRituximab", "Cyclosporine, Corticosteroids, Rituximab", "Cyclosporine_Corticosteroids_Rituximab"
 ];
 
 define final CyclosporineCorticosteroidsRituximabRegimen:

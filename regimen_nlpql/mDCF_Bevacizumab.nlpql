@@ -73,7 +73,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mDCF / Bevacizumab", "mDCF", "mDCF and Bevacizumab", "mDCF & Bevacizumab", "mDCF/Bevacizumab", "mDCFBevacizumab", "mDCF_Bevacizumab"
+    "mDCF / Bevacizumab", "mDCFBevacizumab", "mDCF", "mDCF/Bevacizumab", "mDCF_Bevacizumab", "mDCF & Bevacizumab", "mDCF and Bevacizumab"
 ];
 
 define final mDCFBevacizumabRegimen:

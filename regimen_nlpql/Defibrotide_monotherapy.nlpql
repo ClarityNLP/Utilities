@@ -29,7 +29,7 @@ define final DefibrotideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Defibrotide monotherapy"
+    "Defibrotide monotherapy", "Defibrotide", "Defibrotide_monotherapy", "Defibrotidemonotherapy"
 ];
 
 define final DefibrotidemonotherapyRegimen:

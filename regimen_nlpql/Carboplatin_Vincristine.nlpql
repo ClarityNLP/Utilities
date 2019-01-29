@@ -40,7 +40,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Vincristine", "CV", "VC"
+    "CarboplatinVincristine", "VC", "Carboplatin_Vincristine", "Carboplatin & Vincristine", "CV"
 ];
 
 define final CarboplatinVincristineRegimen:

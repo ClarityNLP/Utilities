@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-B", "RB", "BR", "R/B"
+    "BR", "R/B", "R-B", "RB"
 ];
 
 define final BRRegimen:
@@ -63,7 +63,7 @@ define final BRTreatments:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Hairy_cell_leukemia, Cold_agglutinin_disease, Waldenstrom_macroglobulinemia, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Cold_agglutinin_disease, Waldenstrom_macroglobulinemia
 
 
 ***/

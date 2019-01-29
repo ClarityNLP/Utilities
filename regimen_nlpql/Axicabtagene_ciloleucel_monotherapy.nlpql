@@ -40,7 +40,7 @@ define  DiphenhydramineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axicabtagene ciloleucel monotherapy"
+    "Axicabtagene ciloleucel", "Axicabtageneciloleucelmonotherapy", "Axicabtagene_ciloleucel_monotherapy", "Axicabtagene ciloleucel monotherapy"
 ];
 
 define final AxicabtageneciloleucelmonotherapyRegimen:
@@ -63,7 +63,7 @@ define final AxicabtageneciloleucelmonotherapyTreatments:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Primary_mediastinal_B-cell_lymphoma, Diffuse_large_B-cell_lymphoma, Transformed_lymphoma
 
 
 ***/

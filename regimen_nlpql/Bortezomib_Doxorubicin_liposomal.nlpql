@@ -40,7 +40,7 @@ define  PegylatedliposomaldoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Doxorubicin liposomal"
+    "Bortezomib & Doxorubicin liposomal", "Bortezomib_Doxorubicin_liposomal", "BortezomibDoxorubicinliposomal"
 ];
 
 define final BortezomibDoxorubicinliposomalRegimen:

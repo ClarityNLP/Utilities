@@ -40,7 +40,7 @@ define  VenetoclaxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LoDAC / Venetoclax", "LoDAC_Venetoclax", "LoDAC/Venetoclax", "LoDAC & Venetoclax", "LoDACVenetoclax", "LoDAC and Venetoclax"
+    "LoDAC / Venetoclax", "LoDAC/Venetoclax", "LoDAC & Venetoclax", "LoDACVenetoclax", "LoDAC and Venetoclax", "LoDAC_Venetoclax"
 ];
 
 define final LoDACVenetoclaxRegimen:

@@ -62,7 +62,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCMD", "R/CMD", "R-CMD"
+    "R-CMD", "R/CMD", "RCMD"
 ];
 
 define final RCMDRegimen:

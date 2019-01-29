@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Docetaxel, Fluorouracil"
+    "Carboplatin_Docetaxel_Fluorouracil", "Carboplatin, Docetaxel, Fluorouracil", "CarboplatinDocetaxelFluorouracil"
 ];
 
 define final CarboplatinDocetaxelFluorouracilRegimen:

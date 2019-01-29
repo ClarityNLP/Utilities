@@ -95,7 +95,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MABCDAP", "MA-BCD/AP", "MA-BCDAP", "MABCD/AP", "MA/BCD/AP"
+    "MABCDAP", "MABCD/AP", "MA-BCD/AP", "MA/BCD/AP", "MA-BCDAP"
 ];
 
 define final MABCDAPRegimen:

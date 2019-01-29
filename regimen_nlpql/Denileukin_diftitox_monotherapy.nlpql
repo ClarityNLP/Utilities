@@ -29,7 +29,7 @@ define final DenileukindiftitoxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Denileukin diftitox monotherapy"
+    "Denileukin diftitox monotherapy", "Denileukin diftitox", "Denileukindiftitoxmonotherapy", "Denileukin_diftitox_monotherapy"
 ];
 
 define final DenileukindiftitoxmonotherapyRegimen:

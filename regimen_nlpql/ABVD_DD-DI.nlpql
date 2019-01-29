@@ -62,7 +62,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABVD, DD/DI", "ABVD_DD-DI", "ABVDDDDI", "ABVD, DD-DI", "ABVD, DDDI"
+    "ABVD_DD-DI", "ABVD, DD-DI", "ABVDDDDI", "ABVD, DD/DI", "ABVD, DDDI"
 ];
 
 define final ABVDDDDIRegimen:

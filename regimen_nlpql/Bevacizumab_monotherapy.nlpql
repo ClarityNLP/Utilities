@@ -29,7 +29,7 @@ define final BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab monotherapy"
+    "Bevacizumabmonotherapy", "Bevacizumab monotherapy", "Bevacizumab", "Bevacizumab_monotherapy"
 ];
 
 define final BevacizumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final BevacizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Anaplastic_glioma, Endometrial_cancer, Vascular_sarcoma, Colon_cancer, Ovarian_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer, Small_cell_lung_cancer, Breast_cancer, Glioblastoma, Hepatocellular_carcinoma
+Known regimen for: Non-small_cell_lung_cancer, Hepatocellular_carcinoma, Ovarian_cancer, Breast_cancer, Glioblastoma, Small_cell_lung_cancer, Colon_cancer, Renal_cell_carcinoma, Endometrial_cancer, Cervical_cancer, Vascular_sarcoma, Anaplastic_glioma
 
 
 ***/

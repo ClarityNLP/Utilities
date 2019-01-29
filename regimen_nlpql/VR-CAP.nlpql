@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VR-CAP", "VR/CAP", "VRCAP"
+    "VRCAP", "VR/CAP", "VR-CAP"
 ];
 
 define final VRCAPRegimen:

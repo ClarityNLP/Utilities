@@ -29,7 +29,7 @@ define final DactinomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dactinomycin monotherapy"
+    "Dactinomycin monotherapy", "Dactinomycin_monotherapy", "Dactinomycinmonotherapy", "Dactinomycin"
 ];
 
 define final DactinomycinmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final DactinomycinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Gestational_trophoblastic_neoplasia, Endometrial_cancer, Wilms_tumor
+Known regimen for: Wilms_tumor, Endometrial_cancer, Gestational_trophoblastic_neoplasia
 
 
 ***/

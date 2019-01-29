@@ -29,7 +29,7 @@ define final LepirudinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lepirudin monotherapy"
+    "Lepirudinmonotherapy", "Lepirudin monotherapy", "Lepirudin", "Lepirudin_monotherapy"
 ];
 
 define final LepirudinmonotherapyRegimen:

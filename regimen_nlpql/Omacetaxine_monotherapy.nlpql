@@ -40,7 +40,7 @@ define  DarbepoetinalfaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Omacetaxine monotherapy"
+    "Omacetaxine_monotherapy", "Omacetaxine monotherapy", "Omacetaxine", "Omacetaxinemonotherapy"
 ];
 
 define final OmacetaxinemonotherapyRegimen:

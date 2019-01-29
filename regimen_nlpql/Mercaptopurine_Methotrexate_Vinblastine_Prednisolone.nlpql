@@ -62,7 +62,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mercaptopurine, Methotrexate, Vinblastine, Prednisolone"
+    "Mercaptopurine, Methotrexate, Vinblastine, Prednisolone", "MercaptopurineMethotrexateVinblastinePrednisolone", "Mercaptopurine_Methotrexate_Vinblastine_Prednisolone"
 ];
 
 define final MercaptopurineMethotrexateVinblastinePrednisoloneRegimen:

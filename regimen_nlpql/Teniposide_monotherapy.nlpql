@@ -29,7 +29,7 @@ define final TeniposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Teniposide monotherapy"
+    "Teniposide_monotherapy", "Teniposidemonotherapy", "Teniposide monotherapy", "Teniposide"
 ];
 
 define final TeniposidemonotherapyRegimen:

@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOEP14", "CHOEP-14", "CHOEP/14"
+    "CHOEP-14", "CHOEP/14", "CHOEP14"
 ];
 
 define final CHOEP14Regimen:

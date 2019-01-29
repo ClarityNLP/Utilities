@@ -29,7 +29,7 @@ define final AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG", "ATG (Rabbit) monotherapy"
+    "ATG_Rabbit_monotherapy", "ATGRabbitmonotherapy", "ATG (Rabbit) monotherapy", "ATG", "ATG (Rabbit)"
 ];
 
 define final ATGRabbitmonotherapyRegimen:

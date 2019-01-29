@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab & Rituximab"
+    "Bevacizumab_Rituximab", "Bevacizumab & Rituximab", "BevacizumabRituximab"
 ];
 
 define final BevacizumabRituximabRegimen:

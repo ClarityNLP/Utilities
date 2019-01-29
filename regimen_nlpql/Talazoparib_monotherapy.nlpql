@@ -29,7 +29,7 @@ define final TalazoparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Talazoparib monotherapy"
+    "Talazoparib", "Talazoparibmonotherapy", "Talazoparib_monotherapy", "Talazoparib monotherapy"
 ];
 
 define final TalazoparibmonotherapyRegimen:

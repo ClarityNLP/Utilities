@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine, Oxaliplatin, Paclitaxel", "GOP"
+    "GemcitabineOxaliplatinPaclitaxel", "Gemcitabine, Oxaliplatin, Paclitaxel", "GOP", "Gemcitabine_Oxaliplatin_Paclitaxel"
 ];
 
 define final GemcitabineOxaliplatinPaclitaxelRegimen:

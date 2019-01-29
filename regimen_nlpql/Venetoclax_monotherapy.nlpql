@@ -29,7 +29,7 @@ define final VenetoclaxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Venetoclax monotherapy"
+    "Venetoclax_monotherapy", "Venetoclaxmonotherapy", "Venetoclax", "Venetoclax monotherapy"
 ];
 
 define final VenetoclaxmonotherapyRegimen:

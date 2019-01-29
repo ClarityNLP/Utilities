@@ -29,7 +29,7 @@ define final RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rituximab monotherapy, extended course"
+    "Rituximab, extended course", "Rituximabmonotherapyextendedcourse", "Rituximab monotherapy, extended course", "Rituximab_monotherapy_extended_course"
 ];
 
 define final RituximabmonotherapyextendedcourseRegimen:

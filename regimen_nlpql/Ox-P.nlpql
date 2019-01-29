@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ox/P", "Ox-P", "OxP"
+    "Ox-P", "OxP", "Ox/P"
 ];
 
 define final OxPRegimen:

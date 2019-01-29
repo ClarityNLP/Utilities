@@ -40,7 +40,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Panobinostat"
+    "BortezomibPanobinostat", "Bortezomib & Panobinostat", "Bortezomib_Panobinostat"
 ];
 
 define final BortezomibPanobinostatRegimen:

@@ -29,7 +29,7 @@ define final DabigatranTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabigatran monotherapy"
+    "Dabigatranmonotherapy", "Dabigatran monotherapy", "Dabigatran", "Dabigatran_monotherapy"
 ];
 
 define final DabigatranmonotherapyRegimen:

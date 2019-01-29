@@ -40,7 +40,7 @@ define  ObinutuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib & Obinutuzumab"
+    "Ibrutinib_Obinutuzumab", "Ibrutinib & Obinutuzumab", "IbrutinibObinutuzumab"
 ];
 
 define final IbrutinibObinutuzumabRegimen:

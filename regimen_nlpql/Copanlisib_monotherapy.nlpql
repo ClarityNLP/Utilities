@@ -29,7 +29,7 @@ define final CopanlisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Copanlisib monotherapy"
+    "Copanlisib", "Copanlisib_monotherapy", "Copanlisibmonotherapy", "Copanlisib monotherapy"
 ];
 
 define final CopanlisibmonotherapyRegimen:

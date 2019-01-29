@@ -29,7 +29,7 @@ define final DacomitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacomitinib monotherapy"
+    "Dacomitinib monotherapy", "Dacomitinib", "Dacomitinibmonotherapy", "Dacomitinib_monotherapy"
 ];
 
 define final DacomitinibmonotherapyRegimen:

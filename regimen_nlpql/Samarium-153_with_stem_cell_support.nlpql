@@ -40,7 +40,7 @@ define  SargramostimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Samarium-153 with stem cell support"
+    "Samarium153withstemcellsupport", "Samarium-153 with stem cell support", "Samarium-153_with_stem_cell_support"
 ];
 
 define final Samarium153withstemcellsupportRegimen:

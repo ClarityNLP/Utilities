@@ -29,7 +29,7 @@ define final MoxetumomabpasudotoxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Moxetumomab pasudotox monotherapy"
+    "Moxetumomab pasudotox monotherapy", "Moxetumomab_pasudotox_monotherapy", "Moxetumomab pasudotox", "Moxetumomabpasudotoxmonotherapy"
 ];
 
 define final MoxetumomabpasudotoxmonotherapyRegimen:

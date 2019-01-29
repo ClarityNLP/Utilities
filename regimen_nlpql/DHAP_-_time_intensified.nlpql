@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DHAP - time intensified"
+    "DHAP_-_time_intensified", "DHAPtimeintensified", "DHAP - time intensified"
 ];
 
 define final DHAPtimeintensifiedRegimen:

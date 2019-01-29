@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Anastrozole monotherapy"
+    "Anastrozole", "Anastrozole monotherapy", "Anastrozole_monotherapy", "Anastrozolemonotherapy"
 ];
 
 define final AnastrozolemonotherapyRegimen:

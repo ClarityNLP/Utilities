@@ -40,7 +40,7 @@ define  AtezolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "nab-Paclitaxel & Atezolizumab"
+    "nab-Paclitaxel & Atezolizumab", "nab-Paclitaxel_Atezolizumab", "nabPaclitaxelAtezolizumab"
 ];
 
 define final nabPaclitaxelAtezolizumabRegimen:

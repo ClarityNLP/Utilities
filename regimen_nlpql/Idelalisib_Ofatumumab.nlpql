@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idelalisib & Ofatumumab"
+    "Idelalisib_Ofatumumab", "IdelalisibOfatumumab", "Idelalisib & Ofatumumab"
 ];
 
 define final IdelalisibOfatumumabRegimen:

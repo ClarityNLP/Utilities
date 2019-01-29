@@ -40,7 +40,7 @@ define  DocetaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Docetaxel"
+    "Carboplatin_Docetaxel", "Carboplatin & Docetaxel", "CarboplatinDocetaxel"
 ];
 
 define final CarboplatinDocetaxelRegimen:
@@ -63,7 +63,7 @@ define final CarboplatinDocetaxelTreatments:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Adenocarcinoma_of_unknown_primary, Ovarian_cancer, Breast_cancer_triple_negative, Non-small_cell_lung_cancer, Head_and_neck_cancer, Prostate_cancer
+Known regimen for: Breast_cancer_triple_negative, Ovarian_cancer, Adenocarcinoma_of_unknown_primary, Head_and_neck_cancer, Prostate_cancer, Cervical_cancer, Non-small_cell_lung_cancer
 
 
 ***/

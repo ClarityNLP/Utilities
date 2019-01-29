@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfan/Melphalan", "BusulfanMelphalan", "BuMel", "Busulfan & Melphalan", "Busulfan and Melphalan", "Busulfan / Melphalan", "Busulfan_Melphalan"
+    "Busulfan / Melphalan", "Busulfan & Melphalan", "Busulfan and Melphalan", "BusulfanMelphalan", "Busulfan/Melphalan", "BuMel", "Busulfan_Melphalan"
 ];
 
 define final BusulfanMelphalanRegimen:

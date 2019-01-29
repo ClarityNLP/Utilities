@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Topotecan"
+    "Cyclophosphamide_Topotecan", "CyclophosphamideTopotecan", "Cyclophosphamide & Topotecan"
 ];
 
 define final CyclophosphamideTopotecanRegimen:

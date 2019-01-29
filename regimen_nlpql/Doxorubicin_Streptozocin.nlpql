@@ -40,7 +40,7 @@ define  StreptozocinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin & Streptozocin"
+    "Doxorubicin_Streptozocin", "Doxorubicin & Streptozocin", "DoxorubicinStreptozocin"
 ];
 
 define final DoxorubicinStreptozocinRegimen:

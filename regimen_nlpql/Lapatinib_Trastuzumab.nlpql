@@ -40,7 +40,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lapatinib & Trastuzumab"
+    "Lapatinib_Trastuzumab", "Lapatinib & Trastuzumab", "LapatinibTrastuzumab"
 ];
 
 define final LapatinibTrastuzumabRegimen:

@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCVP", "R-CVP", "R/CVP"
+    "R-CVP", "RCVP", "R/CVP"
 ];
 
 define final RCVPRegimen:
@@ -85,7 +85,7 @@ define final RCVPTreatments:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant
+Known regimen for: Follicular_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Mantle_cell_lymphoma, Marginal_zone_lymphoma
 
 
 ***/

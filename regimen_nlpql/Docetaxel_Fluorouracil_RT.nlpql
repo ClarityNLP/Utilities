@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Docetaxel, Fluorouracil, RT"
+    "Docetaxel, Fluorouracil, RT", "DocetaxelFluorouracilRT", "RT", "Docetaxel_Fluorouracil_RT"
 ];
 
 define final DocetaxelFluorouracilRTRegimen:

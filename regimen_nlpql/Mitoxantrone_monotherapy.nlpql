@@ -29,7 +29,7 @@ define final MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitoxantrone monotherapy"
+    "Mitoxantrone_monotherapy", "Mitoxantrone monotherapy", "Mitoxantronemonotherapy", "Mitoxantrone"
 ];
 
 define final MitoxantronemonotherapyRegimen:

@@ -40,7 +40,7 @@ define  PegylatedliposomaldoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Doxorubicin liposomal"
+    "Carboplatin & Doxorubicin liposomal", "Carboplatin_Doxorubicin_liposomal", "CarboplatinDoxorubicinliposomal"
 ];
 
 define final CarboplatinDoxorubicinliposomalRegimen:
@@ -63,7 +63,7 @@ define final CarboplatinDoxorubicinliposomalTreatments:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Endometrial_cancer
+Known regimen for: Endometrial_cancer, Ovarian_cancer
 
 
 ***/

@@ -51,7 +51,7 @@ define  GlasdegibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "7 and 3d & Glasdegib", "7+3d and Glasdegib", "7&3d & Glasdegib", "73d & Glasdegib", "7+3d / Glasdegib", "7+3d/Glasdegib", "73d_Glasdegib", "73dGlasdegib", "7 & 3d & Glasdegib", "7 / 3d & Glasdegib", "7/3d & Glasdegib", "7+3d & Glasdegib"
+    "7+3d & Glasdegib", "73d & Glasdegib", "7+3d and Glasdegib", "73d_Glasdegib", "7+3d/Glasdegib", "7+3d / Glasdegib", "7/3d & Glasdegib", "73dGlasdegib", "7&3d & Glasdegib", "7 and 3d & Glasdegib", "7 / 3d & Glasdegib", "7 & 3d & Glasdegib"
 ];
 
 define final 73dGlasdegibRegimen:

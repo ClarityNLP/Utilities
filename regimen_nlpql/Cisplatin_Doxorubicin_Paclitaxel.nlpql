@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Doxorubicin, Paclitaxel", "TAP"
+    "CisplatinDoxorubicinPaclitaxel", "Cisplatin_Doxorubicin_Paclitaxel", "Cisplatin, Doxorubicin, Paclitaxel", "TAP"
 ];
 
 define final CisplatinDoxorubicinPaclitaxelRegimen:

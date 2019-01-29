@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel, Gemcitabine, RT", "RT"
+    "DocetaxelGemcitabineRT", "RT", "Docetaxel_Gemcitabine_RT", "Docetaxel, Gemcitabine, RT"
 ];
 
 define final DocetaxelGemcitabineRTRegimen:

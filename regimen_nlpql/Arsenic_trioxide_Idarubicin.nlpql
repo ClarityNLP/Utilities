@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide & Idarubicin"
+    "ArsenictrioxideIdarubicin", "Arsenic trioxide & Idarubicin", "Arsenic_trioxide_Idarubicin"
 ];
 
 define final ArsenictrioxideIdarubicinRegimen:

@@ -29,7 +29,7 @@ define final DaunorubicinliposomalTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin liposomal monotherapy"
+    "Daunorubicinliposomalmonotherapy", "Daunorubicin liposomal", "Daunorubicin liposomal monotherapy", "Daunorubicin_liposomal_monotherapy"
 ];
 
 define final DaunorubicinliposomalmonotherapyRegimen:

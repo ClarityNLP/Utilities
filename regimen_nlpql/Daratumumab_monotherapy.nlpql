@@ -29,7 +29,7 @@ define final DaratumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daratumumab monotherapy"
+    "Daratumumabmonotherapy", "Daratumumab monotherapy", "Daratumumab", "Daratumumab_monotherapy"
 ];
 
 define final DaratumumabmonotherapyRegimen:

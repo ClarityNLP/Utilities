@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Sirolimus, Prednisone"
+    "Cyclosporine_Sirolimus_Prednisone", "CyclosporineSirolimusPrednisone", "Cyclosporine, Sirolimus, Prednisone"
 ];
 
 define final CyclosporineSirolimusPrednisoneRegimen:

@@ -29,7 +29,7 @@ define final DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dexamethasone monotherapy"
+    "Dexamethasone_monotherapy", "Dexamethasone monotherapy", "Dexamethasonemonotherapy", "Dexamethasone"
 ];
 
 define final DexamethasonemonotherapyRegimen:

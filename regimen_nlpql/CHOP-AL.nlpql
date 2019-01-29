@@ -73,7 +73,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP-AL", "CHOP-C", "CHOP/C", "CHOPC", "CHOP/AL", "CHOPAL"
+    "CHOP/AL", "CHOP-AL", "CHOPC", "CHOP-C", "CHOP/C", "CHOPAL"
 ];
 
 define final CHOPALRegimen:

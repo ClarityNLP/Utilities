@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MPB", "BMP"
+    "BMP", "MPB"
 ];
 
 define final BMPRegimen:

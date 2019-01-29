@@ -51,7 +51,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide, Fludarabine, Thiotepa"
+    "CyclophosphamideFludarabineThiotepa", "Cyclophosphamide_Fludarabine_Thiotepa", "Cyclophosphamide, Fludarabine, Thiotepa"
 ];
 
 define final CyclophosphamideFludarabineThiotepaRegimen:

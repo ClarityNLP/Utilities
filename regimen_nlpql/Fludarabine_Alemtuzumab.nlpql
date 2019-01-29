@@ -40,7 +40,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine & Alemtuzumab"
+    "Fludarabine & Alemtuzumab", "FludarabineAlemtuzumab", "Fludarabine_Alemtuzumab"
 ];
 
 define final FludarabineAlemtuzumabRegimen:

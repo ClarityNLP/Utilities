@@ -40,7 +40,7 @@ define  TrametinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabrafenib & Trametinib"
+    "Dabrafenib_Trametinib", "DabrafenibTrametinib", "Dabrafenib & Trametinib"
 ];
 
 define final DabrafenibTrametinibRegimen:
@@ -63,7 +63,7 @@ define final DabrafenibTrametinibTreatments:
 // Comments
 /***
 
-Known regimen for: BRAF, Melanoma_BRAF-mutated, Thyroid_cancer_BRAF-mutated, Non-small_cell_lung_cancer_BRAF-mutated, CNS_melanoma
+Known regimen for: CNS_melanoma, Non-small_cell_lung_cancer_BRAF-mutated, Melanoma_BRAF-mutated, BRAF, Thyroid_cancer_BRAF-mutated
 
 
 ***/

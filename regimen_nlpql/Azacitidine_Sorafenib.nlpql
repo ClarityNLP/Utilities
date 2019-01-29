@@ -40,7 +40,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine & Sorafenib"
+    "Azacitidine & Sorafenib", "Azacitidine_Sorafenib", "AzacitidineSorafenib"
 ];
 
 define final AzacitidineSorafenibRegimen:

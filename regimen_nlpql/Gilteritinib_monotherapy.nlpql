@@ -29,7 +29,7 @@ define final GilteritinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gilteritinib monotherapy"
+    "Gilteritinib", "Gilteritinibmonotherapy", "Gilteritinib monotherapy", "Gilteritinib_monotherapy"
 ];
 
 define final GilteritinibmonotherapyRegimen:

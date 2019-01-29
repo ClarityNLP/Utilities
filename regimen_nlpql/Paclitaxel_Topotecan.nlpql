@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TP", "Paclitaxel & Topotecan"
+    "PaclitaxelTopotecan", "Paclitaxel_Topotecan", "TP", "Paclitaxel & Topotecan"
 ];
 
 define final PaclitaxelTopotecanRegimen:

@@ -29,7 +29,7 @@ define final RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rituximab monotherapy"
+    "Rituximab_monotherapy", "Rituximab", "Rituximab monotherapy", "Rituximabmonotherapy"
 ];
 
 define final RituximabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final RituximabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Waldenstrom_macroglobulinemia, Castleman_disease, Marginal_zone_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Hairy_cell_leukemia, Inherited_coagulopathy, Cold_agglutinin_disease, Hodgkin_lymphoma, CNS_lymphoma, Acquired_coagulopathy, Mantle_cell_lymphoma, Immune_thrombocytopenia_(ITP), Thrombotic_thrombocytopenic_purpura, HIV-associated_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Inherited_coagulopathy, Castleman_disease, Thrombotic_thrombocytopenic_purpura, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Follicular_lymphoma, Immune_thrombocytopenia_(ITP), HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, CNS_lymphoma, Cold_agglutinin_disease, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Acquired_coagulopathy, Hodgkin_lymphoma, Waldenstrom_macroglobulinemia
 
 
 ***/

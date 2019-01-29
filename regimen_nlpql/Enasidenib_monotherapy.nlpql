@@ -29,7 +29,7 @@ define final EnasidenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Enasidenib monotherapy"
+    "Enasidenib monotherapy", "Enasidenib", "Enasidenib_monotherapy", "Enasidenibmonotherapy"
 ];
 
 define final EnasidenibmonotherapyRegimen:

@@ -40,7 +40,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab vedotin & Dacarbazine"
+    "BrentuximabvedotinDacarbazine", "Brentuximab_vedotin_Dacarbazine", "Brentuximab vedotin & Dacarbazine"
 ];
 
 define final BrentuximabvedotinDacarbazineRegimen:

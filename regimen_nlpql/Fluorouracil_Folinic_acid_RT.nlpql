@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Fluorouracil, Folinic acid, RT"
+    "Fluorouracil, Folinic acid, RT", "Fluorouracil_Folinic_acid_RT", "RT", "FluorouracilFolinicacidRT"
 ];
 
 define final FluorouracilFolinicacidRTRegimen:

@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Oxaliplatin, RT", "RT"
+    "CapecitabineOxaliplatinRT", "Capecitabine, Oxaliplatin, RT", "RT", "Capecitabine_Oxaliplatin_RT"
 ];
 
 define final CapecitabineOxaliplatinRTRegimen:

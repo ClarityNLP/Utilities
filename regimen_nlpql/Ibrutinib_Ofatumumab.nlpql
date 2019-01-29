@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib & Ofatumumab"
+    "Ibrutinib_Ofatumumab", "Ibrutinib & Ofatumumab", "IbrutinibOfatumumab"
 ];
 
 define final IbrutinibOfatumumabRegimen:

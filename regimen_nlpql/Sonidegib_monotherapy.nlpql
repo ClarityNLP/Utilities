@@ -29,7 +29,7 @@ define final SonidegibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sonidegib monotherapy"
+    "Sonidegib_monotherapy", "Sonidegib monotherapy", "Sonidegibmonotherapy", "Sonidegib"
 ];
 
 define final SonidegibmonotherapyRegimen:

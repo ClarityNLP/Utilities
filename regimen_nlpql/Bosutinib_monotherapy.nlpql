@@ -29,7 +29,7 @@ define final BosutinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bosutinib monotherapy"
+    "Bosutinibmonotherapy", "Bosutinib monotherapy", "Bosutinib", "Bosutinib_monotherapy"
 ];
 
 define final BosutinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final BosutinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Chronic_myelogenous_leukemia
 
 
 ***/

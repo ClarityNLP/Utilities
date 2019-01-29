@@ -40,7 +40,7 @@ define  VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Vinorelbine", "VC"
+    "CarboplatinVinorelbine", "Carboplatin_Vinorelbine", "Carboplatin & Vinorelbine", "VC"
 ];
 
 define final CarboplatinVinorelbineRegimen:

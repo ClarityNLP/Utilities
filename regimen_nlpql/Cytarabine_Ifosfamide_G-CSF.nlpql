@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Ifosfamide, G-CSF"
+    "Cytarabine, Ifosfamide, G-CSF", "Cytarabine_Ifosfamide_G-CSF", "CytarabineIfosfamideGCSF"
 ];
 
 define final CytarabineIfosfamideGCSFRegimen:

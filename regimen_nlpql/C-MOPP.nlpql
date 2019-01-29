@@ -62,7 +62,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "COPP", "C-MOPP", "C/MOPP", "CMOPP"
+    "C/MOPP", "C-MOPP", "CMOPP", "COPP"
 ];
 
 define final CMOPPRegimen:

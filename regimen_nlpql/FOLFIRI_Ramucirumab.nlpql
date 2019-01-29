@@ -62,7 +62,7 @@ define  RamucirumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Ramucirumab"
+    "FOLFIRI & Ramucirumab", "FOLFIRIRamucirumab", "FOLFIRI_Ramucirumab"
 ];
 
 define final FOLFIRIRamucirumabRegimen:

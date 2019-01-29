@@ -62,7 +62,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOX6 & Cetuximab", "mFOLFOX6/Cetuximab", "mFOLFOX6 / Cetuximab", "mFOLFOX6Cetuximab", "mFOLFOX6 and Cetuximab", "mFOLFOX6_Cetuximab"
+    "mFOLFOX6 and Cetuximab", "mFOLFOX6/Cetuximab", "mFOLFOX6 & Cetuximab", "mFOLFOX6 / Cetuximab", "mFOLFOX6Cetuximab", "mFOLFOX6_Cetuximab"
 ];
 
 define final mFOLFOX6CetuximabRegimen:
@@ -85,7 +85,7 @@ define final mFOLFOX6CetuximabTreatments:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Colon_cancer_KRAS_wild-type
+Known regimen for: Colon_cancer_KRAS_wild-type, Esophageal_cancer
 
 
 ***/

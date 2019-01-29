@@ -51,7 +51,7 @@ define  AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Cyclophosphamide, ATG"
+    "FludarabineCyclophosphamideATG", "Fludarabine_Cyclophosphamide_ATG", "Fludarabine, Cyclophosphamide, ATG"
 ];
 
 define final FludarabineCyclophosphamideATGRegimen:

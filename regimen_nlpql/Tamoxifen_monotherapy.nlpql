@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamoxifen monotherapy"
+    "Tamoxifen", "Tamoxifenmonotherapy", "Tamoxifen monotherapy", "Tamoxifen_monotherapy"
 ];
 
 define final TamoxifenmonotherapyRegimen:

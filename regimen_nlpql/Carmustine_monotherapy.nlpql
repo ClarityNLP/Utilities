@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustine monotherapy"
+    "Carmustine monotherapy", "Carmustine_monotherapy", "Carmustinemonotherapy", "Carmustine"
 ];
 
 define final CarmustinemonotherapyRegimen:

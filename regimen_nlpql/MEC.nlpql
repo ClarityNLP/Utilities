@@ -51,7 +51,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MICE", "MEC"
+    "MEC", "MICE"
 ];
 
 define final MECRegimen:

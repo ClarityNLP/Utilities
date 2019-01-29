@@ -29,7 +29,7 @@ define final FloxuridineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hepatic arterial chemotherapy"
+    "Hepatic arterial chemotherapy", "Hepaticarterialchemotherapy", "Hepatic_arterial_chemotherapy"
 ];
 
 define final HepaticarterialchemotherapyRegimen:

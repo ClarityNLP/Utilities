@@ -73,7 +73,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/BEAM", "RBEAM", "R-BEAM"
+    "RBEAM", "R/BEAM", "R-BEAM"
 ];
 
 define final RBEAMRegimen:

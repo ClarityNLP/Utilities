@@ -51,7 +51,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Idarubicin, Sorafenib"
+    "Cytarabine_Idarubicin_Sorafenib", "Cytarabine, Idarubicin, Sorafenib", "CytarabineIdarubicinSorafenib"
 ];
 
 define final CytarabineIdarubicinSorafenibRegimen:

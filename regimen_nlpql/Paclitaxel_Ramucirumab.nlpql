@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & Ramucirumab"
+    "Paclitaxel & Ramucirumab", "Paclitaxel_Ramucirumab", "PaclitaxelRamucirumab"
 ];
 
 define final PaclitaxelRamucirumabRegimen:

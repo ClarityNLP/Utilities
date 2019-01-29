@@ -51,7 +51,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Folinic acid, Gemcitabine"
+    "FluorouracilFolinicacidGemcitabine", "Fluorouracil, Folinic acid, Gemcitabine", "Fluorouracil_Folinic_acid_Gemcitabine"
 ];
 
 define final FluorouracilFolinicacidGemcitabineRegimen:

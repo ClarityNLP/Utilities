@@ -40,7 +40,7 @@ define  CategoryCyclosporinesTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse), Cyclosporine, G-CSF"
+    "ATGHorseCyclosporineGCSF", "ATG_Horse_Cyclosporine_G-CSF", "ATG (Horse), Cyclosporine, G-CSF"
 ];
 
 define final ATGHorseCyclosporineGCSFRegimen:

@@ -128,7 +128,7 @@ define  RasburicaseTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper-CVAD & Ponatinib"
+    "Hyper-CVAD_Ponatinib", "HyperCVADPonatinib", "Hyper-CVAD & Ponatinib"
 ];
 
 define final HyperCVADPonatinibRegimen:

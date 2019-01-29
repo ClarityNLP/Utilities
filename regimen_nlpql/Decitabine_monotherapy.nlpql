@@ -29,7 +29,7 @@ define final DecitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Decitabine monotherapy"
+    "Decitabinemonotherapy", "Decitabine monotherapy", "Decitabine_monotherapy", "Decitabine"
 ];
 
 define final DecitabinemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final DecitabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelomonocytic_leukemia, Acute_myeloid_leukemia, Myelodysplastic_syndrome
+Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome, Acute_myeloid_leukemia
 
 
 ***/

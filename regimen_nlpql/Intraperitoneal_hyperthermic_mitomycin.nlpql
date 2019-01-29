@@ -29,7 +29,7 @@ define final MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal hyperthermic mitomycin"
+    "Intraperitoneal_hyperthermic_mitomycin", "Intraperitonealhyperthermicmitomycin", "Intraperitoneal hyperthermic mitomycin"
 ];
 
 define final IntraperitonealhyperthermicmitomycinRegimen:

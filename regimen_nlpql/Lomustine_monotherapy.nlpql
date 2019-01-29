@@ -29,7 +29,7 @@ define final LomustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine monotherapy"
+    "Lomustine_monotherapy", "Lomustine monotherapy", "Lomustine", "Lomustinemonotherapy"
 ];
 
 define final LomustinemonotherapyRegimen:

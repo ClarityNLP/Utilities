@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VAdCA/IE", "VAdCAIE"
+    "VAdCAIE", "VAdCA/IE"
 ];
 
 define final VAdCAIERegimen:

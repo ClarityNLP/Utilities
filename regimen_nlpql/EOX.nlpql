@@ -51,7 +51,7 @@ define  CapecitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EOX", "EOC"
+    "EOC", "EOX"
 ];
 
 define final EOXRegimen:

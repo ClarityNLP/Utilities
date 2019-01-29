@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Etoposide"
+    "Carboplatin_Etoposide", "CarboplatinEtoposide", "Carboplatin & Etoposide"
 ];
 
 define final CarboplatinEtoposideRegimen:
@@ -63,7 +63,7 @@ define final CarboplatinEtoposideTreatments:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
 
 
 ***/

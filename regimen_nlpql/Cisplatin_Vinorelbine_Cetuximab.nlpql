@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Vinorelbine, Cetuximab"
+    "Cisplatin_Vinorelbine_Cetuximab", "CisplatinVinorelbineCetuximab", "Cisplatin, Vinorelbine, Cetuximab"
 ];
 
 define final CisplatinVinorelbineCetuximabRegimen:

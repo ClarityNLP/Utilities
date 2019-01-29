@@ -29,7 +29,7 @@ define final MitotaneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotanemonotherapy", "Mitotane_monotherapy", "Mitotane monotherapy"
+    "Mitotane", "Mitotanemonotherapy", "Mitotane monotherapy", "Mitotane_monotherapy"
 ];
 
 define final MitotanemonotherapyRegimen:

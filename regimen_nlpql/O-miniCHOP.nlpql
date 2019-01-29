@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "OminiCHOP", "O/miniCHOP", "O-miniCHOP"
+    "O-miniCHOP", "OminiCHOP", "O/miniCHOP"
 ];
 
 define final OminiCHOPRegimen:

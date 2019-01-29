@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VEN and R", "VENR", "VEN & R", "VEN / R", "Venetoclax & Rituximab", "VEN&R", "VEN/R", "VEN+R"
+    "VEN+R", "VenetoclaxRituximab", "Venetoclax_Rituximab", "VEN & R", "VENR", "Venetoclax & Rituximab", "VEN and R", "VEN/R", "VEN&R", "VEN / R"
 ];
 
 define final VenetoclaxRituximabRegimen:

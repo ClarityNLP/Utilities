@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOx, Cetuximab, RT", "CapeOX, Cetuximab, RT"
+    "CapeOx_Cetuximab_RT", "CapeOX, Cetuximab, RT", "CapeOX_Cetuximab_RT", "CapeOxCetuximabRT", "CapeOXCetuximabRT", "CapeOx, Cetuximab, RT"
 ];
 
 define final CapeOxCetuximabRTRegimen:

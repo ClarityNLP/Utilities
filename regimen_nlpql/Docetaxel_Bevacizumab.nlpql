@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bev / D", "Docetaxel & Bevacizumab", "Bev&D", "T / Bev", "TBev", "T&Bev", "BevD", "Bev/D", "Bev & D", "Bev+D", "T/Bev", "Bev and D", "T & Bev", "T and Bev", "T+Bev"
+    "T+Bev", "TBev", "Bev & D", "T and Bev", "T&Bev", "Bev and D", "T / Bev", "T/Bev", "Bev / D", "BevD", "T & Bev", "DocetaxelBevacizumab", "Bev&D", "Docetaxel & Bevacizumab", "Bev+D", "Bev/D", "Docetaxel_Bevacizumab"
 ];
 
 define final DocetaxelBevacizumabRegimen:
@@ -63,7 +63,7 @@ define final DocetaxelBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Breast_cancer, Breast_cancer_triple_negative
+Known regimen for: Breast_cancer_triple_negative, Breast_cancer
 
 
 ***/

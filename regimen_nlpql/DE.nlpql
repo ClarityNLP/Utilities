@@ -40,7 +40,7 @@ define  EpirubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ED", "ET", "DE"
+    "ET", "DE", "ED"
 ];
 
 define final DERegimen:

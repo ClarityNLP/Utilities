@@ -40,7 +40,7 @@ define  RamucirumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel & Ramucirumab"
+    "Docetaxel & Ramucirumab", "DocetaxelRamucirumab", "Docetaxel_Ramucirumab"
 ];
 
 define final DocetaxelRamucirumabRegimen:
@@ -63,7 +63,7 @@ define final DocetaxelRamucirumabTreatments:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Non-small_cell_lung_cancer
 
 
 ***/

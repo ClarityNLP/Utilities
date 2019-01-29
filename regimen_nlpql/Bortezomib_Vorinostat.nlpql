@@ -40,7 +40,7 @@ define  VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Vorinostat"
+    "Bortezomib & Vorinostat", "Bortezomib_Vorinostat", "BortezomibVorinostat"
 ];
 
 define final BortezomibVorinostatRegimen:

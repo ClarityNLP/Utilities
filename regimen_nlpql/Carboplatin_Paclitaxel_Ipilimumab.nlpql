@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Paclitaxel, Ipilimumab"
+    "Carboplatin, Paclitaxel, Ipilimumab", "Carboplatin_Paclitaxel_Ipilimumab", "CarboplatinPaclitaxelIpilimumab"
 ];
 
 define final CarboplatinPaclitaxelIpilimumabRegimen:

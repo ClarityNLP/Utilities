@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOX and Bevacizumab", "CapeOx and Bevacizumab", "XELOX and Bevacizumab", "CapeOx / Bevacizumab", "CapeOxBevacizumab", "CAPOXB", "XELOX/Bevacizumab", "CapeOx/Bevacizumab", "XELOX / Bevacizumab", "XELOX_Bevacizumab", "CapeOX / Bevacizumab", "XELOX & Bevacizumab", "XELOXBevacizumab", "CAPOX/B", "CapeOX/Bevacizumab", "CapeOXBevacizumab", "CAPOX-B", "CapeOx_Bevacizumab", "CapeOx & Bevacizumab", "CapeOX & Bevacizumab", "CapeOX_Bevacizumab"
+    "CapeOx & Bevacizumab", "CAPOX-B", "CapeOX/Bevacizumab", "CapeOXBevacizumab", "CapeOX & Bevacizumab", "XELOX / Bevacizumab", "CapeOxBevacizumab", "XELOXBevacizumab", "CAPOXB", "CapeOx and Bevacizumab", "CAPOX/B", "XELOX_Bevacizumab", "CapeOX_Bevacizumab", "CapeOX and Bevacizumab", "CapeOx/Bevacizumab", "XELOX & Bevacizumab", "CapeOx / Bevacizumab", "CapeOX / Bevacizumab", "CapeOx_Bevacizumab", "XELOX and Bevacizumab", "XELOX/Bevacizumab"
 ];
 
 define final CapeOxBevacizumabRegimen:

@@ -40,7 +40,7 @@ define  TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Temozolomide"
+    "IrinotecanTemozolomide", "Irinotecan & Temozolomide", "Irinotecan_Temozolomide"
 ];
 
 define final IrinotecanTemozolomideRegimen:

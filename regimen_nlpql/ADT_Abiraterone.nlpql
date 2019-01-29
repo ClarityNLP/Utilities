@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADT/Abiraterone", "ADT & Abiraterone", "ADTAbiraterone", "ADT_Abiraterone", "ADT and Abiraterone", "ADT / Abiraterone"
+    "ADT & Abiraterone", "ADT and Abiraterone", "ADT_Abiraterone", "ADT / Abiraterone", "ADTAbiraterone", "ADT/Abiraterone"
 ];
 
 define final ADTAbirateroneRegimen:

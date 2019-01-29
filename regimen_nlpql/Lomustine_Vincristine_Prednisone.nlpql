@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine, Vincristine, Prednisone"
+    "Lomustine_Vincristine_Prednisone", "LomustineVincristinePrednisone", "Lomustine, Vincristine, Prednisone"
 ];
 
 define final LomustineVincristinePrednisoneRegimen:

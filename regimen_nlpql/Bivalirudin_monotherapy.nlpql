@@ -29,7 +29,7 @@ define final BivalirudinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bivalirudin monotherapy"
+    "Bivalirudin monotherapy", "Bivalirudin", "Bivalirudin_monotherapy", "Bivalirudinmonotherapy"
 ];
 
 define final BivalirudinmonotherapyRegimen:

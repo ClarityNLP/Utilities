@@ -29,7 +29,7 @@ define final GefitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gefitinib monotherapy"
+    "Gefitinib", "Gefitinib_monotherapy", "Gefitinib monotherapy", "Gefitinibmonotherapy"
 ];
 
 define final GefitinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final GefitinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated
+Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Non-small_cell_lung_cancer
 
 
 ***/

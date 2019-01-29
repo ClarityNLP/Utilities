@@ -62,7 +62,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IGEV/G-CSF", "IGEV_G-CSF", "IGEV & GCSF", "IGEVGCSF", "IGEV and G-CSF", "IGEV / G-CSF", "IGEV & G/CSF", "IGEV & G-CSF"
+    "IGEV & GCSF", "IGEV_G-CSF", "IGEV and G-CSF", "IGEV & G-CSF", "IGEV & G/CSF", "IGEVGCSF", "IGEV/G-CSF", "IGEV / G-CSF"
 ];
 
 define final IGEVGCSFRegimen:

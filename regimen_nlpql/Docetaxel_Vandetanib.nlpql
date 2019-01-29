@@ -40,7 +40,7 @@ define  VandetanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel & Vandetanib"
+    "DocetaxelVandetanib", "Docetaxel_Vandetanib", "Docetaxel & Vandetanib"
 ];
 
 define final DocetaxelVandetanibRegimen:

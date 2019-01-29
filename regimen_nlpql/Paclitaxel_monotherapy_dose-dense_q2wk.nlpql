@@ -29,7 +29,7 @@ define final PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ddT", "Paclitaxel monotherapy, dose-dense (q2wk)"
+    "Paclitaxel monotherapy, dose-dense (q2wk)", "Paclitaxel_monotherapy_dose-dense_q2wk", "Paclitaxelmonotherapydosedenseq2wk", "ddT", "Paclitaxel, dose-dense (q2wk)"
 ];
 
 define final Paclitaxelmonotherapydosedenseq2wkRegimen:

@@ -40,7 +40,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Fluorouracil", "FP", "CF"
+    "Cisplatin & Fluorouracil", "CF", "Cisplatin_Fluorouracil", "FP", "CisplatinFluorouracil"
 ];
 
 define final CisplatinFluorouracilRegimen:
@@ -63,7 +63,7 @@ define final CisplatinFluorouracilTreatments:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Penile_cancer, Nasopharyngeal_carcinoma, Head_and_neck_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Head_and_neck_cancer, Penile_cancer, Esophageal_cancer, Nasopharyngeal_carcinoma
 
 
 ***/

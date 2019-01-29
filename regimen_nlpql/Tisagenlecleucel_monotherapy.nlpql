@@ -29,7 +29,7 @@ define final TisagenlecleucelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tisagenlecleucel monotherapy"
+    "Tisagenlecleucel", "Tisagenlecleucel monotherapy", "Tisagenlecleucelmonotherapy", "Tisagenlecleucel_monotherapy"
 ];
 
 define final TisagenlecleucelmonotherapyRegimen:

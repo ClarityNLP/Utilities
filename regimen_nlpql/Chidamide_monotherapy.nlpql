@@ -29,7 +29,7 @@ define final ChidamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chidamide monotherapy"
+    "Chidamide monotherapy", "Chidamidemonotherapy", "Chidamide", "Chidamide_monotherapy"
 ];
 
 define final ChidamidemonotherapyRegimen:

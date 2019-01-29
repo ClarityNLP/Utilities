@@ -51,7 +51,7 @@ define  DaratumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pomalidomide, Dexamethasone, Daratumumab"
+    "Pomalidomide_Dexamethasone_Daratumumab", "Pomalidomide, Dexamethasone, Daratumumab", "PomalidomideDexamethasoneDaratumumab"
 ];
 
 define final PomalidomideDexamethasoneDaratumumabRegimen:

@@ -29,7 +29,7 @@ define final DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine monotherapy"
+    "Dacarbazine", "Dacarbazinemonotherapy", "Dacarbazine monotherapy", "Dacarbazine_monotherapy"
 ];
 
 define final DacarbazinemonotherapyRegimen:

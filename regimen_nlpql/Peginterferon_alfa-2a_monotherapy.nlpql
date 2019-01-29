@@ -29,7 +29,7 @@ define final Peginterferonalfa2aTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Peginterferon alfa-2a monotherapy"
+    "Peginterferon alfa-2a", "Peginterferon_alfa-2a_monotherapy", "Peginterferonalfa2amonotherapy", "Peginterferon alfa-2a monotherapy"
 ];
 
 define final Peginterferonalfa2amonotherapyRegimen:
@@ -45,7 +45,7 @@ define final Peginterferonalfa2amonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Polycythemia_vera, Essential_thrombocythemia, Hypereosinophilic_syndrome
+Known regimen for: Essential_thrombocythemia, Polycythemia_vera, Hypereosinophilic_syndrome
 
 
 ***/

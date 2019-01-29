@@ -40,7 +40,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Prednisolone"
+    "CyclophosphamidePrednisolone", "Cyclophosphamide & Prednisolone", "Cyclophosphamide_Prednisolone"
 ];
 
 define final CyclophosphamidePrednisoloneRegimen:

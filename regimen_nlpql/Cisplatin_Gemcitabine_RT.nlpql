@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "Cisplatin, Gemcitabine, RT"
+    "RT", "CisplatinGemcitabineRT", "Cisplatin, Gemcitabine, RT", "Cisplatin_Gemcitabine_RT"
 ];
 
 define final CisplatinGemcitabineRTRegimen:

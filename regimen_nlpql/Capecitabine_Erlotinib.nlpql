@@ -40,7 +40,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Erlotinib"
+    "Capecitabine & Erlotinib", "CapecitabineErlotinib", "Capecitabine_Erlotinib"
 ];
 
 define final CapecitabineErlotinibRegimen:

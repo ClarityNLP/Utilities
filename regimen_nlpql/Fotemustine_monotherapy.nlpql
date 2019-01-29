@@ -29,7 +29,7 @@ define final FotemustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fotemustine monotherapy"
+    "Fotemustine_monotherapy", "Fotemustine", "Fotemustinemonotherapy", "Fotemustine monotherapy"
 ];
 
 define final FotemustinemonotherapyRegimen:

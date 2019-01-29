@@ -51,7 +51,7 @@ define  SirolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse), Cyclosporine, Sirolimus"
+    "ATGHorseCyclosporineSirolimus", "ATG_Horse_Cyclosporine_Sirolimus", "ATG (Horse), Cyclosporine, Sirolimus"
 ];
 
 define final ATGHorseCyclosporineSirolimusRegimen:

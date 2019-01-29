@@ -40,7 +40,7 @@ define  VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ifosfamide & Vinorelbine"
+    "Ifosfamide_Vinorelbine", "IfosfamideVinorelbine", "Ifosfamide & Vinorelbine"
 ];
 
 define final IfosfamideVinorelbineRegimen:

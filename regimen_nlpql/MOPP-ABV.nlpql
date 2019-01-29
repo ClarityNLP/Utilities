@@ -95,7 +95,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MOPP/ABV", "MOPP-ABV", "MOPPABV"
+    "MOPPABV", "MOPP/ABV", "MOPP-ABV"
 ];
 
 define final MOPPABVRegimen:

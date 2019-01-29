@@ -73,7 +73,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-CEOP90 (Epirubicin)", "R-CEOP90", "RCEOP90", "R/CEOP90"
+    "R/CEOP90", "RCEOP90", "R-CEOP90_Epirubicin", "RCEOP90Epirubicin", "R-CEOP90", "R-CEOP90 (Epirubicin)"
 ];
 
 define final RCEOP90EpirubicinRegimen:

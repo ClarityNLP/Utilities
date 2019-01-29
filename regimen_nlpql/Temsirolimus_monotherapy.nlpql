@@ -29,7 +29,7 @@ define final TemsirolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temsirolimus monotherapy"
+    "Temsirolimus monotherapy", "Temsirolimus_monotherapy", "Temsirolimusmonotherapy", "Temsirolimus"
 ];
 
 define final TemsirolimusmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final TemsirolimusmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Endometrial_cancer, Renal_cell_carcinoma, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, CNS_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, CNS_lymphoma, Renal_cell_carcinoma, Endometrial_cancer
 
 
 ***/

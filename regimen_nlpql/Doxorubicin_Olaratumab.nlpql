@@ -40,7 +40,7 @@ define  OlaratumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin & Olaratumab"
+    "Doxorubicin_Olaratumab", "DoxorubicinOlaratumab", "Doxorubicin & Olaratumab"
 ];
 
 define final DoxorubicinOlaratumabRegimen:

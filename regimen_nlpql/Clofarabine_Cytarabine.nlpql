@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine & Cytarabine"
+    "ClofarabineCytarabine", "Clofarabine_Cytarabine", "Clofarabine & Cytarabine"
 ];
 
 define final ClofarabineCytarabineRegimen:

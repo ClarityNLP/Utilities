@@ -29,7 +29,7 @@ define final TreosulfanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Treosulfan monotherapy"
+    "Treosulfanmonotherapy", "Treosulfan monotherapy", "Treosulfan_monotherapy", "Treosulfan"
 ];
 
 define final TreosulfanmonotherapyRegimen:

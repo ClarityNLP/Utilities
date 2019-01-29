@@ -51,7 +51,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Gemcitabine/Erlotinib"
+    "Carboplatin_GemcitabineErlotinib", "Carboplatin & Gemcitabine/Erlotinib", "CarboplatinGemcitabineErlotinib"
 ];
 
 define final CarboplatinGemcitabineErlotinibRegimen:

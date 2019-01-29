@@ -29,7 +29,7 @@ define final TinzaparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tinzaparin monotherapy"
+    "Tinzaparin monotherapy", "Tinzaparin", "Tinzaparinmonotherapy", "Tinzaparin_monotherapy"
 ];
 
 define final TinzaparinmonotherapyRegimen:

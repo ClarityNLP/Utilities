@@ -51,7 +51,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Folinic acid, Mitomycin"
+    "FluorouracilFolinicacidMitomycin", "Fluorouracil_Folinic_acid_Mitomycin", "Fluorouracil, Folinic acid, Mitomycin"
 ];
 
 define final FluorouracilFolinicacidMitomycinRegimen:

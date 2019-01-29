@@ -51,7 +51,7 @@ define  PembrolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, nab-Paclitaxel, Pembrolizumab"
+    "CarboplatinnabPaclitaxelPembrolizumab", "Carboplatin_nab-Paclitaxel_Pembrolizumab", "Carboplatin, nab-Paclitaxel, Pembrolizumab"
 ];
 
 define final CarboplatinnabPaclitaxelPembrolizumabRegimen:

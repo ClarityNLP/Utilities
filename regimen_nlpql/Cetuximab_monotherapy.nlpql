@@ -29,7 +29,7 @@ define final CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cetuximab monotherapy"
+    "Cetuximab_monotherapy", "Cetuximab", "Cetuximabmonotherapy", "Cetuximab monotherapy"
 ];
 
 define final CetuximabmonotherapyRegimen:

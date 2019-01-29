@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vorinostat & Rituximab"
+    "Vorinostat_Rituximab", "VorinostatRituximab", "Vorinostat & Rituximab"
 ];
 
 define final VorinostatRituximabRegimen:

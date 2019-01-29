@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DD-CHOP", "DDCHOP", "DD/CHOP"
+    "DDCHOP", "DD/CHOP", "DD-CHOP"
 ];
 
 define final DDCHOPRegimen:

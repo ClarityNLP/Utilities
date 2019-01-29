@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Mitomycin"
+    "Irinotecan & Mitomycin", "IrinotecanMitomycin", "Irinotecan_Mitomycin"
 ];
 
 define final IrinotecanMitomycinRegimen:

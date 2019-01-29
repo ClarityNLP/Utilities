@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 8
+cur_job = 10
 
 ip = '18.220.133.76'
 # ip = 'localhost'
@@ -30,11 +30,12 @@ def get_active_workers():
 def run_nlpql(i, filename='query'):
     with open('{}{}'.format(nlpql_path, filename), "r") as file:
         nlpql = file.read()
+        sleepy_time = 90
 
         res = requests.post(nlpql_url, data=nlpql, headers={'content-type': 'text/plain'})
         if res.ok:
-            print("Running job %d" % i)
-            time.sleep(90)
+            print("Running job {} and then sleeping for {} seconds".format(i, sleepy_time))
+            time.sleep(sleepy_time)
         else:
             print('Failed to run job %d' % i)
             sys.exit(1)

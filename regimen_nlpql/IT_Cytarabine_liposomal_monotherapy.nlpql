@@ -29,7 +29,7 @@ define final CytarabineliposomalTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Cytarabine liposomal monotherapy"
+    "IT Cytarabine liposomal monotherapy", "ITCytarabineliposomalmonotherapy", "IT_Cytarabine_liposomal_monotherapy", "IT Cytarabine liposomal"
 ];
 
 define final ITCytarabineliposomalmonotherapyRegimen:

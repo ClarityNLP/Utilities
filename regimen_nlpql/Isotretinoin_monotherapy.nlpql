@@ -29,7 +29,7 @@ define final IsotretinoinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Isotretinoin monotherapy"
+    "Isotretinoinmonotherapy", "Isotretinoin monotherapy", "Isotretinoin_monotherapy", "Isotretinoin"
 ];
 
 define final IsotretinoinmonotherapyRegimen:

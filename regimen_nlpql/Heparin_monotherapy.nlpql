@@ -29,7 +29,7 @@ define final HeparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Heparin monotherapy", "Heparinmonotherapy", "Heparin_monotherapy"
+    "Heparinmonotherapy", "Heparin monotherapy", "Heparin_monotherapy", "Heparin"
 ];
 
 define final HeparinmonotherapyRegimen:

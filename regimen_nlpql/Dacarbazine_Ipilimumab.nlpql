@@ -40,7 +40,7 @@ define  IpilimumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine & Ipilimumab"
+    "Dacarbazine_Ipilimumab", "DacarbazineIpilimumab", "Dacarbazine & Ipilimumab"
 ];
 
 define final DacarbazineIpilimumabRegimen:

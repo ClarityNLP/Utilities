@@ -95,7 +95,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Stanford V", "StanfordV", "Stanford_V"
+    "StanfordV", "Stanford_V", "Stanford V"
 ];
 
 define final StanfordVRegimen:
@@ -118,7 +118,7 @@ define final StanfordVTreatments:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, HIV-associated_lymphoma
+Known regimen for: HIV-associated_lymphoma, Hodgkin_lymphoma
 
 
 ***/

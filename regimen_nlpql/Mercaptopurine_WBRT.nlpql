@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mercaptopurine & WBRT"
+    "Mercaptopurine_WBRT", "MercaptopurineWBRT", "Mercaptopurine & WBRT"
 ];
 
 define final MercaptopurineWBRTRegimen:

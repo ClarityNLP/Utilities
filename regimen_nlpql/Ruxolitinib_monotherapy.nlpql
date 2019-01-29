@@ -29,7 +29,7 @@ define final RuxolitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ruxolitinib monotherapy"
+    "Ruxolitinib monotherapy", "Ruxolitinib", "Ruxolitinibmonotherapy", "Ruxolitinib_monotherapy"
 ];
 
 define final RuxolitinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final RuxolitinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Essential_thrombocythemia, Polycythemia_vera, Acute_myeloid_leukemia, Myelofibrosis, Hypereosinophilic_syndrome
+Known regimen for: Hypereosinophilic_syndrome, Acute_myeloid_leukemia, Essential_thrombocythemia, Polycythemia_vera, Chronic_lymphocytic_leukemia_(CLLSLL), Myelofibrosis
 
 
 ***/

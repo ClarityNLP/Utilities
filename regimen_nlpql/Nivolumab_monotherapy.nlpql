@@ -29,7 +29,7 @@ define final NivolumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nivolumab monotherapy"
+    "Nivolumabmonotherapy", "Nivolumab_monotherapy", "Nivolumab", "Nivolumab monotherapy"
 ];
 
 define final NivolumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final NivolumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Anal_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer, Small_cell_lung_cancer, Hodgkin_lymphoma, Head_and_neck_cancer, Hepatocellular_carcinoma, Gastric_cancer, Melanoma
+Known regimen for: Non-small_cell_lung_cancer, Hepatocellular_carcinoma, Anal_cancer, Small_cell_lung_cancer, Melanoma, Head_and_neck_cancer, Renal_cell_carcinoma, Hodgkin_lymphoma, Gastric_cancer
 
 
 ***/

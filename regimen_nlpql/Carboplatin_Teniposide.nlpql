@@ -40,7 +40,7 @@ define  TeniposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Teniposide"
+    "Carboplatin & Teniposide", "Carboplatin_Teniposide", "CarboplatinTeniposide"
 ];
 
 define final CarboplatinTeniposideRegimen:

@@ -62,7 +62,7 @@ define  DactinomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "M-BCD", "MBCD", "M/BCD"
+    "MBCD", "M-BCD", "M/BCD"
 ];
 
 define final MBCDRegimen:

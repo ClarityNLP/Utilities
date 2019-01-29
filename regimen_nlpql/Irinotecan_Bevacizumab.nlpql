@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Bevacizumab"
+    "IrinotecanBevacizumab", "Irinotecan & Bevacizumab", "Irinotecan_Bevacizumab"
 ];
 
 define final IrinotecanBevacizumabRegimen:

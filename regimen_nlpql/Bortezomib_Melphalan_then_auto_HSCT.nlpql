@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Melphalan, then auto HSCT"
+    "Bortezomib & Melphalan, then auto HSCT", "Bortezomib_Melphalan_then_auto_HSCT", "BortezomibMelphalanthenautoHSCT"
 ];
 
 define final BortezomibMelphalanthenautoHSCTRegimen:

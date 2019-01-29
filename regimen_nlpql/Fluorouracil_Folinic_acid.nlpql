@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil & Folinic acid"
+    "Fluorouracil_Folinic_acid", "FluorouracilFolinicacid", "Fluorouracil & Folinic acid"
 ];
 
 define final FluorouracilFolinicacidRegimen:
@@ -63,7 +63,7 @@ define final FluorouracilFolinicacidTreatments:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Rectal_cancer, Esophageal_cancer, Colon_cancer, Cholangiocarcinoma, Hepatocellular_carcinoma, Pancreatic_cancer
+Known regimen for: Hepatocellular_carcinoma, Rectal_cancer, Colon_cancer, Cervical_cancer, Esophageal_cancer, Pancreatic_cancer, Cholangiocarcinoma
 
 
 ***/

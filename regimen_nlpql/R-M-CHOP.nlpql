@@ -84,7 +84,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMCHOP", "R/M/CHOP", "R-M-CHOP"
+    "R-M-CHOP", "RMCHOP", "R/M/CHOP"
 ];
 
 define final RMCHOPRegimen:

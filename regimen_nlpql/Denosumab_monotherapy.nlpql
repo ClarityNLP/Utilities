@@ -29,7 +29,7 @@ define final DenosumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Denosumab monotherapy"
+    "Denosumab", "Denosumabmonotherapy", "Denosumab monotherapy", "Denosumab_monotherapy"
 ];
 
 define final DenosumabmonotherapyRegimen:

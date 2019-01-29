@@ -95,7 +95,7 @@ define  MercaptopurineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA, Mercaptopurine, Methotrexate"
+    "ATRAMercaptopurineMethotrexate", "ATRA, Mercaptopurine, Methotrexate", "ATRA_Mercaptopurine_Methotrexate"
 ];
 
 define final ATRAMercaptopurineMethotrexateRegimen:

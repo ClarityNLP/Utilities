@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PCB", "Cisplatin, Pemetrexed, Bevacizumab"
+    "Cisplatin_Pemetrexed_Bevacizumab", "PCB", "CisplatinPemetrexedBevacizumab", "Cisplatin, Pemetrexed, Bevacizumab"
 ];
 
 define final CisplatinPemetrexedBevacizumabRegimen:

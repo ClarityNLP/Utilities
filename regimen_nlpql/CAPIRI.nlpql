@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELIRI", "CapeIRI", "CAPIRI"
+    "CAPIRI", "XELIRI", "CapeIRI"
 ];
 
 define final CAPIRIRegimen:

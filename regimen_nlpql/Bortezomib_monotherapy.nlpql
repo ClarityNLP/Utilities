@@ -29,7 +29,7 @@ define final BortezomibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib monotherapy"
+    "Bortezomib_monotherapy", "Bortezomib", "Bortezomibmonotherapy", "Bortezomib monotherapy"
 ];
 
 define final BortezomibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final BortezomibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Castleman_disease, Multiple_myeloma_relapsedrefractory, Marginal_zone_lymphoma, Light-chain_(AL)_amyloidosis, Follicular_lymphoma, Waldenstrom_macroglobulinemia, Mantle_cell_lymphoma, Multiple_myeloma_consolidation_and_maintenance
+Known regimen for: Mantle_cell_lymphoma, Castleman_disease, Multiple_myeloma_consolidation_and_maintenance, Follicular_lymphoma, Light-chain_(AL)_amyloidosis, Marginal_zone_lymphoma, Multiple_myeloma_relapsedrefractory, Waldenstrom_macroglobulinemia
 
 
 ***/

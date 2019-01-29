@@ -29,7 +29,7 @@ define final RivaroxabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rivaroxaban monotherapy"
+    "Rivaroxabanmonotherapy", "Rivaroxaban", "Rivaroxaban monotherapy", "Rivaroxaban_monotherapy"
 ];
 
 define final RivaroxabanmonotherapyRegimen:

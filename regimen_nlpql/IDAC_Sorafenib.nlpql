@@ -40,7 +40,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IDACSorafenib", "IDAC & Sorafenib", "IDAC and Sorafenib", "IDAC/Sorafenib", "IDAC / Sorafenib", "IDAC_Sorafenib"
+    "IDAC_Sorafenib", "IDAC/Sorafenib", "IDAC & Sorafenib", "IDACSorafenib", "IDAC and Sorafenib", "IDAC / Sorafenib"
 ];
 
 define final IDACSorafenibRegimen:

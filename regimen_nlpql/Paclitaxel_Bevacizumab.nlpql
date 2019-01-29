@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & Bevacizumab"
+    "Paclitaxel_Bevacizumab", "PaclitaxelBevacizumab", "Paclitaxel & Bevacizumab"
 ];
 
 define final PaclitaxelBevacizumabRegimen:

@@ -29,7 +29,7 @@ define final PixantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pixantrone monotherapy"
+    "Pixantrone", "Pixantrone_monotherapy", "Pixantrone monotherapy", "Pixantronemonotherapy"
 ];
 
 define final PixantronemonotherapyRegimen:

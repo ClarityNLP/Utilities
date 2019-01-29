@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide & RT, then Temozolomide"
+    "Temozolomide_RT_then_Temozolomide", "Temozolomide & RT, then Temozolomide", "TemozolomideRTthenTemozolomide"
 ];
 
 define final TemozolomideRTthenTemozolomideRegimen:

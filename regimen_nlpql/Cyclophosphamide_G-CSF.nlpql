@@ -29,7 +29,7 @@ define final CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & G-CSF"
+    "Cyclophosphamide & G-CSF", "Cyclophosphamide_G-CSF", "CyclophosphamideGCSF"
 ];
 
 define final CyclophosphamideGCSFRegimen:

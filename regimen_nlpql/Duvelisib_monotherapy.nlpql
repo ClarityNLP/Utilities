@@ -29,7 +29,7 @@ define final DuvelisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Duvelisib monotherapy"
+    "Duvelisib_monotherapy", "Duvelisibmonotherapy", "Duvelisib", "Duvelisib monotherapy"
 ];
 
 define final DuvelisibmonotherapyRegimen:

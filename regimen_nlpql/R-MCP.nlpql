@@ -62,7 +62,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/MCP", "RMCP", "R-MCP"
+    "RMCP", "R/MCP", "R-MCP"
 ];
 
 define final RMCPRegimen:

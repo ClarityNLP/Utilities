@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Sorafenib, RT", "RT"
+    "CapecitabineSorafenibRT", "RT", "Capecitabine, Sorafenib, RT", "Capecitabine_Sorafenib_RT"
 ];
 
 define final CapecitabineSorafenibRTRegimen:

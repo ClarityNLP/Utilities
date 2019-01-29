@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FLO", "OLF"
+    "OLF", "FLO"
 ];
 
 define final OLFRegimen:
@@ -74,7 +74,7 @@ define final OLFTreatments:
 // Comments
 /***
 
-Known regimen for: Gastric_cancer, Pancreatic_cancer
+Known regimen for: Pancreatic_cancer, Gastric_cancer
 
 
 ***/

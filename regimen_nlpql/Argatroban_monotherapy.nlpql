@@ -51,7 +51,7 @@ define  ArgatrobanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Argatroban monotherapy"
+    "Argatroban monotherapy", "Argatroban", "Argatrobanmonotherapy", "Argatroban_monotherapy"
 ];
 
 define final ArgatrobanmonotherapyRegimen:

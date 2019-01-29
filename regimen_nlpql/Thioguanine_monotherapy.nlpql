@@ -29,7 +29,7 @@ define final ThioguanineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thioguanine monotherapy"
+    "Thioguaninemonotherapy", "Thioguanine", "Thioguanine monotherapy", "Thioguanine_monotherapy"
 ];
 
 define final ThioguaninemonotherapyRegimen:

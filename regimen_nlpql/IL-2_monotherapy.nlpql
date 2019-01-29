@@ -29,7 +29,7 @@ define final SargramostimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IL-2_monotherapy", "IL2monotherapy", "IL/2 monotherapy", "IL2 monotherapy", "IL-2 monotherapy"
+    "IL2monotherapy", "IL-2", "IL2 monotherapy", "IL/2 monotherapy", "IL-2_monotherapy", "IL-2 monotherapy"
 ];
 
 define final IL2monotherapyRegimen:

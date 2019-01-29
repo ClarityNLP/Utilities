@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine & Prednisone"
+    "Fludarabine_Prednisone", "Fludarabine & Prednisone", "FludarabinePrednisone"
 ];
 
 define final FludarabinePrednisoneRegimen:

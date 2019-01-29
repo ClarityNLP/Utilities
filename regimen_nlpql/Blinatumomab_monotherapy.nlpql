@@ -29,7 +29,7 @@ define final BlinatumomabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Blinatumomab monotherapy"
+    "Blinatumomabmonotherapy", "Blinatumomab_monotherapy", "Blinatumomab", "Blinatumomab monotherapy"
 ];
 
 define final BlinatumomabmonotherapyRegimen:

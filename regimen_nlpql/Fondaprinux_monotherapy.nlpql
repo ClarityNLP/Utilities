@@ -29,7 +29,7 @@ define final FondaparinuxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fondaprinux monotherapy"
+    "Fondaprinuxmonotherapy", "Fondaprinux", "Fondaprinux_monotherapy", "Fondaprinux monotherapy"
 ];
 
 define final FondaprinuxmonotherapyRegimen:

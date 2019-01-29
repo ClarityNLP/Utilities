@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP-DI", "CHOP-14", "CHOP14", "I-CHOP", "CHOP/DI", "ICHOP", "I/CHOP", "CHOPDI", "CHOP/14"
+    "CHOPDI", "CHOP/DI", "CHOP-14", "CHOP-DI", "I-CHOP", "CHOP/14", "I/CHOP", "ICHOP", "CHOP14"
 ];
 
 define final CHOP14Regimen:

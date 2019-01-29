@@ -29,7 +29,7 @@ define final MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methylprednisolone monotherapy"
+    "Methylprednisolonemonotherapy", "Methylprednisolone monotherapy", "Methylprednisolone_monotherapy", "Methylprednisolone"
 ];
 
 define final MethylprednisolonemonotherapyRegimen:

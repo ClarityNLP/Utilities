@@ -29,7 +29,7 @@ define final AspirinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT/PEPC", "RTPEPC", "RT-PEPC"
+    "RT-PEPC", "RTPEPC", "RT/PEPC"
 ];
 
 define final RTPEPCRegimen:

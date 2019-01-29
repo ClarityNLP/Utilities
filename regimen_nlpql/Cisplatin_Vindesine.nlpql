@@ -40,7 +40,7 @@ define  VindesineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Vindesine"
+    "Cisplatin & Vindesine", "CisplatinVindesine", "Cisplatin_Vindesine"
 ];
 
 define final CisplatinVindesineRegimen:

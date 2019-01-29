@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel, Topotecan, Bevacizumab", "TP&Bev", "TP / Bev", "TP and Bev", "TP+Bev", "TP/Bev", "TP & Bev", "TPBev"
+    "TP / Bev", "TPBev", "TP+Bev", "PaclitaxelTopotecanBevacizumab", "Paclitaxel, Topotecan, Bevacizumab", "TP and Bev", "TP & Bev", "Paclitaxel_Topotecan_Bevacizumab", "TP&Bev", "TP/Bev"
 ];
 
 define final PaclitaxelTopotecanBevacizumabRegimen:

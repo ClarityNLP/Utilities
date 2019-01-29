@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Oxaliplatin, RT", "RT"
+    "FluorouracilOxaliplatinRT", "Fluorouracil, Oxaliplatin, RT", "Fluorouracil_Oxaliplatin_RT", "RT"
 ];
 
 define final FluorouracilOxaliplatinRTRegimen:

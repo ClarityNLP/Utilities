@@ -51,7 +51,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine, Idarubicin, Imatinib"
+    "CytarabineIdarubicinImatinib", "Cytarabine_Idarubicin_Imatinib", "Cytarabine, Idarubicin, Imatinib"
 ];
 
 define final CytarabineIdarubicinImatinibRegimen:

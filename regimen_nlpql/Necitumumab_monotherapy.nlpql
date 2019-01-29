@@ -29,7 +29,7 @@ define final NecitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Necitumumab monotherapy"
+    "Necitumumab_monotherapy", "Necitumumab monotherapy", "Necitumumab", "Necitumumabmonotherapy"
 ];
 
 define final NecitumumabmonotherapyRegimen:

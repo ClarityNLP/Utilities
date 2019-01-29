@@ -128,7 +128,7 @@ define  RasburicaseTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper-CVAD & Dasatinib"
+    "HyperCVADDasatinib", "Hyper-CVAD & Dasatinib", "Hyper-CVAD_Dasatinib"
 ];
 
 define final HyperCVADDasatinibRegimen:

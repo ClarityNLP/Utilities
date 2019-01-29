@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Gemcitabine, Bevacizumab"
+    "Cisplatin, Gemcitabine, Bevacizumab", "CisplatinGemcitabineBevacizumab", "Cisplatin_Gemcitabine_Bevacizumab"
 ];
 
 define final CisplatinGemcitabineBevacizumabRegimen:

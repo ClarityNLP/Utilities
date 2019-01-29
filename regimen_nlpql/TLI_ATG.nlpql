@@ -29,7 +29,7 @@ define final AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TLIATG", "TLI / ATG", "TLI & ATG", "TLI and ATG", "TLI_ATG", "TLI/ATG"
+    "TLI/ATG", "TLI / ATG", "TLIATG", "TLI and ATG", "TLI_ATG", "TLI & ATG"
 ];
 
 define final TLIATGRegimen:

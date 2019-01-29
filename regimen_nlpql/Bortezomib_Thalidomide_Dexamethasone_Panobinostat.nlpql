@@ -62,7 +62,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
+    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat", "Bortezomib_Thalidomide_Dexamethasone_Panobinostat", "BortezomibThalidomideDexamethasonePanobinostat"
 ];
 
 define final BortezomibThalidomideDexamethasonePanobinostatRegimen:

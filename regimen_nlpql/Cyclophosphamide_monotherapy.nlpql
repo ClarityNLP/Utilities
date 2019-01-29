@@ -29,7 +29,7 @@ define final CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide monotherapy"
+    "Cyclophosphamidemonotherapy", "Cyclophosphamide_monotherapy", "Cyclophosphamide monotherapy", "Cyclophosphamide"
 ];
 
 define final CyclophosphamidemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final CyclophosphamidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Follicular_lymphoma, Large_granular_lymphocytic_leukemia, Neuroblastoma, Glioblastoma
+Known regimen for: Glioblastoma, Follicular_lymphoma, Large_granular_lymphocytic_leukemia, Neuroblastoma, Anaplastic_glioma
 
 
 ***/

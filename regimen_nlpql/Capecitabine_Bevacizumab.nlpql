@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Bevacizumab", "CB"
+    "CB", "CapecitabineBevacizumab", "Capecitabine_Bevacizumab", "Capecitabine & Bevacizumab"
 ];
 
 define final CapecitabineBevacizumabRegimen:

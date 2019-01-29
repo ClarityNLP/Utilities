@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nordic_FLOX", "NordicFLOX", "Nordic FLOX", "FLOX"
+    "NordicFLOX", "FLOX", "Nordic_FLOX", "Nordic FLOX"
 ];
 
 define final NordicFLOXRegimen:

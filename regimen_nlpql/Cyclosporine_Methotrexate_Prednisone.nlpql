@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Methotrexate, Prednisone"
+    "Cyclosporine, Methotrexate, Prednisone", "Cyclosporine_Methotrexate_Prednisone", "CyclosporineMethotrexatePrednisone"
 ];
 
 define final CyclosporineMethotrexatePrednisoneRegimen:

@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate & Prednisone"
+    "Methotrexate_Prednisone", "MethotrexatePrednisone", "Methotrexate & Prednisone"
 ];
 
 define final MethotrexatePrednisoneRegimen:

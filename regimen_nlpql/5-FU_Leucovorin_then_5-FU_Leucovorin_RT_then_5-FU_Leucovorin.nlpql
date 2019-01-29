@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin"
+    "5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin", "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin", "RT", "5-FU_Leucovorin_then_5-FU_Leucovorin_RT_then_5-FU_Leucovorin"
 ];
 
 define final 5FULeucovorinthen5FULeucovorinRTthen5FULeucovorinRegimen:

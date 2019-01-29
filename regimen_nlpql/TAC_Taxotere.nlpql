@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TACTaxotere", "TAC (Taxotere)", "TAC_Taxotere", "ATC", "TAC"
+    "TAC (Taxotere)", "TAC_Taxotere", "TACTaxotere", "ATC", "TAC"
 ];
 
 define final TACTaxotereRegimen:

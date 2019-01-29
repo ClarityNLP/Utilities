@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chlorambucil & Ofatumumab"
+    "Chlorambucil & Ofatumumab", "Chlorambucil_Ofatumumab", "ChlorambucilOfatumumab"
 ];
 
 define final ChlorambucilOfatumumabRegimen:

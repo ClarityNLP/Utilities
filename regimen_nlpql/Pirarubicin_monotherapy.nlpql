@@ -29,7 +29,7 @@ define final PirarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pirarubicin monotherapy"
+    "Pirarubicin monotherapy", "Pirarubicinmonotherapy", "Pirarubicin_monotherapy", "Pirarubicin"
 ];
 
 define final PirarubicinmonotherapyRegimen:

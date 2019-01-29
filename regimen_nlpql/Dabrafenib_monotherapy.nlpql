@@ -29,7 +29,7 @@ define final DabrafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabrafenib monotherapy"
+    "Dabrafenibmonotherapy", "Dabrafenib_monotherapy", "Dabrafenib monotherapy", "Dabrafenib"
 ];
 
 define final DabrafenibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final DabrafenibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Melanoma_BRAF-mutated, CNS_melanoma
+Known regimen for: CNS_melanoma, Melanoma_BRAF-mutated
 
 
 ***/

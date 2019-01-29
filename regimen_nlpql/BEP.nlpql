@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PEB", "BEP"
+    "BEP", "PEB"
 ];
 
 define final BEPRegimen:

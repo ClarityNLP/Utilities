@@ -29,7 +29,7 @@ define final TrametinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trametinib monotherapy"
+    "Trametinib_monotherapy", "Trametinib monotherapy", "Trametinibmonotherapy", "Trametinib"
 ];
 
 define final TrametinibmonotherapyRegimen:

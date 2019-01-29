@@ -40,7 +40,7 @@ define  ClopidogrelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin / Anagrelide", "Aspirin/Anagrelide", "Aspirin & Anagrelide", "AspirinAnagrelide", "Aspirin_Anagrelide", "Aspirin and Anagrelide"
+    "Aspirin/Anagrelide", "Aspirin / Anagrelide", "Aspirin and Anagrelide", "Aspirin & Anagrelide", "Aspirin_Anagrelide", "AspirinAnagrelide"
 ];
 
 define final AspirinAnagrelideRegimen:

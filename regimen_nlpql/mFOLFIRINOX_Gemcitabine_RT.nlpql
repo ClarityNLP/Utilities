@@ -29,7 +29,7 @@ define final PegfilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFIRINOX, Gemcitabine, RT"
+    "mFOLFIRINOX_Gemcitabine_RT", "mFOLFIRINOXGemcitabineRT", "mFOLFIRINOX, Gemcitabine, RT"
 ];
 
 define final mFOLFIRINOXGemcitabineRTRegimen:

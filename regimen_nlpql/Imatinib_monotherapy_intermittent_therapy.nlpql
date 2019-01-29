@@ -29,7 +29,7 @@ define final ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy, intermittent therapy"
+    "Imatinibmonotherapyintermittenttherapy", "Imatinib monotherapy, intermittent therapy", "Imatinib, intermittent therapy", "Imatinib_monotherapy_intermittent_therapy"
 ];
 
 define final ImatinibmonotherapyintermittenttherapyRegimen:

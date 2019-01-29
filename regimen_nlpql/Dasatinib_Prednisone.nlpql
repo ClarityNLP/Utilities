@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib & Prednisone"
+    "Dasatinib & Prednisone", "Dasatinib_Prednisone", "DasatinibPrednisone"
 ];
 
 define final DasatinibPrednisoneRegimen:

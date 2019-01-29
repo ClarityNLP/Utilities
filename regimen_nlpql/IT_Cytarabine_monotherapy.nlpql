@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Cytarabine monotherapy"
+    "IT_Cytarabine_monotherapy", "IT Cytarabine", "IT Cytarabine monotherapy", "ITCytarabinemonotherapy"
 ];
 
 define final ITCytarabinemonotherapyRegimen:

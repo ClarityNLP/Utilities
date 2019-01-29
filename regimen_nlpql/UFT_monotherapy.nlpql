@@ -29,7 +29,7 @@ define final TegafuranduracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFT monotherapy", "UFTmonotherapy", "UFT_monotherapy"
+    "UFT monotherapy", "UFT_monotherapy", "UFT", "UFTmonotherapy"
 ];
 
 define final UFTmonotherapyRegimen:

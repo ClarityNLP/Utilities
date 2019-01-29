@@ -29,7 +29,7 @@ define final ArsenictrioxideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide monotherapy"
+    "Arsenic trioxide", "Arsenic trioxide monotherapy", "Arsenic_trioxide_monotherapy", "Arsenictrioxidemonotherapy"
 ];
 
 define final ArsenictrioxidemonotherapyRegimen:

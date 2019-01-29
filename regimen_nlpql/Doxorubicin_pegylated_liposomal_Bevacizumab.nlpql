@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin pegylated liposomal & Bevacizumab"
+    "Doxorubicin_pegylated_liposomal_Bevacizumab", "DoxorubicinpegylatedliposomalBevacizumab", "Doxorubicin pegylated liposomal & Bevacizumab"
 ];
 
 define final DoxorubicinpegylatedliposomalBevacizumabRegimen:

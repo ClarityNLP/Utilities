@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Vinblastine, Prednisone"
+    "MethotrexateVinblastinePrednisone", "Methotrexate_Vinblastine_Prednisone", "Methotrexate, Vinblastine, Prednisone"
 ];
 
 define final MethotrexateVinblastinePrednisoneRegimen:

@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VDC", "CyBorD"
+    "CyBorD", "VDC"
 ];
 
 define final VDCRegimen:

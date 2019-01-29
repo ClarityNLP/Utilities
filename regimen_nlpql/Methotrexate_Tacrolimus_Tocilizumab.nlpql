@@ -51,7 +51,7 @@ define  TocilizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Tocilizumab"
+    "MethotrexateTacrolimusTocilizumab", "Methotrexate_Tacrolimus_Tocilizumab", "Methotrexate, Tacrolimus, Tocilizumab"
 ];
 
 define final MethotrexateTacrolimusTocilizumabRegimen:

@@ -40,7 +40,7 @@ define  LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine & Lenalidomide"
+    "Azacitidine_Lenalidomide", "AzacitidineLenalidomide", "Azacitidine & Lenalidomide"
 ];
 
 define final AzacitidineLenalidomideRegimen:

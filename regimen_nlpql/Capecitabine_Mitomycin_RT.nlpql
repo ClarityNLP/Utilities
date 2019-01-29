@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Mitomycin, RT"
+    "Capecitabine, Mitomycin, RT", "CapecitabineMitomycinRT", "Capecitabine_Mitomycin_RT"
 ];
 
 define final CapecitabineMitomycinRTRegimen:

@@ -29,7 +29,7 @@ define final NiraparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Niraparib monotherapy"
+    "Niraparib monotherapy", "Niraparib", "Niraparibmonotherapy", "Niraparib_monotherapy"
 ];
 
 define final NiraparibmonotherapyRegimen:

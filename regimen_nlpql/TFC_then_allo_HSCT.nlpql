@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TFC, then allo HSCT", "TFC_then_allo_HSCT", "TFCthenalloHSCT", "TFC"
+    "TFCthenalloHSCT", "TFC, then allo HSCT", "TFC", "TFC_then_allo_HSCT"
 ];
 
 define final TFCthenalloHSCTRegimen:

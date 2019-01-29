@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Topotecan & Bevacizumab"
+    "Topotecan_Bevacizumab", "Topotecan & Bevacizumab", "TopotecanBevacizumab"
 ];
 
 define final TopotecanBevacizumabRegimen:

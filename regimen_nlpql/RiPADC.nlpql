@@ -73,7 +73,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RiPAD+C", "RiPAD&C", "RiPAD/C", "RiPAD & C", "RiPAD / C", "RiPADC", "RiPAD and C"
+    "RiPAD+C", "RiPAD / C", "RiPAD & C", "RiPAD&C", "RiPADC", "RiPAD/C", "RiPAD and C"
 ];
 
 define final RiPADCRegimen:

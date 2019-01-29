@@ -51,7 +51,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Fluorouracil, Panitumumab"
+    "Cisplatin_Fluorouracil_Panitumumab", "CisplatinFluorouracilPanitumumab", "Cisplatin, Fluorouracil, Panitumumab"
 ];
 
 define final CisplatinFluorouracilPanitumumabRegimen:

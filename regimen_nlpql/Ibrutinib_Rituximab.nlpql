@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib & Rituximab"
+    "Ibrutinib_Rituximab", "Ibrutinib & Rituximab", "IbrutinibRituximab"
 ];
 
 define final IbrutinibRituximabRegimen:
@@ -63,7 +63,7 @@ define final IbrutinibRituximabTreatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Waldenstrom_macroglobulinemia
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 ***/

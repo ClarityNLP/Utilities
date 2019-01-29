@@ -29,7 +29,7 @@ define final CemiplimabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cemiplimab monotherapy"
+    "Cemiplimab", "Cemiplimab monotherapy", "Cemiplimab_monotherapy", "Cemiplimabmonotherapy"
 ];
 
 define final CemiplimabmonotherapyRegimen:

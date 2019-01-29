@@ -29,7 +29,7 @@ define final FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DeVIC / RT", "DeVIC_RT", "DeVICRT", "DeVIC and RT", "DeVIC & RT", "DeVIC/RT"
+    "DeVIC/RT", "DeVIC_RT", "DeVIC and RT", "DeVIC & RT", "DeVICRT", "DeVIC / RT"
 ];
 
 define final DeVICRTRegimen:

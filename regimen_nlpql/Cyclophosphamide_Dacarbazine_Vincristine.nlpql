@@ -51,7 +51,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide, Dacarbazine, Vincristine", "CVD"
+    "CVD", "Cyclophosphamide, Dacarbazine, Vincristine", "CyclophosphamideDacarbazineVincristine", "Cyclophosphamide_Dacarbazine_Vincristine"
 ];
 
 define final CyclophosphamideDacarbazineVincristineRegimen:

@@ -29,7 +29,7 @@ define final WarfarinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Warfarin monotherapy", "Warfarin_monotherapy", "Warfarinmonotherapy"
+    "Warfarin monotherapy", "Warfarinmonotherapy", "Warfarin", "Warfarin_monotherapy"
 ];
 
 define final WarfarinmonotherapyRegimen:

@@ -29,7 +29,7 @@ define final AxitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axitinibmonotherapy", "Axitinib_monotherapy", "Axitinib monotherapy"
+    "Axitinib monotherapy", "Axitinibmonotherapy", "Axitinib_monotherapy", "Axitinib"
 ];
 
 define final AxitinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final AxitinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Thyroid_cancer, Renal_cell_carcinoma
+Known regimen for: Renal_cell_carcinoma, Thyroid_cancer
 
 
 ***/

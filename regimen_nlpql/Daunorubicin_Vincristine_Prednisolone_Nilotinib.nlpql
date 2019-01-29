@@ -62,7 +62,7 @@ define  NilotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
+    "Daunorubicin_Vincristine_Prednisolone_Nilotinib", "DaunorubicinVincristinePrednisoloneNilotinib", "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
 ];
 
 define final DaunorubicinVincristinePrednisoloneNilotinibRegimen:

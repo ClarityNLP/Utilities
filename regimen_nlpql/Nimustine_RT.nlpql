@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nimustine & RT", "Nimustine/RT", "Nimustine and RT", "Nimustine_RT", "NimustineRT", "Nimustine / RT", "RT"
+    "Nimustine/RT", "Nimustine_RT", "NimustineRT", "Nimustine / RT", "Nimustine & RT", "RT", "Nimustine and RT"
 ];
 
 define final NimustineRTRegimen:

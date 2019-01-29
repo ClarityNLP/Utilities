@@ -29,7 +29,7 @@ define final IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idarubicin, then Mitoxantrone, then Idarubicin"
+    "Idarubicin_then_Mitoxantrone_then_Idarubicin", "IdarubicinthenMitoxantronethenIdarubicin", "Idarubicin, then Mitoxantrone, then Idarubicin"
 ];
 
 define final IdarubicinthenMitoxantronethenIdarubicinRegimen:

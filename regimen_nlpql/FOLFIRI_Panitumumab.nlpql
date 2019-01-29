@@ -62,7 +62,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Panitumumab"
+    "FOLFIRI_Panitumumab", "FOLFIRI & Panitumumab", "FOLFIRIPanitumumab"
 ];
 
 define final FOLFIRIPanitumumabRegimen:

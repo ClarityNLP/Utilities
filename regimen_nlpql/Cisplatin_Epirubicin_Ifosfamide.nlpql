@@ -51,7 +51,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Epirubicin, Ifosfamide"
+    "Cisplatin_Epirubicin_Ifosfamide", "Cisplatin, Epirubicin, Ifosfamide", "CisplatinEpirubicinIfosfamide"
 ];
 
 define final CisplatinEpirubicinIfosfamideRegimen:

@@ -29,7 +29,7 @@ define final AcalabrutinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Acalabrutinib monotherapy"
+    "Acalabrutinib_monotherapy", "Acalabrutinib monotherapy", "Acalabrutinib", "Acalabrutinibmonotherapy"
 ];
 
 define final AcalabrutinibmonotherapyRegimen:

@@ -29,7 +29,7 @@ define final VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vincristine monotherapy"
+    "Vincristine", "Vincristine monotherapy", "Vincristinemonotherapy", "Vincristine_monotherapy"
 ];
 
 define final VincristinemonotherapyRegimen:

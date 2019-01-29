@@ -62,7 +62,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine, Methotrexate, Procarbazine, Methylprednisolone"
+    "Lomustine_Methotrexate_Procarbazine_Methylprednisolone", "LomustineMethotrexateProcarbazineMethylprednisolone", "Lomustine, Methotrexate, Procarbazine, Methylprednisolone"
 ];
 
 define final LomustineMethotrexateProcarbazineMethylprednisoloneRegimen:

@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT Methotrexate & WBRT"
+    "IT Methotrexate & WBRT", "ITMethotrexateWBRT", "IT_Methotrexate_WBRT"
 ];
 
 define final ITMethotrexateWBRTRegimen:

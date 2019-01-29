@@ -29,7 +29,7 @@ define final OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin monotherapy"
+    "Oxaliplatin_monotherapy", "Oxaliplatin monotherapy", "Oxaliplatinmonotherapy", "Oxaliplatin"
 ];
 
 define final OxaliplatinmonotherapyRegimen:

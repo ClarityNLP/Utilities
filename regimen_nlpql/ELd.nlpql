@@ -62,7 +62,7 @@ define  ElotuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ELd", "ERd"
+    "ERd", "ELd"
 ];
 
 define final ELdRegimen:

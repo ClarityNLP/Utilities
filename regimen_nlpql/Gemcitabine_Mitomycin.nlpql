@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Mitomycin"
+    "Gemcitabine & Mitomycin", "Gemcitabine_Mitomycin", "GemcitabineMitomycin"
 ];
 
 define final GemcitabineMitomycinRegimen:

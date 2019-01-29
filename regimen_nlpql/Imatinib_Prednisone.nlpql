@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib & Prednisone"
+    "Imatinib & Prednisone", "ImatinibPrednisone", "Imatinib_Prednisone"
 ];
 
 define final ImatinibPrednisoneRegimen:

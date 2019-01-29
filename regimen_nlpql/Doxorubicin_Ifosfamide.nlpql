@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin & Ifosfamide", "AIM"
+    "Doxorubicin_Ifosfamide", "Doxorubicin & Ifosfamide", "AIM", "DoxorubicinIfosfamide"
 ];
 
 define final DoxorubicinIfosfamideRegimen:

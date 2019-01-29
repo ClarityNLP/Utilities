@@ -73,7 +73,7 @@ define  ElotuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EloPomdex", "Elo/Pom/dex", "Elo-Pom-dex"
+    "Elo/Pom/dex", "EloPomdex", "Elo-Pom-dex"
 ];
 
 define final EloPomdexRegimen:

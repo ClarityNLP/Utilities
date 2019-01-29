@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GELOX, then RT", "GELOX_then_RT", "GELOXthenRT"
+    "GELOX_then_RT", "GELOX, then RT", "GELOXthenRT"
 ];
 
 define final GELOXthenRTRegimen:

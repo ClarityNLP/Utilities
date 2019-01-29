@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LMDex", "MRD", "L-M-Dex", "L/M/Dex"
+    "LMDex", "L/M/Dex", "MRD", "L-M-Dex"
 ];
 
 define final MRDRegimen:

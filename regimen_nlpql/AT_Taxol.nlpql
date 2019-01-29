@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AT_Taxol", "AT", "ATTaxol", "AT (Taxol)"
+    "AT (Taxol)", "AT_Taxol", "AT", "ATTaxol"
 ];
 
 define final ATTaxolRegimen:

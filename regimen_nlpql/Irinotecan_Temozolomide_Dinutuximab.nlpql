@@ -29,7 +29,7 @@ define final SargramostimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan, Temozolomide, Dinutuximab"
+    "Irinotecan, Temozolomide, Dinutuximab", "IrinotecanTemozolomideDinutuximab", "Irinotecan_Temozolomide_Dinutuximab"
 ];
 
 define final IrinotecanTemozolomideDinutuximabRegimen:

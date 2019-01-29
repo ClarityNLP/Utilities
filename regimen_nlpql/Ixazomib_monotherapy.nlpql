@@ -29,7 +29,7 @@ define final IxazomibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ixazomib monotherapy", "Ixazomibmonotherapy", "Ixazomib_monotherapy"
+    "Ixazomib monotherapy", "Ixazomibmonotherapy", "Ixazomib", "Ixazomib_monotherapy"
 ];
 
 define final IxazomibmonotherapyRegimen:

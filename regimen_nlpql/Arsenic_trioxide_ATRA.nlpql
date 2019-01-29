@@ -40,7 +40,7 @@ define  AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide & ATRA"
+    "Arsenic_trioxide_ATRA", "ArsenictrioxideATRA", "Arsenic trioxide & ATRA"
 ];
 
 define final ArsenictrioxideATRARegimen:

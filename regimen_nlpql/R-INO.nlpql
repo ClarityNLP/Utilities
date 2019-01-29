@@ -40,7 +40,7 @@ define  InotuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-INO", "R/INO", "RINO"
+    "RINO", "R/INO", "R-INO"
 ];
 
 define final RINORegimen:

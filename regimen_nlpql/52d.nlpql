@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "5 / 2d", "5&2d", "52d", "5 and 2d", "5+2d", "5/2d", "5 & 2d"
+    "5 / 2d", "5 and 2d", "5+2d", "5&2d", "5/2d", "52d", "5 & 2d"
 ];
 
 define final 52dRegimen:

@@ -73,7 +73,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOXIRI & Cetuximab"
+    "mFOLFOXIRI_Cetuximab", "mFOLFOXIRI & Cetuximab", "mFOLFOXIRICetuximab"
 ];
 
 define final mFOLFOXIRICetuximabRegimen:

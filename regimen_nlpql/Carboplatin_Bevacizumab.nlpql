@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Bevacizumab"
+    "CarboplatinBevacizumab", "Carboplatin_Bevacizumab", "Carboplatin & Bevacizumab"
 ];
 
 define final CarboplatinBevacizumabRegimen:

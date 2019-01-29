@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Panobinostat & Rituximab"
+    "PanobinostatRituximab", "Panobinostat & Rituximab", "Panobinostat_Rituximab"
 ];
 
 define final PanobinostatRituximabRegimen:

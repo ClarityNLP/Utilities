@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenalidomide & Rituximab"
+    "Lenalidomide & Rituximab", "Lenalidomide_Rituximab", "LenalidomideRituximab"
 ];
 
 define final LenalidomideRituximabRegimen:
@@ -63,7 +63,7 @@ define final LenalidomideRituximabTreatments:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Transformed_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Transformed_lymphoma
 
 
 ***/

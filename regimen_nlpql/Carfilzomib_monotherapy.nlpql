@@ -29,7 +29,7 @@ define final CarfilzomibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib monotherapy"
+    "Carfilzomib", "Carfilzomibmonotherapy", "Carfilzomib monotherapy", "Carfilzomib_monotherapy"
 ];
 
 define final CarfilzomibmonotherapyRegimen:

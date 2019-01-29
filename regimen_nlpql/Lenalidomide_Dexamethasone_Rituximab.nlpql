@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenalidomide, Dexamethasone, Rituximab"
+    "LenalidomideDexamethasoneRituximab", "Lenalidomide, Dexamethasone, Rituximab", "Lenalidomide_Dexamethasone_Rituximab"
 ];
 
 define final LenalidomideDexamethasoneRituximabRegimen:

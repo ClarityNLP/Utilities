@@ -29,7 +29,7 @@ define final LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenalidomide monotherapy"
+    "Lenalidomide_monotherapy", "Lenalidomidemonotherapy", "Lenalidomide", "Lenalidomide monotherapy"
 ];
 
 define final LenalidomidemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final LenalidomidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cutaneous_T-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Waldenstrom_macroglobulinemia, Multiple_myeloma_relapsedrefractory, Adult_T-cell_leukemia-lymphoma, Marginal_zone_lymphoma, Light-chain_(AL)_amyloidosis, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Plasma_cell_leukemia, Myelodysplastic_syndrome, Polycythemia_vera, Hodgkin_lymphoma, Peripheral_T-cell_lymphoma, Myelofibrosis, Mantle_cell_lymphoma, Transformed_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Adult_T-cell_leukemia-lymphoma, Cutaneous_T-cell_lymphoma, Polycythemia_vera, Myelodysplastic_syndrome, Chronic_lymphocytic_leukemia_(CLLSLL), Transformed_lymphoma, Follicular_lymphoma, Light-chain_(AL)_amyloidosis, Myelofibrosis, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Multiple_myeloma_relapsedrefractory, Peripheral_T-cell_lymphoma, Plasma_cell_leukemia, Hodgkin_lymphoma, Waldenstrom_macroglobulinemia
 
 
 ***/

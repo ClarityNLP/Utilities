@@ -29,7 +29,7 @@ define final BetrixabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Betrixaban monotherapy"
+    "Betrixaban_monotherapy", "Betrixaban", "Betrixabanmonotherapy", "Betrixaban monotherapy"
 ];
 
 define final BetrixabanmonotherapyRegimen:

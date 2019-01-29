@@ -262,6 +262,10 @@ if __name__ == "__main__":
                                             regimen_names.append(reg_name[0])
                                 alternate_regimens = list()
                                 for r in regimen_names:
+                                    alternate_regimens.append(safe_name(r, no_punc=True))
+                                    alternate_regimens.append(safe_name(r, no_punc=False))
+                                    alternate_regimens.append(r.replace(' monotherapy', ''))
+
                                     if len(r) > 20:
                                         continue
                                     if '&' in r:
@@ -283,8 +287,6 @@ if __name__ == "__main__":
                                         alternate_regimens.append(r.replace('+', ' / '))
                                         alternate_regimens.append(r.replace('+', '/'))
                                         alternate_regimens.append(r.replace('+', ''))
-                                    alternate_regimens.append(safe_name(r, no_punc=True))
-                                    alternate_regimens.append(safe_name(r, no_punc=False))
 
                                 regimen_names.extend(alternate_regimens)
                                 regimen_names = list(set(regimen_names))

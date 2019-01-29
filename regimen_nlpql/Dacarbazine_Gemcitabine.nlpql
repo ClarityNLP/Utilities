@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine & Gemcitabine"
+    "Dacarbazine & Gemcitabine", "Dacarbazine_Gemcitabine", "DacarbazineGemcitabine"
 ];
 
 define final DacarbazineGemcitabineRegimen:

@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide & Mitoxantrone"
+    "Etoposide_Mitoxantrone", "Etoposide & Mitoxantrone", "EtoposideMitoxantrone"
 ];
 
 define final EtoposideMitoxantroneRegimen:

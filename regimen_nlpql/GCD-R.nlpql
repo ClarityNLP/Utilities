@@ -62,7 +62,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GCDR", "GCD-R", "GCD/R"
+    "GCD/R", "GCD-R", "GCDR"
 ];
 
 define final GCDRRegimen:

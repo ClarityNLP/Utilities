@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate & Rituximab"
+    "Methotrexate & Rituximab", "Methotrexate_Rituximab", "MethotrexateRituximab"
 ];
 
 define final MethotrexateRituximabRegimen:

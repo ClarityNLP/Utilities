@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RminiCEOP", "R-miniCEOP", "R/miniCEOP"
+    "R-miniCEOP", "RminiCEOP", "R/miniCEOP"
 ];
 
 define final RminiCEOPRegimen:

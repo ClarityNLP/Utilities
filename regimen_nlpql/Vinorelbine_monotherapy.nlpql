@@ -29,7 +29,7 @@ define final VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinorelbine monotherapy"
+    "Vinorelbine monotherapy", "Vinorelbine_monotherapy", "Vinorelbinemonotherapy", "Vinorelbine"
 ];
 
 define final VinorelbinemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final VinorelbinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Ovarian_cancer, Non-small_cell_lung_cancer, Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Hodgkin_lymphoma, Mesothelioma
+Known regimen for: Ovarian_cancer, Mesothelioma, Small_cell_lung_cancer, Diffuse_large_B-cell_lymphoma, Cervical_cancer, Hodgkin_lymphoma, Non-small_cell_lung_cancer
 
 
 ***/

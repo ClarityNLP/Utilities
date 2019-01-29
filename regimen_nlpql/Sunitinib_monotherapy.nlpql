@@ -29,7 +29,7 @@ define final SunitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sunitinib monotherapy"
+    "Sunitinib_monotherapy", "Sunitinibmonotherapy", "Sunitinib", "Sunitinib monotherapy"
 ];
 
 define final SunitinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final SunitinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Thyroid_cancer, Renal_cell_carcinoma, Small_cell_lung_cancer, Testicular_cancer, Thymoma, Pancreatic_NET, Gastrointestinal_stromal_tumor
+Known regimen for: Thyroid_cancer, Small_cell_lung_cancer, Testicular_cancer, Gastrointestinal_stromal_tumor, Thymoma, Renal_cell_carcinoma, Pancreatic_NET
 
 
 ***/

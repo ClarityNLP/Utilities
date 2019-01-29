@@ -29,7 +29,7 @@ define final EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide monotherapy"
+    "Etoposide", "Etoposide monotherapy", "Etoposide_monotherapy", "Etoposidemonotherapy"
 ];
 
 define final EtoposidemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final EtoposidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Vascular_sarcoma, Esophageal_cancer, Ovarian_cancer, Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Testicular_cancer
+Known regimen for: Ovarian_cancer, Small_cell_lung_cancer, Testicular_cancer, Vascular_sarcoma, Diffuse_large_B-cell_lymphoma, Esophageal_cancer, Anaplastic_glioma
 
 
 ***/

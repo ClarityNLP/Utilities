@@ -29,7 +29,7 @@ define final OsimertinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Osimertinib monotherapy"
+    "Osimertinib", "Osimertinib monotherapy", "Osimertinibmonotherapy", "Osimertinib_monotherapy"
 ];
 
 define final OsimertinibmonotherapyRegimen:

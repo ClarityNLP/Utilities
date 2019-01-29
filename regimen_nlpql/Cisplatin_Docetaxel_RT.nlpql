@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Docetaxel, RT", "RT"
+    "Cisplatin_Docetaxel_RT", "Cisplatin, Docetaxel, RT", "CisplatinDocetaxelRT", "RT"
 ];
 
 define final CisplatinDocetaxelRTRegimen:
@@ -74,7 +74,7 @@ define final CisplatinDocetaxelRTTreatments:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Non-small_cell_lung_cancer
 
 
 ***/

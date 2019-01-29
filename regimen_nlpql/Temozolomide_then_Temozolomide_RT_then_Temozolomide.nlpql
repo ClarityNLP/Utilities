@@ -29,7 +29,7 @@ define final TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide, then Temozolomide & RT, then Temozolomide"
+    "Temozolomide_then_Temozolomide_RT_then_Temozolomide", "TemozolomidethenTemozolomideRTthenTemozolomide", "Temozolomide, then Temozolomide & RT, then Temozolomide"
 ];
 
 define final TemozolomidethenTemozolomideRTthenTemozolomideRegimen:

@@ -84,7 +84,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABVEPC", "ABVE-PC", "ABVE/PC"
+    "ABVE/PC", "ABVE-PC", "ABVEPC"
 ];
 
 define final ABVEPCRegimen:

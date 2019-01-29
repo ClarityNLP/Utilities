@@ -29,7 +29,7 @@ define final ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Procarbazine monotherapy"
+    "Procarbazine", "Procarbazine monotherapy", "Procarbazinemonotherapy", "Procarbazine_monotherapy"
 ];
 
 define final ProcarbazinemonotherapyRegimen:

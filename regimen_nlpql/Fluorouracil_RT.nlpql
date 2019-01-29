@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil & RT", "FluorouracilRT", "Fluorouracil and RT", "Fluorouracil_RT", "Fluorouracil/RT", "Fluorouracil / RT", "RT"
+    "Fluorouracil/RT", "Fluorouracil / RT", "Fluorouracil & RT", "Fluorouracil and RT", "RT", "FluorouracilRT", "Fluorouracil_RT"
 ];
 
 define final FluorouracilRTRegimen:
@@ -63,7 +63,7 @@ define final FluorouracilRTTreatments:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Head_and_neck_cancer, Rectal_cancer, Pancreatic_cancer
+Known regimen for: Head_and_neck_cancer, Cervical_cancer, Rectal_cancer, Pancreatic_cancer
 
 
 ***/

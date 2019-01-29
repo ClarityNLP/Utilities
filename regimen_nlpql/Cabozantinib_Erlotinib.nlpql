@@ -40,7 +40,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cabozantinib & Erlotinib"
+    "Cabozantinib_Erlotinib", "Cabozantinib & Erlotinib", "CabozantinibErlotinib"
 ];
 
 define final CabozantinibErlotinibRegimen:

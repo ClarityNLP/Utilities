@@ -29,7 +29,7 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ribociclib & Tamoxifen"
+    "RibociclibTamoxifen", "Ribociclib_Tamoxifen", "Ribociclib & Tamoxifen"
 ];
 
 define final RibociclibTamoxifenRegimen:

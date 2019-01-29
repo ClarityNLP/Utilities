@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RTBI/Cy", "R-TBICy", "R/TBI/Cy", "RTBICy", "R-TBI/Cy"
+    "R-TBI/Cy", "R/TBI/Cy", "RTBI/Cy", "R-TBICy", "RTBICy"
 ];
 
 define final RTBICyRegimen:

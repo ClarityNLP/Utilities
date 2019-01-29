@@ -51,7 +51,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine, Methotrexate, MP"
+    "Cyclosporine, Methotrexate, MP", "CyclosporineMethotrexateMP", "Cyclosporine_Methotrexate_MP"
 ];
 
 define final CyclosporineMethotrexateMPRegimen:

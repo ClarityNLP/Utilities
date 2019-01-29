@@ -29,7 +29,7 @@ define final InotuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Inotuzumab ozogamicin monotherapy"
+    "Inotuzumabozogamicinmonotherapy", "Inotuzumab ozogamicin monotherapy", "Inotuzumab ozogamicin", "Inotuzumab_ozogamicin_monotherapy"
 ];
 
 define final InotuzumabozogamicinmonotherapyRegimen:

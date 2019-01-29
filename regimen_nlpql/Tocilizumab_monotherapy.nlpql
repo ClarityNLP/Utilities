@@ -29,7 +29,7 @@ define final TocilizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tocilizumab monotherapy"
+    "Tocilizumabmonotherapy", "Tocilizumab", "Tocilizumab_monotherapy", "Tocilizumab monotherapy"
 ];
 
 define final TocilizumabmonotherapyRegimen:

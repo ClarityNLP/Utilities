@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Olaparib, Paclitaxel"
+    "Carboplatin_Olaparib_Paclitaxel", "Carboplatin, Olaparib, Paclitaxel", "CarboplatinOlaparibPaclitaxel"
 ];
 
 define final CarboplatinOlaparibPaclitaxelRegimen:

@@ -29,7 +29,7 @@ define final AspirinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin monotherapy", "Aspirin_monotherapy", "Aspirinmonotherapy"
+    "Aspirin monotherapy", "Aspirin", "Aspirin_monotherapy", "Aspirinmonotherapy"
 ];
 
 define final AspirinmonotherapyRegimen:

@@ -40,7 +40,7 @@ define  PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Pemetrexed"
+    "CarboplatinPemetrexed", "Carboplatin & Pemetrexed", "Carboplatin_Pemetrexed"
 ];
 
 define final CarboplatinPemetrexedRegimen:

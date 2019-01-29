@@ -29,7 +29,7 @@ define final RucaparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rucaparib monotherapy"
+    "Rucaparib_monotherapy", "Rucaparib", "Rucaparibmonotherapy", "Rucaparib monotherapy"
 ];
 
 define final RucaparibmonotherapyRegimen:

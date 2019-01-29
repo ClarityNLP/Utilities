@@ -29,7 +29,7 @@ define final MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan monotherapy"
+    "Melphalanmonotherapy", "Melphalan_monotherapy", "Melphalan monotherapy", "Melphalan"
 ];
 
 define final MelphalanmonotherapyRegimen:

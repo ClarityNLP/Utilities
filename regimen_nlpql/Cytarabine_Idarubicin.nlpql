@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Idarubicin"
+    "Cytarabine & Idarubicin", "CytarabineIdarubicin", "Cytarabine_Idarubicin"
 ];
 
 define final CytarabineIdarubicinRegimen:
@@ -63,7 +63,7 @@ define final CytarabineIdarubicinTreatments:
 // Comments
 /***
 
-Known regimen for: Acute_myeloid_leukemia, Acute_promyelocytic_leukemia
+Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
 
 
 ***/

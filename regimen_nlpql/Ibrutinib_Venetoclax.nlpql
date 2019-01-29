@@ -40,7 +40,7 @@ define  VenetoclaxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib & Venetoclax"
+    "IbrutinibVenetoclax", "Ibrutinib_Venetoclax", "Ibrutinib & Venetoclax"
 ];
 
 define final IbrutinibVenetoclaxRegimen:

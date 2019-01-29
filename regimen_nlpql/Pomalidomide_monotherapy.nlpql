@@ -29,7 +29,7 @@ define final PomalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pomalidomide monotherapy"
+    "Pomalidomidemonotherapy", "Pomalidomide monotherapy", "Pomalidomide", "Pomalidomide_monotherapy"
 ];
 
 define final PomalidomidemonotherapyRegimen:

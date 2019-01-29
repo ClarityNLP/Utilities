@@ -29,7 +29,7 @@ define final AldesleukinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "High-dose Interleukin-2", "HD IL-2", "HD IL/2", "HD_IL-2", "HDIL2", "HD IL2"
+    "HDIL2", "High-dose Interleukin-2", "HD IL2", "HighdoseInterleukin2", "HD IL/2", "High-dose_Interleukin-2", "HD_IL-2", "HD IL-2"
 ];
 
 define final HighdoseInterleukin2Regimen:

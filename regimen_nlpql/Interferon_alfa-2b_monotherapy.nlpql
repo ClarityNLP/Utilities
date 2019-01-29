@@ -29,7 +29,7 @@ define final Interferonalfa2bTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2b monotherapy", "HDI"
+    "Interferon alfa-2b", "Interferon alfa-2b monotherapy", "Interferonalfa2bmonotherapy", "Interferon_alfa-2b_monotherapy", "HDI"
 ];
 
 define final Interferonalfa2bmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final Interferonalfa2bmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Neuroendocrine_tumors, Systemic_mastocytosis, Renal_cell_carcinoma, Melanoma
+Known regimen for: Neuroendocrine_tumors, Renal_cell_carcinoma, Systemic_mastocytosis, Melanoma
 
 
 ***/

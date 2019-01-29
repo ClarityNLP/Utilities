@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Doxorubicin liposomal, Fluorouracil"
+    "CisplatinDoxorubicinliposomalFluorouracil", "Cisplatin_Doxorubicin_liposomal_Fluorouracil", "Cisplatin, Doxorubicin liposomal, Fluorouracil"
 ];
 
 define final CisplatinDoxorubicinliposomalFluorouracilRegimen:

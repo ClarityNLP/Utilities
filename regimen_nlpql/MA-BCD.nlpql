@@ -29,7 +29,7 @@ define final DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MA/BCD", "MABCD", "MA-BCD"
+    "MA/BCD", "MA-BCD", "MABCD"
 ];
 
 define final MABCDRegimen:

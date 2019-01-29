@@ -62,7 +62,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/FCM", "RFCM", "R-FCM"
+    "RFCM", "R-FCM", "R/FCM"
 ];
 
 define final RFCMRegimen:

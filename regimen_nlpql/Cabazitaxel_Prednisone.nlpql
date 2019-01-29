@@ -95,7 +95,7 @@ define  CabazitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cabazitaxel & Prednisone"
+    "Cabazitaxel_Prednisone", "CabazitaxelPrednisone", "Cabazitaxel & Prednisone"
 ];
 
 define final CabazitaxelPrednisoneRegimen:

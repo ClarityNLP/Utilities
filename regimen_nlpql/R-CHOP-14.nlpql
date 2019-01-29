@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-CHOP-14", "RCHOP14", "R/CHOP/14"
+    "R-CHOP-14", "R/CHOP/14", "RCHOP14"
 ];
 
 define final RCHOP14Regimen:
@@ -96,7 +96,7 @@ define final RCHOP14Treatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 ***/

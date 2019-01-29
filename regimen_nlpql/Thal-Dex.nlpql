@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TD", "Thal-Dex", "ThalDex", "Thal/Dex"
+    "TD", "ThalDex", "Thal/Dex", "Thal-Dex"
 ];
 
 define final ThalDexRegimen:

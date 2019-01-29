@@ -40,7 +40,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib & Panobinostat"
+    "Carfilzomib & Panobinostat", "Carfilzomib_Panobinostat", "CarfilzomibPanobinostat"
 ];
 
 define final CarfilzomibPanobinostatRegimen:

@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bor-HDM", "Bor/HDM", "Bortezomib & Melphalan", "BorHDM"
+    "BorHDM", "Bor/HDM", "Bortezomib_Melphalan", "Bortezomib & Melphalan", "Bor-HDM", "BortezomibMelphalan"
 ];
 
 define final BortezomibMelphalanRegimen:

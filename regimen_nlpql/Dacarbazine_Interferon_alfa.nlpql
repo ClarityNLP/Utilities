@@ -40,7 +40,7 @@ define  CategoryInterferonsTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine & Interferon alfa"
+    "Dacarbazine_Interferon_alfa", "Dacarbazine & Interferon alfa", "DacarbazineInterferonalfa"
 ];
 
 define final DacarbazineInterferonalfaRegimen:

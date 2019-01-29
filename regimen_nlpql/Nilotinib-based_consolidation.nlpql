@@ -29,7 +29,7 @@ define final FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nilotinib-based consolidation"
+    "Nilotinibbasedconsolidation", "Nilotinib-based_consolidation", "Nilotinib-based consolidation"
 ];
 
 define final NilotinibbasedconsolidationRegimen:

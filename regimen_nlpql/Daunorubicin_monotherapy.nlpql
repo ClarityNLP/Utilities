@@ -29,7 +29,7 @@ define final DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin monotherapy"
+    "Daunorubicin monotherapy", "Daunorubicin_monotherapy", "Daunorubicinmonotherapy", "Daunorubicin"
 ];
 
 define final DaunorubicinmonotherapyRegimen:

@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Cetuximab"
+    "Irinotecan & Cetuximab", "IrinotecanCetuximab", "Irinotecan_Cetuximab"
 ];
 
 define final IrinotecanCetuximabRegimen:

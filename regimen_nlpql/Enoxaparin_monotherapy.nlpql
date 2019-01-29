@@ -29,7 +29,7 @@ define final EnoxaparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Enoxaparin monotherapy"
+    "Enoxaparin monotherapy", "Enoxaparin_monotherapy", "Enoxaparin", "Enoxaparinmonotherapy"
 ];
 
 define final EnoxaparinmonotherapyRegimen:

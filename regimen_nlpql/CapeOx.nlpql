@@ -40,7 +40,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CAPOX", "CapeOx", "CapeOX", "XELOX"
+    "CapeOX", "XELOX", "CAPOX", "CapeOx"
 ];
 
 define final CapeOxRegimen:
@@ -63,7 +63,7 @@ define final CapeOxTreatments:
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Esophageal_cancer, Colon_cancer, Hepatocellular_carcinoma, Gastric_cancer, Pancreatic_cancer
+Known regimen for: Hepatocellular_carcinoma, Rectal_cancer, Colon_cancer, Esophageal_cancer, Pancreatic_cancer, Gastric_cancer
 
 
 ***/

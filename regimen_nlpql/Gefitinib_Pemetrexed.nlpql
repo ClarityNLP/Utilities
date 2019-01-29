@@ -40,7 +40,7 @@ define  PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "P and G", "P/G", "P&G", "PG", "P / G", "P & G", "Gefitinib & Pemetrexed", "P+G"
+    "P and G", "P+G", "P&G", "P / G", "Gefitinib_Pemetrexed", "PG", "GefitinibPemetrexed", "Gefitinib & Pemetrexed", "P/G", "P & G"
 ];
 
 define final GefitinibPemetrexedRegimen:

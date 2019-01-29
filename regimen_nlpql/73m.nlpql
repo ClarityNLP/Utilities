@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MAC", "7&3m", "7 & 3m", "73m", "7 / 3m", "7/3m", "7 and 3m", "7+3m"
+    "MAC", "7/3m", "7 & 3m", "7&3m", "7 and 3m", "7 / 3m", "73m", "7+3m"
 ];
 
 define final 73mRegimen:

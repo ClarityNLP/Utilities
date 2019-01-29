@@ -29,7 +29,7 @@ define final LorlatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lorlatinib monotherapy"
+    "Lorlatinib monotherapy", "Lorlatinib", "Lorlatinib_monotherapy", "Lorlatinibmonotherapy"
 ];
 
 define final LorlatinibmonotherapyRegimen:

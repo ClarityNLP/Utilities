@@ -40,7 +40,7 @@ define  IxabepiloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Ixabepilone"
+    "Capecitabine & Ixabepilone", "CapecitabineIxabepilone", "Capecitabine_Ixabepilone"
 ];
 
 define final CapecitabineIxabepiloneRegimen:

@@ -29,7 +29,7 @@ define final ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy, high dose"
+    "Imatinib, high dose", "Imatinib_monotherapy_high_dose", "Imatinib monotherapy, high dose", "Imatinibmonotherapyhighdose"
 ];
 
 define final ImatinibmonotherapyhighdoseRegimen:

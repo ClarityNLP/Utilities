@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PLF", "CLF"
+    "CLF", "PLF"
 ];
 
 define final CLFRegimen:

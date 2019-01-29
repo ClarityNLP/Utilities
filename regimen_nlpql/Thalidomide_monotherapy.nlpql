@@ -29,7 +29,7 @@ define final ThalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thalidomide monotherapy"
+    "Thalidomidemonotherapy", "Thalidomide monotherapy", "Thalidomide_monotherapy", "Thalidomide"
 ];
 
 define final ThalidomidemonotherapyRegimen:

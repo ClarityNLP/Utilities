@@ -40,7 +40,7 @@ define  ZidovudineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon alfa-2b & Zidovudine"
+    "Interferon_alfa-2b_Zidovudine", "Interferon alfa-2b & Zidovudine", "Interferonalfa2bZidovudine"
 ];
 
 define final Interferonalfa2bZidovudineRegimen:

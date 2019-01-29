@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab & Rituximab"
+    "Alemtuzumab & Rituximab", "AlemtuzumabRituximab", "Alemtuzumab_Rituximab"
 ];
 
 define final AlemtuzumabRituximabRegimen:

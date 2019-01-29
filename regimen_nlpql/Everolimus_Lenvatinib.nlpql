@@ -40,7 +40,7 @@ define  LenvatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus & Lenvatinib"
+    "Everolimus & Lenvatinib", "Everolimus_Lenvatinib", "EverolimusLenvatinib"
 ];
 
 define final EverolimusLenvatinibRegimen:

@@ -29,7 +29,7 @@ define final PembrolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pembrolizumab monotherapy"
+    "Pembrolizumabmonotherapy", "Pembrolizumab_monotherapy", "Pembrolizumab monotherapy", "Pembrolizumab"
 ];
 
 define final PembrolizumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final PembrolizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Anal_cancer, Cervical_cancer, Endometrial_cancer, Primary_mediastinal_B-cell_lymphoma, MSI-H_or_dMMR, Bladder_cancer, Cholangiocarcinoma, Non-small_cell_lung_cancer, Transformed_lymphoma, Hodgkin_lymphoma, Merkel_cell_carcinoma, Head_and_neck_cancer, Hepatocellular_carcinoma, Gastric_cancer, Melanoma
+Known regimen for: Non-small_cell_lung_cancer, Hepatocellular_carcinoma, Gastric_cancer, Primary_mediastinal_B-cell_lymphoma, Anal_cancer, Melanoma, Transformed_lymphoma, Head_and_neck_cancer, Merkel_cell_carcinoma, MSI-H_or_dMMR, Bladder_cancer, Endometrial_cancer, Cervical_cancer, Hodgkin_lymphoma, Cholangiocarcinoma
 
 
 ***/

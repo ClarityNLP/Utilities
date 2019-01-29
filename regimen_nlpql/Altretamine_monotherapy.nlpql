@@ -29,7 +29,7 @@ define final AltretamineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Altretamine monotherapy"
+    "Altretamine monotherapy", "Altretamine_monotherapy", "Altretaminemonotherapy", "Altretamine"
 ];
 
 define final AltretaminemonotherapyRegimen:

@@ -29,7 +29,7 @@ define final AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRAmonotherapy", "ATRA monotherapy", "ATRA_monotherapy"
+    "ATRAmonotherapy", "ATRA monotherapy", "ATRA_monotherapy", "ATRA"
 ];
 
 define final ATRAmonotherapyRegimen:

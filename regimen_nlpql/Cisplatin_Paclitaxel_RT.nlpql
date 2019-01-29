@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Paclitaxel, RT"
+    "CisplatinPaclitaxelRT", "Cisplatin, Paclitaxel, RT", "Cisplatin_Paclitaxel_RT"
 ];
 
 define final CisplatinPaclitaxelRTRegimen:

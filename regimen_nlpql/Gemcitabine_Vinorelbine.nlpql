@@ -40,7 +40,7 @@ define  VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Vinorelbine"
+    "Gemcitabine_Vinorelbine", "Gemcitabine & Vinorelbine", "GemcitabineVinorelbine"
 ];
 
 define final GemcitabineVinorelbineRegimen:

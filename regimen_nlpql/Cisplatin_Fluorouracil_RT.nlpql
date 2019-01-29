@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Fluorouracil, RT"
+    "Cisplatin_Fluorouracil_RT", "Cisplatin, Fluorouracil, RT", "CisplatinFluorouracilRT"
 ];
 
 define final CisplatinFluorouracilRTRegimen:
@@ -74,7 +74,7 @@ define final CisplatinFluorouracilRTTreatments:
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Head_and_neck_cancer, Bladder_cancer, Esophageal_cancer
+Known regimen for: Head_and_neck_cancer, Cervical_cancer, Bladder_cancer, Esophageal_cancer
 
 
 ***/

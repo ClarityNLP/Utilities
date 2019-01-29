@@ -29,7 +29,7 @@ define final TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trastuzumab monotherapy"
+    "Trastuzumab", "Trastuzumabmonotherapy", "Trastuzumab monotherapy", "Trastuzumab_monotherapy"
 ];
 
 define final TrastuzumabmonotherapyRegimen:

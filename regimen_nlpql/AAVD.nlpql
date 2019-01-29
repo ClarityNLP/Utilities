@@ -62,7 +62,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AAVD", "BV  /  AVD", "BV  and  AVD", "BV / AVD", "BVAVD", "BV  &  AVD", "A & AVD", "BV  AVD", "A&AVD", "A / AVD", "BV & AVD", "A and AVD", "A/AVD", "BV + AVD", "BV_AVD", "A+AVD"
+    "BV  and  AVD", "BV + AVD", "AAVD", "BV  &  AVD", "A / AVD", "A & AVD", "A+AVD", "A&AVD", "A and AVD", "BV & AVD", "BV / AVD", "A/AVD", "BV  AVD", "BVAVD", "BV  /  AVD", "BV_AVD"
 ];
 
 define final AAVDRegimen:

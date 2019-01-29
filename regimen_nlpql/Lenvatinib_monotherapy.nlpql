@@ -29,7 +29,7 @@ define final LenvatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenvatinib monotherapy"
+    "Lenvatinib", "Lenvatinib_monotherapy", "Lenvatinib monotherapy", "Lenvatinibmonotherapy"
 ];
 
 define final LenvatinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final LenvatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Thyroid_cancer, Hepatocellular_carcinoma, Renal_cell_carcinoma
+Known regimen for: Renal_cell_carcinoma, Hepatocellular_carcinoma, Thyroid_cancer
 
 
 ***/

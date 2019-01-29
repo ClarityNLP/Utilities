@@ -51,7 +51,7 @@ define  GemtuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide, ATRA, Gemtuzumab ozogamicin"
+    "Arsenic trioxide, ATRA, Gemtuzumab ozogamicin", "ArsenictrioxideATRAGemtuzumabozogamicin", "Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin"
 ];
 
 define final ArsenictrioxideATRAGemtuzumabozogamicinRegimen:

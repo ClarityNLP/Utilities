@@ -62,7 +62,7 @@ define  MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CODOXM/IVAC", "CODOXMIVAC", "CODOX-MIVAC", "CODOX/M/IVAC", "CODOX-M/IVAC"
+    "CODOX-M/IVAC", "CODOXMIVAC", "CODOX/M/IVAC", "CODOXM/IVAC", "CODOX-MIVAC"
 ];
 
 define final CODOXMIVACRegimen:

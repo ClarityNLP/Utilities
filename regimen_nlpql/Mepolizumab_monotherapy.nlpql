@@ -29,7 +29,7 @@ define final MepolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mepolizumab monotherapy"
+    "Mepolizumab", "Mepolizumabmonotherapy", "Mepolizumab_monotherapy", "Mepolizumab monotherapy"
 ];
 
 define final MepolizumabmonotherapyRegimen:

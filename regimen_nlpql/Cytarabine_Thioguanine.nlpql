@@ -40,7 +40,7 @@ define  ThioguanineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Thioguanine"
+    "CytarabineThioguanine", "Cytarabine_Thioguanine", "Cytarabine & Thioguanine"
 ];
 
 define final CytarabineThioguanineRegimen:

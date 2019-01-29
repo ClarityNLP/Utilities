@@ -29,7 +29,7 @@ define final NilotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Nilotinib monotherapy"
+    "Nilotinibmonotherapy", "Nilotinib_monotherapy", "Nilotinib", "Nilotinib monotherapy"
 ];
 
 define final NilotinibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final NilotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Chronic_myelogenous_leukemia, Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Hypereosinophilic_syndrome, Systemic_mastocytosis, Chronic_myelogenous_leukemia
 
 
 ***/

@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Irinotecan", "IP", "IC"
+    "Carboplatin & Irinotecan", "Carboplatin_Irinotecan", "IP", "IC", "CarboplatinIrinotecan"
 ];
 
 define final CarboplatinIrinotecanRegimen:

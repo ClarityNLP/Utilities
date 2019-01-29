@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Atezolizumab & Bevacizumab"
+    "Atezolizumab_Bevacizumab", "Atezolizumab & Bevacizumab", "AtezolizumabBevacizumab"
 ];
 
 define final AtezolizumabBevacizumabRegimen:

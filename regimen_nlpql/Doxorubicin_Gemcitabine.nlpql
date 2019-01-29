@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin & Gemcitabine"
+    "Doxorubicin & Gemcitabine", "Doxorubicin_Gemcitabine", "DoxorubicinGemcitabine"
 ];
 
 define final DoxorubicinGemcitabineRegimen:

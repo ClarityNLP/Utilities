@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus & Rituximab"
+    "Everolimus & Rituximab", "Everolimus_Rituximab", "EverolimusRituximab"
 ];
 
 define final EverolimusRituximabRegimen:

@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pomalidomide & Prednisone"
+    "Pomalidomide_Prednisone", "Pomalidomide & Prednisone", "PomalidomidePrednisone"
 ];
 
 define final PomalidomidePrednisoneRegimen:

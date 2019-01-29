@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BDD", "VAD", "PAD", "PAd"
+    "VAD", "PAD", "PAd", "BDD"
 ];
 
 define final PADRegimen:

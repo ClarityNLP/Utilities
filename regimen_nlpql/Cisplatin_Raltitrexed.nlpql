@@ -40,7 +40,7 @@ define  RaltitrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Raltitrexed"
+    "Cisplatin & Raltitrexed", "CisplatinRaltitrexed", "Cisplatin_Raltitrexed"
 ];
 
 define final CisplatinRaltitrexedRegimen:

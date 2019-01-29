@@ -29,7 +29,7 @@ define final PegylatedliposomaldoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin pegylated liposomal monotherapy"
+    "Doxorubicin_pegylated_liposomal_monotherapy", "Doxorubicin pegylated liposomal monotherapy", "Doxorubicin pegylated liposomal", "Doxorubicinpegylatedliposomalmonotherapy"
 ];
 
 define final DoxorubicinpegylatedliposomalmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final DoxorubicinpegylatedliposomalmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Vascular_sarcoma, Ovarian_cancer
+Known regimen for: Ovarian_cancer, Vascular_sarcoma
 
 
 ***/

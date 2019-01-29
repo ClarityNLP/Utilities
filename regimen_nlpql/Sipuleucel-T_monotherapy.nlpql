@@ -29,7 +29,7 @@ define final SipuleucelTTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sipuleucel-T monotherapy"
+    "SipuleucelTmonotherapy", "Sipuleucel-T", "Sipuleucel-T monotherapy", "Sipuleucel-T_monotherapy"
 ];
 
 define final SipuleucelTmonotherapyRegimen:

@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sirolimus, Tacrolimus, Prednisone"
+    "SirolimusTacrolimusPrednisone", "Sirolimus, Tacrolimus, Prednisone", "Sirolimus_Tacrolimus_Prednisone"
 ];
 
 define final SirolimusTacrolimusPrednisoneRegimen:

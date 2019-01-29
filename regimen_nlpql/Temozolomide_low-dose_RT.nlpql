@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LDRT", "Temozolomide & low-dose RT"
+    "LDRT", "Temozolomide_low-dose_RT", "TemozolomidelowdoseRT", "Temozolomide & low-dose RT"
 ];
 
 define final TemozolomidelowdoseRTRegimen:

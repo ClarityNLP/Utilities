@@ -29,7 +29,7 @@ define final MidostaurinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Midostaurin monotherapy"
+    "Midostaurin_monotherapy", "Midostaurinmonotherapy", "Midostaurin monotherapy", "Midostaurin"
 ];
 
 define final MidostaurinmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final MidostaurinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia_FLT3-positive
+Known regimen for: Acute_myeloid_leukemia_FLT3-positive, Myelodysplastic_syndrome
 
 
 ***/

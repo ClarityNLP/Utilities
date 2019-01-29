@@ -62,7 +62,7 @@ define  CarboplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RDHAC", "R/DHAC", "R-DHAC"
+    "RDHAC", "R-DHAC", "R/DHAC"
 ];
 
 define final RDHACRegimen:

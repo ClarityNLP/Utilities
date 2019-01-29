@@ -29,7 +29,7 @@ define final MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitomycin monotherapy"
+    "Mitomycinmonotherapy", "Mitomycin monotherapy", "Mitomycin_monotherapy", "Mitomycin"
 ];
 
 define final MitomycinmonotherapyRegimen:

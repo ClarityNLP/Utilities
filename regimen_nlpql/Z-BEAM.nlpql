@@ -62,7 +62,7 @@ define  TrimethoprimSulfamethoxazoleTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Z/BEAM", "ZBEAM", "Z-BEAM"
+    "Z-BEAM", "Z/BEAM", "ZBEAM"
 ];
 
 define final ZBEAMRegimen:

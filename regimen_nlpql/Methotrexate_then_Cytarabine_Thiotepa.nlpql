@@ -29,7 +29,7 @@ define final MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, then Cytarabine & Thiotepa"
+    "MethotrexatethenCytarabineThiotepa", "Methotrexate_then_Cytarabine_Thiotepa", "Methotrexate, then Cytarabine & Thiotepa"
 ];
 
 define final MethotrexatethenCytarabineThiotepaRegimen:

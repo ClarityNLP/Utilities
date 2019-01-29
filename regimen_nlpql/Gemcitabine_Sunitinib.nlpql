@@ -40,7 +40,7 @@ define  SunitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Sunitinib"
+    "GemcitabineSunitinib", "Gemcitabine & Sunitinib", "Gemcitabine_Sunitinib"
 ];
 
 define final GemcitabineSunitinibRegimen:

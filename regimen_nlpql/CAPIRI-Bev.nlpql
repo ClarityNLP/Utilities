@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELIRI-Bev", "XELIRI/Bev", "CAPIRI/Bev", "CAPIRIBev", "CAPIRI-Bev", "XELIRIBev"
+    "XELIRI-Bev", "XELIRIBev", "CAPIRIBev", "CAPIRI-Bev", "XELIRI/Bev", "CAPIRI/Bev"
 ];
 
 define final CAPIRIBevRegimen:

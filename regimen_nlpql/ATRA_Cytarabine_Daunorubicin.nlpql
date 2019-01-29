@@ -51,7 +51,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA, Cytarabine, Daunorubicin"
+    "ATRACytarabineDaunorubicin", "ATRA_Cytarabine_Daunorubicin", "ATRA, Cytarabine, Daunorubicin"
 ];
 
 define final ATRACytarabineDaunorubicinRegimen:

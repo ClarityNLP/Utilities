@@ -29,7 +29,7 @@ define final AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab monotherapy"
+    "Alemtuzumab", "Alemtuzumabmonotherapy", "Alemtuzumab_monotherapy", "Alemtuzumab monotherapy"
 ];
 
 define final AlemtuzumabmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final AlemtuzumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Autoimmune_cytopenias, Cutaneous_T-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Waldenstrom_macroglobulinemia, Adult_T-cell_leukemia-lymphoma, Myelodysplastic_syndrome, Hypereosinophilic_syndrome
+Known regimen for: Hypereosinophilic_syndrome, Adult_T-cell_leukemia-lymphoma, Cutaneous_T-cell_lymphoma, Myelodysplastic_syndrome, Chronic_lymphocytic_leukemia_(CLLSLL), Autoimmune_cytopenias, Waldenstrom_macroglobulinemia
 
 
 ***/

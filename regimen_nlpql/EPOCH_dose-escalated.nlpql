@@ -73,7 +73,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EPOCH", "EPOCH, dose-escalated"
+    "EPOCHdoseescalated", "EPOCH", "EPOCH_dose-escalated", "EPOCH, dose-escalated"
 ];
 
 define final EPOCHdoseescalatedRegimen:

@@ -40,7 +40,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FP, then Capecitabine & RT, then FP"
+    "FP_then_Capecitabine_RT_then_FP", "FP, then Capecitabine & RT, then FP", "FPthenCapecitabineRTthenFP"
 ];
 
 define final FPthenCapecitabineRTthenFPRegimen:

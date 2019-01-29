@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "73i", "7&3i", "7 & 3i", "7 / 3i", "7 and 3i", "7/3i", "7+3i", "IA", "AI"
+    "7&3i", "7+3i", "7 and 3i", "AI", "7 / 3i", "73i", "7/3i", "IA", "7 & 3i"
 ];
 
 define final 73iRegimen:

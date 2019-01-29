@@ -29,7 +29,7 @@ define final IdelalisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idelalisib monotherapy"
+    "Idelalisib_monotherapy", "Idelalisibmonotherapy", "Idelalisib", "Idelalisib monotherapy"
 ];
 
 define final IdelalisibmonotherapyRegimen:
@@ -45,7 +45,7 @@ define final IdelalisibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Follicular_lymphoma, Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 ***/

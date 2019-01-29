@@ -29,7 +29,7 @@ define final BicalutamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Leuprolide monotherapy"
+    "Leuprolide_monotherapy", "Leuprolide", "Leuprolide monotherapy", "Leuprolidemonotherapy"
 ];
 
 define final LeuprolidemonotherapyRegimen:

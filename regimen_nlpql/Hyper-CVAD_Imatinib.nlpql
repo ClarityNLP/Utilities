@@ -128,7 +128,7 @@ define  RasburicaseTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper-CVAD & Imatinib"
+    "HyperCVADImatinib", "Hyper-CVAD_Imatinib", "Hyper-CVAD & Imatinib"
 ];
 
 define final HyperCVADImatinibRegimen:

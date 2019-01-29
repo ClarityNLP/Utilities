@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EP / RT", "EPRT", "EP & RT", "EP and RT", "EP/RT", "EP_RT", "Carboplatin, Etoposide, RT"
+    "EP / RT", "Carboplatin_Etoposide_RT", "EP and RT", "EP & RT", "EP_RT", "CarboplatinEtoposideRT", "Carboplatin, Etoposide, RT", "EPRT", "EP/RT"
 ];
 
 define final CarboplatinEtoposideRTRegimen:

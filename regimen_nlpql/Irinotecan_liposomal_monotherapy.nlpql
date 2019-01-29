@@ -29,7 +29,7 @@ define final IrinotecanliposomeTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan liposomal monotherapy"
+    "Irinotecan liposomal monotherapy", "Irinotecan_liposomal_monotherapy", "Irinotecan liposomal", "Irinotecanliposomalmonotherapy"
 ];
 
 define final IrinotecanliposomalmonotherapyRegimen:

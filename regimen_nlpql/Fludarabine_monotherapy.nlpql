@@ -29,7 +29,7 @@ define final FludarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine monotherapy"
+    "Fludarabinemonotherapy", "Fludarabine", "Fludarabine monotherapy", "Fludarabine_monotherapy"
 ];
 
 define final FludarabinemonotherapyRegimen:
@@ -45,7 +45,7 @@ define final FludarabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 ***/

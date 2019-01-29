@@ -40,7 +40,7 @@ define  TACETreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axitinib and TACE", "Axitinib_TACE", "AxitinibTACE", "Axitinib / TACE", "Axitinib/TACE", "Axitinib & TACE"
+    "Axitinib/TACE", "Axitinib / TACE", "Axitinib_TACE", "Axitinib and TACE", "Axitinib & TACE", "AxitinibTACE"
 ];
 
 define final AxitinibTACERegimen:

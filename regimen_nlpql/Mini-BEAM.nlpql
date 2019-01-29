@@ -62,7 +62,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mini/BEAM", "MiniBEAM", "Mini-BEAM"
+    "Mini/BEAM", "Mini-BEAM", "MiniBEAM"
 ];
 
 define final MiniBEAMRegimen:

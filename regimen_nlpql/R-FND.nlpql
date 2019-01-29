@@ -62,7 +62,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/FND", "RFND", "R-FND"
+    "RFND", "R-FND", "R/FND"
 ];
 
 define final RFNDRegimen:

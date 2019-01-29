@@ -40,7 +40,7 @@ define  BendamustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "G/B", "G-B", "Bendamustine & Obinutuzumab", "GB"
+    "G-B", "Bendamustine & Obinutuzumab", "G/B", "GB", "BendamustineObinutuzumab", "Bendamustine_Obinutuzumab"
 ];
 
 define final BendamustineObinutuzumabRegimen:

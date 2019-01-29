@@ -29,7 +29,7 @@ define final DalteparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dalteparin monotherapy"
+    "Dalteparin", "Dalteparinmonotherapy", "Dalteparin_monotherapy", "Dalteparin monotherapy"
 ];
 
 define final DalteparinmonotherapyRegimen:

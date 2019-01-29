@@ -84,7 +84,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/ACVBP", "ACVBPR", "ACVBP-R", "RACVBP", "ACVBP/R", "R-ACVBP"
+    "ACVBP-R", "RACVBP", "ACVBPR", "R-ACVBP", "ACVBP/R", "R/ACVBP"
 ];
 
 define final ACVBPRRegimen:

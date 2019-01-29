@@ -29,7 +29,7 @@ define final BinimetinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib monotherapy"
+    "Binimetinib monotherapy", "Binimetinib_monotherapy", "Binimetinibmonotherapy", "Binimetinib"
 ];
 
 define final BinimetinibmonotherapyRegimen:

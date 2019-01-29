@@ -29,7 +29,7 @@ define final CladribineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine & Rituximab"
+    "CladribineRituximab", "Cladribine_Rituximab", "Cladribine & Rituximab"
 ];
 
 define final CladribineRituximabRegimen:
@@ -45,7 +45,7 @@ define final CladribineRituximabRegimen:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Hairy_cell_leukemia, Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Marginal_zone_lymphoma, Hairy_cell_leukemia
 
 
 ***/

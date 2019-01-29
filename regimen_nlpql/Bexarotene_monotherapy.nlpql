@@ -29,7 +29,7 @@ define final BexaroteneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene monotherapy"
+    "Bexarotene_monotherapy", "Bexarotenemonotherapy", "Bexarotene monotherapy", "Bexarotene"
 ];
 
 define final BexarotenemonotherapyRegimen:
