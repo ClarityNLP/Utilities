@@ -37,7 +37,7 @@ define  CyclophosphamideTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -75,6 +75,8 @@ define final BuCyTBITreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

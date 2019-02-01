@@ -29,7 +29,7 @@ define final MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methylprednisolonemonotherapy", "Methylprednisolone monotherapy", "Methylprednisolone_monotherapy", "Methylprednisolone"
+    "Methylprednisolone monotherapy"
 ];
 
 define final MethylprednisolonemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MethylprednisolonemonotherapyRegimen:
 /***
 
 Known regimen for: Thrombotic_thrombocytopenic_purpura
+
+
 
 
 ***/

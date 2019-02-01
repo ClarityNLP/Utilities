@@ -51,7 +51,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine, Methotrexate, Procarbazine", "LomustineMethotrexateProcarbazine", "MCP", "Lomustine_Methotrexate_Procarbazine"
+    "Lomustine, Methotrexate, Procarbazine", "MCP"
 ];
 
 define final LomustineMethotrexateProcarbazineRegimen:
@@ -75,6 +75,8 @@ define final LomustineMethotrexateProcarbazineTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

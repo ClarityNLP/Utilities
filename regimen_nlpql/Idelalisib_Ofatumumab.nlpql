@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idelalisib_Ofatumumab", "IdelalisibOfatumumab", "Idelalisib & Ofatumumab"
+    "Idelalisib & Ofatumumab"
 ];
 
 define final IdelalisibOfatumumabRegimen:
@@ -64,6 +64,8 @@ define final IdelalisibOfatumumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

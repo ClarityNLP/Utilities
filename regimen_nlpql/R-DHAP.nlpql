@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/DHAP", "R-DHAP", "RDHAP"
+    "R-DHAP", "R/DHAP", "RDHAP"
 ];
 
 define final RDHAPRegimen:
@@ -85,7 +85,9 @@ define final RDHAPTreatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Primary_mediastinal_B-cell_lymphoma, Mantle_cell_lymphoma, Transformed_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final ClofarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine monotherapy", "Clofarabinemonotherapy", "Clofarabine", "Clofarabine_monotherapy"
+    "Clofarabine monotherapy"
 ];
 
 define final ClofarabinemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ClofarabinemonotherapyRegimen:
 /***
 
 Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia
+
+
 
 
 ***/

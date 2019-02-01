@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Mitomycin", "Gemcitabine_Mitomycin", "GemcitabineMitomycin"
+    "Gemcitabine & Mitomycin"
 ];
 
 define final GemcitabineMitomycinRegimen:
@@ -64,6 +64,8 @@ define final GemcitabineMitomycinTreatments:
 /***
 
 Known regimen for: Cholangiocarcinoma
+
+
 
 
 ***/

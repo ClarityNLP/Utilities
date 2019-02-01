@@ -40,7 +40,7 @@ define  PralatrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene_Pralatrexate", "BexarotenePralatrexate", "Bexarotene & Pralatrexate"
+    "Bexarotene & Pralatrexate"
 ];
 
 define final BexarotenePralatrexateRegimen:
@@ -64,6 +64,8 @@ define final BexarotenePralatrexateTreatments:
 /***
 
 Known regimen for: Cutaneous_T-cell_lymphoma
+
+
 
 
 ***/

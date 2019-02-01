@@ -29,7 +29,7 @@ define final RadotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Radotinibmonotherapy", "Radotinib", "Radotinib_monotherapy", "Radotinib monotherapy"
+    "Radotinib monotherapy"
 ];
 
 define final RadotinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final RadotinibmonotherapyRegimen:
 /***
 
 Known regimen for: Chronic_myelogenous_leukemia
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Temozolomide", "Capecitabine_Temozolomide", "CapecitabineTemozolomide"
+    "Capecitabine & Temozolomide"
 ];
 
 define final CapecitabineTemozolomideRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineTemozolomideTreatments:
 /***
 
 Known regimen for: Pancreatic_NET
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TisagenlecleucelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tisagenlecleucel", "Tisagenlecleucel monotherapy", "Tisagenlecleucelmonotherapy", "Tisagenlecleucel_monotherapy"
+    "Tisagenlecleucel monotherapy"
 ];
 
 define final TisagenlecleucelmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final TisagenlecleucelmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

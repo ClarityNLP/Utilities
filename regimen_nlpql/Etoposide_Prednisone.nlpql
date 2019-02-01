@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EtoposidePrednisone", "Etoposide & Prednisone", "Etoposide_Prednisone"
+    "Etoposide & Prednisone"
 ];
 
 define final EtoposidePrednisoneRegimen:
@@ -64,6 +64,8 @@ define final EtoposidePrednisoneTreatments:
 /***
 
 Known regimen for: Langerhans_cell_histiocytosis
+
+
 
 
 ***/

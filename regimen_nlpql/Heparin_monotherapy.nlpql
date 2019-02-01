@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "heparin", "heparin"
+    "heparin"
 ];
 
 define final HeparinTreatment:
@@ -29,7 +29,7 @@ define final HeparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Heparinmonotherapy", "Heparin monotherapy", "Heparin_monotherapy", "Heparin"
+    "Heparin monotherapy"
 ];
 
 define final HeparinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final HeparinmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

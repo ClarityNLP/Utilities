@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Pemetrexed_Bevacizumab", "PCB", "CisplatinPemetrexedBevacizumab", "Cisplatin, Pemetrexed, Bevacizumab"
+    "Cisplatin, Pemetrexed, Bevacizumab", "PCB"
 ];
 
 define final CisplatinPemetrexedBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final CisplatinPemetrexedBevacizumabTreatments:
 /***
 
 Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
+
+
 
 
 ***/

@@ -73,7 +73,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine", "Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine", "CarboplatinCyclophosphamideEtoposideMethotrexateVincristine"
+    "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine"
 ];
 
 define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineRegimen:
@@ -97,6 +97,8 @@ define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineTreatmen
 /***
 
 Known regimen for: Medulloblastoma
+
+
 
 
 ***/

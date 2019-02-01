@@ -37,7 +37,7 @@ define  MitomycinTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine, Mitomycin, RT", "CapecitabineMitomycinRT", "Capecitabine_Mitomycin_RT"
+    "Capecitabine, Mitomycin, RT"
 ];
 
 define final CapecitabineMitomycinRTRegimen:
@@ -75,6 +75,8 @@ define final CapecitabineMitomycinRTTreatments:
 /***
 
 Known regimen for: Anal_cancer
+
+
 
 
 ***/

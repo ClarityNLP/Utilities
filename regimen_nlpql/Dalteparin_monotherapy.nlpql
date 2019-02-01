@@ -29,7 +29,7 @@ define final DalteparinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dalteparin", "Dalteparinmonotherapy", "Dalteparin_monotherapy", "Dalteparin monotherapy"
+    "Dalteparin monotherapy"
 ];
 
 define final DalteparinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final DalteparinmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

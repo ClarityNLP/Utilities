@@ -51,7 +51,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mIFL", "IFL"
+    "IFL", "mIFL"
 ];
 
 define final IFLRegimen:
@@ -75,6 +75,8 @@ define final IFLTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

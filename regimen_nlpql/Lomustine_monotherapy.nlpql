@@ -29,7 +29,7 @@ define final LomustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine_monotherapy", "Lomustine monotherapy", "Lomustine", "Lomustinemonotherapy"
+    "Lomustine monotherapy"
 ];
 
 define final LomustinemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final LomustinemonotherapyRegimen:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

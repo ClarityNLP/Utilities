@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MAC", "7/3m", "7 & 3m", "7&3m", "7 and 3m", "7 / 3m", "73m", "7+3m"
+    "7 & 3m", "7 / 3m", "7 and 3m", "7&3m", "7+3m", "7/3m", "73m", "MAC"
 ];
 
 define final 73mRegimen:
@@ -64,6 +64,8 @@ define final 73mTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ImatinibVincristineDexamethasone", "Imatinib, Vincristine, Dexamethasone", "Imatinib_Vincristine_Dexamethasone"
+    "Imatinib, Vincristine, Dexamethasone"
 ];
 
 define final ImatinibVincristineDexamethasoneRegimen:
@@ -75,6 +75,8 @@ define final ImatinibVincristineDexamethasoneTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

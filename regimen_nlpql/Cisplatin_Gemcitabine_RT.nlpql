@@ -37,7 +37,7 @@ define  GemcitabineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "CisplatinGemcitabineRT", "Cisplatin, Gemcitabine, RT", "Cisplatin_Gemcitabine_RT"
+    "Cisplatin, Gemcitabine, RT"
 ];
 
 define final CisplatinGemcitabineRTRegimen:
@@ -75,6 +75,8 @@ define final CisplatinGemcitabineRTTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

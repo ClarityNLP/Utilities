@@ -29,7 +29,7 @@ define final ArsenictrioxideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ArsenictrioxidethenATRADaunorubicin", "Arsenic trioxide, then ATRA & Daunorubicin", "Arsenic_trioxide_then_ATRA_Daunorubicin"
+    "Arsenic trioxide, then ATRA & Daunorubicin"
 ];
 
 define final ArsenictrioxidethenATRADaunorubicinRegimen:
@@ -46,6 +46,8 @@ define final ArsenictrioxidethenATRADaunorubicinRegimen:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

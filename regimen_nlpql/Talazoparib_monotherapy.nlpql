@@ -29,7 +29,7 @@ define final TalazoparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Talazoparib", "Talazoparibmonotherapy", "Talazoparib_monotherapy", "Talazoparib monotherapy"
+    "Talazoparib monotherapy"
 ];
 
 define final TalazoparibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TalazoparibmonotherapyRegimen:
 /***
 
 Known regimen for: Breast_cancer_BRCA-mutated
+
+
 
 
 ***/

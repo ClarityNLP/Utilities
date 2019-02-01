@@ -95,7 +95,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ChlVPPEVA", "ChlVPP/EVA"
+    "ChlVPP/EVA"
 ];
 
 define final ChlVPPEVARegimen:
@@ -119,6 +119,8 @@ define final ChlVPPEVATreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

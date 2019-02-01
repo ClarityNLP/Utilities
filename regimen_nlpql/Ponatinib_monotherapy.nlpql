@@ -29,7 +29,7 @@ define final PonatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ponatinib monotherapy", "Ponatinibmonotherapy", "Ponatinib_monotherapy", "Ponatinib"
+    "Ponatinib monotherapy"
 ];
 
 define final PonatinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PonatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Chronic_myelogenous_leukemia
+Known regimen for: Chronic_myelogenous_leukemia, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

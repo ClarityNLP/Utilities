@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Gemcitabine", "GemCap", "Capecitabine_Gemcitabine", "CapecitabineGemcitabine"
+    "Capecitabine & Gemcitabine", "GemCap"
 ];
 
 define final CapecitabineGemcitabineRegimen:
@@ -63,7 +63,9 @@ define final CapecitabineGemcitabineTreatments:
 // Comments
 /***
 
-Known regimen for: Thymoma, Pancreatic_cancer, Cholangiocarcinoma
+Known regimen for: Cholangiocarcinoma, Pancreatic_cancer, Thymoma
+
+
 
 
 ***/

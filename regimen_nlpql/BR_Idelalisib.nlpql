@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -51,7 +51,7 @@ define  IdelalisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BR_Idelalisib", "BR & Idelalisib", "BR/Idelalisib", "BR / Idelalisib", "BRIdelalisib", "BR and Idelalisib"
+    "BR  and  Idelalisib", "BR & Idelalisib", "BR + Idelalisib", "BR / Idelalisib", "BR and Idelalisib", "BR+Idelalisib", "BR/Idelalisib"
 ];
 
 define final BRIdelalisibRegimen:
@@ -75,6 +75,8 @@ define final BRIdelalisibTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

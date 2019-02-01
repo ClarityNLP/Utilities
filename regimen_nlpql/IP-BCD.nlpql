@@ -73,7 +73,7 @@ define  DactinomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IPBCD", "IP/BCD", "IP-BCD"
+    "IP-BCD", "IP/BCD", "IPBCD"
 ];
 
 define final IPBCDRegimen:
@@ -97,6 +97,8 @@ define final IPBCDTreatments:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  EncorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib_Encorafenib", "Binimetinib & Encorafenib", "BinimetinibEncorafenib"
+    "Binimetinib & Encorafenib"
 ];
 
 define final BinimetinibEncorafenibRegimen:
@@ -64,6 +64,8 @@ define final BinimetinibEncorafenibTreatments:
 /***
 
 Known regimen for: Melanoma_BRAF-mutated
+
+
 
 
 ***/

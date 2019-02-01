@@ -15,12 +15,23 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "neulasta", "pegfilgrastim"
+    "gemzar", "gemcitabine"
 ];
 
-define final PegfilgrastimTreatment:
+define  GemcitabineTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
+    "external beam radiotherapy"
+];
+
+define  ExternalbeamradiotherapyTreatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -29,7 +40,7 @@ define final PegfilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFIRINOX_Gemcitabine_RT", "mFOLFIRINOXGemcitabineRT", "mFOLFIRINOX, Gemcitabine, RT"
+    "mFOLFIRINOX, Gemcitabine, RT"
 ];
 
 define final mFOLFIRINOXGemcitabineRTRegimen:
@@ -41,11 +52,20 @@ define final mFOLFIRINOXGemcitabineRTRegimen:
 
 // Results
 
+        
+define final mFOLFIRINOXGemcitabineRTTreatments:
+    where GemcitabineTreatment AND ExternalbeamradiotherapyTreatment;
+          
+        
+        
+        
 
 // Comments
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

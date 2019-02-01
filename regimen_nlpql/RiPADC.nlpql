@@ -73,7 +73,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RiPAD+C", "RiPAD / C", "RiPAD & C", "RiPAD&C", "RiPADC", "RiPAD/C", "RiPAD and C"
+    "RiPAD & C", "RiPAD / C", "RiPAD and C", "RiPAD&C", "RiPAD+C", "RiPAD/C", "RiPADC"
 ];
 
 define final RiPADCRegimen:
@@ -97,6 +97,8 @@ define final RiPADCTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

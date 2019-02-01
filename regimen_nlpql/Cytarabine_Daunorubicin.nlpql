@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Daunorubicin", "CytarabineDaunorubicin", "Cytarabine_Daunorubicin"
+    "Cytarabine & Daunorubicin"
 ];
 
 define final CytarabineDaunorubicinRegimen:
@@ -64,6 +64,8 @@ define final CytarabineDaunorubicinTreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
+
+
 
 
 ***/

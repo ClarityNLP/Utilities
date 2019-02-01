@@ -37,7 +37,7 @@ define  EtoposideTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EP / RT", "EP and RT", "Cisplatin_Etoposide_RT", "EP & RT", "EP_RT", "CisplatinEtoposideRT", "Cisplatin, Etoposide, RT", "EPRT", "EP/RT"
+    "Cisplatin, Etoposide, RT", "EP  and  RT", "EP & RT", "EP + RT", "EP / RT", "EP and RT", "EP+RT", "EP/RT", "EPRT"
 ];
 
 define final CisplatinEtoposideRTRegimen:
@@ -75,6 +75,8 @@ define final CisplatinEtoposideRTTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TrabectedinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trabectedin monotherapy", "Trabectedinmonotherapy", "Trabectedin", "Trabectedin_monotherapy"
+    "Trabectedin monotherapy"
 ];
 
 define final TrabectedinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TrabectedinmonotherapyRegimen:
 /***
 
 Known regimen for: Ovarian_cancer, Soft_tissue_sarcoma
+
+
 
 
 ***/

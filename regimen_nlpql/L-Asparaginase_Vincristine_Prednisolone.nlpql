@@ -51,7 +51,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "L-Asparaginase_Vincristine_Prednisolone", "LAsparaginaseVincristinePrednisolone", "L-Asparaginase, Vincristine, Prednisolone", "LVP"
+    "L-Asparaginase, Vincristine, Prednisolone", "LVP"
 ];
 
 define final LAsparaginaseVincristinePrednisoloneRegimen:
@@ -75,6 +75,8 @@ define final LAsparaginaseVincristinePrednisoloneTreatments:
 /***
 
 Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type
+
+
 
 
 ***/

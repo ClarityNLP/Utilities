@@ -29,7 +29,7 @@ define final MycophenolatemofetilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mycophenolate mofetil monotherapy", "Mycophenolatemofetilmonotherapy", "Mycophenolate_mofetil_monotherapy", "Mycophenolate mofetil"
+    "Mycophenolate mofetil monotherapy"
 ];
 
 define final MycophenolatemofetilmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MycophenolatemofetilmonotherapyRegimen:
 /***
 
 Known regimen for: Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

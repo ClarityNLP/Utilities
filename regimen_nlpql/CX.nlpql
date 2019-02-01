@@ -40,7 +40,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "XP", "CX"
+    "CX"
 ];
 
 define final CXRegimen:
@@ -63,7 +63,9 @@ define final CXTreatments:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
+
+
 
 
 ***/

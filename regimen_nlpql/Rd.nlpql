@@ -48,7 +48,7 @@ define  CategoryLightchainTreatment:
 
         
 termset TreatmentTerms3:[
-    "category:disease-specific pages", "category:disease-specific pages"
+    "category:disease-specific pages"
 ];
 
 define  CategoryDiseasespecificpagesTreatment:
@@ -59,7 +59,7 @@ define  CategoryDiseasespecificpagesTreatment:
 
         
 termset TreatmentTerms4:[
-    "category:plasma cell dyscrasias", "category:plasma cell dyscrasias"
+    "category:plasma cell dyscrasias"
 ];
 
 define  CategoryPlasmacelldyscrasiasTreatment:
@@ -96,7 +96,9 @@ define final RDTreatments:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, POEMS
+Known regimen for: POEMS, Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

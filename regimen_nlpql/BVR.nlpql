@@ -26,7 +26,7 @@ define  BortezomibTreatment:
 
         
 termset TreatmentTerms1:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VBR", "BVR"
+    "BVR", "VBR"
 ];
 
 define final BVRRegimen:
@@ -75,6 +75,8 @@ define final BVRTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

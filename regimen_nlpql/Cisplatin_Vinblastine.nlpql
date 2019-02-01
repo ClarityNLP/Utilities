@@ -40,7 +40,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Vinblastine", "Cisplatin & Vinblastine", "CisplatinVinblastine"
+    "Cisplatin & Vinblastine"
 ];
 
 define final CisplatinVinblastineRegimen:
@@ -64,6 +64,8 @@ define final CisplatinVinblastineTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

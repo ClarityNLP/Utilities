@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib and LoDAC", "ImatinibLoDAC", "Imatinib_LoDAC", "Imatinib / LoDAC", "Imatinib & LoDAC", "Imatinib/LoDAC"
+    "Imatinib  and  LoDAC", "Imatinib & LoDAC", "Imatinib + LoDAC", "Imatinib / LoDAC", "Imatinib and LoDAC", "Imatinib+LoDAC", "Imatinib/LoDAC"
 ];
 
 define final ImatinibLoDACRegimen:
@@ -64,6 +64,8 @@ define final ImatinibLoDACTreatments:
 /***
 
 Known regimen for: Chronic_myelogenous_leukemia
+
+
 
 
 ***/

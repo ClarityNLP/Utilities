@@ -29,7 +29,7 @@ define final CapecitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine", "Capecitabine_monotherapy", "Capecitabinemonotherapy", "Capecitabine monotherapy"
+    "Capecitabine monotherapy"
 ];
 
 define final CapecitabinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CapecitabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Rectal_cancer, Breast_cancer, Cholangiocarcinoma, Colon_cancer, Pancreatic_cancer, Gastric_cancer
+Known regimen for: Pancreatic_cancer, Gastric_cancer, Cholangiocarcinoma, Hepatocellular_carcinoma, Colon_cancer, Rectal_cancer, Breast_cancer
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GCD/R", "GCD-R", "GCDR"
+    "GCD-R", "GCD/R", "GCDR"
 ];
 
 define final GCDRRegimen:
@@ -86,6 +86,8 @@ define final GCDRTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

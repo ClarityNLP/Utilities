@@ -29,7 +29,7 @@ define final AmrubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Amrubicin", "Amrubicinmonotherapy", "Amrubicin_monotherapy", "Amrubicin monotherapy"
+    "Amrubicin monotherapy"
 ];
 
 define final AmrubicinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final AmrubicinmonotherapyRegimen:
 /***
 
 Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
+
+
 
 
 ***/

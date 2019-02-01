@@ -29,7 +29,7 @@ define final MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan_then_auto_HSCT", "MelphalanthenautoHSCT", "Melphalan, then auto HSCT"
+    "Melphalan, then auto HSCT"
 ];
 
 define final MelphalanthenautoHSCTRegimen:
@@ -45,7 +45,9 @@ define final MelphalanthenautoHSCTRegimen:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Plasma_cell_leukemia
+Known regimen for: Plasma_cell_leukemia, Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

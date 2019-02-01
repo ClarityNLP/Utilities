@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel & Ramucirumab", "Paclitaxel_Ramucirumab", "PaclitaxelRamucirumab"
+    "Paclitaxel & Ramucirumab"
 ];
 
 define final PaclitaxelRamucirumabRegimen:
@@ -63,7 +63,9 @@ define final PaclitaxelRamucirumabTreatments:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
+
+
 
 
 ***/

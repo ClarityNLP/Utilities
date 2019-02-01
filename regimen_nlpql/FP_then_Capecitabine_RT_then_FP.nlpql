@@ -40,7 +40,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FP_then_Capecitabine_RT_then_FP", "FP, then Capecitabine & RT, then FP", "FPthenCapecitabineRTthenFP"
+    "FP, then Capecitabine & RT, then FP"
 ];
 
 define final FPthenCapecitabineRTthenFPRegimen:
@@ -64,6 +64,8 @@ define final FPthenCapecitabineRTthenFPTreatments:
 /***
 
 Known regimen for: Gastric_cancer
+
+
 
 
 ***/

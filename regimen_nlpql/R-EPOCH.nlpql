@@ -84,7 +84,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "REPOCH", "R/EPOCH", "R-EPOCH"
+    "R-EPOCH", "R/EPOCH", "REPOCH"
 ];
 
 define final REPOCHRegimen:
@@ -107,7 +107,9 @@ define final REPOCHTreatments:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma_nodular_lymphocyte-predominant, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant
+
+
 
 
 ***/

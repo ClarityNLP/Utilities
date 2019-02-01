@@ -73,7 +73,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EPOCHdoseescalated", "EPOCH", "EPOCH_dose-escalated", "EPOCH, dose-escalated"
+    "EPOCH", "EPOCH, dose-escalated"
 ];
 
 define final EPOCHdoseescalatedRegimen:
@@ -97,6 +97,8 @@ define final EPOCHdoseescalatedTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma
+
+
 
 
 ***/

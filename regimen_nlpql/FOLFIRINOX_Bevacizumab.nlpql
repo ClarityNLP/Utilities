@@ -73,7 +73,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOXIRIBevacizumab", "FOLFIRINOXBevacizumab", "FOLFIRINOX_Bevacizumab", "FOLFOXIRI & Bevacizumab", "FOLFOXIRI_Bevacizumab", "FOLFIRINOX & Bevacizumab"
+    "FOLFIRINOX & Bevacizumab", "FOLFOXIRI & Bevacizumab"
 ];
 
 define final FOLFIRINOXBevacizumabRegimen:
@@ -97,6 +97,8 @@ define final FOLFIRINOXBevacizumabTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

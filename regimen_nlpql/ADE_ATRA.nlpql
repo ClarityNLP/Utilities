@@ -62,7 +62,7 @@ define  AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ADE and ATRA", "ADE / ATRA", "ADE/ATRA", "ADE & ATRA", "ADE_ATRA", "ADEATRA"
+    "ADE  and  ATRA", "ADE & ATRA", "ADE + ATRA", "ADE / ATRA", "ADE and ATRA", "ADE+ATRA", "ADE/ATRA"
 ];
 
 define final ADEATRARegimen:
@@ -86,6 +86,8 @@ define final ADEATRATreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

@@ -15,10 +15,10 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "aspirin", "aspirin"
+    "aspirin"
 ];
 
-define  aspirinTreatment:
+define  AspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -26,10 +26,10 @@ define  aspirinTreatment:
 
         
 termset TreatmentTerms1:[
-    "plavix", "clopidogrel"
+    "agrylin", "anagrelide"
 ];
 
-define  ClopidogrelTreatment:
+define  AnagrelideTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ define  ClopidogrelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin/Anagrelide", "Aspirin / Anagrelide", "Aspirin and Anagrelide", "Aspirin & Anagrelide", "Aspirin_Anagrelide", "AspirinAnagrelide"
+    "Aspirin  and  Anagrelide", "Aspirin & Anagrelide", "Aspirin + Anagrelide", "Aspirin / Anagrelide", "Aspirin and Anagrelide", "Aspirin+Anagrelide", "Aspirin/Anagrelide"
 ];
 
 define final AspirinAnagrelideRegimen:
@@ -54,7 +54,7 @@ define final AspirinAnagrelideRegimen:
 
         
 define final AspirinAnagrelideTreatments:
-    where aspirinTreatment AND ClopidogrelTreatment;
+    where AspirinTreatment AND AnagrelideTreatment;
           
         
         
@@ -64,6 +64,8 @@ define final AspirinAnagrelideTreatments:
 /***
 
 Known regimen for: Essential_thrombocythemia
+
+
 
 
 ***/

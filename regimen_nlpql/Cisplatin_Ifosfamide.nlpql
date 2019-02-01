@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinIfosfamide", "Cisplatin & Ifosfamide", "Cisplatin_Ifosfamide"
+    "Cisplatin & Ifosfamide"
 ];
 
 define final CisplatinIfosfamideRegimen:
@@ -64,6 +64,8 @@ define final CisplatinIfosfamideTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

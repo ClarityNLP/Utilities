@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRAIdarubicin", "ATRA / Idarubicin", "ATRA_Idarubicin", "ATRA/Idarubicin", "AIDA", "ATRA & Idarubicin", "ATRA and Idarubicin"
+    "AIDA", "ATRA  and  Idarubicin", "ATRA & Idarubicin", "ATRA + Idarubicin", "ATRA / Idarubicin", "ATRA and Idarubicin", "ATRA+Idarubicin", "ATRA/Idarubicin"
 ];
 
 define final ATRAIdarubicinRegimen:
@@ -64,6 +64,8 @@ define final ATRAIdarubicinTreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

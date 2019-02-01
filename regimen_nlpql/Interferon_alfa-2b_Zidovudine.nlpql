@@ -40,7 +40,7 @@ define  ZidovudineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferon_alfa-2b_Zidovudine", "Interferon alfa-2b & Zidovudine", "Interferonalfa2bZidovudine"
+    "Interferon alfa-2b & Zidovudine"
 ];
 
 define final Interferonalfa2bZidovudineRegimen:
@@ -64,6 +64,8 @@ define final Interferonalfa2bZidovudineTreatments:
 /***
 
 Known regimen for: Adult_T-cell_leukemia-lymphoma
+
+
 
 
 ***/

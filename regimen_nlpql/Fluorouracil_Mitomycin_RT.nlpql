@@ -37,7 +37,7 @@ define  MitomycinTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -48,7 +48,7 @@ define  ExternalbeamradiotherapyTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -59,7 +59,7 @@ define  ExternalbeamradiotherapyTreatment:
 
         
 termset TreatmentTerms4:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -73,7 +73,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilMitomycinRT", "Fluorouracil, Mitomycin, RT", "Fluorouracil_Mitomycin_RT", "RT"
+    "Fluorouracil, Mitomycin, RT"
 ];
 
 define final FluorouracilMitomycinRTRegimen:
@@ -96,7 +96,9 @@ define final FluorouracilMitomycinRTTreatments:
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Cervical_cancer, Bladder_cancer
+Known regimen for: Cervical_cancer, Head_and_neck_cancer, Bladder_cancer
+
+
 
 
 ***/

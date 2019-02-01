@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinDacarbazinePaclitaxel", "Cisplatin_Dacarbazine_Paclitaxel", "Cisplatin, Dacarbazine, Paclitaxel"
+    "Cisplatin, Dacarbazine, Paclitaxel"
 ];
 
 define final CisplatinDacarbazinePaclitaxelRegimen:
@@ -75,6 +75,8 @@ define final CisplatinDacarbazinePaclitaxelTreatments:
 /***
 
 Known regimen for: Melanoma
+
+
 
 
 ***/

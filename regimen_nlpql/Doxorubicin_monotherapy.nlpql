@@ -29,7 +29,7 @@ define final DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicinmonotherapy", "Doxorubicin monotherapy", "Doxorubicin", "Doxorubicin_monotherapy"
+    "Doxorubicin monotherapy"
 ];
 
 define final DoxorubicinmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final DoxorubicinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Mesothelioma, Thyroid_cancer, Osteosarcoma, Endometrial_cancer, Soft_tissue_sarcoma
+Known regimen for: Soft_tissue_sarcoma, Osteosarcoma, Thyroid_cancer, Mesothelioma, Endometrial_cancer, Hepatocellular_carcinoma
+
+
 
 
 ***/

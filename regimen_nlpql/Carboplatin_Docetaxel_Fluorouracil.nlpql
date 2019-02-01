@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Docetaxel_Fluorouracil", "Carboplatin, Docetaxel, Fluorouracil", "CarboplatinDocetaxelFluorouracil"
+    "Carboplatin, Docetaxel, Fluorouracil"
 ];
 
 define final CarboplatinDocetaxelFluorouracilRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinDocetaxelFluorouracilTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final PralatrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pralatrexate_monotherapy", "Pralatrexatemonotherapy", "Pralatrexate", "Pralatrexate monotherapy"
+    "Pralatrexate monotherapy"
 ];
 
 define final PralatrexatemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PralatrexatemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

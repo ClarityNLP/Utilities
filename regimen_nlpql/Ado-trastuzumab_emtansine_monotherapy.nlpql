@@ -29,7 +29,7 @@ define final AdotrastuzumabemtansineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ado-trastuzumab_emtansine_monotherapy", "Adotrastuzumabemtansinemonotherapy", "Ado-trastuzumab emtansine", "Ado-trastuzumab emtansine monotherapy"
+    "Ado-trastuzumab emtansine monotherapy"
 ];
 
 define final AdotrastuzumabemtansinemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final AdotrastuzumabemtansinemonotherapyRegimen:
 /***
 
 Known regimen for: ERBB2_(HER2)
+
+
 
 
 ***/

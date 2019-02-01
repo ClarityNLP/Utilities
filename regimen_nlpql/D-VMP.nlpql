@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DVMP", "D/VMP", "D-VMP"
+    "D-VMP", "D/VMP", "DVMP"
 ];
 
 define final DVMPRegimen:
@@ -86,6 +86,8 @@ define final DVMPTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_induction
+
+
 
 
 ***/

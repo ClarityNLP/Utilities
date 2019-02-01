@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MethotrexateVinblastinePrednisone", "Methotrexate_Vinblastine_Prednisone", "Methotrexate, Vinblastine, Prednisone"
+    "Methotrexate, Vinblastine, Prednisone"
 ];
 
 define final MethotrexateVinblastinePrednisoneRegimen:
@@ -75,6 +75,8 @@ define final MethotrexateVinblastinePrednisoneTreatments:
 /***
 
 Known regimen for: Langerhans_cell_histiocytosis
+
+
 
 
 ***/

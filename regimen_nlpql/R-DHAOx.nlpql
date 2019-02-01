@@ -62,7 +62,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RDHAOx", "R-DHAOx", "R/DHAOx"
+    "R-DHAOx", "R/DHAOx", "RDHAOx"
 ];
 
 define final RDHAOxRegimen:
@@ -86,6 +86,8 @@ define final RDHAOxTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

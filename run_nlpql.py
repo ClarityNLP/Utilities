@@ -6,7 +6,8 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 10
+cur_job = 53
+viewed_jobs = list()
 
 ip = '18.220.133.76'
 # ip = 'localhost'
@@ -28,9 +29,11 @@ def get_active_workers():
 
 
 def run_nlpql(i, filename='query'):
-    with open('{}{}'.format(nlpql_path, filename), "r") as file:
+    filepath = '{}{}'.format(nlpql_path, filename)
+    print('opening file ', filepath)
+    with open(filepath, "r") as file:
         nlpql = file.read()
-        sleepy_time = 90
+        sleepy_time = 30
 
         res = requests.post(nlpql_url, data=nlpql, headers={'content-type': 'text/plain'})
         if res.ok:
@@ -61,13 +64,16 @@ def has_data(job_id):
 def cleanup_empty_jobs():
     # 5000/phenotype_jobs/ALL
     print('cleanup empty jobs...')
-    res = requests.get("http://{}:5000/phenotype_jobs/ALL".format(ip))
+    res = requests.get("http://{}:5000/phenotype_jobs/COMPLETED".format(ip))
     if res.status_code == 200:
         json_res = res.json()
         for j in json_res:
             nlp_job_id = j['nlp_job_id']
-            status = j['status']
-            if status == 'COMPLETED' and not has_data(nlp_job_id):
+            if nlp_job_id in viewed_jobs:
+                continue
+
+            if not has_data(nlp_job_id):
+                viewed_jobs.append(nlp_job_id)
                 cleanup(nlp_job_id)
 
 
@@ -80,8 +86,8 @@ def job_runner(i, fname):
     else:
         while get_active_workers() >= max_workers:
             cleanup_empty_jobs()
-            print('At max workers for job %d sleeping for 60 secs...' % i)
-            time.sleep(60)
+            print('At max workers for job %d sleeping for 15 secs...' % i)
+            time.sleep(15)
         run_nlpql(i, filename=fname)
 
 
@@ -96,8 +102,8 @@ if __name__ == "__main__":
                 job_runner(n, f)
             n += 1
     else:
-        startid = 0
-        for n in range(startid, startid + 2000):
+        startid = 1410
+        for n in range(startid, startid + 100):
             patient_count = has_data(n)
             if patient_count == 0:
                 cleanup(n)

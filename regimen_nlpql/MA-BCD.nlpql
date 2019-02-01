@@ -29,7 +29,7 @@ define final DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MA/BCD", "MA-BCD", "MABCD"
+    "MA-BCD", "MA/BCD", "MABCD"
 ];
 
 define final MABCDRegimen:
@@ -46,6 +46,8 @@ define final MABCDRegimen:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

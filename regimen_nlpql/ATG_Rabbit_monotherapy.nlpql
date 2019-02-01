@@ -29,7 +29,7 @@ define final AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG_Rabbit_monotherapy", "ATGRabbitmonotherapy", "ATG (Rabbit) monotherapy", "ATG", "ATG (Rabbit)"
+    "ATG", "ATG (Rabbit) monotherapy"
 ];
 
 define final ATGRabbitmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ATGRabbitmonotherapyRegimen:
 /***
 
 Known regimen for: Myelodysplastic_syndrome
+
+
 
 
 ***/

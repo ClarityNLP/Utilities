@@ -29,7 +29,7 @@ define final PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxelmonotherapyweekly", "Paclitaxel_monotherapy_weekly", "Paclitaxel, weekly", "T", "Paclitaxel monotherapy, weekly"
+    "Paclitaxel monotherapy, weekly"
 ];
 
 define final PaclitaxelmonotherapyweeklyRegimen:
@@ -46,6 +46,8 @@ define final PaclitaxelmonotherapyweeklyRegimen:
 /***
 
 Known regimen for: Breast_cancer
+
+
 
 
 ***/

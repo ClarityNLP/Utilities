@@ -48,7 +48,7 @@ define  OxaliplatinTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOX4/RT", "FOLFOX4RT", "FOLFOX4_RT", "FOLFOX4 and RT", "FOLFOX4 & RT", "FOLFOX4 / RT"
+    "FOLFOX4  and  RT", "FOLFOX4 & RT", "FOLFOX4 + RT", "FOLFOX4 / RT", "FOLFOX4 and RT", "FOLFOX4+RT", "FOLFOX4/RT"
 ];
 
 define final FOLFOX4RTRegimen:
@@ -86,6 +86,8 @@ define final FOLFOX4RTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

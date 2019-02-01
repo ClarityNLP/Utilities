@@ -29,7 +29,7 @@ define final ChidamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chidamide monotherapy", "Chidamidemonotherapy", "Chidamide", "Chidamide_monotherapy"
+    "Chidamide monotherapy"
 ];
 
 define final ChidamidemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ChidamidemonotherapyRegimen:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

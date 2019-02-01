@@ -62,7 +62,7 @@ define  MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CODOX-M/IVAC", "CODOXMIVAC", "CODOX/M/IVAC", "CODOXM/IVAC", "CODOX-MIVAC"
+    "CODOX-M/IVAC"
 ];
 
 define final CODOXMIVACRegimen:
@@ -86,6 +86,8 @@ define final CODOXMIVACTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma
+
+
 
 
 ***/

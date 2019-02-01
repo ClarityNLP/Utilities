@@ -40,7 +40,7 @@ define  VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine_Vinorelbine", "Gemcitabine & Vinorelbine", "GemcitabineVinorelbine"
+    "Gemcitabine & Vinorelbine"
 ];
 
 define final GemcitabineVinorelbineRegimen:
@@ -63,7 +63,9 @@ define final GemcitabineVinorelbineTreatments:
 // Comments
 /***
 
-Known regimen for: Mesothelioma, Soft_tissue_sarcoma, Non-small_cell_lung_cancer
+Known regimen for: Soft_tissue_sarcoma, Mesothelioma, Non-small_cell_lung_cancer
+
+
 
 
 ***/

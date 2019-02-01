@@ -29,7 +29,7 @@ define final FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil monotherapy", "Fluorouracil_monotherapy", "Fluorouracil", "Fluorouracilmonotherapy"
+    "Fluorouracil monotherapy"
 ];
 
 define final FluorouracilmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final FluorouracilmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Head_and_neck_cancer, Colon_cancer, Pancreatic_cancer, Gastric_cancer
+Known regimen for: Pancreatic_cancer, Gastric_cancer, Head_and_neck_cancer, Colon_cancer, Rectal_cancer
+
+
 
 
 ***/

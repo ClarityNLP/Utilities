@@ -51,7 +51,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABV (Vincristine)", "ABVVincristine", "ABV_Vincristine", "ABV"
+    "ABV", "ABV (Vincristine)"
 ];
 
 define final ABVVincristineRegimen:
@@ -75,6 +75,8 @@ define final ABVVincristineTreatments:
 /***
 
 Known regimen for: Vascular_sarcoma
+
+
 
 
 ***/

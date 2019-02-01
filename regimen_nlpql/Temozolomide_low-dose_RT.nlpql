@@ -26,7 +26,7 @@ define  TemozolomideTreatment:
 
         
 termset TreatmentTerms1:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LDRT", "Temozolomide_low-dose_RT", "TemozolomidelowdoseRT", "Temozolomide & low-dose RT"
+    "LDRT", "Temozolomide & low-dose RT"
 ];
 
 define final TemozolomidelowdoseRTRegimen:
@@ -64,6 +64,8 @@ define final TemozolomidelowdoseRTTreatments:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

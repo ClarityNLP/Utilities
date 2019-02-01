@@ -37,7 +37,7 @@ define  GemcitabineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GemcitabineCetuximabRT", "Gemcitabine_Cetuximab_RT", "Gemcitabine, Cetuximab, RT", "RT"
+    "Gemcitabine, Cetuximab, RT"
 ];
 
 define final GemcitabineCetuximabRTRegimen:
@@ -75,6 +75,8 @@ define final GemcitabineCetuximabRTTreatments:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

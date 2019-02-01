@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CP&Bev", "Cisplatin, Paclitaxel, Bevacizumab", "CisplatinPaclitaxelBevacizumab", "CPBev", "CP & Bev", "CP/Bev", "CP and Bev", "CP / Bev", "CP+Bev", "Cisplatin_Paclitaxel_Bevacizumab"
+    "CP & Bev", "CP / Bev", "CP and Bev", "CP&Bev", "CP+Bev", "CP/Bev", "CPBev", "Cisplatin, Paclitaxel, Bevacizumab"
 ];
 
 define final CisplatinPaclitaxelBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final CisplatinPaclitaxelBevacizumabTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

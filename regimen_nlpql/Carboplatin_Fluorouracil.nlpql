@@ -40,7 +40,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Fluorouracil", "CarboplatinFluorouracil", "Carboplatin & Fluorouracil"
+    "Carboplatin & Fluorouracil"
 ];
 
 define final CarboplatinFluorouracilRegimen:
@@ -64,6 +64,8 @@ define final CarboplatinFluorouracilTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

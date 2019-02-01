@@ -29,7 +29,7 @@ define final AlectinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alectinibmonotherapy", "Alectinib monotherapy", "Alectinib", "Alectinib_monotherapy"
+    "Alectinib monotherapy"
 ];
 
 define final AlectinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final AlectinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_ALK-positive, CNS_carcinoma
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_ALK-positive
+
+
 
 
 ***/

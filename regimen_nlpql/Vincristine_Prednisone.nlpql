@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vincristine & Prednisone", "Vincristine_Prednisone", "VincristinePrednisone"
+    "Vincristine & Prednisone"
 ];
 
 define final VincristinePrednisoneRegimen:
@@ -63,7 +63,9 @@ define final VincristinePrednisoneTreatments:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Chronic_myelogenous_leukemia
+Known regimen for: Chronic_myelogenous_leukemia, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

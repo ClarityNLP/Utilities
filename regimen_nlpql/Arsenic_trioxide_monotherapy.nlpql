@@ -29,7 +29,7 @@ define final ArsenictrioxideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic trioxide", "Arsenic trioxide monotherapy", "Arsenic_trioxide_monotherapy", "Arsenictrioxidemonotherapy"
+    "Arsenic trioxide monotherapy"
 ];
 
 define final ArsenictrioxidemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ArsenictrioxidemonotherapyRegimen:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

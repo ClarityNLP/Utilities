@@ -29,7 +29,7 @@ define final RamucirumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ramucirumab monotherapy", "Ramucirumab_monotherapy", "Ramucirumabmonotherapy", "Ramucirumab"
+    "Ramucirumab monotherapy"
 ];
 
 define final RamucirumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final RamucirumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
+
+
 
 
 ***/

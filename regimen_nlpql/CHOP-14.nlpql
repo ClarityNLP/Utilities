@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOPDI", "CHOP/DI", "CHOP-14", "CHOP-DI", "I-CHOP", "CHOP/14", "I/CHOP", "ICHOP", "CHOP14"
+    "CHOP-14", "CHOP-DI", "CHOP/14", "CHOP/DI", "CHOP14", "CHOPDI", "I-CHOP", "I/CHOP", "ICHOP"
 ];
 
 define final CHOP14Regimen:
@@ -86,6 +86,8 @@ define final CHOP14Treatments:
 /***
 
 Known regimen for: Adult_T-cell_leukemia-lymphoma
+
+
 
 
 ***/

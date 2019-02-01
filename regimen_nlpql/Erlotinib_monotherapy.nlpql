@@ -29,7 +29,7 @@ define final ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Erlotinib", "Erlotinib_monotherapy", "Erlotinib monotherapy", "Erlotinibmonotherapy"
+    "Erlotinib monotherapy"
 ];
 
 define final ErlotinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final ErlotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, EGFR, Renal_cell_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Non-small_cell_lung_cancer_EGFR-mutated, Renal_cell_carcinoma, EGFR, Myelodysplastic_syndrome
+
+
 
 
 ***/

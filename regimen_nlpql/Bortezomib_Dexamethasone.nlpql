@@ -40,7 +40,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Dexamethasone", "Bortezomib_Dexamethasone", "BortezomibDexamethasone"
+    "Bortezomib & Dexamethasone"
 ];
 
 define final BortezomibDexamethasoneRegimen:
@@ -63,7 +63,9 @@ define final BortezomibDexamethasoneTreatments:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TAM6", "TAM"
+    "TAM", "TAM6"
 ];
 
 define final TAM6Regimen:
@@ -75,6 +75,8 @@ define final TAM6Treatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

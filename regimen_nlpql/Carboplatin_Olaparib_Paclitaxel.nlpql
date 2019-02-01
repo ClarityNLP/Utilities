@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Olaparib_Paclitaxel", "Carboplatin, Olaparib, Paclitaxel", "CarboplatinOlaparibPaclitaxel"
+    "Carboplatin, Olaparib, Paclitaxel"
 ];
 
 define final CarboplatinOlaparibPaclitaxelRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinOlaparibPaclitaxelTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

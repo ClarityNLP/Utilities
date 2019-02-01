@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane and EDP", "Mitotane & EDP", "Mitotane / EDP", "Mitotane/EDP", "Mitotane_EDP", "MitotaneEDP"
+    "Mitotane  and  EDP", "Mitotane & EDP", "Mitotane + EDP", "Mitotane / EDP", "Mitotane and EDP", "Mitotane+EDP", "Mitotane/EDP"
 ];
 
 define final MitotaneEDPRegimen:
@@ -86,6 +86,8 @@ define final MitotaneEDPTreatments:
 /***
 
 Known regimen for: Adrenocortical_carcinoma
+
+
 
 
 ***/

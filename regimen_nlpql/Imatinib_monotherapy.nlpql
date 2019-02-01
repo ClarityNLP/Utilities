@@ -29,7 +29,7 @@ define final ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib", "Imatinib monotherapy", "Imatinib_monotherapy", "Imatinibmonotherapy"
+    "Imatinib monotherapy"
 ];
 
 define final ImatinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final ImatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive, Melanoma, Gastrointestinal_stromal_tumor, Soft_tissue_sarcoma, Chronic_myelogenous_leukemia
+Known regimen for: Soft_tissue_sarcoma, Systemic_mastocytosis, Melanoma, Hypereosinophilic_syndrome, Chronic_myelogenous_leukemia, Gastrointestinal_stromal_tumor, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

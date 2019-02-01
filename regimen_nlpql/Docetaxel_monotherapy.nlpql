@@ -29,7 +29,7 @@ define final DocetaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel_monotherapy", "Docetaxel monotherapy", "Docetaxel", "Docetaxelmonotherapy"
+    "Docetaxel monotherapy"
 ];
 
 define final DocetaxelmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final DocetaxelmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer, Breast_cancer, Small_cell_lung_cancer, Melanoma, Head_and_neck_cancer, Bladder_cancer, Cervical_cancer, Esophageal_cancer, Gastric_cancer
+Known regimen for: Esophageal_cancer, Bladder_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Ovarian_cancer, Gastric_cancer, Cervical_cancer, Head_and_neck_cancer, Melanoma, Breast_cancer
+
+
 
 
 ***/

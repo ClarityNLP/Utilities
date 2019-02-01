@@ -62,7 +62,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VR-CP", "VRCP", "VR/CP"
+    "VR-CP", "VR/CP", "VRCP"
 ];
 
 define final VRCPRegimen:
@@ -86,6 +86,8 @@ define final VRCPTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

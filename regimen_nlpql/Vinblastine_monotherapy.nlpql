@@ -29,7 +29,7 @@ define final VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinblastine", "Vinblastine monotherapy", "Vinblastine_monotherapy", "Vinblastinemonotherapy"
+    "Vinblastine monotherapy"
 ];
 
 define final VinblastinemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final VinblastinemonotherapyRegimen:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

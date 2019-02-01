@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Topotecan", "Cisplatin & Topotecan", "CisplatinTopotecan", "TC"
+    "Cisplatin & Topotecan"
 ];
 
 define final CisplatinTopotecanRegimen:
@@ -64,6 +64,8 @@ define final CisplatinTopotecanTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

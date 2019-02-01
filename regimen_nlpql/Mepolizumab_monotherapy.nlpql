@@ -29,7 +29,7 @@ define final MepolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mepolizumab", "Mepolizumabmonotherapy", "Mepolizumab_monotherapy", "Mepolizumab monotherapy"
+    "Mepolizumab monotherapy"
 ];
 
 define final MepolizumabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MepolizumabmonotherapyRegimen:
 /***
 
 Known regimen for: Hypereosinophilic_syndrome
+
+
 
 
 ***/

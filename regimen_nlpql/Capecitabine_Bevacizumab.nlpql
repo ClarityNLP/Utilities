@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CB", "CapecitabineBevacizumab", "Capecitabine_Bevacizumab", "Capecitabine & Bevacizumab"
+    "Capecitabine & Bevacizumab"
 ];
 
 define final CapecitabineBevacizumabRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineBevacizumabTreatments:
 /***
 
 Known regimen for: Hepatocellular_carcinoma, Colon_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TrifluridineandtipiracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trifluridine_and_tipiracil_monotherapy", "Trifluridine and tipiracil", "Trifluridineandtipiracilmonotherapy", "Trifluridine and tipiracil monotherapy"
+    "Trifluridine and tipiracil monotherapy"
 ];
 
 define final TrifluridineandtipiracilmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final TrifluridineandtipiracilmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Colon_cancer
+
+
 
 
 ***/

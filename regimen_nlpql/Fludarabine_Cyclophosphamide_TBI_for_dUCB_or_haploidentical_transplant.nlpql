@@ -37,7 +37,7 @@ define  CyclophosphamideTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant", "FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant", "dUCB"
+    "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "dUCB"
 ];
 
 define final FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplantRegimen:
@@ -75,6 +75,8 @@ define final FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplantTrea
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

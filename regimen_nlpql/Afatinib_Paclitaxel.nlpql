@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AfatinibPaclitaxel", "Afatinib & Paclitaxel", "Afatinib_Paclitaxel"
+    "Afatinib & Paclitaxel"
 ];
 
 define final AfatinibPaclitaxelRegimen:
@@ -64,6 +64,8 @@ define final AfatinibPaclitaxelTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

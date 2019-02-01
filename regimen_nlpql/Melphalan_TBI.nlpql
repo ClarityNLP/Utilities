@@ -26,7 +26,7 @@ define  MelphalanTreatment:
 
         
 termset TreatmentTerms1:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalan and TBI", "Melphalan_TBI", "Melphalan & TBI", "Melphalan/TBI", "Melphalan / TBI", "MelphalanTBI"
+    "Melphalan  and  TBI", "Melphalan & TBI", "Melphalan + TBI", "Melphalan / TBI", "Melphalan and TBI", "Melphalan+TBI", "Melphalan/TBI"
 ];
 
 define final MelphalanTBIRegimen:
@@ -64,6 +64,8 @@ define final MelphalanTBITreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

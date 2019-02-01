@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "tace", "tace"
+    "tace"
 ];
 
 define  TACETreatment:
@@ -40,7 +40,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DEBTACE", "DEB-TACE", "DEB/TACE"
+    "DEB-TACE", "DEB/TACE", "DEBTACE"
 ];
 
 define final DEBTACERegimen:
@@ -64,6 +64,8 @@ define final DEBTACETreatments:
 /***
 
 Known regimen for: Hepatocellular_carcinoma
+
+
 
 
 ***/

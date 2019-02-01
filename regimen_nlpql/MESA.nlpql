@@ -59,7 +59,7 @@ define  PegaspargaseTreatment:
 
         
 termset TreatmentTerms4:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -97,6 +97,8 @@ define final MESATreatments:
 /***
 
 Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type
+
+
 
 
 ***/

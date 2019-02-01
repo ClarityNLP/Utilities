@@ -73,7 +73,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mFOLFOXIRI_Cetuximab", "mFOLFOXIRI & Cetuximab", "mFOLFOXIRICetuximab"
+    "mFOLFOXIRI & Cetuximab"
 ];
 
 define final mFOLFOXIRICetuximabRegimen:
@@ -97,6 +97,8 @@ define final mFOLFOXIRICetuximabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

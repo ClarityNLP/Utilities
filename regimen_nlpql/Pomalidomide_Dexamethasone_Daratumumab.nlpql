@@ -51,7 +51,7 @@ define  DaratumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pomalidomide_Dexamethasone_Daratumumab", "Pomalidomide, Dexamethasone, Daratumumab", "PomalidomideDexamethasoneDaratumumab"
+    "Pomalidomide, Dexamethasone, Daratumumab"
 ];
 
 define final PomalidomideDexamethasoneDaratumumabRegimen:
@@ -75,6 +75,8 @@ define final PomalidomideDexamethasoneDaratumumabTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

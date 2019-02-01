@@ -40,7 +40,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BusulfanCyclophosphamide", "BuCy", "Busulfan_Cyclophosphamide", "Busulfan & Cyclophosphamide"
+    "BuCy", "Busulfan & Cyclophosphamide"
 ];
 
 define final BusulfanCyclophosphamideRegimen:
@@ -64,6 +64,8 @@ define final BusulfanCyclophosphamideTreatments:
 /***
 
 Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+
+
 
 
 ***/

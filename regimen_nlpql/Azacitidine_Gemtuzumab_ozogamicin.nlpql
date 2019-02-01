@@ -15,12 +15,23 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
+    "vidaza", "azacitidine"
+];
+
+define  AzacitidineTreatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms1:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define final GemtuzumabozogamicinTreatment:
+define  GemtuzumabozogamicinTreatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -29,7 +40,7 @@ define final GemtuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AzacitidineGemtuzumabozogamicin", "Azacitidine_Gemtuzumab_ozogamicin", "Azacitidine & Gemtuzumab ozogamicin"
+    "Azacitidine & Gemtuzumab ozogamicin"
 ];
 
 define final AzacitidineGemtuzumabozogamicinRegimen:
@@ -41,11 +52,20 @@ define final AzacitidineGemtuzumabozogamicinRegimen:
 
 // Results
 
+        
+define final AzacitidineGemtuzumabozogamicinTreatments:
+    where AzacitidineTreatment AND GemtuzumabozogamicinTreatment;
+          
+        
+        
+        
 
 // Comments
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

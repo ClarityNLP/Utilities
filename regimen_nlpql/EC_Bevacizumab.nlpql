@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EC/Bevacizumab", "EC and Bevacizumab", "EC / Bevacizumab", "EC_Bevacizumab", "EC & Bevacizumab", "ECBevacizumab"
+    "EC  and  Bevacizumab", "EC & Bevacizumab", "EC + Bevacizumab", "EC / Bevacizumab", "EC and Bevacizumab", "EC+Bevacizumab", "EC/Bevacizumab"
 ];
 
 define final ECBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final ECBevacizumabTreatments:
 /***
 
 Known regimen for: Breast_cancer_triple_negative
+
+
 
 
 ***/

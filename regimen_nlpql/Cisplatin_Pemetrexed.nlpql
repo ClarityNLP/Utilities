@@ -40,7 +40,7 @@ define  PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Pemetrexed", "CisplatinPemetrexed", "Cisplatin & Pemetrexed"
+    "Cisplatin & Pemetrexed"
 ];
 
 define final CisplatinPemetrexedRegimen:
@@ -64,6 +64,8 @@ define final CisplatinPemetrexedTreatments:
 /***
 
 Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
+
+
 
 
 ***/

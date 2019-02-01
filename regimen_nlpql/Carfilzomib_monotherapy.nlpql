@@ -29,7 +29,7 @@ define final CarfilzomibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib", "Carfilzomibmonotherapy", "Carfilzomib monotherapy", "Carfilzomib_monotherapy"
+    "Carfilzomib monotherapy"
 ];
 
 define final CarfilzomibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final CarfilzomibmonotherapyRegimen:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

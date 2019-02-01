@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/NIMP", "RNIMP", "R-NIMP"
+    "R-NIMP", "R/NIMP", "RNIMP"
 ];
 
 define final RNIMPRegimen:
@@ -97,6 +97,8 @@ define final RNIMPTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

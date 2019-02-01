@@ -29,7 +29,7 @@ define final BetrixabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Betrixaban_monotherapy", "Betrixaban", "Betrixabanmonotherapy", "Betrixaban monotherapy"
+    "Betrixaban monotherapy"
 ];
 
 define final BetrixabanmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BetrixabanmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

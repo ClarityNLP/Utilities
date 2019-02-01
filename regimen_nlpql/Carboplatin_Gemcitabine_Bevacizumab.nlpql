@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Gemcitabine_Bevacizumab", "CarboplatinGemcitabineBevacizumab", "Carboplatin, Gemcitabine, Bevacizumab"
+    "Carboplatin, Gemcitabine, Bevacizumab"
 ];
 
 define final CarboplatinGemcitabineBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinGemcitabineBevacizumabTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

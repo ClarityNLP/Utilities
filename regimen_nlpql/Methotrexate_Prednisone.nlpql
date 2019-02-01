@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate_Prednisone", "MethotrexatePrednisone", "Methotrexate & Prednisone"
+    "Methotrexate & Prednisone"
 ];
 
 define final MethotrexatePrednisoneRegimen:
@@ -64,6 +64,8 @@ define final MethotrexatePrednisoneTreatments:
 /***
 
 Known regimen for: Large_granular_lymphocytic_leukemia
+
+
 
 
 ***/

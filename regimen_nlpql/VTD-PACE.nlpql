@@ -95,7 +95,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VTDPACE", "VTD-PACE", "VTD/PACE"
+    "VTD-PACE", "VTD/PACE", "VTDPACE"
 ];
 
 define final VTDPACERegimen:
@@ -119,6 +119,8 @@ define final VTDPACETreatments:
 /***
 
 Known regimen for: Multiple_myeloma_induction
+
+
 
 
 ***/

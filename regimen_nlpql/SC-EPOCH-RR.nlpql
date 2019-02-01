@@ -84,7 +84,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "SCEPOCHRR", "SC/EPOCH/RR", "SC-EPOCH-RR"
+    "SC-EPOCH-RR"
 ];
 
 define final SCEPOCHRRRegimen:
@@ -108,6 +108,8 @@ define final SCEPOCHRRTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma
+
+
 
 
 ***/

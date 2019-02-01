@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define final BendamustineTreatment:
@@ -29,7 +29,7 @@ define final BendamustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bendamustine monotherapy", "Bendamustine", "Bendamustinemonotherapy", "Bendamustine_monotherapy"
+    "Bendamustine monotherapy"
 ];
 
 define final BendamustinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final BendamustinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cutaneous_T-cell_lymphoma, Small_cell_lung_cancer, Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Autologous_HSCT, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Transformed_lymphoma, Peripheral_T-cell_lymphoma, Hodgkin_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma, Transformed_lymphoma, Small_cell_lung_cancer, Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Peripheral_T-cell_lymphoma, Autologous_HSCT, Marginal_zone_lymphoma
+
+
 
 
 ***/

@@ -26,7 +26,7 @@ define  RituximabTreatment:
 
         
 termset TreatmentTerms1:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -51,7 +51,7 @@ define  LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RBL", "R/BL", "R-BL"
+    "R-BL", "R/BL", "RBL"
 ];
 
 define final RBLRegimen:
@@ -75,6 +75,8 @@ define final RBLTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin", "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin", "RT", "5-FU_Leucovorin_then_5-FU_Leucovorin_RT_then_5-FU_Leucovorin"
+    "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin"
 ];
 
 define final 5FULeucovorinthen5FULeucovorinRTthen5FULeucovorinRegimen:
@@ -63,7 +63,9 @@ define final 5FULeucovorinthen5FULeucovorinRTthen5FULeucovorinTreatments:
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer, Rectal_cancer
+
+
 
 
 ***/

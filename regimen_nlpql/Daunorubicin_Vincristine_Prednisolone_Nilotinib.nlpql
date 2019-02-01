@@ -62,7 +62,7 @@ define  NilotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin_Vincristine_Prednisolone_Nilotinib", "DaunorubicinVincristinePrednisoloneNilotinib", "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
+    "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
 ];
 
 define final DaunorubicinVincristinePrednisoloneNilotinibRegimen:
@@ -86,6 +86,8 @@ define final DaunorubicinVincristinePrednisoloneNilotinibTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

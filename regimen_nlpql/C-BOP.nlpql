@@ -62,7 +62,7 @@ define  CarboplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "C/BOP", "C-BOP", "CBOP"
+    "C-BOP", "C/BOP", "CBOP"
 ];
 
 define final CBOPRegimen:
@@ -86,6 +86,8 @@ define final CBOPTreatments:
 /***
 
 Known regimen for: Testicular_cancer
+
+
 
 
 ***/

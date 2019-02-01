@@ -48,7 +48,7 @@ define  HydroxyureaTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinFluorouracilHydroxyureaRT", "Cisplatin, Fluorouracil, Hydroxyurea, RT", "Cisplatin_Fluorouracil_Hydroxyurea_RT", "RT"
+    "Cisplatin, Fluorouracil, Hydroxyurea, RT"
 ];
 
 define final CisplatinFluorouracilHydroxyureaRTRegimen:
@@ -86,6 +86,8 @@ define final CisplatinFluorouracilHydroxyureaRTTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

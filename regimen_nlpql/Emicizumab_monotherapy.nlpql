@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Regimen for Tamoxifen & OFS" version "1";
+phenotype "Regimen for Emicizumab monotherapy" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -15,10 +15,10 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "zoladex", "goserelin"
+    "hemlibra", "emicizumab"
 ];
 
-define final GoserelinTreatment:
+define final EmicizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -29,10 +29,10 @@ define final GoserelinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamoxifen/OFS", "Tamoxifen and OFS", "TamoxifenOFS", "Tamoxifen & OFS", "Tamoxifen / OFS", "Tamoxifen_OFS"
+    "Emicizumab monotherapy"
 ];
 
-define final TamoxifenOFSRegimen:
+define final EmicizumabmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -45,7 +45,9 @@ define final TamoxifenOFSRegimen:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_ERPR-positive
+Known regimen for: Inherited_coagulopathy
+
+
 
 
 ***/

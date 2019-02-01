@@ -26,7 +26,7 @@ define  BevacizumabTreatment:
 
         
 termset TreatmentTerms1:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab & RT", "RT", "Bevacizumab and RT", "Bevacizumab / RT", "Bevacizumab_RT", "Bevacizumab/RT", "BevacizumabRT"
+    "Bevacizumab  and  RT", "Bevacizumab & RT", "Bevacizumab + RT", "Bevacizumab / RT", "Bevacizumab and RT", "Bevacizumab+RT", "Bevacizumab/RT"
 ];
 
 define final BevacizumabRTRegimen:
@@ -64,6 +64,8 @@ define final BevacizumabRTTreatments:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

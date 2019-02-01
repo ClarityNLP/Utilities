@@ -29,7 +29,7 @@ define final EpirubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Epirubicinmonotherapy", "Epirubicin monotherapy", "Epirubicin", "Epirubicin_monotherapy"
+    "Epirubicin monotherapy"
 ];
 
 define final EpirubicinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final EpirubicinmonotherapyRegimen:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

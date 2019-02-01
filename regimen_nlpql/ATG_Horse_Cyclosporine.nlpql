@@ -26,7 +26,7 @@ define  AntithymocyteglobulinhorseATGTreatment:
 
         
 termset TreatmentTerms1:[
-    ":category:cyclosporines", ":category:cyclosporines"
+    ":category:cyclosporines"
 ];
 
 define  CategoryCyclosporinesTreatment:
@@ -40,7 +40,7 @@ define  CategoryCyclosporinesTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATGHorseCyclosporine", "ATG_Horse_Cyclosporine", "ATG (Horse) & Cyclosporine"
+    "ATG (Horse) & Cyclosporine"
 ];
 
 define final ATGHorseCyclosporineRegimen:
@@ -64,6 +64,8 @@ define final ATGHorseCyclosporineTreatments:
 /***
 
 Known regimen for: Myelodysplastic_syndrome, Aplastic_anemia
+
+
 
 
 ***/

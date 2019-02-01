@@ -29,7 +29,7 @@ define final OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ofatumumab", "Ofatumumab_monotherapy", "Ofatumumabmonotherapy", "Ofatumumab monotherapy"
+    "Ofatumumab monotherapy"
 ];
 
 define final OfatumumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final OfatumumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Waldenstrom_macroglobulinemia, Diffuse_large_B-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

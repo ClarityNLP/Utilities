@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine & Gemcitabine", "Dacarbazine_Gemcitabine", "DacarbazineGemcitabine"
+    "Dacarbazine & Gemcitabine"
 ];
 
 define final DacarbazineGemcitabineRegimen:
@@ -64,6 +64,8 @@ define final DacarbazineGemcitabineTreatments:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

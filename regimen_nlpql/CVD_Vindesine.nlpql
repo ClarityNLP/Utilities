@@ -51,7 +51,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CVD (Vindesine)", "CVD_Vindesine", "CVD", "CVDVindesine"
+    "CVD", "CVD (Vindesine)"
 ];
 
 define final CVDVindesineRegimen:
@@ -75,6 +75,8 @@ define final CVDVindesineTreatments:
 /***
 
 Known regimen for: Melanoma
+
+
 
 
 ***/

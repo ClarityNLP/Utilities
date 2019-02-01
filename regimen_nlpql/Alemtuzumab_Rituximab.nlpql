@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab & Rituximab", "AlemtuzumabRituximab", "Alemtuzumab_Rituximab"
+    "Alemtuzumab & Rituximab"
 ];
 
 define final AlemtuzumabRituximabRegimen:
@@ -75,6 +75,8 @@ define final AlemtuzumabRituximabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

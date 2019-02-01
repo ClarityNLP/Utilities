@@ -29,7 +29,7 @@ define final SiltuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Siltuximab monotherapy", "Siltuximab", "Siltuximabmonotherapy", "Siltuximab_monotherapy"
+    "Siltuximab monotherapy"
 ];
 
 define final SiltuximabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final SiltuximabmonotherapyRegimen:
 /***
 
 Known regimen for: Castleman_disease
+
+
 
 
 ***/

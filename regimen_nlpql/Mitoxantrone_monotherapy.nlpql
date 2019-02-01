@@ -29,7 +29,7 @@ define final MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitoxantrone_monotherapy", "Mitoxantrone monotherapy", "Mitoxantronemonotherapy", "Mitoxantrone"
+    "Mitoxantrone monotherapy"
 ];
 
 define final MitoxantronemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MitoxantronemonotherapyRegimen:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

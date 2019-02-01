@@ -62,7 +62,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI_Panitumumab", "FOLFIRI & Panitumumab", "FOLFIRIPanitumumab"
+    "FOLFIRI & Panitumumab"
 ];
 
 define final FOLFIRIPanitumumabRegimen:
@@ -86,6 +86,8 @@ define final FOLFIRIPanitumumabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "C/MOPP", "C-MOPP", "CMOPP", "COPP"
+    "C-MOPP", "C/MOPP", "CMOPP", "COPP"
 ];
 
 define final CMOPPRegimen:
@@ -86,6 +86,8 @@ define final CMOPPTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

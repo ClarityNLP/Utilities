@@ -73,7 +73,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DA/EPOCH", "DA-EPOCH", "DAEPOCH"
+    "DA-EPOCH", "DA/EPOCH", "DAEPOCH"
 ];
 
 define final DAEPOCHRegimen:
@@ -96,7 +96,9 @@ define final DAEPOCHTreatments:
 // Comments
 /***
 
-Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
+Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

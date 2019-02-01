@@ -29,7 +29,7 @@ define final DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine", "Dacarbazinemonotherapy", "Dacarbazine monotherapy", "Dacarbazine_monotherapy"
+    "Dacarbazine monotherapy"
 ];
 
 define final DacarbazinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final DacarbazinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Melanoma
+Known regimen for: Melanoma, Soft_tissue_sarcoma
+
+
 
 
 ***/

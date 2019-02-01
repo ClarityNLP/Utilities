@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BCNUTT_then_auto_HSCT", "BCNU/TT, then auto HSCT", "BCNUTT", "BCNU/TT", "BCNUTTthenautoHSCT"
+    "BCNU/TT", "BCNU/TT, then auto HSCT", "BCNUTT"
 ];
 
 define final BCNUTTthenautoHSCTRegimen:
@@ -64,6 +64,8 @@ define final BCNUTTthenautoHSCTTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

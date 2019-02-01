@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "NordicFLOX", "FLOX", "Nordic_FLOX", "Nordic FLOX"
+    "FLOX", "Nordic FLOX"
 ];
 
 define final NordicFLOXRegimen:
@@ -75,6 +75,8 @@ define final NordicFLOXTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

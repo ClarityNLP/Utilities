@@ -29,7 +29,7 @@ define final RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rituximab, extended course", "Rituximabmonotherapyextendedcourse", "Rituximab monotherapy, extended course", "Rituximab_monotherapy_extended_course"
+    "Rituximab monotherapy, extended course"
 ];
 
 define final RituximabmonotherapyextendedcourseRegimen:
@@ -46,6 +46,8 @@ define final RituximabmonotherapyextendedcourseRegimen:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

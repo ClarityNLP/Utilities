@@ -29,7 +29,7 @@ define final CeritinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ceritinibmonotherapy", "Ceritinib", "Ceritinib_monotherapy", "Ceritinib monotherapy"
+    "Ceritinib monotherapy"
 ];
 
 define final CeritinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CeritinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_ALK-positive, Non-small_cell_lung_cancer_ROS1-positive, CNS_carcinoma
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_ROS1-positive, Non-small_cell_lung_cancer_ALK-positive
+
+
 
 
 ***/

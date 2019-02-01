@@ -29,7 +29,7 @@ define final VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vincristine", "Vincristine monotherapy", "Vincristinemonotherapy", "Vincristine_monotherapy"
+    "Vincristine monotherapy"
 ];
 
 define final VincristinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final VincristinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Thrombotic_thrombocytopenic_purpura, Wilms_tumor
+Known regimen for: Wilms_tumor, Thrombotic_thrombocytopenic_purpura
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine & Vorinostat", "AzacitidineVorinostat", "Azacitidine_Vorinostat"
+    "Azacitidine & Vorinostat"
 ];
 
 define final AzacitidineVorinostatRegimen:
@@ -63,7 +63,9 @@ define final AzacitidineVorinostatTreatments:
 // Comments
 /***
 
-Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia
+
+
 
 
 ***/

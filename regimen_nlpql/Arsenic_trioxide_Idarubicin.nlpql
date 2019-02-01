@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ArsenictrioxideIdarubicin", "Arsenic trioxide & Idarubicin", "Arsenic_trioxide_Idarubicin"
+    "Arsenic trioxide & Idarubicin"
 ];
 
 define final ArsenictrioxideIdarubicinRegimen:
@@ -64,6 +64,8 @@ define final ArsenictrioxideIdarubicinTreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

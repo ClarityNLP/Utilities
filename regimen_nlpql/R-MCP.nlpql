@@ -62,7 +62,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMCP", "R/MCP", "R-MCP"
+    "R-MCP", "R/MCP", "RMCP"
 ];
 
 define final RMCPRegimen:
@@ -85,7 +85,9 @@ define final RMCPTreatments:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Follicular_lymphoma
+
+
 
 
 ***/

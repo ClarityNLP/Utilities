@@ -15,23 +15,12 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "penicillin v", "penicillin v"
+    "soliris", "eculizumab"
 ];
 
-define  PenicillinVTreatment:
+define final EculizumabTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms1:[
-    "erythromycin", "erythromycin"
-];
-
-define  ErythromycinTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -40,7 +29,7 @@ define  ErythromycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eculizumabmonotherapy", "Eculizumab_monotherapy", "Eculizumab", "Eculizumab monotherapy"
+    "Eculizumab monotherapy"
 ];
 
 define final EculizumabmonotherapyRegimen:
@@ -52,18 +41,13 @@ define final EculizumabmonotherapyRegimen:
 
 // Results
 
-        
-define final EculizumabmonotherapyTreatments:
-    where PenicillinVTreatment AND ErythromycinTreatment;
-          
-        
-        
-        
 
 // Comments
 /***
 
-Known regimen for: Paroxysmal_nocturnal_hemoglobinuria_(PNH)
+Known regimen for: Paroxysmal_nocturnal_hemoglobinuria_(PNH), Cold_agglutinin_disease, Atypical_hemolytic-uremic_syndrome_(aHUS)
+
+
 
 
 ***/

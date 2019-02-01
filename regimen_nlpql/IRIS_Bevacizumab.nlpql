@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IRISBevacizumab", "IRIS & Bevacizumab", "IRIS / Bevacizumab", "IRIS and Bevacizumab", "IRIS/Bevacizumab", "IRIS_Bevacizumab"
+    "IRIS  and  Bevacizumab", "IRIS & Bevacizumab", "IRIS + Bevacizumab", "IRIS / Bevacizumab", "IRIS and Bevacizumab", "IRIS+Bevacizumab", "IRIS/Bevacizumab"
 ];
 
 define final IRISBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final IRISBevacizumabTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

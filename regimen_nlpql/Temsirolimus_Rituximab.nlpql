@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temsirolimus_Rituximab", "Temsirolimus & Rituximab", "TemsirolimusRituximab"
+    "Temsirolimus & Rituximab"
 ];
 
 define final TemsirolimusRituximabRegimen:
@@ -64,6 +64,8 @@ define final TemsirolimusRituximabTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

@@ -26,7 +26,7 @@ define  AxitinibTreatment:
 
         
 termset TreatmentTerms1:[
-    "tace", "tace"
+    "tace"
 ];
 
 define  TACETreatment:
@@ -40,7 +40,7 @@ define  TACETreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axitinib/TACE", "Axitinib / TACE", "Axitinib_TACE", "Axitinib and TACE", "Axitinib & TACE", "AxitinibTACE"
+    "Axitinib  and  TACE", "Axitinib & TACE", "Axitinib + TACE", "Axitinib / TACE", "Axitinib and TACE", "Axitinib+TACE", "Axitinib/TACE"
 ];
 
 define final AxitinibTACERegimen:
@@ -64,6 +64,8 @@ define final AxitinibTACETreatments:
 /***
 
 Known regimen for: Hepatocellular_carcinoma
+
+
 
 
 ***/

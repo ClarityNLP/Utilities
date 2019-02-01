@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BendamustineOfatumumab", "BendOfa", "Bendamustine & Ofatumumab", "Bendamustine_Ofatumumab"
+    "BendOfa", "Bendamustine & Ofatumumab"
 ];
 
 define final BendamustineOfatumumabRegimen:
@@ -63,7 +63,9 @@ define final BendamustineOfatumumabTreatments:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma
+
+
 
 
 ***/

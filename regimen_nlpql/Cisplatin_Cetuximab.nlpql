@@ -40,7 +40,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinCetuximab", "Cisplatin_Cetuximab", "Cisplatin & Cetuximab"
+    "Cisplatin & Cetuximab"
 ];
 
 define final CisplatinCetuximabRegimen:
@@ -64,6 +64,8 @@ define final CisplatinCetuximabTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final GemtuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemtuzumab_ozogamicin_monotherapy", "Gemtuzumab ozogamicin", "Gemtuzumab ozogamicin monotherapy", "Gemtuzumabozogamicinmonotherapy"
+    "Gemtuzumab ozogamicin monotherapy"
 ];
 
 define final GemtuzumabozogamicinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final GemtuzumabozogamicinmonotherapyRegimen:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

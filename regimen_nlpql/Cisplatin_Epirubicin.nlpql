@@ -40,7 +40,7 @@ define  EpirubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Epirubicin", "CIS-EPI", "CISEPI", "CIS/EPI", "CisplatinEpirubicin", "Cisplatin & Epirubicin"
+    "CIS-EPI", "CIS/EPI", "CISEPI", "Cisplatin & Epirubicin"
 ];
 
 define final CisplatinEpirubicinRegimen:
@@ -64,6 +64,8 @@ define final CisplatinEpirubicinTreatments:
 /***
 
 Known regimen for: Testicular_cancer
+
+
 
 
 ***/

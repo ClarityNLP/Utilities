@@ -40,7 +40,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cabozantinib_Erlotinib", "Cabozantinib & Erlotinib", "CabozantinibErlotinib"
+    "Cabozantinib & Erlotinib"
 ];
 
 define final CabozantinibErlotinibRegimen:
@@ -64,6 +64,8 @@ define final CabozantinibErlotinibTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

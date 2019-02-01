@@ -40,7 +40,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Cyclophosphamide", "Bortezomib_Cyclophosphamide", "BortezomibCyclophosphamide"
+    "Bortezomib & Cyclophosphamide"
 ];
 
 define final BortezomibCyclophosphamideRegimen:
@@ -64,6 +64,8 @@ define final BortezomibCyclophosphamideTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

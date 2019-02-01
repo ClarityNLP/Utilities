@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_pegylated_liposomal_Bevacizumab", "DoxorubicinpegylatedliposomalBevacizumab", "Doxorubicin pegylated liposomal & Bevacizumab"
+    "Doxorubicin pegylated liposomal & Bevacizumab"
 ];
 
 define final DoxorubicinpegylatedliposomalBevacizumabRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinpegylatedliposomalBevacizumabTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

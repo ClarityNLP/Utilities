@@ -15,23 +15,12 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "tylenol", "acetaminophen"
+    "d", "rho"
 ];
 
-define  AcetaminophenTreatment:
+define final RhoTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms1:[
-    "sterapred", "prednisone"
-];
-
-define  PrednisoneTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -40,7 +29,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RhIG monotherapy", "RhIG_monotherapy", "RhIG", "RhIGmonotherapy"
+    "RhIG", "RhIG monotherapy"
 ];
 
 define final RhIGmonotherapyRegimen:
@@ -52,18 +41,13 @@ define final RhIGmonotherapyRegimen:
 
 // Results
 
-        
-define final RhIGmonotherapyTreatments:
-    where AcetaminophenTreatment AND PrednisoneTreatment;
-          
-        
-        
-        
 
 // Comments
 /***
 
 Known regimen for: Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ErlotinibBevacizumab", "Erlotinib & Bevacizumab", "Erlotinib_Bevacizumab"
+    "Erlotinib & Bevacizumab"
 ];
 
 define final ErlotinibBevacizumabRegimen:
@@ -63,7 +63,9 @@ define final ErlotinibBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Adenocarcinoma_of_unknown_primary, Renal_cell_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Cholangiocarcinoma
+Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Adenocarcinoma_of_unknown_primary, Renal_cell_carcinoma, Cholangiocarcinoma, Hepatocellular_carcinoma
+
+
 
 
 ***/

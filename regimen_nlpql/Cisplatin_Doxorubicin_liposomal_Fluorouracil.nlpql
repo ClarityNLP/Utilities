@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinDoxorubicinliposomalFluorouracil", "Cisplatin_Doxorubicin_liposomal_Fluorouracil", "Cisplatin, Doxorubicin liposomal, Fluorouracil"
+    "Cisplatin, Doxorubicin liposomal, Fluorouracil"
 ];
 
 define final CisplatinDoxorubicinliposomalFluorouracilRegimen:
@@ -75,6 +75,8 @@ define final CisplatinDoxorubicinliposomalFluorouracilTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

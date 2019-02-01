@@ -62,7 +62,7 @@ define  IsotretinoinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dinutuximab, GM-CSF, IL-2, Isotretinoin", "Dinutuximab_GM-CSF_IL-2_Isotretinoin", "DinutuximabGMCSFIL2Isotretinoin"
+    "Dinutuximab, GM-CSF, IL-2, Isotretinoin"
 ];
 
 define final DinutuximabGMCSFIL2IsotretinoinRegimen:
@@ -86,6 +86,8 @@ define final DinutuximabGMCSFIL2IsotretinoinTreatments:
 /***
 
 Known regimen for: Neuroblastoma
+
+
 
 
 ***/

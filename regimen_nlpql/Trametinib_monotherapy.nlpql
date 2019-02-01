@@ -29,7 +29,7 @@ define final TrametinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trametinib_monotherapy", "Trametinib monotherapy", "Trametinibmonotherapy", "Trametinib"
+    "Trametinib monotherapy"
 ];
 
 define final TrametinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TrametinibmonotherapyRegimen:
 /***
 
 Known regimen for: Melanoma_BRAF-mutated
+
+
 
 
 ***/

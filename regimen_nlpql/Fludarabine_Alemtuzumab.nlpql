@@ -40,7 +40,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine & Alemtuzumab", "FludarabineAlemtuzumab", "Fludarabine_Alemtuzumab"
+    "Fludarabine & Alemtuzumab"
 ];
 
 define final FludarabineAlemtuzumabRegimen:
@@ -64,6 +64,8 @@ define final FludarabineAlemtuzumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

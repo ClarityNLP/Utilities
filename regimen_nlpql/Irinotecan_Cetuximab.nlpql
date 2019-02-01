@@ -26,7 +26,7 @@ define  IrinotecanTreatment:
 
         
 termset TreatmentTerms1:[
-    "performance status", "performance status"
+    "performance status"
 ];
 
 define  PerformancestatusTreatment:
@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Cetuximab", "IrinotecanCetuximab", "Irinotecan_Cetuximab"
+    "Irinotecan & Cetuximab"
 ];
 
 define final IrinotecanCetuximabRegimen:
@@ -75,6 +75,8 @@ define final IrinotecanCetuximabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

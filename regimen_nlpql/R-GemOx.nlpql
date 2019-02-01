@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-GemOx", "RGemOx", "R/GemOx"
+    "R-GemOx", "R/GemOx", "RGemOx"
 ];
 
 define final RGemOxRegimen:
@@ -75,6 +75,8 @@ define final RGemOxTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

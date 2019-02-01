@@ -51,7 +51,7 @@ define  PembrolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinnabPaclitaxelPembrolizumab", "Carboplatin_nab-Paclitaxel_Pembrolizumab", "Carboplatin, nab-Paclitaxel, Pembrolizumab"
+    "Carboplatin, nab-Paclitaxel, Pembrolizumab"
 ];
 
 define final CarboplatinnabPaclitaxelPembrolizumabRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinnabPaclitaxelPembrolizumabTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final AcalabrutinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Acalabrutinib_monotherapy", "Acalabrutinib monotherapy", "Acalabrutinib", "Acalabrutinibmonotherapy"
+    "Acalabrutinib monotherapy"
 ];
 
 define final AcalabrutinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final AcalabrutinibmonotherapyRegimen:
 /***
 
 Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

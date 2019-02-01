@@ -29,7 +29,7 @@ define final SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sorafenib", "Sorafenib monotherapy", "Sorafenib_monotherapy", "Sorafenibmonotherapy"
+    "Sorafenib monotherapy"
 ];
 
 define final SorafenibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final SorafenibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Renal_cell_carcinoma, Thyroid_cancer, Acute_myeloid_leukemia, Acute_myeloid_leukemia_FLT3-positive, Soft_tissue_sarcoma, Non-small_cell_lung_cancer
+Known regimen for: Soft_tissue_sarcoma, Thyroid_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer, Hepatocellular_carcinoma, Acute_myeloid_leukemia_FLT3-positive, Acute_myeloid_leukemia
+
+
 
 
 ***/

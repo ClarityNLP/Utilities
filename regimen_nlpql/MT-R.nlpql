@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MT/R", "MTR", "MT-R"
+    "MT-R", "MT/R", "MTR"
 ];
 
 define final MTRRegimen:
@@ -75,6 +75,8 @@ define final MTRTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final NecitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Necitumumab_monotherapy", "Necitumumab monotherapy", "Necitumumab", "Necitumumabmonotherapy"
+    "Necitumumab monotherapy"
 ];
 
 define final NecitumumabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final NecitumumabmonotherapyRegimen:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

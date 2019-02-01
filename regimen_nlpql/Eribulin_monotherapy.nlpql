@@ -29,7 +29,7 @@ define final EribulinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Eribulin_monotherapy", "Eribulin monotherapy", "Eribulin", "Eribulinmonotherapy"
+    "Eribulin monotherapy"
 ];
 
 define final EribulinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final EribulinmonotherapyRegimen:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

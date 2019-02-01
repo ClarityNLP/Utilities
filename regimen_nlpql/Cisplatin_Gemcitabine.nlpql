@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GC", "Cisplatin_Gemcitabine", "Cisplatin & Gemcitabine", "CisplatinGemcitabine"
+    "Cisplatin & Gemcitabine"
 ];
 
 define final CisplatinGemcitabineRegimen:
@@ -63,7 +63,9 @@ define final CisplatinGemcitabineTreatments:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Mesothelioma, Adenocarcinoma_of_unknown_primary, Cervical_cancer, Bladder_cancer, Pancreatic_cancer, Cholangiocarcinoma
+Known regimen for: Pancreatic_cancer, Bladder_cancer, Adenocarcinoma_of_unknown_primary, Non-small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Mesothelioma, Cervical_cancer, Cholangiocarcinoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Chlorambucil & Ofatumumab", "Chlorambucil_Ofatumumab", "ChlorambucilOfatumumab"
+    "Chlorambucil & Ofatumumab"
 ];
 
 define final ChlorambucilOfatumumabRegimen:
@@ -64,6 +64,8 @@ define final ChlorambucilOfatumumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

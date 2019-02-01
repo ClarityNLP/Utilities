@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Regimen for Plasma exchange" version "1";
+phenotype "Regimen for Intravenous immunoglobuin monotherapy" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -15,23 +15,12 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "persantine", "dipyridamole"
+    "ivig", "intravenous immunoglobulin"
 ];
 
-define  DipyridamoleTreatment:
+define final IntravenousimmunoglobulinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms1:[
-    "aspirin", "aspirin"
-];
-
-define  AspirinTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -40,10 +29,10 @@ define  AspirinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Plasma exchange", "Plasma_exchange", "Plasmaexchange"
+    "IVIG", "Intravenous immunoglobuin monotherapy"
 ];
 
-define final PlasmaexchangeRegimen:
+define final IntravenousimmunoglobuinmonotherapyRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -52,18 +41,13 @@ define final PlasmaexchangeRegimen:
 
 // Results
 
-        
-define final PlasmaexchangeTreatments:
-    where DipyridamoleTreatment AND AspirinTreatment;
-          
-        
-        
-        
 
 // Comments
 /***
 
-Known regimen for: Thrombotic_thrombocytopenic_purpura
+Known regimen for: Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

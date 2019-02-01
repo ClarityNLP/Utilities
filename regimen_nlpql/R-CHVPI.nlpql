@@ -73,7 +73,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CHVP+I", "R-CHVP & I", "RCHVP+I", "R-CHVP&I", "R-CHVP+I", "R-CHVP / I", "R-CHVP/I", "R-CHVPI", "R-CHVP and I", "RCHVPI"
+    "R-CHVP & I", "R-CHVP / I", "R-CHVP and I", "R-CHVP&I", "R-CHVP+I", "R-CHVP/I", "R-CHVPI", "R/CHVP+I", "RCHVP+I", "RCHVPI"
 ];
 
 define final RCHVPIRegimen:
@@ -97,6 +97,8 @@ define final RCHVPITreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

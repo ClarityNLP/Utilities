@@ -29,7 +29,7 @@ define final BivalirudinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bivalirudin monotherapy", "Bivalirudin", "Bivalirudin_monotherapy", "Bivalirudinmonotherapy"
+    "Bivalirudin monotherapy"
 ];
 
 define final BivalirudinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BivalirudinmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MEI", "M-EI", "M/EI"
+    "M-EI", "M/EI", "MEI"
 ];
 
 define final MEIRegimen:
@@ -75,6 +75,8 @@ define final MEITreatments:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final AtezolizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Atezolizumabmonotherapy", "Atezolizumab monotherapy", "Atezolizumab", "Atezolizumab_monotherapy"
+    "Atezolizumab monotherapy"
 ];
 
 define final AtezolizumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final AtezolizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer, Bladder_cancer
+
+
 
 
 ***/

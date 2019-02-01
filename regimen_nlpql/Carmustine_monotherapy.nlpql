@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustine monotherapy", "Carmustine_monotherapy", "Carmustinemonotherapy", "Carmustine"
+    "Carmustine monotherapy"
 ];
 
 define final CarmustinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CarmustinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Glioblastoma, Anaplastic_glioma
+Known regimen for: Anaplastic_glioma, Glioblastoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pemetrexed & Bevacizumab", "Pemetrexed_Bevacizumab", "PemetrexedBevacizumab"
+    "Pemetrexed & Bevacizumab"
 ];
 
 define final PemetrexedBevacizumabRegimen:
@@ -64,6 +64,8 @@ define final PemetrexedBevacizumabTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

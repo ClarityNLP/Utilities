@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PanobinostatRituximab", "Panobinostat & Rituximab", "Panobinostat_Rituximab"
+    "Panobinostat & Rituximab"
 ];
 
 define final PanobinostatRituximabRegimen:
@@ -64,6 +64,8 @@ define final PanobinostatRituximabTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

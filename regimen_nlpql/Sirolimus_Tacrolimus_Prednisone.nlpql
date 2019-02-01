@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "SirolimusTacrolimusPrednisone", "Sirolimus, Tacrolimus, Prednisone", "Sirolimus_Tacrolimus_Prednisone"
+    "Sirolimus, Tacrolimus, Prednisone"
 ];
 
 define final SirolimusTacrolimusPrednisoneRegimen:
@@ -75,6 +75,8 @@ define final SirolimusTacrolimusPrednisoneTreatments:
 /***
 
 Known regimen for: Graft_versus_host_disease_(GVHD)
+
+
 
 
 ***/

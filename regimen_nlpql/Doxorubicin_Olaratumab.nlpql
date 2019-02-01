@@ -40,7 +40,7 @@ define  OlaratumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_Olaratumab", "DoxorubicinOlaratumab", "Doxorubicin & Olaratumab"
+    "Doxorubicin & Olaratumab"
 ];
 
 define final DoxorubicinOlaratumabRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinOlaratumabTreatments:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

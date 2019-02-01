@@ -29,7 +29,7 @@ define final IsotretinoinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Isotretinoinmonotherapy", "Isotretinoin monotherapy", "Isotretinoin_monotherapy", "Isotretinoin"
+    "Isotretinoin monotherapy"
 ];
 
 define final IsotretinoinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final IsotretinoinmonotherapyRegimen:
 /***
 
 Known regimen for: Neuroblastoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DoxorubicinpegylatedliposomalGemcitabine", "Doxorubicin pegylated liposomal & Gemcitabine", "Doxorubicin_pegylated_liposomal_Gemcitabine"
+    "Doxorubicin pegylated liposomal & Gemcitabine"
 ];
 
 define final DoxorubicinpegylatedliposomalGemcitabineRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinpegylatedliposomalGemcitabineTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

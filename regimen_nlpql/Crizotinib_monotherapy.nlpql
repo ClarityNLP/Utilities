@@ -29,7 +29,7 @@ define final CrizotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Crizotinibmonotherapy", "Crizotinib_monotherapy", "Crizotinib", "Crizotinib monotherapy"
+    "Crizotinib monotherapy"
 ];
 
 define final CrizotinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CrizotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_ALK-positive, Non-small_cell_lung_cancer_ROS1-positive
+Known regimen for: Non-small_cell_lung_cancer_ROS1-positive, Non-small_cell_lung_cancer_ALK-positive
+
+
 
 
 ***/

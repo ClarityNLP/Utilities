@@ -29,7 +29,7 @@ define final ThalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thalidomidemonotherapy", "Thalidomide monotherapy", "Thalidomide_monotherapy", "Thalidomide"
+    "Thalidomide monotherapy"
 ];
 
 define final ThalidomidemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ThalidomidemonotherapyRegimen:
 /***
 
 Known regimen for: Polycythemia_vera, Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

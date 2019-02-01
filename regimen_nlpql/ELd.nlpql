@@ -62,7 +62,7 @@ define  ElotuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ERd", "ELd"
+    "ELd", "ERd"
 ];
 
 define final ELdRegimen:
@@ -86,6 +86,8 @@ define final ELdTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

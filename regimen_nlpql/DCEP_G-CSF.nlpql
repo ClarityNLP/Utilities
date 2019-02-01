@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DCEP/G-CSF", "DCEP / G-CSF", "DCEPGCSF", "DCEP and G-CSF", "DCEP & G-CSF", "DCEP & GCSF", "DCEP_G-CSF", "DCEP & G/CSF"
+    "DCEP  and  G-CSF", "DCEP & G-CSF", "DCEP + G-CSF", "DCEP / G-CSF", "DCEP and G-CSF", "DCEP+G-CSF", "DCEP/G-CSF"
 ];
 
 define final DCEPGCSFRegimen:
@@ -86,6 +86,8 @@ define final DCEPGCSFTreatments:
 /***
 
 Known regimen for: Stem_cell_mobilization
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOx / Panitumumab", "CapeOx and Panitumumab", "CapeOx_Panitumumab", "CapeOxPanitumumab", "CapeOx/Panitumumab", "CapeOx & Panitumumab"
+    "CapeOx  and  Panitumumab", "CapeOx & Panitumumab", "CapeOx + Panitumumab", "CapeOx / Panitumumab", "CapeOx and Panitumumab", "CapeOx+Panitumumab", "CapeOx/Panitumumab"
 ];
 
 define final CapeOxPanitumumabRegimen:
@@ -75,6 +75,8 @@ define final CapeOxPanitumumabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

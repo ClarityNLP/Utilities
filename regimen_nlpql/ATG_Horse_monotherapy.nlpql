@@ -29,7 +29,7 @@ define final AntithymocyteglobulinhorseATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATG (Horse)", "ATG", "ATG_Horse_monotherapy", "ATGHorsemonotherapy", "ATG (Horse) monotherapy"
+    "ATG", "ATG (Horse) monotherapy"
 ];
 
 define final ATGHorsemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ATGHorsemonotherapyRegimen:
 /***
 
 Known regimen for: Myelodysplastic_syndrome
+
+
 
 
 ***/

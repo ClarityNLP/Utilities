@@ -40,7 +40,7 @@ define  ObinutuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibrutinib_Obinutuzumab", "Ibrutinib & Obinutuzumab", "IbrutinibObinutuzumab"
+    "Ibrutinib & Obinutuzumab"
 ];
 
 define final IbrutinibObinutuzumabRegimen:
@@ -64,6 +64,8 @@ define final IbrutinibObinutuzumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

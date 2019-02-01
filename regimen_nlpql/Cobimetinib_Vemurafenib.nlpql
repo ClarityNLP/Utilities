@@ -40,7 +40,7 @@ define  VemurafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cobimetinib_Vemurafenib", "CobimetinibVemurafenib", "Cobimetinib & Vemurafenib"
+    "Cobimetinib & Vemurafenib"
 ];
 
 define final CobimetinibVemurafenibRegimen:
@@ -64,6 +64,8 @@ define final CobimetinibVemurafenibTreatments:
 /***
 
 Known regimen for: Melanoma_BRAF-mutated
+
+
 
 
 ***/

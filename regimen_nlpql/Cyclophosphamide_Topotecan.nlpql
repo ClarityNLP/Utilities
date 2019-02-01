@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide_Topotecan", "CyclophosphamideTopotecan", "Cyclophosphamide & Topotecan"
+    "Cyclophosphamide & Topotecan"
 ];
 
 define final CyclophosphamideTopotecanRegimen:
@@ -63,7 +63,9 @@ define final CyclophosphamideTopotecanTreatments:
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Osteosarcoma
+Known regimen for: Osteosarcoma, Ewings_sarcoma
+
+
 
 
 ***/

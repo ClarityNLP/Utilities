@@ -29,7 +29,7 @@ define final TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Topotecan monotherapy", "Topotecan_monotherapy", "Topotecan", "Topotecanmonotherapy"
+    "Topotecan monotherapy"
 ];
 
 define final TopotecanmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final TopotecanmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Small_cell_lung_cancer, CNS_lymphoma, Endometrial_cancer, Cervical_cancer
+Known regimen for: Small_cell_lung_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, CNS_lymphoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin & Gemcitabine", "Doxorubicin_Gemcitabine", "DoxorubicinGemcitabine"
+    "Doxorubicin & Gemcitabine"
 ];
 
 define final DoxorubicinGemcitabineRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinGemcitabineTreatments:
 /***
 
 Known regimen for: Renal_cell_carcinoma
+
+
 
 
 ***/

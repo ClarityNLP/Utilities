@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-MegaCHOP-14", "R/MegaCHOP/14", "RMegaCHOP14"
+    "R-MegaCHOP-14"
 ];
 
 define final RMegaCHOP14Regimen:
@@ -97,6 +97,8 @@ define final RMegaCHOP14Treatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

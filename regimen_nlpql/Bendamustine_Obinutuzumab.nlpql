@@ -26,7 +26,7 @@ define  ObinutuzumabTreatment:
 
         
 termset TreatmentTerms1:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -40,7 +40,7 @@ define  BendamustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "G-B", "Bendamustine & Obinutuzumab", "G/B", "GB", "BendamustineObinutuzumab", "Bendamustine_Obinutuzumab"
+    "Bendamustine & Obinutuzumab", "G-B", "G/B"
 ];
 
 define final BendamustineObinutuzumabRegimen:
@@ -63,7 +63,9 @@ define final BendamustineObinutuzumabTreatments:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma
+
+
 
 
 ***/

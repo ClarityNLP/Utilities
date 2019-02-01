@@ -40,7 +40,7 @@ define  OfatumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lenalidomide_Ofatumumab", "Lenalidomide & Ofatumumab", "LenalidomideOfatumumab"
+    "Lenalidomide & Ofatumumab"
 ];
 
 define final LenalidomideOfatumumabRegimen:
@@ -64,6 +64,8 @@ define final LenalidomideOfatumumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

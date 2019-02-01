@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT, then Carmustine", "RT_then_Carmustine", "RTthenCarmustine"
+    "RT, then Carmustine"
 ];
 
 define final RTthenCarmustineRegimen:
@@ -46,6 +46,8 @@ define final RTthenCarmustineRegimen:
 /***
 
 Known regimen for: Anaplastic_glioma
+
+
 
 
 ***/

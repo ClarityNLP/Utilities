@@ -29,7 +29,7 @@ define final AntithymocyteglobulinrabbitATGTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RabbitATG", "Rabbit ATG", "Rabbit_ATG"
+    "Rabbit ATG"
 ];
 
 define final RabbitATGRegimen:
@@ -46,6 +46,8 @@ define final RabbitATGRegimen:
 /***
 
 Known regimen for: Graft_versus_host_disease_(GVHD)
+
+
 
 
 ***/

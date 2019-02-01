@@ -40,7 +40,7 @@ define  PemetrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinPemetrexed", "Carboplatin & Pemetrexed", "Carboplatin_Pemetrexed"
+    "Carboplatin & Pemetrexed"
 ];
 
 define final CarboplatinPemetrexedRegimen:
@@ -64,6 +64,8 @@ define final CarboplatinPemetrexedTreatments:
 /***
 
 Known regimen for: Mesothelioma, Non-small_cell_lung_cancer
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PomCyDex", "PCD"
+    "PCD", "PomCyDex"
 ];
 
 define final PomCyDexRegimen:
@@ -75,6 +75,8 @@ define final PomCyDexTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

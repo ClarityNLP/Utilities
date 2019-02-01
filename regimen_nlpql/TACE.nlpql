@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "tace", "tace"
+    "tace"
 ];
 
 define final TACETreatment:
@@ -46,6 +46,8 @@ define final TACERegimen:
 /***
 
 Known regimen for: Hepatocellular_carcinoma
+
+
 
 
 ***/

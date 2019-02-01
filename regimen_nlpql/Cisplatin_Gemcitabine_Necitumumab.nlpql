@@ -51,7 +51,7 @@ define  NecitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Gemcitabine, Necitumumab", "Cisplatin_Gemcitabine_Necitumumab", "CisplatinGemcitabineNecitumumab"
+    "Cisplatin, Gemcitabine, Necitumumab"
 ];
 
 define final CisplatinGemcitabineNecitumumabRegimen:
@@ -75,6 +75,8 @@ define final CisplatinGemcitabineNecitumumabTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

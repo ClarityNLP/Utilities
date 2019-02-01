@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    ":category:low molecular weight heparins", ":category:low molecular weight heparins"
+    ":category:low molecular weight heparins"
 ];
 
 define  CategoryLowmolecularweightheparinsTreatment:
@@ -40,7 +40,7 @@ define  EdoxabanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Edoxabanmonotherapy", "Edoxaban_monotherapy", "Edoxaban", "Edoxaban monotherapy"
+    "Edoxaban monotherapy"
 ];
 
 define final EdoxabanmonotherapyRegimen:
@@ -64,6 +64,8 @@ define final EdoxabanmonotherapyTreatments:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

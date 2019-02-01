@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IrinotecanBevacizumab", "Irinotecan & Bevacizumab", "Irinotecan_Bevacizumab"
+    "Irinotecan & Bevacizumab"
 ];
 
 define final IrinotecanBevacizumabRegimen:
@@ -63,7 +63,9 @@ define final IrinotecanBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Glioblastoma, Anaplastic_glioma
+Known regimen for: Anaplastic_glioma, Glioblastoma
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hyper-CVAD", "HyperCVAD", "Hyper/CVAD"
+    "Hyper-CVAD", "Hyper/CVAD", "HyperCVAD"
 ];
 
 define final HyperCVADRegimen:
@@ -86,6 +86,8 @@ define final HyperCVADTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

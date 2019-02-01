@@ -29,7 +29,7 @@ define final InotuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Inotuzumabozogamicinmonotherapy", "Inotuzumab ozogamicin monotherapy", "Inotuzumab ozogamicin", "Inotuzumab_ozogamicin_monotherapy"
+    "Inotuzumab ozogamicin monotherapy"
 ];
 
 define final InotuzumabozogamicinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final InotuzumabozogamicinmonotherapyRegimen:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

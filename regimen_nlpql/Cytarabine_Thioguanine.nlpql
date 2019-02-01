@@ -40,7 +40,7 @@ define  ThioguanineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CytarabineThioguanine", "Cytarabine_Thioguanine", "Cytarabine & Thioguanine"
+    "Cytarabine & Thioguanine"
 ];
 
 define final CytarabineThioguanineRegimen:
@@ -64,6 +64,8 @@ define final CytarabineThioguanineTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

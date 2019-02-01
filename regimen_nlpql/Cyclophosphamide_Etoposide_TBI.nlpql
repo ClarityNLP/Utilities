@@ -37,7 +37,7 @@ define  EtoposideTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide, Etoposide, TBI", "Cyclophosphamide_Etoposide_TBI", "CyclophosphamideEtoposideTBI"
+    "Cyclophosphamide, Etoposide, TBI"
 ];
 
 define final CyclophosphamideEtoposideTBIRegimen:
@@ -75,6 +75,8 @@ define final CyclophosphamideEtoposideTBITreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

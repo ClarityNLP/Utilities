@@ -73,7 +73,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DexaBEAM & G/CSF", "DexaBEAM & G-CSF", "DexaBEAM and G-CSF", "DexaBEAM/G-CSF", "DexaBEAM_G-CSF", "DexaBEAMGCSF", "DexaBEAM / G-CSF", "DexaBEAM & GCSF"
+    "DexaBEAM  and  G-CSF", "DexaBEAM & G-CSF", "DexaBEAM + G-CSF", "DexaBEAM / G-CSF", "DexaBEAM and G-CSF", "DexaBEAM+G-CSF", "DexaBEAM/G-CSF"
 ];
 
 define final DexaBEAMGCSFRegimen:
@@ -97,6 +97,8 @@ define final DexaBEAMGCSFTreatments:
 /***
 
 Known regimen for: Stem_cell_mobilization
+
+
 
 
 ***/

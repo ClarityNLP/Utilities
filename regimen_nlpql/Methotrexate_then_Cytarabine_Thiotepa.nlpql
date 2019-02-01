@@ -29,7 +29,7 @@ define final MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MethotrexatethenCytarabineThiotepa", "Methotrexate_then_Cytarabine_Thiotepa", "Methotrexate, then Cytarabine & Thiotepa"
+    "Methotrexate, then Cytarabine & Thiotepa"
 ];
 
 define final MethotrexatethenCytarabineThiotepaRegimen:
@@ -46,6 +46,8 @@ define final MethotrexatethenCytarabineThiotepaRegimen:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

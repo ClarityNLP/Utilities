@@ -40,7 +40,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ChlorambucilObinutuzumab", "Chlorambucil & Obinutuzumab", "Chlorambucil_Obinutuzumab", "GClb"
+    "Chlorambucil & Obinutuzumab", "GClb"
 ];
 
 define final ChlorambucilObinutuzumabRegimen:
@@ -64,6 +64,8 @@ define final ChlorambucilObinutuzumabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lomustine_Vincristine_Prednisone", "LomustineVincristinePrednisone", "Lomustine, Vincristine, Prednisone"
+    "Lomustine, Vincristine, Prednisone"
 ];
 
 define final LomustineVincristinePrednisoneRegimen:
@@ -75,6 +75,8 @@ define final LomustineVincristinePrednisoneTreatments:
 /***
 
 Known regimen for: Anaplastic_glioma
+
+
 
 
 ***/

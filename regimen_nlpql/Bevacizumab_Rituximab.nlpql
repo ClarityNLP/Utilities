@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bevacizumab_Rituximab", "Bevacizumab & Rituximab", "BevacizumabRituximab"
+    "Bevacizumab & Rituximab"
 ];
 
 define final BevacizumabRituximabRegimen:
@@ -64,6 +64,8 @@ define final BevacizumabRituximabTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

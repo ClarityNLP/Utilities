@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BR", "R/B", "R-B", "RB"
+    "BR", "R-B", "R/B"
 ];
 
 define final BRRegimen:
@@ -63,7 +63,9 @@ define final BRTreatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Cold_agglutinin_disease, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Diffuse_large_B-cell_lymphoma, Cold_agglutinin_disease, Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Follicular_lymphoma, Marginal_zone_lymphoma
+
+
 
 
 ***/

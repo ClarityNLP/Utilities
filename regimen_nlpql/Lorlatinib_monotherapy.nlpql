@@ -29,7 +29,7 @@ define final LorlatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lorlatinib monotherapy", "Lorlatinib", "Lorlatinib_monotherapy", "Lorlatinibmonotherapy"
+    "Lorlatinib monotherapy"
 ];
 
 define final LorlatinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final LorlatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_ALK-positive, Non-small_cell_lung_cancer_ROS1-positive
+Known regimen for: Non-small_cell_lung_cancer_ROS1-positive, Non-small_cell_lung_cancer_ALK-positive
+
+
 
 
 ***/

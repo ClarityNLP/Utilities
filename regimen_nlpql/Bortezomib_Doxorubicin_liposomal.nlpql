@@ -40,7 +40,7 @@ define  PegylatedliposomaldoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Doxorubicin liposomal", "Bortezomib_Doxorubicin_liposomal", "BortezomibDoxorubicinliposomal"
+    "Bortezomib & Doxorubicin liposomal"
 ];
 
 define final BortezomibDoxorubicinliposomalRegimen:
@@ -64,6 +64,8 @@ define final BortezomibDoxorubicinliposomalTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TagraxofuspTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tagraxofusp monotherapy", "Tagraxofusp", "Tagraxofusp_monotherapy", "Tagraxofuspmonotherapy"
+    "Tagraxofusp monotherapy"
 ];
 
 define final TagraxofuspmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TagraxofuspmonotherapyRegimen:
 /***
 
 Known regimen for: Blastic_plasmacytoid_dendritic_cell_neoplasm
+
+
 
 
 ***/

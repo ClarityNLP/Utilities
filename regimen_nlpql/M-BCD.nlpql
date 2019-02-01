@@ -62,7 +62,7 @@ define  DactinomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MBCD", "M-BCD", "M/BCD"
+    "M-BCD", "M/BCD", "MBCD"
 ];
 
 define final MBCDRegimen:
@@ -86,6 +86,8 @@ define final MBCDTreatments:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final WarfarinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Warfarin monotherapy", "Warfarinmonotherapy", "Warfarin", "Warfarin_monotherapy"
+    "Warfarin monotherapy"
 ];
 
 define final WarfarinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final WarfarinmonotherapyRegimen:
 /***
 
 Known regimen for: Antiphospholipid_antibody_syndrome, Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

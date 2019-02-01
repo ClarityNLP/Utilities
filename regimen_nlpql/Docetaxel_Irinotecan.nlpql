@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelIrinotecan", "Docetaxel & Irinotecan", "Docetaxel_Irinotecan"
+    "Docetaxel & Irinotecan"
 ];
 
 define final DocetaxelIrinotecanRegimen:
@@ -64,6 +64,8 @@ define final DocetaxelIrinotecanTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

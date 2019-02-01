@@ -37,7 +37,7 @@ define  PaclitaxelTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilPaclitaxelRT", "Fluorouracil, Paclitaxel, RT", "Fluorouracil_Paclitaxel_RT", "RT"
+    "Fluorouracil, Paclitaxel, RT"
 ];
 
 define final FluorouracilPaclitaxelRTRegimen:
@@ -75,6 +75,8 @@ define final FluorouracilPaclitaxelRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide_then_Temozolomide_RT_then_Temozolomide", "TemozolomidethenTemozolomideRTthenTemozolomide", "Temozolomide, then Temozolomide & RT, then Temozolomide"
+    "Temozolomide, then Temozolomide & RT, then Temozolomide"
 ];
 
 define final TemozolomidethenTemozolomideRTthenTemozolomideRegimen:
@@ -46,6 +46,8 @@ define final TemozolomidethenTemozolomideRTthenTemozolomideRegimen:
 /***
 
 Known regimen for: Anaplastic_glioma
+
+
 
 
 ***/

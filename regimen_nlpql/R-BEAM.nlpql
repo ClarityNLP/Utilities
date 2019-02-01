@@ -73,7 +73,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RBEAM", "R/BEAM", "R-BEAM"
+    "R-BEAM", "R/BEAM", "RBEAM"
 ];
 
 define final RBEAMRegimen:
@@ -97,6 +97,8 @@ define final RBEAMTreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

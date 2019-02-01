@@ -51,7 +51,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CytarabineIdarubicinImatinib", "Cytarabine_Idarubicin_Imatinib", "Cytarabine, Idarubicin, Imatinib"
+    "Cytarabine, Idarubicin, Imatinib"
 ];
 
 define final CytarabineIdarubicinImatinibRegimen:
@@ -75,6 +75,8 @@ define final CytarabineIdarubicinImatinibTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

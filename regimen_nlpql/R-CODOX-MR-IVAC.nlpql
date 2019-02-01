@@ -51,7 +51,7 @@ define  HydrocortisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCODOXMRIVAC", "R-CODOX-MR-IVAC", "RCODOXM/RIVAC", "R/CODOX/M/R/IVAC", "R-CODOX-M/R-IVAC"
+    "R-CODOX-M/R-IVAC"
 ];
 
 define final RCODOXMRIVACRegimen:
@@ -75,6 +75,8 @@ define final RCODOXMRIVACTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma
+
+
 
 
 ***/

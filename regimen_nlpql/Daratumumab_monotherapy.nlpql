@@ -29,7 +29,7 @@ define final DaratumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daratumumabmonotherapy", "Daratumumab monotherapy", "Daratumumab", "Daratumumab_monotherapy"
+    "Daratumumab monotherapy"
 ];
 
 define final DaratumumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final DaratumumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

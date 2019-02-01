@@ -29,7 +29,7 @@ define final EverolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus_monotherapy", "Everolimus", "Everolimusmonotherapy", "Everolimus monotherapy"
+    "Everolimus monotherapy"
 ];
 
 define final EverolimusmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final EverolimusmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Renal_cell_carcinoma, Thymoma, Diffuse_large_B-cell_lymphoma, Neuroendocrine_tumors, Waldenstrom_macroglobulinemia, Hodgkin_lymphoma, Pancreatic_NET
+Known regimen for: Hodgkin_lymphoma, Waldenstrom_macroglobulinemia, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma, Renal_cell_carcinoma, Neuroendocrine_tumors, Thymoma, Pancreatic_NET
+
+
 
 
 ***/

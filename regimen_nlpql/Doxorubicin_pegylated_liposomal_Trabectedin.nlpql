@@ -40,7 +40,7 @@ define  TrabectedinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin pegylated liposomal & Trabectedin", "Doxorubicin_pegylated_liposomal_Trabectedin", "DoxorubicinpegylatedliposomalTrabectedin"
+    "Doxorubicin pegylated liposomal & Trabectedin"
 ];
 
 define final DoxorubicinpegylatedliposomalTrabectedinRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinpegylatedliposomalTrabectedinTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

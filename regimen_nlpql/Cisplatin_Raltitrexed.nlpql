@@ -40,7 +40,7 @@ define  RaltitrexedTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Raltitrexed", "CisplatinRaltitrexed", "Cisplatin_Raltitrexed"
+    "Cisplatin & Raltitrexed"
 ];
 
 define final CisplatinRaltitrexedRegimen:
@@ -64,6 +64,8 @@ define final CisplatinRaltitrexedTreatments:
 /***
 
 Known regimen for: Mesothelioma
+
+
 
 
 ***/

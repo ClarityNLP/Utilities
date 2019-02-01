@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LMDex", "L/M/Dex", "MRD", "L-M-Dex"
+    "L-M-Dex", "L/M/Dex", "LMDex", "MRD"
 ];
 
 define final MRDRegimen:
@@ -75,6 +75,8 @@ define final MRDTreatments:
 /***
 
 Known regimen for: Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

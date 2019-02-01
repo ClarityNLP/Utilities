@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "O-miniCHOP", "OminiCHOP", "O/miniCHOP"
+    "O-miniCHOP", "O/miniCHOP", "OminiCHOP"
 ];
 
 define final OminiCHOPRegimen:
@@ -97,6 +97,8 @@ define final OminiCHOPTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

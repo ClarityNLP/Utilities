@@ -51,7 +51,7 @@ define  ArgatrobanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Argatroban monotherapy", "Argatroban", "Argatrobanmonotherapy", "Argatroban_monotherapy"
+    "Argatroban monotherapy"
 ];
 
 define final ArgatrobanmonotherapyRegimen:
@@ -75,6 +75,8 @@ define final ArgatrobanmonotherapyTreatments:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE), Heparin-induced_thrombocytopenia_(HIT)
+
+
 
 
 ***/

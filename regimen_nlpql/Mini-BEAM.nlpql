@@ -62,7 +62,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mini/BEAM", "Mini-BEAM", "MiniBEAM"
+    "Mini-BEAM", "Mini/BEAM", "MiniBEAM"
 ];
 
 define final MiniBEAMRegimen:
@@ -86,6 +86,8 @@ define final MiniBEAMTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

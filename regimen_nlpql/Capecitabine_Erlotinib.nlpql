@@ -40,7 +40,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Erlotinib", "CapecitabineErlotinib", "Capecitabine_Erlotinib"
+    "Capecitabine & Erlotinib"
 ];
 
 define final CapecitabineErlotinibRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineErlotinibTreatments:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

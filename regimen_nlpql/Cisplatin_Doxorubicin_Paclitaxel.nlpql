@@ -51,7 +51,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinDoxorubicinPaclitaxel", "Cisplatin_Doxorubicin_Paclitaxel", "Cisplatin, Doxorubicin, Paclitaxel", "TAP"
+    "Cisplatin, Doxorubicin, Paclitaxel", "TAP"
 ];
 
 define final CisplatinDoxorubicinPaclitaxelRegimen:
@@ -75,6 +75,8 @@ define final CisplatinDoxorubicinPaclitaxelTreatments:
 /***
 
 Known regimen for: Endometrial_cancer
+
+
 
 
 ***/

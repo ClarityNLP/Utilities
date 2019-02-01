@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CyclophosphamidePrednisone", "Cyclophosphamide & Prednisone", "Cyclophosphamide_Prednisone"
+    "Cyclophosphamide & Prednisone"
 ];
 
 define final CyclophosphamidePrednisoneRegimen:
@@ -63,7 +63,9 @@ define final CyclophosphamidePrednisoneTreatments:
 // Comments
 /***
 
-Known regimen for: Acquired_coagulopathy, Large_granular_lymphocytic_leukemia, Multiple_myeloma_relapsedrefractory
+Known regimen for: Large_granular_lymphocytic_leukemia, Multiple_myeloma_relapsedrefractory, Acquired_coagulopathy
+
+
 
 
 ***/

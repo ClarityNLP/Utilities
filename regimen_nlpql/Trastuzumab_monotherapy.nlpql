@@ -29,7 +29,7 @@ define final TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Trastuzumab", "Trastuzumabmonotherapy", "Trastuzumab monotherapy", "Trastuzumab_monotherapy"
+    "Trastuzumab monotherapy"
 ];
 
 define final TrastuzumabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TrastuzumabmonotherapyRegimen:
 /***
 
 Known regimen for: Breast_cancer_HER2-positive
+
+
 
 
 ***/

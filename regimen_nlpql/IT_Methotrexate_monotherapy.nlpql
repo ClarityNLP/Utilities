@@ -29,7 +29,7 @@ define final MethotrexateTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ITMethotrexatemonotherapy", "IT Methotrexate monotherapy", "IT_Methotrexate_monotherapy", "IT Methotrexate"
+    "IT Methotrexate monotherapy"
 ];
 
 define final ITMethotrexatemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ITMethotrexatemonotherapyRegimen:
 /***
 
 Known regimen for: CNS_leukemia
+
+
 
 
 ***/

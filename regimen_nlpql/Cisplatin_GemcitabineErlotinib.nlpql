@@ -51,7 +51,7 @@ define  ErlotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_GemcitabineErlotinib", "Cisplatin & Gemcitabine/Erlotinib", "CisplatinGemcitabineErlotinib"
+    "Cisplatin & Gemcitabine/Erlotinib"
 ];
 
 define final CisplatinGemcitabineErlotinibRegimen:
@@ -75,6 +75,8 @@ define final CisplatinGemcitabineErlotinibTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated
+
+
 
 
 ***/

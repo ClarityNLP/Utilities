@@ -29,7 +29,7 @@ define final NeratinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Neratinib monotherapy", "Neratinib_monotherapy", "Neratinibmonotherapy", "Neratinib"
+    "Neratinib monotherapy"
 ];
 
 define final NeratinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final NeratinibmonotherapyRegimen:
 /***
 
 Known regimen for: ERBB2_(HER2), ERBB3_(HER3)
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuTT", "Bu/TT"
+    "Bu/TT", "BuTT"
 ];
 
 define final BuTTRegimen:
@@ -64,6 +64,8 @@ define final BuTTTreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

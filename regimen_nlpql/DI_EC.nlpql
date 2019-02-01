@@ -40,7 +40,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DIEC", "DI EC", "DI_EC"
+    "DI EC", "DIEC"
 ];
 
 define final DIECRegimen:
@@ -64,6 +64,8 @@ define final DIECTreatments:
 /***
 
 Known regimen for: Breast_cancer
+
+
 
 
 ***/

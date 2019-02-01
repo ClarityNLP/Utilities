@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ClofarabineCytarabine", "Clofarabine_Cytarabine", "Clofarabine & Cytarabine"
+    "Clofarabine & Cytarabine"
 ];
 
 define final ClofarabineCytarabineRegimen:
@@ -64,6 +64,8 @@ define final ClofarabineCytarabineTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

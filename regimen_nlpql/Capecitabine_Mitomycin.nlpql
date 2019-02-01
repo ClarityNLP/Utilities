@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine_Mitomycin", "CapecitabineMitomycin", "Capecitabine & Mitomycin"
+    "Capecitabine & Mitomycin"
 ];
 
 define final CapecitabineMitomycinRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineMitomycinTreatments:
 /***
 
 Known regimen for: Cholangiocarcinoma
+
+
 
 
 ***/

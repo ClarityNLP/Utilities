@@ -26,7 +26,7 @@ define  DacarbazineTreatment:
 
         
 termset TreatmentTerms1:[
-    ":category:interferons", ":category:interferons"
+    ":category:interferons"
 ];
 
 define  CategoryInterferonsTreatment:
@@ -40,7 +40,7 @@ define  CategoryInterferonsTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine_Interferon_alfa", "Dacarbazine & Interferon alfa", "DacarbazineInterferonalfa"
+    "Dacarbazine & Interferon alfa"
 ];
 
 define final DacarbazineInterferonalfaRegimen:
@@ -64,6 +64,8 @@ define final DacarbazineInterferonalfaTreatments:
 /***
 
 Known regimen for: Melanoma
+
+
 
 
 ***/

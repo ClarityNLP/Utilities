@@ -40,7 +40,7 @@ define  VenetoclaxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IbrutinibVenetoclax", "Ibrutinib_Venetoclax", "Ibrutinib & Venetoclax"
+    "Ibrutinib & Venetoclax"
 ];
 
 define final IbrutinibVenetoclaxRegimen:
@@ -64,6 +64,8 @@ define final IbrutinibVenetoclaxTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

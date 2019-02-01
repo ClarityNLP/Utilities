@@ -40,7 +40,7 @@ define  EpirubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ET", "DE", "ED"
+    "DE"
 ];
 
 define final DERegimen:
@@ -64,6 +64,8 @@ define final DETreatments:
 /***
 
 Known regimen for: Breast_cancer
+
+
 
 
 ***/

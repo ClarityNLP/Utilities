@@ -29,7 +29,7 @@ define final PixantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pixantrone", "Pixantrone_monotherapy", "Pixantrone monotherapy", "Pixantronemonotherapy"
+    "Pixantrone monotherapy"
 ];
 
 define final PixantronemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final PixantronemonotherapyRegimen:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

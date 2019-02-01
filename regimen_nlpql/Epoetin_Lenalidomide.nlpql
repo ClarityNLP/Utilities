@@ -29,7 +29,7 @@ define final LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Epoetin_Lenalidomide", "Epoetin & Lenalidomide", "EpoetinLenalidomide"
+    "Epoetin & Lenalidomide"
 ];
 
 define final EpoetinLenalidomideRegimen:
@@ -46,6 +46,8 @@ define final EpoetinLenalidomideRegimen:
 /***
 
 Known regimen for: Myelodysplastic_syndrome
+
+
 
 
 ***/

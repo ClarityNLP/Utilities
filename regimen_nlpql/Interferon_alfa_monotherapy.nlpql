@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    ":category:interferons", ":category:interferons"
+    ":category:interferons"
 ];
 
 define final CategoryInterferonsTreatment:
@@ -29,7 +29,7 @@ define final CategoryInterferonsTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Interferonalfamonotherapy", "Interferon_alfa_monotherapy", "Interferon alfa monotherapy", "Interferon alfa"
+    "Interferon alfa monotherapy"
 ];
 
 define final InterferonalfamonotherapyRegimen:
@@ -45,7 +45,9 @@ define final InterferonalfamonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Vascular_sarcoma, Chronic_myelogenous_leukemia, Hairy_cell_leukemia
+Known regimen for: Chronic_myelogenous_leukemia, Mantle_cell_lymphoma, Hairy_cell_leukemia, Vascular_sarcoma
+
+
 
 
 ***/

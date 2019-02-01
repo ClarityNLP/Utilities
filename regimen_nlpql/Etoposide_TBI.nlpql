@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide_TBI", "EtoposideTBI", "Etoposide & TBI", "Etoposide/TBI", "Etoposide and TBI", "Etoposide / TBI"
+    "Etoposide  and  TBI", "Etoposide & TBI", "Etoposide + TBI", "Etoposide / TBI", "Etoposide and TBI", "Etoposide+TBI", "Etoposide/TBI"
 ];
 
 define final EtoposideTBIRegimen:
@@ -64,6 +64,8 @@ define final EtoposideTBITreatments:
 /***
 
 Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+
+
 
 
 ***/

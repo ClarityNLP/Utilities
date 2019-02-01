@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine, Busulfan, Cyclophosphamide", "FludarabineBusulfanCyclophosphamide", "FluBuCy", "Fludarabine_Busulfan_Cyclophosphamide"
+    "FluBuCy", "Fludarabine, Busulfan, Cyclophosphamide"
 ];
 
 define final FludarabineBusulfanCyclophosphamideRegimen:
@@ -75,6 +75,8 @@ define final FludarabineBusulfanCyclophosphamideTreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

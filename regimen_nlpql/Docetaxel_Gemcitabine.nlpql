@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelGemcitabine", "Docetaxel_Gemcitabine", "Docetaxel & Gemcitabine"
+    "Docetaxel & Gemcitabine"
 ];
 
 define final DocetaxelGemcitabineRegimen:
@@ -63,7 +63,9 @@ define final DocetaxelGemcitabineTreatments:
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Soft_tissue_sarcoma, Adenocarcinoma_of_unknown_primary, Osteosarcoma
+Known regimen for: Adenocarcinoma_of_unknown_primary, Osteosarcoma, Soft_tissue_sarcoma, Ewings_sarcoma
+
+
 
 
 ***/

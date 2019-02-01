@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VEN+R", "VenetoclaxRituximab", "Venetoclax_Rituximab", "VEN & R", "VENR", "Venetoclax & Rituximab", "VEN and R", "VEN/R", "VEN&R", "VEN / R"
+    "VEN & R", "VEN / R", "VEN and R", "VEN&R", "VEN+R", "VEN/R", "VENR", "Venetoclax & Rituximab"
 ];
 
 define final VenetoclaxRituximabRegimen:
@@ -64,6 +64,8 @@ define final VenetoclaxRituximabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

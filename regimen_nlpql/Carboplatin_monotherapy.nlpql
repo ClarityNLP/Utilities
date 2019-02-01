@@ -29,7 +29,7 @@ define final CarboplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatinmonotherapy", "Carboplatin monotherapy", "Carboplatin_monotherapy", "Carboplatin"
+    "Carboplatin monotherapy"
 ];
 
 define final CarboplatinmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CarboplatinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Low-grade_glioma, Testicular_cancer, Endometrial_cancer, Cervical_cancer
+Known regimen for: Low-grade_glioma, Testicular_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer
+
+
 
 
 ***/

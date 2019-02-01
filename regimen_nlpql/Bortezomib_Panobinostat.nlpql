@@ -40,7 +40,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BortezomibPanobinostat", "Bortezomib & Panobinostat", "Bortezomib_Panobinostat"
+    "Bortezomib & Panobinostat"
 ];
 
 define final BortezomibPanobinostatRegimen:
@@ -64,6 +64,8 @@ define final BortezomibPanobinostatTreatments:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

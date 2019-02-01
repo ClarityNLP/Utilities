@@ -29,7 +29,7 @@ define final VemurafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vemurafenib monotherapy", "Vemurafenibmonotherapy", "Vemurafenib", "Vemurafenib_monotherapy"
+    "Vemurafenib monotherapy"
 ];
 
 define final VemurafenibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final VemurafenibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Langerhans_cell_histiocytosis, Erdheim-Chester_disease, Hairy_cell_leukemia, Melanoma_BRAF-mutated, BRAF, Multiple_myeloma_relapsedrefractory, Thyroid_cancer_BRAF-mutated
+Known regimen for: Hairy_cell_leukemia, Langerhans_cell_histiocytosis, Melanoma_BRAF-mutated, Multiple_myeloma_relapsedrefractory, BRAF, Erdheim-Chester_disease, Thyroid_cancer_BRAF-mutated
+
+
 
 
 ***/

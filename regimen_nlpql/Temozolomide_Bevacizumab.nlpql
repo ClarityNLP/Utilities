@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide_Bevacizumab", "TB", "Temozolomide & Bevacizumab", "TemozolomideBevacizumab"
+    "Temozolomide & Bevacizumab"
 ];
 
 define final TemozolomideBevacizumabRegimen:
@@ -63,7 +63,9 @@ define final TemozolomideBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Pancreatic_NET, Melanoma
+Known regimen for: Melanoma, Pancreatic_NET
+
+
 
 
 ***/

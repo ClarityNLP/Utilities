@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sirolimus_Prednisone", "Sirolimus & Prednisone", "SirolimusPrednisone"
+    "Sirolimus & Prednisone"
 ];
 
 define final SirolimusPrednisoneRegimen:
@@ -64,6 +64,8 @@ define final SirolimusPrednisoneTreatments:
 /***
 
 Known regimen for: Erdheim-Chester_disease
+
+
 
 
 ***/

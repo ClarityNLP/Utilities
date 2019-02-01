@@ -73,7 +73,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib", "DaunorubicinLAsparaginaseVincristinePrednisoneImatinib", "Daunorubicin_L-Asparaginase_Vincristine_Prednisone_Imatinib"
+    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib"
 ];
 
 define final DaunorubicinLAsparaginaseVincristinePrednisoneImatinibRegimen:
@@ -97,6 +97,8 @@ define final DaunorubicinLAsparaginaseVincristinePrednisoneImatinibTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

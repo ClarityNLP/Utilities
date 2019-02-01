@@ -73,7 +73,7 @@ define  ChlorambucilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-VADC", "RVADC", "R-VAD+C", "R-VAD & C", "RVAD+C", "R-VAD/C", "R/VAD+C", "R-VAD&C", "R-VAD and C", "R-VAD / C"
+    "R-VAD & C", "R-VAD / C", "R-VAD and C", "R-VAD&C", "R-VAD+C", "R-VAD/C", "R-VADC", "R/VAD+C", "RVAD+C", "RVADC"
 ];
 
 define final RVADCRegimen:
@@ -97,6 +97,8 @@ define final RVADCTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

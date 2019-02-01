@@ -40,7 +40,7 @@ define  TemozolomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IrinotecanTemozolomide", "Irinotecan & Temozolomide", "Irinotecan_Temozolomide"
+    "Irinotecan & Temozolomide"
 ];
 
 define final IrinotecanTemozolomideRegimen:
@@ -64,6 +64,8 @@ define final IrinotecanTemozolomideTreatments:
 /***
 
 Known regimen for: Ewings_sarcoma
+
+
 
 
 ***/

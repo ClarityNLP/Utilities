@@ -62,7 +62,7 @@ define  PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFOX4_Panitumumab", "FOLFOX4 & Panitumumab", "FOLFOX4Panitumumab"
+    "FOLFOX4 & Panitumumab"
 ];
 
 define final FOLFOX4PanitumumabRegimen:
@@ -86,6 +86,8 @@ define final FOLFOX4PanitumumabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

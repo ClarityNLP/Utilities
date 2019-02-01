@@ -29,7 +29,7 @@ define final VandetanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vandetanib monotherapy", "Vandetanib_monotherapy", "Vandetanibmonotherapy", "Vandetanib"
+    "Vandetanib monotherapy"
 ];
 
 define final VandetanibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final VandetanibmonotherapyRegimen:
 /***
 
 Known regimen for: Thyroid_cancer
+
+
 
 
 ***/

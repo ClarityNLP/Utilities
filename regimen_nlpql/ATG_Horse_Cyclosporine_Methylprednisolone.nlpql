@@ -51,7 +51,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATGHorseCyclosporineMethylprednisolone", "ATG_Horse_Cyclosporine_Methylprednisolone", "ATG (Horse), Cyclosporine, Methylprednisolone"
+    "ATG (Horse), Cyclosporine, Methylprednisolone"
 ];
 
 define final ATGHorseCyclosporineMethylprednisoloneRegimen:
@@ -75,6 +75,8 @@ define final ATGHorseCyclosporineMethylprednisoloneTreatments:
 /***
 
 Known regimen for: Aplastic_anemia
+
+
 
 
 ***/

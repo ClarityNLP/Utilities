@@ -26,7 +26,7 @@ define  HydroxyureaTreatment:
 
         
 termset TreatmentTerms1:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -40,7 +40,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea/RT", "HydroxyureaRT", "Hydroxyurea and RT", "Hydroxyurea_RT", "Hydroxyurea / RT", "RT", "Hydroxyurea & RT"
+    "Hydroxyurea  and  RT", "Hydroxyurea & RT", "Hydroxyurea + RT", "Hydroxyurea / RT", "Hydroxyurea and RT", "Hydroxyurea+RT", "Hydroxyurea/RT"
 ];
 
 define final HydroxyureaRTRegimen:
@@ -64,6 +64,8 @@ define final HydroxyureaRTTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

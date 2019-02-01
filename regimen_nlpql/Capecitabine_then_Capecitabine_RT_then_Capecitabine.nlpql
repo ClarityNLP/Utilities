@@ -29,7 +29,7 @@ define final CapecitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapecitabinethenCapecitabineRTthenCapecitabine", "Capecitabine_then_Capecitabine_RT_then_Capecitabine", "Capecitabine, then Capecitabine & RT, then Capecitabine", "RT"
+    "Capecitabine, then Capecitabine & RT, then Capecitabine"
 ];
 
 define final CapecitabinethenCapecitabineRTthenCapecitabineRegimen:
@@ -46,6 +46,8 @@ define final CapecitabinethenCapecitabineRTthenCapecitabineRegimen:
 /***
 
 Known regimen for: Rectal_cancer
+
+
 
 
 ***/

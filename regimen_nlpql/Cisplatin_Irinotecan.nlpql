@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Irinotecan", "IC", "Cisplatin_Irinotecan", "CisplatinIrinotecan"
+    "Cisplatin & Irinotecan"
 ];
 
 define final CisplatinIrinotecanRegimen:
@@ -63,7 +63,9 @@ define final CisplatinIrinotecanTreatments:
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary, Penile_cancer, Esophageal_cancer, Non-small_cell_lung_cancer
+Known regimen for: Esophageal_cancer, Penile_cancer, Adenocarcinoma_of_unknown_primary, Small_cell_lung_cancer, Non-small_cell_lung_cancer
+
+
 
 
 ***/

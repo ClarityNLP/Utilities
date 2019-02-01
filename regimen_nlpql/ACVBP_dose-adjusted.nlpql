@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ACVBP, dose/adjusted", "ACVBP_dose-adjusted", "ACVBP, doseadjusted", "ACVBP", "ACVBPdoseadjusted", "ACVBP, dose-adjusted"
+    "ACVBP", "ACVBP, dose-adjusted"
 ];
 
 define final ACVBPdoseadjustedRegimen:
@@ -97,6 +97,8 @@ define final ACVBPdoseadjustedTreatments:
 /***
 
 Known regimen for: Post-transplant_lymphoproliferative_disorder
+
+
 
 
 ***/

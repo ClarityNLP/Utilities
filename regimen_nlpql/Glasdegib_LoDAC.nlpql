@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Glasdegib / LoDAC", "GlasdegibLoDAC", "Glasdegib and LoDAC", "Glasdegib & LoDAC", "Glasdegib/LoDAC", "Glasdegib_LoDAC"
+    "Glasdegib  and  LoDAC", "Glasdegib & LoDAC", "Glasdegib + LoDAC", "Glasdegib / LoDAC", "Glasdegib and LoDAC", "Glasdegib+LoDAC", "Glasdegib/LoDAC"
 ];
 
 define final GlasdegibLoDACRegimen:
@@ -64,6 +64,8 @@ define final GlasdegibLoDACTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

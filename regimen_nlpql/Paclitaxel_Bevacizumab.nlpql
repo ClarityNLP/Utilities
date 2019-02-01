@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel_Bevacizumab", "PaclitaxelBevacizumab", "Paclitaxel & Bevacizumab"
+    "Paclitaxel & Bevacizumab"
 ];
 
 define final PaclitaxelBevacizumabRegimen:
@@ -64,6 +64,8 @@ define final PaclitaxelBevacizumabTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

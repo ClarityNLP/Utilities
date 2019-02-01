@@ -29,7 +29,7 @@ define final PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Panobinostat", "Panobinostat_monotherapy", "Panobinostat monotherapy", "Panobinostatmonotherapy"
+    "Panobinostat monotherapy"
 ];
 
 define final PanobinostatmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PanobinostatmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

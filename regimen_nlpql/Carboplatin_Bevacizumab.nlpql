@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinBevacizumab", "Carboplatin_Bevacizumab", "Carboplatin & Bevacizumab"
+    "Carboplatin & Bevacizumab"
 ];
 
 define final CarboplatinBevacizumabRegimen:
@@ -63,7 +63,9 @@ define final CarboplatinBevacizumabTreatments:
 // Comments
 /***
 
-Known regimen for: Glioblastoma, Anaplastic_glioma
+Known regimen for: Anaplastic_glioma, Glioblastoma
+
+
 
 
 ***/

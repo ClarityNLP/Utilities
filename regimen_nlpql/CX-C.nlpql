@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CX/C", "CX-C", "CXC"
+    "CX-C", "CX/C", "CXC"
 ];
 
 define final CXCRegimen:
@@ -75,6 +75,8 @@ define final CXCTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

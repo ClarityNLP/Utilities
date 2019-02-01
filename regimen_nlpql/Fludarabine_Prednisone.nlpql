@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine_Prednisone", "Fludarabine & Prednisone", "FludarabinePrednisone"
+    "Fludarabine & Prednisone"
 ];
 
 define final FludarabinePrednisoneRegimen:
@@ -64,6 +64,8 @@ define final FludarabinePrednisoneTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

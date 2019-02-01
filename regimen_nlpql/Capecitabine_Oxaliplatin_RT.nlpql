@@ -37,7 +37,7 @@ define  OxaliplatinTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapecitabineOxaliplatinRT", "Capecitabine, Oxaliplatin, RT", "RT", "Capecitabine_Oxaliplatin_RT"
+    "Capecitabine, Oxaliplatin, RT"
 ];
 
 define final CapecitabineOxaliplatinRTRegimen:
@@ -75,6 +75,8 @@ define final CapecitabineOxaliplatinRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

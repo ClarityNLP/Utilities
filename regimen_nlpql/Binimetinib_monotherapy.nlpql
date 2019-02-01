@@ -29,7 +29,7 @@ define final BinimetinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Binimetinib monotherapy", "Binimetinib_monotherapy", "Binimetinibmonotherapy", "Binimetinib"
+    "Binimetinib monotherapy"
 ];
 
 define final BinimetinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BinimetinibmonotherapyRegimen:
 /***
 
 Known regimen for: Melanoma_NRAS-mutated
+
+
 
 
 ***/

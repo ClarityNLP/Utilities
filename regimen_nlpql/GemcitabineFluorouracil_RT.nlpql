@@ -29,7 +29,7 @@ define final GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GemcitabineFluorouracil_RT", "GemcitabineFluorouracilRT", "Gemcitabine/Fluorouracil & RT"
+    "Gemcitabine/Fluorouracil & RT"
 ];
 
 define final GemcitabineFluorouracilRTRegimen:
@@ -46,6 +46,8 @@ define final GemcitabineFluorouracilRTRegimen:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

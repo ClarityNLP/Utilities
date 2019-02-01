@@ -84,7 +84,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "m/BACOD", "mBACOD", "m-BACOD"
+    "m-BACOD", "m/BACOD", "mBACOD"
 ];
 
 define final mBACODRegimen:
@@ -108,6 +108,8 @@ define final mBACODTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma
+
+
 
 
 ***/

@@ -37,7 +37,7 @@ define  FolinicacidTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fluorouracil, Folinic acid, RT", "Fluorouracil_Folinic_acid_RT", "RT", "FluorouracilFolinicacidRT"
+    "Fluorouracil, Folinic acid, RT"
 ];
 
 define final FluorouracilFolinicacidRTRegimen:
@@ -75,6 +75,8 @@ define final FluorouracilFolinicacidRTTreatments:
 /***
 
 Known regimen for: Rectal_cancer
+
+
 
 
 ***/

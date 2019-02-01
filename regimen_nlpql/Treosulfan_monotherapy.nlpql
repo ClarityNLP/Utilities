@@ -29,7 +29,7 @@ define final TreosulfanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Treosulfanmonotherapy", "Treosulfan monotherapy", "Treosulfan_monotherapy", "Treosulfan"
+    "Treosulfan monotherapy"
 ];
 
 define final TreosulfanmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TreosulfanmonotherapyRegimen:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

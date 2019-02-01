@@ -29,7 +29,7 @@ define final ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib, high dose", "Imatinib_monotherapy_high_dose", "Imatinib monotherapy, high dose", "Imatinibmonotherapyhighdose"
+    "Imatinib monotherapy, high dose"
 ];
 
 define final ImatinibmonotherapyhighdoseRegimen:
@@ -46,6 +46,8 @@ define final ImatinibmonotherapyhighdoseRegimen:
 /***
 
 Known regimen for: Chronic_myelogenous_leukemia
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  PazopanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxel_Pazopanib", "Paclitaxel & Pazopanib", "PaclitaxelPazopanib"
+    "Paclitaxel & Pazopanib"
 ];
 
 define final PaclitaxelPazopanibRegimen:
@@ -64,6 +64,8 @@ define final PaclitaxelPazopanibTreatments:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

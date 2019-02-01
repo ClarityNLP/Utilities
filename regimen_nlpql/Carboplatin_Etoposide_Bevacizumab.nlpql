@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinEtoposideBevacizumab", "Carboplatin, Etoposide, Bevacizumab", "Carboplatin_Etoposide_Bevacizumab"
+    "Carboplatin, Etoposide, Bevacizumab"
 ];
 
 define final CarboplatinEtoposideBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinEtoposideBevacizumabTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer
+
+
 
 
 ***/

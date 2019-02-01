@@ -40,7 +40,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CyclophosphamideDexamethasone", "Cyclophosphamide_Dexamethasone", "Cyclophosphamide & Dexamethasone"
+    "Cyclophosphamide & Dexamethasone"
 ];
 
 define final CyclophosphamideDexamethasoneRegimen:
@@ -64,6 +64,8 @@ define final CyclophosphamideDexamethasoneTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

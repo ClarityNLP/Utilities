@@ -29,7 +29,7 @@ define final BusulfanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfan_monotherapy", "Busulfanmonotherapy", "Busulfan", "Busulfan monotherapy"
+    "Busulfan monotherapy"
 ];
 
 define final BusulfanmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BusulfanmonotherapyRegimen:
 /***
 
 Known regimen for: Chronic_myelogenous_leukemia
+
+
 
 
 ***/

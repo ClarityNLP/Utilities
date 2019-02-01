@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Irinotecan", "Carboplatin_Irinotecan", "IP", "IC", "CarboplatinIrinotecan"
+    "Carboplatin & Irinotecan"
 ];
 
 define final CarboplatinIrinotecanRegimen:
@@ -64,6 +64,8 @@ define final CarboplatinIrinotecanTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer
+
+
 
 
 ***/

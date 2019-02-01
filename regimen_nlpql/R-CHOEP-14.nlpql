@@ -84,7 +84,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCHOEP14", "R-CHOEP-14", "R/CHOEP/14"
+    "R-CHOEP-14", "R/CHOEP/14", "RCHOEP14"
 ];
 
 define final RCHOEP14Regimen:
@@ -108,6 +108,8 @@ define final RCHOEP14Treatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

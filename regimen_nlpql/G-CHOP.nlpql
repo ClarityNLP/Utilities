@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "G/CHOP", "GCHOP", "G-CHOP"
+    "G-CHOP", "G/CHOP", "GCHOP"
 ];
 
 define final GCHOPRegimen:
@@ -97,6 +97,8 @@ define final GCHOPTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

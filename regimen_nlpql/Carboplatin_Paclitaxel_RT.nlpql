@@ -37,7 +37,7 @@ define  PaclitaxelTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CarboplatinPaclitaxelRT", "Carboplatin, Paclitaxel, RT", "RT", "Carboplatin_Paclitaxel_RT"
+    "Carboplatin, Paclitaxel, RT"
 ];
 
 define final CarboplatinPaclitaxelRTRegimen:
@@ -74,7 +74,9 @@ define final CarboplatinPaclitaxelRTTreatments:
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Esophageal_cancer, Non-small_cell_lung_cancer
+Known regimen for: Esophageal_cancer, Non-small_cell_lung_cancer, Head_and_neck_cancer
+
+
 
 
 ***/

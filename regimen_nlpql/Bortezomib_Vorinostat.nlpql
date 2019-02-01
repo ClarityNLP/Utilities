@@ -40,7 +40,7 @@ define  VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Vorinostat", "Bortezomib_Vorinostat", "BortezomibVorinostat"
+    "Bortezomib & Vorinostat"
 ];
 
 define final BortezomibVorinostatRegimen:
@@ -64,6 +64,8 @@ define final BortezomibVorinostatTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

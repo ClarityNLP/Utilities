@@ -40,7 +40,7 @@ define  TopotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PaclitaxelTopotecan", "Paclitaxel_Topotecan", "TP", "Paclitaxel & Topotecan"
+    "Paclitaxel & Topotecan"
 ];
 
 define final PaclitaxelTopotecanRegimen:
@@ -64,6 +64,8 @@ define final PaclitaxelTopotecanTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

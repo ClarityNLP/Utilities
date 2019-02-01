@@ -29,7 +29,7 @@ define final GilteritinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gilteritinib", "Gilteritinibmonotherapy", "Gilteritinib monotherapy", "Gilteritinib_monotherapy"
+    "Gilteritinib monotherapy"
 ];
 
 define final GilteritinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final GilteritinibmonotherapyRegimen:
 /***
 
 Known regimen for: Acute_myeloid_leukemia_FLT3-positive
+
+
 
 
 ***/

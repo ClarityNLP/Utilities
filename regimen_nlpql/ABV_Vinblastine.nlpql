@@ -51,7 +51,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABV (Vinblastine)", "ABV_Vinblastine", "ABVVinblastine", "ABV"
+    "ABV", "ABV (Vinblastine)"
 ];
 
 define final ABVVinblastineRegimen:
@@ -75,6 +75,8 @@ define final ABVVinblastineTreatments:
 /***
 
 Known regimen for: Vascular_sarcoma
+
+
 
 
 ***/

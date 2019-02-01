@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "M/TIP", "M-TIP", "MTIP"
+    "M-TIP", "M/TIP", "MTIP"
 ];
 
 define final MTIPRegimen:
@@ -86,6 +86,8 @@ define final MTIPTreatments:
 /***
 
 Known regimen for: Testicular_cancer
+
+
 
 
 ***/

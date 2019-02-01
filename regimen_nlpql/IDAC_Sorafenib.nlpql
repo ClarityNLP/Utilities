@@ -40,7 +40,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IDAC_Sorafenib", "IDAC/Sorafenib", "IDAC & Sorafenib", "IDACSorafenib", "IDAC and Sorafenib", "IDAC / Sorafenib"
+    "IDAC  and  Sorafenib", "IDAC & Sorafenib", "IDAC + Sorafenib", "IDAC / Sorafenib", "IDAC and Sorafenib", "IDAC+Sorafenib", "IDAC/Sorafenib"
 ];
 
 define final IDACSorafenibRegimen:
@@ -64,6 +64,8 @@ define final IDACSorafenibTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia_FLT3-positive
+
+
 
 
 ***/

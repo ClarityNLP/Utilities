@@ -62,7 +62,7 @@ define  DacarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABVD_DD-DI", "ABVD, DD-DI", "ABVDDDDI", "ABVD, DD/DI", "ABVD, DDDI"
+    "ABVD, DD-DI"
 ];
 
 define final ABVDDDDIRegimen:
@@ -86,6 +86,8 @@ define final ABVDDDDITreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

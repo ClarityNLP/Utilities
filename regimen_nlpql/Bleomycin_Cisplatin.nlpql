@@ -40,7 +40,7 @@ define  BleomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BleomycinCisplatin", "Bleomycin_Cisplatin", "Bleomycin & Cisplatin"
+    "Bleomycin & Cisplatin"
 ];
 
 define final BleomycinCisplatinRegimen:
@@ -63,7 +63,9 @@ define final BleomycinCisplatinTreatments:
 // Comments
 /***
 
-Known regimen for: Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma
+Known regimen for: Cutaneous_squamous_cell_carcinoma, Cutaneous_basal_cell_carcinoma
+
+
 
 
 ***/

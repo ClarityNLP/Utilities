@@ -84,7 +84,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VcRCVAD", "VcR/CVAD", "VcR-CVAD"
+    "VcR-CVAD", "VcR/CVAD", "VcRCVAD"
 ];
 
 define final VcRCVADRegimen:
@@ -108,6 +108,8 @@ define final VcRCVADTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

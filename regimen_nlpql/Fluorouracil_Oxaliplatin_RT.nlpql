@@ -37,7 +37,7 @@ define  OxaliplatinTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilOxaliplatinRT", "Fluorouracil, Oxaliplatin, RT", "Fluorouracil_Oxaliplatin_RT", "RT"
+    "Fluorouracil, Oxaliplatin, RT"
 ];
 
 define final FluorouracilOxaliplatinRTRegimen:
@@ -74,7 +74,9 @@ define final FluorouracilOxaliplatinRTTreatments:
 // Comments
 /***
 
-Known regimen for: Rectal_cancer, Esophageal_cancer
+Known regimen for: Esophageal_cancer, Rectal_cancer
+
+
 
 
 ***/

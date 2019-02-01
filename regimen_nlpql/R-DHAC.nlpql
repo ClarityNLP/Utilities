@@ -62,7 +62,7 @@ define  CarboplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RDHAC", "R-DHAC", "R/DHAC"
+    "R-DHAC", "R/DHAC", "RDHAC"
 ];
 
 define final RDHACRegimen:
@@ -86,6 +86,8 @@ define final RDHACTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

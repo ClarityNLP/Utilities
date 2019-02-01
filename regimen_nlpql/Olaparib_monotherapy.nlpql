@@ -29,7 +29,7 @@ define final OlaparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Olaparib", "Olaparib monotherapy", "Olaparib_monotherapy", "Olaparibmonotherapy"
+    "Olaparib monotherapy"
 ];
 
 define final OlaparibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final OlaparibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Prostate_cancer, Pancreatic_cancer, Breast_cancer_BRCA-mutated
+Known regimen for: Prostate_cancer, Ovarian_cancer, Breast_cancer_BRCA-mutated, Pancreatic_cancer
+
+
 
 
 ***/

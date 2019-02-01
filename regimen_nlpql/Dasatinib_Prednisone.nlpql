@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib & Prednisone", "Dasatinib_Prednisone", "DasatinibPrednisone"
+    "Dasatinib & Prednisone"
 ];
 
 define final DasatinibPrednisoneRegimen:
@@ -64,6 +64,8 @@ define final DasatinibPrednisoneTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

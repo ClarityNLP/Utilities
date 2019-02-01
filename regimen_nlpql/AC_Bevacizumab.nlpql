@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AC & Bevacizumab", "AC_Bevacizumab", "ACBev", "AC and Bev", "ACBevacizumab", "AC / Bevacizumab", "AC&Bev", "AC / Bev", "AC and Bevacizumab", "AC/Bev", "AC+Bev", "AC/Bevacizumab", "AC & Bev"
+    "AC  and  Bevacizumab", "AC & Bev", "AC & Bevacizumab", "AC + Bevacizumab", "AC / Bev", "AC / Bevacizumab", "AC and Bev", "AC and Bevacizumab", "AC&Bev", "AC+Bev", "AC+Bevacizumab", "AC/Bev", "AC/Bevacizumab", "ACBev"
 ];
 
 define final ACBevacizumabRegimen:
@@ -75,6 +75,8 @@ define final ACBevacizumabTreatments:
 /***
 
 Known regimen for: Breast_cancer
+
+
 
 
 ***/

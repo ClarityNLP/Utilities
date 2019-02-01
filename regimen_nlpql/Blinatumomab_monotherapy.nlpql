@@ -29,7 +29,7 @@ define final BlinatumomabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Blinatumomabmonotherapy", "Blinatumomab_monotherapy", "Blinatumomab", "Blinatumomab monotherapy"
+    "Blinatumomab monotherapy"
 ];
 
 define final BlinatumomabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BlinatumomabmonotherapyRegimen:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IGEV & GCSF", "IGEV_G-CSF", "IGEV and G-CSF", "IGEV & G-CSF", "IGEV & G/CSF", "IGEVGCSF", "IGEV/G-CSF", "IGEV / G-CSF"
+    "IGEV  and  G-CSF", "IGEV & G-CSF", "IGEV + G-CSF", "IGEV / G-CSF", "IGEV and G-CSF", "IGEV+G-CSF", "IGEV/G-CSF"
 ];
 
 define final IGEVGCSFRegimen:
@@ -86,6 +86,8 @@ define final IGEVGCSFTreatments:
 /***
 
 Known regimen for: Stem_cell_mobilization
+
+
 
 
 ***/

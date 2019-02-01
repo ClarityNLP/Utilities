@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate & Rituximab", "Methotrexate_Rituximab", "MethotrexateRituximab"
+    "Methotrexate & Rituximab"
 ];
 
 define final MethotrexateRituximabRegimen:
@@ -64,6 +64,8 @@ define final MethotrexateRituximabTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

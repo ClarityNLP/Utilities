@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DDCHOP", "DD/CHOP", "DD-CHOP"
+    "DD-CHOP", "DD/CHOP", "DDCHOP"
 ];
 
 define final DDCHOPRegimen:
@@ -97,6 +97,8 @@ define final DDCHOPTreatments:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

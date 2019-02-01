@@ -51,7 +51,7 @@ define  IrinotecanliposomeTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilFolinicacidnanoliposomalIrinotecan", "Fluorouracil, Folinic acid, nanoliposomal Irinotecan", "Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan"
+    "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
 ];
 
 define final FluorouracilFolinicacidnanoliposomalIrinotecanRegimen:
@@ -75,6 +75,8 @@ define final FluorouracilFolinicacidnanoliposomalIrinotecanTreatments:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib-HyperCAD", "BortezomibHyperCAD", "Bortezomib/HyperCAD"
+    "Bortezomib-HyperCAD"
 ];
 
 define final BortezomibHyperCADRegimen:
@@ -86,6 +86,8 @@ define final BortezomibHyperCADTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

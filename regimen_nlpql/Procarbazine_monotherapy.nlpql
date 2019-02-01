@@ -29,7 +29,7 @@ define final ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Procarbazine", "Procarbazine monotherapy", "Procarbazinemonotherapy", "Procarbazine_monotherapy"
+    "Procarbazine monotherapy"
 ];
 
 define final ProcarbazinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final ProcarbazinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Glioblastoma, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Glioblastoma
+
+
 
 
 ***/

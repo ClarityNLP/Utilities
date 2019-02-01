@@ -40,7 +40,7 @@ define  LapatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapecitabineLapatinib", "Capecitabine & Lapatinib", "Capecitabine_Lapatinib"
+    "Capecitabine & Lapatinib"
 ];
 
 define final CapecitabineLapatinibRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineLapatinibTreatments:
 /***
 
 Known regimen for: CNS_carcinoma
+
+
 
 
 ***/

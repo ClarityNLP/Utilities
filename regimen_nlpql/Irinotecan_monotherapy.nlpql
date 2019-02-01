@@ -29,7 +29,7 @@ define final IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan_monotherapy", "Irinotecan monotherapy", "Irinotecanmonotherapy", "Irinotecan"
+    "Irinotecan monotherapy"
 ];
 
 define final IrinotecanmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final IrinotecanmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Glioblastoma, Small_cell_lung_cancer, Colon_cancer, Cervical_cancer, Esophageal_cancer, Gastric_cancer
+Known regimen for: Esophageal_cancer, Anaplastic_glioma, Small_cell_lung_cancer, Gastric_cancer, Cervical_cancer, Glioblastoma, Colon_cancer
+
+
 
 
 ***/

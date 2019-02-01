@@ -29,7 +29,7 @@ define final IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idarubicin_then_Mitoxantrone_then_Idarubicin", "IdarubicinthenMitoxantronethenIdarubicin", "Idarubicin, then Mitoxantrone, then Idarubicin"
+    "Idarubicin, then Mitoxantrone, then Idarubicin"
 ];
 
 define final IdarubicinthenMitoxantronethenIdarubicinRegimen:
@@ -46,6 +46,8 @@ define final IdarubicinthenMitoxantronethenIdarubicinRegimen:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

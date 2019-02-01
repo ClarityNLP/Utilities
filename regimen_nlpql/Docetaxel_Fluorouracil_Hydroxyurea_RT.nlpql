@@ -48,7 +48,7 @@ define  HydroxyureaTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelFluorouracilHydroxyureaRT", "Docetaxel_Fluorouracil_Hydroxyurea_RT", "Docetaxel, Fluorouracil, Hydroxyurea, RT", "RT"
+    "Docetaxel, Fluorouracil, Hydroxyurea, RT"
 ];
 
 define final DocetaxelFluorouracilHydroxyureaRTRegimen:
@@ -86,6 +86,8 @@ define final DocetaxelFluorouracilHydroxyureaRTTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

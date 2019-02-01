@@ -29,7 +29,7 @@ define final ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Thiotepamonotherapy", "Thiotepa_monotherapy", "Thiotepa", "Thiotepa monotherapy"
+    "Thiotepa monotherapy"
 ];
 
 define final ThiotepamonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ThiotepamonotherapyRegimen:
 /***
 
 Known regimen for: Bladder_cancer
+
+
 
 
 ***/

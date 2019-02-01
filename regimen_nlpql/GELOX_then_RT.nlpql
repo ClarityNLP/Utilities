@@ -51,7 +51,7 @@ define  OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GELOX_then_RT", "GELOX, then RT", "GELOXthenRT"
+    "GELOX, then RT"
 ];
 
 define final GELOXthenRTRegimen:
@@ -75,6 +75,8 @@ define final GELOXthenRTTreatments:
 /***
 
 Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type
+
+
 
 
 ***/

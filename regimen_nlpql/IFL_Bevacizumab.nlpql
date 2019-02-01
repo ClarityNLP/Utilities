@@ -62,7 +62,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mIFL & Bevacizumab", "IFL / Bevacizumab", "IFL_Bevacizumab", "IFL/Bevacizumab", "mIFL and Bevacizumab", "mIFL / Bevacizumab", "IFLBevacizumab", "mIFL_Bevacizumab", "mIFL/Bevacizumab", "IFL and Bevacizumab", "IFL & Bevacizumab", "mIFLBevacizumab"
+    "IFL  and  Bevacizumab", "IFL & Bevacizumab", "IFL + Bevacizumab", "IFL / Bevacizumab", "IFL and Bevacizumab", "IFL+Bevacizumab", "IFL/Bevacizumab", "mIFL  and  Bevacizumab", "mIFL & Bevacizumab", "mIFL + Bevacizumab", "mIFL / Bevacizumab", "mIFL and Bevacizumab", "mIFL+Bevacizumab", "mIFL/Bevacizumab"
 ];
 
 define final IFLBevacizumabRegimen:
@@ -86,6 +86,8 @@ define final IFLBevacizumabTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

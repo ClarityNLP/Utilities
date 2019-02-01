@@ -29,7 +29,7 @@ define final DurvalumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Durvalumab monotherapy", "Durvalumabmonotherapy", "Durvalumab", "Durvalumab_monotherapy"
+    "Durvalumab monotherapy"
 ];
 
 define final DurvalumabmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final DurvalumabmonotherapyRegimen:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

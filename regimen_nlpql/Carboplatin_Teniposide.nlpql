@@ -40,7 +40,7 @@ define  TeniposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Teniposide", "Carboplatin_Teniposide", "CarboplatinTeniposide"
+    "Carboplatin & Teniposide"
 ];
 
 define final CarboplatinTeniposideRegimen:
@@ -64,6 +64,8 @@ define final CarboplatinTeniposideTreatments:
 /***
 
 Known regimen for: Low-grade_glioma
+
+
 
 
 ***/

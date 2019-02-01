@@ -40,7 +40,7 @@ define  FolinicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFTLV", "UFT  LV", "UFT  &  LV", "Tegafur_Uracil_Folinic_acid", "Tegafur, Uracil, Folinic acid", "TegafurUracilFolinicacid", "UFT_LV", "UFT  /  LV", "UFT  and  LV", "UFT + LV", "UFT / LV", "UFT & LV"
+    "Tegafur, Uracil, Folinic acid", "UFT  &  LV", "UFT  /  LV", "UFT  LV", "UFT  and  LV", "UFT & LV", "UFT + LV", "UFT / LV", "UFTLV"
 ];
 
 define final TegafurUracilFolinicacidRegimen:
@@ -64,6 +64,8 @@ define final TegafurUracilFolinicacidTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

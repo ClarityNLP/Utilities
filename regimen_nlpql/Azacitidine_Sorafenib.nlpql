@@ -40,7 +40,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine & Sorafenib", "Azacitidine_Sorafenib", "AzacitidineSorafenib"
+    "Azacitidine & Sorafenib"
 ];
 
 define final AzacitidineSorafenibRegimen:
@@ -64,6 +64,8 @@ define final AzacitidineSorafenibTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia_FLT3-positive
+
+
 
 
 ***/

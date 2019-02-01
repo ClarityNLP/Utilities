@@ -40,7 +40,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dacarbazine_Doxorubicin", "Dacarbazine & Doxorubicin", "DacarbazineDoxorubicin", "AD"
+    "Dacarbazine & Doxorubicin"
 ];
 
 define final DacarbazineDoxorubicinRegimen:
@@ -64,6 +64,8 @@ define final DacarbazineDoxorubicinTreatments:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

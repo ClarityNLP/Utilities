@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Regimen for Z-BEAM" version "1";
+phenotype "Regimen for Dexamethasone & Eltrombopag" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -15,10 +15,10 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "neupogen", "filgrastim"
+    "decadron", "dexamethasone"
 ];
 
-define  FilgrastimTreatment:
+define  DexamethasoneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -26,34 +26,12 @@ define  FilgrastimTreatment:
 
         
 termset TreatmentTerms1:[
-    "valtrex", "valacyclovir"
+    "promacta", "eltrombopag"
 ];
 
-define  ValacyclovirTreatment:
+define  EltrombopagTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms2:[
-    "zovirax", "acyclovir"
-];
-
-define  AcyclovirTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms3:[
-    "bactrim ds", "trimethoprim/sulfamethoxazole"
-];
-
-define  TrimethoprimSulfamethoxazoleTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
         documentset:[Docs]
 }); 
 
@@ -62,10 +40,10 @@ define  TrimethoprimSulfamethoxazoleTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Z-BEAM", "Z/BEAM", "ZBEAM"
+    "Dexamethasone & Eltrombopag"
 ];
 
-define final ZBEAMRegimen:
+define final DexamethasoneEltrombopagRegimen:
   Clarity.ProviderAssertion({
     termset:[RegimenTerms],
     documentset:[Docs]
@@ -75,8 +53,8 @@ define final ZBEAMRegimen:
 // Results
 
         
-define final ZBEAMTreatments:
-    where FilgrastimTreatment AND ValacyclovirTreatment AND AcyclovirTreatment AND TrimethoprimSulfamethoxazoleTreatment;
+define final DexamethasoneEltrombopagTreatments:
+    where DexamethasoneTreatment AND EltrombopagTreatment;
           
         
         
@@ -85,7 +63,9 @@ define final ZBEAMTreatments:
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT
+Known regimen for: Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

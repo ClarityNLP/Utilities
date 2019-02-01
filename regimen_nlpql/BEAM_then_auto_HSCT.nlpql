@@ -62,7 +62,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BEAM_then_auto_HSCT", "BEAM", "BEAMthenautoHSCT", "BEAM, then auto HSCT"
+    "BEAM", "BEAM, then auto HSCT"
 ];
 
 define final BEAMthenautoHSCTRegimen:
@@ -85,7 +85,9 @@ define final BEAMthenautoHSCTTreatments:
 // Comments
 /***
 
-Known regimen for: HIV-associated_lymphoma, CNS_lymphoma
+Known regimen for: CNS_lymphoma, HIV-associated_lymphoma
+
+
 
 
 ***/

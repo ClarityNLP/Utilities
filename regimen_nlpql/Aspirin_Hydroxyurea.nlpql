@@ -15,10 +15,10 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "aspirin", "aspirin"
+    "aspirin"
 ];
 
-define  aspirinTreatment:
+define  AspirinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -26,10 +26,10 @@ define  aspirinTreatment:
 
         
 termset TreatmentTerms1:[
-    "plavix", "clopidogrel"
+    "hydrea", "hydroxyurea"
 ];
 
-define  ClopidogrelTreatment:
+define  HydroxyureaTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ define  ClopidogrelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "AspirinHydroxyurea", "Aspirin_Hydroxyurea", "Aspirin & Hydroxyurea"
+    "Aspirin & Hydroxyurea"
 ];
 
 define final AspirinHydroxyureaRegimen:
@@ -54,7 +54,7 @@ define final AspirinHydroxyureaRegimen:
 
         
 define final AspirinHydroxyureaTreatments:
-    where aspirinTreatment AND ClopidogrelTreatment;
+    where AspirinTreatment AND HydroxyureaTreatment;
           
         
         
@@ -64,6 +64,8 @@ define final AspirinHydroxyureaTreatments:
 /***
 
 Known regimen for: Essential_thrombocythemia
+
+
 
 
 ***/

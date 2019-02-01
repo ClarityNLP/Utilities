@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "O-CHOP", "OCHOP", "O/CHOP"
+    "O-CHOP", "O/CHOP", "OCHOP"
 ];
 
 define final OCHOPRegimen:
@@ -97,6 +97,8 @@ define final OCHOPTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

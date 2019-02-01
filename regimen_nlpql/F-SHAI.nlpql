@@ -51,7 +51,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FSHAI", "F-SHAI", "F/SHAI"
+    "F-SHAI", "F/SHAI", "FSHAI"
 ];
 
 define final FSHAIRegimen:
@@ -75,6 +75,8 @@ define final FSHAITreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

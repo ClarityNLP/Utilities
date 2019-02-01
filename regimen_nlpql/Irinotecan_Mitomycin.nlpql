@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan & Mitomycin", "IrinotecanMitomycin", "Irinotecan_Mitomycin"
+    "Irinotecan & Mitomycin"
 ];
 
 define final IrinotecanMitomycinRegimen:
@@ -64,6 +64,8 @@ define final IrinotecanMitomycinTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

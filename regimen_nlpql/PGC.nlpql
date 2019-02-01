@@ -51,7 +51,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "PGC", "PCG"
+    "PCG", "PGC"
 ];
 
 define final PGCRegimen:
@@ -75,6 +75,8 @@ define final PGCTreatments:
 /***
 
 Known regimen for: Bladder_cancer
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuTTthenautoHSCT", "Bu/TT", "BuTT_then_auto_HSCT", "BuTT", "Bu/TT, then auto HSCT"
+    "Bu/TT", "Bu/TT, then auto HSCT", "BuTT"
 ];
 
 define final BuTTthenautoHSCTRegimen:
@@ -64,6 +64,8 @@ define final BuTTthenautoHSCTTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

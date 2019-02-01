@@ -29,7 +29,7 @@ define final VinflunineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vinflunine monotherapy", "Vinflunine_monotherapy", "Vinfluninemonotherapy", "Vinflunine"
+    "Vinflunine monotherapy"
 ];
 
 define final VinfluninemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final VinfluninemonotherapyRegimen:
 /***
 
 Known regimen for: Bladder_cancer
+
+
 
 
 ***/

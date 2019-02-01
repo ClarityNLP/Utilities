@@ -29,7 +29,7 @@ define final OxaliplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Oxaliplatin_monotherapy", "Oxaliplatin monotherapy", "Oxaliplatinmonotherapy", "Oxaliplatin"
+    "Oxaliplatin monotherapy"
 ];
 
 define final OxaliplatinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final OxaliplatinmonotherapyRegimen:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

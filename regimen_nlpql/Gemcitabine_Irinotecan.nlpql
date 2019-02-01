@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GemcitabineIrinotecan", "Gemcitabine_Irinotecan", "Gemcitabine & Irinotecan"
+    "Gemcitabine & Irinotecan"
 ];
 
 define final GemcitabineIrinotecanRegimen:
@@ -64,6 +64,8 @@ define final GemcitabineIrinotecanTreatments:
 /***
 
 Known regimen for: Adenocarcinoma_of_unknown_primary
+
+
 
 
 ***/

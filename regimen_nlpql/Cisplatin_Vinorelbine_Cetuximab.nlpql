@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Vinorelbine_Cetuximab", "CisplatinVinorelbineCetuximab", "Cisplatin, Vinorelbine, Cetuximab"
+    "Cisplatin, Vinorelbine, Cetuximab"
 ];
 
 define final CisplatinVinorelbineCetuximabRegimen:
@@ -75,6 +75,8 @@ define final CisplatinVinorelbineCetuximabTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

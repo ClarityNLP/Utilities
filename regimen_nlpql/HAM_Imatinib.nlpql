@@ -51,7 +51,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HAM/Imatinib", "HAM & Imatinib", "HAM / Imatinib", "HAM and Imatinib", "HAM_Imatinib", "HAMImatinib"
+    "HAM  and  Imatinib", "HAM & Imatinib", "HAM + Imatinib", "HAM / Imatinib", "HAM and Imatinib", "HAM+Imatinib", "HAM/Imatinib"
 ];
 
 define final HAMImatinibRegimen:
@@ -75,6 +75,8 @@ define final HAMImatinibTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    ":category:cyclosporines", ":category:cyclosporines"
+    ":category:cyclosporines"
 ];
 
 define final CategoryCyclosporinesTreatment:
@@ -29,7 +29,7 @@ define final CategoryCyclosporinesTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporinemonotherapy", "Cyclosporine monotherapy", "Cyclosporine", "Cyclosporine_monotherapy"
+    "Cyclosporine monotherapy"
 ];
 
 define final CyclosporinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CyclosporinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Immune_thrombocytopenia_(ITP), Myelodysplastic_syndrome, Castleman_disease, Aplastic_anemia
+Known regimen for: Castleman_disease, Myelodysplastic_syndrome, Aplastic_anemia, Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

@@ -37,7 +37,7 @@ define  CapecitabineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "CapecitabineCisplatinRT", "Capecitabine, Cisplatin, RT", "Capecitabine_Cisplatin_RT"
+    "Capecitabine, Cisplatin, RT"
 ];
 
 define final CapecitabineCisplatinRTRegimen:
@@ -75,6 +75,8 @@ define final CapecitabineCisplatinRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

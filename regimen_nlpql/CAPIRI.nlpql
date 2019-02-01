@@ -40,7 +40,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CAPIRI", "XELIRI", "CapeIRI"
+    "CAPIRI", "CapeIRI", "XELIRI"
 ];
 
 define final CAPIRIRegimen:
@@ -64,6 +64,8 @@ define final CAPIRITreatments:
 /***
 
 Known regimen for: Esophageal_cancer, Colon_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Intraperitoneal_hyperthermic_mitomycin", "Intraperitonealhyperthermicmitomycin", "Intraperitoneal hyperthermic mitomycin"
+    "Intraperitoneal hyperthermic mitomycin"
 ];
 
 define final IntraperitonealhyperthermicmitomycinRegimen:
@@ -46,6 +46,8 @@ define final IntraperitonealhyperthermicmitomycinRegimen:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

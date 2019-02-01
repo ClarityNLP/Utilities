@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vorinostat_Rituximab", "VorinostatRituximab", "Vorinostat & Rituximab"
+    "Vorinostat & Rituximab"
 ];
 
 define final VorinostatRituximabRegimen:
@@ -64,6 +64,8 @@ define final VorinostatRituximabTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

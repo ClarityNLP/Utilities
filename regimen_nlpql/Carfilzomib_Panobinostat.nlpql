@@ -40,7 +40,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carfilzomib & Panobinostat", "Carfilzomib_Panobinostat", "CarfilzomibPanobinostat"
+    "Carfilzomib & Panobinostat"
 ];
 
 define final CarfilzomibPanobinostatRegimen:
@@ -64,6 +64,8 @@ define final CarfilzomibPanobinostatTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

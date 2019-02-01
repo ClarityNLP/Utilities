@@ -51,7 +51,7 @@ define  IrinotecanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Etoposide, Irinotecan", "CisplatinEtoposideIrinotecan", "Cisplatin_Etoposide_Irinotecan"
+    "Cisplatin, Etoposide, Irinotecan"
 ];
 
 define final CisplatinEtoposideIrinotecanRegimen:
@@ -75,6 +75,8 @@ define final CisplatinEtoposideIrinotecanTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dexamethasone_monotherapy", "Dexamethasone monotherapy", "Dexamethasonemonotherapy", "Dexamethasone"
+    "Dexamethasone monotherapy"
 ];
 
 define final DexamethasonemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final DexamethasonemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Immune_thrombocytopenia_(ITP)
+Known regimen for: CNS_carcinoma, Immune_thrombocytopenia_(ITP)
+
+
 
 
 ***/

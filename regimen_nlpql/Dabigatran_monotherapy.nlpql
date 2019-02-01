@@ -29,7 +29,7 @@ define final DabigatranTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dabigatranmonotherapy", "Dabigatran monotherapy", "Dabigatran", "Dabigatran_monotherapy"
+    "Dabigatran monotherapy"
 ];
 
 define final DabigatranmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final DabigatranmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

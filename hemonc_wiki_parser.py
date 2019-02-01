@@ -10,7 +10,8 @@ import json
 
 treatment_names = ['Chemoradiotherapy', 'Supportive medications', 'Chemotherapy', 'Immunosuppressive therapy',
                    'CNS prophylaxis', 'Chemotherapy, part 1', 'Chemotherapy, part 2', 'Primary therapy',
-                   'Immunotherapy', 'Anticoagulation']
+                   'Immunotherapy', 'Anticoagulation', 'Cellular therapy', 'Therapy', 'Anticoagulation']
+supportive_meds = ['Supportive medications']
 nlpql_template = '''
 // Phenotype library name
 phenotype "{}" version "1";
@@ -98,7 +99,12 @@ def generate_medications(brands, drugs):
         final_str = ''
     for b in brands:
         main_name = safe_name(drugs[n], no_punc=True)
-        terms = '"{}", "{}"'.format(normalize_drug(b), normalize_drug(drugs[n]))
+        drug_b = normalize_drug(b)
+        drug_n = normalize_drug(drugs[n])
+        if drug_b != drug_n:
+            terms = '"{}", "{}"'.format(drug_b, drug_n)
+        else:
+            terms = '"{}"'.format(drug_n)
         nlpql = '''
 termset TreatmentTerms%d:[
     %s
@@ -181,10 +187,18 @@ def generate_nlpql(treatments):
         reg_define_str, reg_key = generate_regimens(regimen, obj['regimen_names'])
         cancers = list(set(obj['cancers']))
         cancer_str = ", ".join(cancers)
+
+        if len(obj['supportive_drugs']) > 0:
+            supportive_meds_str = ", ".join(obj['supportive_drugs'])
+            support_drugs_comment = "Supportive Medications: {}".format(supportive_meds_str)
+        else:
+            support_drugs_comment = ""
         comment_str += ("""
 Known regimen for: {}
 
-""").format(cancer_str)
+{}
+
+""").format(cancer_str, support_drugs_comment)
         filename = safe_name(regimen)
         regimen_final_name= safe_name(regimen, no_punc=True)
         result_str = generate_results(regimen_final_name, med_keys, reg_key)
@@ -221,14 +235,17 @@ if __name__ == "__main__":
                 if isinstance(n, Heading):
                     cur_title = title_text(n)
                     is_treatment = cur_title in treatment_names and n.level >= 3
+                    is_supportive_med = cur_title in supportive_meds and n.level >= 3
 
                     if cur_level == 0:
                         if is_treatment:
                             cur_node = Node(cur_title, drugs=list(), brands=list(), instructions=list(),
-                                            regimen='', variant='', regimen_type='', regimen_names=list())
+                                            regimen='', variant='', regimen_type='', regimen_names=list(),
+                                            supportive_brands=list(), supportive_drugs=list(), data=list())
                         else:
                             cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), instructions=list(),
-                                            regimen='', variant='', regimen_type='', regimen_names=list())
+                                            regimen='', variant='', regimen_type='', regimen_names=list(),
+                                            supportive_brands=list(), supportive_drugs=list())
 
                     else:
                         parent_level = n.level - 1
@@ -259,19 +276,27 @@ if __name__ == "__main__":
                                     for d in grandparent_node.data:
                                         if ':' in d:
                                             reg_name = d.split(':')
-                                            regimen_names.append(reg_name[0])
+                                            if len(reg_name[0]) > 2:
+                                                regimen_names.append(reg_name[0])
                                 alternate_regimens = list()
                                 for r in regimen_names:
-                                    alternate_regimens.append(safe_name(r, no_punc=True))
-                                    alternate_regimens.append(safe_name(r, no_punc=False))
-                                    alternate_regimens.append(r.replace(' monotherapy', ''))
-
+                                    if 'monotherapy' in r.lower():
+                                        continue
                                     if len(r) > 20:
                                         continue
+                                    if len(r) < 10:
+                                        alternate_regimens.append(safe_name(r, no_punc=True))
+
                                     if '&' in r:
                                         alternate_regimens.append(r.replace(' & ', ' and '))
-                                        alternate_regimens.append(r.replace(' & ', ' / '))
                                         alternate_regimens.append(r.replace(' & ', '/'))
+                                        alternate_regimens.append(r.replace(' & ', '+'))
+                                        alternate_regimens.append(r.replace('&', ' and '))
+                                        alternate_regimens.append(r.replace('&', '/'))
+                                        alternate_regimens.append(r.replace('&', '+'))
+
+                                    if len(r) > 10:
+                                        continue
                                     if '-' in r:
                                         alternate_regimens.append(r.replace('-', ''))
                                         alternate_regimens.append(r.replace('-', '/'))
@@ -287,19 +312,23 @@ if __name__ == "__main__":
                                         alternate_regimens.append(r.replace('+', ' / '))
                                         alternate_regimens.append(r.replace('+', '/'))
                                         alternate_regimens.append(r.replace('+', ''))
-
-                                regimen_names.extend(alternate_regimens)
-                                regimen_names = list(set(regimen_names))
+                                for ar in alternate_regimens:
+                                    if len(ar) > 2:
+                                        regimen_names.append(ar)
+                                regimen_names = sorted(list(set(regimen_names)))
                                 cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
                                                 regimen=grandparent, variant=variant, regimen_type=g_grandparent,
-                                                regimen_names=regimen_names)
+                                                regimen_names=regimen_names,
+                                                supportive_brands=list(), supportive_drugs=list(), data=list())
                             else:
                                 cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list(),
                                                 drugs=list(), brands=list(), regimen='', variant='', regimen_type='',
-                                                regimen_names=list())
+                                                regimen_names=list(),
+                                                supportive_brands=list(), supportive_drugs=list())
                         else:
                             cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), regimen='', variant='',
-                                            regimen_type='', regimen_names=list())
+                                            regimen_type='', regimen_names=list(), supportive_brands=list(),
+                                            supportive_drugs=list())
 
                     cur_level = n.level
                     last_nodes[cur_level] = cur_node
@@ -313,7 +342,7 @@ if __name__ == "__main__":
                     if cur_level > 0:
                         text = pretty_text(n)
                         if len(text) > 0:
-                            if is_treatment:
+                            if is_treatment and not is_supportive_med:
                                 if isinstance(n, Wikilink):
                                     spl = text.split('(')
                                     drug = spl[0].strip()
@@ -325,15 +354,25 @@ if __name__ == "__main__":
                                 else:
                                     # cur_node.instructions.append(text)
                                     pass
+                            if is_supportive_med:
+                                if isinstance(n, Wikilink):
+                                    if len(treatment_nodes) > 0:
+                                        spl = text.split('(')
+                                        drug = spl[0].strip()
+                                        treatment_nodes[-1].supportive_drugs.append(drug)
+                                        if len(spl) == 1:
+                                            treatment_nodes[-1].supportive_brands.append(drug)
+                                        else:
+                                            treatment_nodes[-1].supportive_brands.append(spl[1].split(')')[0].strip())
                             else:
                                 if len(cur_node.data) > 0:
                                     cur_node.data[-1] = (cur_node.data[-1] + ' ' + text).strip()
                                 else:
                                     cur_node.data.append(text)
                         else:
-                            if is_treatment:
+                            if is_treatment or is_supportive_med:
                                 pass
-                            elif len(cur_node.data) > 0:
+                            elif cur_node.data and len(cur_node.data) > 0:
                                 # don't just keep adding empty ones
                                 if cur_node.data[-1] != '':
                                     cur_node.data.append('')
@@ -346,7 +385,7 @@ if __name__ == "__main__":
             # print(RenderTree(cn))
             try:
                 if cn.regimen not in treatment_map:
-                    if len(cn.drugs) == 0:
+                    if len(cn.drugs) == 0 or len(cn.regimen_names) == 0:
                         continue
                     doc = {
                         'drugs': cn.drugs,
@@ -354,7 +393,9 @@ if __name__ == "__main__":
                         'regimen': cn.regimen,
                         'regimen_type': cn.regimen_type,
                         'cancers': list(),
-                        'regimen_names': cn.regimen_names
+                        'regimen_names': cn.regimen_names,
+                        'supportive_drugs': cn.supportive_drugs,
+                        'supportive_brands': cn.supportive_brands
 
                     }
                     doc['cancers'].append(oncology_class)
@@ -366,3 +407,5 @@ if __name__ == "__main__":
 
     if len(treatment_map.items()) > 0:
         generate_nlpql(treatment_map)
+        with open('./tree.json', 'w') as json_file:
+            json_file.write(json.dumps(treatment_map, indent=4, sort_keys=True))

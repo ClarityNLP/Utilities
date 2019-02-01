@@ -29,7 +29,7 @@ define final DuvelisibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Duvelisib_monotherapy", "Duvelisibmonotherapy", "Duvelisib", "Duvelisib monotherapy"
+    "Duvelisib monotherapy"
 ];
 
 define final DuvelisibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final DuvelisibmonotherapyRegimen:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

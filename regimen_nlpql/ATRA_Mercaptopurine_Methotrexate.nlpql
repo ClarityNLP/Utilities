@@ -95,7 +95,7 @@ define  MercaptopurineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRAMercaptopurineMethotrexate", "ATRA, Mercaptopurine, Methotrexate", "ATRA_Mercaptopurine_Methotrexate"
+    "ATRA, Mercaptopurine, Methotrexate"
 ];
 
 define final ATRAMercaptopurineMethotrexateRegimen:
@@ -119,6 +119,8 @@ define final ATRAMercaptopurineMethotrexateTreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

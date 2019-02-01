@@ -40,7 +40,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide_Vincristine", "CyclophosphamideVincristine", "Cyclophosphamide & Vincristine"
+    "Cyclophosphamide & Vincristine"
 ];
 
 define final CyclophosphamideVincristineRegimen:
@@ -64,6 +64,8 @@ define final CyclophosphamideVincristineTreatments:
 /***
 
 Known regimen for: Neuroblastoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final BrigatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brigatinib_monotherapy", "Brigatinib monotherapy", "Brigatinib", "Brigatinibmonotherapy"
+    "Brigatinib monotherapy"
 ];
 
 define final BrigatinibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BrigatinibmonotherapyRegimen:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer_ALK-positive
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final FondaparinuxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fondaprinuxmonotherapy", "Fondaprinux", "Fondaprinux_monotherapy", "Fondaprinux monotherapy"
+    "Fondaprinux monotherapy"
 ];
 
 define final FondaprinuxmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final FondaprinuxmonotherapyRegimen:
 /***
 
 Known regimen for: Heparin-induced_thrombocytopenia_(HIT)
+
+
 
 
 ***/

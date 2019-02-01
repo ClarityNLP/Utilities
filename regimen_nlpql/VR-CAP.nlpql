@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VRCAP", "VR/CAP", "VR-CAP"
+    "VR-CAP", "VR/CAP", "VRCAP"
 ];
 
 define final VRCAPRegimen:
@@ -97,6 +97,8 @@ define final VRCAPTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

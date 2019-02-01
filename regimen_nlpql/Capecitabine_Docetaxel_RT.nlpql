@@ -37,7 +37,7 @@ define  CapecitabineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RT", "CapecitabineDocetaxelRT", "Capecitabine, Docetaxel, RT", "Capecitabine_Docetaxel_RT"
+    "Capecitabine, Docetaxel, RT"
 ];
 
 define final CapecitabineDocetaxelRTRegimen:
@@ -75,6 +75,8 @@ define final CapecitabineDocetaxelRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

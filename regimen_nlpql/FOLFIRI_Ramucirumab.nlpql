@@ -62,7 +62,7 @@ define  RamucirumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI & Ramucirumab", "FOLFIRIRamucirumab", "FOLFIRI_Ramucirumab"
+    "FOLFIRI & Ramucirumab"
 ];
 
 define final FOLFIRIRamucirumabRegimen:
@@ -86,6 +86,8 @@ define final FOLFIRIRamucirumabTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

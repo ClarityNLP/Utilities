@@ -51,7 +51,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine_Melphalan_Alemtuzumab", "Fludarabine, Melphalan, Alemtuzumab", "FludarabineMelphalanAlemtuzumab"
+    "Fludarabine, Melphalan, Alemtuzumab"
 ];
 
 define final FludarabineMelphalanAlemtuzumabRegimen:
@@ -75,6 +75,8 @@ define final FludarabineMelphalanAlemtuzumabTreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

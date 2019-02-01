@@ -29,7 +29,7 @@ define final GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine monotherapy", "Gemcitabine_monotherapy", "Gemcitabinemonotherapy", "Gemcitabine"
+    "Gemcitabine monotherapy"
 ];
 
 define final GemcitabinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final GemcitabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer, Mesothelioma, Osteosarcoma, Small_cell_lung_cancer, Pancreatic_cancer, Diffuse_large_B-cell_lymphoma, Bladder_cancer, Cervical_cancer, Hodgkin_lymphoma, Cholangiocarcinoma
+Known regimen for: Hodgkin_lymphoma, Osteosarcoma, Pancreatic_cancer, Diffuse_large_B-cell_lymphoma, Bladder_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Ovarian_cancer, Mesothelioma, Cervical_cancer, Cholangiocarcinoma
+
+
 
 
 ***/

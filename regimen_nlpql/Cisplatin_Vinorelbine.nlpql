@@ -40,7 +40,7 @@ define  VinorelbineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Vinorelbine", "Cisplatin_Vinorelbine", "VC", "CisplatinVinorelbine"
+    "Cisplatin & Vinorelbine"
 ];
 
 define final CisplatinVinorelbineRegimen:
@@ -64,6 +64,8 @@ define final CisplatinVinorelbineTreatments:
 /***
 
 Known regimen for: Cervical_cancer, Non-small_cell_lung_cancer
+
+
 
 
 ***/

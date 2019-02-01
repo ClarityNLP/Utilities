@@ -40,7 +40,7 @@ define  IxabepiloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Capecitabine & Ixabepilone", "CapecitabineIxabepilone", "Capecitabine_Ixabepilone"
+    "Capecitabine & Ixabepilone"
 ];
 
 define final CapecitabineIxabepiloneRegimen:
@@ -64,6 +64,8 @@ define final CapecitabineIxabepiloneTreatments:
 /***
 
 Known regimen for: Breast_cancer_triple_negative
+
+
 
 
 ***/

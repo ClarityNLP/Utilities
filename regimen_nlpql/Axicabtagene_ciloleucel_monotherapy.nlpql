@@ -15,23 +15,12 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "tylenol", "acetaminophen"
+    "yescarta", "axicabtagene ciloleucel"
 ];
 
-define  AcetaminophenTreatment:
+define final AxicabtageneciloleucelTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
-        documentset:[Docs]
-}); 
-
-        
-termset TreatmentTerms1:[
-    "benadryl", "diphenhydramine"
-];
-
-define  DiphenhydramineTreatment:
-    Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
         documentset:[Docs]
 }); 
 
@@ -40,7 +29,7 @@ define  DiphenhydramineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Axicabtagene ciloleucel", "Axicabtageneciloleucelmonotherapy", "Axicabtagene_ciloleucel_monotherapy", "Axicabtagene ciloleucel monotherapy"
+    "Axicabtagene ciloleucel monotherapy"
 ];
 
 define final AxicabtageneciloleucelmonotherapyRegimen:
@@ -52,18 +41,13 @@ define final AxicabtageneciloleucelmonotherapyRegimen:
 
 // Results
 
-        
-define final AxicabtageneciloleucelmonotherapyTreatments:
-    where AcetaminophenTreatment AND DiphenhydramineTreatment;
-          
-        
-        
-        
 
 // Comments
 /***
 
-Known regimen for: Primary_mediastinal_B-cell_lymphoma, Diffuse_large_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Primary_mediastinal_B-cell_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

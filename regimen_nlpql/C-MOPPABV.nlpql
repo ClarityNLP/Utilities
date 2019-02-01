@@ -95,7 +95,7 @@ define  VinblastineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "C-MOPPABV", "CMOPPABV", "CMOPP/ABV", "C/MOPP/ABV", "C-MOPP/ABV"
+    "C-MOPP/ABV", "C/MOPP/ABV", "CMOPP/ABV"
 ];
 
 define final CMOPPABVRegimen:
@@ -119,6 +119,8 @@ define final CMOPPABVTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

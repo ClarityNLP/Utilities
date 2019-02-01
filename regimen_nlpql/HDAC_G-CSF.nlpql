@@ -40,7 +40,7 @@ define  FilgrastimTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDAC & G-CSF", "HDAC/G-CSF", "HDAC & GCSF", "HDACGCSF", "HDAC and G-CSF", "HDAC & G/CSF", "HDAC_G-CSF", "HDAC / G-CSF"
+    "HDAC  and  G-CSF", "HDAC & G-CSF", "HDAC + G-CSF", "HDAC / G-CSF", "HDAC and G-CSF", "HDAC+G-CSF", "HDAC/G-CSF"
 ];
 
 define final HDACGCSFRegimen:
@@ -64,6 +64,8 @@ define final HDACGCSFTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

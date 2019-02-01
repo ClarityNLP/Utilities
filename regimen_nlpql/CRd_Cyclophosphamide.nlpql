@@ -51,7 +51,7 @@ define  DexamethasoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CRDCyclophosphamide", "CRD_Cyclophosphamide", "CRD", "CRD (Cyclophosphamide)"
+    "CRD", "CRD (Cyclophosphamide)"
 ];
 
 define final CRDCyclophosphamideRegimen:
@@ -75,6 +75,8 @@ define final CRDCyclophosphamideTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

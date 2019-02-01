@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "aspirin", "aspirin"
+    "aspirin"
 ];
 
 define final AspirinTreatment:
@@ -29,7 +29,7 @@ define final AspirinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Aspirin monotherapy", "Aspirin", "Aspirin_monotherapy", "Aspirinmonotherapy"
+    "Aspirin monotherapy"
 ];
 
 define final AspirinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final AspirinmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

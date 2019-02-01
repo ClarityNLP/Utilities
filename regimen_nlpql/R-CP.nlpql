@@ -62,7 +62,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CP", "RCP", "R-CP"
+    "R-CP", "R/CP", "RCP"
 ];
 
 define final RCPRegimen:
@@ -86,6 +86,8 @@ define final RCPTreatments:
 /***
 
 Known regimen for: Post-transplant_lymphoproliferative_disorder
+
+
 
 
 ***/

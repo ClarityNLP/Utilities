@@ -40,7 +40,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Belotecan & Cisplatin", "BP", "BelotecanCisplatin", "Belotecan_Cisplatin"
+    "Belotecan & Cisplatin"
 ];
 
 define final BelotecanCisplatinRegimen:
@@ -64,6 +64,8 @@ define final BelotecanCisplatinTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VDCR", "RVDC"
+    "RVDC", "VDCR"
 ];
 
 define final RVDCRegimen:
@@ -86,6 +86,8 @@ define final RVDCTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_induction
+
+
 
 
 ***/

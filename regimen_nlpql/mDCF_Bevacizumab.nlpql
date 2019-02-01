@@ -73,7 +73,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "mDCF / Bevacizumab", "mDCFBevacizumab", "mDCF", "mDCF/Bevacizumab", "mDCF_Bevacizumab", "mDCF & Bevacizumab", "mDCF and Bevacizumab"
+    "mDCF", "mDCF  and  Bevacizumab", "mDCF & Bevacizumab", "mDCF + Bevacizumab", "mDCF / Bevacizumab", "mDCF and Bevacizumab", "mDCF+Bevacizumab", "mDCF/Bevacizumab"
 ];
 
 define final mDCFBevacizumabRegimen:
@@ -97,6 +97,8 @@ define final mDCFBevacizumabTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

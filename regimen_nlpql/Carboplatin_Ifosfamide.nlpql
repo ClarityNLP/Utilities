@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin & Ifosfamide", "CarboplatinIfosfamide", "Carboplatin_Ifosfamide"
+    "Carboplatin & Ifosfamide"
 ];
 
 define final CarboplatinIfosfamideRegimen:
@@ -64,6 +64,8 @@ define final CarboplatinIfosfamideTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

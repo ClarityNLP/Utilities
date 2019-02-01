@@ -29,7 +29,7 @@ define final MogamulizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mogamulizumab monotherapy", "Mogamulizumab", "Mogamulizumabmonotherapy", "Mogamulizumab_monotherapy"
+    "Mogamulizumab monotherapy"
 ];
 
 define final MogamulizumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final MogamulizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

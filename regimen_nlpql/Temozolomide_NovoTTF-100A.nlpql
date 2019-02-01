@@ -40,7 +40,7 @@ define  NovoTTF100AsystemTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Temozolomide_NovoTTF-100A", "Temozolomide & NovoTTF-100A", "TemozolomideNovoTTF100A"
+    "Temozolomide & NovoTTF-100A"
 ];
 
 define final TemozolomideNovoTTF100ARegimen:
@@ -64,6 +64,8 @@ define final TemozolomideNovoTTF100ATreatments:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

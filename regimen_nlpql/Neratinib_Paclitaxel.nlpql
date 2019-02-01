@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Neratinib & Paclitaxel", "Neratinib_Paclitaxel", "NeratinibPaclitaxel"
+    "Neratinib & Paclitaxel"
 ];
 
 define final NeratinibPaclitaxelRegimen:
@@ -64,6 +64,8 @@ define final NeratinibPaclitaxelTreatments:
 /***
 
 Known regimen for: Breast_cancer_HER2-positive
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin_Fluorouracil_Cetuximab", "CarboplatinFluorouracilCetuximab", "Carboplatin, Fluorouracil, Cetuximab"
+    "Carboplatin, Fluorouracil, Cetuximab"
 ];
 
 define final CarboplatinFluorouracilCetuximabRegimen:
@@ -75,6 +75,8 @@ define final CarboplatinFluorouracilCetuximabTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

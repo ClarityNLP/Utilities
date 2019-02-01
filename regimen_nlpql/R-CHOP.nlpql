@@ -73,7 +73,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCHOP21", "R-CHOP", "CHOP/R", "CHOPR", "R/CHOP/21", "CHOP-R", "R/CHOP", "RCHOP", "R-CHOP-21"
+    "CHOP-R", "CHOP/R", "CHOPR", "R-CHOP", "R-CHOP-21", "R/CHOP", "R/CHOP/21", "RCHOP", "RCHOP21"
 ];
 
 define final RCHOPRegimen:
@@ -96,7 +96,9 @@ define final RCHOPTreatments:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Post-transplant_lymphoproliferative_disorder, Follicular_lymphoma, HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma, Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, HIV-associated_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma, Post-transplant_lymphoproliferative_disorder
+
+
 
 
 ***/

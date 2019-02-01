@@ -37,7 +37,7 @@ define  MelphalanTreatment:
 
         
 termset TreatmentTerms2:[
-    ":category:antithymocyte globulin", ":category:antithymocyte globulin"
+    ":category:antithymocyte globulin"
 ];
 
 define  CategoryAntithymocyteglobulinTreatment:
@@ -51,7 +51,7 @@ define  CategoryAntithymocyteglobulinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fludarabine_Melphalan", "Flu-Mel", "FludarabineMelphalan", "Fludarabine & Melphalan", "FluMel", "Flu/Mel"
+    "Flu-Mel", "Flu/Mel", "FluMel", "Fludarabine & Melphalan"
 ];
 
 define final FludarabineMelphalanRegimen:
@@ -75,6 +75,8 @@ define final FludarabineMelphalanTreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

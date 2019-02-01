@@ -26,7 +26,7 @@ define  RituximabTreatment:
 
         
 termset TreatmentTerms1:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -51,7 +51,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-BAC", "RBAC", "R/BAC"
+    "R-BAC", "R/BAC", "RBAC"
 ];
 
 define final RBACRegimen:
@@ -75,6 +75,8 @@ define final RBACTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

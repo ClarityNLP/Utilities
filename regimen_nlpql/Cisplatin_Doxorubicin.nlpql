@@ -40,7 +40,7 @@ define  DoxorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Doxorubicin", "CisplatinDoxorubicin", "Cisplatin & Doxorubicin"
+    "Cisplatin & Doxorubicin"
 ];
 
 define final CisplatinDoxorubicinRegimen:
@@ -63,7 +63,9 @@ define final CisplatinDoxorubicinTreatments:
 // Comments
 /***
 
-Known regimen for: Cutaneous_squamous_cell_carcinoma, Osteosarcoma, Cutaneous_basal_cell_carcinoma, Hepatoblastoma, Endometrial_cancer
+Known regimen for: Osteosarcoma, Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma, Endometrial_cancer, Hepatoblastoma
+
+
 
 
 ***/

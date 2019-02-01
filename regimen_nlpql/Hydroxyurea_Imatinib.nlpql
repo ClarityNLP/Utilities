@@ -40,7 +40,7 @@ define  ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea_Imatinib", "Hydroxyurea & Imatinib", "HydroxyureaImatinib"
+    "Hydroxyurea & Imatinib"
 ];
 
 define final HydroxyureaImatinibRegimen:
@@ -64,6 +64,8 @@ define final HydroxyureaImatinibTreatments:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

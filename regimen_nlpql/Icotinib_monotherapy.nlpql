@@ -29,7 +29,7 @@ define final IcotinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Icotinib_monotherapy", "Icotinib", "Icotinibmonotherapy", "Icotinib monotherapy"
+    "Icotinib monotherapy"
 ];
 
 define final IcotinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final IcotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, CNS_carcinoma, Non-small_cell_lung_cancer
+Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer, Non-small_cell_lung_cancer_EGFR-mutated
+
+
 
 
 ***/

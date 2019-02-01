@@ -29,7 +29,7 @@ define final CarmustineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carmustine & RT", "BCNURT", "Carmustine / RT", "BCNU / RT", "BCNU/RT", "Carmustine/RT", "CarmustineRT", "BCNU_RT", "BCNU and RT", "BCNU & RT", "Carmustine_RT", "Carmustine and RT"
+    "BCNU  and  RT", "BCNU & RT", "BCNU + RT", "BCNU / RT", "BCNU and RT", "BCNU+RT", "BCNU/RT", "BCNURT", "Carmustine  and  RT", "Carmustine & RT", "Carmustine + RT", "Carmustine / RT", "Carmustine and RT", "Carmustine+RT", "Carmustine/RT"
 ];
 
 define final CarmustineRTRegimen:
@@ -46,6 +46,8 @@ define final CarmustineRTRegimen:
 /***
 
 Known regimen for: Glioblastoma
+
+
 
 
 ***/

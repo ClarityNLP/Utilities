@@ -15,10 +15,10 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    ":category:serotonin 5-ht3 antagonists", ":category:serotonin 5-ht3 antagonists"
+    "lysodren", "mitotane"
 ];
 
-define  CategorySerotonin5HT3antagonistsTreatment:
+define  MitotaneTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms0],
         documentset:[Docs]
@@ -26,10 +26,10 @@ define  CategorySerotonin5HT3antagonistsTreatment:
 
         
 termset TreatmentTerms1:[
-    "cortef", "hydrocortisone"
+    "zanosar", "streptozocin"
 ];
 
-define  HydrocortisoneTreatment:
+define  StreptozocinTreatment:
     Clarity.ProviderAssertion({
         termset:[TreatmentTerms1],
         documentset:[Docs]
@@ -40,7 +40,7 @@ define  HydrocortisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane & Streptozocin", "Mitotane_Streptozocin", "MitotaneStreptozocin"
+    "Mitotane & Streptozocin"
 ];
 
 define final MitotaneStreptozocinRegimen:
@@ -54,7 +54,7 @@ define final MitotaneStreptozocinRegimen:
 
         
 define final MitotaneStreptozocinTreatments:
-    where CategorySerotonin5HT3antagonistsTreatment AND HydrocortisoneTreatment;
+    where MitotaneTreatment AND StreptozocinTreatment;
           
         
         
@@ -64,6 +64,8 @@ define final MitotaneStreptozocinTreatments:
 /***
 
 Known regimen for: Adrenocortical_carcinoma
+
+
 
 
 ***/

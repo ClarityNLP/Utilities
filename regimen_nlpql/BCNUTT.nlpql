@@ -40,7 +40,7 @@ define  ThiotepaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BCNUTT", "BCNU/TT"
+    "BCNU/TT", "BCNUTT"
 ];
 
 define final BCNUTTRegimen:
@@ -64,6 +64,8 @@ define final BCNUTTTreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "XELIRI-Bev", "XELIRIBev", "CAPIRIBev", "CAPIRI-Bev", "XELIRI/Bev", "CAPIRI/Bev"
+    "CAPIRI-Bev", "CAPIRI/Bev", "CAPIRIBev", "XELIRI-Bev", "XELIRI/Bev", "XELIRIBev"
 ];
 
 define final CAPIRIBevRegimen:
@@ -75,6 +75,8 @@ define final CAPIRIBevTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

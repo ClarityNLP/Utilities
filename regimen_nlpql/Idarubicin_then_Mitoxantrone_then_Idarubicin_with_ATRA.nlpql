@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Idarubicin, then Mitoxantrone, then Idarubicin, with ATRA", "IdarubicinthenMitoxantronethenIdarubicinwithATRA", "Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA"
+    "Idarubicin, then Mitoxantrone, then Idarubicin, with ATRA"
 ];
 
 define final IdarubicinthenMitoxantronethenIdarubicinwithATRARegimen:
@@ -64,6 +64,8 @@ define final IdarubicinthenMitoxantronethenIdarubicinwithATRATreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

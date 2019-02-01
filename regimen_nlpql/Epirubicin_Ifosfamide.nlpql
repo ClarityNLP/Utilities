@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "EI", "Epirubicin_Ifosfamide", "Epirubicin & Ifosfamide", "EpirubicinIfosfamide"
+    "Epirubicin & Ifosfamide"
 ];
 
 define final EpirubicinIfosfamideRegimen:
@@ -64,6 +64,8 @@ define final EpirubicinIfosfamideTreatments:
 /***
 
 Known regimen for: Small_cell_lung_cancer, Soft_tissue_sarcoma
+
+
 
 
 ***/

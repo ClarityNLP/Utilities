@@ -40,7 +40,7 @@ define  SunitinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "GemcitabineSunitinib", "Gemcitabine & Sunitinib", "Gemcitabine_Sunitinib"
+    "Gemcitabine & Sunitinib"
 ];
 
 define final GemcitabineSunitinibRegimen:
@@ -64,6 +64,8 @@ define final GemcitabineSunitinibTreatments:
 /***
 
 Known regimen for: Renal_cell_carcinoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final TamibaroteneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Tamibarotenemonotherapy", "Tamibarotene_monotherapy", "Tamibarotene monotherapy", "Tamibarotene"
+    "Tamibarotene monotherapy"
 ];
 
 define final TamibarotenemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final TamibarotenemonotherapyRegimen:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Vorinostatmonotherapy", "Vorinostat", "Vorinostat monotherapy", "Vorinostat_monotherapy"
+    "Vorinostat monotherapy"
 ];
 
 define final VorinostatmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final VorinostatmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Marginal_zone_lymphoma, Cutaneous_T-cell_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma
+
+
 
 
 ***/

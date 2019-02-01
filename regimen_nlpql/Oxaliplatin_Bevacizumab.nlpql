@@ -40,7 +40,7 @@ define  BevacizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "OxaliplatinBevacizumab", "Oxaliplatin_Bevacizumab", "Oxaliplatin & Bevacizumab"
+    "Oxaliplatin & Bevacizumab"
 ];
 
 define final OxaliplatinBevacizumabRegimen:
@@ -64,6 +64,8 @@ define final OxaliplatinBevacizumabTreatments:
 /***
 
 Known regimen for: Testicular_cancer
+
+
 
 
 ***/

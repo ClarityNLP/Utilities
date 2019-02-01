@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine_Methotrexate_Rituximab", "Cytarabine, Methotrexate, Rituximab", "CytarabineMethotrexateRituximab"
+    "Cytarabine, Methotrexate, Rituximab"
 ];
 
 define final CytarabineMethotrexateRituximabRegimen:
@@ -75,6 +75,8 @@ define final CytarabineMethotrexateRituximabTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final ImatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Imatinib monotherapy, planned discontinuation", "Imatinib, planned discontinuation", "Imatinibmonotherapyplanneddiscontinuation", "Imatinib_monotherapy_planned_discontinuation"
+    "Imatinib monotherapy, planned discontinuation"
 ];
 
 define final ImatinibmonotherapyplanneddiscontinuationRegimen:
@@ -46,6 +46,8 @@ define final ImatinibmonotherapyplanneddiscontinuationRegimen:
 /***
 
 Known regimen for: Chronic_myelogenous_leukemia
+
+
 
 
 ***/

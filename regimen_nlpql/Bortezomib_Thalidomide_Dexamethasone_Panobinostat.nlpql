@@ -62,7 +62,7 @@ define  PanobinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat", "Bortezomib_Thalidomide_Dexamethasone_Panobinostat", "BortezomibThalidomideDexamethasonePanobinostat"
+    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
 ];
 
 define final BortezomibThalidomideDexamethasonePanobinostatRegimen:
@@ -86,6 +86,8 @@ define final BortezomibThalidomideDexamethasonePanobinostatTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

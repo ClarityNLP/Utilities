@@ -51,7 +51,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilFolinicacidMitomycin", "Fluorouracil_Folinic_acid_Mitomycin", "Fluorouracil, Folinic acid, Mitomycin"
+    "Fluorouracil, Folinic acid, Mitomycin"
 ];
 
 define final FluorouracilFolinicacidMitomycinRegimen:
@@ -75,6 +75,8 @@ define final FluorouracilFolinicacidMitomycinTreatments:
 /***
 
 Known regimen for: Gastric_cancer
+
+
 
 
 ***/

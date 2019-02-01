@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine/LoDAC", "Clofarabine & LoDAC", "Clofarabine_LoDAC", "Clofarabine and LoDAC", "ClofarabineLoDAC", "Clofarabine / LoDAC"
+    "Clofarabine  and  LoDAC", "Clofarabine & LoDAC", "Clofarabine + LoDAC", "Clofarabine / LoDAC", "Clofarabine and LoDAC", "Clofarabine+LoDAC", "Clofarabine/LoDAC"
 ];
 
 define final ClofarabineLoDACRegimen:
@@ -64,6 +64,8 @@ define final ClofarabineLoDACTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

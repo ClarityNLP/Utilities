@@ -29,7 +29,7 @@ define final MitotaneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Mitotane", "Mitotanemonotherapy", "Mitotane monotherapy", "Mitotane_monotherapy"
+    "Mitotane monotherapy"
 ];
 
 define final MitotanemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MitotanemonotherapyRegimen:
 /***
 
 Known regimen for: Adrenocortical_carcinoma
+
+
 
 
 ***/

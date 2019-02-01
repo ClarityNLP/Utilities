@@ -73,7 +73,7 @@ define  Interferonalfa2bTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine", "CisplatinDacarbazineIL2IFNalfa2bCarmustine", "Cisplatin_Dacarbazine_IL-2_IFN_alfa-2b_-_Carmustine"
+    "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine"
 ];
 
 define final CisplatinDacarbazineIL2IFNalfa2bCarmustineRegimen:
@@ -97,6 +97,8 @@ define final CisplatinDacarbazineIL2IFNalfa2bCarmustineTreatments:
 /***
 
 Known regimen for: Melanoma
+
+
 
 
 ***/

@@ -51,7 +51,7 @@ define  VorinostatTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Methotrexate, Tacrolimus, Vorinostat", "MethotrexateTacrolimusVorinostat", "Methotrexate_Tacrolimus_Vorinostat"
+    "Methotrexate, Tacrolimus, Vorinostat"
 ];
 
 define final MethotrexateTacrolimusVorinostatRegimen:
@@ -75,6 +75,8 @@ define final MethotrexateTacrolimusVorinostatTreatments:
 /***
 
 Known regimen for: Graft_versus_host_disease_(GVHD)
+
+
 
 
 ***/

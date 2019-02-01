@@ -51,7 +51,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CF and Trastuzumab", "CF / Trastuzumab", "CF", "CFTrastuzumab", "CF_Trastuzumab", "CF & Trastuzumab", "CF/Trastuzumab"
+    "CF  and  Trastuzumab", "CF & Trastuzumab", "CF + Trastuzumab", "CF / Trastuzumab", "CF and Trastuzumab", "CF+Trastuzumab", "CF/Trastuzumab"
 ];
 
 define final CFTrastuzumabRegimen:
@@ -75,6 +75,8 @@ define final CFTrastuzumabTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

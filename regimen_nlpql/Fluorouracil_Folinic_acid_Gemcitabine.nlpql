@@ -51,7 +51,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilFolinicacidGemcitabine", "Fluorouracil, Folinic acid, Gemcitabine", "Fluorouracil_Folinic_acid_Gemcitabine"
+    "Fluorouracil, Folinic acid, Gemcitabine"
 ];
 
 define final FluorouracilFolinicacidGemcitabineRegimen:
@@ -75,6 +75,8 @@ define final FluorouracilFolinicacidGemcitabineTreatments:
 /***
 
 Known regimen for: Esophageal_cancer, Cholangiocarcinoma
+
+
 
 
 ***/

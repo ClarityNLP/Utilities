@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ET", "EP"
+    "EP"
 ];
 
 define final EPRegimen:
@@ -64,6 +64,8 @@ define final EPTreatments:
 /***
 
 Known regimen for: Breast_cancer
+
+
 
 
 ***/

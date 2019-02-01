@@ -29,7 +29,7 @@ define final PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Prednisone_monotherapy", "Prednisone monotherapy", "Prednisone", "Prednisonemonotherapy"
+    "Prednisone monotherapy"
 ];
 
 define final PrednisonemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PrednisonemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelofibrosis, Acquired_coagulopathy, Immune_thrombocytopenia_(ITP)
+Known regimen for: Immune_thrombocytopenia_(ITP), Acquired_coagulopathy, Myelofibrosis
+
+
 
 
 ***/

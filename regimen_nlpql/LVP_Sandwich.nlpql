@@ -51,7 +51,7 @@ define  PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "LVP "Sandwich"", "LVP_Sandwich", "LVPSandwich", "LVP"
+    "LVP", "LVP "Sandwich""
 ];
 
 define final LVPSandwichRegimen:
@@ -75,6 +75,8 @@ define final LVPSandwichTreatments:
 /***
 
 Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final IvosidenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ivosidenib_monotherapy", "Ivosidenib monotherapy", "Ivosidenibmonotherapy", "Ivosidenib"
+    "Ivosidenib monotherapy"
 ];
 
 define final IvosidenibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final IvosidenibmonotherapyRegimen:
 /***
 
 Known regimen for: Acute_myeloid_leukemia_IDH-mutated
+
+
 
 
 ***/

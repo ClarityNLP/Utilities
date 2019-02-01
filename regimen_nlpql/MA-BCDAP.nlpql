@@ -95,7 +95,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MABCDAP", "MABCD/AP", "MA-BCD/AP", "MA/BCD/AP", "MA-BCDAP"
+    "MA-BCD/AP", "MA/BCD/AP", "MABCD/AP", "MABCDAP"
 ];
 
 define final MABCDAPRegimen:
@@ -119,6 +119,8 @@ define final MABCDAPTreatments:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

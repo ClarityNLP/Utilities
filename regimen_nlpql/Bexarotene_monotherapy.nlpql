@@ -29,7 +29,7 @@ define final BexaroteneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bexarotene_monotherapy", "Bexarotenemonotherapy", "Bexarotene monotherapy", "Bexarotene"
+    "Bexarotene monotherapy"
 ];
 
 define final BexarotenemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final BexarotenemonotherapyRegimen:
 /***
 
 Known regimen for: Cutaneous_T-cell_lymphoma
+
+
 
 
 ***/

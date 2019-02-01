@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TBC", "BuTTCy", "Bu/TT/Cy"
+    "Bu/TT/Cy", "BuTTCy", "TBC"
 ];
 
 define final BuTTCyRegimen:
@@ -75,6 +75,8 @@ define final BuTTCyTreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

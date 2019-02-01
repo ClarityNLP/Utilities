@@ -40,7 +40,7 @@ define  NivolumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ipilimumab & Nivolumab", "IpilimumabNivolumab", "Ipilimumab_Nivolumab"
+    "Ipilimumab & Nivolumab"
 ];
 
 define final IpilimumabNivolumabRegimen:
@@ -63,7 +63,9 @@ define final IpilimumabNivolumabTreatments:
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Melanoma, Non-small_cell_lung_cancer
+Known regimen for: Melanoma, Small_cell_lung_cancer, Non-small_cell_lung_cancer
+
+
 
 
 ***/

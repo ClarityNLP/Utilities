@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IT_Cytarabine_monotherapy", "IT Cytarabine", "IT Cytarabine monotherapy", "ITCytarabinemonotherapy"
+    "IT Cytarabine monotherapy"
 ];
 
 define final ITCytarabinemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ITCytarabinemonotherapyRegimen:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

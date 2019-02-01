@@ -29,7 +29,7 @@ define final IrinotecanliposomeTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Irinotecan liposomal monotherapy", "Irinotecan_liposomal_monotherapy", "Irinotecan liposomal", "Irinotecanliposomalmonotherapy"
+    "Irinotecan liposomal monotherapy"
 ];
 
 define final IrinotecanliposomalmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final IrinotecanliposomalmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Esophageal_cancer
+
+
 
 
 ***/

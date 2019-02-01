@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RCVEP", "R-CVEP", "R/CVEP"
+    "R-CVEP", "R/CVEP", "RCVEP"
 ];
 
 define final RCVEPRegimen:
@@ -97,6 +97,8 @@ define final RCVEPTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

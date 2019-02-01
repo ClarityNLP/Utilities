@@ -40,7 +40,7 @@ define  MethylprednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Alemtuzumab & Methylprednisolone", "Alemtuzumab_Methylprednisolone", "AlemtuzumabMethylprednisolone"
+    "Alemtuzumab & Methylprednisolone"
 ];
 
 define final AlemtuzumabMethylprednisoloneRegimen:
@@ -64,6 +64,8 @@ define final AlemtuzumabMethylprednisoloneTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

@@ -48,7 +48,7 @@ define  CetuximabTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Carboplatin, Fluorouracil, Cetuximab, RT", "Carboplatin_Fluorouracil_Cetuximab_RT", "RT", "CarboplatinFluorouracilCetuximabRT"
+    "Carboplatin, Fluorouracil, Cetuximab, RT"
 ];
 
 define final CarboplatinFluorouracilCetuximabRTRegimen:
@@ -86,6 +86,8 @@ define final CarboplatinFluorouracilCetuximabRTTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

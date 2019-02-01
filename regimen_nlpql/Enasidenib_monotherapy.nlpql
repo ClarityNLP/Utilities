@@ -29,7 +29,7 @@ define final EnasidenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Enasidenib monotherapy", "Enasidenib", "Enasidenib_monotherapy", "Enasidenibmonotherapy"
+    "Enasidenib monotherapy"
 ];
 
 define final EnasidenibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final EnasidenibmonotherapyRegimen:
 /***
 
 Known regimen for: Acute_myeloid_leukemia_IDH-mutated
+
+
 
 
 ***/

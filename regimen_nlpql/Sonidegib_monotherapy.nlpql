@@ -29,7 +29,7 @@ define final SonidegibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sonidegib_monotherapy", "Sonidegib monotherapy", "Sonidegibmonotherapy", "Sonidegib"
+    "Sonidegib monotherapy"
 ];
 
 define final SonidegibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final SonidegibmonotherapyRegimen:
 /***
 
 Known regimen for: Cutaneous_basal_cell_carcinoma
+
+
 
 
 ***/

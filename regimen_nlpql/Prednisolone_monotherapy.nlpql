@@ -29,7 +29,7 @@ define final PrednisoloneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Prednisolone monotherapy", "Prednisolone_monotherapy", "Prednisolonemonotherapy", "Prednisolone"
+    "Prednisolone monotherapy"
 ];
 
 define final PrednisolonemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final PrednisolonemonotherapyRegimen:
 /***
 
 Known regimen for: Acquired_coagulopathy
+
+
 
 
 ***/

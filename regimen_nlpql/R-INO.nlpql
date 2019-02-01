@@ -40,7 +40,7 @@ define  InotuzumabozogamicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RINO", "R/INO", "R-INO"
+    "R-INO", "R/INO", "RINO"
 ];
 
 define final RINORegimen:
@@ -64,6 +64,8 @@ define final RINOTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

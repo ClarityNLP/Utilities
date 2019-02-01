@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Rituximab", "Gemcitabine_Rituximab", "GemcitabineRituximab"
+    "Gemcitabine & Rituximab"
 ];
 
 define final GemcitabineRituximabRegimen:
@@ -64,6 +64,8 @@ define final GemcitabineRituximabTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

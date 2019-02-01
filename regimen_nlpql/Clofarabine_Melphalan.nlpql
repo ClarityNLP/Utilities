@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Clofarabine_Melphalan", "Clofarabine & Melphalan", "ClofarabineMelphalan"
+    "Clofarabine & Melphalan"
 ];
 
 define final ClofarabineMelphalanRegimen:
@@ -64,6 +64,8 @@ define final ClofarabineMelphalanTreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

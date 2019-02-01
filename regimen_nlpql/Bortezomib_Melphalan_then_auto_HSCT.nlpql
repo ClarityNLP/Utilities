@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Bortezomib & Melphalan, then auto HSCT", "Bortezomib_Melphalan_then_auto_HSCT", "BortezomibMelphalanthenautoHSCT"
+    "Bortezomib & Melphalan, then auto HSCT"
 ];
 
 define final BortezomibMelphalanthenautoHSCTRegimen:
@@ -64,6 +64,8 @@ define final BortezomibMelphalanthenautoHSCTTreatments:
 /***
 
 Known regimen for: Light-chain_(AL)_amyloidosis
+
+
 
 
 ***/

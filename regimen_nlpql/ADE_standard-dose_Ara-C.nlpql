@@ -51,7 +51,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "7/3/7", "10/3/5", "1035", "835", "8/3/5", "ADE_standard-dose_Ara-C", "ADEstandarddoseAraC", "8-3-5", "7-3-7", "ADE (standard-dose Ara-C)", "10-3-5", "ADE", "737"
+    "10-3-5", "10/3/5", "1035", "7-3-7", "7/3/7", "737", "8-3-5", "8/3/5", "835", "ADE", "ADE (standard-dose Ara-C)"
 ];
 
 define final ADEstandarddoseAraCRegimen:
@@ -75,6 +75,8 @@ define final ADEstandarddoseAraCTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

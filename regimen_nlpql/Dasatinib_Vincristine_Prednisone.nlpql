@@ -51,7 +51,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Dasatinib, Vincristine, Prednisone", "Dasatinib_Vincristine_Prednisone", "DasatinibVincristinePrednisone"
+    "Dasatinib, Vincristine, Prednisone"
 ];
 
 define final DasatinibVincristinePrednisoneRegimen:
@@ -75,6 +75,8 @@ define final DasatinibVincristinePrednisoneTreatments:
 /***
 
 Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
 
 
 ***/

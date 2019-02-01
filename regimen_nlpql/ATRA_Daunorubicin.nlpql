@@ -40,7 +40,7 @@ define  DaunorubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRA & Daunorubicin", "ATRA/Daunorubicin", "ATRA_Daunorubicin", "ATRA and Daunorubicin", "ATRADaunorubicin", "ATRA / Daunorubicin"
+    "ATRA  and  Daunorubicin", "ATRA & Daunorubicin", "ATRA + Daunorubicin", "ATRA / Daunorubicin", "ATRA and Daunorubicin", "ATRA+Daunorubicin", "ATRA/Daunorubicin"
 ];
 
 define final ATRADaunorubicinRegimen:
@@ -64,6 +64,8 @@ define final ATRADaunorubicinTreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

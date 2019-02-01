@@ -62,7 +62,7 @@ define  CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI_Cetuximab", "FOLFIRICetuximab", "FOLFIRI / Cetuximab", "FOLFIRI/Cetuximab", "FOLFIRI & Cetuximab", "FOLFIRI and Cetuximab"
+    "FOLFIRI  and  Cetuximab", "FOLFIRI & Cetuximab", "FOLFIRI + Cetuximab", "FOLFIRI / Cetuximab", "FOLFIRI and Cetuximab", "FOLFIRI+Cetuximab", "FOLFIRI/Cetuximab"
 ];
 
 define final FOLFIRICetuximabRegimen:
@@ -86,6 +86,8 @@ define final FOLFIRICetuximabTreatments:
 /***
 
 Known regimen for: Colon_cancer_KRAS_wild-type
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final AltretamineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Altretamine monotherapy", "Altretamine_monotherapy", "Altretaminemonotherapy", "Altretamine"
+    "Altretamine monotherapy"
 ];
 
 define final AltretaminemonotherapyRegimen:
@@ -46,6 +46,8 @@ define final AltretaminemonotherapyRegimen:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

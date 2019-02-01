@@ -73,7 +73,7 @@ define  AlemtuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP/AL", "CHOP-AL", "CHOPC", "CHOP-C", "CHOP/C", "CHOPAL"
+    "CHOP-AL", "CHOP-C", "CHOP/AL", "CHOP/C", "CHOPAL", "CHOPC"
 ];
 
 define final CHOPALRegimen:
@@ -97,6 +97,8 @@ define final CHOPALTreatments:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final CabozantinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cabozantinib monotherapy", "Cabozantinibmonotherapy", "Cabozantinib_monotherapy", "Cabozantinib"
+    "Cabozantinib monotherapy"
 ];
 
 define final CabozantinibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CabozantinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Thyroid_cancer, Prostate_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer
+Known regimen for: Prostate_cancer, Thyroid_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer, Hepatocellular_carcinoma
+
+
 
 
 ***/

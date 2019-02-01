@@ -37,7 +37,7 @@ define  FluorouracilTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Docetaxel, Fluorouracil, RT", "DocetaxelFluorouracilRT", "RT", "Docetaxel_Fluorouracil_RT"
+    "Docetaxel, Fluorouracil, RT"
 ];
 
 define final DocetaxelFluorouracilRTRegimen:
@@ -75,6 +75,8 @@ define final DocetaxelFluorouracilRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

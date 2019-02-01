@@ -51,7 +51,7 @@ define  LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MPR", "MPL"
+    "MPL", "MPR"
 ];
 
 define final MPRRegimen:
@@ -75,6 +75,8 @@ define final MPRTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_induction
+
+
 
 
 ***/

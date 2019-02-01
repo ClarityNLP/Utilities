@@ -51,7 +51,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R-FM", "R/FM", "RFM", "FMR"
+    "FMR", "R-FM", "R/FM", "RFM"
 ];
 
 define final RFMRegimen:
@@ -75,6 +75,8 @@ define final RFMTreatments:
 /***
 
 Known regimen for: Follicular_lymphoma
+
+
 
 
 ***/

@@ -73,7 +73,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "O-ESHAP", "OESHAP", "O/ESHAP"
+    "O-ESHAP", "O/ESHAP", "OESHAP"
 ];
 
 define final OESHAPRegimen:
@@ -97,6 +97,8 @@ define final OESHAPTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

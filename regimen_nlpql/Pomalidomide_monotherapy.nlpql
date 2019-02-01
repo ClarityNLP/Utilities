@@ -29,7 +29,7 @@ define final PomalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pomalidomidemonotherapy", "Pomalidomide monotherapy", "Pomalidomide", "Pomalidomide_monotherapy"
+    "Pomalidomide monotherapy"
 ];
 
 define final PomalidomidemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PomalidomidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelofibrosis, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Myelofibrosis
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  VindesineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin & Vindesine", "CisplatinVindesine", "Cisplatin_Vindesine"
+    "Cisplatin & Vindesine"
 ];
 
 define final CisplatinVindesineRegimen:
@@ -64,6 +64,8 @@ define final CisplatinVindesineTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

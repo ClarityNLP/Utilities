@@ -40,7 +40,7 @@ define  VandetanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelVandetanib", "Docetaxel_Vandetanib", "Docetaxel & Vandetanib"
+    "Docetaxel & Vandetanib"
 ];
 
 define final DocetaxelVandetanibRegimen:
@@ -64,6 +64,8 @@ define final DocetaxelVandetanibTreatments:
 /***
 
 Known regimen for: Non-small_cell_lung_cancer
+
+
 
 
 ***/

@@ -62,7 +62,7 @@ define  ZivafliberceptTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FOLFIRI_Ziv-aflibercept", "FOLFIRIZivaflibercept", "FOLFIRI & Ziv-aflibercept"
+    "FOLFIRI & Ziv-aflibercept"
 ];
 
 define final FOLFIRIZivafliberceptRegimen:
@@ -86,6 +86,8 @@ define final FOLFIRIZivafliberceptTreatments:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

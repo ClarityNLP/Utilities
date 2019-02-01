@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDAraC", "HDAC", "HiDAC"
+    "HDAC", "HDAraC", "HiDAC"
 ];
 
 define final HiDACRegimen:
@@ -46,6 +46,8 @@ define final HiDACRegimen:
 /***
 
 Known regimen for: CNS_lymphoma, Acute_myeloid_leukemia
+
+
 
 
 ***/

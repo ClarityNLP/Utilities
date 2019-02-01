@@ -29,7 +29,7 @@ define final RucaparibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Rucaparib_monotherapy", "Rucaparib", "Rucaparibmonotherapy", "Rucaparib monotherapy"
+    "Rucaparib monotherapy"
 ];
 
 define final RucaparibmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final RucaparibmonotherapyRegimen:
 /***
 
 Known regimen for: Ovarian_cancer
+
+
 
 
 ***/

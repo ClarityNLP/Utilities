@@ -29,7 +29,7 @@ define final PazopanibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pazopanib", "Pazopanib_monotherapy", "Pazopanibmonotherapy", "Pazopanib monotherapy"
+    "Pazopanib monotherapy"
 ];
 
 define final PazopanibmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PazopanibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Thyroid_cancer, Gastrointestinal_stromal_tumor, Renal_cell_carcinoma, Soft_tissue_sarcoma
+Known regimen for: Soft_tissue_sarcoma, Thyroid_cancer, Renal_cell_carcinoma, Ovarian_cancer, Gastrointestinal_stromal_tumor
+
+
 
 
 ***/

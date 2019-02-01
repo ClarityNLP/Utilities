@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TFCthenalloHSCT", "TFC, then allo HSCT", "TFC", "TFC_then_allo_HSCT"
+    "TFC", "TFC, then allo HSCT"
 ];
 
 define final TFCthenalloHSCTRegimen:
@@ -75,6 +75,8 @@ define final TFCthenalloHSCTTreatments:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

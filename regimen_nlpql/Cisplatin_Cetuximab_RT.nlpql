@@ -37,7 +37,7 @@ define  CetuximabTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin, Cetuximab, RT", "CisplatinCetuximabRT", "Cisplatin_Cetuximab_RT", "RT"
+    "Cisplatin, Cetuximab, RT"
 ];
 
 define final CisplatinCetuximabRTRegimen:
@@ -75,6 +75,8 @@ define final CisplatinCetuximabRTTreatments:
 /***
 
 Known regimen for: Head_and_neck_cancer
+
+
 
 
 ***/

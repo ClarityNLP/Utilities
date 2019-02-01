@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    "bendamustine", "bendamustine"
+    "bendamustine"
 ];
 
 define  BendamustineTreatment:
@@ -51,7 +51,7 @@ define  IbrutinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BRIbrutinib", "BR/Ibrutinib", "BR_Ibrutinib", "BR / Ibrutinib", "BR & Ibrutinib", "BR and Ibrutinib", "IBR"
+    "BR  and  Ibrutinib", "BR & Ibrutinib", "BR + Ibrutinib", "BR / Ibrutinib", "BR and Ibrutinib", "BR+Ibrutinib", "BR/Ibrutinib", "IBR"
 ];
 
 define final BRIbrutinibRegimen:
@@ -75,6 +75,8 @@ define final BRIbrutinibTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Busulfan / Melphalan", "Busulfan & Melphalan", "Busulfan and Melphalan", "BusulfanMelphalan", "Busulfan/Melphalan", "BuMel", "Busulfan_Melphalan"
+    "BuMel", "Busulfan  and  Melphalan", "Busulfan & Melphalan", "Busulfan + Melphalan", "Busulfan / Melphalan", "Busulfan and Melphalan", "Busulfan+Melphalan", "Busulfan/Melphalan"
 ];
 
 define final BusulfanMelphalanRegimen:
@@ -64,6 +64,8 @@ define final BusulfanMelphalanTreatments:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

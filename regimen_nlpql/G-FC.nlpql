@@ -51,7 +51,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "G/FC", "GFC", "G-FC"
+    "G-FC", "G/FC", "GFC"
 ];
 
 define final GFCRegimen:
@@ -75,6 +75,8 @@ define final GFCTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

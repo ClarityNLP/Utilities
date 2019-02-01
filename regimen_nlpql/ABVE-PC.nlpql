@@ -84,7 +84,7 @@ define  CyclophosphamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ABVE/PC", "ABVE-PC", "ABVEPC"
+    "ABVE-PC", "ABVE/PC", "ABVEPC"
 ];
 
 define final ABVEPCRegimen:
@@ -108,6 +108,8 @@ define final ABVEPCTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

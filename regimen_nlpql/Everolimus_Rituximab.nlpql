@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus & Rituximab", "Everolimus_Rituximab", "EverolimusRituximab"
+    "Everolimus & Rituximab"
 ];
 
 define final EverolimusRituximabRegimen:
@@ -64,6 +64,8 @@ define final EverolimusRituximabTreatments:
 /***
 
 Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final CetuximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cetuximab_monotherapy", "Cetuximab", "Cetuximabmonotherapy", "Cetuximab monotherapy"
+    "Cetuximab monotherapy"
 ];
 
 define final CetuximabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CetuximabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Esophageal_cancer, Colon_cancer_KRAS_wild-type, Cutaneous_squamous_cell_carcinoma
+Known regimen for: Colon_cancer_KRAS_wild-type, Esophageal_cancer, Cutaneous_squamous_cell_carcinoma, Head_and_neck_cancer
+
+
 
 
 ***/

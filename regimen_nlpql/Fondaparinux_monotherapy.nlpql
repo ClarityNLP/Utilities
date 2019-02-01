@@ -29,7 +29,7 @@ define final FondaparinuxTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Fondaparinux monotherapy", "Fondaparinux_monotherapy", "Fondaparinux", "Fondaparinuxmonotherapy"
+    "Fondaparinux monotherapy"
 ];
 
 define final FondaparinuxmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final FondaparinuxmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE)
+
+
 
 
 ***/

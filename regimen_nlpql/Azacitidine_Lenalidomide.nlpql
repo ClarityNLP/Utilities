@@ -40,7 +40,7 @@ define  LenalidomideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine_Lenalidomide", "AzacitidineLenalidomide", "Azacitidine & Lenalidomide"
+    "Azacitidine & Lenalidomide"
 ];
 
 define final AzacitidineLenalidomideRegimen:
@@ -63,7 +63,9 @@ define final AzacitidineLenalidomideTreatments:
 // Comments
 /***
 
-Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome
+Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia
+
+
 
 
 ***/

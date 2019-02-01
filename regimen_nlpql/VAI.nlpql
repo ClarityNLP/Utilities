@@ -51,7 +51,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "VAI", "IVA"
+    "IVA", "VAI"
 ];
 
 define final VAIRegimen:
@@ -74,7 +74,9 @@ define final VAITreatments:
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Rhabdomyosarcoma
+Known regimen for: Rhabdomyosarcoma, Ewings_sarcoma
+
+
 
 
 ***/

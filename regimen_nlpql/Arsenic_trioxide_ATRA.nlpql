@@ -40,7 +40,7 @@ define  AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Arsenic_trioxide_ATRA", "ArsenictrioxideATRA", "Arsenic trioxide & ATRA"
+    "Arsenic trioxide & ATRA"
 ];
 
 define final ArsenictrioxideATRARegimen:
@@ -64,6 +64,8 @@ define final ArsenictrioxideATRATreatments:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

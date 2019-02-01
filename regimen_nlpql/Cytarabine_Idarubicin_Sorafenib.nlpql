@@ -51,7 +51,7 @@ define  SorafenibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine_Idarubicin_Sorafenib", "Cytarabine, Idarubicin, Sorafenib", "CytarabineIdarubicinSorafenib"
+    "Cytarabine, Idarubicin, Sorafenib"
 ];
 
 define final CytarabineIdarubicinSorafenibRegimen:
@@ -75,6 +75,8 @@ define final CytarabineIdarubicinSorafenibTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

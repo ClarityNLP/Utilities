@@ -29,7 +29,7 @@ define final CladribineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cladribine monotherapy", "Cladribine", "Cladribine_monotherapy", "Cladribinemonotherapy"
+    "Cladribine monotherapy"
 ];
 
 define final CladribinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CladribinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Langerhans_cell_histiocytosis, Systemic_mastocytosis, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Marginal_zone_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Systemic_mastocytosis, Chronic_lymphocytic_leukemia_(CLLSLL), Hairy_cell_leukemia, Marginal_zone_lymphoma, Langerhans_cell_histiocytosis
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ThalidomideRituximab", "Thalidomide_Rituximab", "Thalidomide & Rituximab"
+    "Thalidomide & Rituximab"
 ];
 
 define final ThalidomideRituximabRegimen:
@@ -64,6 +64,8 @@ define final ThalidomideRituximabTreatments:
 /***
 
 Known regimen for: Waldenstrom_macroglobulinemia
+
+
 
 
 ***/

@@ -73,7 +73,7 @@ define  EverolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CHOP / Everolimus", "CHOP_Everolimus", "CHOP/Everolimus", "CHOPEverolimus", "CHOP & Everolimus", "CHOP and Everolimus"
+    "CHOP  and  Everolimus", "CHOP & Everolimus", "CHOP + Everolimus", "CHOP / Everolimus", "CHOP and Everolimus", "CHOP+Everolimus", "CHOP/Everolimus"
 ];
 
 define final CHOPEverolimusRegimen:
@@ -97,6 +97,8 @@ define final CHOPEverolimusTreatments:
 /***
 
 Known regimen for: Peripheral_T-cell_lymphoma
+
+
 
 
 ***/

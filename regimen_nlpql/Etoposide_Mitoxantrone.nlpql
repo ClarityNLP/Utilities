@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Etoposide_Mitoxantrone", "Etoposide & Mitoxantrone", "EtoposideMitoxantrone"
+    "Etoposide & Mitoxantrone"
 ];
 
 define final EtoposideMitoxantroneRegimen:
@@ -64,6 +64,8 @@ define final EtoposideMitoxantroneTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

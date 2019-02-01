@@ -40,7 +40,7 @@ define  NivolumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Brentuximab_vedotin_Nivolumab", "Brentuximab vedotin & Nivolumab", "BrentuximabvedotinNivolumab"
+    "Brentuximab vedotin & Nivolumab"
 ];
 
 define final BrentuximabvedotinNivolumabRegimen:
@@ -64,6 +64,8 @@ define final BrentuximabvedotinNivolumabTreatments:
 /***
 
 Known regimen for: Hodgkin_lymphoma
+
+
 
 
 ***/

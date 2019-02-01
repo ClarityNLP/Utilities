@@ -62,7 +62,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CLAG/M", "CLAGM", "CLAG-M"
+    "CLAG-M", "CLAG/M", "CLAGM"
 ];
 
 define final CLAGMRegimen:
@@ -86,6 +86,8 @@ define final CLAGMTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  IbritumomabtiuxetanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Ibritumomabtiuxetanmonotherapy", "Ibritumomab tiuxetan", "Ibritumomab tiuxetan monotherapy", "Ibritumomab_tiuxetan_monotherapy"
+    "Ibritumomab tiuxetan monotherapy"
 ];
 
 define final IbritumomabtiuxetanmonotherapyRegimen:
@@ -63,7 +63,9 @@ define final IbritumomabtiuxetanmonotherapyTreatments:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma
+
+
 
 
 ***/

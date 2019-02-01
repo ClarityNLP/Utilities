@@ -29,7 +29,7 @@ define final PaclitaxelnanoparticlealbuminboundTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Paclitaxelnanoparticlealbuminboundmonotherapy", "Paclitaxel_nanoparticle_albumin-bound_monotherapy", "Paclitaxel, nanoparticle albumin-bound monotherapy", "Paclitaxel, nanoparticle albumin-bound"
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
 ];
 
 define final PaclitaxelnanoparticlealbuminboundmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PaclitaxelnanoparticlealbuminboundmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Breast_cancer, Melanoma, Bladder_cancer, Pancreatic_cancer, Gastric_cancer
+Known regimen for: Pancreatic_cancer, Bladder_cancer, Ovarian_cancer, Gastric_cancer, Melanoma, Breast_cancer
+
+
 
 
 ***/

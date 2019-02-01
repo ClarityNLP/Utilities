@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinEtoposide", "Cisplatin_Etoposide", "Cisplatin & Etoposide"
+    "Cisplatin & Etoposide"
 ];
 
 define final CisplatinEtoposideRegimen:
@@ -63,7 +63,9 @@ define final CisplatinEtoposideTreatments:
 // Comments
 /***
 
-Known regimen for: Low-grade_glioma, Small_cell_lung_cancer, Testicular_cancer, Thymoma, Esophageal_cancer, Non-small_cell_lung_cancer
+Known regimen for: Esophageal_cancer, Low-grade_glioma, Testicular_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Thymoma
+
+
 
 
 ***/

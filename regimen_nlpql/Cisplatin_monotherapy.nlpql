@@ -29,7 +29,7 @@ define final CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatinmonotherapy", "Cisplatin", "Cisplatin_monotherapy", "Cisplatin monotherapy"
+    "Cisplatin monotherapy"
 ];
 
 define final CisplatinmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final CisplatinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Breast_cancer_triple_negative, Mesothelioma, Adenocarcinoma_of_unknown_primary, Head_and_neck_cancer, Cervical_cancer, Hepatoblastoma, Bladder_cancer, Soft_tissue_sarcoma
+Known regimen for: Soft_tissue_sarcoma, Bladder_cancer, Adenocarcinoma_of_unknown_primary, Breast_cancer_triple_negative, Mesothelioma, Cervical_cancer, Head_and_neck_cancer, Hepatoblastoma
+
+
 
 
 ***/

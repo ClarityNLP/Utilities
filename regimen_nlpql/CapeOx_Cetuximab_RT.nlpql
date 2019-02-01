@@ -48,7 +48,7 @@ define  CetuximabTreatment:
 
         
 termset TreatmentTerms3:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -62,7 +62,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CapeOx_Cetuximab_RT", "CapeOX, Cetuximab, RT", "CapeOX_Cetuximab_RT", "CapeOxCetuximabRT", "CapeOXCetuximabRT", "CapeOx, Cetuximab, RT"
+    "CapeOX, Cetuximab, RT", "CapeOx, Cetuximab, RT"
 ];
 
 define final CapeOxCetuximabRTRegimen:
@@ -86,6 +86,8 @@ define final CapeOxCetuximabRTTreatments:
 /***
 
 Known regimen for: Rectal_cancer
+
+
 
 
 ***/

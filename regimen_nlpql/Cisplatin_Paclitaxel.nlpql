@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinPaclitaxel", "Cisplatin & Paclitaxel", "Cisplatin_Paclitaxel"
+    "Cisplatin & Paclitaxel"
 ];
 
 define final CisplatinPaclitaxelRegimen:
@@ -63,7 +63,9 @@ define final CisplatinPaclitaxelTreatments:
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Cutaneous_basal_cell_carcinoma, Head_and_neck_cancer, Endometrial_cancer, Cervical_cancer, Esophageal_cancer, Non-small_cell_lung_cancer
+Known regimen for: Esophageal_cancer, Cutaneous_basal_cell_carcinoma, Non-small_cell_lung_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, Head_and_neck_cancer
+
+
 
 
 ***/

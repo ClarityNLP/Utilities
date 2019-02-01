@@ -29,7 +29,7 @@ define final FloxuridineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hepatic arterial chemotherapy", "Hepaticarterialchemotherapy", "Hepatic_arterial_chemotherapy"
+    "Hepatic arterial chemotherapy"
 ];
 
 define final HepaticarterialchemotherapyRegimen:
@@ -46,6 +46,8 @@ define final HepaticarterialchemotherapyRegimen:
 /***
 
 Known regimen for: Colon_cancer
+
+
 
 
 ***/

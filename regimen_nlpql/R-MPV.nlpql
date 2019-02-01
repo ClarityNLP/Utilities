@@ -62,7 +62,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RMPV", "R/MPV", "R-MPV"
+    "R-MPV", "R/MPV", "RMPV"
 ];
 
 define final RMPVRegimen:
@@ -86,6 +86,8 @@ define final RMPVTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

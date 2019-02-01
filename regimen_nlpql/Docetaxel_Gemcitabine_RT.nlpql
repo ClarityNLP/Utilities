@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "DocetaxelGemcitabineRT", "RT", "Docetaxel_Gemcitabine_RT", "Docetaxel, Gemcitabine, RT"
+    "Docetaxel, Gemcitabine, RT"
 ];
 
 define final DocetaxelGemcitabineRTRegimen:
@@ -64,6 +64,8 @@ define final DocetaxelGemcitabineRTTreatments:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

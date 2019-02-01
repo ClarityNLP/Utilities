@@ -62,7 +62,7 @@ define  TrastuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FEC / H", "FEC & H", "FECH", "FEC_H", "FEC and H", "FEC/H"
+    "FEC  and  H", "FEC & H", "FEC + H", "FEC / H", "FEC and H", "FEC+H", "FEC/H", "FECH"
 ];
 
 define final FECHRegimen:
@@ -86,6 +86,8 @@ define final FECHTreatments:
 /***
 
 Known regimen for: Breast_cancer_HER2-positive
+
+
 
 
 ***/

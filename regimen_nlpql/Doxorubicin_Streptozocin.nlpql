@@ -40,7 +40,7 @@ define  StreptozocinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_Streptozocin", "Doxorubicin & Streptozocin", "DoxorubicinStreptozocin"
+    "Doxorubicin & Streptozocin"
 ];
 
 define final DoxorubicinStreptozocinRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinStreptozocinTreatments:
 /***
 
 Known regimen for: Pancreatic_NET
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final SirolimusTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Sirolimusmonotherapy", "Sirolimus monotherapy", "Sirolimus", "Sirolimus_monotherapy"
+    "Sirolimus monotherapy"
 ];
 
 define final SirolimusmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final SirolimusmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Castleman_disease, Autoimmune_cytopenias
+Known regimen for: Autoimmune_cytopenias, Castleman_disease
+
+
 
 
 ***/

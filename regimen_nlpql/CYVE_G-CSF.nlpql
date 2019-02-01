@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CYVE / G-CSF", "CYVE & G/CSF", "CYVE & GCSF", "CYVE/G-CSF", "CYVE and G-CSF", "CYVEGCSF", "CYVE_G-CSF", "CYVE & G-CSF"
+    "CYVE  and  G-CSF", "CYVE & G-CSF", "CYVE + G-CSF", "CYVE / G-CSF", "CYVE and G-CSF", "CYVE+G-CSF", "CYVE/G-CSF"
 ];
 
 define final CYVEGCSFRegimen:
@@ -64,6 +64,8 @@ define final CYVEGCSFTreatments:
 /***
 
 Known regimen for: Stem_cell_mobilization
+
+
 
 
 ***/

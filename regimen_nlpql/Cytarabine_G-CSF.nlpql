@@ -29,7 +29,7 @@ define final CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine/G-CSF", "Cytarabine & GCSF", "Cytarabine and G-CSF", "Cytarabine & G-CSF", "Cytarabine_G-CSF", "Cytarabine / G-CSF", "CytarabineGCSF", "Cytarabine & G/CSF"
+    "Cytarabine  and  G-CSF", "Cytarabine & G-CSF", "Cytarabine + G-CSF", "Cytarabine / G-CSF", "Cytarabine and G-CSF", "Cytarabine+G-CSF", "Cytarabine/G-CSF"
 ];
 
 define final CytarabineGCSFRegimen:
@@ -46,6 +46,8 @@ define final CytarabineGCSFRegimen:
 /***
 
 Known regimen for: Stem_cell_mobilization
+
+
 
 
 ***/

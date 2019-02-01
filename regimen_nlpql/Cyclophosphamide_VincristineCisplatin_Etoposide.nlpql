@@ -40,7 +40,7 @@ define  VincristineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CyclophosphamideVincristineCisplatinEtoposide", "Cyclophosphamide & Vincristine/Cisplatin & Etoposide", "Cyclophosphamide_VincristineCisplatin_Etoposide"
+    "Cyclophosphamide & Vincristine/Cisplatin & Etoposide"
 ];
 
 define final CyclophosphamideVincristineCisplatinEtoposideRegimen:
@@ -64,6 +64,8 @@ define final CyclophosphamideVincristineCisplatinEtoposideTreatments:
 /***
 
 Known regimen for: Medulloblastoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  FludarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "BuFlu", "Busulfan & Fludarabine", "BusulfanFludarabine", "Flu/Bu", "FluBu", "Busulfan_Fludarabine"
+    "BuFlu", "Busulfan & Fludarabine", "Flu/Bu", "FluBu"
 ];
 
 define final BusulfanFludarabineRegimen:
@@ -64,6 +64,8 @@ define final BusulfanFludarabineTreatments:
 /***
 
 Known regimen for: Allogeneic_HSCT
+
+
 
 
 ***/

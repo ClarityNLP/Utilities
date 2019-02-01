@@ -29,7 +29,7 @@ define final PanitumumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Panitumumab_monotherapy", "Panitumumab monotherapy", "Panitumumabmonotherapy", "Panitumumab"
+    "Panitumumab monotherapy"
 ];
 
 define final PanitumumabmonotherapyRegimen:
@@ -45,7 +45,9 @@ define final PanitumumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Penile_cancer, Colon_cancer_KRAS_wild-type
+Known regimen for: Colon_cancer_KRAS_wild-type, Penile_cancer
+
+
 
 
 ***/

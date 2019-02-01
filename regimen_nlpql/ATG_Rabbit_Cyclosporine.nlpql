@@ -26,7 +26,7 @@ define  AntithymocyteglobulinrabbitATGTreatment:
 
         
 termset TreatmentTerms1:[
-    ":category:cyclosporines", ":category:cyclosporines"
+    ":category:cyclosporines"
 ];
 
 define  CategoryCyclosporinesTreatment:
@@ -40,7 +40,7 @@ define  CategoryCyclosporinesTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATGRabbitCyclosporine", "ATG (Rabbit) & Cyclosporine", "ATG_Rabbit_Cyclosporine"
+    "ATG (Rabbit) & Cyclosporine"
 ];
 
 define final ATGRabbitCyclosporineRegimen:
@@ -64,6 +64,8 @@ define final ATGRabbitCyclosporineTreatments:
 /***
 
 Known regimen for: Aplastic_anemia
+
+
 
 
 ***/

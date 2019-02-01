@@ -29,7 +29,7 @@ define final LepirudinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Lepirudinmonotherapy", "Lepirudin monotherapy", "Lepirudin", "Lepirudin_monotherapy"
+    "Lepirudin monotherapy"
 ];
 
 define final LepirudinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final LepirudinmonotherapyRegimen:
 /***
 
 Known regimen for: Venous_thromboembolism_(VTE), Heparin-induced_thrombocytopenia_(HIT)
+
+
 
 
 ***/

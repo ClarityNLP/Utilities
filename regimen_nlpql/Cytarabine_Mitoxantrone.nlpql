@@ -40,7 +40,7 @@ define  MitoxantroneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MIDAC", "Cytarabine & Mitoxantrone", "Cytarabine_Mitoxantrone", "CytarabineMitoxantrone"
+    "Cytarabine & Mitoxantrone", "MIDAC"
 ];
 
 define final CytarabineMitoxantroneRegimen:
@@ -64,6 +64,8 @@ define final CytarabineMitoxantroneTreatments:
 /***
 
 Known regimen for: Acute_myeloid_leukemia
+
+
 
 
 ***/

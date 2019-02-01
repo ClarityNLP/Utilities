@@ -73,7 +73,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/CDOP", "DRCOP", "R-CDOP", "RCDOP"
+    "DRCOP", "R-CDOP", "R/CDOP", "RCDOP"
 ];
 
 define final RCDOPRegimen:
@@ -97,6 +97,8 @@ define final RCDOPTreatments:
 /***
 
 Known regimen for: HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final PirarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Pirarubicin monotherapy", "Pirarubicinmonotherapy", "Pirarubicin_monotherapy", "Pirarubicin"
+    "Pirarubicin monotherapy"
 ];
 
 define final PirarubicinmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final PirarubicinmonotherapyRegimen:
 /***
 
 Known regimen for: Bladder_cancer
+
+
 
 
 ***/

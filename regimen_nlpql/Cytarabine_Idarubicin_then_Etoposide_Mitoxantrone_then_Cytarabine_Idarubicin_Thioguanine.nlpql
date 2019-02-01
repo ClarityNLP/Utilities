@@ -40,7 +40,7 @@ define  IdarubicinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine", "CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine", "Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine"
+    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine"
 ];
 
 define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanineRegimen:
@@ -64,6 +64,8 @@ define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubic
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

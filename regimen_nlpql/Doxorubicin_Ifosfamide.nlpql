@@ -40,7 +40,7 @@ define  IfosfamideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Doxorubicin_Ifosfamide", "Doxorubicin & Ifosfamide", "AIM", "DoxorubicinIfosfamide"
+    "AIM", "Doxorubicin & Ifosfamide"
 ];
 
 define final DoxorubicinIfosfamideRegimen:
@@ -64,6 +64,8 @@ define final DoxorubicinIfosfamideTreatments:
 /***
 
 Known regimen for: Soft_tissue_sarcoma
+
+
 
 
 ***/

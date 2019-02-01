@@ -40,7 +40,7 @@ define  GemcitabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Erlotinib_Gemcitabine", "Erlotinib & Gemcitabine", "ErlotinibGemcitabine"
+    "Erlotinib & Gemcitabine"
 ];
 
 define final ErlotinibGemcitabineRegimen:
@@ -64,6 +64,8 @@ define final ErlotinibGemcitabineTreatments:
 /***
 
 Known regimen for: Pancreatic_cancer
+
+
 
 
 ***/

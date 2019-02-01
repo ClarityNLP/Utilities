@@ -51,7 +51,7 @@ define  ProcarbazineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/MP", "RMP", "R-MP"
+    "R-MP", "R/MP", "RMP"
 ];
 
 define final RMPRegimen:
@@ -75,6 +75,8 @@ define final RMPTreatments:
 /***
 
 Known regimen for: CNS_lymphoma
+
+
 
 
 ***/

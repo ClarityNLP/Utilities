@@ -40,7 +40,7 @@ define  CytarabineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "R/HiDAC", "R-HiDAC", "RHiDAC"
+    "R-HiDAC", "R/HiDAC", "RHiDAC"
 ];
 
 define final RHiDACRegimen:
@@ -64,6 +64,8 @@ define final RHiDACTreatments:
 /***
 
 Known regimen for: Mantle_cell_lymphoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "HDMPR", "HDMP/R", "HDMP-R"
+    "HDMP-R", "HDMP/R", "HDMPR"
 ];
 
 define final HDMPRRegimen:
@@ -64,6 +64,8 @@ define final HDMPRTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

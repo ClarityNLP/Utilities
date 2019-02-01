@@ -29,7 +29,7 @@ define final MelphalanTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Melphalanmonotherapy", "Melphalan_monotherapy", "Melphalan monotherapy", "Melphalan"
+    "Melphalan monotherapy"
 ];
 
 define final MelphalanmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final MelphalanmonotherapyRegimen:
 /***
 
 Known regimen for: Autologous_HSCT
+
+
 
 
 ***/

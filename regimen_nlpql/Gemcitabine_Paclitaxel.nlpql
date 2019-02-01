@@ -40,7 +40,7 @@ define  PaclitaxelTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Gemcitabine & Paclitaxel", "Gemcitabine_Paclitaxel", "GemcitabinePaclitaxel"
+    "Gemcitabine & Paclitaxel"
 ];
 
 define final GemcitabinePaclitaxelRegimen:
@@ -63,7 +63,9 @@ define final GemcitabinePaclitaxelTreatments:
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Testicular_cancer, Non-small_cell_lung_cancer
+Known regimen for: Testicular_cancer, Non-small_cell_lung_cancer, Bladder_cancer
+
+
 
 
 ***/

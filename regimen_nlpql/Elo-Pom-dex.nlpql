@@ -73,7 +73,7 @@ define  ElotuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Elo/Pom/dex", "EloPomdex", "Elo-Pom-dex"
+    "Elo-Pom-dex"
 ];
 
 define final EloPomdexRegimen:
@@ -97,6 +97,8 @@ define final EloPomdexTreatments:
 /***
 
 Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
 
 
 ***/

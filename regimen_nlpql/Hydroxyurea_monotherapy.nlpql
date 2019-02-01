@@ -29,7 +29,7 @@ define final HydroxyureaTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Hydroxyurea monotherapy", "Hydroxyurea_monotherapy", "Hydroxyurea", "Hydroxyureamonotherapy"
+    "Hydroxyurea monotherapy"
 ];
 
 define final HydroxyureamonotherapyRegimen:
@@ -45,7 +45,9 @@ define final HydroxyureamonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hypereosinophilic_syndrome, Essential_thrombocythemia, Glioblastoma, Polycythemia_vera, Sickle_cell_anemia
+Known regimen for: Sickle_cell_anemia, Hypereosinophilic_syndrome, Polycythemia_vera, Glioblastoma, Essential_thrombocythemia
+
+
 
 
 ***/

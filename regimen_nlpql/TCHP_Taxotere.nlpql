@@ -62,7 +62,7 @@ define  PertuzumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "TCHP (Taxotere)", "TCHP", "TCHPTaxotere", "TCHP_Taxotere"
+    "TCHP", "TCHP (Taxotere)"
 ];
 
 define final TCHPTaxotereRegimen:
@@ -86,6 +86,8 @@ define final TCHPTaxotereTreatments:
 /***
 
 Known regimen for: Breast_cancer_HER2-positive
+
+
 
 
 ***/

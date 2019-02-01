@@ -37,7 +37,7 @@ define  VinorelbineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cisplatin_Vinorelbine_RT", "Cisplatin, Vinorelbine, RT", "RT", "CisplatinVinorelbineRT"
+    "Cisplatin, Vinorelbine, RT"
 ];
 
 define final CisplatinVinorelbineRTRegimen:
@@ -75,6 +75,8 @@ define final CisplatinVinorelbineRTTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/

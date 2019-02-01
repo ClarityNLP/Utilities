@@ -29,7 +29,7 @@ define final AlltransretinoicacidTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ATRAmonotherapy", "ATRA monotherapy", "ATRA_monotherapy", "ATRA"
+    "ATRA monotherapy"
 ];
 
 define final ATRAmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final ATRAmonotherapyRegimen:
 /***
 
 Known regimen for: Acute_promyelocytic_leukemia
+
+
 
 
 ***/

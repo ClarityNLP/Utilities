@@ -51,7 +51,7 @@ define  TocilizumabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MethotrexateTacrolimusTocilizumab", "Methotrexate_Tacrolimus_Tocilizumab", "Methotrexate, Tacrolimus, Tocilizumab"
+    "Methotrexate, Tacrolimus, Tocilizumab"
 ];
 
 define final MethotrexateTacrolimusTocilizumabRegimen:
@@ -75,6 +75,8 @@ define final MethotrexateTacrolimusTocilizumabTreatments:
 /***
 
 Known regimen for: Graft_versus_host_disease_(GVHD)
+
+
 
 
 ***/

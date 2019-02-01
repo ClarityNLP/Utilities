@@ -15,7 +15,7 @@ documentset Docs:
 // Medication(s) inclusion criteria termset, if medication criteria present
 
 termset TreatmentTerms0:[
-    ":category:cyclosporines", ":category:cyclosporines"
+    ":category:cyclosporines"
 ];
 
 define  CategoryCyclosporinesTreatment:
@@ -40,7 +40,7 @@ define  PrednisoneTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclosporine_Prednisone", "CyclosporinePrednisone", "Cyclosporine & Prednisone"
+    "Cyclosporine & Prednisone"
 ];
 
 define final CyclosporinePrednisoneRegimen:
@@ -64,6 +64,8 @@ define final CyclosporinePrednisoneTreatments:
 /***
 
 Known regimen for: Graft_versus_host_disease_(GVHD)
+
+
 
 
 ***/

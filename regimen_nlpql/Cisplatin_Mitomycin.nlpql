@@ -40,7 +40,7 @@ define  MitomycinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "CisplatinMitomycin", "Cisplatin_Mitomycin", "Cisplatin & Mitomycin"
+    "Cisplatin & Mitomycin"
 ];
 
 define final CisplatinMitomycinRegimen:
@@ -64,6 +64,8 @@ define final CisplatinMitomycinTreatments:
 /***
 
 Known regimen for: Cervical_cancer
+
+
 
 
 ***/

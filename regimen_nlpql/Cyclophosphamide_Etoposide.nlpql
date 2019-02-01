@@ -40,7 +40,7 @@ define  EtoposideTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Cyclophosphamide & Etoposide", "CyclophosphamideEtoposide", "Cyclophosphamide_Etoposide"
+    "Cyclophosphamide & Etoposide"
 ];
 
 define final CyclophosphamideEtoposideRegimen:
@@ -64,6 +64,8 @@ define final CyclophosphamideEtoposideTreatments:
 /***
 
 Known regimen for: Osteosarcoma
+
+
 
 
 ***/

@@ -29,7 +29,7 @@ define final AzacitidineTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Azacitidine", "Azacitidine_monotherapy", "Azacitidinemonotherapy", "Azacitidine monotherapy"
+    "Azacitidine monotherapy"
 ];
 
 define final AzacitidinemonotherapyRegimen:
@@ -45,7 +45,9 @@ define final AzacitidinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome, Acute_myeloid_leukemia
+Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia, Acute_myeloid_leukemia
+
+
 
 
 ***/

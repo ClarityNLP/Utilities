@@ -40,7 +40,7 @@ define  StreptozocinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "FluorouracilStreptozocin", "Fluorouracil & Streptozocin", "Fluorouracil_Streptozocin"
+    "Fluorouracil & Streptozocin"
 ];
 
 define final FluorouracilStreptozocinRegimen:
@@ -63,7 +63,9 @@ define final FluorouracilStreptozocinTreatments:
 // Comments
 /***
 
-Known regimen for: Neuroendocrine_tumors, Pancreatic_NET
+Known regimen for: Pancreatic_NET, Neuroendocrine_tumors
+
+
 
 
 ***/

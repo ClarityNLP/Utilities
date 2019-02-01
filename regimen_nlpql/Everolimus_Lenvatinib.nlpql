@@ -40,7 +40,7 @@ define  LenvatinibTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "Everolimus & Lenvatinib", "Everolimus_Lenvatinib", "EverolimusLenvatinib"
+    "Everolimus & Lenvatinib"
 ];
 
 define final EverolimusLenvatinibRegimen:
@@ -64,6 +64,8 @@ define final EverolimusLenvatinibTreatments:
 /***
 
 Known regimen for: Renal_cell_carcinoma
+
+
 
 
 ***/

@@ -40,7 +40,7 @@ define  RituximabTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "IdelalisibRituximab", "Idelalisib_Rituximab", "Idelalisib & Rituximab"
+    "Idelalisib & Rituximab"
 ];
 
 define final IdelalisibRituximabRegimen:
@@ -64,6 +64,8 @@ define final IdelalisibRituximabTreatments:
 /***
 
 Known regimen for: Chronic_lymphocytic_leukemia_(CLLSLL)
+
+
 
 
 ***/

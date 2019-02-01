@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "MVAC, dosedense", "MVAC_dose-dense", "MVAC, dose-dense", "MVAC, dose/dense", "ddMVAC", "MVACdosedense", "AMVAC"
+    "AMVAC", "MVAC, dose-dense", "ddMVAC"
 ];
 
 define final MVACdosedenseRegimen:
@@ -86,6 +86,8 @@ define final MVACdosedenseTreatments:
 /***
 
 Known regimen for: Bladder_cancer
+
+
 
 
 ***/

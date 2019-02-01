@@ -29,7 +29,7 @@ define final TegafuranduracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "UFT monotherapy", "UFT_monotherapy", "UFT", "UFTmonotherapy"
+    "UFT monotherapy"
 ];
 
 define final UFTmonotherapyRegimen:
@@ -46,6 +46,8 @@ define final UFTmonotherapyRegimen:
 /***
 
 Known regimen for: Rectal_cancer
+
+
 
 
 ***/

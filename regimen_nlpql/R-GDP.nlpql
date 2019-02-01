@@ -62,7 +62,7 @@ define  CisplatinTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "RGDP", "R-GDP", "R/GDP"
+    "R-GDP", "R/GDP", "RGDP"
 ];
 
 define final RGDPRegimen:
@@ -85,7 +85,9 @@ define final RGDPTreatments:
 // Comments
 /***
 
-Known regimen for: Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
+Known regimen for: Transformed_lymphoma, Primary_mediastinal_B-cell_lymphoma
+
+
 
 
 ***/

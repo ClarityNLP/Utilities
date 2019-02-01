@@ -37,7 +37,7 @@ define  CytarabineTreatment:
 
         
 termset TreatmentTerms2:[
-    "external beam radiotherapy", "external beam radiotherapy"
+    "external beam radiotherapy"
 ];
 
 define  ExternalbeamradiotherapyTreatment:
@@ -51,7 +51,7 @@ define  ExternalbeamradiotherapyTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ITCytarabineMethotrexateWBRT", "Cytarabine_Methotrexate_WBRT", "IT Cytarabine, Methotrexate, WBRT", "CytarabineMethotrexateWBRT", "Cytarabine, Methotrexate, WBRT", "IT_Cytarabine_Methotrexate_WBRT"
+    "Cytarabine, Methotrexate, WBRT", "IT Cytarabine, Methotrexate, WBRT"
 ];
 
 define final ITCytarabineMethotrexateWBRTRegimen:
@@ -75,6 +75,8 @@ define final ITCytarabineMethotrexateWBRTTreatments:
 /***
 
 Known regimen for: CNS_leukemia
+
+
 
 
 ***/

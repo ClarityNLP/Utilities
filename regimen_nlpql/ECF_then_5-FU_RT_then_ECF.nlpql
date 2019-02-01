@@ -51,7 +51,7 @@ define  FluorouracilTreatment:
 // Regimen names
 
 termset RegimenTerms:[
-    "ECF, then 5-FU & RT, then ECF", "ECFthen5FURTthenECF", "ECF_then_5-FU_RT_then_ECF"
+    "ECF, then 5-FU & RT, then ECF"
 ];
 
 define final ECFthen5FURTthenECFRegimen:
@@ -75,6 +75,8 @@ define final ECFthen5FURTthenECFTreatments:
 /***
 
 Known regimen for: Esophageal_cancer
+
+
 
 
 ***/
