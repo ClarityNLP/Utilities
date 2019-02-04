@@ -170,7 +170,7 @@ def safe_name(name, no_punc=False):
     return txt
 
 
-def generate_nlpql(treatments):
+def generate_regiment_nlpql(treatments):
     # 'drugs': cn.drugs,
     # 'brands': cn.brands,
     # 'regimen': cn.regimen,
@@ -406,6 +406,6 @@ if __name__ == "__main__":
                 print(e)
 
     if len(treatment_map.items()) > 0:
-        generate_nlpql(treatment_map)
+        generate_regiment_nlpql(treatment_map)
         with open('./tree.json', 'w') as json_file:
             json_file.write(json.dumps(treatment_map, indent=4, sort_keys=True))
