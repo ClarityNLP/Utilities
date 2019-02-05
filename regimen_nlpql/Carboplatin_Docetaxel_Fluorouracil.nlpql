@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Docetaxel_Fluorouracil:[
     "Carboplatin, Docetaxel, Fluorouracil"
 ];
 
-define final CarboplatinDocetaxelFluorouracilRegimen:
+define final Regimen_Carboplatin_Docetaxel_Fluorouracil:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Docetaxel_Fluorouracil],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinDocetaxelFluorouracilRegimen:
 // Results
 
         
-define final CarboplatinDocetaxelFluorouracilTreatments:
-    where CarboplatinTreatment AND DocetaxelTreatment AND FluorouracilTreatment;
+define final Treatment__CarboplatinDocetaxelFluorouracil:
+    where Carboplatin_Treatment AND Docetaxel_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinDocetaxelFluorouracil AND Carboplatin_Docetaxel_Fluorouracil_Regimen;
         
         
 

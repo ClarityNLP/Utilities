@@ -14,57 +14,57 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "ifex", "ifosfamide"
 ];
 
-define  IfosfamideTreatment:
+define  Ifosfamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "elspar", "asparaginase"
 ];
 
-define  AsparaginaseTreatment:
+define  Asparaginase_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
@@ -72,13 +72,13 @@ define  EtoposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_SMILE:[
     "SMILE"
 ];
 
-define final SMILERegimen:
+define final Regimen_SMILE:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_SMILE],
     documentset:[Docs]
    }); 
 
@@ -86,10 +86,11 @@ define final SMILERegimen:
 // Results
 
         
-define final SMILETreatments:
-    where DexamethasoneTreatment AND MethotrexateTreatment AND IfosfamideTreatment AND AsparaginaseTreatment AND EtoposideTreatment;
+define final Treatment__SMILE:
+    where Dexamethasone_Treatment AND Methotrexate_Treatment AND Ifosfamide_Treatment AND Asparaginase_Treatment AND Etoposide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__SMILE AND SMILE_Regimen;
         
         
 

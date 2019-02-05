@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for Elo-Pom-dex" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "empliciti", "elotuzumab"
+];
+
+define  Elotuzumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "pomalyst", "pomalidomide"
+];
+
+define  Pomalidomide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "empliciti", "elotuzumab"
+];
+
+define  Elotuzumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "empliciti", "elotuzumab"
+];
+
+define  Elotuzumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Elo_Pom_dex:[
+    "Elo-Pom-dex"
+];
+
+define final Regimen_Elo_Pom_dex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Elo_Pom_dex],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__EloPomdex:
+    where Elotuzumab_Treatment AND Pomalidomide_Treatment AND Dexamethasone_Treatment AND Elotuzumab_Treatment AND Elotuzumab_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__EloPomdex AND Elo_Pom_dex_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
+
+
+***/
+ 

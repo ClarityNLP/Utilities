@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to BRAF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_braf:[
+    "braf"
+];
+
+define final Condition_braf:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_braf],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dabrafenib_Trametinib:[
+    "Dabrafenib & Trametinib"
+];
+
+define   Regimen_Dabrafenib_Trametinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dabrafenib_Trametinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vemurafenib_monotherapy:[
+    "Vemurafenib monotherapy"
+];
+
+define   Regimen_Vemurafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vemurafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_braf:
+    where Dabrafenib_Trametinib_Regimen OR Vemurafenib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_braf AND braf_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

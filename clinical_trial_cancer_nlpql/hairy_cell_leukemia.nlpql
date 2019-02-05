@@ -1,0 +1,133 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Hairy cell leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hairy_cell_leukemia:[
+    "hcl", "leukemic reticuloendotheliosis", "hairy cell leukemia"
+];
+
+define final Condition_hairy_cell_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hairy_cell_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vemurafenib_monotherapy:[
+    "Vemurafenib monotherapy"
+];
+
+define   Regimen_Vemurafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vemurafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR:[
+    "BR", "R-B", "R/B"
+];
+
+define   Regimen_BR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cladribine_monotherapy:[
+    "Cladribine monotherapy"
+];
+
+define   Regimen_Cladribine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cladribine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_monotherapy:[
+    "Interferon alfa monotherapy"
+];
+
+define   Regimen_Interferon_alfa_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cladribine_Rituximab:[
+    "Cladribine & Rituximab"
+];
+
+define   Regimen_Cladribine_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cladribine_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pentostatin_monotherapy:[
+    "Pentostatin monotherapy"
+];
+
+define   Regimen_Pentostatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pentostatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Moxetumomab_pasudotox_monotherapy:[
+    "Moxetumomab pasudotox monotherapy"
+];
+
+define   Regimen_Moxetumomab_pasudotox_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Moxetumomab_pasudotox_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hairy_cell_leukemia:
+    where Rituximab_monotherapy_Regimen OR Vemurafenib_monotherapy_Regimen OR BR_Regimen OR Cladribine_monotherapy_Regimen OR Interferon_alfa_monotherapy_Regimen OR Cladribine_Rituximab_Regimen OR Pentostatin_monotherapy_Regimen OR Moxetumomab_pasudotox_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hairy_cell_leukemia AND hairy_cell_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

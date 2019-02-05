@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ellence", "epirubicin"
 ];
 
-define final EpirubicinTreatment:
+define final Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final EpirubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Epirubicin_monotherapy:[
     "Epirubicin monotherapy"
 ];
 
-define final EpirubicinmonotherapyRegimen:
+define final Regimen_Epirubicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Epirubicin_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "blenoxane", "bleomycin"
 ];
 
-define  BleomycinTreatment:
+define  Bleomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BO:[
     "BO"
 ];
 
-define final BORegimen:
+define final Regimen_BO:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BO],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BORegimen:
 // Results
 
         
-define final BOTreatments:
-    where BleomycinTreatment AND VincristineTreatment;
+define final Treatment__BO:
+    where Bleomycin_Treatment AND Vincristine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BO AND BO_Regimen;
         
         
 

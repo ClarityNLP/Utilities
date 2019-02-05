@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for R-CEOP90 (Epirubicin)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "ellence", "epirubicin"
+];
+
+define  Epirubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "millipred", "prednisolone"
+];
+
+define  Prednisolone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_CEOP90_Epirubicin:[
+    "R-CEOP90", "R-CEOP90 (Epirubicin)", "R/CEOP90", "RCEOP90"
+];
+
+define final Regimen_R_CEOP90_Epirubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CEOP90_Epirubicin],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RCEOP90Epirubicin:
+    where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Epirubicin_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RCEOP90Epirubicin AND R_CEOP90_Epirubicin_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
+
+
+***/
+ 

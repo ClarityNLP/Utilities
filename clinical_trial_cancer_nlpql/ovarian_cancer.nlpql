@@ -1,0 +1,408 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Ovarian cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_ovarian_cancer:[
+    "malignant tumor of the ovary", "ovarian epithelial cancer", "carcinoma of ovary", "ovarian cancer", "cancer of the ovary", "malignant ovarian neoplasm", "epithelial ovarian cancer", "cancer of ovary", "malignant neoplasm of the ovary", "malignant tumor of ovary", "ovarian carcinoma", "carcinoma of the ovary", "malignant neoplasm of ovary", "malignant ovarian tumor", "ovarian cancer, nos"
+];
+
+define final Condition_ovarian_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_ovarian_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_Docetaxel:[
+    "Carboplatin & Docetaxel"
+];
+
+define   Regimen_Carboplatin_Docetaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Docetaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_monotherapy:[
+    "Etoposide monotherapy"
+];
+
+define   Regimen_Etoposide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_monotherapy:[
+    "Docetaxel monotherapy"
+];
+
+define   Regimen_Docetaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy:[
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
+];
+
+define   Regimen_Paclitaxel_nanoparticle_albumin_bound_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pemetrexed_monotherapy:[
+    "Pemetrexed monotherapy"
+];
+
+define   Regimen_Pemetrexed_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pemetrexed_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Olaparib_monotherapy:[
+    "Olaparib monotherapy"
+];
+
+define   Regimen_Olaparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Olaparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Gemcitabine:[
+    "Carboplatin & Gemcitabine"
+];
+
+define   Regimen_Carboplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Paclitaxel:[
+    "Cisplatin & Paclitaxel"
+];
+
+define   Regimen_Cisplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_monotherapy:[
+    "Carboplatin monotherapy"
+];
+
+define   Regimen_Carboplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Topotecan_monotherapy:[
+    "Topotecan monotherapy"
+];
+
+define   Regimen_Topotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Topotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinorelbine_monotherapy:[
+    "Vinorelbine monotherapy"
+];
+
+define   Regimen_Vinorelbine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinorelbine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Doxorubicin_liposomal:[
+    "Carboplatin & Doxorubicin liposomal"
+];
+
+define   Regimen_Carboplatin_Doxorubicin_liposomal:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Doxorubicin_liposomal],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pazopanib_monotherapy:[
+    "Pazopanib monotherapy"
+];
+
+define   Regimen_Pazopanib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pazopanib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Paclitaxel_Bevacizumab:[
+    "B & CP", "B / CP", "B and CP", "B&CP", "B+CP", "B/CP", "BCP", "Carboplatin, Paclitaxel, Bevacizumab", "PacCBev"
+];
+
+define   Regimen_Carboplatin_Paclitaxel_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Altretamine_monotherapy:[
+    "Altretamine monotherapy"
+];
+
+define   Regimen_Altretamine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Altretamine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Gemcitabine_Bevacizumab:[
+    "Carboplatin, Gemcitabine, Bevacizumab"
+];
+
+define   Regimen_Carboplatin_Gemcitabine_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Gemcitabine_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Olaparib_Paclitaxel:[
+    "Carboplatin, Olaparib, Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Olaparib_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Olaparib_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rucaparib_monotherapy:[
+    "Rucaparib monotherapy"
+];
+
+define   Regimen_Rucaparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rucaparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Niraparib_monotherapy:[
+    "Niraparib monotherapy"
+];
+
+define   Regimen_Niraparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Niraparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy:[
+    "Doxorubicin pegylated liposomal monotherapy"
+];
+
+define   Regimen_Doxorubicin_pegylated_liposomal_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_Bevacizumab:[
+    "Doxorubicin pegylated liposomal & Bevacizumab"
+];
+
+define   Regimen_Doxorubicin_pegylated_liposomal_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_Gemcitabine:[
+    "Doxorubicin pegylated liposomal & Gemcitabine"
+];
+
+define   Regimen_Doxorubicin_pegylated_liposomal_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_Trabectedin:[
+    "Doxorubicin pegylated liposomal & Trabectedin"
+];
+
+define   Regimen_Doxorubicin_pegylated_liposomal_Trabectedin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_Trabectedin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_Bevacizumab:[
+    "Paclitaxel & Bevacizumab"
+];
+
+define   Regimen_Paclitaxel_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_Pazopanib:[
+    "Paclitaxel & Pazopanib"
+];
+
+define   Regimen_Paclitaxel_Pazopanib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_Pazopanib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Topotecan_Bevacizumab:[
+    "Topotecan & Bevacizumab"
+];
+
+define   Regimen_Topotecan_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Topotecan_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Trabectedin_monotherapy:[
+    "Trabectedin monotherapy"
+];
+
+define   Regimen_Trabectedin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Trabectedin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Treosulfan_monotherapy:[
+    "Treosulfan monotherapy"
+];
+
+define   Regimen_Treosulfan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Treosulfan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_ovarian_cancer:
+    where Carboplatin_Docetaxel_Regimen OR Carboplatin_Paclitaxel_Regimen OR Cisplatin_Gemcitabine_Regimen OR Bevacizumab_monotherapy_Regimen OR Etoposide_monotherapy_Regimen OR Gemcitabine_monotherapy_Regimen OR Docetaxel_monotherapy_Regimen OR Paclitaxel_monotherapy_Regimen OR Paclitaxel_nanoparticle_albumin_bound_monotherapy_Regimen OR Pemetrexed_monotherapy_Regimen OR Olaparib_monotherapy_Regimen OR Carboplatin_Gemcitabine_Regimen OR Cisplatin_Paclitaxel_Regimen OR Carboplatin_monotherapy_Regimen OR Topotecan_monotherapy_Regimen OR Vinorelbine_monotherapy_Regimen OR Carboplatin_Doxorubicin_liposomal_Regimen OR Pazopanib_monotherapy_Regimen OR Carboplatin_Paclitaxel_Bevacizumab_Regimen OR Altretamine_monotherapy_Regimen OR Carboplatin_Gemcitabine_Bevacizumab_Regimen OR Carboplatin_Olaparib_Paclitaxel_Regimen OR Rucaparib_monotherapy_Regimen OR Niraparib_monotherapy_Regimen OR Doxorubicin_pegylated_liposomal_monotherapy_Regimen OR Doxorubicin_pegylated_liposomal_Bevacizumab_Regimen OR Doxorubicin_pegylated_liposomal_Gemcitabine_Regimen OR Doxorubicin_pegylated_liposomal_Trabectedin_Regimen OR Paclitaxel_Bevacizumab_Regimen OR Paclitaxel_Pazopanib_Regimen OR Topotecan_Bevacizumab_Regimen OR Trabectedin_monotherapy_Regimen OR Treosulfan_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_ovarian_cancer AND ovarian_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

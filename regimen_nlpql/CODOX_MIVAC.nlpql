@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for CODOX-M/IVAC" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_CODOX_MIVAC:[
+    "CODOX-M/IVAC"
+];
+
+define final Regimen_CODOX_MIVAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CODOX_MIVAC],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CODOXMIVAC:
+    where Cytarabine_Treatment AND Methotrexate_Treatment AND Cytarabine_Treatment AND Methotrexate_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CODOXMIVAC AND CODOX_MIVAC_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: HIV-associated_lymphoma
+
+
+
+
+***/
+ 

@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for 7+3d (intermediate-dose)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cerubidine", "daunorubicin"
+];
+
+define  Daunorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_73d_intermediate_dose:[
+    "7 & 3d", "7 / 3d", "7 and 3d", "7&3d", "7+3d", "7+3d (intermediate-dose)", "7/3d", "73d"
+];
+
+define final Regimen_73d_intermediate_dose:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_intermediate_dose],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__73dintermediatedose:
+    where Cytarabine_Treatment AND Daunorubicin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__73dintermediatedose AND 73d_intermediate_dose_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+
+
+***/
+ 

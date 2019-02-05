@@ -1,0 +1,84 @@
+
+// Phenotype library name
+phenotype "Regimen for R-CODOX-M/R-IVAC" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cortef", "hydrocortisone"
+];
+
+define  Hydrocortisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_CODOX_MR_IVAC:[
+    "R-CODOX-M/R-IVAC"
+];
+
+define final Regimen_R_CODOX_MR_IVAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CODOX_MR_IVAC],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RCODOXMRIVAC:
+    where Cytarabine_Treatment AND Methotrexate_Treatment AND Hydrocortisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RCODOXMRIVAC AND R_CODOX_MR_IVAC_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: HIV-associated_lymphoma
+
+
+
+
+***/
+ 

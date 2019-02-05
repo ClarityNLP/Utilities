@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Wilms tumor" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_wilms_tumor:[
+    "childhood kidney wilms tumor", "childhood renal wilms' tumor", "wilms tumor", "wilms tumor (nephroblastoma)", "wilms' tumor", "childhood renal wilms tumor", "childhood wilms tumor"
+];
+
+define final Condition_wilms_tumor:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_wilms_tumor],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dactinomycin_monotherapy:[
+    "Dactinomycin monotherapy"
+];
+
+define   Regimen_Dactinomycin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dactinomycin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vincristine_monotherapy:[
+    "Vincristine monotherapy"
+];
+
+define   Regimen_Vincristine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vincristine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dactinomycin_Vincristine:[
+    "Dactinomycin & Vincristine"
+];
+
+define   Regimen_Dactinomycin_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dactinomycin_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_wilms_tumor:
+    where Dactinomycin_monotherapy_Regimen OR Vincristine_monotherapy_Regimen OR Dactinomycin_Vincristine_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_wilms_tumor AND wilms_tumor_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

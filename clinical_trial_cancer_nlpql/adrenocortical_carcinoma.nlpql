@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Adrenocortical carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_adrenocortical_carcinoma:[
+    "carcinoma of adrenal cortex", "adrenocortical cancer", "carcinoma of the adrenal cortex", "adrenocortical carcinoma, nos", "cancer of the adrenal cortex", "adrenal cortex carcinoma", "adrenocortical carcinoma", "cortical cell carcinoma", "adrenal cortex cancer", "adrenal cortical carcinoma", "adrenal cortical adenocarcinoma", "carcinoma, adrenocortical, malignant", "adenocarcinoma, adrenocortical, malignant", "adrenal cortex adenocarcinoma"
+];
+
+define final Condition_adrenocortical_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_adrenocortical_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Mitotane_monotherapy:[
+    "Mitotane monotherapy"
+];
+
+define   Regimen_Mitotane_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mitotane_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mitotane_EDP:[
+    "Mitotane  and  EDP", "Mitotane & EDP", "Mitotane + EDP", "Mitotane / EDP", "Mitotane and EDP", "Mitotane+EDP", "Mitotane/EDP"
+];
+
+define   Regimen_Mitotane_EDP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mitotane_EDP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mitotane_Streptozocin:[
+    "Mitotane & Streptozocin"
+];
+
+define   Regimen_Mitotane_Streptozocin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mitotane_Streptozocin],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_adrenocortical_carcinoma:
+    where Mitotane_monotherapy_Regimen OR Mitotane_EDP_Regimen OR Mitotane_Streptozocin_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_adrenocortical_carcinoma AND adrenocortical_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  DoxorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CISCA:[
     "CISCA"
 ];
 
-define final CISCARegimen:
+define final Regimen_CISCA:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CISCA],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CISCARegimen:
 // Results
 
         
-define final CISCATreatments:
-    where CyclophosphamideTreatment AND CisplatinTreatment AND DoxorubicinTreatment;
+define final Treatment__CISCA:
+    where Cyclophosphamide_Treatment AND Cisplatin_Treatment AND Doxorubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CISCA AND CISCA_Regimen;
         
         
 

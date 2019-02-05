@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for DexaBEAM & G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "bicnu", "carmustine"
+];
+
+define  Carmustine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "vepesid", "etoposide"
+];
+
+define  Etoposide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "alkeran", "melphalan"
+];
+
+define  Melphalan_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_DexaBEAM_G_CSF:[
+    "DexaBEAM  and  G-CSF", "DexaBEAM & G-CSF", "DexaBEAM + G-CSF", "DexaBEAM / G-CSF", "DexaBEAM and G-CSF", "DexaBEAM+G-CSF", "DexaBEAM/G-CSF"
+];
+
+define final Regimen_DexaBEAM_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DexaBEAM_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__DexaBEAMGCSF:
+    where Dexamethasone_Treatment AND Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__DexaBEAMGCSF AND DexaBEAM_G_CSF_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Stem_cell_mobilization
+
+
+
+
+***/
+ 

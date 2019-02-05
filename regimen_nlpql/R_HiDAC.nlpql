@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for R-HiDAC" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_HiDAC:[
+    "R-HiDAC", "R/HiDAC", "RHiDAC"
+];
+
+define final Regimen_R_HiDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_HiDAC],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RHiDAC:
+    where Rituximab_Treatment AND Cytarabine_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RHiDAC AND R_HiDAC_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Mantle_cell_lymphoma
+
+
+
+
+***/
+ 

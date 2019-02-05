@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ontak", "denileukin diftitox"
 ];
 
-define final DenileukindiftitoxTreatment:
+define final Denileukindiftitox_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DenileukindiftitoxTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Denileukin_diftitox_monotherapy:[
     "Denileukin diftitox monotherapy"
 ];
 
-define final DenileukindiftitoxmonotherapyRegimen:
+define final Regimen_Denileukin_diftitox_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Denileukin_diftitox_monotherapy],
     documentset:[Docs]
    }); 
 

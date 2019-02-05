@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alkeran", "melphalan"
 ];
 
-define  MelphalanTreatment:
+define  Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DexamethasoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_LEED:[
     "LEED"
 ];
 
-define final LEEDRegimen:
+define final Regimen_LEED:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_LEED],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final LEEDRegimen:
 // Results
 
         
-define final LEEDTreatments:
-    where MelphalanTreatment AND CyclophosphamideTreatment AND EtoposideTreatment AND DexamethasoneTreatment;
+define final Treatment__LEED:
+    where Melphalan_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Dexamethasone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LEED AND LEED_Regimen;
         
         
 

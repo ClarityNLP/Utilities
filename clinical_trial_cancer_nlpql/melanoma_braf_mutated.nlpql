@@ -1,0 +1,111 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Melanoma BRAF-mutated" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_melanoma_braf_mutated:[
+    "melanoma braf-mutated"
+];
+
+define final Condition_melanoma_braf_mutated:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_melanoma_braf_mutated],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dabrafenib_Trametinib:[
+    "Dabrafenib & Trametinib"
+];
+
+define   Regimen_Dabrafenib_Trametinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dabrafenib_Trametinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vemurafenib_monotherapy:[
+    "Vemurafenib monotherapy"
+];
+
+define   Regimen_Vemurafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vemurafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dabrafenib_monotherapy:[
+    "Dabrafenib monotherapy"
+];
+
+define   Regimen_Dabrafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dabrafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Binimetinib_Encorafenib:[
+    "Binimetinib & Encorafenib"
+];
+
+define   Regimen_Binimetinib_Encorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Binimetinib_Encorafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cobimetinib_Vemurafenib:[
+    "Cobimetinib & Vemurafenib"
+];
+
+define   Regimen_Cobimetinib_Vemurafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cobimetinib_Vemurafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Trametinib_monotherapy:[
+    "Trametinib monotherapy"
+];
+
+define   Regimen_Trametinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Trametinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_melanoma_braf_mutated:
+    where Dabrafenib_Trametinib_Regimen OR Vemurafenib_monotherapy_Regimen OR Dabrafenib_monotherapy_Regimen OR Binimetinib_Encorafenib_Regimen OR Cobimetinib_Vemurafenib_Regimen OR Trametinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_melanoma_braf_mutated AND melanoma_braf_mutated_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

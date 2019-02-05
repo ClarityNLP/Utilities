@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rituxan", "rituximab"
 ];
 
-define final RituximabTreatment:
+define final Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Rituximab_monotherapy_very_extended_course:[
     "Rituximab monotherapy, very extended course"
 ];
 
-define final RituximabmonotherapyveryextendedcourseRegimen:
+define final Regimen_Rituximab_monotherapy_very_extended_course:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Rituximab_monotherapy_very_extended_course],
     documentset:[Docs]
    }); 
 

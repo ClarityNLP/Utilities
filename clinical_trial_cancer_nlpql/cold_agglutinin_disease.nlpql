@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Cold agglutinin disease" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cold_agglutinin_disease:[
+    "cold agglutinin disease"
+];
+
+define final Condition_cold_agglutinin_disease:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cold_agglutinin_disease],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Eculizumab_monotherapy:[
+    "Eculizumab monotherapy"
+];
+
+define   Regimen_Eculizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Eculizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR:[
+    "BR", "R-B", "R/B"
+];
+
+define   Regimen_BR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FR:[
+    "FR"
+];
+
+define   Regimen_FR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FR],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cold_agglutinin_disease:
+    where Rituximab_monotherapy_Regimen OR Eculizumab_monotherapy_Regimen OR BR_Regimen OR FR_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cold_agglutinin_disease AND cold_agglutinin_disease_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

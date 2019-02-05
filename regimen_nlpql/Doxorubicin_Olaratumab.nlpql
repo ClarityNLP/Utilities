@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "lartruvo", "olaratumab"
 ];
 
-define  OlaratumabTreatment:
+define  Olaratumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  OlaratumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Doxorubicin_Olaratumab:[
     "Doxorubicin & Olaratumab"
 ];
 
-define final DoxorubicinOlaratumabRegimen:
+define final Regimen_Doxorubicin_Olaratumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Doxorubicin_Olaratumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final DoxorubicinOlaratumabRegimen:
 // Results
 
         
-define final DoxorubicinOlaratumabTreatments:
-    where DoxorubicinTreatment AND OlaratumabTreatment;
+define final Treatment__DoxorubicinOlaratumab:
+    where Doxorubicin_Treatment AND Olaratumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DoxorubicinOlaratumab AND Doxorubicin_Olaratumab_Regimen;
         
         
 

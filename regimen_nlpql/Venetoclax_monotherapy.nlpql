@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "venclexta", "venetoclax"
 ];
 
-define final VenetoclaxTreatment:
+define final Venetoclax_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final VenetoclaxTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Venetoclax_monotherapy:[
     "Venetoclax monotherapy"
 ];
 
-define final VenetoclaxmonotherapyRegimen:
+define final Regimen_Venetoclax_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Venetoclax_monotherapy],
     documentset:[Docs]
    }); 
 

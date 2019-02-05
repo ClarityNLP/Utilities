@@ -1,0 +1,606 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Acute myeloid leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_acute_myeloid_leukemia:[
+    "acute myeloid leukemia", "aml", "acute granulocytic leukemia", "aml - acute myeloid leukemia", "acute myeloid leukemia nos", "aml, nos", "acute myeloblastic leukemia", "acute myeloid leukemia, nos", "anll", "acute myeloid leukemia not otherwise specified", "acute myeloid leukemia not otherwise categorized", "acute myelocytic leukemia", "acute myelogenous leukemia", "acute nonlymphocytic leukemia", "hematopoeitic - acute myleogenous leukemia (aml)", "acute myelogenous leukemias", "acute myeloid leukemia (aml)"
+];
+
+define final Condition_acute_myeloid_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_acute_myeloid_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_73d_standard_dose:[
+    "7 & 3d", "7 / 3d", "7 and 3d", "7&3d", "7+3d", "7+3d (standard-dose)", "7/3d", "73d"
+];
+
+define   Regimen_73d_standard_dose:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_standard_dose],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73d_intermediate_dose:[
+    "7 & 3d", "7 / 3d", "7 and 3d", "7&3d", "7+3d", "7+3d (intermediate-dose)", "7/3d", "73d"
+];
+
+define   Regimen_73d_intermediate_dose:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_intermediate_dose],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73d_high_dose:[
+    "7 & 3d", "7 / 3d", "7 and 3d", "7&3d", "7+3d", "7+3d (high-dose)", "7/3d", "73d"
+];
+
+define   Regimen_73d_high_dose:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_high_dose],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73d_GO:[
+    "7 & 3d & GO", "7 / 3d & GO", "7 and 3d & GO", "7&3d & GO", "7+3d  and  GO", "7+3d & GO", "7+3d + GO", "7+3d / GO", "7+3d and GO", "7+3d+GO", "7+3d/GO", "7/3d & GO", "73d & GO", "73dGO"
+];
+
+define   Regimen_73d_GO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_GO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73i:[
+    "7 & 3i", "7 / 3i", "7 and 3i", "7&3i", "7+3i", "7/3i", "73i"
+];
+
+define   Regimen_73i:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73i],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73i_Sorafenib:[
+    "7+3i  and  Sorafenib", "7+3i & Sorafenib", "7+3i + Sorafenib", "7+3i / Sorafenib", "7+3i and Sorafenib", "7+3i+Sorafenib", "7+3i/Sorafenib"
+];
+
+define   Regimen_73i_Sorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73i_Sorafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73d_Glasdegib:[
+    "7+3d  and  Glasdegib", "7+3d & Glasdegib", "7+3d + Glasdegib", "7+3d / Glasdegib", "7+3d and Glasdegib", "7+3d+Glasdegib", "7+3d/Glasdegib"
+];
+
+define   Regimen_73d_Glasdegib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_Glasdegib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73m:[
+    "7 & 3m", "7 / 3m", "7 and 3m", "7&3m", "7+3m", "7/3m", "73m", "MAC"
+];
+
+define   Regimen_73m:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73m],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ADE_standard_dose_Ara_C:[
+    "10-3-5", "10/3/5", "1035", "7-3-7", "7/3/7", "737", "8-3-5", "8/3/5", "835", "ADE", "ADE (standard-dose Ara-C)"
+];
+
+define   Regimen_ADE_standard_dose_Ara_C:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ADE_standard_dose_Ara_C],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ADE_high_dose_Ara_C:[
+    "ADE", "ADE (high-dose Ara-C)", "HIDAC-3-5", "HIDAC-3-7", "HIDAC/3/5", "HIDAC/3/7", "HIDAC35", "HIDAC37"
+];
+
+define   Regimen_ADE_high_dose_Ara_C:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ADE_high_dose_Ara_C],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CIA:[
+    "CIA"
+];
+
+define   Regimen_CIA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CIA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_3_10_GO:[
+    "DA 3 + 10, GO"
+];
+
+define   Regimen_DA_3_10_GO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_3_10_GO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_3_10:[
+    "DA 3  &  10", "DA 3  /  10", "DA 3  10", "DA 3  and  10", "DA 3 & 10", "DA 3 + 10", "DA 3 / 10", "DA310"
+];
+
+define   Regimen_DA_3_10:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_3_10],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DAC:[
+    "DAC"
+];
+
+define   Regimen_DAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FLAG_Ida:[
+    "FLAG-Ida", "FLAG/Ida", "FLAGIda"
+];
+
+define   Regimen_FLAG_Ida:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FLAG_Ida],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HAA:[
+    "HAA"
+];
+
+define   Regimen_HAA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HAA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HAD:[
+    "HAD"
+];
+
+define   Regimen_HAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ICL:[
+    "ICL"
+];
+
+define   Regimen_ICL:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ICL],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MEC:[
+    "MEC", "MICE"
+];
+
+define   Regimen_MEC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MEC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_monotherapy:[
+    "Azacitidine monotherapy"
+];
+
+define   Regimen_Azacitidine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Clofarabine_monotherapy:[
+    "Clofarabine monotherapy"
+];
+
+define   Regimen_Clofarabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Clofarabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Clofarabine_LoDAC:[
+    "Clofarabine  and  LoDAC", "Clofarabine & LoDAC", "Clofarabine + LoDAC", "Clofarabine / LoDAC", "Clofarabine and LoDAC", "Clofarabine+LoDAC", "Clofarabine/LoDAC"
+];
+
+define   Regimen_Clofarabine_LoDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Clofarabine_LoDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CPX_351_monotherapy:[
+    "CPX-351", "CPX-351 monotherapy", "CPX/351", "CPX351"
+];
+
+define   Regimen_CPX_351_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CPX_351_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Decitabine_monotherapy:[
+    "Decitabine monotherapy"
+];
+
+define   Regimen_Decitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Decitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemtuzumab_ozogamicin_monotherapy:[
+    "Gemtuzumab ozogamicin monotherapy"
+];
+
+define   Regimen_Gemtuzumab_ozogamicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemtuzumab_ozogamicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Glasdegib_LoDAC:[
+    "Glasdegib  and  LoDAC", "Glasdegib & LoDAC", "Glasdegib + LoDAC", "Glasdegib / LoDAC", "Glasdegib and LoDAC", "Glasdegib+LoDAC", "Glasdegib/LoDAC"
+];
+
+define   Regimen_Glasdegib_LoDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Glasdegib_LoDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LoDAC:[
+    "LDAC", "LoDAC"
+];
+
+define   Regimen_LoDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LoDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LoDAC_Venetoclax:[
+    "LoDAC  and  Venetoclax", "LoDAC & Venetoclax", "LoDAC + Venetoclax", "LoDAC / Venetoclax", "LoDAC and Venetoclax", "LoDAC+Venetoclax", "LoDAC/Venetoclax"
+];
+
+define   Regimen_LoDAC_Venetoclax:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LoDAC_Venetoclax],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_52d:[
+    "5 & 2d", "5 / 2d", "5 and 2d", "5&2d", "5+2d", "5/2d", "52d"
+];
+
+define   Regimen_52d:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_52d],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HiDAC:[
+    "HDAC", "HDAraC", "HiDAC"
+];
+
+define   Regimen_HiDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HiDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IDAC:[
+    "IDAC", "mIDAC"
+];
+
+define   Regimen_IDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HDAC_G_CSF:[
+    "HDAC  and  G-CSF", "HDAC & G-CSF", "HDAC + G-CSF", "HDAC / G-CSF", "HDAC and G-CSF", "HDAC+G-CSF", "HDAC/G-CSF"
+];
+
+define   Regimen_HDAC_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HDAC_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Gemtuzumab_ozogamicin:[
+    "Azacitidine & Gemtuzumab ozogamicin"
+];
+
+define   Regimen_Azacitidine_Gemtuzumab_ozogamicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Gemtuzumab_ozogamicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CLARA:[
+    "CLARA"
+];
+
+define   Regimen_CLARA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CLARA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Daunorubicin:[
+    "Cytarabine & Daunorubicin"
+];
+
+define   Regimen_Cytarabine_Daunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Daunorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin:[
+    "Cytarabine, Daunorubicin, Gemtuzumab ozogamicin"
+];
+
+define   Regimen_Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin:[
+    "Cytarabine & Idarubicin"
+];
+
+define   Regimen_Cytarabine_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin_Sorafenib:[
+    "Cytarabine, Idarubicin, Sorafenib"
+];
+
+define   Regimen_Cytarabine_Idarubicin_Sorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_Sorafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_Mitoxantrone:[
+    "Etoposide & Mitoxantrone"
+];
+
+define   Regimen_Etoposide_Mitoxantrone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_Mitoxantrone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HAM:[
+    "HAM"
+];
+
+define   Regimen_HAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CLAG:[
+    "CLAG"
+];
+
+define   Regimen_CLAG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CLAG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CLAG_M:[
+    "CLAG-M", "CLAG/M", "CLAGM"
+];
+
+define   Regimen_CLAG_M:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CLAG_M],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Clofarabine_Cytarabine:[
+    "Clofarabine & Cytarabine"
+];
+
+define   Regimen_Clofarabine_Cytarabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Clofarabine_Cytarabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Mitoxantrone:[
+    "Cytarabine & Mitoxantrone", "MIDAC"
+];
+
+define   Regimen_Cytarabine_Mitoxantrone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Mitoxantrone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FLAG:[
+    "FLAG"
+];
+
+define   Regimen_FLAG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FLAG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_F_SHAI:[
+    "F-SHAI", "F/SHAI", "FSHAI"
+];
+
+define   Regimen_F_SHAI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_F_SHAI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Thioguanine:[
+    "Cytarabine & Thioguanine"
+];
+
+define   Regimen_Cytarabine_Thioguanine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Thioguanine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CYVE:[
+    "CYVE"
+];
+
+define   Regimen_CYVE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CYVE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_acute_myeloid_leukemia:
+    where 73d_standard_dose_Regimen OR 73d_intermediate_dose_Regimen OR 73d_high_dose_Regimen OR 73d_GO_Regimen OR 73i_Regimen OR 73i_Sorafenib_Regimen OR 73d_Glasdegib_Regimen OR 73m_Regimen OR ADE_standard_dose_Ara_C_Regimen OR ADE_high_dose_Ara_C_Regimen OR CIA_Regimen OR DA_3_10_GO_Regimen OR DA_3_10_Regimen OR DAC_Regimen OR FLAG_Ida_Regimen OR HAA_Regimen OR HAD_Regimen OR ICL_Regimen OR MEC_Regimen OR Azacitidine_monotherapy_Regimen OR Clofarabine_monotherapy_Regimen OR Clofarabine_LoDAC_Regimen OR CPX_351_monotherapy_Regimen OR Decitabine_monotherapy_Regimen OR Gemtuzumab_ozogamicin_monotherapy_Regimen OR Glasdegib_LoDAC_Regimen OR LoDAC_Regimen OR LoDAC_Venetoclax_Regimen OR Temozolomide_monotherapy_Regimen OR 52d_Regimen OR HiDAC_Regimen OR IDAC_Regimen OR HDAC_G_CSF_Regimen OR Azacitidine_Gemtuzumab_ozogamicin_Regimen OR CLARA_Regimen OR Cytarabine_Daunorubicin_Regimen OR Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin_Regimen OR Cytarabine_Idarubicin_Regimen OR Cytarabine_Idarubicin_Sorafenib_Regimen OR Etoposide_Mitoxantrone_Regimen OR HAM_Regimen OR Sorafenib_monotherapy_Regimen OR CLAG_Regimen OR CLAG_M_Regimen OR Clofarabine_Cytarabine_Regimen OR Cytarabine_Mitoxantrone_Regimen OR FLAG_Regimen OR F_SHAI_Regimen OR Cytarabine_Thioguanine_Regimen OR CYVE_Regimen OR Ruxolitinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_acute_myeloid_leukemia AND acute_myeloid_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

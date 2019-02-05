@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "alkeran", "melphalan"
 ];
 
-define  MelphalanTreatment:
+define  Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  MelphalanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bortezomib_Melphalan_then_auto_HSCT:[
     "Bortezomib & Melphalan, then auto HSCT"
 ];
 
-define final BortezomibMelphalanthenautoHSCTRegimen:
+define final Regimen_Bortezomib_Melphalan_then_auto_HSCT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bortezomib_Melphalan_then_auto_HSCT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BortezomibMelphalanthenautoHSCTRegimen:
 // Results
 
         
-define final BortezomibMelphalanthenautoHSCTTreatments:
-    where BortezomibTreatment AND MelphalanTreatment;
+define final Treatment__BortezomibMelphalanthenautoHSCT:
+    where Bortezomib_Treatment AND Melphalan_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BortezomibMelphalanthenautoHSCT AND Bortezomib_Melphalan_then_auto_HSCT_Regimen;
         
         
 

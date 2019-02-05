@@ -1,0 +1,54 @@
+
+// Phenotype library name
+phenotype "Regimen for Interferon alfa-2a monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "roferon-a", "interferon alfa-2a"
+];
+
+define final Interferonalfa2a_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Interferon_alfa_2a_monotherapy:[
+    "Interferon alfa-2a monotherapy"
+];
+
+define final Regimen_Interferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Melanoma, Renal_cell_carcinoma
+
+
+
+
+***/
+ 

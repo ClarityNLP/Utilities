@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "bendamustine"
 ];
 
-define  BendamustineTreatment:
+define  Bendamustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "torisel", "temsirolimus"
 ];
 
-define  TemsirolimusTreatment:
+define  Temsirolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  TemsirolimusTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BeRT:[
     "BeRT"
 ];
 
-define final BeRTRegimen:
+define final Regimen_BeRT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BeRT],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final BeRTRegimen:
 // Results
 
         
-define final BeRTTreatments:
-    where BendamustineTreatment AND RituximabTreatment AND TemsirolimusTreatment;
+define final Treatment__BeRT:
+    where Bendamustine_Treatment AND Rituximab_Treatment AND Temsirolimus_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BeRT AND BeRT_Regimen;
         
         
 

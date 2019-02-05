@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define final AlltransretinoicacidTreatment:
+define final Alltransretinoicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AlltransretinoicacidTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATRA_monotherapy:[
     "ATRA monotherapy"
 ];
 
-define final ATRAmonotherapyRegimen:
+define final Regimen_ATRA_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATRA_monotherapy],
     documentset:[Docs]
    }); 
 

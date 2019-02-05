@@ -1,0 +1,210 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Multiple myeloma induction" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_multiple_myeloma_induction:[
+    "multiple myeloma induction"
+];
+
+define final Condition_multiple_myeloma_induction:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_multiple_myeloma_induction],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Bortezomib_Dexamethasone:[
+    "Bortezomib & Dexamethasone"
+];
+
+define   Regimen_Bortezomib_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CTD:[
+    "CTD"
+];
+
+define   Regimen_CTD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CTD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rd:[
+    "LenDex", "Rd", "RevDex"
+];
+
+define   Regimen_Rd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CPR:[
+    "CPR"
+];
+
+define   Regimen_CPR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CPR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CVAD:[
+    "CVAD"
+];
+
+define   Regimen_CVAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CVAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_D_VMP:[
+    "D-VMP", "D/VMP", "DVMP"
+];
+
+define   Regimen_D_VMP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_D_VMP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MPR:[
+    "MPL", "MPR"
+];
+
+define   Regimen_MPR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MPR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MPT:[
+    "MPT"
+];
+
+define   Regimen_MPT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MPT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PAD:[
+    "BDD", "PAD", "PAd", "VAD"
+];
+
+define   Regimen_PAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RVD:[
+    "RVD", "VDR", "VRD", "VRd"
+];
+
+define   Regimen_RVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RVDC:[
+    "RVDC", "VDCR"
+];
+
+define   Regimen_RVDC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RVDC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TAD:[
+    "TAD"
+];
+
+define   Regimen_TAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Thal_Dex:[
+    "Thal-Dex", "Thal/Dex", "ThalDex"
+];
+
+define   Regimen_Thal_Dex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Thal_Dex],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VP:[
+    "VP"
+];
+
+define   Regimen_VP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VTD_PACE:[
+    "VTD-PACE", "VTD/PACE", "VTDPACE"
+];
+
+define   Regimen_VTD_PACE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VTD_PACE],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_multiple_myeloma_induction:
+    where Bortezomib_Dexamethasone_Regimen OR CTD_Regimen OR Rd_Regimen OR CPR_Regimen OR CVAD_Regimen OR D_VMP_Regimen OR MPR_Regimen OR MPT_Regimen OR PAD_Regimen OR RVD_Regimen OR RVDC_Regimen OR TAD_Regimen OR Thal_Dex_Regimen OR VP_Regimen OR VTD_PACE_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_multiple_myeloma_induction AND multiple_myeloma_induction_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

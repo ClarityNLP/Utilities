@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "heparin"
 ];
 
-define final HeparinTreatment:
+define final Heparin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final HeparinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Heparin_monotherapy:[
     "Heparin monotherapy"
 ];
 
-define final HeparinmonotherapyRegimen:
+define final Regimen_Heparin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Heparin_monotherapy],
     documentset:[Docs]
    }); 
 

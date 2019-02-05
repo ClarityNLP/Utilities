@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "myleran", "busulfan"
 ];
 
-define  BusulfanTreatment:
+define  Busulfan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CyclophosphamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fludarabine_Busulfan_Cyclophosphamide:[
     "FluBuCy", "Fludarabine, Busulfan, Cyclophosphamide"
 ];
 
-define final FludarabineBusulfanCyclophosphamideRegimen:
+define final Regimen_Fludarabine_Busulfan_Cyclophosphamide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fludarabine_Busulfan_Cyclophosphamide],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final FludarabineBusulfanCyclophosphamideRegimen:
 // Results
 
         
-define final FludarabineBusulfanCyclophosphamideTreatments:
-    where FludarabineTreatment AND BusulfanTreatment AND CyclophosphamideTreatment;
+define final Treatment__FludarabineBusulfanCyclophosphamide:
+    where Fludarabine_Treatment AND Busulfan_Treatment AND Cyclophosphamide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FludarabineBusulfanCyclophosphamide AND Fludarabine_Busulfan_Cyclophosphamide_Regimen;
         
         
 

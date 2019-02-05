@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define final FludarabineTreatment:
+define final Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final FludarabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fludarabine_monotherapy:[
     "Fludarabine monotherapy"
 ];
 
-define final FludarabinemonotherapyRegimen:
+define final Regimen_Fludarabine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fludarabine_monotherapy],
     documentset:[Docs]
    }); 
 

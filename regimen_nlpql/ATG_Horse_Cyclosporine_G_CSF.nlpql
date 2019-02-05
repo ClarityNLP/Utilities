@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for ATG (Horse), Cyclosporine, G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "atgam", "antithymocyte globulin, horse atg"
+];
+
+define  AntithymocyteglobulinhorseATG_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    ":category:cyclosporines"
+];
+
+define  CategoryCyclosporines_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine_G_CSF:[
+    "ATG (Horse), Cyclosporine, G-CSF"
+];
+
+define final Regimen_ATG_Horse_Cyclosporine_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__ATGHorseCyclosporineGCSF:
+    where AntithymocyteglobulinhorseATG_Treatment AND CategoryCyclosporines_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__ATGHorseCyclosporineGCSF AND ATG_Horse_Cyclosporine_G_CSF_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Aplastic_anemia
+
+
+
+
+***/
+ 

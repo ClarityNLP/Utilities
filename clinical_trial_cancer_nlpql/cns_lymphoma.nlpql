@@ -1,0 +1,364 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to CNS lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cns_lymphoma:[
+    "malignant lymphomas of cns", "malignant lymphomas of the cns", "cns lymphoma", "central nervous system lymphoma", "pcnsl", "primary central nervous system lymphoma", "primary cns lymphoma"
+];
+
+define final Condition_cns_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cns_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HiDAC:[
+    "HDAC", "HDAraC", "HiDAC"
+];
+
+define   Regimen_HiDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HiDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CYVE:[
+    "CYVE"
+];
+
+define   Regimen_CYVE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CYVE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Topotecan_monotherapy:[
+    "Topotecan monotherapy"
+];
+
+define   Regimen_Topotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Topotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IT_Cytarabine_monotherapy:[
+    "IT Cytarabine monotherapy"
+];
+
+define   Regimen_IT_Cytarabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Cytarabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IT_Cytarabine_liposomal_monotherapy:[
+    "IT Cytarabine liposomal monotherapy"
+];
+
+define   Regimen_IT_Cytarabine_liposomal_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Cytarabine_liposomal_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CYM:[
+    "CYM"
+];
+
+define   Regimen_CYM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CYM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Methotrexate_Rituximab:[
+    "Cytarabine, Methotrexate, Rituximab"
+];
+
+define   Regimen_Cytarabine_Methotrexate_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Methotrexate_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MATRix:[
+    "MATRix"
+];
+
+define   Regimen_MATRix:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MATRix],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_monotherapy:[
+    "Methotrexate monotherapy"
+];
+
+define   Regimen_Methotrexate_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lomustine_Methotrexate_Procarbazine:[
+    "Lomustine, Methotrexate, Procarbazine", "MCP"
+];
+
+define   Regimen_Lomustine_Methotrexate_Procarbazine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lomustine_Methotrexate_Procarbazine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lomustine_Methotrexate_Procarbazine_Methylprednisolone:[
+    "Lomustine, Methotrexate, Procarbazine, Methylprednisolone"
+];
+
+define   Regimen_Lomustine_Methotrexate_Procarbazine_Methylprednisolone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lomustine_Methotrexate_Procarbazine_Methylprednisolone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_then_Cytarabine:[
+    "Methotrexate, then Cytarabine"
+];
+
+define   Regimen_Methotrexate_then_Cytarabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_then_Cytarabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_then_Cytarabine_Thiotepa:[
+    "Methotrexate, then Cytarabine & Thiotepa"
+];
+
+define   Regimen_Methotrexate_then_Cytarabine_Thiotepa:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_then_Cytarabine_Thiotepa],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_Rituximab:[
+    "Methotrexate & Rituximab"
+];
+
+define   Regimen_Methotrexate_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MPV:[
+    "MPV"
+];
+
+define   Regimen_MPV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MPV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MT_R:[
+    "MT-R", "MT/R", "MTR"
+];
+
+define   Regimen_MT_R:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MT_R],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MVBP:[
+    "MVBP"
+];
+
+define   Regimen_MVBP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MVBP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_MCP:[
+    "R-MCP", "R/MCP", "RMCP"
+];
+
+define   Regimen_R_MCP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_MCP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_MP:[
+    "R-MP", "R/MP", "RMP"
+];
+
+define   Regimen_R_MP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_MP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_MPV:[
+    "R-MPV", "R/MPV", "RMPV"
+];
+
+define   Regimen_R_MPV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_MPV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BCNUTT_then_auto_HSCT:[
+    "BCNU/TT", "BCNU/TT, then auto HSCT", "BCNUTT"
+];
+
+define   Regimen_BCNUTT_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BCNUTT_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEAM_then_auto_HSCT:[
+    "BEAM", "BEAM, then auto HSCT"
+];
+
+define   Regimen_BEAM_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEAM_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BuTT_then_auto_HSCT:[
+    "Bu/TT", "Bu/TT, then auto HSCT", "BuTT"
+];
+
+define   Regimen_BuTT_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BuTT_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BuTTCy_then_auto_HSCT:[
+    "Bu/TT/Cy", "Bu/TT/Cy, then auto HSCT", "BuTTCy"
+];
+
+define   Regimen_BuTTCy_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BuTTCy_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Procarbazine_monotherapy:[
+    "Procarbazine monotherapy"
+];
+
+define   Regimen_Procarbazine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Procarbazine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_Methotrexate:[
+    "Ifosfamide & Methotrexate"
+];
+
+define   Regimen_Ifosfamide_Methotrexate:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_Methotrexate],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temsirolimus_monotherapy:[
+    "Temsirolimus monotherapy"
+];
+
+define   Regimen_Temsirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temsirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cns_lymphoma:
+    where Rituximab_monotherapy_Regimen OR Temozolomide_monotherapy_Regimen OR HiDAC_Regimen OR CYVE_Regimen OR Topotecan_monotherapy_Regimen OR IT_Cytarabine_monotherapy_Regimen OR IT_Cytarabine_liposomal_monotherapy_Regimen OR CYM_Regimen OR Cytarabine_Methotrexate_Rituximab_Regimen OR MATRix_Regimen OR Methotrexate_monotherapy_Regimen OR Lomustine_Methotrexate_Procarbazine_Regimen OR Lomustine_Methotrexate_Procarbazine_Methylprednisolone_Regimen OR Methotrexate_then_Cytarabine_Regimen OR Methotrexate_then_Cytarabine_Thiotepa_Regimen OR Methotrexate_Rituximab_Regimen OR MPV_Regimen OR MT_R_Regimen OR MVBP_Regimen OR R_MCP_Regimen OR R_MP_Regimen OR R_MPV_Regimen OR BCNUTT_then_auto_HSCT_Regimen OR BEAM_then_auto_HSCT_Regimen OR BuTT_then_auto_HSCT_Regimen OR BuTTCy_then_auto_HSCT_Regimen OR Procarbazine_monotherapy_Regimen OR Ifosfamide_Methotrexate_Regimen OR Temsirolimus_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cns_lymphoma AND cns_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

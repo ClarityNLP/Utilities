@@ -1,0 +1,122 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Castleman disease" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_castleman_disease:[
+    "castleman disease"
+];
+
+define final Condition_castleman_disease:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_castleman_disease],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_monotherapy:[
+    "Cyclosporine monotherapy"
+];
+
+define   Regimen_Cyclosporine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sirolimus_monotherapy:[
+    "Sirolimus monotherapy"
+];
+
+define   Regimen_Sirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Anakinra_monotherapy:[
+    "Anakinra monotherapy"
+];
+
+define   Regimen_Anakinra_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Anakinra_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_monotherapy:[
+    "Bortezomib monotherapy"
+];
+
+define   Regimen_Bortezomib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Siltuximab_monotherapy:[
+    "Siltuximab monotherapy"
+];
+
+define   Regimen_Siltuximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Siltuximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Tocilizumab_monotherapy:[
+    "Tocilizumab monotherapy"
+];
+
+define   Regimen_Tocilizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tocilizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_castleman_disease:
+    where Rituximab_monotherapy_Regimen OR Cyclosporine_monotherapy_Regimen OR Sirolimus_monotherapy_Regimen OR Anakinra_monotherapy_Regimen OR Bortezomib_monotherapy_Regimen OR Siltuximab_monotherapy_Regimen OR Tocilizumab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_castleman_disease AND castleman_disease_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

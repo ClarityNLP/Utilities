@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclophosphamide_Vincristine:[
     "Cyclophosphamide & Vincristine"
 ];
 
-define final CyclophosphamideVincristineRegimen:
+define final Regimen_Cyclophosphamide_Vincristine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclophosphamide_Vincristine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CyclophosphamideVincristineRegimen:
 // Results
 
         
-define final CyclophosphamideVincristineTreatments:
-    where CyclophosphamideTreatment AND VincristineTreatment;
+define final Treatment__CyclophosphamideVincristine:
+    where Cyclophosphamide_Treatment AND Vincristine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CyclophosphamideVincristine AND Cyclophosphamide_Vincristine_Regimen;
         
         
 

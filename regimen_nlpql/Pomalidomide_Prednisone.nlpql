@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "pomalyst", "pomalidomide"
 ];
 
-define  PomalidomideTreatment:
+define  Pomalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pomalidomide_Prednisone:[
     "Pomalidomide & Prednisone"
 ];
 
-define final PomalidomidePrednisoneRegimen:
+define final Regimen_Pomalidomide_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pomalidomide_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final PomalidomidePrednisoneRegimen:
 // Results
 
         
-define final PomalidomidePrednisoneTreatments:
-    where PomalidomideTreatment AND PrednisoneTreatment;
+define final Treatment__PomalidomidePrednisone:
+    where Pomalidomide_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PomalidomidePrednisone AND Pomalidomide_Prednisone_Regimen;
         
         
 

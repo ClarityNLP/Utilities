@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define  AlltransretinoicacidTreatment:
+define  Alltransretinoicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "idamycin", "idarubicin"
 ];
 
-define  IdarubicinTreatment:
+define  Idarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IdarubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATRA_Idarubicin:[
     "AIDA", "ATRA  and  Idarubicin", "ATRA & Idarubicin", "ATRA + Idarubicin", "ATRA / Idarubicin", "ATRA and Idarubicin", "ATRA+Idarubicin", "ATRA/Idarubicin"
 ];
 
-define final ATRAIdarubicinRegimen:
+define final Regimen_ATRA_Idarubicin:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATRA_Idarubicin],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final ATRAIdarubicinRegimen:
 // Results
 
         
-define final ATRAIdarubicinTreatments:
-    where AlltransretinoicacidTreatment AND IdarubicinTreatment;
+define final Treatment__ATRAIdarubicin:
+    where Alltransretinoicacid_Treatment AND Idarubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ATRAIdarubicin AND ATRA_Idarubicin_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "idamycin", "idarubicin"
 ];
 
-define final IdarubicinTreatment:
+define final Idarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IdarubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin:[
     "Idarubicin, then Mitoxantrone, then Idarubicin"
 ];
 
-define final IdarubicinthenMitoxantronethenIdarubicinRegimen:
+define final Regimen_Idarubicin_then_Mitoxantrone_then_Idarubicin:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin],
     documentset:[Docs]
    }); 
 

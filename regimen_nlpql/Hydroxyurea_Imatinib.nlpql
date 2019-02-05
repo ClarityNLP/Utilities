@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "hydrea", "hydroxyurea"
 ];
 
-define  HydroxyureaTreatment:
+define  Hydroxyurea_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gleevec", "imatinib"
 ];
 
-define  ImatinibTreatment:
+define  Imatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ImatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Hydroxyurea_Imatinib:[
     "Hydroxyurea & Imatinib"
 ];
 
-define final HydroxyureaImatinibRegimen:
+define final Regimen_Hydroxyurea_Imatinib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Hydroxyurea_Imatinib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final HydroxyureaImatinibRegimen:
 // Results
 
         
-define final HydroxyureaImatinibTreatments:
-    where HydroxyureaTreatment AND ImatinibTreatment;
+define final Treatment__HydroxyureaImatinib:
+    where Hydroxyurea_Treatment AND Imatinib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__HydroxyureaImatinib AND Hydroxyurea_Imatinib_Regimen;
         
         
 

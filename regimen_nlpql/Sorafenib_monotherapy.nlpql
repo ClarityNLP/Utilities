@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "nexavar", "sorafenib"
 ];
 
-define final SorafenibTreatment:
+define final Sorafenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final SorafenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Sorafenib_monotherapy:[
     "Sorafenib monotherapy"
 ];
 
-define final SorafenibmonotherapyRegimen:
+define final Regimen_Sorafenib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final SorafenibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Thyroid_cancer, Renal_cell_carcinoma, Non-small_cell_lung_cancer, Hepatocellular_carcinoma, Acute_myeloid_leukemia_FLT3-positive, Acute_myeloid_leukemia
+Known regimen for: Soft_tissue_sarcoma, Acute_myeloid_leukemia, Acute_myeloid_leukemia_FLT3-positive, Non-small_cell_lung_cancer, Renal_cell_carcinoma, Hepatocellular_carcinoma, Thyroid_cancer
 
 
 

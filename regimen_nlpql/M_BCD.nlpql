@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for M-BCD" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "blenoxane", "bleomycin"
+];
+
+define  Bleomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "cosmegen", "dactinomycin"
+];
+
+define  Dactinomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_M_BCD:[
+    "M-BCD", "M/BCD", "MBCD"
+];
+
+define final Regimen_M_BCD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_BCD],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__MBCD:
+    where Methotrexate_Treatment AND Bleomycin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__MBCD AND M_BCD_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Osteosarcoma
+
+
+
+
+***/
+ 

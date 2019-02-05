@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "herceptin", "trastuzumab"
 ];
 
-define  TrastuzumabTreatment:
+define  Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  TrastuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_TH_Taxol:[
     "T-T", "T/T", "TH (Taxol)"
 ];
 
-define final THTaxolRegimen:
+define final Regimen_TH_Taxol:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_TH_Taxol],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final THTaxolRegimen:
 // Results
 
         
-define final THTaxolTreatments:
-    where PaclitaxelTreatment AND TrastuzumabTreatment;
+define final Treatment__THTaxol:
+    where Paclitaxel_Treatment AND Trastuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__THTaxol AND TH_Taxol_Regimen;
         
         
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CMF:[
     "CMF"
 ];
 
-define final CMFRegimen:
+define final Regimen_CMF:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CMF],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CMFRegimen:
 // Results
 
         
-define final CMFTreatments:
-    where CyclophosphamideTreatment AND MethotrexateTreatment AND FluorouracilTreatment;
+define final Treatment__CMF:
+    where Cyclophosphamide_Treatment AND Methotrexate_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CMF AND CMF_Regimen;
         
         
 

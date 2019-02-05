@@ -1,0 +1,265 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Hepatocellular carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hepatocellular_carcinoma:[
+    "hcc", "carcinoma of the liver cells", "liver cell carcinoma", "hepatocellular cancer", "hepatocellular carcinoma of the mouse", "carcinoma, hepatocellular, malignant", "hepatocellular carcinoma", "hepatoma", "primary carcinoma of liver cells", "primary carcinoma of the liver cells", "rat hepatocellular carcinoma", "carcinoma of liver cells", "carcinoma, hepatocellular (reni)", "liver cell cancer (hepatocellular carcinoma)"
+];
+
+define final Condition_hepatocellular_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hepatocellular_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_Bevacizumab:[
+    "Erlotinib & Bevacizumab"
+];
+
+define   Regimen_Erlotinib_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nivolumab_monotherapy:[
+    "Nivolumab monotherapy"
+];
+
+define   Regimen_Nivolumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nivolumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx:[
+    "CAPOX", "CapeOX", "CapeOx", "XELOX"
+];
+
+define   Regimen_CapeOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX4:[
+    "FOLFOX4"
+];
+
+define   Regimen_FOLFOX4:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX4],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Bevacizumab:[
+    "Capecitabine & Bevacizumab"
+];
+
+define   Regimen_Capecitabine_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx_Bevacizumab:[
+    "CAPOX-B", "CAPOX/B", "CAPOXB", "CapeOX  and  Bevacizumab", "CapeOX & Bevacizumab", "CapeOX + Bevacizumab", "CapeOX / Bevacizumab", "CapeOX and Bevacizumab", "CapeOX+Bevacizumab", "CapeOX/Bevacizumab", "CapeOx  and  Bevacizumab", "CapeOx & Bevacizumab", "CapeOx + Bevacizumab", "CapeOx / Bevacizumab", "CapeOx and Bevacizumab", "CapeOx+Bevacizumab", "CapeOx/Bevacizumab", "XELOX  and  Bevacizumab", "XELOX & Bevacizumab", "XELOX + Bevacizumab", "XELOX / Bevacizumab", "XELOX and Bevacizumab", "XELOX+Bevacizumab", "XELOX/Bevacizumab"
+];
+
+define   Regimen_CapeOx_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Regorafenib_monotherapy:[
+    "Regorafenib monotherapy"
+];
+
+define   Regimen_Regorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Regorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Axitinib_TACE:[
+    "Axitinib  and  TACE", "Axitinib & TACE", "Axitinib + TACE", "Axitinib / TACE", "Axitinib and TACE", "Axitinib+TACE", "Axitinib/TACE"
+];
+
+define   Regimen_Axitinib_TACE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Axitinib_TACE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DEB_TACE:[
+    "DEB-TACE", "DEB/TACE", "DEBTACE"
+];
+
+define   Regimen_DEB_TACE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DEB_TACE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TACE:[
+    "TACE"
+];
+
+define   Regimen_TACE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TACE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GemOx:[
+    "GemOx"
+];
+
+define   Regimen_GemOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GemOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenvatinib_monotherapy:[
+    "Lenvatinib monotherapy"
+];
+
+define   Regimen_Lenvatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenvatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TACE_then_5_FU:[
+    "TACE, then 5-FU"
+];
+
+define   Regimen_TACE_then_5_FU:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TACE_then_5_FU],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cabozantinib_monotherapy:[
+    "Cabozantinib monotherapy"
+];
+
+define   Regimen_Cabozantinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cabozantinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hepatocellular_carcinoma:
+    where Sorafenib_monotherapy_Regimen OR Erlotinib_Bevacizumab_Regimen OR Nivolumab_monotherapy_Regimen OR Pembrolizumab_monotherapy_Regimen OR Bevacizumab_monotherapy_Regimen OR Capecitabine_monotherapy_Regimen OR Fluorouracil_Folinic_acid_Regimen OR CapeOx_Regimen OR FOLFOX4_Regimen OR Capecitabine_Bevacizumab_Regimen OR CapeOx_Bevacizumab_Regimen OR Regorafenib_monotherapy_Regimen OR Doxorubicin_monotherapy_Regimen OR Axitinib_TACE_Regimen OR DEB_TACE_Regimen OR TACE_Regimen OR GemOx_Regimen OR Lenvatinib_monotherapy_Regimen OR TACE_then_5_FU_Regimen OR Cabozantinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hepatocellular_carcinoma AND hepatocellular_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

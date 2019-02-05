@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "supect", "radotinib"
 ];
 
-define final RadotinibTreatment:
+define final Radotinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final RadotinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Radotinib_monotherapy:[
     "Radotinib monotherapy"
 ];
 
-define final RadotinibmonotherapyRegimen:
+define final Regimen_Radotinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Radotinib_monotherapy],
     documentset:[Docs]
    }); 
 

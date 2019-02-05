@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alunbrig", "brigatinib"
 ];
 
-define final BrigatinibTreatment:
+define final Brigatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final BrigatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Brigatinib_monotherapy:[
     "Brigatinib monotherapy"
 ];
 
-define final BrigatinibmonotherapyRegimen:
+define final Regimen_Brigatinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Brigatinib_monotherapy],
     documentset:[Docs]
    }); 
 

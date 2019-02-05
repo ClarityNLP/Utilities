@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for Cytarabine, Ifosfamide, G-CSF" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "ifex", "ifosfamide"
+];
+
+define  Ifosfamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Cytarabine_Ifosfamide_G_CSF:[
+    "Cytarabine, Ifosfamide, G-CSF"
+];
+
+define final Regimen_Cytarabine_Ifosfamide_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Ifosfamide_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CytarabineIfosfamideGCSF:
+    where Cytarabine_Treatment AND Ifosfamide_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CytarabineIfosfamideGCSF AND Cytarabine_Ifosfamide_G_CSF_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Stem_cell_mobilization
+
+
+
+
+***/
+ 

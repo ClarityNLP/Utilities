@@ -1,0 +1,210 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Anaplastic glioma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_anaplastic_glioma:[
+    "who grade iii glioma", "anaplastic glioma"
+];
+
+define final Condition_anaplastic_glioma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_anaplastic_glioma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carmustine_monotherapy:[
+    "Carmustine monotherapy"
+];
+
+define   Regimen_Carmustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carmustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lomustine_Vincristine_Prednisone:[
+    "Lomustine, Vincristine, Prednisone"
+];
+
+define   Regimen_Lomustine_Vincristine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lomustine_Vincristine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCV:[
+    "PCV"
+];
+
+define   Regimen_PCV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RT_then_Carmustine:[
+    "RT, then Carmustine"
+];
+
+define   Regimen_RT_then_Carmustine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RT_then_Carmustine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RT_then_Temozolomide:[
+    "RT, then Temozolomide"
+];
+
+define   Regimen_RT_then_Temozolomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RT_then_Temozolomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_then_Temozolomide_RT_then_Temozolomide:[
+    "Temozolomide, then Temozolomide & RT, then Temozolomide"
+];
+
+define   Regimen_Temozolomide_then_Temozolomide_RT_then_Temozolomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_then_Temozolomide_RT_then_Temozolomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_RT:[
+    "Temozolomide  and  RT", "Temozolomide & RT", "Temozolomide + RT", "Temozolomide / RT", "Temozolomide and RT", "Temozolomide+RT", "Temozolomide/RT"
+];
+
+define   Regimen_Temozolomide_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_RT_then_Temozolomide:[
+    "Temozolomide & RT, then Temozolomide"
+];
+
+define   Regimen_Temozolomide_RT_then_Temozolomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_RT_then_Temozolomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Bevacizumab:[
+    "Carboplatin & Bevacizumab"
+];
+
+define   Regimen_Carboplatin_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_monotherapy:[
+    "Cyclophosphamide monotherapy"
+];
+
+define   Regimen_Cyclophosphamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_monotherapy:[
+    "Etoposide monotherapy"
+];
+
+define   Regimen_Etoposide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_monotherapy:[
+    "Irinotecan monotherapy"
+];
+
+define   Regimen_Irinotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_Bevacizumab:[
+    "Irinotecan & Bevacizumab"
+];
+
+define   Regimen_Irinotecan_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_anaplastic_glioma:
+    where Temozolomide_monotherapy_Regimen OR Carmustine_monotherapy_Regimen OR Lomustine_Vincristine_Prednisone_Regimen OR PCV_Regimen OR RT_then_Carmustine_Regimen OR RT_then_Temozolomide_Regimen OR Temozolomide_then_Temozolomide_RT_then_Temozolomide_Regimen OR Temozolomide_RT_Regimen OR Temozolomide_RT_then_Temozolomide_Regimen OR Bevacizumab_monotherapy_Regimen OR Carboplatin_Bevacizumab_Regimen OR Cyclophosphamide_monotherapy_Regimen OR Etoposide_monotherapy_Regimen OR Irinotecan_monotherapy_Regimen OR Irinotecan_Bevacizumab_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_anaplastic_glioma AND anaplastic_glioma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

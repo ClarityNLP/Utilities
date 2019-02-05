@@ -1,0 +1,353 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Melanoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_melanoma:[
+    "malignant melanoma", "mouse melanoma", "melanoma, malignant", "melanoma"
+];
+
+define final Condition_melanoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_melanoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nivolumab_monotherapy:[
+    "Nivolumab monotherapy"
+];
+
+define   Regimen_Nivolumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nivolumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_monotherapy:[
+    "Docetaxel monotherapy"
+];
+
+define   Regimen_Docetaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy:[
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
+];
+
+define   Regimen_Paclitaxel_nanoparticle_albumin_bound_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_nab_Paclitaxel:[
+    "Carboplatin & nab-Paclitaxel"
+];
+
+define   Regimen_Carboplatin_nab_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_nab_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2a_monotherapy:[
+    "Interferon alfa-2a monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_monotherapy:[
+    "HDI", "Interferon alfa-2b monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2b_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Peginterferon_alfa_2b_monotherapy:[
+    "Peginterferon alfa-2b monotherapy"
+];
+
+define   Regimen_Peginterferon_alfa_2b_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Peginterferon_alfa_2b_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Talimogene_laherparepvec_monotherapy:[
+    "Talimogene laherparepvec monotherapy"
+];
+
+define   Regimen_Talimogene_laherparepvec_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Talimogene_laherparepvec_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABC:[
+    "ABC"
+];
+
+define   Regimen_ABC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Dacarbazine:[
+    "Cisplatin & Dacarbazine"
+];
+
+define   Regimen_Cisplatin_Dacarbazine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Dacarbazine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine:[
+    "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine"
+];
+
+define   Regimen_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Dacarbazine_Paclitaxel:[
+    "Cisplatin, Dacarbazine, Paclitaxel"
+];
+
+define   Regimen_Cisplatin_Dacarbazine_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Dacarbazine_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CVD_Vinblastine:[
+    "CVD", "CVD (Vinblastine)"
+];
+
+define   Regimen_CVD_Vinblastine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CVD_Vinblastine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CVD_Vindesine:[
+    "CVD", "CVD (Vindesine)"
+];
+
+define   Regimen_CVD_Vindesine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CVD_Vindesine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_monotherapy:[
+    "Dacarbazine monotherapy"
+];
+
+define   Regimen_Dacarbazine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_Interferon_alfa:[
+    "Dacarbazine & Interferon alfa"
+];
+
+define   Regimen_Dacarbazine_Interferon_alfa:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_Interferon_alfa],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_Ipilimumab:[
+    "Dacarbazine & Ipilimumab"
+];
+
+define   Regimen_Dacarbazine_Ipilimumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_Ipilimumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fotemustine_monotherapy:[
+    "Fotemustine monotherapy"
+];
+
+define   Regimen_Fotemustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fotemustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_High_dose_Interleukin_2:[
+    "HD IL-2", "HD IL/2", "HD IL2", "HDIL2", "High-dose Interleukin-2"
+];
+
+define   Regimen_High_dose_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_High_dose_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Low_dose_Interleukin_2:[
+    "LD IL-2", "LD IL/2", "LD IL2", "LDIL2", "Low-dose Interleukin-2"
+];
+
+define   Regimen_Low_dose_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Low_dose_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ipilimumab_monotherapy:[
+    "Ipilimumab monotherapy"
+];
+
+define   Regimen_Ipilimumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ipilimumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_Bevacizumab:[
+    "Temozolomide & Bevacizumab"
+];
+
+define   Regimen_Temozolomide_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ipilimumab_Nivolumab:[
+    "Ipilimumab & Nivolumab"
+];
+
+define   Regimen_Ipilimumab_Nivolumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ipilimumab_Nivolumab],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_melanoma:
+    where Temozolomide_monotherapy_Regimen OR Carboplatin_Paclitaxel_Regimen OR Nivolumab_monotherapy_Regimen OR Pembrolizumab_monotherapy_Regimen OR Imatinib_monotherapy_Regimen OR Docetaxel_monotherapy_Regimen OR Paclitaxel_monotherapy_Regimen OR Paclitaxel_nanoparticle_albumin_bound_monotherapy_Regimen OR Carboplatin_nab_Paclitaxel_Regimen OR Interferon_alfa_2a_monotherapy_Regimen OR Interferon_alfa_2b_monotherapy_Regimen OR Peginterferon_alfa_2b_monotherapy_Regimen OR Talimogene_laherparepvec_monotherapy_Regimen OR ABC_Regimen OR Cisplatin_Dacarbazine_Regimen OR Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine_Regimen OR Cisplatin_Dacarbazine_Paclitaxel_Regimen OR CVD_Vinblastine_Regimen OR CVD_Vindesine_Regimen OR Dacarbazine_monotherapy_Regimen OR Dacarbazine_Interferon_alfa_Regimen OR Dacarbazine_Ipilimumab_Regimen OR Fotemustine_monotherapy_Regimen OR High_dose_Interleukin_2_Regimen OR Low_dose_Interleukin_2_Regimen OR Ipilimumab_monotherapy_Regimen OR Temozolomide_Bevacizumab_Regimen OR Ipilimumab_Nivolumab_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_melanoma AND melanoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "idamycin", "idarubicin"
 ];
 
-define  IdarubicinTreatment:
+define  Idarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "nexavar", "sorafenib"
 ];
 
-define  SorafenibTreatment:
+define  Sorafenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  SorafenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cytarabine_Idarubicin_Sorafenib:[
     "Cytarabine, Idarubicin, Sorafenib"
 ];
 
-define final CytarabineIdarubicinSorafenibRegimen:
+define final Regimen_Cytarabine_Idarubicin_Sorafenib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_Sorafenib],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CytarabineIdarubicinSorafenibRegimen:
 // Results
 
         
-define final CytarabineIdarubicinSorafenibTreatments:
-    where CytarabineTreatment AND IdarubicinTreatment AND SorafenibTreatment;
+define final Treatment__CytarabineIdarubicinSorafenib:
+    where Cytarabine_Treatment AND Idarubicin_Treatment AND Sorafenib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CytarabineIdarubicinSorafenib AND Cytarabine_Idarubicin_Sorafenib_Regimen;
         
         
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cytarabine_Methotrexate_Rituximab:[
     "Cytarabine, Methotrexate, Rituximab"
 ];
 
-define final CytarabineMethotrexateRituximabRegimen:
+define final Regimen_Cytarabine_Methotrexate_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cytarabine_Methotrexate_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CytarabineMethotrexateRituximabRegimen:
 // Results
 
         
-define final CytarabineMethotrexateRituximabTreatments:
-    where CytarabineTreatment AND MethotrexateTreatment AND RituximabTreatment;
+define final Treatment__CytarabineMethotrexateRituximab:
+    where Cytarabine_Treatment AND Methotrexate_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CytarabineMethotrexateRituximab AND Cytarabine_Methotrexate_Rituximab_Regimen;
         
         
 

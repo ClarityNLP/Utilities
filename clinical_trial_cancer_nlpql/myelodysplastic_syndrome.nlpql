@@ -1,0 +1,221 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Myelodysplastic syndrome" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_myelodysplastic_syndrome:[
+    "dysmyelopoietic syndrome", "myelodysplastic syndrome/neoplasm", "myelodysplastic syndrome, nos", "myelodysplasia", "myelodysplastic syndrome", "adult myelodysplastic syndrome", "preleukemia", "myelodysplastic neoplasm", "childhood mds", "smoldering leukemia", "hematopoeitic - myelodysplastic syndrome (mds)", "childhood myelodysplastic syndrome", "mds", "oligoblastic leukemia", "myelodysplastic syndromes"
+];
+
+define final Condition_myelodysplastic_syndrome:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_myelodysplastic_syndrome],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Azacitidine_monotherapy:[
+    "Azacitidine monotherapy"
+];
+
+define   Regimen_Azacitidine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Clofarabine_monotherapy:[
+    "Clofarabine monotherapy"
+];
+
+define   Regimen_Clofarabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Clofarabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Decitabine_monotherapy:[
+    "Decitabine monotherapy"
+];
+
+define   Regimen_Decitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Decitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LoDAC:[
+    "LDAC", "LoDAC"
+];
+
+define   Regimen_LoDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LoDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Midostaurin_monotherapy:[
+    "Midostaurin monotherapy"
+];
+
+define   Regimen_Midostaurin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Midostaurin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_monotherapy:[
+    "Alemtuzumab monotherapy"
+];
+
+define   Regimen_Alemtuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine:[
+    "ATG (Horse) & Cyclosporine"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_monotherapy:[
+    "Cyclosporine monotherapy"
+];
+
+define   Regimen_Cyclosporine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Lenalidomide:[
+    "Azacitidine & Lenalidomide"
+];
+
+define   Regimen_Azacitidine_Lenalidomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Lenalidomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Vorinostat:[
+    "Azacitidine & Vorinostat"
+];
+
+define   Regimen_Azacitidine_Vorinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Vorinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_monotherapy:[
+    "Erlotinib monotherapy"
+];
+
+define   Regimen_Erlotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_monotherapy:[
+    "ATG", "ATG (Horse) monotherapy"
+];
+
+define   Regimen_ATG_Horse_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Rabbit_monotherapy:[
+    "ATG", "ATG (Rabbit) monotherapy"
+];
+
+define   Regimen_ATG_Rabbit_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Rabbit_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Epoetin_Lenalidomide:[
+    "Epoetin & Lenalidomide"
+];
+
+define   Regimen_Epoetin_Lenalidomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Epoetin_Lenalidomide],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_myelodysplastic_syndrome:
+    where Azacitidine_monotherapy_Regimen OR Clofarabine_monotherapy_Regimen OR Decitabine_monotherapy_Regimen OR LoDAC_Regimen OR Temozolomide_monotherapy_Regimen OR Midostaurin_monotherapy_Regimen OR Alemtuzumab_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR ATG_Horse_Cyclosporine_Regimen OR Cyclosporine_monotherapy_Regimen OR Azacitidine_Lenalidomide_Regimen OR Azacitidine_Vorinostat_Regimen OR Erlotinib_monotherapy_Regimen OR ATG_Horse_monotherapy_Regimen OR ATG_Rabbit_monotherapy_Regimen OR Epoetin_Lenalidomide_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_myelodysplastic_syndrome AND myelodysplastic_syndrome_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

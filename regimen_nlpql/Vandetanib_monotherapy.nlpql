@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "caprelsa", "vandetanib"
 ];
 
-define final VandetanibTreatment:
+define final Vandetanib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final VandetanibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vandetanib_monotherapy:[
     "Vandetanib monotherapy"
 ];
 
-define final VandetanibmonotherapyRegimen:
+define final Regimen_Vandetanib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vandetanib_monotherapy],
     documentset:[Docs]
    }); 
 

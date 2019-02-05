@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Myelofibrosis" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_myelofibrosis:[
+    "myelofibrosis"
+];
+
+define final Condition_myelofibrosis:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_myelofibrosis],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Prednisone_monotherapy:[
+    "Prednisone monotherapy"
+];
+
+define   Regimen_Prednisone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Prednisone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_monotherapy:[
+    "Pomalidomide monotherapy"
+];
+
+define   Regimen_Pomalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_Prednisone:[
+    "Pomalidomide & Prednisone"
+];
+
+define   Regimen_Pomalidomide_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_myelofibrosis:
+    where Prednisone_monotherapy_Regimen OR Ruxolitinib_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR Pomalidomide_monotherapy_Regimen OR Pomalidomide_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_myelofibrosis AND myelofibrosis_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

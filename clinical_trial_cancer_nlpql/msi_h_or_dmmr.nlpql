@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to MSI-H or dMMR" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_msi_h_or_dmmr:[
+    "msi-h or dmmr"
+];
+
+define final Condition_msi_h_or_dmmr:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_msi_h_or_dmmr],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

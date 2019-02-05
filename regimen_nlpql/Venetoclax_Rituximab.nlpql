@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "venclexta", "venetoclax"
 ];
 
-define  VenetoclaxTreatment:
+define  Venetoclax_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Venetoclax_Rituximab:[
     "VEN & R", "VEN / R", "VEN and R", "VEN&R", "VEN+R", "VEN/R", "VENR", "Venetoclax & Rituximab"
 ];
 
-define final VenetoclaxRituximabRegimen:
+define final Regimen_Venetoclax_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Venetoclax_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final VenetoclaxRituximabRegimen:
 // Results
 
         
-define final VenetoclaxRituximabTreatments:
-    where VenetoclaxTreatment AND RituximabTreatment;
+define final Treatment__VenetoclaxRituximab:
+    where Venetoclax_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VenetoclaxRituximab AND Venetoclax_Rituximab_Regimen;
         
         
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define  PegylatedliposomaldoxorubicinTreatment:
+define  Pegylatedliposomaldoxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_Bevacizumab:[
     "Doxorubicin pegylated liposomal & Bevacizumab"
 ];
 
-define final DoxorubicinpegylatedliposomalBevacizumabRegimen:
+define final Regimen_Doxorubicin_pegylated_liposomal_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final DoxorubicinpegylatedliposomalBevacizumabRegimen:
 // Results
 
         
-define final DoxorubicinpegylatedliposomalBevacizumabTreatments:
-    where PegylatedliposomaldoxorubicinTreatment AND BevacizumabTreatment;
+define final Treatment__DoxorubicinpegylatedliposomalBevacizumab:
+    where Pegylatedliposomaldoxorubicin_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DoxorubicinpegylatedliposomalBevacizumab AND Doxorubicin_pegylated_liposomal_Bevacizumab_Regimen;
         
         
 

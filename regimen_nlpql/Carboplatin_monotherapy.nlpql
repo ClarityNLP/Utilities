@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define final CarboplatinTreatment:
+define final Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CarboplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_monotherapy:[
     "Carboplatin monotherapy"
 ];
 
-define final CarboplatinmonotherapyRegimen:
+define final Regimen_Carboplatin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CarboplatinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Low-grade_glioma, Testicular_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer
+Known regimen for: Ovarian_cancer, Testicular_cancer, Cervical_cancer, Endometrial_cancer, Low-grade_glioma
 
 
 

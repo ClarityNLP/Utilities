@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PaclitaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Paclitaxel:[
     "Cisplatin & Paclitaxel"
 ];
 
-define final CisplatinPaclitaxelRegimen:
+define final Regimen_Cisplatin_Paclitaxel:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CisplatinPaclitaxelRegimen:
 // Results
 
         
-define final CisplatinPaclitaxelTreatments:
-    where CisplatinTreatment AND PaclitaxelTreatment;
+define final Treatment__CisplatinPaclitaxel:
+    where Cisplatin_Treatment AND Paclitaxel_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinPaclitaxel AND Cisplatin_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Cutaneous_basal_cell_carcinoma, Non-small_cell_lung_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, Head_and_neck_cancer
+Known regimen for: Ovarian_cancer, Esophageal_cancer, Cutaneous_basal_cell_carcinoma, Head_and_neck_cancer, Cervical_cancer, Endometrial_cancer, Non-small_cell_lung_cancer
 
 
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define final PegylatedliposomaldoxorubicinTreatment:
+define final Pegylatedliposomaldoxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PegylatedliposomaldoxorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy:[
     "Doxorubicin pegylated liposomal monotherapy"
 ];
 
-define final DoxorubicinpegylatedliposomalmonotherapyRegimen:
+define final Regimen_Doxorubicin_pegylated_liposomal_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy],
     documentset:[Docs]
    }); 
 

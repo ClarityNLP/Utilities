@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define final BortezomibTreatment:
+define final Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final BortezomibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bortezomib_monotherapy:[
     "Bortezomib monotherapy"
 ];
 
-define final BortezomibmonotherapyRegimen:
+define final Regimen_Bortezomib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bortezomib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final BortezomibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Waldenstrom_macroglobulinemia, Multiple_myeloma_consolidation_and_maintenance, Mantle_cell_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis, Castleman_disease
+Known regimen for: Multiple_myeloma_consolidation_and_maintenance, Marginal_zone_lymphoma, Mantle_cell_lymphoma, Follicular_lymphoma, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis, Castleman_disease, Waldenstrom_macroglobulinemia
 
 
 

@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "neupogen", "filgrastim"
 ];
 
-define  FilgrastimTreatment:
+define  Filgrastim_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "granocyte", "lenograstim"
 ];
 
-define  LenograstimTreatment:
+define  Lenograstim_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  LenograstimTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FLAG:[
     "FLAG"
 ];
 
-define final FLAGRegimen:
+define final Regimen_FLAG:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FLAG],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final FLAGRegimen:
 // Results
 
         
-define final FLAGTreatments:
-    where FludarabineTreatment AND CytarabineTreatment AND FilgrastimTreatment AND LenograstimTreatment;
+define final Treatment__FLAG:
+    where Fludarabine_Treatment AND Cytarabine_Treatment AND Filgrastim_Treatment AND Lenograstim_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FLAG AND FLAG_Regimen;
         
         
 

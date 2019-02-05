@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for C-BOP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "platinol", "cisplatin"
+];
+
+define  Cisplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "blenoxane", "bleomycin"
+];
+
+define  Bleomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "paraplatin", "carboplatin"
+];
+
+define  Carboplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_C_BOP:[
+    "C-BOP", "C/BOP", "CBOP"
+];
+
+define final Regimen_C_BOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_C_BOP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CBOP:
+    where Cisplatin_Treatment AND Vincristine_Treatment AND Bleomycin_Treatment AND Carboplatin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CBOP AND C_BOP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Testicular_cancer
+
+
+
+
+***/
+ 

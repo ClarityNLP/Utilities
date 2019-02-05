@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Etoposide_RT:[
     "Carboplatin, Etoposide, RT", "EP  and  RT", "EP & RT", "EP + RT", "EP / RT", "EP and RT", "EP+RT", "EP/RT", "EPRT"
 ];
 
-define final CarboplatinEtoposideRTRegimen:
+define final Regimen_Carboplatin_Etoposide_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Etoposide_RT],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinEtoposideRTRegimen:
 // Results
 
         
-define final CarboplatinEtoposideRTTreatments:
-    where CarboplatinTreatment AND EtoposideTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__CarboplatinEtoposideRT:
+    where Carboplatin_Treatment AND Etoposide_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinEtoposideRT AND Carboplatin_Etoposide_RT_Regimen;
         
         
 

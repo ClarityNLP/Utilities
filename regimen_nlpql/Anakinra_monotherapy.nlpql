@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "kineret", "anakinra"
 ];
 
-define final AnakinraTreatment:
+define final Anakinra_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AnakinraTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Anakinra_monotherapy:[
     "Anakinra monotherapy"
 ];
 
-define final AnakinramonotherapyRegimen:
+define final Regimen_Anakinra_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Anakinra_monotherapy],
     documentset:[Docs]
    }); 
 

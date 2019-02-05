@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "tomudex", "raltitrexed"
 ];
 
-define  RaltitrexedTreatment:
+define  Raltitrexed_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RaltitrexedTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Raltitrexed:[
     "Cisplatin & Raltitrexed"
 ];
 
-define final CisplatinRaltitrexedRegimen:
+define final Regimen_Cisplatin_Raltitrexed:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Raltitrexed],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CisplatinRaltitrexedRegimen:
 // Results
 
         
-define final CisplatinRaltitrexedTreatments:
-    where CisplatinTreatment AND RaltitrexedTreatment;
+define final Treatment__CisplatinRaltitrexed:
+    where Cisplatin_Treatment AND Raltitrexed_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinRaltitrexed AND Cisplatin_Raltitrexed_Regimen;
         
         
 

@@ -14,57 +14,57 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
@@ -72,13 +72,13 @@ define  VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine:[
     "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine"
 ];
 
-define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineRegimen:
+define final Regimen_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine],
     documentset:[Docs]
    }); 
 
@@ -86,10 +86,11 @@ define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineRegimen:
 // Results
 
         
-define final CarboplatinCyclophosphamideEtoposideMethotrexateVincristineTreatments:
-    where CarboplatinTreatment AND CyclophosphamideTreatment AND EtoposideTreatment AND MethotrexateTreatment AND VincristineTreatment;
+define final Treatment__CarboplatinCyclophosphamideEtoposideMethotrexateVincristine:
+    where Carboplatin_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Methotrexate_Treatment AND Vincristine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinCyclophosphamideEtoposideMethotrexateVincristine AND Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine_Regimen;
         
         
 

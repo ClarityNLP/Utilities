@@ -1,0 +1,122 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Polycythemia vera" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_polycythemia_vera:[
+    "polycythemia vera", "polycythemia rubra vera"
+];
+
+define final Condition_polycythemia_vera:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_polycythemia_vera],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hydroxyurea_monotherapy:[
+    "Hydroxyurea monotherapy"
+];
+
+define   Regimen_Hydroxyurea_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hydroxyurea_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Peginterferon_alfa_2a_monotherapy:[
+    "Peginterferon alfa-2a monotherapy"
+];
+
+define   Regimen_Peginterferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Peginterferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Thalidomide_monotherapy:[
+    "Thalidomide monotherapy"
+];
+
+define   Regimen_Thalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Thalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Anagrelide_monotherapy:[
+    "Anagrelide monotherapy"
+];
+
+define   Regimen_Anagrelide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Anagrelide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pipobroman_monotherapy:[
+    "Pipobroman monotherapy"
+];
+
+define   Regimen_Pipobroman_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pipobroman_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_polycythemia_vera:
+    where Ruxolitinib_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR Hydroxyurea_monotherapy_Regimen OR Peginterferon_alfa_2a_monotherapy_Regimen OR Thalidomide_monotherapy_Regimen OR Anagrelide_monotherapy_Regimen OR Pipobroman_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_polycythemia_vera AND polycythemia_vera_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EtoposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CYVE:[
     "CYVE"
 ];
 
-define final CYVERegimen:
+define final Regimen_CYVE:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CYVE],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CYVERegimen:
 // Results
 
         
-define final CYVETreatments:
-    where CytarabineTreatment AND EtoposideTreatment;
+define final Treatment__CYVE:
+    where Cytarabine_Treatment AND Etoposide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CYVE AND CYVE_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, CNS_lymphoma, Acute_myeloid_leukemia
+Known regimen for: Autologous_HSCT, Acute_myeloid_leukemia, CNS_lymphoma
 
 
 

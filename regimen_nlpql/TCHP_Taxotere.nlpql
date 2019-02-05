@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "herceptin", "trastuzumab"
 ];
 
-define  TrastuzumabTreatment:
+define  Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "perjeta", "pertuzumab"
 ];
 
-define  PertuzumabTreatment:
+define  Pertuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  PertuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_TCHP_Taxotere:[
     "TCHP", "TCHP (Taxotere)"
 ];
 
-define final TCHPTaxotereRegimen:
+define final Regimen_TCHP_Taxotere:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_TCHP_Taxotere],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final TCHPTaxotereRegimen:
 // Results
 
         
-define final TCHPTaxotereTreatments:
-    where DocetaxelTreatment AND CarboplatinTreatment AND TrastuzumabTreatment AND PertuzumabTreatment;
+define final Treatment__TCHPTaxotere:
+    where Docetaxel_Treatment AND Carboplatin_Treatment AND Trastuzumab_Treatment AND Pertuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__TCHPTaxotere AND TCHP_Taxotere_Regimen;
         
         
 

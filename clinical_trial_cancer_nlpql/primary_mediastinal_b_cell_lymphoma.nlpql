@@ -1,0 +1,122 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Primary mediastinal B-cell lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_primary_mediastinal_b_cell_lymphoma:[
+    "primary mediastinal b-cell lymphoma"
+];
+
+define final Condition_primary_mediastinal_b_cell_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_primary_mediastinal_b_cell_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_R_EPOCH:[
+    "DA-R-EPOCH", "DA/R/EPOCH", "DAREPOCH"
+];
+
+define   Regimen_DA_R_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_R_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOP:[
+    "CHOP-R", "CHOP/R", "CHOPR", "R-CHOP", "R-CHOP-21", "R/CHOP", "R/CHOP/21", "RCHOP", "RCHOP21"
+];
+
+define   Regimen_R_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOP_14:[
+    "R-CHOP-14", "R/CHOP/14", "RCHOP14"
+];
+
+define   Regimen_R_CHOP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Axicabtagene_ciloleucel_monotherapy:[
+    "Axicabtagene ciloleucel monotherapy"
+];
+
+define   Regimen_Axicabtagene_ciloleucel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Axicabtagene_ciloleucel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_DHAP:[
+    "R-DHAP", "R/DHAP", "RDHAP"
+];
+
+define   Regimen_R_DHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_DHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_GDP:[
+    "R-GDP", "R/GDP", "RGDP"
+];
+
+define   Regimen_R_GDP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_GDP],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_primary_mediastinal_b_cell_lymphoma:
+    where Pembrolizumab_monotherapy_Regimen OR DA_R_EPOCH_Regimen OR R_CHOP_Regimen OR R_CHOP_14_Regimen OR Axicabtagene_ciloleucel_monotherapy_Regimen OR R_DHAP_Regimen OR R_GDP_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_primary_mediastinal_b_cell_lymphoma AND primary_mediastinal_b_cell_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

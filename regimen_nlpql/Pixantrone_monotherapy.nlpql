@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "pixuvri", "pixantrone"
 ];
 
-define final PixantroneTreatment:
+define final Pixantrone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PixantroneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pixantrone_monotherapy:[
     "Pixantrone monotherapy"
 ];
 
-define final PixantronemonotherapyRegimen:
+define final Regimen_Pixantrone_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pixantrone_monotherapy],
     documentset:[Docs]
    }); 
 

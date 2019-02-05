@@ -1,0 +1,155 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Graft versus host disease (GVHD)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_graft_versus_host_disease_gvhd:[
+    "graft versus host disease (gvhd)"
+];
+
+define final Condition_graft_versus_host_disease_gvhd:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_graft_versus_host_disease_gvhd],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Ibrutinib_monotherapy:[
+    "Ibrutinib monotherapy"
+];
+
+define   Regimen_Ibrutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_Methotrexate_MP:[
+    "Cyclosporine, Methotrexate, MP"
+];
+
+define   Regimen_Cyclosporine_Methotrexate_MP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_Methotrexate_MP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_Methotrexate_Prednisone:[
+    "Cyclosporine, Methotrexate, Prednisone"
+];
+
+define   Regimen_Cyclosporine_Methotrexate_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_Methotrexate_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_Tacrolimus_Tocilizumab:[
+    "Methotrexate, Tacrolimus, Tocilizumab"
+];
+
+define   Regimen_Methotrexate_Tacrolimus_Tocilizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_Tacrolimus_Tocilizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_Tacrolimus_Vorinostat:[
+    "Methotrexate, Tacrolimus, Vorinostat"
+];
+
+define   Regimen_Methotrexate_Tacrolimus_Vorinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_Tacrolimus_Vorinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rabbit_ATG:[
+    "Rabbit ATG"
+];
+
+define   Regimen_Rabbit_ATG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rabbit_ATG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_Prednisone:[
+    "Cyclosporine & Prednisone"
+];
+
+define   Regimen_Cyclosporine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_Corticosteroids_Rituximab:[
+    "Cyclosporine, Corticosteroids, Rituximab"
+];
+
+define   Regimen_Cyclosporine_Corticosteroids_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_Corticosteroids_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_Sirolimus_Prednisone:[
+    "Cyclosporine, Sirolimus, Prednisone"
+];
+
+define   Regimen_Cyclosporine_Sirolimus_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_Sirolimus_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sirolimus_Tacrolimus_Prednisone:[
+    "Sirolimus, Tacrolimus, Prednisone"
+];
+
+define   Regimen_Sirolimus_Tacrolimus_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sirolimus_Tacrolimus_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_graft_versus_host_disease_gvhd:
+    where Ibrutinib_monotherapy_Regimen OR Cyclosporine_Methotrexate_MP_Regimen OR Cyclosporine_Methotrexate_Prednisone_Regimen OR Methotrexate_Tacrolimus_Tocilizumab_Regimen OR Methotrexate_Tacrolimus_Vorinostat_Regimen OR Rabbit_ATG_Regimen OR Cyclosporine_Prednisone_Regimen OR Cyclosporine_Corticosteroids_Rituximab_Regimen OR Cyclosporine_Sirolimus_Prednisone_Regimen OR Sirolimus_Tacrolimus_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_graft_versus_host_disease_gvhd AND graft_versus_host_disease_gvhd_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

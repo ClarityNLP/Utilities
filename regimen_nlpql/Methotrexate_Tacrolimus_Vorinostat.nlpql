@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "prograf", "tacrolimus"
 ];
 
-define  TacrolimusTreatment:
+define  Tacrolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "zolinza", "vorinostat"
 ];
 
-define  VorinostatTreatment:
+define  Vorinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  VorinostatTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Methotrexate_Tacrolimus_Vorinostat:[
     "Methotrexate, Tacrolimus, Vorinostat"
 ];
 
-define final MethotrexateTacrolimusVorinostatRegimen:
+define final Regimen_Methotrexate_Tacrolimus_Vorinostat:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Methotrexate_Tacrolimus_Vorinostat],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final MethotrexateTacrolimusVorinostatRegimen:
 // Results
 
         
-define final MethotrexateTacrolimusVorinostatTreatments:
-    where MethotrexateTreatment AND TacrolimusTreatment AND VorinostatTreatment;
+define final Treatment__MethotrexateTacrolimusVorinostat:
+    where Methotrexate_Treatment AND Tacrolimus_Treatment AND Vorinostat_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MethotrexateTacrolimusVorinostat AND Methotrexate_Tacrolimus_Vorinostat_Regimen;
         
         
 

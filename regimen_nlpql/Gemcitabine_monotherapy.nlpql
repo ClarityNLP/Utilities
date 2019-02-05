@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define final GemcitabineTreatment:
+define final Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final GemcitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gemcitabine_monotherapy:[
     "Gemcitabine monotherapy"
 ];
 
-define final GemcitabinemonotherapyRegimen:
+define final Regimen_Gemcitabine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final GemcitabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Osteosarcoma, Pancreatic_cancer, Diffuse_large_B-cell_lymphoma, Bladder_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Ovarian_cancer, Mesothelioma, Cervical_cancer, Cholangiocarcinoma
+Known regimen for: Ovarian_cancer, Small_cell_lung_cancer, Mesothelioma, Diffuse_large_B-cell_lymphoma, Cervical_cancer, Osteosarcoma, Pancreatic_cancer, Hodgkin_lymphoma, Non-small_cell_lung_cancer, Cholangiocarcinoma, Bladder_cancer
 
 
 

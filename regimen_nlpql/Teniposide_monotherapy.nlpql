@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "vumon", "teniposide"
 ];
 
-define final TeniposideTreatment:
+define final Teniposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TeniposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Teniposide_monotherapy:[
     "Teniposide monotherapy"
 ];
 
-define final TeniposidemonotherapyRegimen:
+define final Regimen_Teniposide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Teniposide_monotherapy],
     documentset:[Docs]
    }); 
 

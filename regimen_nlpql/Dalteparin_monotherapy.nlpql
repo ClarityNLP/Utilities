@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fragmin", "dalteparin"
 ];
 
-define final DalteparinTreatment:
+define final Dalteparin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DalteparinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Dalteparin_monotherapy:[
     "Dalteparin monotherapy"
 ];
 
-define final DalteparinmonotherapyRegimen:
+define final Regimen_Dalteparin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Dalteparin_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "revlimid", "lenalidomide"
 ];
 
-define  LenalidomideTreatment:
+define  Lenalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "arzerra", "ofatumumab"
 ];
 
-define  OfatumumabTreatment:
+define  Ofatumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  OfatumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lenalidomide_Ofatumumab:[
     "Lenalidomide & Ofatumumab"
 ];
 
-define final LenalidomideOfatumumabRegimen:
+define final Regimen_Lenalidomide_Ofatumumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lenalidomide_Ofatumumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final LenalidomideOfatumumabRegimen:
 // Results
 
         
-define final LenalidomideOfatumumabTreatments:
-    where LenalidomideTreatment AND OfatumumabTreatment;
+define final Treatment__LenalidomideOfatumumab:
+    where Lenalidomide_Treatment AND Ofatumumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LenalidomideOfatumumab AND Lenalidomide_Ofatumumab_Regimen;
         
         
 

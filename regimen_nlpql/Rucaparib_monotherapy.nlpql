@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rubraca", "rucaparib"
 ];
 
-define final RucaparibTreatment:
+define final Rucaparib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final RucaparibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Rucaparib_monotherapy:[
     "Rucaparib monotherapy"
 ];
 
-define final RucaparibmonotherapyRegimen:
+define final Regimen_Rucaparib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Rucaparib_monotherapy],
     documentset:[Docs]
    }); 
 

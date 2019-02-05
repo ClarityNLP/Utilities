@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define  BrentuximabvedotinTreatment:
+define  Brentuximabvedotin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "bendamustine"
 ];
 
-define  BendamustineTreatment:
+define  Bendamustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  BendamustineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BVB:[
     "BVB"
 ];
 
-define final BVBRegimen:
+define final Regimen_BVB:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BVB],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BVBRegimen:
 // Results
 
         
-define final BVBTreatments:
-    where BrentuximabvedotinTreatment AND BendamustineTreatment;
+define final Treatment__BVB:
+    where Brentuximabvedotin_Treatment AND Bendamustine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BVB AND BVB_Regimen;
         
         
 

@@ -1,0 +1,122 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Aplastic anemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_aplastic_anemia:[
+    "aplastic anemia"
+];
+
+define final Condition_aplastic_anemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_aplastic_anemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine:[
+    "ATG (Horse) & Cyclosporine"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine_Eltrombopag:[
+    "ATG (Horse), Cyclosporine, Eltrombopag"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine_Eltrombopag:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_Eltrombopag],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine_Methylprednisolone:[
+    "ATG (Horse), Cyclosporine, Methylprednisolone"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine_Methylprednisolone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_Methylprednisolone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine_G_CSF:[
+    "ATG (Horse), Cyclosporine, G-CSF"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Horse_Cyclosporine_Sirolimus:[
+    "ATG (Horse), Cyclosporine, Sirolimus"
+];
+
+define   Regimen_ATG_Horse_Cyclosporine_Sirolimus:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_Sirolimus],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATG_Rabbit_Cyclosporine:[
+    "ATG (Rabbit) & Cyclosporine"
+];
+
+define   Regimen_ATG_Rabbit_Cyclosporine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATG_Rabbit_Cyclosporine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_monotherapy:[
+    "Cyclosporine monotherapy"
+];
+
+define   Regimen_Cyclosporine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_aplastic_anemia:
+    where ATG_Horse_Cyclosporine_Regimen OR ATG_Horse_Cyclosporine_Eltrombopag_Regimen OR ATG_Horse_Cyclosporine_Methylprednisolone_Regimen OR ATG_Horse_Cyclosporine_G_CSF_Regimen OR ATG_Horse_Cyclosporine_Sirolimus_Regimen OR ATG_Rabbit_Cyclosporine_Regimen OR Cyclosporine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_aplastic_anemia AND aplastic_anemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

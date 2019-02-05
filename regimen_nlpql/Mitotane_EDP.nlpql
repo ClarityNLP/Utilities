@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lysodren", "mitotane"
 ];
 
-define  MitotaneTreatment:
+define  Mitotane_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  CisplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mitotane_EDP:[
     "Mitotane  and  EDP", "Mitotane & EDP", "Mitotane + EDP", "Mitotane / EDP", "Mitotane and EDP", "Mitotane+EDP", "Mitotane/EDP"
 ];
 
-define final MitotaneEDPRegimen:
+define final Regimen_Mitotane_EDP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mitotane_EDP],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final MitotaneEDPRegimen:
 // Results
 
         
-define final MitotaneEDPTreatments:
-    where MitotaneTreatment AND EtoposideTreatment AND DoxorubicinTreatment AND CisplatinTreatment;
+define final Treatment__MitotaneEDP:
+    where Mitotane_Treatment AND Etoposide_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MitotaneEDP AND Mitotane_EDP_Regimen;
         
         
 

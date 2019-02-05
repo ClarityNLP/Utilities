@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for R-VAD+C" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "leukeran", "chlorambucil"
+];
+
+define  Chlorambucil_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_VADC:[
+    "R-VAD & C", "R-VAD / C", "R-VAD and C", "R-VAD&C", "R-VAD+C", "R-VAD/C", "R-VADC", "R/VAD+C", "RVAD+C", "RVADC"
+];
+
+define final Regimen_R_VADC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_VADC],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RVADC:
+    where Rituximab_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment AND Chlorambucil_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RVADC AND R_VADC_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Mantle_cell_lymphoma
+
+
+
+
+***/
+ 

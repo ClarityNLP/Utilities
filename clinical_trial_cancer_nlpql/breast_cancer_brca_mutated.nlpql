@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Breast cancer BRCA-mutated" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_breast_cancer_brca_mutated:[
+    "breast cancer brca-mutated"
+];
+
+define final Condition_breast_cancer_brca_mutated:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_breast_cancer_brca_mutated],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Olaparib_monotherapy:[
+    "Olaparib monotherapy"
+];
+
+define   Regimen_Olaparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Olaparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Talazoparib_monotherapy:[
+    "Talazoparib monotherapy"
+];
+
+define   Regimen_Talazoparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Talazoparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_breast_cancer_brca_mutated:
+    where Olaparib_monotherapy_Regimen OR Talazoparib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_breast_cancer_brca_mutated AND breast_cancer_brca_mutated_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

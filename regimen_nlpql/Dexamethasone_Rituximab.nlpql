@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Dexamethasone_Rituximab:[
     "Dexamethasone & Rituximab"
 ];
 
-define final DexamethasoneRituximabRegimen:
+define final Regimen_Dexamethasone_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Dexamethasone_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final DexamethasoneRituximabRegimen:
 // Results
 
         
-define final DexamethasoneRituximabTreatments:
-    where DexamethasoneTreatment AND RituximabTreatment;
+define final Treatment__DexamethasoneRituximab:
+    where Dexamethasone_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DexamethasoneRituximab AND Dexamethasone_Rituximab_Regimen;
         
         
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vincristine_Prednisone:[
     "Vincristine & Prednisone"
 ];
 
-define final VincristinePrednisoneRegimen:
+define final Regimen_Vincristine_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vincristine_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final VincristinePrednisoneRegimen:
 // Results
 
         
-define final VincristinePrednisoneTreatments:
-    where VincristineTreatment AND PrednisoneTreatment;
+define final Treatment__VincristinePrednisone:
+    where Vincristine_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VincristinePrednisone AND Vincristine_Prednisone_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, Diffuse_large_B-cell_lymphoma
+Known regimen for: Diffuse_large_B-cell_lymphoma, Chronic_myelogenous_leukemia
 
 
 

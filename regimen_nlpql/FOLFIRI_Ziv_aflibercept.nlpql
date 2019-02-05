@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for FOLFIRI & Ziv-aflibercept" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "leucovorin", "folinic acid"
+];
+
+define  Folinicacid_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "5-fu", "fluorouracil"
+];
+
+define  Fluorouracil_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "camptosar", "irinotecan"
+];
+
+define  Irinotecan_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "zaltrap", "ziv-aflibercept"
+];
+
+define  Zivaflibercept_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_FOLFIRI_Ziv_aflibercept:[
+    "FOLFIRI & Ziv-aflibercept"
+];
+
+define final Regimen_FOLFIRI_Ziv_aflibercept:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Ziv_aflibercept],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__FOLFIRIZivaflibercept:
+    where Folinicacid_Treatment AND Fluorouracil_Treatment AND Irinotecan_Treatment AND Zivaflibercept_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__FOLFIRIZivaflibercept AND FOLFIRI_Ziv_aflibercept_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Colon_cancer
+
+
+
+
+***/
+ 

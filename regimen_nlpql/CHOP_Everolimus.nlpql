@@ -14,57 +14,57 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "afinitor", "everolimus"
 ];
 
-define  EverolimusTreatment:
+define  Everolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
@@ -72,13 +72,13 @@ define  EverolimusTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CHOP_Everolimus:[
     "CHOP  and  Everolimus", "CHOP & Everolimus", "CHOP + Everolimus", "CHOP / Everolimus", "CHOP and Everolimus", "CHOP+Everolimus", "CHOP/Everolimus"
 ];
 
-define final CHOPEverolimusRegimen:
+define final Regimen_CHOP_Everolimus:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CHOP_Everolimus],
     documentset:[Docs]
    }); 
 
@@ -86,10 +86,11 @@ define final CHOPEverolimusRegimen:
 // Results
 
         
-define final CHOPEverolimusTreatments:
-    where CyclophosphamideTreatment AND DoxorubicinTreatment AND VincristineTreatment AND PrednisoneTreatment AND EverolimusTreatment;
+define final Treatment__CHOPEverolimus:
+    where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Everolimus_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CHOPEverolimus AND CHOP_Everolimus_Regimen;
         
         
 

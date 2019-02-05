@@ -1,0 +1,111 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Low-grade glioma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_low_grade_glioma:[
+    "low-grade glioma", "low grade glioma"
+];
+
+define final Condition_low_grade_glioma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_low_grade_glioma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCV:[
+    "PCV"
+];
+
+define   Regimen_PCV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_monotherapy:[
+    "Carboplatin monotherapy"
+];
+
+define   Regimen_Carboplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Etoposide:[
+    "Cisplatin & Etoposide"
+];
+
+define   Regimen_Cisplatin_Etoposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Etoposide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Vincristine:[
+    "Carboplatin & Vincristine"
+];
+
+define   Regimen_Carboplatin_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Teniposide:[
+    "Carboplatin & Teniposide"
+];
+
+define   Regimen_Carboplatin_Teniposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Teniposide],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_low_grade_glioma:
+    where Temozolomide_monotherapy_Regimen OR PCV_Regimen OR Carboplatin_monotherapy_Regimen OR Cisplatin_Etoposide_Regimen OR Carboplatin_Vincristine_Regimen OR Carboplatin_Teniposide_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_low_grade_glioma AND low_grade_glioma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "dtic", "dacarbazine"
 ];
 
-define  DacarbazineTreatment:
+define  Dacarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclophosphamide_Dacarbazine_Vincristine:[
     "CVD", "Cyclophosphamide, Dacarbazine, Vincristine"
 ];
 
-define final CyclophosphamideDacarbazineVincristineRegimen:
+define final Regimen_Cyclophosphamide_Dacarbazine_Vincristine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclophosphamide_Dacarbazine_Vincristine],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CyclophosphamideDacarbazineVincristineRegimen:
 // Results
 
         
-define final CyclophosphamideDacarbazineVincristineTreatments:
-    where CyclophosphamideTreatment AND DacarbazineTreatment AND VincristineTreatment;
+define final Treatment__CyclophosphamideDacarbazineVincristine:
+    where Cyclophosphamide_Treatment AND Dacarbazine_Treatment AND Vincristine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CyclophosphamideDacarbazineVincristine AND Cyclophosphamide_Dacarbazine_Vincristine_Regimen;
         
         
 

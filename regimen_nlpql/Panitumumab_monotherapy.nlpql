@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "vectibix", "panitumumab"
 ];
 
-define final PanitumumabTreatment:
+define final Panitumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PanitumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Panitumumab_monotherapy:[
     "Panitumumab monotherapy"
 ];
 
-define final PanitumumabmonotherapyRegimen:
+define final Regimen_Panitumumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Panitumumab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PanitumumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Colon_cancer_KRAS_wild-type, Penile_cancer
+Known regimen for: Penile_cancer, Colon_cancer_KRAS_wild-type
 
 
 

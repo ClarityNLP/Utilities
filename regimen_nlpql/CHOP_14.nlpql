@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for CHOP-14" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_CHOP_14:[
+    "CHOP-14", "CHOP-DI", "CHOP/14", "CHOP/DI", "CHOP14", "CHOPDI", "I-CHOP", "I/CHOP", "ICHOP"
+];
+
+define final Regimen_CHOP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP_14],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CHOP14:
+    where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CHOP14 AND CHOP_14_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Adult_T-cell_leukemia-lymphoma
+
+
+
+
+***/
+ 

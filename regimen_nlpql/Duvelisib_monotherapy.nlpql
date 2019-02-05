@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "copiktra", "duvelisib"
 ];
 
-define final DuvelisibTreatment:
+define final Duvelisib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DuvelisibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Duvelisib_monotherapy:[
     "Duvelisib monotherapy"
 ];
 
-define final DuvelisibmonotherapyRegimen:
+define final Regimen_Duvelisib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Duvelisib_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "bendamustine"
 ];
 
-define  BendamustineTreatment:
+define  Bendamustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "zydelig", "idelalisib"
 ];
 
-define  IdelalisibTreatment:
+define  Idelalisib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  IdelalisibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BR_Idelalisib:[
     "BR  and  Idelalisib", "BR & Idelalisib", "BR + Idelalisib", "BR / Idelalisib", "BR and Idelalisib", "BR+Idelalisib", "BR/Idelalisib"
 ];
 
-define final BRIdelalisibRegimen:
+define final Regimen_BR_Idelalisib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BR_Idelalisib],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final BRIdelalisibRegimen:
 // Results
 
         
-define final BRIdelalisibTreatments:
-    where BendamustineTreatment AND RituximabTreatment AND IdelalisibTreatment;
+define final Treatment__BRIdelalisib:
+    where Bendamustine_Treatment AND Rituximab_Treatment AND Idelalisib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BRIdelalisib AND BR_Idelalisib_Regimen;
         
         
 

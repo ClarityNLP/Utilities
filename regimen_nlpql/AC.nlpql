@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  CyclophosphamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_AC:[
     "AC"
 ];
 
-define final ACRegimen:
+define final Regimen_AC:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_AC],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final ACRegimen:
 // Results
 
         
-define final ACTreatments:
-    where DoxorubicinTreatment AND CyclophosphamideTreatment;
+define final Treatment__AC:
+    where Doxorubicin_Treatment AND Cyclophosphamide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AC AND AC_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Breast_cancer_triple_negative, Breast_cancer
+Known regimen for: Breast_cancer, Breast_cancer_triple_negative
 
 
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Paclitaxel_Bevacizumab:[
     "CP & Bev", "CP / Bev", "CP and Bev", "CP&Bev", "CP+Bev", "CP/Bev", "CPBev", "Cisplatin, Paclitaxel, Bevacizumab"
 ];
 
-define final CisplatinPaclitaxelBevacizumabRegimen:
+define final Regimen_Cisplatin_Paclitaxel_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinPaclitaxelBevacizumabRegimen:
 // Results
 
         
-define final CisplatinPaclitaxelBevacizumabTreatments:
-    where CisplatinTreatment AND PaclitaxelTreatment AND BevacizumabTreatment;
+define final Treatment__CisplatinPaclitaxelBevacizumab:
+    where Cisplatin_Treatment AND Paclitaxel_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinPaclitaxelBevacizumab AND Cisplatin_Paclitaxel_Bevacizumab_Regimen;
         
         
 

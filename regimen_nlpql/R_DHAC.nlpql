@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for R-DHAC" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "paraplatin", "carboplatin"
+];
+
+define  Carboplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_DHAC:[
+    "R-DHAC", "R/DHAC", "RDHAC"
+];
+
+define final Regimen_R_DHAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_DHAC],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RDHAC:
+    where Rituximab_Treatment AND Dexamethasone_Treatment AND Cytarabine_Treatment AND Carboplatin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RDHAC AND R_DHAC_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Mantle_cell_lymphoma
+
+
+
+
+***/
+ 

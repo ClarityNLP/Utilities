@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "elspar", "asparaginase"
 ];
 
-define  AsparaginaseTreatment:
+define  Asparaginase_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "erwinaze", "asparaginase erwinia chrysanthemi"
 ];
 
-define  AsparaginaseErwiniachrysanthemiTreatment:
+define  AsparaginaseErwiniachrysanthemi_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DexamethasoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_AspaMetDex:[
     "AspaMetDex"
 ];
 
-define final AspaMetDexRegimen:
+define final Regimen_AspaMetDex:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_AspaMetDex],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final AspaMetDexRegimen:
 // Results
 
         
-define final AspaMetDexTreatments:
-    where AsparaginaseTreatment AND AsparaginaseErwiniachrysanthemiTreatment AND MethotrexateTreatment AND DexamethasoneTreatment;
+define final Treatment__AspaMetDex:
+    where Asparaginase_Treatment AND AsparaginaseErwiniachrysanthemi_Treatment AND Methotrexate_Treatment AND Dexamethasone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AspaMetDex AND AspaMetDex_Regimen;
         
         
 

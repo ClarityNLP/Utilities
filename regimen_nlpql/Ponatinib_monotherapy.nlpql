@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "iclusig", "ponatinib"
 ];
 
-define final PonatinibTreatment:
+define final Ponatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PonatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ponatinib_monotherapy:[
     "Ponatinib monotherapy"
 ];
 
-define final PonatinibmonotherapyRegimen:
+define final Regimen_Ponatinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ponatinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PonatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Chronic_myelogenous_leukemia
 
 
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CapecitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GTX:[
     "GTX"
 ];
 
-define final GTXRegimen:
+define final Regimen_GTX:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GTX],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final GTXRegimen:
 // Results
 
         
-define final GTXTreatments:
-    where GemcitabineTreatment AND DocetaxelTreatment AND CapecitabineTreatment;
+define final Treatment__GTX:
+    where Gemcitabine_Treatment AND Docetaxel_Treatment AND Capecitabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GTX AND GTX_Regimen;
         
         
 

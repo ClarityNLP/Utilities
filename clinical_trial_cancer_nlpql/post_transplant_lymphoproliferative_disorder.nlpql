@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Post-transplant lymphoproliferative disorder" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_post_transplant_lymphoproliferative_disorder:[
+    "post-transplant lymphoproliferative disorder"
+];
+
+define final Condition_post_transplant_lymphoproliferative_disorder:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_post_transplant_lymphoproliferative_disorder],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_R_CHOP:[
+    "CHOP-R", "CHOP/R", "CHOPR", "R-CHOP", "R-CHOP-21", "R/CHOP", "R/CHOP/21", "RCHOP", "RCHOP21"
+];
+
+define   Regimen_R_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ACVBP_dose_adjusted:[
+    "ACVBP", "ACVBP, dose-adjusted"
+];
+
+define   Regimen_ACVBP_dose_adjusted:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ACVBP_dose_adjusted],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CP:[
+    "R-CP", "R/CP", "RCP"
+];
+
+define   Regimen_R_CP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CP],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_post_transplant_lymphoproliferative_disorder:
+    where R_CHOP_Regimen OR ACVBP_dose_adjusted_Regimen OR R_CP_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_post_transplant_lymphoproliferative_disorder AND post_transplant_lymphoproliferative_disorder_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

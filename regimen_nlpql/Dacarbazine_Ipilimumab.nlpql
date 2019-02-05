@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "dtic", "dacarbazine"
 ];
 
-define  DacarbazineTreatment:
+define  Dacarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "yervoy", "ipilimumab"
 ];
 
-define  IpilimumabTreatment:
+define  Ipilimumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IpilimumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Dacarbazine_Ipilimumab:[
     "Dacarbazine & Ipilimumab"
 ];
 
-define final DacarbazineIpilimumabRegimen:
+define final Regimen_Dacarbazine_Ipilimumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Dacarbazine_Ipilimumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final DacarbazineIpilimumabRegimen:
 // Results
 
         
-define final DacarbazineIpilimumabTreatments:
-    where DacarbazineTreatment AND IpilimumabTreatment;
+define final Treatment__DacarbazineIpilimumab:
+    where Dacarbazine_Treatment AND Ipilimumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DacarbazineIpilimumab AND Dacarbazine_Ipilimumab_Regimen;
         
         
 

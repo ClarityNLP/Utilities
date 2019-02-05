@@ -1,0 +1,84 @@
+
+// Phenotype library name
+phenotype "Regimen for Thal-Dex" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "thalomid", "thalidomide"
+];
+
+define  Thalidomide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "thalomid", "thalidomide"
+];
+
+define  Thalidomide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Thal_Dex:[
+    "Thal-Dex", "Thal/Dex", "ThalDex"
+];
+
+define final Regimen_Thal_Dex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Thal_Dex],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__ThalDex:
+    where Thalidomide_Treatment AND Thalidomide_Treatment AND Dexamethasone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__ThalDex AND Thal_Dex_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory
+
+
+
+
+***/
+ 

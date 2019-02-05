@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "zolinza", "vorinostat"
 ];
 
-define  VorinostatTreatment:
+define  Vorinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VorinostatTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bortezomib_Vorinostat:[
     "Bortezomib & Vorinostat"
 ];
 
-define final BortezomibVorinostatRegimen:
+define final Regimen_Bortezomib_Vorinostat:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bortezomib_Vorinostat],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BortezomibVorinostatRegimen:
 // Results
 
         
-define final BortezomibVorinostatTreatments:
-    where BortezomibTreatment AND VorinostatTreatment;
+define final Treatment__BortezomibVorinostat:
+    where Bortezomib_Treatment AND Vorinostat_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BortezomibVorinostat AND Bortezomib_Vorinostat_Regimen;
         
         
 

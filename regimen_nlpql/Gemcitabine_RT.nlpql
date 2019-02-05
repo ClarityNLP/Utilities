@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gemcitabine_RT:[
     "Gemcitabine  and  RT", "Gemcitabine & RT", "Gemcitabine + RT", "Gemcitabine / RT", "Gemcitabine and RT", "Gemcitabine+RT", "Gemcitabine/RT"
 ];
 
-define final GemcitabineRTRegimen:
+define final Regimen_Gemcitabine_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gemcitabine_RT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final GemcitabineRTRegimen:
 // Results
 
         
-define final GemcitabineRTTreatments:
-    where GemcitabineTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__GemcitabineRT:
+    where Gemcitabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GemcitabineRT AND Gemcitabine_RT_Regimen;
         
         
 

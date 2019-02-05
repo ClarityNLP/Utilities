@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "zolinza", "vorinostat"
 ];
 
-define  VorinostatTreatment:
+define  Vorinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vorinostat_Rituximab:[
     "Vorinostat & Rituximab"
 ];
 
-define final VorinostatRituximabRegimen:
+define final Regimen_Vorinostat_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vorinostat_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final VorinostatRituximabRegimen:
 // Results
 
         
-define final VorinostatRituximabTreatments:
-    where VorinostatTreatment AND RituximabTreatment;
+define final Treatment__VorinostatRituximab:
+    where Vorinostat_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VorinostatRituximab AND Vorinostat_Rituximab_Regimen;
         
         
 

@@ -1,0 +1,254 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Allogeneic HSCT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_allogeneic_hsct:[
+    "allogeneic hsct"
+];
+
+define final Condition_allogeneic_hsct:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_allogeneic_hsct],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_BuCyTBI:[
+    "BuCyTBI"
+];
+
+define   Regimen_BuCyTBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BuCyTBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Busulfan_Cyclophosphamide:[
+    "BuCy", "Busulfan & Cyclophosphamide"
+];
+
+define   Regimen_Busulfan_Cyclophosphamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Busulfan_Cyclophosphamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Busulfan_Fludarabine:[
+    "BuFlu", "Busulfan & Fludarabine", "Flu/Bu", "FluBu"
+];
+
+define   Regimen_Busulfan_Fludarabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Busulfan_Fludarabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_TBI:[
+    "Cy/TBI", "CyTBI", "Cyclophosphamide & TBI"
+];
+
+define   Regimen_Cyclophosphamide_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_TBI:[
+    "Etoposide  and  TBI", "Etoposide & TBI", "Etoposide + TBI", "Etoposide / TBI", "Etoposide and TBI", "Etoposide+TBI", "Etoposide/TBI"
+];
+
+define   Regimen_Etoposide_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Busulfan_Cyclophosphamide:[
+    "FluBuCy", "Fludarabine, Busulfan, Cyclophosphamide"
+];
+
+define   Regimen_Fludarabine_Busulfan_Cyclophosphamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Busulfan_Cyclophosphamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEAM:[
+    "BEAM"
+];
+
+define   Regimen_BEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BFR:[
+    "BFR"
+];
+
+define   Regimen_BFR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BFR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Clofarabine_Melphalan:[
+    "Clofarabine & Melphalan"
+];
+
+define   Regimen_Clofarabine_Melphalan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Clofarabine_Melphalan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Fludarabine_Thiotepa:[
+    "Cyclophosphamide, Fludarabine, Thiotepa"
+];
+
+define   Regimen_Cyclophosphamide_Fludarabine_Thiotepa:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Fludarabine_Thiotepa],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FC:[
+    "FC"
+];
+
+define   Regimen_FC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FCR:[
+    "FCR"
+];
+
+define   Regimen_FCR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FCR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_TBI:[
+    "Fludarabine  and  TBI", "Fludarabine & TBI", "Fludarabine + TBI", "Fludarabine / TBI", "Fludarabine and TBI", "Fludarabine+TBI", "Fludarabine/TBI"
+];
+
+define   Regimen_Fludarabine_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Busulfan_ATG:[
+    "Fludarabine, Busulfan, ATG"
+];
+
+define   Regimen_Fludarabine_Busulfan_ATG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Busulfan_ATG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Cyclophosphamide_ATG:[
+    "Fludarabine, Cyclophosphamide, ATG"
+];
+
+define   Regimen_Fludarabine_Cyclophosphamide_ATG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Cyclophosphamide_ATG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant:[
+    "Fludarabine, Cyclophosphamide, TBI for dUCB or haploidentical transplant", "dUCB"
+];
+
+define   Regimen_Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Melphalan:[
+    "Flu-Mel", "Flu/Mel", "FluMel", "Fludarabine & Melphalan"
+];
+
+define   Regimen_Fludarabine_Melphalan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Melphalan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Melphalan_Alemtuzumab:[
+    "Fludarabine, Melphalan, Alemtuzumab"
+];
+
+define   Regimen_Fludarabine_Melphalan_Alemtuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Melphalan_Alemtuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TLI_ATG:[
+    "TLI  and  ATG", "TLI & ATG", "TLI + ATG", "TLI / ATG", "TLI and ATG", "TLI+ATG", "TLI/ATG", "TLIATG"
+];
+
+define   Regimen_TLI_ATG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TLI_ATG],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_allogeneic_hsct:
+    where BuCyTBI_Regimen OR Busulfan_Cyclophosphamide_Regimen OR Busulfan_Fludarabine_Regimen OR Cyclophosphamide_TBI_Regimen OR Etoposide_TBI_Regimen OR Fludarabine_Busulfan_Cyclophosphamide_Regimen OR BEAM_Regimen OR BFR_Regimen OR Clofarabine_Melphalan_Regimen OR Cyclophosphamide_Fludarabine_Thiotepa_Regimen OR FC_Regimen OR FCR_Regimen OR Fludarabine_TBI_Regimen OR Fludarabine_Busulfan_ATG_Regimen OR Fludarabine_Cyclophosphamide_ATG_Regimen OR Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant_Regimen OR Fludarabine_Melphalan_Regimen OR Fludarabine_Melphalan_Alemtuzumab_Regimen OR TLI_ATG_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_allogeneic_hsct AND allogeneic_hsct_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

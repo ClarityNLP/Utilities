@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PaclitaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
     "Carboplatin & Paclitaxel"
 ];
 
-define final CarboplatinPaclitaxelRegimen:
+define final Regimen_Carboplatin_Paclitaxel:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CarboplatinPaclitaxelRegimen:
 // Results
 
         
-define final CarboplatinPaclitaxelTreatments:
-    where CarboplatinTreatment AND PaclitaxelTreatment;
+define final Treatment__CarboplatinPaclitaxel:
+    where Carboplatin_Treatment AND Paclitaxel_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinPaclitaxel AND Carboplatin_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Prostate_cancer, Bladder_cancer, Adenocarcinoma_of_unknown_primary, Non-small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, Gastric_cancer, Thymoma, Melanoma
+Known regimen for: Ovarian_cancer, Thymoma, Melanoma, Esophageal_cancer, Prostate_cancer, Gastric_cancer, Breast_cancer_triple_negative, Cervical_cancer, Endometrial_cancer, Non-small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary, Bladder_cancer
 
 
 

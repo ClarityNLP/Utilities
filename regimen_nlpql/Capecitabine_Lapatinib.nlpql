@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "tykerb", "lapatinib"
 ];
 
-define  LapatinibTreatment:
+define  Lapatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  LapatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_Lapatinib:[
     "Capecitabine & Lapatinib"
 ];
 
-define final CapecitabineLapatinibRegimen:
+define final Regimen_Capecitabine_Lapatinib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_Lapatinib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CapecitabineLapatinibRegimen:
 // Results
 
         
-define final CapecitabineLapatinibTreatments:
-    where CapecitabineTreatment AND LapatinibTreatment;
+define final Treatment__CapecitabineLapatinib:
+    where Capecitabine_Treatment AND Lapatinib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapecitabineLapatinib AND Capecitabine_Lapatinib_Regimen;
         
         
 

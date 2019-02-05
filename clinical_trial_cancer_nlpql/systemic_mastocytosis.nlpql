@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Systemic mastocytosis" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_systemic_mastocytosis:[
+    "systemic tissue mast cell disease", "systemic mastocytosis", "systemic mastocytosis, nos"
+];
+
+define final Condition_systemic_mastocytosis:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_systemic_mastocytosis],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dasatinib_monotherapy:[
+    "Dasatinib monotherapy"
+];
+
+define   Regimen_Dasatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dasatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nilotinib_monotherapy:[
+    "Nilotinib monotherapy"
+];
+
+define   Regimen_Nilotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nilotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cladribine_monotherapy:[
+    "Cladribine monotherapy"
+];
+
+define   Regimen_Cladribine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cladribine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_monotherapy:[
+    "HDI", "Interferon alfa-2b monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2b_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_systemic_mastocytosis:
+    where Dasatinib_monotherapy_Regimen OR Nilotinib_monotherapy_Regimen OR Imatinib_monotherapy_Regimen OR Cladribine_monotherapy_Regimen OR Interferon_alfa_2b_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_systemic_mastocytosis AND systemic_mastocytosis_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

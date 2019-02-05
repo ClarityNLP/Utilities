@@ -1,0 +1,177 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Adenocarcinoma of unknown primary" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_adenocarcinoma_of_unknown_primary:[
+    "adenocarcinoma of unknown primary"
+];
+
+define final Condition_adenocarcinoma_of_unknown_primary:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_adenocarcinoma_of_unknown_primary],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_BEP:[
+    "BEP", "PEB"
+];
+
+define   Regimen_BEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Docetaxel:[
+    "Carboplatin & Docetaxel"
+];
+
+define   Regimen_Carboplatin_Docetaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Docetaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_monotherapy:[
+    "Cisplatin monotherapy"
+];
+
+define   Regimen_Cisplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Docetaxel:[
+    "Cisplatin & Docetaxel"
+];
+
+define   Regimen_Cisplatin_Docetaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Docetaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Irinotecan:[
+    "Cisplatin & Irinotecan"
+];
+
+define   Regimen_Cisplatin_Irinotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Irinotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_Gemcitabine:[
+    "Docetaxel & Gemcitabine"
+];
+
+define   Regimen_Docetaxel_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_Bevacizumab:[
+    "Erlotinib & Bevacizumab"
+];
+
+define   Regimen_Erlotinib_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GCP:[
+    "GCP"
+];
+
+define   Regimen_GCP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GCP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Irinotecan:[
+    "Gemcitabine & Irinotecan"
+];
+
+define   Regimen_Gemcitabine_Irinotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Irinotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCE:[
+    "PCE"
+];
+
+define   Regimen_PCE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCE],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_adenocarcinoma_of_unknown_primary:
+    where BEP_Regimen OR Carboplatin_Docetaxel_Regimen OR Carboplatin_Paclitaxel_Regimen OR Cisplatin_monotherapy_Regimen OR Cisplatin_Docetaxel_Regimen OR Cisplatin_Gemcitabine_Regimen OR Cisplatin_Irinotecan_Regimen OR Docetaxel_Gemcitabine_Regimen OR Erlotinib_Bevacizumab_Regimen OR GCP_Regimen OR Gemcitabine_Irinotecan_Regimen OR PCE_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_adenocarcinoma_of_unknown_primary AND adenocarcinoma_of_unknown_primary_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

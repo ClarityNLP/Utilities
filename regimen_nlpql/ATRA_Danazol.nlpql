@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define  AlltransretinoicacidTreatment:
+define  Alltransretinoicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "danocrine", "danazol"
 ];
 
-define  DanazolTreatment:
+define  Danazol_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  DanazolTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATRA_Danazol:[
     "ATRA  and  Danazol", "ATRA & Danazol", "ATRA + Danazol", "ATRA / Danazol", "ATRA and Danazol", "ATRA+Danazol", "ATRA/Danazol"
 ];
 
-define final ATRADanazolRegimen:
+define final Regimen_ATRA_Danazol:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATRA_Danazol],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final ATRADanazolRegimen:
 // Results
 
         
-define final ATRADanazolTreatments:
-    where AlltransretinoicacidTreatment AND DanazolTreatment;
+define final Treatment__ATRADanazol:
+    where Alltransretinoicacid_Treatment AND Danazol_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ATRADanazol AND ATRA_Danazol_Regimen;
         
         
 

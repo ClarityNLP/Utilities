@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "purinethol", "mercaptopurine"
 ];
 
-define  MercaptopurineTreatment:
+define  Mercaptopurine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "millipred", "prednisolone"
 ];
 
-define  PrednisoloneTreatment:
+define  Prednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  PrednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mercaptopurine_Methotrexate_Vinblastine_Prednisolone:[
     "Mercaptopurine, Methotrexate, Vinblastine, Prednisolone"
 ];
 
-define final MercaptopurineMethotrexateVinblastinePrednisoloneRegimen:
+define final Regimen_Mercaptopurine_Methotrexate_Vinblastine_Prednisolone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mercaptopurine_Methotrexate_Vinblastine_Prednisolone],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final MercaptopurineMethotrexateVinblastinePrednisoloneRegimen:
 // Results
 
         
-define final MercaptopurineMethotrexateVinblastinePrednisoloneTreatments:
-    where MercaptopurineTreatment AND MethotrexateTreatment AND VinblastineTreatment AND PrednisoloneTreatment;
+define final Treatment__MercaptopurineMethotrexateVinblastinePrednisolone:
+    where Mercaptopurine_Treatment AND Methotrexate_Treatment AND Vinblastine_Treatment AND Prednisolone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MercaptopurineMethotrexateVinblastinePrednisolone AND Mercaptopurine_Methotrexate_Vinblastine_Prednisolone_Regimen;
         
         
 

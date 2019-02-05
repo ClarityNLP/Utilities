@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "synribo", "omacetaxine"
 ];
 
-define  OmacetaxineTreatment:
+define  Omacetaxine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "aclacinon", "aclarubicin"
 ];
 
-define  AclarubicinTreatment:
+define  Aclarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  AclarubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_HAA:[
     "HAA"
 ];
 
-define final HAARegimen:
+define final Regimen_HAA:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_HAA],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final HAARegimen:
 // Results
 
         
-define final HAATreatments:
-    where OmacetaxineTreatment AND CytarabineTreatment AND AclarubicinTreatment;
+define final Treatment__HAA:
+    where Omacetaxine_Treatment AND Cytarabine_Treatment AND Aclarubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__HAA AND HAA_Regimen;
         
         
 

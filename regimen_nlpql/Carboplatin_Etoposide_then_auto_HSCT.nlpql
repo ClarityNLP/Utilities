@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EtoposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Etoposide_then_auto_HSCT:[
     "Carboplatin & Etoposide, then auto HSCT", "TI-CE", "TI/CE", "TICE"
 ];
 
-define final CarboplatinEtoposidethenautoHSCTRegimen:
+define final Regimen_Carboplatin_Etoposide_then_auto_HSCT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Etoposide_then_auto_HSCT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CarboplatinEtoposidethenautoHSCTRegimen:
 // Results
 
         
-define final CarboplatinEtoposidethenautoHSCTTreatments:
-    where CarboplatinTreatment AND EtoposideTreatment;
+define final Treatment__CarboplatinEtoposidethenautoHSCT:
+    where Carboplatin_Treatment AND Etoposide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinEtoposidethenautoHSCT AND Carboplatin_Etoposide_then_auto_HSCT_Regimen;
         
         
 

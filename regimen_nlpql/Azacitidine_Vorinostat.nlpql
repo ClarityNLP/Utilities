@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "vidaza", "azacitidine"
 ];
 
-define  AzacitidineTreatment:
+define  Azacitidine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "zolinza", "vorinostat"
 ];
 
-define  VorinostatTreatment:
+define  Vorinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VorinostatTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Azacitidine_Vorinostat:[
     "Azacitidine & Vorinostat"
 ];
 
-define final AzacitidineVorinostatRegimen:
+define final Regimen_Azacitidine_Vorinostat:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Azacitidine_Vorinostat],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final AzacitidineVorinostatRegimen:
 // Results
 
         
-define final AzacitidineVorinostatTreatments:
-    where AzacitidineTreatment AND VorinostatTreatment;
+define final Treatment__AzacitidineVorinostat:
+    where Azacitidine_Treatment AND Vorinostat_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AzacitidineVorinostat AND Azacitidine_Vorinostat_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia
+Known regimen for: Chronic_myelomonocytic_leukemia, Myelodysplastic_syndrome
 
 
 

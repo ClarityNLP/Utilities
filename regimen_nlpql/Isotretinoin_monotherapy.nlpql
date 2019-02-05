@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "accutane", "isotretinoin"
 ];
 
-define final IsotretinoinTreatment:
+define final Isotretinoin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IsotretinoinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Isotretinoin_monotherapy:[
     "Isotretinoin monotherapy"
 ];
 
-define final IsotretinoinmonotherapyRegimen:
+define final Regimen_Isotretinoin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Isotretinoin_monotherapy],
     documentset:[Docs]
    }); 
 

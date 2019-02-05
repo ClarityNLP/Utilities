@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "alimta", "pemetrexed"
 ];
 
-define  PemetrexedTreatment:
+define  Pemetrexed_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Pemetrexed_Bevacizumab:[
     "Cisplatin, Pemetrexed, Bevacizumab", "PCB"
 ];
 
-define final CisplatinPemetrexedBevacizumabRegimen:
+define final Regimen_Cisplatin_Pemetrexed_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Pemetrexed_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinPemetrexedBevacizumabRegimen:
 // Results
 
         
-define final CisplatinPemetrexedBevacizumabTreatments:
-    where CisplatinTreatment AND PemetrexedTreatment AND BevacizumabTreatment;
+define final Treatment__CisplatinPemetrexedBevacizumab:
+    where Cisplatin_Treatment AND Pemetrexed_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinPemetrexedBevacizumab AND Cisplatin_Pemetrexed_Bevacizumab_Regimen;
         
         
 

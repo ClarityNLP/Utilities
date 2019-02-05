@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to CNS leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cns_leukemia:[
+    "leukemia of the central nervous system", "leukemia of cns", "central nervous system leukemia", "cns leukemia", "leukemia of the cns", "leukemia of central nervous system"
+];
+
+define final Condition_cns_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cns_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_IT_Cytarabine_WBRT:[
+    "Cytarabine  and  WBRT", "Cytarabine & WBRT", "Cytarabine + WBRT", "Cytarabine / WBRT", "Cytarabine and WBRT", "Cytarabine+WBRT", "Cytarabine/WBRT", "IT Cytarabine  and  WBRT", "IT Cytarabine & WBRT", "IT Cytarabine + WBRT", "IT Cytarabine / WBRT", "IT Cytarabine and WBRT", "IT Cytarabine+WBRT", "IT Cytarabine/WBRT"
+];
+
+define   Regimen_IT_Cytarabine_WBRT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Cytarabine_WBRT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IT_Methotrexate_WBRT:[
+    "IT Methotrexate & WBRT"
+];
+
+define   Regimen_IT_Methotrexate_WBRT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Methotrexate_WBRT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mercaptopurine_WBRT:[
+    "Mercaptopurine & WBRT"
+];
+
+define   Regimen_Mercaptopurine_WBRT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mercaptopurine_WBRT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IT_Cytarabine_Methotrexate_WBRT:[
+    "Cytarabine, Methotrexate, WBRT", "IT Cytarabine, Methotrexate, WBRT"
+];
+
+define   Regimen_IT_Cytarabine_Methotrexate_WBRT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Cytarabine_Methotrexate_WBRT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IT_Methotrexate_monotherapy:[
+    "IT Methotrexate monotherapy"
+];
+
+define   Regimen_IT_Methotrexate_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IT_Methotrexate_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cns_leukemia:
+    where IT_Cytarabine_WBRT_Regimen OR IT_Methotrexate_WBRT_Regimen OR Mercaptopurine_WBRT_Regimen OR IT_Cytarabine_Methotrexate_WBRT_Regimen OR IT_Methotrexate_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cns_leukemia AND cns_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

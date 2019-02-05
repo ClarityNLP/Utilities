@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to EGFR" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_egfr:[
+    "egfr"
+];
+
+define final Condition_egfr:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_egfr],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Erlotinib_monotherapy:[
+    "Erlotinib monotherapy"
+];
+
+define   Regimen_Erlotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

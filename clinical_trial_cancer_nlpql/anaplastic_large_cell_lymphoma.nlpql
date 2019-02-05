@@ -1,0 +1,133 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Anaplastic large cell lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_anaplastic_large_cell_lymphoma:[
+    "ki-1+ alcl", "childhood cd30+ anaplastic large cell lymphoma", "pediatric k-1+ anaplastic large cell lymphoma", "ki-1+ anaplastic large cell lymphoma", "alcl", "cd30 positive anaplastic large cell lymphoma", "childhood anaplastic large cell lymphoma", "pediatric anaplastic large cell lymphoma", "pediatric cd30+ anaplastic large cell lymphoma", "childhood k-1+ anaplastic large cell lymphoma", "adult anaplastic large cell lymphoma", "ki-1 lymphoma", "anaplastic large cell lymphoma", "adult cd30+ anaplastic large cell lymphoma", "adult k-1+ anaplastic large cell lymphoma"
+];
+
+define final Condition_anaplastic_large_cell_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_anaplastic_large_cell_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_APO:[
+    "APO"
+];
+
+define   Regimen_APO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_APO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BV_CHP:[
+    "BV-CHP", "BV/CHP", "BVCHP"
+];
+
+define   Regimen_BV_CHP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BV_CHP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_EPOCH:[
+    "DA-EPOCH", "DA/EPOCH", "DAEPOCH"
+];
+
+define   Regimen_DA_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOEP:[
+    "CHOEP"
+];
+
+define   Regimen_CHOEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOP:[
+    "CHOP"
+];
+
+define   Regimen_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_monotherapy:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define   Regimen_Brentuximab_vedotin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DHAP:[
+    "DHAP"
+];
+
+define   Regimen_DHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GDP:[
+    "GDP"
+];
+
+define   Regimen_GDP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GDP],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_anaplastic_large_cell_lymphoma:
+    where APO_Regimen OR BV_CHP_Regimen OR DA_EPOCH_Regimen OR CHOEP_Regimen OR CHOP_Regimen OR Brentuximab_vedotin_monotherapy_Regimen OR DHAP_Regimen OR GDP_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_anaplastic_large_cell_lymphoma AND anaplastic_large_cell_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

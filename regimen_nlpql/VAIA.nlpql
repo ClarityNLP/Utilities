@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "ifex", "ifosfamide"
 ];
 
-define  IfosfamideTreatment:
+define  Ifosfamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "cosmegen", "dactinomycin"
 ];
 
-define  DactinomycinTreatment:
+define  Dactinomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DactinomycinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VAIA:[
     "VAIA"
 ];
 
-define final VAIARegimen:
+define final Regimen_VAIA:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VAIA],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final VAIARegimen:
 // Results
 
         
-define final VAIATreatments:
-    where VincristineTreatment AND DoxorubicinTreatment AND IfosfamideTreatment AND DactinomycinTreatment;
+define final Treatment__VAIA:
+    where Vincristine_Treatment AND Doxorubicin_Treatment AND Ifosfamide_Treatment AND Dactinomycin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VAIA AND VAIA_Regimen;
         
         
 

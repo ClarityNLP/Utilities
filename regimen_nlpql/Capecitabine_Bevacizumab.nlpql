@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_Bevacizumab:[
     "Capecitabine & Bevacizumab"
 ];
 
-define final CapecitabineBevacizumabRegimen:
+define final Regimen_Capecitabine_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CapecitabineBevacizumabRegimen:
 // Results
 
         
-define final CapecitabineBevacizumabTreatments:
-    where CapecitabineTreatment AND BevacizumabTreatment;
+define final Treatment__CapecitabineBevacizumab:
+    where Capecitabine_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapecitabineBevacizumab AND Capecitabine_Bevacizumab_Regimen;
         
         
 

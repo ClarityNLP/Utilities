@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "calquence", "acalabrutinib"
 ];
 
-define final AcalabrutinibTreatment:
+define final Acalabrutinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AcalabrutinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Acalabrutinib_monotherapy:[
     "Acalabrutinib monotherapy"
 ];
 
-define final AcalabrutinibmonotherapyRegimen:
+define final Regimen_Acalabrutinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Acalabrutinib_monotherapy],
     documentset:[Docs]
    }); 
 

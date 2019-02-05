@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define final CyclophosphamideTreatment:
+define final Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CyclophosphamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclophosphamide_monotherapy:[
     "Cyclophosphamide monotherapy"
 ];
 
-define final CyclophosphamidemonotherapyRegimen:
+define final Regimen_Cyclophosphamide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclophosphamide_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CyclophosphamidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Large_granular_lymphocytic_leukemia, Neuroblastoma, Anaplastic_glioma, Follicular_lymphoma, Glioblastoma
+Known regimen for: Anaplastic_glioma, Neuroblastoma, Follicular_lymphoma, Large_granular_lymphocytic_leukemia, Glioblastoma
 
 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_IT_Methotrexate_WBRT:[
     "IT Methotrexate & WBRT"
 ];
 
-define final ITMethotrexateWBRTRegimen:
+define final Regimen_IT_Methotrexate_WBRT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_IT_Methotrexate_WBRT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final ITMethotrexateWBRTRegimen:
 // Results
 
         
-define final ITMethotrexateWBRTTreatments:
-    where MethotrexateTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__ITMethotrexateWBRT:
+    where Methotrexate_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ITMethotrexateWBRT AND IT_Methotrexate_WBRT_Regimen;
         
         
 

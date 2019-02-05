@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "novantrone", "mitoxantrone"
 ];
 
-define  MitoxantroneTreatment:
+define  Mitoxantrone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "leukeran", "chlorambucil"
 ];
 
-define  ChlorambucilTreatment:
+define  Chlorambucil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_MCP:[
     "MCP"
 ];
 
-define final MCPRegimen:
+define final Regimen_MCP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_MCP],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final MCPRegimen:
 // Results
 
         
-define final MCPTreatments:
-    where MitoxantroneTreatment AND ChlorambucilTreatment AND PrednisoneTreatment;
+define final Treatment__MCP:
+    where Mitoxantrone_Treatment AND Chlorambucil_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MCP AND MCP_Regimen;
         
         
 

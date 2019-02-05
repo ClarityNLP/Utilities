@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "zykadia", "ceritinib"
 ];
 
-define final CeritinibTreatment:
+define final Ceritinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CeritinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ceritinib_monotherapy:[
     "Ceritinib monotherapy"
 ];
 
-define final CeritinibmonotherapyRegimen:
+define final Regimen_Ceritinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ceritinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CeritinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_ROS1-positive, Non-small_cell_lung_cancer_ALK-positive
+Known regimen for: Non-small_cell_lung_cancer_ALK-positive, CNS_carcinoma, Non-small_cell_lung_cancer_ROS1-positive
 
 
 

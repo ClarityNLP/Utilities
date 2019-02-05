@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "yescarta", "axicabtagene ciloleucel"
 ];
 
-define final AxicabtageneciloleucelTreatment:
+define final Axicabtageneciloleucel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AxicabtageneciloleucelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Axicabtagene_ciloleucel_monotherapy:[
     "Axicabtagene ciloleucel monotherapy"
 ];
 
-define final AxicabtageneciloleucelmonotherapyRegimen:
+define final Regimen_Axicabtagene_ciloleucel_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Axicabtagene_ciloleucel_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final AxicabtageneciloleucelmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Transformed_lymphoma, Primary_mediastinal_B-cell_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Diffuse_large_B-cell_lymphoma, Primary_mediastinal_B-cell_lymphoma, Transformed_lymphoma
 
 
 

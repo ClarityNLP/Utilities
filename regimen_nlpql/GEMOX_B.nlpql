@@ -1,0 +1,84 @@
+
+// Phenotype library name
+phenotype "Regimen for GEMOX-B" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "gemzar", "gemcitabine"
+];
+
+define  Gemcitabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "eloxatin", "oxaliplatin"
+];
+
+define  Oxaliplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "avastin", "bevacizumab"
+];
+
+define  Bevacizumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_GEMOX_B:[
+    "GEMOX-B", "GEMOX/B", "GEMOXB"
+];
+
+define final Regimen_GEMOX_B:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GEMOX_B],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__GEMOXB:
+    where Gemcitabine_Treatment AND Oxaliplatin_Treatment AND Bevacizumab_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__GEMOXB AND GEMOX_B_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Cholangiocarcinoma
+
+
+
+
+***/
+ 

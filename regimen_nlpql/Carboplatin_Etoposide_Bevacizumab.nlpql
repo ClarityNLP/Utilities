@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Etoposide_Bevacizumab:[
     "Carboplatin, Etoposide, Bevacizumab"
 ];
 
-define final CarboplatinEtoposideBevacizumabRegimen:
+define final Regimen_Carboplatin_Etoposide_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Etoposide_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinEtoposideBevacizumabRegimen:
 // Results
 
         
-define final CarboplatinEtoposideBevacizumabTreatments:
-    where CarboplatinTreatment AND EtoposideTreatment AND BevacizumabTreatment;
+define final Treatment__CarboplatinEtoposideBevacizumab:
+    where Carboplatin_Treatment AND Etoposide_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinEtoposideBevacizumab AND Carboplatin_Etoposide_Bevacizumab_Regimen;
         
         
 

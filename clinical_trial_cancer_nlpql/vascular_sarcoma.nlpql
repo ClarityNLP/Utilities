@@ -1,0 +1,133 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Vascular sarcoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_vascular_sarcoma:[
+    "vascular sarcoma"
+];
+
+define final Condition_vascular_sarcoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_vascular_sarcoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_monotherapy:[
+    "Etoposide monotherapy"
+];
+
+define   Regimen_Etoposide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_monotherapy:[
+    "Interferon alfa monotherapy"
+];
+
+define   Regimen_Interferon_alfa_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy:[
+    "Doxorubicin pegylated liposomal monotherapy"
+];
+
+define   Regimen_Doxorubicin_pegylated_liposomal_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_pegylated_liposomal_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABV_Vinblastine:[
+    "ABV", "ABV (Vinblastine)"
+];
+
+define   Regimen_ABV_Vinblastine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABV_Vinblastine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABV_Vincristine:[
+    "ABV", "ABV (Vincristine)"
+];
+
+define   Regimen_ABV_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABV_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Daunorubicin_liposomal_monotherapy:[
+    "Daunorubicin liposomal monotherapy"
+];
+
+define   Regimen_Daunorubicin_liposomal_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daunorubicin_liposomal_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_vascular_sarcoma:
+    where Bevacizumab_monotherapy_Regimen OR Etoposide_monotherapy_Regimen OR Paclitaxel_monotherapy_Regimen OR Interferon_alfa_monotherapy_Regimen OR Doxorubicin_pegylated_liposomal_monotherapy_Regimen OR ABV_Vinblastine_Regimen OR ABV_Vincristine_Regimen OR Daunorubicin_liposomal_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_vascular_sarcoma AND vascular_sarcoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

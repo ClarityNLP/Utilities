@@ -1,0 +1,287 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Acute promyelocytic leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_acute_promyelocytic_leukemia:[
+    "aml with t(15;17)(q22;q12)", "promyelocytic leukemia", "acute promyelocytic leukemia with t(15;17)(q22;q12); pml-rara", "fab m3", "acute promyelocytic leukemia", "acute promyelocytic leukemia with t(15;17)(q22;q12); pml/rara", "apml", "apl", "acute promyelocytic leukemia with pml-rara", "apml - acute promyelocytic leukemia"
+];
+
+define final Condition_acute_promyelocytic_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_acute_promyelocytic_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cytarabine_Daunorubicin:[
+    "Cytarabine & Daunorubicin"
+];
+
+define   Regimen_Cytarabine_Daunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Daunorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin:[
+    "Cytarabine & Idarubicin"
+];
+
+define   Regimen_Cytarabine_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ADE_ATRA:[
+    "ADE  and  ATRA", "ADE & ATRA", "ADE + ATRA", "ADE / ATRA", "ADE and ATRA", "ADE+ATRA", "ADE/ATRA"
+];
+
+define   Regimen_ADE_ATRA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ADE_ATRA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_monotherapy:[
+    "Arsenic trioxide monotherapy"
+];
+
+define   Regimen_Arsenic_trioxide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_ATRA:[
+    "Arsenic trioxide & ATRA"
+];
+
+define   Regimen_Arsenic_trioxide_ATRA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_ATRA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin:[
+    "Arsenic trioxide, ATRA, Gemtuzumab ozogamicin"
+];
+
+define   Regimen_Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_ATRA_Idarubicin:[
+    "Arsenic trioxide, ATRA, Idarubicin"
+];
+
+define   Regimen_Arsenic_trioxide_ATRA_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_ATRA_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_monotherapy:[
+    "ATRA monotherapy"
+];
+
+define   Regimen_ATRA_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Cytarabine_Daunorubicin:[
+    "ATRA, Cytarabine, Daunorubicin"
+];
+
+define   Regimen_ATRA_Cytarabine_Daunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Cytarabine_Daunorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Cytarabine_Idarubicin:[
+    "ATRA, Cytarabine, Idarubicin"
+];
+
+define   Regimen_ATRA_Cytarabine_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Cytarabine_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Daunorubicin:[
+    "ATRA  and  Daunorubicin", "ATRA & Daunorubicin", "ATRA + Daunorubicin", "ATRA / Daunorubicin", "ATRA and Daunorubicin", "ATRA+Daunorubicin", "ATRA/Daunorubicin"
+];
+
+define   Regimen_ATRA_Daunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Daunorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Idarubicin:[
+    "AIDA", "ATRA  and  Idarubicin", "ATRA & Idarubicin", "ATRA + Idarubicin", "ATRA / Idarubicin", "ATRA and Idarubicin", "ATRA+Idarubicin", "ATRA/Idarubicin"
+];
+
+define   Regimen_ATRA_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_then_ATRA_Daunorubicin:[
+    "Arsenic trioxide, then ATRA & Daunorubicin"
+];
+
+define   Regimen_Arsenic_trioxide_then_ATRA_Daunorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_then_ATRA_Daunorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine:[
+    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine"
+];
+
+define   Regimen_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA:[
+    "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine, with ATRA"
+];
+
+define   Regimen_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Daunorubicin_monotherapy:[
+    "Daunorubicin monotherapy"
+];
+
+define   Regimen_Daunorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daunorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin:[
+    "Idarubicin, then Mitoxantrone, then Idarubicin"
+];
+
+define   Regimen_Idarubicin_then_Mitoxantrone_then_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA:[
+    "Idarubicin, then Mitoxantrone, then Idarubicin, with ATRA"
+];
+
+define   Regimen_Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Mercaptopurine_Methotrexate:[
+    "ATRA, Mercaptopurine, Methotrexate"
+];
+
+define   Regimen_ATRA_Mercaptopurine_Methotrexate:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Mercaptopurine_Methotrexate],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mercaptopurine_Methotrexate:[
+    "Mercaptopurine & Methotrexate"
+];
+
+define   Regimen_Mercaptopurine_Methotrexate:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mercaptopurine_Methotrexate],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Arsenic_trioxide_Idarubicin:[
+    "Arsenic trioxide & Idarubicin"
+];
+
+define   Regimen_Arsenic_trioxide_Idarubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Arsenic_trioxide_Idarubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Tamibarotene_monotherapy:[
+    "Tamibarotene monotherapy"
+];
+
+define   Regimen_Tamibarotene_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tamibarotene_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_acute_promyelocytic_leukemia:
+    where Cytarabine_Daunorubicin_Regimen OR Cytarabine_Idarubicin_Regimen OR ADE_ATRA_Regimen OR Arsenic_trioxide_monotherapy_Regimen OR Arsenic_trioxide_ATRA_Regimen OR Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin_Regimen OR Arsenic_trioxide_ATRA_Idarubicin_Regimen OR ATRA_monotherapy_Regimen OR ATRA_Cytarabine_Daunorubicin_Regimen OR ATRA_Cytarabine_Idarubicin_Regimen OR ATRA_Daunorubicin_Regimen OR ATRA_Idarubicin_Regimen OR Arsenic_trioxide_then_ATRA_Daunorubicin_Regimen OR Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_Regimen OR Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_with_ATRA_Regimen OR Daunorubicin_monotherapy_Regimen OR Idarubicin_then_Mitoxantrone_then_Idarubicin_Regimen OR Idarubicin_then_Mitoxantrone_then_Idarubicin_with_ATRA_Regimen OR ATRA_Mercaptopurine_Methotrexate_Regimen OR Mercaptopurine_Methotrexate_Regimen OR Arsenic_trioxide_Idarubicin_Regimen OR Tamibarotene_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_acute_promyelocytic_leukemia AND acute_promyelocytic_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

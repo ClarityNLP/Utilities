@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mutamycin", "mitomycin"
 ];
 
-define  MitomycinTreatment:
+define  Mitomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  MitomycinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Mitomycin:[
     "Cisplatin & Mitomycin"
 ];
 
-define final CisplatinMitomycinRegimen:
+define final Regimen_Cisplatin_Mitomycin:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Mitomycin],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CisplatinMitomycinRegimen:
 // Results
 
         
-define final CisplatinMitomycinTreatments:
-    where CisplatinTreatment AND MitomycinTreatment;
+define final Treatment__CisplatinMitomycin:
+    where Cisplatin_Treatment AND Mitomycin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinMitomycin AND Cisplatin_Mitomycin_Regimen;
         
         
 

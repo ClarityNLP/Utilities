@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ellence", "epirubicin"
 ];
 
-define  EpirubicinTreatment:
+define  Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  CyclophosphamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_EC:[
     "EC"
 ];
 
-define final ECRegimen:
+define final Regimen_EC:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_EC],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final ECRegimen:
 // Results
 
         
-define final ECTreatments:
-    where EpirubicinTreatment AND CyclophosphamideTreatment;
+define final Treatment__EC:
+    where Epirubicin_Treatment AND Cyclophosphamide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__EC AND EC_Regimen;
         
         
 

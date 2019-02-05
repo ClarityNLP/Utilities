@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "novantrone", "mitoxantrone"
 ];
 
-define  MitoxantroneTreatment:
+define  Mitoxantrone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CytarabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_MEC:[
     "MEC", "MICE"
 ];
 
-define final MECRegimen:
+define final Regimen_MEC:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_MEC],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final MECRegimen:
 // Results
 
         
-define final MECTreatments:
-    where MitoxantroneTreatment AND EtoposideTreatment AND CytarabineTreatment;
+define final Treatment__MEC:
+    where Mitoxantrone_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MEC AND MEC_Regimen;
         
         
 

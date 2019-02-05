@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "oncovin", "vincristine"
 ];
 
-define final VincristineTreatment:
+define final Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vincristine_monotherapy:[
     "Vincristine monotherapy"
 ];
 
-define final VincristinemonotherapyRegimen:
+define final Regimen_Vincristine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vincristine_monotherapy],
     documentset:[Docs]
    }); 
 

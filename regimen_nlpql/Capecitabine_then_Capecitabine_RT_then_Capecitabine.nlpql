@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define final CapecitabineTreatment:
+define final Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CapecitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_then_Capecitabine_RT_then_Capecitabine:[
     "Capecitabine, then Capecitabine & RT, then Capecitabine"
 ];
 
-define final CapecitabinethenCapecitabineRTthenCapecitabineRegimen:
+define final Regimen_Capecitabine_then_Capecitabine_RT_then_Capecitabine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_then_Capecitabine_RT_then_Capecitabine],
     documentset:[Docs]
    }); 
 

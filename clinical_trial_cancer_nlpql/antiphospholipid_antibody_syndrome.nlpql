@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Antiphospholipid antibody syndrome" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_antiphospholipid_antibody_syndrome:[
+    "antiphospholipid antibody syndrome"
+];
+
+define final Condition_antiphospholipid_antibody_syndrome:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_antiphospholipid_antibody_syndrome],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Warfarin_monotherapy:[
+    "Warfarin monotherapy"
+];
+
+define   Regimen_Warfarin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Warfarin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rivaroxaban_monotherapy:[
+    "Rivaroxaban monotherapy"
+];
+
+define   Regimen_Rivaroxaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rivaroxaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_antiphospholipid_antibody_syndrome:
+    where Warfarin_monotherapy_Regimen OR Rivaroxaban_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_antiphospholipid_antibody_syndrome AND antiphospholipid_antibody_syndrome_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

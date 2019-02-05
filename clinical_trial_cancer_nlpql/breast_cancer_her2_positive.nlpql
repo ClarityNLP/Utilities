@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Breast cancer HER2-positive" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_breast_cancer_her2_positive:[
+    "breast cancer her2-positive"
+];
+
+define final Condition_breast_cancer_her2_positive:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_breast_cancer_her2_positive],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_ECH:[
+    "ECH"
+];
+
+define   Regimen_ECH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ECH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FEC_H:[
+    "FEC  and  H", "FEC & H", "FEC + H", "FEC / H", "FEC and H", "FEC+H", "FEC/H", "FECH"
+];
+
+define   Regimen_FEC_H:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FEC_H],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lapatinib_Trastuzumab:[
+    "Lapatinib & Trastuzumab"
+];
+
+define   Regimen_Lapatinib_Trastuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lapatinib_Trastuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Neratinib_Paclitaxel:[
+    "Neratinib & Paclitaxel"
+];
+
+define   Regimen_Neratinib_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Neratinib_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TCHP_Taxotere:[
+    "TCHP", "TCHP (Taxotere)"
+];
+
+define   Regimen_TCHP_Taxotere:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TCHP_Taxotere],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TH_Taxol:[
+    "T-T", "T/T", "TH (Taxol)"
+];
+
+define   Regimen_TH_Taxol:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TH_Taxol],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VH:[
+    "VH"
+];
+
+define   Regimen_VH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pertuzumab_Trastuzumab:[
+    "Pertuzumab & Trastuzumab"
+];
+
+define   Regimen_Pertuzumab_Trastuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pertuzumab_Trastuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Trastuzumab_monotherapy:[
+    "Trastuzumab monotherapy"
+];
+
+define   Regimen_Trastuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Trastuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_breast_cancer_her2_positive:
+    where ECH_Regimen OR FEC_H_Regimen OR Lapatinib_Trastuzumab_Regimen OR Neratinib_Paclitaxel_Regimen OR TCHP_Taxotere_Regimen OR TH_Taxol_Regimen OR VH_Regimen OR Pertuzumab_Trastuzumab_Regimen OR Trastuzumab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_breast_cancer_her2_positive AND breast_cancer_her2_positive_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

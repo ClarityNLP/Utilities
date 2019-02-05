@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "herceptin", "trastuzumab"
 ];
 
-define final TrastuzumabTreatment:
+define final Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TrastuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Trastuzumab_monotherapy:[
     "Trastuzumab monotherapy"
 ];
 
-define final TrastuzumabmonotherapyRegimen:
+define final Regimen_Trastuzumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Trastuzumab_monotherapy],
     documentset:[Docs]
    }); 
 

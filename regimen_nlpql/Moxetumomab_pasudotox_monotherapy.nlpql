@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lumoxiti", "moxetumomab pasudotox"
 ];
 
-define final MoxetumomabpasudotoxTreatment:
+define final Moxetumomabpasudotox_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MoxetumomabpasudotoxTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Moxetumomab_pasudotox_monotherapy:[
     "Moxetumomab pasudotox monotherapy"
 ];
 
-define final MoxetumomabpasudotoxmonotherapyRegimen:
+define final Regimen_Moxetumomab_pasudotox_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Moxetumomab_pasudotox_monotherapy],
     documentset:[Docs]
    }); 
 

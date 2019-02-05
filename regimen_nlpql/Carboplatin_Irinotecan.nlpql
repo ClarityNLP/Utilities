@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "camptosar", "irinotecan"
 ];
 
-define  IrinotecanTreatment:
+define  Irinotecan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IrinotecanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Irinotecan:[
     "Carboplatin & Irinotecan"
 ];
 
-define final CarboplatinIrinotecanRegimen:
+define final Regimen_Carboplatin_Irinotecan:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Irinotecan],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CarboplatinIrinotecanRegimen:
 // Results
 
         
-define final CarboplatinIrinotecanTreatments:
-    where CarboplatinTreatment AND IrinotecanTreatment;
+define final Treatment__CarboplatinIrinotecan:
+    where Carboplatin_Treatment AND Irinotecan_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinIrinotecan AND Carboplatin_Irinotecan_Regimen;
         
         
 

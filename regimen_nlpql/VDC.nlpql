@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  DexamethasoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VDC:[
     "CyBorD", "VDC"
 ];
 
-define final VDCRegimen:
+define final Regimen_VDC:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VDC],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final VDCRegimen:
 // Results
 
         
-define final VDCTreatments:
-    where CyclophosphamideTreatment AND BortezomibTreatment AND DexamethasoneTreatment;
+define final Treatment__VDC:
+    where Cyclophosphamide_Treatment AND Bortezomib_Treatment AND Dexamethasone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VDC AND VDC_Regimen;
         
         
 

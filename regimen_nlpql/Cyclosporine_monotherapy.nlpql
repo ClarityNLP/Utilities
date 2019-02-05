@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     ":category:cyclosporines"
 ];
 
-define final CategoryCyclosporinesTreatment:
+define final CategoryCyclosporines_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CategoryCyclosporinesTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclosporine_monotherapy:[
     "Cyclosporine monotherapy"
 ];
 
-define final CyclosporinemonotherapyRegimen:
+define final Regimen_Cyclosporine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclosporine_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CyclosporinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Castleman_disease, Myelodysplastic_syndrome, Aplastic_anemia, Immune_thrombocytopenia_(ITP)
+Known regimen for: Aplastic_anemia, Castleman_disease, Myelodysplastic_syndrome, Immune_thrombocytopenia_(ITP)
 
 
 

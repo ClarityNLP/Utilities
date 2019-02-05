@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  GemcitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_PVAG:[
     "PVAG"
 ];
 
-define final PVAGRegimen:
+define final Regimen_PVAG:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_PVAG],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final PVAGRegimen:
 // Results
 
         
-define final PVAGTreatments:
-    where PrednisoneTreatment AND VinblastineTreatment AND DoxorubicinTreatment AND GemcitabineTreatment;
+define final Treatment__PVAG:
+    where Prednisone_Treatment AND Vinblastine_Treatment AND Doxorubicin_Treatment AND Gemcitabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PVAG AND PVAG_Regimen;
         
         
 

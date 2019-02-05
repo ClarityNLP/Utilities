@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "portrazza", "necitumumab"
 ];
 
-define  NecitumumabTreatment:
+define  Necitumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  NecitumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Gemcitabine_Necitumumab:[
     "Cisplatin, Gemcitabine, Necitumumab"
 ];
 
-define final CisplatinGemcitabineNecitumumabRegimen:
+define final Regimen_Cisplatin_Gemcitabine_Necitumumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine_Necitumumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinGemcitabineNecitumumabRegimen:
 // Results
 
         
-define final CisplatinGemcitabineNecitumumabTreatments:
-    where CisplatinTreatment AND GemcitabineTreatment AND NecitumumabTreatment;
+define final Treatment__CisplatinGemcitabineNecitumumab:
+    where Cisplatin_Treatment AND Gemcitabine_Treatment AND Necitumumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinGemcitabineNecitumumab AND Cisplatin_Gemcitabine_Necitumumab_Regimen;
         
         
 

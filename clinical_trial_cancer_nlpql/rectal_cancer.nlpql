@@ -1,0 +1,232 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Rectal cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_rectal_cancer:[
+    "childhood rectal carcinoma", "rectal carcinoma", "carcinoma of rectum", "cancer of the rectum", "rectal cancer", "cancer of rectum", "carcinoma of the rectum"
+];
+
+define final Condition_rectal_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_rectal_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_RT:[
+    "Fluorouracil  and  RT", "Fluorouracil & RT", "Fluorouracil + RT", "Fluorouracil / RT", "Fluorouracil and RT", "Fluorouracil+RT", "Fluorouracil/RT"
+];
+
+define   Regimen_Fluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx:[
+    "CAPOX", "CapeOX", "CapeOx", "XELOX"
+];
+
+define   Regimen_CapeOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_monotherapy:[
+    "Fluorouracil monotherapy"
+];
+
+define   Regimen_Fluorouracil_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_S_1_monotherapy:[
+    "S-1 monotherapy"
+];
+
+define   Regimen_S_1_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_S_1_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Oxaliplatin_RT:[
+    "Fluorouracil, Oxaliplatin, RT"
+];
+
+define   Regimen_Fluorouracil_Oxaliplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Oxaliplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin:[
+    "5-FU & Leucovorin, then 5-FU, Leucovorin, RT, then 5-FU & Leucovorin"
+];
+
+define   Regimen_5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX:[
+    "FOLFOX"
+];
+
+define   Regimen_FOLFOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_RT:[
+    "Capecitabine  and  RT", "Capecitabine & RT", "Capecitabine + RT", "Capecitabine / RT", "Capecitabine and RT", "Capecitabine+RT", "Capecitabine/RT"
+];
+
+define   Regimen_Capecitabine_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Sorafenib_RT:[
+    "Capecitabine, Sorafenib, RT"
+];
+
+define   Regimen_Capecitabine_Sorafenib_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Sorafenib_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx_Cetuximab_RT:[
+    "CapeOX, Cetuximab, RT", "CapeOx, Cetuximab, RT"
+];
+
+define   Regimen_CapeOx_Cetuximab_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx_Cetuximab_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid_RT:[
+    "Fluorouracil, Folinic acid, RT"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFOX6_RT:[
+    "mFOLFOX6  and  RT", "mFOLFOX6 & RT", "mFOLFOX6 + RT", "mFOLFOX6 / RT", "mFOLFOX6 and RT", "mFOLFOX6+RT", "mFOLFOX6/RT"
+];
+
+define   Regimen_mFOLFOX6_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFOX6_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_UFT_monotherapy:[
+    "UFT monotherapy"
+];
+
+define   Regimen_UFT_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_UFT_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_then_Capecitabine_RT_then_Capecitabine:[
+    "Capecitabine, then Capecitabine & RT, then Capecitabine"
+];
+
+define   Regimen_Capecitabine_then_Capecitabine_RT_then_Capecitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_then_Capecitabine_RT_then_Capecitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil:[
+    "Fluorouracil, then Fluorouracil & RT, then Fluorouracil"
+];
+
+define   Regimen_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_rectal_cancer:
+    where Capecitabine_monotherapy_Regimen OR Fluorouracil_RT_Regimen OR Fluorouracil_Folinic_acid_Regimen OR CapeOx_Regimen OR Fluorouracil_monotherapy_Regimen OR S_1_monotherapy_Regimen OR Fluorouracil_Oxaliplatin_RT_Regimen OR 5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin_Regimen OR FOLFOX_Regimen OR Capecitabine_RT_Regimen OR Capecitabine_Sorafenib_RT_Regimen OR CapeOx_Cetuximab_RT_Regimen OR Fluorouracil_Folinic_acid_RT_Regimen OR mFOLFOX6_RT_Regimen OR UFT_monotherapy_Regimen OR Capecitabine_then_Capecitabine_RT_then_Capecitabine_Regimen OR Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_rectal_cancer AND rectal_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

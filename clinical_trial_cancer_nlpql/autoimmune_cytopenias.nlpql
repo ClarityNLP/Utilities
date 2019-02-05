@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Autoimmune cytopenias" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_autoimmune_cytopenias:[
+    "autoimmune cytopenias"
+];
+
+define final Condition_autoimmune_cytopenias:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_autoimmune_cytopenias],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Alemtuzumab_monotherapy:[
+    "Alemtuzumab monotherapy"
+];
+
+define   Regimen_Alemtuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sirolimus_monotherapy:[
+    "Sirolimus monotherapy"
+];
+
+define   Regimen_Sirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_autoimmune_cytopenias:
+    where Alemtuzumab_monotherapy_Regimen OR Sirolimus_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_autoimmune_cytopenias AND autoimmune_cytopenias_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

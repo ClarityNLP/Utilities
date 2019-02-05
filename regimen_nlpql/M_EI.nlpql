@@ -1,0 +1,84 @@
+
+// Phenotype library name
+phenotype "Regimen for M-EI" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "vepesid", "etoposide"
+];
+
+define  Etoposide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "ifex", "ifosfamide"
+];
+
+define  Ifosfamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_M_EI:[
+    "M-EI", "M/EI", "MEI"
+];
+
+define final Regimen_M_EI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_EI],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__MEI:
+    where Methotrexate_Treatment AND Etoposide_Treatment AND Ifosfamide_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__MEI AND M_EI_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Osteosarcoma
+
+
+
+
+***/
+ 

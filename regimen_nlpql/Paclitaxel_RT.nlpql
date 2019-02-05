@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Paclitaxel_RT:[
     "Paclitaxel  and  RT", "Paclitaxel & RT", "Paclitaxel + RT", "Paclitaxel / RT", "Paclitaxel and RT", "Paclitaxel+RT", "Paclitaxel/RT"
 ];
 
-define final PaclitaxelRTRegimen:
+define final Regimen_Paclitaxel_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Paclitaxel_RT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final PaclitaxelRTRegimen:
 // Results
 
         
-define final PaclitaxelRTTreatments:
-    where PaclitaxelTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__PaclitaxelRT:
+    where Paclitaxel_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PaclitaxelRT AND Paclitaxel_RT_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "agrylin", "anagrelide"
 ];
 
-define final AnagrelideTreatment:
+define final Anagrelide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AnagrelideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Anagrelide_monotherapy:[
     "Anagrelide monotherapy"
 ];
 
-define final AnagrelidemonotherapyRegimen:
+define final Regimen_Anagrelide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Anagrelide_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -1,0 +1,54 @@
+
+// Phenotype library name
+phenotype "Regimen for Low-dose Interleukin-2" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "proleukin", "aldesleukin"
+];
+
+define final Aldesleukin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Low_dose_Interleukin_2:[
+    "LD IL-2", "LD IL/2", "LD IL2", "LDIL2", "Low-dose Interleukin-2"
+];
+
+define final Regimen_Low_dose_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Low_dose_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Melanoma, Renal_cell_carcinoma
+
+
+
+
+***/
+ 

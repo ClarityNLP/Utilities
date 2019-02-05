@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Fluorouracil:[
     "Cisplatin & Fluorouracil"
 ];
 
-define final CisplatinFluorouracilRegimen:
+define final Regimen_Cisplatin_Fluorouracil:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Fluorouracil],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CisplatinFluorouracilRegimen:
 // Results
 
         
-define final CisplatinFluorouracilTreatments:
-    where CisplatinTreatment AND FluorouracilTreatment;
+define final Treatment__CisplatinFluorouracil:
+    where Cisplatin_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinFluorouracil AND Cisplatin_Fluorouracil_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Penile_cancer, Gastric_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
+Known regimen for: Penile_cancer, Esophageal_cancer, Gastric_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
 
 
 

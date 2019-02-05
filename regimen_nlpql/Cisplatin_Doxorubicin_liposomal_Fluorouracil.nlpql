@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define  PegylatedliposomaldoxorubicinTreatment:
+define  Pegylatedliposomaldoxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Doxorubicin_liposomal_Fluorouracil:[
     "Cisplatin, Doxorubicin liposomal, Fluorouracil"
 ];
 
-define final CisplatinDoxorubicinliposomalFluorouracilRegimen:
+define final Regimen_Cisplatin_Doxorubicin_liposomal_Fluorouracil:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin_liposomal_Fluorouracil],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinDoxorubicinliposomalFluorouracilRegimen:
 // Results
 
         
-define final CisplatinDoxorubicinliposomalFluorouracilTreatments:
-    where CisplatinTreatment AND PegylatedliposomaldoxorubicinTreatment AND FluorouracilTreatment;
+define final Treatment__CisplatinDoxorubicinliposomalFluorouracil:
+    where Cisplatin_Treatment AND Pegylatedliposomaldoxorubicin_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinDoxorubicinliposomalFluorouracil AND Cisplatin_Doxorubicin_liposomal_Fluorouracil_Regimen;
         
         
 

@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Pancreatic NET" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_pancreatic_net:[
+    "pancreatic neuroendocrine tumor", "pancreatic net", "islet cell tumor", "islet cell tumors of the pancreas", "well differentiated pancreatic endocrine tumor", "well differentiated pancreatic endocrine neoplasm", "islet cell tumors - pancreas"
+];
+
+define final Condition_pancreatic_net:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_pancreatic_net],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sunitinib_monotherapy:[
+    "Sunitinib monotherapy"
+];
+
+define   Regimen_Sunitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sunitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_Bevacizumab:[
+    "Temozolomide & Bevacizumab"
+];
+
+define   Regimen_Temozolomide_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Streptozocin:[
+    "Fluorouracil & Streptozocin"
+];
+
+define   Regimen_Fluorouracil_Streptozocin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Streptozocin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Temozolomide:[
+    "Capecitabine & Temozolomide"
+];
+
+define   Regimen_Capecitabine_Temozolomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Temozolomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_Streptozocin:[
+    "Doxorubicin & Streptozocin"
+];
+
+define   Regimen_Doxorubicin_Streptozocin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_Streptozocin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FAS:[
+    "FAS"
+];
+
+define   Regimen_FAS:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FAS],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temozolomide_Thalidomide:[
+    "Temozolomide & Thalidomide"
+];
+
+define   Regimen_Temozolomide_Thalidomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_Thalidomide],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_pancreatic_net:
+    where Temozolomide_monotherapy_Regimen OR Everolimus_monotherapy_Regimen OR Sunitinib_monotherapy_Regimen OR Temozolomide_Bevacizumab_Regimen OR Fluorouracil_Streptozocin_Regimen OR Capecitabine_Temozolomide_Regimen OR Doxorubicin_Streptozocin_Regimen OR FAS_Regimen OR Temozolomide_Thalidomide_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_pancreatic_net AND pancreatic_net_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

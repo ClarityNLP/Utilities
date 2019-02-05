@@ -14,79 +14,79 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "matulane", "procarbazine"
 ];
 
-define  ProcarbazineTreatment:
+define  Procarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms5:[
+termset TreatmentTerms_5:[
     "novantrone", "mitoxantrone"
 ];
 
-define  MitoxantroneTreatment:
+define  Mitoxantrone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms5],
+        termset:[TreatmentTerms_5],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms6:[
+termset TreatmentTerms_6:[
     "blenoxane", "bleomycin"
 ];
 
-define  BleomycinTreatment:
+define  Bleomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms6],
+        termset:[TreatmentTerms_6],
         documentset:[Docs]
 }); 
 
@@ -94,13 +94,13 @@ define  BleomycinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VEPEMB:[
     "VEPEMB"
 ];
 
-define final VEPEMBRegimen:
+define final Regimen_VEPEMB:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VEPEMB],
     documentset:[Docs]
    }); 
 
@@ -108,10 +108,11 @@ define final VEPEMBRegimen:
 // Results
 
         
-define final VEPEMBTreatments:
-    where VinblastineTreatment AND CyclophosphamideTreatment AND ProcarbazineTreatment AND PrednisoneTreatment AND EtoposideTreatment AND MitoxantroneTreatment AND BleomycinTreatment;
+define final Treatment__VEPEMB:
+    where Vinblastine_Treatment AND Cyclophosphamide_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment AND Etoposide_Treatment AND Mitoxantrone_Treatment AND Bleomycin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VEPEMB AND VEPEMB_Regimen;
         
         
 

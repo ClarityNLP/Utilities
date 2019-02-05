@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "leustatin", "cladribine"
 ];
 
-define  CladribineTreatment:
+define  Cladribine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  CytarabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cladribine_Cytarabine:[
     "Cladribine & Cytarabine"
 ];
 
-define final CladribineCytarabineRegimen:
+define final Regimen_Cladribine_Cytarabine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cladribine_Cytarabine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CladribineCytarabineRegimen:
 // Results
 
         
-define final CladribineCytarabineTreatments:
-    where CladribineTreatment AND CytarabineTreatment;
+define final Treatment__CladribineCytarabine:
+    where Cladribine_Treatment AND Cytarabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CladribineCytarabine AND Cladribine_Cytarabine_Regimen;
         
         
 

@@ -1,0 +1,210 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Cholangiocarcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cholangiocarcinoma:[
+    "mouse cholangiocarcinoma", "cholangiocarcinoma, malignant", "cholangiocar.- intra/extrahepatic", "cc", "cholangiocarcinoma", "cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)", "intrahepatic bile duct cancer (cholangiocarcinoma)", "rat cholangiocarcinoma", "cholangiosarcoma", "bile duct carcinoma of mouse", "cholangiocarcinoma (reni)", "cholangiocellular carcinoma"
+];
+
+define final Condition_cholangiocarcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cholangiocarcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_Bevacizumab:[
+    "Erlotinib & Bevacizumab"
+];
+
+define   Regimen_Erlotinib_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Gemcitabine:[
+    "Capecitabine & Gemcitabine", "GemCap"
+];
+
+define   Regimen_Capecitabine_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_then_Fluorouracil_RT_then_Gemcitabine:[
+    "Gemcitabine, then Fluorouracil & RT, then Gemcitabine"
+];
+
+define   Regimen_Gemcitabine_then_Fluorouracil_RT_then_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_then_Fluorouracil_RT_then_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Mitomycin:[
+    "Capecitabine & Mitomycin"
+];
+
+define   Regimen_Capecitabine_Mitomycin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Mitomycin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ECF:[
+    "ECF"
+];
+
+define   Regimen_ECF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ECF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FELV:[
+    "FELV"
+];
+
+define   Regimen_FELV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FELV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid_Gemcitabine:[
+    "Fluorouracil, Folinic acid, Gemcitabine"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Mitomycin:[
+    "Gemcitabine & Mitomycin"
+];
+
+define   Regimen_Gemcitabine_Mitomycin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Mitomycin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_nab_Paclitaxel:[
+    "Gemcitabine & nab-Paclitaxel"
+];
+
+define   Regimen_Gemcitabine_nab_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_nab_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GEMOX_B:[
+    "GEMOX-B", "GEMOX/B", "GEMOXB"
+];
+
+define   Regimen_GEMOX_B:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GEMOX_B],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cholangiocarcinoma:
+    where Cisplatin_Gemcitabine_Regimen OR Erlotinib_Bevacizumab_Regimen OR Pembrolizumab_monotherapy_Regimen OR Gemcitabine_monotherapy_Regimen OR Capecitabine_monotherapy_Regimen OR Fluorouracil_Folinic_acid_Regimen OR Capecitabine_Gemcitabine_Regimen OR Gemcitabine_then_Fluorouracil_RT_then_Gemcitabine_Regimen OR Capecitabine_Mitomycin_Regimen OR ECF_Regimen OR FELV_Regimen OR Fluorouracil_Folinic_acid_Gemcitabine_Regimen OR Gemcitabine_Mitomycin_Regimen OR Gemcitabine_nab_Paclitaxel_Regimen OR GEMOX_B_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cholangiocarcinoma AND cholangiocarcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "idamycin", "idarubicin"
 ];
 
-define  IdarubicinTreatment:
+define  Idarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IdarubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine:[
     "Cytarabine & Idarubicin, then Etoposide & Mitoxantrone, then Cytarabine, Idarubicin, Thioguanine"
 ];
 
-define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanineRegimen:
+define final Regimen_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubic
 // Results
 
         
-define final CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanineTreatments:
-    where CytarabineTreatment AND IdarubicinTreatment;
+define final Treatment__CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine:
+    where Cytarabine_Treatment AND Idarubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine AND Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_Regimen;
         
         
 

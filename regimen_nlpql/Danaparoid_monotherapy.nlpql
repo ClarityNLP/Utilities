@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "orgaran", "danaparoid"
 ];
 
-define final DanaparoidTreatment:
+define final Danaparoid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DanaparoidTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Danaparoid_monotherapy:[
     "Danaparoid monotherapy"
 ];
 
-define final DanaparoidmonotherapyRegimen:
+define final Regimen_Danaparoid_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Danaparoid_monotherapy],
     documentset:[Docs]
    }); 
 

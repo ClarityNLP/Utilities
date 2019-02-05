@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "revlimid", "lenalidomide"
 ];
 
-define final LenalidomideTreatment:
+define final Lenalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final LenalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Epoetin_Lenalidomide:[
     "Epoetin & Lenalidomide"
 ];
 
-define final EpoetinLenalidomideRegimen:
+define final Regimen_Epoetin_Lenalidomide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Epoetin_Lenalidomide],
     documentset:[Docs]
    }); 
 

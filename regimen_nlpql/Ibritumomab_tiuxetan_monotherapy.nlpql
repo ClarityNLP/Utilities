@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "zevalin", "ibritumomab tiuxetan"
 ];
 
-define  IbritumomabtiuxetanTreatment:
+define  Ibritumomabtiuxetan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IbritumomabtiuxetanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ibritumomab_tiuxetan_monotherapy:[
     "Ibritumomab tiuxetan monotherapy"
 ];
 
-define final IbritumomabtiuxetanmonotherapyRegimen:
+define final Regimen_Ibritumomab_tiuxetan_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ibritumomab_tiuxetan_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final IbritumomabtiuxetanmonotherapyRegimen:
 // Results
 
         
-define final IbritumomabtiuxetanmonotherapyTreatments:
-    where RituximabTreatment AND IbritumomabtiuxetanTreatment;
+define final Treatment__Ibritumomabtiuxetanmonotherapy:
+    where Rituximab_Treatment AND Ibritumomabtiuxetan_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__Ibritumomabtiuxetanmonotherapy AND Ibritumomab_tiuxetan_monotherapy_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma
 
 
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lenvima", "lenvatinib"
 ];
 
-define final LenvatinibTreatment:
+define final Lenvatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final LenvatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lenvatinib_monotherapy:[
     "Lenvatinib monotherapy"
 ];
 
-define final LenvatinibmonotherapyRegimen:
+define final Regimen_Lenvatinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lenvatinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final LenvatinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Renal_cell_carcinoma, Thyroid_cancer
+Known regimen for: Hepatocellular_carcinoma, Thyroid_cancer, Renal_cell_carcinoma
 
 
 

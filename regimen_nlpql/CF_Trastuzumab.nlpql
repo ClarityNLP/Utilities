@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "herceptin", "trastuzumab"
 ];
 
-define  TrastuzumabTreatment:
+define  Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  TrastuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CF_Trastuzumab:[
     "CF  and  Trastuzumab", "CF & Trastuzumab", "CF + Trastuzumab", "CF / Trastuzumab", "CF and Trastuzumab", "CF+Trastuzumab", "CF/Trastuzumab"
 ];
 
-define final CFTrastuzumabRegimen:
+define final Regimen_CF_Trastuzumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CF_Trastuzumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CFTrastuzumabRegimen:
 // Results
 
         
-define final CFTrastuzumabTreatments:
-    where CisplatinTreatment AND FluorouracilTreatment AND TrastuzumabTreatment;
+define final Treatment__CFTrastuzumab:
+    where Cisplatin_Treatment AND Fluorouracil_Treatment AND Trastuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CFTrastuzumab AND CF_Trastuzumab_Regimen;
         
         
 

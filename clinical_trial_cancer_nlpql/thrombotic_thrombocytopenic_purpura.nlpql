@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Thrombotic thrombocytopenic purpura" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_thrombotic_thrombocytopenic_purpura:[
+    "thrombotic thrombocytopenic purpura"
+];
+
+define final Condition_thrombotic_thrombocytopenic_purpura:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_thrombotic_thrombocytopenic_purpura],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methylprednisolone_monotherapy:[
+    "Methylprednisolone monotherapy"
+];
+
+define   Regimen_Methylprednisolone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methylprednisolone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vincristine_monotherapy:[
+    "Vincristine monotherapy"
+];
+
+define   Regimen_Vincristine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vincristine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_thrombotic_thrombocytopenic_purpura:
+    where Rituximab_monotherapy_Regimen OR Methylprednisolone_monotherapy_Regimen OR Vincristine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_thrombotic_thrombocytopenic_purpura AND thrombotic_thrombocytopenic_purpura_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "opdivo", "nivolumab"
 ];
 
-define final NivolumabTreatment:
+define final Nivolumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final NivolumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Nivolumab_monotherapy:[
     "Nivolumab monotherapy"
 ];
 
-define final NivolumabmonotherapyRegimen:
+define final Regimen_Nivolumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Nivolumab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final NivolumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Anal_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Renal_cell_carcinoma, Gastric_cancer, Head_and_neck_cancer, Melanoma, Hepatocellular_carcinoma
+Known regimen for: Melanoma, Small_cell_lung_cancer, Anal_cancer, Head_and_neck_cancer, Gastric_cancer, Hodgkin_lymphoma, Non-small_cell_lung_cancer, Renal_cell_carcinoma, Hepatocellular_carcinoma
 
 
 

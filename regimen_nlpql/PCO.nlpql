@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "nipent", "pentostatin"
 ];
 
-define  PentostatinTreatment:
+define  Pentostatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "arzerra", "ofatumumab"
 ];
 
-define  OfatumumabTreatment:
+define  Ofatumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  OfatumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_PCO:[
     "PCO"
 ];
 
-define final PCORegimen:
+define final Regimen_PCO:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_PCO],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final PCORegimen:
 // Results
 
         
-define final PCOTreatments:
-    where PentostatinTreatment AND CyclophosphamideTreatment AND OfatumumabTreatment;
+define final Treatment__PCO:
+    where Pentostatin_Treatment AND Cyclophosphamide_Treatment AND Ofatumumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PCO AND PCO_Regimen;
         
         
 

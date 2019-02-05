@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "tasigna", "nilotinib"
 ];
 
-define final NilotinibTreatment:
+define final Nilotinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final NilotinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Nilotinib_monotherapy:[
     "Nilotinib monotherapy"
 ];
 
-define final NilotinibmonotherapyRegimen:
+define final Regimen_Nilotinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Nilotinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final NilotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Chronic_myelogenous_leukemia, Systemic_mastocytosis, Hypereosinophilic_syndrome, B-cell_acute_lymphoblastic_leukemia_Ph-positive
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Hypereosinophilic_syndrome, Systemic_mastocytosis, Chronic_myelogenous_leukemia
 
 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EtoposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Etoposide:[
     "Cisplatin & Etoposide"
 ];
 
-define final CisplatinEtoposideRegimen:
+define final Regimen_Cisplatin_Etoposide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Etoposide],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CisplatinEtoposideRegimen:
 // Results
 
         
-define final CisplatinEtoposideTreatments:
-    where CisplatinTreatment AND EtoposideTreatment;
+define final Treatment__CisplatinEtoposide:
+    where Cisplatin_Treatment AND Etoposide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinEtoposide AND Cisplatin_Etoposide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Low-grade_glioma, Testicular_cancer, Small_cell_lung_cancer, Non-small_cell_lung_cancer, Thymoma
+Known regimen for: Thymoma, Esophageal_cancer, Small_cell_lung_cancer, Testicular_cancer, Non-small_cell_lung_cancer, Low-grade_glioma
 
 
 

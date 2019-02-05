@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Erdheim-Chester disease" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_erdheim_chester_disease:[
+    "polyostotic sclerosing histiocytosis", "erdheim-chester disease", "lipogranulomatosis"
+];
+
+define final Condition_erdheim_chester_disease:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_erdheim_chester_disease],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Vemurafenib_monotherapy:[
+    "Vemurafenib monotherapy"
+];
+
+define   Regimen_Vemurafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vemurafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sirolimus_Prednisone:[
+    "Sirolimus & Prednisone"
+];
+
+define   Regimen_Sirolimus_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sirolimus_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_erdheim_chester_disease:
+    where Vemurafenib_monotherapy_Regimen OR Sirolimus_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_erdheim_chester_disease AND erdheim_chester_disease_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

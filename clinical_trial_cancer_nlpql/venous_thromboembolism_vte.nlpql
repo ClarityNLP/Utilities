@@ -1,0 +1,210 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Venous thromboembolism (VTE)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_venous_thromboembolism_vte:[
+    "venous thromboembolism (vte)"
+];
+
+define final Condition_venous_thromboembolism_vte:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_venous_thromboembolism_vte],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Warfarin_monotherapy:[
+    "Warfarin monotherapy"
+];
+
+define   Regimen_Warfarin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Warfarin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rivaroxaban_monotherapy:[
+    "Rivaroxaban monotherapy"
+];
+
+define   Regimen_Rivaroxaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rivaroxaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Argatroban_monotherapy:[
+    "Argatroban monotherapy"
+];
+
+define   Regimen_Argatroban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Argatroban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lepirudin_monotherapy:[
+    "Lepirudin monotherapy"
+];
+
+define   Regimen_Lepirudin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lepirudin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Apixaban_monotherapy:[
+    "Apixaban monotherapy"
+];
+
+define   Regimen_Apixaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Apixaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Aspirin_monotherapy:[
+    "Aspirin monotherapy"
+];
+
+define   Regimen_Aspirin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Aspirin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Betrixaban_monotherapy:[
+    "Betrixaban monotherapy"
+];
+
+define   Regimen_Betrixaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Betrixaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Enoxaparin_monotherapy:[
+    "Enoxaparin monotherapy"
+];
+
+define   Regimen_Enoxaparin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Enoxaparin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dalteparin_monotherapy:[
+    "Dalteparin monotherapy"
+];
+
+define   Regimen_Dalteparin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dalteparin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bivalirudin_monotherapy:[
+    "Bivalirudin monotherapy"
+];
+
+define   Regimen_Bivalirudin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bivalirudin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dabigatran_monotherapy:[
+    "Dabigatran monotherapy"
+];
+
+define   Regimen_Dabigatran_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dabigatran_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Edoxaban_monotherapy:[
+    "Edoxaban monotherapy"
+];
+
+define   Regimen_Edoxaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Edoxaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fondaparinux_monotherapy:[
+    "Fondaparinux monotherapy"
+];
+
+define   Regimen_Fondaparinux_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fondaparinux_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Heparin_monotherapy:[
+    "Heparin monotherapy"
+];
+
+define   Regimen_Heparin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Heparin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Tinzaparin_monotherapy:[
+    "Tinzaparin monotherapy"
+];
+
+define   Regimen_Tinzaparin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tinzaparin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_venous_thromboembolism_vte:
+    where Warfarin_monotherapy_Regimen OR Rivaroxaban_monotherapy_Regimen OR Argatroban_monotherapy_Regimen OR Lepirudin_monotherapy_Regimen OR Apixaban_monotherapy_Regimen OR Aspirin_monotherapy_Regimen OR Betrixaban_monotherapy_Regimen OR Enoxaparin_monotherapy_Regimen OR Dalteparin_monotherapy_Regimen OR Bivalirudin_monotherapy_Regimen OR Dabigatran_monotherapy_Regimen OR Edoxaban_monotherapy_Regimen OR Fondaparinux_monotherapy_Regimen OR Heparin_monotherapy_Regimen OR Tinzaparin_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_venous_thromboembolism_vte AND venous_thromboembolism_vte_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

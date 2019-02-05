@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "yondelis", "trabectedin"
 ];
 
-define final TrabectedinTreatment:
+define final Trabectedin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TrabectedinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Trabectedin_monotherapy:[
     "Trabectedin monotherapy"
 ];
 
-define final TrabectedinmonotherapyRegimen:
+define final Regimen_Trabectedin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Trabectedin_monotherapy],
     documentset:[Docs]
    }); 
 

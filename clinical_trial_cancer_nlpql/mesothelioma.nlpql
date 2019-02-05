@@ -1,0 +1,166 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Mesothelioma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_mesothelioma:[
+    "mesothelioma", "mouse mesothelioma"
+];
+
+define final Condition_mesothelioma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_mesothelioma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_monotherapy:[
+    "Cisplatin monotherapy"
+];
+
+define   Regimen_Cisplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pemetrexed_monotherapy:[
+    "Pemetrexed monotherapy"
+];
+
+define   Regimen_Pemetrexed_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pemetrexed_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinorelbine_monotherapy:[
+    "Vinorelbine monotherapy"
+];
+
+define   Regimen_Vinorelbine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinorelbine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Pemetrexed:[
+    "Carboplatin & Pemetrexed"
+];
+
+define   Regimen_Carboplatin_Pemetrexed:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Pemetrexed],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Pemetrexed:[
+    "Cisplatin & Pemetrexed"
+];
+
+define   Regimen_Cisplatin_Pemetrexed:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Pemetrexed],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Raltitrexed:[
+    "Cisplatin & Raltitrexed"
+];
+
+define   Regimen_Cisplatin_Raltitrexed:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Raltitrexed],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Pemetrexed_Bevacizumab:[
+    "Cisplatin, Pemetrexed, Bevacizumab", "PCB"
+];
+
+define   Regimen_Cisplatin_Pemetrexed_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Pemetrexed_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Vinorelbine:[
+    "Gemcitabine & Vinorelbine"
+];
+
+define   Regimen_Gemcitabine_Vinorelbine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Vinorelbine],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_mesothelioma:
+    where Cisplatin_monotherapy_Regimen OR Cisplatin_Gemcitabine_Regimen OR Gemcitabine_monotherapy_Regimen OR Pemetrexed_monotherapy_Regimen OR Vinorelbine_monotherapy_Regimen OR Doxorubicin_monotherapy_Regimen OR Carboplatin_Pemetrexed_Regimen OR Cisplatin_Pemetrexed_Regimen OR Cisplatin_Raltitrexed_Regimen OR Cisplatin_Pemetrexed_Bevacizumab_Regimen OR Gemcitabine_Vinorelbine_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_mesothelioma AND mesothelioma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

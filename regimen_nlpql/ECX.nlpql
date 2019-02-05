@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ellence", "epirubicin"
 ];
 
-define  EpirubicinTreatment:
+define  Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CapecitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ECX:[
     "ECX"
 ];
 
-define final ECXRegimen:
+define final Regimen_ECX:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ECX],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ECXRegimen:
 // Results
 
         
-define final ECXTreatments:
-    where EpirubicinTreatment AND CisplatinTreatment AND CapecitabineTreatment;
+define final Treatment__ECX:
+    where Epirubicin_Treatment AND Cisplatin_Treatment AND Capecitabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ECX AND ECX_Regimen;
         
         
 

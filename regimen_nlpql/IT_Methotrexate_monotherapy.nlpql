@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define final MethotrexateTreatment:
+define final Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MethotrexateTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_IT_Methotrexate_monotherapy:[
     "IT Methotrexate monotherapy"
 ];
 
-define final ITMethotrexatemonotherapyRegimen:
+define final Regimen_IT_Methotrexate_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_IT_Methotrexate_monotherapy],
     documentset:[Docs]
    }); 
 

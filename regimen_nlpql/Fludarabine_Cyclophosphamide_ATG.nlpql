@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "grafalon", "antithymocyte globulin, rabbit atg"
 ];
 
-define  AntithymocyteglobulinrabbitATGTreatment:
+define  AntithymocyteglobulinrabbitATG_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  AntithymocyteglobulinrabbitATGTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fludarabine_Cyclophosphamide_ATG:[
     "Fludarabine, Cyclophosphamide, ATG"
 ];
 
-define final FludarabineCyclophosphamideATGRegimen:
+define final Regimen_Fludarabine_Cyclophosphamide_ATG:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fludarabine_Cyclophosphamide_ATG],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final FludarabineCyclophosphamideATGRegimen:
 // Results
 
         
-define final FludarabineCyclophosphamideATGTreatments:
-    where FludarabineTreatment AND CyclophosphamideTreatment AND AntithymocyteglobulinrabbitATGTreatment;
+define final Treatment__FludarabineCyclophosphamideATG:
+    where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND AntithymocyteglobulinrabbitATG_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FludarabineCyclophosphamideATG AND Fludarabine_Cyclophosphamide_ATG_Regimen;
         
         
 

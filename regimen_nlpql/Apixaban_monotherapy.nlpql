@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "eliquis", "apixaban"
 ];
 
-define final ApixabanTreatment:
+define final Apixaban_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ApixabanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Apixaban_monotherapy:[
     "Apixaban monotherapy"
 ];
 
-define final ApixabanmonotherapyRegimen:
+define final Regimen_Apixaban_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Apixaban_monotherapy],
     documentset:[Docs]
    }); 
 

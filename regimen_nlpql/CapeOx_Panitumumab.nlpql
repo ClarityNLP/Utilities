@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "vectibix", "panitumumab"
 ];
 
-define  PanitumumabTreatment:
+define  Panitumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PanitumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CapeOx_Panitumumab:[
     "CapeOx  and  Panitumumab", "CapeOx & Panitumumab", "CapeOx + Panitumumab", "CapeOx / Panitumumab", "CapeOx and Panitumumab", "CapeOx+Panitumumab", "CapeOx/Panitumumab"
 ];
 
-define final CapeOxPanitumumabRegimen:
+define final Regimen_CapeOx_Panitumumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CapeOx_Panitumumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CapeOxPanitumumabRegimen:
 // Results
 
         
-define final CapeOxPanitumumabTreatments:
-    where CapecitabineTreatment AND OxaliplatinTreatment AND PanitumumabTreatment;
+define final Treatment__CapeOxPanitumumab:
+    where Capecitabine_Treatment AND Oxaliplatin_Treatment AND Panitumumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapeOxPanitumumab AND CapeOx_Panitumumab_Regimen;
         
         
 

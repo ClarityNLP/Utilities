@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define  AntithymocyteglobulinhorseATGTreatment:
+define  AntithymocyteglobulinhorseATG_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     ":category:cyclosporines"
 ];
 
-define  CategoryCyclosporinesTreatment:
+define  CategoryCyclosporines_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  CategoryCyclosporinesTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATG_Horse_Cyclosporine:[
     "ATG (Horse) & Cyclosporine"
 ];
 
-define final ATGHorseCyclosporineRegimen:
+define final Regimen_ATG_Horse_Cyclosporine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final ATGHorseCyclosporineRegimen:
 // Results
 
         
-define final ATGHorseCyclosporineTreatments:
-    where AntithymocyteglobulinhorseATGTreatment AND CategoryCyclosporinesTreatment;
+define final Treatment__ATGHorseCyclosporine:
+    where AntithymocyteglobulinhorseATG_Treatment AND CategoryCyclosporines_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ATGHorseCyclosporine AND ATG_Horse_Cyclosporine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Aplastic_anemia
+Known regimen for: Aplastic_anemia, Myelodysplastic_syndrome
 
 
 

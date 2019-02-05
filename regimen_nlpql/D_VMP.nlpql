@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for D-VMP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "darzalex", "daratumumab"
+];
+
+define  Daratumumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "velcade", "bortezomib"
+];
+
+define  Bortezomib_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "alkeran", "melphalan"
+];
+
+define  Melphalan_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_D_VMP:[
+    "D-VMP", "D/VMP", "DVMP"
+];
+
+define final Regimen_D_VMP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_D_VMP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__DVMP:
+    where Daratumumab_Treatment AND Bortezomib_Treatment AND Melphalan_Treatment AND Prednisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__DVMP AND D_VMP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Multiple_myeloma_induction
+
+
+
+
+***/
+ 

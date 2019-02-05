@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xgeva", "denosumab"
 ];
 
-define final DenosumabTreatment:
+define final Denosumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DenosumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Denosumab_monotherapy:[
     "Denosumab monotherapy"
 ];
 
-define final DenosumabmonotherapyRegimen:
+define final Regimen_Denosumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Denosumab_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for R-INO" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "besponsa", "inotuzumab ozogamicin"
+];
+
+define  Inotuzumabozogamicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_INO:[
+    "R-INO", "R/INO", "RINO"
+];
+
+define final Regimen_R_INO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_INO],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RINO:
+    where Rituximab_Treatment AND Inotuzumabozogamicin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RINO AND R_INO_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma
+
+
+
+
+***/
+ 

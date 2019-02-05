@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ellence", "epirubicin"
 ];
 
-define  EpirubicinTreatment:
+define  Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_EOF:[
     "EOF"
 ];
 
-define final EOFRegimen:
+define final Regimen_EOF:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_EOF],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final EOFRegimen:
 // Results
 
         
-define final EOFTreatments:
-    where EpirubicinTreatment AND OxaliplatinTreatment AND FluorouracilTreatment;
+define final Treatment__EOF:
+    where Epirubicin_Treatment AND Oxaliplatin_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__EOF AND EOF_Regimen;
         
         
 

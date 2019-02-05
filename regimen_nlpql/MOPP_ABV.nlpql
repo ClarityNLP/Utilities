@@ -1,0 +1,128 @@
+
+// Phenotype library name
+phenotype "Regimen for MOPP-ABV" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "mustargen", "mechlorethamine"
+];
+
+define  Mechlorethamine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "matulane", "procarbazine"
+];
+
+define  Procarbazine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_5:[
+    "blenoxane", "bleomycin"
+];
+
+define  Bleomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_5],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_6:[
+    "velban", "vinblastine"
+];
+
+define  Vinblastine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_6],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_MOPP_ABV:[
+    "MOPP-ABV", "MOPP/ABV", "MOPPABV"
+];
+
+define final Regimen_MOPP_ABV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MOPP_ABV],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__MOPPABV:
+    where Mechlorethamine_Treatment AND Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment AND Doxorubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__MOPPABV AND MOPP_ABV_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+
+
+***/
+ 

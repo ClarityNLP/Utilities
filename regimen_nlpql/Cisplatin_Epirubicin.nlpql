@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ellence", "epirubicin"
 ];
 
-define  EpirubicinTreatment:
+define  Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EpirubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Epirubicin:[
     "CIS-EPI", "CIS/EPI", "CISEPI", "Cisplatin & Epirubicin"
 ];
 
-define final CisplatinEpirubicinRegimen:
+define final Regimen_Cisplatin_Epirubicin:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Epirubicin],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CisplatinEpirubicinRegimen:
 // Results
 
         
-define final CisplatinEpirubicinTreatments:
-    where CisplatinTreatment AND EpirubicinTreatment;
+define final Treatment__CisplatinEpirubicin:
+    where Cisplatin_Treatment AND Epirubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinEpirubicin AND Cisplatin_Epirubicin_Regimen;
         
         
 

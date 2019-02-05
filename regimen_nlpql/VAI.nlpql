@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cosmegen", "dactinomycin"
 ];
 
-define  DactinomycinTreatment:
+define  Dactinomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "ifex", "ifosfamide"
 ];
 
-define  IfosfamideTreatment:
+define  Ifosfamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  IfosfamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VAI:[
     "IVA", "VAI"
 ];
 
-define final VAIRegimen:
+define final Regimen_VAI:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VAI],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final VAIRegimen:
 // Results
 
         
-define final VAITreatments:
-    where VincristineTreatment AND DactinomycinTreatment AND IfosfamideTreatment;
+define final Treatment__VAI:
+    where Vincristine_Treatment AND Dactinomycin_Treatment AND Ifosfamide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VAI AND VAI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Rhabdomyosarcoma, Ewings_sarcoma
+Known regimen for: Ewings_sarcoma, Rhabdomyosarcoma
 
 
 

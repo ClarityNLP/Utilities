@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "imbruvica", "ibrutinib"
 ];
 
-define final IbrutinibTreatment:
+define final Ibrutinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IbrutinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ibrutinib_monotherapy:[
     "Ibrutinib monotherapy"
 ];
 
-define final IbrutinibmonotherapyRegimen:
+define final Regimen_Ibrutinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ibrutinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final IbrutinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Waldenstrom_macroglobulinemia, Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Follicular_lymphoma, Marginal_zone_lymphoma, Graft_versus_host_disease_(GVHD)
+Known regimen for: Marginal_zone_lymphoma, Graft_versus_host_disease_(GVHD), Mantle_cell_lymphoma, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Diffuse_large_B-cell_lymphoma, Waldenstrom_macroglobulinemia
 
 
 

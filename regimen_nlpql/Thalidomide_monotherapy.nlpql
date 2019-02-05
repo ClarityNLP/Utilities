@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "thalomid", "thalidomide"
 ];
 
-define final ThalidomideTreatment:
+define final Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ThalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Thalidomide_monotherapy:[
     "Thalidomide monotherapy"
 ];
 
-define final ThalidomidemonotherapyRegimen:
+define final Regimen_Thalidomide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Thalidomide_monotherapy],
     documentset:[Docs]
    }); 
 

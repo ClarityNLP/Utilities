@@ -1,0 +1,276 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Soft tissue sarcoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_soft_tissue_sarcoma:[
+    "adult soft tissue sarcoma", "sarcoma of the soft tissue", "non-rhabdomyosarcoma soft tissue sarcoma, nos", "connective tissue sarcoma", "non-metastatic childhood soft tissue sarcoma", "soft tissue sarcoma", "childhood soft tissue sarcoma", "adult sarcoma of soft tissue", "childhood sarcoma of soft tissue", "pediatric sarcoma of soft tissue", "non-rhabdo. soft tissue sarcoma", "sarcoma of soft tissue", "pediatric sarcoma of the soft tissue", "childhood sarcoma of the soft tissue", "adult sarcoma of the soft tissue", "pediatric soft tissue sarcoma"
+];
+
+define final Condition_soft_tissue_sarcoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_soft_tissue_sarcoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_monotherapy:[
+    "Cisplatin monotherapy"
+];
+
+define   Regimen_Cisplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_Gemcitabine:[
+    "Docetaxel & Gemcitabine"
+];
+
+define   Regimen_Docetaxel_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_monotherapy:[
+    "Ifosfamide monotherapy"
+];
+
+define   Regimen_Ifosfamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Regorafenib_monotherapy:[
+    "Regorafenib monotherapy"
+];
+
+define   Regimen_Regorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Regorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pazopanib_monotherapy:[
+    "Pazopanib monotherapy"
+];
+
+define   Regimen_Pazopanib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pazopanib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_monotherapy:[
+    "Dacarbazine monotherapy"
+];
+
+define   Regimen_Dacarbazine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Vinorelbine:[
+    "Gemcitabine & Vinorelbine"
+];
+
+define   Regimen_Gemcitabine_Vinorelbine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Vinorelbine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Trabectedin_monotherapy:[
+    "Trabectedin monotherapy"
+];
+
+define   Regimen_Trabectedin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Trabectedin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Epirubicin_Ifosfamide:[
+    "Epirubicin & Ifosfamide"
+];
+
+define   Regimen_Epirubicin_Ifosfamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Epirubicin_Ifosfamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EIA:[
+    "EIA"
+];
+
+define   Regimen_EIA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EIA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Epirubicin_monotherapy:[
+    "Epirubicin monotherapy"
+];
+
+define   Regimen_Epirubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Epirubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_Doxorubicin:[
+    "Dacarbazine & Doxorubicin"
+];
+
+define   Regimen_Dacarbazine_Doxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_Doxorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_Ifosfamide:[
+    "AIM", "Doxorubicin & Ifosfamide"
+];
+
+define   Regimen_Doxorubicin_Ifosfamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_Ifosfamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_Olaratumab:[
+    "Doxorubicin & Olaratumab"
+];
+
+define   Regimen_Doxorubicin_Olaratumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_Olaratumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MAID:[
+    "MAID"
+];
+
+define   Regimen_MAID:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MAID],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacarbazine_Gemcitabine:[
+    "Dacarbazine & Gemcitabine"
+];
+
+define   Regimen_Dacarbazine_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacarbazine_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Eribulin_monotherapy:[
+    "Eribulin monotherapy"
+];
+
+define   Regimen_Eribulin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Eribulin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_soft_tissue_sarcoma:
+    where Temozolomide_monotherapy_Regimen OR Sorafenib_monotherapy_Regimen OR Cisplatin_monotherapy_Regimen OR Docetaxel_Gemcitabine_Regimen OR Imatinib_monotherapy_Regimen OR Ifosfamide_monotherapy_Regimen OR Regorafenib_monotherapy_Regimen OR Doxorubicin_monotherapy_Regimen OR Pazopanib_monotherapy_Regimen OR Dacarbazine_monotherapy_Regimen OR Gemcitabine_Vinorelbine_Regimen OR Trabectedin_monotherapy_Regimen OR Epirubicin_Ifosfamide_Regimen OR EIA_Regimen OR Epirubicin_monotherapy_Regimen OR Dacarbazine_Doxorubicin_Regimen OR Doxorubicin_Ifosfamide_Regimen OR Doxorubicin_Olaratumab_Regimen OR MAID_Regimen OR Dacarbazine_Gemcitabine_Regimen OR Eribulin_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_soft_tissue_sarcoma AND soft_tissue_sarcoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

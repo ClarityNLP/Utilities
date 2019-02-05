@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "erbitux", "cetuximab"
 ];
 
-define final CetuximabTreatment:
+define final Cetuximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CetuximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cetuximab_monotherapy:[
     "Cetuximab monotherapy"
 ];
 
-define final CetuximabmonotherapyRegimen:
+define final Regimen_Cetuximab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cetuximab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CetuximabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Colon_cancer_KRAS_wild-type, Esophageal_cancer, Cutaneous_squamous_cell_carcinoma, Head_and_neck_cancer
+Known regimen for: Cutaneous_squamous_cell_carcinoma, Head_and_neck_cancer, Colon_cancer_KRAS_wild-type, Esophageal_cancer
 
 
 

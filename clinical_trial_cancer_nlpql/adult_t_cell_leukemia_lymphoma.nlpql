@@ -1,0 +1,111 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Adult T-cell leukemia-lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_adult_t_cell_leukemia_lymphoma:[
+    "adult t-cell leukemia-lymphoma"
+];
+
+define final Condition_adult_t_cell_leukemia_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_adult_t_cell_leukemia_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_CHOP_14:[
+    "CHOP-14", "CHOP-DI", "CHOP/14", "CHOP/DI", "CHOP14", "CHOPDI", "I-CHOP", "I/CHOP", "ICHOP"
+];
+
+define   Regimen_CHOP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_Zidovudine:[
+    "Interferon alfa-2b & Zidovudine"
+];
+
+define   Regimen_Interferon_alfa_2b_Zidovudine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_Zidovudine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LSG15:[
+    "LSG15"
+];
+
+define   Regimen_LSG15:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LSG15],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mLSG15:[
+    "mLSG15"
+];
+
+define   Regimen_mLSG15:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mLSG15],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_monotherapy:[
+    "Alemtuzumab monotherapy"
+];
+
+define   Regimen_Alemtuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_adult_t_cell_leukemia_lymphoma:
+    where CHOP_14_Regimen OR Interferon_alfa_2b_Zidovudine_Regimen OR LSG15_Regimen OR mLSG15_Regimen OR Alemtuzumab_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_adult_t_cell_leukemia_lymphoma AND adult_t_cell_leukemia_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

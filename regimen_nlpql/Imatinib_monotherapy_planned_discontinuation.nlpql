@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gleevec", "imatinib"
 ];
 
-define final ImatinibTreatment:
+define final Imatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ImatinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Imatinib_monotherapy_planned_discontinuation:[
     "Imatinib monotherapy, planned discontinuation"
 ];
 
-define final ImatinibmonotherapyplanneddiscontinuationRegimen:
+define final Regimen_Imatinib_monotherapy_planned_discontinuation:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Imatinib_monotherapy_planned_discontinuation],
     documentset:[Docs]
    }); 
 

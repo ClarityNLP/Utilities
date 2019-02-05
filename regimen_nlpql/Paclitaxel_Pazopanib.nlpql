@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "votrient", "pazopanib"
 ];
 
-define  PazopanibTreatment:
+define  Pazopanib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PazopanibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Paclitaxel_Pazopanib:[
     "Paclitaxel & Pazopanib"
 ];
 
-define final PaclitaxelPazopanibRegimen:
+define final Regimen_Paclitaxel_Pazopanib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Paclitaxel_Pazopanib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final PaclitaxelPazopanibRegimen:
 // Results
 
         
-define final PaclitaxelPazopanibTreatments:
-    where PaclitaxelTreatment AND PazopanibTreatment;
+define final Treatment__PaclitaxelPazopanib:
+    where Paclitaxel_Treatment AND Pazopanib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PaclitaxelPazopanib AND Paclitaxel_Pazopanib_Regimen;
         
         
 

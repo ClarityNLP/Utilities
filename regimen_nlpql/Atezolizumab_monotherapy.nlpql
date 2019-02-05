@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "tecentriq", "atezolizumab"
 ];
 
-define final AtezolizumabTreatment:
+define final Atezolizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AtezolizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Atezolizumab_monotherapy:[
     "Atezolizumab monotherapy"
 ];
 
-define final AtezolizumabmonotherapyRegimen:
+define final Regimen_Atezolizumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Atezolizumab_monotherapy],
     documentset:[Docs]
    }); 
 

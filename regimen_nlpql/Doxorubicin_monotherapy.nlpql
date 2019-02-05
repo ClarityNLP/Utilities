@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adriamycin", "doxorubicin"
 ];
 
-define final DoxorubicinTreatment:
+define final Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DoxorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Doxorubicin_monotherapy:[
     "Doxorubicin monotherapy"
 ];
 
-define final DoxorubicinmonotherapyRegimen:
+define final Regimen_Doxorubicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final DoxorubicinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Osteosarcoma, Thyroid_cancer, Mesothelioma, Endometrial_cancer, Hepatocellular_carcinoma
+Known regimen for: Soft_tissue_sarcoma, Mesothelioma, Endometrial_cancer, Osteosarcoma, Hepatocellular_carcinoma, Thyroid_cancer
 
 
 

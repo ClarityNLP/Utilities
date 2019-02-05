@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "inlyta", "axitinib"
 ];
 
-define final AxitinibTreatment:
+define final Axitinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AxitinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Axitinib_monotherapy:[
     "Axitinib monotherapy"
 ];
 
-define final AxitinibmonotherapyRegimen:
+define final Regimen_Axitinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Axitinib_monotherapy],
     documentset:[Docs]
    }); 
 

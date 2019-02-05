@@ -1,0 +1,166 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Ewings sarcoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_ewings_sarcoma:[
+    "ewings sarcoma"
+];
+
+define final Condition_ewings_sarcoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_ewings_sarcoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Docetaxel_Gemcitabine:[
+    "Docetaxel & Gemcitabine"
+];
+
+define   Regimen_Docetaxel_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EVAIA:[
+    "EVAIA"
+];
+
+define   Regimen_EVAIA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EVAIA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VACA:[
+    "VACA"
+];
+
+define   Regimen_VACA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VACA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VAIA:[
+    "VAIA"
+];
+
+define   Regimen_VAIA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAIA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VIDE:[
+    "VIDE"
+];
+
+define   Regimen_VIDE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VIDE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VAI:[
+    "IVA", "VAI"
+];
+
+define   Regimen_VAI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Topotecan:[
+    "Cyclophosphamide & Topotecan"
+];
+
+define   Regimen_Cyclophosphamide_Topotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Topotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ICE:[
+    "ICE"
+];
+
+define   Regimen_ICE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ICE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IE:[
+    "IE"
+];
+
+define   Regimen_IE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_Temozolomide:[
+    "Irinotecan & Temozolomide"
+];
+
+define   Regimen_Irinotecan_Temozolomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_Temozolomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VAdCA:[
+    "VAdCA"
+];
+
+define   Regimen_VAdCA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAdCA],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_ewings_sarcoma:
+    where Docetaxel_Gemcitabine_Regimen OR EVAIA_Regimen OR VACA_Regimen OR VAIA_Regimen OR VIDE_Regimen OR VAI_Regimen OR Cyclophosphamide_Topotecan_Regimen OR ICE_Regimen OR IE_Regimen OR Irinotecan_Temozolomide_Regimen OR VAdCA_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_ewings_sarcoma AND ewings_sarcoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

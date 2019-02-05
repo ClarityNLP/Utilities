@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "matulane", "procarbazine"
 ];
 
-define  ProcarbazineTreatment:
+define  Procarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ceenu", "lomustine"
 ];
 
-define  LomustineTreatment:
+define  Lomustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  VincristineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_PCV:[
     "PCV"
 ];
 
-define final PCVRegimen:
+define final Regimen_PCV:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_PCV],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final PCVRegimen:
 // Results
 
         
-define final PCVTreatments:
-    where ProcarbazineTreatment AND LomustineTreatment AND VincristineTreatment;
+define final Treatment__PCV:
+    where Procarbazine_Treatment AND Lomustine_Treatment AND Vincristine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PCV AND PCV_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Glioblastoma, Low-grade_glioma
+Known regimen for: Anaplastic_glioma, Low-grade_glioma, Glioblastoma
 
 
 

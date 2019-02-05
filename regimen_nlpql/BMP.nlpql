@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "blenoxane", "bleomycin"
 ];
 
-define  BleomycinTreatment:
+define  Bleomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CisplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BMP:[
     "BMP", "MPB"
 ];
 
-define final BMPRegimen:
+define final Regimen_BMP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BMP],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final BMPRegimen:
 // Results
 
         
-define final BMPTreatments:
-    where BleomycinTreatment AND MethotrexateTreatment AND CisplatinTreatment;
+define final Treatment__BMP:
+    where Bleomycin_Treatment AND Methotrexate_Treatment AND Cisplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BMP AND BMP_Regimen;
         
         
 

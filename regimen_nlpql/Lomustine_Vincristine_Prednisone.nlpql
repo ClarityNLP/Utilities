@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ceenu", "lomustine"
 ];
 
-define  LomustineTreatment:
+define  Lomustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lomustine_Vincristine_Prednisone:[
     "Lomustine, Vincristine, Prednisone"
 ];
 
-define final LomustineVincristinePrednisoneRegimen:
+define final Regimen_Lomustine_Vincristine_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lomustine_Vincristine_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final LomustineVincristinePrednisoneRegimen:
 // Results
 
         
-define final LomustineVincristinePrednisoneTreatments:
-    where LomustineTreatment AND VincristineTreatment AND PrednisoneTreatment;
+define final Treatment__LomustineVincristinePrednisone:
+    where Lomustine_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LomustineVincristinePrednisone AND Lomustine_Vincristine_Prednisone_Regimen;
         
         
 

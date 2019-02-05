@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "acova", "argatroban"
 ];
 
-define  ArgatrobanTreatment:
+define  Argatroban_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "acova", "argatroban"
 ];
 
-define  ArgatrobanTreatment:
+define  Argatroban_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "acova", "argatroban"
 ];
 
-define  ArgatrobanTreatment:
+define  Argatroban_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ArgatrobanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Argatroban_monotherapy:[
     "Argatroban monotherapy"
 ];
 
-define final ArgatrobanmonotherapyRegimen:
+define final Regimen_Argatroban_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Argatroban_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ArgatrobanmonotherapyRegimen:
 // Results
 
         
-define final ArgatrobanmonotherapyTreatments:
-    where ArgatrobanTreatment AND ArgatrobanTreatment AND ArgatrobanTreatment;
+define final Treatment__Argatrobanmonotherapy:
+    where Argatroban_Treatment AND Argatroban_Treatment AND Argatroban_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__Argatrobanmonotherapy AND Argatroban_monotherapy_Regimen;
         
         
 

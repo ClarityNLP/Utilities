@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "platinol", "cisplatin"
+];
+
+define  Cisplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "dtic", "dacarbazine"
+];
+
+define  Dacarbazine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "bicnu", "carmustine"
+];
+
+define  Carmustine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "proleukin", "aldesleukin"
+];
+
+define  Aldesleukin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "intron-a", "interferon alfa-2b"
+];
+
+define  Interferonalfa2b_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine:[
+    "Cisplatin, Dacarbazine, IL-2, IFN alfa-2b +/- Carmustine"
+];
+
+define final Regimen_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CisplatinDacarbazineIL2IFNalfa2bCarmustine:
+    where Cisplatin_Treatment AND Dacarbazine_Treatment AND Carmustine_Treatment AND Aldesleukin_Treatment AND Interferonalfa2b_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CisplatinDacarbazineIL2IFNalfa2bCarmustine AND Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Melanoma
+
+
+
+
+***/
+ 

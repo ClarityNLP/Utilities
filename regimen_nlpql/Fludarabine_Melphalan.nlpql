@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "alkeran", "melphalan"
 ];
 
-define  MelphalanTreatment:
+define  Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     ":category:antithymocyte globulin"
 ];
 
-define  CategoryAntithymocyteglobulinTreatment:
+define  CategoryAntithymocyteglobulin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CategoryAntithymocyteglobulinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fludarabine_Melphalan:[
     "Flu-Mel", "Flu/Mel", "FluMel", "Fludarabine & Melphalan"
 ];
 
-define final FludarabineMelphalanRegimen:
+define final Regimen_Fludarabine_Melphalan:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fludarabine_Melphalan],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final FludarabineMelphalanRegimen:
 // Results
 
         
-define final FludarabineMelphalanTreatments:
-    where FludarabineTreatment AND MelphalanTreatment AND CategoryAntithymocyteglobulinTreatment;
+define final Treatment__FludarabineMelphalan:
+    where Fludarabine_Treatment AND Melphalan_Treatment AND CategoryAntithymocyteglobulin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FludarabineMelphalan AND Fludarabine_Melphalan_Regimen;
         
         
 

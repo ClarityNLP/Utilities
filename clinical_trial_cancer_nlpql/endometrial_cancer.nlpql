@@ -1,0 +1,221 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Endometrial cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_endometrial_cancer:[
+    "carcinoma of endometrium", "endometrial carcinoma", "carcinoma of the endometrium", "carcinoma, endometrial, malignant", "endometrial cancer"
+];
+
+define final Condition_endometrial_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_endometrial_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Paclitaxel:[
+    "Cisplatin & Paclitaxel"
+];
+
+define   Regimen_Cisplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_monotherapy:[
+    "Carboplatin monotherapy"
+];
+
+define   Regimen_Carboplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_monotherapy:[
+    "Ifosfamide monotherapy"
+];
+
+define   Regimen_Ifosfamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Topotecan_monotherapy:[
+    "Topotecan monotherapy"
+];
+
+define   Regimen_Topotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Topotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temsirolimus_monotherapy:[
+    "Temsirolimus monotherapy"
+];
+
+define   Regimen_Temsirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temsirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Doxorubicin:[
+    "Cisplatin & Doxorubicin"
+];
+
+define   Regimen_Cisplatin_Doxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CIM:[
+    "CIM"
+];
+
+define   Regimen_CIM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CIM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Doxorubicin_liposomal:[
+    "Carboplatin & Doxorubicin liposomal"
+];
+
+define   Regimen_Carboplatin_Doxorubicin_liposomal:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Doxorubicin_liposomal],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Doxorubicin_Paclitaxel:[
+    "Cisplatin, Doxorubicin, Paclitaxel", "TAP"
+];
+
+define   Regimen_Cisplatin_Doxorubicin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dactinomycin_monotherapy:[
+    "Dactinomycin monotherapy"
+];
+
+define   Regimen_Dactinomycin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dactinomycin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_Paclitaxel:[
+    "Ifosfamide & Paclitaxel"
+];
+
+define   Regimen_Ifosfamide_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_endometrial_cancer:
+    where Carboplatin_Paclitaxel_Regimen OR Pembrolizumab_monotherapy_Regimen OR Bevacizumab_monotherapy_Regimen OR Paclitaxel_monotherapy_Regimen OR Cisplatin_Paclitaxel_Regimen OR Carboplatin_monotherapy_Regimen OR Ifosfamide_monotherapy_Regimen OR Topotecan_monotherapy_Regimen OR Temsirolimus_monotherapy_Regimen OR Cisplatin_Doxorubicin_Regimen OR CIM_Regimen OR Carboplatin_Doxorubicin_liposomal_Regimen OR Cisplatin_Doxorubicin_Paclitaxel_Regimen OR Dactinomycin_monotherapy_Regimen OR Doxorubicin_monotherapy_Regimen OR Ifosfamide_Paclitaxel_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_endometrial_cancer AND endometrial_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

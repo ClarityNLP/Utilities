@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "idhifa", "enasidenib"
 ];
 
-define final EnasidenibTreatment:
+define final Enasidenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final EnasidenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Enasidenib_monotherapy:[
     "Enasidenib monotherapy"
 ];
 
-define final EnasidenibmonotherapyRegimen:
+define final Regimen_Enasidenib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Enasidenib_monotherapy],
     documentset:[Docs]
    }); 
 

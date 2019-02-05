@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Hodgkin lymphoma nodular lymphocyte-predominant" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hodgkin_lymphoma_nodular_lymphocyte_predominant:[
+    "hodgkin lymphoma nodular lymphocyte-predominant"
+];
+
+define final Condition_hodgkin_lymphoma_nodular_lymphocyte_predominant:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hodgkin_lymphoma_nodular_lymphocyte_predominant],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CVP:[
+    "R-CVP", "R/CVP", "RCVP"
+];
+
+define   Regimen_R_CVP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CVP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABVD:[
+    "ABVD"
+];
+
+define   Regimen_ABVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_EPOCH:[
+    "R-EPOCH", "R/EPOCH", "REPOCH"
+];
+
+define   Regimen_R_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hodgkin_lymphoma_nodular_lymphocyte_predominant:
+    where Rituximab_monotherapy_Regimen OR R_CVP_Regimen OR ABVD_Regimen OR R_EPOCH_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hodgkin_lymphoma_nodular_lymphocyte_predominant AND hodgkin_lymphoma_nodular_lymphocyte_predominant_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "thymoglobulin", "antithymocyte globulin, rabbit atg"
 ];
 
-define final AntithymocyteglobulinrabbitATGTreatment:
+define final AntithymocyteglobulinrabbitATG_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AntithymocyteglobulinrabbitATGTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_TLI_ATG:[
     "TLI  and  ATG", "TLI & ATG", "TLI + ATG", "TLI / ATG", "TLI and ATG", "TLI+ATG", "TLI/ATG", "TLIATG"
 ];
 
-define final TLIATGRegimen:
+define final Regimen_TLI_ATG:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_TLI_ATG],
     documentset:[Docs]
    }); 
 

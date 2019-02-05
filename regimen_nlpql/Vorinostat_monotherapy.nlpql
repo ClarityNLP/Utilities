@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "zolinza", "vorinostat"
 ];
 
-define final VorinostatTreatment:
+define final Vorinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final VorinostatTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vorinostat_monotherapy:[
     "Vorinostat monotherapy"
 ];
 
-define final VorinostatmonotherapyRegimen:
+define final Regimen_Vorinostat_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vorinostat_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final VorinostatmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cutaneous_T-cell_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma
+Known regimen for: Cutaneous_T-cell_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma
 
 
 

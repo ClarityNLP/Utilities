@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "solumedrol", "methylprednisolone"
 ];
 
-define final MethylprednisoloneTreatment:
+define final Methylprednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MethylprednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Methylprednisolone_monotherapy:[
     "Methylprednisolone monotherapy"
 ];
 
-define final MethylprednisolonemonotherapyRegimen:
+define final Regimen_Methylprednisolone_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Methylprednisolone_monotherapy],
     documentset:[Docs]
    }); 
 

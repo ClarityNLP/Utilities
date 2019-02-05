@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for ACVBP, dose-adjusted" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "eldisine", "vindesine"
+];
+
+define  Vindesine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "blenoxane", "bleomycin"
+];
+
+define  Bleomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_ACVBP_dose_adjusted:[
+    "ACVBP", "ACVBP, dose-adjusted"
+];
+
+define final Regimen_ACVBP_dose_adjusted:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ACVBP_dose_adjusted],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__ACVBPdoseadjusted:
+    where Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Vindesine_Treatment AND Bleomycin_Treatment AND Prednisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__ACVBPdoseadjusted AND ACVBP_dose_adjusted_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Post-transplant_lymphoproliferative_disorder
+
+
+
+
+***/
+ 

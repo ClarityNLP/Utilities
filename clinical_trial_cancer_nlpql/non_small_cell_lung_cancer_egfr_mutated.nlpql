@@ -1,0 +1,155 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Non-small cell lung cancer EGFR-mutated" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_non_small_cell_lung_cancer_egfr_mutated:[
+    "non-small cell lung cancer egfr-mutated"
+];
+
+define final Condition_non_small_cell_lung_cancer_egfr_mutated:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_non_small_cell_lung_cancer_egfr_mutated],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Erlotinib_Bevacizumab:[
+    "Erlotinib & Bevacizumab"
+];
+
+define   Regimen_Erlotinib_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Afatinib_monotherapy:[
+    "Afatinib monotherapy"
+];
+
+define   Regimen_Afatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Afatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Icotinib_monotherapy:[
+    "Icotinib monotherapy"
+];
+
+define   Regimen_Icotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Icotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Osimertinib_monotherapy:[
+    "Osimertinib monotherapy"
+];
+
+define   Regimen_Osimertinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Osimertinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_monotherapy:[
+    "Erlotinib monotherapy"
+];
+
+define   Regimen_Erlotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gefitinib_monotherapy:[
+    "Gefitinib monotherapy"
+];
+
+define   Regimen_Gefitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gefitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_GemcitabineErlotinib:[
+    "Carboplatin & Gemcitabine/Erlotinib"
+];
+
+define   Regimen_Carboplatin_GemcitabineErlotinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_GemcitabineErlotinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_GemcitabineErlotinib:[
+    "Cisplatin & Gemcitabine/Erlotinib"
+];
+
+define   Regimen_Cisplatin_GemcitabineErlotinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_GemcitabineErlotinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dacomitinib_monotherapy:[
+    "Dacomitinib monotherapy"
+];
+
+define   Regimen_Dacomitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dacomitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gefitinib_Pemetrexed:[
+    "Gefitinib & Pemetrexed", "P & G", "P / G", "P and G", "P&G", "P+G", "P/G"
+];
+
+define   Regimen_Gefitinib_Pemetrexed:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gefitinib_Pemetrexed],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_non_small_cell_lung_cancer_egfr_mutated:
+    where Erlotinib_Bevacizumab_Regimen OR Afatinib_monotherapy_Regimen OR Icotinib_monotherapy_Regimen OR Osimertinib_monotherapy_Regimen OR Erlotinib_monotherapy_Regimen OR Gefitinib_monotherapy_Regimen OR Carboplatin_GemcitabineErlotinib_Regimen OR Cisplatin_GemcitabineErlotinib_Regimen OR Dacomitinib_monotherapy_Regimen OR Gefitinib_Pemetrexed_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_non_small_cell_lung_cancer_egfr_mutated AND non_small_cell_lung_cancer_egfr_mutated_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

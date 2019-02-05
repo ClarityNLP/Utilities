@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mustargen", "mechlorethamine"
 ];
 
-define  MechlorethamineTreatment:
+define  Mechlorethamine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "matulane", "procarbazine"
 ];
 
-define  ProcarbazineTreatment:
+define  Procarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_MOPP:[
     "MOPP"
 ];
 
-define final MOPPRegimen:
+define final Regimen_MOPP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_MOPP],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final MOPPRegimen:
 // Results
 
         
-define final MOPPTreatments:
-    where MechlorethamineTreatment AND VincristineTreatment AND ProcarbazineTreatment AND PrednisoneTreatment;
+define final Treatment__MOPP:
+    where Mechlorethamine_Treatment AND Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MOPP AND MOPP_Regimen;
         
         
 

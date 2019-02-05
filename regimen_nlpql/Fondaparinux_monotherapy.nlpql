@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "arixtra", "fondaparinux"
 ];
 
-define final FondaparinuxTreatment:
+define final Fondaparinux_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final FondaparinuxTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fondaparinux_monotherapy:[
     "Fondaparinux monotherapy"
 ];
 
-define final FondaparinuxmonotherapyRegimen:
+define final Regimen_Fondaparinux_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fondaparinux_monotherapy],
     documentset:[Docs]
    }); 
 

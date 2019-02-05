@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Cutaneous basal cell carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cutaneous_basal_cell_carcinoma:[
+    "cutaneous basal cell carcinoma"
+];
+
+define final Condition_cutaneous_basal_cell_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cutaneous_basal_cell_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_Paclitaxel:[
+    "Cisplatin & Paclitaxel"
+];
+
+define   Regimen_Cisplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bleomycin_Cisplatin:[
+    "Bleomycin & Cisplatin"
+];
+
+define   Regimen_Bleomycin_Cisplatin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bleomycin_Cisplatin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Doxorubicin:[
+    "Cisplatin & Doxorubicin"
+];
+
+define   Regimen_Cisplatin_Doxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sonidegib_monotherapy:[
+    "Sonidegib monotherapy"
+];
+
+define   Regimen_Sonidegib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sonidegib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vismodegib_monotherapy:[
+    "Vismodegib monotherapy"
+];
+
+define   Regimen_Vismodegib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vismodegib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cutaneous_basal_cell_carcinoma:
+    where Cisplatin_Paclitaxel_Regimen OR Bleomycin_Cisplatin_Regimen OR Cisplatin_Doxorubicin_Regimen OR Sonidegib_monotherapy_Regimen OR Vismodegib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cutaneous_basal_cell_carcinoma AND cutaneous_basal_cell_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

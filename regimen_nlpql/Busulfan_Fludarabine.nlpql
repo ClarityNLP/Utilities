@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "myleran", "busulfan"
 ];
 
-define  BusulfanTreatment:
+define  Busulfan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  FludarabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Busulfan_Fludarabine:[
     "BuFlu", "Busulfan & Fludarabine", "Flu/Bu", "FluBu"
 ];
 
-define final BusulfanFludarabineRegimen:
+define final Regimen_Busulfan_Fludarabine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Busulfan_Fludarabine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BusulfanFludarabineRegimen:
 // Results
 
         
-define final BusulfanFludarabineTreatments:
-    where BusulfanTreatment AND FludarabineTreatment;
+define final Treatment__BusulfanFludarabine:
+    where Busulfan_Treatment AND Fludarabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BusulfanFludarabine AND Busulfan_Fludarabine_Regimen;
         
         
 

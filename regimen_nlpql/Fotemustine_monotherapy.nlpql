@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "muphoran", "fotemustine"
 ];
 
-define final FotemustineTreatment:
+define final Fotemustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final FotemustineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fotemustine_monotherapy:[
     "Fotemustine monotherapy"
 ];
 
-define final FotemustinemonotherapyRegimen:
+define final Regimen_Fotemustine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fotemustine_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Plasma cell leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_plasma_cell_leukemia:[
+    "leukemia plasmacytic", "plasma cell leukemia", "plasmacytic leukemia"
+];
+
+define final Condition_plasma_cell_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_plasma_cell_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Melphalan_then_auto_HSCT:[
+    "Melphalan, then auto HSCT"
+];
+
+define   Regimen_Melphalan_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Melphalan_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rd:[
+    "LenDex", "Rd", "RevDex"
+];
+
+define   Regimen_Rd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rd],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_plasma_cell_leukemia:
+    where Lenalidomide_monotherapy_Regimen OR Melphalan_then_auto_HSCT_Regimen OR Rd_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_plasma_cell_leukemia AND plasma_cell_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

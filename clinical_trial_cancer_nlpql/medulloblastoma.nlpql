@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Medulloblastoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_medulloblastoma:[
+    "medulloblastomas", "medulloblastoma", "mouse medulloblastoma", "adult medulloblastoma", "pediatric medulloblastoma", "childhood medulloblastoma", "medulloblastoma (reni)", "medulloblastoma, malignant", "rat medulloblastoma"
+];
+
+define final Condition_medulloblastoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_medulloblastoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine:[
+    "Carboplatin, Cyclophosphamide, Etoposide, Methotrexate, Vincristine"
+];
+
+define   Regimen_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Lomustine_Vincristine:[
+    "Cisplatin, Lomustine, Vincristine"
+];
+
+define   Regimen_Cisplatin_Lomustine_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Lomustine_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_VincristineCisplatin_Etoposide:[
+    "Cyclophosphamide & Vincristine/Cisplatin & Etoposide"
+];
+
+define   Regimen_Cyclophosphamide_VincristineCisplatin_Etoposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_VincristineCisplatin_Etoposide],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_medulloblastoma:
+    where Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine_Regimen OR Cisplatin_Lomustine_Vincristine_Regimen OR Cyclophosphamide_VincristineCisplatin_Etoposide_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_medulloblastoma AND medulloblastoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "sylvant", "siltuximab"
 ];
 
-define final SiltuximabTreatment:
+define final Siltuximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final SiltuximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Siltuximab_monotherapy:[
     "Siltuximab monotherapy"
 ];
 
-define final SiltuximabmonotherapyRegimen:
+define final Regimen_Siltuximab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Siltuximab_monotherapy],
     documentset:[Docs]
    }); 
 

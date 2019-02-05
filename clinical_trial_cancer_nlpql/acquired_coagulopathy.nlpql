@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Acquired coagulopathy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_acquired_coagulopathy:[
+    "acquired coagulopathy"
+];
+
+define final Condition_acquired_coagulopathy:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_acquired_coagulopathy],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cyclophosphamide_Prednisolone:[
+    "Cyclophosphamide & Prednisolone"
+];
+
+define   Regimen_Cyclophosphamide_Prednisolone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Prednisolone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Prednisone:[
+    "Cyclophosphamide & Prednisone"
+];
+
+define   Regimen_Cyclophosphamide_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Prednisolone_monotherapy:[
+    "Prednisolone monotherapy"
+];
+
+define   Regimen_Prednisolone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Prednisolone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Prednisone_monotherapy:[
+    "Prednisone monotherapy"
+];
+
+define   Regimen_Prednisone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Prednisone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_acquired_coagulopathy:
+    where Cyclophosphamide_Prednisolone_Regimen OR Cyclophosphamide_Prednisone_Regimen OR Prednisolone_monotherapy_Regimen OR Prednisone_monotherapy_Regimen OR Rituximab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_acquired_coagulopathy AND acquired_coagulopathy_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

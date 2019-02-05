@@ -1,0 +1,117 @@
+
+// Phenotype library name
+phenotype "Regimen for dmCODOX-M/IVAC - Modified Magrath" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "leucovorin", "folinic acid"
+];
+
+define  Folinicacid_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_5:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_5],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_dmCODOX_MIVAC__Modified_Magrath:[
+    "dmCODOX-M/IVAC", "dmCODOX-M/IVAC - Modified Magrath"
+];
+
+define final Regimen_dmCODOX_MIVAC__Modified_Magrath:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_dmCODOX_MIVAC__Modified_Magrath],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__dmCODOXMIVACModifiedMagrath:
+    where Cytarabine_Treatment AND Methotrexate_Treatment AND Cytarabine_Treatment AND Methotrexate_Treatment AND Folinicacid_Treatment AND Methotrexate_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__dmCODOXMIVACModifiedMagrath AND dmCODOX_MIVAC__Modified_Magrath_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: HIV-associated_lymphoma
+
+
+
+
+***/
+ 

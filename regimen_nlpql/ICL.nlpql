@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "idamycin", "idarubicin"
 ];
 
-define  IdarubicinTreatment:
+define  Idarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "ceenu", "lomustine"
 ];
 
-define  LomustineTreatment:
+define  Lomustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  LomustineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ICL:[
     "ICL"
 ];
 
-define final ICLRegimen:
+define final Regimen_ICL:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ICL],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ICLRegimen:
 // Results
 
         
-define final ICLTreatments:
-    where IdarubicinTreatment AND CytarabineTreatment AND LomustineTreatment;
+define final Treatment__ICL:
+    where Idarubicin_Treatment AND Cytarabine_Treatment AND Lomustine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ICL AND ICL_Regimen;
         
         
 

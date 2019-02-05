@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Docetaxel_Fluorouracil_RT:[
     "Docetaxel, Fluorouracil, RT"
 ];
 
-define final DocetaxelFluorouracilRTRegimen:
+define final Regimen_Docetaxel_Fluorouracil_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Docetaxel_Fluorouracil_RT],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final DocetaxelFluorouracilRTRegimen:
 // Results
 
         
-define final DocetaxelFluorouracilRTTreatments:
-    where DocetaxelTreatment AND FluorouracilTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__DocetaxelFluorouracilRT:
+    where Docetaxel_Treatment AND Fluorouracil_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DocetaxelFluorouracilRT AND Docetaxel_Fluorouracil_RT_Regimen;
         
         
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Gemcitabine_Bevacizumab:[
     "Carboplatin, Gemcitabine, Bevacizumab"
 ];
 
-define final CarboplatinGemcitabineBevacizumabRegimen:
+define final Regimen_Carboplatin_Gemcitabine_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Gemcitabine_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinGemcitabineBevacizumabRegimen:
 // Results
 
         
-define final CarboplatinGemcitabineBevacizumabTreatments:
-    where CarboplatinTreatment AND GemcitabineTreatment AND BevacizumabTreatment;
+define final Treatment__CarboplatinGemcitabineBevacizumab:
+    where Carboplatin_Treatment AND Gemcitabine_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinGemcitabineBevacizumab AND Carboplatin_Gemcitabine_Bevacizumab_Regimen;
         
         
 

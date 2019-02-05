@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for M-DEX" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "alkeran", "melphalan"
+];
+
+define  Melphalan_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_M_DEX:[
+    "M-DEX", "M/DEX", "MDEX"
+];
+
+define final Regimen_M_DEX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_DEX],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__MDEX:
+    where Melphalan_Treatment AND Dexamethasone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__MDEX AND M_DEX_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Light-chain_(AL)_amyloidosis
+
+
+
+
+***/
+ 

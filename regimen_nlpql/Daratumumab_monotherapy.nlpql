@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "darzalex", "daratumumab"
 ];
 
-define final DaratumumabTreatment:
+define final Daratumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DaratumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Daratumumab_monotherapy:[
     "Daratumumab monotherapy"
 ];
 
-define final DaratumumabmonotherapyRegimen:
+define final Regimen_Daratumumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Daratumumab_monotherapy],
     documentset:[Docs]
    }); 
 

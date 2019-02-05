@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "targretin", "bexarotene"
 ];
 
-define  BexaroteneTreatment:
+define  Bexarotene_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "folotyn", "pralatrexate"
 ];
 
-define  PralatrexateTreatment:
+define  Pralatrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PralatrexateTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bexarotene_Pralatrexate:[
     "Bexarotene & Pralatrexate"
 ];
 
-define final BexarotenePralatrexateRegimen:
+define final Regimen_Bexarotene_Pralatrexate:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bexarotene_Pralatrexate],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BexarotenePralatrexateRegimen:
 // Results
 
         
-define final BexarotenePralatrexateTreatments:
-    where BexaroteneTreatment AND PralatrexateTreatment;
+define final Treatment__BexarotenePralatrexate:
+    where Bexarotene_Treatment AND Pralatrexate_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BexarotenePralatrexate AND Bexarotene_Pralatrexate_Regimen;
         
         
 

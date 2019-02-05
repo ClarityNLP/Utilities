@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fudr", "floxuridine"
 ];
 
-define final FloxuridineTreatment:
+define final Floxuridine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final FloxuridineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Hepatic_arterial_chemotherapy:[
     "Hepatic arterial chemotherapy"
 ];
 
-define final HepaticarterialchemotherapyRegimen:
+define final Regimen_Hepatic_arterial_chemotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Hepatic_arterial_chemotherapy],
     documentset:[Docs]
    }); 
 

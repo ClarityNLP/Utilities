@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "leucovorin", "folinic acid"
 ];
 
-define  FolinicacidTreatment:
+define  Folinicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DocetaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FLOT:[
     "FLOT"
 ];
 
-define final FLOTRegimen:
+define final Regimen_FLOT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FLOT],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final FLOTRegimen:
 // Results
 
         
-define final FLOTTreatments:
-    where FluorouracilTreatment AND FolinicacidTreatment AND OxaliplatinTreatment AND DocetaxelTreatment;
+define final Treatment__FLOT:
+    where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Docetaxel_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FLOT AND FLOT_Regimen;
         
         
 

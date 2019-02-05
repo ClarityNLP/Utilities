@@ -1,0 +1,84 @@
+
+// Phenotype library name
+phenotype "Regimen for ADE (high-dose Ara-C)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cerubidine", "daunorubicin"
+];
+
+define  Daunorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "vepesid", "etoposide"
+];
+
+define  Etoposide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_ADE_high_dose_Ara_C:[
+    "ADE", "ADE (high-dose Ara-C)", "HIDAC-3-5", "HIDAC-3-7", "HIDAC/3/5", "HIDAC/3/7", "HIDAC35", "HIDAC37"
+];
+
+define final Regimen_ADE_high_dose_Ara_C:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ADE_high_dose_Ara_C],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__ADEhighdoseAraC:
+    where Cytarabine_Treatment AND Daunorubicin_Treatment AND Etoposide_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__ADEhighdoseAraC AND ADE_high_dose_Ara_C_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+
+
+***/
+ 

@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Paroxysmal nocturnal hemoglobinuria (PNH)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_paroxysmal_nocturnal_hemoglobinuria_pnh:[
+    "paroxysmal nocturnal hemoglobinuria (pnh)"
+];
+
+define final Condition_paroxysmal_nocturnal_hemoglobinuria_pnh:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_paroxysmal_nocturnal_hemoglobinuria_pnh],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Eculizumab_monotherapy:[
+    "Eculizumab monotherapy"
+];
+
+define   Regimen_Eculizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Eculizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

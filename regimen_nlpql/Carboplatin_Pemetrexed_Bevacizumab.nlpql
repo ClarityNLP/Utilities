@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "alimta", "pemetrexed"
 ];
 
-define  PemetrexedTreatment:
+define  Pemetrexed_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Pemetrexed_Bevacizumab:[
     "Carboplatin, Pemetrexed, Bevacizumab", "PemCBev"
 ];
 
-define final CarboplatinPemetrexedBevacizumabRegimen:
+define final Regimen_Carboplatin_Pemetrexed_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Pemetrexed_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinPemetrexedBevacizumabRegimen:
 // Results
 
         
-define final CarboplatinPemetrexedBevacizumabTreatments:
-    where CarboplatinTreatment AND PemetrexedTreatment AND BevacizumabTreatment;
+define final Treatment__CarboplatinPemetrexedBevacizumab:
+    where Carboplatin_Treatment AND Pemetrexed_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinPemetrexedBevacizumab AND Carboplatin_Pemetrexed_Bevacizumab_Regimen;
         
         
 

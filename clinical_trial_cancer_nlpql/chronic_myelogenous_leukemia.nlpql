@@ -1,0 +1,199 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Chronic myelogenous leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_chronic_myelogenous_leukemia:[
+    "cml", "chronic myelogenous leukemia, bcr-abl1 positive", "chronic myelogenous leukemia (cml)", "chronic myelocytic leukemia", "chronic myeloid leukemia", "bcr-abl positive chronic myelogenous leukemia", "chronic myelogenous leukemias", "hematopoeitic - chronic myelocytic leukemia (cml)", "cml - chronic myelogenous leukemia", "chronic myelogenous leukemia", "chronic granulocytic leukemia"
+];
+
+define final Condition_chronic_myelogenous_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_chronic_myelogenous_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dasatinib_monotherapy:[
+    "Dasatinib monotherapy"
+];
+
+define   Regimen_Dasatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dasatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nilotinib_monotherapy:[
+    "Nilotinib monotherapy"
+];
+
+define   Regimen_Nilotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nilotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bosutinib_monotherapy:[
+    "Bosutinib monotherapy"
+];
+
+define   Regimen_Bosutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bosutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ponatinib_monotherapy:[
+    "Ponatinib monotherapy"
+];
+
+define   Regimen_Ponatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ponatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy_high_dose:[
+    "Imatinib monotherapy, high dose"
+];
+
+define   Regimen_Imatinib_monotherapy_high_dose:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy_high_dose],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy_intermittent_therapy:[
+    "Imatinib monotherapy, intermittent therapy"
+];
+
+define   Regimen_Imatinib_monotherapy_intermittent_therapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy_intermittent_therapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy_planned_discontinuation:[
+    "Imatinib monotherapy, planned discontinuation"
+];
+
+define   Regimen_Imatinib_monotherapy_planned_discontinuation:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy_planned_discontinuation],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_LoDAC:[
+    "Imatinib  and  LoDAC", "Imatinib & LoDAC", "Imatinib + LoDAC", "Imatinib / LoDAC", "Imatinib and LoDAC", "Imatinib+LoDAC", "Imatinib/LoDAC"
+];
+
+define   Regimen_Imatinib_LoDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_LoDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_monotherapy:[
+    "Interferon alfa monotherapy"
+];
+
+define   Regimen_Interferon_alfa_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Radotinib_monotherapy:[
+    "Radotinib monotherapy"
+];
+
+define   Regimen_Radotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Radotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Busulfan_monotherapy:[
+    "Busulfan monotherapy"
+];
+
+define   Regimen_Busulfan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Busulfan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_DLI:[
+    "DLI", "Interferon alfa-2b & DLI"
+];
+
+define   Regimen_Interferon_alfa_2b_DLI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_DLI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vincristine_Prednisone:[
+    "Vincristine & Prednisone"
+];
+
+define   Regimen_Vincristine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vincristine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_chronic_myelogenous_leukemia:
+    where Dasatinib_monotherapy_Regimen OR Nilotinib_monotherapy_Regimen OR Bosutinib_monotherapy_Regimen OR Imatinib_monotherapy_Regimen OR Ponatinib_monotherapy_Regimen OR Imatinib_monotherapy_high_dose_Regimen OR Imatinib_monotherapy_intermittent_therapy_Regimen OR Imatinib_monotherapy_planned_discontinuation_Regimen OR Imatinib_LoDAC_Regimen OR Interferon_alfa_monotherapy_Regimen OR Radotinib_monotherapy_Regimen OR Busulfan_monotherapy_Regimen OR Interferon_alfa_2b_DLI_Regimen OR Vincristine_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_chronic_myelogenous_leukemia AND chronic_myelogenous_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

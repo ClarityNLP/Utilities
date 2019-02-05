@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "epidaza", "chidamide"
 ];
 
-define final ChidamideTreatment:
+define final Chidamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ChidamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Chidamide_monotherapy:[
     "Chidamide monotherapy"
 ];
 
-define final ChidamidemonotherapyRegimen:
+define final Regimen_Chidamide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Chidamide_monotherapy],
     documentset:[Docs]
    }); 
 

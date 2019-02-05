@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "calsed", "amrubicin"
 ];
 
-define final AmrubicinTreatment:
+define final Amrubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AmrubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Amrubicin_monotherapy:[
     "Amrubicin monotherapy"
 ];
 
-define final AmrubicinmonotherapyRegimen:
+define final Regimen_Amrubicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Amrubicin_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final AmrubicinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer
 
 
 

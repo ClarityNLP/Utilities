@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Vulvar cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_vulvar_cancer:[
+    "vulvar carcinoma", "cancer of vulva", "carcinoma of vulva", "vulva carcinoma", "cancer of the vulva", "vulvar cancer", "carcinoma of the vulva", "vulvar cancer, nos", "vulva cancer"
+];
+
+define final Condition_vulvar_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_vulvar_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_RT:[
+    "Cisplatin  and  RT", "Cisplatin & RT", "Cisplatin + RT", "Cisplatin / RT", "Cisplatin and RT", "Cisplatin+RT", "Cisplatin/RT"
+];
+
+define   Regimen_Cisplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_vulvar_cancer:
+    where Cisplatin_RT_Regimen OR Paclitaxel_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_vulvar_cancer AND vulvar_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

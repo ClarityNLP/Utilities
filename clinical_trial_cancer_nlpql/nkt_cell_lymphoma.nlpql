@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to NKT-cell lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_nkt_cell_lymphoma:[
+    "nkt-cell lymphoma"
+];
+
+define final Condition_nkt_cell_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_nkt_cell_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_SMILE:[
+    "SMILE"
+];
+
+define   Regimen_SMILE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_SMILE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DDGP:[
+    "DDGP"
+];
+
+define   Regimen_DDGP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DDGP],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_nkt_cell_lymphoma:
+    where SMILE_Regimen OR DDGP_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_nkt_cell_lymphoma AND nkt_cell_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

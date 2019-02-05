@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  GemcitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_Gemcitabine:[
     "Capecitabine & Gemcitabine", "GemCap"
 ];
 
-define final CapecitabineGemcitabineRegimen:
+define final Regimen_Capecitabine_Gemcitabine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_Gemcitabine],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CapecitabineGemcitabineRegimen:
 // Results
 
         
-define final CapecitabineGemcitabineTreatments:
-    where CapecitabineTreatment AND GemcitabineTreatment;
+define final Treatment__CapecitabineGemcitabine:
+    where Capecitabine_Treatment AND Gemcitabine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapecitabineGemcitabine AND Capecitabine_Gemcitabine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Cholangiocarcinoma, Pancreatic_cancer, Thymoma
+Known regimen for: Thymoma, Pancreatic_cancer, Cholangiocarcinoma
 
 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ninlaro", "ixazomib"
 ];
 
-define  IxazomibTreatment:
+define  Ixazomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  DexamethasoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ixazomib_Dexamethasone:[
     "Ixazomib & Dexamethasone"
 ];
 
-define final IxazomibDexamethasoneRegimen:
+define final Regimen_Ixazomib_Dexamethasone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ixazomib_Dexamethasone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final IxazomibDexamethasoneRegimen:
 // Results
 
         
-define final IxazomibDexamethasoneTreatments:
-    where IxazomibTreatment AND DexamethasoneTreatment;
+define final Treatment__IxazomibDexamethasone:
+    where Ixazomib_Treatment AND Dexamethasone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__IxazomibDexamethasone AND Ixazomib_Dexamethasone_Regimen;
         
         
 

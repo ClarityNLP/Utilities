@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alkeran", "melphalan"
 ];
 
-define  MelphalanTreatment:
+define  Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "thalomid", "thalidomide"
 ];
 
-define  ThalidomideTreatment:
+define  Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ThalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_MPT:[
     "MPT"
 ];
 
-define final MPTRegimen:
+define final Regimen_MPT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_MPT],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final MPTRegimen:
 // Results
 
         
-define final MPTTreatments:
-    where MelphalanTreatment AND PrednisoneTreatment AND ThalidomideTreatment;
+define final Treatment__MPT:
+    where Melphalan_Treatment AND Prednisone_Treatment AND Thalidomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MPT AND MPT_Regimen;
         
         
 

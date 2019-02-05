@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "onivyde", "irinotecan liposome"
 ];
 
-define final IrinotecanliposomeTreatment:
+define final Irinotecanliposome_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IrinotecanliposomeTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Irinotecan_liposomal_monotherapy:[
     "Irinotecan liposomal monotherapy"
 ];
 
-define final IrinotecanliposomalmonotherapyRegimen:
+define final Regimen_Irinotecan_liposomal_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Irinotecan_liposomal_monotherapy],
     documentset:[Docs]
    }); 
 

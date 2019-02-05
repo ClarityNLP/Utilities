@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fluorouracil_Oxaliplatin_RT:[
     "Fluorouracil, Oxaliplatin, RT"
 ];
 
-define final FluorouracilOxaliplatinRTRegimen:
+define final Regimen_Fluorouracil_Oxaliplatin_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fluorouracil_Oxaliplatin_RT],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final FluorouracilOxaliplatinRTRegimen:
 // Results
 
         
-define final FluorouracilOxaliplatinRTTreatments:
-    where FluorouracilTreatment AND OxaliplatinTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__FluorouracilOxaliplatinRT:
+    where Fluorouracil_Treatment AND Oxaliplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FluorouracilOxaliplatinRT AND Fluorouracil_Oxaliplatin_RT_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "keytruda", "pembrolizumab"
 ];
 
-define final PembrolizumabTreatment:
+define final Pembrolizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PembrolizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
     "Pembrolizumab monotherapy"
 ];
 
-define final PembrolizumabmonotherapyRegimen:
+define final Regimen_Pembrolizumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PembrolizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Anal_cancer, Bladder_cancer, Transformed_lymphoma, Primary_mediastinal_B-cell_lymphoma, Merkel_cell_carcinoma, Non-small_cell_lung_cancer, Endometrial_cancer, Cervical_cancer, Cholangiocarcinoma, Gastric_cancer, Head_and_neck_cancer, Melanoma, Hepatocellular_carcinoma, MSI-H_or_dMMR
+Known regimen for: Melanoma, Transformed_lymphoma, Anal_cancer, Gastric_cancer, Head_and_neck_cancer, MSI-H_or_dMMR, Cervical_cancer, Endometrial_cancer, Hodgkin_lymphoma, Non-small_cell_lung_cancer, Cholangiocarcinoma, Merkel_cell_carcinoma, Hepatocellular_carcinoma, Primary_mediastinal_B-cell_lymphoma, Bladder_cancer
 
 
 

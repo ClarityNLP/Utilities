@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rapamune", "sirolimus"
 ];
 
-define  SirolimusTreatment:
+define  Sirolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Sirolimus_Prednisone:[
     "Sirolimus & Prednisone"
 ];
 
-define final SirolimusPrednisoneRegimen:
+define final Regimen_Sirolimus_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Sirolimus_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final SirolimusPrednisoneRegimen:
 // Results
 
         
-define final SirolimusPrednisoneTreatments:
-    where SirolimusTreatment AND PrednisoneTreatment;
+define final Treatment__SirolimusPrednisone:
+    where Sirolimus_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__SirolimusPrednisone AND Sirolimus_Prednisone_Regimen;
         
         
 

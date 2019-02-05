@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "bicnu", "carmustine"
 ];
 
-define final CarmustineTreatment:
+define final Carmustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CarmustineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carmustine_monotherapy:[
     "Carmustine monotherapy"
 ];
 
-define final CarmustinemonotherapyRegimen:
+define final Regimen_Carmustine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carmustine_monotherapy],
     documentset:[Docs]
    }); 
 

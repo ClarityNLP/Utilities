@@ -1,0 +1,210 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to B-cell acute lymphoblastic leukemia Ph-positive" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_b_cell_acute_lymphoblastic_leukemia_ph_positive:[
+    "b-cell acute lymphoblastic leukemia ph-positive"
+];
+
+define final Condition_b_cell_acute_lymphoblastic_leukemia_ph_positive:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_b_cell_acute_lymphoblastic_leukemia_ph_positive],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dasatinib_Prednisone:[
+    "Dasatinib & Prednisone"
+];
+
+define   Regimen_Dasatinib_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dasatinib_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib:[
+    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib"
+];
+
+define   Regimen_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Daunorubicin_Vincristine_Prednisolone_Nilotinib:[
+    "Daunorubicin, Vincristine, Prednisolone, Nilotinib"
+];
+
+define   Regimen_Daunorubicin_Vincristine_Prednisolone_Nilotinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daunorubicin_Vincristine_Prednisolone_Nilotinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hyper_CVAD_Dasatinib:[
+    "Hyper-CVAD & Dasatinib"
+];
+
+define   Regimen_Hyper_CVAD_Dasatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hyper_CVAD_Dasatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hyper_CVAD_Imatinib:[
+    "Hyper-CVAD & Imatinib"
+];
+
+define   Regimen_Hyper_CVAD_Imatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hyper_CVAD_Imatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_Prednisone:[
+    "Imatinib & Prednisone"
+];
+
+define   Regimen_Imatinib_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_Vincristine_Dexamethasone:[
+    "Imatinib, Vincristine, Dexamethasone"
+];
+
+define   Regimen_Imatinib_Vincristine_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_Vincristine_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HAM_Imatinib:[
+    "HAM  and  Imatinib", "HAM & Imatinib", "HAM + Imatinib", "HAM / Imatinib", "HAM and Imatinib", "HAM+Imatinib", "HAM/Imatinib"
+];
+
+define   Regimen_HAM_Imatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HAM_Imatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Idarubicin_Imatinib:[
+    "Cytarabine, Idarubicin, Imatinib"
+];
+
+define   Regimen_Cytarabine_Idarubicin_Imatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Idarubicin_Imatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dasatinib_monotherapy:[
+    "Dasatinib monotherapy"
+];
+
+define   Regimen_Dasatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dasatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dasatinib_Vincristine_Prednisone:[
+    "Dasatinib, Vincristine, Prednisone"
+];
+
+define   Regimen_Dasatinib_Vincristine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dasatinib_Vincristine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nilotinib_monotherapy:[
+    "Nilotinib monotherapy"
+];
+
+define   Regimen_Nilotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nilotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bosutinib_monotherapy:[
+    "Bosutinib monotherapy"
+];
+
+define   Regimen_Bosutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bosutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ponatinib_monotherapy:[
+    "Ponatinib monotherapy"
+];
+
+define   Regimen_Ponatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ponatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_b_cell_acute_lymphoblastic_leukemia_ph_positive:
+    where Dasatinib_Prednisone_Regimen OR Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib_Regimen OR Daunorubicin_Vincristine_Prednisolone_Nilotinib_Regimen OR Hyper_CVAD_Dasatinib_Regimen OR Hyper_CVAD_Imatinib_Regimen OR Imatinib_Prednisone_Regimen OR Imatinib_Vincristine_Dexamethasone_Regimen OR HAM_Imatinib_Regimen OR Cytarabine_Idarubicin_Imatinib_Regimen OR Dasatinib_monotherapy_Regimen OR Dasatinib_Vincristine_Prednisone_Regimen OR Nilotinib_monotherapy_Regimen OR Bosutinib_monotherapy_Regimen OR Imatinib_monotherapy_Regimen OR Ponatinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_b_cell_acute_lymphoblastic_leukemia_ph_positive AND b_cell_acute_lymphoblastic_leukemia_ph_positive_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

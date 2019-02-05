@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cellcept", "mycophenolate mofetil"
 ];
 
-define final MycophenolatemofetilTreatment:
+define final Mycophenolatemofetil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MycophenolatemofetilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mycophenolate_mofetil_monotherapy:[
     "Mycophenolate mofetil monotherapy"
 ];
 
-define final MycophenolatemofetilmonotherapyRegimen:
+define final Regimen_Mycophenolate_mofetil_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mycophenolate_mofetil_monotherapy],
     documentset:[Docs]
    }); 
 

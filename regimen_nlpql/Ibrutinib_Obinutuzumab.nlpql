@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "imbruvica", "ibrutinib"
 ];
 
-define  IbrutinibTreatment:
+define  Ibrutinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gazyva", "obinutuzumab"
 ];
 
-define  ObinutuzumabTreatment:
+define  Obinutuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ObinutuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ibrutinib_Obinutuzumab:[
     "Ibrutinib & Obinutuzumab"
 ];
 
-define final IbrutinibObinutuzumabRegimen:
+define final Regimen_Ibrutinib_Obinutuzumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ibrutinib_Obinutuzumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final IbrutinibObinutuzumabRegimen:
 // Results
 
         
-define final IbrutinibObinutuzumabTreatments:
-    where IbrutinibTreatment AND ObinutuzumabTreatment;
+define final Treatment__IbrutinibObinutuzumab:
+    where Ibrutinib_Treatment AND Obinutuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__IbrutinibObinutuzumab AND Ibrutinib_Obinutuzumab_Regimen;
         
         
 

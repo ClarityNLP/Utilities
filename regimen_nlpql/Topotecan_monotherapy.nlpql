@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "hycamtin", "topotecan"
 ];
 
-define final TopotecanTreatment:
+define final Topotecan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TopotecanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Topotecan_monotherapy:[
     "Topotecan monotherapy"
 ];
 
-define final TopotecanmonotherapyRegimen:
+define final Regimen_Topotecan_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Topotecan_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final TopotecanmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, CNS_lymphoma
+Known regimen for: Ovarian_cancer, CNS_lymphoma, Small_cell_lung_cancer, Cervical_cancer, Endometrial_cancer
 
 
 

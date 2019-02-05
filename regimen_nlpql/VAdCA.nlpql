@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "cosmegen", "dactinomycin"
 ];
 
-define  DactinomycinTreatment:
+define  Dactinomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DactinomycinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VAdCA:[
     "VAdCA"
 ];
 
-define final VAdCARegimen:
+define final Regimen_VAdCA:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VAdCA],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final VAdCARegimen:
 // Results
 
         
-define final VAdCATreatments:
-    where VincristineTreatment AND DoxorubicinTreatment AND CyclophosphamideTreatment AND DactinomycinTreatment;
+define final Treatment__VAdCA:
+    where Vincristine_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VAdCA AND VAdCA_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define final PaclitaxelTreatment:
+define final Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PaclitaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Paclitaxel_monotherapy_weekly:[
     "Paclitaxel monotherapy, weekly"
 ];
 
-define final PaclitaxelmonotherapyweeklyRegimen:
+define final Regimen_Paclitaxel_monotherapy_weekly:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Paclitaxel_monotherapy_weekly],
     documentset:[Docs]
    }); 
 

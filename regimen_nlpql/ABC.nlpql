@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "abraxane", "paclitaxel, nanoparticle albumin-bound"
 ];
 
-define  PaclitaxelnanoparticlealbuminboundTreatment:
+define  Paclitaxelnanoparticlealbuminbound_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CarboplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ABC:[
     "ABC"
 ];
 
-define final ABCRegimen:
+define final Regimen_ABC:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ABC],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ABCRegimen:
 // Results
 
         
-define final ABCTreatments:
-    where PaclitaxelnanoparticlealbuminboundTreatment AND BevacizumabTreatment AND CarboplatinTreatment;
+define final Treatment__ABC:
+    where Paclitaxelnanoparticlealbuminbound_Treatment AND Bevacizumab_Treatment AND Carboplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ABC AND ABC_Regimen;
         
         
 

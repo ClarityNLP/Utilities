@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Methotrexate_Prednisone:[
     "Methotrexate & Prednisone"
 ];
 
-define final MethotrexatePrednisoneRegimen:
+define final Regimen_Methotrexate_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Methotrexate_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final MethotrexatePrednisoneRegimen:
 // Results
 
         
-define final MethotrexatePrednisoneTreatments:
-    where MethotrexateTreatment AND PrednisoneTreatment;
+define final Treatment__MethotrexatePrednisone:
+    where Methotrexate_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MethotrexatePrednisone AND Methotrexate_Prednisone_Regimen;
         
         
 

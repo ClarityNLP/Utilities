@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Multiple myeloma consolidation and maintenance" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_multiple_myeloma_consolidation_and_maintenance:[
+    "multiple myeloma consolidation and maintenance"
+];
+
+define final Condition_multiple_myeloma_consolidation_and_maintenance:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_multiple_myeloma_consolidation_and_maintenance],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Bortezomib_monotherapy:[
+    "Bortezomib monotherapy"
+];
+
+define   Regimen_Bortezomib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCEP:[
+    "DCEP"
+];
+
+define   Regimen_DCEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_KTd:[
+    "KTd"
+];
+
+define   Regimen_KTd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_KTd],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_multiple_myeloma_consolidation_and_maintenance:
+    where Bortezomib_monotherapy_Regimen OR DCEP_Regimen OR KTd_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_multiple_myeloma_consolidation_and_maintenance AND multiple_myeloma_consolidation_and_maintenance_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for FLAG-Ida" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "fludara", "fludarabine"
+];
+
+define  Fludarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "granocyte", "lenograstim"
+];
+
+define  Lenograstim_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "idamycin", "idarubicin"
+];
+
+define  Idarubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_FLAG_Ida:[
+    "FLAG-Ida", "FLAG/Ida", "FLAGIda"
+];
+
+define final Regimen_FLAG_Ida:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FLAG_Ida],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__FLAGIda:
+    where Fludarabine_Treatment AND Cytarabine_Treatment AND Lenograstim_Treatment AND Idarubicin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__FLAGIda AND FLAG_Ida_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+
+
+***/
+ 

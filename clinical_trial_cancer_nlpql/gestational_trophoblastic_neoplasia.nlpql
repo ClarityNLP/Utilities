@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Gestational trophoblastic neoplasia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_gestational_trophoblastic_neoplasia:[
+    "gestational trophoblastic disease", "gtt", "gestational trophoblastic tumor", "gestational trophoblastic neoplasia"
+];
+
+define final Condition_gestational_trophoblastic_neoplasia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_gestational_trophoblastic_neoplasia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Methotrexate_monotherapy:[
+    "Methotrexate monotherapy"
+];
+
+define   Regimen_Methotrexate_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dactinomycin_monotherapy:[
+    "Dactinomycin monotherapy"
+];
+
+define   Regimen_Dactinomycin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dactinomycin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_gestational_trophoblastic_neoplasia:
+    where Methotrexate_monotherapy_Regimen OR Dactinomycin_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_gestational_trophoblastic_neoplasia AND gestational_trophoblastic_neoplasia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

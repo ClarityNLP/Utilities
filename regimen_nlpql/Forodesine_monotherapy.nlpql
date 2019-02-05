@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fodosine", "forodesine"
 ];
 
-define final ForodesineTreatment:
+define final Forodesine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ForodesineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Forodesine_monotherapy:[
     "Forodesine monotherapy"
 ];
 
-define final ForodesinemonotherapyRegimen:
+define final Regimen_Forodesine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Forodesine_monotherapy],
     documentset:[Docs]
    }); 
 

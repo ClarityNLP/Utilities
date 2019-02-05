@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "d", "rho"
 ];
 
-define final RhoTreatment:
+define final Rho_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final RhoTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_RhIG_monotherapy:[
     "RhIG", "RhIG monotherapy"
 ];
 
-define final RhIGmonotherapyRegimen:
+define final Regimen_RhIG_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_RhIG_monotherapy],
     documentset:[Docs]
    }); 
 

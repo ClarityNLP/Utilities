@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ixempra", "ixabepilone"
 ];
 
-define  IxabepiloneTreatment:
+define  Ixabepilone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IxabepiloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_Ixabepilone:[
     "Capecitabine & Ixabepilone"
 ];
 
-define final CapecitabineIxabepiloneRegimen:
+define final Regimen_Capecitabine_Ixabepilone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_Ixabepilone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CapecitabineIxabepiloneRegimen:
 // Results
 
         
-define final CapecitabineIxabepiloneTreatments:
-    where CapecitabineTreatment AND IxabepiloneTreatment;
+define final Treatment__CapecitabineIxabepilone:
+    where Capecitabine_Treatment AND Ixabepilone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapecitabineIxabepilone AND Capecitabine_Ixabepilone_Regimen;
         
         
 

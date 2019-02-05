@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CapeOx_Bevacizumab:[
     "CAPOX-B", "CAPOX/B", "CAPOXB", "CapeOX  and  Bevacizumab", "CapeOX & Bevacizumab", "CapeOX + Bevacizumab", "CapeOX / Bevacizumab", "CapeOX and Bevacizumab", "CapeOX+Bevacizumab", "CapeOX/Bevacizumab", "CapeOx  and  Bevacizumab", "CapeOx & Bevacizumab", "CapeOx + Bevacizumab", "CapeOx / Bevacizumab", "CapeOx and Bevacizumab", "CapeOx+Bevacizumab", "CapeOx/Bevacizumab", "XELOX  and  Bevacizumab", "XELOX & Bevacizumab", "XELOX + Bevacizumab", "XELOX / Bevacizumab", "XELOX and Bevacizumab", "XELOX+Bevacizumab", "XELOX/Bevacizumab"
 ];
 
-define final CapeOxBevacizumabRegimen:
+define final Regimen_CapeOx_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CapeOx_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CapeOxBevacizumabRegimen:
 // Results
 
         
-define final CapeOxBevacizumabTreatments:
-    where CapecitabineTreatment AND OxaliplatinTreatment AND BevacizumabTreatment;
+define final Treatment__CapeOxBevacizumab:
+    where Capecitabine_Treatment AND Oxaliplatin_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapeOxBevacizumab AND CapeOx_Bevacizumab_Regimen;
         
         
 

@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for R-CMD" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "leustatin", "cladribine"
+];
+
+define  Cladribine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "novantrone", "mitoxantrone"
+];
+
+define  Mitoxantrone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_CMD:[
+    "R-CMD", "R/CMD", "RCMD"
+];
+
+define final Regimen_R_CMD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CMD],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RCMD:
+    where Rituximab_Treatment AND Cladribine_Treatment AND Mitoxantrone_Treatment AND Dexamethasone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RCMD AND R_CMD_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Follicular_lymphoma
+
+
+
+
+***/
+ 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cerubidine", "daunorubicin"
 ];
 
-define  DaunorubicinTreatment:
+define  Daunorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  DaunorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_52d:[
     "5 & 2d", "5 / 2d", "5 and 2d", "5&2d", "5+2d", "5/2d", "52d"
 ];
 
-define final 52dRegimen:
+define final Regimen_52d:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_52d],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final 52dRegimen:
 // Results
 
         
-define final 52dTreatments:
-    where CytarabineTreatment AND DaunorubicinTreatment;
+define final Treatment__52d:
+    where Cytarabine_Treatment AND Daunorubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__52d AND 52d_Regimen;
         
         
 

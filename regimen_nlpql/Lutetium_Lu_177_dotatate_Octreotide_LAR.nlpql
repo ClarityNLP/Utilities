@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lutathera", "lutetium lu 177 dotatate"
 ];
 
-define  LutetiumLu177dotatateTreatment:
+define  LutetiumLu177dotatate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sandostatin", "octreotide"
 ];
 
-define  OctreotideTreatment:
+define  Octreotide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  OctreotideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lutetium_Lu_177_dotatate_Octreotide_LAR:[
     "Lutetium Lu 177 dotatate & Octreotide LAR"
 ];
 
-define final LutetiumLu177dotatateOctreotideLARRegimen:
+define final Regimen_Lutetium_Lu_177_dotatate_Octreotide_LAR:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lutetium_Lu_177_dotatate_Octreotide_LAR],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final LutetiumLu177dotatateOctreotideLARRegimen:
 // Results
 
         
-define final LutetiumLu177dotatateOctreotideLARTreatments:
-    where LutetiumLu177dotatateTreatment AND OctreotideTreatment;
+define final Treatment__LutetiumLu177dotatateOctreotideLAR:
+    where LutetiumLu177dotatate_Treatment AND Octreotide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LutetiumLu177dotatateOctreotideLAR AND Lutetium_Lu_177_dotatate_Octreotide_LAR_Regimen;
         
         
 

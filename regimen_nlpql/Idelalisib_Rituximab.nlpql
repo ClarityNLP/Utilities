@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "zydelig", "idelalisib"
 ];
 
-define  IdelalisibTreatment:
+define  Idelalisib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Idelalisib_Rituximab:[
     "Idelalisib & Rituximab"
 ];
 
-define final IdelalisibRituximabRegimen:
+define final Regimen_Idelalisib_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Idelalisib_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final IdelalisibRituximabRegimen:
 // Results
 
         
-define final IdelalisibRituximabTreatments:
-    where IdelalisibTreatment AND RituximabTreatment;
+define final Treatment__IdelalisibRituximab:
+    where Idelalisib_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__IdelalisibRituximab AND Idelalisib_Rituximab_Regimen;
         
         
 

@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for O-miniCHOP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "arzerra", "ofatumumab"
+];
+
+define  Ofatumumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_O_miniCHOP:[
+    "O-miniCHOP", "O/miniCHOP", "OminiCHOP"
+];
+
+define final Regimen_O_miniCHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_O_miniCHOP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__OminiCHOP:
+    where Ofatumumab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__OminiCHOP AND O_miniCHOP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma
+
+
+
+
+***/
+ 

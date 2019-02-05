@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atgam", "antithymocyte globulin, horse atg"
 ];
 
-define  AntithymocyteglobulinhorseATGTreatment:
+define  AntithymocyteglobulinhorseATG_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sandimmune", "cyclosporine non-modified"
 ];
 
-define  CyclosporinenonmodifiedTreatment:
+define  Cyclosporinenonmodified_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "solumedrol", "methylprednisolone"
 ];
 
-define  MethylprednisoloneTreatment:
+define  Methylprednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  MethylprednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATG_Horse_Cyclosporine_Methylprednisolone:[
     "ATG (Horse), Cyclosporine, Methylprednisolone"
 ];
 
-define final ATGHorseCyclosporineMethylprednisoloneRegimen:
+define final Regimen_ATG_Horse_Cyclosporine_Methylprednisolone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATG_Horse_Cyclosporine_Methylprednisolone],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ATGHorseCyclosporineMethylprednisoloneRegimen:
 // Results
 
         
-define final ATGHorseCyclosporineMethylprednisoloneTreatments:
-    where AntithymocyteglobulinhorseATGTreatment AND CyclosporinenonmodifiedTreatment AND MethylprednisoloneTreatment;
+define final Treatment__ATGHorseCyclosporineMethylprednisolone:
+    where AntithymocyteglobulinhorseATG_Treatment AND Cyclosporinenonmodified_Treatment AND Methylprednisolone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ATGHorseCyclosporineMethylprednisolone AND ATG_Horse_Cyclosporine_Methylprednisolone_Regimen;
         
         
 

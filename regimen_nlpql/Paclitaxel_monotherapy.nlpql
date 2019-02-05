@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define final PaclitaxelTreatment:
+define final Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PaclitaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Paclitaxel_monotherapy:[
     "Paclitaxel monotherapy"
 ];
 
-define final PaclitaxelmonotherapyRegimen:
+define final Regimen_Paclitaxel_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PaclitaxelmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Bladder_cancer, Vascular_sarcoma, Penile_cancer, Small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Endometrial_cancer, Cervical_cancer, Gastric_cancer, Vulvar_cancer, Melanoma
+Known regimen for: Ovarian_cancer, Melanoma, Penile_cancer, Vascular_sarcoma, Esophageal_cancer, Small_cell_lung_cancer, Gastric_cancer, Breast_cancer_triple_negative, Vulvar_cancer, Cervical_cancer, Endometrial_cancer, Bladder_cancer
 
 
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "nipent", "pentostatin"
 ];
 
-define final PentostatinTreatment:
+define final Pentostatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PentostatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pentostatin_monotherapy:[
     "Pentostatin monotherapy"
 ];
 
-define final PentostatinmonotherapyRegimen:
+define final Regimen_Pentostatin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pentostatin_monotherapy],
     documentset:[Docs]
    }); 
 

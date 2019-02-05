@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "revlimid", "lenalidomide"
 ];
 
-define  LenalidomideTreatment:
+define  Lenalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  LenalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CPR:[
     "CPR"
 ];
 
-define final CPRRegimen:
+define final Regimen_CPR:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CPR],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CPRRegimen:
 // Results
 
         
-define final CPRTreatments:
-    where CyclophosphamideTreatment AND PrednisoneTreatment AND LenalidomideTreatment;
+define final Treatment__CPR:
+    where Cyclophosphamide_Treatment AND Prednisone_Treatment AND Lenalidomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CPR AND CPR_Regimen;
         
         
 

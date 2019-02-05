@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_PCF:[
     "PCF"
 ];
 
-define final PCFRegimen:
+define final Regimen_PCF:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_PCF],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final PCFRegimen:
 // Results
 
         
-define final PCFTreatments:
-    where PaclitaxelTreatment AND CisplatinTreatment AND FluorouracilTreatment;
+define final Treatment__PCF:
+    where Paclitaxel_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PCF AND PCF_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Penile_cancer, SCC_of_unknown_primary, Esophageal_cancer, Head_and_neck_cancer
+Known regimen for: SCC_of_unknown_primary, Head_and_neck_cancer, Penile_cancer, Esophageal_cancer
 
 
 

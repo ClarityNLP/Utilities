@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alimta", "pemetrexed"
 ];
 
-define  PemetrexedTreatment:
+define  Pemetrexed_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pemetrexed_Bevacizumab:[
     "Pemetrexed & Bevacizumab"
 ];
 
-define final PemetrexedBevacizumabRegimen:
+define final Regimen_Pemetrexed_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pemetrexed_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final PemetrexedBevacizumabRegimen:
 // Results
 
         
-define final PemetrexedBevacizumabTreatments:
-    where PemetrexedTreatment AND BevacizumabTreatment;
+define final Treatment__PemetrexedBevacizumab:
+    where Pemetrexed_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__PemetrexedBevacizumab AND Pemetrexed_Bevacizumab_Regimen;
         
         
 

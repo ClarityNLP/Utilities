@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for Carboplatin & nab-Paclitaxel" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "paraplatin", "carboplatin"
+];
+
+define  Carboplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "abraxane", "paclitaxel, nanoparticle albumin-bound"
+];
+
+define  Paclitaxelnanoparticlealbuminbound_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_nab_Paclitaxel:[
+    "Carboplatin & nab-Paclitaxel"
+];
+
+define final Regimen_Carboplatin_nab_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_nab_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CarboplatinnabPaclitaxel:
+    where Carboplatin_Treatment AND Paclitaxelnanoparticlealbuminbound_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CarboplatinnabPaclitaxel AND Carboplatin_nab_Paclitaxel_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Melanoma, Breast_cancer_triple_negative, Non-small_cell_lung_cancer
+
+
+
+
+***/
+ 

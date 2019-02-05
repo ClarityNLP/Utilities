@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mektovi", "binimetinib"
 ];
 
-define  BinimetinibTreatment:
+define  Binimetinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "braftovi", "encorafenib"
 ];
 
-define  EncorafenibTreatment:
+define  Encorafenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EncorafenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Binimetinib_Encorafenib:[
     "Binimetinib & Encorafenib"
 ];
 
-define final BinimetinibEncorafenibRegimen:
+define final Regimen_Binimetinib_Encorafenib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Binimetinib_Encorafenib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BinimetinibEncorafenibRegimen:
 // Results
 
         
-define final BinimetinibEncorafenibTreatments:
-    where BinimetinibTreatment AND EncorafenibTreatment;
+define final Treatment__BinimetinibEncorafenib:
+    where Binimetinib_Treatment AND Encorafenib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BinimetinibEncorafenib AND Binimetinib_Encorafenib_Regimen;
         
         
 

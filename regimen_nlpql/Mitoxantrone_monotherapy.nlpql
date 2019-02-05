@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "novantrone", "mitoxantrone"
 ];
 
-define final MitoxantroneTreatment:
+define final Mitoxantrone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MitoxantroneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mitoxantrone_monotherapy:[
     "Mitoxantrone monotherapy"
 ];
 
-define final MitoxantronemonotherapyRegimen:
+define final Regimen_Mitoxantrone_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mitoxantrone_monotherapy],
     documentset:[Docs]
    }); 
 

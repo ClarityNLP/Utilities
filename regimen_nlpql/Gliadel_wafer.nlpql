@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gliadel", "carmustine wafer, polifeprosan 20"
 ];
 
-define final Carmustinewaferpolifeprosan20Treatment:
+define final Carmustinewaferpolifeprosan20_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final Carmustinewaferpolifeprosan20Treatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gliadel_wafer:[
     "Gliadel wafer"
 ];
 
-define final GliadelwaferRegimen:
+define final Regimen_Gliadel_wafer:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gliadel_wafer],
     documentset:[Docs]
    }); 
 

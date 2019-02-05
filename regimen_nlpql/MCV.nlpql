@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  VinblastineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_MCV:[
     "CMV", "MCV"
 ];
 
-define final MCVRegimen:
+define final Regimen_MCV:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_MCV],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final MCVRegimen:
 // Results
 
         
-define final MCVTreatments:
-    where MethotrexateTreatment AND CisplatinTreatment AND VinblastineTreatment;
+define final Treatment__MCV:
+    where Methotrexate_Treatment AND Cisplatin_Treatment AND Vinblastine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__MCV AND MCV_Regimen;
         
         
 

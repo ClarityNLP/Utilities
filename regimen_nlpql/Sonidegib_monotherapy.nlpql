@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "odomzo", "sonidegib"
 ];
 
-define final SonidegibTreatment:
+define final Sonidegib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final SonidegibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Sonidegib_monotherapy:[
     "Sonidegib monotherapy"
 ];
 
-define final SonidegibmonotherapyRegimen:
+define final Regimen_Sonidegib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Sonidegib_monotherapy],
     documentset:[Docs]
    }); 
 

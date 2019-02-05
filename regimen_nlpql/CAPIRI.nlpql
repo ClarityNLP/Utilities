@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "camptosar", "irinotecan"
 ];
 
-define  IrinotecanTreatment:
+define  Irinotecan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  IrinotecanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CAPIRI:[
     "CAPIRI", "CapeIRI", "XELIRI"
 ];
 
-define final CAPIRIRegimen:
+define final Regimen_CAPIRI:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CAPIRI],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CAPIRIRegimen:
 // Results
 
         
-define final CAPIRITreatments:
-    where CapecitabineTreatment AND IrinotecanTreatment;
+define final Treatment__CAPIRI:
+    where Capecitabine_Treatment AND Irinotecan_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CAPIRI AND CAPIRI_Regimen;
         
         
 

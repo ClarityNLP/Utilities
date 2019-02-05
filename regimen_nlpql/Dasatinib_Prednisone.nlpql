@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "sprycel", "dasatinib"
 ];
 
-define  DasatinibTreatment:
+define  Dasatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Dasatinib_Prednisone:[
     "Dasatinib & Prednisone"
 ];
 
-define final DasatinibPrednisoneRegimen:
+define final Regimen_Dasatinib_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Dasatinib_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final DasatinibPrednisoneRegimen:
 // Results
 
         
-define final DasatinibPrednisoneTreatments:
-    where DasatinibTreatment AND PrednisoneTreatment;
+define final Treatment__DasatinibPrednisone:
+    where Dasatinib_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__DasatinibPrednisone AND Dasatinib_Prednisone_Regimen;
         
         
 

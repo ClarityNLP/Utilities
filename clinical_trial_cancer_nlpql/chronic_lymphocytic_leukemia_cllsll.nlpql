@@ -1,0 +1,573 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Chronic lymphocytic leukemia (CLLSLL)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_chronic_lymphocytic_leukemia_cllsll:[
+    "chronic lymphocytic leukemia (cllsll)"
+];
+
+define final Condition_chronic_lymphocytic_leukemia_cllsll:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_chronic_lymphocytic_leukemia_cllsll],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_monotherapy:[
+    "Alemtuzumab monotherapy"
+];
+
+define   Regimen_Alemtuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FCR:[
+    "FCR"
+];
+
+define   Regimen_FCR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FCR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_monotherapy:[
+    "Bendamustine monotherapy"
+];
+
+define   Regimen_Bendamustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR:[
+    "BR", "R-B", "R/B"
+];
+
+define   Regimen_BR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CC:[
+    "CC"
+];
+
+define   Regimen_CC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Chlorambucil_Obinutuzumab:[
+    "Chlorambucil & Obinutuzumab", "GClb"
+];
+
+define   Regimen_Chlorambucil_Obinutuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Chlorambucil_Obinutuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Chlorambucil_Ofatumumab:[
+    "Chlorambucil & Ofatumumab"
+];
+
+define   Regimen_Chlorambucil_Ofatumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Chlorambucil_Ofatumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Chlorambucil_Rituximab:[
+    "CLB-R", "CLB/R", "CLBR", "Chlorambucil & Rituximab", "RClb"
+];
+
+define   Regimen_Chlorambucil_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Chlorambucil_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cladribine_monotherapy:[
+    "Cladribine monotherapy"
+];
+
+define   Regimen_Cladribine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cladribine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CMC:[
+    "CMC"
+];
+
+define   Regimen_CMC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CMC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FCA:[
+    "FCA", "FCCam"
+];
+
+define   Regimen_FCA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FCA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FCM:[
+    "FCM"
+];
+
+define   Regimen_FCM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FCM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Alemtuzumab:[
+    "Fludarabine & Alemtuzumab"
+];
+
+define   Regimen_Fludarabine_Alemtuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Alemtuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ibrutinib_monotherapy:[
+    "Ibrutinib monotherapy"
+];
+
+define   Regimen_Ibrutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ibrutinib_Obinutuzumab:[
+    "Ibrutinib & Obinutuzumab"
+];
+
+define   Regimen_Ibrutinib_Obinutuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_Obinutuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Obinutuzumab_monotherapy:[
+    "Obinutuzumab monotherapy"
+];
+
+define   Regimen_Obinutuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Obinutuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_Methylprednisolone:[
+    "Alemtuzumab & Methylprednisolone"
+];
+
+define   Regimen_Alemtuzumab_Methylprednisolone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_Methylprednisolone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_Obinutuzumab:[
+    "Bendamustine & Obinutuzumab", "G-B", "G/B"
+];
+
+define   Regimen_Bendamustine_Obinutuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_Obinutuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CFAR:[
+    "CFAR"
+];
+
+define   Regimen_CFAR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CFAR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_G_FC:[
+    "G-FC", "G/FC", "GFC"
+];
+
+define   Regimen_G_FC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_G_FC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HDMP_R:[
+    "HDMP-R", "HDMP/R", "HDMPR"
+];
+
+define   Regimen_HDMP_R:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HDMP_R],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Idelalisib_Rituximab:[
+    "Idelalisib & Rituximab"
+];
+
+define   Regimen_Idelalisib_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Idelalisib_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_Rituximab:[
+    "Lenalidomide & Rituximab"
+];
+
+define   Regimen_Lenalidomide_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_O_FC:[
+    "O-FC", "O/FC", "OFC"
+];
+
+define   Regimen_O_FC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_O_FC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCO:[
+    "PCO"
+];
+
+define   Regimen_PCO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCR:[
+    "PCR"
+];
+
+define   Regimen_PCR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ofatumumab_monotherapy:[
+    "Ofatumumab monotherapy"
+];
+
+define   Regimen_Ofatumumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ofatumumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR_Ibrutinib:[
+    "BR  and  Ibrutinib", "BR & Ibrutinib", "BR + Ibrutinib", "BR / Ibrutinib", "BR and Ibrutinib", "BR+Ibrutinib", "BR/Ibrutinib", "IBR"
+];
+
+define   Regimen_BR_Ibrutinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR_Ibrutinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR_Idelalisib:[
+    "BR  and  Idelalisib", "BR & Idelalisib", "BR + Idelalisib", "BR / Idelalisib", "BR and Idelalisib", "BR+Idelalisib", "BR/Idelalisib"
+];
+
+define   Regimen_BR_Idelalisib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR_Idelalisib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Duvelisib_monotherapy:[
+    "Duvelisib monotherapy"
+];
+
+define   Regimen_Duvelisib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Duvelisib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_monotherapy:[
+    "Fludarabine monotherapy"
+];
+
+define   Regimen_Fludarabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Idelalisib_Ofatumumab:[
+    "Idelalisib & Ofatumumab"
+];
+
+define   Regimen_Idelalisib_Ofatumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Idelalisib_Ofatumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Venetoclax_Rituximab:[
+    "VEN & R", "VEN / R", "VEN and R", "VEN&R", "VEN+R", "VEN/R", "VENR", "Venetoclax & Rituximab"
+];
+
+define   Regimen_Venetoclax_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Venetoclax_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Acalabrutinib_monotherapy:[
+    "Acalabrutinib monotherapy"
+];
+
+define   Regimen_Acalabrutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Acalabrutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_Rituximab:[
+    "Alemtuzumab & Rituximab"
+];
+
+define   Regimen_Alemtuzumab_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_Ofatumumab:[
+    "BendOfa", "Bendamustine & Ofatumumab"
+];
+
+define   Regimen_Bendamustine_Ofatumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_Ofatumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FluCam:[
+    "FluCam"
+];
+
+define   Regimen_FluCam:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FluCam],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fludarabine_Prednisone:[
+    "Fludarabine & Prednisone"
+];
+
+define   Regimen_Fludarabine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fludarabine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ibrutinib_Ofatumumab:[
+    "Ibrutinib & Ofatumumab"
+];
+
+define   Regimen_Ibrutinib_Ofatumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_Ofatumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ibrutinib_Rituximab:[
+    "Ibrutinib & Rituximab"
+];
+
+define   Regimen_Ibrutinib_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Idelalisib_monotherapy:[
+    "Idelalisib monotherapy"
+];
+
+define   Regimen_Idelalisib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Idelalisib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_Ofatumumab:[
+    "Lenalidomide & Ofatumumab"
+];
+
+define   Regimen_Lenalidomide_Ofatumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_Ofatumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_OFAR:[
+    "OFAR"
+];
+
+define   Regimen_OFAR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_OFAR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_BAC:[
+    "R-BAC", "R/BAC", "RBAC"
+];
+
+define   Regimen_R_BAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_BAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Venetoclax_monotherapy:[
+    "Venetoclax monotherapy"
+];
+
+define   Regimen_Venetoclax_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Venetoclax_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_chronic_lymphocytic_leukemia_cllsll:
+    where Rituximab_monotherapy_Regimen OR Ruxolitinib_monotherapy_Regimen OR Alemtuzumab_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR FCR_Regimen OR Bendamustine_monotherapy_Regimen OR BR_Regimen OR CC_Regimen OR Chlorambucil_Obinutuzumab_Regimen OR Chlorambucil_Ofatumumab_Regimen OR Chlorambucil_Rituximab_Regimen OR Cladribine_monotherapy_Regimen OR CMC_Regimen OR FCA_Regimen OR FCM_Regimen OR Fludarabine_Alemtuzumab_Regimen OR Ibrutinib_monotherapy_Regimen OR Ibrutinib_Obinutuzumab_Regimen OR Obinutuzumab_monotherapy_Regimen OR Alemtuzumab_Methylprednisolone_Regimen OR Bendamustine_Obinutuzumab_Regimen OR CFAR_Regimen OR G_FC_Regimen OR HDMP_R_Regimen OR Idelalisib_Rituximab_Regimen OR Lenalidomide_Rituximab_Regimen OR O_FC_Regimen OR PCO_Regimen OR PCR_Regimen OR Ofatumumab_monotherapy_Regimen OR BR_Ibrutinib_Regimen OR BR_Idelalisib_Regimen OR Duvelisib_monotherapy_Regimen OR Fludarabine_monotherapy_Regimen OR Idelalisib_Ofatumumab_Regimen OR Venetoclax_Rituximab_Regimen OR Acalabrutinib_monotherapy_Regimen OR Alemtuzumab_Rituximab_Regimen OR Bendamustine_Ofatumumab_Regimen OR FluCam_Regimen OR Fludarabine_Prednisone_Regimen OR Ibrutinib_Ofatumumab_Regimen OR Ibrutinib_Rituximab_Regimen OR Idelalisib_monotherapy_Regimen OR Lenalidomide_Ofatumumab_Regimen OR OFAR_Regimen OR R_BAC_Regimen OR Venetoclax_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_chronic_lymphocytic_leukemia_cllsll AND chronic_lymphocytic_leukemia_cllsll_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

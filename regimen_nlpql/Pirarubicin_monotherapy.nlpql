@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "thp", "pirarubicin"
 ];
 
-define final PirarubicinTreatment:
+define final Pirarubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PirarubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pirarubicin_monotherapy:[
     "Pirarubicin monotherapy"
 ];
 
-define final PirarubicinmonotherapyRegimen:
+define final Regimen_Pirarubicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pirarubicin_monotherapy],
     documentset:[Docs]
    }); 
 

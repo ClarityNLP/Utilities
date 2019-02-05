@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "campath", "alemtuzumab"
 ];
 
-define  AlemtuzumabTreatment:
+define  Alemtuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  AlemtuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FluCam:[
     "FluCam"
 ];
 
-define final FluCamRegimen:
+define final Regimen_FluCam:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FluCam],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final FluCamRegimen:
 // Results
 
         
-define final FluCamTreatments:
-    where FludarabineTreatment AND AlemtuzumabTreatment;
+define final Treatment__FluCam:
+    where Fludarabine_Treatment AND Alemtuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FluCam AND FluCam_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "folotyn", "pralatrexate"
 ];
 
-define final PralatrexateTreatment:
+define final Pralatrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PralatrexateTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Pralatrexate_monotherapy:[
     "Pralatrexate monotherapy"
 ];
 
-define final PralatrexatemonotherapyRegimen:
+define final Regimen_Pralatrexate_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Pralatrexate_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PralatrexatemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Cutaneous_T-cell_lymphoma, Peripheral_T-cell_lymphoma
+Known regimen for: Peripheral_T-cell_lymphoma, Cutaneous_T-cell_lymphoma
 
 
 

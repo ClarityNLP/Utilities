@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "eloxatin", "oxaliplatin"
 ];
 
-define final OxaliplatinTreatment:
+define final Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final OxaliplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Oxaliplatin_monotherapy:[
     "Oxaliplatin monotherapy"
 ];
 
-define final OxaliplatinmonotherapyRegimen:
+define final Regimen_Oxaliplatin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Oxaliplatin_monotherapy],
     documentset:[Docs]
    }); 
 

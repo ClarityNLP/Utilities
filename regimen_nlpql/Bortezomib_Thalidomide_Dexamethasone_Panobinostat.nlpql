@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "thalomid", "thalidomide"
 ];
 
-define  ThalidomideTreatment:
+define  Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "farydak", "panobinostat"
 ];
 
-define  PanobinostatTreatment:
+define  Panobinostat_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  PanobinostatTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bortezomib_Thalidomide_Dexamethasone_Panobinostat:[
     "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
 ];
 
-define final BortezomibThalidomideDexamethasonePanobinostatRegimen:
+define final Regimen_Bortezomib_Thalidomide_Dexamethasone_Panobinostat:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bortezomib_Thalidomide_Dexamethasone_Panobinostat],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final BortezomibThalidomideDexamethasonePanobinostatRegimen:
 // Results
 
         
-define final BortezomibThalidomideDexamethasonePanobinostatTreatments:
-    where BortezomibTreatment AND ThalidomideTreatment AND DexamethasoneTreatment AND PanobinostatTreatment;
+define final Treatment__BortezomibThalidomideDexamethasonePanobinostat:
+    where Bortezomib_Treatment AND Thalidomide_Treatment AND Dexamethasone_Treatment AND Panobinostat_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BortezomibThalidomideDexamethasonePanobinostat AND Bortezomib_Thalidomide_Dexamethasone_Panobinostat_Regimen;
         
         
 

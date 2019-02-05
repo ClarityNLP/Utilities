@@ -14,79 +14,79 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "leukeran", "chlorambucil"
 ];
 
-define  ChlorambucilTreatment:
+define  Chlorambucil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "matulane", "procarbazine"
 ];
 
-define  ProcarbazineTreatment:
+define  Procarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "millipred", "prednisolone"
 ];
 
-define  PrednisoloneTreatment:
+define  Prednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms5:[
+termset TreatmentTerms_5:[
     "oncovin", "vincristine"
 ];
 
-define  VincristineTreatment:
+define  Vincristine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms5],
+        termset:[TreatmentTerms_5],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms6:[
+termset TreatmentTerms_6:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms6],
+        termset:[TreatmentTerms_6],
         documentset:[Docs]
 }); 
 
@@ -94,13 +94,13 @@ define  DoxorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ChlVPPEVA:[
     "ChlVPP/EVA"
 ];
 
-define final ChlVPPEVARegimen:
+define final Regimen_ChlVPPEVA:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ChlVPPEVA],
     documentset:[Docs]
    }); 
 
@@ -108,10 +108,11 @@ define final ChlVPPEVARegimen:
 // Results
 
         
-define final ChlVPPEVATreatments:
-    where ChlorambucilTreatment AND VinblastineTreatment AND ProcarbazineTreatment AND PrednisoloneTreatment AND EtoposideTreatment AND VincristineTreatment AND DoxorubicinTreatment;
+define final Treatment__ChlVPPEVA:
+    where Chlorambucil_Treatment AND Vinblastine_Treatment AND Procarbazine_Treatment AND Prednisolone_Treatment AND Etoposide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ChlVPPEVA AND ChlVPPEVA_Regimen;
         
         
 

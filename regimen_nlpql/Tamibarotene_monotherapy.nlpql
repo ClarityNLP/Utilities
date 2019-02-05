@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "amnoid", "tamibarotene"
 ];
 
-define final TamibaroteneTreatment:
+define final Tamibarotene_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TamibaroteneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Tamibarotene_monotherapy:[
     "Tamibarotene monotherapy"
 ];
 
-define final TamibarotenemonotherapyRegimen:
+define final Regimen_Tamibarotene_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Tamibarotene_monotherapy],
     documentset:[Docs]
    }); 
 

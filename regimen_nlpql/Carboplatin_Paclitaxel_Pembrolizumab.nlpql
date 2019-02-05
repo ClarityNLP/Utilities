@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "keytruda", "pembrolizumab"
 ];
 
-define  PembrolizumabTreatment:
+define  Pembrolizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PembrolizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Paclitaxel_Pembrolizumab:[
     "Carboplatin, Paclitaxel, Pembrolizumab"
 ];
 
-define final CarboplatinPaclitaxelPembrolizumabRegimen:
+define final Regimen_Carboplatin_Paclitaxel_Pembrolizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel_Pembrolizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CarboplatinPaclitaxelPembrolizumabRegimen:
 // Results
 
         
-define final CarboplatinPaclitaxelPembrolizumabTreatments:
-    where CarboplatinTreatment AND PaclitaxelTreatment AND PembrolizumabTreatment;
+define final Treatment__CarboplatinPaclitaxelPembrolizumab:
+    where Carboplatin_Treatment AND Paclitaxel_Treatment AND Pembrolizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinPaclitaxelPembrolizumab AND Carboplatin_Paclitaxel_Pembrolizumab_Regimen;
         
         
 

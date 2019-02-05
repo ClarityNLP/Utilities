@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for C-MOPP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "matulane", "procarbazine"
+];
+
+define  Procarbazine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_C_MOPP:[
+    "C-MOPP", "C/MOPP", "CMOPP", "COPP"
+];
+
+define final Regimen_C_MOPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_C_MOPP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__CMOPP:
+    where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Procarbazine_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__CMOPP AND C_MOPP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+
+
+***/
+ 

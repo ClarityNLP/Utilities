@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for R-CDOP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "doxil", "pegylated liposomal doxorubicin"
+];
+
+define  Pegylatedliposomaldoxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_CDOP:[
+    "DRCOP", "R-CDOP", "R/CDOP", "RCDOP"
+];
+
+define final Regimen_R_CDOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CDOP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__RCDOP:
+    where Pegylatedliposomaldoxorubicin_Treatment AND Rituximab_Treatment AND Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__RCDOP AND R_CDOP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Diffuse_large_B-cell_lymphoma, HIV-associated_lymphoma
+
+
+
+
+***/
+ 

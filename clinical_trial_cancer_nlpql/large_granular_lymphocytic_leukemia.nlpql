@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Large granular lymphocytic leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_large_granular_lymphocytic_leukemia:[
+    "large cell granular lymphoid leukemia", "t-cell large gran. lymph. leuk.", "large cell granular lymphogenous leukemia", "t-cell large granular lymphocyte leukemia", "t-gamma lymphoproliferative disorder", "lgll", "leukemia, large granular lymphocytic, malignant", "t-cell large granular lymphocytic leukemia", "tgamma large granular lymphocyte leukemia", "large granular lymphocytic leukemia", "t gamma lymphoproliferative disorder", "t-lgl leukemia", "large granular lymphocytosis"
+];
+
+define final Condition_large_granular_lymphocytic_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_large_granular_lymphocytic_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cyclophosphamide_Prednisone:[
+    "Cyclophosphamide & Prednisone"
+];
+
+define   Regimen_Cyclophosphamide_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_monotherapy:[
+    "Cyclophosphamide monotherapy"
+];
+
+define   Regimen_Cyclophosphamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_Prednisone:[
+    "Methotrexate & Prednisone"
+];
+
+define   Regimen_Methotrexate_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_large_granular_lymphocytic_leukemia:
+    where Cyclophosphamide_Prednisone_Regimen OR Cyclophosphamide_monotherapy_Regimen OR Methotrexate_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_large_granular_lymphocytic_leukemia AND large_granular_lymphocytic_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

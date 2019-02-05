@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to CNS carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cns_carcinoma:[
+    "cns carcinoma"
+];
+
+define final Condition_cns_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cns_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Capecitabine_Lapatinib:[
+    "Capecitabine & Lapatinib"
+];
+
+define   Regimen_Capecitabine_Lapatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Lapatinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Trastuzumab:[
+    "Capecitabine & Trastuzumab"
+];
+
+define   Regimen_Capecitabine_Trastuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Trastuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dexamethasone_monotherapy:[
+    "Dexamethasone monotherapy"
+];
+
+define   Regimen_Dexamethasone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dexamethasone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dexamethasone_WBRT:[
+    "Dexamethasone  and  WBRT", "Dexamethasone & WBRT", "Dexamethasone + WBRT", "Dexamethasone / WBRT", "Dexamethasone and WBRT", "Dexamethasone+WBRT", "Dexamethasone/WBRT"
+];
+
+define   Regimen_Dexamethasone_WBRT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dexamethasone_WBRT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alectinib_monotherapy:[
+    "Alectinib monotherapy"
+];
+
+define   Regimen_Alectinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alectinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ceritinib_monotherapy:[
+    "Ceritinib monotherapy"
+];
+
+define   Regimen_Ceritinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ceritinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Afatinib_monotherapy:[
+    "Afatinib monotherapy"
+];
+
+define   Regimen_Afatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Afatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Icotinib_monotherapy:[
+    "Icotinib monotherapy"
+];
+
+define   Regimen_Icotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Icotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Osimertinib_monotherapy:[
+    "Osimertinib monotherapy"
+];
+
+define   Regimen_Osimertinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Osimertinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cns_carcinoma:
+    where Capecitabine_Lapatinib_Regimen OR Capecitabine_Trastuzumab_Regimen OR Dexamethasone_monotherapy_Regimen OR Dexamethasone_WBRT_Regimen OR Alectinib_monotherapy_Regimen OR Ceritinib_monotherapy_Regimen OR Afatinib_monotherapy_Regimen OR Icotinib_monotherapy_Regimen OR Osimertinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cns_carcinoma AND cns_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

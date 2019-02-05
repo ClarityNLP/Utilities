@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "daunoxome", "daunorubicin liposomal"
 ];
 
-define final DaunorubicinliposomalTreatment:
+define final Daunorubicinliposomal_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DaunorubicinliposomalTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Daunorubicin_liposomal_monotherapy:[
     "Daunorubicin liposomal monotherapy"
 ];
 
-define final DaunorubicinliposomalmonotherapyRegimen:
+define final Regimen_Daunorubicin_liposomal_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Daunorubicin_liposomal_monotherapy],
     documentset:[Docs]
    }); 
 

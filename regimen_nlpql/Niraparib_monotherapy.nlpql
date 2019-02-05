@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "zejula", "niraparib"
 ];
 
-define final NiraparibTreatment:
+define final Niraparib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final NiraparibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Niraparib_monotherapy:[
     "Niraparib monotherapy"
 ];
 
-define final NiraparibmonotherapyRegimen:
+define final Regimen_Niraparib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Niraparib_monotherapy],
     documentset:[Docs]
    }); 
 

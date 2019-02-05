@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rapamune", "sirolimus"
 ];
 
-define final SirolimusTreatment:
+define final Sirolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final SirolimusTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Sirolimus_monotherapy:[
     "Sirolimus monotherapy"
 ];
 
-define final SirolimusmonotherapyRegimen:
+define final Regimen_Sirolimus_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Sirolimus_monotherapy],
     documentset:[Docs]
    }); 
 

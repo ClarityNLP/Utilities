@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Pheochromocytoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_pheochromocytoma:[
+    "chromaffin paraganglioma of the adrenal gland", "adrenal pheochromocytoma", "adrenal gland chromaffinoma", "pheochromocytoma", "intraadrenal paraganglioma", "adrenal medullary paraganglioma", "pheochromocytoma (adrenal)", "pcc", "adrenal gland paraganglioma", "adrenal gland pheochromocytoma", "adrenal medullary pheochromocytoma", "adrenal gland chromaffin paraganglioma"
+];
+
+define final Condition_pheochromocytoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_pheochromocytoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cyclophosphamide_Dacarbazine_Vincristine:[
+    "CVD", "Cyclophosphamide, Dacarbazine, Vincristine"
+];
+
+define   Regimen_Cyclophosphamide_Dacarbazine_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Dacarbazine_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

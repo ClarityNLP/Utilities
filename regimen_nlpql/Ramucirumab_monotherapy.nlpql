@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cyramza", "ramucirumab"
 ];
 
-define final RamucirumabTreatment:
+define final Ramucirumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final RamucirumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ramucirumab_monotherapy:[
     "Ramucirumab monotherapy"
 ];
 
-define final RamucirumabmonotherapyRegimen:
+define final Regimen_Ramucirumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ramucirumab_monotherapy],
     documentset:[Docs]
    }); 
 

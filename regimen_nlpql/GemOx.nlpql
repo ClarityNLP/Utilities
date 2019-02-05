@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  OxaliplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GemOx:[
     "GemOx"
 ];
 
-define final GemOxRegimen:
+define final Regimen_GemOx:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GemOx],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final GemOxRegimen:
 // Results
 
         
-define final GemOxTreatments:
-    where GemcitabineTreatment AND OxaliplatinTreatment;
+define final Treatment__GemOx:
+    where Gemcitabine_Treatment AND Oxaliplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GemOx AND GemOx_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Hepatocellular_carcinoma, Pancreatic_cancer
+Known regimen for: Hepatocellular_carcinoma, Pancreatic_cancer, Testicular_cancer
 
 
 

@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Thymoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_thymoma:[
+    "thymoma"
+];
+
+define final Condition_thymoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_thymoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_monotherapy:[
+    "Ifosfamide monotherapy"
+];
+
+define   Regimen_Ifosfamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Gemcitabine:[
+    "Capecitabine & Gemcitabine", "GemCap"
+];
+
+define   Regimen_Capecitabine_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Etoposide:[
+    "Cisplatin & Etoposide"
+];
+
+define   Regimen_Cisplatin_Etoposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Etoposide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sunitinib_monotherapy:[
+    "Sunitinib monotherapy"
+];
+
+define   Regimen_Sunitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sunitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VIP:[
+    "VIP"
+];
+
+define   Regimen_VIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PAC:[
+    "CAP", "PAC"
+];
+
+define   Regimen_PAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ADOC:[
+    "ADOC"
+];
+
+define   Regimen_ADOC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ADOC],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_thymoma:
+    where Carboplatin_Paclitaxel_Regimen OR Ifosfamide_monotherapy_Regimen OR Capecitabine_Gemcitabine_Regimen OR Everolimus_monotherapy_Regimen OR Cisplatin_Etoposide_Regimen OR Sunitinib_monotherapy_Regimen OR VIP_Regimen OR PAC_Regimen OR ADOC_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_thymoma AND thymoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to SCC of unknown primary" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_scc_of_unknown_primary:[
+    "scc of unknown primary"
+];
+
+define final Condition_scc_of_unknown_primary:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_scc_of_unknown_primary],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_PCF:[
+    "PCF"
+];
+
+define   Regimen_PCF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCF:[
+    "DCF", "TCF"
+];
+
+define   Regimen_DCF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCF],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_scc_of_unknown_primary:
+    where PCF_Regimen OR DCF_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_scc_of_unknown_primary AND scc_of_unknown_primary_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

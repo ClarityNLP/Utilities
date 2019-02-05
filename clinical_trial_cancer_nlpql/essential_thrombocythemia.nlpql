@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Essential thrombocythemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_essential_thrombocythemia:[
+    "primary thrombocythemia", "essential thrombocytemia", "idiopathic thrombocythemia", "essential thrombocytosis", "et", "essential thrombocythemia", "primary thrombocytosis"
+];
+
+define final Condition_essential_thrombocythemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_essential_thrombocythemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Aspirin_Anagrelide:[
+    "Aspirin  and  Anagrelide", "Aspirin & Anagrelide", "Aspirin + Anagrelide", "Aspirin / Anagrelide", "Aspirin and Anagrelide", "Aspirin+Anagrelide", "Aspirin/Anagrelide"
+];
+
+define   Regimen_Aspirin_Anagrelide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Aspirin_Anagrelide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Aspirin_Hydroxyurea:[
+    "Aspirin & Hydroxyurea"
+];
+
+define   Regimen_Aspirin_Hydroxyurea:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Aspirin_Hydroxyurea],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hydroxyurea_monotherapy:[
+    "Hydroxyurea monotherapy"
+];
+
+define   Regimen_Hydroxyurea_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hydroxyurea_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Peginterferon_alfa_2a_monotherapy:[
+    "Peginterferon alfa-2a monotherapy"
+];
+
+define   Regimen_Peginterferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Peginterferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_essential_thrombocythemia:
+    where Ruxolitinib_monotherapy_Regimen OR Aspirin_Anagrelide_Regimen OR Aspirin_Hydroxyurea_Regimen OR Hydroxyurea_monotherapy_Regimen OR Peginterferon_alfa_2a_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_essential_thrombocythemia AND essential_thrombocythemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

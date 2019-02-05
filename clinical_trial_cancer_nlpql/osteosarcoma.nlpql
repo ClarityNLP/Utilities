@@ -1,0 +1,254 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Osteosarcoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_osteosarcoma:[
+    "mouse osteosarcoma", "osteosarcoma (reni)", "childhood osteosarcoma", "osteogenic sarcoma", "osteosarcoma, malignant", "pediatric osteosarcoma", "osteosarcoma", "rat osteosarcoma", "childhood osteogenic sarcoma"
+];
+
+define final Condition_osteosarcoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_osteosarcoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Docetaxel_Gemcitabine:[
+    "Docetaxel & Gemcitabine"
+];
+
+define   Regimen_Docetaxel_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Doxorubicin:[
+    "Cisplatin & Doxorubicin"
+];
+
+define   Regimen_Cisplatin_Doxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Topotecan:[
+    "Cyclophosphamide & Topotecan"
+];
+
+define   Regimen_Cyclophosphamide_Topotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Topotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ICE:[
+    "ICE"
+];
+
+define   Regimen_ICE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ICE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IE:[
+    "IE"
+];
+
+define   Regimen_IE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Epirubicin_Ifosfamide:[
+    "Cisplatin, Epirubicin, Ifosfamide"
+];
+
+define   Regimen_Cisplatin_Epirubicin_Ifosfamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Epirubicin_Ifosfamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MA:[
+    "MA"
+];
+
+define   Regimen_MA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MA_BCD:[
+    "MA-BCD", "MA/BCD", "MABCD"
+];
+
+define   Regimen_MA_BCD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MA_BCD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MAP:[
+    "MAP"
+];
+
+define   Regimen_MAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MAPI:[
+    "MAPI"
+];
+
+define   Regimen_MAPI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MAPI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_M_BCD:[
+    "M-BCD", "M/BCD", "MBCD"
+];
+
+define   Regimen_M_BCD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_BCD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_M_EI:[
+    "M-EI", "M/EI", "MEI"
+];
+
+define   Regimen_M_EI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_EI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IP_BCD:[
+    "IP-BCD", "IP/BCD", "IPBCD"
+];
+
+define   Regimen_IP_BCD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IP_BCD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MA_BCDAP:[
+    "MA-BCD/AP", "MA/BCD/AP", "MABCD/AP", "MABCDAP"
+];
+
+define   Regimen_MA_BCDAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MA_BCDAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MAPIE:[
+    "MAPIE"
+];
+
+define   Regimen_MAPIE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MAPIE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Methotrexate_Vincristine:[
+    "Methotrexate & Vincristine"
+];
+
+define   Regimen_Methotrexate_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Methotrexate_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Etoposide:[
+    "Cyclophosphamide & Etoposide"
+];
+
+define   Regimen_Cyclophosphamide_Etoposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Etoposide],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_osteosarcoma:
+    where Docetaxel_Gemcitabine_Regimen OR Gemcitabine_monotherapy_Regimen OR Cisplatin_Doxorubicin_Regimen OR Doxorubicin_monotherapy_Regimen OR Cyclophosphamide_Topotecan_Regimen OR ICE_Regimen OR IE_Regimen OR Cisplatin_Epirubicin_Ifosfamide_Regimen OR MA_Regimen OR MA_BCD_Regimen OR MAP_Regimen OR MAPI_Regimen OR M_BCD_Regimen OR M_EI_Regimen OR IP_BCD_Regimen OR MA_BCDAP_Regimen OR MAPIE_Regimen OR Methotrexate_Vincristine_Regimen OR Cyclophosphamide_Etoposide_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_osteosarcoma AND osteosarcoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

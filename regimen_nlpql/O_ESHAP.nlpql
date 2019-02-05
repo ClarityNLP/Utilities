@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for O-ESHAP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "arzerra", "ofatumumab"
+];
+
+define  Ofatumumab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "vepesid", "etoposide"
+];
+
+define  Etoposide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "solumedrol", "methylprednisolone"
+];
+
+define  Methylprednisolone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "cytosar", "cytarabine"
+];
+
+define  Cytarabine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "platinol", "cisplatin"
+];
+
+define  Cisplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_O_ESHAP:[
+    "O-ESHAP", "O/ESHAP", "OESHAP"
+];
+
+define final Regimen_O_ESHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_O_ESHAP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__OESHAP:
+    where Ofatumumab_Treatment AND Etoposide_Treatment AND Methylprednisolone_Treatment AND Cytarabine_Treatment AND Cisplatin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__OESHAP AND O_ESHAP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+
+
+***/
+ 

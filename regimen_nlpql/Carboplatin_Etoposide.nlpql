@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EtoposideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Etoposide:[
     "Carboplatin & Etoposide"
 ];
 
-define final CarboplatinEtoposideRegimen:
+define final Regimen_Carboplatin_Etoposide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Etoposide],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CarboplatinEtoposideRegimen:
 // Results
 
         
-define final CarboplatinEtoposideTreatments:
-    where CarboplatinTreatment AND EtoposideTreatment;
+define final Treatment__CarboplatinEtoposide:
+    where Carboplatin_Treatment AND Etoposide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinEtoposide AND Carboplatin_Etoposide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer
 
 
 

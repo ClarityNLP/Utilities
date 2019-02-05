@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Stem cell mobilization" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_stem_cell_mobilization:[
+    "stem cell mobilization"
+];
+
+define final Condition_stem_cell_mobilization:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_stem_cell_mobilization],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_CAD_G_CSF:[
+    "CAD", "CAD  and  G-CSF", "CAD & G-CSF", "CAD + G-CSF", "CAD / G-CSF", "CAD and G-CSF", "CAD+G-CSF", "CAD/G-CSF"
+];
+
+define   Regimen_CAD_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CAD_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_G_CSF:[
+    "Cyclophosphamide & G-CSF"
+];
+
+define   Regimen_Cyclophosphamide_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_G_CSF:[
+    "Cytarabine  and  G-CSF", "Cytarabine & G-CSF", "Cytarabine + G-CSF", "Cytarabine / G-CSF", "Cytarabine and G-CSF", "Cytarabine+G-CSF", "Cytarabine/G-CSF"
+];
+
+define   Regimen_Cytarabine_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cytarabine_Ifosfamide_G_CSF:[
+    "Cytarabine, Ifosfamide, G-CSF"
+];
+
+define   Regimen_Cytarabine_Ifosfamide_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cytarabine_Ifosfamide_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CYVE_G_CSF:[
+    "CYVE  and  G-CSF", "CYVE & G-CSF", "CYVE + G-CSF", "CYVE / G-CSF", "CYVE and G-CSF", "CYVE+G-CSF", "CYVE/G-CSF"
+];
+
+define   Regimen_CYVE_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CYVE_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCEP_G_CSF:[
+    "DCEP  and  G-CSF", "DCEP & G-CSF", "DCEP + G-CSF", "DCEP / G-CSF", "DCEP and G-CSF", "DCEP+G-CSF", "DCEP/G-CSF"
+];
+
+define   Regimen_DCEP_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCEP_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EAR_G_CSF:[
+    "EAR  and  G-CSF", "EAR & G-CSF", "EAR + G-CSF", "EAR / G-CSF", "EAR and G-CSF", "EAR+G-CSF", "EAR/G-CSF"
+];
+
+define   Regimen_EAR_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EAR_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IGEV_G_CSF:[
+    "IGEV  and  G-CSF", "IGEV & G-CSF", "IGEV + G-CSF", "IGEV / G-CSF", "IGEV and G-CSF", "IGEV+G-CSF", "IGEV/G-CSF"
+];
+
+define   Regimen_IGEV_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IGEV_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DexaBEAM_G_CSF:[
+    "DexaBEAM  and  G-CSF", "DexaBEAM & G-CSF", "DexaBEAM + G-CSF", "DexaBEAM / G-CSF", "DexaBEAM and G-CSF", "DexaBEAM+G-CSF", "DexaBEAM/G-CSF"
+];
+
+define   Regimen_DexaBEAM_G_CSF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DexaBEAM_G_CSF],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_stem_cell_mobilization:
+    where CAD_G_CSF_Regimen OR Cyclophosphamide_G_CSF_Regimen OR Cytarabine_G_CSF_Regimen OR Cytarabine_Ifosfamide_G_CSF_Regimen OR CYVE_G_CSF_Regimen OR DCEP_G_CSF_Regimen OR EAR_G_CSF_Regimen OR IGEV_G_CSF_Regimen OR DexaBEAM_G_CSF_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_stem_cell_mobilization AND stem_cell_mobilization_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

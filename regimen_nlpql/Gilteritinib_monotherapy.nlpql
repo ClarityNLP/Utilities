@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xospata", "gilteritinib"
 ];
 
-define final GilteritinibTreatment:
+define final Gilteritinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final GilteritinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gilteritinib_monotherapy:[
     "Gilteritinib monotherapy"
 ];
 
-define final GilteritinibmonotherapyRegimen:
+define final Regimen_Gilteritinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gilteritinib_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "myleran", "busulfan"
 ];
 
-define  BusulfanTreatment:
+define  Busulfan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "thioplex", "thiotepa"
 ];
 
-define  ThiotepaTreatment:
+define  Thiotepa_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ThiotepaTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_BuTT:[
     "Bu/TT", "BuTT"
 ];
 
-define final BuTTRegimen:
+define final Regimen_BuTT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_BuTT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BuTTRegimen:
 // Results
 
         
-define final BuTTTreatments:
-    where BusulfanTreatment AND ThiotepaTreatment;
+define final Treatment__BuTT:
+    where Busulfan_Treatment AND Thiotepa_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BuTT AND BuTT_Regimen;
         
         
 

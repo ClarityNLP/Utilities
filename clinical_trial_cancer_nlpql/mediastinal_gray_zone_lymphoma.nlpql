@@ -1,0 +1,67 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Mediastinal gray-zone lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_mediastinal_gray_zone_lymphoma:[
+    "mediastinal gray-zone lymphoma"
+];
+
+define final Condition_mediastinal_gray_zone_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_mediastinal_gray_zone_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Brentuximab_vedotin_monotherapy:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define   Regimen_Brentuximab_vedotin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_R_EPOCH:[
+    "DA-R-EPOCH", "DA/R/EPOCH", "DAREPOCH"
+];
+
+define   Regimen_DA_R_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_R_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_mediastinal_gray_zone_lymphoma:
+    where Brentuximab_vedotin_monotherapy_Regimen OR DA_R_EPOCH_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_mediastinal_gray_zone_lymphoma AND mediastinal_gray_zone_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

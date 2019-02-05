@@ -1,0 +1,276 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Testicular cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_testicular_cancer:[
+    "testicular cancer (excluding germ cell or trophoblastic cancer)", "malignant testicular germ cell neoplasm", "malignant neoplasm of the testis", "testicular ca. (no germ/tropho.)", "testicular germ cell cancer", "malignant testicular neoplasm", "malignant germ cell tumor of testis", "testicular cancer", "malignant germ cell neoplasm of the testis", "malignant germ cell tumor of the testis", "malignant testicular tumor", "malignant neoplasm of testis", "malignant testicular germ cell tumor", "malignant germ cell neoplasm of testis", "malignant tumor of the testis", "malignant tumor of testis"
+];
+
+define final Condition_testicular_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_testicular_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_BEP:[
+    "BEP", "PEB"
+];
+
+define   Regimen_BEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_monotherapy:[
+    "Etoposide monotherapy"
+];
+
+define   Regimen_Etoposide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Paclitaxel:[
+    "Gemcitabine & Paclitaxel"
+];
+
+define   Regimen_Gemcitabine_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_monotherapy:[
+    "Carboplatin monotherapy"
+];
+
+define   Regimen_Carboplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_Paclitaxel:[
+    "Ifosfamide & Paclitaxel"
+];
+
+define   Regimen_Ifosfamide_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Etoposide:[
+    "Cisplatin & Etoposide"
+];
+
+define   Regimen_Cisplatin_Etoposide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Etoposide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sunitinib_monotherapy:[
+    "Sunitinib monotherapy"
+];
+
+define   Regimen_Sunitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sunitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GemOx:[
+    "GemOx"
+];
+
+define   Regimen_GemOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GemOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TIP:[
+    "TIP"
+];
+
+define   Regimen_TIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Accelerated_BEP:[
+    "Accelerated BEP"
+];
+
+define   Regimen_Accelerated_BEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Accelerated_BEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BO:[
+    "BO"
+];
+
+define   Regimen_BO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_C_BOP:[
+    "C-BOP", "C/BOP", "CBOP"
+];
+
+define   Regimen_C_BOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_C_BOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_M_TIP:[
+    "M-TIP", "M/TIP", "MTIP"
+];
+
+define   Regimen_M_TIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_TIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PVeBV:[
+    "PVeBV", "VBEP"
+];
+
+define   Regimen_PVeBV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PVeBV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VIP:[
+    "VIP"
+];
+
+define   Regimen_VIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Epirubicin:[
+    "CIS-EPI", "CIS/EPI", "CISEPI", "Cisplatin & Epirubicin"
+];
+
+define   Regimen_Cisplatin_Epirubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Epirubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GIP:[
+    "GIP"
+];
+
+define   Regimen_GIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VeIP:[
+    "VeIP"
+];
+
+define   Regimen_VeIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VeIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Etoposide_then_auto_HSCT:[
+    "Carboplatin & Etoposide, then auto HSCT", "TI-CE", "TI/CE", "TICE"
+];
+
+define   Regimen_Carboplatin_Etoposide_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Etoposide_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Oxaliplatin_Paclitaxel:[
+    "GOP", "Gemcitabine, Oxaliplatin, Paclitaxel"
+];
+
+define   Regimen_Gemcitabine_Oxaliplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Oxaliplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Oxaliplatin_Bevacizumab:[
+    "Oxaliplatin & Bevacizumab"
+];
+
+define   Regimen_Oxaliplatin_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Oxaliplatin_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_testicular_cancer:
+    where BEP_Regimen OR Etoposide_monotherapy_Regimen OR Gemcitabine_Paclitaxel_Regimen OR Carboplatin_monotherapy_Regimen OR Ifosfamide_Paclitaxel_Regimen OR Cisplatin_Etoposide_Regimen OR Sunitinib_monotherapy_Regimen OR GemOx_Regimen OR TIP_Regimen OR Accelerated_BEP_Regimen OR BO_Regimen OR C_BOP_Regimen OR M_TIP_Regimen OR PVeBV_Regimen OR VIP_Regimen OR Cisplatin_Epirubicin_Regimen OR GIP_Regimen OR VeIP_Regimen OR Carboplatin_Etoposide_then_auto_HSCT_Regimen OR Gemcitabine_Oxaliplatin_Paclitaxel_Regimen OR Oxaliplatin_Bevacizumab_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_testicular_cancer AND testicular_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

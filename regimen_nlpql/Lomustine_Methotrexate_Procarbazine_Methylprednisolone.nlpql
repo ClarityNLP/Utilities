@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ceenu", "lomustine"
 ];
 
-define  LomustineTreatment:
+define  Lomustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "matulane", "procarbazine"
 ];
 
-define  ProcarbazineTreatment:
+define  Procarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "solumedrol", "methylprednisolone"
 ];
 
-define  MethylprednisoloneTreatment:
+define  Methylprednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  MethylprednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lomustine_Methotrexate_Procarbazine_Methylprednisolone:[
     "Lomustine, Methotrexate, Procarbazine, Methylprednisolone"
 ];
 
-define final LomustineMethotrexateProcarbazineMethylprednisoloneRegimen:
+define final Regimen_Lomustine_Methotrexate_Procarbazine_Methylprednisolone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lomustine_Methotrexate_Procarbazine_Methylprednisolone],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final LomustineMethotrexateProcarbazineMethylprednisoloneRegimen:
 // Results
 
         
-define final LomustineMethotrexateProcarbazineMethylprednisoloneTreatments:
-    where MethotrexateTreatment AND LomustineTreatment AND ProcarbazineTreatment AND MethylprednisoloneTreatment;
+define final Treatment__LomustineMethotrexateProcarbazineMethylprednisolone:
+    where Methotrexate_Treatment AND Lomustine_Treatment AND Procarbazine_Treatment AND Methylprednisolone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LomustineMethotrexateProcarbazineMethylprednisolone AND Lomustine_Methotrexate_Procarbazine_Methylprednisolone_Regimen;
         
         
 

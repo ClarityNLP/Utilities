@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adcetris", "brentuximab vedotin"
 ];
 
-define  BrentuximabvedotinTreatment:
+define  Brentuximabvedotin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "velban", "vinblastine"
 ];
 
-define  VinblastineTreatment:
+define  Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "dtic", "dacarbazine"
 ];
 
-define  DacarbazineTreatment:
+define  Dacarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  DacarbazineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_AAVD:[
     "A & AVD", "A / AVD", "A and AVD", "A&AVD", "A+AVD", "A/AVD", "AAVD", "BV  &  AVD", "BV  /  AVD", "BV  AVD", "BV  and  AVD", "BV & AVD", "BV + AVD", "BV / AVD", "BVAVD"
 ];
 
-define final AAVDRegimen:
+define final Regimen_AAVD:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_AAVD],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final AAVDRegimen:
 // Results
 
         
-define final AAVDTreatments:
-    where BrentuximabvedotinTreatment AND DoxorubicinTreatment AND VinblastineTreatment AND DacarbazineTreatment;
+define final Treatment__AAVD:
+    where Brentuximabvedotin_Treatment AND Doxorubicin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AAVD AND AAVD_Regimen;
         
         
 

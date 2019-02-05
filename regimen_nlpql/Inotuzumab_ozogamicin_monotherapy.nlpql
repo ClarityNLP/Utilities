@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "besponsa", "inotuzumab ozogamicin"
 ];
 
-define final InotuzumabozogamicinTreatment:
+define final Inotuzumabozogamicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final InotuzumabozogamicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Inotuzumab_ozogamicin_monotherapy:[
     "Inotuzumab ozogamicin monotherapy"
 ];
 
-define final InotuzumabozogamicinmonotherapyRegimen:
+define final Regimen_Inotuzumab_ozogamicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Inotuzumab_ozogamicin_monotherapy],
     documentset:[Docs]
    }); 
 

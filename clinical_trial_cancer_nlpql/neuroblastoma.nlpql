@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Neuroblastoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_neuroblastoma:[
+    "neuroblastoma", "neuroblastoma, malignant", "neural crest tumor, malignant", "mouse neuroblastoma", "childhood neuroblastoma", "neuroblastoma (schwannian stroma-poor)"
+];
+
+define final Condition_neuroblastoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_neuroblastoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cyclophosphamide_monotherapy:[
+    "Cyclophosphamide monotherapy"
+];
+
+define   Regimen_Cyclophosphamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dinutuximab_GM_CSF_IL_2_Isotretinoin:[
+    "Dinutuximab, GM-CSF, IL-2, Isotretinoin"
+];
+
+define   Regimen_Dinutuximab_GM_CSF_IL_2_Isotretinoin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dinutuximab_GM_CSF_IL_2_Isotretinoin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Isotretinoin_monotherapy:[
+    "Isotretinoin monotherapy"
+];
+
+define   Regimen_Isotretinoin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Isotretinoin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Vincristine:[
+    "Cyclophosphamide & Vincristine"
+];
+
+define   Regimen_Cyclophosphamide_Vincristine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Vincristine],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_neuroblastoma:
+    where Cyclophosphamide_monotherapy_Regimen OR Dinutuximab_GM_CSF_IL_2_Isotretinoin_Regimen OR Isotretinoin_monotherapy_Regimen OR Cyclophosphamide_Vincristine_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_neuroblastoma AND neuroblastoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

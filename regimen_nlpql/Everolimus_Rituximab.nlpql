@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "afinitor", "everolimus"
 ];
 
-define  EverolimusTreatment:
+define  Everolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Everolimus_Rituximab:[
     "Everolimus & Rituximab"
 ];
 
-define final EverolimusRituximabRegimen:
+define final Regimen_Everolimus_Rituximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Everolimus_Rituximab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final EverolimusRituximabRegimen:
 // Results
 
         
-define final EverolimusRituximabTreatments:
-    where EverolimusTreatment AND RituximabTreatment;
+define final Treatment__EverolimusRituximab:
+    where Everolimus_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__EverolimusRituximab AND Everolimus_Rituximab_Regimen;
         
         
 

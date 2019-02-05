@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "rydapt", "midostaurin"
 ];
 
-define final MidostaurinTreatment:
+define final Midostaurin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MidostaurinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Midostaurin_monotherapy:[
     "Midostaurin monotherapy"
 ];
 
-define final MidostaurinmonotherapyRegimen:
+define final Regimen_Midostaurin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Midostaurin_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final MidostaurinmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia_FLT3-positive
+Known regimen for: Acute_myeloid_leukemia_FLT3-positive, Myelodysplastic_syndrome
 
 
 

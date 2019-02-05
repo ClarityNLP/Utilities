@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Bevacizumab_RT:[
     "Bevacizumab  and  RT", "Bevacizumab & RT", "Bevacizumab + RT", "Bevacizumab / RT", "Bevacizumab and RT", "Bevacizumab+RT", "Bevacizumab/RT"
 ];
 
-define final BevacizumabRTRegimen:
+define final Regimen_Bevacizumab_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Bevacizumab_RT],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final BevacizumabRTRegimen:
 // Results
 
         
-define final BevacizumabRTTreatments:
-    where BevacizumabTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__BevacizumabRT:
+    where Bevacizumab_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__BevacizumabRT AND Bevacizumab_RT_Regimen;
         
         
 

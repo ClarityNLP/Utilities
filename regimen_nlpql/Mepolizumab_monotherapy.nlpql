@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "nucala", "mepolizumab"
 ];
 
-define final MepolizumabTreatment:
+define final Mepolizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MepolizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mepolizumab_monotherapy:[
     "Mepolizumab monotherapy"
 ];
 
-define final MepolizumabmonotherapyRegimen:
+define final Regimen_Mepolizumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mepolizumab_monotherapy],
     documentset:[Docs]
    }); 
 

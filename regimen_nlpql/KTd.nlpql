@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "thalomid", "thalidomide"
 ];
 
-define  ThalidomideTreatment:
+define  Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ThalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_KTd:[
     "KTd"
 ];
 
-define final KTdRegimen:
+define final Regimen_KTd:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_KTd],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final KTdRegimen:
 // Results
 
         
-define final KTdTreatments:
-    where BortezomibTreatment AND ThalidomideTreatment;
+define final Treatment__KTd:
+    where Bortezomib_Treatment AND Thalidomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__KTd AND KTd_Regimen;
         
         
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "fludara", "fludarabine"
 ];
 
-define  FludarabineTreatment:
+define  Fludarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "rituxan", "rituximab"
 ];
 
-define  RituximabTreatment:
+define  Rituximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  RituximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FCR:[
     "FCR"
 ];
 
-define final FCRRegimen:
+define final Regimen_FCR:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FCR],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final FCRRegimen:
 // Results
 
         
-define final FCRTreatments:
-    where FludarabineTreatment AND CyclophosphamideTreatment AND RituximabTreatment;
+define final Treatment__FCR:
+    where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND Rituximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FCR AND FCR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Allogeneic_HSCT, Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL), Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Allogeneic_HSCT, Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 

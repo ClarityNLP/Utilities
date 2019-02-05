@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for Temozolomide & low-dose RT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "temodar", "temozolomide"
+];
+
+define  Temozolomide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "external beam radiotherapy"
+];
+
+define  Externalbeamradiotherapy_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_low_dose_RT:[
+    "LDRT", "Temozolomide & low-dose RT"
+];
+
+define final Regimen_Temozolomide_low_dose_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_low_dose_RT],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__TemozolomidelowdoseRT:
+    where Temozolomide_Treatment AND Externalbeamradiotherapy_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__TemozolomidelowdoseRT AND Temozolomide_low_dose_RT_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Glioblastoma
+
+
+
+
+***/
+ 

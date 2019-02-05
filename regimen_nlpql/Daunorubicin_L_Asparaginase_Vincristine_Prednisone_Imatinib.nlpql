@@ -1,0 +1,106 @@
+
+// Phenotype library name
+phenotype "Regimen for Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cerubidine", "daunorubicin"
+];
+
+define  Daunorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "elspar", "asparaginase"
+];
+
+define  Asparaginase_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "gleevec", "imatinib"
+];
+
+define  Imatinib_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib:[
+    "Daunorubicin, L-Asparaginase, Vincristine, Prednisone, Imatinib"
+];
+
+define final Regimen_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__DaunorubicinLAsparaginaseVincristinePrednisoneImatinib:
+    where Daunorubicin_Treatment AND Asparaginase_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Imatinib_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__DaunorubicinLAsparaginaseVincristinePrednisoneImatinib AND Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive
+
+
+
+
+***/
+ 

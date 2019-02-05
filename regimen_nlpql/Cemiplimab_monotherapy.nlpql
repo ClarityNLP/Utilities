@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "libtayo", "cemiplimab"
 ];
 
-define final CemiplimabTreatment:
+define final Cemiplimab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CemiplimabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cemiplimab_monotherapy:[
     "Cemiplimab monotherapy"
 ];
 
-define final CemiplimabmonotherapyRegimen:
+define final Regimen_Cemiplimab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cemiplimab_monotherapy],
     documentset:[Docs]
    }); 
 

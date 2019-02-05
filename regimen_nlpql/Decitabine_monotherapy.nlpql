@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "dacogen", "decitabine"
 ];
 
-define final DecitabineTreatment:
+define final Decitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DecitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Decitabine_monotherapy:[
     "Decitabine monotherapy"
 ];
 
-define final DecitabinemonotherapyRegimen:
+define final Regimen_Decitabine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Decitabine_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final DecitabinemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Myelodysplastic_syndrome, Chronic_myelomonocytic_leukemia, Acute_myeloid_leukemia
+Known regimen for: Chronic_myelomonocytic_leukemia, Acute_myeloid_leukemia, Myelodysplastic_syndrome
 
 
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lovenox", "enoxaparin"
 ];
 
-define final EnoxaparinTreatment:
+define final Enoxaparin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final EnoxaparinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Enoxaparin_monotherapy:[
     "Enoxaparin monotherapy"
 ];
 
-define final EnoxaparinmonotherapyRegimen:
+define final Regimen_Enoxaparin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Enoxaparin_monotherapy],
     documentset:[Docs]
    }); 
 

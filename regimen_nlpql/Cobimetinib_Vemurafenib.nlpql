@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cotellic", "cobimetinib"
 ];
 
-define  CobimetinibTreatment:
+define  Cobimetinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "zelboraf", "vemurafenib"
 ];
 
-define  VemurafenibTreatment:
+define  Vemurafenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VemurafenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cobimetinib_Vemurafenib:[
     "Cobimetinib & Vemurafenib"
 ];
 
-define final CobimetinibVemurafenibRegimen:
+define final Regimen_Cobimetinib_Vemurafenib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cobimetinib_Vemurafenib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CobimetinibVemurafenibRegimen:
 // Results
 
         
-define final CobimetinibVemurafenibTreatments:
-    where CobimetinibTreatment AND VemurafenibTreatment;
+define final Treatment__CobimetinibVemurafenib:
+    where Cobimetinib_Treatment AND Vemurafenib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CobimetinibVemurafenib AND Cobimetinib_Vemurafenib_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ceenu", "lomustine"
 ];
 
-define final LomustineTreatment:
+define final Lomustine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final LomustineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lomustine_monotherapy:[
     "Lomustine monotherapy"
 ];
 
-define final LomustinemonotherapyRegimen:
+define final Regimen_Lomustine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lomustine_monotherapy],
     documentset:[Docs]
    }); 
 

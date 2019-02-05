@@ -1,0 +1,117 @@
+
+// Phenotype library name
+phenotype "Regimen for R-EPOCH, dose-escalated" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "rituxan", "rituximab"
+];
+
+define  Rituximab_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "vepesid", "etoposide"
+];
+
+define  Etoposide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "sterapred", "prednisone"
+];
+
+define  Prednisone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_4:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_4],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_5:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_5],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_R_EPOCH_dose_escalated:[
+    "R-EPOCH", "R-EPOCH, dose-escalated", "R/EPOCH", "REPOCH"
+];
+
+define final Regimen_R_EPOCH_dose_escalated:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_EPOCH_dose_escalated],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__REPOCHdoseescalated:
+    where Rituximab_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Vincristine_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__REPOCHdoseescalated AND R_EPOCH_dose_escalated_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: HIV-associated_lymphoma
+
+
+
+
+***/
+ 

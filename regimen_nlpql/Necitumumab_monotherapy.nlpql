@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "portrazza", "necitumumab"
 ];
 
-define final NecitumumabTreatment:
+define final Necitumumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final NecitumumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Necitumumab_monotherapy:[
     "Necitumumab monotherapy"
 ];
 
-define final NecitumumabmonotherapyRegimen:
+define final Regimen_Necitumumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Necitumumab_monotherapy],
     documentset:[Docs]
    }); 
 

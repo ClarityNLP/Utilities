@@ -1,0 +1,155 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Colon cancer KRAS wild-type" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_colon_cancer_kras_wild_type:[
+    "colon cancer kras wild-type"
+];
+
+define final Condition_colon_cancer_kras_wild_type:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_colon_cancer_kras_wild_type],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_mFOLFOX6_Cetuximab:[
+    "mFOLFOX6  and  Cetuximab", "mFOLFOX6 & Cetuximab", "mFOLFOX6 + Cetuximab", "mFOLFOX6 / Cetuximab", "mFOLFOX6 and Cetuximab", "mFOLFOX6+Cetuximab", "mFOLFOX6/Cetuximab"
+];
+
+define   Regimen_mFOLFOX6_Cetuximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFOX6_Cetuximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI_Cetuximab:[
+    "FOLFIRI  and  Cetuximab", "FOLFIRI & Cetuximab", "FOLFIRI + Cetuximab", "FOLFIRI / Cetuximab", "FOLFIRI and Cetuximab", "FOLFIRI+Cetuximab", "FOLFIRI/Cetuximab"
+];
+
+define   Regimen_FOLFIRI_Cetuximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Cetuximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx_Panitumumab:[
+    "CapeOx  and  Panitumumab", "CapeOx & Panitumumab", "CapeOx + Panitumumab", "CapeOx / Panitumumab", "CapeOx and Panitumumab", "CapeOx+Panitumumab", "CapeOx/Panitumumab"
+];
+
+define   Regimen_CapeOx_Panitumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx_Panitumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX4_Cetuximab:[
+    "FOLFOX4  and  Cetuximab", "FOLFOX4 & Cetuximab", "FOLFOX4 + Cetuximab", "FOLFOX4 / Cetuximab", "FOLFOX4 and Cetuximab", "FOLFOX4+Cetuximab", "FOLFOX4/Cetuximab"
+];
+
+define   Regimen_FOLFOX4_Cetuximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX4_Cetuximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX4_Panitumumab:[
+    "FOLFOX4 & Panitumumab"
+];
+
+define   Regimen_FOLFOX4_Panitumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX4_Panitumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFOXIRI_Cetuximab:[
+    "mFOLFOXIRI & Cetuximab"
+];
+
+define   Regimen_mFOLFOXIRI_Cetuximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFOXIRI_Cetuximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cetuximab_monotherapy:[
+    "Cetuximab monotherapy"
+];
+
+define   Regimen_Cetuximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cetuximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI_Panitumumab:[
+    "FOLFIRI & Panitumumab"
+];
+
+define   Regimen_FOLFIRI_Panitumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Panitumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_Cetuximab:[
+    "Irinotecan & Cetuximab"
+];
+
+define   Regimen_Irinotecan_Cetuximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_Cetuximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Panitumumab_monotherapy:[
+    "Panitumumab monotherapy"
+];
+
+define   Regimen_Panitumumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Panitumumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_colon_cancer_kras_wild_type:
+    where mFOLFOX6_Cetuximab_Regimen OR FOLFIRI_Cetuximab_Regimen OR CapeOx_Panitumumab_Regimen OR FOLFOX4_Cetuximab_Regimen OR FOLFOX4_Panitumumab_Regimen OR mFOLFOXIRI_Cetuximab_Regimen OR Cetuximab_monotherapy_Regimen OR FOLFIRI_Panitumumab_Regimen OR Irinotecan_Cetuximab_Regimen OR Panitumumab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_colon_cancer_kras_wild_type AND colon_cancer_kras_wild_type_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

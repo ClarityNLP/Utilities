@@ -14,57 +14,57 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "fusilev", "levoleucovorin"
 ];
 
-define  LevoleucovorinTreatment:
+define  Levoleucovorin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "camptosar", "irinotecan"
 ];
 
-define  IrinotecanTreatment:
+define  Irinotecan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "erbitux", "cetuximab"
 ];
 
-define  CetuximabTreatment:
+define  Cetuximab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
@@ -72,13 +72,13 @@ define  CetuximabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_mFOLFOXIRI_Cetuximab:[
     "mFOLFOXIRI & Cetuximab"
 ];
 
-define final mFOLFOXIRICetuximabRegimen:
+define final Regimen_mFOLFOXIRI_Cetuximab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_mFOLFOXIRI_Cetuximab],
     documentset:[Docs]
    }); 
 
@@ -86,10 +86,11 @@ define final mFOLFOXIRICetuximabRegimen:
 // Results
 
         
-define final mFOLFOXIRICetuximabTreatments:
-    where FluorouracilTreatment AND LevoleucovorinTreatment AND OxaliplatinTreatment AND IrinotecanTreatment AND CetuximabTreatment;
+define final Treatment__mFOLFOXIRICetuximab:
+    where Fluorouracil_Treatment AND Levoleucovorin_Treatment AND Oxaliplatin_Treatment AND Irinotecan_Treatment AND Cetuximab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__mFOLFOXIRICetuximab AND mFOLFOXIRI_Cetuximab_Regimen;
         
         
 

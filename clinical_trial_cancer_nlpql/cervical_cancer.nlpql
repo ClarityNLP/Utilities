@@ -1,0 +1,408 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Cervical cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cervical_cancer:[
+    "cervix uteri carcinoma", "carcinoma of the cervix", "uterine cervix cancer", "carcinoma of the uterine cervix", "cervical carcinoma", "cervical cancer, nos", "carcinoma of cervix uteri", "cervical cancer", "cancer of cervix", "uterine cervix carcinoma", "cervix carcinoma", "carcinoma of cervix", "cervix cancer", "cancer of the cervix", "carcinoma of uterine cervix", "cancer of uterine cervix", "cancer of the uterine cervix", "carcinoma of the cervix uteri"
+];
+
+define final Condition_cervical_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cervical_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Carboplatin_Docetaxel:[
+    "Carboplatin & Docetaxel"
+];
+
+define   Regimen_Carboplatin_Docetaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Docetaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Paclitaxel:[
+    "Carboplatin & Paclitaxel"
+];
+
+define   Regimen_Carboplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_monotherapy:[
+    "Cisplatin monotherapy"
+];
+
+define   Regimen_Cisplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_monotherapy:[
+    "Irinotecan monotherapy"
+];
+
+define   Regimen_Irinotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_RT:[
+    "Cisplatin  and  RT", "Cisplatin & RT", "Cisplatin + RT", "Cisplatin / RT", "Cisplatin and RT", "Cisplatin+RT", "Cisplatin/RT"
+];
+
+define   Regimen_Cisplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Fluorouracil_RT:[
+    "Cisplatin, Fluorouracil, RT"
+];
+
+define   Regimen_Cisplatin_Fluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Fluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Mitomycin_RT:[
+    "Fluorouracil, Mitomycin, RT"
+];
+
+define   Regimen_Fluorouracil_Mitomycin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Mitomycin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_monotherapy:[
+    "Docetaxel monotherapy"
+];
+
+define   Regimen_Docetaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pemetrexed_monotherapy:[
+    "Pemetrexed monotherapy"
+];
+
+define   Regimen_Pemetrexed_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pemetrexed_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Paclitaxel:[
+    "Cisplatin & Paclitaxel"
+];
+
+define   Regimen_Cisplatin_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_RT:[
+    "Carboplatin  and  RT", "Carboplatin & RT", "Carboplatin + RT", "Carboplatin / RT", "Carboplatin and RT", "Carboplatin+RT", "Carboplatin/RT"
+];
+
+define   Regimen_Carboplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Fluorouracil_Hydroxyurea_RT:[
+    "Cisplatin, Fluorouracil, Hydroxyurea, RT"
+];
+
+define   Regimen_Cisplatin_Fluorouracil_Hydroxyurea_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Fluorouracil_Hydroxyurea_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Gemcitabine_RT:[
+    "Cisplatin, Gemcitabine, RT"
+];
+
+define   Regimen_Cisplatin_Gemcitabine_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_RT:[
+    "Fluorouracil  and  RT", "Fluorouracil & RT", "Fluorouracil + RT", "Fluorouracil / RT", "Fluorouracil and RT", "Fluorouracil+RT", "Fluorouracil/RT"
+];
+
+define   Regimen_Fluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hydroxyurea_RT:[
+    "Hydroxyurea  and  RT", "Hydroxyurea & RT", "Hydroxyurea + RT", "Hydroxyurea / RT", "Hydroxyurea and RT", "Hydroxyurea+RT", "Hydroxyurea/RT"
+];
+
+define   Regimen_Hydroxyurea_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hydroxyurea_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_Ifosfamide:[
+    "Carboplatin & Ifosfamide"
+];
+
+define   Regimen_Carboplatin_Ifosfamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_Ifosfamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_monotherapy:[
+    "Carboplatin monotherapy"
+];
+
+define   Regimen_Carboplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Ifosfamide:[
+    "Cisplatin & Ifosfamide"
+];
+
+define   Regimen_Cisplatin_Ifosfamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Ifosfamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Mitomycin:[
+    "Cisplatin & Mitomycin"
+];
+
+define   Regimen_Cisplatin_Mitomycin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Mitomycin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Paclitaxel_Bevacizumab:[
+    "CP & Bev", "CP / Bev", "CP and Bev", "CP&Bev", "CP+Bev", "CP/Bev", "CPBev", "Cisplatin, Paclitaxel, Bevacizumab"
+];
+
+define   Regimen_Cisplatin_Paclitaxel_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Paclitaxel_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Topotecan:[
+    "Cisplatin & Topotecan"
+];
+
+define   Regimen_Cisplatin_Topotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Topotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Vinorelbine:[
+    "Cisplatin & Vinorelbine"
+];
+
+define   Regimen_Cisplatin_Vinorelbine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Vinorelbine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_monotherapy:[
+    "Ifosfamide monotherapy"
+];
+
+define   Regimen_Ifosfamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_Topotecan:[
+    "Paclitaxel & Topotecan"
+];
+
+define   Regimen_Paclitaxel_Topotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_Topotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_Topotecan_Bevacizumab:[
+    "Paclitaxel, Topotecan, Bevacizumab", "TP & Bev", "TP / Bev", "TP and Bev", "TP&Bev", "TP+Bev", "TP/Bev", "TPBev"
+];
+
+define   Regimen_Paclitaxel_Topotecan_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_Topotecan_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Topotecan_monotherapy:[
+    "Topotecan monotherapy"
+];
+
+define   Regimen_Topotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Topotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinorelbine_monotherapy:[
+    "Vinorelbine monotherapy"
+];
+
+define   Regimen_Vinorelbine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinorelbine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cervical_cancer:
+    where Carboplatin_Docetaxel_Regimen OR Carboplatin_Paclitaxel_Regimen OR Cisplatin_monotherapy_Regimen OR Cisplatin_Gemcitabine_Regimen OR Pembrolizumab_monotherapy_Regimen OR Bevacizumab_monotherapy_Regimen OR Irinotecan_monotherapy_Regimen OR Gemcitabine_monotherapy_Regimen OR Cisplatin_RT_Regimen OR Cisplatin_Fluorouracil_RT_Regimen OR Fluorouracil_Mitomycin_RT_Regimen OR Docetaxel_monotherapy_Regimen OR Paclitaxel_monotherapy_Regimen OR Pemetrexed_monotherapy_Regimen OR Cisplatin_Paclitaxel_Regimen OR Carboplatin_RT_Regimen OR Cisplatin_Fluorouracil_Hydroxyurea_RT_Regimen OR Cisplatin_Gemcitabine_RT_Regimen OR Fluorouracil_RT_Regimen OR Hydroxyurea_RT_Regimen OR Carboplatin_Ifosfamide_Regimen OR Carboplatin_monotherapy_Regimen OR Cisplatin_Ifosfamide_Regimen OR Cisplatin_Mitomycin_Regimen OR Cisplatin_Paclitaxel_Bevacizumab_Regimen OR Cisplatin_Topotecan_Regimen OR Cisplatin_Vinorelbine_Regimen OR Ifosfamide_monotherapy_Regimen OR Paclitaxel_Topotecan_Regimen OR Paclitaxel_Topotecan_Bevacizumab_Regimen OR Topotecan_monotherapy_Regimen OR Vinorelbine_monotherapy_Regimen OR Fluorouracil_Folinic_acid_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cervical_cancer AND cervical_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

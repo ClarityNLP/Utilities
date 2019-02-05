@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "innohep", "tinzaparin"
 ];
 
-define final TinzaparinTreatment:
+define final Tinzaparin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TinzaparinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Tinzaparin_monotherapy:[
     "Tinzaparin monotherapy"
 ];
 
-define final TinzaparinmonotherapyRegimen:
+define final Regimen_Tinzaparin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Tinzaparin_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "camptosar", "irinotecan"
 ];
 
-define  IrinotecanTreatment:
+define  Irinotecan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  IrinotecanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Etoposide_Irinotecan:[
     "Cisplatin, Etoposide, Irinotecan"
 ];
 
-define final CisplatinEtoposideIrinotecanRegimen:
+define final Regimen_Cisplatin_Etoposide_Irinotecan:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Etoposide_Irinotecan],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinEtoposideIrinotecanRegimen:
 // Results
 
         
-define final CisplatinEtoposideIrinotecanTreatments:
-    where CisplatinTreatment AND EtoposideTreatment AND IrinotecanTreatment;
+define final Treatment__CisplatinEtoposideIrinotecan:
+    where Cisplatin_Treatment AND Etoposide_Treatment AND Irinotecan_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinEtoposideIrinotecan AND Cisplatin_Etoposide_Irinotecan_Regimen;
         
         
 

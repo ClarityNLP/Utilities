@@ -14,79 +14,79 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "atra", "all-trans retinoic acid"
 ];
 
-define  AlltransretinoicacidTreatment:
+define  Alltransretinoicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "purinethol", "mercaptopurine"
 ];
 
-define  MercaptopurineTreatment:
+define  Mercaptopurine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms4:[
+termset TreatmentTerms_4:[
     "purinethol", "mercaptopurine"
 ];
 
-define  MercaptopurineTreatment:
+define  Mercaptopurine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms4],
+        termset:[TreatmentTerms_4],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms5:[
+termset TreatmentTerms_5:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms5],
+        termset:[TreatmentTerms_5],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms6:[
+termset TreatmentTerms_6:[
     "purinethol", "mercaptopurine"
 ];
 
-define  MercaptopurineTreatment:
+define  Mercaptopurine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms6],
+        termset:[TreatmentTerms_6],
         documentset:[Docs]
 }); 
 
@@ -94,13 +94,13 @@ define  MercaptopurineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_ATRA_Mercaptopurine_Methotrexate:[
     "ATRA, Mercaptopurine, Methotrexate"
 ];
 
-define final ATRAMercaptopurineMethotrexateRegimen:
+define final Regimen_ATRA_Mercaptopurine_Methotrexate:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_ATRA_Mercaptopurine_Methotrexate],
     documentset:[Docs]
    }); 
 
@@ -108,10 +108,11 @@ define final ATRAMercaptopurineMethotrexateRegimen:
 // Results
 
         
-define final ATRAMercaptopurineMethotrexateTreatments:
-    where AlltransretinoicacidTreatment AND MercaptopurineTreatment AND MethotrexateTreatment AND MethotrexateTreatment AND MercaptopurineTreatment AND MethotrexateTreatment AND MercaptopurineTreatment;
+define final Treatment__ATRAMercaptopurineMethotrexate:
+    where Alltransretinoicacid_Treatment AND Mercaptopurine_Treatment AND Methotrexate_Treatment AND Methotrexate_Treatment AND Mercaptopurine_Treatment AND Methotrexate_Treatment AND Mercaptopurine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ATRAMercaptopurineMethotrexate AND ATRA_Mercaptopurine_Methotrexate_Regimen;
         
         
 

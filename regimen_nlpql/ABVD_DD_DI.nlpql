@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for ABVD, DD-DI" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "blenoxane", "bleomycin"
+];
+
+define  Bleomycin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "velban", "vinblastine"
+];
+
+define  Vinblastine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "dtic", "dacarbazine"
+];
+
+define  Dacarbazine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_ABVD_DD_DI:[
+    "ABVD, DD-DI"
+];
+
+define final Regimen_ABVD_DD_DI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABVD_DD_DI],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__ABVDDDDI:
+    where Doxorubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__ABVDDDDI AND ABVD_DD_DI_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Hodgkin_lymphoma
+
+
+
+
+***/
+ 

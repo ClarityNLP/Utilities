@@ -1,0 +1,639 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Hodgkin lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hodgkin_lymphoma:[
+    "childhood hd", "pediatric hodgkin's lymphoma", "pediatric hodgkin's disease", "childhood hodgkin's disease", "hodgkin lymphoma", "hodgkin lymphoma, nos", "adult hodgkin lymphoma", "childhood hodgkin's lymphoma", "hodgkin's lymphoma", "adult hd", "adult hodgkin's lymphoma", "childhood hodgkin lymphoma", "pediatric hd", "hl", "adult hodgkin's disease", "hodgkin disease", "hodgkin's disease"
+];
+
+define final Condition_hodgkin_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hodgkin_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nivolumab_monotherapy:[
+    "Nivolumab monotherapy"
+];
+
+define   Regimen_Nivolumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nivolumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_monotherapy:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define   Regimen_Brentuximab_vedotin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DHAP:[
+    "DHAP"
+];
+
+define   Regimen_DHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_monotherapy:[
+    "Bendamustine monotherapy"
+];
+
+define   Regimen_Bendamustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinorelbine_monotherapy:[
+    "Vinorelbine monotherapy"
+];
+
+define   Regimen_Vinorelbine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinorelbine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GVD:[
+    "GVD"
+];
+
+define   Regimen_GVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Panobinostat_monotherapy:[
+    "Panobinostat monotherapy"
+];
+
+define   Regimen_Panobinostat_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Panobinostat_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ICE:[
+    "ICE"
+];
+
+define   Regimen_ICE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ICE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Stanford_V:[
+    "Stanford V"
+];
+
+define   Regimen_Stanford_V:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Stanford_V],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABVD:[
+    "ABVD"
+];
+
+define   Regimen_ABVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AVD:[
+    "AVD"
+];
+
+define   Regimen_AVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MOPP_ABV:[
+    "MOPP-ABV", "MOPP/ABV", "MOPPABV"
+];
+
+define   Regimen_MOPP_ABV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MOPP_ABV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VAMP:[
+    "VAMP"
+];
+
+define   Regimen_VAMP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAMP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AAVD:[
+    "A & AVD", "A / AVD", "A and AVD", "A&AVD", "A+AVD", "A/AVD", "AAVD", "BV  &  AVD", "BV  /  AVD", "BV  AVD", "BV  and  AVD", "BV & AVD", "BV + AVD", "BV / AVD", "BVAVD"
+];
+
+define   Regimen_AAVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AAVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEACOPP:[
+    "BEACOPP"
+];
+
+define   Regimen_BEACOPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEACOPP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_eBEACOPP:[
+    "eBEACOPP"
+];
+
+define   Regimen_eBEACOPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_eBEACOPP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EBVP:[
+    "EBVP"
+];
+
+define   Regimen_EBVP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EBVP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RABVD:[
+    "RABVD"
+];
+
+define   Regimen_RABVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RABVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABVD_DD_DI:[
+    "ABVD, DD-DI"
+];
+
+define   Regimen_ABVD_DD_DI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABVD_DD_DI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEACOPP_14:[
+    "BEACOPP-14", "BEACOPP/14", "BEACOPP14"
+];
+
+define   Regimen_BEACOPP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEACOPP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_C_MOPPABV:[
+    "C-MOPP/ABV", "C/MOPP/ABV", "CMOPP/ABV"
+];
+
+define   Regimen_C_MOPPABV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_C_MOPPABV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MOPP:[
+    "MOPP"
+];
+
+define   Regimen_MOPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MOPP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VEBEP:[
+    "VEBEP"
+];
+
+define   Regimen_VEBEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VEBEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ABVE_PC:[
+    "ABVE-PC", "ABVE/PC", "ABVEPC"
+];
+
+define   Regimen_ABVE_PC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ABVE_PC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_OEPA:[
+    "OEPA"
+];
+
+define   Regimen_OEPA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_OEPA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_OPPA:[
+    "OPPA"
+];
+
+define   Regimen_OPPA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_OPPA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_Dacarbazine:[
+    "Brentuximab vedotin & Dacarbazine"
+];
+
+define   Regimen_Brentuximab_vedotin_Dacarbazine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_Dacarbazine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ChlVPP:[
+    "ChlVPP"
+];
+
+define   Regimen_ChlVPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ChlVPP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ChlVPPEVA:[
+    "ChlVPP/EVA"
+];
+
+define   Regimen_ChlVPPEVA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ChlVPPEVA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PVAG:[
+    "PVAG"
+];
+
+define   Regimen_PVAG:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PVAG],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VEPEMB:[
+    "VEPEMB"
+];
+
+define   Regimen_VEPEMB:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VEPEMB],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_C_MOPP:[
+    "C-MOPP", "C/MOPP", "CMOPP", "COPP"
+];
+
+define   Regimen_C_MOPP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_C_MOPP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_COPDAC:[
+    "COPDAC"
+];
+
+define   Regimen_COPDAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_COPDAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BeGEV:[
+    "BeGEV"
+];
+
+define   Regimen_BeGEV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BeGEV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_Nivolumab:[
+    "Brentuximab vedotin & Nivolumab"
+];
+
+define   Regimen_Brentuximab_vedotin_Nivolumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_Nivolumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BVB:[
+    "BVB"
+];
+
+define   Regimen_BVB:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BVB],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DexaBEAM:[
+    "DexaBEAM"
+];
+
+define   Regimen_DexaBEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DexaBEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DHAP__time_intensified:[
+    "DHAP - time intensified"
+];
+
+define   Regimen_DHAP__time_intensified:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DHAP__time_intensified],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ESHAP:[
+    "ESHAP"
+];
+
+define   Regimen_ESHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ESHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GCD:[
+    "GCD"
+];
+
+define   Regimen_GCD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GCD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GCD_R:[
+    "GCD-R", "GCD/R", "GCDR"
+];
+
+define   Regimen_GCD_R:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GCD_R],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Rituximab:[
+    "Gemcitabine & Rituximab"
+];
+
+define   Regimen_Gemcitabine_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GVP:[
+    "GVP"
+];
+
+define   Regimen_GVP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GVP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_Vinorelbine:[
+    "Ifosfamide & Vinorelbine"
+];
+
+define   Regimen_Ifosfamide_Vinorelbine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_Vinorelbine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IGEV:[
+    "IGEV"
+];
+
+define   Regimen_IGEV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IGEV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MINE:[
+    "MINE"
+];
+
+define   Regimen_MINE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MINE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mini_BEAM:[
+    "Mini-BEAM", "Mini/BEAM", "MiniBEAM"
+];
+
+define   Regimen_Mini_BEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mini_BEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_O_ESHAP:[
+    "O-ESHAP", "O/ESHAP", "OESHAP"
+];
+
+define   Regimen_O_ESHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_O_ESHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinblastine_monotherapy:[
+    "Vinblastine monotherapy"
+];
+
+define   Regimen_Vinblastine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinblastine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hodgkin_lymphoma:
+    where Rituximab_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR Nivolumab_monotherapy_Regimen OR Pembrolizumab_monotherapy_Regimen OR Brentuximab_vedotin_monotherapy_Regimen OR DHAP_Regimen OR Bendamustine_monotherapy_Regimen OR Gemcitabine_monotherapy_Regimen OR Vinorelbine_monotherapy_Regimen OR Everolimus_monotherapy_Regimen OR GVD_Regimen OR Panobinostat_monotherapy_Regimen OR ICE_Regimen OR Stanford_V_Regimen OR ABVD_Regimen OR AVD_Regimen OR MOPP_ABV_Regimen OR VAMP_Regimen OR AAVD_Regimen OR BEACOPP_Regimen OR eBEACOPP_Regimen OR EBVP_Regimen OR RABVD_Regimen OR ABVD_DD_DI_Regimen OR BEACOPP_14_Regimen OR C_MOPPABV_Regimen OR MOPP_Regimen OR VEBEP_Regimen OR ABVE_PC_Regimen OR OEPA_Regimen OR OPPA_Regimen OR Brentuximab_vedotin_Dacarbazine_Regimen OR ChlVPP_Regimen OR ChlVPPEVA_Regimen OR PVAG_Regimen OR VEPEMB_Regimen OR C_MOPP_Regimen OR COPDAC_Regimen OR BeGEV_Regimen OR Brentuximab_vedotin_Nivolumab_Regimen OR BVB_Regimen OR DexaBEAM_Regimen OR DHAP__time_intensified_Regimen OR ESHAP_Regimen OR GCD_Regimen OR GCD_R_Regimen OR Gemcitabine_Rituximab_Regimen OR GVP_Regimen OR Ifosfamide_Vinorelbine_Regimen OR IGEV_Regimen OR MINE_Regimen OR Mini_BEAM_Regimen OR O_ESHAP_Regimen OR Vinblastine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hodgkin_lymphoma AND hodgkin_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

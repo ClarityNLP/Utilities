@@ -1,0 +1,133 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Hypereosinophilic syndrome" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hypereosinophilic_syndrome:[
+    "hypereosinophilic syndrome"
+];
+
+define final Condition_hypereosinophilic_syndrome:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hypereosinophilic_syndrome],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Ruxolitinib_monotherapy:[
+    "Ruxolitinib monotherapy"
+];
+
+define   Regimen_Ruxolitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ruxolitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Alemtuzumab_monotherapy:[
+    "Alemtuzumab monotherapy"
+];
+
+define   Regimen_Alemtuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Alemtuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nilotinib_monotherapy:[
+    "Nilotinib monotherapy"
+];
+
+define   Regimen_Nilotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nilotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Imatinib_monotherapy:[
+    "Imatinib monotherapy"
+];
+
+define   Regimen_Imatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Imatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hydroxyurea_monotherapy:[
+    "Hydroxyurea monotherapy"
+];
+
+define   Regimen_Hydroxyurea_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hydroxyurea_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Peginterferon_alfa_2a_monotherapy:[
+    "Peginterferon alfa-2a monotherapy"
+];
+
+define   Regimen_Peginterferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Peginterferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cladribine_Cytarabine:[
+    "Cladribine & Cytarabine"
+];
+
+define   Regimen_Cladribine_Cytarabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cladribine_Cytarabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mepolizumab_monotherapy:[
+    "Mepolizumab monotherapy"
+];
+
+define   Regimen_Mepolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mepolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hypereosinophilic_syndrome:
+    where Ruxolitinib_monotherapy_Regimen OR Alemtuzumab_monotherapy_Regimen OR Nilotinib_monotherapy_Regimen OR Imatinib_monotherapy_Regimen OR Hydroxyurea_monotherapy_Regimen OR Peginterferon_alfa_2a_monotherapy_Regimen OR Cladribine_Cytarabine_Regimen OR Mepolizumab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hypereosinophilic_syndrome AND hypereosinophilic_syndrome_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

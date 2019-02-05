@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velcade", "bortezomib"
 ];
 
-define  BortezomibTreatment:
+define  Bortezomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "alkeran", "melphalan"
 ];
 
-define  MelphalanTreatment:
+define  Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "thalomid", "thalidomide"
 ];
 
-define  ThalidomideTreatment:
+define  Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  ThalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VMPT:[
     "VMPT"
 ];
 
-define final VMPTRegimen:
+define final Regimen_VMPT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VMPT],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final VMPTRegimen:
 // Results
 
         
-define final VMPTTreatments:
-    where BortezomibTreatment AND MelphalanTreatment AND PrednisoneTreatment AND ThalidomideTreatment;
+define final Treatment__VMPT:
+    where Bortezomib_Treatment AND Melphalan_Treatment AND Prednisone_Treatment AND Thalidomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VMPT AND VMPT_Regimen;
         
         
 

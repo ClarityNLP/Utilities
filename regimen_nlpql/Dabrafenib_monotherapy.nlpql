@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "tafinlar", "dabrafenib"
 ];
 
-define final DabrafenibTreatment:
+define final Dabrafenib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final DabrafenibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Dabrafenib_monotherapy:[
     "Dabrafenib monotherapy"
 ];
 
-define final DabrafenibmonotherapyRegimen:
+define final Regimen_Dabrafenib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Dabrafenib_monotherapy],
     documentset:[Docs]
    }); 
 

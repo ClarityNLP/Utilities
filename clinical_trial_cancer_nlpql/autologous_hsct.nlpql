@@ -1,0 +1,331 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Autologous HSCT" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_autologous_hsct:[
+    "autologous hsct"
+];
+
+define final Condition_autologous_hsct:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_autologous_hsct],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_CYVE:[
+    "CYVE"
+];
+
+define   Regimen_CYVE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CYVE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Busulfan_Cyclophosphamide:[
+    "BuCy", "Busulfan & Cyclophosphamide"
+];
+
+define   Regimen_Busulfan_Cyclophosphamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Busulfan_Cyclophosphamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_TBI:[
+    "Cy/TBI", "CyTBI", "Cyclophosphamide & TBI"
+];
+
+define   Regimen_Cyclophosphamide_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_TBI:[
+    "Etoposide  and  TBI", "Etoposide & TBI", "Etoposide + TBI", "Etoposide / TBI", "Etoposide and TBI", "Etoposide+TBI", "Etoposide/TBI"
+];
+
+define   Regimen_Etoposide_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEAM:[
+    "BEAM"
+];
+
+define   Regimen_BEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FC:[
+    "FC"
+];
+
+define   Regimen_FC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BCNUTT:[
+    "BCNU/TT", "BCNUTT"
+];
+
+define   Regimen_BCNUTT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BCNUTT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEAC:[
+    "BEAC"
+];
+
+define   Regimen_BEAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BeEAM:[
+    "BeEAM"
+];
+
+define   Regimen_BeEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BeEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Melphalan:[
+    "Bor-HDM", "Bor/HDM", "BorHDM", "Bortezomib & Melphalan"
+];
+
+define   Regimen_Bortezomib_Melphalan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Melphalan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Busulfan_Melphalan:[
+    "BuMel", "Busulfan  and  Melphalan", "Busulfan & Melphalan", "Busulfan + Melphalan", "Busulfan / Melphalan", "Busulfan and Melphalan", "Busulfan+Melphalan", "Busulfan/Melphalan"
+];
+
+define   Regimen_Busulfan_Melphalan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Busulfan_Melphalan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BuTT:[
+    "Bu/TT", "BuTT"
+];
+
+define   Regimen_BuTT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BuTT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BuTTCy:[
+    "Bu/TT/Cy", "BuTTCy", "TBC"
+];
+
+define   Regimen_BuTTCy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BuTTCy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CBV:[
+    "CBV"
+];
+
+define   Regimen_CBV:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CBV],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CBV_Mx:[
+    "CBV-Mx", "CBV/Mx", "CBVMx"
+];
+
+define   Regimen_CBV_Mx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CBV_Mx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHUT:[
+    "CHUT"
+];
+
+define   Regimen_CHUT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHUT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CTCb:[
+    "CTCb"
+];
+
+define   Regimen_CTCb:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CTCb],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Etoposide_TBI:[
+    "Cyclophosphamide, Etoposide, TBI"
+];
+
+define   Regimen_Cyclophosphamide_Etoposide_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Etoposide_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FEAM:[
+    "FEAM"
+];
+
+define   Regimen_FEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LEED:[
+    "LEED"
+];
+
+define   Regimen_LEED:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LEED],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Melphalan_TBI:[
+    "Melphalan  and  TBI", "Melphalan & TBI", "Melphalan + TBI", "Melphalan / TBI", "Melphalan and TBI", "Melphalan+TBI", "Melphalan/TBI"
+];
+
+define   Regimen_Melphalan_TBI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Melphalan_TBI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Melphalan_monotherapy:[
+    "Melphalan monotherapy"
+];
+
+define   Regimen_Melphalan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Melphalan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_BEAM:[
+    "R-BEAM", "R/BEAM", "RBEAM"
+];
+
+define   Regimen_R_BEAM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_BEAM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_TBICy:[
+    "R-TBI/Cy", "R/TBI/Cy", "RTBI/Cy", "RTBICy"
+];
+
+define   Regimen_R_TBICy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_TBICy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TAM6:[
+    "TAM", "TAM6"
+];
+
+define   Regimen_TAM6:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TAM6],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_monotherapy:[
+    "Bendamustine monotherapy"
+];
+
+define   Regimen_Bendamustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_autologous_hsct:
+    where CYVE_Regimen OR Busulfan_Cyclophosphamide_Regimen OR Cyclophosphamide_TBI_Regimen OR Etoposide_TBI_Regimen OR BEAM_Regimen OR FC_Regimen OR BCNUTT_Regimen OR BEAC_Regimen OR BeEAM_Regimen OR Bortezomib_Melphalan_Regimen OR Busulfan_Melphalan_Regimen OR BuTT_Regimen OR BuTTCy_Regimen OR CBV_Regimen OR CBV_Mx_Regimen OR CHUT_Regimen OR CTCb_Regimen OR Cyclophosphamide_Etoposide_TBI_Regimen OR FEAM_Regimen OR LEED_Regimen OR Melphalan_TBI_Regimen OR Melphalan_monotherapy_Regimen OR R_BEAM_Regimen OR R_TBICy_Regimen OR TAM6_Regimen OR Bendamustine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_autologous_hsct AND autologous_hsct_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

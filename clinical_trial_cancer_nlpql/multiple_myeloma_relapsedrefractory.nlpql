@@ -1,0 +1,606 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Multiple myeloma relapsedrefractory" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_multiple_myeloma_relapsedrefractory:[
+    "multiple myeloma relapsedrefractory"
+];
+
+define final Condition_multiple_myeloma_relapsedrefractory:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_multiple_myeloma_relapsedrefractory],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cyclophosphamide_Prednisone:[
+    "Cyclophosphamide & Prednisone"
+];
+
+define   Regimen_Cyclophosphamide_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vemurafenib_monotherapy:[
+    "Vemurafenib monotherapy"
+];
+
+define   Regimen_Vemurafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vemurafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_monotherapy:[
+    "Bortezomib monotherapy"
+];
+
+define   Regimen_Bortezomib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Dexamethasone:[
+    "Bortezomib & Dexamethasone"
+];
+
+define   Regimen_Bortezomib_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CTD:[
+    "CTD"
+];
+
+define   Regimen_CTD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CTD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VDC:[
+    "CyBorD", "VDC"
+];
+
+define   Regimen_VDC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VDC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rd:[
+    "LenDex", "Rd", "RevDex"
+];
+
+define   Regimen_Rd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Daratumumab_monotherapy:[
+    "Daratumumab monotherapy"
+];
+
+define   Regimen_Daratumumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Daratumumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ixazomib_monotherapy:[
+    "Ixazomib monotherapy"
+];
+
+define   Regimen_Ixazomib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ixazomib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ixazomib_Dexamethasone:[
+    "Ixazomib & Dexamethasone"
+];
+
+define   Regimen_Ixazomib_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ixazomib_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_Dexamethasone:[
+    "Pomalidomide & Dexamethasone"
+];
+
+define   Regimen_Pomalidomide_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCEP:[
+    "DCEP"
+];
+
+define   Regimen_DCEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CPR:[
+    "CPR"
+];
+
+define   Regimen_CPR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CPR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PAD:[
+    "BDD", "PAD", "PAd", "VAD"
+];
+
+define   Regimen_PAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RVD:[
+    "RVD", "VDR", "VRD", "VRd"
+];
+
+define   Regimen_RVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Thal_Dex:[
+    "Thal-Dex", "Thal/Dex", "ThalDex"
+];
+
+define   Regimen_Thal_Dex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Thal_Dex],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Doxorubicin_liposomal:[
+    "Bortezomib & Doxorubicin liposomal"
+];
+
+define   Regimen_Bortezomib_Doxorubicin_liposomal:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Doxorubicin_liposomal],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Vorinostat:[
+    "Bortezomib & Vorinostat"
+];
+
+define   Regimen_Bortezomib_Vorinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Vorinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carfilzomib_monotherapy:[
+    "Carfilzomib monotherapy"
+];
+
+define   Regimen_Carfilzomib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carfilzomib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carfilzomib_Dexamethasone:[
+    "Carfilzomib & Dexamethasone"
+];
+
+define   Regimen_Carfilzomib_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carfilzomib_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CRd_Carfilzomib:[
+    "CRd", "CRd (Carfilzomib)", "KRd"
+];
+
+define   Regimen_CRd_Carfilzomib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CRd_Carfilzomib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclophosphamide_Dexamethasone:[
+    "Cyclophosphamide & Dexamethasone"
+];
+
+define   Regimen_Cyclophosphamide_Dexamethasone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclophosphamide_Dexamethasone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DRd:[
+    "DRd"
+];
+
+define   Regimen_DRd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DRd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DVd:[
+    "DVd"
+];
+
+define   Regimen_DVd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DVd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EBd:[
+    "EBd"
+];
+
+define   Regimen_EBd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EBd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ELd:[
+    "ELd", "ERd"
+];
+
+define   Regimen_ELd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ELd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Elo_Pom_dex:[
+    "Elo-Pom-dex"
+];
+
+define   Regimen_Elo_Pom_dex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Elo_Pom_dex],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IRd:[
+    "IRd"
+];
+
+define   Regimen_IRd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IRd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_monotherapy:[
+    "Pomalidomide monotherapy"
+];
+
+define   Regimen_Pomalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PomCyDex:[
+    "PCD", "PomCyDex"
+];
+
+define   Regimen_PomCyDex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PomCyDex],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VTD:[
+    "VTD"
+];
+
+define   Regimen_VTD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VTD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BBD:[
+    "BBD"
+];
+
+define   Regimen_BBD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BBD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BLD:[
+    "BLD"
+];
+
+define   Regimen_BLD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BLD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_HyperCAD:[
+    "Bortezomib-HyperCAD"
+];
+
+define   Regimen_Bortezomib_HyperCAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_HyperCAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Thalidomide_Dexamethasone_Panobinostat:[
+    "Bortezomib, Thalidomide, Dexamethasone, Panobinostat"
+];
+
+define   Regimen_Bortezomib_Thalidomide_Dexamethasone_Panobinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Thalidomide_Dexamethasone_Panobinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BTD:[
+    "BTD"
+];
+
+define   Regimen_BTD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BTD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carfilzomib_Panobinostat:[
+    "Carfilzomib & Panobinostat"
+];
+
+define   Regimen_Carfilzomib_Panobinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carfilzomib_Panobinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CPD:[
+    "CPD", "KPD"
+];
+
+define   Regimen_CPD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CPD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CRD_Cyclophosphamide:[
+    "CRD", "CRD (Cyclophosphamide)"
+];
+
+define   Regimen_CRD_Cyclophosphamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CRD_Cyclophosphamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DTPACE:[
+    "DTPACE"
+];
+
+define   Regimen_DTPACE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DTPACE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FRD:[
+    "FRD"
+];
+
+define   Regimen_FRD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FRD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hyper_CVAD:[
+    "Hyper-CVAD", "Hyper/CVAD", "HyperCVAD"
+];
+
+define   Regimen_Hyper_CVAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hyper_CVAD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCP:[
+    "PCP"
+];
+
+define   Regimen_PCP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_Dexamethasone_Daratumumab:[
+    "Pomalidomide, Dexamethasone, Daratumumab"
+];
+
+define   Regimen_Pomalidomide_Dexamethasone_Daratumumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_Dexamethasone_Daratumumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PVD:[
+    "PVD"
+];
+
+define   Regimen_PVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Thalidomide_monotherapy:[
+    "Thalidomide monotherapy"
+];
+
+define   Regimen_Thalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Thalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VMPT:[
+    "VMPT"
+];
+
+define   Regimen_VMPT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VMPT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ZRd:[
+    "ZRd"
+];
+
+define   Regimen_ZRd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ZRd],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Cyclophosphamide:[
+    "Bortezomib & Cyclophosphamide"
+];
+
+define   Regimen_Bortezomib_Cyclophosphamide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Cyclophosphamide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pomalidomide_Prednisone:[
+    "Pomalidomide & Prednisone"
+];
+
+define   Regimen_Pomalidomide_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pomalidomide_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_multiple_myeloma_relapsedrefractory:
+    where Cyclophosphamide_Prednisone_Regimen OR Lenalidomide_monotherapy_Regimen OR Vemurafenib_monotherapy_Regimen OR Bortezomib_monotherapy_Regimen OR Bortezomib_Dexamethasone_Regimen OR CTD_Regimen OR VDC_Regimen OR Rd_Regimen OR Daratumumab_monotherapy_Regimen OR Ixazomib_monotherapy_Regimen OR Ixazomib_Dexamethasone_Regimen OR Pomalidomide_Dexamethasone_Regimen OR DCEP_Regimen OR CPR_Regimen OR PAD_Regimen OR RVD_Regimen OR Thal_Dex_Regimen OR Bortezomib_Doxorubicin_liposomal_Regimen OR Bortezomib_Vorinostat_Regimen OR Carfilzomib_monotherapy_Regimen OR Carfilzomib_Dexamethasone_Regimen OR CRd_Carfilzomib_Regimen OR Cyclophosphamide_Dexamethasone_Regimen OR DRd_Regimen OR DVd_Regimen OR EBd_Regimen OR ELd_Regimen OR Elo_Pom_dex_Regimen OR IRd_Regimen OR Pomalidomide_monotherapy_Regimen OR PomCyDex_Regimen OR VTD_Regimen OR BBD_Regimen OR BLD_Regimen OR Bortezomib_HyperCAD_Regimen OR Bortezomib_Thalidomide_Dexamethasone_Panobinostat_Regimen OR BTD_Regimen OR Carfilzomib_Panobinostat_Regimen OR CPD_Regimen OR CRD_Cyclophosphamide_Regimen OR DTPACE_Regimen OR FRD_Regimen OR Hyper_CVAD_Regimen OR PCP_Regimen OR Pomalidomide_Dexamethasone_Daratumumab_Regimen OR PVD_Regimen OR Thalidomide_monotherapy_Regimen OR VMPT_Regimen OR ZRd_Regimen OR Bortezomib_Cyclophosphamide_Regimen OR Pomalidomide_Prednisone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_multiple_myeloma_relapsedrefractory AND multiple_myeloma_relapsedrefractory_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

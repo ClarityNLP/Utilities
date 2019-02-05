@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "lonsurf", "trifluridine and tipiracil"
 ];
 
-define final TrifluridineandtipiracilTreatment:
+define final Trifluridineandtipiracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TrifluridineandtipiracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Trifluridine_and_tipiracil_monotherapy:[
     "Trifluridine and tipiracil monotherapy"
 ];
 
-define final TrifluridineandtipiracilmonotherapyRegimen:
+define final Regimen_Trifluridine_and_tipiracil_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Trifluridine_and_tipiracil_monotherapy],
     documentset:[Docs]
    }); 
 

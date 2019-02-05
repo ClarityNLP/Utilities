@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to ERBB2 (HER2)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_erbb2_her2:[
+    "erbb2 (her2)"
+];
+
+define final Condition_erbb2_her2:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_erbb2_her2],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Pertuzumab_Trastuzumab:[
+    "Pertuzumab & Trastuzumab"
+];
+
+define   Regimen_Pertuzumab_Trastuzumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pertuzumab_Trastuzumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ado_trastuzumab_emtansine_monotherapy:[
+    "Ado-trastuzumab emtansine monotherapy"
+];
+
+define   Regimen_Ado_trastuzumab_emtansine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ado_trastuzumab_emtansine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Neratinib_monotherapy:[
+    "Neratinib monotherapy"
+];
+
+define   Regimen_Neratinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Neratinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_erbb2_her2:
+    where Pertuzumab_Trastuzumab_Regimen OR Ado_trastuzumab_emtansine_monotherapy_Regimen OR Neratinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_erbb2_her2 AND erbb2_her2_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

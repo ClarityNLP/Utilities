@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "decadron", "dexamethasone"
 ];
 
-define  DexamethasoneTreatment:
+define  Dexamethasone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CisplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GDP:[
     "GDP"
 ];
 
-define final GDPRegimen:
+define final Regimen_GDP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GDP],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final GDPRegimen:
 // Results
 
         
-define final GDPTreatments:
-    where GemcitabineTreatment AND DexamethasoneTreatment AND CisplatinTreatment;
+define final Treatment__GDP:
+    where Gemcitabine_Treatment AND Dexamethasone_Treatment AND Cisplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GDP AND GDP_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
+Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 

@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Cutaneous squamous cell carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_cutaneous_squamous_cell_carcinoma:[
+    "epidermoid carcinoma of skin", "skin squamous cell cancer", "squamous cell skin carcinoma", "cutaneous squamous cell carcinoma", "squamous cell carcinoma of skin", "squamous cell carcinoma - skin", "squamous cell carcinoma of the skin", "epidermoid carcinoma of the skin", "epidermoid skin carcinoma", "skin squamous cell carcinoma"
+];
+
+define final Condition_cutaneous_squamous_cell_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_cutaneous_squamous_cell_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cetuximab_monotherapy:[
+    "Cetuximab monotherapy"
+];
+
+define   Regimen_Cetuximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cetuximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bleomycin_Cisplatin:[
+    "Bleomycin & Cisplatin"
+];
+
+define   Regimen_Bleomycin_Cisplatin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bleomycin_Cisplatin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Doxorubicin:[
+    "Cisplatin & Doxorubicin"
+];
+
+define   Regimen_Cisplatin_Doxorubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Doxorubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cemiplimab_monotherapy:[
+    "Cemiplimab monotherapy"
+];
+
+define   Regimen_Cemiplimab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cemiplimab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_cutaneous_squamous_cell_carcinoma:
+    where Cetuximab_monotherapy_Regimen OR Bleomycin_Cisplatin_Regimen OR Cisplatin_Doxorubicin_Regimen OR Cemiplimab_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_cutaneous_squamous_cell_carcinoma AND cutaneous_squamous_cell_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

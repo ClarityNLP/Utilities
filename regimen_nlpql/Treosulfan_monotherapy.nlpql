@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ovastat", "treosulfan"
 ];
 
-define final TreosulfanTreatment:
+define final Treosulfan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TreosulfanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Treosulfan_monotherapy:[
     "Treosulfan monotherapy"
 ];
 
-define final TreosulfanmonotherapyRegimen:
+define final Regimen_Treosulfan_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Treosulfan_monotherapy],
     documentset:[Docs]
    }); 
 

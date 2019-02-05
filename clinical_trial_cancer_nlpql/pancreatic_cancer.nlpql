@@ -1,0 +1,353 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Pancreatic cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_pancreatic_cancer:[
+    "carcinoma of pancreas", "pancreatic carcinoma", "carcinoma of the pancreas", "pancreatic cancer (not islets)", "pancreas carcinoma", "pancreatic cancer", "exocrine pancreas carcinoma", "cancer of the pancreas", "pancreas cancer", "cancer of pancreas", "pancreatic cancer (excluding islets), nos", "exocrine cancer"
+];
+
+define final Condition_pancreatic_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_pancreatic_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_Gemcitabine:[
+    "Cisplatin & Gemcitabine"
+];
+
+define   Regimen_Cisplatin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy:[
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
+];
+
+define   Regimen_Paclitaxel_nanoparticle_albumin_bound_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Olaparib_monotherapy:[
+    "Olaparib monotherapy"
+];
+
+define   Regimen_Olaparib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Olaparib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_RT:[
+    "Fluorouracil  and  RT", "Fluorouracil & RT", "Fluorouracil + RT", "Fluorouracil / RT", "Fluorouracil and RT", "Fluorouracil+RT", "Fluorouracil/RT"
+];
+
+define   Regimen_Fluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Gemcitabine:[
+    "Capecitabine & Gemcitabine", "GemCap"
+];
+
+define   Regimen_Capecitabine_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_nab_Paclitaxel:[
+    "Gemcitabine & nab-Paclitaxel"
+];
+
+define   Regimen_Gemcitabine_nab_Paclitaxel:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_nab_Paclitaxel],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx:[
+    "CAPOX", "CapeOX", "CapeOx", "XELOX"
+];
+
+define   Regimen_CapeOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI:[
+    "FOLFIRI"
+];
+
+define   Regimen_FOLFIRI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_monotherapy:[
+    "Fluorouracil monotherapy"
+];
+
+define   Regimen_Fluorouracil_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRINOX:[
+    "FOLFIRINOX", "FOLFOXIRI"
+];
+
+define   Regimen_FOLFIRINOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRINOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_S_1_monotherapy:[
+    "S-1 monotherapy"
+];
+
+define   Regimen_S_1_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_S_1_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_OLF:[
+    "FLO", "OLF"
+];
+
+define   Regimen_OLF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_OLF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GemOx:[
+    "GemOx"
+];
+
+define   Regimen_GemOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GemOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FluorouracilFluorouracil_RT:[
+    "Fluorouracil/Fluorouracil & RT"
+];
+
+define   Regimen_FluorouracilFluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FluorouracilFluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFIRINOX:[
+    "mFOLFIRINOX"
+];
+
+define   Regimen_mFOLFIRINOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFIRINOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GemcitabineFluorouracil_RT:[
+    "Gemcitabine/Fluorouracil & RT"
+];
+
+define   Regimen_GemcitabineFluorouracil_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GemcitabineFluorouracil_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_Gemcitabine_RT:[
+    "Docetaxel, Gemcitabine, RT"
+];
+
+define   Regimen_Docetaxel_Gemcitabine_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Gemcitabine_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_RT:[
+    "Gemcitabine  and  RT", "Gemcitabine & RT", "Gemcitabine + RT", "Gemcitabine / RT", "Gemcitabine and RT", "Gemcitabine+RT", "Gemcitabine/RT"
+];
+
+define   Regimen_Gemcitabine_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Cetuximab_RT:[
+    "Gemcitabine, Cetuximab, RT"
+];
+
+define   Regimen_Gemcitabine_Cetuximab_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Cetuximab_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFIRINOX_Gemcitabine_RT:[
+    "mFOLFIRINOX, Gemcitabine, RT"
+];
+
+define   Regimen_mFOLFIRINOX_Gemcitabine_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFIRINOX_Gemcitabine_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_Gemcitabine:[
+    "Erlotinib & Gemcitabine"
+];
+
+define   Regimen_Erlotinib_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GTX:[
+    "GTX"
+];
+
+define   Regimen_GTX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GTX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Erlotinib:[
+    "Capecitabine & Erlotinib"
+];
+
+define   Regimen_Capecitabine_Erlotinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Erlotinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan:[
+    "Fluorouracil, Folinic acid, nanoliposomal Irinotecan"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX:[
+    "FOLFOX"
+];
+
+define   Regimen_FOLFOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_pancreatic_cancer:
+    where Cisplatin_Gemcitabine_Regimen OR Gemcitabine_monotherapy_Regimen OR Paclitaxel_nanoparticle_albumin_bound_monotherapy_Regimen OR Capecitabine_monotherapy_Regimen OR Olaparib_monotherapy_Regimen OR Fluorouracil_RT_Regimen OR Fluorouracil_Folinic_acid_Regimen OR Capecitabine_Gemcitabine_Regimen OR Gemcitabine_nab_Paclitaxel_Regimen OR CapeOx_Regimen OR FOLFIRI_Regimen OR Fluorouracil_monotherapy_Regimen OR FOLFIRINOX_Regimen OR S_1_monotherapy_Regimen OR OLF_Regimen OR GemOx_Regimen OR FluorouracilFluorouracil_RT_Regimen OR mFOLFIRINOX_Regimen OR GemcitabineFluorouracil_RT_Regimen OR Docetaxel_Gemcitabine_RT_Regimen OR Gemcitabine_RT_Regimen OR Gemcitabine_Cetuximab_RT_Regimen OR mFOLFIRINOX_Gemcitabine_RT_Regimen OR Erlotinib_Gemcitabine_Regimen OR GTX_Regimen OR Capecitabine_Erlotinib_Regimen OR Fluorouracil_Folinic_acid_nanoliposomal_Irinotecan_Regimen OR FOLFOX_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_pancreatic_cancer AND pancreatic_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Nasopharyngeal carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_nasopharyngeal_carcinoma:[
+    "nasopharyngeal cancer", "carcinoma of the nasopharynx", "carcinoma of nasopharynx", "npc", "cancer of nasopharynx", "nasopharyngeal throat cancer", "cancer of the nasopharynx", "nasopharyngeal carcinoma"
+];
+
+define final Condition_nasopharyngeal_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_nasopharyngeal_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_RT:[
+    "Cisplatin  and  RT", "Cisplatin & RT", "Cisplatin + RT", "Cisplatin / RT", "Cisplatin and RT", "Cisplatin+RT", "Cisplatin/RT"
+];
+
+define   Regimen_Cisplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Carboplatin_RT:[
+    "Carboplatin  and  RT", "Carboplatin & RT", "Carboplatin + RT", "Carboplatin / RT", "Carboplatin and RT", "Carboplatin+RT", "Carboplatin/RT"
+];
+
+define   Regimen_Carboplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Carboplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Fluorouracil:[
+    "Cisplatin & Fluorouracil"
+];
+
+define   Regimen_Cisplatin_Fluorouracil:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Fluorouracil],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCF:[
+    "DCF", "TCF"
+];
+
+define   Regimen_DCF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCF],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_nasopharyngeal_carcinoma:
+    where Cisplatin_RT_Regimen OR Carboplatin_RT_Regimen OR Cisplatin_Fluorouracil_Regimen OR DCF_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_nasopharyngeal_carcinoma AND nasopharyngeal_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

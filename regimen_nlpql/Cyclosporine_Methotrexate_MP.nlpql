@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "neoral", "cyclosporine modified"
 ];
 
-define  CyclosporinemodifiedTreatment:
+define  Cyclosporinemodified_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "solumedrol", "methylprednisolone"
 ];
 
-define  MethylprednisoloneTreatment:
+define  Methylprednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  MethylprednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclosporine_Methotrexate_MP:[
     "Cyclosporine, Methotrexate, MP"
 ];
 
-define final CyclosporineMethotrexateMPRegimen:
+define final Regimen_Cyclosporine_Methotrexate_MP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclosporine_Methotrexate_MP],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CyclosporineMethotrexateMPRegimen:
 // Results
 
         
-define final CyclosporineMethotrexateMPTreatments:
-    where CyclosporinemodifiedTreatment AND MethotrexateTreatment AND MethylprednisoloneTreatment;
+define final Treatment__CyclosporineMethotrexateMP:
+    where Cyclosporinemodified_Treatment AND Methotrexate_Treatment AND Methylprednisolone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CyclosporineMethotrexateMP AND Cyclosporine_Methotrexate_MP_Regimen;
         
         
 

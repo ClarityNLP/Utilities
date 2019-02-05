@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define final GemcitabineTreatment:
+define final Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final GemcitabineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GemcitabineFluorouracil_RT:[
     "Gemcitabine/Fluorouracil & RT"
 ];
 
-define final GemcitabineFluorouracilRTRegimen:
+define final Regimen_GemcitabineFluorouracil_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GemcitabineFluorouracil_RT],
     documentset:[Docs]
    }); 
 

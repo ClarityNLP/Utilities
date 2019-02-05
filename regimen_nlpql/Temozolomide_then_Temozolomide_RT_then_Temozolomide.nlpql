@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "temodar", "temozolomide"
 ];
 
-define final TemozolomideTreatment:
+define final Temozolomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TemozolomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Temozolomide_then_Temozolomide_RT_then_Temozolomide:[
     "Temozolomide, then Temozolomide & RT, then Temozolomide"
 ];
 
-define final TemozolomidethenTemozolomideRTthenTemozolomideRegimen:
+define final Regimen_Temozolomide_then_Temozolomide_RT_then_Temozolomide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Temozolomide_then_Temozolomide_RT_then_Temozolomide],
     documentset:[Docs]
    }); 
 

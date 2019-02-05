@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "navelbine", "vinorelbine"
 ];
 
-define  VinorelbineTreatment:
+define  Vinorelbine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "doxil", "pegylated liposomal doxorubicin"
 ];
 
-define  PegylatedliposomaldoxorubicinTreatment:
+define  Pegylatedliposomaldoxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PegylatedliposomaldoxorubicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GVD:[
     "GVD"
 ];
 
-define final GVDRegimen:
+define final Regimen_GVD:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GVD],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final GVDRegimen:
 // Results
 
         
-define final GVDTreatments:
-    where GemcitabineTreatment AND VinorelbineTreatment AND PegylatedliposomaldoxorubicinTreatment;
+define final Treatment__GVD:
+    where Gemcitabine_Treatment AND Vinorelbine_Treatment AND Pegylatedliposomaldoxorubicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GVD AND GVD_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma
+Known regimen for: Diffuse_large_B-cell_lymphoma, Hodgkin_lymphoma
 
 
 

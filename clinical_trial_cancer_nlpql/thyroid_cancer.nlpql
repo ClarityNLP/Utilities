@@ -1,0 +1,133 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Thyroid cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_thyroid_cancer:[
+    "carcinoma of thyroid", "carcinoma of thyroid gland", "thyroid carcinoma", "thyroid gland cancer", "head and neck cancer, thyroid", "cancer of the thyroid", "carcinoma of the thyroid gland", "thyroid cancer", "thyroid gland carcinoma", "cancer of thyroid", "thyroid cancer, nos", "carcinoma of the thyroid"
+];
+
+define final Condition_thyroid_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_thyroid_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_monotherapy:[
+    "Doxorubicin monotherapy"
+];
+
+define   Regimen_Doxorubicin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pazopanib_monotherapy:[
+    "Pazopanib monotherapy"
+];
+
+define   Regimen_Pazopanib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pazopanib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sunitinib_monotherapy:[
+    "Sunitinib monotherapy"
+];
+
+define   Regimen_Sunitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sunitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenvatinib_monotherapy:[
+    "Lenvatinib monotherapy"
+];
+
+define   Regimen_Lenvatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenvatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cabozantinib_monotherapy:[
+    "Cabozantinib monotherapy"
+];
+
+define   Regimen_Cabozantinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cabozantinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Axitinib_monotherapy:[
+    "Axitinib monotherapy"
+];
+
+define   Regimen_Axitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Axitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vandetanib_monotherapy:[
+    "Vandetanib monotherapy"
+];
+
+define   Regimen_Vandetanib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vandetanib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_thyroid_cancer:
+    where Sorafenib_monotherapy_Regimen OR Doxorubicin_monotherapy_Regimen OR Pazopanib_monotherapy_Regimen OR Sunitinib_monotherapy_Regimen OR Lenvatinib_monotherapy_Regimen OR Cabozantinib_monotherapy_Regimen OR Axitinib_monotherapy_Regimen OR Vandetanib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_thyroid_cancer AND thyroid_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "refludan", "lepirudin"
 ];
 
-define final LepirudinTreatment:
+define final Lepirudin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final LepirudinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lepirudin_monotherapy:[
     "Lepirudin monotherapy"
 ];
 
-define final LepirudinmonotherapyRegimen:
+define final Regimen_Lepirudin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lepirudin_monotherapy],
     documentset:[Docs]
    }); 
 

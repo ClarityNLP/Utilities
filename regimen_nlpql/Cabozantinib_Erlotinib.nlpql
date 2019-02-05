@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cometriq", "cabozantinib"
 ];
 
-define  CabozantinibTreatment:
+define  Cabozantinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "tarceva", "erlotinib"
 ];
 
-define  ErlotinibTreatment:
+define  Erlotinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ErlotinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cabozantinib_Erlotinib:[
     "Cabozantinib & Erlotinib"
 ];
 
-define final CabozantinibErlotinibRegimen:
+define final Regimen_Cabozantinib_Erlotinib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cabozantinib_Erlotinib],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CabozantinibErlotinibRegimen:
 // Results
 
         
-define final CabozantinibErlotinibTreatments:
-    where CabozantinibTreatment AND ErlotinibTreatment;
+define final Treatment__CabozantinibErlotinib:
+    where Cabozantinib_Treatment AND Erlotinib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CabozantinibErlotinib AND Cabozantinib_Erlotinib_Regimen;
         
         
 

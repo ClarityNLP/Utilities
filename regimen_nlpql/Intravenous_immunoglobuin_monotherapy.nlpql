@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ivig", "intravenous immunoglobulin"
 ];
 
-define final IntravenousimmunoglobulinTreatment:
+define final Intravenousimmunoglobulin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IntravenousimmunoglobulinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Intravenous_immunoglobuin_monotherapy:[
     "IVIG", "Intravenous immunoglobuin monotherapy"
 ];
 
-define final IntravenousimmunoglobuinmonotherapyRegimen:
+define final Regimen_Intravenous_immunoglobuin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Intravenous_immunoglobuin_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mutamycin", "mitomycin"
 ];
 
-define final MitomycinTreatment:
+define final Mitomycin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MitomycinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Mitomycin_monotherapy:[
     "Mitomycin monotherapy"
 ];
 
-define final MitomycinmonotherapyRegimen:
+define final Regimen_Mitomycin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Mitomycin_monotherapy],
     documentset:[Docs]
    }); 
 

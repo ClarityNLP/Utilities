@@ -14,46 +14,46 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ellence", "epirubicin"
 ];
 
-define  EpirubicinTreatment:
+define  Epirubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms3:[
+termset TreatmentTerms_3:[
     "herceptin", "trastuzumab"
 ];
 
-define  TrastuzumabTreatment:
+define  Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms3],
+        termset:[TreatmentTerms_3],
         documentset:[Docs]
 }); 
 
@@ -61,13 +61,13 @@ define  TrastuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FEC_H:[
     "FEC  and  H", "FEC & H", "FEC + H", "FEC / H", "FEC and H", "FEC+H", "FEC/H", "FECH"
 ];
 
-define final FECHRegimen:
+define final Regimen_FEC_H:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FEC_H],
     documentset:[Docs]
    }); 
 
@@ -75,10 +75,11 @@ define final FECHRegimen:
 // Results
 
         
-define final FECHTreatments:
-    where FluorouracilTreatment AND EpirubicinTreatment AND CyclophosphamideTreatment AND TrastuzumabTreatment;
+define final Treatment__FECH:
+    where Fluorouracil_Treatment AND Epirubicin_Treatment AND Cyclophosphamide_Treatment AND Trastuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FECH AND FEC_H_Regimen;
         
         
 

@@ -1,0 +1,54 @@
+
+// Phenotype library name
+phenotype "Regimen for CPX-351 monotherapy" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "vyxeos", "cytarabine and daunorubicin liposomal"
+];
+
+define final Cytarabineanddaunorubicinliposomal_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_CPX_351_monotherapy:[
+    "CPX-351", "CPX-351 monotherapy", "CPX/351", "CPX351"
+];
+
+define final Regimen_CPX_351_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CPX_351_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Acute_myeloid_leukemia
+
+
+
+
+***/
+ 

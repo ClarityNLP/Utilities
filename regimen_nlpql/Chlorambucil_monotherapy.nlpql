@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "leukeran", "chlorambucil"
 ];
 
-define final ChlorambucilTreatment:
+define final Chlorambucil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ChlorambucilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Chlorambucil_monotherapy:[
     "Chlorambucil monotherapy"
 ];
 
-define final ChlorambucilmonotherapyRegimen:
+define final Regimen_Chlorambucil_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Chlorambucil_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final ChlorambucilmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia, Follicular_lymphoma
+Known regimen for: Waldenstrom_macroglobulinemia, Follicular_lymphoma, Marginal_zone_lymphoma
 
 
 

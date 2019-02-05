@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xalkori", "crizotinib"
 ];
 
-define final CrizotinibTreatment:
+define final Crizotinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CrizotinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Crizotinib_monotherapy:[
     "Crizotinib monotherapy"
 ];
 
-define final CrizotinibmonotherapyRegimen:
+define final Regimen_Crizotinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Crizotinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final CrizotinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_ROS1-positive, Non-small_cell_lung_cancer_ALK-positive
+Known regimen for: Non-small_cell_lung_cancer_ALK-positive, Non-small_cell_lung_cancer_ROS1-positive
 
 
 

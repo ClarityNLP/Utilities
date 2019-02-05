@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     ":category:low molecular weight heparins"
 ];
 
-define  CategoryLowmolecularweightheparinsTreatment:
+define  CategoryLowmolecularweightheparins_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "savaysa", "edoxaban"
 ];
 
-define  EdoxabanTreatment:
+define  Edoxaban_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  EdoxabanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Edoxaban_monotherapy:[
     "Edoxaban monotherapy"
 ];
 
-define final EdoxabanmonotherapyRegimen:
+define final Regimen_Edoxaban_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Edoxaban_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final EdoxabanmonotherapyRegimen:
 // Results
 
         
-define final EdoxabanmonotherapyTreatments:
-    where CategoryLowmolecularweightheparinsTreatment AND EdoxabanTreatment;
+define final Treatment__Edoxabanmonotherapy:
+    where CategoryLowmolecularweightheparins_Treatment AND Edoxaban_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__Edoxabanmonotherapy AND Edoxaban_monotherapy_Regimen;
         
         
 

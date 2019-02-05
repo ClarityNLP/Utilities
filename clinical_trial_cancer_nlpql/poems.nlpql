@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to POEMS" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_poems:[
+    "poems"
+];
+
+define final Condition_poems:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_poems],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_RD:[
+    "RD"
+];
+
+define   Regimen_RD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RD],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

@@ -1,0 +1,78 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Non-small cell lung cancer ROS1-positive" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_non_small_cell_lung_cancer_ros1_positive:[
+    "non-small cell lung cancer ros1-positive"
+];
+
+define final Condition_non_small_cell_lung_cancer_ros1_positive:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_non_small_cell_lung_cancer_ros1_positive],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Ceritinib_monotherapy:[
+    "Ceritinib monotherapy"
+];
+
+define   Regimen_Ceritinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ceritinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Crizotinib_monotherapy:[
+    "Crizotinib monotherapy"
+];
+
+define   Regimen_Crizotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Crizotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lorlatinib_monotherapy:[
+    "Lorlatinib monotherapy"
+];
+
+define   Regimen_Lorlatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lorlatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_non_small_cell_lung_cancer_ros1_positive:
+    where Ceritinib_monotherapy_Regimen OR Crizotinib_monotherapy_Regimen OR Lorlatinib_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_non_small_cell_lung_cancer_ros1_positive AND non_small_cell_lung_cancer_ros1_positive_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

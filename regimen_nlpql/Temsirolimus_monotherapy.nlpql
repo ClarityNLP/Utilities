@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "torisel", "temsirolimus"
 ];
 
-define final TemsirolimusTreatment:
+define final Temsirolimus_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TemsirolimusTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Temsirolimus_monotherapy:[
     "Temsirolimus monotherapy"
 ];
 
-define final TemsirolimusmonotherapyRegimen:
+define final Regimen_Temsirolimus_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Temsirolimus_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final TemsirolimusmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma, Renal_cell_carcinoma, Follicular_lymphoma, Endometrial_cancer, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Mantle_cell_lymphoma, Follicular_lymphoma, Diffuse_large_B-cell_lymphoma, Endometrial_cancer, Renal_cell_carcinoma
 
 
 

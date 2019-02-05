@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FP_then_Capecitabine_RT_then_FP:[
     "FP, then Capecitabine & RT, then FP"
 ];
 
-define final FPthenCapecitabineRTthenFPRegimen:
+define final Regimen_FP_then_Capecitabine_RT_then_FP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FP_then_Capecitabine_RT_then_FP],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final FPthenCapecitabineRTthenFPRegimen:
 // Results
 
         
-define final FPthenCapecitabineRTthenFPTreatments:
-    where CisplatinTreatment AND FluorouracilTreatment;
+define final Treatment__FPthenCapecitabineRTthenFP:
+    where Cisplatin_Treatment AND Fluorouracil_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FPthenCapecitabineRTthenFP AND FP_then_Capecitabine_RT_then_FP_Regimen;
         
         
 

@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "aspirin"
 ];
 
-define final AspirinTreatment:
+define final Aspirin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AspirinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Aspirin_monotherapy:[
     "Aspirin monotherapy"
 ];
 
-define final AspirinmonotherapyRegimen:
+define final Regimen_Aspirin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Aspirin_monotherapy],
     documentset:[Docs]
    }); 
 

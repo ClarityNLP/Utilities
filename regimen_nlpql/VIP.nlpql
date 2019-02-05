@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "ifex", "ifosfamide"
 ];
 
-define  IfosfamideTreatment:
+define  Ifosfamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  CisplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_VIP:[
     "VIP"
 ];
 
-define final VIPRegimen:
+define final Regimen_VIP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_VIP],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final VIPRegimen:
 // Results
 
         
-define final VIPTreatments:
-    where EtoposideTreatment AND IfosfamideTreatment AND CisplatinTreatment;
+define final Treatment__VIP:
+    where Etoposide_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__VIP AND VIP_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Thymoma
+Known regimen for: Thymoma, Testicular_cancer
 
 
 

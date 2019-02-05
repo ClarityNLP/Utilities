@@ -1,0 +1,452 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Colon cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_colon_cancer:[
+    "carcinoma of the colon", "colon carcinoma", "colon cancer", "colonic carcinoma", "carcinoma of colon"
+];
+
+define final Condition_colon_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_colon_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Irinotecan_monotherapy:[
+    "Irinotecan monotherapy"
+];
+
+define   Regimen_Irinotecan_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Irinotecan_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Folinic_acid:[
+    "Fluorouracil & Folinic acid"
+];
+
+define   Regimen_Fluorouracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx:[
+    "CAPOX", "CapeOX", "CapeOx", "XELOX"
+];
+
+define   Regimen_CapeOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FLOX:[
+    "FLOX"
+];
+
+define   Regimen_FLOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FLOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX4:[
+    "FOLFOX4"
+];
+
+define   Regimen_FOLFOX4:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX4],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFOX6:[
+    "mFOLFOX6"
+];
+
+define   Regimen_mFOLFOX6:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFOX6],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Tegafur_Uracil_Folinic_acid:[
+    "Tegafur, Uracil, Folinic acid", "UFT  &  LV", "UFT  /  LV", "UFT  LV", "UFT  and  LV", "UFT & LV", "UFT + LV", "UFT / LV", "UFTLV"
+];
+
+define   Regimen_Tegafur_Uracil_Folinic_acid:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tegafur_Uracil_Folinic_acid],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI:[
+    "FOLFIRI"
+];
+
+define   Regimen_FOLFIRI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Hepatic_arterial_chemotherapy:[
+    "Hepatic arterial chemotherapy"
+];
+
+define   Regimen_Hepatic_arterial_chemotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hepatic_arterial_chemotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Intraperitoneal_5_FU:[
+    "Intraperitoneal 5-FU"
+];
+
+define   Regimen_Intraperitoneal_5_FU:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Intraperitoneal_5_FU],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Intraperitoneal_hyperthermic_mitomycin:[
+    "Intraperitoneal hyperthermic mitomycin"
+];
+
+define   Regimen_Intraperitoneal_hyperthermic_mitomycin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Intraperitoneal_hyperthermic_mitomycin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_Bevacizumab:[
+    "Capecitabine & Bevacizumab"
+];
+
+define   Regimen_Capecitabine_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CapeOx_Bevacizumab:[
+    "CAPOX-B", "CAPOX/B", "CAPOXB", "CapeOX  and  Bevacizumab", "CapeOX & Bevacizumab", "CapeOX + Bevacizumab", "CapeOX / Bevacizumab", "CapeOX and Bevacizumab", "CapeOX+Bevacizumab", "CapeOX/Bevacizumab", "CapeOx  and  Bevacizumab", "CapeOx & Bevacizumab", "CapeOx + Bevacizumab", "CapeOx / Bevacizumab", "CapeOx and Bevacizumab", "CapeOx+Bevacizumab", "CapeOx/Bevacizumab", "XELOX  and  Bevacizumab", "XELOX & Bevacizumab", "XELOX + Bevacizumab", "XELOX / Bevacizumab", "XELOX and Bevacizumab", "XELOX+Bevacizumab", "XELOX/Bevacizumab"
+];
+
+define   Regimen_CapeOx_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CapeOx_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CAPIRI:[
+    "CAPIRI", "CapeIRI", "XELIRI"
+];
+
+define   Regimen_CAPIRI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CAPIRI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CAPIRI_Bev:[
+    "CAPIRI-Bev", "CAPIRI/Bev", "CAPIRIBev", "XELIRI-Bev", "XELIRI/Bev", "XELIRIBev"
+];
+
+define   Regimen_CAPIRI_Bev:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CAPIRI_Bev],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_monotherapy:[
+    "Fluorouracil monotherapy"
+];
+
+define   Regimen_Fluorouracil_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI_Bevacizumab:[
+    "FOLFIRI & Bevacizumab"
+];
+
+define   Regimen_FOLFIRI_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRINOX:[
+    "FOLFIRINOX", "FOLFOXIRI"
+];
+
+define   Regimen_FOLFIRINOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRINOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRINOX_Bevacizumab:[
+    "FOLFIRINOX & Bevacizumab", "FOLFOXIRI & Bevacizumab"
+];
+
+define   Regimen_FOLFIRINOX_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRINOX_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX2:[
+    "FOLFOX2"
+];
+
+define   Regimen_FOLFOX2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFOX4_Bevacizumab:[
+    "FOLFOX-B", "FOLFOX/B", "FOLFOX4 & Bevacizumab", "FOLFOXB"
+];
+
+define   Regimen_FOLFOX4_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFOX4_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_mFOLFOX6_Bevacizumab:[
+    "FOLFOX-B", "FOLFOX/B", "FOLFOXB", "mFOLFOX6 & Bevacizumab"
+];
+
+define   Regimen_mFOLFOX6_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_mFOLFOX6_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IFL:[
+    "IFL", "mIFL"
+];
+
+define   Regimen_IFL:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IFL],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IFL_Bevacizumab:[
+    "IFL  and  Bevacizumab", "IFL & Bevacizumab", "IFL + Bevacizumab", "IFL / Bevacizumab", "IFL and Bevacizumab", "IFL+Bevacizumab", "IFL/Bevacizumab", "mIFL  and  Bevacizumab", "mIFL & Bevacizumab", "mIFL + Bevacizumab", "mIFL / Bevacizumab", "mIFL and Bevacizumab", "mIFL+Bevacizumab", "mIFL/Bevacizumab"
+];
+
+define   Regimen_IFL_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IFL_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IRIS_Bevacizumab:[
+    "IRIS  and  Bevacizumab", "IRIS & Bevacizumab", "IRIS + Bevacizumab", "IRIS / Bevacizumab", "IRIS and Bevacizumab", "IRIS+Bevacizumab", "IRIS/Bevacizumab"
+];
+
+define   Regimen_IRIS_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IRIS_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IROX:[
+    "IROX"
+];
+
+define   Regimen_IROX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IROX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nordic_FLOX:[
+    "FLOX", "Nordic FLOX"
+];
+
+define   Regimen_Nordic_FLOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nordic_FLOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_OXAFAFU:[
+    "OXAFAFU"
+];
+
+define   Regimen_OXAFAFU:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_OXAFAFU],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_S_1_monotherapy:[
+    "S-1 monotherapy"
+];
+
+define   Regimen_S_1_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_S_1_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_SOX:[
+    "SOX"
+];
+
+define   Regimen_SOX:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_SOX],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI_Ramucirumab:[
+    "FOLFIRI & Ramucirumab"
+];
+
+define   Regimen_FOLFIRI_Ramucirumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Ramucirumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FOLFIRI_Ziv_aflibercept:[
+    "FOLFIRI & Ziv-aflibercept"
+];
+
+define   Regimen_FOLFIRI_Ziv_aflibercept:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FOLFIRI_Ziv_aflibercept],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IRIS:[
+    "IRIS"
+];
+
+define   Regimen_IRIS:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IRIS],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Regorafenib_monotherapy:[
+    "Regorafenib monotherapy"
+];
+
+define   Regimen_Regorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Regorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Trifluridine_and_tipiracil_monotherapy:[
+    "Trifluridine and tipiracil monotherapy"
+];
+
+define   Regimen_Trifluridine_and_tipiracil_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Trifluridine_and_tipiracil_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_colon_cancer:
+    where Bevacizumab_monotherapy_Regimen OR Irinotecan_monotherapy_Regimen OR Capecitabine_monotherapy_Regimen OR Fluorouracil_Folinic_acid_Regimen OR CapeOx_Regimen OR FLOX_Regimen OR FOLFOX4_Regimen OR mFOLFOX6_Regimen OR Tegafur_Uracil_Folinic_acid_Regimen OR FOLFIRI_Regimen OR Hepatic_arterial_chemotherapy_Regimen OR Intraperitoneal_5_FU_Regimen OR Intraperitoneal_hyperthermic_mitomycin_Regimen OR Capecitabine_Bevacizumab_Regimen OR CapeOx_Bevacizumab_Regimen OR CAPIRI_Regimen OR CAPIRI_Bev_Regimen OR Fluorouracil_monotherapy_Regimen OR FOLFIRI_Bevacizumab_Regimen OR FOLFIRINOX_Regimen OR FOLFIRINOX_Bevacizumab_Regimen OR FOLFOX2_Regimen OR FOLFOX4_Bevacizumab_Regimen OR mFOLFOX6_Bevacizumab_Regimen OR IFL_Regimen OR IFL_Bevacizumab_Regimen OR IRIS_Bevacizumab_Regimen OR IROX_Regimen OR Nordic_FLOX_Regimen OR OXAFAFU_Regimen OR S_1_monotherapy_Regimen OR SOX_Regimen OR FOLFIRI_Ramucirumab_Regimen OR FOLFIRI_Ziv_aflibercept_Regimen OR IRIS_Regimen OR Regorafenib_monotherapy_Regimen OR Trifluridine_and_tipiracil_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_colon_cancer AND colon_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

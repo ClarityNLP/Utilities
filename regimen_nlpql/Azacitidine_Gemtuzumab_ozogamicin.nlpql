@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "vidaza", "azacitidine"
 ];
 
-define  AzacitidineTreatment:
+define  Azacitidine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define  GemtuzumabozogamicinTreatment:
+define  Gemtuzumabozogamicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  GemtuzumabozogamicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Azacitidine_Gemtuzumab_ozogamicin:[
     "Azacitidine & Gemtuzumab ozogamicin"
 ];
 
-define final AzacitidineGemtuzumabozogamicinRegimen:
+define final Regimen_Azacitidine_Gemtuzumab_ozogamicin:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Azacitidine_Gemtuzumab_ozogamicin],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final AzacitidineGemtuzumabozogamicinRegimen:
 // Results
 
         
-define final AzacitidineGemtuzumabozogamicinTreatments:
-    where AzacitidineTreatment AND GemtuzumabozogamicinTreatment;
+define final Treatment__AzacitidineGemtuzumabozogamicin:
+    where Azacitidine_Treatment AND Gemtuzumabozogamicin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AzacitidineGemtuzumabozogamicin AND Azacitidine_Gemtuzumab_ozogamicin_Regimen;
         
         
 

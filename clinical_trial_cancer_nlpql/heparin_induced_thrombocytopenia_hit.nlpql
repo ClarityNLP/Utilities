@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Heparin-induced thrombocytopenia (HIT)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_heparin_induced_thrombocytopenia_hit:[
+    "heparin-induced thrombocytopenia (hit)"
+];
+
+define final Condition_heparin_induced_thrombocytopenia_hit:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_heparin_induced_thrombocytopenia_hit],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rivaroxaban_monotherapy:[
+    "Rivaroxaban monotherapy"
+];
+
+define   Regimen_Rivaroxaban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rivaroxaban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Argatroban_monotherapy:[
+    "Argatroban monotherapy"
+];
+
+define   Regimen_Argatroban_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Argatroban_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Danaparoid_monotherapy:[
+    "Danaparoid monotherapy"
+];
+
+define   Regimen_Danaparoid_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Danaparoid_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fondaprinux_monotherapy:[
+    "Fondaprinux monotherapy"
+];
+
+define   Regimen_Fondaprinux_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fondaprinux_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lepirudin_monotherapy:[
+    "Lepirudin monotherapy"
+];
+
+define   Regimen_Lepirudin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lepirudin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_heparin_induced_thrombocytopenia_hit:
+    where Rivaroxaban_monotherapy_Regimen OR Argatroban_monotherapy_Regimen OR Danaparoid_monotherapy_Regimen OR Fondaprinux_monotherapy_Regimen OR Lepirudin_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_heparin_induced_thrombocytopenia_hit AND heparin_induced_thrombocytopenia_hit_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

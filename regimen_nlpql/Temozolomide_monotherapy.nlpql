@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "temodar", "temozolomide"
 ];
 
-define final TemozolomideTreatment:
+define final Temozolomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TemozolomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Temozolomide_monotherapy:[
     "Temozolomide monotherapy"
 ];
 
-define final TemozolomidemonotherapyRegimen:
+define final Regimen_Temozolomide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final TemozolomidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Low-grade_glioma, Anaplastic_glioma, Small_cell_lung_cancer, Pancreatic_NET, Glioblastoma, Neuroendocrine_tumors, Melanoma, Myelodysplastic_syndrome, CNS_lymphoma, Acute_myeloid_leukemia
+Known regimen for: Anaplastic_glioma, CNS_lymphoma, Melanoma, Soft_tissue_sarcoma, Neuroendocrine_tumors, Small_cell_lung_cancer, Acute_myeloid_leukemia, Low-grade_glioma, Glioblastoma, Pancreatic_NET, Myelodysplastic_syndrome
 
 
 

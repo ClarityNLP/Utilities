@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Rhabdomyosarcoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_rhabdomyosarcoma:[
+    "rhabdomyosarcoma", "rhabdomyosarcoma, malignant", "rhabdomyosarcoma (reni)", "pediatric rhabdomyosarcoma", "rhabdomyosarcoma, nos", "childhood rhabdomyosarcoma", "rat rhabdomyosarcoma", "mouse rhabdomyosarcoma", "adult rhabdomyosarcoma"
+];
+
+define final Condition_rhabdomyosarcoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_rhabdomyosarcoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_VAI:[
+    "IVA", "VAI"
+];
+
+define   Regimen_VAI:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAI],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VA:[
+    "VA"
+];
+
+define   Regimen_VA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VAC:[
+    "VAC"
+];
+
+define   Regimen_VAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VIE:[
+    "VIE"
+];
+
+define   Regimen_VIE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VIE],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_rhabdomyosarcoma:
+    where VAI_Regimen OR VA_Regimen OR VAC_Regimen OR VIE_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_rhabdomyosarcoma AND rhabdomyosarcoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

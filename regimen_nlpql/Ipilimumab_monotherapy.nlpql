@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "yervoy", "ipilimumab"
 ];
 
-define final IpilimumabTreatment:
+define final Ipilimumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IpilimumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ipilimumab_monotherapy:[
     "Ipilimumab monotherapy"
 ];
 
-define final IpilimumabmonotherapyRegimen:
+define final Regimen_Ipilimumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ipilimumab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final IpilimumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Melanoma, Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Melanoma, Non-small_cell_lung_cancer, Small_cell_lung_cancer
 
 
 

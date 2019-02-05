@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "cytosar", "cytarabine"
 ];
 
-define  CytarabineTreatment:
+define  Cytarabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  MethotrexateTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_CYM:[
     "CYM"
 ];
 
-define final CYMRegimen:
+define final Regimen_CYM:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_CYM],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CYMRegimen:
 // Results
 
         
-define final CYMTreatments:
-    where CytarabineTreatment AND MethotrexateTreatment;
+define final Treatment__CYM:
+    where Cytarabine_Treatment AND Methotrexate_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CYM AND CYM_Regimen;
         
         
 

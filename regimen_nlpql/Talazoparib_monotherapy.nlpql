@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "talzenna", "talazoparib"
 ];
 
-define final TalazoparibTreatment:
+define final Talazoparib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TalazoparibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Talazoparib_monotherapy:[
     "Talazoparib monotherapy"
 ];
 
-define final TalazoparibmonotherapyRegimen:
+define final Regimen_Talazoparib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Talazoparib_monotherapy],
     documentset:[Docs]
    }); 
 

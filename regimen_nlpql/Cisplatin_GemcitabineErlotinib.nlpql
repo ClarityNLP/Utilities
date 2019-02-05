@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "tarceva", "erlotinib"
 ];
 
-define  ErlotinibTreatment:
+define  Erlotinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ErlotinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_GemcitabineErlotinib:[
     "Cisplatin & Gemcitabine/Erlotinib"
 ];
 
-define final CisplatinGemcitabineErlotinibRegimen:
+define final Regimen_Cisplatin_GemcitabineErlotinib:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_GemcitabineErlotinib],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CisplatinGemcitabineErlotinibRegimen:
 // Results
 
         
-define final CisplatinGemcitabineErlotinibTreatments:
-    where CisplatinTreatment AND GemcitabineTreatment AND ErlotinibTreatment;
+define final Treatment__CisplatinGemcitabineErlotinib:
+    where Cisplatin_Treatment AND Gemcitabine_Treatment AND Erlotinib_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinGemcitabineErlotinib AND Cisplatin_GemcitabineErlotinib_Regimen;
         
         
 

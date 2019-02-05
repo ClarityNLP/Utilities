@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define  FluorouracilTreatment:
+define  Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "leucovorin", "folinic acid"
 ];
 
-define  FolinicacidTreatment:
+define  Folinicacid_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "eloxatin", "oxaliplatin"
 ];
 
-define  OxaliplatinTreatment:
+define  Oxaliplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  OxaliplatinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_FOLFOX4:[
     "FOLFOX4"
 ];
 
-define final FOLFOX4Regimen:
+define final Regimen_FOLFOX4:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_FOLFOX4],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final FOLFOX4Regimen:
 // Results
 
         
-define final FOLFOX4Treatments:
-    where FluorouracilTreatment AND FolinicacidTreatment AND OxaliplatinTreatment;
+define final Treatment__FOLFOX4:
+    where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__FOLFOX4 AND FOLFOX4_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Hepatocellular_carcinoma, Colon_cancer
+Known regimen for: Hepatocellular_carcinoma, Esophageal_cancer, Colon_cancer
 
 
 

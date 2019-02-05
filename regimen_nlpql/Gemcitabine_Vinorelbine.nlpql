@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "navelbine", "vinorelbine"
 ];
 
-define  VinorelbineTreatment:
+define  Vinorelbine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  VinorelbineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gemcitabine_Vinorelbine:[
     "Gemcitabine & Vinorelbine"
 ];
 
-define final GemcitabineVinorelbineRegimen:
+define final Regimen_Gemcitabine_Vinorelbine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gemcitabine_Vinorelbine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final GemcitabineVinorelbineRegimen:
 // Results
 
         
-define final GemcitabineVinorelbineTreatments:
-    where GemcitabineTreatment AND VinorelbineTreatment;
+define final Treatment__GemcitabineVinorelbine:
+    where Gemcitabine_Treatment AND Vinorelbine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GemcitabineVinorelbine AND Gemcitabine_Vinorelbine_Regimen;
         
         
 

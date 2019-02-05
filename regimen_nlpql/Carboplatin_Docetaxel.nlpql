@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "paraplatin", "carboplatin"
 ];
 
-define  CarboplatinTreatment:
+define  Carboplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxotere", "docetaxel"
 ];
 
-define  DocetaxelTreatment:
+define  Docetaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  DocetaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carboplatin_Docetaxel:[
     "Carboplatin & Docetaxel"
 ];
 
-define final CarboplatinDocetaxelRegimen:
+define final Regimen_Carboplatin_Docetaxel:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carboplatin_Docetaxel],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CarboplatinDocetaxelRegimen:
 // Results
 
         
-define final CarboplatinDocetaxelTreatments:
-    where CarboplatinTreatment AND DocetaxelTreatment;
+define final Treatment__CarboplatinDocetaxel:
+    where Carboplatin_Treatment AND Docetaxel_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CarboplatinDocetaxel AND Carboplatin_Docetaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Prostate_cancer, Adenocarcinoma_of_unknown_primary, Non-small_cell_lung_cancer, Breast_cancer_triple_negative, Ovarian_cancer, Cervical_cancer, Head_and_neck_cancer
+Known regimen for: Ovarian_cancer, Prostate_cancer, Breast_cancer_triple_negative, Head_and_neck_cancer, Cervical_cancer, Non-small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary
 
 
 

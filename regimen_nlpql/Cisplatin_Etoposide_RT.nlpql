@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "vepesid", "etoposide"
 ];
 
-define  EtoposideTreatment:
+define  Etoposide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Etoposide_RT:[
     "Cisplatin, Etoposide, RT", "EP  and  RT", "EP & RT", "EP + RT", "EP / RT", "EP and RT", "EP+RT", "EP/RT", "EPRT"
 ];
 
-define final CisplatinEtoposideRTRegimen:
+define final Regimen_Cisplatin_Etoposide_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Etoposide_RT],
     documentset:[Docs]
    }); 
 
@@ -64,17 +64,18 @@ define final CisplatinEtoposideRTRegimen:
 // Results
 
         
-define final CisplatinEtoposideRTTreatments:
-    where CisplatinTreatment AND EtoposideTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__CisplatinEtoposideRT:
+    where Cisplatin_Treatment AND Etoposide_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinEtoposideRT AND Cisplatin_Etoposide_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer
 
 
 

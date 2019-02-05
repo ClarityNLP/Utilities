@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "sterapred", "prednisone"
 ];
 
-define final PrednisoneTreatment:
+define final Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Prednisone_monotherapy:[
     "Prednisone monotherapy"
 ];
 
-define final PrednisonemonotherapyRegimen:
+define final Regimen_Prednisone_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Prednisone_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final PrednisonemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Immune_thrombocytopenia_(ITP), Acquired_coagulopathy, Myelofibrosis
+Known regimen for: Acquired_coagulopathy, Myelofibrosis, Immune_thrombocytopenia_(ITP)
 
 
 

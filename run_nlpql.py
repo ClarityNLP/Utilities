@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 188
+cur_job = 213
 viewed_jobs = list()
 
 ip = '18.220.133.76'
@@ -33,7 +33,7 @@ def run_nlpql(i, filename='query'):
     print('opening file ', filepath)
     with open(filepath, "r") as file:
         nlpql = file.read()
-        sleepy_time = 30
+        sleepy_time = 60
 
         res = requests.post(nlpql_url, data=nlpql, headers={'content-type': 'text/plain'})
         if res.ok:
@@ -102,11 +102,12 @@ if __name__ == "__main__":
                 job_runner(n, f)
             n += 1
     else:
-        startid = 1410
+        startid = 1711
         for n in range(startid, startid + 100):
-            patient_count = has_data(n)
-            if patient_count == 0:
-                cleanup(n)
-            else:
-                print("job {} has {} patients".format(n, patient_count))
+            cleanup(n)
+            # patient_count = has_data(n)
+            # if patient_count == 0:
+            #     cleanup(n)
+            # else:
+            #     print("job {} has {} patients".format(n, patient_count))
 

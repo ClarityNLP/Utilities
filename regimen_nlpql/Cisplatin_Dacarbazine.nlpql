@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "dtic", "dacarbazine"
 ];
 
-define  DacarbazineTreatment:
+define  Dacarbazine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  DacarbazineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_Dacarbazine:[
     "Cisplatin & Dacarbazine"
 ];
 
-define final CisplatinDacarbazineRegimen:
+define final Regimen_Cisplatin_Dacarbazine:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_Dacarbazine],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CisplatinDacarbazineRegimen:
 // Results
 
         
-define final CisplatinDacarbazineTreatments:
-    where CisplatinTreatment AND DacarbazineTreatment;
+define final Treatment__CisplatinDacarbazine:
+    where Cisplatin_Treatment AND Dacarbazine_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinDacarbazine AND Cisplatin_Dacarbazine_Regimen;
         
         
 

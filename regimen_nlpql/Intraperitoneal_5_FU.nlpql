@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for Intraperitoneal 5-FU" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "5-fu", "fluorouracil"
+];
+
+define  Fluorouracil_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "leucovorin", "folinic acid"
+];
+
+define  Folinicacid_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Intraperitoneal_5_FU:[
+    "Intraperitoneal 5-FU"
+];
+
+define final Regimen_Intraperitoneal_5_FU:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Intraperitoneal_5_FU],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__Intraperitoneal5FU:
+    where Fluorouracil_Treatment AND Folinicacid_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__Intraperitoneal5FU AND Intraperitoneal_5_FU_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Colon_cancer
+
+
+
+
+***/
+ 

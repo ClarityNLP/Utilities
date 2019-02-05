@@ -1,0 +1,276 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Renal cell carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_renal_cell_carcinoma:[
+    "adenocarcinoma of kidney", "renal cell cancer", "kidney adenocarcinoma", "carcinoma, renal cell, malignant", "renal cell carcinoma, stage unspecified", "adenocarcinoma of the kidney", "renal cell adenocarcinoma", "renal cell carcinoma", "renal cell carcinoma, nos", "rcc"
+];
+
+define final Condition_renal_cell_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_renal_cell_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_Bevacizumab:[
+    "Erlotinib & Bevacizumab"
+];
+
+define   Regimen_Erlotinib_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Nivolumab_monotherapy:[
+    "Nivolumab monotherapy"
+];
+
+define   Regimen_Nivolumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Nivolumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temsirolimus_monotherapy:[
+    "Temsirolimus monotherapy"
+];
+
+define   Regimen_Temsirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temsirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Regorafenib_monotherapy:[
+    "Regorafenib monotherapy"
+];
+
+define   Regimen_Regorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Regorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Erlotinib_monotherapy:[
+    "Erlotinib monotherapy"
+];
+
+define   Regimen_Erlotinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Erlotinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pazopanib_monotherapy:[
+    "Pazopanib monotherapy"
+];
+
+define   Regimen_Pazopanib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pazopanib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Sunitinib_monotherapy:[
+    "Sunitinib monotherapy"
+];
+
+define   Regimen_Sunitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sunitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenvatinib_monotherapy:[
+    "Lenvatinib monotherapy"
+];
+
+define   Regimen_Lenvatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenvatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cabozantinib_monotherapy:[
+    "Cabozantinib monotherapy"
+];
+
+define   Regimen_Cabozantinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cabozantinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2a_monotherapy:[
+    "Interferon alfa-2a monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2a_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2a_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_monotherapy:[
+    "HDI", "Interferon alfa-2b monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2b_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_High_dose_Interleukin_2:[
+    "HD IL-2", "HD IL/2", "HD IL2", "HDIL2", "High-dose Interleukin-2"
+];
+
+define   Regimen_High_dose_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_High_dose_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Low_dose_Interleukin_2:[
+    "LD IL-2", "LD IL/2", "LD IL2", "LDIL2", "Low-dose Interleukin-2"
+];
+
+define   Regimen_Low_dose_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Low_dose_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Axitinib_monotherapy:[
+    "Axitinib monotherapy"
+];
+
+define   Regimen_Axitinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Axitinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Doxorubicin_Gemcitabine:[
+    "Doxorubicin & Gemcitabine"
+];
+
+define   Regimen_Doxorubicin_Gemcitabine:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Doxorubicin_Gemcitabine],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_Sunitinib:[
+    "Gemcitabine & Sunitinib"
+];
+
+define   Regimen_Gemcitabine_Sunitinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_Sunitinib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2a_Interleukin_2:[
+    "Interferon alfa-2a & Interleukin-2"
+];
+
+define   Regimen_Interferon_alfa_2a_Interleukin_2:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2a_Interleukin_2],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_Lenvatinib:[
+    "Everolimus & Lenvatinib"
+];
+
+define   Regimen_Everolimus_Lenvatinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_Lenvatinib],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_renal_cell_carcinoma:
+    where Sorafenib_monotherapy_Regimen OR Erlotinib_Bevacizumab_Regimen OR Nivolumab_monotherapy_Regimen OR Bevacizumab_monotherapy_Regimen OR Temsirolimus_monotherapy_Regimen OR Regorafenib_monotherapy_Regimen OR Everolimus_monotherapy_Regimen OR Erlotinib_monotherapy_Regimen OR Pazopanib_monotherapy_Regimen OR Sunitinib_monotherapy_Regimen OR Lenvatinib_monotherapy_Regimen OR Cabozantinib_monotherapy_Regimen OR Interferon_alfa_2a_monotherapy_Regimen OR Interferon_alfa_2b_monotherapy_Regimen OR High_dose_Interleukin_2_Regimen OR Low_dose_Interleukin_2_Regimen OR Axitinib_monotherapy_Regimen OR Doxorubicin_Gemcitabine_Regimen OR Gemcitabine_Sunitinib_Regimen OR Interferon_alfa_2a_Interleukin_2_Regimen OR Everolimus_Lenvatinib_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_renal_cell_carcinoma AND renal_cell_carcinoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

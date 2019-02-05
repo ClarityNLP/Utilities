@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "yervoy", "ipilimumab"
 ];
 
-define  IpilimumabTreatment:
+define  Ipilimumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "opdivo", "nivolumab"
 ];
 
-define  NivolumabTreatment:
+define  Nivolumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  NivolumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ipilimumab_Nivolumab:[
     "Ipilimumab & Nivolumab"
 ];
 
-define final IpilimumabNivolumabRegimen:
+define final Regimen_Ipilimumab_Nivolumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ipilimumab_Nivolumab],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final IpilimumabNivolumabRegimen:
 // Results
 
         
-define final IpilimumabNivolumabTreatments:
-    where IpilimumabTreatment AND NivolumabTreatment;
+define final Treatment__IpilimumabNivolumab:
+    where Ipilimumab_Treatment AND Nivolumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__IpilimumabNivolumab AND Ipilimumab_Nivolumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Melanoma, Small_cell_lung_cancer, Non-small_cell_lung_cancer
+Known regimen for: Melanoma, Non-small_cell_lung_cancer, Small_cell_lung_cancer
 
 
 

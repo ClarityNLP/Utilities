@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gemzar", "gemcitabine"
 ];
 
-define  GemcitabineTreatment:
+define  Gemcitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "navelbine", "vinorelbine"
 ];
 
-define  VinorelbineTreatment:
+define  Vinorelbine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "millipred", "prednisolone"
 ];
 
-define  PrednisoloneTreatment:
+define  Prednisolone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PrednisoloneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_GVP:[
     "GVP"
 ];
 
-define final GVPRegimen:
+define final Regimen_GVP:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_GVP],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final GVPRegimen:
 // Results
 
         
-define final GVPTreatments:
-    where GemcitabineTreatment AND VinorelbineTreatment AND PrednisoloneTreatment;
+define final Treatment__GVP:
+    where Gemcitabine_Treatment AND Vinorelbine_Treatment AND Prednisolone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__GVP AND GVP_Regimen;
         
         
 

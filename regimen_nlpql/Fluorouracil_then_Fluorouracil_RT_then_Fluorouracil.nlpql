@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "5-fu", "fluorouracil"
 ];
 
-define final FluorouracilTreatment:
+define final Fluorouracil_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final FluorouracilTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil:[
     "Fluorouracil, then Fluorouracil & RT, then Fluorouracil"
 ];
 
-define final FluorouracilthenFluorouracilRTthenFluorouracilRegimen:
+define final Regimen_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Fluorouracil_then_Fluorouracil_RT_then_Fluorouracil],
     documentset:[Docs]
    }); 
 

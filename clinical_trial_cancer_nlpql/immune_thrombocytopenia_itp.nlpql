@@ -1,0 +1,177 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Immune thrombocytopenia (ITP)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_immune_thrombocytopenia_itp:[
+    "immune thrombocytopenia (itp)"
+];
+
+define final Condition_immune_thrombocytopenia_itp:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_immune_thrombocytopenia_itp],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Prednisone_monotherapy:[
+    "Prednisone monotherapy"
+];
+
+define   Regimen_Prednisone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Prednisone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cyclosporine_monotherapy:[
+    "Cyclosporine monotherapy"
+];
+
+define   Regimen_Cyclosporine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cyclosporine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dexamethasone_monotherapy:[
+    "Dexamethasone monotherapy"
+];
+
+define   Regimen_Dexamethasone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dexamethasone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dexamethasone_Eltrombopag:[
+    "Dexamethasone & Eltrombopag"
+];
+
+define   Regimen_Dexamethasone_Eltrombopag:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dexamethasone_Eltrombopag],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Dexamethasone_Rituximab:[
+    "Dexamethasone & Rituximab"
+];
+
+define   Regimen_Dexamethasone_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dexamethasone_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Intravenous_immunoglobuin_monotherapy:[
+    "IVIG", "Intravenous immunoglobuin monotherapy"
+];
+
+define   Regimen_Intravenous_immunoglobuin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Intravenous_immunoglobuin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RhIG_monotherapy:[
+    "RhIG", "RhIG monotherapy"
+];
+
+define   Regimen_RhIG_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RhIG_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TT4:[
+    "TT4"
+];
+
+define   Regimen_TT4:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TT4],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ATRA_Danazol:[
+    "ATRA  and  Danazol", "ATRA & Danazol", "ATRA + Danazol", "ATRA / Danazol", "ATRA and Danazol", "ATRA+Danazol", "ATRA/Danazol"
+];
+
+define   Regimen_ATRA_Danazol:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ATRA_Danazol],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fostamatinib_monotherapy:[
+    "Fostamatinib monotherapy"
+];
+
+define   Regimen_Fostamatinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fostamatinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mycophenolate_mofetil_monotherapy:[
+    "Mycophenolate mofetil monotherapy"
+];
+
+define   Regimen_Mycophenolate_mofetil_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mycophenolate_mofetil_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_immune_thrombocytopenia_itp:
+    where Prednisone_monotherapy_Regimen OR Rituximab_monotherapy_Regimen OR Cyclosporine_monotherapy_Regimen OR Dexamethasone_monotherapy_Regimen OR Dexamethasone_Eltrombopag_Regimen OR Dexamethasone_Rituximab_Regimen OR Intravenous_immunoglobuin_monotherapy_Regimen OR RhIG_monotherapy_Regimen OR TT4_Regimen OR ATRA_Danazol_Regimen OR Fostamatinib_monotherapy_Regimen OR Mycophenolate_mofetil_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_immune_thrombocytopenia_itp AND immune_thrombocytopenia_itp_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

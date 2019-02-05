@@ -1,0 +1,529 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Diffuse large B-cell lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_diffuse_large_b_cell_lymphoma:[
+    "childhood diffuse large b-cell lymphoma", "pediatric diffuse large b cell lymphoma", "diffuse large b-cell lymphoma", "adult diffuse large b-cell lymphoma", "dlbcl", "childhood dlbcl"
+];
+
+define final Condition_diffuse_large_b_cell_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_diffuse_large_b_cell_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Etoposide_monotherapy:[
+    "Etoposide monotherapy"
+];
+
+define   Regimen_Etoposide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Etoposide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_monotherapy:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define   Regimen_Brentuximab_vedotin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_monotherapy:[
+    "Bendamustine monotherapy"
+];
+
+define   Regimen_Bendamustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gemcitabine_monotherapy:[
+    "Gemcitabine monotherapy"
+];
+
+define   Regimen_Gemcitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gemcitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ifosfamide_monotherapy:[
+    "Ifosfamide monotherapy"
+];
+
+define   Regimen_Ifosfamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vinorelbine_monotherapy:[
+    "Vinorelbine monotherapy"
+];
+
+define   Regimen_Vinorelbine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vinorelbine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BR:[
+    "BR", "R-B", "R/B"
+];
+
+define   Regimen_BR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ibrutinib_monotherapy:[
+    "Ibrutinib monotherapy"
+];
+
+define   Regimen_Ibrutinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ibrutinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Obinutuzumab_monotherapy:[
+    "Obinutuzumab monotherapy"
+];
+
+define   Regimen_Obinutuzumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Obinutuzumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lenalidomide_Rituximab:[
+    "Lenalidomide & Rituximab"
+];
+
+define   Regimen_Lenalidomide_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Ofatumumab_monotherapy:[
+    "Ofatumumab monotherapy"
+];
+
+define   Regimen_Ofatumumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Ofatumumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Vincristine_Prednisone:[
+    "Vincristine & Prednisone"
+];
+
+define   Regimen_Vincristine_Prednisone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Vincristine_Prednisone],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Temsirolimus_monotherapy:[
+    "Temsirolimus monotherapy"
+];
+
+define   Regimen_Temsirolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temsirolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ACVBP_R:[
+    "ACVBP-R", "ACVBP/R", "ACVBPR", "R-ACVBP", "R/ACVBP", "RACVBP"
+];
+
+define   Regimen_ACVBP_R:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ACVBP_R],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_R_EPOCH:[
+    "DA-R-EPOCH", "DA/R/EPOCH", "DAREPOCH"
+];
+
+define   Regimen_DA_R_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_R_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOEP_14:[
+    "R-CHOEP-14", "R/CHOEP/14", "RCHOEP14"
+];
+
+define   Regimen_R_CHOEP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOEP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOP:[
+    "CHOP-R", "CHOP/R", "CHOPR", "R-CHOP", "R-CHOP-21", "R/CHOP", "R/CHOP/21", "RCHOP", "RCHOP21"
+];
+
+define   Regimen_R_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOP_14:[
+    "R-CHOP-14", "R/CHOP/14", "RCHOP14"
+];
+
+define   Regimen_R_CHOP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_MegaCHOP_14:[
+    "R-MegaCHOP-14"
+];
+
+define   Regimen_R_MegaCHOP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_MegaCHOP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_miniCEOP:[
+    "R-miniCEOP", "R/miniCEOP", "RminiCEOP"
+];
+
+define   Regimen_R_miniCEOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_miniCEOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_O_miniCHOP:[
+    "O-miniCHOP", "O/miniCHOP", "OminiCHOP"
+];
+
+define   Regimen_O_miniCHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_O_miniCHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_BL:[
+    "R-BL", "R/BL", "RBL"
+];
+
+define   Regimen_R_BL:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_BL],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CDOP:[
+    "DRCOP", "R-CDOP", "R/CDOP", "RCDOP"
+];
+
+define   Regimen_R_CDOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CDOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CEOP90_Epirubicin:[
+    "R-CEOP90", "R-CEOP90 (Epirubicin)", "R/CEOP90", "RCEOP90"
+];
+
+define   Regimen_R_CEOP90_Epirubicin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CEOP90_Epirubicin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_RICER:[
+    "RICER"
+];
+
+define   Regimen_RICER:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_RICER],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_IFE:[
+    "R-IFE", "R/IFE", "RIFE"
+];
+
+define   Regimen_R_IFE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_IFE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_NIMP:[
+    "R-NIMP", "R/NIMP", "RNIMP"
+];
+
+define   Regimen_R_NIMP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_NIMP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Axicabtagene_ciloleucel_monotherapy:[
+    "Axicabtagene ciloleucel monotherapy"
+];
+
+define   Regimen_Axicabtagene_ciloleucel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Axicabtagene_ciloleucel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Blinatumomab_monotherapy:[
+    "Blinatumomab monotherapy"
+];
+
+define   Regimen_Blinatumomab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Blinatumomab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_Rituximab:[
+    "Everolimus & Rituximab"
+];
+
+define   Regimen_Everolimus_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GVD:[
+    "GVD"
+];
+
+define   Regimen_GVD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GVD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mitoxantrone_monotherapy:[
+    "Mitoxantrone monotherapy"
+];
+
+define   Regimen_Mitoxantrone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mitoxantrone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Oxaliplatin_monotherapy:[
+    "Oxaliplatin monotherapy"
+];
+
+define   Regimen_Oxaliplatin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Oxaliplatin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Panobinostat_monotherapy:[
+    "Panobinostat monotherapy"
+];
+
+define   Regimen_Panobinostat_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Panobinostat_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Panobinostat_Rituximab:[
+    "Panobinostat & Rituximab"
+];
+
+define   Regimen_Panobinostat_Rituximab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Panobinostat_Rituximab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pixantrone_monotherapy:[
+    "Pixantrone monotherapy"
+];
+
+define   Regimen_Pixantrone_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pixantrone_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CVEP:[
+    "R-CVEP", "R/CVEP", "RCVEP"
+];
+
+define   Regimen_R_CVEP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CVEP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_GemOx:[
+    "R-GemOx", "R/GemOx", "RGemOx"
+];
+
+define   Regimen_R_GemOx:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_GemOx],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_INO:[
+    "R-INO", "R/INO", "RINO"
+];
+
+define   Regimen_R_INO:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_INO],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Tisagenlecleucel_monotherapy:[
+    "Tisagenlecleucel monotherapy"
+];
+
+define   Regimen_Tisagenlecleucel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tisagenlecleucel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TTR:[
+    "TTR"
+];
+
+define   Regimen_TTR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TTR],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_diffuse_large_b_cell_lymphoma:
+    where Rituximab_monotherapy_Regimen OR Lenalidomide_monotherapy_Regimen OR Etoposide_monotherapy_Regimen OR Brentuximab_vedotin_monotherapy_Regimen OR Bendamustine_monotherapy_Regimen OR Gemcitabine_monotherapy_Regimen OR Ifosfamide_monotherapy_Regimen OR Vinorelbine_monotherapy_Regimen OR BR_Regimen OR Ibrutinib_monotherapy_Regimen OR Obinutuzumab_monotherapy_Regimen OR Lenalidomide_Rituximab_Regimen OR Ofatumumab_monotherapy_Regimen OR Vincristine_Prednisone_Regimen OR Temsirolimus_monotherapy_Regimen OR ACVBP_R_Regimen OR DA_R_EPOCH_Regimen OR R_CHOEP_14_Regimen OR R_CHOP_Regimen OR R_CHOP_14_Regimen OR R_MegaCHOP_14_Regimen OR R_miniCEOP_Regimen OR O_miniCHOP_Regimen OR R_BL_Regimen OR R_CDOP_Regimen OR R_CEOP90_Epirubicin_Regimen OR RICER_Regimen OR R_IFE_Regimen OR R_NIMP_Regimen OR Axicabtagene_ciloleucel_monotherapy_Regimen OR Blinatumomab_monotherapy_Regimen OR Everolimus_monotherapy_Regimen OR Everolimus_Rituximab_Regimen OR GVD_Regimen OR Mitoxantrone_monotherapy_Regimen OR Oxaliplatin_monotherapy_Regimen OR Panobinostat_monotherapy_Regimen OR Panobinostat_Rituximab_Regimen OR Pixantrone_monotherapy_Regimen OR R_CVEP_Regimen OR R_GemOx_Regimen OR R_INO_Regimen OR Tisagenlecleucel_monotherapy_Regimen OR TTR_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_diffuse_large_b_cell_lymphoma AND diffuse_large_b_cell_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

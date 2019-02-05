@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "adriamycin", "doxorubicin"
 ];
 
-define  DoxorubicinTreatment:
+define  Doxorubicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "cytoxan", "cyclophosphamide"
 ];
 
-define  CyclophosphamideTreatment:
+define  Cyclophosphamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "avastin", "bevacizumab"
 ];
 
-define  BevacizumabTreatment:
+define  Bevacizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  BevacizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_AC_Bevacizumab:[
     "AC  and  Bevacizumab", "AC & Bev", "AC & Bevacizumab", "AC + Bevacizumab", "AC / Bev", "AC / Bevacizumab", "AC and Bev", "AC and Bevacizumab", "AC&Bev", "AC+Bev", "AC+Bevacizumab", "AC/Bev", "AC/Bevacizumab", "ACBev"
 ];
 
-define final ACBevacizumabRegimen:
+define final Regimen_AC_Bevacizumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_AC_Bevacizumab],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final ACBevacizumabRegimen:
 // Results
 
         
-define final ACBevacizumabTreatments:
-    where DoxorubicinTreatment AND CyclophosphamideTreatment AND BevacizumabTreatment;
+define final Treatment__ACBevacizumab:
+    where Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Bevacizumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__ACBevacizumab AND AC_Bevacizumab_Regimen;
         
         
 

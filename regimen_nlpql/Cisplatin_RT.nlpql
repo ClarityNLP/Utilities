@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "platinol", "cisplatin"
 ];
 
-define  CisplatinTreatment:
+define  Cisplatin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cisplatin_RT:[
     "Cisplatin  and  RT", "Cisplatin & RT", "Cisplatin + RT", "Cisplatin / RT", "Cisplatin and RT", "Cisplatin+RT", "Cisplatin/RT"
 ];
 
-define final CisplatinRTRegimen:
+define final Regimen_Cisplatin_RT:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cisplatin_RT],
     documentset:[Docs]
    }); 
 
@@ -53,17 +53,18 @@ define final CisplatinRTRegimen:
 // Results
 
         
-define final CisplatinRTTreatments:
-    where CisplatinTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__CisplatinRT:
+    where Cisplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CisplatinRT AND Cisplatin_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Bladder_cancer, Extranodal_NKT-cell_lymphoma_nasal_type, Non-small_cell_lung_cancer, Cervical_cancer, Head_and_neck_cancer, Vulvar_cancer, Nasopharyngeal_carcinoma
+Known regimen for: Head_and_neck_cancer, Vulvar_cancer, Cervical_cancer, Nasopharyngeal_carcinoma, Extranodal_NKT-cell_lymphoma_nasal_type, Non-small_cell_lung_cancer, Bladder_cancer
 
 
 

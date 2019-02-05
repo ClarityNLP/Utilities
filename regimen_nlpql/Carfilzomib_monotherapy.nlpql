@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "kyprolis", "carfilzomib"
 ];
 
-define final CarfilzomibTreatment:
+define final Carfilzomib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CarfilzomibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Carfilzomib_monotherapy:[
     "Carfilzomib monotherapy"
 ];
 
-define final CarfilzomibmonotherapyRegimen:
+define final Regimen_Carfilzomib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Carfilzomib_monotherapy],
     documentset:[Docs]
    }); 
 

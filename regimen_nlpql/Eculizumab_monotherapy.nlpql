@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "soliris", "eculizumab"
 ];
 
-define final EculizumabTreatment:
+define final Eculizumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final EculizumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Eculizumab_monotherapy:[
     "Eculizumab monotherapy"
 ];
 
-define final EculizumabmonotherapyRegimen:
+define final Regimen_Eculizumab_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Eculizumab_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final EculizumabmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Paroxysmal_nocturnal_hemoglobinuria_(PNH), Cold_agglutinin_disease, Atypical_hemolytic-uremic_syndrome_(aHUS)
+Known regimen for: Atypical_hemolytic-uremic_syndrome_(aHUS), Paroxysmal_nocturnal_hemoglobinuria_(PNH), Cold_agglutinin_disease
 
 
 

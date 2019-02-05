@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "tykerb", "lapatinib"
 ];
 
-define  LapatinibTreatment:
+define  Lapatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "herceptin", "trastuzumab"
 ];
 
-define  TrastuzumabTreatment:
+define  Trastuzumab_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  TrastuzumabTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Lapatinib_Trastuzumab:[
     "Lapatinib & Trastuzumab"
 ];
 
-define final LapatinibTrastuzumabRegimen:
+define final Regimen_Lapatinib_Trastuzumab:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Lapatinib_Trastuzumab],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final LapatinibTrastuzumabRegimen:
 // Results
 
         
-define final LapatinibTrastuzumabTreatments:
-    where LapatinibTreatment AND TrastuzumabTreatment;
+define final Treatment__LapatinibTrastuzumab:
+    where Lapatinib_Treatment AND Trastuzumab_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__LapatinibTrastuzumab AND Lapatinib_Trastuzumab_Regimen;
         
         
 

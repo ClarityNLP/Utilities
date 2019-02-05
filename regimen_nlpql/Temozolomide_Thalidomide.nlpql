@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "temodar", "temozolomide"
 ];
 
-define  TemozolomideTreatment:
+define  Temozolomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "thalomid", "thalidomide"
 ];
 
-define  ThalidomideTreatment:
+define  Thalidomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ThalidomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Temozolomide_Thalidomide:[
     "Temozolomide & Thalidomide"
 ];
 
-define final TemozolomideThalidomideRegimen:
+define final Regimen_Temozolomide_Thalidomide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Temozolomide_Thalidomide],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final TemozolomideThalidomideRegimen:
 // Results
 
         
-define final TemozolomideThalidomideTreatments:
-    where TemozolomideTreatment AND ThalidomideTreatment;
+define final Treatment__TemozolomideThalidomide:
+    where Temozolomide_Treatment AND Thalidomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__TemozolomideThalidomide AND Temozolomide_Thalidomide_Regimen;
         
         
 

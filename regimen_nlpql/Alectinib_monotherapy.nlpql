@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alecensa", "alectinib"
 ];
 
-define final AlectinibTreatment:
+define final Alectinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AlectinibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Alectinib_monotherapy:[
     "Alectinib monotherapy"
 ];
 
-define final AlectinibmonotherapyRegimen:
+define final Regimen_Alectinib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Alectinib_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final AlectinibmonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: CNS_carcinoma, Non-small_cell_lung_cancer_ALK-positive
+Known regimen for: Non-small_cell_lung_cancer_ALK-positive, CNS_carcinoma
 
 
 

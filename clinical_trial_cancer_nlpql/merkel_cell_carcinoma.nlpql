@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Merkel cell carcinoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_merkel_cell_carcinoma:[
+    "trabecular skin carcinoma", "merkel cell tumor", "cutaneous neuroendocrine carcinoma", "merkel cell carcinoma", "neuroendocrine skin carcinoma", "trabecular cancer", "neuroendocrine carcinoma of the skin", "cutaneous apudoma", "merkel cell cancer", "neuroendocrine carcinoma of skin"
+];
+
+define final Condition_merkel_cell_carcinoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_merkel_cell_carcinoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Pembrolizumab_monotherapy:[
+    "Pembrolizumab monotherapy"
+];
+
+define   Regimen_Pembrolizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pembrolizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

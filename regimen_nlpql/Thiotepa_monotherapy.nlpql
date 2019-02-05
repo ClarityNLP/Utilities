@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "thioplex", "thiotepa"
 ];
 
-define final ThiotepaTreatment:
+define final Thiotepa_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final ThiotepaTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Thiotepa_monotherapy:[
     "Thiotepa monotherapy"
 ];
 
-define final ThiotepamonotherapyRegimen:
+define final Regimen_Thiotepa_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Thiotepa_monotherapy],
     documentset:[Docs]
    }); 
 

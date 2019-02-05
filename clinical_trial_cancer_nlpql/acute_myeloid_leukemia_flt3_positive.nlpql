@@ -1,0 +1,111 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Acute myeloid leukemia FLT3-positive" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_acute_myeloid_leukemia_flt3_positive:[
+    "acute myeloid leukemia flt3-positive"
+];
+
+define final Condition_acute_myeloid_leukemia_flt3_positive:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_acute_myeloid_leukemia_flt3_positive],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Sorafenib_monotherapy:[
+    "Sorafenib monotherapy"
+];
+
+define   Regimen_Sorafenib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Sorafenib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_73d_Sorafenib:[
+    "7+3d  and  Sorafenib", "7+3d & Sorafenib", "7+3d + Sorafenib", "7+3d / Sorafenib", "7+3d and Sorafenib", "7+3d+Sorafenib", "7+3d/Sorafenib"
+];
+
+define   Regimen_73d_Sorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_73d_Sorafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_IDAC_Sorafenib:[
+    "IDAC  and  Sorafenib", "IDAC & Sorafenib", "IDAC + Sorafenib", "IDAC / Sorafenib", "IDAC and Sorafenib", "IDAC+Sorafenib", "IDAC/Sorafenib"
+];
+
+define   Regimen_IDAC_Sorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_IDAC_Sorafenib],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Midostaurin_monotherapy:[
+    "Midostaurin monotherapy"
+];
+
+define   Regimen_Midostaurin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Midostaurin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Gilteritinib_monotherapy:[
+    "Gilteritinib monotherapy"
+];
+
+define   Regimen_Gilteritinib_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Gilteritinib_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Sorafenib:[
+    "Azacitidine & Sorafenib"
+];
+
+define   Regimen_Azacitidine_Sorafenib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Sorafenib],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_acute_myeloid_leukemia_flt3_positive:
+    where Sorafenib_monotherapy_Regimen OR 73d_Sorafenib_Regimen OR IDAC_Sorafenib_Regimen OR Midostaurin_monotherapy_Regimen OR Gilteritinib_monotherapy_Regimen OR Azacitidine_Sorafenib_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_acute_myeloid_leukemia_flt3_positive AND acute_myeloid_leukemia_flt3_positive_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

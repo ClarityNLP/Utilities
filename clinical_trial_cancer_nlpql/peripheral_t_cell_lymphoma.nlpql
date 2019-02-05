@@ -1,0 +1,298 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Peripheral T-cell lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_peripheral_t_cell_lymphoma:[
+    "mature t-cell and nk-cell lymphoma", "mature t-cell lymphoma", "mature t-and nk-cell lymphoma", "mature t-cell non-hodgkin's lymphoma", "ptcl", "mature t-cell and nk-cell non-hodgkin's lymphoma", "peripheral t-cell lymphoma", "mature t-cell and nk-cell non-hodgkin lymphoma"
+];
+
+define final Condition_peripheral_t_cell_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_peripheral_t_cell_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Lenalidomide_monotherapy:[
+    "Lenalidomide monotherapy"
+];
+
+define   Regimen_Lenalidomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lenalidomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BV_CHP:[
+    "BV-CHP", "BV/CHP", "BVCHP"
+];
+
+define   Regimen_BV_CHP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BV_CHP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DA_EPOCH:[
+    "DA-EPOCH", "DA/EPOCH", "DAEPOCH"
+];
+
+define   Regimen_DA_EPOCH:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DA_EPOCH],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOP:[
+    "CHOP"
+];
+
+define   Regimen_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Brentuximab_vedotin_monotherapy:[
+    "Brentuximab vedotin monotherapy"
+];
+
+define   Regimen_Brentuximab_vedotin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Brentuximab_vedotin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DHAP:[
+    "DHAP"
+];
+
+define   Regimen_DHAP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DHAP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GDP:[
+    "GDP"
+];
+
+define   Regimen_GDP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GDP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bendamustine_monotherapy:[
+    "Bendamustine monotherapy"
+];
+
+define   Regimen_Bendamustine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bendamustine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Belinostat_monotherapy:[
+    "Belinostat monotherapy"
+];
+
+define   Regimen_Belinostat_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Belinostat_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Mogamulizumab_monotherapy:[
+    "Mogamulizumab monotherapy"
+];
+
+define   Regimen_Mogamulizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Mogamulizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Pralatrexate_monotherapy:[
+    "Pralatrexate monotherapy"
+];
+
+define   Regimen_Pralatrexate_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Pralatrexate_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Romidepsin_monotherapy:[
+    "Romidepsin monotherapy"
+];
+
+define   Regimen_Romidepsin_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Romidepsin_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CMED:[
+    "CMED"
+];
+
+define   Regimen_CMED:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CMED],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GDPT:[
+    "GDPT"
+];
+
+define   Regimen_GDPT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GDPT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOEP_14:[
+    "CHOEP-14", "CHOEP/14", "CHOEP14"
+];
+
+define   Regimen_CHOEP_14:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOEP_14],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOP_Everolimus:[
+    "CHOP  and  Everolimus", "CHOP & Everolimus", "CHOP + Everolimus", "CHOP / Everolimus", "CHOP and Everolimus", "CHOP+Everolimus", "CHOP/Everolimus"
+];
+
+define   Regimen_CHOP_Everolimus:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP_Everolimus],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOP_AL:[
+    "CHOP-AL", "CHOP-C", "CHOP/AL", "CHOP/C", "CHOPAL", "CHOPC"
+];
+
+define   Regimen_CHOP_AL:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP_AL],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DD_CHOP:[
+    "DD-CHOP", "DD/CHOP", "DDCHOP"
+];
+
+define   Regimen_DD_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DD_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_HyperCHidam:[
+    "HyperCHidam"
+];
+
+define   Regimen_HyperCHidam:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_HyperCHidam],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TFC_then_allo_HSCT:[
+    "TFC", "TFC, then allo HSCT"
+];
+
+define   Regimen_TFC_then_allo_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TFC_then_allo_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Bortezomib_Panobinostat:[
+    "Bortezomib & Panobinostat"
+];
+
+define   Regimen_Bortezomib_Panobinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bortezomib_Panobinostat],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Chidamide_monotherapy:[
+    "Chidamide monotherapy"
+];
+
+define   Regimen_Chidamide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Chidamide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Forodesine_monotherapy:[
+    "Forodesine monotherapy"
+];
+
+define   Regimen_Forodesine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Forodesine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_peripheral_t_cell_lymphoma:
+    where Lenalidomide_monotherapy_Regimen OR BV_CHP_Regimen OR DA_EPOCH_Regimen OR CHOP_Regimen OR Brentuximab_vedotin_monotherapy_Regimen OR DHAP_Regimen OR GDP_Regimen OR Bendamustine_monotherapy_Regimen OR Belinostat_monotherapy_Regimen OR Mogamulizumab_monotherapy_Regimen OR Pralatrexate_monotherapy_Regimen OR Romidepsin_monotherapy_Regimen OR CMED_Regimen OR GDPT_Regimen OR CHOEP_14_Regimen OR CHOP_Everolimus_Regimen OR CHOP_AL_Regimen OR DD_CHOP_Regimen OR HyperCHidam_Regimen OR TFC_then_allo_HSCT_Regimen OR Bortezomib_Panobinostat_Regimen OR Chidamide_monotherapy_Regimen OR Forodesine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_peripheral_t_cell_lymphoma AND peripheral_t_cell_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

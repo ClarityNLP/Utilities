@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Penile cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_penile_cancer:[
+    "penile cancer, nos", "carcinoma of penis", "cancer of penis", "penile carcinoma", "carcinoma of the penis", "adult penile carcinoma", "cancer of the penis", "penile cancer"
+];
+
+define final Condition_penile_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_penile_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_Irinotecan:[
+    "Cisplatin & Irinotecan"
+];
+
+define   Regimen_Cisplatin_Irinotecan:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Irinotecan],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy:[
+    "Paclitaxel monotherapy"
+];
+
+define   Regimen_Paclitaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Panitumumab_monotherapy:[
+    "Panitumumab monotherapy"
+];
+
+define   Regimen_Panitumumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Panitumumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Cisplatin_Fluorouracil:[
+    "Cisplatin & Fluorouracil"
+];
+
+define   Regimen_Cisplatin_Fluorouracil:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_Fluorouracil],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_PCF:[
+    "PCF"
+];
+
+define   Regimen_PCF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_PCF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DCF:[
+    "DCF", "TCF"
+];
+
+define   Regimen_DCF:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DCF],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TIP:[
+    "TIP"
+];
+
+define   Regimen_TIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TIP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VBM:[
+    "VBM"
+];
+
+define   Regimen_VBM:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VBM],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BMP:[
+    "BMP", "MPB"
+];
+
+define   Regimen_BMP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BMP],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_penile_cancer:
+    where Cisplatin_Irinotecan_Regimen OR Paclitaxel_monotherapy_Regimen OR Panitumumab_monotherapy_Regimen OR Cisplatin_Fluorouracil_Regimen OR PCF_Regimen OR DCF_Regimen OR TIP_Regimen OR VBM_Regimen OR BMP_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_penile_cancer AND penile_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

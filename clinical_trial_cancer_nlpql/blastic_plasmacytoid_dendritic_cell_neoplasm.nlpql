@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Blastic plasmacytoid dendritic cell neoplasm" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_blastic_plasmacytoid_dendritic_cell_neoplasm:[
+    "agranular cd4+ cd56+ hematodermic neoplasm/tumor", "monomorphic nk-cell lymphoma", "agranular cd4+ natural killer cell leukemia", "blastic plasmacytoid dendritic cell neoplasm", "cd4+/cd56+ hematodermic neoplasm", "bpdcn", "blastic nk-cell lymphoma", "blastic natural killer leukemia/lymphoma"
+];
+
+define final Condition_blastic_plasmacytoid_dendritic_cell_neoplasm:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_blastic_plasmacytoid_dendritic_cell_neoplasm],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Tagraxofusp_monotherapy:[
+    "Tagraxofusp monotherapy"
+];
+
+define   Regimen_Tagraxofusp_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Tagraxofusp_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

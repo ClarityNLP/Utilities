@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for Hyper-CVAD" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "cytoxan", "cyclophosphamide"
+];
+
+define  Cyclophosphamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "oncovin", "vincristine"
+];
+
+define  Vincristine_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "adriamycin", "doxorubicin"
+];
+
+define  Doxorubicin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Hyper_CVAD:[
+    "Hyper-CVAD", "Hyper/CVAD", "HyperCVAD"
+];
+
+define final Regimen_Hyper_CVAD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Hyper_CVAD],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__HyperCVAD:
+    where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__HyperCVAD AND Hyper_CVAD_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Multiple_myeloma_relapsedrefractory
+
+
+
+
+***/
+ 

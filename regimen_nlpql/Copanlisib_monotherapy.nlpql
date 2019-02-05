@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "aliqopa", "copanlisib"
 ];
 
-define final CopanlisibTreatment:
+define final Copanlisib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final CopanlisibTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Copanlisib_monotherapy:[
     "Copanlisib monotherapy"
 ];
 
-define final CopanlisibmonotherapyRegimen:
+define final Regimen_Copanlisib_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Copanlisib_monotherapy],
     documentset:[Docs]
    }); 
 

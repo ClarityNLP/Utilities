@@ -1,0 +1,100 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Neuroendocrine tumors" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_neuroendocrine_tumors:[
+    "neuroendocrine tumors"
+];
+
+define final Condition_neuroendocrine_tumors:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_neuroendocrine_tumors],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Temozolomide_monotherapy:[
+    "Temozolomide monotherapy"
+];
+
+define   Regimen_Temozolomide_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Temozolomide_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Everolimus_monotherapy:[
+    "Everolimus monotherapy"
+];
+
+define   Regimen_Everolimus_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Everolimus_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Interferon_alfa_2b_monotherapy:[
+    "HDI", "Interferon alfa-2b monotherapy"
+];
+
+define   Regimen_Interferon_alfa_2b_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Interferon_alfa_2b_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Fluorouracil_Streptozocin:[
+    "Fluorouracil & Streptozocin"
+];
+
+define   Regimen_Fluorouracil_Streptozocin:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Fluorouracil_Streptozocin],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Lutetium_Lu_177_dotatate_Octreotide_LAR:[
+    "Lutetium Lu 177 dotatate & Octreotide LAR"
+];
+
+define   Regimen_Lutetium_Lu_177_dotatate_Octreotide_LAR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Lutetium_Lu_177_dotatate_Octreotide_LAR],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_neuroendocrine_tumors:
+    where Temozolomide_monotherapy_Regimen OR Everolimus_monotherapy_Regimen OR Interferon_alfa_2b_monotherapy_Regimen OR Fluorouracil_Streptozocin_Regimen OR Lutetium_Lu_177_dotatate_Octreotide_LAR_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_neuroendocrine_tumors AND neuroendocrine_tumors_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

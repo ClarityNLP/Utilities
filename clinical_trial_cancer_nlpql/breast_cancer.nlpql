@@ -1,0 +1,243 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Breast cancer" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_breast_cancer:[
+    "cancer, breast", "mammary carcinoma", "cancer of the breast", "carcinoma of the breast", "carcinoma of breast", "cancer of breast", "childhood breast carcinoma", "breast cancer, nos", "breast carcinoma", "breast cancer"
+];
+
+define final Condition_breast_cancer:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_breast_cancer],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Bevacizumab_monotherapy:[
+    "Bevacizumab monotherapy"
+];
+
+define   Regimen_Bevacizumab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Bevacizumab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_monotherapy:[
+    "Docetaxel monotherapy"
+];
+
+define   Regimen_Docetaxel_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy:[
+    "Paclitaxel, nanoparticle albumin-bound monotherapy"
+];
+
+define   Regimen_Paclitaxel_nanoparticle_albumin_bound_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_nanoparticle_albumin_bound_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AC:[
+    "AC"
+];
+
+define   Regimen_AC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AC_Bevacizumab:[
+    "AC  and  Bevacizumab", "AC & Bev", "AC & Bevacizumab", "AC + Bevacizumab", "AC / Bev", "AC / Bevacizumab", "AC and Bev", "AC and Bevacizumab", "AC&Bev", "AC+Bev", "AC+Bevacizumab", "AC/Bev", "AC/Bevacizumab", "ACBev"
+];
+
+define   Regimen_AC_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AC_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_ddAC:[
+    "ddAC"
+];
+
+define   Regimen_ddAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_ddAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DE:[
+    "DE"
+];
+
+define   Regimen_DE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Docetaxel_Bevacizumab:[
+    "Bev & D", "Bev / D", "Bev and D", "Bev&D", "Bev+D", "Bev/D", "BevD", "Docetaxel & Bevacizumab", "T & Bev", "T / Bev", "T and Bev", "T&Bev", "T+Bev", "T/Bev", "TBev"
+];
+
+define   Regimen_Docetaxel_Bevacizumab:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Docetaxel_Bevacizumab],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EC:[
+    "EC"
+];
+
+define   Regimen_EC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DI_EC:[
+    "DI EC", "DIEC"
+];
+
+define   Regimen_DI_EC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DI_EC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EP:[
+    "EP"
+];
+
+define   Regimen_EP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FAC:[
+    "FAC"
+];
+
+define   Regimen_FAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_FEC:[
+    "FEC"
+];
+
+define   Regimen_FEC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_FEC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy_weekly:[
+    "Paclitaxel monotherapy, weekly"
+];
+
+define   Regimen_Paclitaxel_monotherapy_weekly:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy_weekly],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Paclitaxel_monotherapy_dose_dense_q2wk:[
+    "Paclitaxel monotherapy, dose-dense (q2wk)", "ddT"
+];
+
+define   Regimen_Paclitaxel_monotherapy_dose_dense_q2wk:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy_dose_dense_q2wk],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_TAC_Taxotere:[
+    "ATC", "TAC", "TAC (Taxotere)"
+];
+
+define   Regimen_TAC_Taxotere:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_TAC_Taxotere],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AT_Taxol:[
+    "AT (Taxol)"
+];
+
+define   Regimen_AT_Taxol:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AT_Taxol],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Capecitabine_monotherapy:[
+    "Capecitabine monotherapy"
+];
+
+define   Regimen_Capecitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Capecitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_breast_cancer:
+    where Bevacizumab_monotherapy_Regimen OR Docetaxel_monotherapy_Regimen OR Paclitaxel_nanoparticle_albumin_bound_monotherapy_Regimen OR AC_Regimen OR AC_Bevacizumab_Regimen OR ddAC_Regimen OR DE_Regimen OR Docetaxel_Bevacizumab_Regimen OR EC_Regimen OR DI_EC_Regimen OR EP_Regimen OR FAC_Regimen OR FEC_Regimen OR Paclitaxel_monotherapy_weekly_Regimen OR Paclitaxel_monotherapy_dose_dense_q2wk_Regimen OR TAC_Taxotere_Regimen OR AT_Taxol_Regimen OR Capecitabine_monotherapy_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_breast_cancer AND breast_cancer_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

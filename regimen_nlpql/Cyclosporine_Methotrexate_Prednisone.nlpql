@@ -14,35 +14,35 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "neoral", "cyclosporine modified"
 ];
 
-define  CyclosporinemodifiedTreatment:
+define  Cyclosporinemodified_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "mtx", "methotrexate"
 ];
 
-define  MethotrexateTreatment:
+define  Methotrexate_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms2:[
+termset TreatmentTerms_2:[
     "sterapred", "prednisone"
 ];
 
-define  PrednisoneTreatment:
+define  Prednisone_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms2],
+        termset:[TreatmentTerms_2],
         documentset:[Docs]
 }); 
 
@@ -50,13 +50,13 @@ define  PrednisoneTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Cyclosporine_Methotrexate_Prednisone:[
     "Cyclosporine, Methotrexate, Prednisone"
 ];
 
-define final CyclosporineMethotrexatePrednisoneRegimen:
+define final Regimen_Cyclosporine_Methotrexate_Prednisone:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Cyclosporine_Methotrexate_Prednisone],
     documentset:[Docs]
    }); 
 
@@ -64,10 +64,11 @@ define final CyclosporineMethotrexatePrednisoneRegimen:
 // Results
 
         
-define final CyclosporineMethotrexatePrednisoneTreatments:
-    where CyclosporinemodifiedTreatment AND MethotrexateTreatment AND PrednisoneTreatment;
+define final Treatment__CyclosporineMethotrexatePrednisone:
+    where Cyclosporinemodified_Treatment AND Methotrexate_Treatment AND Prednisone_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CyclosporineMethotrexatePrednisone AND Cyclosporine_Methotrexate_Prednisone_Regimen;
         
         
 

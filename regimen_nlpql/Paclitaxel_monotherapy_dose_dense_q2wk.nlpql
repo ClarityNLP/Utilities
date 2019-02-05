@@ -1,0 +1,54 @@
+
+// Phenotype library name
+phenotype "Regimen for Paclitaxel monotherapy, dose-dense (q2wk)" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "taxol", "paclitaxel"
+];
+
+define final Paclitaxel_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Paclitaxel_monotherapy_dose_dense_q2wk:[
+    "Paclitaxel monotherapy, dose-dense (q2wk)", "ddT"
+];
+
+define final Regimen_Paclitaxel_monotherapy_dose_dense_q2wk:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Paclitaxel_monotherapy_dose_dense_q2wk],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+
+// Comments
+/***
+
+Known regimen for: Breast_cancer
+
+
+
+
+***/
+ 

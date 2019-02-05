@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "aspirin"
 ];
 
-define  AspirinTreatment:
+define  Aspirin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "agrylin", "anagrelide"
 ];
 
-define  AnagrelideTreatment:
+define  Anagrelide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  AnagrelideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Aspirin_Anagrelide:[
     "Aspirin  and  Anagrelide", "Aspirin & Anagrelide", "Aspirin + Anagrelide", "Aspirin / Anagrelide", "Aspirin and Anagrelide", "Aspirin+Anagrelide", "Aspirin/Anagrelide"
 ];
 
-define final AspirinAnagrelideRegimen:
+define final Regimen_Aspirin_Anagrelide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Aspirin_Anagrelide],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final AspirinAnagrelideRegimen:
 // Results
 
         
-define final AspirinAnagrelideTreatments:
-    where AspirinTreatment AND AnagrelideTreatment;
+define final Treatment__AspirinAnagrelide:
+    where Aspirin_Treatment AND Anagrelide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AspirinAnagrelide AND Aspirin_Anagrelide_Regimen;
         
         
 

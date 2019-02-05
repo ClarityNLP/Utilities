@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "mylotarg", "gemtuzumab ozogamicin"
 ];
 
-define final GemtuzumabozogamicinTreatment:
+define final Gemtuzumabozogamicin_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final GemtuzumabozogamicinTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Gemtuzumab_ozogamicin_monotherapy:[
     "Gemtuzumab ozogamicin monotherapy"
 ];
 
-define final GemtuzumabozogamicinmonotherapyRegimen:
+define final Regimen_Gemtuzumab_ozogamicin_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Gemtuzumab_ozogamicin_monotherapy],
     documentset:[Docs]
    }); 
 

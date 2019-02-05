@@ -1,0 +1,95 @@
+
+// Phenotype library name
+phenotype "Regimen for M-TIP" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "mtx", "methotrexate"
+];
+
+define  Methotrexate_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "taxol", "paclitaxel"
+];
+
+define  Paclitaxel_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_2:[
+    "ifex", "ifosfamide"
+];
+
+define  Ifosfamide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_2],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_3:[
+    "platinol", "cisplatin"
+];
+
+define  Cisplatin_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_3],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_M_TIP:[
+    "M-TIP", "M/TIP", "MTIP"
+];
+
+define final Regimen_M_TIP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_M_TIP],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__MTIP:
+    where Methotrexate_Treatment AND Paclitaxel_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__MTIP AND M_TIP_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Testicular_cancer
+
+
+
+
+***/
+ 

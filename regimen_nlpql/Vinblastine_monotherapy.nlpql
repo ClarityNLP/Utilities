@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "velban", "vinblastine"
 ];
 
-define final VinblastineTreatment:
+define final Vinblastine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final VinblastineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Vinblastine_monotherapy:[
     "Vinblastine monotherapy"
 ];
 
-define final VinblastinemonotherapyRegimen:
+define final Regimen_Vinblastine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Vinblastine_monotherapy],
     documentset:[Docs]
    }); 
 

@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "gilotrif", "afatinib"
 ];
 
-define  AfatinibTreatment:
+define  Afatinib_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "taxol", "paclitaxel"
 ];
 
-define  PaclitaxelTreatment:
+define  Paclitaxel_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  PaclitaxelTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Afatinib_Paclitaxel:[
     "Afatinib & Paclitaxel"
 ];
 
-define final AfatinibPaclitaxelRegimen:
+define final Regimen_Afatinib_Paclitaxel:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Afatinib_Paclitaxel],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final AfatinibPaclitaxelRegimen:
 // Results
 
         
-define final AfatinibPaclitaxelTreatments:
-    where AfatinibTreatment AND PaclitaxelTreatment;
+define final Treatment__AfatinibPaclitaxel:
+    where Afatinib_Treatment AND Paclitaxel_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__AfatinibPaclitaxel AND Afatinib_Paclitaxel_Regimen;
         
         
 

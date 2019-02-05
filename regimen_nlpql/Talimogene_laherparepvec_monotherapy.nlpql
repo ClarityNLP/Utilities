@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "imlygic", "talimogene laherparepvec"
 ];
 
-define final TalimogenelaherparepvecTreatment:
+define final Talimogenelaherparepvec_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final TalimogenelaherparepvecTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Talimogene_laherparepvec_monotherapy:[
     "Talimogene laherparepvec monotherapy"
 ];
 
-define final TalimogenelaherparepvecmonotherapyRegimen:
+define final Regimen_Talimogene_laherparepvec_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Talimogene_laherparepvec_monotherapy],
     documentset:[Docs]
    }); 
 

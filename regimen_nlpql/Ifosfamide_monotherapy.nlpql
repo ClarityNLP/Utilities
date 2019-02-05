@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "ifex", "ifosfamide"
 ];
 
-define final IfosfamideTreatment:
+define final Ifosfamide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final IfosfamideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Ifosfamide_monotherapy:[
     "Ifosfamide monotherapy"
 ];
 
-define final IfosfamidemonotherapyRegimen:
+define final Regimen_Ifosfamide_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Ifosfamide_monotherapy],
     documentset:[Docs]
    }); 
 
@@ -45,7 +45,7 @@ define final IfosfamidemonotherapyRegimen:
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Endometrial_cancer, Cervical_cancer, Thymoma
+Known regimen for: Thymoma, Soft_tissue_sarcoma, Small_cell_lung_cancer, Diffuse_large_B-cell_lymphoma, Cervical_cancer, Endometrial_cancer
 
 
 

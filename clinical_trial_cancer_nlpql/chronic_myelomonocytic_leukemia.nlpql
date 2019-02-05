@@ -1,0 +1,89 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Chronic myelomonocytic leukemia" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_chronic_myelomonocytic_leukemia:[
+    "juvenile chronic myeloid leukemia", "jmml", "jcml", "chronic myelomonocytic leukemia (cmml)", "juvenile chronic myelogenous leukemia", "cmml", "chronic myelomonocytic leukemia", "juvenile myelomonocytic leukemia"
+];
+
+define final Condition_chronic_myelomonocytic_leukemia:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_chronic_myelomonocytic_leukemia],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Azacitidine_monotherapy:[
+    "Azacitidine monotherapy"
+];
+
+define   Regimen_Azacitidine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Decitabine_monotherapy:[
+    "Decitabine monotherapy"
+];
+
+define   Regimen_Decitabine_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Decitabine_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Lenalidomide:[
+    "Azacitidine & Lenalidomide"
+];
+
+define   Regimen_Azacitidine_Lenalidomide:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Lenalidomide],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Azacitidine_Vorinostat:[
+    "Azacitidine & Vorinostat"
+];
+
+define   Regimen_Azacitidine_Vorinostat:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Azacitidine_Vorinostat],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_chronic_myelomonocytic_leukemia:
+    where Azacitidine_monotherapy_Regimen OR Decitabine_monotherapy_Regimen OR Azacitidine_Lenalidomide_Regimen OR Azacitidine_Vorinostat_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_chronic_myelomonocytic_leukemia AND chronic_myelomonocytic_leukemia_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

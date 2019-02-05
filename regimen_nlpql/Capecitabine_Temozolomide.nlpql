@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "xeloda", "capecitabine"
 ];
 
-define  CapecitabineTreatment:
+define  Capecitabine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "temodar", "temozolomide"
 ];
 
-define  TemozolomideTreatment:
+define  Temozolomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  TemozolomideTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Capecitabine_Temozolomide:[
     "Capecitabine & Temozolomide"
 ];
 
-define final CapecitabineTemozolomideRegimen:
+define final Regimen_Capecitabine_Temozolomide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Capecitabine_Temozolomide],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final CapecitabineTemozolomideRegimen:
 // Results
 
         
-define final CapecitabineTemozolomideTreatments:
-    where CapecitabineTreatment AND TemozolomideTreatment;
+define final Treatment__CapecitabineTemozolomide:
+    where Capecitabine_Treatment AND Temozolomide_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__CapecitabineTemozolomide AND Capecitabine_Temozolomide_Regimen;
         
         
 

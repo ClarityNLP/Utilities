@@ -1,0 +1,73 @@
+
+// Phenotype library name
+phenotype "Regimen for Rd" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
+         "General", "ECG", "Pathology", "Echo"]);
+
+// Medication(s) inclusion criteria termset, if medication criteria present
+
+termset TreatmentTerms_0:[
+    "revlimid", "lenalidomide"
+];
+
+define  Lenalidomide_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_0],
+        documentset:[Docs]
+}); 
+
+        
+termset TreatmentTerms_1:[
+    "decadron", "dexamethasone"
+];
+
+define  Dexamethasone_Treatment:
+    Clarity.ProviderAssertion({
+        termset:[TreatmentTerms_1],
+        documentset:[Docs]
+}); 
+
+        
+
+// Regimen names
+
+termset Regimen_Terms_Rd:[
+    "LenDex", "Rd", "RevDex"
+];
+
+define final Regimen_Rd:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rd],
+    documentset:[Docs]
+   }); 
+
+
+// Results
+
+        
+define final Treatment__Rd:
+    where Lenalidomide_Treatment AND Dexamethasone_Treatment;
+          
+define final MatchedAllResults:
+    where Treatment__Rd AND Rd_Regimen;
+        
+        
+
+// Comments
+/***
+
+Known regimen for: Plasma_cell_leukemia, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+
+
+
+
+***/
+ 

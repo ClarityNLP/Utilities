@@ -1,0 +1,48 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Non-small cell lung cancer BRAF-mutated" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_non_small_cell_lung_cancer_braf_mutated:[
+    "non-small cell lung cancer braf-mutated"
+];
+
+define final Condition_non_small_cell_lung_cancer_braf_mutated:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_non_small_cell_lung_cancer_braf_mutated],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Dabrafenib_Trametinib:[
+    "Dabrafenib & Trametinib"
+];
+
+define   Regimen_Dabrafenib_Trametinib:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Dabrafenib_Trametinib],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+
+// Comments
+/***
+
+***/
+

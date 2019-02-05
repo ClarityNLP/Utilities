@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "alkeran", "melphalan"
 ];
 
-define final MelphalanTreatment:
+define final Melphalan_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final MelphalanTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Melphalan_monotherapy:[
     "Melphalan monotherapy"
 ];
 
-define final MelphalanmonotherapyRegimen:
+define final Regimen_Melphalan_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Melphalan_monotherapy],
     documentset:[Docs]
    }); 
 

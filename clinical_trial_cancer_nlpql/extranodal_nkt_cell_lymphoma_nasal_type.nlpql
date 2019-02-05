@@ -1,0 +1,144 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to Extranodal NKT-cell lymphoma nasal type" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_extranodal_nkt_cell_lymphoma_nasal_type:[
+    "extranodal nkt-cell lymphoma nasal type"
+];
+
+define final Condition_extranodal_nkt_cell_lymphoma_nasal_type:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_extranodal_nkt_cell_lymphoma_nasal_type],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Cisplatin_RT:[
+    "Cisplatin  and  RT", "Cisplatin & RT", "Cisplatin + RT", "Cisplatin / RT", "Cisplatin and RT", "Cisplatin+RT", "Cisplatin/RT"
+];
+
+define   Regimen_Cisplatin_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Cisplatin_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_DEP_RT:[
+    "DEP  and  RT", "DEP & RT", "DEP + RT", "DEP / RT", "DEP and RT", "DEP+RT", "DEP/RT", "DEPRT"
+];
+
+define   Regimen_DEP_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_DEP_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_GELOX_then_RT:[
+    "GELOX, then RT"
+];
+
+define   Regimen_GELOX_then_RT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_GELOX_then_RT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_LVP_Sandwich:[
+    "LVP", "LVP "Sandwich""
+];
+
+define   Regimen_LVP_Sandwich:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_LVP_Sandwich],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_MESA:[
+    "MESA"
+];
+
+define   Regimen_MESA:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_MESA],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_SMILE:[
+    "SMILE"
+];
+
+define   Regimen_SMILE:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_SMILE],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_VIPD:[
+    "VIPD"
+];
+
+define   Regimen_VIPD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_VIPD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_AspaMetDex:[
+    "AspaMetDex"
+];
+
+define   Regimen_AspaMetDex:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_AspaMetDex],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_L_Asparaginase_Vincristine_Prednisolone:[
+    "L-Asparaginase, Vincristine, Prednisolone", "LVP"
+];
+
+define   Regimen_L_Asparaginase_Vincristine_Prednisolone:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_L_Asparaginase_Vincristine_Prednisolone],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_extranodal_nkt_cell_lymphoma_nasal_type:
+    where Cisplatin_RT_Regimen OR DEP_RT_Regimen OR GELOX_then_RT_Regimen OR LVP_Sandwich_Regimen OR MESA_Regimen OR SMILE_Regimen OR VIPD_Regimen OR AspaMetDex_Regimen OR L_Asparaginase_Vincristine_Prednisolone_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_extranodal_nkt_cell_lymphoma_nasal_type AND extranodal_nkt_cell_lymphoma_nasal_type_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+

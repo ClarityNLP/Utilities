@@ -14,24 +14,24 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "temodar", "temozolomide"
 ];
 
-define  TemozolomideTreatment:
+define  Temozolomide_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
         
-termset TreatmentTerms1:[
+termset TreatmentTerms_1:[
     "external beam radiotherapy"
 ];
 
-define  ExternalbeamradiotherapyTreatment:
+define  Externalbeamradiotherapy_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms1],
+        termset:[TreatmentTerms_1],
         documentset:[Docs]
 }); 
 
@@ -39,13 +39,13 @@ define  ExternalbeamradiotherapyTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Temozolomide_RT_then_Temozolomide:[
     "Temozolomide & RT, then Temozolomide"
 ];
 
-define final TemozolomideRTthenTemozolomideRegimen:
+define final Regimen_Temozolomide_RT_then_Temozolomide:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Temozolomide_RT_then_Temozolomide],
     documentset:[Docs]
    }); 
 
@@ -53,10 +53,11 @@ define final TemozolomideRTthenTemozolomideRegimen:
 // Results
 
         
-define final TemozolomideRTthenTemozolomideTreatments:
-    where TemozolomideTreatment AND ExternalbeamradiotherapyTreatment;
+define final Treatment__TemozolomideRTthenTemozolomide:
+    where Temozolomide_Treatment AND Externalbeamradiotherapy_Treatment;
           
-        
+define final MatchedAllResults:
+    where Treatment__TemozolomideRTthenTemozolomide AND Temozolomide_RT_then_Temozolomide_Regimen;
         
         
 

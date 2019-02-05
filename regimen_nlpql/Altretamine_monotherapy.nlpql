@@ -14,13 +14,13 @@ documentset Docs:
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
-termset TreatmentTerms0:[
+termset TreatmentTerms_0:[
     "hexalen", "altretamine"
 ];
 
-define final AltretamineTreatment:
+define final Altretamine_Treatment:
     Clarity.ProviderAssertion({
-        termset:[TreatmentTerms0],
+        termset:[TreatmentTerms_0],
         documentset:[Docs]
 }); 
 
@@ -28,13 +28,13 @@ define final AltretamineTreatment:
 
 // Regimen names
 
-termset RegimenTerms:[
+termset Regimen_Terms_Altretamine_monotherapy:[
     "Altretamine monotherapy"
 ];
 
-define final AltretaminemonotherapyRegimen:
+define final Regimen_Altretamine_monotherapy:
   Clarity.ProviderAssertion({
-    termset:[RegimenTerms],
+    termset:[Regimen_Terms_Altretamine_monotherapy],
     documentset:[Docs]
    }); 
 

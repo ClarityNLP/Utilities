@@ -1,0 +1,221 @@
+
+// Phenotype library name
+phenotype "Clinical Trial Criteria related to HIV-associated lymphoma" version "1";
+
+// Phenotype library description 
+description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+documentset Docs:
+    Clarity.createReportTypeList(["Clinical Trial Inclusion Criteria", "Clinical Trial Exclusion Criteria"]);
+
+// Cancers
+
+termset Condition_Terms_hiv_associated_lymphoma:[
+    "hiv-associated lymphoma"
+];
+
+define final Condition_hiv_associated_lymphoma:
+  Clarity.ProviderAssertion({
+    termset:[Condition_Terms_hiv_associated_lymphoma],
+    documentset:[Docs]
+   }); 
+
+
+// Regimen names
+
+termset Regimen_Terms_Rituximab_monotherapy:[
+    "Rituximab monotherapy"
+];
+
+define   Regimen_Rituximab_monotherapy:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Rituximab_monotherapy],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CHOP:[
+    "CHOP"
+];
+
+define   Regimen_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_BEAM_then_auto_HSCT:[
+    "BEAM", "BEAM, then auto HSCT"
+];
+
+define   Regimen_BEAM_then_auto_HSCT:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_BEAM_then_auto_HSCT],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CHOP:[
+    "CHOP-R", "CHOP/R", "CHOPR", "R-CHOP", "R-CHOP-21", "R/CHOP", "R/CHOP/21", "RCHOP", "RCHOP21"
+];
+
+define   Regimen_R_CHOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CHOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CDOP:[
+    "DRCOP", "R-CDOP", "R/CDOP", "RCDOP"
+];
+
+define   Regimen_R_CDOP:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CDOP],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CODOX_M:[
+    "CODOX-M", "CODOX/M", "CODOXM"
+];
+
+define   Regimen_CODOX_M:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CODOX_M],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_CODOX_MIVAC:[
+    "CODOX-M/IVAC"
+];
+
+define   Regimen_CODOX_MIVAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_CODOX_MIVAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_dmCODOX_M__Modified_Magrath:[
+    "dmCODOX-M", "dmCODOX-M - Modified Magrath", "dmCODOX/M", "dmCODOXM"
+];
+
+define   Regimen_dmCODOX_M__Modified_Magrath:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_dmCODOX_M__Modified_Magrath],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_dmCODOX_MIVAC__Modified_Magrath:[
+    "dmCODOX-M/IVAC", "dmCODOX-M/IVAC - Modified Magrath"
+];
+
+define   Regimen_dmCODOX_MIVAC__Modified_Magrath:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_dmCODOX_MIVAC__Modified_Magrath],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_EPOCH_dose_escalated:[
+    "EPOCH", "EPOCH, dose-escalated"
+];
+
+define   Regimen_EPOCH_dose_escalated:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_EPOCH_dose_escalated],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_m_BACOD:[
+    "m-BACOD", "m/BACOD", "mBACOD"
+];
+
+define   Regimen_m_BACOD:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_m_BACOD],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CODOX_M:[
+    "R-CODOX-M", "R/CODOX/M", "RCODOXM"
+];
+
+define   Regimen_R_CODOX_M:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CODOX_M],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_CODOX_MR_IVAC:[
+    "R-CODOX-M/R-IVAC"
+];
+
+define   Regimen_R_CODOX_MR_IVAC:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_CODOX_MR_IVAC],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_R_EPOCH_dose_escalated:[
+    "R-EPOCH", "R-EPOCH, dose-escalated", "R/EPOCH", "REPOCH"
+];
+
+define   Regimen_R_EPOCH_dose_escalated:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_R_EPOCH_dose_escalated],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_SC_EPOCH_RR:[
+    "SC-EPOCH-RR"
+];
+
+define   Regimen_SC_EPOCH_RR:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_SC_EPOCH_RR],
+    documentset:[Docs]
+   }); 
+
+
+termset Regimen_Terms_Stanford_V:[
+    "Stanford V"
+];
+
+define   Regimen_Stanford_V:
+  Clarity.ProviderAssertion({
+    termset:[Regimen_Terms_Stanford_V],
+    documentset:[Docs]
+   }); 
+
+
+
+// Results
+
+        
+define final CancerRegimen_hiv_associated_lymphoma:
+    where Rituximab_monotherapy_Regimen OR CHOP_Regimen OR BEAM_then_auto_HSCT_Regimen OR R_CHOP_Regimen OR R_CDOP_Regimen OR CODOX_M_Regimen OR CODOX_MIVAC_Regimen OR dmCODOX_M__Modified_Magrath_Regimen OR dmCODOX_MIVAC__Modified_Magrath_Regimen OR EPOCH_dose_escalated_Regimen OR m_BACOD_Regimen OR R_CODOX_M_Regimen OR R_CODOX_MR_IVAC_Regimen OR R_EPOCH_dose_escalated_Regimen OR SC_EPOCH_RR_Regimen OR Stanford_V_Regimen;
+          
+define final MatchedAllResults:
+    where CancerRegimen_hiv_associated_lymphoma AND hiv_associated_lymphoma_Condition;
+        
+        
+
+// Comments
+/***
+
+***/
+
