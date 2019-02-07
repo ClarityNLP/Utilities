@@ -75,11 +75,11 @@ define final Regimen_VR_CP:
 // Results
 
         
-define final Treatment__VRCP:
+define final Treatment_VRCP:
     where Bortezomib_Treatment AND Rituximab_Treatment AND Cyclophosphamide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VRCP AND VR_CP_Regimen;
+    where Treatment_VRCP AND VR_CP_Regimen;
         
         
 

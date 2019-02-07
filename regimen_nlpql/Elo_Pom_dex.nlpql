@@ -86,11 +86,11 @@ define final Regimen_Elo_Pom_dex:
 // Results
 
         
-define final Treatment__EloPomdex:
+define final Treatment_EloPomdex:
     where Elotuzumab_Treatment AND Pomalidomide_Treatment AND Dexamethasone_Treatment AND Elotuzumab_Treatment AND Elotuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EloPomdex AND Elo_Pom_dex_Regimen;
+    where Treatment_EloPomdex AND Elo_Pom_dex_Regimen;
         
         
 

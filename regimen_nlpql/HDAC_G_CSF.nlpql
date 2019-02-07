@@ -53,11 +53,11 @@ define final Regimen_HDAC_G_CSF:
 // Results
 
         
-define final Treatment__HDACGCSF:
+define final Treatment_HDACGCSF:
     where Cytarabine_Treatment AND Filgrastim_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HDACGCSF AND HDAC_G_CSF_Regimen;
+    where Treatment_HDACGCSF AND HDAC_G_CSF_Regimen;
         
         
 

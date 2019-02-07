@@ -53,11 +53,11 @@ define final Regimen_MP:
 // Results
 
         
-define final Treatment__MP:
+define final Treatment_MP:
     where Melphalan_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MP AND MP_Regimen;
+    where Treatment_MP AND MP_Regimen;
         
         
 

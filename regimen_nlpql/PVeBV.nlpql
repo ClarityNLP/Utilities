@@ -75,11 +75,11 @@ define final Regimen_PVeBV:
 // Results
 
         
-define final Treatment__PVeBV:
+define final Treatment_PVeBV:
     where Cisplatin_Treatment AND Vinblastine_Treatment AND Bleomycin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PVeBV AND PVeBV_Regimen;
+    where Treatment_PVeBV AND PVeBV_Regimen;
         
         
 

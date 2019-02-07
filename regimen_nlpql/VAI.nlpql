@@ -64,18 +64,18 @@ define final Regimen_VAI:
 // Results
 
         
-define final Treatment__VAI:
+define final Treatment_VAI:
     where Vincristine_Treatment AND Dactinomycin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VAI AND VAI_Regimen;
+    where Treatment_VAI AND VAI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Rhabdomyosarcoma
+Known regimen for: Rhabdomyosarcoma, Ewings_sarcoma
 
 
 

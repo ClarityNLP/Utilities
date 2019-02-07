@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Dexamethasone:
 // Results
 
         
-define final Treatment__BortezomibDexamethasone:
+define final Treatment_BortezomibDexamethasone:
     where Bortezomib_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibDexamethasone AND Bortezomib_Dexamethasone_Regimen;
+    where Treatment_BortezomibDexamethasone AND Bortezomib_Dexamethasone_Regimen;
         
         
 

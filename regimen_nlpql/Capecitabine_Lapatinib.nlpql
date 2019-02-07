@@ -53,11 +53,11 @@ define final Regimen_Capecitabine_Lapatinib:
 // Results
 
         
-define final Treatment__CapecitabineLapatinib:
+define final Treatment_CapecitabineLapatinib:
     where Capecitabine_Treatment AND Lapatinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineLapatinib AND Capecitabine_Lapatinib_Regimen;
+    where Treatment_CapecitabineLapatinib AND Capecitabine_Lapatinib_Regimen;
         
         
 

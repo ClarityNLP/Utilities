@@ -64,11 +64,11 @@ define final Regimen_ICL:
 // Results
 
         
-define final Treatment__ICL:
+define final Treatment_ICL:
     where Idarubicin_Treatment AND Cytarabine_Treatment AND Lomustine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ICL AND ICL_Regimen;
+    where Treatment_ICL AND ICL_Regimen;
         
         
 

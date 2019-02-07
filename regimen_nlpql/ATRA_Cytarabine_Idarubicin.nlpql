@@ -64,11 +64,11 @@ define final Regimen_ATRA_Cytarabine_Idarubicin:
 // Results
 
         
-define final Treatment__ATRACytarabineIdarubicin:
+define final Treatment_ATRACytarabineIdarubicin:
     where Alltransretinoicacid_Treatment AND Cytarabine_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATRACytarabineIdarubicin AND ATRA_Cytarabine_Idarubicin_Regimen;
+    where Treatment_ATRACytarabineIdarubicin AND ATRA_Cytarabine_Idarubicin_Regimen;
         
         
 

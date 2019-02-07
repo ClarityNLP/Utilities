@@ -53,18 +53,18 @@ define final Regimen_Temozolomide_RT:
 // Results
 
         
-define final Treatment__TemozolomideRT:
+define final Treatment_TemozolomideRT:
     where Temozolomide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TemozolomideRT AND Temozolomide_RT_Regimen;
+    where Treatment_TemozolomideRT AND Temozolomide_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Glioblastoma
+Known regimen for: Glioblastoma, Anaplastic_glioma
 
 
 

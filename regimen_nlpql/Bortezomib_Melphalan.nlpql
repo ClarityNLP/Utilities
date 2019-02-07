@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Melphalan:
 // Results
 
         
-define final Treatment__BortezomibMelphalan:
+define final Treatment_BortezomibMelphalan:
     where Bortezomib_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibMelphalan AND Bortezomib_Melphalan_Regimen;
+    where Treatment_BortezomibMelphalan AND Bortezomib_Melphalan_Regimen;
         
         
 

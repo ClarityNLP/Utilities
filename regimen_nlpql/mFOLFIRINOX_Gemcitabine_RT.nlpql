@@ -53,11 +53,11 @@ define final Regimen_mFOLFIRINOX_Gemcitabine_RT:
 // Results
 
         
-define final Treatment__mFOLFIRINOXGemcitabineRT:
+define final Treatment_mFOLFIRINOXGemcitabineRT:
     where Gemcitabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mFOLFIRINOXGemcitabineRT AND mFOLFIRINOX_Gemcitabine_RT_Regimen;
+    where Treatment_mFOLFIRINOXGemcitabineRT AND mFOLFIRINOX_Gemcitabine_RT_Regimen;
         
         
 

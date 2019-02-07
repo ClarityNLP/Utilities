@@ -86,11 +86,11 @@ define final Regimen_Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincris
 // Results
 
         
-define final Treatment__CarboplatinCyclophosphamideEtoposideMethotrexateVincristine:
+define final Treatment_CarboplatinCyclophosphamideEtoposideMethotrexateVincristine:
     where Carboplatin_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Methotrexate_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinCyclophosphamideEtoposideMethotrexateVincristine AND Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine_Regimen;
+    where Treatment_CarboplatinCyclophosphamideEtoposideMethotrexateVincristine AND Carboplatin_Cyclophosphamide_Etoposide_Methotrexate_Vincristine_Regimen;
         
         
 

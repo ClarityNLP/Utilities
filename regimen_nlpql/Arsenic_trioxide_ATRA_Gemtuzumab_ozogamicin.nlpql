@@ -64,11 +64,11 @@ define final Regimen_Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin:
 // Results
 
         
-define final Treatment__ArsenictrioxideATRAGemtuzumabozogamicin:
+define final Treatment_ArsenictrioxideATRAGemtuzumabozogamicin:
     where Arsenictrioxide_Treatment AND Alltransretinoicacid_Treatment AND Gemtuzumabozogamicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ArsenictrioxideATRAGemtuzumabozogamicin AND Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin_Regimen;
+    where Treatment_ArsenictrioxideATRAGemtuzumabozogamicin AND Arsenic_trioxide_ATRA_Gemtuzumab_ozogamicin_Regimen;
         
         
 

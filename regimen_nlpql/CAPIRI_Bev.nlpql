@@ -64,11 +64,11 @@ define final Regimen_CAPIRI_Bev:
 // Results
 
         
-define final Treatment__CAPIRIBev:
+define final Treatment_CAPIRIBev:
     where Capecitabine_Treatment AND Irinotecan_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CAPIRIBev AND CAPIRI_Bev_Regimen;
+    where Treatment_CAPIRIBev AND CAPIRI_Bev_Regimen;
         
         
 

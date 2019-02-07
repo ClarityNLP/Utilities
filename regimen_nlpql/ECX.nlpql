@@ -64,11 +64,11 @@ define final Regimen_ECX:
 // Results
 
         
-define final Treatment__ECX:
+define final Treatment_ECX:
     where Epirubicin_Treatment AND Cisplatin_Treatment AND Capecitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ECX AND ECX_Regimen;
+    where Treatment_ECX AND ECX_Regimen;
         
         
 

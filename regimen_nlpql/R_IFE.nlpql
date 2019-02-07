@@ -64,11 +64,11 @@ define final Regimen_R_IFE:
 // Results
 
         
-define final Treatment__RIFE:
+define final Treatment_RIFE:
     where Rituximab_Treatment AND Ifosfamide_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RIFE AND R_IFE_Regimen;
+    where Treatment_RIFE AND R_IFE_Regimen;
         
         
 

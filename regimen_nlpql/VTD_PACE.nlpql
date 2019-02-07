@@ -108,11 +108,11 @@ define final Regimen_VTD_PACE:
 // Results
 
         
-define final Treatment__VTDPACE:
+define final Treatment_VTDPACE:
     where Bortezomib_Treatment AND Thalidomide_Treatment AND Dexamethasone_Treatment AND Cisplatin_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VTDPACE AND VTD_PACE_Regimen;
+    where Treatment_VTDPACE AND VTD_PACE_Regimen;
         
         
 

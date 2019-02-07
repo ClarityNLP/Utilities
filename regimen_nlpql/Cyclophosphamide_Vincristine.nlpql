@@ -53,11 +53,11 @@ define final Regimen_Cyclophosphamide_Vincristine:
 // Results
 
         
-define final Treatment__CyclophosphamideVincristine:
+define final Treatment_CyclophosphamideVincristine:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideVincristine AND Cyclophosphamide_Vincristine_Regimen;
+    where Treatment_CyclophosphamideVincristine AND Cyclophosphamide_Vincristine_Regimen;
         
         
 

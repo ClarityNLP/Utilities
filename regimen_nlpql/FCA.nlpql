@@ -64,11 +64,11 @@ define final Regimen_FCA:
 // Results
 
         
-define final Treatment__FCA:
+define final Treatment_FCA:
     where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND Alemtuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FCA AND FCA_Regimen;
+    where Treatment_FCA AND FCA_Regimen;
         
         
 

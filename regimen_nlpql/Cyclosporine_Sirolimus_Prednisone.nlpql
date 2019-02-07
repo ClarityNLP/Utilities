@@ -64,11 +64,11 @@ define final Regimen_Cyclosporine_Sirolimus_Prednisone:
 // Results
 
         
-define final Treatment__CyclosporineSirolimusPrednisone:
+define final Treatment_CyclosporineSirolimusPrednisone:
     where CategoryCyclosporines_Treatment AND Sirolimus_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclosporineSirolimusPrednisone AND Cyclosporine_Sirolimus_Prednisone_Regimen;
+    where Treatment_CyclosporineSirolimusPrednisone AND Cyclosporine_Sirolimus_Prednisone_Regimen;
         
         
 

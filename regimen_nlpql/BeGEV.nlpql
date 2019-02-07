@@ -75,11 +75,11 @@ define final Regimen_BeGEV:
 // Results
 
         
-define final Treatment__BeGEV:
+define final Treatment_BeGEV:
     where Bendamustine_Treatment AND Gemcitabine_Treatment AND Vinorelbine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BeGEV AND BeGEV_Regimen;
+    where Treatment_BeGEV AND BeGEV_Regimen;
         
         
 

@@ -97,11 +97,11 @@ define final Regimen_R_DexaBEAM:
 // Results
 
         
-define final Treatment__RDexaBEAM:
+define final Treatment_RDexaBEAM:
     where Rituximab_Treatment AND Dexamethasone_Treatment AND Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RDexaBEAM AND R_DexaBEAM_Regimen;
+    where Treatment_RDexaBEAM AND R_DexaBEAM_Regimen;
         
         
 

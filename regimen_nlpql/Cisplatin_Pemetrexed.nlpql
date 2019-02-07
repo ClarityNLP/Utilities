@@ -53,11 +53,11 @@ define final Regimen_Cisplatin_Pemetrexed:
 // Results
 
         
-define final Treatment__CisplatinPemetrexed:
+define final Treatment_CisplatinPemetrexed:
     where Cisplatin_Treatment AND Pemetrexed_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinPemetrexed AND Cisplatin_Pemetrexed_Regimen;
+    where Treatment_CisplatinPemetrexed AND Cisplatin_Pemetrexed_Regimen;
         
         
 

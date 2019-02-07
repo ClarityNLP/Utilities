@@ -75,11 +75,11 @@ define final Regimen_MVAC:
 // Results
 
         
-define final Treatment__MVAC:
+define final Treatment_MVAC:
     where Methotrexate_Treatment AND Vinblastine_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MVAC AND MVAC_Regimen;
+    where Treatment_MVAC AND MVAC_Regimen;
         
         
 

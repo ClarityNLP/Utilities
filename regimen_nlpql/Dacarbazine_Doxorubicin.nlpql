@@ -53,11 +53,11 @@ define final Regimen_Dacarbazine_Doxorubicin:
 // Results
 
         
-define final Treatment__DacarbazineDoxorubicin:
+define final Treatment_DacarbazineDoxorubicin:
     where Dacarbazine_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DacarbazineDoxorubicin AND Dacarbazine_Doxorubicin_Regimen;
+    where Treatment_DacarbazineDoxorubicin AND Dacarbazine_Doxorubicin_Regimen;
         
         
 

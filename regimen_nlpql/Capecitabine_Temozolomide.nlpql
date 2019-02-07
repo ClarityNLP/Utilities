@@ -53,11 +53,11 @@ define final Regimen_Capecitabine_Temozolomide:
 // Results
 
         
-define final Treatment__CapecitabineTemozolomide:
+define final Treatment_CapecitabineTemozolomide:
     where Capecitabine_Treatment AND Temozolomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineTemozolomide AND Capecitabine_Temozolomide_Regimen;
+    where Treatment_CapecitabineTemozolomide AND Capecitabine_Temozolomide_Regimen;
         
         
 

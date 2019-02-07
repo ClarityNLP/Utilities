@@ -75,11 +75,11 @@ define final Regimen_IFL_Bevacizumab:
 // Results
 
         
-define final Treatment__IFLBevacizumab:
+define final Treatment_IFLBevacizumab:
     where Irinotecan_Treatment AND Fluorouracil_Treatment AND Folinicacid_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IFLBevacizumab AND IFL_Bevacizumab_Regimen;
+    where Treatment_IFLBevacizumab AND IFL_Bevacizumab_Regimen;
         
         
 

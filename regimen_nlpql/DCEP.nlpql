@@ -75,18 +75,18 @@ define final Regimen_DCEP:
 // Results
 
         
-define final Treatment__DCEP:
+define final Treatment_DCEP:
     where Dexamethasone_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DCEP AND DCEP_Regimen;
+    where Treatment_DCEP AND DCEP_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Multiple_myeloma_consolidation_and_maintenance, Multiple_myeloma_relapsedrefractory
+Known regimen for: Multiple_myeloma_relapsedrefractory, Multiple_myeloma_consolidation_and_maintenance
 
 
 

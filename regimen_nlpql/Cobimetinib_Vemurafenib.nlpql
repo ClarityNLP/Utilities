@@ -53,11 +53,11 @@ define final Regimen_Cobimetinib_Vemurafenib:
 // Results
 
         
-define final Treatment__CobimetinibVemurafenib:
+define final Treatment_CobimetinibVemurafenib:
     where Cobimetinib_Treatment AND Vemurafenib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CobimetinibVemurafenib AND Cobimetinib_Vemurafenib_Regimen;
+    where Treatment_CobimetinibVemurafenib AND Cobimetinib_Vemurafenib_Regimen;
         
         
 

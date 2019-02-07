@@ -86,11 +86,11 @@ define final Regimen_R_MegaCHOP_14:
 // Results
 
         
-define final Treatment__RMegaCHOP14:
+define final Treatment_RMegaCHOP14:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RMegaCHOP14 AND R_MegaCHOP_14_Regimen;
+    where Treatment_RMegaCHOP14 AND R_MegaCHOP_14_Regimen;
         
         
 

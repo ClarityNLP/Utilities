@@ -53,11 +53,11 @@ define final Regimen_Interferon_alfa_2b_Zidovudine:
 // Results
 
         
-define final Treatment__Interferonalfa2bZidovudine:
+define final Treatment_Interferonalfa2bZidovudine:
     where Interferonalfa2b_Treatment AND Zidovudine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Interferonalfa2bZidovudine AND Interferon_alfa_2b_Zidovudine_Regimen;
+    where Treatment_Interferonalfa2bZidovudine AND Interferon_alfa_2b_Zidovudine_Regimen;
         
         
 

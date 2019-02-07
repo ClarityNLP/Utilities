@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_Streptozocin:
 // Results
 
         
-define final Treatment__DoxorubicinStreptozocin:
+define final Treatment_DoxorubicinStreptozocin:
     where Doxorubicin_Treatment AND Streptozocin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinStreptozocin AND Doxorubicin_Streptozocin_Regimen;
+    where Treatment_DoxorubicinStreptozocin AND Doxorubicin_Streptozocin_Regimen;
         
         
 

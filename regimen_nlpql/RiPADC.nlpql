@@ -86,11 +86,11 @@ define final Regimen_RiPADC:
 // Results
 
         
-define final Treatment__RiPADC:
+define final Treatment_RiPADC:
     where Rituximab_Treatment AND Bortezomib_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment AND Chlorambucil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RiPADC AND RiPADC_Regimen;
+    where Treatment_RiPADC AND RiPADC_Regimen;
         
         
 

@@ -64,18 +64,18 @@ define final Regimen_FCR:
 // Results
 
         
-define final Treatment__FCR:
+define final Treatment_FCR:
     where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FCR AND FCR_Regimen;
+    where Treatment_FCR AND FCR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Allogeneic_HSCT, Waldenstrom_macroglobulinemia, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Allogeneic_HSCT, Chronic_lymphocytic_leukemia_(CLLSLL)
 
 
 

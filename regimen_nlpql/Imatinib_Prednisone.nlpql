@@ -53,11 +53,11 @@ define final Regimen_Imatinib_Prednisone:
 // Results
 
         
-define final Treatment__ImatinibPrednisone:
+define final Treatment_ImatinibPrednisone:
     where Imatinib_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ImatinibPrednisone AND Imatinib_Prednisone_Regimen;
+    where Treatment_ImatinibPrednisone AND Imatinib_Prednisone_Regimen;
         
         
 

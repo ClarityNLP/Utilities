@@ -64,11 +64,11 @@ define final Regimen_FRD:
 // Results
 
         
-define final Treatment__FRD:
+define final Treatment_FRD:
     where Panobinostat_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FRD AND FRD_Regimen;
+    where Treatment_FRD AND FRD_Regimen;
         
         
 

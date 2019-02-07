@@ -86,11 +86,11 @@ define final Regimen_R_NIMP:
 // Results
 
         
-define final Treatment__RNIMP:
+define final Treatment_RNIMP:
     where Rituximab_Treatment AND Vinorelbine_Treatment AND Ifosfamide_Treatment AND Mitoxantrone_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RNIMP AND R_NIMP_Regimen;
+    where Treatment_RNIMP AND R_NIMP_Regimen;
         
         
 

@@ -4,10 +4,25 @@ from datetime import datetime
 import pandas as pd
 import requests
 
-path = '/Users/charityhilton/Documents/'
-lit_file = 'death_lit.csv'
-stat_file = 'death_stat.csv'
+path = '/Users/charityhilton/Documents/WashingtonStateData/'
+files = [
+    ('DeathLitF2012.csv', 'DeathStatF2012.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('death_lit.csv', 'death_stat.csv', 'utf-8', 'utf-8'),
+    ('DeathLitF2013.csv', 'DeathStatF2013.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLitF2014.csv', 'DeathStatF2014.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLitF2015.csv', 'DeathStatF2015.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLitF2016.csv', 'DeathStatF2016.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLitF2010.csv', 'DeathStatF2010.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLit2017Q3.csv', 'DeathStat2017Q3.xlsx', 'ISO-8859-1', 'utf-8'),
+    ('DeathLitF2011.csv', 'DeathStatF2011.xlsx', 'ISO-8859-1', 'utf-8')
+    ]
+
 additional_columns = [
+    "Age",
+    "Sex",
+    "Birthplace Country",
+    "Armed Forces",
+    "Marital Status",
     "Education",
     "Occupation",
     "Industry",
@@ -91,47 +106,90 @@ def make_text(row):
 
     for k in keys:
         cause = 'Cause of Death Line {}'.format(k)
-        interval = 'Interval Line {}'.format(k)
+        interval = 'Interval Time Line {}'.format(k)
         if not pd.isna(row[cause]) and len(str(row[cause]).strip()) > 0:
             txt += '''
 Cause of Death {}:
-{}
+{}.  
 
 
 Interval of Death {}:
-{}
+{}. 
 
             '''.format(k, row[cause], k, row[interval])
 
-    if not pd.isna(row['Conditions Part II']) and len(str(row['Conditions Part II']).strip()) > 0:
+    if not pd.isna(row['Other Significant Conditions']) and len(str(row['Other Significant Conditions']).strip()) > 0:
         txt += '''
 Additional Conditions:
-{}
+{}. 
 
-                '''.format(row['Conditions Part II'])
+                '''.format(row['Other Significant Conditions'])
 
-    if not pd.isna(row['Injury Description']) and len(str(row['Injury Description']).strip()) > 0:
+    if not pd.isna(row['How Injury Occurred']) and len(str(row['How Injury Occurred']).strip()) > 0:
         txt += '''
-Injury Description:
-{}
+How Injury Occurred:
+{}. 
 
-                        '''.format(row['Injury Description'])
+                        '''.format(row['How Injury Occurred'])
 
-    if not pd.isna(row['Injury Place_y']) and len(str(row['Injury Place_y']).strip()) > 0:
+    if 'Place of Injury' in row and not pd.isna(row['Place of Injury']) and len(
+            str(row['Place of Injury']).strip()) > 0:
         txt += '''
         
 Injury Place:
-{}
-                        '''.format(row['Injury Place_y'])
+{}. 
+                        '''.format(row['Place of Injury'])
 
-    return txt.strip()
+    return txt.strip().replace('..', '.')
 
 
-def load_files():
-    lit_df = pd.read_csv('{}{}'.format(path, lit_file))
-    stats_df = pd.read_csv('{}{}'.format(path, stat_file))
+def load_files(lit_file, stat_file, enc1, enc2):
+    print(lit_file, stat_file)
+    if not lit_file.endswith('xlsx'):
+        lit_df = pd.read_csv('{}{}'.format(path, lit_file), encoding=enc1)
+        col_names = lit_df.columns
+        print(col_names)
+        if len(col_names) == 15:
+            cols = ["State File Number", "Cause of Death Line A",
+                    "Cause of Death Line B", "Cause of Death Line C",
+                    "Cause of Death Line D", "Interval Time Line A",
+                    "Interval Time Line B", "Interval Time Line C",
+                    "Interval Time Line D", "Due to B", "Due to C", "Due to D",
+                    "Other Significant Conditions",
+                    "How Injury Occurred", "Place of Injury"]
+        elif len(col_names) == 16:
+            cols = ["State File Number", "Cause of Death Line A",
+                    "Cause of Death Line B", "Cause of Death Line C",
+                    "Cause of Death Line D", "Interval Time Line A",
+                    "Interval Time Line B", "Interval Time Line C",
+                    "Interval Time Line D", "Due to B", "Due to C", "Due to D",
+                    "Other Significant Conditions",
+                    "How Injury Occurred", "Place of Injury", ""]
+        elif len(col_names) == 17:
+            cols = ["State File Number", "Cause of Death Line A",
+                    "Cause of Death Line B", "Cause of Death Line C",
+                    "Cause of Death Line D", "Interval Time Line A",
+                    "Interval Time Line B", "Interval Time Line C",
+                    "Interval Time Line D", "Due to B", "Due to C", "Due to D",
+                    "Other Significant Conditions",
+                    "How Injury Occurred", "Place of Injury", "", ""]
+        else:
+            cols = ["State File Number", "Cause of Death Line A",
+                    "Cause of Death Line B", "Cause of Death Line C",
+                    "Cause of Death Line D", "Interval Time Line A",
+                    "Interval Time Line B", "Interval Time Line C",
+                    "Interval Time Line D",
+                    "Other Significant Conditions",
+                    "How Injury Occurred", "Place of Injury"]
+        lit_df.columns = cols
+    else:
+        lit_df = None
+    # if not stat_file.endswith('xlsx'):
+    #     stats_df = pd.read_csv('{}{}'.format(path, stat_file), encoding=enc2)
+    # else:
+    #     stats_df = None
 
-    df = pd.merge(stats_df, lit_df, on='State File Number')
+    df = lit_df
     # cols = df.columns
     # for c in cols:
     #     print('"' + c + '",')
@@ -139,21 +197,25 @@ def load_files():
     results = list()
     n = 0
     for index, row in df.iterrows():
-        dt = datetime.strptime(row['Date of Death'], '%m/%d/%Y').isoformat()
-        d = {"subject": row['State File Number'],
+        id = str(row['State File Number'])
+        if 'Date of Death' in row:
+            dt = datetime.strptime(row['Date of Death'], '%m/%d/%Y').isoformat()
+        else:
+            dt = "{}-01-01T00:00:00Z".format(id[0:4])
+        report_text = make_text(row)
+        if len(report_text) == 0:
+            continue
+        d = {"subject": id,
              "source": "WA_Death_Records",
              "report_type": "Death Record",
-             "report_text": make_text(row),
-             "report_id": 'WA_DR_{}'.format(row['State File Number']),
-             "id": 'WA_DR_{}'.format(row['State File Number']),
-             "report_date": dt,
-             "age_attr": row['Age'],
-             "sex_attr": row['Sex'],
-             "birthpace_country_attr": row['Birthplace Country'],
-             "armed_forces_attr": row['Armed Forces'],
-             "marital_status_attr": row['Marital Status']
+             "report_text": report_text,
+             "report_id": 'WA_DR_{}'.format(id),
+             "id": 'WA_DR_{}'.format(id),
+             "report_date": dt
              }
         for ac in additional_columns:
+            if ac not in row.index.values:
+                continue
             key = ("_".join(ac.split(' '))).lower() + '_attr'
             val = row[ac]
             if isinstance(val, str):
@@ -163,14 +225,14 @@ def load_files():
                 if not pd.isna(val):
                     d[key] = val
         results.append(d)
-        if len(results) % 10 == 0:
-            n += 10
+        if len(results) % 1000 == 0:
+            n += 1000
             write_results(results)
             results = list()
             print('loaded {} records'.format(n))
     n += (len(results))
     write_results(results)
-    print('DONE - loaded {} records'.format(n))
+    print('DONE loaded {} records'.format(n))
 
 
 def write_results(results):
@@ -183,14 +245,28 @@ def write_results(results):
         'Content-type': 'application/json',
     }
 
+    ok = True
     data = json.dumps(results)
-    response = requests.post(url, headers=headers, data=data)
-    if response.status_code != 200:
-        print('fail')
+    try:
+        response = requests.post(url, headers=headers, data=data)
+        if response.status_code != 200:
+            ok = False
+    except Exception as ex:
+        print(ex)
+    if not ok:
+        try:
+            response = requests.post(url, headers=headers, data=data)
+            if response.status_code != 200:
+                print('retry fail')
+            else:
+                print('retry ok')
+        except Exception as ex:
+            print(ex)
     else:
         print('ok')
 
 
 if __name__ == "__main__":
     pd.set_option('display.max_columns', 500)
-    load_files()
+    for f in files:
+        load_files(f[0], f[1], f[2], f[3])

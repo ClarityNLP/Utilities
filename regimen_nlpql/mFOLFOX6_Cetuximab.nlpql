@@ -75,11 +75,11 @@ define final Regimen_mFOLFOX6_Cetuximab:
 // Results
 
         
-define final Treatment__mFOLFOX6Cetuximab:
+define final Treatment_mFOLFOX6Cetuximab:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Cetuximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mFOLFOX6Cetuximab AND mFOLFOX6_Cetuximab_Regimen;
+    where Treatment_mFOLFOX6Cetuximab AND mFOLFOX6_Cetuximab_Regimen;
         
         
 

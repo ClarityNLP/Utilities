@@ -53,11 +53,11 @@ define final Regimen_Fludarabine_Prednisone:
 // Results
 
         
-define final Treatment__FludarabinePrednisone:
+define final Treatment_FludarabinePrednisone:
     where Fludarabine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabinePrednisone AND Fludarabine_Prednisone_Regimen;
+    where Treatment_FludarabinePrednisone AND Fludarabine_Prednisone_Regimen;
         
         
 

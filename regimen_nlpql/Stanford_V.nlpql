@@ -108,18 +108,18 @@ define final Regimen_Stanford_V:
 // Results
 
         
-define final Treatment__StanfordV:
+define final Treatment_StanfordV:
     where Doxorubicin_Treatment AND Vinblastine_Treatment AND Mechlorethamine_Treatment AND Etoposide_Treatment AND Vincristine_Treatment AND Bleomycin_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__StanfordV AND Stanford_V_Regimen;
+    where Treatment_StanfordV AND Stanford_V_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, HIV-associated_lymphoma
+Known regimen for: HIV-associated_lymphoma, Hodgkin_lymphoma
 
 
 

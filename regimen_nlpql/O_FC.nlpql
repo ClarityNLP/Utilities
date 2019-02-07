@@ -64,11 +64,11 @@ define final Regimen_O_FC:
 // Results
 
         
-define final Treatment__OFC:
+define final Treatment_OFC:
     where Ofatumumab_Treatment AND Fludarabine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OFC AND O_FC_Regimen;
+    where Treatment_OFC AND O_FC_Regimen;
         
         
 

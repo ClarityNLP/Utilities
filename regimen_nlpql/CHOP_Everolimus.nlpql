@@ -86,11 +86,11 @@ define final Regimen_CHOP_Everolimus:
 // Results
 
         
-define final Treatment__CHOPEverolimus:
+define final Treatment_CHOPEverolimus:
     where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Everolimus_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CHOPEverolimus AND CHOP_Everolimus_Regimen;
+    where Treatment_CHOPEverolimus AND CHOP_Everolimus_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_FLAG_Ida:
 // Results
 
         
-define final Treatment__FLAGIda:
+define final Treatment_FLAGIda:
     where Fludarabine_Treatment AND Cytarabine_Treatment AND Lenograstim_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FLAGIda AND FLAG_Ida_Regimen;
+    where Treatment_FLAGIda AND FLAG_Ida_Regimen;
         
         
 

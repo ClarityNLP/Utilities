@@ -75,11 +75,11 @@ define final Regimen_AAVD:
 // Results
 
         
-define final Treatment__AAVD:
+define final Treatment_AAVD:
     where Brentuximabvedotin_Treatment AND Doxorubicin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AAVD AND AAVD_Regimen;
+    where Treatment_AAVD AND AAVD_Regimen;
         
         
 

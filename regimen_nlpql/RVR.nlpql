@@ -64,11 +64,11 @@ define final Regimen_RVR:
 // Results
 
         
-define final Treatment__RVR:
+define final Treatment_RVR:
     where Everolimus_Treatment AND Bortezomib_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RVR AND RVR_Regimen;
+    where Treatment_RVR AND RVR_Regimen;
         
         
 

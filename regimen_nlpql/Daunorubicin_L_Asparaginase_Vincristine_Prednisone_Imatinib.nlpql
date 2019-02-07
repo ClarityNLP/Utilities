@@ -86,11 +86,11 @@ define final Regimen_Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib
 // Results
 
         
-define final Treatment__DaunorubicinLAsparaginaseVincristinePrednisoneImatinib:
+define final Treatment_DaunorubicinLAsparaginaseVincristinePrednisoneImatinib:
     where Daunorubicin_Treatment AND Asparaginase_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Imatinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DaunorubicinLAsparaginaseVincristinePrednisoneImatinib AND Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib_Regimen;
+    where Treatment_DaunorubicinLAsparaginaseVincristinePrednisoneImatinib AND Daunorubicin_L_Asparaginase_Vincristine_Prednisone_Imatinib_Regimen;
         
         
 

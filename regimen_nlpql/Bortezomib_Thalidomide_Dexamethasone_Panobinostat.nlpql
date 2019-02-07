@@ -75,11 +75,11 @@ define final Regimen_Bortezomib_Thalidomide_Dexamethasone_Panobinostat:
 // Results
 
         
-define final Treatment__BortezomibThalidomideDexamethasonePanobinostat:
+define final Treatment_BortezomibThalidomideDexamethasonePanobinostat:
     where Bortezomib_Treatment AND Thalidomide_Treatment AND Dexamethasone_Treatment AND Panobinostat_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibThalidomideDexamethasonePanobinostat AND Bortezomib_Thalidomide_Dexamethasone_Panobinostat_Regimen;
+    where Treatment_BortezomibThalidomideDexamethasonePanobinostat AND Bortezomib_Thalidomide_Dexamethasone_Panobinostat_Regimen;
         
         
 

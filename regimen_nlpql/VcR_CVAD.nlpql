@@ -97,11 +97,11 @@ define final Regimen_VcR_CVAD:
 // Results
 
         
-define final Treatment__VcRCVAD:
+define final Treatment_VcRCVAD:
     where Bortezomib_Treatment AND Rituximab_Treatment AND Cyclophosphamide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VcRCVAD AND VcR_CVAD_Regimen;
+    where Treatment_VcRCVAD AND VcR_CVAD_Regimen;
         
         
 

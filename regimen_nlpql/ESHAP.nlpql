@@ -75,11 +75,11 @@ define final Regimen_ESHAP:
 // Results
 
         
-define final Treatment__ESHAP:
+define final Treatment_ESHAP:
     where Etoposide_Treatment AND Methylprednisolone_Treatment AND Cytarabine_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ESHAP AND ESHAP_Regimen;
+    where Treatment_ESHAP AND ESHAP_Regimen;
         
         
 

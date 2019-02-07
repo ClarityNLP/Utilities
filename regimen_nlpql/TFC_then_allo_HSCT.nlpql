@@ -64,11 +64,11 @@ define final Regimen_TFC_then_allo_HSCT:
 // Results
 
         
-define final Treatment__TFCthenalloHSCT:
+define final Treatment_TFCthenalloHSCT:
     where Thiotepa_Treatment AND Fludarabine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TFCthenalloHSCT AND TFC_then_allo_HSCT_Regimen;
+    where Treatment_TFCthenalloHSCT AND TFC_then_allo_HSCT_Regimen;
         
         
 

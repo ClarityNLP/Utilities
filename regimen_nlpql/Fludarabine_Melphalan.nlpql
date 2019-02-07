@@ -64,11 +64,11 @@ define final Regimen_Fludarabine_Melphalan:
 // Results
 
         
-define final Treatment__FludarabineMelphalan:
+define final Treatment_FludarabineMelphalan:
     where Fludarabine_Treatment AND Melphalan_Treatment AND CategoryAntithymocyteglobulin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabineMelphalan AND Fludarabine_Melphalan_Regimen;
+    where Treatment_FludarabineMelphalan AND Fludarabine_Melphalan_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Ifosfamide:
 // Results
 
         
-define final Treatment__CarboplatinIfosfamide:
+define final Treatment_CarboplatinIfosfamide:
     where Carboplatin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinIfosfamide AND Carboplatin_Ifosfamide_Regimen;
+    where Treatment_CarboplatinIfosfamide AND Carboplatin_Ifosfamide_Regimen;
         
         
 

@@ -53,18 +53,18 @@ define final Regimen_Cyclophosphamide_TBI:
 // Results
 
         
-define final Treatment__CyclophosphamideTBI:
+define final Treatment_CyclophosphamideTBI:
     where Cyclophosphamide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideTBI AND Cyclophosphamide_TBI_Regimen;
+    where Treatment_CyclophosphamideTBI AND Cyclophosphamide_TBI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+Known regimen for: Allogeneic_HSCT, Autologous_HSCT
 
 
 

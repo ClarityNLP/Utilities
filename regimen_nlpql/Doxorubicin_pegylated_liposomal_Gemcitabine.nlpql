@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_pegylated_liposomal_Gemcitabine:
 // Results
 
         
-define final Treatment__DoxorubicinpegylatedliposomalGemcitabine:
+define final Treatment_DoxorubicinpegylatedliposomalGemcitabine:
     where Pegylatedliposomaldoxorubicin_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinpegylatedliposomalGemcitabine AND Doxorubicin_pegylated_liposomal_Gemcitabine_Regimen;
+    where Treatment_DoxorubicinpegylatedliposomalGemcitabine AND Doxorubicin_pegylated_liposomal_Gemcitabine_Regimen;
         
         
 

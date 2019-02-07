@@ -75,11 +75,11 @@ define final Regimen_BEAC:
 // Results
 
         
-define final Treatment__BEAC:
+define final Treatment_BEAC:
     where Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BEAC AND BEAC_Regimen;
+    where Treatment_BEAC AND BEAC_Regimen;
         
         
 

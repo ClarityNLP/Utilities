@@ -53,11 +53,11 @@ define final Regimen_Everolimus_Rituximab:
 // Results
 
         
-define final Treatment__EverolimusRituximab:
+define final Treatment_EverolimusRituximab:
     where Everolimus_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EverolimusRituximab AND Everolimus_Rituximab_Regimen;
+    where Treatment_EverolimusRituximab AND Everolimus_Rituximab_Regimen;
         
         
 

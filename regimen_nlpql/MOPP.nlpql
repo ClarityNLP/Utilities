@@ -75,11 +75,11 @@ define final Regimen_MOPP:
 // Results
 
         
-define final Treatment__MOPP:
+define final Treatment_MOPP:
     where Mechlorethamine_Treatment AND Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MOPP AND MOPP_Regimen;
+    where Treatment_MOPP AND MOPP_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_Gemcitabine_Oxaliplatin_Paclitaxel:
 // Results
 
         
-define final Treatment__GemcitabineOxaliplatinPaclitaxel:
+define final Treatment_GemcitabineOxaliplatinPaclitaxel:
     where Gemcitabine_Treatment AND Oxaliplatin_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineOxaliplatinPaclitaxel AND Gemcitabine_Oxaliplatin_Paclitaxel_Regimen;
+    where Treatment_GemcitabineOxaliplatinPaclitaxel AND Gemcitabine_Oxaliplatin_Paclitaxel_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Docetaxel_Gemcitabine_RT:
 // Results
 
         
-define final Treatment__DocetaxelGemcitabineRT:
+define final Treatment_DocetaxelGemcitabineRT:
     where Docetaxel_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelGemcitabineRT AND Docetaxel_Gemcitabine_RT_Regimen;
+    where Treatment_DocetaxelGemcitabineRT AND Docetaxel_Gemcitabine_RT_Regimen;
         
         
 

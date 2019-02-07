@@ -64,11 +64,11 @@ define final Regimen_DRC:
 // Results
 
         
-define final Treatment__DRC:
+define final Treatment_DRC:
     where Dexamethasone_Treatment AND Rituximab_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DRC AND DRC_Regimen;
+    where Treatment_DRC AND DRC_Regimen;
         
         
 

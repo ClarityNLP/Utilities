@@ -64,11 +64,11 @@ define final Regimen_LVP_Sandwich:
 // Results
 
         
-define final Treatment__LVPSandwich:
+define final Treatment_LVPSandwich:
     where Asparaginase_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LVPSandwich AND LVP_Sandwich_Regimen;
+    where Treatment_LVPSandwich AND LVP_Sandwich_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Clofarabine_LoDAC:
 // Results
 
         
-define final Treatment__ClofarabineLoDAC:
+define final Treatment_ClofarabineLoDAC:
     where Clofarabine_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ClofarabineLoDAC AND Clofarabine_LoDAC_Regimen;
+    where Treatment_ClofarabineLoDAC AND Clofarabine_LoDAC_Regimen;
         
         
 

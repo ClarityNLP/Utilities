@@ -53,11 +53,11 @@ define final Regimen_Dasatinib_Prednisone:
 // Results
 
         
-define final Treatment__DasatinibPrednisone:
+define final Treatment_DasatinibPrednisone:
     where Dasatinib_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DasatinibPrednisone AND Dasatinib_Prednisone_Regimen;
+    where Treatment_DasatinibPrednisone AND Dasatinib_Prednisone_Regimen;
         
         
 

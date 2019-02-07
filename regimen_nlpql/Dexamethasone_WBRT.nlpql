@@ -53,11 +53,11 @@ define final Regimen_Dexamethasone_WBRT:
 // Results
 
         
-define final Treatment__DexamethasoneWBRT:
+define final Treatment_DexamethasoneWBRT:
     where Dexamethasone_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DexamethasoneWBRT AND Dexamethasone_WBRT_Regimen;
+    where Treatment_DexamethasoneWBRT AND Dexamethasone_WBRT_Regimen;
         
         
 

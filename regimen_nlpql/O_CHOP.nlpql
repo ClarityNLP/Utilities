@@ -86,11 +86,11 @@ define final Regimen_O_CHOP:
 // Results
 
         
-define final Treatment__OCHOP:
+define final Treatment_OCHOP:
     where Ofatumumab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OCHOP AND O_CHOP_Regimen;
+    where Treatment_OCHOP AND O_CHOP_Regimen;
         
         
 

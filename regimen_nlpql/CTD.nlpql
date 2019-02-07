@@ -64,11 +64,11 @@ define final Regimen_CTD:
 // Results
 
         
-define final Treatment__CTD:
+define final Treatment_CTD:
     where Cyclophosphamide_Treatment AND Thalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CTD AND CTD_Regimen;
+    where Treatment_CTD AND CTD_Regimen;
         
         
 

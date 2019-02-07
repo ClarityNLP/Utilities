@@ -53,11 +53,11 @@ define final Regimen_73m:
 // Results
 
         
-define final Treatment__73m:
+define final Treatment_73m:
     where Cytarabine_Treatment AND Mitoxantrone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__73m AND 73m_Regimen;
+    where Treatment_73m AND 73m_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_Methotrexate_Tacrolimus_Vorinostat:
 // Results
 
         
-define final Treatment__MethotrexateTacrolimusVorinostat:
+define final Treatment_MethotrexateTacrolimusVorinostat:
     where Methotrexate_Treatment AND Tacrolimus_Treatment AND Vorinostat_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexateTacrolimusVorinostat AND Methotrexate_Tacrolimus_Vorinostat_Regimen;
+    where Treatment_MethotrexateTacrolimusVorinostat AND Methotrexate_Tacrolimus_Vorinostat_Regimen;
         
         
 

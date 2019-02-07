@@ -64,11 +64,11 @@ define final Regimen_MCP:
 // Results
 
         
-define final Treatment__MCP:
+define final Treatment_MCP:
     where Mitoxantrone_Treatment AND Chlorambucil_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MCP AND MCP_Regimen;
+    where Treatment_MCP AND MCP_Regimen;
         
         
 

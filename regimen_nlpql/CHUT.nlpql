@@ -53,11 +53,11 @@ define final Regimen_CHUT:
 // Results
 
         
-define final Treatment__CHUT:
+define final Treatment_CHUT:
     where Cyclophosphamide_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CHUT AND CHUT_Regimen;
+    where Treatment_CHUT AND CHUT_Regimen;
         
         
 

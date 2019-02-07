@@ -53,11 +53,11 @@ define final Regimen_BCNUTT_then_auto_HSCT:
 // Results
 
         
-define final Treatment__BCNUTTthenautoHSCT:
+define final Treatment_BCNUTTthenautoHSCT:
     where Carmustine_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BCNUTTthenautoHSCT AND BCNUTT_then_auto_HSCT_Regimen;
+    where Treatment_BCNUTTthenautoHSCT AND BCNUTT_then_auto_HSCT_Regimen;
         
         
 

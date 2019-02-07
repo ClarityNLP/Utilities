@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Vincristine:
 // Results
 
         
-define final Treatment__CarboplatinVincristine:
+define final Treatment_CarboplatinVincristine:
     where Carboplatin_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinVincristine AND Carboplatin_Vincristine_Regimen;
+    where Treatment_CarboplatinVincristine AND Carboplatin_Vincristine_Regimen;
         
         
 

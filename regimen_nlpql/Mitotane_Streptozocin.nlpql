@@ -53,11 +53,11 @@ define final Regimen_Mitotane_Streptozocin:
 // Results
 
         
-define final Treatment__MitotaneStreptozocin:
+define final Treatment_MitotaneStreptozocin:
     where Mitotane_Treatment AND Streptozocin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MitotaneStreptozocin AND Mitotane_Streptozocin_Regimen;
+    where Treatment_MitotaneStreptozocin AND Mitotane_Streptozocin_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_Cyclophosphamide_Etoposide_TBI:
 // Results
 
         
-define final Treatment__CyclophosphamideEtoposideTBI:
+define final Treatment_CyclophosphamideEtoposideTBI:
     where Cyclophosphamide_Treatment AND Etoposide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideEtoposideTBI AND Cyclophosphamide_Etoposide_TBI_Regimen;
+    where Treatment_CyclophosphamideEtoposideTBI AND Cyclophosphamide_Etoposide_TBI_Regimen;
         
         
 

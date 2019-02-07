@@ -53,11 +53,11 @@ define final Regimen_Dactinomycin_Vincristine:
 // Results
 
         
-define final Treatment__DactinomycinVincristine:
+define final Treatment_DactinomycinVincristine:
     where Dactinomycin_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DactinomycinVincristine AND Dactinomycin_Vincristine_Regimen;
+    where Treatment_DactinomycinVincristine AND Dactinomycin_Vincristine_Regimen;
         
         
 

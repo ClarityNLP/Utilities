@@ -75,11 +75,11 @@ define final Regimen_MATRix:
 // Results
 
         
-define final Treatment__MATRix:
+define final Treatment_MATRix:
     where Methotrexate_Treatment AND Cytarabine_Treatment AND Thiotepa_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MATRix AND MATRix_Regimen;
+    where Treatment_MATRix AND MATRix_Regimen;
         
         
 

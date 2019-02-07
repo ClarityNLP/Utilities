@@ -53,11 +53,11 @@ define final Regimen_Melphalan_TBI:
 // Results
 
         
-define final Treatment__MelphalanTBI:
+define final Treatment_MelphalanTBI:
     where Melphalan_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MelphalanTBI AND Melphalan_TBI_Regimen;
+    where Treatment_MelphalanTBI AND Melphalan_TBI_Regimen;
         
         
 

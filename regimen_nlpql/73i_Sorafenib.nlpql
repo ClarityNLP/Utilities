@@ -64,11 +64,11 @@ define final Regimen_73i_Sorafenib:
 // Results
 
         
-define final Treatment__73iSorafenib:
+define final Treatment_73iSorafenib:
     where Cytarabine_Treatment AND Idarubicin_Treatment AND Sorafenib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__73iSorafenib AND 73i_Sorafenib_Regimen;
+    where Treatment_73iSorafenib AND 73i_Sorafenib_Regimen;
         
         
 

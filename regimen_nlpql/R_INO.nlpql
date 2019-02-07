@@ -53,18 +53,18 @@ define final Regimen_R_INO:
 // Results
 
         
-define final Treatment__RINO:
+define final Treatment_RINO:
     where Rituximab_Treatment AND Inotuzumabozogamicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RINO AND R_INO_Regimen;
+    where Treatment_RINO AND R_INO_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Follicular_lymphoma
+Known regimen for: Follicular_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

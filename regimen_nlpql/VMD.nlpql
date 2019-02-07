@@ -64,11 +64,11 @@ define final Regimen_VMD:
 // Results
 
         
-define final Treatment__VMD:
+define final Treatment_VMD:
     where Bortezomib_Treatment AND Melphalan_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VMD AND VMD_Regimen;
+    where Treatment_VMD AND VMD_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_EIA:
 // Results
 
         
-define final Treatment__EIA:
+define final Treatment_EIA:
     where Etoposide_Treatment AND Ifosfamide_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EIA AND EIA_Regimen;
+    where Treatment_EIA AND EIA_Regimen;
         
         
 

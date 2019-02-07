@@ -53,11 +53,11 @@ define final Regimen_Capecitabine_Mitomycin:
 // Results
 
         
-define final Treatment__CapecitabineMitomycin:
+define final Treatment_CapecitabineMitomycin:
     where Capecitabine_Treatment AND Mitomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineMitomycin AND Capecitabine_Mitomycin_Regimen;
+    where Treatment_CapecitabineMitomycin AND Capecitabine_Mitomycin_Regimen;
         
         
 

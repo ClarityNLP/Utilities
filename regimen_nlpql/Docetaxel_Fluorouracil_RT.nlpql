@@ -64,11 +64,11 @@ define final Regimen_Docetaxel_Fluorouracil_RT:
 // Results
 
         
-define final Treatment__DocetaxelFluorouracilRT:
+define final Treatment_DocetaxelFluorouracilRT:
     where Docetaxel_Treatment AND Fluorouracil_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelFluorouracilRT AND Docetaxel_Fluorouracil_RT_Regimen;
+    where Treatment_DocetaxelFluorouracilRT AND Docetaxel_Fluorouracil_RT_Regimen;
         
         
 

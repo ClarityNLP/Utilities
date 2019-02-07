@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_Paclitaxel:
 // Results
 
         
-define final Treatment__CisplatinPaclitaxel:
+define final Treatment_CisplatinPaclitaxel:
     where Cisplatin_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinPaclitaxel AND Cisplatin_Paclitaxel_Regimen;
+    where Treatment_CisplatinPaclitaxel AND Cisplatin_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Esophageal_cancer, Cutaneous_basal_cell_carcinoma, Head_and_neck_cancer, Cervical_cancer, Endometrial_cancer, Non-small_cell_lung_cancer
+Known regimen for: Cutaneous_basal_cell_carcinoma, Non-small_cell_lung_cancer, Esophageal_cancer, Endometrial_cancer, Cervical_cancer, Head_and_neck_cancer, Ovarian_cancer
 
 
 

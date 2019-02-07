@@ -86,11 +86,11 @@ define final Regimen_MESA:
 // Results
 
         
-define final Treatment__MESA:
+define final Treatment_MESA:
     where Methotrexate_Treatment AND Etoposide_Treatment AND Dexamethasone_Treatment AND Pegaspargase_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MESA AND MESA_Regimen;
+    where Treatment_MESA AND MESA_Regimen;
         
         
 

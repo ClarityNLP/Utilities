@@ -86,11 +86,11 @@ define final Regimen_MAPIE:
 // Results
 
         
-define final Treatment__MAPIE:
+define final Treatment_MAPIE:
     where Methotrexate_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment AND Ifosfamide_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MAPIE AND MAPIE_Regimen;
+    where Treatment_MAPIE AND MAPIE_Regimen;
         
         
 

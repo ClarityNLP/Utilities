@@ -53,11 +53,11 @@ define final Regimen_Hydroxyurea_RT:
 // Results
 
         
-define final Treatment__HydroxyureaRT:
+define final Treatment_HydroxyureaRT:
     where Hydroxyurea_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HydroxyureaRT AND Hydroxyurea_RT_Regimen;
+    where Treatment_HydroxyureaRT AND Hydroxyurea_RT_Regimen;
         
         
 

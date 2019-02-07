@@ -53,11 +53,11 @@ define final Regimen_BCNUTT:
 // Results
 
         
-define final Treatment__BCNUTT:
+define final Treatment_BCNUTT:
     where Carmustine_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BCNUTT AND BCNUTT_Regimen;
+    where Treatment_BCNUTT AND BCNUTT_Regimen;
         
         
 

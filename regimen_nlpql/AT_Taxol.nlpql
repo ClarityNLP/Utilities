@@ -53,11 +53,11 @@ define final Regimen_AT_Taxol:
 // Results
 
         
-define final Treatment__ATTaxol:
+define final Treatment_ATTaxol:
     where Doxorubicin_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATTaxol AND AT_Taxol_Regimen;
+    where Treatment_ATTaxol AND AT_Taxol_Regimen;
         
         
 

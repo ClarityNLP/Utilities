@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_Etoposide:
 // Results
 
         
-define final Treatment__CisplatinEtoposide:
+define final Treatment_CisplatinEtoposide:
     where Cisplatin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinEtoposide AND Cisplatin_Etoposide_Regimen;
+    where Treatment_CisplatinEtoposide AND Cisplatin_Etoposide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Thymoma, Esophageal_cancer, Small_cell_lung_cancer, Testicular_cancer, Non-small_cell_lung_cancer, Low-grade_glioma
+Known regimen for: Non-small_cell_lung_cancer, Esophageal_cancer, Low-grade_glioma, Testicular_cancer, Small_cell_lung_cancer, Thymoma
 
 
 

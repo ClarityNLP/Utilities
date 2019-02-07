@@ -75,11 +75,11 @@ define final Regimen_FOLFIRI_Cetuximab:
 // Results
 
         
-define final Treatment__FOLFIRICetuximab:
+define final Treatment_FOLFIRICetuximab:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Irinotecan_Treatment AND Cetuximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRICetuximab AND FOLFIRI_Cetuximab_Regimen;
+    where Treatment_FOLFIRICetuximab AND FOLFIRI_Cetuximab_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Etoposide_Mitoxantrone:
 // Results
 
         
-define final Treatment__EtoposideMitoxantrone:
+define final Treatment_EtoposideMitoxantrone:
     where Etoposide_Treatment AND Mitoxantrone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EtoposideMitoxantrone AND Etoposide_Mitoxantrone_Regimen;
+    where Treatment_EtoposideMitoxantrone AND Etoposide_Mitoxantrone_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Methotrexate_Prednisone:
 // Results
 
         
-define final Treatment__MethotrexatePrednisone:
+define final Treatment_MethotrexatePrednisone:
     where Methotrexate_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexatePrednisone AND Methotrexate_Prednisone_Regimen;
+    where Treatment_MethotrexatePrednisone AND Methotrexate_Prednisone_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_VP:
 // Results
 
         
-define final Treatment__VP:
+define final Treatment_VP:
     where Bortezomib_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VP AND VP_Regimen;
+    where Treatment_VP AND VP_Regimen;
         
         
 

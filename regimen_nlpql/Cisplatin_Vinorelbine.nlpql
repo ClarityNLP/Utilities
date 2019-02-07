@@ -53,11 +53,11 @@ define final Regimen_Cisplatin_Vinorelbine:
 // Results
 
         
-define final Treatment__CisplatinVinorelbine:
+define final Treatment_CisplatinVinorelbine:
     where Cisplatin_Treatment AND Vinorelbine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinVinorelbine AND Cisplatin_Vinorelbine_Regimen;
+    where Treatment_CisplatinVinorelbine AND Cisplatin_Vinorelbine_Regimen;
         
         
 

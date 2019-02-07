@@ -75,11 +75,11 @@ define final Regimen_Mini_BEAM:
 // Results
 
         
-define final Treatment__MiniBEAM:
+define final Treatment_MiniBEAM:
     where Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MiniBEAM AND Mini_BEAM_Regimen;
+    where Treatment_MiniBEAM AND Mini_BEAM_Regimen;
         
         
 

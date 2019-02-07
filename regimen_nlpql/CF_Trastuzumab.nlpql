@@ -64,11 +64,11 @@ define final Regimen_CF_Trastuzumab:
 // Results
 
         
-define final Treatment__CFTrastuzumab:
+define final Treatment_CFTrastuzumab:
     where Cisplatin_Treatment AND Fluorouracil_Treatment AND Trastuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CFTrastuzumab AND CF_Trastuzumab_Regimen;
+    where Treatment_CFTrastuzumab AND CF_Trastuzumab_Regimen;
         
         
 

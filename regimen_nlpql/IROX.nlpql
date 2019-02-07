@@ -53,11 +53,11 @@ define final Regimen_IROX:
 // Results
 
         
-define final Treatment__IROX:
+define final Treatment_IROX:
     where Irinotecan_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IROX AND IROX_Regimen;
+    where Treatment_IROX AND IROX_Regimen;
         
         
 

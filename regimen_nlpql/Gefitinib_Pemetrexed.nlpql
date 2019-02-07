@@ -53,11 +53,11 @@ define final Regimen_Gefitinib_Pemetrexed:
 // Results
 
         
-define final Treatment__GefitinibPemetrexed:
+define final Treatment_GefitinibPemetrexed:
     where Gefitinib_Treatment AND Pemetrexed_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GefitinibPemetrexed AND Gefitinib_Pemetrexed_Regimen;
+    where Treatment_GefitinibPemetrexed AND Gefitinib_Pemetrexed_Regimen;
         
         
 

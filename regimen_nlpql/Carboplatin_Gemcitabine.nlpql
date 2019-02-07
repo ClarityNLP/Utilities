@@ -53,18 +53,18 @@ define final Regimen_Carboplatin_Gemcitabine:
 // Results
 
         
-define final Treatment__CarboplatinGemcitabine:
+define final Treatment_CarboplatinGemcitabine:
     where Carboplatin_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinGemcitabine AND Carboplatin_Gemcitabine_Regimen;
+    where Treatment_CarboplatinGemcitabine AND Carboplatin_Gemcitabine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Breast_cancer_triple_negative, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer, Breast_cancer_triple_negative
 
 
 

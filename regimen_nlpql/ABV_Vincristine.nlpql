@@ -64,11 +64,11 @@ define final Regimen_ABV_Vincristine:
 // Results
 
         
-define final Treatment__ABVVincristine:
+define final Treatment_ABVVincristine:
     where Doxorubicin_Treatment AND Bleomycin_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ABVVincristine AND ABV_Vincristine_Regimen;
+    where Treatment_ABVVincristine AND ABV_Vincristine_Regimen;
         
         
 

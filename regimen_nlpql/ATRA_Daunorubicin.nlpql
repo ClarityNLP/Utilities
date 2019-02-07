@@ -53,11 +53,11 @@ define final Regimen_ATRA_Daunorubicin:
 // Results
 
         
-define final Treatment__ATRADaunorubicin:
+define final Treatment_ATRADaunorubicin:
     where Alltransretinoicacid_Treatment AND Daunorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATRADaunorubicin AND ATRA_Daunorubicin_Regimen;
+    where Treatment_ATRADaunorubicin AND ATRA_Daunorubicin_Regimen;
         
         
 

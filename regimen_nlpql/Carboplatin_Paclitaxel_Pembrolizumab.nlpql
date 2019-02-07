@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Paclitaxel_Pembrolizumab:
 // Results
 
         
-define final Treatment__CarboplatinPaclitaxelPembrolizumab:
+define final Treatment_CarboplatinPaclitaxelPembrolizumab:
     where Carboplatin_Treatment AND Paclitaxel_Treatment AND Pembrolizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinPaclitaxelPembrolizumab AND Carboplatin_Paclitaxel_Pembrolizumab_Regimen;
+    where Treatment_CarboplatinPaclitaxelPembrolizumab AND Carboplatin_Paclitaxel_Pembrolizumab_Regimen;
         
         
 

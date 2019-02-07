@@ -53,18 +53,18 @@ define final Regimen_Cytarabine_Idarubicin:
 // Results
 
         
-define final Treatment__CytarabineIdarubicin:
+define final Treatment_CytarabineIdarubicin:
     where Cytarabine_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineIdarubicin AND Cytarabine_Idarubicin_Regimen;
+    where Treatment_CytarabineIdarubicin AND Cytarabine_Idarubicin_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
+Known regimen for: Acute_myeloid_leukemia, Acute_promyelocytic_leukemia
 
 
 

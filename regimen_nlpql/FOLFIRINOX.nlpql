@@ -75,18 +75,18 @@ define final Regimen_FOLFIRINOX:
 // Results
 
         
-define final Treatment__FOLFIRINOX:
+define final Treatment_FOLFIRINOX:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRINOX AND FOLFIRINOX_Regimen;
+    where Treatment_FOLFIRINOX AND FOLFIRINOX_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Pancreatic_cancer
 
 
 

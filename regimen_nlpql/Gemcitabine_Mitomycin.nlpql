@@ -53,11 +53,11 @@ define final Regimen_Gemcitabine_Mitomycin:
 // Results
 
         
-define final Treatment__GemcitabineMitomycin:
+define final Treatment_GemcitabineMitomycin:
     where Gemcitabine_Treatment AND Mitomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineMitomycin AND Gemcitabine_Mitomycin_Regimen;
+    where Treatment_GemcitabineMitomycin AND Gemcitabine_Mitomycin_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_73d_Glasdegib:
 // Results
 
         
-define final Treatment__73dGlasdegib:
+define final Treatment_73dGlasdegib:
     where Cytarabine_Treatment AND Daunorubicin_Treatment AND Glasdegib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__73dGlasdegib AND 73d_Glasdegib_Regimen;
+    where Treatment_73dGlasdegib AND 73d_Glasdegib_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Tegafur_Uracil_Folinic_acid:
 // Results
 
         
-define final Treatment__TegafurUracilFolinicacid:
+define final Treatment_TegafurUracilFolinicacid:
     where Tegafuranduracil_Treatment AND Folinicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TegafurUracilFolinicacid AND Tegafur_Uracil_Folinic_acid_Regimen;
+    where Treatment_TegafurUracilFolinicacid AND Tegafur_Uracil_Folinic_acid_Regimen;
         
         
 

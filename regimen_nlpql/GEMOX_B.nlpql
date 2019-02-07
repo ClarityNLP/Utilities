@@ -64,11 +64,11 @@ define final Regimen_GEMOX_B:
 // Results
 
         
-define final Treatment__GEMOXB:
+define final Treatment_GEMOXB:
     where Gemcitabine_Treatment AND Oxaliplatin_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GEMOXB AND GEMOX_B_Regimen;
+    where Treatment_GEMOXB AND GEMOX_B_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Ibrutinib_Ofatumumab:
 // Results
 
         
-define final Treatment__IbrutinibOfatumumab:
+define final Treatment_IbrutinibOfatumumab:
     where Ibrutinib_Treatment AND Ofatumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IbrutinibOfatumumab AND Ibrutinib_Ofatumumab_Regimen;
+    where Treatment_IbrutinibOfatumumab AND Ibrutinib_Ofatumumab_Regimen;
         
         
 

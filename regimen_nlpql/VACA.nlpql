@@ -75,11 +75,11 @@ define final Regimen_VACA:
 // Results
 
         
-define final Treatment__VACA:
+define final Treatment_VACA:
     where Vincristine_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VACA AND VACA_Regimen;
+    where Treatment_VACA AND VACA_Regimen;
         
         
 

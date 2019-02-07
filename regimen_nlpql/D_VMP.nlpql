@@ -75,11 +75,11 @@ define final Regimen_D_VMP:
 // Results
 
         
-define final Treatment__DVMP:
+define final Treatment_DVMP:
     where Daratumumab_Treatment AND Bortezomib_Treatment AND Melphalan_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DVMP AND D_VMP_Regimen;
+    where Treatment_DVMP AND D_VMP_Regimen;
         
         
 

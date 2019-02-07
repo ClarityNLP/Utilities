@@ -64,11 +64,11 @@ define final Regimen_CLARA:
 // Results
 
         
-define final Treatment__CLARA:
+define final Treatment_CLARA:
     where Clofarabine_Treatment AND Cytarabine_Treatment AND Filgrastim_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CLARA AND CLARA_Regimen;
+    where Treatment_CLARA AND CLARA_Regimen;
         
         
 

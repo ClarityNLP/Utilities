@@ -53,11 +53,11 @@ define final Regimen_Fludarabine_Alemtuzumab:
 // Results
 
         
-define final Treatment__FludarabineAlemtuzumab:
+define final Treatment_FludarabineAlemtuzumab:
     where Fludarabine_Treatment AND Alemtuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabineAlemtuzumab AND Fludarabine_Alemtuzumab_Regimen;
+    where Treatment_FludarabineAlemtuzumab AND Fludarabine_Alemtuzumab_Regimen;
         
         
 

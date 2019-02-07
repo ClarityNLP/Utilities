@@ -53,11 +53,11 @@ define final Regimen_73d_high_dose:
 // Results
 
         
-define final Treatment__73dhighdose:
+define final Treatment_73dhighdose:
     where Cytarabine_Treatment AND Daunorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__73dhighdose AND 73d_high_dose_Regimen;
+    where Treatment_73dhighdose AND 73d_high_dose_Regimen;
         
         
 

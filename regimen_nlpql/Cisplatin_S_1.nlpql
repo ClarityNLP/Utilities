@@ -53,11 +53,11 @@ define final Regimen_Cisplatin_S_1:
 // Results
 
         
-define final Treatment__CisplatinS1:
+define final Treatment_CisplatinS1:
     where Cisplatin_Treatment AND Tegafurgimeraciloteracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinS1 AND Cisplatin_S_1_Regimen;
+    where Treatment_CisplatinS1 AND Cisplatin_S_1_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Carfilzomib_Panobinostat:
 // Results
 
         
-define final Treatment__CarfilzomibPanobinostat:
+define final Treatment_CarfilzomibPanobinostat:
     where Carfilzomib_Treatment AND Panobinostat_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarfilzomibPanobinostat AND Carfilzomib_Panobinostat_Regimen;
+    where Treatment_CarfilzomibPanobinostat AND Carfilzomib_Panobinostat_Regimen;
         
         
 

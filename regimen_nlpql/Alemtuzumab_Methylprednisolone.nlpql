@@ -53,11 +53,11 @@ define final Regimen_Alemtuzumab_Methylprednisolone:
 // Results
 
         
-define final Treatment__AlemtuzumabMethylprednisolone:
+define final Treatment_AlemtuzumabMethylprednisolone:
     where Alemtuzumab_Treatment AND Methylprednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AlemtuzumabMethylprednisolone AND Alemtuzumab_Methylprednisolone_Regimen;
+    where Treatment_AlemtuzumabMethylprednisolone AND Alemtuzumab_Methylprednisolone_Regimen;
         
         
 

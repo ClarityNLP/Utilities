@@ -53,11 +53,11 @@ define final Regimen_Cabozantinib_Erlotinib:
 // Results
 
         
-define final Treatment__CabozantinibErlotinib:
+define final Treatment_CabozantinibErlotinib:
     where Cabozantinib_Treatment AND Erlotinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CabozantinibErlotinib AND Cabozantinib_Erlotinib_Regimen;
+    where Treatment_CabozantinibErlotinib AND Cabozantinib_Erlotinib_Regimen;
         
         
 

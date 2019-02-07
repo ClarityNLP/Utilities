@@ -64,11 +64,11 @@ define final Regimen_R_MP:
 // Results
 
         
-define final Treatment__RMP:
+define final Treatment_RMP:
     where Rituximab_Treatment AND Methotrexate_Treatment AND Procarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RMP AND R_MP_Regimen;
+    where Treatment_RMP AND R_MP_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_R_BAC:
 // Results
 
         
-define final Treatment__RBAC:
+define final Treatment_RBAC:
     where Rituximab_Treatment AND Bendamustine_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RBAC AND R_BAC_Regimen;
+    where Treatment_RBAC AND R_BAC_Regimen;
         
         
 

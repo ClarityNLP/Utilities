@@ -53,11 +53,11 @@ define final Regimen_Capecitabine_Ixabepilone:
 // Results
 
         
-define final Treatment__CapecitabineIxabepilone:
+define final Treatment_CapecitabineIxabepilone:
     where Capecitabine_Treatment AND Ixabepilone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineIxabepilone AND Capecitabine_Ixabepilone_Regimen;
+    where Treatment_CapecitabineIxabepilone AND Capecitabine_Ixabepilone_Regimen;
         
         
 

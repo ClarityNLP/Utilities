@@ -97,11 +97,11 @@ define final Regimen_SC_EPOCH_RR:
 // Results
 
         
-define final Treatment__SCEPOCHRR:
+define final Treatment_SCEPOCHRR:
     where Rituximab_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Vincristine_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__SCEPOCHRR AND SC_EPOCH_RR_Regimen;
+    where Treatment_SCEPOCHRR AND SC_EPOCH_RR_Regimen;
         
         
 

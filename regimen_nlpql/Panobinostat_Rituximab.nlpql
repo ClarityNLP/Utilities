@@ -53,11 +53,11 @@ define final Regimen_Panobinostat_Rituximab:
 // Results
 
         
-define final Treatment__PanobinostatRituximab:
+define final Treatment_PanobinostatRituximab:
     where Panobinostat_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PanobinostatRituximab AND Panobinostat_Rituximab_Regimen;
+    where Treatment_PanobinostatRituximab AND Panobinostat_Rituximab_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_CLAG:
 // Results
 
         
-define final Treatment__CLAG:
+define final Treatment_CLAG:
     where Cladribine_Treatment AND Cytarabine_Treatment AND Filgrastim_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CLAG AND CLAG_Regimen;
+    where Treatment_CLAG AND CLAG_Regimen;
         
         
 

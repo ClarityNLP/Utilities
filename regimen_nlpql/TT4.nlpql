@@ -64,11 +64,11 @@ define final Regimen_TT4:
 // Results
 
         
-define final Treatment__TT4:
+define final Treatment_TT4:
     where Dexamethasone_Treatment AND CategoryCyclosporines_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TT4 AND TT4_Regimen;
+    where Treatment_TT4 AND TT4_Regimen;
         
         
 

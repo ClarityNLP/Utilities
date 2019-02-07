@@ -53,11 +53,11 @@ define final Regimen_KTd:
 // Results
 
         
-define final Treatment__KTd:
+define final Treatment_KTd:
     where Bortezomib_Treatment AND Thalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__KTd AND KTd_Regimen;
+    where Treatment_KTd AND KTd_Regimen;
         
         
 

@@ -53,18 +53,18 @@ define final Regimen_Docetaxel_Gemcitabine:
 // Results
 
         
-define final Treatment__DocetaxelGemcitabine:
+define final Treatment_DocetaxelGemcitabine:
     where Docetaxel_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelGemcitabine AND Docetaxel_Gemcitabine_Regimen;
+    where Treatment_DocetaxelGemcitabine AND Docetaxel_Gemcitabine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Soft_tissue_sarcoma, Osteosarcoma, Adenocarcinoma_of_unknown_primary
+Known regimen for: Adenocarcinoma_of_unknown_primary, Ewings_sarcoma, Osteosarcoma, Soft_tissue_sarcoma
 
 
 

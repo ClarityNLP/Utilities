@@ -64,11 +64,11 @@ define final Regimen_HAM_Imatinib:
 // Results
 
         
-define final Treatment__HAMImatinib:
+define final Treatment_HAMImatinib:
     where Cytarabine_Treatment AND Mitoxantrone_Treatment AND Imatinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HAMImatinib AND HAM_Imatinib_Regimen;
+    where Treatment_HAMImatinib AND HAM_Imatinib_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Hyper_CVAD_Imatinib:
 // Results
 
         
-define final Treatment__HyperCVADImatinib:
+define final Treatment_HyperCVADImatinib:
     where Methotrexate_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HyperCVADImatinib AND Hyper_CVAD_Imatinib_Regimen;
+    where Treatment_HyperCVADImatinib AND Hyper_CVAD_Imatinib_Regimen;
         
         
 

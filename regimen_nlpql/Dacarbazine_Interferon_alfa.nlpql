@@ -53,11 +53,11 @@ define final Regimen_Dacarbazine_Interferon_alfa:
 // Results
 
         
-define final Treatment__DacarbazineInterferonalfa:
+define final Treatment_DacarbazineInterferonalfa:
     where Dacarbazine_Treatment AND CategoryInterferons_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DacarbazineInterferonalfa AND Dacarbazine_Interferon_alfa_Regimen;
+    where Treatment_DacarbazineInterferonalfa AND Dacarbazine_Interferon_alfa_Regimen;
         
         
 

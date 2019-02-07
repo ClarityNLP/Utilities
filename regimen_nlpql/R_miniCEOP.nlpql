@@ -86,11 +86,11 @@ define final Regimen_R_miniCEOP:
 // Results
 
         
-define final Treatment__RminiCEOP:
+define final Treatment_RminiCEOP:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Epirubicin_Treatment AND Vinblastine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RminiCEOP AND R_miniCEOP_Regimen;
+    where Treatment_RminiCEOP AND R_miniCEOP_Regimen;
         
         
 

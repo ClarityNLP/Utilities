@@ -53,11 +53,11 @@ define final Regimen_Mercaptopurine_Methotrexate:
 // Results
 
         
-define final Treatment__MercaptopurineMethotrexate:
+define final Treatment_MercaptopurineMethotrexate:
     where Mercaptopurine_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MercaptopurineMethotrexate AND Mercaptopurine_Methotrexate_Regimen;
+    where Treatment_MercaptopurineMethotrexate AND Mercaptopurine_Methotrexate_Regimen;
         
         
 

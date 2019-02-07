@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Olaparib_Paclitaxel:
 // Results
 
         
-define final Treatment__CarboplatinOlaparibPaclitaxel:
+define final Treatment_CarboplatinOlaparibPaclitaxel:
     where Carboplatin_Treatment AND Olaparib_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinOlaparibPaclitaxel AND Carboplatin_Olaparib_Paclitaxel_Regimen;
+    where Treatment_CarboplatinOlaparibPaclitaxel AND Carboplatin_Olaparib_Paclitaxel_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_mDCF:
 // Results
 
         
-define final Treatment__mDCF:
+define final Treatment_mDCF:
     where Docetaxel_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mDCF AND mDCF_Regimen;
+    where Treatment_mDCF AND mDCF_Regimen;
         
         
 

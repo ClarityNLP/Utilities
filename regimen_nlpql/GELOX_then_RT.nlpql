@@ -64,11 +64,11 @@ define final Regimen_GELOX_then_RT:
 // Results
 
         
-define final Treatment__GELOXthenRT:
+define final Treatment_GELOXthenRT:
     where Gemcitabine_Treatment AND Asparaginase_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GELOXthenRT AND GELOX_then_RT_Regimen;
+    where Treatment_GELOXthenRT AND GELOX_then_RT_Regimen;
         
         
 

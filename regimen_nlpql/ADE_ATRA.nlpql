@@ -75,11 +75,11 @@ define final Regimen_ADE_ATRA:
 // Results
 
         
-define final Treatment__ADEATRA:
+define final Treatment_ADEATRA:
     where Cytarabine_Treatment AND Daunorubicin_Treatment AND Etoposide_Treatment AND Alltransretinoicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ADEATRA AND ADE_ATRA_Regimen;
+    where Treatment_ADEATRA AND ADE_ATRA_Regimen;
         
         
 

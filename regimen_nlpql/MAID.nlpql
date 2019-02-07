@@ -64,11 +64,11 @@ define final Regimen_MAID:
 // Results
 
         
-define final Treatment__MAID:
+define final Treatment_MAID:
     where Doxorubicin_Treatment AND Ifosfamide_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MAID AND MAID_Regimen;
+    where Treatment_MAID AND MAID_Regimen;
         
         
 

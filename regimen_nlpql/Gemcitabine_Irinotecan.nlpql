@@ -53,11 +53,11 @@ define final Regimen_Gemcitabine_Irinotecan:
 // Results
 
         
-define final Treatment__GemcitabineIrinotecan:
+define final Treatment_GemcitabineIrinotecan:
     where Gemcitabine_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineIrinotecan AND Gemcitabine_Irinotecan_Regimen;
+    where Treatment_GemcitabineIrinotecan AND Gemcitabine_Irinotecan_Regimen;
         
         
 

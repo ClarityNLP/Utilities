@@ -53,11 +53,11 @@ define final Regimen_Belotecan_Cisplatin:
 // Results
 
         
-define final Treatment__BelotecanCisplatin:
+define final Treatment_BelotecanCisplatin:
     where Belotecan_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BelotecanCisplatin AND Belotecan_Cisplatin_Regimen;
+    where Treatment_BelotecanCisplatin AND Belotecan_Cisplatin_Regimen;
         
         
 

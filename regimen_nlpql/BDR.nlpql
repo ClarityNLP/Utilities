@@ -64,11 +64,11 @@ define final Regimen_BDR:
 // Results
 
         
-define final Treatment__BDR:
+define final Treatment_BDR:
     where Bortezomib_Treatment AND Rituximab_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BDR AND BDR_Regimen;
+    where Treatment_BDR AND BDR_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_R_CP:
 // Results
 
         
-define final Treatment__RCP:
+define final Treatment_RCP:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Prednisone_Treatment AND Methylprednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCP AND R_CP_Regimen;
+    where Treatment_RCP AND R_CP_Regimen;
         
         
 

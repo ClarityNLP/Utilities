@@ -53,18 +53,18 @@ define final Regimen_FC:
 // Results
 
         
-define final Treatment__FC:
+define final Treatment_FC:
     where Fludarabine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FC AND FC_Regimen;
+    where Treatment_FC AND FC_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Allogeneic_HSCT, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Allogeneic_HSCT, Autologous_HSCT
 
 
 

@@ -53,18 +53,18 @@ define final Regimen_Cyclophosphamide_Prednisone:
 // Results
 
         
-define final Treatment__CyclophosphamidePrednisone:
+define final Treatment_CyclophosphamidePrednisone:
     where Cyclophosphamide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamidePrednisone AND Cyclophosphamide_Prednisone_Regimen;
+    where Treatment_CyclophosphamidePrednisone AND Cyclophosphamide_Prednisone_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Acquired_coagulopathy, Large_granular_lymphocytic_leukemia, Multiple_myeloma_relapsedrefractory
+Known regimen for: Acquired_coagulopathy, Multiple_myeloma_relapsedrefractory, Large_granular_lymphocytic_leukemia
 
 
 

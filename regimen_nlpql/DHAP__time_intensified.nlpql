@@ -64,11 +64,11 @@ define final Regimen_DHAP__time_intensified:
 // Results
 
         
-define final Treatment__DHAPtimeintensified:
+define final Treatment_DHAPtimeintensified:
     where Dexamethasone_Treatment AND Cytarabine_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DHAPtimeintensified AND DHAP__time_intensified_Regimen;
+    where Treatment_DHAPtimeintensified AND DHAP__time_intensified_Regimen;
         
         
 

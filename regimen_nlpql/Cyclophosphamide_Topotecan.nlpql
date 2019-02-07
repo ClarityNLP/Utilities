@@ -53,18 +53,18 @@ define final Regimen_Cyclophosphamide_Topotecan:
 // Results
 
         
-define final Treatment__CyclophosphamideTopotecan:
+define final Treatment_CyclophosphamideTopotecan:
     where Cyclophosphamide_Treatment AND Topotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideTopotecan AND Cyclophosphamide_Topotecan_Regimen;
+    where Treatment_CyclophosphamideTopotecan AND Cyclophosphamide_Topotecan_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Osteosarcoma
+Known regimen for: Osteosarcoma, Ewings_sarcoma
 
 
 

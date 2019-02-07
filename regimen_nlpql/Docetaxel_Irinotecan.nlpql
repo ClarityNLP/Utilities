@@ -53,11 +53,11 @@ define final Regimen_Docetaxel_Irinotecan:
 // Results
 
         
-define final Treatment__DocetaxelIrinotecan:
+define final Treatment_DocetaxelIrinotecan:
     where Docetaxel_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelIrinotecan AND Docetaxel_Irinotecan_Regimen;
+    where Treatment_DocetaxelIrinotecan AND Docetaxel_Irinotecan_Regimen;
         
         
 

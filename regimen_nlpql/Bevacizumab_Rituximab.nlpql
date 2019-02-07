@@ -53,11 +53,11 @@ define final Regimen_Bevacizumab_Rituximab:
 // Results
 
         
-define final Treatment__BevacizumabRituximab:
+define final Treatment_BevacizumabRituximab:
     where Bevacizumab_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BevacizumabRituximab AND Bevacizumab_Rituximab_Regimen;
+    where Treatment_BevacizumabRituximab AND Bevacizumab_Rituximab_Regimen;
         
         
 

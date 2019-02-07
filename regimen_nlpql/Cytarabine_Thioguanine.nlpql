@@ -53,11 +53,11 @@ define final Regimen_Cytarabine_Thioguanine:
 // Results
 
         
-define final Treatment__CytarabineThioguanine:
+define final Treatment_CytarabineThioguanine:
     where Cytarabine_Treatment AND Thioguanine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineThioguanine AND Cytarabine_Thioguanine_Regimen;
+    where Treatment_CytarabineThioguanine AND Cytarabine_Thioguanine_Regimen;
         
         
 

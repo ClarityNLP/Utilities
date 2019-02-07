@@ -75,11 +75,11 @@ define final Regimen_Mitotane_EDP:
 // Results
 
         
-define final Treatment__MitotaneEDP:
+define final Treatment_MitotaneEDP:
     where Mitotane_Treatment AND Etoposide_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MitotaneEDP AND Mitotane_EDP_Regimen;
+    where Treatment_MitotaneEDP AND Mitotane_EDP_Regimen;
         
         
 

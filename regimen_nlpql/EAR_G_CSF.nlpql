@@ -64,11 +64,11 @@ define final Regimen_EAR_G_CSF:
 // Results
 
         
-define final Treatment__EARGCSF:
+define final Treatment_EARGCSF:
     where Etoposide_Treatment AND Cytarabine_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EARGCSF AND EAR_G_CSF_Regimen;
+    where Treatment_EARGCSF AND EAR_G_CSF_Regimen;
         
         
 

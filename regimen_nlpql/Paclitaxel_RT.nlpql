@@ -53,18 +53,18 @@ define final Regimen_Paclitaxel_RT:
 // Results
 
         
-define final Treatment__PaclitaxelRT:
+define final Treatment_PaclitaxelRT:
     where Paclitaxel_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PaclitaxelRT AND Paclitaxel_RT_Regimen;
+    where Treatment_PaclitaxelRT AND Paclitaxel_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Head_and_neck_cancer
 
 
 

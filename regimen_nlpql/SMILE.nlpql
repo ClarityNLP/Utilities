@@ -86,11 +86,11 @@ define final Regimen_SMILE:
 // Results
 
         
-define final Treatment__SMILE:
+define final Treatment_SMILE:
     where Dexamethasone_Treatment AND Methotrexate_Treatment AND Ifosfamide_Treatment AND Asparaginase_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__SMILE AND SMILE_Regimen;
+    where Treatment_SMILE AND SMILE_Regimen;
         
         
 

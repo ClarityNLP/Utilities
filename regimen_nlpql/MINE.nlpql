@@ -64,11 +64,11 @@ define final Regimen_MINE:
 // Results
 
         
-define final Treatment__MINE:
+define final Treatment_MINE:
     where Ifosfamide_Treatment AND Mitoxantrone_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MINE AND MINE_Regimen;
+    where Treatment_MINE AND MINE_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_VMPT:
 // Results
 
         
-define final Treatment__VMPT:
+define final Treatment_VMPT:
     where Bortezomib_Treatment AND Melphalan_Treatment AND Prednisone_Treatment AND Thalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VMPT AND VMPT_Regimen;
+    where Treatment_VMPT AND VMPT_Regimen;
         
         
 

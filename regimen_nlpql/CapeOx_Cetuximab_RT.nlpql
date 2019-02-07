@@ -75,11 +75,11 @@ define final Regimen_CapeOx_Cetuximab_RT:
 // Results
 
         
-define final Treatment__CapeOxCetuximabRT:
+define final Treatment_CapeOxCetuximabRT:
     where Capecitabine_Treatment AND Oxaliplatin_Treatment AND Cetuximab_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapeOxCetuximabRT AND CapeOx_Cetuximab_RT_Regimen;
+    where Treatment_CapeOxCetuximabRT AND CapeOx_Cetuximab_RT_Regimen;
         
         
 

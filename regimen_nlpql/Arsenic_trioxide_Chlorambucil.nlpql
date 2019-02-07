@@ -53,11 +53,11 @@ define final Regimen_Arsenic_trioxide_Chlorambucil:
 // Results
 
         
-define final Treatment__ArsenictrioxideChlorambucil:
+define final Treatment_ArsenictrioxideChlorambucil:
     where Arsenictrioxide_Treatment AND Chlorambucil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ArsenictrioxideChlorambucil AND Arsenic_trioxide_Chlorambucil_Regimen;
+    where Treatment_ArsenictrioxideChlorambucil AND Arsenic_trioxide_Chlorambucil_Regimen;
         
         
 

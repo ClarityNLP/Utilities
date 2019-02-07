@@ -53,11 +53,11 @@ define final Regimen_Gemcitabine_Rituximab:
 // Results
 
         
-define final Treatment__GemcitabineRituximab:
+define final Treatment_GemcitabineRituximab:
     where Gemcitabine_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineRituximab AND Gemcitabine_Rituximab_Regimen;
+    where Treatment_GemcitabineRituximab AND Gemcitabine_Rituximab_Regimen;
         
         
 

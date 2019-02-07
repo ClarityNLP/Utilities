@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Etoposide_Bevacizumab:
 // Results
 
         
-define final Treatment__CarboplatinEtoposideBevacizumab:
+define final Treatment_CarboplatinEtoposideBevacizumab:
     where Carboplatin_Treatment AND Etoposide_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinEtoposideBevacizumab AND Carboplatin_Etoposide_Bevacizumab_Regimen;
+    where Treatment_CarboplatinEtoposideBevacizumab AND Carboplatin_Etoposide_Bevacizumab_Regimen;
         
         
 

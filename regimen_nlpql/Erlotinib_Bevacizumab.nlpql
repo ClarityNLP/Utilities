@@ -53,18 +53,18 @@ define final Regimen_Erlotinib_Bevacizumab:
 // Results
 
         
-define final Treatment__ErlotinibBevacizumab:
+define final Treatment_ErlotinibBevacizumab:
     where Erlotinib_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ErlotinibBevacizumab AND Erlotinib_Bevacizumab_Regimen;
+    where Treatment_ErlotinibBevacizumab AND Erlotinib_Bevacizumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_EGFR-mutated, Renal_cell_carcinoma, Cholangiocarcinoma, Hepatocellular_carcinoma, Adenocarcinoma_of_unknown_primary
+Known regimen for: Adenocarcinoma_of_unknown_primary, Renal_cell_carcinoma, Non-small_cell_lung_cancer_EGFR-mutated, Hepatocellular_carcinoma, Cholangiocarcinoma
 
 
 

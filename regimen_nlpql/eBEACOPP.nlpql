@@ -108,11 +108,11 @@ define final Regimen_eBEACOPP:
 // Results
 
         
-define final Treatment__eBEACOPP:
+define final Treatment_eBEACOPP:
     where Bleomycin_Treatment AND Etoposide_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__eBEACOPP AND eBEACOPP_Regimen;
+    where Treatment_eBEACOPP AND eBEACOPP_Regimen;
         
         
 

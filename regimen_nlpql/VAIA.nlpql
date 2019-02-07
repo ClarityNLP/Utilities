@@ -75,11 +75,11 @@ define final Regimen_VAIA:
 // Results
 
         
-define final Treatment__VAIA:
+define final Treatment_VAIA:
     where Vincristine_Treatment AND Doxorubicin_Treatment AND Ifosfamide_Treatment AND Dactinomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VAIA AND VAIA_Regimen;
+    where Treatment_VAIA AND VAIA_Regimen;
         
         
 

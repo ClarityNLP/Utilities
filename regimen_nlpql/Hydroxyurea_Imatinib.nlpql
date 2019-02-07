@@ -53,11 +53,11 @@ define final Regimen_Hydroxyurea_Imatinib:
 // Results
 
         
-define final Treatment__HydroxyureaImatinib:
+define final Treatment_HydroxyureaImatinib:
     where Hydroxyurea_Treatment AND Imatinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HydroxyureaImatinib AND Hydroxyurea_Imatinib_Regimen;
+    where Treatment_HydroxyureaImatinib AND Hydroxyurea_Imatinib_Regimen;
         
         
 

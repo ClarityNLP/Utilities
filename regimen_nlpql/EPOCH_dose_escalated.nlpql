@@ -86,11 +86,11 @@ define final Regimen_EPOCH_dose_escalated:
 // Results
 
         
-define final Treatment__EPOCHdoseescalated:
+define final Treatment_EPOCHdoseescalated:
     where Etoposide_Treatment AND Prednisone_Treatment AND Vincristine_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EPOCHdoseescalated AND EPOCH_dose_escalated_Regimen;
+    where Treatment_EPOCHdoseescalated AND EPOCH_dose_escalated_Regimen;
         
         
 

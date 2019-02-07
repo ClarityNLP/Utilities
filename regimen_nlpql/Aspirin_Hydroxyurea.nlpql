@@ -53,11 +53,11 @@ define final Regimen_Aspirin_Hydroxyurea:
 // Results
 
         
-define final Treatment__AspirinHydroxyurea:
+define final Treatment_AspirinHydroxyurea:
     where Aspirin_Treatment AND Hydroxyurea_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AspirinHydroxyurea AND Aspirin_Hydroxyurea_Regimen;
+    where Treatment_AspirinHydroxyurea AND Aspirin_Hydroxyurea_Regimen;
         
         
 

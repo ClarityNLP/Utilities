@@ -75,11 +75,11 @@ define final Regimen_BEAM_then_auto_HSCT:
 // Results
 
         
-define final Treatment__BEAMthenautoHSCT:
+define final Treatment_BEAMthenautoHSCT:
     where Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BEAMthenautoHSCT AND BEAM_then_auto_HSCT_Regimen;
+    where Treatment_BEAMthenautoHSCT AND BEAM_then_auto_HSCT_Regimen;
         
         
 

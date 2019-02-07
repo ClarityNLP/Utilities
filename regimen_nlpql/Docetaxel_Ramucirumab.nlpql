@@ -53,11 +53,11 @@ define final Regimen_Docetaxel_Ramucirumab:
 // Results
 
         
-define final Treatment__DocetaxelRamucirumab:
+define final Treatment_DocetaxelRamucirumab:
     where Docetaxel_Treatment AND Ramucirumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelRamucirumab AND Docetaxel_Ramucirumab_Regimen;
+    where Treatment_DocetaxelRamucirumab AND Docetaxel_Ramucirumab_Regimen;
         
         
 

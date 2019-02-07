@@ -64,11 +64,11 @@ define final Regimen_Arsenic_trioxide_ATRA_Idarubicin:
 // Results
 
         
-define final Treatment__ArsenictrioxideATRAIdarubicin:
+define final Treatment_ArsenictrioxideATRAIdarubicin:
     where Arsenictrioxide_Treatment AND Alltransretinoicacid_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ArsenictrioxideATRAIdarubicin AND Arsenic_trioxide_ATRA_Idarubicin_Regimen;
+    where Treatment_ArsenictrioxideATRAIdarubicin AND Arsenic_trioxide_ATRA_Idarubicin_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Venetoclax_Rituximab:
 // Results
 
         
-define final Treatment__VenetoclaxRituximab:
+define final Treatment_VenetoclaxRituximab:
     where Venetoclax_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VenetoclaxRituximab AND Venetoclax_Rituximab_Regimen;
+    where Treatment_VenetoclaxRituximab AND Venetoclax_Rituximab_Regimen;
         
         
 

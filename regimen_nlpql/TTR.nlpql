@@ -64,11 +64,11 @@ define final Regimen_TTR:
 // Results
 
         
-define final Treatment__TTR:
+define final Treatment_TTR:
     where Paclitaxel_Treatment AND Topotecan_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TTR AND TTR_Regimen;
+    where Treatment_TTR AND TTR_Regimen;
         
         
 

@@ -64,18 +64,18 @@ define final Regimen_PCV:
 // Results
 
         
-define final Treatment__PCV:
+define final Treatment_PCV:
     where Procarbazine_Treatment AND Lomustine_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCV AND PCV_Regimen;
+    where Treatment_PCV AND PCV_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Low-grade_glioma, Glioblastoma
+Known regimen for: Glioblastoma, Low-grade_glioma, Anaplastic_glioma
 
 
 

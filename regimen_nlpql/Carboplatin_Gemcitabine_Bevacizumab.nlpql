@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Gemcitabine_Bevacizumab:
 // Results
 
         
-define final Treatment__CarboplatinGemcitabineBevacizumab:
+define final Treatment_CarboplatinGemcitabineBevacizumab:
     where Carboplatin_Treatment AND Gemcitabine_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinGemcitabineBevacizumab AND Carboplatin_Gemcitabine_Bevacizumab_Regimen;
+    where Treatment_CarboplatinGemcitabineBevacizumab AND Carboplatin_Gemcitabine_Bevacizumab_Regimen;
         
         
 

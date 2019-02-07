@@ -75,11 +75,11 @@ define final Regimen_LEED:
 // Results
 
         
-define final Treatment__LEED:
+define final Treatment_LEED:
     where Melphalan_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LEED AND LEED_Regimen;
+    where Treatment_LEED AND LEED_Regimen;
         
         
 

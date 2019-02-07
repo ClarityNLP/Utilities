@@ -64,18 +64,18 @@ define final Regimen_PCR:
 // Results
 
         
-define final Treatment__PCR:
+define final Treatment_PCR:
     where Pentostatin_Treatment AND Cyclophosphamide_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCR AND PCR_Regimen;
+    where Treatment_PCR AND PCR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Waldenstrom_macroglobulinemia, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Waldenstrom_macroglobulinemia, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 

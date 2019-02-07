@@ -53,18 +53,18 @@ define final Regimen_Busulfan_Cyclophosphamide:
 // Results
 
         
-define final Treatment__BusulfanCyclophosphamide:
+define final Treatment_BusulfanCyclophosphamide:
     where Busulfan_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BusulfanCyclophosphamide AND Busulfan_Cyclophosphamide_Regimen;
+    where Treatment_BusulfanCyclophosphamide AND Busulfan_Cyclophosphamide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+Known regimen for: Allogeneic_HSCT, Autologous_HSCT
 
 
 

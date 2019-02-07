@@ -53,11 +53,11 @@ define final Regimen_BuTT_then_auto_HSCT:
 // Results
 
         
-define final Treatment__BuTTthenautoHSCT:
+define final Treatment_BuTTthenautoHSCT:
     where Busulfan_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BuTTthenautoHSCT AND BuTT_then_auto_HSCT_Regimen;
+    where Treatment_BuTTthenautoHSCT AND BuTT_then_auto_HSCT_Regimen;
         
         
 

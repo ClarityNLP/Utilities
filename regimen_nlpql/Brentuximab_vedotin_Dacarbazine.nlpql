@@ -53,11 +53,11 @@ define final Regimen_Brentuximab_vedotin_Dacarbazine:
 // Results
 
         
-define final Treatment__BrentuximabvedotinDacarbazine:
+define final Treatment_BrentuximabvedotinDacarbazine:
     where Brentuximabvedotin_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BrentuximabvedotinDacarbazine AND Brentuximab_vedotin_Dacarbazine_Regimen;
+    where Treatment_BrentuximabvedotinDacarbazine AND Brentuximab_vedotin_Dacarbazine_Regimen;
         
         
 

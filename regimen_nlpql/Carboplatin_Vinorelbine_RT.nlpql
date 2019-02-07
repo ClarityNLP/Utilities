@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Vinorelbine_RT:
 // Results
 
         
-define final Treatment__CarboplatinVinorelbineRT:
+define final Treatment_CarboplatinVinorelbineRT:
     where Carboplatin_Treatment AND Vinorelbine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinVinorelbineRT AND Carboplatin_Vinorelbine_RT_Regimen;
+    where Treatment_CarboplatinVinorelbineRT AND Carboplatin_Vinorelbine_RT_Regimen;
         
         
 

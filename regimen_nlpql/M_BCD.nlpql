@@ -75,11 +75,11 @@ define final Regimen_M_BCD:
 // Results
 
         
-define final Treatment__MBCD:
+define final Treatment_MBCD:
     where Methotrexate_Treatment AND Bleomycin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MBCD AND M_BCD_Regimen;
+    where Treatment_MBCD AND M_BCD_Regimen;
         
         
 

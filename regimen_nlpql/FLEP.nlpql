@@ -75,11 +75,11 @@ define final Regimen_FLEP:
 // Results
 
         
-define final Treatment__FLEP:
+define final Treatment_FLEP:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Etoposide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FLEP AND FLEP_Regimen;
+    where Treatment_FLEP AND FLEP_Regimen;
         
         
 

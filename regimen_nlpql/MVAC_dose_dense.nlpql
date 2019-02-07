@@ -75,11 +75,11 @@ define final Regimen_MVAC_dose_dense:
 // Results
 
         
-define final Treatment__MVACdosedense:
+define final Treatment_MVACdosedense:
     where Methotrexate_Treatment AND Vinblastine_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MVACdosedense AND MVAC_dose_dense_Regimen;
+    where Treatment_MVACdosedense AND MVAC_dose_dense_Regimen;
         
         
 

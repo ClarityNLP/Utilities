@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Panobinostat:
 // Results
 
         
-define final Treatment__BortezomibPanobinostat:
+define final Treatment_BortezomibPanobinostat:
     where Bortezomib_Treatment AND Panobinostat_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibPanobinostat AND Bortezomib_Panobinostat_Regimen;
+    where Treatment_BortezomibPanobinostat AND Bortezomib_Panobinostat_Regimen;
         
         
 

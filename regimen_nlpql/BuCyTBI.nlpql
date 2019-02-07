@@ -64,11 +64,11 @@ define final Regimen_BuCyTBI:
 // Results
 
         
-define final Treatment__BuCyTBI:
+define final Treatment_BuCyTBI:
     where Busulfan_Treatment AND Cyclophosphamide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BuCyTBI AND BuCyTBI_Regimen;
+    where Treatment_BuCyTBI AND BuCyTBI_Regimen;
         
         
 

@@ -75,18 +75,18 @@ define final Regimen_R_CVP:
 // Results
 
         
-define final Treatment__RCVP:
+define final Treatment_RCVP:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCVP AND R_CVP_Regimen;
+    where Treatment_RCVP AND R_CVP_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Marginal_zone_lymphoma, Follicular_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant
+Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma, Marginal_zone_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant
 
 
 

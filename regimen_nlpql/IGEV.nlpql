@@ -75,11 +75,11 @@ define final Regimen_IGEV:
 // Results
 
         
-define final Treatment__IGEV:
+define final Treatment_IGEV:
     where Ifosfamide_Treatment AND Gemcitabine_Treatment AND Vinorelbine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IGEV AND IGEV_Regimen;
+    where Treatment_IGEV AND IGEV_Regimen;
         
         
 

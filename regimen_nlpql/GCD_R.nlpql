@@ -75,11 +75,11 @@ define final Regimen_GCD_R:
 // Results
 
         
-define final Treatment__GCDR:
+define final Treatment_GCDR:
     where Gemcitabine_Treatment AND Carboplatin_Treatment AND Dexamethasone_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GCDR AND GCD_R_Regimen;
+    where Treatment_GCDR AND GCD_R_Regimen;
         
         
 

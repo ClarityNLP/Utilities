@@ -64,11 +64,11 @@ define final Regimen_MAP:
 // Results
 
         
-define final Treatment__MAP:
+define final Treatment_MAP:
     where Methotrexate_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MAP AND MAP_Regimen;
+    where Treatment_MAP AND MAP_Regimen;
         
         
 

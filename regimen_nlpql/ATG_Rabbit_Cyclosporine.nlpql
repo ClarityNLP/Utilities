@@ -53,11 +53,11 @@ define final Regimen_ATG_Rabbit_Cyclosporine:
 // Results
 
         
-define final Treatment__ATGRabbitCyclosporine:
+define final Treatment_ATGRabbitCyclosporine:
     where AntithymocyteglobulinrabbitATG_Treatment AND CategoryCyclosporines_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATGRabbitCyclosporine AND ATG_Rabbit_Cyclosporine_Regimen;
+    where Treatment_ATGRabbitCyclosporine AND ATG_Rabbit_Cyclosporine_Regimen;
         
         
 

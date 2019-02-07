@@ -86,11 +86,11 @@ define final Regimen_ACVBP_dose_adjusted:
 // Results
 
         
-define final Treatment__ACVBPdoseadjusted:
+define final Treatment_ACVBPdoseadjusted:
     where Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Vindesine_Treatment AND Bleomycin_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ACVBPdoseadjusted AND ACVBP_dose_adjusted_Regimen;
+    where Treatment_ACVBPdoseadjusted AND ACVBP_dose_adjusted_Regimen;
         
         
 

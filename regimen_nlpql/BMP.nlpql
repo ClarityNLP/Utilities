@@ -64,11 +64,11 @@ define final Regimen_BMP:
 // Results
 
         
-define final Treatment__BMP:
+define final Treatment_BMP:
     where Bleomycin_Treatment AND Methotrexate_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BMP AND BMP_Regimen;
+    where Treatment_BMP AND BMP_Regimen;
         
         
 

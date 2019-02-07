@@ -64,11 +64,11 @@ define final Regimen_F_SHAI:
 // Results
 
         
-define final Treatment__FSHAI:
+define final Treatment_FSHAI:
     where Fludarabine_Treatment AND Cytarabine_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FSHAI AND F_SHAI_Regimen;
+    where Treatment_FSHAI AND F_SHAI_Regimen;
         
         
 

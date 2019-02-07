@@ -53,18 +53,18 @@ define final Regimen_Carboplatin_Bevacizumab:
 // Results
 
         
-define final Treatment__CarboplatinBevacizumab:
+define final Treatment_CarboplatinBevacizumab:
     where Carboplatin_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinBevacizumab AND Carboplatin_Bevacizumab_Regimen;
+    where Treatment_CarboplatinBevacizumab AND Carboplatin_Bevacizumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Glioblastoma
+Known regimen for: Glioblastoma, Anaplastic_glioma
 
 
 

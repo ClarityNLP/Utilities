@@ -53,11 +53,11 @@ define final Regimen_BuTT:
 // Results
 
         
-define final Treatment__BuTT:
+define final Treatment_BuTT:
     where Busulfan_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BuTT AND BuTT_Regimen;
+    where Treatment_BuTT AND BuTT_Regimen;
         
         
 

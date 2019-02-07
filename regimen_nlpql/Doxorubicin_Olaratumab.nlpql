@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_Olaratumab:
 // Results
 
         
-define final Treatment__DoxorubicinOlaratumab:
+define final Treatment_DoxorubicinOlaratumab:
     where Doxorubicin_Treatment AND Olaratumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinOlaratumab AND Doxorubicin_Olaratumab_Regimen;
+    where Treatment_DoxorubicinOlaratumab AND Doxorubicin_Olaratumab_Regimen;
         
         
 

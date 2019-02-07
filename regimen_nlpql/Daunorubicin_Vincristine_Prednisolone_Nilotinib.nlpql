@@ -75,11 +75,11 @@ define final Regimen_Daunorubicin_Vincristine_Prednisolone_Nilotinib:
 // Results
 
         
-define final Treatment__DaunorubicinVincristinePrednisoloneNilotinib:
+define final Treatment_DaunorubicinVincristinePrednisoloneNilotinib:
     where Daunorubicin_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment AND Nilotinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DaunorubicinVincristinePrednisoloneNilotinib AND Daunorubicin_Vincristine_Prednisolone_Nilotinib_Regimen;
+    where Treatment_DaunorubicinVincristinePrednisoloneNilotinib AND Daunorubicin_Vincristine_Prednisolone_Nilotinib_Regimen;
         
         
 

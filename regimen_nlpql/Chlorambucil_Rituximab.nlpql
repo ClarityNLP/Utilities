@@ -53,18 +53,18 @@ define final Regimen_Chlorambucil_Rituximab:
 // Results
 
         
-define final Treatment__ChlorambucilRituximab:
+define final Treatment_ChlorambucilRituximab:
     where Chlorambucil_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ChlorambucilRituximab AND Chlorambucil_Rituximab_Regimen;
+    where Treatment_ChlorambucilRituximab AND Chlorambucil_Rituximab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Marginal_zone_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL)
+Known regimen for: Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 

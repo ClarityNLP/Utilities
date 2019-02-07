@@ -75,11 +75,11 @@ define final Regimen_Bortezomib_HyperCAD:
 // Results
 
         
-define final Treatment__BortezomibHyperCAD:
+define final Treatment_BortezomibHyperCAD:
     where Bortezomib_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibHyperCAD AND Bortezomib_HyperCAD_Regimen;
+    where Treatment_BortezomibHyperCAD AND Bortezomib_HyperCAD_Regimen;
         
         
 

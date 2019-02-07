@@ -53,11 +53,11 @@ define final Regimen_Cyclosporine_Prednisone:
 // Results
 
         
-define final Treatment__CyclosporinePrednisone:
+define final Treatment_CyclosporinePrednisone:
     where CategoryCyclosporines_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclosporinePrednisone AND Cyclosporine_Prednisone_Regimen;
+    where Treatment_CyclosporinePrednisone AND Cyclosporine_Prednisone_Regimen;
         
         
 

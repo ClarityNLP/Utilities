@@ -86,11 +86,11 @@ define final Regimen_RABVD:
 // Results
 
         
-define final Treatment__RABVD:
+define final Treatment_RABVD:
     where Rituximab_Treatment AND Doxorubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RABVD AND RABVD_Regimen;
+    where Treatment_RABVD AND RABVD_Regimen;
         
         
 

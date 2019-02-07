@@ -53,11 +53,11 @@ define final Regimen_Lapatinib_Trastuzumab:
 // Results
 
         
-define final Treatment__LapatinibTrastuzumab:
+define final Treatment_LapatinibTrastuzumab:
     where Lapatinib_Treatment AND Trastuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LapatinibTrastuzumab AND Lapatinib_Trastuzumab_Regimen;
+    where Treatment_LapatinibTrastuzumab AND Lapatinib_Trastuzumab_Regimen;
         
         
 

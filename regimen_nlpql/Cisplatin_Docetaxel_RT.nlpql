@@ -64,18 +64,18 @@ define final Regimen_Cisplatin_Docetaxel_RT:
 // Results
 
         
-define final Treatment__CisplatinDocetaxelRT:
+define final Treatment_CisplatinDocetaxelRT:
     where Cisplatin_Treatment AND Docetaxel_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDocetaxelRT AND Cisplatin_Docetaxel_RT_Regimen;
+    where Treatment_CisplatinDocetaxelRT AND Cisplatin_Docetaxel_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Esophageal_cancer
 
 
 

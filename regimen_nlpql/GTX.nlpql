@@ -64,11 +64,11 @@ define final Regimen_GTX:
 // Results
 
         
-define final Treatment__GTX:
+define final Treatment_GTX:
     where Gemcitabine_Treatment AND Docetaxel_Treatment AND Capecitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GTX AND GTX_Regimen;
+    where Treatment_GTX AND GTX_Regimen;
         
         
 

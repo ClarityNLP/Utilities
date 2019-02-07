@@ -75,11 +75,11 @@ define final Regimen_CODOX_M:
 // Results
 
         
-define final Treatment__CODOXM:
+define final Treatment_CODOXM:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CODOXM AND CODOX_M_Regimen;
+    where Treatment_CODOXM AND CODOX_M_Regimen;
         
         
 

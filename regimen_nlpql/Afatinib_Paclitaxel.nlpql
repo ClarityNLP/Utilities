@@ -53,11 +53,11 @@ define final Regimen_Afatinib_Paclitaxel:
 // Results
 
         
-define final Treatment__AfatinibPaclitaxel:
+define final Treatment_AfatinibPaclitaxel:
     where Afatinib_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AfatinibPaclitaxel AND Afatinib_Paclitaxel_Regimen;
+    where Treatment_AfatinibPaclitaxel AND Afatinib_Paclitaxel_Regimen;
         
         
 

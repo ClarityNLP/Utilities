@@ -53,11 +53,11 @@ define final Regimen_Mercaptopurine_WBRT:
 // Results
 
         
-define final Treatment__MercaptopurineWBRT:
+define final Treatment_MercaptopurineWBRT:
     where Mercaptopurine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MercaptopurineWBRT AND Mercaptopurine_WBRT_Regimen;
+    where Treatment_MercaptopurineWBRT AND Mercaptopurine_WBRT_Regimen;
         
         
 

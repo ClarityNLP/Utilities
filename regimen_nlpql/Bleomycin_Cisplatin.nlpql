@@ -53,11 +53,11 @@ define final Regimen_Bleomycin_Cisplatin:
 // Results
 
         
-define final Treatment__BleomycinCisplatin:
+define final Treatment_BleomycinCisplatin:
     where Cisplatin_Treatment AND Bleomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BleomycinCisplatin AND Bleomycin_Cisplatin_Regimen;
+    where Treatment_BleomycinCisplatin AND Bleomycin_Cisplatin_Regimen;
         
         
 

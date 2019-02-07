@@ -75,11 +75,11 @@ define final Regimen_OPPA:
 // Results
 
         
-define final Treatment__OPPA:
+define final Treatment_OPPA:
     where Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OPPA AND OPPA_Regimen;
+    where Treatment_OPPA AND OPPA_Regimen;
         
         
 

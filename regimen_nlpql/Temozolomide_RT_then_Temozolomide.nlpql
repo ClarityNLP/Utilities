@@ -53,11 +53,11 @@ define final Regimen_Temozolomide_RT_then_Temozolomide:
 // Results
 
         
-define final Treatment__TemozolomideRTthenTemozolomide:
+define final Treatment_TemozolomideRTthenTemozolomide:
     where Temozolomide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TemozolomideRTthenTemozolomide AND Temozolomide_RT_then_Temozolomide_Regimen;
+    where Treatment_TemozolomideRTthenTemozolomide AND Temozolomide_RT_then_Temozolomide_Regimen;
         
         
 

@@ -86,11 +86,11 @@ define final Regimen_mDCF_Bevacizumab:
 // Results
 
         
-define final Treatment__mDCFBevacizumab:
+define final Treatment_mDCFBevacizumab:
     where Docetaxel_Treatment AND Cisplatin_Treatment AND Folinicacid_Treatment AND Fluorouracil_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mDCFBevacizumab AND mDCF_Bevacizumab_Regimen;
+    where Treatment_mDCFBevacizumab AND mDCF_Bevacizumab_Regimen;
         
         
 

@@ -53,18 +53,18 @@ define final Regimen_Irinotecan_Bevacizumab:
 // Results
 
         
-define final Treatment__IrinotecanBevacizumab:
+define final Treatment_IrinotecanBevacizumab:
     where Irinotecan_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IrinotecanBevacizumab AND Irinotecan_Bevacizumab_Regimen;
+    where Treatment_IrinotecanBevacizumab AND Irinotecan_Bevacizumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Anaplastic_glioma, Glioblastoma
+Known regimen for: Glioblastoma, Anaplastic_glioma
 
 
 

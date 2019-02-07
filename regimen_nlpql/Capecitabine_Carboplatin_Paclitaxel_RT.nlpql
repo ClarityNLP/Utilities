@@ -75,11 +75,11 @@ define final Regimen_Capecitabine_Carboplatin_Paclitaxel_RT:
 // Results
 
         
-define final Treatment__CapecitabineCarboplatinPaclitaxelRT:
+define final Treatment_CapecitabineCarboplatinPaclitaxelRT:
     where Carboplatin_Treatment AND Paclitaxel_Treatment AND Capecitabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineCarboplatinPaclitaxelRT AND Capecitabine_Carboplatin_Paclitaxel_RT_Regimen;
+    where Treatment_CapecitabineCarboplatinPaclitaxelRT AND Capecitabine_Carboplatin_Paclitaxel_RT_Regimen;
         
         
 

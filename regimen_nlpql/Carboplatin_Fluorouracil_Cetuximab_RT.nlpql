@@ -75,11 +75,11 @@ define final Regimen_Carboplatin_Fluorouracil_Cetuximab_RT:
 // Results
 
         
-define final Treatment__CarboplatinFluorouracilCetuximabRT:
+define final Treatment_CarboplatinFluorouracilCetuximabRT:
     where Carboplatin_Treatment AND Fluorouracil_Treatment AND Cetuximab_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinFluorouracilCetuximabRT AND Carboplatin_Fluorouracil_Cetuximab_RT_Regimen;
+    where Treatment_CarboplatinFluorouracilCetuximabRT AND Carboplatin_Fluorouracil_Cetuximab_RT_Regimen;
         
         
 

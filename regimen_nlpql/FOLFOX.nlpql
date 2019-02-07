@@ -64,18 +64,18 @@ define final Regimen_FOLFOX:
 // Results
 
         
-define final Treatment__FOLFOX:
+define final Treatment_FOLFOX:
     where Folinicacid_Treatment AND Fluorouracil_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFOX AND FOLFOX_Regimen;
+    where Treatment_FOLFOX AND FOLFOX_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Rectal_cancer
+Known regimen for: Rectal_cancer, Pancreatic_cancer
 
 
 

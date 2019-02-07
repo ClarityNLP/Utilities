@@ -53,11 +53,11 @@ define final Regimen_Capecitabine_Erlotinib:
 // Results
 
         
-define final Treatment__CapecitabineErlotinib:
+define final Treatment_CapecitabineErlotinib:
     where Capecitabine_Treatment AND Erlotinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineErlotinib AND Capecitabine_Erlotinib_Regimen;
+    where Treatment_CapecitabineErlotinib AND Capecitabine_Erlotinib_Regimen;
         
         
 

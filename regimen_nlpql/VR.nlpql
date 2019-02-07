@@ -53,18 +53,18 @@ define final Regimen_VR:
 // Results
 
         
-define final Treatment__VR:
+define final Treatment_VR:
     where Bortezomib_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VR AND VR_Regimen;
+    where Treatment_VR AND VR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Follicular_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Follicular_lymphoma
 
 
 

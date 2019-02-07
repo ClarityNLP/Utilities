@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Doxorubicin_liposomal_Fluorouracil:
 // Results
 
         
-define final Treatment__CisplatinDoxorubicinliposomalFluorouracil:
+define final Treatment_CisplatinDoxorubicinliposomalFluorouracil:
     where Cisplatin_Treatment AND Pegylatedliposomaldoxorubicin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDoxorubicinliposomalFluorouracil AND Cisplatin_Doxorubicin_liposomal_Fluorouracil_Regimen;
+    where Treatment_CisplatinDoxorubicinliposomalFluorouracil AND Cisplatin_Doxorubicin_liposomal_Fluorouracil_Regimen;
         
         
 

@@ -53,18 +53,18 @@ define final Regimen_Carboplatin_RT:
 // Results
 
         
-define final Treatment__CarboplatinRT:
+define final Treatment_CarboplatinRT:
     where Carboplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinRT AND Carboplatin_RT_Regimen;
+    where Treatment_CarboplatinRT AND Carboplatin_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Nasopharyngeal_carcinoma, Head_and_neck_cancer, Non-small_cell_lung_cancer
+Known regimen for: Cervical_cancer, Non-small_cell_lung_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
 
 
 

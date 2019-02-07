@@ -64,11 +64,11 @@ define final Regimen_PCF:
 // Results
 
         
-define final Treatment__PCF:
+define final Treatment_PCF:
     where Paclitaxel_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCF AND PCF_Regimen;
+    where Treatment_PCF AND PCF_Regimen;
         
         
 

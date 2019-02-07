@@ -64,11 +64,11 @@ define final Regimen_G_FC:
 // Results
 
         
-define final Treatment__GFC:
+define final Treatment_GFC:
     where Obinutuzumab_Treatment AND Fludarabine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GFC AND G_FC_Regimen;
+    where Treatment_GFC AND G_FC_Regimen;
         
         
 

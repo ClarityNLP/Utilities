@@ -53,11 +53,11 @@ define final Regimen_Dacarbazine_Gemcitabine:
 // Results
 
         
-define final Treatment__DacarbazineGemcitabine:
+define final Treatment_DacarbazineGemcitabine:
     where Dacarbazine_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DacarbazineGemcitabine AND Dacarbazine_Gemcitabine_Regimen;
+    where Treatment_DacarbazineGemcitabine AND Dacarbazine_Gemcitabine_Regimen;
         
         
 

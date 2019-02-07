@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_Fluorouracil:
 // Results
 
         
-define final Treatment__CisplatinFluorouracil:
+define final Treatment_CisplatinFluorouracil:
     where Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinFluorouracil AND Cisplatin_Fluorouracil_Regimen;
+    where Treatment_CisplatinFluorouracil AND Cisplatin_Fluorouracil_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Penile_cancer, Esophageal_cancer, Gastric_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
+Known regimen for: Nasopharyngeal_carcinoma, Esophageal_cancer, Gastric_cancer, Head_and_neck_cancer, Penile_cancer
 
 
 

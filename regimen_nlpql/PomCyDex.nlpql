@@ -64,11 +64,11 @@ define final Regimen_PomCyDex:
 // Results
 
         
-define final Treatment__PomCyDex:
+define final Treatment_PomCyDex:
     where Pomalidomide_Treatment AND Cyclophosphamide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PomCyDex AND PomCyDex_Regimen;
+    where Treatment_PomCyDex AND PomCyDex_Regimen;
         
         
 

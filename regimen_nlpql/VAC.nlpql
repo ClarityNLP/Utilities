@@ -64,11 +64,11 @@ define final Regimen_VAC:
 // Results
 
         
-define final Treatment__VAC:
+define final Treatment_VAC:
     where Vincristine_Treatment AND Dactinomycin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VAC AND VAC_Regimen;
+    where Treatment_VAC AND VAC_Regimen;
         
         
 

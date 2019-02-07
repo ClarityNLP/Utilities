@@ -64,11 +64,11 @@ define final Regimen_FEC:
 // Results
 
         
-define final Treatment__FEC:
+define final Treatment_FEC:
     where Fluorouracil_Treatment AND Epirubicin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FEC AND FEC_Regimen;
+    where Treatment_FEC AND FEC_Regimen;
         
         
 

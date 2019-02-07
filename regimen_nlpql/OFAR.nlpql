@@ -75,11 +75,11 @@ define final Regimen_OFAR:
 // Results
 
         
-define final Treatment__OFAR:
+define final Treatment_OFAR:
     where Oxaliplatin_Treatment AND Fludarabine_Treatment AND Cytarabine_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OFAR AND OFAR_Regimen;
+    where Treatment_OFAR AND OFAR_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_CIA:
 // Results
 
         
-define final Treatment__CIA:
+define final Treatment_CIA:
     where Clofarabine_Treatment AND Idarubicin_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CIA AND CIA_Regimen;
+    where Treatment_CIA AND CIA_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_FAC:
 // Results
 
         
-define final Treatment__FAC:
+define final Treatment_FAC:
     where Fluorouracil_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FAC AND FAC_Regimen;
+    where Treatment_FAC AND FAC_Regimen;
         
         
 

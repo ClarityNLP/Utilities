@@ -64,11 +64,11 @@ define final Regimen_Docetaxel_Cetuximab_RT:
 // Results
 
         
-define final Treatment__DocetaxelCetuximabRT:
+define final Treatment_DocetaxelCetuximabRT:
     where Docetaxel_Treatment AND Cetuximab_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelCetuximabRT AND Docetaxel_Cetuximab_RT_Regimen;
+    where Treatment_DocetaxelCetuximabRT AND Docetaxel_Cetuximab_RT_Regimen;
         
         
 

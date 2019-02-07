@@ -53,18 +53,18 @@ define final Regimen_Dabrafenib_Trametinib:
 // Results
 
         
-define final Treatment__DabrafenibTrametinib:
+define final Treatment_DabrafenibTrametinib:
     where Dabrafenib_Treatment AND Trametinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DabrafenibTrametinib AND Dabrafenib_Trametinib_Regimen;
+    where Treatment_DabrafenibTrametinib AND Dabrafenib_Trametinib_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer_BRAF-mutated, Thyroid_cancer_BRAF-mutated, BRAF, Melanoma_BRAF-mutated, CNS_melanoma
+Known regimen for: CNS_melanoma, BRAF, Melanoma_BRAF-mutated, Thyroid_cancer_BRAF-mutated, Non-small_cell_lung_cancer_BRAF-mutated
 
 
 

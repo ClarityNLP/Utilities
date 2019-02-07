@@ -64,11 +64,11 @@ define final Regimen_Methotrexate_Tacrolimus_Tocilizumab:
 // Results
 
         
-define final Treatment__MethotrexateTacrolimusTocilizumab:
+define final Treatment_MethotrexateTacrolimusTocilizumab:
     where Methotrexate_Treatment AND Tacrolimus_Treatment AND Tocilizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexateTacrolimusTocilizumab AND Methotrexate_Tacrolimus_Tocilizumab_Regimen;
+    where Treatment_MethotrexateTacrolimusTocilizumab AND Methotrexate_Tacrolimus_Tocilizumab_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_nab_Paclitaxel_Atezolizumab:
 // Results
 
         
-define final Treatment__nabPaclitaxelAtezolizumab:
+define final Treatment_nabPaclitaxelAtezolizumab:
     where Paclitaxelnanoparticlealbuminbound_Treatment AND Atezolizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__nabPaclitaxelAtezolizumab AND nab_Paclitaxel_Atezolizumab_Regimen;
+    where Treatment_nabPaclitaxelAtezolizumab AND nab_Paclitaxel_Atezolizumab_Regimen;
         
         
 

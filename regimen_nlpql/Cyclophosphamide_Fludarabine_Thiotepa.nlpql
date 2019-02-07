@@ -64,11 +64,11 @@ define final Regimen_Cyclophosphamide_Fludarabine_Thiotepa:
 // Results
 
         
-define final Treatment__CyclophosphamideFludarabineThiotepa:
+define final Treatment_CyclophosphamideFludarabineThiotepa:
     where Cyclophosphamide_Treatment AND Fludarabine_Treatment AND Thiotepa_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideFludarabineThiotepa AND Cyclophosphamide_Fludarabine_Thiotepa_Regimen;
+    where Treatment_CyclophosphamideFludarabineThiotepa AND Cyclophosphamide_Fludarabine_Thiotepa_Regimen;
         
         
 

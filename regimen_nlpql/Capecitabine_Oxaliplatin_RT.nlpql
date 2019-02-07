@@ -64,11 +64,11 @@ define final Regimen_Capecitabine_Oxaliplatin_RT:
 // Results
 
         
-define final Treatment__CapecitabineOxaliplatinRT:
+define final Treatment_CapecitabineOxaliplatinRT:
     where Capecitabine_Treatment AND Oxaliplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineOxaliplatinRT AND Capecitabine_Oxaliplatin_RT_Regimen;
+    where Treatment_CapecitabineOxaliplatinRT AND Capecitabine_Oxaliplatin_RT_Regimen;
         
         
 

@@ -97,11 +97,11 @@ define final Regimen_dmCODOX_MIVAC__Modified_Magrath:
 // Results
 
         
-define final Treatment__dmCODOXMIVACModifiedMagrath:
+define final Treatment_dmCODOXMIVACModifiedMagrath:
     where Cytarabine_Treatment AND Methotrexate_Treatment AND Cytarabine_Treatment AND Methotrexate_Treatment AND Folinicacid_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__dmCODOXMIVACModifiedMagrath AND dmCODOX_MIVAC__Modified_Magrath_Regimen;
+    where Treatment_dmCODOXMIVACModifiedMagrath AND dmCODOX_MIVAC__Modified_Magrath_Regimen;
         
         
 

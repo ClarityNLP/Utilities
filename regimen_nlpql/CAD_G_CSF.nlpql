@@ -64,11 +64,11 @@ define final Regimen_CAD_G_CSF:
 // Results
 
         
-define final Treatment__CADGCSF:
+define final Treatment_CADGCSF:
     where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CADGCSF AND CAD_G_CSF_Regimen;
+    where Treatment_CADGCSF AND CAD_G_CSF_Regimen;
         
         
 

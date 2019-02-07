@@ -53,11 +53,11 @@ define final Regimen_Docetaxel_Vandetanib:
 // Results
 
         
-define final Treatment__DocetaxelVandetanib:
+define final Treatment_DocetaxelVandetanib:
     where Docetaxel_Treatment AND Vandetanib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelVandetanib AND Docetaxel_Vandetanib_Regimen;
+    where Treatment_DocetaxelVandetanib AND Docetaxel_Vandetanib_Regimen;
         
         
 

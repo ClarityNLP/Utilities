@@ -53,11 +53,11 @@ define final Regimen_DI_EC:
 // Results
 
         
-define final Treatment__DIEC:
+define final Treatment_DIEC:
     where Epirubicin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DIEC AND DI_EC_Regimen;
+    where Treatment_DIEC AND DI_EC_Regimen;
         
         
 

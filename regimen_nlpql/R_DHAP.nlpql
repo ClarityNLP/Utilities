@@ -75,11 +75,11 @@ define final Regimen_R_DHAP:
 // Results
 
         
-define final Treatment__RDHAP:
+define final Treatment_RDHAP:
     where Rituximab_Treatment AND Dexamethasone_Treatment AND Cytarabine_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RDHAP AND R_DHAP_Regimen;
+    where Treatment_RDHAP AND R_DHAP_Regimen;
         
         
 

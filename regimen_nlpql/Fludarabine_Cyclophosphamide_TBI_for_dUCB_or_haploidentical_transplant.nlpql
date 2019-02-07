@@ -64,11 +64,11 @@ define final Regimen_Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical
 // Results
 
         
-define final Treatment__FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant:
+define final Treatment_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant:
     where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant AND Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant_Regimen;
+    where Treatment_FludarabineCyclophosphamideTBIfordUCBorhaploidenticaltransplant AND Fludarabine_Cyclophosphamide_TBI_for_dUCB_or_haploidentical_transplant_Regimen;
         
         
 

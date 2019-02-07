@@ -64,11 +64,11 @@ define final Regimen_Sirolimus_Tacrolimus_Prednisone:
 // Results
 
         
-define final Treatment__SirolimusTacrolimusPrednisone:
+define final Treatment_SirolimusTacrolimusPrednisone:
     where Sirolimus_Treatment AND Tacrolimus_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__SirolimusTacrolimusPrednisone AND Sirolimus_Tacrolimus_Prednisone_Regimen;
+    where Treatment_SirolimusTacrolimusPrednisone AND Sirolimus_Tacrolimus_Prednisone_Regimen;
         
         
 

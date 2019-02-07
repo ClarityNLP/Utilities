@@ -86,11 +86,11 @@ define final Regimen_FOLFIRINOX_Bevacizumab:
 // Results
 
         
-define final Treatment__FOLFIRINOXBevacizumab:
+define final Treatment_FOLFIRINOXBevacizumab:
     where Fluorouracil_Treatment AND Levoleucovorin_Treatment AND Oxaliplatin_Treatment AND Irinotecan_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRINOXBevacizumab AND FOLFIRINOX_Bevacizumab_Regimen;
+    where Treatment_FOLFIRINOXBevacizumab AND FOLFIRINOX_Bevacizumab_Regimen;
         
         
 

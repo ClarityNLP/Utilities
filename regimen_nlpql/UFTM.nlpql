@@ -53,11 +53,11 @@ define final Regimen_UFTM:
 // Results
 
         
-define final Treatment__UFTM:
+define final Treatment_UFTM:
     where Tegafuranduracil_Treatment AND Mitomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__UFTM AND UFTM_Regimen;
+    where Treatment_UFTM AND UFTM_Regimen;
         
         
 

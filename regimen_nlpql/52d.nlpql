@@ -53,11 +53,11 @@ define final Regimen_52d:
 // Results
 
         
-define final Treatment__52d:
+define final Treatment_52d:
     where Cytarabine_Treatment AND Daunorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__52d AND 52d_Regimen;
+    where Treatment_52d AND 52d_Regimen;
         
         
 

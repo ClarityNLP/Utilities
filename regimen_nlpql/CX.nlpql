@@ -53,11 +53,11 @@ define final Regimen_CX:
 // Results
 
         
-define final Treatment__CX:
+define final Treatment_CX:
     where Capecitabine_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CX AND CX_Regimen;
+    where Treatment_CX AND CX_Regimen;
         
         
 

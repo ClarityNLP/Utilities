@@ -53,18 +53,18 @@ define final Regimen_Epirubicin_Ifosfamide:
 // Results
 
         
-define final Treatment__EpirubicinIfosfamide:
+define final Treatment_EpirubicinIfosfamide:
     where Epirubicin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EpirubicinIfosfamide AND Epirubicin_Ifosfamide_Regimen;
+    where Treatment_EpirubicinIfosfamide AND Epirubicin_Ifosfamide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Soft_tissue_sarcoma
 
 
 

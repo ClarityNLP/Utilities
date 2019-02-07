@@ -53,11 +53,11 @@ define final Regimen_Cyclophosphamide_Prednisolone:
 // Results
 
         
-define final Treatment__CyclophosphamidePrednisolone:
+define final Treatment_CyclophosphamidePrednisolone:
     where Cyclophosphamide_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamidePrednisolone AND Cyclophosphamide_Prednisolone_Regimen;
+    where Treatment_CyclophosphamidePrednisolone AND Cyclophosphamide_Prednisolone_Regimen;
         
         
 

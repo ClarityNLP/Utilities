@@ -53,11 +53,11 @@ define final Regimen_Gemcitabine_Sunitinib:
 // Results
 
         
-define final Treatment__GemcitabineSunitinib:
+define final Treatment_GemcitabineSunitinib:
     where Gemcitabine_Treatment AND Sunitinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineSunitinib AND Gemcitabine_Sunitinib_Regimen;
+    where Treatment_GemcitabineSunitinib AND Gemcitabine_Sunitinib_Regimen;
         
         
 

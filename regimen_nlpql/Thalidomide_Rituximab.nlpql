@@ -53,11 +53,11 @@ define final Regimen_Thalidomide_Rituximab:
 // Results
 
         
-define final Treatment__ThalidomideRituximab:
+define final Treatment_ThalidomideRituximab:
     where Thalidomide_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ThalidomideRituximab AND Thalidomide_Rituximab_Regimen;
+    where Treatment_ThalidomideRituximab AND Thalidomide_Rituximab_Regimen;
         
         
 

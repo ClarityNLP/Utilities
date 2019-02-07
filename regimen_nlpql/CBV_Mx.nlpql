@@ -75,11 +75,11 @@ define final Regimen_CBV_Mx:
 // Results
 
         
-define final Treatment__CBVMx:
+define final Treatment_CBVMx:
     where Cyclophosphamide_Treatment AND Carmustine_Treatment AND Etoposide_Treatment AND Mitoxantrone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CBVMx AND CBV_Mx_Regimen;
+    where Treatment_CBVMx AND CBV_Mx_Regimen;
         
         
 

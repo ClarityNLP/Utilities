@@ -64,11 +64,11 @@ define final Regimen_FLOX:
 // Results
 
         
-define final Treatment__FLOX:
+define final Treatment_FLOX:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FLOX AND FLOX_Regimen;
+    where Treatment_FLOX AND FLOX_Regimen;
         
         
 

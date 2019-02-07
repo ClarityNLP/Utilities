@@ -53,11 +53,11 @@ define final Regimen_Binimetinib_Encorafenib:
 // Results
 
         
-define final Treatment__BinimetinibEncorafenib:
+define final Treatment_BinimetinibEncorafenib:
     where Binimetinib_Treatment AND Encorafenib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BinimetinibEncorafenib AND Binimetinib_Encorafenib_Regimen;
+    where Treatment_BinimetinibEncorafenib AND Binimetinib_Encorafenib_Regimen;
         
         
 

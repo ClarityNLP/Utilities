@@ -64,11 +64,11 @@ define final Regimen_MPR:
 // Results
 
         
-define final Treatment__MPR:
+define final Treatment_MPR:
     where Melphalan_Treatment AND Prednisone_Treatment AND Lenalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MPR AND MPR_Regimen;
+    where Treatment_MPR AND MPR_Regimen;
         
         
 

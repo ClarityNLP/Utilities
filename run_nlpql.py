@@ -6,7 +6,7 @@ import time
 
 max_workers = 4
 max_jobs = 100
-cur_job = 213
+cur_job = 355
 viewed_jobs = list()
 
 ip = '18.220.133.76'
@@ -86,8 +86,8 @@ def job_runner(i, fname):
     else:
         while get_active_workers() >= max_workers:
             cleanup_empty_jobs()
-            print('At max workers for job %d sleeping for 15 secs...' % i)
-            time.sleep(15)
+            print('At max workers for job %d sleeping for 30 secs...' % i)
+            time.sleep(30)
         run_nlpql(i, filename=fname)
 
 

@@ -86,11 +86,11 @@ define final Regimen_Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine:
 // Results
 
         
-define final Treatment__CisplatinDacarbazineIL2IFNalfa2bCarmustine:
+define final Treatment_CisplatinDacarbazineIL2IFNalfa2bCarmustine:
     where Cisplatin_Treatment AND Dacarbazine_Treatment AND Carmustine_Treatment AND Aldesleukin_Treatment AND Interferonalfa2b_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDacarbazineIL2IFNalfa2bCarmustine AND Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine_Regimen;
+    where Treatment_CisplatinDacarbazineIL2IFNalfa2bCarmustine AND Cisplatin_Dacarbazine_IL_2_IFN_alfa_2b__Carmustine_Regimen;
         
         
 

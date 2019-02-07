@@ -53,18 +53,18 @@ define final Regimen_Capecitabine_Bevacizumab:
 // Results
 
         
-define final Treatment__CapecitabineBevacizumab:
+define final Treatment_CapecitabineBevacizumab:
     where Capecitabine_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineBevacizumab AND Capecitabine_Bevacizumab_Regimen;
+    where Treatment_CapecitabineBevacizumab AND Capecitabine_Bevacizumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Colon_cancer
+Known regimen for: Colon_cancer, Hepatocellular_carcinoma
 
 
 

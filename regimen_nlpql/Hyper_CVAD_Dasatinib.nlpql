@@ -53,11 +53,11 @@ define final Regimen_Hyper_CVAD_Dasatinib:
 // Results
 
         
-define final Treatment__HyperCVADDasatinib:
+define final Treatment_HyperCVADDasatinib:
     where Methotrexate_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HyperCVADDasatinib AND Hyper_CVAD_Dasatinib_Regimen;
+    where Treatment_HyperCVADDasatinib AND Hyper_CVAD_Dasatinib_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Irinotecan_Temozolomide:
 // Results
 
         
-define final Treatment__IrinotecanTemozolomide:
+define final Treatment_IrinotecanTemozolomide:
     where Irinotecan_Treatment AND Temozolomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IrinotecanTemozolomide AND Irinotecan_Temozolomide_Regimen;
+    where Treatment_IrinotecanTemozolomide AND Irinotecan_Temozolomide_Regimen;
         
         
 

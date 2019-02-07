@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Pemetrexed:
 // Results
 
         
-define final Treatment__CarboplatinPemetrexed:
+define final Treatment_CarboplatinPemetrexed:
     where Carboplatin_Treatment AND Pemetrexed_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinPemetrexed AND Carboplatin_Pemetrexed_Regimen;
+    where Treatment_CarboplatinPemetrexed AND Carboplatin_Pemetrexed_Regimen;
         
         
 

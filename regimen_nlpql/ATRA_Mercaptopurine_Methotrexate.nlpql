@@ -108,11 +108,11 @@ define final Regimen_ATRA_Mercaptopurine_Methotrexate:
 // Results
 
         
-define final Treatment__ATRAMercaptopurineMethotrexate:
+define final Treatment_ATRAMercaptopurineMethotrexate:
     where Alltransretinoicacid_Treatment AND Mercaptopurine_Treatment AND Methotrexate_Treatment AND Methotrexate_Treatment AND Mercaptopurine_Treatment AND Methotrexate_Treatment AND Mercaptopurine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATRAMercaptopurineMethotrexate AND ATRA_Mercaptopurine_Methotrexate_Regimen;
+    where Treatment_ATRAMercaptopurineMethotrexate AND ATRA_Mercaptopurine_Methotrexate_Regimen;
         
         
 

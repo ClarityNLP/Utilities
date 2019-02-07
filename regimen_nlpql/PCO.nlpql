@@ -64,11 +64,11 @@ define final Regimen_PCO:
 // Results
 
         
-define final Treatment__PCO:
+define final Treatment_PCO:
     where Pentostatin_Treatment AND Cyclophosphamide_Treatment AND Ofatumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCO AND PCO_Regimen;
+    where Treatment_PCO AND PCO_Regimen;
         
         
 

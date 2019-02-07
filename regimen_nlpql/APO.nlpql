@@ -64,11 +64,11 @@ define final Regimen_APO:
 // Results
 
         
-define final Treatment__APO:
+define final Treatment_APO:
     where Doxorubicin_Treatment AND Prednisone_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__APO AND APO_Regimen;
+    where Treatment_APO AND APO_Regimen;
         
         
 

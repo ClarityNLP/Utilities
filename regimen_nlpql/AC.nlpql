@@ -53,11 +53,11 @@ define final Regimen_AC:
 // Results
 
         
-define final Treatment__AC:
+define final Treatment_AC:
     where Doxorubicin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AC AND AC_Regimen;
+    where Treatment_AC AND AC_Regimen;
         
         
 

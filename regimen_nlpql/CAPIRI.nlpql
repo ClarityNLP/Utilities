@@ -53,18 +53,18 @@ define final Regimen_CAPIRI:
 // Results
 
         
-define final Treatment__CAPIRI:
+define final Treatment_CAPIRI:
     where Capecitabine_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CAPIRI AND CAPIRI_Regimen;
+    where Treatment_CAPIRI AND CAPIRI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Esophageal_cancer
 
 
 

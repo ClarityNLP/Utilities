@@ -53,11 +53,11 @@ define final Regimen_IRIS:
 // Results
 
         
-define final Treatment__IRIS:
+define final Treatment_IRIS:
     where Irinotecan_Treatment AND Tegafurgimeraciloteracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IRIS AND IRIS_Regimen;
+    where Treatment_IRIS AND IRIS_Regimen;
         
         
 

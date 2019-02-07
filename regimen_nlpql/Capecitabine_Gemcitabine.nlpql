@@ -53,18 +53,18 @@ define final Regimen_Capecitabine_Gemcitabine:
 // Results
 
         
-define final Treatment__CapecitabineGemcitabine:
+define final Treatment_CapecitabineGemcitabine:
     where Capecitabine_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineGemcitabine AND Capecitabine_Gemcitabine_Regimen;
+    where Treatment_CapecitabineGemcitabine AND Capecitabine_Gemcitabine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Thymoma, Pancreatic_cancer, Cholangiocarcinoma
+Known regimen for: Thymoma, Cholangiocarcinoma, Pancreatic_cancer
 
 
 

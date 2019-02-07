@@ -64,18 +64,18 @@ define final Regimen_ICE:
 // Results
 
         
-define final Treatment__ICE:
+define final Treatment_ICE:
     where Ifosfamide_Treatment AND Carboplatin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ICE AND ICE_Regimen;
+    where Treatment_ICE AND ICE_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Osteosarcoma, Hodgkin_lymphoma
+Known regimen for: Osteosarcoma, Ewings_sarcoma, Hodgkin_lymphoma
 
 
 

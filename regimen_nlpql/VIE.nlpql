@@ -64,11 +64,11 @@ define final Regimen_VIE:
 // Results
 
         
-define final Treatment__VIE:
+define final Treatment_VIE:
     where Vincristine_Treatment AND Ifosfamide_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VIE AND VIE_Regimen;
+    where Treatment_VIE AND VIE_Regimen;
         
         
 

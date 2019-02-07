@@ -97,11 +97,11 @@ define final Regimen_ABVE_PC:
 // Results
 
         
-define final Treatment__ABVEPC:
+define final Treatment_ABVEPC:
     where Doxorubicin_Treatment AND Bleomycin_Treatment AND Vincristine_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ABVEPC AND ABVE_PC_Regimen;
+    where Treatment_ABVEPC AND ABVE_PC_Regimen;
         
         
 

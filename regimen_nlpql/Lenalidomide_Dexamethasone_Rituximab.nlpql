@@ -64,11 +64,11 @@ define final Regimen_Lenalidomide_Dexamethasone_Rituximab:
 // Results
 
         
-define final Treatment__LenalidomideDexamethasoneRituximab:
+define final Treatment_LenalidomideDexamethasoneRituximab:
     where Lenalidomide_Treatment AND Dexamethasone_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LenalidomideDexamethasoneRituximab AND Lenalidomide_Dexamethasone_Rituximab_Regimen;
+    where Treatment_LenalidomideDexamethasoneRituximab AND Lenalidomide_Dexamethasone_Rituximab_Regimen;
         
         
 

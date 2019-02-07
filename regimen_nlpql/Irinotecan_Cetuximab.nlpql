@@ -64,11 +64,11 @@ define final Regimen_Irinotecan_Cetuximab:
 // Results
 
         
-define final Treatment__IrinotecanCetuximab:
+define final Treatment_IrinotecanCetuximab:
     where Irinotecan_Treatment AND Performancestatus_Treatment AND Cetuximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IrinotecanCetuximab AND Irinotecan_Cetuximab_Regimen;
+    where Treatment_IrinotecanCetuximab AND Irinotecan_Cetuximab_Regimen;
         
         
 

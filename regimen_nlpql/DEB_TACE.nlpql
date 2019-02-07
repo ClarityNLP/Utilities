@@ -53,11 +53,11 @@ define final Regimen_DEB_TACE:
 // Results
 
         
-define final Treatment__DEBTACE:
+define final Treatment_DEBTACE:
     where TACE_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DEBTACE AND DEB_TACE_Regimen;
+    where Treatment_DEBTACE AND DEB_TACE_Regimen;
         
         
 

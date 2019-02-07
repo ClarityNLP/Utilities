@@ -53,11 +53,11 @@ define final Regimen_Intraperitoneal_5_FU:
 // Results
 
         
-define final Treatment__Intraperitoneal5FU:
+define final Treatment_Intraperitoneal5FU:
     where Fluorouracil_Treatment AND Folinicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Intraperitoneal5FU AND Intraperitoneal_5_FU_Regimen;
+    where Treatment_Intraperitoneal5FU AND Intraperitoneal_5_FU_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Vorinostat_Rituximab:
 // Results
 
         
-define final Treatment__VorinostatRituximab:
+define final Treatment_VorinostatRituximab:
     where Vorinostat_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VorinostatRituximab AND Vorinostat_Rituximab_Regimen;
+    where Treatment_VorinostatRituximab AND Vorinostat_Rituximab_Regimen;
         
         
 

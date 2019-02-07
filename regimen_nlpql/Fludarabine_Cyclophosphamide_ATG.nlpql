@@ -64,11 +64,11 @@ define final Regimen_Fludarabine_Cyclophosphamide_ATG:
 // Results
 
         
-define final Treatment__FludarabineCyclophosphamideATG:
+define final Treatment_FludarabineCyclophosphamideATG:
     where Fludarabine_Treatment AND Cyclophosphamide_Treatment AND AntithymocyteglobulinrabbitATG_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabineCyclophosphamideATG AND Fludarabine_Cyclophosphamide_ATG_Regimen;
+    where Treatment_FludarabineCyclophosphamideATG AND Fludarabine_Cyclophosphamide_ATG_Regimen;
         
         
 

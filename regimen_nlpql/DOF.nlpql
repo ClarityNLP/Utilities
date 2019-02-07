@@ -64,11 +64,11 @@ define final Regimen_DOF:
 // Results
 
         
-define final Treatment__DOF:
+define final Treatment_DOF:
     where Docetaxel_Treatment AND Oxaliplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DOF AND DOF_Regimen;
+    where Treatment_DOF AND DOF_Regimen;
         
         
 

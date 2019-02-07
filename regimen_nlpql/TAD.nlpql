@@ -64,11 +64,11 @@ define final Regimen_TAD:
 // Results
 
         
-define final Treatment__TAD:
+define final Treatment_TAD:
     where Thalidomide_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TAD AND TAD_Regimen;
+    where Treatment_TAD AND TAD_Regimen;
         
         
 

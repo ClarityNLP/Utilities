@@ -53,11 +53,11 @@ define final Regimen_Everolimus_Lenvatinib:
 // Results
 
         
-define final Treatment__EverolimusLenvatinib:
+define final Treatment_EverolimusLenvatinib:
     where Everolimus_Treatment AND Lenvatinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EverolimusLenvatinib AND Everolimus_Lenvatinib_Regimen;
+    where Treatment_EverolimusLenvatinib AND Everolimus_Lenvatinib_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_OEPA:
 // Results
 
         
-define final Treatment__OEPA:
+define final Treatment_OEPA:
     where Vincristine_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OEPA AND OEPA_Regimen;
+    where Treatment_OEPA AND OEPA_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_R_HiDAC:
 // Results
 
         
-define final Treatment__RHiDAC:
+define final Treatment_RHiDAC:
     where Rituximab_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RHiDAC AND R_HiDAC_Regimen;
+    where Treatment_RHiDAC AND R_HiDAC_Regimen;
         
         
 

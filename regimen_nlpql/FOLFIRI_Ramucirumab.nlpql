@@ -75,11 +75,11 @@ define final Regimen_FOLFIRI_Ramucirumab:
 // Results
 
         
-define final Treatment__FOLFIRIRamucirumab:
+define final Treatment_FOLFIRIRamucirumab:
     where Folinicacid_Treatment AND Fluorouracil_Treatment AND Irinotecan_Treatment AND Ramucirumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRIRamucirumab AND FOLFIRI_Ramucirumab_Regimen;
+    where Treatment_FOLFIRIRamucirumab AND FOLFIRI_Ramucirumab_Regimen;
         
         
 

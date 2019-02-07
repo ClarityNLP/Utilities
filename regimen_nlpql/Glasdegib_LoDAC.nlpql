@@ -53,11 +53,11 @@ define final Regimen_Glasdegib_LoDAC:
 // Results
 
         
-define final Treatment__GlasdegibLoDAC:
+define final Treatment_GlasdegibLoDAC:
     where Glasdegib_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GlasdegibLoDAC AND Glasdegib_LoDAC_Regimen;
+    where Treatment_GlasdegibLoDAC AND Glasdegib_LoDAC_Regimen;
         
         
 

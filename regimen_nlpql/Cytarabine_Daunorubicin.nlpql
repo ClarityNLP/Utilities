@@ -53,18 +53,18 @@ define final Regimen_Cytarabine_Daunorubicin:
 // Results
 
         
-define final Treatment__CytarabineDaunorubicin:
+define final Treatment_CytarabineDaunorubicin:
     where Cytarabine_Treatment AND Daunorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineDaunorubicin AND Cytarabine_Daunorubicin_Regimen;
+    where Treatment_CytarabineDaunorubicin AND Cytarabine_Daunorubicin_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Acute_promyelocytic_leukemia, Acute_myeloid_leukemia
+Known regimen for: Acute_myeloid_leukemia, Acute_promyelocytic_leukemia
 
 
 

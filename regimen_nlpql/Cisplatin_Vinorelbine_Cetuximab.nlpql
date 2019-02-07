@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Vinorelbine_Cetuximab:
 // Results
 
         
-define final Treatment__CisplatinVinorelbineCetuximab:
+define final Treatment_CisplatinVinorelbineCetuximab:
     where Cisplatin_Treatment AND Vinorelbine_Treatment AND Cetuximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinVinorelbineCetuximab AND Cisplatin_Vinorelbine_Cetuximab_Regimen;
+    where Treatment_CisplatinVinorelbineCetuximab AND Cisplatin_Vinorelbine_Cetuximab_Regimen;
         
         
 

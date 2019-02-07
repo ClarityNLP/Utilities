@@ -75,11 +75,11 @@ define final Regimen_ELd:
 // Results
 
         
-define final Treatment__ELd:
+define final Treatment_ELd:
     where Elotuzumab_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment AND Elotuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ELd AND ELd_Regimen;
+    where Treatment_ELd AND ELd_Regimen;
         
         
 

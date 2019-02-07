@@ -75,11 +75,11 @@ define final Regimen_DCEP_G_CSF:
 // Results
 
         
-define final Treatment__DCEPGCSF:
+define final Treatment_DCEPGCSF:
     where Dexamethasone_Treatment AND Cyclophosphamide_Treatment AND Etoposide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DCEPGCSF AND DCEP_G_CSF_Regimen;
+    where Treatment_DCEPGCSF AND DCEP_G_CSF_Regimen;
         
         
 

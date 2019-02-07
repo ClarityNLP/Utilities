@@ -75,11 +75,11 @@ define final Regimen_ChlVPP:
 // Results
 
         
-define final Treatment__ChlVPP:
+define final Treatment_ChlVPP:
     where Chlorambucil_Treatment AND Vinblastine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ChlVPP AND ChlVPP_Regimen;
+    where Treatment_ChlVPP AND ChlVPP_Regimen;
         
         
 

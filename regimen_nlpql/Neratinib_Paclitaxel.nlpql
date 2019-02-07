@@ -53,11 +53,11 @@ define final Regimen_Neratinib_Paclitaxel:
 // Results
 
         
-define final Treatment__NeratinibPaclitaxel:
+define final Treatment_NeratinibPaclitaxel:
     where Neratinib_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__NeratinibPaclitaxel AND Neratinib_Paclitaxel_Regimen;
+    where Treatment_NeratinibPaclitaxel AND Neratinib_Paclitaxel_Regimen;
         
         
 

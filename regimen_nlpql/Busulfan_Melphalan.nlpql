@@ -53,11 +53,11 @@ define final Regimen_Busulfan_Melphalan:
 // Results
 
         
-define final Treatment__BusulfanMelphalan:
+define final Treatment_BusulfanMelphalan:
     where Busulfan_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BusulfanMelphalan AND Busulfan_Melphalan_Regimen;
+    where Treatment_BusulfanMelphalan AND Busulfan_Melphalan_Regimen;
         
         
 

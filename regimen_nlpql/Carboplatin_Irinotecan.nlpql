@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Irinotecan:
 // Results
 
         
-define final Treatment__CarboplatinIrinotecan:
+define final Treatment_CarboplatinIrinotecan:
     where Carboplatin_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinIrinotecan AND Carboplatin_Irinotecan_Regimen;
+    where Treatment_CarboplatinIrinotecan AND Carboplatin_Irinotecan_Regimen;
         
         
 

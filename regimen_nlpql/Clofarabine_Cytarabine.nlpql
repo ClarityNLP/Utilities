@@ -53,11 +53,11 @@ define final Regimen_Clofarabine_Cytarabine:
 // Results
 
         
-define final Treatment__ClofarabineCytarabine:
+define final Treatment_ClofarabineCytarabine:
     where Clofarabine_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ClofarabineCytarabine AND Clofarabine_Cytarabine_Regimen;
+    where Treatment_ClofarabineCytarabine AND Clofarabine_Cytarabine_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_L_Asparaginase_Vincristine_Prednisolone:
 // Results
 
         
-define final Treatment__LAsparaginaseVincristinePrednisolone:
+define final Treatment_LAsparaginaseVincristinePrednisolone:
     where Asparaginase_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LAsparaginaseVincristinePrednisolone AND L_Asparaginase_Vincristine_Prednisolone_Regimen;
+    where Treatment_LAsparaginaseVincristinePrednisolone AND L_Asparaginase_Vincristine_Prednisolone_Regimen;
         
         
 

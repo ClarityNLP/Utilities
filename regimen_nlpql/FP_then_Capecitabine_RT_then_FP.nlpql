@@ -53,11 +53,11 @@ define final Regimen_FP_then_Capecitabine_RT_then_FP:
 // Results
 
         
-define final Treatment__FPthenCapecitabineRTthenFP:
+define final Treatment_FPthenCapecitabineRTthenFP:
     where Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FPthenCapecitabineRTthenFP AND FP_then_Capecitabine_RT_then_FP_Regimen;
+    where Treatment_FPthenCapecitabineRTthenFP AND FP_then_Capecitabine_RT_then_FP_Regimen;
         
         
 

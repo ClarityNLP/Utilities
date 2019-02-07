@@ -75,11 +75,11 @@ define final Regimen_Hyper_CVAD:
 // Results
 
         
-define final Treatment__HyperCVAD:
+define final Treatment_HyperCVAD:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HyperCVAD AND Hyper_CVAD_Regimen;
+    where Treatment_HyperCVAD AND Hyper_CVAD_Regimen;
         
         
 

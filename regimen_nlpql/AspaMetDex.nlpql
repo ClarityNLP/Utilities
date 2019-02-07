@@ -75,11 +75,11 @@ define final Regimen_AspaMetDex:
 // Results
 
         
-define final Treatment__AspaMetDex:
+define final Treatment_AspaMetDex:
     where Asparaginase_Treatment AND AsparaginaseErwiniachrysanthemi_Treatment AND Methotrexate_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AspaMetDex AND AspaMetDex_Regimen;
+    where Treatment_AspaMetDex AND AspaMetDex_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Nimustine_RT:
 // Results
 
         
-define final Treatment__NimustineRT:
+define final Treatment_NimustineRT:
     where Nimustine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__NimustineRT AND Nimustine_RT_Regimen;
+    where Treatment_NimustineRT AND Nimustine_RT_Regimen;
         
         
 

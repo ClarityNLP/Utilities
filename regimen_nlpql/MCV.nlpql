@@ -64,11 +64,11 @@ define final Regimen_MCV:
 // Results
 
         
-define final Treatment__MCV:
+define final Treatment_MCV:
     where Methotrexate_Treatment AND Cisplatin_Treatment AND Vinblastine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MCV AND MCV_Regimen;
+    where Treatment_MCV AND MCV_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_PVD:
 // Results
 
         
-define final Treatment__PVD:
+define final Treatment_PVD:
     where Pomalidomide_Treatment AND Bortezomib_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PVD AND PVD_Regimen;
+    where Treatment_PVD AND PVD_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_FluCam:
 // Results
 
         
-define final Treatment__FluCam:
+define final Treatment_FluCam:
     where Fludarabine_Treatment AND Alemtuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluCam AND FluCam_Regimen;
+    where Treatment_FluCam AND FluCam_Regimen;
         
         
 

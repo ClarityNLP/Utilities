@@ -97,11 +97,11 @@ define final Regimen_EBd:
 // Results
 
         
-define final Treatment__EBd:
+define final Treatment_EBd:
     where Elotuzumab_Treatment AND Bortezomib_Treatment AND Dexamethasone_Treatment AND Elotuzumab_Treatment AND Elotuzumab_Treatment AND Elotuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EBd AND EBd_Regimen;
+    where Treatment_EBd AND EBd_Regimen;
         
         
 

@@ -64,18 +64,18 @@ define final Regimen_FOLFIRI:
 // Results
 
         
-define final Treatment__FOLFIRI:
+define final Treatment_FOLFIRI:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRI AND FOLFIRI_Regimen;
+    where Treatment_FOLFIRI AND FOLFIRI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Esophageal_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Esophageal_cancer, Pancreatic_cancer
 
 
 

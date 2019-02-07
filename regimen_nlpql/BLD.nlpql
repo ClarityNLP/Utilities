@@ -64,11 +64,11 @@ define final Regimen_BLD:
 // Results
 
         
-define final Treatment__BLD:
+define final Treatment_BLD:
     where Bendamustine_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BLD AND BLD_Regimen;
+    where Treatment_BLD AND BLD_Regimen;
         
         
 

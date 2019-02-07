@@ -64,11 +64,11 @@ define final Regimen_Lomustine_Methotrexate_Procarbazine:
 // Results
 
         
-define final Treatment__LomustineMethotrexateProcarbazine:
+define final Treatment_LomustineMethotrexateProcarbazine:
     where Lomustine_Treatment AND Methotrexate_Treatment AND Procarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LomustineMethotrexateProcarbazine AND Lomustine_Methotrexate_Procarbazine_Regimen;
+    where Treatment_LomustineMethotrexateProcarbazine AND Lomustine_Methotrexate_Procarbazine_Regimen;
         
         
 

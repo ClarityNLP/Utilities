@@ -53,11 +53,11 @@ define final Regimen_Cisplatin_Topotecan:
 // Results
 
         
-define final Treatment__CisplatinTopotecan:
+define final Treatment_CisplatinTopotecan:
     where Cisplatin_Treatment AND Topotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinTopotecan AND Cisplatin_Topotecan_Regimen;
+    where Treatment_CisplatinTopotecan AND Cisplatin_Topotecan_Regimen;
         
         
 

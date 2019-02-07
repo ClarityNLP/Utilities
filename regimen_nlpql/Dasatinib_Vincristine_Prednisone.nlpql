@@ -64,11 +64,11 @@ define final Regimen_Dasatinib_Vincristine_Prednisone:
 // Results
 
         
-define final Treatment__DasatinibVincristinePrednisone:
+define final Treatment_DasatinibVincristinePrednisone:
     where Dasatinib_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DasatinibVincristinePrednisone AND Dasatinib_Vincristine_Prednisone_Regimen;
+    where Treatment_DasatinibVincristinePrednisone AND Dasatinib_Vincristine_Prednisone_Regimen;
         
         
 

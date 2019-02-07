@@ -64,11 +64,11 @@ define final Regimen_CVP:
 // Results
 
         
-define final Treatment__CVP:
+define final Treatment_CVP:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CVP AND CVP_Regimen;
+    where Treatment_CVP AND CVP_Regimen;
         
         
 

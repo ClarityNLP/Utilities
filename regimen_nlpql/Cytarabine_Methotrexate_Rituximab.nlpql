@@ -64,11 +64,11 @@ define final Regimen_Cytarabine_Methotrexate_Rituximab:
 // Results
 
         
-define final Treatment__CytarabineMethotrexateRituximab:
+define final Treatment_CytarabineMethotrexateRituximab:
     where Cytarabine_Treatment AND Methotrexate_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineMethotrexateRituximab AND Cytarabine_Methotrexate_Rituximab_Regimen;
+    where Treatment_CytarabineMethotrexateRituximab AND Cytarabine_Methotrexate_Rituximab_Regimen;
         
         
 

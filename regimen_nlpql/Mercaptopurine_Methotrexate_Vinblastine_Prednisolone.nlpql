@@ -75,11 +75,11 @@ define final Regimen_Mercaptopurine_Methotrexate_Vinblastine_Prednisolone:
 // Results
 
         
-define final Treatment__MercaptopurineMethotrexateVinblastinePrednisolone:
+define final Treatment_MercaptopurineMethotrexateVinblastinePrednisolone:
     where Mercaptopurine_Treatment AND Methotrexate_Treatment AND Vinblastine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MercaptopurineMethotrexateVinblastinePrednisolone AND Mercaptopurine_Methotrexate_Vinblastine_Prednisolone_Regimen;
+    where Treatment_MercaptopurineMethotrexateVinblastinePrednisolone AND Mercaptopurine_Methotrexate_Vinblastine_Prednisolone_Regimen;
         
         
 

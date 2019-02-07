@@ -64,11 +64,11 @@ define final Regimen_VIP:
 // Results
 
         
-define final Treatment__VIP:
+define final Treatment_VIP:
     where Etoposide_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VIP AND VIP_Regimen;
+    where Treatment_VIP AND VIP_Regimen;
         
         
 

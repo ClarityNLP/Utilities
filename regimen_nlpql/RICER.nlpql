@@ -86,11 +86,11 @@ define final Regimen_RICER:
 // Results
 
         
-define final Treatment__RICER:
+define final Treatment_RICER:
     where Rituximab_Treatment AND Ifosfamide_Treatment AND Carboplatin_Treatment AND Etoposide_Treatment AND Lenalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RICER AND RICER_Regimen;
+    where Treatment_RICER AND RICER_Regimen;
         
         
 

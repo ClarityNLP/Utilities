@@ -75,11 +75,11 @@ define final Regimen_VAMP:
 // Results
 
         
-define final Treatment__VAMP:
+define final Treatment_VAMP:
     where Vinblastine_Treatment AND Doxorubicin_Treatment AND Methotrexate_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VAMP AND VAMP_Regimen;
+    where Treatment_VAMP AND VAMP_Regimen;
         
         
 

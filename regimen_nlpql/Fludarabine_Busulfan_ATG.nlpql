@@ -64,11 +64,11 @@ define final Regimen_Fludarabine_Busulfan_ATG:
 // Results
 
         
-define final Treatment__FludarabineBusulfanATG:
+define final Treatment_FludarabineBusulfanATG:
     where Fludarabine_Treatment AND Busulfan_Treatment AND AntithymocyteglobulinrabbitATG_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FludarabineBusulfanATG AND Fludarabine_Busulfan_ATG_Regimen;
+    where Treatment_FludarabineBusulfanATG AND Fludarabine_Busulfan_ATG_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_ECF:
 // Results
 
         
-define final Treatment__ECF:
+define final Treatment_ECF:
     where Epirubicin_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ECF AND ECF_Regimen;
+    where Treatment_ECF AND ECF_Regimen;
         
         
 

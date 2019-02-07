@@ -64,11 +64,11 @@ define final Regimen_MT_R:
 // Results
 
         
-define final Treatment__MTR:
+define final Treatment_MTR:
     where Methotrexate_Treatment AND Temozolomide_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MTR AND MT_R_Regimen;
+    where Treatment_MTR AND MT_R_Regimen;
         
         
 

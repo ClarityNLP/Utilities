@@ -64,11 +64,11 @@ define final Regimen_Fluorouracil_Paclitaxel_RT:
 // Results
 
         
-define final Treatment__FluorouracilPaclitaxelRT:
+define final Treatment_FluorouracilPaclitaxelRT:
     where Fluorouracil_Treatment AND Paclitaxel_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluorouracilPaclitaxelRT AND Fluorouracil_Paclitaxel_RT_Regimen;
+    where Treatment_FluorouracilPaclitaxelRT AND Fluorouracil_Paclitaxel_RT_Regimen;
         
         
 

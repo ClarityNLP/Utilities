@@ -86,11 +86,11 @@ define final Regimen_G_CHOP:
 // Results
 
         
-define final Treatment__GCHOP:
+define final Treatment_GCHOP:
     where Obinutuzumab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GCHOP AND G_CHOP_Regimen;
+    where Treatment_GCHOP AND G_CHOP_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Ifosfamide_Methotrexate:
 // Results
 
         
-define final Treatment__IfosfamideMethotrexate:
+define final Treatment_IfosfamideMethotrexate:
     where Ifosfamide_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IfosfamideMethotrexate AND Ifosfamide_Methotrexate_Regimen;
+    where Treatment_IfosfamideMethotrexate AND Ifosfamide_Methotrexate_Regimen;
         
         
 

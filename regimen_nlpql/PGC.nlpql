@@ -64,11 +64,11 @@ define final Regimen_PGC:
 // Results
 
         
-define final Treatment__PGC:
+define final Treatment_PGC:
     where Paclitaxel_Treatment AND Gemcitabine_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PGC AND PGC_Regimen;
+    where Treatment_PGC AND PGC_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_FOLFIRI_Panitumumab:
 // Results
 
         
-define final Treatment__FOLFIRIPanitumumab:
+define final Treatment_FOLFIRIPanitumumab:
     where Folinicacid_Treatment AND Fluorouracil_Treatment AND Irinotecan_Treatment AND Panitumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRIPanitumumab AND FOLFIRI_Panitumumab_Regimen;
+    where Treatment_FOLFIRIPanitumumab AND FOLFIRI_Panitumumab_Regimen;
         
         
 

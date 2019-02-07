@@ -53,11 +53,11 @@ define final Regimen_Arsenic_trioxide_ATRA:
 // Results
 
         
-define final Treatment__ArsenictrioxideATRA:
+define final Treatment_ArsenictrioxideATRA:
     where Arsenictrioxide_Treatment AND Alltransretinoicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ArsenictrioxideATRA AND Arsenic_trioxide_ATRA_Regimen;
+    where Treatment_ArsenictrioxideATRA AND Arsenic_trioxide_ATRA_Regimen;
         
         
 

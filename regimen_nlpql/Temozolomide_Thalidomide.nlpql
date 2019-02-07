@@ -53,11 +53,11 @@ define final Regimen_Temozolomide_Thalidomide:
 // Results
 
         
-define final Treatment__TemozolomideThalidomide:
+define final Treatment_TemozolomideThalidomide:
     where Temozolomide_Treatment AND Thalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TemozolomideThalidomide AND Temozolomide_Thalidomide_Regimen;
+    where Treatment_TemozolomideThalidomide AND Temozolomide_Thalidomide_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_CapeOx_Panitumumab:
 // Results
 
         
-define final Treatment__CapeOxPanitumumab:
+define final Treatment_CapeOxPanitumumab:
     where Capecitabine_Treatment AND Oxaliplatin_Treatment AND Panitumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapeOxPanitumumab AND CapeOx_Panitumumab_Regimen;
+    where Treatment_CapeOxPanitumumab AND CapeOx_Panitumumab_Regimen;
         
         
 

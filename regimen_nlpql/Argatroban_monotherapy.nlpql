@@ -64,11 +64,11 @@ define final Regimen_Argatroban_monotherapy:
 // Results
 
         
-define final Treatment__Argatrobanmonotherapy:
+define final Treatment_Argatrobanmonotherapy:
     where Argatroban_Treatment AND Argatroban_Treatment AND Argatroban_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Argatrobanmonotherapy AND Argatroban_monotherapy_Regimen;
+    where Treatment_Argatrobanmonotherapy AND Argatroban_monotherapy_Regimen;
         
         
 

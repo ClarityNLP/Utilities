@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Etoposide_Irinotecan:
 // Results
 
         
-define final Treatment__CisplatinEtoposideIrinotecan:
+define final Treatment_CisplatinEtoposideIrinotecan:
     where Cisplatin_Treatment AND Etoposide_Treatment AND Irinotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinEtoposideIrinotecan AND Cisplatin_Etoposide_Irinotecan_Regimen;
+    where Treatment_CisplatinEtoposideIrinotecan AND Cisplatin_Etoposide_Irinotecan_Regimen;
         
         
 

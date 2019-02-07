@@ -64,11 +64,11 @@ define final Regimen_R_TBICy:
 // Results
 
         
-define final Treatment__RTBICy:
+define final Treatment_RTBICy:
     where Rituximab_Treatment AND Externalbeamradiotherapy_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RTBICy AND R_TBICy_Regimen;
+    where Treatment_RTBICy AND R_TBICy_Regimen;
         
         
 

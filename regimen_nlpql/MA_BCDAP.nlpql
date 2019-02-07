@@ -108,11 +108,11 @@ define final Regimen_MA_BCDAP:
 // Results
 
         
-define final Treatment__MABCDAP:
+define final Treatment_MABCDAP:
     where Methotrexate_Treatment AND Doxorubicin_Treatment AND Bleomycin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment AND Doxorubicin_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MABCDAP AND MA_BCDAP_Regimen;
+    where Treatment_MABCDAP AND MA_BCDAP_Regimen;
         
         
 

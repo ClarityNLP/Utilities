@@ -53,11 +53,11 @@ define final Regimen_Interferon_alfa_2a_Interleukin_2:
 // Results
 
         
-define final Treatment__Interferonalfa2aInterleukin2:
+define final Treatment_Interferonalfa2aInterleukin2:
     where Interferonalfa2a_Treatment AND Aldesleukin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Interferonalfa2aInterleukin2 AND Interferon_alfa_2a_Interleukin_2_Regimen;
+    where Treatment_Interferonalfa2aInterleukin2 AND Interferon_alfa_2a_Interleukin_2_Regimen;
         
         
 

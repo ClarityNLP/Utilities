@@ -53,11 +53,11 @@ define final Regimen_IT_Methotrexate_WBRT:
 // Results
 
         
-define final Treatment__ITMethotrexateWBRT:
+define final Treatment_ITMethotrexateWBRT:
     where Methotrexate_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ITMethotrexateWBRT AND IT_Methotrexate_WBRT_Regimen;
+    where Treatment_ITMethotrexateWBRT AND IT_Methotrexate_WBRT_Regimen;
         
         
 

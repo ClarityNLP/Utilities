@@ -64,11 +64,11 @@ define final Regimen_MEC:
 // Results
 
         
-define final Treatment__MEC:
+define final Treatment_MEC:
     where Mitoxantrone_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MEC AND MEC_Regimen;
+    where Treatment_MEC AND MEC_Regimen;
         
         
 

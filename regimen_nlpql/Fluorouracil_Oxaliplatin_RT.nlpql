@@ -64,18 +64,18 @@ define final Regimen_Fluorouracil_Oxaliplatin_RT:
 // Results
 
         
-define final Treatment__FluorouracilOxaliplatinRT:
+define final Treatment_FluorouracilOxaliplatinRT:
     where Fluorouracil_Treatment AND Oxaliplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluorouracilOxaliplatinRT AND Fluorouracil_Oxaliplatin_RT_Regimen;
+    where Treatment_FluorouracilOxaliplatinRT AND Fluorouracil_Oxaliplatin_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Rectal_cancer
+Known regimen for: Rectal_cancer, Esophageal_cancer
 
 
 

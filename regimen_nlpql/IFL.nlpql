@@ -64,11 +64,11 @@ define final Regimen_IFL:
 // Results
 
         
-define final Treatment__IFL:
+define final Treatment_IFL:
     where Irinotecan_Treatment AND Fluorouracil_Treatment AND Folinicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IFL AND IFL_Regimen;
+    where Treatment_IFL AND IFL_Regimen;
         
         
 

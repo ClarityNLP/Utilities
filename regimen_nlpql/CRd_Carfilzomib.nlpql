@@ -64,11 +64,11 @@ define final Regimen_CRd_Carfilzomib:
 // Results
 
         
-define final Treatment__CRdCarfilzomib:
+define final Treatment_CRdCarfilzomib:
     where Carfilzomib_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CRdCarfilzomib AND CRd_Carfilzomib_Regimen;
+    where Treatment_CRdCarfilzomib AND CRd_Carfilzomib_Regimen;
         
         
 

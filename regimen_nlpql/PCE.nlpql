@@ -64,11 +64,11 @@ define final Regimen_PCE:
 // Results
 
         
-define final Treatment__PCE:
+define final Treatment_PCE:
     where Paclitaxel_Treatment AND Carboplatin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCE AND PCE_Regimen;
+    where Treatment_PCE AND PCE_Regimen;
         
         
 

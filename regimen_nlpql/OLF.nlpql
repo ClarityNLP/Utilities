@@ -64,18 +64,18 @@ define final Regimen_OLF:
 // Results
 
         
-define final Treatment__OLF:
+define final Treatment_OLF:
     where Oxaliplatin_Treatment AND Folinicacid_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OLF AND OLF_Regimen;
+    where Treatment_OLF AND OLF_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Gastric_cancer
+Known regimen for: Gastric_cancer, Pancreatic_cancer
 
 
 

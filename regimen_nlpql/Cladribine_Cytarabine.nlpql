@@ -53,11 +53,11 @@ define final Regimen_Cladribine_Cytarabine:
 // Results
 
         
-define final Treatment__CladribineCytarabine:
+define final Treatment_CladribineCytarabine:
     where Cladribine_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CladribineCytarabine AND Cladribine_Cytarabine_Regimen;
+    where Treatment_CladribineCytarabine AND Cladribine_Cytarabine_Regimen;
         
         
 

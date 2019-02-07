@@ -75,11 +75,11 @@ define final Regimen_VIPD:
 // Results
 
         
-define final Treatment__VIPD:
+define final Treatment_VIPD:
     where Etoposide_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VIPD AND VIPD_Regimen;
+    where Treatment_VIPD AND VIPD_Regimen;
         
         
 

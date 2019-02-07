@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Epirubicin_Ifosfamide:
 // Results
 
         
-define final Treatment__CisplatinEpirubicinIfosfamide:
+define final Treatment_CisplatinEpirubicinIfosfamide:
     where Cisplatin_Treatment AND Epirubicin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinEpirubicinIfosfamide AND Cisplatin_Epirubicin_Ifosfamide_Regimen;
+    where Treatment_CisplatinEpirubicinIfosfamide AND Cisplatin_Epirubicin_Ifosfamide_Regimen;
         
         
 

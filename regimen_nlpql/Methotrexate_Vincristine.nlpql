@@ -53,11 +53,11 @@ define final Regimen_Methotrexate_Vincristine:
 // Results
 
         
-define final Treatment__MethotrexateVincristine:
+define final Treatment_MethotrexateVincristine:
     where Methotrexate_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexateVincristine AND Methotrexate_Vincristine_Regimen;
+    where Treatment_MethotrexateVincristine AND Methotrexate_Vincristine_Regimen;
         
         
 

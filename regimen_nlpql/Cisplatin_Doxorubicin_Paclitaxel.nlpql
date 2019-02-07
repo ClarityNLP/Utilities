@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Doxorubicin_Paclitaxel:
 // Results
 
         
-define final Treatment__CisplatinDoxorubicinPaclitaxel:
+define final Treatment_CisplatinDoxorubicinPaclitaxel:
     where Cisplatin_Treatment AND Doxorubicin_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDoxorubicinPaclitaxel AND Cisplatin_Doxorubicin_Paclitaxel_Regimen;
+    where Treatment_CisplatinDoxorubicinPaclitaxel AND Cisplatin_Doxorubicin_Paclitaxel_Regimen;
         
         
 

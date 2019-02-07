@@ -53,11 +53,11 @@ define final Regimen_ATRA_Danazol:
 // Results
 
         
-define final Treatment__ATRADanazol:
+define final Treatment_ATRADanazol:
     where Alltransretinoicacid_Treatment AND Danazol_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATRADanazol AND ATRA_Danazol_Regimen;
+    where Treatment_ATRADanazol AND ATRA_Danazol_Regimen;
         
         
 

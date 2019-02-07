@@ -53,18 +53,18 @@ define final Regimen_Vincristine_Prednisone:
 // Results
 
         
-define final Treatment__VincristinePrednisone:
+define final Treatment_VincristinePrednisone:
     where Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VincristinePrednisone AND Vincristine_Prednisone_Regimen;
+    where Treatment_VincristinePrednisone AND Vincristine_Prednisone_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Chronic_myelogenous_leukemia
+Known regimen for: Chronic_myelogenous_leukemia, Diffuse_large_B-cell_lymphoma
 
 
 

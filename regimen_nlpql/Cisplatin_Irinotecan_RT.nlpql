@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Irinotecan_RT:
 // Results
 
         
-define final Treatment__CisplatinIrinotecanRT:
+define final Treatment_CisplatinIrinotecanRT:
     where Cisplatin_Treatment AND Irinotecan_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinIrinotecanRT AND Cisplatin_Irinotecan_RT_Regimen;
+    where Treatment_CisplatinIrinotecanRT AND Cisplatin_Irinotecan_RT_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_HyperCHidam:
 // Results
 
         
-define final Treatment__HyperCHidam:
+define final Treatment_HyperCHidam:
     where Methotrexate_Treatment AND Cyclophosphamide_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HyperCHidam AND HyperCHidam_Regimen;
+    where Treatment_HyperCHidam AND HyperCHidam_Regimen;
         
         
 

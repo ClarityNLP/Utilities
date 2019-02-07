@@ -64,11 +64,11 @@ define final Regimen_OXAFAFU:
 // Results
 
         
-define final Treatment__OXAFAFU:
+define final Treatment_OXAFAFU:
     where Oxaliplatin_Treatment AND Folinicacid_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OXAFAFU AND OXAFAFU_Regimen;
+    where Treatment_OXAFAFU AND OXAFAFU_Regimen;
         
         
 

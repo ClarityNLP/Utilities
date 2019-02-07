@@ -53,11 +53,11 @@ define final Regimen_SOX:
 // Results
 
         
-define final Treatment__SOX:
+define final Treatment_SOX:
     where Tegafurgimeraciloteracil_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__SOX AND SOX_Regimen;
+    where Treatment_SOX AND SOX_Regimen;
         
         
 

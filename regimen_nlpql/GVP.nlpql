@@ -64,11 +64,11 @@ define final Regimen_GVP:
 // Results
 
         
-define final Treatment__GVP:
+define final Treatment_GVP:
     where Gemcitabine_Treatment AND Vinorelbine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GVP AND GVP_Regimen;
+    where Treatment_GVP AND GVP_Regimen;
         
         
 

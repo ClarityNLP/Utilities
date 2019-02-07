@@ -53,11 +53,11 @@ define final Regimen_BO:
 // Results
 
         
-define final Treatment__BO:
+define final Treatment_BO:
     where Bleomycin_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BO AND BO_Regimen;
+    where Treatment_BO AND BO_Regimen;
         
         
 

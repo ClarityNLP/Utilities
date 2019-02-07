@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Dacarbazine_Paclitaxel:
 // Results
 
         
-define final Treatment__CisplatinDacarbazinePaclitaxel:
+define final Treatment_CisplatinDacarbazinePaclitaxel:
     where Cisplatin_Treatment AND Dacarbazine_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDacarbazinePaclitaxel AND Cisplatin_Dacarbazine_Paclitaxel_Regimen;
+    where Treatment_CisplatinDacarbazinePaclitaxel AND Cisplatin_Dacarbazine_Paclitaxel_Regimen;
         
         
 

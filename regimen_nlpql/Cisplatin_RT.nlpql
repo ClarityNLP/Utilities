@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_RT:
 // Results
 
         
-define final Treatment__CisplatinRT:
+define final Treatment_CisplatinRT:
     where Cisplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinRT AND Cisplatin_RT_Regimen;
+    where Treatment_CisplatinRT AND Cisplatin_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Vulvar_cancer, Cervical_cancer, Nasopharyngeal_carcinoma, Extranodal_NKT-cell_lymphoma_nasal_type, Non-small_cell_lung_cancer, Bladder_cancer
+Known regimen for: Extranodal_NKT-cell_lymphoma_nasal_type, Non-small_cell_lung_cancer, Nasopharyngeal_carcinoma, Vulvar_cancer, Bladder_cancer, Cervical_cancer, Head_and_neck_cancer
 
 
 

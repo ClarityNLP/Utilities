@@ -86,11 +86,11 @@ define final Regimen_VEBEP:
 // Results
 
         
-define final Treatment__VEBEP:
+define final Treatment_VEBEP:
     where Etoposide_Treatment AND Epirubicin_Treatment AND Bleomycin_Treatment AND Cyclophosphamide_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VEBEP AND VEBEP_Regimen;
+    where Treatment_VEBEP AND VEBEP_Regimen;
         
         
 

@@ -64,18 +64,18 @@ define final Regimen_FOLFOX4:
 // Results
 
         
-define final Treatment__FOLFOX4:
+define final Treatment_FOLFOX4:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFOX4 AND FOLFOX4_Regimen;
+    where Treatment_FOLFOX4 AND FOLFOX4_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Esophageal_cancer, Colon_cancer
+Known regimen for: Colon_cancer, Esophageal_cancer, Hepatocellular_carcinoma
 
 
 

@@ -53,18 +53,18 @@ define final Regimen_BR:
 // Results
 
         
-define final Treatment__BR:
+define final Treatment_BR:
     where Bendamustine_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BR AND BR_Regimen;
+    where Treatment_BR AND BR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Cold_agglutinin_disease, Mantle_cell_lymphoma, Follicular_lymphoma, Hairy_cell_leukemia, Chronic_lymphocytic_leukemia_(CLLSLL), Diffuse_large_B-cell_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Follicular_lymphoma, Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Hairy_cell_leukemia, Diffuse_large_B-cell_lymphoma, Cold_agglutinin_disease
 
 
 

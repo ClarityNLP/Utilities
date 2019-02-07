@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Etoposide_then_auto_HSCT:
 // Results
 
         
-define final Treatment__CarboplatinEtoposidethenautoHSCT:
+define final Treatment_CarboplatinEtoposidethenautoHSCT:
     where Carboplatin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinEtoposidethenautoHSCT AND Carboplatin_Etoposide_then_auto_HSCT_Regimen;
+    where Treatment_CarboplatinEtoposidethenautoHSCT AND Carboplatin_Etoposide_then_auto_HSCT_Regimen;
         
         
 

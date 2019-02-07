@@ -75,11 +75,11 @@ define final Regimen_dmCODOX_M__Modified_Magrath:
 // Results
 
         
-define final Treatment__dmCODOXMModifiedMagrath:
+define final Treatment_dmCODOXMModifiedMagrath:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__dmCODOXMModifiedMagrath AND dmCODOX_M__Modified_Magrath_Regimen;
+    where Treatment_dmCODOXMModifiedMagrath AND dmCODOX_M__Modified_Magrath_Regimen;
         
         
 

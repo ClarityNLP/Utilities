@@ -64,18 +64,18 @@ define final Regimen_Carboplatin_Paclitaxel_Bevacizumab:
 // Results
 
         
-define final Treatment__CarboplatinPaclitaxelBevacizumab:
+define final Treatment_CarboplatinPaclitaxelBevacizumab:
     where Carboplatin_Treatment AND Paclitaxel_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinPaclitaxelBevacizumab AND Carboplatin_Paclitaxel_Bevacizumab_Regimen;
+    where Treatment_CarboplatinPaclitaxelBevacizumab AND Carboplatin_Paclitaxel_Bevacizumab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ovarian_cancer, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Ovarian_cancer
 
 
 

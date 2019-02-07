@@ -53,11 +53,11 @@ define final Regimen_BVB:
 // Results
 
         
-define final Treatment__BVB:
+define final Treatment_BVB:
     where Brentuximabvedotin_Treatment AND Bendamustine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BVB AND BVB_Regimen;
+    where Treatment_BVB AND BVB_Regimen;
         
         
 

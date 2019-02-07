@@ -64,11 +64,11 @@ define final Regimen_PCP:
 // Results
 
         
-define final Treatment__PCP:
+define final Treatment_PCP:
     where Pomalidomide_Treatment AND Cyclophosphamide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PCP AND PCP_Regimen;
+    where Treatment_PCP AND PCP_Regimen;
         
         
 

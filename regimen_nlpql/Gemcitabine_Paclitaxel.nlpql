@@ -53,18 +53,18 @@ define final Regimen_Gemcitabine_Paclitaxel:
 // Results
 
         
-define final Treatment__GemcitabinePaclitaxel:
+define final Treatment_GemcitabinePaclitaxel:
     where Gemcitabine_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabinePaclitaxel AND Gemcitabine_Paclitaxel_Regimen;
+    where Treatment_GemcitabinePaclitaxel AND Gemcitabine_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Testicular_cancer, Non-small_cell_lung_cancer, Bladder_cancer
+Known regimen for: Non-small_cell_lung_cancer, Bladder_cancer, Testicular_cancer
 
 
 

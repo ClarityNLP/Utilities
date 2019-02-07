@@ -53,11 +53,11 @@ define final Regimen_MA:
 // Results
 
         
-define final Treatment__MA:
+define final Treatment_MA:
     where Methotrexate_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MA AND MA_Regimen;
+    where Treatment_MA AND MA_Regimen;
         
         
 

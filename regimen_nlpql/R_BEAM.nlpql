@@ -86,11 +86,11 @@ define final Regimen_R_BEAM:
 // Results
 
         
-define final Treatment__RBEAM:
+define final Treatment_RBEAM:
     where Rituximab_Treatment AND Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RBEAM AND R_BEAM_Regimen;
+    where Treatment_RBEAM AND R_BEAM_Regimen;
         
         
 

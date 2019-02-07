@@ -75,11 +75,11 @@ define final Regimen_ADOC:
 // Results
 
         
-define final Treatment__ADOC:
+define final Treatment_ADOC:
     where Doxorubicin_Treatment AND Cisplatin_Treatment AND Vincristine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ADOC AND ADOC_Regimen;
+    where Treatment_ADOC AND ADOC_Regimen;
         
         
 

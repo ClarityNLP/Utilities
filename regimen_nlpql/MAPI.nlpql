@@ -75,11 +75,11 @@ define final Regimen_MAPI:
 // Results
 
         
-define final Treatment__MAPI:
+define final Treatment_MAPI:
     where Methotrexate_Treatment AND Cisplatin_Treatment AND Doxorubicin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MAPI AND MAPI_Regimen;
+    where Treatment_MAPI AND MAPI_Regimen;
         
         
 

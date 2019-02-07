@@ -53,11 +53,11 @@ define final Regimen_Dexamethasone_Eltrombopag:
 // Results
 
         
-define final Treatment__DexamethasoneEltrombopag:
+define final Treatment_DexamethasoneEltrombopag:
     where Dexamethasone_Treatment AND Eltrombopag_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DexamethasoneEltrombopag AND Dexamethasone_Eltrombopag_Regimen;
+    where Treatment_DexamethasoneEltrombopag AND Dexamethasone_Eltrombopag_Regimen;
         
         
 

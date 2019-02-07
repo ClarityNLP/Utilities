@@ -53,11 +53,11 @@ define final Regimen_ATG_Horse_Cyclosporine_Eltrombopag:
 // Results
 
         
-define final Treatment__ATGHorseCyclosporineEltrombopag:
+define final Treatment_ATGHorseCyclosporineEltrombopag:
     where AntithymocyteglobulinhorseATG_Treatment AND CategoryCyclosporines_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATGHorseCyclosporineEltrombopag AND ATG_Horse_Cyclosporine_Eltrombopag_Regimen;
+    where Treatment_ATGHorseCyclosporineEltrombopag AND ATG_Horse_Cyclosporine_Eltrombopag_Regimen;
         
         
 

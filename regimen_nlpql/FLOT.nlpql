@@ -75,11 +75,11 @@ define final Regimen_FLOT:
 // Results
 
         
-define final Treatment__FLOT:
+define final Treatment_FLOT:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Docetaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FLOT AND FLOT_Regimen;
+    where Treatment_FLOT AND FLOT_Regimen;
         
         
 

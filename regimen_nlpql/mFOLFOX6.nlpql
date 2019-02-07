@@ -75,11 +75,11 @@ define final Regimen_mFOLFOX6:
 // Results
 
         
-define final Treatment__mFOLFOX6:
+define final Treatment_mFOLFOX6:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Levoleucovorin_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mFOLFOX6 AND mFOLFOX6_Regimen;
+    where Treatment_mFOLFOX6 AND mFOLFOX6_Regimen;
         
         
 

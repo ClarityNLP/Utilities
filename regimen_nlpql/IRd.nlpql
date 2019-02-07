@@ -64,11 +64,11 @@ define final Regimen_IRd:
 // Results
 
         
-define final Treatment__IRd:
+define final Treatment_IRd:
     where Ixazomib_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IRd AND IRd_Regimen;
+    where Treatment_IRd AND IRd_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_R_CMD:
 // Results
 
         
-define final Treatment__RCMD:
+define final Treatment_RCMD:
     where Rituximab_Treatment AND Cladribine_Treatment AND Mitoxantrone_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCMD AND R_CMD_Regimen;
+    where Treatment_RCMD AND R_CMD_Regimen;
         
         
 

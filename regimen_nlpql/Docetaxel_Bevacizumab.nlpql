@@ -53,11 +53,11 @@ define final Regimen_Docetaxel_Bevacizumab:
 // Results
 
         
-define final Treatment__DocetaxelBevacizumab:
+define final Treatment_DocetaxelBevacizumab:
     where Docetaxel_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DocetaxelBevacizumab AND Docetaxel_Bevacizumab_Regimen;
+    where Treatment_DocetaxelBevacizumab AND Docetaxel_Bevacizumab_Regimen;
         
         
 

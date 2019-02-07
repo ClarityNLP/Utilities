@@ -53,18 +53,18 @@ define final Regimen_5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovori
 // Results
 
         
-define final Treatment__5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
+define final Treatment_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin:
     where Fluorouracil_Treatment AND Folinicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin AND 5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin_Regimen;
+    where Treatment_5FULeucovorinthen5FULeucovorinRTthen5FULeucovorin AND 5_FU_Leucovorin_then_5_FU_Leucovorin_RT_then_5_FU_Leucovorin_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Gastric_cancer, Esophageal_cancer, Rectal_cancer
+Known regimen for: Gastric_cancer, Rectal_cancer, Esophageal_cancer
 
 
 

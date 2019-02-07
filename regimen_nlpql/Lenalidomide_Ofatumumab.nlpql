@@ -53,11 +53,11 @@ define final Regimen_Lenalidomide_Ofatumumab:
 // Results
 
         
-define final Treatment__LenalidomideOfatumumab:
+define final Treatment_LenalidomideOfatumumab:
     where Lenalidomide_Treatment AND Ofatumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LenalidomideOfatumumab AND Lenalidomide_Ofatumumab_Regimen;
+    where Treatment_LenalidomideOfatumumab AND Lenalidomide_Ofatumumab_Regimen;
         
         
 

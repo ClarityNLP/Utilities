@@ -53,11 +53,11 @@ define final Regimen_Cytarabine_Ifosfamide_G_CSF:
 // Results
 
         
-define final Treatment__CytarabineIfosfamideGCSF:
+define final Treatment_CytarabineIfosfamideGCSF:
     where Cytarabine_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineIfosfamideGCSF AND Cytarabine_Ifosfamide_G_CSF_Regimen;
+    where Treatment_CytarabineIfosfamideGCSF AND Cytarabine_Ifosfamide_G_CSF_Regimen;
         
         
 

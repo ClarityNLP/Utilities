@@ -64,18 +64,18 @@ define final Regimen_GVD:
 // Results
 
         
-define final Treatment__GVD:
+define final Treatment_GVD:
     where Gemcitabine_Treatment AND Vinorelbine_Treatment AND Pegylatedliposomaldoxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GVD AND GVD_Regimen;
+    where Treatment_GVD AND GVD_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Hodgkin_lymphoma
+Known regimen for: Hodgkin_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

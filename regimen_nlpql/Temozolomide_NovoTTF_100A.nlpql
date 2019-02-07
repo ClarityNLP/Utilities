@@ -53,11 +53,11 @@ define final Regimen_Temozolomide_NovoTTF_100A:
 // Results
 
         
-define final Treatment__TemozolomideNovoTTF100A:
+define final Treatment_TemozolomideNovoTTF100A:
     where Temozolomide_Treatment AND NovoTTF100Asystem_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TemozolomideNovoTTF100A AND Temozolomide_NovoTTF_100A_Regimen;
+    where Treatment_TemozolomideNovoTTF100A AND Temozolomide_NovoTTF_100A_Regimen;
         
         
 

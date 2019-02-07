@@ -53,11 +53,11 @@ define final Regimen_M_DEX:
 // Results
 
         
-define final Treatment__MDEX:
+define final Treatment_MDEX:
     where Melphalan_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MDEX AND M_DEX_Regimen;
+    where Treatment_MDEX AND M_DEX_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_CODOX_MIVAC:
 // Results
 
         
-define final Treatment__CODOXMIVAC:
+define final Treatment_CODOXMIVAC:
     where Cytarabine_Treatment AND Methotrexate_Treatment AND Cytarabine_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CODOXMIVAC AND CODOX_MIVAC_Regimen;
+    where Treatment_CODOXMIVAC AND CODOX_MIVAC_Regimen;
         
         
 

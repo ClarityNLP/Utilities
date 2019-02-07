@@ -75,11 +75,11 @@ define final Regimen_R_DHAOx:
 // Results
 
         
-define final Treatment__RDHAOx:
+define final Treatment_RDHAOx:
     where Rituximab_Treatment AND Dexamethasone_Treatment AND Cytarabine_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RDHAOx AND R_DHAOx_Regimen;
+    where Treatment_RDHAOx AND R_DHAOx_Regimen;
         
         
 

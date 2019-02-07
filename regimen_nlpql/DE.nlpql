@@ -53,11 +53,11 @@ define final Regimen_DE:
 // Results
 
         
-define final Treatment__DE:
+define final Treatment_DE:
     where Docetaxel_Treatment AND Epirubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DE AND DE_Regimen;
+    where Treatment_DE AND DE_Regimen;
         
         
 

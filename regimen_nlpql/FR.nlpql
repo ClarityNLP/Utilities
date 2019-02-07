@@ -53,18 +53,18 @@ define final Regimen_FR:
 // Results
 
         
-define final Treatment__FR:
+define final Treatment_FR:
     where Fludarabine_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FR AND FR_Regimen;
+    where Treatment_FR AND FR_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Cold_agglutinin_disease, Mantle_cell_lymphoma, Follicular_lymphoma, Waldenstrom_macroglobulinemia
+Known regimen for: Waldenstrom_macroglobulinemia, Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Cold_agglutinin_disease
 
 
 

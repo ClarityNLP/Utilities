@@ -75,11 +75,11 @@ define final Regimen_FOLFOX4_Bevacizumab:
 // Results
 
         
-define final Treatment__FOLFOX4Bevacizumab:
+define final Treatment_FOLFOX4Bevacizumab:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFOX4Bevacizumab AND FOLFOX4_Bevacizumab_Regimen;
+    where Treatment_FOLFOX4Bevacizumab AND FOLFOX4_Bevacizumab_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_Gemcitabine:
 // Results
 
         
-define final Treatment__DoxorubicinGemcitabine:
+define final Treatment_DoxorubicinGemcitabine:
     where Doxorubicin_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinGemcitabine AND Doxorubicin_Gemcitabine_Regimen;
+    where Treatment_DoxorubicinGemcitabine AND Doxorubicin_Gemcitabine_Regimen;
         
         
 

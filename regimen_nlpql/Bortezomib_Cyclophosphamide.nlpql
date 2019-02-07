@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Cyclophosphamide:
 // Results
 
         
-define final Treatment__BortezomibCyclophosphamide:
+define final Treatment_BortezomibCyclophosphamide:
     where Bortezomib_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibCyclophosphamide AND Bortezomib_Cyclophosphamide_Regimen;
+    where Treatment_BortezomibCyclophosphamide AND Bortezomib_Cyclophosphamide_Regimen;
         
         
 

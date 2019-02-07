@@ -64,11 +64,11 @@ define final Regimen_R_CODOX_MR_IVAC:
 // Results
 
         
-define final Treatment__RCODOXMRIVAC:
+define final Treatment_RCODOXMRIVAC:
     where Cytarabine_Treatment AND Methotrexate_Treatment AND Hydrocortisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCODOXMRIVAC AND R_CODOX_MR_IVAC_Regimen;
+    where Treatment_RCODOXMRIVAC AND R_CODOX_MR_IVAC_Regimen;
         
         
 

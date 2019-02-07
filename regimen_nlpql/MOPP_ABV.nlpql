@@ -108,11 +108,11 @@ define final Regimen_MOPP_ABV:
 // Results
 
         
-define final Treatment__MOPPABV:
+define final Treatment_MOPPABV:
     where Mechlorethamine_Treatment AND Vincristine_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment AND Doxorubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MOPPABV AND MOPP_ABV_Regimen;
+    where Treatment_MOPPABV AND MOPP_ABV_Regimen;
         
         
 

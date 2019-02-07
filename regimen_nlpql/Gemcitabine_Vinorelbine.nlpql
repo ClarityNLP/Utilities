@@ -53,18 +53,18 @@ define final Regimen_Gemcitabine_Vinorelbine:
 // Results
 
         
-define final Treatment__GemcitabineVinorelbine:
+define final Treatment_GemcitabineVinorelbine:
     where Gemcitabine_Treatment AND Vinorelbine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabineVinorelbine AND Gemcitabine_Vinorelbine_Regimen;
+    where Treatment_GemcitabineVinorelbine AND Gemcitabine_Vinorelbine_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Soft_tissue_sarcoma, Mesothelioma, Non-small_cell_lung_cancer
+Known regimen for: Mesothelioma, Non-small_cell_lung_cancer, Soft_tissue_sarcoma
 
 
 

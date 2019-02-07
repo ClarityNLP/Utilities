@@ -64,18 +64,18 @@ define final Regimen_R_BL:
 // Results
 
         
-define final Treatment__RBL:
+define final Treatment_RBL:
     where Rituximab_Treatment AND Bendamustine_Treatment AND Lenalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RBL AND R_BL_Regimen;
+    where Treatment_RBL AND R_BL_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Mantle_cell_lymphoma
+Known regimen for: Mantle_cell_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

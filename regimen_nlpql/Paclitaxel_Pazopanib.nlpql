@@ -53,11 +53,11 @@ define final Regimen_Paclitaxel_Pazopanib:
 // Results
 
         
-define final Treatment__PaclitaxelPazopanib:
+define final Treatment_PaclitaxelPazopanib:
     where Paclitaxel_Treatment AND Pazopanib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PaclitaxelPazopanib AND Paclitaxel_Pazopanib_Regimen;
+    where Treatment_PaclitaxelPazopanib AND Paclitaxel_Pazopanib_Regimen;
         
         
 

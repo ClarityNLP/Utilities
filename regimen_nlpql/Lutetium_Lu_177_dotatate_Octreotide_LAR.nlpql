@@ -53,11 +53,11 @@ define final Regimen_Lutetium_Lu_177_dotatate_Octreotide_LAR:
 // Results
 
         
-define final Treatment__LutetiumLu177dotatateOctreotideLAR:
+define final Treatment_LutetiumLu177dotatateOctreotideLAR:
     where LutetiumLu177dotatate_Treatment AND Octreotide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LutetiumLu177dotatateOctreotideLAR AND Lutetium_Lu_177_dotatate_Octreotide_LAR_Regimen;
+    where Treatment_LutetiumLu177dotatateOctreotideLAR AND Lutetium_Lu_177_dotatate_Octreotide_LAR_Regimen;
         
         
 

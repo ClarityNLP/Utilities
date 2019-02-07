@@ -86,11 +86,11 @@ define final Regimen_IP_BCD:
 // Results
 
         
-define final Treatment__IPBCD:
+define final Treatment_IPBCD:
     where Ifosfamide_Treatment AND Cisplatin_Treatment AND Bleomycin_Treatment AND Cyclophosphamide_Treatment AND Dactinomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IPBCD AND IP_BCD_Regimen;
+    where Treatment_IPBCD AND IP_BCD_Regimen;
         
         
 

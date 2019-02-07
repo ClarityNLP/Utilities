@@ -64,11 +64,11 @@ define final Regimen_HAD:
 // Results
 
         
-define final Treatment__HAD:
+define final Treatment_HAD:
     where Omacetaxine_Treatment AND Cytarabine_Treatment AND Daunorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HAD AND HAD_Regimen;
+    where Treatment_HAD AND HAD_Regimen;
         
         
 

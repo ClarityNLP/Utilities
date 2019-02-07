@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_Docetaxel:
 // Results
 
         
-define final Treatment__CisplatinDocetaxel:
+define final Treatment_CisplatinDocetaxel:
     where Cisplatin_Treatment AND Docetaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDocetaxel AND Cisplatin_Docetaxel_Regimen;
+    where Treatment_CisplatinDocetaxel AND Cisplatin_Docetaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer, Breast_cancer_triple_negative, Head_and_neck_cancer, Non-small_cell_lung_cancer, Adenocarcinoma_of_unknown_primary
+Known regimen for: Adenocarcinoma_of_unknown_primary, Breast_cancer_triple_negative, Non-small_cell_lung_cancer, Esophageal_cancer, Head_and_neck_cancer, Gastric_cancer
 
 
 

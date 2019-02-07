@@ -53,11 +53,11 @@ define final Regimen_Busulfan_Fludarabine:
 // Results
 
         
-define final Treatment__BusulfanFludarabine:
+define final Treatment_BusulfanFludarabine:
     where Busulfan_Treatment AND Fludarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BusulfanFludarabine AND Busulfan_Fludarabine_Regimen;
+    where Treatment_BusulfanFludarabine AND Busulfan_Fludarabine_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_TAM6:
 // Results
 
         
-define final Treatment__TAM6:
+define final Treatment_TAM6:
     where Externalbeamradiotherapy_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TAM6 AND TAM6_Regimen;
+    where Treatment_TAM6 AND TAM6_Regimen;
         
         
 

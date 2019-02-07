@@ -64,11 +64,11 @@ define final Regimen_Cyclophosphamide_Dacarbazine_Vincristine:
 // Results
 
         
-define final Treatment__CyclophosphamideDacarbazineVincristine:
+define final Treatment_CyclophosphamideDacarbazineVincristine:
     where Cyclophosphamide_Treatment AND Dacarbazine_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideDacarbazineVincristine AND Cyclophosphamide_Dacarbazine_Vincristine_Regimen;
+    where Treatment_CyclophosphamideDacarbazineVincristine AND Cyclophosphamide_Dacarbazine_Vincristine_Regimen;
         
         
 

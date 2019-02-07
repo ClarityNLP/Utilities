@@ -64,11 +64,11 @@ define final Regimen_DRd:
 // Results
 
         
-define final Treatment__DRd:
+define final Treatment_DRd:
     where Daratumumab_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DRd AND DRd_Regimen;
+    where Treatment_DRd AND DRd_Regimen;
         
         
 

@@ -75,18 +75,18 @@ define final Regimen_BEAM:
 // Results
 
         
-define final Treatment__BEAM:
+define final Treatment_BEAM:
     where Carmustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BEAM AND BEAM_Regimen;
+    where Treatment_BEAM AND BEAM_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+Known regimen for: Allogeneic_HSCT, Autologous_HSCT
 
 
 

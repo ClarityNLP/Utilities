@@ -53,11 +53,11 @@ define final Regimen_Ibrutinib_Rituximab:
 // Results
 
         
-define final Treatment__IbrutinibRituximab:
+define final Treatment_IbrutinibRituximab:
     where Ibrutinib_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IbrutinibRituximab AND Ibrutinib_Rituximab_Regimen;
+    where Treatment_IbrutinibRituximab AND Ibrutinib_Rituximab_Regimen;
         
         
 

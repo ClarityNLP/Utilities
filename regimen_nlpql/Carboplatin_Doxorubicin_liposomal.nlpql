@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Doxorubicin_liposomal:
 // Results
 
         
-define final Treatment__CarboplatinDoxorubicinliposomal:
+define final Treatment_CarboplatinDoxorubicinliposomal:
     where Carboplatin_Treatment AND Pegylatedliposomaldoxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinDoxorubicinliposomal AND Carboplatin_Doxorubicin_liposomal_Regimen;
+    where Treatment_CarboplatinDoxorubicinliposomal AND Carboplatin_Doxorubicin_liposomal_Regimen;
         
         
 

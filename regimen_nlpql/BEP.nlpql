@@ -64,11 +64,11 @@ define final Regimen_BEP:
 // Results
 
         
-define final Treatment__BEP:
+define final Treatment_BEP:
     where Bleomycin_Treatment AND Etoposide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BEP AND BEP_Regimen;
+    where Treatment_BEP AND BEP_Regimen;
         
         
 

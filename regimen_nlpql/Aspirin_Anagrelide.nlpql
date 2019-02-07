@@ -53,11 +53,11 @@ define final Regimen_Aspirin_Anagrelide:
 // Results
 
         
-define final Treatment__AspirinAnagrelide:
+define final Treatment_AspirinAnagrelide:
     where Aspirin_Treatment AND Anagrelide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AspirinAnagrelide AND Aspirin_Anagrelide_Regimen;
+    where Treatment_AspirinAnagrelide AND Aspirin_Anagrelide_Regimen;
         
         
 

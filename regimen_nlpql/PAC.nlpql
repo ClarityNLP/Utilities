@@ -75,11 +75,11 @@ define final Regimen_PAC:
 // Results
 
         
-define final Treatment__PAC:
+define final Treatment_PAC:
     where Cisplatin_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PAC AND PAC_Regimen;
+    where Treatment_PAC AND PAC_Regimen;
         
         
 

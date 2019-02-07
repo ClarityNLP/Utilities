@@ -64,11 +64,11 @@ define final Regimen_ATG_Horse_Cyclosporine_Sirolimus:
 // Results
 
         
-define final Treatment__ATGHorseCyclosporineSirolimus:
+define final Treatment_ATGHorseCyclosporineSirolimus:
     where AntithymocyteglobulinhorseATG_Treatment AND CategoryCyclosporines_Treatment AND Sirolimus_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATGHorseCyclosporineSirolimus AND ATG_Horse_Cyclosporine_Sirolimus_Regimen;
+    where Treatment_ATGHorseCyclosporineSirolimus AND ATG_Horse_Cyclosporine_Sirolimus_Regimen;
         
         
 

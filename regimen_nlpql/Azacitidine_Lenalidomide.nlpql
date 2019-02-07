@@ -53,11 +53,11 @@ define final Regimen_Azacitidine_Lenalidomide:
 // Results
 
         
-define final Treatment__AzacitidineLenalidomide:
+define final Treatment_AzacitidineLenalidomide:
     where Azacitidine_Treatment AND Lenalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AzacitidineLenalidomide AND Azacitidine_Lenalidomide_Regimen;
+    where Treatment_AzacitidineLenalidomide AND Azacitidine_Lenalidomide_Regimen;
         
         
 

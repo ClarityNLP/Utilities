@@ -53,11 +53,11 @@ define final Regimen_Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cyta
 // Results
 
         
-define final Treatment__CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine:
+define final Treatment_CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine:
     where Cytarabine_Treatment AND Idarubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine AND Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_Regimen;
+    where Treatment_CytarabineIdarubicinthenEtoposideMitoxantronethenCytarabineIdarubicinThioguanine AND Cytarabine_Idarubicin_then_Etoposide_Mitoxantrone_then_Cytarabine_Idarubicin_Thioguanine_Regimen;
         
         
 

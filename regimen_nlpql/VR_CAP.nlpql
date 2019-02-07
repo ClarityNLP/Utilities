@@ -86,11 +86,11 @@ define final Regimen_VR_CAP:
 // Results
 
         
-define final Treatment__VRCAP:
+define final Treatment_VRCAP:
     where Bortezomib_Treatment AND Rituximab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VRCAP AND VR_CAP_Regimen;
+    where Treatment_VRCAP AND VR_CAP_Regimen;
         
         
 

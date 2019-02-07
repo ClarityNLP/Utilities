@@ -53,11 +53,11 @@ define final Regimen_Idelalisib_Rituximab:
 // Results
 
         
-define final Treatment__IdelalisibRituximab:
+define final Treatment_IdelalisibRituximab:
     where Idelalisib_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IdelalisibRituximab AND Idelalisib_Rituximab_Regimen;
+    where Treatment_IdelalisibRituximab AND Idelalisib_Rituximab_Regimen;
         
         
 

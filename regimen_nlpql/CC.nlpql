@@ -53,11 +53,11 @@ define final Regimen_CC:
 // Results
 
         
-define final Treatment__CC:
+define final Treatment_CC:
     where Cladribine_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CC AND CC_Regimen;
+    where Treatment_CC AND CC_Regimen;
         
         
 

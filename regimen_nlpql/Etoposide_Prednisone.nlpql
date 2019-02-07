@@ -53,11 +53,11 @@ define final Regimen_Etoposide_Prednisone:
 // Results
 
         
-define final Treatment__EtoposidePrednisone:
+define final Treatment_EtoposidePrednisone:
     where Etoposide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EtoposidePrednisone AND Etoposide_Prednisone_Regimen;
+    where Treatment_EtoposidePrednisone AND Etoposide_Prednisone_Regimen;
         
         
 

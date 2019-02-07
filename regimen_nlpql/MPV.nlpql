@@ -64,11 +64,11 @@ define final Regimen_MPV:
 // Results
 
         
-define final Treatment__MPV:
+define final Treatment_MPV:
     where Methotrexate_Treatment AND Procarbazine_Treatment AND Vincristine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MPV AND MPV_Regimen;
+    where Treatment_MPV AND MPV_Regimen;
         
         
 

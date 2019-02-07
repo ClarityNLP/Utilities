@@ -64,11 +64,11 @@ define final Regimen_FELV:
 // Results
 
         
-define final Treatment__FELV:
+define final Treatment_FELV:
     where Fluorouracil_Treatment AND Etoposide_Treatment AND Folinicacid_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FELV AND FELV_Regimen;
+    where Treatment_FELV AND FELV_Regimen;
         
         
 

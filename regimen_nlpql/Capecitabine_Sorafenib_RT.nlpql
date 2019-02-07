@@ -64,11 +64,11 @@ define final Regimen_Capecitabine_Sorafenib_RT:
 // Results
 
         
-define final Treatment__CapecitabineSorafenibRT:
+define final Treatment_CapecitabineSorafenibRT:
     where Capecitabine_Treatment AND Sorafenib_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineSorafenibRT AND Capecitabine_Sorafenib_RT_Regimen;
+    where Treatment_CapecitabineSorafenibRT AND Capecitabine_Sorafenib_RT_Regimen;
         
         
 

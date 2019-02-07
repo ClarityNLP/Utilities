@@ -53,18 +53,18 @@ define final Regimen_Lenalidomide_Rituximab:
 // Results
 
         
-define final Treatment__LenalidomideRituximab:
+define final Treatment_LenalidomideRituximab:
     where Lenalidomide_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LenalidomideRituximab AND Lenalidomide_Rituximab_Regimen;
+    where Treatment_LenalidomideRituximab AND Lenalidomide_Rituximab_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Marginal_zone_lymphoma, Transformed_lymphoma, Mantle_cell_lymphoma, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Diffuse_large_B-cell_lymphoma
+Known regimen for: Follicular_lymphoma, Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Transformed_lymphoma
 
 
 

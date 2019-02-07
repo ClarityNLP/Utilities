@@ -53,11 +53,11 @@ define final Regimen_CIM:
 // Results
 
         
-define final Treatment__CIM:
+define final Treatment_CIM:
     where Cisplatin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CIM AND CIM_Regimen;
+    where Treatment_CIM AND CIM_Regimen;
         
         
 

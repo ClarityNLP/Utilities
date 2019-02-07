@@ -53,18 +53,18 @@ define final Regimen_Ifosfamide_Paclitaxel:
 // Results
 
         
-define final Treatment__IfosfamidePaclitaxel:
+define final Treatment_IfosfamidePaclitaxel:
     where Ifosfamide_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IfosfamidePaclitaxel AND Ifosfamide_Paclitaxel_Regimen;
+    where Treatment_IfosfamidePaclitaxel AND Ifosfamide_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Endometrial_cancer, Testicular_cancer, Small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Endometrial_cancer, Testicular_cancer
 
 
 

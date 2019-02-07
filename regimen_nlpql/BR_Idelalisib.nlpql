@@ -64,11 +64,11 @@ define final Regimen_BR_Idelalisib:
 // Results
 
         
-define final Treatment__BRIdelalisib:
+define final Treatment_BRIdelalisib:
     where Bendamustine_Treatment AND Rituximab_Treatment AND Idelalisib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BRIdelalisib AND BR_Idelalisib_Regimen;
+    where Treatment_BRIdelalisib AND BR_Idelalisib_Regimen;
         
         
 

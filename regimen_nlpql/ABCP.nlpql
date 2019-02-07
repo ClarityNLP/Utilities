@@ -75,11 +75,11 @@ define final Regimen_ABCP:
 // Results
 
         
-define final Treatment__ABCP:
+define final Treatment_ABCP:
     where Atezolizumab_Treatment AND Bevacizumab_Treatment AND Carboplatin_Treatment AND Paclitaxel_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ABCP AND ABCP_Regimen;
+    where Treatment_ABCP AND ABCP_Regimen;
         
         
 

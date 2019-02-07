@@ -64,11 +64,11 @@ define final Regimen_TIP:
 // Results
 
         
-define final Treatment__TIP:
+define final Treatment_TIP:
     where Paclitaxel_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TIP AND TIP_Regimen;
+    where Treatment_TIP AND TIP_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_MCF:
 // Results
 
         
-define final Treatment__MCF:
+define final Treatment_MCF:
     where Mitomycin_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MCF AND MCF_Regimen;
+    where Treatment_MCF AND MCF_Regimen;
         
         
 

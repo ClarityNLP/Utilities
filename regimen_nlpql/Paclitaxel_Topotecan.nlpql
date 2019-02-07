@@ -53,11 +53,11 @@ define final Regimen_Paclitaxel_Topotecan:
 // Results
 
         
-define final Treatment__PaclitaxelTopotecan:
+define final Treatment_PaclitaxelTopotecan:
     where Paclitaxel_Treatment AND Topotecan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PaclitaxelTopotecan AND Paclitaxel_Topotecan_Regimen;
+    where Treatment_PaclitaxelTopotecan AND Paclitaxel_Topotecan_Regimen;
         
         
 

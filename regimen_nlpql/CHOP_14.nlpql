@@ -75,11 +75,11 @@ define final Regimen_CHOP_14:
 // Results
 
         
-define final Treatment__CHOP14:
+define final Treatment_CHOP14:
     where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CHOP14 AND CHOP_14_Regimen;
+    where Treatment_CHOP14 AND CHOP_14_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Ixazomib_Dexamethasone:
 // Results
 
         
-define final Treatment__IxazomibDexamethasone:
+define final Treatment_IxazomibDexamethasone:
     where Ixazomib_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IxazomibDexamethasone AND Ixazomib_Dexamethasone_Regimen;
+    where Treatment_IxazomibDexamethasone AND Ixazomib_Dexamethasone_Regimen;
         
         
 

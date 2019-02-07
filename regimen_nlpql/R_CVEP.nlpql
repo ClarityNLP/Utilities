@@ -86,11 +86,11 @@ define final Regimen_R_CVEP:
 // Results
 
         
-define final Treatment__RCVEP:
+define final Treatment_RCVEP:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Vorinostat_Treatment AND Etoposide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCVEP AND R_CVEP_Regimen;
+    where Treatment_RCVEP AND R_CVEP_Regimen;
         
         
 

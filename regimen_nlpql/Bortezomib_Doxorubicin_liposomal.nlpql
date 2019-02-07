@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Doxorubicin_liposomal:
 // Results
 
         
-define final Treatment__BortezomibDoxorubicinliposomal:
+define final Treatment_BortezomibDoxorubicinliposomal:
     where Bortezomib_Treatment AND Pegylatedliposomaldoxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibDoxorubicinliposomal AND Bortezomib_Doxorubicin_liposomal_Regimen;
+    where Treatment_BortezomibDoxorubicinliposomal AND Bortezomib_Doxorubicin_liposomal_Regimen;
         
         
 

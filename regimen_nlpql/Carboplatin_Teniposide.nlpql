@@ -53,11 +53,11 @@ define final Regimen_Carboplatin_Teniposide:
 // Results
 
         
-define final Treatment__CarboplatinTeniposide:
+define final Treatment_CarboplatinTeniposide:
     where Carboplatin_Treatment AND Teniposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinTeniposide AND Carboplatin_Teniposide_Regimen;
+    where Treatment_CarboplatinTeniposide AND Carboplatin_Teniposide_Regimen;
         
         
 

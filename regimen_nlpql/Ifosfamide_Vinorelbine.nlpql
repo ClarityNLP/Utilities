@@ -53,11 +53,11 @@ define final Regimen_Ifosfamide_Vinorelbine:
 // Results
 
         
-define final Treatment__IfosfamideVinorelbine:
+define final Treatment_IfosfamideVinorelbine:
     where Ifosfamide_Treatment AND Vinorelbine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IfosfamideVinorelbine AND Ifosfamide_Vinorelbine_Regimen;
+    where Treatment_IfosfamideVinorelbine AND Ifosfamide_Vinorelbine_Regimen;
         
         
 

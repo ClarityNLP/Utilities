@@ -75,11 +75,11 @@ define final Regimen_COPDAC:
 // Results
 
         
-define final Treatment__COPDAC:
+define final Treatment_COPDAC:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__COPDAC AND COPDAC_Regimen;
+    where Treatment_COPDAC AND COPDAC_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_ATG_Horse_Cyclosporine_Methylprednisolone:
 // Results
 
         
-define final Treatment__ATGHorseCyclosporineMethylprednisolone:
+define final Treatment_ATGHorseCyclosporineMethylprednisolone:
     where AntithymocyteglobulinhorseATG_Treatment AND Cyclosporinenonmodified_Treatment AND Methylprednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ATGHorseCyclosporineMethylprednisolone AND ATG_Horse_Cyclosporine_Methylprednisolone_Regimen;
+    where Treatment_ATGHorseCyclosporineMethylprednisolone AND ATG_Horse_Cyclosporine_Methylprednisolone_Regimen;
         
         
 

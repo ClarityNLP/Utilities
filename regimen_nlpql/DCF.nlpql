@@ -64,18 +64,18 @@ define final Regimen_DCF:
 // Results
 
         
-define final Treatment__DCF:
+define final Treatment_DCF:
     where Docetaxel_Treatment AND Cisplatin_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DCF AND DCF_Regimen;
+    where Treatment_DCF AND DCF_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: SCC_of_unknown_primary, Penile_cancer, Esophageal_cancer, Head_and_neck_cancer, Nasopharyngeal_carcinoma
+Known regimen for: Nasopharyngeal_carcinoma, Esophageal_cancer, Head_and_neck_cancer, Penile_cancer, SCC_of_unknown_primary
 
 
 

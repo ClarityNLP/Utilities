@@ -53,11 +53,11 @@ define final Regimen_TH_Taxol:
 // Results
 
         
-define final Treatment__THTaxol:
+define final Treatment_THTaxol:
     where Paclitaxel_Treatment AND Trastuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__THTaxol AND TH_Taxol_Regimen;
+    where Treatment_THTaxol AND TH_Taxol_Regimen;
         
         
 

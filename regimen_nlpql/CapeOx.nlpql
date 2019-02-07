@@ -53,18 +53,18 @@ define final Regimen_CapeOx:
 // Results
 
         
-define final Treatment__CapeOx:
+define final Treatment_CapeOx:
     where Capecitabine_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapeOx AND CapeOx_Regimen;
+    where Treatment_CapeOx AND CapeOx_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Esophageal_cancer, Gastric_cancer, Pancreatic_cancer, Rectal_cancer, Colon_cancer, Hepatocellular_carcinoma
+Known regimen for: Colon_cancer, Rectal_cancer, Esophageal_cancer, Hepatocellular_carcinoma, Gastric_cancer, Pancreatic_cancer
 
 
 

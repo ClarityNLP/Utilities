@@ -53,11 +53,11 @@ define final Regimen_Edoxaban_monotherapy:
 // Results
 
         
-define final Treatment__Edoxabanmonotherapy:
+define final Treatment_Edoxabanmonotherapy:
     where CategoryLowmolecularweightheparins_Treatment AND Edoxaban_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Edoxabanmonotherapy AND Edoxaban_monotherapy_Regimen;
+    where Treatment_Edoxabanmonotherapy AND Edoxaban_monotherapy_Regimen;
         
         
 

@@ -53,18 +53,18 @@ define final Regimen_IE:
 // Results
 
         
-define final Treatment__IE:
+define final Treatment_IE:
     where Ifosfamide_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__IE AND IE_Regimen;
+    where Treatment_IE AND IE_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Ewings_sarcoma, Osteosarcoma
+Known regimen for: Osteosarcoma, Ewings_sarcoma
 
 
 

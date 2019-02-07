@@ -53,11 +53,11 @@ define final Regimen_Dacarbazine_Ipilimumab:
 // Results
 
         
-define final Treatment__DacarbazineIpilimumab:
+define final Treatment_DacarbazineIpilimumab:
     where Dacarbazine_Treatment AND Ipilimumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DacarbazineIpilimumab AND Dacarbazine_Ipilimumab_Regimen;
+    where Treatment_DacarbazineIpilimumab AND Dacarbazine_Ipilimumab_Regimen;
         
         
 

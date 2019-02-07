@@ -53,11 +53,11 @@ define final Regimen_Pomalidomide_Prednisone:
 // Results
 
         
-define final Treatment__PomalidomidePrednisone:
+define final Treatment_PomalidomidePrednisone:
     where Pomalidomide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PomalidomidePrednisone AND Pomalidomide_Prednisone_Regimen;
+    where Treatment_PomalidomidePrednisone AND Pomalidomide_Prednisone_Regimen;
         
         
 

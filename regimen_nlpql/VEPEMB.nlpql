@@ -108,11 +108,11 @@ define final Regimen_VEPEMB:
 // Results
 
         
-define final Treatment__VEPEMB:
+define final Treatment_VEPEMB:
     where Vinblastine_Treatment AND Cyclophosphamide_Treatment AND Procarbazine_Treatment AND Prednisone_Treatment AND Etoposide_Treatment AND Mitoxantrone_Treatment AND Bleomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VEPEMB AND VEPEMB_Regimen;
+    where Treatment_VEPEMB AND VEPEMB_Regimen;
         
         
 

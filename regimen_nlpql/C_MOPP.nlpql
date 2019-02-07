@@ -75,11 +75,11 @@ define final Regimen_C_MOPP:
 // Results
 
         
-define final Treatment__CMOPP:
+define final Treatment_CMOPP:
     where Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment AND Procarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CMOPP AND C_MOPP_Regimen;
+    where Treatment_CMOPP AND C_MOPP_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Topotecan_Bevacizumab:
 // Results
 
         
-define final Treatment__TopotecanBevacizumab:
+define final Treatment_TopotecanBevacizumab:
     where Topotecan_Treatment AND Bevacizumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TopotecanBevacizumab AND Topotecan_Bevacizumab_Regimen;
+    where Treatment_TopotecanBevacizumab AND Topotecan_Bevacizumab_Regimen;
         
         
 

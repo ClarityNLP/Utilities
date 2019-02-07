@@ -97,18 +97,18 @@ define final Regimen_DA_R_EPOCH:
 // Results
 
         
-define final Treatment__DAREPOCH:
+define final Treatment_DAREPOCH:
     where Rituximab_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Vincristine_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DAREPOCH AND DA_R_EPOCH_Regimen;
+    where Treatment_DAREPOCH AND DA_R_EPOCH_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Mediastinal_gray-zone_lymphoma, Primary_mediastinal_B-cell_lymphoma
+Known regimen for: Primary_mediastinal_B-cell_lymphoma, Mediastinal_gray-zone_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

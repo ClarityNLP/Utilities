@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Fluorouracil_Panitumumab:
 // Results
 
         
-define final Treatment__CisplatinFluorouracilPanitumumab:
+define final Treatment_CisplatinFluorouracilPanitumumab:
     where Cisplatin_Treatment AND Fluorouracil_Treatment AND Panitumumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinFluorouracilPanitumumab AND Cisplatin_Fluorouracil_Panitumumab_Regimen;
+    where Treatment_CisplatinFluorouracilPanitumumab AND Cisplatin_Fluorouracil_Panitumumab_Regimen;
         
         
 

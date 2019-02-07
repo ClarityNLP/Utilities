@@ -75,11 +75,11 @@ define final Regimen_G_CVP:
 // Results
 
         
-define final Treatment__GCVP:
+define final Treatment_GCVP:
     where Obinutuzumab_Treatment AND Cyclophosphamide_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GCVP AND G_CVP_Regimen;
+    where Treatment_GCVP AND G_CVP_Regimen;
         
         
 

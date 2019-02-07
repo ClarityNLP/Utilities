@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Fluorouracil_RT:
 // Results
 
         
-define final Treatment__CarboplatinFluorouracilRT:
+define final Treatment_CarboplatinFluorouracilRT:
     where Carboplatin_Treatment AND Fluorouracil_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinFluorouracilRT AND Carboplatin_Fluorouracil_RT_Regimen;
+    where Treatment_CarboplatinFluorouracilRT AND Carboplatin_Fluorouracil_RT_Regimen;
         
         
 

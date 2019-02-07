@@ -174,7 +174,7 @@ define %s %s_%s:
     return '', ''
 
 
-def generate_results(regimen_name, med_keys, regimen_key, result_type='Treatment_', join_on=' AND '):
+def generate_results(regimen_name, med_keys, regimen_key, result_type='Treatment', join_on=' AND '):
     med_clause = join_on.join(med_keys)
     if len(med_keys) == 1:
         return ''

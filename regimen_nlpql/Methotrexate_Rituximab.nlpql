@@ -53,11 +53,11 @@ define final Regimen_Methotrexate_Rituximab:
 // Results
 
         
-define final Treatment__MethotrexateRituximab:
+define final Treatment_MethotrexateRituximab:
     where Methotrexate_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexateRituximab AND Methotrexate_Rituximab_Regimen;
+    where Treatment_MethotrexateRituximab AND Methotrexate_Rituximab_Regimen;
         
         
 

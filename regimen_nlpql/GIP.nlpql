@@ -64,11 +64,11 @@ define final Regimen_GIP:
 // Results
 
         
-define final Treatment__GIP:
+define final Treatment_GIP:
     where Gemcitabine_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GIP AND GIP_Regimen;
+    where Treatment_GIP AND GIP_Regimen;
         
         
 

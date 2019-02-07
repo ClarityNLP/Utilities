@@ -64,11 +64,11 @@ define final Regimen_Alemtuzumab_Rituximab:
 // Results
 
         
-define final Treatment__AlemtuzumabRituximab:
+define final Treatment_AlemtuzumabRituximab:
     where Alemtuzumab_Treatment AND Rituximab_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AlemtuzumabRituximab AND Alemtuzumab_Rituximab_Regimen;
+    where Treatment_AlemtuzumabRituximab AND Alemtuzumab_Rituximab_Regimen;
         
         
 

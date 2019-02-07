@@ -53,11 +53,11 @@ define final Regimen_Bexarotene_Pralatrexate:
 // Results
 
         
-define final Treatment__BexarotenePralatrexate:
+define final Treatment_BexarotenePralatrexate:
     where Bexarotene_Treatment AND Pralatrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BexarotenePralatrexate AND Bexarotene_Pralatrexate_Regimen;
+    where Treatment_BexarotenePralatrexate AND Bexarotene_Pralatrexate_Regimen;
         
         
 

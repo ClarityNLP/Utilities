@@ -53,11 +53,11 @@ define final Regimen_Bendamustine_Obinutuzumab:
 // Results
 
         
-define final Treatment__BendamustineObinutuzumab:
+define final Treatment_BendamustineObinutuzumab:
     where Obinutuzumab_Treatment AND Bendamustine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BendamustineObinutuzumab AND Bendamustine_Obinutuzumab_Regimen;
+    where Treatment_BendamustineObinutuzumab AND Bendamustine_Obinutuzumab_Regimen;
         
         
 

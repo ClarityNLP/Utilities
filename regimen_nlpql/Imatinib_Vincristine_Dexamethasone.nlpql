@@ -64,11 +64,11 @@ define final Regimen_Imatinib_Vincristine_Dexamethasone:
 // Results
 
         
-define final Treatment__ImatinibVincristineDexamethasone:
+define final Treatment_ImatinibVincristineDexamethasone:
     where Imatinib_Treatment AND Vincristine_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ImatinibVincristineDexamethasone AND Imatinib_Vincristine_Dexamethasone_Regimen;
+    where Treatment_ImatinibVincristineDexamethasone AND Imatinib_Vincristine_Dexamethasone_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_MVBP:
 // Results
 
         
-define final Treatment__MVBP:
+define final Treatment_MVBP:
     where Methotrexate_Treatment AND Etoposide_Treatment AND Carmustine_Treatment AND Methylprednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MVBP AND MVBP_Regimen;
+    where Treatment_MVBP AND MVBP_Regimen;
         
         
 

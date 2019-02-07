@@ -53,11 +53,11 @@ define final Regimen_Ox_P:
 // Results
 
         
-define final Treatment__OxP:
+define final Treatment_OxP:
     where Oxaliplatin_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__OxP AND Ox_P_Regimen;
+    where Treatment_OxP AND Ox_P_Regimen;
         
         
 

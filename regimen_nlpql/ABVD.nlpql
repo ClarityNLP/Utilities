@@ -75,18 +75,18 @@ define final Regimen_ABVD:
 // Results
 
         
-define final Treatment__ABVD:
+define final Treatment_ABVD:
     where Doxorubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ABVD AND ABVD_Regimen;
+    where Treatment_ABVD AND ABVD_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hodgkin_lymphoma, Hodgkin_lymphoma_nodular_lymphocyte-predominant
+Known regimen for: Hodgkin_lymphoma_nodular_lymphocyte-predominant, Hodgkin_lymphoma
 
 
 

@@ -64,11 +64,11 @@ define final Regimen_CRd_Cyclophosphamide:
 // Results
 
         
-define final Treatment__CRdCyclophosphamide:
+define final Treatment_CRdCyclophosphamide:
     where Cyclophosphamide_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CRdCyclophosphamide AND CRd_Cyclophosphamide_Regimen;
+    where Treatment_CRdCyclophosphamide AND CRd_Cyclophosphamide_Regimen;
         
         
 

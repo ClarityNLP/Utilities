@@ -64,11 +64,11 @@ define final Regimen_Fluorouracil_Folinic_acid_Mitomycin:
 // Results
 
         
-define final Treatment__FluorouracilFolinicacidMitomycin:
+define final Treatment_FluorouracilFolinicacidMitomycin:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Mitomycin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluorouracilFolinicacidMitomycin AND Fluorouracil_Folinic_acid_Mitomycin_Regimen;
+    where Treatment_FluorouracilFolinicacidMitomycin AND Fluorouracil_Folinic_acid_Mitomycin_Regimen;
         
         
 

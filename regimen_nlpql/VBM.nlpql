@@ -64,11 +64,11 @@ define final Regimen_VBM:
 // Results
 
         
-define final Treatment__VBM:
+define final Treatment_VBM:
     where Bleomycin_Treatment AND Vincristine_Treatment AND Methotrexate_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VBM AND VBM_Regimen;
+    where Treatment_VBM AND VBM_Regimen;
         
         
 

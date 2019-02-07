@@ -75,11 +75,11 @@ define final Regimen_Dinutuximab_GM_CSF_IL_2_Isotretinoin:
 // Results
 
         
-define final Treatment__DinutuximabGMCSFIL2Isotretinoin:
+define final Treatment_DinutuximabGMCSFIL2Isotretinoin:
     where Dinutuximab_Treatment AND Sargramostim_Treatment AND Aldesleukin_Treatment AND Isotretinoin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DinutuximabGMCSFIL2Isotretinoin AND Dinutuximab_GM_CSF_IL_2_Isotretinoin_Regimen;
+    where Treatment_DinutuximabGMCSFIL2Isotretinoin AND Dinutuximab_GM_CSF_IL_2_Isotretinoin_Regimen;
         
         
 

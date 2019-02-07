@@ -53,11 +53,11 @@ define final Regimen_CYVE_G_CSF:
 // Results
 
         
-define final Treatment__CYVEGCSF:
+define final Treatment_CYVEGCSF:
     where Cytarabine_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CYVEGCSF AND CYVE_G_CSF_Regimen;
+    where Treatment_CYVEGCSF AND CYVE_G_CSF_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_FEAM:
 // Results
 
         
-define final Treatment__FEAM:
+define final Treatment_FEAM:
     where Fotemustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FEAM AND FEAM_Regimen;
+    where Treatment_FEAM AND FEAM_Regimen;
         
         
 

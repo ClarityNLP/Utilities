@@ -64,11 +64,11 @@ define final Regimen_CPD:
 // Results
 
         
-define final Treatment__CPD:
+define final Treatment_CPD:
     where Carfilzomib_Treatment AND Pomalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CPD AND CPD_Regimen;
+    where Treatment_CPD AND CPD_Regimen;
         
         
 

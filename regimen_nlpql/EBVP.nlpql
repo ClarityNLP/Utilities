@@ -75,11 +75,11 @@ define final Regimen_EBVP:
 // Results
 
         
-define final Treatment__EBVP:
+define final Treatment_EBVP:
     where Epirubicin_Treatment AND Bleomycin_Treatment AND Vinblastine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EBVP AND EBVP_Regimen;
+    where Treatment_EBVP AND EBVP_Regimen;
         
         
 

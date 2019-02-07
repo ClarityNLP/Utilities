@@ -53,11 +53,11 @@ define final Regimen_IT_Cytarabine_WBRT:
 // Results
 
         
-define final Treatment__ITCytarabineWBRT:
+define final Treatment_ITCytarabineWBRT:
     where Cytarabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ITCytarabineWBRT AND IT_Cytarabine_WBRT_Regimen;
+    where Treatment_ITCytarabineWBRT AND IT_Cytarabine_WBRT_Regimen;
         
         
 

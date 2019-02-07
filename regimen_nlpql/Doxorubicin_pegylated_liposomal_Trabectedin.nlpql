@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_pegylated_liposomal_Trabectedin:
 // Results
 
         
-define final Treatment__DoxorubicinpegylatedliposomalTrabectedin:
+define final Treatment_DoxorubicinpegylatedliposomalTrabectedin:
     where Pegylatedliposomaldoxorubicin_Treatment AND Trabectedin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinpegylatedliposomalTrabectedin AND Doxorubicin_pegylated_liposomal_Trabectedin_Regimen;
+    where Treatment_DoxorubicinpegylatedliposomalTrabectedin AND Doxorubicin_pegylated_liposomal_Trabectedin_Regimen;
         
         
 

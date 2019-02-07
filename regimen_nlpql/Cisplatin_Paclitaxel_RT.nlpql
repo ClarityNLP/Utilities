@@ -64,18 +64,18 @@ define final Regimen_Cisplatin_Paclitaxel_RT:
 // Results
 
         
-define final Treatment__CisplatinPaclitaxelRT:
+define final Treatment_CisplatinPaclitaxelRT:
     where Cisplatin_Treatment AND Paclitaxel_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinPaclitaxelRT AND Cisplatin_Paclitaxel_RT_Regimen;
+    where Treatment_CisplatinPaclitaxelRT AND Cisplatin_Paclitaxel_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Head_and_neck_cancer, Esophageal_cancer, Bladder_cancer
+Known regimen for: Bladder_cancer, Esophageal_cancer, Head_and_neck_cancer
 
 
 

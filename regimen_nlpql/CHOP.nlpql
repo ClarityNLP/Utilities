@@ -75,18 +75,18 @@ define final Regimen_CHOP:
 // Results
 
         
-define final Treatment__CHOP:
+define final Treatment_CHOP:
     where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CHOP AND CHOP_Regimen;
+    where Treatment_CHOP AND CHOP_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma, HIV-associated_lymphoma
+Known regimen for: Mantle_cell_lymphoma, HIV-associated_lymphoma, Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
 
 
 

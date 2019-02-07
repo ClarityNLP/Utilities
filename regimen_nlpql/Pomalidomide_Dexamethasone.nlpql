@@ -53,11 +53,11 @@ define final Regimen_Pomalidomide_Dexamethasone:
 // Results
 
         
-define final Treatment__PomalidomideDexamethasone:
+define final Treatment_PomalidomideDexamethasone:
     where Pomalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__PomalidomideDexamethasone AND Pomalidomide_Dexamethasone_Regimen;
+    where Treatment_PomalidomideDexamethasone AND Pomalidomide_Dexamethasone_Regimen;
         
         
 

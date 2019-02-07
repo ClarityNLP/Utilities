@@ -64,11 +64,11 @@ define final Regimen_AVD:
 // Results
 
         
-define final Treatment__AVD:
+define final Treatment_AVD:
     where Doxorubicin_Treatment AND Vinblastine_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AVD AND AVD_Regimen;
+    where Treatment_AVD AND AVD_Regimen;
         
         
 

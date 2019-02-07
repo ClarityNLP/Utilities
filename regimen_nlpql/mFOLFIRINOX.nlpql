@@ -75,11 +75,11 @@ define final Regimen_mFOLFIRINOX:
 // Results
 
         
-define final Treatment__mFOLFIRINOX:
+define final Treatment_mFOLFIRINOX:
     where Folinicacid_Treatment AND Fluorouracil_Treatment AND Irinotecan_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__mFOLFIRINOX AND mFOLFIRINOX_Regimen;
+    where Treatment_mFOLFIRINOX AND mFOLFIRINOX_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_DEP_RT:
 // Results
 
         
-define final Treatment__DEPRT:
+define final Treatment_DEPRT:
     where Dexamethasone_Treatment AND Etoposide_Treatment AND Cisplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DEPRT AND DEP_RT_Regimen;
+    where Treatment_DEPRT AND DEP_RT_Regimen;
         
         
 

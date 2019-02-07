@@ -53,11 +53,11 @@ define final Regimen_Cisplatin_Raltitrexed:
 // Results
 
         
-define final Treatment__CisplatinRaltitrexed:
+define final Treatment_CisplatinRaltitrexed:
     where Cisplatin_Treatment AND Raltitrexed_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinRaltitrexed AND Cisplatin_Raltitrexed_Regimen;
+    where Treatment_CisplatinRaltitrexed AND Cisplatin_Raltitrexed_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_CX_Trastuzumab:
 // Results
 
         
-define final Treatment__CXTrastuzumab:
+define final Treatment_CXTrastuzumab:
     where Cisplatin_Treatment AND Capecitabine_Treatment AND Trastuzumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CXTrastuzumab AND CX_Trastuzumab_Regimen;
+    where Treatment_CXTrastuzumab AND CX_Trastuzumab_Regimen;
         
         
 

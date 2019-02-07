@@ -53,18 +53,18 @@ define final Regimen_CYVE:
 // Results
 
         
-define final Treatment__CYVE:
+define final Treatment_CYVE:
     where Cytarabine_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CYVE AND CYVE_Regimen;
+    where Treatment_CYVE AND CYVE_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Acute_myeloid_leukemia, CNS_lymphoma
+Known regimen for: CNS_lymphoma, Acute_myeloid_leukemia, Autologous_HSCT
 
 
 

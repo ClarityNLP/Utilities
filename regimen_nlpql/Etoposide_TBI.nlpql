@@ -53,18 +53,18 @@ define final Regimen_Etoposide_TBI:
 // Results
 
         
-define final Treatment__EtoposideTBI:
+define final Treatment_EtoposideTBI:
     where Externalbeamradiotherapy_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EtoposideTBI AND Etoposide_TBI_Regimen;
+    where Treatment_EtoposideTBI AND Etoposide_TBI_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Autologous_HSCT, Allogeneic_HSCT
+Known regimen for: Allogeneic_HSCT, Autologous_HSCT
 
 
 

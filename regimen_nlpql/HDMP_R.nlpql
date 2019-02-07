@@ -53,11 +53,11 @@ define final Regimen_HDMP_R:
 // Results
 
         
-define final Treatment__HDMPR:
+define final Treatment_HDMPR:
     where Methylprednisolone_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__HDMPR AND HDMP_R_Regimen;
+    where Treatment_HDMPR AND HDMP_R_Regimen;
         
         
 

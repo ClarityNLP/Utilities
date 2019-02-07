@@ -64,11 +64,11 @@ define final Regimen_Methotrexate_Vinblastine_Prednisone:
 // Results
 
         
-define final Treatment__MethotrexateVinblastinePrednisone:
+define final Treatment_MethotrexateVinblastinePrednisone:
     where Methotrexate_Treatment AND Vinblastine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MethotrexateVinblastinePrednisone AND Methotrexate_Vinblastine_Prednisone_Regimen;
+    where Treatment_MethotrexateVinblastinePrednisone AND Methotrexate_Vinblastine_Prednisone_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_Capecitabine_Docetaxel_RT:
 // Results
 
         
-define final Treatment__CapecitabineDocetaxelRT:
+define final Treatment_CapecitabineDocetaxelRT:
     where Docetaxel_Treatment AND Capecitabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CapecitabineDocetaxelRT AND Capecitabine_Docetaxel_RT_Regimen;
+    where Treatment_CapecitabineDocetaxelRT AND Capecitabine_Docetaxel_RT_Regimen;
         
         
 

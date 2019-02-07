@@ -53,18 +53,18 @@ define final Regimen_GemOx:
 // Results
 
         
-define final Treatment__GemOx:
+define final Treatment_GemOx:
     where Gemcitabine_Treatment AND Oxaliplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemOx AND GemOx_Regimen;
+    where Treatment_GemOx AND GemOx_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Hepatocellular_carcinoma, Pancreatic_cancer, Testicular_cancer
+Known regimen for: Testicular_cancer, Hepatocellular_carcinoma, Pancreatic_cancer
 
 
 

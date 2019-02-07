@@ -119,11 +119,11 @@ define final Regimen_LSG15:
 // Results
 
         
-define final Treatment__LSG15:
+define final Treatment_LSG15:
     where Vincristine_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Prednisone_Treatment AND Ranimustine_Treatment AND Vindesine_Treatment AND Etoposide_Treatment AND Carboplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LSG15 AND LSG15_Regimen;
+    where Treatment_LSG15 AND LSG15_Regimen;
         
         
 

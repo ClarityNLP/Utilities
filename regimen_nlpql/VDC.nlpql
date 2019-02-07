@@ -64,11 +64,11 @@ define final Regimen_VDC:
 // Results
 
         
-define final Treatment__VDC:
+define final Treatment_VDC:
     where Cyclophosphamide_Treatment AND Bortezomib_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VDC AND VDC_Regimen;
+    where Treatment_VDC AND VDC_Regimen;
         
         
 

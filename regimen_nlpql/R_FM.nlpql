@@ -64,11 +64,11 @@ define final Regimen_R_FM:
 // Results
 
         
-define final Treatment__RFM:
+define final Treatment_RFM:
     where Fludarabine_Treatment AND Mitoxantrone_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RFM AND R_FM_Regimen;
+    where Treatment_RFM AND R_FM_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_DAC:
 // Results
 
         
-define final Treatment__DAC:
+define final Treatment_DAC:
     where Daunorubicin_Treatment AND Cytarabine_Treatment AND Cladribine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DAC AND DAC_Regimen;
+    where Treatment_DAC AND DAC_Regimen;
         
         
 

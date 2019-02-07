@@ -75,11 +75,11 @@ define final Regimen_Cyclosporine_Corticosteroids_Rituximab:
 // Results
 
         
-define final Treatment__CyclosporineCorticosteroidsRituximab:
+define final Treatment_CyclosporineCorticosteroidsRituximab:
     where CategoryCyclosporines_Treatment AND CategorySteroids_Treatment AND Prednisone_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclosporineCorticosteroidsRituximab AND Cyclosporine_Corticosteroids_Rituximab_Regimen;
+    where Treatment_CyclosporineCorticosteroidsRituximab AND Cyclosporine_Corticosteroids_Rituximab_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Ibritumomab_tiuxetan_monotherapy:
 // Results
 
         
-define final Treatment__Ibritumomabtiuxetanmonotherapy:
+define final Treatment_Ibritumomabtiuxetanmonotherapy:
     where Rituximab_Treatment AND Ibritumomabtiuxetan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Ibritumomabtiuxetanmonotherapy AND Ibritumomab_tiuxetan_monotherapy_Regimen;
+    where Treatment_Ibritumomabtiuxetanmonotherapy AND Ibritumomab_tiuxetan_monotherapy_Regimen;
         
         
 

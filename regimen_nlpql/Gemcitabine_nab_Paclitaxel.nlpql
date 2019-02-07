@@ -53,18 +53,18 @@ define final Regimen_Gemcitabine_nab_Paclitaxel:
 // Results
 
         
-define final Treatment__GemcitabinenabPaclitaxel:
+define final Treatment_GemcitabinenabPaclitaxel:
     where Gemcitabine_Treatment AND Paclitaxelnanoparticlealbuminbound_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GemcitabinenabPaclitaxel AND Gemcitabine_nab_Paclitaxel_Regimen;
+    where Treatment_GemcitabinenabPaclitaxel AND Gemcitabine_nab_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Pancreatic_cancer, Cholangiocarcinoma
+Known regimen for: Cholangiocarcinoma, Pancreatic_cancer
 
 
 

@@ -53,18 +53,18 @@ define final Regimen_Carboplatin_nab_Paclitaxel:
 // Results
 
         
-define final Treatment__CarboplatinnabPaclitaxel:
+define final Treatment_CarboplatinnabPaclitaxel:
     where Carboplatin_Treatment AND Paclitaxelnanoparticlealbuminbound_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinnabPaclitaxel AND Carboplatin_nab_Paclitaxel_Regimen;
+    where Treatment_CarboplatinnabPaclitaxel AND Carboplatin_nab_Paclitaxel_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Melanoma, Breast_cancer_triple_negative, Non-small_cell_lung_cancer
+Known regimen for: Non-small_cell_lung_cancer, Melanoma, Breast_cancer_triple_negative
 
 
 

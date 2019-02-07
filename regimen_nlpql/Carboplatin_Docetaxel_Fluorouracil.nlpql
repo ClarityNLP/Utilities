@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Docetaxel_Fluorouracil:
 // Results
 
         
-define final Treatment__CarboplatinDocetaxelFluorouracil:
+define final Treatment_CarboplatinDocetaxelFluorouracil:
     where Carboplatin_Treatment AND Docetaxel_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinDocetaxelFluorouracil AND Carboplatin_Docetaxel_Fluorouracil_Regimen;
+    where Treatment_CarboplatinDocetaxelFluorouracil AND Carboplatin_Docetaxel_Fluorouracil_Regimen;
         
         
 

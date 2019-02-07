@@ -64,11 +64,11 @@ define final Regimen_73d_GO:
 // Results
 
         
-define final Treatment__73dGO:
+define final Treatment_73dGO:
     where Cytarabine_Treatment AND Daunorubicin_Treatment AND Gemtuzumabozogamicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__73dGO AND 73d_GO_Regimen;
+    where Treatment_73dGO AND 73d_GO_Regimen;
         
         
 

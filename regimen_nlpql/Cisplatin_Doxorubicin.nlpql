@@ -53,18 +53,18 @@ define final Regimen_Cisplatin_Doxorubicin:
 // Results
 
         
-define final Treatment__CisplatinDoxorubicin:
+define final Treatment_CisplatinDoxorubicin:
     where Cisplatin_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinDoxorubicin AND Cisplatin_Doxorubicin_Regimen;
+    where Treatment_CisplatinDoxorubicin AND Cisplatin_Doxorubicin_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma, Endometrial_cancer, Osteosarcoma, Hepatoblastoma
+Known regimen for: Cutaneous_basal_cell_carcinoma, Cutaneous_squamous_cell_carcinoma, Osteosarcoma, Endometrial_cancer, Hepatoblastoma
 
 
 

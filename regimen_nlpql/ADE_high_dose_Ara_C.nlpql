@@ -64,11 +64,11 @@ define final Regimen_ADE_high_dose_Ara_C:
 // Results
 
         
-define final Treatment__ADEhighdoseAraC:
+define final Treatment_ADEhighdoseAraC:
     where Cytarabine_Treatment AND Daunorubicin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ADEhighdoseAraC AND ADE_high_dose_Ara_C_Regimen;
+    where Treatment_ADEhighdoseAraC AND ADE_high_dose_Ara_C_Regimen;
         
         
 

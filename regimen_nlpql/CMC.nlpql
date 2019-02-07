@@ -64,11 +64,11 @@ define final Regimen_CMC:
 // Results
 
         
-define final Treatment__CMC:
+define final Treatment_CMC:
     where Cladribine_Treatment AND Mitoxantrone_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CMC AND CMC_Regimen;
+    where Treatment_CMC AND CMC_Regimen;
         
         
 

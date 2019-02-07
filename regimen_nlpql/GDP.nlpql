@@ -64,11 +64,11 @@ define final Regimen_GDP:
 // Results
 
         
-define final Treatment__GDP:
+define final Treatment_GDP:
     where Gemcitabine_Treatment AND Dexamethasone_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__GDP AND GDP_Regimen;
+    where Treatment_GDP AND GDP_Regimen;
         
         
 

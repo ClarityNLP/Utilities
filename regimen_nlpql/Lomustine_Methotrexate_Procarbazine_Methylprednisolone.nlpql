@@ -75,11 +75,11 @@ define final Regimen_Lomustine_Methotrexate_Procarbazine_Methylprednisolone:
 // Results
 
         
-define final Treatment__LomustineMethotrexateProcarbazineMethylprednisolone:
+define final Treatment_LomustineMethotrexateProcarbazineMethylprednisolone:
     where Methotrexate_Treatment AND Lomustine_Treatment AND Procarbazine_Treatment AND Methylprednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LomustineMethotrexateProcarbazineMethylprednisolone AND Lomustine_Methotrexate_Procarbazine_Methylprednisolone_Regimen;
+    where Treatment_LomustineMethotrexateProcarbazineMethylprednisolone AND Lomustine_Methotrexate_Procarbazine_Methylprednisolone_Regimen;
         
         
 

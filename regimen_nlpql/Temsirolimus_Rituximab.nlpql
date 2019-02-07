@@ -53,11 +53,11 @@ define final Regimen_Temsirolimus_Rituximab:
 // Results
 
         
-define final Treatment__TemsirolimusRituximab:
+define final Treatment_TemsirolimusRituximab:
     where Temsirolimus_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__TemsirolimusRituximab AND Temsirolimus_Rituximab_Regimen;
+    where Treatment_TemsirolimusRituximab AND Temsirolimus_Rituximab_Regimen;
         
         
 

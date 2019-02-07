@@ -64,11 +64,11 @@ define final Regimen_VeIP:
 // Results
 
         
-define final Treatment__VeIP:
+define final Treatment_VeIP:
     where Vinblastine_Treatment AND Ifosfamide_Treatment AND Cisplatin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__VeIP AND VeIP_Regimen;
+    where Treatment_VeIP AND VeIP_Regimen;
         
         
 

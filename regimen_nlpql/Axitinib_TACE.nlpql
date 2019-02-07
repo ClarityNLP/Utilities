@@ -53,11 +53,11 @@ define final Regimen_Axitinib_TACE:
 // Results
 
         
-define final Treatment__AxitinibTACE:
+define final Treatment_AxitinibTACE:
     where Axitinib_Treatment AND TACE_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AxitinibTACE AND Axitinib_TACE_Regimen;
+    where Treatment_AxitinibTACE AND Axitinib_TACE_Regimen;
         
         
 

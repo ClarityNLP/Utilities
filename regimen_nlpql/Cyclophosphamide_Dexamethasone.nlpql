@@ -53,11 +53,11 @@ define final Regimen_Cyclophosphamide_Dexamethasone:
 // Results
 
         
-define final Treatment__CyclophosphamideDexamethasone:
+define final Treatment_CyclophosphamideDexamethasone:
     where Cyclophosphamide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CyclophosphamideDexamethasone AND Cyclophosphamide_Dexamethasone_Regimen;
+    where Treatment_CyclophosphamideDexamethasone AND Cyclophosphamide_Dexamethasone_Regimen;
         
         
 

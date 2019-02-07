@@ -64,11 +64,11 @@ define final Regimen_CVD_Vindesine:
 // Results
 
         
-define final Treatment__CVDVindesine:
+define final Treatment_CVDVindesine:
     where Cisplatin_Treatment AND Vindesine_Treatment AND Dacarbazine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CVDVindesine AND CVD_Vindesine_Regimen;
+    where Treatment_CVDVindesine AND CVD_Vindesine_Regimen;
         
         
 

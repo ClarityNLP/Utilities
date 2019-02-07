@@ -53,18 +53,18 @@ define final Regimen_Fluorouracil_RT:
 // Results
 
         
-define final Treatment__FluorouracilRT:
+define final Treatment_FluorouracilRT:
     where Fluorouracil_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluorouracilRT AND Fluorouracil_RT_Regimen;
+    where Treatment_FluorouracilRT AND Fluorouracil_RT_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Cervical_cancer, Pancreatic_cancer, Head_and_neck_cancer, Rectal_cancer
+Known regimen for: Cervical_cancer, Head_and_neck_cancer, Rectal_cancer, Pancreatic_cancer
 
 
 

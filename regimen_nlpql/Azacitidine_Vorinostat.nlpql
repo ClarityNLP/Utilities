@@ -53,11 +53,11 @@ define final Regimen_Azacitidine_Vorinostat:
 // Results
 
         
-define final Treatment__AzacitidineVorinostat:
+define final Treatment_AzacitidineVorinostat:
     where Azacitidine_Treatment AND Vorinostat_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__AzacitidineVorinostat AND Azacitidine_Vorinostat_Regimen;
+    where Treatment_AzacitidineVorinostat AND Azacitidine_Vorinostat_Regimen;
         
         
 

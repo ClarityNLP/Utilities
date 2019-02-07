@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_GemcitabineErlotinib:
 // Results
 
         
-define final Treatment__CarboplatinGemcitabineErlotinib:
+define final Treatment_CarboplatinGemcitabineErlotinib:
     where Carboplatin_Treatment AND Gemcitabine_Treatment AND Erlotinib_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinGemcitabineErlotinib AND Carboplatin_GemcitabineErlotinib_Regimen;
+    where Treatment_CarboplatinGemcitabineErlotinib AND Carboplatin_GemcitabineErlotinib_Regimen;
         
         
 

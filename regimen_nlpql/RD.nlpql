@@ -53,18 +53,18 @@ define final Regimen_Rd:
 // Results
 
         
-define final Treatment__Rd:
+define final Treatment_Rd:
     where Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__Rd AND Rd_Regimen;
+    where Treatment_Rd AND Rd_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Plasma_cell_leukemia, Multiple_myeloma_induction, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Multiple_myeloma_induction, Plasma_cell_leukemia, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
 
 
 

@@ -75,11 +75,11 @@ define final Regimen_FOLFOX4_RT:
 // Results
 
         
-define final Treatment__FOLFOX4RT:
+define final Treatment_FOLFOX4RT:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Oxaliplatin_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFOX4RT AND FOLFOX4_RT_Regimen;
+    where Treatment_FOLFOX4RT AND FOLFOX4_RT_Regimen;
         
         
 

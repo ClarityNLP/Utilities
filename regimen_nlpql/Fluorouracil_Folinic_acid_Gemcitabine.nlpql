@@ -64,11 +64,11 @@ define final Regimen_Fluorouracil_Folinic_acid_Gemcitabine:
 // Results
 
         
-define final Treatment__FluorouracilFolinicacidGemcitabine:
+define final Treatment_FluorouracilFolinicacidGemcitabine:
     where Fluorouracil_Treatment AND Folinicacid_Treatment AND Gemcitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FluorouracilFolinicacidGemcitabine AND Fluorouracil_Folinic_acid_Gemcitabine_Regimen;
+    where Treatment_FluorouracilFolinicacidGemcitabine AND Fluorouracil_Folinic_acid_Gemcitabine_Regimen;
         
         
 

@@ -75,11 +75,11 @@ define final Regimen_BeEAM:
 // Results
 
         
-define final Treatment__BeEAM:
+define final Treatment_BeEAM:
     where Bendamustine_Treatment AND Etoposide_Treatment AND Cytarabine_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BeEAM AND BeEAM_Regimen;
+    where Treatment_BeEAM AND BeEAM_Regimen;
         
         
 

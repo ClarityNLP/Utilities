@@ -86,11 +86,11 @@ define final Regimen_CHOEP:
 // Results
 
         
-define final Treatment__CHOEP:
+define final Treatment_CHOEP:
     where Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Vincristine_Treatment AND Etoposide_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CHOEP AND CHOEP_Regimen;
+    where Treatment_CHOEP AND CHOEP_Regimen;
         
         
 

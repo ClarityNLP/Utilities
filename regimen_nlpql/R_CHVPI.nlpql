@@ -86,11 +86,11 @@ define final Regimen_R_CHVPI:
 // Results
 
         
-define final Treatment__RCHVPI:
+define final Treatment_RCHVPI:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Etoposide_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCHVPI AND R_CHVPI_Regimen;
+    where Treatment_RCHVPI AND R_CHVPI_Regimen;
         
         
 

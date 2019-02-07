@@ -53,11 +53,11 @@ define final Regimen_Imatinib_LoDAC:
 // Results
 
         
-define final Treatment__ImatinibLoDAC:
+define final Treatment_ImatinibLoDAC:
     where Imatinib_Treatment AND Cytarabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ImatinibLoDAC AND Imatinib_LoDAC_Regimen;
+    where Treatment_ImatinibLoDAC AND Imatinib_LoDAC_Regimen;
         
         
 

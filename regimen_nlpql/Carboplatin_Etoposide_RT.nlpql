@@ -64,11 +64,11 @@ define final Regimen_Carboplatin_Etoposide_RT:
 // Results
 
         
-define final Treatment__CarboplatinEtoposideRT:
+define final Treatment_CarboplatinEtoposideRT:
     where Carboplatin_Treatment AND Etoposide_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinEtoposideRT AND Carboplatin_Etoposide_RT_Regimen;
+    where Treatment_CarboplatinEtoposideRT AND Carboplatin_Etoposide_RT_Regimen;
         
         
 

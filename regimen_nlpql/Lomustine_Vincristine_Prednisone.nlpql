@@ -64,11 +64,11 @@ define final Regimen_Lomustine_Vincristine_Prednisone:
 // Results
 
         
-define final Treatment__LomustineVincristinePrednisone:
+define final Treatment_LomustineVincristinePrednisone:
     where Lomustine_Treatment AND Vincristine_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LomustineVincristinePrednisone AND Lomustine_Vincristine_Prednisone_Regimen;
+    where Treatment_LomustineVincristinePrednisone AND Lomustine_Vincristine_Prednisone_Regimen;
         
         
 

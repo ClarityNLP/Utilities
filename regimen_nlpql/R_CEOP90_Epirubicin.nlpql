@@ -86,11 +86,11 @@ define final Regimen_R_CEOP90_Epirubicin:
 // Results
 
         
-define final Treatment__RCEOP90Epirubicin:
+define final Treatment_RCEOP90Epirubicin:
     where Rituximab_Treatment AND Cyclophosphamide_Treatment AND Epirubicin_Treatment AND Vincristine_Treatment AND Prednisolone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__RCEOP90Epirubicin AND R_CEOP90_Epirubicin_Regimen;
+    where Treatment_RCEOP90Epirubicin AND R_CEOP90_Epirubicin_Regimen;
         
         
 

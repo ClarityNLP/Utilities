@@ -75,11 +75,11 @@ define final Regimen_DDGP:
 // Results
 
         
-define final Treatment__DDGP:
+define final Treatment_DDGP:
     where Dexamethasone_Treatment AND Cisplatin_Treatment AND Gemcitabine_Treatment AND Pegaspargase_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DDGP AND DDGP_Regimen;
+    where Treatment_DDGP AND DDGP_Regimen;
         
         
 

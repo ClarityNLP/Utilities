@@ -53,11 +53,11 @@ define final Regimen_LoDAC_Venetoclax:
 // Results
 
         
-define final Treatment__LoDACVenetoclax:
+define final Treatment_LoDACVenetoclax:
     where Cytarabine_Treatment AND Venetoclax_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__LoDACVenetoclax AND LoDAC_Venetoclax_Regimen;
+    where Treatment_LoDACVenetoclax AND LoDAC_Venetoclax_Regimen;
         
         
 

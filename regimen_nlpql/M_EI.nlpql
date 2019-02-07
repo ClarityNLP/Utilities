@@ -64,11 +64,11 @@ define final Regimen_M_EI:
 // Results
 
         
-define final Treatment__MEI:
+define final Treatment_MEI:
     where Methotrexate_Treatment AND Etoposide_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__MEI AND M_EI_Regimen;
+    where Treatment_MEI AND M_EI_Regimen;
         
         
 

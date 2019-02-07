@@ -75,11 +75,11 @@ define final Regimen_FOLFIRI_Ziv_aflibercept:
 // Results
 
         
-define final Treatment__FOLFIRIZivaflibercept:
+define final Treatment_FOLFIRIZivaflibercept:
     where Folinicacid_Treatment AND Fluorouracil_Treatment AND Irinotecan_Treatment AND Zivaflibercept_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__FOLFIRIZivaflibercept AND FOLFIRI_Ziv_aflibercept_Regimen;
+    where Treatment_FOLFIRIZivaflibercept AND FOLFIRI_Ziv_aflibercept_Regimen;
         
         
 

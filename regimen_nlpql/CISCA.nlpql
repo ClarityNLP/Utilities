@@ -64,11 +64,11 @@ define final Regimen_CISCA:
 // Results
 
         
-define final Treatment__CISCA:
+define final Treatment_CISCA:
     where Cyclophosphamide_Treatment AND Cisplatin_Treatment AND Doxorubicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CISCA AND CISCA_Regimen;
+    where Treatment_CISCA AND CISCA_Regimen;
         
         
 

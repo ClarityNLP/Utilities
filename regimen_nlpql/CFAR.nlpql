@@ -75,11 +75,11 @@ define final Regimen_CFAR:
 // Results
 
         
-define final Treatment__CFAR:
+define final Treatment_CFAR:
     where Cyclophosphamide_Treatment AND Fludarabine_Treatment AND Alemtuzumab_Treatment AND Rituximab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CFAR AND CFAR_Regimen;
+    where Treatment_CFAR AND CFAR_Regimen;
         
         
 

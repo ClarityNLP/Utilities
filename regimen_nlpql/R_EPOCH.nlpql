@@ -97,11 +97,11 @@ define final Regimen_R_EPOCH:
 // Results
 
         
-define final Treatment__REPOCH:
+define final Treatment_REPOCH:
     where Rituximab_Treatment AND Etoposide_Treatment AND Prednisone_Treatment AND Vincristine_Treatment AND Doxorubicin_Treatment AND Cyclophosphamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__REPOCH AND R_EPOCH_Regimen;
+    where Treatment_REPOCH AND R_EPOCH_Regimen;
         
         
 

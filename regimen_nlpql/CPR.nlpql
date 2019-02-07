@@ -64,11 +64,11 @@ define final Regimen_CPR:
 // Results
 
         
-define final Treatment__CPR:
+define final Treatment_CPR:
     where Cyclophosphamide_Treatment AND Prednisone_Treatment AND Lenalidomide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CPR AND CPR_Regimen;
+    where Treatment_CPR AND CPR_Regimen;
         
         
 

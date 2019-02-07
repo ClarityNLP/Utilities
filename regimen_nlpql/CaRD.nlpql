@@ -64,11 +64,11 @@ define final Regimen_CaRD:
 // Results
 
         
-define final Treatment__CaRD:
+define final Treatment_CaRD:
     where Carfilzomib_Treatment AND Rituximab_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CaRD AND CaRD_Regimen;
+    where Treatment_CaRD AND CaRD_Regimen;
         
         
 

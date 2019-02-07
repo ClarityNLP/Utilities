@@ -53,11 +53,11 @@ define final Regimen_Bevacizumab_RT:
 // Results
 
         
-define final Treatment__BevacizumabRT:
+define final Treatment_BevacizumabRT:
     where Bevacizumab_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BevacizumabRT AND Bevacizumab_RT_Regimen;
+    where Treatment_BevacizumabRT AND Bevacizumab_RT_Regimen;
         
         
 

@@ -53,11 +53,11 @@ define final Regimen_Chlorambucil_Obinutuzumab:
 // Results
 
         
-define final Treatment__ChlorambucilObinutuzumab:
+define final Treatment_ChlorambucilObinutuzumab:
     where Obinutuzumab_Treatment AND Chlorambucil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__ChlorambucilObinutuzumab AND Chlorambucil_Obinutuzumab_Regimen;
+    where Treatment_ChlorambucilObinutuzumab AND Chlorambucil_Obinutuzumab_Regimen;
         
         
 

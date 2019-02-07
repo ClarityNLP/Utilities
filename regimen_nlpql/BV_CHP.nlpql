@@ -75,11 +75,11 @@ define final Regimen_BV_CHP:
 // Results
 
         
-define final Treatment__BVCHP:
+define final Treatment_BVCHP:
     where Brentuximabvedotin_Treatment AND Cyclophosphamide_Treatment AND Doxorubicin_Treatment AND Prednisone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BVCHP AND BV_CHP_Regimen;
+    where Treatment_BVCHP AND BV_CHP_Regimen;
         
         
 

@@ -64,11 +64,11 @@ define final Regimen_Cisplatin_Gemcitabine_RT:
 // Results
 
         
-define final Treatment__CisplatinGemcitabineRT:
+define final Treatment_CisplatinGemcitabineRT:
     where Cisplatin_Treatment AND Gemcitabine_Treatment AND Externalbeamradiotherapy_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CisplatinGemcitabineRT AND Cisplatin_Gemcitabine_RT_Regimen;
+    where Treatment_CisplatinGemcitabineRT AND Cisplatin_Gemcitabine_RT_Regimen;
         
         
 

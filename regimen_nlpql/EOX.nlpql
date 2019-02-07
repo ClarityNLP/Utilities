@@ -64,11 +64,11 @@ define final Regimen_EOX:
 // Results
 
         
-define final Treatment__EOX:
+define final Treatment_EOX:
     where Epirubicin_Treatment AND Oxaliplatin_Treatment AND Capecitabine_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__EOX AND EOX_Regimen;
+    where Treatment_EOX AND EOX_Regimen;
         
         
 

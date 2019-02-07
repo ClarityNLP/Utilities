@@ -53,11 +53,11 @@ define final Regimen_Brentuximab_vedotin_Nivolumab:
 // Results
 
         
-define final Treatment__BrentuximabvedotinNivolumab:
+define final Treatment_BrentuximabvedotinNivolumab:
     where Brentuximabvedotin_Treatment AND Nivolumab_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BrentuximabvedotinNivolumab AND Brentuximab_vedotin_Nivolumab_Regimen;
+    where Treatment_BrentuximabvedotinNivolumab AND Brentuximab_vedotin_Nivolumab_Regimen;
         
         
 

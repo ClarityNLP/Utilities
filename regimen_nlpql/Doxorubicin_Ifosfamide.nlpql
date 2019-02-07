@@ -53,11 +53,11 @@ define final Regimen_Doxorubicin_Ifosfamide:
 // Results
 
         
-define final Treatment__DoxorubicinIfosfamide:
+define final Treatment_DoxorubicinIfosfamide:
     where Doxorubicin_Treatment AND Ifosfamide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__DoxorubicinIfosfamide AND Doxorubicin_Ifosfamide_Regimen;
+    where Treatment_DoxorubicinIfosfamide AND Doxorubicin_Ifosfamide_Regimen;
         
         
 

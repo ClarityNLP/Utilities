@@ -53,11 +53,11 @@ define final Regimen_Bortezomib_Melphalan_then_auto_HSCT:
 // Results
 
         
-define final Treatment__BortezomibMelphalanthenautoHSCT:
+define final Treatment_BortezomibMelphalanthenautoHSCT:
     where Bortezomib_Treatment AND Melphalan_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__BortezomibMelphalanthenautoHSCT AND Bortezomib_Melphalan_then_auto_HSCT_Regimen;
+    where Treatment_BortezomibMelphalanthenautoHSCT AND Bortezomib_Melphalan_then_auto_HSCT_Regimen;
         
         
 

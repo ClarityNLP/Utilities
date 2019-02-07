@@ -53,18 +53,18 @@ define final Regimen_Carboplatin_Etoposide:
 // Results
 
         
-define final Treatment__CarboplatinEtoposide:
+define final Treatment_CarboplatinEtoposide:
     where Carboplatin_Treatment AND Etoposide_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CarboplatinEtoposide AND Carboplatin_Etoposide_Regimen;
+    where Treatment_CarboplatinEtoposide AND Carboplatin_Etoposide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Non-small_cell_lung_cancer, Small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Non-small_cell_lung_cancer
 
 
 

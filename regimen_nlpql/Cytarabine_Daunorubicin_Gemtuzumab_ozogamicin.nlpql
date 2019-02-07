@@ -64,11 +64,11 @@ define final Regimen_Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin:
 // Results
 
         
-define final Treatment__CytarabineDaunorubicinGemtuzumabozogamicin:
+define final Treatment_CytarabineDaunorubicinGemtuzumabozogamicin:
     where Cytarabine_Treatment AND Daunorubicin_Treatment AND Gemtuzumabozogamicin_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CytarabineDaunorubicinGemtuzumabozogamicin AND Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin_Regimen;
+    where Treatment_CytarabineDaunorubicinGemtuzumabozogamicin AND Cytarabine_Daunorubicin_Gemtuzumab_ozogamicin_Regimen;
         
         
 

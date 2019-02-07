@@ -64,11 +64,11 @@ define final Regimen_CLF:
 // Results
 
         
-define final Treatment__CLF:
+define final Treatment_CLF:
     where Cisplatin_Treatment AND Folinicacid_Treatment AND Fluorouracil_Treatment;
           
 define final MatchedAllResults:
-    where Treatment__CLF AND CLF_Regimen;
+    where Treatment_CLF AND CLF_Regimen;
         
         
 
