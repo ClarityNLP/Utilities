@@ -202,7 +202,7 @@ def safe_name(name, no_punc=False):
 
 
 def load_thesaurus():
-    df = pd.read_csv('./nci_thesaurus.txt', sep='\t', header=None,
+    df = pd.read_csv('./cancer/nci_thesaurus.txt', sep='\t', header=None,
                      names=["code", "conceptname", "parents", "synonyms", "definition", "displayname", "conceptstatus",
                             "semantictype"])
     oncology_map = dict()
