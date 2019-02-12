@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -97,7 +96,7 @@ define final MatchedAllResults:
 // Comments
 /***
 
-Known regimen for: Primary_mediastinal_B-cell_lymphoma, Waldenstrom_macroglobulinemia, Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, HIV-associated_lymphoma, Post-transplant_lymphoproliferative_disorder
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Post-transplant_lymphoproliferative_disorder, Follicular_lymphoma, Primary_mediastinal_B-cell_lymphoma, Marginal_zone_lymphoma, HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

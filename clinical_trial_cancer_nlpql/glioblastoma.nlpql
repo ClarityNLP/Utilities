@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_glioblastoma:[
-    "glioblastoma multiforme", "glioblastoma", "gbm", "grade iv childhood astrocytic tumor", "grade iv astrocytic neoplasm", "grade iv childhood astrocytic neoplasm", "spongioblastoma multiforme", "who grade iv glioma", "grade iv pediatric astrocytic tumor", "grade iv astrocytoma", "gbm (glioblastoma)", "adult glioblastoma", "grade iv adult astrocytic tumor", "grade iv adult astrocytic neoplasm", "mouse glioblastoma", "grade iv astrocytic tumor", "childhood glioblastoma multiforme", "adult glioblastoma multiforme", "childhood glioblastoma", "pediatric glioblastoma multiforme", "grade iv pediatric astrocytic neoplasm"
+    "grade iv childhood astrocytic tumor", "spongioblastoma multiforme", "adult glioblastoma multiforme", "grade iv astrocytic neoplasm", "grade iv pediatric astrocytic neoplasm", "who grade iv glioma", "pediatric glioblastoma multiforme", "gbm", "childhood glioblastoma multiforme", "mouse glioblastoma", "glioblastoma", "grade iv adult astrocytic tumor", "grade iv astrocytoma", "grade iv childhood astrocytic neoplasm", "grade iv astrocytic tumor", "gbm (glioblastoma)", "glioblastoma multiforme", "adult glioblastoma", "grade iv adult astrocytic neoplasm", "grade iv pediatric astrocytic tumor", "childhood glioblastoma"
 ];
 
 define final Condition_glioblastoma:

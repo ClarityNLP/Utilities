@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_acute_promyelocytic_leukemia:[
-    "aml with t(15;17)(q22;q12)", "promyelocytic leukemia", "acute promyelocytic leukemia with t(15;17)(q22;q12); pml-rara", "fab m3", "acute promyelocytic leukemia", "acute promyelocytic leukemia with t(15;17)(q22;q12); pml/rara", "apml", "apl", "acute promyelocytic leukemia with pml-rara", "apml - acute promyelocytic leukemia"
+    "acute promyelocytic leukemia with t(15;17)(q22;q12); pml/rara", "apml", "aml with t(15;17)(q22;q12)", "acute promyelocytic leukemia with t(15;17)(q22;q12); pml-rara", "apl", "acute promyelocytic leukemia with pml-rara", "acute promyelocytic leukemia", "promyelocytic leukemia", "apml - acute promyelocytic leukemia", "fab m3"
 ];
 
 define final Condition_acute_promyelocytic_leukemia:

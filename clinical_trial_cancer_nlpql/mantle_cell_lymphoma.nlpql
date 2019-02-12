@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_mantle_cell_lymphoma:[
-    "classical mantle cell lymphoma", "mcl", "mantle zone lymphoma", "mantle cell lymphoma"
+    "mantle zone lymphoma", "classical mantle cell lymphoma", "mcl", "mantle cell lymphoma"
 ];
 
 define final Condition_mantle_cell_lymphoma:

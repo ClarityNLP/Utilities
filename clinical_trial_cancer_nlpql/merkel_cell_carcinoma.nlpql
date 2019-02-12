@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_merkel_cell_carcinoma:[
-    "trabecular skin carcinoma", "merkel cell tumor", "cutaneous neuroendocrine carcinoma", "merkel cell carcinoma", "neuroendocrine skin carcinoma", "trabecular cancer", "neuroendocrine carcinoma of the skin", "cutaneous apudoma", "merkel cell cancer", "neuroendocrine carcinoma of skin"
+    "trabecular skin carcinoma", "merkel cell cancer", "merkel cell carcinoma", "neuroendocrine carcinoma of the skin", "cutaneous apudoma", "trabecular cancer", "neuroendocrine carcinoma of skin", "neuroendocrine skin carcinoma", "cutaneous neuroendocrine carcinoma", "merkel cell tumor"
 ];
 
 define final Condition_merkel_cell_carcinoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_transformed_lymphoma:[
-    "recurrent transformed non-hodgkin lymphoma", "transformed recurrent non-hodgkin's lymphoma", "transformed recurrent non-hodgkin lymphoma", "transformed lymphoma", "non-hodgkin's lymphoma transformed recurrent", "nonhodgkin's lymphoma transformed recurrent"
+    "nonhodgkin's lymphoma transformed recurrent", "transformed recurrent non-hodgkin's lymphoma", "transformed lymphoma", "recurrent transformed non-hodgkin lymphoma", "transformed recurrent non-hodgkin lymphoma", "non-hodgkin's lymphoma transformed recurrent"
 ];
 
 define final Condition_transformed_lymphoma:

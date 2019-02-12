@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_diffuse_large_b_cell_lymphoma:[
-    "childhood diffuse large b-cell lymphoma", "pediatric diffuse large b cell lymphoma", "diffuse large b-cell lymphoma", "adult diffuse large b-cell lymphoma", "dlbcl", "childhood dlbcl"
+    "adult diffuse large b-cell lymphoma", "pediatric diffuse large b cell lymphoma", "dlbcl", "childhood diffuse large b-cell lymphoma", "childhood dlbcl", "diffuse large b-cell lymphoma"
 ];
 
 define final Condition_diffuse_large_b_cell_lymphoma:

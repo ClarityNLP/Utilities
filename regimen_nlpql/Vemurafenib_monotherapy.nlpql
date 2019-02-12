@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Vemurafenib_monotherapy:
 // Comments
 /***
 
-Known regimen for: BRAF, Melanoma_BRAF-mutated, Thyroid_cancer_BRAF-mutated, Erdheim-Chester_disease, Hairy_cell_leukemia, Langerhans_cell_histiocytosis, Multiple_myeloma_relapsedrefractory
+Known regimen for: Hairy_cell_leukemia, Langerhans_cell_histiocytosis, Melanoma_BRAF-mutated, Thyroid_cancer_BRAF-mutated, Multiple_myeloma_relapsedrefractory, Erdheim-Chester_disease, BRAF
 
 
 

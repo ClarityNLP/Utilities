@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_large_granular_lymphocytic_leukemia:[
-    "large cell granular lymphoid leukemia", "t-cell large gran. lymph. leuk.", "large cell granular lymphogenous leukemia", "t-cell large granular lymphocyte leukemia", "t-gamma lymphoproliferative disorder", "lgll", "leukemia, large granular lymphocytic, malignant", "t-cell large granular lymphocytic leukemia", "tgamma large granular lymphocyte leukemia", "large granular lymphocytic leukemia", "t gamma lymphoproliferative disorder", "t-lgl leukemia", "large granular lymphocytosis"
+    "lgll", "large cell granular lymphogenous leukemia", "t-lgl leukemia", "leukemia, large granular lymphocytic, malignant", "large granular lymphocytosis", "large granular lymphocytic leukemia", "t-cell large gran. lymph. leuk.", "large cell granular lymphoid leukemia", "t gamma lymphoproliferative disorder", "t-gamma lymphoproliferative disorder", "tgamma large granular lymphocyte leukemia", "t-cell large granular lymphocyte leukemia", "t-cell large granular lymphocytic leukemia"
 ];
 
 define final Condition_large_granular_lymphocytic_leukemia:

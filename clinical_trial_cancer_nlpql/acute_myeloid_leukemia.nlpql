@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_acute_myeloid_leukemia:[
-    "acute myeloid leukemia", "aml", "acute granulocytic leukemia", "aml - acute myeloid leukemia", "acute myeloid leukemia nos", "aml, nos", "acute myeloblastic leukemia", "acute myeloid leukemia, nos", "anll", "acute myeloid leukemia not otherwise specified", "acute myeloid leukemia not otherwise categorized", "acute myelocytic leukemia", "acute myelogenous leukemia", "acute nonlymphocytic leukemia", "hematopoeitic - acute myleogenous leukemia (aml)", "acute myelogenous leukemias", "acute myeloid leukemia (aml)"
+    "acute myelogenous leukemias", "acute myeloid leukemia nos", "acute myeloid leukemia not otherwise categorized", "acute granulocytic leukemia", "hematopoeitic - acute myleogenous leukemia (aml)", "aml", "acute myeloid leukemia", "acute myeloblastic leukemia", "acute myelogenous leukemia", "aml, nos", "aml - acute myeloid leukemia", "acute myeloid leukemia, nos", "acute myeloid leukemia not otherwise specified", "acute myelocytic leukemia", "acute nonlymphocytic leukemia", "anll", "acute myeloid leukemia (aml)"
 ];
 
 define final Condition_acute_myeloid_leukemia:

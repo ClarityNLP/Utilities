@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_erdheim_chester_disease:[
-    "polyostotic sclerosing histiocytosis", "erdheim-chester disease", "lipogranulomatosis"
+    "lipogranulomatosis", "erdheim-chester disease", "polyostotic sclerosing histiocytosis"
 ];
 
 define final Condition_erdheim_chester_disease:

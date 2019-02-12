@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Cladribine_monotherapy:
 // Comments
 /***
 
-Known regimen for: Mantle_cell_lymphoma, Systemic_mastocytosis, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Hairy_cell_leukemia, Langerhans_cell_histiocytosis
+Known regimen for: Hairy_cell_leukemia, Mantle_cell_lymphoma, Langerhans_cell_histiocytosis, Systemic_mastocytosis, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma
 
 
 

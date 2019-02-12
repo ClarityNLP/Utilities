@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_chronic_myelomonocytic_leukemia:[
-    "juvenile chronic myeloid leukemia", "jmml", "jcml", "chronic myelomonocytic leukemia (cmml)", "juvenile chronic myelogenous leukemia", "cmml", "chronic myelomonocytic leukemia", "juvenile myelomonocytic leukemia"
+    "jmml", "juvenile chronic myelogenous leukemia", "jcml", "chronic myelomonocytic leukemia (cmml)", "chronic myelomonocytic leukemia", "juvenile chronic myeloid leukemia", "juvenile myelomonocytic leukemia", "cmml"
 ];
 
 define final Condition_chronic_myelomonocytic_leukemia:

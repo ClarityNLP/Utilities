@@ -1,6 +1,6 @@
 
 // Phenotype library name
-phenotype "Regimen for CRd (Cyclophosphamide)" version "1";
+phenotype "Regimen for CRD (Cyclophosphamide)" version "1";
 
 // Phenotype library description 
 description "Generated query for cancer treatment based on https://hemonc.org/wiki/Main_Page";
@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -50,13 +49,13 @@ define  Dexamethasone_Treatment:
 
 // Regimen names
 
-termset Regimen_Terms_CRd_Cyclophosphamide:[
-    "CRd", "CRd (Cyclophosphamide)", "LDC", "RdC"
+termset Regimen_Terms_CRD_Cyclophosphamide:[
+    "CRD", "CRD (Cyclophosphamide)"
 ];
 
-define final Regimen_CRd_Cyclophosphamide:
+define final Regimen_CRD_Cyclophosphamide:
   Clarity.ProviderAssertion({
-    termset:[Regimen_Terms_CRd_Cyclophosphamide],
+    termset:[Regimen_Terms_CRD_Cyclophosphamide],
     documentset:[Docs]
    }); 
 
@@ -64,18 +63,18 @@ define final Regimen_CRd_Cyclophosphamide:
 // Results
 
         
-define final Treatment_CRdCyclophosphamide:
+define final Treatment_CRDCyclophosphamide:
     where Cyclophosphamide_Treatment AND Lenalidomide_Treatment AND Dexamethasone_Treatment;
           
 define final MatchedAllResults:
-    where Treatment_CRdCyclophosphamide AND CRd_Cyclophosphamide_Regimen;
+    where Treatment_CRDCyclophosphamide AND CRD_Cyclophosphamide_Regimen;
         
         
 
 // Comments
 /***
 
-Known regimen for: Light-chain_(AL)_amyloidosis
+Known regimen for: Multiple_myeloma_relapsedrefractory
 
 
 

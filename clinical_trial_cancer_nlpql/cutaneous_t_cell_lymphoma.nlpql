@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cutaneous_t_cell_lymphoma:[
-    "cutaneous t-cell lymphoma", "primary cutaneous t-cell non-hodgkin lymphoma", "ctcl", "cutaneous t-cell non-hodgkin lymphoma", "cutaneous t cell lymphoma", "pctcl", "skin t-cell non-hodgkin's lymphoma", "t-cell non-hodgkin's lymphoma of the skin", "primary cutaneous t-cell non-hodgkin's lymphoma", "cutaneous t-cell non-hodgkin's lymphoma", "t-cell non-hodgkin's lymphoma of skin"
+    "primary cutaneous t-cell non-hodgkin lymphoma", "primary cutaneous t-cell non-hodgkin's lymphoma", "cutaneous t cell lymphoma", "pctcl", "cutaneous t-cell lymphoma", "skin t-cell non-hodgkin's lymphoma", "t-cell non-hodgkin's lymphoma of skin", "t-cell non-hodgkin's lymphoma of the skin", "cutaneous t-cell non-hodgkin lymphoma", "ctcl", "cutaneous t-cell non-hodgkin's lymphoma"
 ];
 
 define final Condition_cutaneous_t_cell_lymphoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_testicular_cancer:[
-    "testicular cancer (excluding germ cell or trophoblastic cancer)", "malignant testicular germ cell neoplasm", "malignant neoplasm of the testis", "testicular ca. (no germ/tropho.)", "testicular germ cell cancer", "malignant testicular neoplasm", "malignant germ cell tumor of testis", "testicular cancer", "malignant germ cell neoplasm of the testis", "malignant germ cell tumor of the testis", "malignant testicular tumor", "malignant neoplasm of testis", "malignant testicular germ cell tumor", "malignant germ cell neoplasm of testis", "malignant tumor of the testis", "malignant tumor of testis"
+    "malignant germ cell neoplasm of testis", "malignant testicular neoplasm", "malignant neoplasm of testis", "malignant tumor of testis", "testicular cancer (excluding germ cell or trophoblastic cancer)", "malignant tumor of the testis", "testicular ca. (no germ/tropho.)", "malignant germ cell neoplasm of the testis", "malignant testicular germ cell neoplasm", "malignant germ cell tumor of testis", "malignant neoplasm of the testis", "testicular germ cell cancer", "testicular cancer", "malignant germ cell tumor of the testis", "malignant testicular tumor", "malignant testicular germ cell tumor"
 ];
 
 define final Condition_testicular_cancer:

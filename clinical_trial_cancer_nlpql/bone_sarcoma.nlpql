@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_bone_sarcoma:[
-    "sarcoma of the bone", "osseous sarcoma", "skeletal sarcoma", "bone sarcoma", "sarcoma of bone"
+    "skeletal sarcoma", "sarcoma of bone", "sarcoma of the bone", "bone sarcoma", "osseous sarcoma"
 ];
 
 define final Condition_bone_sarcoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_anaplastic_large_cell_lymphoma:[
-    "ki-1+ alcl", "childhood cd30+ anaplastic large cell lymphoma", "pediatric k-1+ anaplastic large cell lymphoma", "ki-1+ anaplastic large cell lymphoma", "alcl", "cd30 positive anaplastic large cell lymphoma", "childhood anaplastic large cell lymphoma", "pediatric anaplastic large cell lymphoma", "pediatric cd30+ anaplastic large cell lymphoma", "childhood k-1+ anaplastic large cell lymphoma", "adult anaplastic large cell lymphoma", "ki-1 lymphoma", "anaplastic large cell lymphoma", "adult cd30+ anaplastic large cell lymphoma", "adult k-1+ anaplastic large cell lymphoma"
+    "ki-1+ alcl", "ki-1 lymphoma", "ki-1+ anaplastic large cell lymphoma", "anaplastic large cell lymphoma", "pediatric anaplastic large cell lymphoma", "cd30 positive anaplastic large cell lymphoma", "childhood k-1+ anaplastic large cell lymphoma", "childhood cd30+ anaplastic large cell lymphoma", "pediatric k-1+ anaplastic large cell lymphoma", "adult anaplastic large cell lymphoma", "adult k-1+ anaplastic large cell lymphoma", "alcl", "pediatric cd30+ anaplastic large cell lymphoma", "adult cd30+ anaplastic large cell lymphoma", "childhood anaplastic large cell lymphoma"
 ];
 
 define final Condition_anaplastic_large_cell_lymphoma:

@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Imatinib_monotherapy:
 // Comments
 /***
 
-Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Systemic_mastocytosis, Hypereosinophilic_syndrome, Chronic_myelogenous_leukemia, Gastrointestinal_stromal_tumor, Melanoma, Soft_tissue_sarcoma
+Known regimen for: Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive, Gastrointestinal_stromal_tumor, Hypereosinophilic_syndrome, Chronic_myelogenous_leukemia, Melanoma, Soft_tissue_sarcoma
 
 
 

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_pheochromocytoma:[
-    "chromaffin paraganglioma of the adrenal gland", "adrenal pheochromocytoma", "adrenal gland chromaffinoma", "pheochromocytoma", "intraadrenal paraganglioma", "adrenal medullary paraganglioma", "pheochromocytoma (adrenal)", "pcc", "adrenal gland paraganglioma", "adrenal gland pheochromocytoma", "adrenal medullary pheochromocytoma", "adrenal gland chromaffin paraganglioma"
+    "adrenal medullary pheochromocytoma", "adrenal gland chromaffinoma", "adrenal gland chromaffin paraganglioma", "adrenal medullary paraganglioma", "pheochromocytoma (adrenal)", "intraadrenal paraganglioma", "pcc", "adrenal pheochromocytoma", "chromaffin paraganglioma of the adrenal gland", "pheochromocytoma", "adrenal gland pheochromocytoma", "adrenal gland paraganglioma"
 ];
 
 define final Condition_pheochromocytoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_hepatocellular_carcinoma:[
-    "hcc", "carcinoma of the liver cells", "liver cell carcinoma", "hepatocellular cancer", "hepatocellular carcinoma of the mouse", "carcinoma, hepatocellular, malignant", "hepatocellular carcinoma", "hepatoma", "primary carcinoma of liver cells", "primary carcinoma of the liver cells", "rat hepatocellular carcinoma", "carcinoma of liver cells", "carcinoma, hepatocellular (reni)", "liver cell cancer (hepatocellular carcinoma)"
+    "hepatocellular carcinoma of the mouse", "liver cell carcinoma", "hepatoma", "primary carcinoma of the liver cells", "hcc", "carcinoma, hepatocellular (reni)", "primary carcinoma of liver cells", "carcinoma, hepatocellular, malignant", "hepatocellular carcinoma", "liver cell cancer (hepatocellular carcinoma)", "hepatocellular cancer", "carcinoma of liver cells", "carcinoma of the liver cells", "rat hepatocellular carcinoma"
 ];
 
 define final Condition_hepatocellular_carcinoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cns_leukemia:[
-    "leukemia of the central nervous system", "leukemia of cns", "central nervous system leukemia", "cns leukemia", "leukemia of the cns", "leukemia of central nervous system"
+    "cns leukemia", "leukemia of the central nervous system", "central nervous system leukemia", "leukemia of cns", "leukemia of the cns", "leukemia of central nervous system"
 ];
 
 define final Condition_cns_leukemia:

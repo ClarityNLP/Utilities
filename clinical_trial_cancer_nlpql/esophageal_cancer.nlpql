@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_esophageal_cancer:[
-    "esophagus carcinoma", "carcinoma of esophagus", "esophageal cancer", "esophageal cancer, nos", "esophageal carcinoma", "carcinoma of the esophagus", "childhood esophageal carcinoma", "cancer of the esophagus", "cancer of esophagus"
+    "esophageal cancer, nos", "cancer of esophagus", "childhood esophageal carcinoma", "esophageal carcinoma", "carcinoma of the esophagus", "carcinoma of esophagus", "esophageal cancer", "esophagus carcinoma", "cancer of the esophagus"
 ];
 
 define final Condition_esophageal_cancer:

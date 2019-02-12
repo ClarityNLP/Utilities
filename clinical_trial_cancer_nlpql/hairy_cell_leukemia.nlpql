@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_hairy_cell_leukemia:[
-    "hcl", "leukemic reticuloendotheliosis", "hairy cell leukemia"
+    "leukemic reticuloendotheliosis", "hairy cell leukemia", "hcl"
 ];
 
 define final Condition_hairy_cell_leukemia:

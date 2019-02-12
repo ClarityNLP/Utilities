@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_adrenocortical_carcinoma:[
-    "carcinoma of adrenal cortex", "adrenocortical cancer", "carcinoma of the adrenal cortex", "adrenocortical carcinoma, nos", "cancer of the adrenal cortex", "adrenal cortex carcinoma", "adrenocortical carcinoma", "cortical cell carcinoma", "adrenal cortex cancer", "adrenal cortical carcinoma", "adrenal cortical adenocarcinoma", "carcinoma, adrenocortical, malignant", "adenocarcinoma, adrenocortical, malignant", "adrenal cortex adenocarcinoma"
+    "adrenal cortex adenocarcinoma", "carcinoma of adrenal cortex", "adrenocortical carcinoma", "carcinoma, adrenocortical, malignant", "cancer of the adrenal cortex", "adrenocortical carcinoma, nos", "carcinoma of the adrenal cortex", "adrenal cortex cancer", "adrenal cortical carcinoma", "adenocarcinoma, adrenocortical, malignant", "adrenal cortex carcinoma", "cortical cell carcinoma", "adrenocortical cancer", "adrenal cortical adenocarcinoma"
 ];
 
 define final Condition_adrenocortical_carcinoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_melanoma:[
-    "malignant melanoma", "mouse melanoma", "melanoma, malignant", "melanoma"
+    "melanoma, malignant", "melanoma", "mouse melanoma", "malignant melanoma"
 ];
 
 define final Condition_melanoma:

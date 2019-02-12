@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_soft_tissue_sarcoma:[
-    "adult soft tissue sarcoma", "sarcoma of the soft tissue", "non-rhabdomyosarcoma soft tissue sarcoma, nos", "connective tissue sarcoma", "non-metastatic childhood soft tissue sarcoma", "soft tissue sarcoma", "childhood soft tissue sarcoma", "adult sarcoma of soft tissue", "childhood sarcoma of soft tissue", "pediatric sarcoma of soft tissue", "non-rhabdo. soft tissue sarcoma", "sarcoma of soft tissue", "pediatric sarcoma of the soft tissue", "childhood sarcoma of the soft tissue", "adult sarcoma of the soft tissue", "pediatric soft tissue sarcoma"
+    "adult sarcoma of soft tissue", "connective tissue sarcoma", "childhood soft tissue sarcoma", "childhood sarcoma of the soft tissue", "childhood sarcoma of soft tissue", "pediatric soft tissue sarcoma", "soft tissue sarcoma", "pediatric sarcoma of soft tissue", "sarcoma of soft tissue", "non-rhabdomyosarcoma soft tissue sarcoma, nos", "pediatric sarcoma of the soft tissue", "sarcoma of the soft tissue", "adult soft tissue sarcoma", "non-metastatic childhood soft tissue sarcoma", "non-rhabdo. soft tissue sarcoma", "adult sarcoma of the soft tissue"
 ];
 
 define final Condition_soft_tissue_sarcoma:

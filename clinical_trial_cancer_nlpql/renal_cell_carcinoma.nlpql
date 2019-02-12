@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_renal_cell_carcinoma:[
-    "adenocarcinoma of kidney", "renal cell cancer", "kidney adenocarcinoma", "carcinoma, renal cell, malignant", "renal cell carcinoma, stage unspecified", "adenocarcinoma of the kidney", "renal cell adenocarcinoma", "renal cell carcinoma", "renal cell carcinoma, nos", "rcc"
+    "renal cell carcinoma, stage unspecified", "adenocarcinoma of the kidney", "rcc", "renal cell carcinoma, nos", "renal cell cancer", "renal cell adenocarcinoma", "renal cell carcinoma", "carcinoma, renal cell, malignant", "adenocarcinoma of kidney", "kidney adenocarcinoma"
 ];
 
 define final Condition_renal_cell_carcinoma:

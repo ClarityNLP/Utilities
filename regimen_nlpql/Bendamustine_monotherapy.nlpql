@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Bendamustine_monotherapy:
 // Comments
 /***
 
-Known regimen for: Follicular_lymphoma, Hodgkin_lymphoma, Peripheral_T-cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Cutaneous_T-cell_lymphoma, Transformed_lymphoma, Autologous_HSCT, Small_cell_lung_cancer
+Known regimen for: Small_cell_lung_cancer, Hodgkin_lymphoma, Peripheral_T-cell_lymphoma, Autologous_HSCT, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Cutaneous_T-cell_lymphoma, Transformed_lymphoma
 
 
 

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_follicular_lymphoma:[
-    "follicular non-hodgkin's lymphoma", "follicular centre cell lymphoma", "follicular non-hodgkin lymphoma", "follicular lymphoma", "follicle center lymphoma", "lymphoma, follicular, malignant", "lymphoma, follicular centre cell"
+    "follicular lymphoma", "lymphoma, follicular centre cell", "lymphoma, follicular, malignant", "follicle center lymphoma", "follicular non-hodgkin lymphoma", "follicular centre cell lymphoma", "follicular non-hodgkin's lymphoma"
 ];
 
 define final Condition_follicular_lymphoma:

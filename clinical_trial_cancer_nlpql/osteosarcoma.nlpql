@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_osteosarcoma:[
-    "mouse osteosarcoma", "osteosarcoma (reni)", "childhood osteosarcoma", "osteogenic sarcoma", "osteosarcoma, malignant", "pediatric osteosarcoma", "osteosarcoma", "rat osteosarcoma", "childhood osteogenic sarcoma"
+    "osteosarcoma", "childhood osteosarcoma", "rat osteosarcoma", "mouse osteosarcoma", "childhood osteogenic sarcoma", "pediatric osteosarcoma", "osteosarcoma, malignant", "osteosarcoma (reni)", "osteogenic sarcoma"
 ];
 
 define final Condition_osteosarcoma:

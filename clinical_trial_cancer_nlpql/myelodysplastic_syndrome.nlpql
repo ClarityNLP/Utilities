@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_myelodysplastic_syndrome:[
-    "dysmyelopoietic syndrome", "myelodysplastic syndrome/neoplasm", "myelodysplastic syndrome, nos", "myelodysplasia", "myelodysplastic syndrome", "adult myelodysplastic syndrome", "preleukemia", "myelodysplastic neoplasm", "childhood mds", "smoldering leukemia", "hematopoeitic - myelodysplastic syndrome (mds)", "childhood myelodysplastic syndrome", "mds", "oligoblastic leukemia", "myelodysplastic syndromes"
+    "myelodysplastic syndrome", "myelodysplastic syndrome/neoplasm", "mds", "childhood myelodysplastic syndrome", "hematopoeitic - myelodysplastic syndrome (mds)", "smoldering leukemia", "myelodysplastic syndromes", "oligoblastic leukemia", "adult myelodysplastic syndrome", "myelodysplastic syndrome, nos", "preleukemia", "childhood mds", "dysmyelopoietic syndrome", "myelodysplasia", "myelodysplastic neoplasm"
 ];
 
 define final Condition_myelodysplastic_syndrome:

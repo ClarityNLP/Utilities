@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Cyclosporine_monotherapy:
 // Comments
 /***
 
-Known regimen for: Aplastic_anemia, Castleman_disease, Myelodysplastic_syndrome, Immune_thrombocytopenia_(ITP)
+Known regimen for: Castleman_disease, Myelodysplastic_syndrome, Immune_thrombocytopenia_(ITP), Aplastic_anemia
 
 
 

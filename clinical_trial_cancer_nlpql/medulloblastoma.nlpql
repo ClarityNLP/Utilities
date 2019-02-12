@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_medulloblastoma:[
-    "medulloblastomas", "medulloblastoma", "mouse medulloblastoma", "adult medulloblastoma", "pediatric medulloblastoma", "childhood medulloblastoma", "medulloblastoma (reni)", "medulloblastoma, malignant", "rat medulloblastoma"
+    "medulloblastoma (reni)", "rat medulloblastoma", "medulloblastoma", "adult medulloblastoma", "medulloblastoma, malignant", "childhood medulloblastoma", "pediatric medulloblastoma", "mouse medulloblastoma", "medulloblastomas"
 ];
 
 define final Condition_medulloblastoma:

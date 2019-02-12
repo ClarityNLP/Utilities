@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_bladder_cancer:[
-    "cancer of bladder", "cancer of the urinary bladder", "bladder carcinoma", "cancer of urinary bladder", "urinary bladder cancer", "carcinoma of bladder", "urinary bladder carcinoma", "bladder cancer", "childhood bladder carcinoma", "carcinoma of the bladder", "carcinoma of urinary bladder", "cancer of the bladder", "carcinoma of the urinary bladder"
+    "carcinoma of bladder", "bladder cancer", "carcinoma of the bladder", "cancer of the bladder", "urinary bladder carcinoma", "cancer of bladder", "carcinoma of urinary bladder", "cancer of the urinary bladder", "carcinoma of the urinary bladder", "urinary bladder cancer", "bladder carcinoma", "childhood bladder carcinoma", "cancer of urinary bladder"
 ];
 
 define final Condition_bladder_cancer:

@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Ifosfamide_monotherapy:
 // Comments
 /***
 
-Known regimen for: Diffuse_large_B-cell_lymphoma, Small_cell_lung_cancer, Endometrial_cancer, Soft_tissue_sarcoma, Cervical_cancer, Thymoma
+Known regimen for: Endometrial_cancer, Small_cell_lung_cancer, Thymoma, Cervical_cancer, Diffuse_large_B-cell_lymphoma, Soft_tissue_sarcoma
 
 
 

@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Bortezomib_monotherapy:
 // Comments
 /***
 
-Known regimen for: Waldenstrom_macroglobulinemia, Multiple_myeloma_consolidation_and_maintenance, Follicular_lymphoma, Mantle_cell_lymphoma, Marginal_zone_lymphoma, Castleman_disease, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Mantle_cell_lymphoma, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis, Waldenstrom_macroglobulinemia, Follicular_lymphoma, Castleman_disease, Marginal_zone_lymphoma, Multiple_myeloma_consolidation_and_maintenance
 
 
 

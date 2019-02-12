@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_penile_cancer:[
-    "penile cancer, nos", "carcinoma of penis", "cancer of penis", "penile carcinoma", "carcinoma of the penis", "adult penile carcinoma", "cancer of the penis", "penile cancer"
+    "carcinoma of the penis", "penile cancer, nos", "cancer of penis", "cancer of the penis", "carcinoma of penis", "penile cancer", "adult penile carcinoma", "penile carcinoma"
 ];
 
 define final Condition_penile_cancer:

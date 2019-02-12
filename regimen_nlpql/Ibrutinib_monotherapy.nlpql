@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Ibrutinib_monotherapy:
 // Comments
 /***
 
-Known regimen for: Waldenstrom_macroglobulinemia, Follicular_lymphoma, Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Graft_versus_host_disease_(GVHD)
+Known regimen for: Mantle_cell_lymphoma, Waldenstrom_macroglobulinemia, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Graft_versus_host_disease_(GVHD)
 
 
 

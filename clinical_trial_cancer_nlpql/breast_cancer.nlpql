@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_breast_cancer:[
-    "cancer, breast", "mammary carcinoma", "cancer of the breast", "carcinoma of the breast", "carcinoma of breast", "cancer of breast", "childhood breast carcinoma", "breast cancer, nos", "breast carcinoma", "breast cancer"
+    "breast cancer, nos", "cancer, breast", "carcinoma of breast", "carcinoma of the breast", "breast cancer", "breast carcinoma", "childhood breast carcinoma", "mammary carcinoma", "cancer of the breast", "cancer of breast"
 ];
 
 define final Condition_breast_cancer:

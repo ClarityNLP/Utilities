@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Alemtuzumab_monotherapy:
 // Comments
 /***
 
-Known regimen for: Waldenstrom_macroglobulinemia, Myelodysplastic_syndrome, Adult_T-cell_leukemia-lymphoma, Hypereosinophilic_syndrome, Chronic_lymphocytic_leukemia_(CLLSLL), Cutaneous_T-cell_lymphoma, Autoimmune_cytopenias
+Known regimen for: Myelodysplastic_syndrome, Adult_T-cell_leukemia-lymphoma, Waldenstrom_macroglobulinemia, Hypereosinophilic_syndrome, Autoimmune_cytopenias, Chronic_lymphocytic_leukemia_(CLLSLL), Cutaneous_T-cell_lymphoma
 
 
 

@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Temozolomide_monotherapy:
 // Comments
 /***
 
-Known regimen for: CNS_lymphoma, Glioblastoma, Neuroendocrine_tumors, Myelodysplastic_syndrome, Pancreatic_NET, Low-grade_glioma, Acute_myeloid_leukemia, Melanoma, Soft_tissue_sarcoma, Small_cell_lung_cancer, Anaplastic_glioma
+Known regimen for: Myelodysplastic_syndrome, Acute_myeloid_leukemia, Anaplastic_glioma, Glioblastoma, Low-grade_glioma, CNS_lymphoma, Neuroendocrine_tumors, Pancreatic_NET, Small_cell_lung_cancer, Melanoma, Soft_tissue_sarcoma
 
 
 

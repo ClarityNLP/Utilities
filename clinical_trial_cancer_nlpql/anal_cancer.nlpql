@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_anal_cancer:[
-    "cancer of anus", "anal cancer", "anal cancer, nos", "carcinoma of the anus", "cancer of the anus", "anal carcinoma", "carcinoma of anus"
+    "anal cancer", "cancer of anus", "carcinoma of anus", "cancer of the anus", "carcinoma of the anus", "anal cancer, nos", "anal carcinoma"
 ];
 
 define final Condition_anal_cancer:

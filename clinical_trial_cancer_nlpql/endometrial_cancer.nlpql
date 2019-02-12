@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_endometrial_cancer:[
-    "carcinoma of endometrium", "endometrial carcinoma", "carcinoma of the endometrium", "carcinoma, endometrial, malignant", "endometrial cancer"
+    "carcinoma of endometrium", "endometrial cancer", "carcinoma of the endometrium", "endometrial carcinoma", "carcinoma, endometrial, malignant"
 ];
 
 define final Condition_endometrial_cancer:

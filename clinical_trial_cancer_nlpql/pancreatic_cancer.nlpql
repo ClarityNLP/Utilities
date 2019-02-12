@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_pancreatic_cancer:[
-    "carcinoma of pancreas", "pancreatic carcinoma", "carcinoma of the pancreas", "pancreatic cancer (not islets)", "pancreas carcinoma", "pancreatic cancer", "exocrine pancreas carcinoma", "cancer of the pancreas", "pancreas cancer", "cancer of pancreas", "pancreatic cancer (excluding islets), nos", "exocrine cancer"
+    "pancreas cancer", "pancreatic cancer", "pancreatic carcinoma", "carcinoma of the pancreas", "pancreas carcinoma", "pancreatic cancer (excluding islets), nos", "cancer of the pancreas", "carcinoma of pancreas", "exocrine pancreas carcinoma", "pancreatic cancer (not islets)", "exocrine cancer", "cancer of pancreas"
 ];
 
 define final Condition_pancreatic_cancer:

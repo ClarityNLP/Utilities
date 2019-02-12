@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_colon_cancer:[
-    "carcinoma of the colon", "colon carcinoma", "colon cancer", "colonic carcinoma", "carcinoma of colon"
+    "colon cancer", "colon carcinoma", "carcinoma of the colon", "carcinoma of colon", "colonic carcinoma"
 ];
 
 define final Condition_colon_cancer:

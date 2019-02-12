@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_polycythemia_vera:[
-    "polycythemia vera", "polycythemia rubra vera"
+    "polycythemia rubra vera", "polycythemia vera"
 ];
 
 define final Condition_polycythemia_vera:

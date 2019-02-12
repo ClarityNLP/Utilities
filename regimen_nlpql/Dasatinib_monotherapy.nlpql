@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Dasatinib_monotherapy:
 // Comments
 /***
 
-Known regimen for: B-cell_acute_lymphoblastic_leukemia_Ph-positive, Systemic_mastocytosis, Chronic_myelogenous_leukemia
+Known regimen for: Chronic_myelogenous_leukemia, Systemic_mastocytosis, B-cell_acute_lymphoblastic_leukemia_Ph-positive
 
 
 

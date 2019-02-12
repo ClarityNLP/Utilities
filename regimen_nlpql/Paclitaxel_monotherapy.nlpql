@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Paclitaxel_monotherapy:
 // Comments
 /***
 
-Known regimen for: Penile_cancer, Breast_cancer_triple_negative, Esophageal_cancer, Small_cell_lung_cancer, Vulvar_cancer, Bladder_cancer, Endometrial_cancer, Melanoma, Cervical_cancer, Gastric_cancer, Ovarian_cancer, Vascular_sarcoma
+Known regimen for: Gastric_cancer, Ovarian_cancer, Small_cell_lung_cancer, Penile_cancer, Esophageal_cancer, Vulvar_cancer, Breast_cancer_triple_negative, Endometrial_cancer, Bladder_cancer, Vascular_sarcoma, Cervical_cancer, Melanoma
 
 
 

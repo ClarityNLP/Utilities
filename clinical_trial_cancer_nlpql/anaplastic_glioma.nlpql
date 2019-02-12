@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_anaplastic_glioma:[
-    "who grade iii glioma", "anaplastic glioma"
+    "anaplastic glioma", "who grade iii glioma"
 ];
 
 define final Condition_anaplastic_glioma:

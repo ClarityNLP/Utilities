@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_thyroid_cancer:[
-    "carcinoma of thyroid", "carcinoma of thyroid gland", "thyroid carcinoma", "thyroid gland cancer", "head and neck cancer, thyroid", "cancer of the thyroid", "carcinoma of the thyroid gland", "thyroid cancer", "thyroid gland carcinoma", "cancer of thyroid", "thyroid cancer, nos", "carcinoma of the thyroid"
+    "carcinoma of thyroid", "thyroid gland cancer", "cancer of the thyroid", "thyroid cancer", "carcinoma of the thyroid", "thyroid gland carcinoma", "thyroid carcinoma", "cancer of thyroid", "carcinoma of thyroid gland", "head and neck cancer, thyroid", "thyroid cancer, nos", "carcinoma of the thyroid gland"
 ];
 
 define final Condition_thyroid_cancer:

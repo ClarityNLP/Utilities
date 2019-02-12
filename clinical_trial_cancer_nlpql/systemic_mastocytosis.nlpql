@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_systemic_mastocytosis:[
-    "systemic tissue mast cell disease", "systemic mastocytosis", "systemic mastocytosis, nos"
+    "systemic mastocytosis, nos", "systemic mastocytosis", "systemic tissue mast cell disease"
 ];
 
 define final Condition_systemic_mastocytosis:

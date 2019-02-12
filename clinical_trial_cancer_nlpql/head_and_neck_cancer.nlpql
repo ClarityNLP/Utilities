@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_head_and_neck_cancer:[
-    "malignant head and neck neoplasm", "cancer of head and neck", "malignant neoplasm of head and neck", "head and neck cancer", "head and neck cancer, nos", "malignant tumor of head and neck", "carcinoma of head and neck", "cancer of the head and neck", "carcinoma of the head and neck", "malignant head and neck tumor", "malignant neoplasm of the head and neck", "malignant tumor of the head and neck", "head and neck carcinoma"
+    "cancer of head and neck", "head and neck cancer", "malignant neoplasm of the head and neck", "carcinoma of head and neck", "head and neck carcinoma", "carcinoma of the head and neck", "malignant head and neck tumor", "malignant head and neck neoplasm", "malignant tumor of the head and neck", "malignant tumor of head and neck", "head and neck cancer, nos", "malignant neoplasm of head and neck", "cancer of the head and neck"
 ];
 
 define final Condition_head_and_neck_cancer:

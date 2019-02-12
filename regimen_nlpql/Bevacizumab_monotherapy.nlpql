@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Bevacizumab_monotherapy:
 // Comments
 /***
 
-Known regimen for: Vascular_sarcoma, Colon_cancer, Glioblastoma, Breast_cancer, Non-small_cell_lung_cancer, Renal_cell_carcinoma, Hepatocellular_carcinoma, Small_cell_lung_cancer, Endometrial_cancer, Cervical_cancer, Ovarian_cancer, Anaplastic_glioma
+Known regimen for: Non-small_cell_lung_cancer, Anaplastic_glioma, Ovarian_cancer, Glioblastoma, Colon_cancer, Endometrial_cancer, Renal_cell_carcinoma, Small_cell_lung_cancer, Vascular_sarcoma, Hepatocellular_carcinoma, Cervical_cancer, Breast_cancer
 
 
 

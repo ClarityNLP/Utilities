@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_hepatoblastoma:[
-    "hbl", "hepatoblastoma", "pediatric hepatoblastoma", "hepatoblastoma, malignant", "pediatric embryonal hepatoma"
+    "hepatoblastoma", "pediatric hepatoblastoma", "hepatoblastoma, malignant", "pediatric embryonal hepatoma", "hbl"
 ];
 
 define final Condition_hepatoblastoma:

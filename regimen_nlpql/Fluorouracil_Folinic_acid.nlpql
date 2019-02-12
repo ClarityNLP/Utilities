@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -64,7 +63,7 @@ define final MatchedAllResults:
 // Comments
 /***
 
-Known regimen for: Colon_cancer, Rectal_cancer, Hepatocellular_carcinoma, Esophageal_cancer, Pancreatic_cancer, Cervical_cancer, Cholangiocarcinoma
+Known regimen for: Rectal_cancer, Esophageal_cancer, Colon_cancer, Pancreatic_cancer, Hepatocellular_carcinoma, Cervical_cancer, Cholangiocarcinoma
 
 
 

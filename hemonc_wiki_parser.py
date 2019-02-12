@@ -3,12 +3,12 @@ from pathlib import Path
 from urllib.parse import unquote_plus
 
 import pandas as pd
-from anytree import Node
 from mwparserfromhell import parse
 from mwparserfromhell.nodes import *
 from mwparserfromhell.nodes.comment import Comment
 from mwparserfromhell.nodes.external_link import ExternalLink
 from mwparserfromhell.nodes.wikilink import Wikilink
+from anytree import Node as TreeNode
 
 treatment_names = ['Chemoradiotherapy', 'Supportive medications', 'Chemotherapy', 'Immunosuppressive therapy',
                    'CNS prophylaxis', 'Chemotherapy, part 1', 'Chemotherapy, part 2', 'Primary therapy',
@@ -25,8 +25,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 {}
@@ -243,7 +242,8 @@ def generate_clinical_trial_cancer_nlpql(cancers):
                 init = True
             regimen_names = o['regimen_names']
             regimen = o['regimen']
-            reg_define_str, reg_key = generate_provider_assertion(regimen, regimen_names, pa_type='Regimen', modifiers= ' ')
+            reg_define_str, reg_key = generate_provider_assertion(regimen, regimen_names, pa_type='Regimen',
+                                                                  modifiers=' ')
             regimen_nlpql += reg_define_str
             regimen_nlpql += '\n'
             regimen_keys.append(reg_key)
@@ -298,12 +298,13 @@ Known regimen for: {}
         if len(filename) > 0:
             with open('./regimen_nlpql/{}.nlpql'.format(filename), 'w') as file:
                 file.write(
-                    regimen_nlpql_template.format(nlpql_name, med_define_str, reg_define_str, result_str, comment_str))
+                    regimen_nlpql_template.format(nlpql_name, '{"source": ["MIMIC"]}',
+                                                  med_define_str, reg_define_str, result_str, comment_str))
                 i += 1
 
 
 if __name__ == "__main__":
-    gen_files = False
+    gen_files = True
 
     if gen_files:
         thesaurus = load_thesaurus()
@@ -336,11 +337,11 @@ if __name__ == "__main__":
 
                         if cur_level == 0:
                             if is_treatment:
-                                cur_node = Node(cur_title, drugs=list(), brands=list(), instructions=list(),
+                                cur_node = TreeNode(cur_title, drugs=list(), brands=list(), instructions=list(),
                                                 regimen='', variant='', regimen_type='', regimen_names=list(),
                                                 supportive_brands=list(), supportive_drugs=list(), data=list())
                             else:
-                                cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(),
+                                cur_node = TreeNode(cur_title, data=list(), drugs=list(), brands=list(),
                                                 instructions=list(),
                                                 regimen='', variant='', regimen_type='', regimen_names=list(),
                                                 supportive_brands=list(), supportive_drugs=list())
@@ -414,18 +415,18 @@ if __name__ == "__main__":
                                         if len(ar) > 2:
                                             regimen_names.append(ar)
                                     regimen_names = sorted(list(set(regimen_names)))
-                                    cur_node = Node(cur_title, parent=parent, drugs=list(), brands=list(),
+                                    cur_node = TreeNode(cur_title, parent=parent, drugs=list(), brands=list(),
                                                     regimen=grandparent, variant=variant, regimen_type=g_grandparent,
                                                     regimen_names=regimen_names,
                                                     supportive_brands=list(), supportive_drugs=list(), data=list())
                                 else:
-                                    cur_node = Node(cur_title, parent=last_nodes[parent_level], data=list(),
+                                    cur_node = TreeNode(cur_title, parent=last_nodes[parent_level], data=list(),
                                                     drugs=list(), brands=list(), regimen='', variant='',
                                                     regimen_type='',
                                                     regimen_names=list(),
                                                     supportive_brands=list(), supportive_drugs=list())
                             else:
-                                cur_node = Node(cur_title, data=list(), drugs=list(), brands=list(), regimen='',
+                                cur_node = TreeNode(cur_title, data=list(), drugs=list(), brands=list(), regimen='',
                                                 variant='',
                                                 regimen_type='', regimen_names=list(), supportive_brands=list(),
                                                 supportive_drugs=list())
@@ -510,7 +511,7 @@ if __name__ == "__main__":
         if len(treatment_map.items()) > 0:
             generate_regiment_nlpql(treatment_map)
 
-            with open('./regimen_tree.json', 'w') as json_file:
+            with open('./cancer/regimen_tree.json', 'w') as json_file:
                 json_file.write(json.dumps(treatment_map, indent=4, sort_keys=True))
 
             for k in treatment_map.keys():
@@ -539,13 +540,13 @@ if __name__ == "__main__":
                         cancer_map[c].append(doc)
                         cancer_map_regimen[regimen_cancer] = regimen
 
-            with open('./cancer_tree.json', 'w') as json_file:
+            with open('./cancer/cancer_tree.json', 'w') as json_file:
                 json_file.write(json.dumps(cancer_map, indent=4, sort_keys=True))
                 generate_clinical_trial_cancer_nlpql(cancer_map)
     else:
-        with open('./regimen_tree.json', 'r') as regimens:
+        with open('./cancer/regimen_tree.json', 'r') as regimens:
             regimen_json = json.loads(regimens.read())
             generate_regiment_nlpql(regimen_json)
-        with open('./cancer_tree.json', 'r') as cancers:
+        with open('./cancer/cancer_tree.json', 'r') as cancers:
             cancer_json = json.loads(cancers.read())
             generate_clinical_trial_cancer_nlpql(cancer_json)

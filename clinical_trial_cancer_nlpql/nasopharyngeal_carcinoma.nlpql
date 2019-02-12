@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_nasopharyngeal_carcinoma:[
-    "nasopharyngeal cancer", "carcinoma of the nasopharynx", "carcinoma of nasopharynx", "npc", "cancer of nasopharynx", "nasopharyngeal throat cancer", "cancer of the nasopharynx", "nasopharyngeal carcinoma"
+    "cancer of the nasopharynx", "nasopharyngeal throat cancer", "carcinoma of the nasopharynx", "nasopharyngeal carcinoma", "carcinoma of nasopharynx", "nasopharyngeal cancer", "cancer of nasopharynx", "npc"
 ];
 
 define final Condition_nasopharyngeal_carcinoma:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_rectal_cancer:[
-    "childhood rectal carcinoma", "rectal carcinoma", "carcinoma of rectum", "cancer of the rectum", "rectal cancer", "cancer of rectum", "carcinoma of the rectum"
+    "rectal cancer", "rectal carcinoma", "carcinoma of rectum", "childhood rectal carcinoma", "cancer of the rectum", "cancer of rectum", "carcinoma of the rectum"
 ];
 
 define final Condition_rectal_cancer:

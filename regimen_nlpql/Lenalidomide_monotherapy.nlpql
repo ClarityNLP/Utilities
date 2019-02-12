@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Lenalidomide_monotherapy:
 // Comments
 /***
 
-Known regimen for: Plasma_cell_leukemia, Waldenstrom_macroglobulinemia, Polycythemia_vera, Follicular_lymphoma, Hodgkin_lymphoma, Myelodysplastic_syndrome, Myelofibrosis, Mantle_cell_lymphoma, Adult_T-cell_leukemia-lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Cutaneous_T-cell_lymphoma, Peripheral_T-cell_lymphoma, Transformed_lymphoma, Multiple_myeloma_relapsedrefractory, Light-chain_(AL)_amyloidosis
+Known regimen for: Mantle_cell_lymphoma, Myelodysplastic_syndrome, Multiple_myeloma_relapsedrefractory, Adult_T-cell_leukemia-lymphoma, Light-chain_(AL)_amyloidosis, Hodgkin_lymphoma, Waldenstrom_macroglobulinemia, Polycythemia_vera, Peripheral_T-cell_lymphoma, Myelofibrosis, Plasma_cell_leukemia, Follicular_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Cutaneous_T-cell_lymphoma, Transformed_lymphoma
 
 
 

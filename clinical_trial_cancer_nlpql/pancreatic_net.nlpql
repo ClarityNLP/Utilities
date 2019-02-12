@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_pancreatic_net:[
-    "pancreatic neuroendocrine tumor", "pancreatic net", "islet cell tumor", "islet cell tumors of the pancreas", "well differentiated pancreatic endocrine tumor", "well differentiated pancreatic endocrine neoplasm", "islet cell tumors - pancreas"
+    "islet cell tumors of the pancreas", "well differentiated pancreatic endocrine tumor", "pancreatic net", "islet cell tumors - pancreas", "well differentiated pancreatic endocrine neoplasm", "islet cell tumor", "pancreatic neuroendocrine tumor"
 ];
 
 define final Condition_pancreatic_net:

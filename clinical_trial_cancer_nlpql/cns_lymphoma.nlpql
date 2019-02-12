@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cns_lymphoma:[
-    "malignant lymphomas of cns", "malignant lymphomas of the cns", "cns lymphoma", "central nervous system lymphoma", "pcnsl", "primary central nervous system lymphoma", "primary cns lymphoma"
+    "malignant lymphomas of cns", "central nervous system lymphoma", "primary cns lymphoma", "pcnsl", "cns lymphoma", "malignant lymphomas of the cns", "primary central nervous system lymphoma"
 ];
 
 define final Condition_cns_lymphoma:

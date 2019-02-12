@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_peripheral_t_cell_lymphoma:[
-    "mature t-cell and nk-cell lymphoma", "mature t-cell lymphoma", "mature t-and nk-cell lymphoma", "mature t-cell non-hodgkin's lymphoma", "ptcl", "mature t-cell and nk-cell non-hodgkin's lymphoma", "peripheral t-cell lymphoma", "mature t-cell and nk-cell non-hodgkin lymphoma"
+    "peripheral t-cell lymphoma", "mature t-cell and nk-cell non-hodgkin's lymphoma", "mature t-cell and nk-cell lymphoma", "mature t-cell and nk-cell non-hodgkin lymphoma", "mature t-cell non-hodgkin's lymphoma", "ptcl", "mature t-and nk-cell lymphoma", "mature t-cell lymphoma"
 ];
 
 define final Condition_peripheral_t_cell_lymphoma:

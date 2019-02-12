@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_blastic_plasmacytoid_dendritic_cell_neoplasm:[
-    "agranular cd4+ cd56+ hematodermic neoplasm/tumor", "monomorphic nk-cell lymphoma", "agranular cd4+ natural killer cell leukemia", "blastic plasmacytoid dendritic cell neoplasm", "cd4+/cd56+ hematodermic neoplasm", "bpdcn", "blastic nk-cell lymphoma", "blastic natural killer leukemia/lymphoma"
+    "blastic natural killer leukemia/lymphoma", "bpdcn", "blastic plasmacytoid dendritic cell neoplasm", "monomorphic nk-cell lymphoma", "agranular cd4+ cd56+ hematodermic neoplasm/tumor", "blastic nk-cell lymphoma", "cd4+/cd56+ hematodermic neoplasm", "agranular cd4+ natural killer cell leukemia"
 ];
 
 define final Condition_blastic_plasmacytoid_dendritic_cell_neoplasm:

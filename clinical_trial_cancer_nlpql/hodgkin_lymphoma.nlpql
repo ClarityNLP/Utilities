@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_hodgkin_lymphoma:[
-    "childhood hd", "pediatric hodgkin's lymphoma", "pediatric hodgkin's disease", "childhood hodgkin's disease", "hodgkin lymphoma", "hodgkin lymphoma, nos", "adult hodgkin lymphoma", "childhood hodgkin's lymphoma", "hodgkin's lymphoma", "adult hd", "adult hodgkin's lymphoma", "childhood hodgkin lymphoma", "pediatric hd", "hl", "adult hodgkin's disease", "hodgkin disease", "hodgkin's disease"
+    "adult hodgkin's disease", "pediatric hodgkin's disease", "childhood hodgkin's disease", "pediatric hd", "adult hd", "hodgkin's disease", "hodgkin lymphoma", "adult hodgkin's lymphoma", "childhood hodgkin lymphoma", "childhood hodgkin's lymphoma", "adult hodgkin lymphoma", "hl", "hodgkin lymphoma, nos", "hodgkin's lymphoma", "hodgkin disease", "childhood hd", "pediatric hodgkin's lymphoma"
 ];
 
 define final Condition_hodgkin_lymphoma:

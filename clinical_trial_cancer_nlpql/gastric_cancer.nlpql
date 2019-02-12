@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_gastric_cancer:[
-    "gastric (stomach) cancer", "stomach carcinoma", "gastric carcinoma", "cancer of the stomach", "cancer of stomach", "gastric cancer, nos", "gastric cancer", "carcinoma of stomach", "stomach cancer", "carcinoma of the stomach"
+    "stomach carcinoma", "gastric (stomach) cancer", "carcinoma of the stomach", "gastric cancer, nos", "cancer of the stomach", "gastric cancer", "stomach cancer", "cancer of stomach", "gastric carcinoma", "carcinoma of stomach"
 ];
 
 define final Condition_gastric_cancer:

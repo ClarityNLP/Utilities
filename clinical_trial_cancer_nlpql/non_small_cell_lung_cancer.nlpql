@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_non_small_cell_lung_cancer:[
-    "non-small cell lung carcinoma", "nsclc", "lung non-small cell carcinoma", "non-small cell carcinoma of the lung", "non-small cell lung cancer, nos", "non small cell lung cancer nos", "non-small cell cancer of the lung", "non-small cell cancer of lung", "non-small cell lung cancer", "nsclc - non-small cell lung cancer", "non-small cell carcinoma of lung"
+    "nsclc", "non small cell lung cancer nos", "non-small cell carcinoma of the lung", "non-small cell lung carcinoma", "nsclc - non-small cell lung cancer", "non-small cell cancer of lung", "lung non-small cell carcinoma", "non-small cell lung cancer, nos", "non-small cell cancer of the lung", "non-small cell lung cancer", "non-small cell carcinoma of lung"
 ];
 
 define final Condition_non_small_cell_lung_cancer:

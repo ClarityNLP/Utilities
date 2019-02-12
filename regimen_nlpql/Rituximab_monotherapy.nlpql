@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Rituximab_monotherapy:
 // Comments
 /***
 
-Known regimen for: CNS_lymphoma, Waldenstrom_macroglobulinemia, Inherited_coagulopathy, Follicular_lymphoma, Hodgkin_lymphoma, Immune_thrombocytopenia_(ITP), Mantle_cell_lymphoma, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, Diffuse_large_B-cell_lymphoma, Hairy_cell_leukemia, Acquired_coagulopathy, Castleman_disease, HIV-associated_lymphoma, Cold_agglutinin_disease, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Thrombotic_thrombocytopenic_purpura
+Known regimen for: Hairy_cell_leukemia, Mantle_cell_lymphoma, Inherited_coagulopathy, Hodgkin_lymphoma_nodular_lymphocyte-predominant, Acquired_coagulopathy, Follicular_lymphoma, Hodgkin_lymphoma, Waldenstrom_macroglobulinemia, CNS_lymphoma, Immune_thrombocytopenia_(ITP), Thrombotic_thrombocytopenic_purpura, Cold_agglutinin_disease, Castleman_disease, Chronic_lymphocytic_leukemia_(CLLSLL), Marginal_zone_lymphoma, HIV-associated_lymphoma, Diffuse_large_B-cell_lymphoma
 
 
 

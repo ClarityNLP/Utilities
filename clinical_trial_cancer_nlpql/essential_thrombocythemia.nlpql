@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_essential_thrombocythemia:[
-    "primary thrombocythemia", "essential thrombocytemia", "idiopathic thrombocythemia", "essential thrombocytosis", "et", "essential thrombocythemia", "primary thrombocytosis"
+    "idiopathic thrombocythemia", "essential thrombocytemia", "primary thrombocytosis", "essential thrombocytosis", "primary thrombocythemia", "et", "essential thrombocythemia"
 ];
 
 define final Condition_essential_thrombocythemia:

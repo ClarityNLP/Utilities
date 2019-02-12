@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_chronic_myelogenous_leukemia:[
-    "cml", "chronic myelogenous leukemia, bcr-abl1 positive", "chronic myelogenous leukemia (cml)", "chronic myelocytic leukemia", "chronic myeloid leukemia", "bcr-abl positive chronic myelogenous leukemia", "chronic myelogenous leukemias", "hematopoeitic - chronic myelocytic leukemia (cml)", "cml - chronic myelogenous leukemia", "chronic myelogenous leukemia", "chronic granulocytic leukemia"
+    "chronic myelogenous leukemia (cml)", "chronic myelogenous leukemias", "hematopoeitic - chronic myelocytic leukemia (cml)", "cml", "chronic granulocytic leukemia", "chronic myeloid leukemia", "chronic myelogenous leukemia, bcr-abl1 positive", "chronic myelogenous leukemia", "chronic myelocytic leukemia", "bcr-abl positive chronic myelogenous leukemia", "cml - chronic myelogenous leukemia"
 ];
 
 define final Condition_chronic_myelogenous_leukemia:

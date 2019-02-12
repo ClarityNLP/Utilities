@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_vulvar_cancer:[
-    "vulvar carcinoma", "cancer of vulva", "carcinoma of vulva", "vulva carcinoma", "cancer of the vulva", "vulvar cancer", "carcinoma of the vulva", "vulvar cancer, nos", "vulva cancer"
+    "vulvar cancer, nos", "vulva cancer", "vulvar cancer", "vulva carcinoma", "cancer of the vulva", "cancer of vulva", "carcinoma of vulva", "vulvar carcinoma", "carcinoma of the vulva"
 ];
 
 define final Condition_vulvar_cancer:

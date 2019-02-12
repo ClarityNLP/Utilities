@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_ovarian_cancer:[
-    "malignant tumor of the ovary", "ovarian epithelial cancer", "carcinoma of ovary", "ovarian cancer", "cancer of the ovary", "malignant ovarian neoplasm", "epithelial ovarian cancer", "cancer of ovary", "malignant neoplasm of the ovary", "malignant tumor of ovary", "ovarian carcinoma", "carcinoma of the ovary", "malignant neoplasm of ovary", "malignant ovarian tumor", "ovarian cancer, nos"
+    "ovarian cancer", "ovarian carcinoma", "ovarian epithelial cancer", "malignant ovarian tumor", "malignant ovarian neoplasm", "malignant neoplasm of the ovary", "malignant tumor of the ovary", "epithelial ovarian cancer", "carcinoma of ovary", "carcinoma of the ovary", "cancer of ovary", "malignant neoplasm of ovary", "malignant tumor of ovary", "ovarian cancer, nos", "cancer of the ovary"
 ];
 
 define final Condition_ovarian_cancer:

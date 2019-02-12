@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_wilms_tumor:[
-    "childhood kidney wilms tumor", "childhood renal wilms' tumor", "wilms tumor", "wilms tumor (nephroblastoma)", "wilms' tumor", "childhood renal wilms tumor", "childhood wilms tumor"
+    "wilms' tumor", "childhood renal wilms' tumor", "wilms tumor (nephroblastoma)", "childhood kidney wilms tumor", "wilms tumor", "childhood wilms tumor", "childhood renal wilms tumor"
 ];
 
 define final Condition_wilms_tumor:

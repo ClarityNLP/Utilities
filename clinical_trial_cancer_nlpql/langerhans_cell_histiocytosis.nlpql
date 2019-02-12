@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_langerhans_cell_histiocytosis:[
-    "childhood langerhans cell histiocytosis", "langerhans cell histiocytosis, nos", "lch", "adult langerhans cell histiocytosis", "langerhans cell histiocytosis", "histiocytosis x", "langerhans cell granulomatosis", "langerhans cell histiocytosis, not otherwise specified"
+    "childhood langerhans cell histiocytosis", "langerhans cell granulomatosis", "langerhans cell histiocytosis, not otherwise specified", "adult langerhans cell histiocytosis", "histiocytosis x", "lch", "langerhans cell histiocytosis, nos", "langerhans cell histiocytosis"
 ];
 
 define final Condition_langerhans_cell_histiocytosis:

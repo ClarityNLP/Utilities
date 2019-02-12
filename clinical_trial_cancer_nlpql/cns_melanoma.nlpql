@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cns_melanoma:[
-    "melanoma of central nervous system", "cns melanoma", "melanoma of the central nervous system", "melanoma of the cns", "central nervous system melanoma", "melanoma of cns"
+    "central nervous system melanoma", "melanoma of central nervous system", "cns melanoma", "melanoma of the cns", "melanoma of cns", "melanoma of the central nervous system"
 ];
 
 define final Condition_cns_melanoma:

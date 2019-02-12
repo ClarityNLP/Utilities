@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_rhabdomyosarcoma:[
-    "rhabdomyosarcoma", "rhabdomyosarcoma, malignant", "rhabdomyosarcoma (reni)", "pediatric rhabdomyosarcoma", "rhabdomyosarcoma, nos", "childhood rhabdomyosarcoma", "rat rhabdomyosarcoma", "mouse rhabdomyosarcoma", "adult rhabdomyosarcoma"
+    "rhabdomyosarcoma, nos", "rhabdomyosarcoma (reni)", "mouse rhabdomyosarcoma", "adult rhabdomyosarcoma", "rhabdomyosarcoma, malignant", "pediatric rhabdomyosarcoma", "childhood rhabdomyosarcoma", "rhabdomyosarcoma", "rat rhabdomyosarcoma"
 ];
 
 define final Condition_rhabdomyosarcoma:

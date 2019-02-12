@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_prostate_cancer:[
-    "carcinoma of the prostate", "carcinoma of prostate", "cancer of the prostate", "cancer of prostate", "prostate cancer, nos", "prostate carcinoma", "prostate cancer"
+    "carcinoma of prostate", "cancer of the prostate", "prostate cancer, nos", "carcinoma of the prostate", "cancer of prostate", "prostate carcinoma", "prostate cancer"
 ];
 
 define final Condition_prostate_cancer:

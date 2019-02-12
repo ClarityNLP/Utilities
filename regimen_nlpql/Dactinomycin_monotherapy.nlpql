@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -45,7 +44,7 @@ define final Regimen_Dactinomycin_monotherapy:
 // Comments
 /***
 
-Known regimen for: Wilms_tumor, Gestational_trophoblastic_neoplasia, Endometrial_cancer
+Known regimen for: Gestational_trophoblastic_neoplasia, Endometrial_cancer, Wilms_tumor
 
 
 

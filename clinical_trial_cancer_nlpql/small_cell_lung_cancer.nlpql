@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_small_cell_lung_cancer:[
-    "lung small cell carcinoma", "oat cell lung carcinoma", "sclc", "lung small cell neuroendocrine carcinoma", "lung oat cell carcinoma", "small cell lung cancer", "small cell neuroendocrine carcinoma of lung", "small cell lung carcinoma", "small cell carcinoma of lung", "small cell neuroendocrine carcinoma of the lung", "oat cell carcinoma of lung", "oat cell carcinoma of the lung", "small cell carcinoma of the lung"
+    "oat cell carcinoma of lung", "oat cell lung carcinoma", "small cell carcinoma of the lung", "small cell neuroendocrine carcinoma of the lung", "lung oat cell carcinoma", "small cell neuroendocrine carcinoma of lung", "small cell lung cancer", "lung small cell carcinoma", "small cell lung carcinoma", "lung small cell neuroendocrine carcinoma", "small cell carcinoma of lung", "sclc", "oat cell carcinoma of the lung"
 ];
 
 define final Condition_small_cell_lung_cancer:

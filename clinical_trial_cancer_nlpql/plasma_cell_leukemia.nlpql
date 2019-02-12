@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_plasma_cell_leukemia:[
-    "leukemia plasmacytic", "plasma cell leukemia", "plasmacytic leukemia"
+    "plasma cell leukemia", "plasmacytic leukemia", "leukemia plasmacytic"
 ];
 
 define final Condition_plasma_cell_leukemia:

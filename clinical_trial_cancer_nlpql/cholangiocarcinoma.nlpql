@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cholangiocarcinoma:[
-    "mouse cholangiocarcinoma", "cholangiocarcinoma, malignant", "cholangiocar.- intra/extrahepatic", "cc", "cholangiocarcinoma", "cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)", "intrahepatic bile duct cancer (cholangiocarcinoma)", "rat cholangiocarcinoma", "cholangiosarcoma", "bile duct carcinoma of mouse", "cholangiocarcinoma (reni)", "cholangiocellular carcinoma"
+    "bile duct carcinoma of mouse", "mouse cholangiocarcinoma", "intrahepatic bile duct cancer (cholangiocarcinoma)", "cholangiocarcinoma, malignant", "cholangiocarcinoma (reni)", "rat cholangiocarcinoma", "cholangiocar.- intra/extrahepatic", "cc", "cholangiosarcoma", "cholangiocellular carcinoma", "cholangiocarcinoma", "cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)"
 ];
 
 define final Condition_cholangiocarcinoma:

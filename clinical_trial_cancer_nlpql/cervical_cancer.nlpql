@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_cervical_cancer:[
-    "cervix uteri carcinoma", "carcinoma of the cervix", "uterine cervix cancer", "carcinoma of the uterine cervix", "cervical carcinoma", "cervical cancer, nos", "carcinoma of cervix uteri", "cervical cancer", "cancer of cervix", "uterine cervix carcinoma", "cervix carcinoma", "carcinoma of cervix", "cervix cancer", "cancer of the cervix", "carcinoma of uterine cervix", "cancer of uterine cervix", "cancer of the uterine cervix", "carcinoma of the cervix uteri"
+    "cervix carcinoma", "carcinoma of the cervix", "carcinoma of the uterine cervix", "carcinoma of uterine cervix", "cancer of cervix", "cervical cancer", "cervical cancer, nos", "cervix uteri carcinoma", "uterine cervix cancer", "uterine cervix carcinoma", "carcinoma of cervix uteri", "cervix cancer", "cancer of the uterine cervix", "cervical carcinoma", "cancer of uterine cervix", "carcinoma of cervix", "cancer of the cervix", "carcinoma of the cervix uteri"
 ];
 
 define final Condition_cervical_cancer:

@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_neuroblastoma:[
-    "neuroblastoma", "neuroblastoma, malignant", "neural crest tumor, malignant", "mouse neuroblastoma", "childhood neuroblastoma", "neuroblastoma (schwannian stroma-poor)"
+    "neural crest tumor, malignant", "mouse neuroblastoma", "neuroblastoma, malignant", "childhood neuroblastoma", "neuroblastoma (schwannian stroma-poor)", "neuroblastoma"
 ];
 
 define final Condition_neuroblastoma:

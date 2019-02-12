@@ -14,7 +14,7 @@ documentset Docs:
 // Cancers
 
 termset Condition_Terms_marginal_zone_lymphoma:[
-    "mzbcl", "marginal zone lymphoma", "mzl", "marginal zone b-cell lymphoma"
+    "mzl", "mzbcl", "marginal zone b-cell lymphoma", "marginal zone lymphoma"
 ];
 
 define final Condition_marginal_zone_lymphoma:

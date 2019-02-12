@@ -9,8 +9,7 @@ description "Generated query for cancer treatment based on https://hemonc.org/wi
 include ClarityCore version "1.0" called Clarity;
 
 documentset Docs:
-    Clarity.createReportTypeList(["Nursing/other", "Nursing", "Physician ", "Discharge summary", "Radiology",
-         "General", "ECG", "Pathology", "Echo"]);
+ Clarity.createDocumentSet({"source": ["MIMIC"]});
 
 // Medication(s) inclusion criteria termset, if medication criteria present
 
@@ -97,7 +96,7 @@ define final MatchedAllResults:
 // Comments
 /***
 
-Known regimen for: Peripheral_T-cell_lymphoma, Anaplastic_large_cell_lymphoma
+Known regimen for: Anaplastic_large_cell_lymphoma, Peripheral_T-cell_lymphoma
 
 
 
