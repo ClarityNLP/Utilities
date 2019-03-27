@@ -17,7 +17,20 @@ terms = [
     "chf",
     "congestive heart failure",
     "Orthopnea",
-    "karnofsky"
+    "karnofsky",
+    "brca",
+    "breast cancer",
+    "suicide",
+    "death",
+    "murder",
+    "autopsy",
+    "mortality",
+    "overdose",
+    "drug use",
+    "illicit",
+    "drug abuse",
+    "addiction",
+    "addict"
 ]
 
 months = {
@@ -105,7 +118,9 @@ if __name__ == "__main__":
                 name = row[1]
                 if len(name) < 50:
                     new_terms.add(name)
+
     terms.extend(list(new_terms))
+    terms = sorted(terms)
     result_list = list()
 
     solr_url = "http://18.220.133.76:8983/solr/sample"
@@ -114,12 +129,17 @@ if __name__ == "__main__":
         'Content-type': 'application/json',
     }
 
-    for t in terms:
-        print('querying term', t)
+    start_at = 28
+    for i in range(len(terms)):
+        if i < start_at:
+            continue
+        t = terms[i]
+        print('querying term={}, id={}'.format(t, i))
         id_list = search(t)
 
-        for id in id_list['IdList']:
-            print('querying id ', id)
+        for j in range(len(id_list['IdList'])):
+            id = id_list['IdList'][j]
+            print('querying id={}, term={}, term_index={}, id_index={}'.format(id, t, i, j))
             r = requests.get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=' +
                              str(id) +
                              '&tool=my_tool&email=cah@gatech.edu&rettype=abstract')
@@ -175,15 +195,30 @@ if __name__ == "__main__":
 
                         if response2.status_code == 200:
                             print("Uploaded pubmed batch")
+                        else:
+                            print('upload to solr failed')
                         result_list = list()
                 except Exception as exc:
                     print(exc)
 
             time.sleep(0.4)
 
-    data = json.dumps(result_list)
-    response2 = requests.post(url, headers=headers, data=data)
+        if len(result_list) > 0:
+            data = json.dumps(result_list)
+            response2 = requests.post(url, headers=headers, data=data)
 
-    if response2.status_code == 200:
-        print("Uploaded pubmed batch")
+            if response2.status_code == 200:
+                print("Uploaded pubmed batch")
+            else:
+                print('upload to solr failed')
+            result_list = list()
+
+    if len(result_list) > 0:
+        data = json.dumps(result_list)
+        response2 = requests.post(url, headers=headers, data=data)
+
+        if response2.status_code == 200:
+            print("Uploaded pubmed batch")
+        else:
+            print('upload to solr failed')
 
