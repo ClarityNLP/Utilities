@@ -73,6 +73,7 @@ def get_text(item):
 
 
 def search(query):
+    time.sleep(0.4)
     Entrez.email = 'cah@gatech.edu'
     handle = Entrez.esearch(db='pubmed',
                             retmax='1000',
@@ -129,7 +130,7 @@ if __name__ == "__main__":
         'Content-type': 'application/json',
     }
 
-    start_at = 28
+    start_at = 77
     for i in range(len(terms)):
         if i < start_at:
             continue
@@ -140,6 +141,7 @@ if __name__ == "__main__":
         for j in range(len(id_list['IdList'])):
             id = id_list['IdList'][j]
             print('querying id={}, term={}, term_index={}, id_index={}'.format(id, t, i, j))
+            time.sleep(0.4)
             r = requests.get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&retmode=xml&id=' +
                              str(id) +
                              '&tool=my_tool&email=cah@gatech.edu&rettype=abstract')
@@ -201,7 +203,7 @@ if __name__ == "__main__":
                 except Exception as exc:
                     print(exc)
 
-            time.sleep(0.4)
+
 
         if len(result_list) > 0:
             data = json.dumps(result_list)
