@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import os
 
 import tika
 
@@ -23,9 +24,10 @@ headers = [
     'Socioeconomic Information',
     'Toxicities'
 ]
-pdfs = [
-    '4100R4.txt'
-]
+pdfs = list()
+for file in os.listdir("./cimbtr_forms/"):
+    if file.endswith(".txt"):
+        pdfs.append(file)
 
 questions_dict = dict()
 
@@ -77,12 +79,16 @@ def get_pdfs():
 
 
 def parse_questions():
+    forms = {}
     for p in pdfs:
+        name = p.split('.')[-2]
+        question_dict = {}
         with open('./cimbtr_forms/{}'.format(p), 'r') as txt_file:
             lines = txt_file.readlines()
             questions = list()
             header = 'UNKNOWN'
             txt = ''
+            last_question = 0
             for l in lines:
                 if len(l.strip()) == 0:
                     continue
@@ -94,12 +100,71 @@ def parse_questions():
                         break
                 if not is_header:
                     q_text, q_number = question_number(l)
-                    if q_number and q_number > 1:
-                        print('is_a_new_question', q_number)
+                    if q_number and last_question < q_number and q_number > 1:
+                        last_question = q_number
+                        if len(txt) > 0:
+                            out_txt = "{} {}\n\n{}".format(q_number, q_text, txt)
+                            question_dict[q_number] = out_txt
+                        # print('is_a_new_question', q_number)
+                        txt = ''
                     else:
                         txt += l
+
+        forms[name] = question_dict
+    return forms
+
+
+def stubs(form="4100R4", form_data=None):
+
+    if not form_data:
+        form_data = dict()
+    nlpql_template = '''
+// Phenotype library name
+phenotype "Form {}, Question {}" version "1";
+
+// # Referenced libraries #
+include ClarityCore version "1.0" called Clarity;
+
+// Data Entities
+{}
+
+// Operations
+{}
+
+// Comments
+/*
+{}
+
+*/
+ 
+'''
+
+    form_questions = form_data[form]
+    if not form_questions:
+        form_questions = dict()
+    new_dir = '/Users/charityhilton/repos/CIBMTRaaS/forms/{}/'.format(form)
+    if not os.path.exists(new_dir):
+        os.makedirs(new_dir)
+
+    max_questions = 300
+    keys = list(form_questions.keys())
+    if len(keys) > 0:
+        max_questions = max(keys) + 1
+    for i in range(1, max_questions):
+        print('form {}, question {}'.format(file, i))
+        with open('/Users/charityhilton/repos/CIBMTRaaS/forms/{}/question_{}.nlpql'.format(form, i), 'w') as f:
+            entities = ""
+            operations = ""
+            if i in form_questions:
+                comments = form_questions[i]
+            else:
+                comments = ""
+            f.write(nlpql_template.format(form, i, entities, operations, comments))
 
 
 if __name__ == "__main__":
     # get_pdfs()
-    parse_questions()
+    form_data = parse_questions()
+    for file in os.listdir("./cimbtr_forms/"):
+        if file.endswith(".txt"):
+            stubs(form=file.split('.')[0], form_data=form_data)
