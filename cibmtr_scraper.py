@@ -247,8 +247,8 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             "name": form_name,
             "owner": "gatech",
             "allocated_users": ["admin"],
-            "groups": [],
-            "questions": []
+            "groups": list(),
+            "questions": list()
         }
 
         n = 0
@@ -272,6 +272,8 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             if group and group != row['Group']:
                 new_group = True
             old_group = group
+            if not old_group:
+                old_group = row['Group']
             is_cql = row['CQL'] == 'TRUE'
             is_nlpql = row['NLPQL'] == 'TRUE'
             question_num = row['Question']
@@ -302,19 +304,13 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                         'value': '_'.join(a.split(' ')).lower().replace('(', '').replace(')', '').replace('.', '')
                             .replace('\n', ' ').strip()
                     })
-            question = {
-                "question_name": name,
-                "question_type": q_type,
-                "question_number": question_num,
-                "has_cql": is_cql,
-                "has_nlpql": is_nlpql,
-                "group": group,
-                "answers": answer_sets,
-                "nlpql_feature": '{}question_{}'.format(feature_prefix, question_num)
-            }
+            group_formatted = '_'.join(old_group.strip().lower().split(' ')).replace(',', '').replace('_/_', '_')
+            query_name = 'group_{}_{}'.format(group_number, group_formatted)
+
+            features = list()
             if len(group) > 0:
                 groups.add(group)
-            form_data['questions'].append(question)
+
             comment += '\n\n'
             comment += json.dumps(row, indent=4, sort_keys=True)
 
@@ -329,6 +325,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
     });
                     ''' % str(question_num)
                     pa = provider_assertion_template.format(question_num, pq)
+                    features.append('question_{}_assertion'.format(question_num))
                     entities.append(pa)
             if len(codes) > 0:
                 if len(codes) == 1 and codes[0].strip() == '':
@@ -343,12 +340,11 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                         resource = 'Medication'
 
                     results.append(cql_result_template.format(question_num, resource, question_num))
-
+                    features.append('question_{}_cql'.format(question_num))
             if new_group:
-                group_formatted = '_'.join(old_group.strip().lower().split(' ')).replace(',', '').replace('_/_', '_')
                 with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/group_{}_{}.nlpql'.format(folder_prefix,
                                                                                                          group_number,
-                                                                                                      group_formatted),
+                                                                                                         group_formatted),
                           'w') as f:
                     ts_string = '\n\n'.join(termsets)
                     de_string = '\n\n'.join(entities)
@@ -356,8 +352,8 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                     query = nlpql_template2.format(form_name, old_group, ts_string, de_string, op_string, comment)
                     f.write(query)
                 with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/group_{}_{}.cql'.format(folder_prefix,
-                                                                                                         group_number,
-                                                                                                         group_formatted),
+                                                                                                       group_number,
+                                                                                                       group_formatted),
                           'w') as f:
                     cs_string = '\n\n'.join(concepts)
                     rs_string = '\n\n'.join(results)
@@ -373,10 +369,24 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                 new_group = False
                 # form, group, termsets, data entities, operations, comments
 
+            evidence = dict()
+            if len(features) > 0:
+                evidence = {
+                    query_name: features
+                }
+            q = {
+                "question_name": name,
+                "question_type": q_type,
+                "question_number": question_num,
+                "group": group,
+                "answers": answer_sets,
+                "evidence_bundle": evidence
+            }
+            form_data['questions'].append(q)
             n += 1
 
         form_data['groups'] = list(groups)
-        with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/questions.nlpql'.format(folder_prefix),
+        with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/questions.json'.format(folder_prefix),
                   'w') as f:
             f.write(json.dumps(form_data, indent=4))
         return form_data
