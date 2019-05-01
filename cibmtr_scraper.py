@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import re
 
 import requests
 import tika
@@ -52,14 +53,14 @@ include ClarityCore version "1.0" called Clarity;
 '''
 
 termset_template = '''
-termset question_{}_terms: [
+termset question_{}_{}_terms: [
     {}
 ];
 
 '''
 
 provider_assertion_template = '''
-define final question_{}_assertion:
+define final question_{}_{}_assertion:
     {}
 '''
 
@@ -83,7 +84,7 @@ context Patient
 '''
 
 cql_concept_template = '''
-define "question_%s_concept": Concept {
+define "question_%s_%s_concept": Concept {
     %s
 }
 
@@ -95,8 +96,8 @@ define "question_%s_concept": Concept {
 # Code '49498-9' from "LOINC"
 
 cql_result_template = '''
-define "question_{}_cql":
-[{}: Code in "question_{}_concept"]
+define "question_{}_{}_cql":
+    [{}: Code in "question_{}_{}_concept"]
 '''
 
 headers = [
@@ -263,6 +264,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
         results = list()
         comment = ''
         group_number = 1
+        evidence_count = 0
 
         for r in reader:
             row = json.loads(json.dumps(r, indent=4, sort_keys=True).replace('\\u00a0', ' ').replace('\\u00ad', '-')
@@ -274,8 +276,6 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             old_group = group
             if not old_group:
                 old_group = row['Group']
-            is_cql = row['CQL'] == 'TRUE'
-            is_nlpql = row['NLPQL'] == 'TRUE'
             question_num = row['Question']
             group = row['Group']
             name = row['Name']
@@ -285,6 +285,11 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             q_type = row['Type']
             terms = row['Terms'].split(',')
             # notes = row['Notes (If data present)']
+
+            keys = re.sub(r' \W+', '', name.lower()).split(' ')
+            if len(keys) > 5:
+                keys = keys[0:4]
+            clean_name = "_".join(keys).replace('/', '')
 
             if len(name.strip()) == 0:
                 continue
@@ -319,13 +324,13 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                 if term_string.strip() != '':
                     term_string = '"' + term_string + '"'
                     term_string = term_string.replace(', " unspecified",', ',')
-                    termsets.append(termset_template.format(str(question_num), term_string))
+                    termsets.append(termset_template.format(str(question_num), clean_name, term_string))
                     pq = '''Clarity.ProviderAssertion({
-      termset: [question_%s_terms]
+      termset: [question_%s_%s_terms]
     });
-                    ''' % str(question_num)
-                    pa = provider_assertion_template.format(question_num, pq)
-                    features.append('question_{}_assertion'.format(question_num))
+                    ''' % (str(question_num), clean_name)
+                    pa = provider_assertion_template.format(question_num, clean_name, pq)
+                    features.append('question_{}_{}_assertion'.format(question_num, clean_name))
                     entities.append(pa)
             if len(codes) > 0:
                 if len(codes) == 1 and codes[0].strip() == '':
@@ -333,14 +338,16 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                 else:
                     c_string = ''
                     for c in codes:
-                        c_string += 'Code \'{}\' from "{}"\n'.format(c, code_sys)
-                    concepts.append(cql_concept_template % (question_num, c_string))
+                        if len(c_string) > 0:
+                            c_string += ', \n    '
+                        c_string += 'Code \'{}\' from "{}"'.format(c, code_sys)
+                    concepts.append(cql_concept_template % (question_num, clean_name, c_string))
                     resource = 'Observation'
                     if code_sys == 'RxNorm':
                         resource = 'Medication'
 
-                    results.append(cql_result_template.format(question_num, resource, question_num))
-                    features.append('question_{}_cql'.format(question_num))
+                    results.append(cql_result_template.format(question_num, clean_name, resource, question_num, clean_name))
+                    features.append('question_{}_{}_cql'.format(question_num, clean_name))
             if new_group:
                 with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/group_{}_{}.nlpql'.format(folder_prefix,
                                                                                                          group_number,
@@ -374,6 +381,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                 evidence = {
                     query_name: features
                 }
+                evidence_count += 1
             q = {
                 "question_name": name,
                 "question_type": q_type,
@@ -389,6 +397,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
         with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/questions.json'.format(folder_prefix),
                   'w') as f:
             f.write(json.dumps(form_data, indent=4))
+        print(evidence_count)
         return form_data
 
 
