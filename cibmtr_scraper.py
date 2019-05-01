@@ -1,7 +1,7 @@
 import csv
 import json
 import os
-import re
+import string
 
 import requests
 import tika
@@ -96,7 +96,7 @@ define "question_%s_%s_concept": Concept {
 # Code '49498-9' from "LOINC"
 
 cql_result_template = '''
-define "question_{}_{}_cql":
+define "question_{}_{}_coded":
     [{}: Code in "question_{}_{}_concept"]
 '''
 
@@ -286,10 +286,12 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             terms = row['Terms'].split(',')
             # notes = row['Notes (If data present)']
 
-            keys = re.sub(r' \W+', '', name.lower()).split(' ')
+            exclude = set(string.punctuation)
+            no_punct_name = ''.join(ch for ch in name if ch not in exclude)
+            keys = no_punct_name.lower().split(' ')
             if len(keys) > 5:
                 keys = keys[0:4]
-            clean_name = "_".join(keys).replace('/', '')
+            clean_name = "_".join(keys).replace('__', '_')
 
             if len(name.strip()) == 0:
                 continue
@@ -347,7 +349,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                         resource = 'Medication'
 
                     results.append(cql_result_template.format(question_num, clean_name, resource, question_num, clean_name))
-                    features.append('question_{}_{}_cql'.format(question_num, clean_name))
+                    features.append('question_{}_{}_coded'.format(question_num, clean_name))
             if new_group:
                 with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/group_{}_{}.nlpql'.format(folder_prefix,
                                                                                                          group_number,
@@ -396,6 +398,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
         form_data['groups'] = list(groups)
         with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/questions.json'.format(folder_prefix),
                   'w') as f:
+            form_data['questions_with_evidence_count'] = evidence_count
             f.write(json.dumps(form_data, indent=4))
         print(evidence_count)
         return form_data
