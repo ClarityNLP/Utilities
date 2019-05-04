@@ -6,6 +6,8 @@ import string
 import requests
 import tika
 from bs4 import BeautifulSoup
+import ast
+from collections import OrderedDict
 
 nlpql_template = '''
 // Phenotype library name
@@ -237,6 +239,92 @@ def stubs(form="4100R4", form_data=None):
             f.write(nlpql_template.format(form, i, entities, operations, comments))
 
 
+# +
+def value_set(set_name, *args):
+        val_set = """
+        define {}:
+            Clarity.ValueExtraction("{}");
+        """.format(set_name, args)
+        return val_set
+    
+def gen_feature_name(rhs, comparator, lhs):
+        
+    op_name = "AnyVal"
+
+    if comparator == "<":
+        op_name = "Lt"
+    elif comparator == ">":
+        op_name = "Gt"
+
+    elif comparator == "<=":
+        op_name = "Leq"
+
+    elif comparator == ">=":
+        op_name = "Geq"
+
+    elif comparator == "==":
+        op_name = "Equals"
+
+    feature_name = "{}{}{}".format(rhs, op_name, str(lhs))
+    return feature_name
+
+def convert_expr_to_value_extraction(expr, feature_name = None):
+
+    kwargs_to_pass = {}
+    
+    val_extr_ast = ast.parse(expr)
+
+    code_ast = ast.parse(expr)
+    
+    lhs = None
+    rhs = None
+    comparator = None
+    
+    for node in ast.walk(code_ast):
+        if isinstance(node, ast.Name):
+            lhs = node.id
+        elif isinstance(node, ast.Num):
+            rhs = node.n
+        elif isinstance(node, ast.Compare):
+            op = node.ops[0]
+            
+            print(op)
+            
+            if isinstance(op, ast.Lt):
+                comparator = "<"
+            elif isinstance(op, ast.Gt):
+                comparator == ">"
+            elif isinstance(op, ast.LtE):
+                comparator == "<="
+            elif isinstance(op, ast.GtE):
+                comparator == ">="
+            elif isinstance(op, ast.Eq):
+                comparator = "=="
+
+    kwargs_to_pass["termset"] = lhs
+    
+    # leq and geq are handled the same as >; < per clarity value extraction docs
+    if comparator in ("<", "<="):
+        kwargs_to_pass["maximum_value"] = rhs
+    elif comparator in (">", ">="):
+        kwargs_to_pass["minimum_value"] = rhs
+        
+    elif comparator == "==":
+        kwargs_to_pass["minimum_value"] = rhs
+        kwargs_to_pass["maximum_value"] = rhs
+
+    if feature_name is None:
+        feature_name = gen_feature_name(lhs, comparator, rhs)
+    
+    return value_set(feature_name, ["{}={}".format(k,v) for k,v in kwargs_to_pass.items()])
+
+#test = convert_expr_to_value_extraction("WBC == 4.5")
+#print(test)
+
+
+
+# -
+
 def parse_questions_from_csv(folder_prefix='4100r4',
                              feature_prefix='form_4100_',
                              form_name="Form 4100 R4.0",
@@ -284,6 +372,9 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             code_sys = row['Code System']
             q_type = row['Type']
             terms = row['Terms'].split(',')
+            
+            # TODO: extract value extraction arrays of expressions and parse using the helper funcs above; append to NLPQL
+            
             # notes = row['Notes (If data present)']
 
             exclude = set(string.punctuation)
