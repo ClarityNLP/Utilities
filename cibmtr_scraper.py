@@ -66,6 +66,7 @@ define final question_{}_{}_assertion:
     {}
 '''
 
+
 cql_template = '''
 library Retrieve2 version '1.0'
 
@@ -85,6 +86,7 @@ context Patient
 
 '''
 
+# +
 cql_concept_template = '''
 define "question_%s_%s_concept": Concept {
     %s
@@ -92,15 +94,22 @@ define "question_%s_%s_concept": Concept {
 
 '''
 
+
+# -
+
 # Code '26464-8' from "LOINC",
 # Code '804-5' from "LOINC",
 # Code '6690-2' from "LOINC",
 # Code '49498-9' from "LOINC"
 
+# +
 cql_result_template = '''
 define "question_{}_{}_coded":
     [{}: Code in "question_{}_{}_concept"]
 '''
+
+
+# -
 
 headers = [
     'Key Fields',
@@ -127,8 +136,11 @@ for file in os.listdir("./cimbtr_forms/"):
     if file.endswith(".txt"):
         pdfs.append(file)
 
+# +
 questions_dict = dict()
 
+
+# -
 
 def question_number(line):
     question_string = ''
@@ -240,12 +252,28 @@ def stubs(form="4100R4", form_data=None):
 
 
 # +
-def value_set(set_name, *args):
-        val_set = """
-        define {}:
-            Clarity.ValueExtraction("{}");
-        """.format(set_name, args)
-        return val_set
+def value_set(set_name, final_str, *args):
+    
+    args_str = '{ \n \t\t'
+    
+    for k,v in args[0].items():
+
+        if isinstance(v, float):
+            v = '"{}"'.format(v)
+
+        args_str += '{}: {}, \n \t\t'.format(k,v)
+        
+    args_str += "}"
+
+    val_set = """
+    define {}:
+        Clarity.ValueExtraction({});         
+    """.format(set_name, args_str)
+    
+    val_set += final_str
+
+    
+    return val_set
     
 def gen_feature_name(rhs, comparator, lhs):
         
@@ -265,8 +293,16 @@ def gen_feature_name(rhs, comparator, lhs):
     elif comparator == "==":
         op_name = "Equals"
 
-    feature_name = "{}{}{}".format(rhs, op_name, str(lhs))
-    return feature_name
+    feature_name = "{}{}{}".format(rhs[0], op_name, str(lhs))
+    
+    final_str = """
+        
+    define final has{}:
+        where {}.value {} {};
+    
+    """.format(feature_name, feature_name, comparator, lhs) 
+    
+    return feature_name, final_str
 
 def convert_expr_to_value_extraction(expr, feature_name = None):
 
@@ -276,52 +312,58 @@ def convert_expr_to_value_extraction(expr, feature_name = None):
 
     code_ast = ast.parse(expr)
     
-    lhs = None
+    lhs = list()
     rhs = None
     comparator = None
     
     for node in ast.walk(code_ast):
+        # we need to be able to handle n-grams that are actually a single concept/measurement, etc.
         if isinstance(node, ast.Name):
-            lhs = node.id
+            lhs.append(node.id)
+        
+        # this is our (numeric) LHS
         elif isinstance(node, ast.Num):
             rhs = node.n
+            
+         # grab our operator and convert it to a string representation   
         elif isinstance(node, ast.Compare):
             op = node.ops[0]
-            
-            print(op)
-            
             if isinstance(op, ast.Lt):
                 comparator = "<"
             elif isinstance(op, ast.Gt):
-                comparator == ">"
+                comparator = ">"
             elif isinstance(op, ast.LtE):
-                comparator == "<="
+                comparator = "<="
             elif isinstance(op, ast.GtE):
-                comparator == ">="
+                comparator = ">="
             elif isinstance(op, ast.Eq):
                 comparator = "=="
 
-    kwargs_to_pass["termset"] = lhs
+    kwargs_to_pass["termset"] = "{}".format([x.replace("_", " ") for x in lhs])
     
     # leq and geq are handled the same as >; < per clarity value extraction docs
     if comparator in ("<", "<="):
-        kwargs_to_pass["maximum_value"] = rhs
+        kwargs_to_pass["maximum_value"] = '"{}"'.format(rhs)
     elif comparator in (">", ">="):
-        kwargs_to_pass["minimum_value"] = rhs
+        kwargs_to_pass["minimum_value"] = '"{}"'.format(rhs)
         
     elif comparator == "==":
-        kwargs_to_pass["minimum_value"] = rhs
-        kwargs_to_pass["maximum_value"] = rhs
+        kwargs_to_pass["minimum_value"] = '"{}"'.format(rhs)
+        kwargs_to_pass["maximum_value"] = '"{}"'.format(rhs)
 
     if feature_name is None:
-        feature_name = gen_feature_name(lhs, comparator, rhs)
+        feature_name, final_str = gen_feature_name(lhs, comparator, rhs)
     
-    return value_set(feature_name, ["{}={}".format(k,v) for k,v in kwargs_to_pass.items()])
-
-#test = convert_expr_to_value_extraction("WBC == 4.5")
-#print(test)
+    return value_set(feature_name, final_str, {k:v for k,v in kwargs_to_pass.items()})
 
 
+# input_str = [["ANC >= 500" ],["ANC == 200"], ["FiO2 < 0.4"]]
+# json_obj = json.loads(json.dumps(input_str))
+
+# out = ''
+# for x in json_obj:
+#     test = convert_expr_to_value_extraction("""{}""".format(str(x[0])))
+#     out += test
 
 # -
 
@@ -359,9 +401,12 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                              .replace('\\u2265', '>=').replace('\\u2264', '<=').replace('\\u00b3', '3').replace(
                 '\\u00b0', ' degrees')
                              .replace('\\u03b3', 'gamma').replace('\\u03b1', 'alpha').replace('\\u00b5', 'u'))
+            
             if group and group != row['Group']:
                 new_group = True
+                
             old_group = group
+            
             if not old_group:
                 old_group = row['Group']
             question_num = row['Question']
@@ -372,6 +417,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             code_sys = row['Code System']
             q_type = row['Type']
             terms = row['Terms'].split(',')
+            vals = row["Value_Extraction"]
             
             # TODO: extract value extraction arrays of expressions and parse using the helper funcs above; append to NLPQL
             
@@ -425,6 +471,18 @@ def parse_questions_from_csv(folder_prefix='4100r4',
                     pa = provider_assertion_template.format(question_num, clean_name, pq)
                     features.append('question_{}_{}_assertion'.format(question_num, clean_name))
                     entities.append(pa)
+            
+            # Inject each value extraction statement to the nlpql 
+#             if len(vals)>0:
+#                 if len(vals) == 1 and vals[0].strip() == '':
+#                     pass
+#                 else:
+#                     vals_str = ''
+#                     for v in vals:
+#                         print(v)
+#                         val_extraction_stmt = convert_expr_to_value_extraction("""{}""".format(str(v[0])))
+#                         vals_str += val_extraction_stmt
+                    
             if len(codes) > 0:
                 if len(codes) == 1 and codes[0].strip() == '':
                     pass
