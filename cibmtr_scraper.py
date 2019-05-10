@@ -8,6 +8,8 @@ import tika
 from bs4 import BeautifulSoup
 import ast
 from collections import OrderedDict
+from nltk.corpus import stopwords
+
 
 nlpql_template = '''
 // Phenotype library name
@@ -251,6 +253,7 @@ def stubs(form="4100R4", form_data=None):
             f.write(nlpql_template.format(form, i, entities, operations, comments))
 
 
+
 # +
 def value_set(set_name, final_str, *args):
     
@@ -367,6 +370,40 @@ def convert_expr_to_value_extraction(expr, feature_name = None):
 
 # -
 
+def is_numeric(test):
+    try:
+        int(test)
+        float(test)
+        return True
+    except:
+        return False
+
+
+def cleanup_name(name):
+    name = name.strip().lower()
+    exclude = set(string.punctuation)
+    no_punct_name = ''.join(ch for ch in name if ch not in exclude)
+    stop_words = stopwords.words('english')
+    stop_words.append('eg')
+    stop_words.append('days')
+    stop_words.append('date')
+    stop_words.append('current')
+    stop_words.append('recent')
+    stop_words.append('since')
+    keys = no_punct_name.lower().split(' ')
+    keys = [word for word in keys if word not in stop_words]
+    keys = [word for word in keys if len(word) > 1]
+    keys = [word for word in keys if not is_numeric(word)]
+    if len(keys) > 5:
+        keys = keys[0:4]
+    clean_name = "_".join(keys).replace('__', '_')
+    key_length = len(keys)
+    if clean_name.endswith('_'):
+        clean_name = clean_name[0:-1]
+    return clean_name, key_length
+
+
+
 def parse_questions_from_csv(folder_prefix='4100r4',
                              feature_prefix='form_4100_',
                              form_name="Form 4100 R4.0",
@@ -423,12 +460,7 @@ def parse_questions_from_csv(folder_prefix='4100r4',
             
             # notes = row['Notes (If data present)']
 
-            exclude = set(string.punctuation)
-            no_punct_name = ''.join(ch for ch in name if ch not in exclude)
-            keys = no_punct_name.lower().split(' ')
-            if len(keys) > 5:
-                keys = keys[0:4]
-            clean_name = "_".join(keys).replace('__', '_')
+            clean_name, key_length = cleanup_name(name)
 
             if len(name.strip()) == 0:
                 continue
@@ -553,10 +585,84 @@ def parse_questions_from_csv(folder_prefix='4100r4',
         return form_data
 
 
+def parse_questions_to_features(
+        file_name='/Users/charityhilton/Downloads/CIBMTR - Form 4100 Mapping - QuestionAnalysis.csv'):
+    with open(file_name, 'r', encoding='utf-8-sig', errors='ignore') as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+
+        with open('/Users/charityhilton/Downloads/cibmtr_features.csv', 'w') as csvfile_output:
+            writer = csv.writer(csvfile_output)
+            writer.writerow(['#', 'question_name', 'answers', 'group', 'question_type', 'evidence_bundle', 'feature_name', 'fhir_resource_type', 'code_system',
+                             'codes', 'valueset_oid', 'nlp_task_type', 'text_terms', 'value_min', 'value_max',
+                             'value_enum_set', 'logic'])
+            for r in reader:
+                row = json.loads(json.dumps(r, indent=4, sort_keys=True).replace('\\u00a0', ' ').replace('\\u00ad', '-')
+                                 .replace('\\u2265', '>=').replace('\\u2264', '<=').replace('\\u00b3', '3').replace(
+                    '\\u00b0', ' degrees')
+                                 .replace('\\u03b3', 'gamma').replace('\\u03b1', 'alpha').replace('\\u00b5', 'u'))
+                question_num = row['Question'].strip().lower()
+                evidence = row['Evidence Bundle'].strip().lower()
+                group = row['Group'].strip().lower()
+                name = row['Name'].strip().lower()
+                answers = row['Answers'].strip().lower()
+                codes = row['Codes'].strip()
+                oid = row['OID'].strip()
+                code_sys = row['Code_System'].strip()
+                q_type = row['Type'].strip()
+                terms = row['Terms'].strip()
+                value_min = row['Value_Min'].strip()
+                value_max = row['Value_Max'].strip()
+                value_ex = row['Value_Extraction'].strip()
+                resource = 'Observation'
+                if code_sys == 'RxNorm':
+                    resource = 'Medication'
+
+                clean_name, key_length = cleanup_name(name)
+                clean_group_name, group_key_length = cleanup_name(group)
+
+                if key_length <= 2:
+                    clean_name += ('_' + clean_group_name)
+
+                if len(question_num) > 0:
+                    found = False
+                    if not evidence or len(evidence) == 0:
+                        evidence = clean_name
+                    if len(codes) > 0 and q_type != 'DATE':
+                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_structured', resource, code_sys,
+                                         codes, oid, 'CQLTask', '', '', '',
+                                         '', ''])
+                        found = True
+
+                    if (len(value_min) > 0 or len(value_max) > 0 or len(value_min) > 0 or len(value_ex) > 0) and value_ex \
+                            != 'N/A' and q_type != 'DATE':
+                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_value_extraction', '', '',
+                                         '', '', 'ValueExtraction', terms, value_min, value_max,
+                                         '', value_ex])
+                        found = True
+                    elif len(terms) > 0 and q_type != 'DATE':
+                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_unstructured', '', '',
+                                         '', '', 'ProviderAssertion', terms, '', '',
+                                         '', ''])
+                        found = True
+
+                    if not found:
+                        writer.writerow([question_num, name, answers, group, q_type, '', '', '', '',
+                                         '', '', '', '', '', ''
+                                         '', ''])
+
+                    writer.writerow(['', '', '', '', '', '', '', '', '',
+                                         '', '', '', '', '', ''
+                                         '', ''])
+
+
 if __name__ == "__main__":
+    import nltk
+
+    nltk.download('stopwords')
     # get_pdfs()
     # form_data = parse_questions()
     # for file in os.listdir("./cimbtr_forms/"):
     #     if file.endswith(".txt"):
     #         stubs(form=file.split('.')[0], form_data=form_data)
-    parse_questions_from_csv()
+    # parse_questions_from_csv()
+    parse_questions_to_features()
