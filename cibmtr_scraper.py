@@ -1,15 +1,14 @@
+import ast
 import csv
 import json
 import os
 import string
 
+import nltk
 import requests
 import tika
 from bs4 import BeautifulSoup
-import ast
-from collections import OrderedDict
 from nltk.corpus import stopwords
-import nltk
 
 nlpql_template = '''
 // Phenotype library name
@@ -68,7 +67,6 @@ define final {}:
     {}
 '''
 
-
 cql_template = '''
         library Retrieve2 version '1.0'
         
@@ -96,7 +94,6 @@ cql_concept_template = '''
 
 '''
 
-
 # -
 
 # Code '26464-8' from "LOINC",
@@ -110,7 +107,6 @@ cql_result_template = '''
         define "{}":
             [{}: Code in "{}_concept"]
 '''
-
 
 cql_task_template = '''
 define final %s:
@@ -260,31 +256,28 @@ def stubs(form="4100R4", form_data=None):
 
 
 def value_set(set_name, final_str, *args):
-    
     args_str = '{ \n \t\t'
-    
-    for k,v in args[0].items():
+
+    for k, v in args[0].items():
 
         if isinstance(v, float):
             v = '"{}"'.format(v)
 
-        args_str += '{}: {}, \n \t\t'.format(k,v)
-        
+        args_str += '{}: {}, \n \t\t'.format(k, v)
+
     args_str += "}"
 
     val_set = """
     define {}:
         Clarity.ValueExtraction({});         
     """.format(set_name, args_str)
-    
+
     val_set += final_str
 
-    
     return val_set
 
 
 def gen_feature_name(rhs, comparator, lhs):
-        
     op_name = "AnyVal"
 
     if comparator == "<":
@@ -302,39 +295,38 @@ def gen_feature_name(rhs, comparator, lhs):
         op_name = "Equals"
 
     feature_name = "{}{}{}".format(rhs[0], op_name, str(lhs))
-    
+
     final_str = """
         
     define final has{}:
         where {}.value {} {};
     
-    """.format(feature_name, feature_name, comparator, lhs) 
-    
+    """.format(feature_name, feature_name, comparator, lhs)
+
     return feature_name, final_str
 
 
-def convert_expr_to_value_extraction(expr, feature_name = None):
-
+def convert_expr_to_value_extraction(expr, feature_name=None):
     kwargs_to_pass = {}
-    
+
     val_extr_ast = ast.parse(expr)
 
     code_ast = ast.parse(expr)
-    
+
     lhs = list()
     rhs = None
     comparator = None
-    
+
     for node in ast.walk(code_ast):
         # we need to be able to handle n-grams that are actually a single concept/measurement, etc.
         if isinstance(node, ast.Name):
             lhs.append(node.id)
-        
+
         # this is our (numeric) LHS
         elif isinstance(node, ast.Num):
             rhs = node.n
-            
-         # grab our operator and convert it to a string representation   
+
+        # grab our operator and convert it to a string representation
         elif isinstance(node, ast.Compare):
             op = node.ops[0]
             if isinstance(op, ast.Lt):
@@ -349,21 +341,21 @@ def convert_expr_to_value_extraction(expr, feature_name = None):
                 comparator = "=="
 
     kwargs_to_pass["termset"] = "{}".format([x.replace("_", " ") for x in lhs])
-    
+
     # leq and geq are handled the same as >; < per clarity value extraction docs
     if comparator in ("<", "<="):
         kwargs_to_pass["maximum_value"] = '"{}"'.format(rhs)
     elif comparator in (">", ">="):
         kwargs_to_pass["minimum_value"] = '"{}"'.format(rhs)
-        
+
     elif comparator == "==":
         kwargs_to_pass["minimum_value"] = '"{}"'.format(rhs)
         kwargs_to_pass["maximum_value"] = '"{}"'.format(rhs)
 
     if feature_name is None:
         feature_name, final_str = gen_feature_name(lhs, comparator, rhs)
-    
-    return value_set(feature_name, final_str, {k:v for k,v in kwargs_to_pass.items()})
+
+    return value_set(feature_name, final_str, {k: v for k, v in kwargs_to_pass.items()})
 
 
 # input_str = [["ANC >= 500" ],["ANC == 200"], ["FiO2 < 0.4"]]
@@ -416,9 +408,11 @@ def parse_questions_to_features(
 
         with open('/Users/charityhilton/Downloads/cibmtr_features.csv', 'w') as csvfile_output:
             writer = csv.writer(csvfile_output)
-            writer.writerow(['#', 'question_name', 'answers', 'group', 'question_type', 'evidence_bundle', 'feature_name', 'fhir_resource_type', 'code_system',
-                             'codes', 'valueset_oid', 'nlp_task_type', 'text_terms', 'value_min', 'value_max',
-                             'value_enum_set', 'logic'])
+            writer.writerow(
+                ['#', 'question_name', 'answers', 'group', 'question_type', 'evidence_bundle', 'feature_name',
+                 'fhir_resource_type', 'code_system',
+                 'codes', 'valueset_oid', 'nlp_task_type', 'text_terms', 'value_min', 'value_max',
+                 'value_enum_set', 'logic'])
             for r in reader:
                 row = json.loads(json.dumps(r, indent=4, sort_keys=True).replace('\\u00a0', ' ').replace('\\u00ad', '-')
                                  .replace('\\u2265', '>=').replace('\\u2264', '<=').replace('\\u00b3', '3').replace(
@@ -452,31 +446,38 @@ def parse_questions_to_features(
                     if not evidence or len(evidence) == 0:
                         evidence = clean_name
                     if len(codes) > 0 and q_type != 'DATE':
-                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_structured', resource, code_sys,
-                                         codes, oid, 'CQLTask', '', '', '',
-                                         '', ''])
+                        writer.writerow(
+                            [question_num, name, answers, group, q_type, evidence, clean_name + '_structured', resource,
+                             code_sys,
+                             codes, oid, 'CQLTask', '', '', '',
+                             '', ''])
                         found = True
 
-                    if (len(value_min) > 0 or len(value_max) > 0 or len(value_min) > 0 or len(value_ex) > 0) and value_ex \
+                    if (len(value_min) > 0 or len(value_max) > 0 or len(value_min) > 0 or len(
+                            value_ex) > 0) and value_ex \
                             != 'N/A' and q_type != 'DATE':
-                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_value_extraction', '', '',
-                                         '', '', 'ValueExtraction', terms, value_min, value_max,
-                                         '', value_ex])
+                        writer.writerow(
+                            [question_num, name, answers, group, q_type, evidence, clean_name + '_value_extraction', '',
+                             '',
+                             '', '', 'ValueExtraction', terms, value_min, value_max,
+                             '', value_ex])
                         found = True
                     elif len(terms) > 0 and q_type != 'DATE':
-                        writer.writerow([question_num, name, answers, group, q_type, evidence, clean_name + '_unstructured', '', '',
-                                         '', '', 'ProviderAssertion', terms, '', '',
-                                         '', ''])
+                        writer.writerow(
+                            [question_num, name, answers, group, q_type, evidence, clean_name + '_unstructured', '', '',
+                             '', '', 'ProviderAssertion', terms, '', '',
+                             '', ''])
                         found = True
 
                     if not found:
                         writer.writerow([question_num, name, answers, group, q_type, '', '', '', '',
                                          '', '', '', '', '', ''
-                                         '', ''])
+                                                             '', ''])
 
                     writer.writerow(['', '', '', '', '', '', '', '', '',
-                                         '', '', '', '', '', ''
-                                         '', ''])
+                                     '', '', '', '', '', ''
+                                                         '', ''])
+
 
 def merger(dict1, dict2):
     res = {**dict1, **dict2}
@@ -484,8 +485,12 @@ def merger(dict1, dict2):
 
 
 def parse_questions_from_feature_csv(folder_prefix='4100r4',
-                                      form_name="Form 4100 R4.0",
-                                      file_name='/Users/charityhilton/Downloads/feature2question.csv'):
+                                     form_name="Form 4100 R4.0",
+                                     file_name='/Users/charityhilton/Downloads/feature2question.csv',
+                                     output_dir='/Users/charityhilton/repos/CIBMTR_knowledge_base'):
+    if not os.path.exists(os.path.join(output_dir, folder_prefix)):
+        os.mkdir(os.path.join(output_dir, folder_prefix))
+
     with open(file_name, 'r', encoding='utf-8', errors='ignore') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',', quotechar='"')
 
@@ -553,7 +558,8 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                         for a in answers:
                             answer_sets.append({
                                 'text': a.replace('\n', ' ').strip(),
-                                'value': '_'.join(a.split(' ')).lower().replace('(', '').replace(')', '').replace('.', '')
+                                'value': '_'.join(a.split(' ')).lower().replace('(', '').replace(')', '').replace('.',
+                                                                                                                  '')
                                     .replace('\n', ' ').strip()
                             })
                     q = {
@@ -638,41 +644,41 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                     entities.append(pa)
 
             if len(terms) > 0 and 'value' in nlp_task_type:
-                        term_string = '", "'.join(terms)
-                        if term_string.strip() != '':
-                            term_string = '"' + term_string + '"'
-                            term_string = term_string.replace(', " unspecified",', ',')
-                            termsets.append(termset_template.format(feature_name, term_string))
+                term_string = '", "'.join(terms)
+                if term_string.strip() != '':
+                    term_string = '"' + term_string + '"'
+                    term_string = term_string.replace(', " unspecified",', ',')
+                    termsets.append(termset_template.format(feature_name, term_string))
 
-                            v_min = ''
-                            v_max = ''
-                            v_enum_string = ''
+                    v_min = ''
+                    v_max = ''
+                    v_enum_string = ''
 
-                            if len(value_min) > 0:
-                                v_min = ',minimum_value: "{}"'.format(value_min)
-                            if len(value_max) > 0:
-                                v_max = ',maximum_value: "{}"'.format(value_max)
-                            if len(value_enum_set) > 0:
-                                v_enum = ''
-                                for v in value_enum_set:
-                                    if len(v) == 0:
-                                        continue
-                                    if len(v_enum) > 0:
-                                        v_enum += ', '
-                                    v = v.replace('?', '').replace('"', '').replace("'", '')
-                                    v_enum += ('"{}"'.format(v))
-                                if len(v_enum) > 0:
-                                    v_enum_string = ', enum_list: [{}]'.format(v_enum)
-                            pq = '''Clarity.ValueExtraction({
+                    if len(value_min) > 0:
+                        v_min = ',minimum_value: "{}"'.format(value_min)
+                    if len(value_max) > 0:
+                        v_max = ',maximum_value: "{}"'.format(value_max)
+                    if len(value_enum_set) > 0:
+                        v_enum = ''
+                        for v in value_enum_set:
+                            if len(v) == 0:
+                                continue
+                            if len(v_enum) > 0:
+                                v_enum += ', '
+                            v = v.replace('?', '').replace('"', '').replace("'", '')
+                            v_enum += ('"{}"'.format(v))
+                        if len(v_enum) > 0:
+                            v_enum_string = ', enum_list: [{}]'.format(v_enum)
+                    pq = '''Clarity.ValueExtraction({
               termset: [%s_terms]
               %s
               %s
               %s
             });
                             ''' % (feature_name, v_min, v_max, v_enum_string)
-                            pa = basic_data_entity_template.format(feature_name, pq)
-                            features.append(feature_name)
-                            entities.append(pa)
+                    pa = basic_data_entity_template.format(feature_name, pq)
+                    features.append(feature_name)
+                    entities.append(pa)
 
             if (len(codes) > 0 or len(valueset_oid) > 0) and 'cql' in nlp_task_type:
                 c_string = ''
@@ -697,8 +703,8 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                 evidence_count += 1
 
             if new_grouping:
-                with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/{}.nlpql'.format(folder_prefix,
-                                                                                                         group_formatted),
+                with open('{}/{}/{}.nlpql'.format(output_dir, folder_prefix,
+                                                  group_formatted),
                           'w') as f:
                     ts_string = '\n\n'.join(termsets)
                     de_string = '\n\n'.join(entities)
@@ -719,7 +725,7 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
 
         form_data['groups'] = list(groups)
         form_data['evidence_bundles'] = list(evidence_bundles)
-        with open('/Users/charityhilton/repos/CIBMTR_knowledge_base/{}/questions.json'.format(folder_prefix),
+        with open('{}/{}/questions.json'.format(output_dir, folder_prefix),
                   'w') as f:
             form_data['questions_with_evidence_count'] = evidence_count
             f.write(json.dumps(form_data, indent=4))

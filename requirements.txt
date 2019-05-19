@@ -11,4 +11,6 @@ xlrd >= 0.9.0
 pdfminer.six
 tika==1.19
 biopython
-
+gunicorn==19.9.0
+flask==0.12.4
+requests==2.18.4
