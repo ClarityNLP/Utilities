@@ -3,11 +3,12 @@ from datetime import datetime
 
 import pandas as pd
 import requests
+from requests.auth import HTTPBasicAuth
 
-path = '/Users/charityhilton/Documents/WashingtonStateData/'
+path = '/Users/home/Documents/WashingtonStateData/'
 files = [
     ('DeathLitF2012.csv', 'DeathStatF2012.xlsx', 'ISO-8859-1', 'utf-8'),
-    ('death_lit.csv', 'death_stat.csv', 'utf-8', 'utf-8'),
+    ('DeathLit2018Q4.csv', 'DeathStat2018Q4.csv', 'utf-8', 'utf-8'),
     ('DeathLitF2013.csv', 'DeathStatF2013.xlsx', 'ISO-8859-1', 'utf-8'),
     ('DeathLitF2014.csv', 'DeathStatF2014.xlsx', 'ISO-8859-1', 'utf-8'),
     ('DeathLitF2015.csv', 'DeathStatF2015.xlsx', 'ISO-8859-1', 'utf-8'),
@@ -239,7 +240,7 @@ def write_results(results):
     if len(results) == 0:
         return
 
-    solr_url = "http://18.220.133.76:8983/solr/sample"
+    solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
     url = solr_url + '/update?commit=true'
     headers = {
         'Content-type': 'application/json',
@@ -248,14 +249,14 @@ def write_results(results):
     ok = True
     data = json.dumps(results)
     try:
-        response = requests.post(url, headers=headers, data=data)
+        response = requests.post(url, headers=headers, data=data, auth=HTTPBasicAuth('admin', '<password>'))
         if response.status_code != 200:
             ok = False
     except Exception as ex:
         print(ex)
     if not ok:
         try:
-            response = requests.post(url, headers=headers, data=data)
+            response = requests.post(url, headers=headers, data=data, auth=HTTPBasicAuth('admin', '<password>'))
             if response.status_code != 200:
                 print('retry fail')
             else:

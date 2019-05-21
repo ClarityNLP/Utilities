@@ -2,6 +2,15 @@ import numpy as np
 import json
 import requests
 import csv
+from requests.auth import HTTPBasicAuth
+
+auth = HTTPBasicAuth('admin', '<password>')
+solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
+url = solr_url + '/update?commit=true'
+headers = {
+    'Content-type': 'application/json',
+}
+base_dir = '/Users/home/Downloads/20190519_pipe-delimited-export/'
 
 
 def get_exclusion_criteria_index(criteria):
@@ -14,7 +23,7 @@ def get_exclusion_criteria_index(criteria):
 
 def read_aact():
     # Sample AACT data read from here - https://www.ctti-clinicaltrials.org/aact-database
-    file_in = "/Downloads/20181001_pipe-delimited-export/eligibilities.txt"
+    file_in = "eligibilities.txt"
     with open('data/clinical_study.txt') as f:
         cols = None
         results = list()
@@ -50,12 +59,7 @@ def read_aact():
 
 
 def load_criteria_in_solr():
-    file_in = "/Downloads/20181001_pipe-delimited-export/eligibilities.txt"
-    solr_url = "http://localhost:8983/solr/sample"
-    url = solr_url + '/update?commit=true'
-    headers = {
-        'Content-type': 'application/json',
-    }
+    file_in = base_dir + "eligibilities.txt"
 
     result_list = list()
     with open(file_in) as csv_file:
@@ -128,7 +132,7 @@ def load_criteria_in_solr():
                 print("parsed {0} lines".format(str(line)))
                 # Pushing data to Solr
                 data = json.dumps(result_list)
-                response2 = requests.post(url, headers=headers, data=data)
+                response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
                 if response2.status_code == 200:
                     print("Uploaded AACT eligibilities batch")
@@ -137,19 +141,14 @@ def load_criteria_in_solr():
     print("parsed {0} lines".format(str(line)))
     # Pushing data to Solr
     data = json.dumps(result_list)
-    response2 = requests.post(url, headers=headers, data=data)
+    response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
     if response2.status_code == 200:
         print("Uploaded AACT eligibilities all")
 
 
 def load_descriptions_in_solr():
-    file_in = "/Downloads/20181001_pipe-delimited-export/detailed_descriptions.txt"
-    solr_url = "http://localhost:8983/solr/sample"
-    url = solr_url + '/update?commit=true'
-    headers = {
-        'Content-type': 'application/json',
-    }
+    file_in = base_dir + "detailed_descriptions.txt"
 
     result_list = list()
     with open(file_in) as csv_file:
@@ -195,7 +194,7 @@ def load_descriptions_in_solr():
                 print("parsed {0} lines".format(str(line)))
                 # Pushing data to Solr
                 data = json.dumps(result_list)
-                response2 = requests.post(url, headers=headers, data=data)
+                response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
                 if response2.status_code == 200:
                     print("Uploaded AACT description batch")
@@ -204,19 +203,14 @@ def load_descriptions_in_solr():
     print("parsed {0} lines".format(str(line)))
     # Pushing data to Solr
     data = json.dumps(result_list)
-    response2 = requests.post(url, headers=headers, data=data)
+    response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
     if response2.status_code == 200:
         print("Uploaded AACT description all")
 
 
 def load_interventions_in_solr():
-    file_in = "/Downloads/20181001_pipe-delimited-export/interventions.txt"
-    solr_url = "http://localhost:8983/solr/sample"
-    url = solr_url + '/update?commit=true'
-    headers = {
-        'Content-type': 'application/json',
-    }
+    file_in = base_dir + "interventions.txt"
 
     result_list = list()
     with open(file_in) as csv_file:
@@ -264,7 +258,7 @@ def load_interventions_in_solr():
                 print("parsed {0} lines".format(str(line)))
                 # Pushing data to Solr
                 data = json.dumps(result_list)
-                response2 = requests.post(url, headers=headers, data=data)
+                response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
                 if response2.status_code == 200:
                     print("Uploaded AACT intervention batch")
@@ -273,7 +267,7 @@ def load_interventions_in_solr():
     print("parsed {0} lines".format(str(line)))
     # Pushing data to Solr
     data = json.dumps(result_list)
-    response2 = requests.post(url, headers=headers, data=data)
+    response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
     if response2.status_code == 200:
         print("Uploaded AACT intevention all")
@@ -281,7 +275,7 @@ def load_interventions_in_solr():
 
 def write_all_inclusion_ids():
     # Sample AACT data read from here - https://www.ctti-clinicaltrials.org/aact-database
-    file_in = "/Downloads/20181001_pipe-delimited-export/eligibilities.txt"
+    file_in = base_dir + "eligibilities.txt"
     with open(file_in) as f:
         csv_reader = csv.reader(f, delimiter='|')
         line = 0
