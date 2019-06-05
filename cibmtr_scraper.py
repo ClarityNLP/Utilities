@@ -536,6 +536,19 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                 '\\u00b0', ' degrees')
                              .replace('\\u03b3', 'gamma').replace('\\u03b1', 'alpha').replace('\\u00b5', 'u'))
 
+            if len(row['evidence_bundle']) > 0 and len(row['#']) == 0:
+
+                if last_row:
+                    print('no question, using last {}'.format(last_row['#']))
+                    row['#'] = last_row['#']
+                    row['group'] = last_row['group']
+                    row['question_name'] = last_row['question_name']
+                    row['answers'] = last_row['answers']
+                    row['type'] = last_row['type']
+                else:
+                    print('no question')
+
+            last_row = row
             if row['#'] == '':
                 continue
 
@@ -566,9 +579,10 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                         "question_name": name,
                         "question_type": q_type,
                         "question_number": question_num,
-                        "group": grouping,
+                        "group": group,
                         "answers": answer_sets,
-                        "evidence_bundle": evidence
+                        "evidence_bundle": evidence,
+                        "nlpql_grouping": grouping
                     }
                     map_qs.append(question_num)
                     form_data['questions'].append(q)
@@ -600,117 +614,27 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
             value_max = row['value_max'].strip()
             value_enum_set = row['value_enum_set'].strip().split(',')
             logic = row['logic'].strip()
-
-            valid = list(string.digits)
-            valid.extend(list(string.ascii_letters))
-            valid.append('_')
-
-            feature_name = ''.join([t for t in feature_name if t in valid])
-            if len(name.strip()) == 0:
-                continue
-
-            if q_type == 'MS':
-                q_type = 'MULTIPLE_SELECT'
-            if q_type == 'MC':
-                q_type = 'MULTIPLE_CHOICE'
-            if q_type == 'TEXT+MC':
-                q_type = 'TEXT_WITH_MULTIPLE_CHOICE'
-
             group_formatted = '_'.join(old_grouping.strip().lower().split(' ')).replace(',', '').replace('_/_', '_')
 
-            features = list()
-            if len(group) > 0:
-                groups.add(group)
-            if len(evidence_bundle) > 0:
-                evidence_bundles.add(evidence_bundle)
-
-            if len(feature_name) == 0 or len(evidence_bundle) == 0 or len(nlp_task_type) == 0:
-                continue
-            comment += '\n\n'
-            comment += json.dumps(row, indent=4, sort_keys=True)
-
-            if len(terms) > 0 and 'assertion' in nlp_task_type:
-                term_string = '", "'.join(terms)
-                if term_string.strip() != '':
-                    term_string = '"' + term_string + '"'
-                    term_string = term_string.replace(', " unspecified",', ',')
-                    termsets.append(termset_template.format(feature_name, term_string))
-                    pq = '''Clarity.ProviderAssertion({
-      termset: [%s_terms]
-    });
-                    ''' % feature_name
-                    pa = basic_data_entity_template.format(feature_name, pq)
-                    features.append(feature_name)
-                    entities.append(pa)
-
-            if len(terms) > 0 and 'value' in nlp_task_type:
-                term_string = '", "'.join(terms)
-                if term_string.strip() != '':
-                    term_string = '"' + term_string + '"'
-                    term_string = term_string.replace(', " unspecified",', ',')
-                    termsets.append(termset_template.format(feature_name, term_string))
-
-                    v_min = ''
-                    v_max = ''
-                    v_enum_string = ''
-
-                    if len(value_min) > 0:
-                        v_min = ',minimum_value: "{}"'.format(value_min)
-                    if len(value_max) > 0:
-                        v_max = ',maximum_value: "{}"'.format(value_max)
-                    if len(value_enum_set) > 0:
-                        v_enum = ''
-                        for v in value_enum_set:
-                            if len(v) == 0:
-                                continue
-                            if len(v_enum) > 0:
-                                v_enum += ', '
-                            v = v.replace('?', '').replace('"', '').replace("'", '')
-                            v_enum += ('"{}"'.format(v))
-                        if len(v_enum) > 0:
-                            v_enum_string = ', enum_list: [{}]'.format(v_enum)
-                    pq = '''Clarity.ValueExtraction({
-              termset: [%s_terms]
-              %s
-              %s
-              %s
-            });
-                            ''' % (feature_name, v_min, v_max, v_enum_string)
-                    pa = basic_data_entity_template.format(feature_name, pq)
-                    features.append(feature_name)
-                    entities.append(pa)
-
-            if (len(codes) > 0 or len(valueset_oid) > 0) and 'cql' in nlp_task_type:
-                c_string = ''
-                for c in codes:
-                    if len(c_string) > 0:
-                        c_string += ', \n            '
-                    code = c.replace('?', '').replace('"', '').replace("'", '')
-                    c_string += 'Code \'{}\' from "{}"'.format(code, code_sys)
-                cql_concept = cql_concept_template % (feature_name, c_string)
-                concepts.append(cql_concept)
-                resource = fhir_resource_type
-
-                cql_res = cql_result_template.format(feature_name, resource, feature_name)
-                cql = cql_template.format(cql_concept, cql_res)
-                entities.append(cql_task_template % (feature_name, cql))
-                features.append(feature_name)
-
-            if evidence_bundle not in evidence:
-                evidence[evidence_bundle] = list()
-            evidence[evidence_bundle].append(feature_name)
-            if new_question:
-                evidence_count += 1
+            no_evidence = False
+            if len(row['evidence_bundle']) == 0 or len(row['feature_name']) == 0:
+                print('no evidence for question {}'.format(question_num))
+                new_grouping = True
+                no_evidence = True
 
             if new_grouping:
-                with open('{}/{}/{}.nlpql'.format(output_dir, folder_prefix,
-                                                  group_formatted),
-                          'w') as f:
-                    ts_string = '\n\n'.join(termsets)
-                    de_string = '\n\n'.join(entities)
-                    op_string = '\n\n'.join(operations)
-                    query = nlpql_template2.format(form_name, old_grouping, ts_string, de_string, op_string, comment)
-                    f.write(query)
+                if len(termsets) == 0 and len(entities) == 0 and len(operations) == 0 and len(concepts) == 0:
+                    print('no query for grouping {}'.format(group_formatted))
+                else:
+                    with open('{}/{}/{}.nlpql'.format(output_dir, folder_prefix,
+                                                      group_formatted),
+                              'w') as f:
+                        ts_string = '\n\n'.join(termsets)
+                        de_string = '\n\n'.join(entities)
+                        op_string = '\n\n'.join(operations)
+                        query = nlpql_template2.format(form_name, old_grouping, ts_string, de_string, op_string,
+                                                       comment)
+                        f.write(query)
 
                 group_number += 1
                 termsets = list()
@@ -720,6 +644,107 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                 comment = ''
                 new_grouping = False
                 # form, group, termsets, data entities, operations, comments
+
+            if not no_evidence:
+                valid = list(string.digits)
+                valid.extend(list(string.ascii_letters))
+                valid.append('_')
+
+                feature_name = ''.join([t for t in feature_name if t in valid])
+                if len(name.strip()) == 0:
+                    continue
+
+                if q_type == 'MS':
+                    q_type = 'MULTIPLE_SELECT'
+                if q_type == 'MC':
+                    q_type = 'MULTIPLE_CHOICE'
+                if q_type == 'TEXT+MC':
+                    q_type = 'TEXT_WITH_MULTIPLE_CHOICE'
+
+                features = list()
+                if len(group) > 0:
+                    groups.add(group)
+                if len(evidence_bundle) > 0:
+                    evidence_bundles.add(evidence_bundle)
+
+                if len(feature_name) == 0 or len(evidence_bundle) == 0 or len(nlp_task_type) == 0:
+                    continue
+                comment += '\n\n'
+                comment += json.dumps(row, indent=4, sort_keys=True)
+
+                if len(terms) > 0 and 'assertion' in nlp_task_type:
+                    term_string = '", "'.join(terms)
+                    if term_string.strip() != '':
+                        term_string = '"' + term_string + '"'
+                        term_string = term_string.replace(', " unspecified",', ',')
+                        termsets.append(termset_template.format(feature_name, term_string))
+                        pq = '''Clarity.ProviderAssertion({
+          termset: [%s_terms]
+        });
+                        ''' % feature_name
+                        pa = basic_data_entity_template.format(feature_name, pq)
+                        features.append(feature_name)
+                        entities.append(pa)
+
+                if len(terms) > 0 and 'value' in nlp_task_type:
+                    term_string = '", "'.join(terms)
+                    if term_string.strip() != '':
+                        term_string = '"' + term_string + '"'
+                        term_string = term_string.replace(', " unspecified",', ',')
+                        termsets.append(termset_template.format(feature_name, term_string))
+
+                        v_min = ''
+                        v_max = ''
+                        v_enum_string = ''
+
+                        if len(value_min) > 0:
+                            v_min = ',minimum_value: "{}"'.format(value_min)
+                        if len(value_max) > 0:
+                            v_max = ',maximum_value: "{}"'.format(value_max)
+                        if len(value_enum_set) > 0:
+                            v_enum = ''
+                            for v in value_enum_set:
+                                if len(v) == 0:
+                                    continue
+                                if len(v_enum) > 0:
+                                    v_enum += ', '
+                                v = v.replace('?', '').replace('"', '').replace("'", '')
+                                v_enum += ('"{}"'.format(v))
+                            if len(v_enum) > 0:
+                                v_enum_string = ', enum_list: [{}]'.format(v_enum)
+                        pq = '''Clarity.ValueExtraction({
+                  termset: [%s_terms]
+                  %s
+                  %s
+                  %s
+                });
+                                ''' % (feature_name, v_min, v_max, v_enum_string)
+                        pa = basic_data_entity_template.format(feature_name, pq)
+                        features.append(feature_name)
+                        entities.append(pa)
+
+                if (len(codes) > 0 or len(valueset_oid) > 0) and 'cql' in nlp_task_type:
+                    c_string = ''
+                    for c in codes:
+                        if len(c_string) > 0:
+                            c_string += ', \n            '
+                        code = c.replace('?', '').replace('"', '').replace("'", '')
+                        c_string += 'Code \'{}\' from "{}"'.format(code, code_sys)
+                    cql_concept = cql_concept_template % (feature_name, c_string)
+                    concepts.append(cql_concept)
+                    resource = fhir_resource_type
+
+                    cql_res = cql_result_template.format(feature_name, resource, feature_name)
+                    cql = cql_template.format(cql_concept, cql_res)
+                    entities.append(cql_task_template % (feature_name, cql))
+                    features.append(feature_name)
+
+                if evidence_bundle not in evidence:
+                    evidence[evidence_bundle] = list()
+                evidence[evidence_bundle].append(feature_name)
+                if new_question:
+                    evidence_count += 1
+
 
             n += 1
 
