@@ -8,7 +8,10 @@ from datetime import datetime
 import json
 import requests
 
-solr_url = "http://localhost:8983/solr/sample"
+from requests.auth import HTTPBasicAuth
+
+auth = HTTPBasicAuth('admin', '')
+solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
 
 url = solr_url + '/update?commit=true'
 headers = {
@@ -274,7 +277,7 @@ def load(path='', report_type="FDA Drug Label", default_name='Human Prescription
                 if len(results) % 10 == 0:
                     print('uploading....')
                     json_data = json.dumps(results)
-                    response = requests.post(url, headers=headers, data=json_data)
+                    response = requests.post(url, headers=headers, data=json_data, auth=auth)
 
                     if response.status_code != 200:
                         print(response.reason)
@@ -286,7 +289,7 @@ def load(path='', report_type="FDA Drug Label", default_name='Human Prescription
                 print(ex)
 
     json_data = json.dumps(results)
-    response = requests.post(url, headers=headers, data=json_data)
+    response = requests.post(url, headers=headers, data=json_data, auth=auth)
     if response.status_code != 200:
         print(response.reason)
     else:
@@ -296,5 +299,5 @@ def load(path='', report_type="FDA Drug Label", default_name='Human Prescription
 
 
 if __name__ == "__main__":
-    load('/Downloads/prescription', report_type='Human Prescription Labels',
+    load('/Users/charityhilton/Downloads/prescription2', report_type='Human Prescription Labels',
          default_name='Human Prescription Drug Label')

@@ -8,12 +8,13 @@ from requests.auth import HTTPBasicAuth
 host = 'datadump.hdap.gatech.edu'
 dbname = 'mimic_v5'
 user = 'mimic_v5'
-password = '<password>'
+password = ''
 port = '5436'
 
 # User fed parameters
-file = "/Users/home/Downloads/MIMIC_NOTEEVENTS.csv"
-solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
+file = "/Users/charityhilton/Downloads/MIMIC_NOTEEVENTS.csv"
+solr_url = "http://solr.claritynlp.cloud/solr/sample"
+auth = HTTPBasicAuth('admin', '')
 conn_string = "host='%s' dbname='%s' user='%s' password='%s' port=%s" % (host,
                                                                          dbname,
                                                                          user,
@@ -35,8 +36,8 @@ count = 0
 
 # Keeping track of chunk statistics
 chunk = 0
-chunk_size = 100
-start_at = 452000
+chunk_size = 10
+start_at = 325700
 num_chunk_failed = 0
 
 # Extracting person_source_value -> person_id mapping information from the database
@@ -88,7 +89,7 @@ try:
         if count == chunk_size:
             print('uploading chunk')
             data = json.dumps(s)
-            response = requests.post(url, headers=headers, data=data, auth=HTTPBasicAuth('admin', '<password>'))
+            response = requests.post(url, headers=headers, data=data, auth=auth)
             chunk += 1
             print("\n\nChunk " + str(chunk) + " " + str(response.status_code))
             if response.status_code != 200:
@@ -98,7 +99,7 @@ try:
 
     # Upload any remnant rows
     if len(s) > 0:
-        response = requests.post(url, headers=headers, data=data, auth=HTTPBasicAuth('admin', '<password>'))
+        response = requests.post(url, headers=headers, data=data, auth=auth)
         chunk += 1
         print("\n\nChunk " + str(chunk) + " " + str(response.status_code))
         if response.status_code != 200:

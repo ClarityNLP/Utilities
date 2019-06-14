@@ -99,7 +99,7 @@ if __name__ == "__main__":
         start_at = 0
     new_terms = set()
     from requests.auth import HTTPBasicAuth
-    auth = HTTPBasicAuth('admin', 'u0z4@VpPE')
+    auth = HTTPBasicAuth('admin', '')
     with open('./cancer/cancer_tree.json', 'r') as ct:
         tree = json.loads(ct.read())
         for k in tree.keys():
