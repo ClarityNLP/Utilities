@@ -1,16 +1,8 @@
-import numpy as np
 import json
 import requests
 import csv
+import sys
 from requests.auth import HTTPBasicAuth
-
-auth = HTTPBasicAuth('admin', '<password>')
-solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
-url = solr_url + '/update?commit=true'
-headers = {
-    'Content-type': 'application/json',
-}
-base_dir = '/Users/home/Downloads/20190519_pipe-delimited-export/'
 
 
 def get_exclusion_criteria_index(criteria):
@@ -317,6 +309,40 @@ def write_all_inclusion_ids():
 
 
 if __name__ == "__main__":
+
+    solr_url = "http://localhost:8983/solr/sample"
+    auth = None
+    try:
+        if len(sys.argv) < 2:
+            print()
+            print('Please run with the following command line args:')
+            print('\tpython3 aact_ingest_from_files.py <solr_url> <solr_user> <solr_password> <input_directory>')
+            print()
+            print('e.g.:')
+            print('\tpython3 aact_ingest_from_files.py https://solr.internal.claritynlp.cloud/solr/sample admin "/Users/Home/AACT_files/ ')
+            print()
+
+            sys.exit(0)
+
+        if len(sys.argv) > 4:
+            base_dir = int(sys.argv[4])
+        else:
+            base_dir = '~/Downloads/20190519_pipe-delimited-export/'
+        if len(sys.argv) > 3:
+            solr_user = sys.argv[2]
+            solr_password = sys.argv[3]
+            auth = HTTPBasicAuth(solr_user, solr_password)
+
+        if len(sys.argv) > 2:
+            solr_url = sys.argv[1]
+    except Exception as ex1:
+        print(ex1)
+
+    url = solr_url + '/update?commit=true'
+    headers = {
+        'Content-type': 'application/json',
+    }
+
     load_criteria_in_solr()
     load_descriptions_in_solr()
     load_interventions_in_solr()

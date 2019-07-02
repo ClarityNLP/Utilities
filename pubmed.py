@@ -6,8 +6,7 @@ import json
 import csv
 import random
 import sys
-import html
-
+from requests.auth import HTTPBasicAuth
 
 terms = [
     "nyha",
@@ -78,7 +77,7 @@ def get_text(item):
 
 def search(query):
     time.sleep(random.uniform(0.5, 3.0))
-    Entrez.email = 'cah@gatech.edu'
+    Entrez.email = 'pubmed@gatech.edu'
     handle = Entrez.esearch(db='pubmed',
                             retmax='10000',
                             retmode='xml',
@@ -89,17 +88,38 @@ def search(query):
 
 
 if __name__ == "__main__":
+
     max_len = 100
+    solr_url = "http://localhost:8983/solr/sample"
+    auth = None
     try:
-        if len(sys.argv) > 1:
-            start_at = int(sys.argv[1])
+        if len(sys.argv) < 2:
+            print()
+            print('Please run with the following command line args:')
+            print('\tpython3 pubmed.py <solr_url> <solr_user> <solr_password> <term_offset>')
+            print()
+            print('e.g.:')
+            print('\tpython3 pubmed.py https://solr.internal.claritynlp.cloud/solr/sample admin test 0')
+            print()
+
+            sys.exit(0)
+
+        if len(sys.argv) > 4:
+            start_at = int(sys.argv[4])
         else:
             start_at = 0
-    except:
-        start_at = 0
+        if len(sys.argv) > 3:
+            solr_user = sys.argv[2]
+            solr_password = sys.argv[3]
+            auth = HTTPBasicAuth(solr_user, solr_password)
+
+        if len(sys.argv) > 2:
+            solr_url = sys.argv[1]
+    except Exception as ex1:
+        print(ex1)
+
     new_terms = set()
-    from requests.auth import HTTPBasicAuth
-    auth = HTTPBasicAuth('admin', '')
+
     with open('./cancer/cancer_tree.json', 'r') as ct:
         tree = json.loads(ct.read())
         for k in tree.keys():
@@ -145,9 +165,9 @@ if __name__ == "__main__":
     terms.extend(list(new_terms))
     terms = sorted(terms)
     result_list = list()
-    print(len(terms))
+    print('{} Query Terms'.format(len(terms)))
+    print()
 
-    solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
     solr_url = solr_url + '/update?commit=true'
     headers = {
         'Content-type': 'application/json',
