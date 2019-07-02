@@ -4,13 +4,8 @@ from glob import iglob
 import requests
 import json
 from datetime import datetime
-
-solr_url = "http://localhost:8983/solr/sample"
-
-url = solr_url + '/update?commit=true'
-headers = {
-    'Content-type': 'application/json',
-}
+from requests.auth import HTTPBasicAuth
+import sys
 
 
 def load_vaers(path=''):
@@ -72,4 +67,38 @@ def load_vaers(path=''):
 
 
 if __name__ == "__main__":
-    load_vaers('/Downloads/vaers')
+    solr_url = "http://localhost:8983/solr/sample"
+    auth = None
+    base_dir = '~/Downloads/vaers'
+    try:
+        if len(sys.argv) < 2:
+            print()
+            print('Please run with the following command line args:')
+            print('\tpython3 vaers_ingest.py <solr_url> <solr_user> <solr_password> <input_directory>')
+            print()
+            print('e.g.:')
+            print('\tpython3 vaers_ingest.py https://solr.internal.claritynlp.cloud/solr/sample admin test "/Users/Home/DrugLabels/" ')
+            print()
+
+            sys.exit(0)
+
+        if len(sys.argv) > 4:
+            base_dir = int(sys.argv[4])
+        else:
+            base_dir = '~/Downloads/vaers'
+        if len(sys.argv) > 3:
+            solr_user = sys.argv[2]
+            solr_password = sys.argv[3]
+            auth = HTTPBasicAuth(solr_user, solr_password)
+
+        if len(sys.argv) > 2:
+            solr_url = sys.argv[1]
+    except Exception as ex1:
+        print(ex1)
+
+    url = solr_url + '/update?commit=true'
+    headers = {
+        'Content-type': 'application/json',
+    }
+
+    load_vaers(base_dir)

@@ -7,16 +7,9 @@ from collections import OrderedDict
 from datetime import datetime
 import json
 import requests
-
+import sys
 from requests.auth import HTTPBasicAuth
 
-auth = HTTPBasicAuth('admin', '')
-solr_url = "https://solr.internal.claritynlp.cloud/solr/sample"
-
-url = solr_url + '/update?commit=true'
-headers = {
-    'Content-type': 'application/json',
-}
 remove = string.punctuation
 remove = remove.replace("_", "")
 pattern = r"[{}]".format(remove)
@@ -299,5 +292,38 @@ def load(path='', report_type="FDA Drug Label", default_name='Human Prescription
 
 
 if __name__ == "__main__":
-    load('/Users/charityhilton/Downloads/prescription2', report_type='Human Prescription Labels',
+    solr_url = "http://localhost:8983/solr/sample"
+    auth = None
+    base_dir = '~/Downloads/prescription2'
+    try:
+        if len(sys.argv) < 2:
+            print()
+            print('Please run with the following command line args:')
+            print('\tpython3 fda_drug_labels_ingest.py <solr_url> <solr_user> <solr_password> <input_directory>')
+            print()
+            print('e.g.:')
+            print('\tpython3 fda_drug_labels_ingest.py https://solr.internal.claritynlp.cloud/solr/sample admin test "/Users/Home/DrugLabels/" ')
+            print()
+
+            sys.exit(0)
+
+        if len(sys.argv) > 4:
+            base_dir = int(sys.argv[4])
+        else:
+            base_dir = '~/Downloads/prescription2'
+        if len(sys.argv) > 3:
+            solr_user = sys.argv[2]
+            solr_password = sys.argv[3]
+            auth = HTTPBasicAuth(solr_user, solr_password)
+
+        if len(sys.argv) > 2:
+            solr_url = sys.argv[1]
+    except Exception as ex1:
+        print(ex1)
+
+    url = solr_url + '/update?commit=true'
+    headers = {
+        'Content-type': 'application/json',
+    }
+    load(base_dir, report_type='Human Prescription Labels',
          default_name='Human Prescription Drug Label')

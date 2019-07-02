@@ -319,7 +319,7 @@ if __name__ == "__main__":
             print('\tpython3 aact_ingest_from_files.py <solr_url> <solr_user> <solr_password> <input_directory>')
             print()
             print('e.g.:')
-            print('\tpython3 aact_ingest_from_files.py https://solr.internal.claritynlp.cloud/solr/sample admin "/Users/Home/AACT_files/ ')
+            print('\tpython3 aact_ingest_from_files.py https://solr.internal.claritynlp.cloud/solr/sample admin test "/Users/Home/AACT_files/" ')
             print()
 
             sys.exit(0)
