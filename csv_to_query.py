@@ -170,10 +170,13 @@ def parse_questions_from_feature_csv(folder_prefix='output',
             if len(row['evidence_bundle']) > 0 and len(row['#']) == 0:
 
                 if last_row:
+                    name = last_row.get('name')
+                    if not name or len(name) == 0:
+                        name = last_row.get('question_name')
                     print('no question, using last {}'.format(last_row['#']))
                     row['#'] = last_row['#']
                     row['group'] = last_row.get('group')
-                    row['name'] = last_row['name']
+                    row['name'] = name
                     row['type'] = last_row.get('type')
                 else:
                     print('no question')
@@ -213,10 +216,14 @@ def parse_questions_from_feature_csv(folder_prefix='output',
             if not old_grouping:
                 old_grouping = row['evidence_bundle'].strip()
 
+            name = row.get('name')
+            if not name or len(name) == 0:
+                name = row.get('question_name')
+
             question_num = row['#'].strip()
             grouping = row['evidence_bundle'].strip()
             feature_name = row['feature_name'].strip()
-            name = row['name'].strip()
+            name = name
             q_type = row['type'].strip()
             group = row['group'].strip()
             evidence_bundle = row['evidence_bundle'].strip()
