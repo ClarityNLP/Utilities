@@ -1,0 +1,9 @@
+#,name,group,type,evidence_bundle,feature_name,fhir_resource_type,code_system,codes,valueset_oid,nlp_task_type,text_terms,value_min,value_max,value_enum_set,value_extractor_ast,logic,notes
+1,On Yescarta?,Medications,MC,yescarta,yescarta_terms,,,,,ProviderAssertion,"Axicabtagene Ciloleucel,Yescarta,KTE C19,KTE-C19,KTE-C19 CAR,axi-cel,axicel",,,,,,
+1,On Yescarta?,Medications,MC,yescarta,yescarta_codes,Medication,RxNorm,"""1987402"",""1987407""",,CQLExecutionTask,,,,,,,
+1,On Kymriah?,Medications,MC,kymriah,kymriah_terms,,,,,ProviderAssertion,"Tisagenlecleucel,Kymriah,CART-19, CART19, CTL019,CTL019 T-cells,Tisagenlecleucel-T",,,,,,
+1,On Kymriah?,Medications,MC,kymriah,kymriah_codes,Medication,RxNorm,"""1986442"",""1986447"",""2044973"",""2044975""",,CQLExecutionTask,,,,,,,
+2,WBC,Labs,MC,wbc_hematologic_findings,wbc_hematologic_findings_structured,Observation,LOINC,"26464-8,6690-2,804-5,49498-9",,CQLExecutionTask,,,,,,,
+2,WBC,Labs,MC,wbc_hematologic_findings,wbc_hematologic_findings_value_extraction,,,,,ValueExtraction,"wbc,White blood cells,white blood count,white blood cell count,white blood cell",1,100,,,,
+3,Platelets,Labs,MC,platelets,platelet_count_codes,Observation,LOINC,"13056-7,26515-7,26516-5,777-3,778-1",2.16.840.1.113883.3.666.5.2094,CQLExecutionTask,,,,,,,
+3,Platelets,Labs,MC,platelets,platelet_count_unstructured,,,,,ValueExtraction,"platelet count, platelets,Thrombocyte count",1000,900000,,,,
