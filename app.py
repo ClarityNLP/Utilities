@@ -9,7 +9,7 @@ from flask import *
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-from cibmtr_scraper import parse_questions_from_feature_csv
+from csv_to_query import parse_questions_from_feature_csv
 
 UPLOAD_FOLDER = tempfile.gettempdir()
 ALLOWED_EXTENSIONS = ['csv']
@@ -109,7 +109,7 @@ def allowed_file(filename):
 def home():
     body = '''
     <p>
-    <a href="/cibmtr_parse">CIBMTR CSV Parser</a><br>
+    <a href="/parse">CSV to Query Parser</a><br>
     <a href="/register_nlpql">Register Test NLPQL</a><br>
     <a href="/test_mimic_nlpql">Test with MIMIC-III</a><br>
     <a href="/test_text_nlpql">Test with Plain Text</a><br>
@@ -124,7 +124,7 @@ def uploaded_file(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
 
-@app.route('/cibmtr_parse', methods=['GET', 'POST'])
+@app.route('/parse', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
@@ -141,24 +141,24 @@ def upload_file():
             filename = secure_filename(file.filename)
             in_file = os.path.join(UPLOAD_FOLDER, filename)
             file.save(in_file)
-            new_dir = tempfile.mkdtemp(prefix='cibmtr_form_queries_')
+            new_dir = tempfile.mkdtemp(prefix='custom_form_queries_')
             if not os.path.exists(new_dir):
                 os.mkdir(new_dir)
             parse_questions_from_feature_csv(file_name=in_file, output_dir=new_dir)
-            zipped_file = os.path.join(UPLOAD_FOLDER, 'cibmtr_form_queries.zip')
+            zipped_file = os.path.join(UPLOAD_FOLDER, 'custom_form_queries.zip')
             zipf = zipfile.ZipFile(zipped_file, 'w', zipfile.ZIP_DEFLATED)
             zipdir(new_dir, zipf)
             zipf.close()
 
             return redirect(url_for('uploaded_file',
-                                    filename='cibmtr_form_queries.zip'))
+                                    filename='custom_form_queries.zip'))
     form = '''
     <form method=post enctype=multipart/form-data>
       <p><input type=file name="file" class="btn btn-default">
          <input type=submit value="Upload CSV" class="btn btn-success">
     </form>
     '''
-    return template % ("CIBMTR Feature CSV Parser", form)
+    return template % ("NLPQL/CQL Feature CSV Parser", form)
 
 
 def get_test_template(action='/test_text_nlpql', patient=False, error=''):
@@ -211,7 +211,7 @@ def get_test_template(action='/test_text_nlpql', patient=False, error=''):
 
 
 @app.route('/test_text_nlpql', methods=['GET', 'POST'])
-def test_text_nlpql():
+def run_test_text_nlpql():
     form = get_test_template('/test_text_nlpql', patient=False)
     if request.method == 'POST':
         nlpql = request.form['nlpql']
@@ -241,7 +241,7 @@ def test_text_nlpql():
 
 
 @app.route('/test_mimic_nlpql', methods=['GET', 'POST'])
-def test_mimic_nlpql():
+def run_test_mimic_nlpql():
     form = get_test_template('/test_mimic_nlpql', patient=True)
     if request.method == 'POST':
         nlpql = request.form['nlpql']
