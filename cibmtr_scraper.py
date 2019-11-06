@@ -75,7 +75,7 @@ cql_template = '''
         include FHIRHelpers version '3.0.0' called FHIRHelpers
         
         codesystem "LOINC": 'http://loinc.org'
-        codesystem "SNOMED-CT": 'urn:oid:2.16.840.1.113883.6.96'
+        codesystem "SNOMED": 'urn:oid:2.16.840.1.113883.6.96'
         codesystem "RxNorm": 'http://www.nlm.nih.gov/research/umls/rxnorm'
         
         context Patient
@@ -744,7 +744,6 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                 evidence[evidence_bundle].append(feature_name)
                 if new_question:
                     evidence_count += 1
-
 
             n += 1
 
