@@ -1,0 +1,5 @@
+#,question_name,group,type,answers,evidence_bundle,feature_name,fhir_resource_type,code_system,codes,valueset_oid,nlp_task_type,text_terms,value_min,value_max,value_enum_set,value_extractor_ast,logic,notes
+1,Atrial Fibrilation?,Case,MC,"Yes,No",case,case_keywords,,,,,ProviderAssertion,"afib,a fib,Atrial Fibrillation,a Fibrillation,Atrial fib,aflutter,atrial flutter, a flutter,af,atrial fibrulation, atrial fabrillation,atrial fibrilation,atr fib,atrfib,auricular fib",,,,,,
+1,Atrial Fibrilation?,Case,MC,"Yes,No",case,case_codes,Observation,SNOMED,"5370000,49436004,195080001",,CQLExecutionTask,,,,,,,
+2,Heart transplant?,Case,MC,"Yes,No",case,heart_transplant_codes,Procedure,CPT,"580,33935,33945",,CQLExecutionTask,,,,,,,
+3,Matches Case?,Case,MC,"Yes,No",case,matches_afib_case,,,,,Logic,,,,,,(case_keywords OR case_codes) NOT heart_transplant_codes,

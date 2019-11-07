@@ -7,3 +7,4 @@
 2,WBC,Labs,MC,wbc_hematologic_findings,wbc_hematologic_findings_value_extraction,,,,,ValueExtraction,"wbc,White blood cells,white blood count,white blood cell count,white blood cell",1,100,,,,
 3,Platelets,Labs,MC,platelets,platelet_count_codes,Observation,LOINC,"13056-7,26515-7,26516-5,777-3,778-1",2.16.840.1.113883.3.666.5.2094,CQLExecutionTask,,,,,,,
 3,Platelets,Labs,MC,platelets,platelet_count_unstructured,,,,,ValueExtraction,"platelet count, platelets,Thrombocyte count",1000,900000,,,,
+4,Dogs,dogs,MC,dogs,dog_names,,,,,ProviderAssertion,"chihuahua,lab,beagle",,,,,,

@@ -77,6 +77,7 @@ cql_template = '''
         codesystem "LOINC": 'http://loinc.org'
         codesystem "SNOMED": 'urn:oid:2.16.840.1.113883.6.96'
         codesystem "RxNorm": 'http://www.nlm.nih.gov/research/umls/rxnorm'
+        codesystem "CPT": 'http://www.ama-assn.org/go/cpt'
 
         context Patient
 
@@ -232,7 +233,6 @@ def parse_questions():
 
 
 def stubs(form="4100R4", form_data=None):
-
     if not form_data:
         form_data = dict()
 
@@ -684,8 +684,15 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                         pa = basic_data_entity_template.format(feature_name, pq)
                         features.append(feature_name)
                         entities.append(pa)
-
-                if len(terms) > 0 and 'value' in nlp_task_type:
+                elif len(logic) > 0 and 'logic' in nlp_task_type:
+                    if not logic.startswith('where '):
+                        logic = 'where ' + logic
+                    if not logic.endswith(';'):
+                        logic = logic + ';\n'
+                    pa = basic_data_entity_template.format(feature_name, logic)
+                    features.append(feature_name)
+                    entities.append(pa)
+                elif len(terms) > 0 and 'value' in nlp_task_type:
                     term_string = '", "'.join(terms)
                     if term_string.strip() != '':
                         term_string = '"' + term_string + '"'
@@ -721,8 +728,7 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
                         pa = basic_data_entity_template.format(feature_name, pq)
                         features.append(feature_name)
                         entities.append(pa)
-
-                if (len(codes) > 0 or len(valueset_oid) > 0) and 'cql' in nlp_task_type:
+                elif (len(codes) > 0 or len(valueset_oid) > 0) and 'cql' in nlp_task_type:
                     c_string = ''
                     for c in codes:
                         if len(c_string) > 0:
@@ -746,24 +752,59 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
 
             n += 1
 
+        print('saving question ', last_question)
+        answer_sets = list()
+        if q_type != 'DATE' and q_type != 'TEXT':
+            for a in answers:
+                answer_sets.append({
+                    'text': a.replace('\n', ' ').strip(),
+                    'value': '_'.join(a.split(' ')).lower().replace('(', '').replace(')', '').replace('.',
+                                                                                                      '')
+                        .replace('\n', ' ').strip()
+                })
+        q = {
+            "question_name": name,
+            "question_type": q_type,
+            "question_number": question_num,
+            "group": group,
+            "answers": answer_sets,
+            "evidence_bundle": evidence,
+            "nlpql_grouping": grouping
+        }
+        map_qs.append(question_num)
+        form_data['questions'].append(q)
+        evidence = dict()
         form_data['groups'] = list(groups)
         form_data['evidence_bundles'] = list(evidence_bundles)
         with open('{}/{}/questions.json'.format(output_dir, folder_prefix),
                   'w') as f:
             form_data['questions_with_evidence_count'] = evidence_count
             f.write(json.dumps(form_data, indent=4))
+
+        with open('{}/{}/{}.nlpql'.format(output_dir, folder_prefix,
+                                          group_formatted),
+                  'w') as f:
+            ts_string = '\n\n'.join(termsets)
+            de_string = '\n\n'.join(entities)
+            op_string = '\n\n'.join(operations)
+            query = nlpql_template2.format(form_name, old_grouping, ts_string, de_string, op_string,
+                                           comment)
+            f.write(query)
         print(evidence_count)
         return form_data
 
 
 if __name__ == "__main__":
     nltk.download('stopwords')
-    # parse_questions_from_feature_csv(folder_prefix='4100r4',
-    #                                  form_name="Form 4100 R4.0",
-    #                                  file_name='/Users/charityhilton/Downloads/feature2question.csv',
-    #                                  output_dir='/Users/charityhilton/repos/custom_nlpql')
     parse_questions_from_feature_csv(folder_prefix='4100r4',
                                      form_name="Form 4100 R4.0",
-                                     file_name='/Users/charityhilton/Downloads/CIBMTR-Form_4100_Mapping-FeatureToQuestionMapping.csv',
+                                     file_name='/Users/charityhilton/Downloads/feature2question.csv',
                                      output_dir='/Users/charityhilton/repos/custom_nlpql')
-
+    parse_questions_from_feature_csv(folder_prefix='afib',
+                                     form_name="Atrial Fibrilation",
+                                     file_name='./custom_query/afib.csv',
+                                     output_dir='./custom_query/output')
+    parse_questions_from_feature_csv(folder_prefix='afib',
+                                     form_name="Atrial Fibrilation",
+                                     file_name='./custom_query/afib.csv',
+                                     output_dir='/Users/charityhilton/repos/custom_nlpql')
