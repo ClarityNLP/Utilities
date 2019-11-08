@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import string
+from os import path
 
 import nltk
 import requests
@@ -776,8 +777,34 @@ def parse_questions_from_feature_csv(folder_prefix='4100r4',
         evidence = dict()
         form_data['groups'] = list(groups)
         form_data['evidence_bundles'] = list(evidence_bundles)
-        with open('{}/{}/questions.json'.format(output_dir, folder_prefix),
-                  'w') as f:
+
+        question_file_name = '{}/{}/questions.json'.format(output_dir, folder_prefix)
+        if path.exists(question_file_name):
+            with open(question_file_name) as json_file:
+                prev_form_data = json.load(json_file)
+                prev_version = prev_form_data.get('version')
+                if not prev_version:
+                    version = "0.0.1"
+                else:
+                    version_segments = prev_version.split('.')
+                    version_segments = [i for i in version_segments if i]
+                    version = ''
+                    try:
+                        version_int = int(version_segments[-1]) + 1
+                    except Exception as ex:
+                        version_int = 1
+                        print(ex)
+
+                    for s in version_segments[:-1]:
+                        version = version + s
+                        version = version + '.'
+
+                    version += str(version_int)
+        else:
+            version = "0.0.1"
+        form_data['version'] = version
+
+        with open(question_file_name, 'w') as f:
             form_data['questions_with_evidence_count'] = evidence_count
             f.write(json.dumps(form_data, indent=4))
 
