@@ -53,7 +53,8 @@ def parse_set_net_form(csv_writer, csv_reader):
             form_field = last_form_field
         if not topic_field or len(topic_field) == 0:
             topic_field = last_topic_field
-        group = '{}: {}'.format(form_field, topic_field)
+        # group = '{}: {}'.format(form_field, topic_field)
+        group = form_field
 
         if n == 17:
             variable_field = 'Type 1 or type 2 diabetes (not gestational diabetes)'
