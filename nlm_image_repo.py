@@ -127,7 +127,8 @@ if __name__ == "__main__":
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
             writer.writeheader()
-            for i in range(0, total, 10):
+            start = 0
+            for i in range(start, total, 10):
                 images = search_images(i+1, i+9, collection=c)
 
                 for l in images:
