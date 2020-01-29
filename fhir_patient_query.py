@@ -11,8 +11,8 @@ This is a command-line tool for building a FHIR query URL, submitting it to
 a FHIR server, and returning patient_ids and timestamps from all resources
 satisfying the query.
 
-The supported resources are 'Procedure' and 'Observation', which must be
-specified with the --resource_type argument.
+The supported resources are 'Condition', 'Observation', and 'Procedure',
+which must be specified with the --resource_type argument.
 
 The base URL of the FHIR server is specified with the --base_url argument.
 
@@ -64,12 +64,13 @@ is used to specify the output filename.
 
 EXAMPLES:
 
-Here are some examples using a publicly-available FHIR server. The command-line
-arguments have been listed on different lines for clarity. The --debug option
-has also been used, so that the actual data returned will be sent to stdout.
+Here are some examples using a public FHIR server. The command-line arguments
+have been listed on different lines for clarity. The --debug option has also
+been used, so that the actual data returned will be sent to stdout.
 
 
 1. Find all patients on this FHIR server who have had a colonoscopy procedure.
+   (The SNOMED code for a colonoscopy procedure is 73761001).
 
     python3 ./fhir_patient_query.py --base_url http://hapi.fhir.org/baseDstu2
                                     --resource_type Procedure
@@ -91,7 +92,7 @@ has also been used, so that the actual data returned will be sent to stdout.
         <results written to out.csv>
 
 3. Find all patients on this FHIR server with WBC observations prior to
-   January 2017:
+   January 2017 (LOINC codes are used in this example):
 
     
     python3 ./fhir_patient_query.py --base_url http://hapi.fhir.org/baseDstu2
@@ -111,9 +112,19 @@ has also been used, so that the actual data returned will be sent to stdout.
                                      --code_file codes.csv
                                      --start_date 2016-10-01
                                      --output_file query_results.csv
+                                     --debug
 
         <results written to query_results.csv>
 
+5.  Find all patients on this FHIR server who have diabetes.
+    (The SNOMED code for diabetes is 73211009).
+
+     python3 ./fhir_patient_query.py --base_url http://hapi.fhir.org/baseDstu2
+                                     --resource_type Condition
+                                     --code_list 73211009
+                                     --debug
+
+        <results written to out.csv>
 
 """
 
@@ -126,14 +137,14 @@ import argparse
 import requests
 from collections import namedtuple
 
-# this module returns a list of object of this type
-PatientQueryResult = namedtuple('PatientQueryResult', [
+# result of a query for an individual patient
+_PatientQueryResult = namedtuple('_PatientQueryResult', [
     'patient_id', 'datetime_start', 'datetime_end'
 ])
 
 
 _VERSION_MAJOR = 0
-_VERSION_MINOR = 1
+_VERSION_MINOR = 2
 _MODULE_NAME   = 'fhir_patient_query.py'
 
 # set to True to enable debug output
@@ -161,7 +172,9 @@ def _to_fhir_resource(resource_type):
     rt = resource_type.lower()
 
     result = None
-    if 'observation' == rt:
+    if 'condition' == rt:
+        result = 'Condition'
+    elif 'observation' == rt:
         result = 'Observation'
     elif 'procedure' == rt:
         result = 'Procedure'
@@ -332,8 +345,112 @@ def _submit_query(query_url):
         return json_results
     else:
         return None
+
+
+###############################################################################
+def _extract_patient_id_from_ref(field_name, resource):
+    """
+    Extract the patient_id from a FHIR resource and return to the caller.
+    Returns None if the a patient_id cannot be found.
+    """
+
+    patient_id = None
+
+    if field_name in resource:
+        patient_ref = resource[field_name]['reference']
+        # of the form Patient/<patient_id>, keep the patient_id
+        pos = patient_ref.find('/')
+        if -1 == pos:
+            patient_id = patient_ref
+        else:
+            patient_id = patient_ref[pos+1:]
+
+    if patient_id is not None:
+        if 0 == len(patient_id):
+            patient_id = None
+            
+    return patient_id
+
+    
+###############################################################################
+def _extract_times(datetime_field_name, period_field_name, resource):
+    """
+    Extract start and end times from a time field in a FHIR resource.
+    Return a (start, end) tuple. 
+    """
+
+    start = None
+    end   = None
+
+    if datetime_field_name in resource:
+        start = resource[datetime_field_name]
+    elif period_field_name in resource:
+        period = resource[period_field_name]
+        if 'start' in period:
+            start = period['start']
+        if 'end' in period:
+            end = period['end']
+    
+    return (start, end)
+
+    
+###############################################################################
+def _process_condition(resource):
+    """
+    Extract the patient_id and ONSET timestamps, if available, from a
+    Condition resource.
+    """
+    
+    patient_id = _extract_patient_id_from_ref('patient', resource)
+    if patient_id is not None:
+        start, end = _extract_times('onsetDateTime',
+                                    'onsetPeriod',
+                                    resource)
+        pqr = _PatientQueryResult(patient_id, start, end)
+    else:
+        pqr = None
+        
+    return pqr
+
+
+###############################################################################
+def _process_procedure(resource):
+    """
+    Extract the patient_id and relevant timestamps from a
+    Procedure resource.
+    """
+    
+    patient_id = _extract_patient_id_from_ref('subject', resource)
+    if patient_id is not None:
+        start, end = _extract_times('performedDateTime',
+                                    'performedPeriod',
+                                    resource)
+        pqr = _PatientQueryResult(patient_id, start, end)
+    else:
+        pqr = None
+        
+    return pqr
     
 
+###############################################################################
+def _process_observation(resource):
+    """
+    Extract the patient_id and relevant timestamps from an
+    Observation resource.
+    """
+    
+    patient_id = _extract_patient_id_from_ref('subject', resource)    
+    if patient_id is not None:
+        start, end = _extract_times('effectiveDateTime',
+                                    'effectivePeriod',
+                                    resource)
+        pqr = _PatientQueryResult(patient_id, start, end)
+    else:
+        pqr = None
+        
+    return pqr
+            
+                               
 ###############################################################################
 def run(query_url):
     """
@@ -342,6 +459,7 @@ def run(query_url):
 
     RT_OBS  = 'Observation'
     RT_PROC = 'Procedure'
+    RT_COND = 'Condition'
 
     results = []
 
@@ -363,43 +481,21 @@ def run(query_url):
                     entry_list = json_data[key]
                     for entry in entry_list:
                         if 'resource' in entry:
-                            start = None
-                            end   = None
-                            patient_id = None
                             resource = entry['resource']
-                            if 'subject' in resource:
-                                # 'subject appears in Observation and Procedure
-                                patient_ref = resource['subject']['reference']
-                                # of the form Patient/<number>, keep the number
-                                pos = patient_ref.find('/')
-                                if -1 == pos:
-                                    patient_id = patient_ref
-                                else:
-                                    patient_id = patient_ref[pos+1:]
                             if 'resourceType' in resource:
                                 resource_type = resource['resourceType']
-                                prefix = None
-                                if RT_PROC == resource_type:
-                                    prefix = 'performed'
+
+                                # pqr == _PatientQueryResult
+                                pqr = None
+                                if RT_COND == resource_type:
+                                    pqr = _process_condition(resource)
                                 elif RT_OBS == resource_type:
-                                    prefix = 'effective'
+                                    pqr = _process_observation(resource)
+                                elif RT_PROC == resource_type:
+                                    pqr = _process_procedure(resource)
 
-                                if prefix is not None:
-                                    # check for a time period
-                                    field_name = '{0}Period'.format(prefix)
-                                    if field_name in resource:
-                                            period = resource[field_name]
-                                            if 'start' in period:
-                                                start = period['start']
-                                            if 'end' in period:
-                                                end = period['end']
-
-                                    field_name = '{0}DateTime'.format(prefix)
-                                    if field_name in resource:
-                                            start = resource[field_name]
-                                        
-                            pqr = PatientQueryResult(patient_id, start, end)
-                            results.append(pqr)
+                                if pqr is not None:
+                                    results.append(pqr)
 
                             
         if next_url is not None:
@@ -547,20 +643,23 @@ if __name__ == '__main__':
         # submit the query to the FHIR server
         results = run(query_url)
 
-        unique_patients = set()
-        cols = ['patient_id', 'datetime_start', 'datetime_end']
-        with open(str_output_file, 'wt') as outfile:
-            dict_writer = csv.DictWriter(outfile, fieldnames=cols)
-            dict_writer.writeheader()
-            for r in results:
-                dict_writer.writerow(
-                    {cols[0]:r.patient_id,
-                     cols[1]:r.datetime_start,
-                     cols[2]:r.datetime_end}
-                )
-                unique_patients.add(r.patient_id)
-            print('Wrote {0} results for {1} patients to "{2}".'.format(len(results),
-                                                                        len(unique_patients),
-                                                                        str_output_file))
+        result_count = len(results)
+        if result_count > 0:
+            unique_patients = set()
+            cols = ['patient_id', 'datetime_start', 'datetime_end']
+            with open(str_output_file, 'wt') as outfile:
+                dict_writer = csv.DictWriter(outfile, fieldnames=cols)
+                dict_writer.writeheader()
+                for r in results:
+                    dict_writer.writerow(
+                        {cols[0]:r.patient_id,
+                         cols[1]:r.datetime_start,
+                         cols[2]:r.datetime_end}
+                    )
+                    unique_patients.add(r.patient_id)
+                print('Wrote {0} results for {1} patients to "{2}".'.
+                      format(result_count,
+                             len(unique_patients),
+                             str_output_file))
             
     
