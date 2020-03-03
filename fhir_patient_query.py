@@ -44,6 +44,9 @@ codes is as follows:
     http://loinc.org,26464-8,804-5,6690-2,49498-9
     http://snomed.info/sct,271737000,40172005
 
+If the FHIR server requires an access token for authentication, the token can
+be provided on the command line with the optional --token argument. The
+authentication type is assumed to be 'Bearer'.
 
 Extensive debugging info can be displayed with the --debug flag.
 
@@ -144,7 +147,7 @@ _PatientQueryResult = namedtuple('_PatientQueryResult', [
 
 
 _VERSION_MAJOR = 0
-_VERSION_MINOR = 2
+_VERSION_MINOR = 3
 _MODULE_NAME   = 'fhir_patient_query.py'
 
 # set to True to enable debug output
@@ -301,15 +304,23 @@ def build_query_url(base_url,
 
 
 ###############################################################################
-def _submit_query(query_url):
+def _submit_query(query_url, token=None):
     """
     Perform an HTTP GET on the query url and return the page of results.
     """
 
+    headers = {
+        'Accept':'application/json; charset=utf-8'
+    }
+
+    auth_type = 'Bearer'
+    if token is not None:
+        headers['Authorization'] = '{0} {1}'.format(auth_type, token)
+    
     has_error = False
     r = None
     try:
-        r = requests.get(query_url)
+        r = requests.get(query_url, headers=headers)
     except requests.exceptions.HTTPError as e:
         print('\n*** HTTP error: "{0}" ***\n'.format(e))
         has_error = True
@@ -452,7 +463,7 @@ def _process_observation(resource):
             
                                
 ###############################################################################
-def run(query_url):
+def run(query_url, token):
     """
     Submit the FHIR query and extract patient and date data from all pages.
     """
@@ -468,7 +479,7 @@ def run(query_url):
     while True:
         if _TRACE:
             print(url)
-        json_data = _submit_query(url)
+        json_data = _submit_query(url, token)
         next_url = None
         if json_data is not None:
             for key in json_data:
@@ -569,6 +580,9 @@ if __name__ == '__main__':
     parser.add_argument('--debug',
                         action='store_true',
                         help='print debugging information to stdout')
+    parser.add_argument('--token',
+                        required=False,
+                        help='FHIR server auth token (Bearer type)')
     
     args = parser.parse_args()
 
@@ -630,6 +644,13 @@ if __name__ == '__main__':
         print('The --code_list and --code_file arguments cannot both be present.')
         sys.exit(-1)
 
+    token = None
+    if 'token' in args and args.token:
+        token = args.token.strip()
+        if 0 == len(token):
+            print('Authentication token is an empty string.')
+            sys.exit(-1)
+
     query_url = build_query_url(base_url,
                                 resource_type,
                                 str_code_list,
@@ -641,7 +662,7 @@ if __name__ == '__main__':
 
     if _EMPTY_STRING != query_url:
         # submit the query to the FHIR server
-        results = run(query_url)
+        results = run(query_url, token)
 
         result_count = len(results)
         if result_count > 0:
