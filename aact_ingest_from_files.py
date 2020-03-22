@@ -3,6 +3,7 @@ import requests
 import csv
 import sys
 from requests.auth import HTTPBasicAuth
+import re
 
 
 def get_exclusion_criteria_index(criteria):
@@ -11,6 +12,22 @@ def get_exclusion_criteria_index(criteria):
     except ValueError:
         ex_index = -1
     return ex_index
+
+
+def no_match(row):
+    if not query_terms or len(query_terms) == 0:
+        return False
+    for qt in query_terms:
+        for r1 in row:
+            r_match = re.search(qt, r1, re.IGNORECASE)
+            if r_match:
+                return False
+
+    return True
+
+
+def no_id_match(the_id):
+    return the_id not in valid_ids
 
 
 def read_aact():
@@ -26,8 +43,12 @@ def read_aact():
             if i == 0:
                 cols = line.split('|')
             else:
+
                 if line.startswith('NCT') and len(txt) > 0:
                     res = txt.split('|')
+                    if no_id_match(res[1]):
+                        continue
+
                     criteria = res[26]
 
                     ex_index = get_exclusion_criteria_index(criteria)
@@ -63,7 +84,9 @@ def load_criteria_in_solr():
                 cols = row
                 print(cols)
             else:
-                print(row[1])
+                # print(row[1])
+                if no_id_match(row[1]):
+                    continue
                 criteria_str = str(row[8])
                 criteria_split = criteria_str.split('~')
                 criteria = ''
@@ -94,8 +117,8 @@ def load_criteria_in_solr():
                 d = {
                         "subject": row[1],
                          "description_attr": "AACT Clinical Trials",
-                         "source": "AACT",
-                         "report_date": "2018-10-25T00:00:00Z"
+                         "source": source + '_inclusion_criteria',
+                         "report_date": "2020-03-01T00:00:00Z"
                      }
                 for i in range(len(cols)):
                     if i != 0 and i != 1 and i != 7 and i != 8:
@@ -152,7 +175,9 @@ def load_descriptions_in_solr():
                 cols = row
                 print(cols)
             else:
-                print(row[1])
+                # print(row[1])
+                if no_id_match(row[1]):
+                    continue
                 txt_str = str(row[2])
                 txt_split = txt_str.split('~')
                 txt = ''
@@ -170,14 +195,15 @@ def load_descriptions_in_solr():
                             txt += stripped
 
                     n += 1
+                intervention = int
                 d = {"subject": row[1],
                      "description_attr": "AACT Clinical Trials",
-                     "source": "AACT",
+                     "source": source + '_trial_description',
                      "report_type": "Clinical Trial Description",
                      "report_text": txt,
                      "report_id": row[0],
                      "id": row[0],
-                     "report_date":  "2018-10-25T00:00:00Z"
+                     "report_date":  "2020-03-01T00:00:00Z"
                      }
                 result_list.append(d)
             line += 1
@@ -214,7 +240,9 @@ def load_interventions_in_solr():
                 cols = row
                 print(cols)
             else:
-                print(row[1])
+                # print(row[1])
+                if no_id_match(row[1]):
+                    continue
                 txt_str = str(row[4])
                 txt_split = txt_str.split('~')
                 txt = ''
@@ -234,14 +262,15 @@ def load_interventions_in_solr():
                 # id|nct_id|intervention_type|name|description
                 d = {"subject": row[1],
                      "description_attr": "AACT Clinical Trials",
-                     "source": "AACT",
+                     "source": source + '_trial_intervention',
                      "report_type": "Clinical Trial Interventions",
                      "report_text": txt,
                      "report_id": row[0],
                      "id": row[0],
                      "type_attr": str(row[2]),
                      "name_attr": str(row[3]),
-                     "report_date":  "2018-10-25T00:00:00Z"
+                     "intervention_desc_attr": str(row[4]),
+                     "report_date":  "2020-03-01T00:00:00Z"
                      }
                 result_list.append(d)
             line += 1
@@ -262,21 +291,27 @@ def load_interventions_in_solr():
     response2 = requests.post(url, headers=headers, data=data, auth=auth)
 
     if response2.status_code == 200:
-        print("Uploaded AACT intevention all")
+        print("Uploaded AACT intervention all")
 
 
 def write_all_inclusion_ids():
     # Sample AACT data read from here - https://www.ctti-clinicaltrials.org/aact-database
     file_in = base_dir + "eligibilities.txt"
+
+    valid_ids = list()
     with open(file_in) as f:
         csv_reader = csv.reader(f, delimiter='|')
         line = 0
         cols = []
-        ids = open("data/nct_ids.txt","w+")
         for row in csv_reader:
             if line > 0:
-                id = row[1]
+                if no_match(row):
+                    continue
+                else:
+                    print(row)
 
+                id = row[1]
+                valid_ids.append(id)
                 criteria_str = str(row[8])
                 criteria_split = criteria_str.split('~')
                 criteria = ''
@@ -294,40 +329,41 @@ def write_all_inclusion_ids():
                             criteria += stripped
                     n += 1
 
-                criteria = criteria.encode("ascii", errors="ignore").decode()
-                ex_index = get_exclusion_criteria_index(criteria)
-
-                if ex_index >= 0:
-                    inclusion = criteria[0:ex_index]
-                else:
-                    inclusion = criteria
-                if len(inclusion) > 0:
-                    ids.write(id)
-                    ids.write('\n')
             line += 1
-        ids.close()
+    return valid_ids
 
 
 if __name__ == "__main__":
 
-    solr_url = "http://localhost:8983/solr/sample"
+    solr_url = 'https://bare.claritynlp.cloud/solr/sample'
+    # default_query_terms = ['coronavirus', 'covid-19', 'covid19', 'SARS-CoV-2', 'Hydroxychloroquine', 'Lopinavir', 'Ritonavir',
+    #                        'Remdisivir', 'Favipiravir', 'Camostat', '2019-nCoV']
+    default_query_terms = ['coronavirus', 'covid-19', 'covid19', 'SARS-CoV-2', '2019-nCoV']
+    default_source = 'covid19_trials'
     auth = None
     try:
-        if len(sys.argv) < 2:
+        if len(sys.argv) < 1:
             print()
             print('Please run with the following command line args:')
-            print('\tpython3 aact_ingest_from_files.py <solr_url> <solr_user> <solr_password> <input_directory>')
+            print('\tpython3 aact_ingest_from_files.py <solr_url> <solr_user> <solr_password> <input_directory> <query_terms> <source>')
             print()
             print('e.g.:')
-            print('\tpython3 aact_ingest_from_files.py https://solr.internal.claritynlp.cloud/solr/sample admin test "/Users/Home/AACT_files/" ')
+            print('\tpython3 aact_ingest_from_files.py https://solr.internal.claritynlp.cloud/solr/sample admin test "/Users/Home/AACT_files/" drug 1,drug 2 my_custom_cohort')
             print()
 
             sys.exit(0)
-
+        if len(sys.argv) > 6:
+            source = sys.argv[5]
+        else:
+            source = default_source
+        if len(sys.argv) > 5:
+            query_terms = sys.argv[4].split(',')
+        else:
+            query_terms = default_query_terms
         if len(sys.argv) > 4:
             base_dir = int(sys.argv[4])
         else:
-            base_dir = '~/Downloads/20190519_pipe-delimited-export/'
+            base_dir = '/Users/charityhilton/Downloads/20200318_pipe-delimited-export/'
         if len(sys.argv) > 3:
             solr_user = sys.argv[2]
             solr_password = sys.argv[3]
@@ -342,9 +378,9 @@ if __name__ == "__main__":
     headers = {
         'Content-type': 'application/json',
     }
+    valid_ids = write_all_inclusion_ids()
 
     load_criteria_in_solr()
     load_descriptions_in_solr()
     load_interventions_in_solr()
-    write_all_inclusion_ids()
     print('done')
