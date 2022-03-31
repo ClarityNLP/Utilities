@@ -1,36 +1,23 @@
 import csv
 import json
+import gzip
 
-import psycopg2
 import requests
 from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
-    host = 'datadump.hdap.gatech.edu'
-    dbname = 'mimic_v5'
-    user = 'mimic_v5'
-    password = ''
-    port = '5436'
 
-    # User fed parameters
-    file = "/Users/charityhilton/Downloads/MIMIC_NOTEEVENTS.csv"
-    solr_url = "http://solr.claritynlp.cloud/solr/sample"
+    # User fed parameters - example here with localhost
+    # Assumes mimic-iii noteevent data structure
+    file = "./NOTEEVENTS.csv.gz"
+    solr_url = "http://localhost/solr/sample"
     auth = HTTPBasicAuth('admin', '')
-    conn_string = "host='%s' dbname='%s' user='%s' password='%s' port=%s" % (host,
-                                                                             dbname,
-                                                                             user,
-                                                                             password,
-                                                                             port)
-
+    
     # Constructing solr_url
     url = solr_url + '/update?commit=true'
     headers = {
         'Content-type': 'application/json',
     }
-
-    # Connecting to the database
-    conn = psycopg2.connect(conn_string)
-    cursor = conn.cursor()
 
     # to keep track of the number of rows which have been passed
     count = 0
@@ -41,22 +28,12 @@ if __name__ == "__main__":
     start_at = 325700
     num_chunk_failed = 0
 
-    # Extracting person_source_value -> person_id mapping information from the database
-    cursor.execute("""SELECT person_id, person_source_value from mimic_v5.person;""")
-    result = cursor.fetchall()
-    map = dict()
-    for i in result:
-        pid = i[0]
-        psv = i[1]
-        if psv not in map:
-            map[psv] = pid
-
     # Pushing data to Solr
     try:
         total = 0
         data = ''
         # read in large csv file
-        csvfile = open(file, 'r')
+        csvfile = gzip.open(file, 'rt')
         reader = csv.DictReader(csvfile)
         # Uploading file in chunks to server
         s = []
@@ -66,10 +43,8 @@ if __name__ == "__main__":
                 print('on row {}'.format(total))
             if total < start_at:
                 continue
-            # Getting the person_source_value to person_id mapping
-            subject_id = map[row['SUBJECT_ID']]
 
-            d = {'subject': subject_id,
+            d = {'subject': row['SUBJECT_ID'],
                  'description_attr': row['DESCRIPTION'],
                  'source': 'MIMIC',
                  'report_type': row['CATEGORY'],
@@ -92,7 +67,7 @@ if __name__ == "__main__":
                 data = json.dumps(s)
                 response = requests.post(url, headers=headers, data=data, auth=auth)
                 chunk += 1
-                print("\n\nChunk " + str(chunk) + " " + str(response.status_code))
+                print("\n\nChunk " + str(chunk) + " HTTP Resp:" + str(response.status_code))
                 if response.status_code != 200:
                     num_chunk_failed += 1
                 s.clear()
@@ -102,7 +77,7 @@ if __name__ == "__main__":
         if len(s) > 0:
             response = requests.post(url, headers=headers, data=data, auth=auth)
             chunk += 1
-            print("\n\nChunk " + str(chunk) + " " + str(response.status_code))
+            print("\n\nChunk " + str(chunk) + " HTTP Resp:" + str(response.status_code))
             if response.status_code != 200:
                 num_chunk_failed += 1
 
