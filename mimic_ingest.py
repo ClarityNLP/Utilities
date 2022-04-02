@@ -7,16 +7,14 @@ from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
 
-    # User fed parameters - example here with localhost
-    # Assumes mimic-iii noteevent data structure
-    file = "./NOTEEVENTS.csv.gz"
-    solr_url = "http://localhost/solr/sample"
+    # BEGIN User fed parameters - edit here to match your needs
+    file = "./NOTEEVENTS.csv.gz" # Assumes mimic-iii noteevent data structure
+    solr_url = "http://localhost/solr/sample" # works with clarity-localhost
     auth = HTTPBasicAuth('admin', '')
-    # If you have a subset of rows you want to enter, put those here
-    # If all rows, set start_at to 0 and end_at to -1
-    start_at = 0
-    end_at = -1
-
+    start_at = 0 # If you have a subset of rows you want to enter, put those here
+    end_at = -1 # If all rows, set start_at to 0 and end_at to -1
+    sourceName = 'MIMIC' # Default source name is MIMIC.
+    # END User fed parameters
 
     # Constructing solr_url
     url = solr_url + '/update?commit=true'
@@ -53,7 +51,7 @@ if __name__ == "__main__":
 
             d = {'subject': row['SUBJECT_ID'],
                  'description_attr': row['DESCRIPTION'],
-                 'source': 'MIMICiii',
+                 'source': sourceName,
                  'report_type': row['CATEGORY'],
                  'report_text': row['TEXT'],
                  'cg_id': row['CGID'],
@@ -85,11 +83,18 @@ if __name__ == "__main__":
 
         # Upload any remnant rows
         if len(s) > 0:
+            rowstart = (chunk_size*chunk)+1
+            rowend = (chunk_size*chunk)+len(s)
+            print("Uploading remaining rows (rows " + str(rowstart) + " to "+ str(rowend) + ")")
+            data = json.dumps(s)
             response = requests.post(url, headers=headers, data=data, auth=auth)
             chunk += 1
             print("Chunk " + str(chunk) + " HTTP Resp:" + str(response.status_code) + "\n\n")
             if response.status_code != 200:
                 num_chunk_failed += 1
+                failed.append((rowstart,rowend))
+            s.clear()
+              
 
         # Close file connection
         csvfile.close()
