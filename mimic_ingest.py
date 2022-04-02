@@ -12,7 +12,12 @@ if __name__ == "__main__":
     file = "./NOTEEVENTS.csv.gz"
     solr_url = "http://localhost/solr/sample"
     auth = HTTPBasicAuth('admin', '')
-    
+    # If you have a subset of rows you want to enter, put those here
+    # If all rows, set start_at to 0 and end_at to -1
+    start_at = 0
+    end_at = -1
+
+
     # Constructing solr_url
     url = solr_url + '/update?commit=true'
     headers = {
@@ -25,7 +30,6 @@ if __name__ == "__main__":
     # Keeping track of chunk statistics
     chunk = 0
     chunk_size = 10
-    start_at = 325700
     num_chunk_failed = 0
 
     # Pushing data to Solr
@@ -37,16 +41,19 @@ if __name__ == "__main__":
         reader = csv.DictReader(csvfile)
         # Uploading file in chunks to server
         s = []
+        failed = []
         for row in reader:
             total += 1
             if total % 10 == 0:
-                print('on row {}'.format(total))
+                print('read up to row {}'.format(total))
             if total < start_at:
                 continue
+            if (end_at > 0) and (total > end_at):
+                break
 
             d = {'subject': row['SUBJECT_ID'],
                  'description_attr': row['DESCRIPTION'],
-                 'source': 'MIMIC',
+                 'source': 'MIMICiii',
                  'report_type': row['CATEGORY'],
                  'report_text': row['TEXT'],
                  'cg_id': row['CGID'],
@@ -63,13 +70,16 @@ if __name__ == "__main__":
             # Chunking
             count += 1
             if count == chunk_size:
-                print('uploading chunk')
+                rowstart = (chunk_size*chunk)+1
+                rowend = (chunk_size*chunk)+chunk_size
+                print("Uploading chunk (rows " + str(rowstart) + " to "+ str(rowend) + ")")
                 data = json.dumps(s)
                 response = requests.post(url, headers=headers, data=data, auth=auth)
                 chunk += 1
-                print("\n\nChunk " + str(chunk) + " HTTP Resp:" + str(response.status_code))
+                print("Chunk " + str(chunk) + " HTTP Resp:" + str(response.status_code) + "\n\n")
                 if response.status_code != 200:
                     num_chunk_failed += 1
+                    failed.append((rowstart,rowend))
                 s.clear()
                 count = 0
 
@@ -77,7 +87,7 @@ if __name__ == "__main__":
         if len(s) > 0:
             response = requests.post(url, headers=headers, data=data, auth=auth)
             chunk += 1
-            print("\n\nChunk " + str(chunk) + " HTTP Resp:" + str(response.status_code))
+            print("Chunk " + str(chunk) + " HTTP Resp:" + str(response.status_code) + "\n\n")
             if response.status_code != 200:
                 num_chunk_failed += 1
 
@@ -89,6 +99,8 @@ if __name__ == "__main__":
         print("\nChunk size = " + str(chunk_size))
         print("\nNumber of chunks = " + str(chunk))
         print("\nNumber of failed chunk uploads = " + str(num_chunk_failed))
+        if num_chunk_failed > 0:
+            print("Range of rows in failed chunks",failed)
         print("\n\n")
 
     except Exception as ex:
